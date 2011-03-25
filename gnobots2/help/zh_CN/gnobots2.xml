@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "August 2007">
+<!ENTITY app "<application>Robots</application>">
+<!ENTITY appname "Robots">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="zh_CN"> 
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title><application>机器人</application>小游戏手册</title>
+
+    <abstract role="description">
+      <para>机器人原来是文本小游戏，这个它的图形界面版本，您可以在许多 UNIX 系统上找到它。玩家必须开动脑筋，让那些小机器人自己相互碰撞而毁灭。</para>
+    </abstract>
+
+      <copyright>
+        <year>2001</year>
+        <holder>Patanjali Somayaji, Mark Rae</holder>
+      </copyright><copyright><year>2010</year><holder>TeliuTe (teliute@163.com)</holder></copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+      <year>2000</year>
+      <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOME 文档项目</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>对于本文档的复制、分发和/或修改必须遵循自由软件基金会 (Free Software Foundation) 发布的 GNU 自由文档许可证 (GFDL) 版本 1.1 或更高版本，该许可证没有固定的部分、没有封面和背页文本。您可以在此<ulink type="help" url="ghelp:fdl">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副本。</para>
+         <para>本手册是在 GFDL 许可之下分发的 GNOME 手册集合的一部分。如果想要单独分发此手册，可以在手册中添加该许可证的一份副本然后分发，如该许可证的第 6 部分所述。</para>
+
+	<para>各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 GNOME 文档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而表明它们是商标。</para>
+
+	<para>本文档以及文档的修改版本都是在遵循 GNU 自由文档许可证的条款下提供，这表示具有以下含义：<orderedlist>
+		<listitem>
+		  <para>文档按“原样”提供，不提供任何明示或暗示的保证，包括但不限于：文档或文档的修改版本没有适销性方面的缺陷、适合特定目的的适用性，以及没有侵权行为。您将自行承担本文档以及文档修改版本的质量、准确性以及性能方面的风险。如果任何文档或文档修改版本存在缺陷，您(而不是最初的编写者、作者或撰写人)将承担所有必需的服务、维修或更正的费用。此免责声明是本许可证的重要组成部分。如果不接受此免责声明，那么您就没有权利使用任何文档或文档的修改版本；并且</para>
+		</listitem>
+		<listitem>
+		  <para>无论在任何情况以及在任何法律理论下，本文档或文档修改版本的作者、最初的编写者、任何撰写人或任何分发者，或者任意这些方的任何提供者都不对任何人由于使用本文档或文档修改版本引起或带来的任何直接的、间接的、特殊的、偶然的或继发的损失承担任何民事(包括疏忽)、合同或其它方面的责任，这些损失包括但不限于信誉损失、工作停止、计算机失败或故障，或任何以及所有其它损失或由此引发的或与之相关的损失，即使这些方已被告知存在出现此类损失的可能性时也是如此。</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Patanjali</firstname> 
+	<surname>Somayaji</surname> 
+	<affiliation> 
+	  <address> <email>patanjali@mindless.com</email> </address> 
+	</affiliation> 
+      </author> 
+      <author> 
+	<firstname>Mark</firstname> 
+	<surname>Rae</surname> 
+	<affiliation> 
+	  <address> <email>m.rae@inpharmatica.co.uk</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Robots Manual V2.8</revnumber> 
+	<date>2004年9月</date> 
+	<revdescription> 
+	  <para role="author">Patanjali Somayaji <email>patanjali@mindless.com</email></para>
+	  <para role="author">Mark Rae <email>m.rae@inpharmatica.co.uk</email></para>
+	  <para role="publisher">GNOME 文档项目</para>
+	</revdescription> 
+      </revision> 
+      <revision> 
+	<revnumber>机器人小游戏手册2.9版</revnumber> 
+	<date>2007年8月</date> 
+	<revdescription> 
+	  <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+	  <para role="publisher">GNOME 文档项目</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>本手册讲述的是机器人小游戏手册2.18版。</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>反馈</title> 
+      <para>要报告关于<application>机器人</application>程序或使用手册中的缺陷，或者提出建议，请参照 <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME 反馈页</ulink> 上的指导。</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME 机器人</primary> 
+  </indexterm>
+
+   <!-- ============= Document Body ============================= -->
+
+   <!-- ============= Introduction ============================== -->
+   <sect1 id="intro">
+     <title>介绍</title>
+
+     <para><application>GNOME 机器人</application>小游戏中，您要设法躲开一群四处劫掠，并试图杀死您的机器人。它是基于文本游戏的机器人，它可以在许多 UNIX 系统上找到。</para>
+     <para>新版本包括：两种类型的机器人、移动的废墟、多种游戏配置、自定义键盘快捷键、以及声音等，跟原来的 GNOME 机器人游戏一样好。</para>
+
+     <para>要运行 <application>GNOME 机器人</application>，点 <guimenu>主菜单</guimenu>，然后选择 <menuchoice><guisubmenu>游戏</guisubmenu><guimenuitem>机器人</guimenuitem></menuchoice>，或者在命令行输入 <command>gnobots2</command></para>
+
+     <para><application>GNOME 机器人</application> 小游戏包含在 <filename>gnome-games</filename> 软件包内，它是 GNOME 桌面环境的一部分。本手册讲述的是<application>GNOME 机器人</application>小游戏2.18版。</para>
+   </sect1>
+ 
+   <sect1 id="objective">
+     <title><application>GNOME 机器人</application>游戏任务</title>
+     <para><application>GNOME 机器人</application> 小游戏的任务非常简单，您的周围有许多机器人或者其他敌人，在您移动时，它们会直接朝您追过来，都想杀死您。您需要开动脑筋诱使它们相撞而杀死全部机器人。</para>
+   
+     <para>机器人相撞时会变成废墟，或者撞到废墟上也会销毁。如果一个机器人抓住您就会杀死您。</para>
+
+     <para>在一些游戏配置(您可以从五个不同的配置中选择)，您可以把废墟排在周围来保护自己。如果您足够大胆，您可以推动废墟撞毁机器人获得额外的奖励。</para>
+     <para>您还可以随机传送自己到一个安全的地方。不幸的是，随机传送有可能正好把您传到机器人那里，从而被它们杀死。幸运的是，还有安全传送，可以把您传到安全的地方，但是安全传送有次数限制。您可以通过闯关赢得更多免费的传送点(如何获得取决于您选择的游戏)，通常是您用“等待”方式消灭了所有机器人，最多可以赢得10个。如果您不想浪费安全传送点，可以选择随机传送，如果您认为这样也是足够安全的。</para>
+   
+     <para>如果您点击 <guibutton>等待</guibutton> 按钮(看下面的讲解)，您将不能再移动直到所有机器人(仍然朝您移动的)都走完，或者您被杀死。冒这个险您可以羸得额外的安全传送点。</para>
+   
+     <para>如果您能设法穿越机器人控制的半个屏幕，到达对边的点，机器人的数量将会重置为开始的数量，让您接着玩下去。</para>
+  </sect1>
+
+
+  <!-- ================ Usage ================================ -->
+  <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="usage">
+    <title>使用 GNOME 机器人</title>
+    <para><application>GNOME 机器人</application> 非常容易操作。您可以使用鼠标也可以使用键盘操作。本节讲述 <application>GNOME 机器人</application> 的基本操作方法。</para>
+
+    <!-- ========= Basic Usage =========================== -->
+    <sect2 id="mainwin">
+      <title>基本操作</title>
+      <para>启动 <application>GNOME 机器人</application>，打开<interface>主窗口</interface>，显示 <xref linkend="mainwindow-fig"/>。 <figure id="mainwindow-fig">
+	  <title>GNOME 机器人小游戏主窗口</title>
+	  <screenshot>
+	  <mediaobject> 
+ 	   <imageobject>
+ 	 <imagedata fileref="figures/gnobots2-main.png" format="PNG" srccredit="Patanjali"/>
+ 	   </imageobject>
+ 	   <textobject> 
+ 	     <phrase>GNOME 机器人小游戏的主窗口。</phrase> 
+ 	   </textobject> 
+ 	 </mediaobject>
+	  </screenshot>
+	</figure></para> 
+
+      <para>要开始一个新游戏，点 <guimenu>游戏</guimenu> 菜单，选择 <guimenuitem>新建</guimenuitem>，或者点工具栏上的<guimenuitem>新建</guimenuitem> 按钮。</para>
+
+      <para>要移动位置，可以在移动的方向上点击鼠标(光标会显示您移动的方向)，或者按适当的按键(默认是小键盘)。在小人上点击保持原地。要进行传送(安全或非安全的)和等待，点击工具栏上的按钮，或者点击 <guimenu>移动</guimenu> 菜单里的对应项。</para>
+    </sect2>
+  </sect1>
+    
+
+  
+  <!-- ========= Menus =========================== --> 
+  
+   <sect1 id="menubar">
+    <title>菜单</title>
+    <para>菜单栏位于<interface>游戏面板</interface>的顶部，包含下面菜单项：</para>
+
+
+    <variablelist>
+      <varlistentry>
+        <term><guimenu>游戏</guimenu></term>
+        <listitem>
+        <para>这个菜单包含下列项：<itemizedlist>	
+            <listitem>
+	    <para><menuchoice><shortcut><keysym>Ctrl-N</keysym></shortcut><guimenuitem>新建</guimenuitem></menuchoice> — 开始一个新的 GNOME 机器人游戏。</para>
+            </listitem>     
+       
+	    <listitem>
+	    <para><menuchoice><guimenuitem>得分</guimenuitem></menuchoice> — 显示得分排行榜。</para>
+            </listitem>
+
+       	    <listitem>
+            <para>
+              <menuchoice>
+              <shortcut><keysym>Ctrl-Q</keysym></shortcut>
+              <guimenuitem>退出</guimenuitem>
+              </menuchoice>
+            </para>
+            </listitem>
+          </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>移动</guimenu></term>
+        <listitem>
+        <para>这个菜单包括：<itemizedlist>
+          <listitem>
+            <para><guimenuitem>传送</guimenuitem>— 将您传送到一个安全的位置。</para>
+          </listitem>
+          <listitem>
+          <para><guimenuitem>随机</guimenuitem>— 将您传送到一个随机的位置上。</para>
+          </listitem>
+          <listitem>
+          <para><guimenuitem>等待</guimenuitem>— 将您设置为等候模式。</para>
+          </listitem>
+        </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>设置</guimenu></term>
+	<listitem>
+	<para><guimenu>设置</guimenu> 菜单只有一项：<itemizedlist>
+	    <listitem>
+	    <para><guimenuitem>首选项</guimenuitem> 进入选项设置对话框。</para>
+	    </listitem>
+	  </itemizedlist></para>
+	</listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>帮助</guimenu></term>
+        <listitem>
+        <para>这个菜单包括：<itemizedlist>
+          <listitem>
+            <para><guimenuitem>目录</guimenuitem>— 显示本手册。</para>
+          </listitem>
+          <listitem>
+          <para><guimenuitem>关于</guimenuitem>— 显示 <application>GNOME 机器人</application> 的基本信息，如作者和程序版本。</para>
+          </listitem>
+        </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect1>
+ 
+ <!-- =========Using the Keyboard============== -->
+ 
+  
+  <sect1 id="keyboard">
+    <title>使用键盘</title>
+    <para>您可以用键盘来控制小人，默认是用小键盘来操作，当然您可以在 <guimenuitem>首选项</guimenuitem> 对话框的 <guimenuitem>键盘</guimenuitem> 标签中自定义。要设定其他按键，只需在相应的行上双击，然后输入要设定的按键。</para>
+
+      <sect2 id="default-keys">     
+      <title>默认的键盘操作键</title>
+      <para>默认情况下，使用右边的数字小键盘操作(而不是四个方向键)。<note>
+        <title>切换数字灯开关</title>
+          <para>您需要先关闭数字灯，然后才能继续下面的操作。</para>
+        </note><orderedlist>
+          <listitem><para>向左上角移动： <keycap>Home</keycap>键(7)</para></listitem> 
+          <listitem><para>向上移动：<keycap>上方向键</keycap>(8)</para></listitem>
+          <listitem><para>右上角：<keycap>Page Up</keycap>键(9)</para></listitem>
+          <listitem><para>向左移动：<keycap>左方向键</keycap>(4)</para></listitem>
+          <listitem><para>保持原地：<keycap>基准键</keycap>(5)</para></listitem>
+          <listitem><para>向右移动：<keycap>右方向键</keycap>(6)</para></listitem>
+          <listitem><para>向左下角移动：<keycap>End</keycap>键(1)</para></listitem>
+          <listitem><para>向下移动：<keycap>下方向键</keycap>(2)</para></listitem>
+          <listitem><para>右下角：<keycap>Page Down</keycap>键(3)</para></listitem>
+          <listitem><para>安全传送：<keycap>+</keycap></para></listitem>
+          <listitem><para>随机传送：<keycap>*</keycap></para></listitem>
+          <listitem><para>等待：<keycap>Enter</keycap></para></listitem>
+        </orderedlist></para>	  
+    </sect2>
+
+      
+  </sect1>
+   
+  <!-- ============= Customization ============================= -->
+  
+  <sect1 id="customization">
+    <title>自定义 GNOME 机器人小游戏</title>
+    <para>您可以在 <guimenu>设置</guimenu> 菜单中的  <guimenuitem> 首选项</guimenuitem> 对话框中，设定游戏的外观和操作，对话框包含三个标签：<itemizedlist>
+        <listitem>
+        <para><guimenuitem>游戏类型</guimenuitem> — 在这里，您可以选择游戏的类型，点击下拉列表选择其中的游戏类型，在游戏进行当中您不能更改类型，这时显示为禁用。在对话框的底下还有几个选项：<orderedlist>
+          <listitem><para>选中安全移动选项可以帮助您避免失误被杀死。如果您试图完成的一次移动，会使您被机器人杀死，而这时有安全的移动位置，那就不允许您移动到错误位置上。但是要注意：如果这时没有安全的可移动位置，将会允许您移动过去，而不是切换到传送操作。</para></listitem>
+          <listitem><para>还有一种 <quote>超级安全模式</quote>，如果您选中此项，在没有安全的可移动位置时，会发出警报。这时您只能选择把自己传送出去。</para></listitem>
+          <listitem><para>如果您打勾选中音乐选项，游戏当中会在不同事件时，发出不同的声音。</para></listitem>
+          <listitem><para>选中 <quote>飞溅</quote> 复选框，当播放声音时，同时在屏幕上显示一个 <quote>飞溅</quote> 动画效果。</para></listitem>
+        </orderedlist></para>
+	</listitem>
+        <listitem>
+        <para><guimenuitem>外观</guimenuitem> — 在下拉列表中，您可以选择游戏图像主题，还可以选择背景色。</para>
+        </listitem>
+
+        <listitem>
+        
+        <para><guimenuitem>键盘</guimenuitem> — 在这里，您可以自定义键盘操作按键。要设定一个操作按键，双击这个键，然后按一下您想设定的按键。</para>
+        </listitem>
+      </itemizedlist></para>
+
+    <para>所有更改将会立即生效并自动保存。</para>
+
+    <para>您可以设计自己想要的图像背景，图片文件可以在 <filename class="directory"> $PREFIX/share/gnome-games/gnobots2/pixmaps </filename> 文件夹中找到，这里的 $PREFIX 是 GNOME 安装的前缀(prefix)，通常是 <filename class="directory">/usr</filename> 或 <filename class="directory">/usr/local</filename>。</para>
+    <para>每个角色是 16×16 像素，有14个 PNG 文件是224×16像素的，您可以查看一下已有的文件，找到它们的顺序，它们必须是正确的动画顺序。</para>
+    <para>图像文件都放在自动检测的文件夹中，因此您不需要修改任何配置文件。您也可以通过创建额外的 <filename> .cfg </filename> 文件，定义自己的游戏配置选项，这个文件存放在 <filename class="directory"> $PREFIX/share/gnome-games/gnobots2/games </filename> 文件夹中。</para>
+  </sect1> 
+ 
+  <!-- ============= Various Sections ============================= -->
+ 
+ 
+  <!-- ============= Bugs ================================== -->
+  <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of. -->
+<!--  <sect1 id="bugs">
+    <title>Known Bugs and Limitations</title>
+    <para>
+      This application has no known bugs.
+    </para>
+  </sect1>
+-->
+
+<!-- ============= Authors ================================ -->
+
+  <sect1 id="authors">
+    <title>作者</title>
+    <para><application>GNOME 机器人</application>小游戏由 Mark Rae (<email>m.rae@inpharmatica.co.uk</email>) 编写。本文档由 Patanjali Somayaji (<email>patanjali@mindless.com</email>) 从原始的 HTML 文档(Mark Rae 编写)改编而来。要报告本程序或本手册的缺陷或者提出建议，请参照 <ulink url="ghelp:user-guide?feedback-bugs" type="help">文档</ulink> 上的指导。</para>
+
+    <!-- For translations: uncomment this:
+
+    <para>
+      Latin translation was done by ME
+      (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+      suggestions regarding this translation to SOMEWHERE.
+    </para>
+
+    -->
+
+  </sect1>
+
+
+  <!-- ============= Application License ============================= -->
+
+  <sect1 id="license">
+    <title>许可协议</title>
+    <para>本程序是自由软件，您可以在遵守自由软件基金会发布的 <ulink type="help" url="gnome-help:gpl"><citetitle>GNU 通用许可证</citetitle></ulink> 第2版或更高(如您所愿)版本下，重新分发和/或修改它。</para>
+    <para>本程序的发布意图是希望它有所用处，但请注意它没有任何担保，甚至不包括商业用途、以及特殊目的保证。更多相关细节，请参阅 <citetitle>GNU 通用公共许可证</citetitle>。</para>
+    <para>在<citetitle>GNOME 用户指南</citetitle> 的附录中包含了一份 <citetitle>GNU 通用许可证</citetitle>的副本，您也可以通过访问自由软件基金会的<ulink type="http" url="http://www.fsf.org">网站</ulink>上获得 <citetitle>GNU 通用许可证</citetitle>的副本，或者写信给 <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address> 来索取。</para>
+  </sect1>
+
+</article>

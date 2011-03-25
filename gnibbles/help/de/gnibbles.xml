@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.20">
+<!ENTITY manrevision "2.20">
+<!ENTITY date "May 2007">
+<!ENTITY app "<application>Nibbles</application>">
+<!ENTITY appname "Nibbles">
+<!ENTITY VERSION "2.20">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="de">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+ <articleinfo>
+  <title><application>Nibbles</application>-Handbuch</title>
+
+    <abstract role="description">
+      <para>Nibbles ist ein Wurm-Spiel für GNOME. Der Spieler steuert einen zweidimensionalen Wurm, während dieser versucht, Futter zu finden. Durch das Finden von Futter erzielen Sie Punkte, aber mit irgendetwas zusammenzustoßen, kann Sie dagegen viele Punkte kosten. Wenn Sie alle Punkte verloren haben, ist auch das Spiel für Sie verloren.</para>
+    </abstract>
+
+  <copyright>
+   <year>2000</year>
+   <holder>Kevin Breit</holder>
+  </copyright><copyright><year>2008</year><holder>Mario Blättermann (mario.blaettermann@t-online.de)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOME-Dokumentationsprojekt</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Das vorliegende Dokument kann gemäß den Bedingungen der GNU Free Documentation License (GFDL), Version 1.1 oder jeder späteren, von der Free Software Foundation veröffentlichten Version ohne unveränderbare Abschnitte sowie ohne Texte auf dem vorderen und hinteren Buchdeckel kopiert, verteilt und/oder modifiziert werden. Eine Kopie der GFDL finden Sie unter diesem <ulink type="help" url="ghelp:fdl">Link</ulink> oder in der mit diesem Handbuch gelieferten Datei COPYING-DOCS.</para>
+         <para>Dieses Handbuch ist Teil einer Sammlung von GNOME-Handbüchern, die unter der GFDL veröffentlicht werden. Wenn Sie dieses Handbuch getrennt von der Sammlung weiterverbreiten möchten, können Sie das tun, indem Sie eine Kopie der Lizenz zum Handbuch hinzufügen, wie es in Abschnitt 6 der Lizenz beschrieben ist.</para>
+
+	<para>Viele der Namen, die von Unternehmen verwendet werden, um ihre Produkte und Dienstleistungen von anderen zu unterscheiden, sind eingetragene Warenzeichen. An den Stellen, an denen diese Namen in einer GNOME-Dokumentation erscheinen, werden die Namen in Großbuchstaben oder mit einem großen Anfangsbuchstaben geschrieben, wenn das GNOME-Dokumentationsprojekt auf diese Warenzeichen hingewiesen wird.</para>
+
+	<para>DAS DOKUMENT UND VERÄNDERTE FASSUNGEN DES DOKUMENTS WERDEN UNTER DEN BEDINGUNGEN DER GNU FREE DOCUMENTATION LICENSE ZUR VERFÜGUNG GESTELLT MIT DEM WEITERGEHENDEN VERSTÄNDNIS, DASS: <orderedlist>
+		<listitem>
+		  <para>DIESES DOKUMENT WIRD »WIE VORLIEGEND« GELIEFERT, OHNE GARANTIEN IRGENDEINER ART, SOWOHL AUSDRÜCKLICH GENANNTE ALS AUCH ANGEDEUTETE. DIES BEZIEHT SICH AUCH OHNE EINSCHRÄNKUNG AUF GARANTIEN, DASS DIESES DOKUMENT ODER VERÄNDERTE FASSUNGEN DIESES DOKUMENTS FREI VON HANDELSDEFEKTEN, FÜR EINEN BESTIMMTEN ZWECK GEEIGNET IST ODER DASS ES KEINE RECHTE DRITTER VERLETZT. DAS VOLLE RISIKO WAS QUALITÄT, GENAUIGKEIT UND LEISTUNG DES DOKUMENTS ODER VERÄNDERTE FASSUNGEN DES DOKUMENTS LIEGT BEI IHNEN. SOLLTE EIN DOKUMENT ODER EINE VERÄNDERTE FASSUNG DAVON FEHLER IRGENDEINER ART BEINHALTEN, TRAGEN SIE (NICHT DER URSPRUNGSAUTOR, DER AUTOR ODER EIN MITWIRKENDER) DIE KOSTEN FÜR NOTWENDIGE DIENSTLEISTUNGEN, REPARATUREN ODER FEHLERKORREKTUREN. DIESER HAFTUNGSAUSSCHLUSS IST EIN ESSENZIELLER TEIL DIESER LIZENZ. DIE VERWENDUNG EINES DOKUMENTS ODER EINER VERÄNDERTEN VERSION DES DOKUMENTS IST NICHT GESTATTET AUßER UNTER BEACHTUNG DIESES HAFTUNGSAUSSCHLUSSES UND</para>
+		</listitem>
+		<listitem>
+		  <para>UNTER KEINEN UMSTÄNDEN UND AUF BASIS KEINER RECHTSGRUNDLAGE, EGAL OB DURCH UNERLAUBTEN HANDLUNGEN (EINSCHLIEßLICH FAHRLÄSSIGKEIT), VERTRAG ODER ANDERWEITIG KANN DER AUTOR, URSPRUNGSAUTOR, EIN MITWIRKENDER ODER EIN VERTRIEBSPARTNER DIESES DOKUMENTS ODER EINER VERÄNDERTEN FASSUNG DES DOKUMENTS ODER EIN ZULIEFERER EINER DIESER PARTEIEN, HAFTBAR GEMACHT WERDEN FÜR DIREKTE, INDIREKTE, SPEZIELLE, VERSEHENTLICHE ODER FOLGESCHÄDEN JEGLICHER ART, EINSCHLIEßLICH UND OHNE EINSCHRÄNKUNGEN SCHÄDEN DURCH VERLUST VON KULANZ, ARBEITSAUSFALL, COMPUTERVERSAGEN ODER COMPUTERFEHLFUNKTIONEN ODER ALLE ANDEREN SCHÄDEN ODER VERLUSTE, DIE SICH AUS ODER IN VERBINDUNG MIT DER VERWENDUNG DES DOKUMENTS UND VERÄNDERTER FASSUNGEN DES DOKUMENTS ERGEBEN, AUCH WENN DIE OBEN GENANNTEN PARTEIEN ÜBER DIE MÖGLICHKEIT SOLCHER SCHÄDEN INFORMIERT WAREN.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Kevin</firstname> 
+	<surname>Breit</surname> 
+	<affiliation> 
+	  <orgname>GNOME-Dokumentationsprojekt</orgname> 
+	  <address> <email>battery841@mypad.com</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+    <revhistory>
+      <revision> 
+	<revnumber>Nibbles-Handbuch V2.20</revnumber> 
+	<date>Mai 2007</date> 
+	<revdescription> 
+	  <para role="author">Kevin Breit <email>battery841@mypad.com</email></para>
+	  <para role="publisher">GNOME-Dokumentationsprojekt</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Dieses Handbuch beschreibt Version 2.20 von Nibbles.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Rückmeldungen</title> 
+      <para>Um Fehler zu melden oder einen Vorschlag zur Anwendung <application>Nibbles</application> oder zu diesem Handbuch zu machen, folgen Sie den Anweisungen auf der <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME-Seite für Rückmeldungen</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+ </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Nibbles</primary> 
+  </indexterm> 
+
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+ <sect1 id="intro">
+  <title>Einführung</title>
+
+  <para><application>Nibbles</application> ist ein Spiel, in dem der Spieler einen Wurm steuert. Der Wurm bewegt sich über das Spielfeld, wobei er »Diamanten« aufnimmt. Sie haben zu verhindern, dass der Wurm die rundum platzierten Wände berührt.</para>
+
+  <para>Um <application>Nibbles</application> zu starten, wählen Sie <menuchoice><guisubmenu>Spiele</guisubmenu><guimenuitem>Nibbles</guimenuitem></menuchoice> im Menü <guimenu>Anwendungen</guimenu>, oder geben Sie <command>gnibbles</command> in einer Befehlszeile ein.</para>
+
+  <para><application>Nibbles</application> ist Teil des Pakets <filename>gnome-games</filename>, das Teil der GNOME-Desktopumgebung ist. Dieses Dokument beschreibt Version 2.20 von <application>Robots</application>.</para>
+ </sect1>
+
+ <sect1 id="objective">
+ <title>Ziel von Nibbles</title>
+  <para>Das Ziel von Nibbles ist recht simpel. Sie steuern einen Wurm, wobei Sie verhindern müssen, dass dieser mit einer Wand oder mit sich selbst zusammenstößt, ansonsten sterben Sie. Sie erhalten zehn Leben, bevor das spiel endet. Sie gewinnen entweder dadurch, dass Sie Ihr eigenes höchstes Ergebnis überbieten (oder das eines Freundes), oder indem Sie alle Level durchspielen. Es ist ebenso möglich, gegen Würmer mit künstlicher Intelligenz zu spielen.</para>
+  <para>Nibbles unterstützt auch einen <link linkend="network-games">Mehrspieler-Modus</link> für bis zu sechs gegeneinander antretende menschliche Spieler im Hotseat- oder Netzwerk-Modus.</para>
+ </sect1>
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+ <sect1 id="usage">
+  <title>Nibbles spielen</title>
+  <para><application>Nibbles</application> ist einfach zu bedienen. Die einzigen notwendigen Tasten sind die Pfeiltasten.</para>
+
+  <!-- ========= Basic Usage =========================== -->
+<sect2 id="mainwin">
+<title>Grundlagen der Bedienung</title>
+<para>Beim Start von <application>Nibbles</application> wird das unten angezeigte <interface>Hauptfenster</interface> geöffnet. <figure id="intro-fig">
+<title>Startfenster von Nibbles</title>
+<screenshot>
+ <mediaobject> 
+    <imageobject>
+<imagedata fileref="figures/intro.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Startfenster von Nibbles.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure></para>
+<para>Um das Spiel zu starten, wählen Sie <menuchoice><guimenu>Spiel</guimenu><guimenuitem>Neu</guimenuitem></menuchoice>.</para>
+<para>Beim Start des Spiels erscheint ein Wurm am linken Rand des Spielfelds. Verwenden Sie die <keycap>Pfeiltaste nach oben</keycap>, um die Richtung des Wurms nach oben zu kehren. Ebenso können sie mit der <keycap>Pfeiltaste nach rechts</keycap> den Wurm nach rechts schicken, mit der <keycap>Pfeiltaste nach links</keycap> die Richtung des Wurms nach links ändern und mit der <keycap>Pfeiltaste nach unten</keycap> den Wurm nach unten schicken. <figure id="gameplay">
+<title>Nibbles während des Spiels</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/playing.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Nibbles währen des Spiels.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure></para>
+</sect2>
+
+<!-- This section should also describe main elements of graphic user
+interface, such as menus and buttons, unless this description
+is too long - in that case, it should be moved to a separate
+section. For example -->
+
+
+<!-- ========= Menus =========================== -->
+<sect2 id="menubar">
+   <title>Menüs</title>
+   <para>Die Menüleiste am oberen Rand des <interface>Hauptfensters</interface> enthält folgende Menüs:</para>
+
+   <variablelist>
+    <varlistentry>
+     <term><guimenu>Spiel</guimenu></term>
+     <listitem>
+      <para>Dieses Menü enthält: <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Strg+N</keysym></shortcut><guimenuitem>Neu</guimenuitem></menuchoice>. Dies startet ein neues <application>Nibbles</application>-Spiel.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Strg+G</keysym></shortcut><guimenuitem>Netzwerkspiel</guimenuitem></menuchoice> Dies startet ein Netzwerkspiel im Mehrspieler-Modus in der »GGZ Gaming Zone«.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Ergebnisse</guimenuitem></menuchoice> zeigt die besten Ergebnisse.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Pause</guimenuitem></menuchoice> Dies unterbricht Ihr Spiel. Klicken Sie auf den Menüeintrag <quote>Fortsetzen</quote>, um das Spiel fortzusetzen.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Spiel beenden</guimenuitem></menuchoice> Dies beendet das aktuelle Spiel und zeigt wieder das Startfenster an.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Strg-Q</keysym></shortcut><guimenuitem>Beenden</guimenuitem></menuchoice> Dies beendet die Anwendung.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+   <varlistentry>
+     <term><guimenu>Ansicht</guimenu></term>
+     <listitem>
+      <para>Dieses Menü enthält: <itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>Vollbild</guimenuitem></menuchoice> Dies schaltet den Vollbildmodus für das Fenster an oder aus.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Einstellungen</guimenu></term>
+     <listitem>
+      <para>Dieses Menü enthält: <itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>Einstellungen</guimenuitem></menuchoice> Dies öffnet ein Fenster zum Bearbeiten der <link linkend="prefs"> Einstellungen.</link></para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Hilfe</guimenu></term>
+     <listitem>
+      <para>Dieses Menü enthält: <itemizedlist>
+        <listitem>
+          <para><menuchoice><shortcut><keysym>F1</keysym></shortcut><guimenuitem>Inhalte</guimenuitem></menuchoice> Dieser Eintrag zeigt dieses Handbuch an.</para>
+         <para><guimenuitem>Info</guimenuitem> Dies öffnet einen <interface>Infodialog</interface>, der grundlegende Informationen über <application>Nibbles</application> anzeigt, wie beispielsweise den Namen des Autors oder die Versionsnummer des Spiels.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+  </sect2>
+  <sect2 id="diamonds">
+  <title>Diamanten</title>
+   <para>In <application>Nibbles</application> gilt es, eine Anzahl verschiedener Diamanten aufzunehmen. Die Diamanten sind von verschiedener Farbe und stellen verschiedene Funktionen bereit. Einer der Diamanten ist garantiert lange genug sichtbar, um ihn aufzunehmen. Klarer ausgedrückt: Sie müssen ihn aufnehmen, um den Level zu beenden. Die anderen Diamanten sind allesamt Boni, aber jeweils nur für kurze Zeit zu sehen. Nehmen Sie sie ruhig auf, um zu entdecken, welchen Bonus Ihnen welche Farbe bringt. Alle dieser Diamanten beeinflussen entweder Ihre Punkte oder die Länge des Wurms, oder auch beides. Seien Sie vorsichtig mit diesen Bonus-Diamanten, schneiden Sie sich nicht den Weg zu den anderen Diamanten ab, die Sie zum Beenden des Levels benötigen.</para>
+  </sect2>   
+ </sect1>
+
+
+ <!-- ============= Customization ============================= -->
+ <sect1 id="prefs">
+  <title>Anpassen</title>
+  <para>Um die Einstellungen der Anwendung anzupassen, wählen Sie <menuchoice><guimenu>Einstellungen</guimenu><guimenuitem>Einstellungen</guimenuitem></menuchoice>. Dadurch wird der <interface>Einstellungs</interface>-Dialog geöffnet. Alle Änderungen der Einstellungen werden automatisch gespeichert und unmittelbar angewendet.</para>
+
+  <figure id="game-prefs">
+    <title>Einstellungsreiter »Spiel«</title>
+    <screenshot>
+       <mediaobject> 
+    <imageobject>
+      <imagedata fileref="figures/game.png" format="PNG" srccredit="Kevin Breit"/>
+          </imageobject>
+    <textobject> 
+      <phrase>Einstellungsreiter »Spiel«.</phrase> 
+    </textobject> 
+  </mediaobject>
+    </screenshot>
+  </figure>
+
+  <para>Die Einstellungsoptionen im Reiter <guilabel>Spiel</guilabel> sind: <variablelist>
+    <varlistentry>
+    <term>Geschwindigkeit</term>
+    <listitem>
+     <para>Dies steuert die Geschwindigkeit des Wurms.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Level in zufälliger Reihenfolge spielen</term>
+    <listitem>
+     <para>Wählen Sie dies aus, um die Level in zufälliger Ordnung aufeinanderfolgen zu lassen.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Unechte Boni aktivieren</term>
+    <listitem>
+     <para>Wenn dies aktiviert ist, können zwei blaue Diamanten gleichzeitig auf dem Spielfeld angezeigt werden. Einer der Diamanten lässt Sie schrumpfen anstatt wachsen, wenn Sie ihn aufnehmen.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Klang aktivieren</term>
+     <listitem>
+      <para>Dies steuert die Ausgabe von Klängen im Spiel.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Anfangslevel</term>
+     <listitem>
+      <para>Legt den Level fest, mit dem Sie starten wollen. Verwenden Sie diese Einstellung, um unmittelbar zu einem schwierigeren Level zu springen.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Anzahl der menschlichen Spieler</term>
+     <listitem>
+      <para>Der Raum bietet bis zu sechs Spielern Platz.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Anzahl der Computerspieler</term>
+     <listitem>
+      <para>Der Raum bietet bis zu sechs Computerspielern Platz. Beachten Sie, dass die Gesamtzahl der menschlichen und Computerspieler kleiner oder gleich sechs sein muss.</para>
+     </listitem>
+    </varlistentry>
+   </variablelist></para>
+  <para><figure id="worm-prefs">
+    <title>Wurm-Einstellungsreiter</title>
+    <screenshot>
+       <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/worm_op.png" format="PNG" srccredit="Kevin Breit"/>
+         </imageobject>
+    <textobject> 
+      <phrase>Wurm-Einstellungsreiter.</phrase> 
+    </textobject> 
+  </mediaobject>
+    </screenshot>
+  </figure> Die Eigenschaften in den Reitern <guilabel>Wurm 1</guilabel> bis <guilabel>Wurm 6</guilabel> ermöglichen Ihnen die Anpassung der Eigenschaften der verschiedenen Würmer. <variablelist>
+    <varlistentry>
+    <term>Tastatursteuerung</term>
+    <listitem>
+     <para>Damit ändern Sie die Tastatursteuerung für den jeweiligen Wurm. Um eine der Tasten zu ändern, doppelklicken Sie auf den entsprechenden Eintrag. Drücken Sie anschließend die Taste, die Sie für diese Funktion verwenden wollen.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Relative Bewegungen verwenden</term>
+    <listitem>
+     <para>Normalerweise schicken Sie Ihren Wurm mit der linken Pfeiltaste zur linken Bildschirmseite, mit der rechten Pfeiltaste zur rechten Seite usw. In diesem Fall jedoch bewirkt die linke Pfeiltaste eine Wendung des Wurms nach links, beziehungsweise die rechte Pfeiltaste eine Wendung nach rechts, ausgehend von seiner bisherigen Bewegungsrichtung. Wenn sich also der Wurm bisher nach links bewegte, und Sie die Pfeiltaste links drücken, bewegt er sich von nun an nach unten.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Wurmfarbe</term>
+    <listitem>
+     <para>Ändern Sie die Farbe Ihres Wurms, so dass Sie ihn im Mehrspieler-Modus vom Wurm Ihres Gegners unterscheiden können.</para>
+    </listitem>
+    </varlistentry>
+   </variablelist></para>
+
+ </sect1>
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Netzwerkspiele</title>
+  <para>Nibbles unterstützt den Netzwerk-Mehrspielermodus für Spiele, die von <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink> bereitgestellt werden. Wenn Sie sich im Internet mit einem Nibbles-Server verbinden, können Sie im Mehrspieler-Modus andere Spieler herausfordern. Über Neuigkeiten, Aktualisierungen und eine Liste der Server, mit denen Sie sich verbinden können, informiert Sie die <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">Website der GNOME-Spiele</ulink>.</para>
+  <para>Um Nibbles im Mehrspieler-Modus zu starten, wählen Sie <menuchoice><guimenu>Spiel</guimenu><guimenuitem>Netzwerkspiel</guimenuitem></menuchoice> im Nibbles-Menü.</para> 
+
+<sect2 id="connecting">
+<title>Verbindung zu einem Nibbles-Netzwerkserver</title>
+<para>Der Verbindungsdialog von Nibbles wird beim Start eines Netzwerkspiels angezeigt. Dieser Dialog ermöglicht Ihnen, einen Server für die Verbindung und einen Benutzernamen für die Zeit der Verbindung zum Server auszuwählen.</para>
+
+<para>Es ist möglich, sich entweder über einen Gastzugang oder einen normal registrierten Zugang mit einem Server zu verbinden. Gastzugänge ermöglichen die anonyme Anmeldung, während ein normaler Zugang die Anmeldung mit Ihrem registrierten Benutzernamen erlaubt, der durch das von Ihnen gewählte Passwort geschützt ist.</para>
+
+<para>Die Option <guimenuitem>Gast-Anmeldung</guimenuitem> sollte ausgewählt werden, wenn Sie einen anonymen Gastzugang wünschen. Wenn Sie einen neuen Anmeldezugang anlegen wollen, wählen Sie die Option <guimenuitem>Erstanmeldung</guimenuitem>, mit Benutzername, Passwort und E-Mail-Adresse Ihrer Wahl. Falls Sie bereits einen Zugang angelegt haben, können Sie sich mit der Option <guimenuitem>Normale Anmeldung</guimenuitem> unter Angabe des Benutzernamens und des gewählten Passworts verbinden.</para>
+<para>Um zum Server zu verbinden, klicken Sie auf die Schaltfläche <guimenuitem>Verbinden</guimenuitem>.</para>
+<figure id="connect">
+<title>Der Netzwerkverbindungsdialog von Nibbles.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Der Netzwerkverbindungsdialog von Nibbles.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Betreten des Spielraumes</title>
+<para>Sobald Sie sich erfolgreich mit einem Server verbunden haben, können Sie wählen, welchen Raum Sie betreten wollen. Um Nibbles im Mehrspieler-Modus zu spielen, wählen sie einen Nibbles-Raum. Wenn Sie ein eigenes Spiel bereitstellen wollen, klicken Sie auf die Schaltfläche »Starten«. Dies erstellt einen neuen Spieltisch, an dem andere Spieler Platz nehmen können, um gegen Sie zu spielen. Falls einige andere Spiele bereits gestartet wurden, doppelklicken Sie auf eines der vorhandenen Spiele, um daran teilzunehmen. Die Liste der Spieltische rechts zeigt Ihnen die Anzahl der verfügbaren Plätze, das heißt die Anzahl der Spieler. die noch an diesem Spieltisch teilnehmen können.</para>
+<figure id="tables">
+<title>Der Netzwerkdialog von Nibbles erlaubt Ihnen, einem Spiele-Raum beizutreten, um andere Spieler zu finden.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Der Netzwerkdialog von Nibbles erlaubt Ihnen, einem Spiele-Raum beizutreten, um andere Spieler zu finden.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>Wenn Sie einen neuen spieltisch für Nibbles-spiele erstellen, wird ein Einstellungsdialog angezeigt, der Ihnen die Anpassung des Spiels ermöglicht, wie beispielsweise die Mindeszanzahl von Spielern für dieses Spiel. Wenn diese Anzahl an Spielern Platz genommen hat, ist es keinen weiteren Spielern erlaubt, an diesem Tisch Platz zu nehmen.</para>
+<para>Es ist möglich, mit anderen Spielern in Netzwerkspielen Sofortnachrichten auszutauschen. Bitten Sie um Ratschläge oder Hilfe für die Spiele, aber seien Sie bitte höflich gegenüber anderen Spielern.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Warten, bis andere Spieler den Raum betreten</title>
+<para>Sobald Sie erfolgreich an einem Spieltisch Platz genommen haben, warten Sie bitte, bis genug Spieler ebenfalls Platz genommen haben. Der Menüeintrag <guimenuitem>Spielerliste</guimenuitem> ermöglicht Ihnen zu sehen, welche Spieler am Spiel teilnehmen wollen. Das Spiel beginnt sofort, wenn die Gesamtzahl der Spieler erreicht ist.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Nibbles im Mehrspieler-Modus spielen</title>
+<para>Nibbles-Spiele im Mehrspielermodus folgen so ziemlich den gleichen Regeln wie gewöhnliche Nibbles-Spiele, mit dem Unterschied, dass Sie nun gegen menschliche Gegner spielen. Das bedeutet, dass Sie möglicherweise andere Strategien anwenden müssen als bei Computergegnern.</para>
+<para>Wen einer der Spieler gewonnen hat, endet das Spiel und Sie können zum ursprünglichen Netzwerkspiel-Bildschirm zurückkehren. Dann können Sie ein weiteres süchtig machendes Spiel im Nibbles-Mehrspieler-Modus beginnen!</para>
+</sect2>
+
+</sect1>
+
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Autoren</title>
+  <para><application>Nibbles</application> wurde von Sean MacIsaac <email>sjm@acm.org</email> und Ian Peters <email>itp@gnu.org</email> geschrieben. Dieses Handbuch wurde von Kevin Breit <email>battery841@mypad.com</email> geschrieben. Die Netzwerkunterstützung für Nibbles fügte Andreas Røsdal <email>andreasr@gnome.org</email> hinzu. Um einen Fehler zu melden oder einen Vorschlag zu dieser Anwendung oder zu diesem Handbuch zu machen, folgen Sie den Anweisungen in diesem <ulink url="ghelp:user-guide?feedback-bugs" type="help">Dokument</ulink>.</para> 
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Lizenz</title>
+  <para>Dieses Programm ist freie Software; Sie können es weiterverbreiten und/oder ändern unter den Bedingungen der <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> wie sie von der <ulink type="http" url="http://www.fsf.org">Free Software Foundation</ulink> veröffentlicht wurde; entweder in Version 2 der Lizenz oder (nach Ihrer Wahl) jeder neueren Version.</para>
+  <para>Dieses Programm wird in der Hoffnung verbreitet, dass es nützlich ist, aber OHNE JEGLICHE GARANTIE; auch ohne eine GEBRAUCHSTAUGLICHKEITSGARANTIE oder eine Garantie über die TAUGLICHKEIT FÜR EINEN BESTIMMTEN ZWECK. Lesen Sie die <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> für genauere Hinweise.</para>
+  <para>Eine Kopie der <citetitle>GNU General Public License</citetitle> ist im Anhang des <citetitle>GNOME-Benutzerhandbuchs</citetitle> enthalten. Eine Kopie der <citetitle>GNU General Public License</citetitle> erhalten Sie auch von der Free Software Foundation, indem Sie deren <ulink type="http" url="http://www.fsf.org">Website</ulink> besuchen oder an <address> Free Software Foundation, Inc. 59 Temple Place - Suite 330 Boston, MA 02111-1307 USA </address> schreiben.</para>
+ </sect1>
+</article>

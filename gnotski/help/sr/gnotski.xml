@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.10">
+<!ENTITY date "March 2004">
+<!ENTITY app "<application>Klotski</application>">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sr">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Упутство за <application>Клотски</application></title>
+
+    <abstract role="description">
+      <para>Клотски је слагалица у којој је циљ преместити означени блок на означено место, што се постиже померањем блокова који су му препрека на путу.</para>
+    </abstract>
+
+    <copyright>
+      <year>2002</year> 
+      <holder>Andrew Sobala</holder> 
+    </copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Пројекат Гномове документације</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Дозвољено умножавање, ширење, вршење измена овог документа под условима Гну-ове Слободне Документационе Дозволе (ГСДД), верзије 1.1 или било које накнадне верзије без непромењивих одељака, текста на насловној и последњој страни, а коју је објавила Задужбина Слободног Софтвера. Примерак ГСДД-е можете пронаћи на овој <ulink type="help" url="ghelp:fdl">адреси</ulink> или у датотеци COPYING-DOCS која је приложена уз ово упутство.</para>
+         <para>Ово упутство је део скупа Гном докумената објављених под GFDL. Уколико желите да расподељујете ово упутство одвојено од скупа, то можете урадити додавањем примерка лиценце документу, како је описано у одељку 6 саме лиценце.</para>
+
+	<para>Многи називи које компаније користе у циљу препознатљивости својих производа и услуга представљају робне марке. Када (уколико) се такви називи појављују(спомињу) у било којем Гномовом документу, а чланови Гномовог документационог пројекта имају сазнања о томе, тада су називи исписани великим словима или са великим почетним словима.</para>
+
+	<para>ОВАЈ ДОКУМЕНТ И ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СУ ДОСТУПНЕ ПОД УСЛОВИМА ГНУ-ОВЕ СЛОБОДНЕ ДОКУМЕНТАЦИОНЕ ДОЗВОЛЕ УЗ ДОДАТНУ САГЛАСНОСТ ДА: <orderedlist>
+		<listitem>
+		  <para>ДОКУМЕНТ ЈЕ ДОСТУПАН СА СВИМ СВОЈИМ ДОБРИМ И ЛОШИМ СТРАНАМА БЕЗ БИЛО КАКВОГ ЈАМСТВА, БИЛО ОНО ИЗРЕЧЕНО ИЛИ НЕ, УКЉУЧУЈУЋИ БЕЗ ОГРАНИЧЕЊА, ЈАМСТВО ДА ЈЕ ОВАЈ ДОКУМЕНТ ИЛИ ЊЕГОВА ИЗМЕЊЕНА ВЕРЗИЈА БЕЗ НЕДОСТАТАКА, СПРЕМАН ЗА ТРЖИШТЕ, СВРСИСХОДАН И НЕ НАРУШАВА ЗАКОНСКЕ НОРМЕ. ЦЕЛОКУПАН РИЗИК КОЈИ СЕ ОДНОСИ НА КВАЛИТЕТ, ТАЧНОСТ И ДОМЕТ (УЧИНАК) ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СНОСИ КОРИСНИК. УКОЛИКО СЕ У БИЛО КОЈЕМ ДОКУМЕНТУ ИЛИ ЊЕГОВОЈ ИЗМЕЊЕНОЈ ВЕРЗИЈИ ПОЈАВИ НЕДОСТАТАК (ГРЕШКА) БИЛО КОЈЕ ВРСТЕ, КОРИСНИК (А НЕ АУТОР ИЗВОРНЕ ВЕРЗИЈЕ, БИЛО КОЈИ ДРУГИ АУТОР ИЛИ САРАДНИК) СНОСИ СВЕ ТРОШКОВЕ НЕОПХОДНОГ СЕРВИСИРАЊА, ПОПРАВКЕ ИЛИ ИСПРАВКЕ. ОВО ОГРАНИЧЕЊЕ ЈАМСТВА ПРЕДСТАВЉА САСТАВНИ ДЕО ОВЕ ДОЗВОЛЕ. УПОТРЕБА БИЛО КОЈЕГ ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ НИЈЕ ДОЗВОЉЕНА ОСИМ ПОД УСЛОВИМА ОВОГ ОГРАНИЧЕЊА ЈАМСТВА.</para>
+		</listitem>
+		<listitem>
+		  <para>НИ ПОД КАКВИМ ОКОЛНОСТИМА ИЛИ ЗАКОНУ, БИЛО ЗБОГ КРШЕЊА (ИЛИ НЕМАРА) УГОВОРА, ИЛИ НА БИЛО КОЈИ ДРУГИ НАЧИН, АУТОР (ПРВОБИТНЕ ВЕРЗИЈЕ), САРАДНИК ИЛИ ИСПОРУЧИВАЛАЦ ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ, НИТИ ДОБАВЉАЧ БИЛО КОЈЕ ОД НАВЕДЕНИХ СТРАНА НЕЋЕ СНОСИТИ МАТЕРИЈАЛНУ ОДГОВОРНОСТ ЗА НАСТАЛА ДИРЕКТНА, ИНДИРЕКТНА, ПОСЕБНА, СЛУЧАЈНА ИЛИ ТИМЕ НАСТАЛА ОШТЕЋЕЊА БИЛО КОЈЕ ВРСТЕ УКЉУЧУЈУЋИ, БЕЗ ОГРАНИЧЕЊА, ШТЕТУ НАНЕСЕНУ УГЛЕДУ ФИРМЕ, ПРЕСТАНКУ ПРОИЗВОДЊЕ, ОТКАЗИВАЊЕ РАДА РАЧУНАРА ИЛИ КВАРА КАО И ЗА СВЕ ОСТАЛЕ ШТЕТЕ ИЛИ ГУБИТКЕ НАСТАЛЕ УСЛЕД КОРИШЋЕЊА ДОКУМЕНТА И ЊЕГОВИХ ИЗМЕЊЕНИХ ВЕРЗИЈА ЧАК И АКО ЈЕ ОШТЕЋЕНА СТРАНА БИЛА ОБАВЕШТЕНА О МОГУЋНОСТИ НАСТАНКА ТЕ ШТЕТЕ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+		<firstname>Andrew</firstname> 
+		<surname>Sobala</surname> 
+		<affiliation> 
+	  		<orgname>Пројекат Гномове документације</orgname> 
+	  		<address> <email>andrew@sobala.net</email> </address> 
+		</affiliation> 
+      </author> 
+
+	<othercredit role="author">
+		<firstname>Lars</firstname>
+		<surname>Rydlinge</surname>
+		<affiliation>
+			<orgname>Гном пројекат</orgname>
+			<address> <email>Lars.Rydlinge@HIG.SE</email> </address>
+		</affiliation>
+	</othercredit>
+
+	<othercredit role="maintainer">
+		<firstname>Ross</firstname>
+		<surname>Burton</surname>
+		<affiliation>
+			<orgname>Гном пројекат</orgname>
+			<address> <email>ross@burtonini.com</email> </address>
+		</affiliation>
+	</othercredit>
+
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->  
+    <revhistory>
+<!--
+      <revision> 
+		<revnumber>Full title of previous manual.</revnumber> 
+		<date>Release date of previous manual.</date> 
+		<revdescription> 
+	  		<para role="author">Documentation Writer 1 
+	    	<email>docwriter1@gnome.org</email>
+	  		</para>
+	  		<para role="publisher">GNOME Documentation Project</para>
+		</revdescription> 
+      </revision> 
+-->
+
+	<revision>
+		<revnumber>V2.0</revnumber>
+		<date>13. август 2002</date>
+		<revdescription>
+	  		<para role="author">Andrew Sobala <email>andrew@sobala.net</email></para>
+	  		<para role="publisher">Пројекат Гномове документације</para>
+		</revdescription> 
+	</revision>
+
+    </revhistory> 
+
+    <releaseinfo>Ово упуство је написано за Гном Клотски 2.12.</releaseinfo> 
+    <legalnotice> 
+      <title>Примедбе</title> 
+      <para>Да бисте пријавили грешку или дали предлог у вези програма <application>Клотски</application> или његовог упутства, пратите смернице на <ulink url="ghelp:user-guide?feedback-bugs" type="help">Гномовој страни за примедбе</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>Гном Клотски</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="gnotski-introduction"> 
+	<title>Увод</title> 
+	<para><application>Клотски</application> је клон игре Клотски. Циљ игре је да се означени блок изведе на простор обележен зеленим маркерима.</para>
+
+	<para><application>Клотски</application> је написао Lars Rydlinge (<email>Lars.Rydlinge@HIG.SE</email>).</para>
+
+	<para><application>Клотски</application> је укључен у <filename>gnome-games</filename> пакет, који је део Гномовог радног окружења. Овај документ је написан за издање 2.12 програма <application>Клотски</application>.</para>
+
+	<para>Овај програм се расподељује под условима ГНУ Опште Јавне Лиценце (GNU GPL); било верзије 2 те Лиценце, било (по вашем нахођењу) било које новије верзије. Примерак ове лиценце можете пронаћи на овој <ulink type="help" url="ghelp:fdl">адреси</ulink> или у датотеци COPYING која је приложена уз ово упутство.</para>
+
+	<para>Да бисте пријавили грешку или дали предлог у вези овог програма или овог упутства, пратите смернице на <ulink url="ghelp:user-guide?feedback-bugs" type="help">Гномовој страни за примедбе</ulink>.</para>
+  </sect1>
+
+<!-- ===========Objective ============================== -->
+<sect1 id="gnotski-objective">
+	<title>Циљ</title>
+	<para>Циљ игре <application>Клотски</application> је померити означени блок на зелене маркере у што мање потеза. Ово радите тако што мишем померате блокове један по један док не успете да изведете означени блок до маркера. <figure id="gnotski-figure-win"> 
+		<title>Победнички потез</title> 
+		<screenshot> 
+			<mediaobject> 
+			<imageobject>
+				<imagedata fileref="figures/gnotski_win.png" format="PNG"/> 
+			</imageobject>
+			<textobject> 
+				<phrase>Означени блок треба померити на простор који окружују зелени маркери.</phrase> 
+			</textobject> 
+	        	</mediaobject> 
+		</screenshot>
+	</figure></para>
+	<!-- ==== End of Figure ==== -->
+</sect1>
+
+<!-- =========== Getting Started ============================== -->
+
+  <sect1 id="gnotski-playing"> 
+	<title>Играње игре <application>Клотски</application></title> 
+	<para>
+	<itemizedlist> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-start"/></para> 
+	</listitem>
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-ui"/></para> 
+	</listitem> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-new-game"/></para> 
+	</listitem> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-moving"/></para> 
+	</listitem>
+	</itemizedlist> </para>
+
+	<!-- =========== To start gnotski ============================== -->
+	<sect2 id="gnotski-start">
+		<title>Да покренете <application>Клотски</application></title>
+		<para><application>Клотски</application> можете покренути из менија програма одабирањем <menuchoice><guisubmenu>Игре</guisubmenu><guimenuitem>Клотски</guimenuitem></menuchoice>.</para>
+	</sect2>
+
+	<!-- =========== The main window ============================== -->
+	<sect2 id="gnotski-ui">
+		<title>Главни прозор</title>
+		<para>Када покренете <application><application>Клотски</application></application> приказује се следећи прозор.</para>
+
+		<!-- ==== Figure ==== -->
+		<figure id="gnotski-figure-mainwindow"> 
+			<title>Почетни прозор игре <application>Клотски</application></title> 
+			<screenshot> 
+				<mediaobject> 
+				<imageobject>
+					<imagedata fileref="figures/gnotski_start_window.png" format="PNG"/> 
+				</imageobject>
+				<textobject> 
+					<phrase>Приказује <application>Клотски</application> главни прозор. Садржи наслов прозора, траку менија, област за игру и траку са стањем. Трака менија садржи меније „Игра“, „Преглед“ и „Помоћ“.</phrase> 
+				</textobject> 
+		        	</mediaobject> 
+			</screenshot>
+		</figure>
+		<!-- ==== End of Figure ==== -->
+
+		<para><application>Клотски</application> прозор садржи следеће елементе: <variablelist>
+		<varlistentry>
+			<term>Трака менија</term>
+			<listitem>
+			<variablelist>
+			<varlistentry>
+				<term>Мени „Игра“</term>
+				<listitem>
+				<para>Мени „Игра“ омогућава покретање нових игара, преглед најбољих резултата и излазак из игре.</para>
+				</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Мени „Помоћ“</term>
+				<listitem>
+				<para>Мени „Помоћ“ омогућава преглед документације за игру <application>Klotski</application></para>
+				</listitem>
+			</varlistentry>
+			</variablelist>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term>Област за игру</term>
+			<listitem>
+			<para>Област за игру приказује блокове у тренутној игри. Блокове можете померати мишем као што је описано у <xref linkend="gnotski-moving"/>.</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term>Трака стања</term>
+			<listitem>
+			<para>Трака стања приказује колико сте потеза до сада одиграли.</para>
+			</listitem>
+		</varlistentry>
+		</variablelist></para>
+
+	</sect2>
+
+	<!-- =========== Starting a new game ============================== -->
+	<sect2 id="gnotski-new-game">
+		<title>Покретање нове игре</title>
+		<para>Користите <guimenu>мени „Игра“</guimenu> да покренете нову игру. Ставке <guimenuitem>Следећа слагалица</guimenuitem> и <guimenuitem>Претходна слагалица</guimenuitem> вам омогућују да се крећете редом кроз слагалице. Свака слагалица припада једној од три категорије које можете наћи у подменијима. Ове категорије се зову <guisubmenu>Хуа-Ронг траг</guisubmenu>, <guisubmenu>Вишезов</guisubmenu> и <guisubmenu>Умеће</guisubmenu>. У овим подменијима, име сваке слагалице указује на сценарио те игре.</para>
+		<example>
+		<title>Покретање игре</title>
+		<para>Да бисте покренули најтежу понуђену игру, одаберите <menuchoice><guimenu>Игра</guimenu><guisubmenu>Умеће</guisubmenu><guimenuitem>Сунчев сјај</guimenuitem></menuchoice></para></example>
+	</sect2>
+
+	<!-- ===========Moving blocks ============================== -->
+	<sect2 id="gnotski-moving">
+		<title>Померање блокова</title>
+		<para>Да бисте померили блок кликните на њега, држите дугме миша и повуците миша на ново место. Не можете померати зелене блокове нити блокове који чине оквир игре. Не можете померити ни блок на простор који заузима други блок. Изузетак је победа померањем означеног блока на зелене маркере.</para>
+	</sect2>
+
+</sect1>
+
+<!-- Known bugs.  Try to manage user expectations and warn them of known bugs
+but it is better to omit this section than give a false sense of perfection
+<sect1 id="gnotski-bugs">
+	<title>Known Bugs and Limitations</title>
+	<para>
+        There are no known bugs in this game.
+	</para>
+</sect1>
+-->
+
+<sect1 id="authors">
+  <title>Аутори</title>
+  <para><application>Клотски</application> је написао Lars Rydlinge (<email>lars.rydlinge@hig.se</email>). Ово упутство је написао Andrew Sobala. Да бисте пријавили грешке или дали предлог у вези овог програма или његовог упутства, пратите смернице из <ulink url="ghelp:user-guide?feedback-bugs" type="help">документа</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+</sect1>
+
+ <sect1 id="license">
+  <title>Лиценца</title>
+  <para>Овај програм и графика на плочицама су слободан софтвер; можете их расподељивати и/или мењати под условима <citetitle>ГНУ Опште Јавне Лиценце (GNU GPL)</citetitle> како је објављује Задужбина за Слободни Софтвер (FSF); било верзије 2 те Лиценце, било (по вашем нахођењу) било које новије верзије.</para>
+  <para>Овај програм се расподељује у нади да ће бити од користи, али БЕЗ ИКАКВИХ ГАРАНЦИЈА; чак и без подразумеване гаранције КОРИСНОСТИ или ПРИЛАГОЂЕНОСТИ ОДРЕЂЕНОЈ НАМЕНИ. Видите <citetitle>ГНУ Општу Јавну Лиценцу</citetitle> за више детаља.</para>
+  <para>Примерак <citetitle>ГНУ Опште Јавне Лиценце</citetitle> је укључен у додатку <citetitle>Гномовог корисничког водича</citetitle>. Такође можете набавити примерак <citetitle>ГНУ Опште Јавне Лиценце</citetitle> од Задужбине за Слободни Софтвер са <ulink url="http://www.fsf.org" type="http">њихове веб адресе</ulink> или слањем писма на <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+
+</article>

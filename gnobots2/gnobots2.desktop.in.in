@@ -1,0 +1,13 @@
+[Desktop Entry]
+_Name=Robots
+_Comment=Avoid the robots and make them crash into each other
+Exec=gnobots2
+Icon=gnome-robots
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Game;ArcadeGame;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-games
+X-GNOME-Bugzilla-Component=BugBuddyBugs
+X-GNOME-Bugzilla-Version=@VERSION@
+StartupNotify=true

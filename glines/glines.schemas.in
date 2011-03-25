@@ -1,0 +1,91 @@
+<gconfschemafile>
+
+  <schemalist>
+      <schema>
+      <key>/schemas/apps/glines/preferences/size</key>
+      <applyto>/apps/glines/preferences/size</applyto>
+      <owner>glines</owner>
+      <type>int</type>
+      <default>2</default>
+      <locale name="C">
+        <short>Playing field size</short>
+        <long>Playing field size. 1=Small, 2=Medium, 3=Large. Any other value is invalid.</long>
+      </locale>
+      </schema>
+
+      <schema>
+      <key>/schemas/apps/glines/preferences/ball_theme</key>
+      <applyto>/apps/glines/preferences/ball_theme</applyto>
+      <owner>glines</owner>
+      <type>string</type>
+      <default>balls.svg</default>
+      <locale name="C">
+        <short>Ball style</short>
+        <long>Ball style.  The filename of the images to use for the balls.</long>
+      </locale>
+      </schema>
+
+      <schema>
+      <key>/schemas/apps/glines/preferences/background_color</key>
+      <applyto>/apps/glines/preferences/background_color</applyto>
+      <owner>glines</owner>
+      <type>string</type>
+      <default>#7590AE</default>
+      <locale name="C">
+        <short>Background color</short>
+        <long>Background color.  The hex specification of the background color.</long>
+      </locale>
+      </schema>
+
+      <schema>
+      <key>/schemas/apps/glines/preferences/move_timeout</key>
+      <applyto>/apps/glines/preferences/move_timeout</applyto>
+      <owner>glines</owner>
+      <type>int</type>
+      <default>100</default>
+      <locale name="C">
+        <short>Time between moves</short>
+        <long>Time between moves in milliseconds.</long>
+      </locale>
+      </schema>
+
+      <schema>
+      <key>/schemas/apps/glines/saved/score</key>
+      <applyto>/apps/glines/saved/score</applyto>
+      <owner>glines</owner>
+      <type>int</type>
+      <default>0</default>
+      <locale name="C">
+        <short>Game score</short>
+        <long>Game score from last saved session.</long>
+      </locale>
+      </schema>
+
+      <schema>
+      <key>/schemas/apps/glines/saved/field</key>
+      <applyto>/apps/glines/saved/field</applyto>
+      <owner>glines</owner>
+      <type>string</type>
+      <default></default>
+      <locale name="C">
+        <short>Game field</short>
+        <long>Game field from last saved session.</long>
+      </locale>
+      </schema>
+
+      <schema>
+      <key>/schemas/apps/glines/saved/preview</key>
+      <applyto>/apps/glines/saved/preview</applyto>
+      <owner>glines</owner>
+      <type>string</type>
+      <default></default>
+      <locale name="C">
+        <short>Game preview</short>
+        <long>Game preview from last saved session.</long>
+      </locale>
+      </schema>
+
+  </schemalist>
+
+</gconfschemafile>
+

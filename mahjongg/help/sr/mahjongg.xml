@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.26">
+<!ENTITY manrevision "2.26">
+<!ENTITY date "June 2009">
+<!ENTITY app "<application>Mahjongg</application>">
+<!ENTITY appname "Mahjongg">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sr">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+  
+    <title>Упутство за <application>Махјонг</application></title>
+    <abstract role="description">
+      <para>Махјонг је верзија класичне источњачке игре са фигурама за једног играча. Циљ је уклонити што више парова фигура са табле.</para>
+    </abstract>
+    <copyright>
+      <year>1998</year>
+      <holder>Задужбина за Слободни Софтвер</holder>
+    </copyright>
+    <copyright>
+      <year>2000</year>
+      <holder>Eric Baudais (аутор документације)</holder>
+    </copyright>  
+	    <copyright>
+      <year>2009</year>
+      <holder>Paul Cutler (аутор документације)</holder>
+    </copyright> 
+    
+    <!-- translators: uncomment this:
+    
+  <copyright>
+  <year>2000</year>
+  <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+    -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Пројекат Гномове документације</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Дозвољено умножавање, ширење, вршење измена овог документа под условима Гну-ове Слободне Документационе Дозволе (ГСДД), верзије 1.1 или било које накнадне верзије без непромењивих одељака, текста на насловној и последњој страни, а коју је објавила Задужбина Слободног Софтвера. Примерак ГСДД-е можете пронаћи на овој <ulink type="help" url="ghelp:fdl">адреси</ulink> или у датотеци COPYING-DOCS која је приложена уз ово упутство.</para>
+         <para>Ово упутство је део скупа Гномових докумената објављених под GFDL. Уколико желите да расподељујете ово упутство одвојено од скупа, то можете урадити додавањем примерка лиценце документу, како је описано у одељку 6 саме лиценце.</para>
+
+	<para>Многи називи које компаније користе у циљу препознатљивости својих производа и услуга представљају робне марке. Када (уколико) се такви називи појављују(спомињу) у било којем Гномовом документу, а чланови Гномовог документационог пројекта имају сазнања о томе, тада су називи исписани великим словима или са великим почетним словима.</para>
+
+	<para>ОВАЈ ДОКУМЕНТ И ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СУ ДОСТУПНЕ ПОД УСЛОВИМА ГНУ-ОВЕ СЛОБОДНЕ ДОКУМЕНТАЦИОНЕ ДОЗВОЛЕ УЗ ДОДАТНУ САГЛАСНОСТ ДА: <orderedlist>
+		<listitem>
+		  <para>ДОКУМЕНТ ЈЕ ДОСТУПАН СА СВИМ СВОЈИМ ДОБРИМ И ЛОШИМ СТРАНАМА БЕЗ БИЛО КАКВОГ ЈАМСТВА, БИЛО ОНО ИЗРЕЧЕНО ИЛИ НЕ, УКЉУЧУЈУЋИ БЕЗ ОГРАНИЧЕЊА, ЈАМСТВО ДА ЈЕ ОВАЈ ДОКУМЕНТ ИЛИ ЊЕГОВА ИЗМЕЊЕНА ВЕРЗИЈА БЕЗ НЕДОСТАТАКА, СПРЕМАН ЗА ТРЖИШТЕ, СВРСИСХОДАН И НЕ НАРУШАВА ЗАКОНСКЕ НОРМЕ. ЦЕЛОКУПАН РИЗИК КОЈИ СЕ ОДНОСИ НА КВАЛИТЕТ, ТАЧНОСТ И ДОМЕТ (УЧИНАК) ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СНОСИ КОРИСНИК. УКОЛИКО СЕ У БИЛО КОЈЕМ ДОКУМЕНТУ ИЛИ ЊЕГОВОЈ ИЗМЕЊЕНОЈ ВЕРЗИЈИ ПОЈАВИ НЕДОСТАТАК (ГРЕШКА) БИЛО КОЈЕ ВРСТЕ, КОРИСНИК (А НЕ АУТОР ИЗВОРНЕ ВЕРЗИЈЕ, БИЛО КОЈИ ДРУГИ АУТОР ИЛИ САРАДНИК) СНОСИ СВЕ ТРОШКОВЕ НЕОПХОДНОГ СЕРВИСИРАЊА, ПОПРАВКЕ ИЛИ ИСПРАВКЕ. ОВО ОГРАНИЧЕЊЕ ЈАМСТВА ПРЕДСТАВЉА САСТАВНИ ДЕО ОВЕ ДОЗВОЛЕ. УПОТРЕБА БИЛО КОЈЕГ ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ НИЈЕ ДОЗВОЉЕНА ОСИМ ПОД УСЛОВИМА ОВОГ ОГРАНИЧЕЊА ЈАМСТВА.</para>
+		</listitem>
+		<listitem>
+		  <para>НИ ПОД КАКВИМ ОКОЛНОСТИМА ИЛИ ЗАКОНУ, БИЛО ЗБОГ КРШЕЊА (ИЛИ НЕМАРА) УГОВОРА, ИЛИ НА БИЛО КОЈИ ДРУГИ НАЧИН, АУТОР (ПРВОБИТНЕ ВЕРЗИЈЕ), САРАДНИК ИЛИ ИСПОРУЧИВАЛАЦ ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ, НИТИ ДОБАВЉАЧ БИЛО КОЈЕ ОД НАВЕДЕНИХ СТРАНА НЕЋЕ СНОСИТИ МАТЕРИЈАЛНУ ОДГОВОРНОСТ ЗА НАСТАЛА ДИРЕКТНА, ИНДИРЕКТНА, ПОСЕБНА, СЛУЧАЈНА ИЛИ ТИМЕ НАСТАЛА ОШТЕЋЕЊА БИЛО КОЈЕ ВРСТЕ УКЉУЧУЈУЋИ, БЕЗ ОГРАНИЧЕЊА, ШТЕТУ НАНЕСЕНУ УГЛЕДУ ФИРМЕ, ПРЕСТАНКУ ПРОИЗВОДЊЕ, ОТКАЗИВАЊЕ РАДА РАЧУНАРА ИЛИ КВАРА КАО И ЗА СВЕ ОСТАЛЕ ШТЕТЕ ИЛИ ГУБИТКЕ НАСТАЛЕ УСЛЕД КОРИШЋЕЊА ДОКУМЕНТА И ЊЕГОВИХ ИЗМЕЊЕНИХ ВЕРЗИЈА ЧАК И АКО ЈЕ ОШТЕЋЕНА СТРАНА БИЛА ОБАВЕШТЕНА О МОГУЋНОСТИ НАСТАНКА ТЕ ШТЕТЕ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer">
+	<firstname>Eric</firstname> 
+	<surname>Baudais</surname> 
+	<affiliation> 
+	  <address> <email>baudais@okstate.edu</email> </address> 
+	</affiliation> 
+      </author> 
+	        <author role="maintainer">
+	<firstname>Artur</firstname> 
+	<surname>Szymanski</surname> 
+	<affiliation> 
+	</affiliation> 
+      </author>
+	        <author role="maintainer">
+	<firstname>Paul</firstname> 
+	<surname>Cutler</surname> 
+	<affiliation> 
+		<orgname>Пројекат Гномове документације</orgname>
+	  <address> <email>pcutler@gnome.org</email> </address> 
+	</affiliation> 
+      </author> 
+
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="candidate"/>
+	
+	    <revhistory>
+      <!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+
+      <revision>
+        <revnumber>Упутство за Махјонг v 2.26</revnumber>
+        <date>16.06.2009.</date>
+        <revdescription>
+          <para role="author">Paul Cutler</para>
+          <para role="publisher">Пројекат Гномове документације</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>Упутство за Махјонг v 2.26</revnumber>
+        <date>16.06.2009.</date>
+        <revdescription>
+          <para role="author">Artur Szymanski</para>
+        </revdescription>
+      </revision>	  
+      <revision> 
+	<revnumber>Упутство за Махјонг v2.10;</revnumber> 
+	<date>Јун 2005.</date> 
+	<revdescription> 
+	  <para role="author">Eric Baudais <email>baudais@okstate.edu</email></para>
+	  <para role="publisher">Пројекат Гномове документације</para>
+	</revdescription> 
+	</revision>
+	</revhistory>
+
+    <releaseinfo>Ово упутство је написано за Махјонг 2.26.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Примедбе</title> 
+      <para>Да бисте пријавили грешку или дали предлог у вези програма <application>Махјонг</application> или његовог упутства, пратите смернице на <ulink url="ghelp:user-guide?feedback-bugs" type="help">Гномовој страни за примедбе</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Гномов махјонг</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="intro">
+    <title>Увод</title>
+
+    <para><application>Махјонг</application> је верзија класичне источњачке игре за једног играча, Махјонга. Има све функционалности које има и класична игра на табли. Можете променити тип фигура, позадину и ниво тежине игре у прозорчету са <link linkend="prefs">поставкама</link>. Остале могућности, као <link linkend="pause">дугме за <guibutton>Паузу</guibutton></link> чине да игра буде право такмичење када играте на време.</para>
+
+    <sect2 id="history">
+      <title>Кратак историјат махјонга</title>
+
+      <!-- FIXME: Explain more about solitaire version.-->
+      <para>Махјонгов скуп фигура се користи у разним варијацијама оригиналне игре. Издање Махјонга које ви играте је за једног играча. Свака фигура има <ulink type="http" url="http://www.xs4all.nl/~korntner/mahjong/fortune/index.html">значење</ulink> везано за њу.</para>
+
+      <para>Иако постоје многе теорије, порекло Махјонга оно ипак није потпуно познато. Једна од тих теорија каже да је Ноје играо Махјонг на својој барци јер је источна страна била доминантна, вероватно због стране са које је дошла киша која је донела поплаву. Друга теорија каже да је кинески филозоф, Конфучије, смислио игру. Три <quote>Главне</quote> фигуре имају иста имена као три главне врлине, Чунг (умереност) Црвени, Фа (просперитет) Зелени и По (белина) Бели одговарају Милосрдности, Искрености и Цењењу предака. Још једна теорија каже да је Махјонг настао од друге кинеске игре. <quote>Ја Пеи</quote> се игра са 32 карте направљене од дрвета или слоноваче које имају исти облик као данашње Махјонг фигуре. <quote>Ма Тиае</quote> се игра са 40 папирних карата, сличних по изгледу, обележених бројевима од 1 до 9 у четири различите боје са још додатим цветним картама. Претпоставља се да су два брата игру направила око 1850. године н.е. комбинујући ове две игре са картама.</para>
+
+      <para>Раних 1900.-их, Махјонг је уведен у енглеске клубове у Шангају. Госн. Бабкок је започео увоз Махјонг фигура у западњачки део света. Оголио је правила на она најосновнија и чак ставио арапске бројеве на фигуре. 1923. године је био врхунац помаме за Махјонгом међу компанијама које су правиле игре, као што су Parker Bros., Milton Bradley и United States Playing Card, које су увозиле скупове Махјонг фигура на хиљаде и хиљаде.</para>
+
+      <para>Убрзо су се појавила многа правила за играње и 1924. године је оформљен комитет за стандардизацију за званична Махјонг правила да напише књигу правила. И данас неки клубови играју по другачијим правилима, чак додајући цветне фигуре или џокер фигуре. Играчи рачунарске верзије постају све заинтересованији лепотом и детаљношћу ручно рађених скупова фигура 1920-их и 1930-их и претражују антикварнице и бувље пијаце за сопствене скупове. Многи играчи су игру упознали кроз верзију за једног играча и полако схватају привлачење и изазов који носи традиционална верзија игре. <footnote>
+	  <para>Делови овог текста су узети и прилагођени са <ulink type="http" url="http://www.mahjongmuseum.com/">сајта Махјонг музеја</ulink>.</para>
+	</footnote></para>
+    </sect2>
+  </sect1>
+  
+   <!-- ============= Playing Mahjongg ============================= -->
+
+  <sect1 id="usage">
+    <title>Играње Махјонга</title>
+
+    <para>Игру почињете са пет нивоа фигура од којих су неке постављене једне преко других тако да их ове изнад њих прекривају. Што тежи ниво поставите у <link linkend="prefs">прозорчету са <interface>поставкама</interface></link>, више фигура су прекривене када игра почне. Циљ <application>Махјонга</application> је да уклоните све фигуре из игре. Да бисте уклонили фигуре, морате наћи пар фигура које се слажу. Парови који се слажу обично имају исте бројеве дугмића на њима, исте ознаке или изгледају слично.</para>
+
+    <para>Као пример, обележена фигура на <link linkend="mahjongg-fig">слици испод</link> има шест дугмића. Пар који се слаже такође има шест дугмића. Та фигура се налази на десном делу трећег реда (бројећи одоздо), а постоји још један близу врха четвртог реда (исто бројећи одоздо). Да бисте упарили фигуру на врху, морате наћи другу фигуру са истим симболима зеленог бамбуса. Да ли видите њеног парњака? Постоје три видљиве фигуре које одговарају фигури са врха. Једна је лево, а друга доле десно. Трећа је у горњем реду, али ту фигуру не можете још уклонити јер није изван гомиле фигура. Касније ћете научити које фигуре се могу уклонити, а које не, иако су парови. Сами пронађите преостала два видљиве фигуре које се могу упарити.</para>
+
+    <figure id="mahjongg-fig">
+      <title>Главни прозор Махјонга</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/mahjongg.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Главни прозор.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para><application>Махјонг</application> се игра тако што се фигуре упарују када кликнете на њих. Те фигуре се онда уклањају. Игра се наставља док не нестане фигура које се могу упарити.</para>
+
+    <para>Само фигуре скроз лево и са десних ивица се могу одабрати. Ово је зато што не можете уклонити фигуре које нису на крајњих левим или десним странама. Ако су фигуре на различитим нивоима на левим или десним странама, оне се могу уклонити ако нађете њихове парове.</para>
+
+    <para>Ако више не можете упарити ниједну фигуру, прозорче ће се појавити и дати вам опције да промешате фигуре (додајући 60 секунди казне на време), да покренете нову игру или да опозовете последњи потез (иако ћете можда морати да опозовете још потеза да бисте нашли грешку).</para>
+
+    <figure id="info-fig1">
+      <title>Прозорче са подацима</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/no-move.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Прозорче са подацима.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+    
+    <sect2 id="toolbar">
+      <title>Трака алата</title>
+
+      <para><interface>Трака алата</interface>, која се налази испод <interface>траке менија</interface>, садржи следеће дугмиће:</para>
+      
+      <variablelist>
+	<varlistentry>
+	  <term><guibutton>Нова</guibutton></term>
+	  <listitem>
+	    <para>Ово дугме започиње нову игру са тренутним поставкама.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Поново покрени</guibutton></term>
+	  <listitem>
+	    <para>Ово дугме поново покреће тренутну игру из почетка без мешања фигура.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry id="pause">
+	  <term><guibutton>Пауза</guibutton></term>
+	  <listitem>
+	    <para>Ово дугме паузира игру. Када је игра паузирана, сат у доњем десном углу <interface>главног прозора</interface> стаје и за то време су фигуре сакривене.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Опозови потез</guibutton></term>
+	  <listitem>
+	    <para>Овим дугметом се враћа пар фигура које су последње уклоњене (узастопним кликом се враћате на почетак игре).</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Понови потез</guibutton></term>
+	  <listitem>
+	    <para>Ово дугме поново одиграва претходни потез који је враћен дугметом <guibutton>Опозови потез</guibutton>.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Савет</guibutton></term>
+	  <listitem>
+	    <para>Ово дугме вам указује на пар фигура које можете уклонити. Сваки пут када га искористите, казна у виду 30 секунди се додаје на ваше време.</para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+      <para>Трака стања на дну прозора вам даје податке о тренутном стању игре:</para>
+      <variablelist>
+	<varlistentry>
+	  <term><guilabel>Преосталих фигура:</guilabel></term>
+	  <listitem>
+	    <para>Овде се приказује број фигура који још нису спојене.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guilabel>Преосталих потеза:</guilabel></term>
+	  <listitem>
+	    <para>Овде се приказује број могућих парова које можете спојити.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guilabel>Време:</guilabel></term>
+	  <listitem>
+	    <para>Овде се приказује колико је времена протекло од почетка игре.</para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+      
+      <figure id="toolbar-fig">
+	<title>Махјонгова трака алата</title>
+	<screenshot>
+	   <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/toolbar.png" format="PNG" srccredit="Eric Baudais"/>
+	  </imageobject>
+    <textobject> 
+      <phrase>Трака алата.</phrase> 
+    </textobject> 
+  </mediaobject>
+	</screenshot>
+      </figure>
+      
+    </sect2>
+    
+    <sect2 id="menubar">
+      <title>Менији</title>
+      <para>Трака менија, која се налази на врху <interface>главног прозора</interface>, садржи следеће меније:</para>
+
+      <variablelist>
+	<varlistentry>
+	  <term><guimenu>Игра</guimenu></term>
+	  <listitem>
+	    <para>Овај мени садржи: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>Ctrl-N</keycap></shortcut><guimenuitem>Нова</guimenuitem></menuchoice> — Ова ставка покреће нову игру.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Поново покрени</guimenuitem></menuchoice> — Ова ставка ресетује тренутну игру и покреће је поново.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Пауза</guimenuitem></menuchoice> — Овим се игра паузира, сат се зауставља, а фигуре се сакривају.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>Ctrl-Z</keycap></shortcut><guimenuitem>Опозови потез</guimenuitem></menuchoice> — Ова ставка враћа назад последњи пар уклоњених фигура. Овим је могуће вратити се на почетак игре.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>Ctrl-R</keycap></shortcut><guimenuitem>Понови потез</guimenuitem></menuchoice> — Овим се поново одиграва потез враћен дугметом <guibutton>Опозови потез</guibutton>. Када поновите све опозване потезе, порука <quote>Нема више за понављање!</quote> се појављује у доњем левом углу <interface>Главног прозора</interface>.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Савет</guimenuitem></menuchoice> — Ова ставка вам нуди пар фигура које можете уклонити.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Резултати</guimenuitem></menuchoice> — Ова ставка приказује прозорче са десет најбољих резултата. Прозорче приказује резултате за одређено корисничко име са временом које је било потребно за решавање.</para>
+		</listitem>
+		<listitem>
+		  <para id="quit"><menuchoice><shortcut><keycap>Ctrl-Q</keycap></shortcut><guimenuitem>Изађи</guimenuitem></menuchoice> — Ова ставка вам омогућава да изађете из игре.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term><guimenu>Подешавања</guimenu></term>
+	  <listitem>
+	    <para>Овај мени садржи: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>F11</keycap></shortcut><guimenuitem>Цео екран</guimenuitem></menuchoice> — Ова ставка вам омогућава да играте игру у режиму преко целог екрана. Да бисте напустили режим целог екрана, притисните <keycap>F11</keycap> или кликните на дугме <guibutton>Напусти цео екран</guibutton> у <interface>траци алата</interface>.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Палета алата</guimenuitem></menuchoice> — Ова ставка одређује да ли ће <link linkend="toolbar"><interface>трака алата</interface></link> бити приказана. Ако је ставка укључена, <interface>трака алата</interface> ће бити приказана на последњем месту на коме сте је ставили. Ако ставка није укључена, <interface>трака алата</interface> се не приказује.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Опције</guimenuitem></menuchoice> — Овом ставком се отвара прозорче са <link linkend="prefs">поставкама</link>.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guimenu>Помоћ</guimenu></term>
+	  <listitem>
+	    <para>Овај мени садржи: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>F1</keycap></shortcut><guimenuitem>Садржај</guimenuitem></menuchoice> — Ова ставка приказује ово упутство.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>О програму</guimenuitem></menuchoice> — Ова ставка вам даје неке основне податке о <application>Махјонгу</application>, као што су имена аутора и број издања.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+
+    </sect2>
+  </sect1>
+  
+   <!-- ============= Customization ============================= -->
+
+  <sect1 id="prefs">
+    <title>Прилагођавање</title>
+    <para>Да бисте изменили поставке програма, одаберите <guimenuitem>Опције</guimenuitem> из менија <guimenu>Подешавања</guimenu>. Овим се отвара <link linkend="preferences-fig">прозорче са <interface>поставкама</interface></link>.</para>
+    
+    <figure id="preferences-fig">
+<!-- FIXME: This dialog is the old one. -->
+<!-- ALAN: looks correct like version 2.10 to me -->
+      <title>Прозорче са поставкама</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Прозорче са поставкама.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Све опције се одмах и примењују и чувају.</para>
+    
+    <para>Својства у прозорчету са <interface>поставкама</interface> су:</para>
+      
+      <itemizedlist mark="opencircle">
+	<listitem>
+	  <para><guilabel>Скуп фигура:</guilabel> — Одабира жељени изглед фигура из списка.</para>
+	</listitem>
+	<listitem>
+	  <para><guilabel>Изабери мапу:</guilabel> — Мења тежину игре тако што поставља различите распореде фигура на табли. Мапа са што распоређенијим фигурама на табли („Лако“) вам омогућава да видите више фигура, док што су фигуре збијеније („Тешко“) не можете их толико много видети и игра је тежа за играње.</para>
+	</listitem>
+	<listitem>
+	  <para><guilabel>Боја позадине:</guilabel> — Омогућава да промените боју позадине из прозорчета за <interface>избор боје</interface>.</para>
+	</listitem>
+      </itemizedlist>
+
+    <para>Да бисте променили величину фигура једноставно смањите или раширите прозор игре. Фигуре ће се смањивати или повећавати да попуне цео прозор.</para>
+
+  </sect1>
+  
+<!-- ALAN: Better to leave this section out than to say something unhelpful 
+and risk annoying the user.  
+ <sect1 id="bugs">
+  <title>Known Bugs and Limitations</title>
+  <para>
+   This application has no known bugs.
+  </para>
+ </sect1>
+-->
+
+ <!-- ============= Authors ============================= -->
+
+ <sect1 id="authors">
+  <title>Аутори</title>
+  <para><application>Махјонг</application> су написали Francisco Bustamante (<email>pancho@nuclecu.unam.mx</email>), Michael Meeks (<email>mmeeks@gnu.org</email>), Max Watson, Heinz Hempe и Philippe Chavin. Фигуре за <application>Махјонг</application> су направили Jonathan Buzzard и Max Watson. Ово упутство је написао Eric Baudais (<email>baudais@okstate.edu</email>). Да бисте пријавили грешке или дали предлог у вези програма или његовог упутства, пратите смернице из <ulink url="ghelp:user-guide?feedback-bugs" type="help">документа</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Лиценца</title>
+  <para>Овај програм и пратећа графика је слободан софтвер; можете га расподељивати и/или га мењати под условима <citetitle>ГНУ Опште Јавне Лиценце (GNU GPL)</citetitle> како је објављује Задужбина за Слободни Софтвер (FSF); било верзије 2 те Лиценце, било (по вашем нахођењу) било које новије верзије.</para>
+  <para>Овај програм се расподељује у нади да ће бити од користи, али БЕЗ ИКАКВИХ ГАРАНЦИЈА; чак и без подразумеване гаранције КОРИСНОСТИ или ПРИЛАГОЂЕНОСТИ ОДРЕЂЕНОЈ НАМЕНИ.  Видите <citetitle>ГНУ Општу Јавну Лиценцу</citetitle> за више детаља.</para>
+  <para>Примерак <citetitle>ГНУ Опште Јавне Лиценце</citetitle> је укључен у додатку <citetitle>Гномовог корисничког водича</citetitle>. Такође можете набавити примерак <citetitle>ГНУ Опште Јавне Лиценце</citetitle> од Задужбине за Слободни Софтвер одлазећи на <ulink url="http://www.fsf.org" type="http">њихову веб адресу</ulink> или пишући на <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+  <!ENTITY appversion "2.12">
+  <!ENTITY manrevision "2.11">
+  <!ENTITY date "January 2008">
+  <!ENTITY appname "Swell Foop">
+  <!ENTITY app "<application>Swell Foop</application>">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://live.gnome.org/DocumentationProject
+  Template version: 3.0 beta
+  Template last modified 2006-11-21
+
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="en">
+  <articleinfo> 
+    <title>&app; Manual</title>       
+    
+    <abstract role="description">
+      <para>
+	Swell Foop is a puzzle game, of which the objective is to clear 
+	the window of as many pieces as possible by clicking on groups 
+	of the same colored pieces. That group will vanish and the 
+	pieces on top will fall until there are none left or no more 
+	color groups.
+      </para>
+    </abstract>
+
+    <copyright> 
+      <year>2005</year> 
+      <holder>Callum McKenzie</holder> 
+    </copyright> 
+
+    <publisher role="maintainer"> 
+      <publishername> GNOME Documentation Project </publishername> 
+    </publisher> 
+
+	  <xi:include href="legal.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>   
+   <!-- This file legal.xml contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+		<firstname>Callum</firstname> 
+		<surname>McKenzie</surname> 
+		<affiliation> 
+	  		<orgname>GNOME Documentation Project</orgname> 
+	  		<address> <email>callum@physics.otago.ac.nz</email> </address> 
+		</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. --> 
+    <revhistory>
+      <revision> 
+		    <revnumber>Swell Foop Manual V2.11</revnumber>
+		    <date>January 2008</date> 
+		    <revdescription> 
+    			<para>Adaptation of the Swell Foop manual to new template.</para>		    
+	  		  <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+	  		  <para role="publisher">GNOME Documentation Project</para>
+    		</revdescription> 
+      </revision> 
+      <revision> 
+		    <revnumber>Swell Foop Manual V2.10</revnumber>
+		    <date>February 2005</date> 
+		    <revdescription> 
+    			<para>Initial version for the new Swell Foop.</para>		    
+	  		  <para role="author">Callum McKenzie <email>callum@physics.otago.ac.nz</email></para>
+	  		  <para role="publisher">GNOME Documentation Project</para>
+    		</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>This manual describes version &appversion; of &appname;.
+    </releaseinfo> 
+    <legalnotice> 
+      <title>Feedback</title> 
+      <para>To report a bug or make a suggestion regarding the &app; game or
+      this manual, follow the directions in the <ulink url="ghelp:user-guide?feedback-bugs" type="help">Feedback section of the GNOME User Guide</ulink>. 
+      </para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>&appname;</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+
+  <sect1 id="introduction"> 
+    <title>Playing &app;</title> 
+    <para>&app; is a puzzle game. The goal is to remove as many objects as possible in as few moves as possible. Objects that are adjacent to each other get removed as a group. The remaining objects then collapse to fill in the gaps and new groups are formed. You cannot remove single objects.</para>
+
+    <figure id="start-up">
+      <title>&app; at the beginning of a new game.</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/start-up.png" format="PNG"/>
+	        </imageobject>
+	      </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>The board starts as a full grid of objects. Depending on the size of board you select, there are either three or four types of object. If a group of objects are adjacent and all the same type, then they can be removed simply by clicking them with the mouse (or by pressing the space bar). When you move the mouse over a group you can remove, the objects will start moving. The number of objects in the group, and the points you will score for removing that group, is shown in the lower left corner of the window.  The more objects in the group, the more points you will score. Once the group has been removed the objects above them fall down to fill the space. If an entire column is cleared then the objects slide leftward to fill the gap.</para>
+
+    <table id="play" frame="all"><title>Playing &app;</title>
+      <tgroup cols="2" colsep="0">
+      <tbody>
+        <row><entry><para>1. Eliminate groups of two or more 
+         <screenshot>
+         <mediaobject>
+           <imageobject>
+             <imagedata fileref="figures/play1.png" format="PNG"/>
+           </imageobject>
+         </mediaobject>
+         </screenshot></para></entry>
+       <entry><para>2. Objects fall down to fill the gaps
+         <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/play2.png" format="PNG"/>
+            </imageobject>
+          </mediaobject>
+          </screenshot></para></entry></row>
+        <row><entry><para>3. Objects move left to fill empty columns
+         <screenshot>
+         <mediaobject>
+           <imageobject>
+             <imagedata fileref="figures/play3.png" format="PNG"/>
+           </imageobject>
+         </mediaobject>
+         </screenshot></para></entry>
+       <entry><para>4. New groups are formed and the cycle repeats
+         <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/play4.png" format="PNG"/>
+            </imageobject>
+          </mediaobject>
+          </screenshot></para></entry></row>
+      </tbody>
+      </tgroup>
+    </table>
+
+    <para>Scoring is based on the number of objects you delete:</para>
+    
+    <informaltable frame="topbot">
+    <tgroup cols="2" align="center">
+    <thead><row>
+    <entry>Number of Objects</entry>
+    <entry>Points Scored</entry>
+    </row></thead>
+    <tbody>
+    <row><entry>2</entry><entry>0</entry></row>
+    <row><entry>3</entry><entry>1</entry></row>
+    <row><entry>4</entry><entry>4</entry></row>
+    <row><entry>5</entry><entry>9</entry></row>
+    <row><entry>6</entry><entry>16</entry></row>
+    <row><entry>7</entry><entry>25</entry></row>
+    <row><entry>8</entry><entry>36</entry></row>
+    <row><entry>9</entry><entry>49</entry></row>
+    <!-- Translators: this is a vertical continuation character -->
+    <row><entry>⋮</entry><entry>⋮</entry></row>
+    <row><entry>n</entry><entry>(n - 2)<superscript>2</superscript></entry></row>
+    </tbody>
+    </tgroup>
+    </informaltable>
+    <para>If you clear the board there is a 1000 point bonus.</para>
+  </sect1>
+
+  <sect1 id="swell-foop-customisation">
+    <title>Customization</title>
+
+    <sect2 id="changing-the-look">
+      <title>Changing the Look</title>
+      <para>Changing the size of the objects is as simple as resizing the window. To make the maximum use of the screen choose the <guimenuitem>Fullscreen</guimenuitem> option from the <guimenu>View</guimenu> menu.</para>
+
+      <para>To change the appearance of the objects use the <guimenuitem>Theme</guimenuitem> item in the <guimenu>View</guimenu> menu. Selecting an item from the list changes the theme immediately.</para>
+
+        <para>You can also create your own themes, although the process is not very straight-forward yet. Use a copy of an existing theme as a template and alter it with your favorite paint program. Put the result in <filename>$XDG_DATA_HOME/gnome-games/swell-foop/themes/2.10/</filename>. It will be automatically included on the themes list next time you run &app;. <filename>$XDG_DATA_HOME</filename> is usually <filename>~/.local/share/</filename>.</para>
+    </sect2>
+
+    <sect2 id="changing-the-size">
+      <title>Changing the Size</title>
+      <para>The <guimenu>Size</guimenu> menu contains three settings: small, medium and large. Aside from increasing the number of objects, the large setting also increases the number of different objects.</para>
+    </sect2>
+
+    <sect2 id="changing-the-speed">
+    <title>Changing the Speed</title>
+    <para>The default animation is designed to be smooth and graceful. If you like playing fast and furious then this may be too slow for you. By selecting the <guimenuitem>Fast Animation</guimenuitem> option from the <guimenu>View</guimenu> menu you can speed up game-play at the expense of animation quality.</para>
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="swell-foop-strategy">
+    <title>Strategy</title>
+
+    <para>The most important rule when aiming for a high score is to think ahead: each group you remove will form and destroy other groups.</para>
+
+<para> Remove higher groups first, unless removing another group will make it larger. Vertically aligned objects can't be misaligned, but horizontal arrangements can.</para>
+
+    <para>Since the score increases quadratically, big groups of objects are always better. For example, the points difference between a six object group and a seven object group is nine points. In a situation where you have a choice between merging two groups of two into four or just adding one more to the group of six then you should add the single object. Even though the groups of two you are left with score no points, the bigger group scores more overall.</para>
+
+    <para>Don't forget the thousand point bonus for clearing all the balls. To get 1000 points from a single group you need 34 objects. You are very unlikely to be in a position where you have to sacrifice a group that large to clear the board.</para>
+  </sect1>
+
+<!-- ============= About ================================== -->
+  <sect1 id="swell-foop-about"> 
+    <title>About &app;</title> 
+    <para>&app; was written by Callum McKenzie
+      (<email>callum@physics.otago.ac.nz</email>). To find more information about
+      &app;, please visit the 
+      <ulink url="http://live.gnome.org/GnomeGames/" type="http">GNOME Games web page</ulink>. </para>
+    <para>
+      To report a bug or make a suggestion regarding this application or
+      this manual, follow the directions in the 
+      <ulink url="ghelp:user-guide?feedback-bugs" type="help">Feedback section of the GNOME User Guide</ulink>.
+    </para>
+
+    <para> This program is distributed under the terms of the GNU
+      General Public license as published by the Free Software
+      Foundation; either version 2 of the License, or (at your option)
+      any later version. A 
+      <ulink url="ghelp:gpl" type="help">copy of this license</ulink>
+      is included with this documentation; another can be found in the file
+      COPYING included with the source code of this program. </para>
+
+  </sect1> 
+</article>

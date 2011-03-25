@@ -1,0 +1,695 @@
+# French translation of glines documentation.
+# Copyright (C) 2007-2009 Free Software Foundation, Inc.
+# This file is distributed under the same license as the glines documentation package.
+#
+# Jonathan Ernst <jonathan@ernstfamily.ch>, 2007.
+# Claude Paroz <claude@2xlibre.net>, 2007-2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: glines documentation\n"
+"POT-Creation-Date: 2009-08-25 04:28+0000\n"
+"PO-Revision-Date: 2009-09-19 22:02+0200\n"
+"Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
+"Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/glines.xml:190(None)
+msgid ""
+"@@image: 'figures/glines-startgame.png'; md5=e6e58f72dc4802d89a45a7726f4c7fd7"
+msgstr ""
+"@@image: 'figures/glines-startgame.png'; md5=e6e58f72dc4802d89a45a7726f4c7fd7"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/glines.xml:209(None)
+msgid ""
+"@@image: 'figures/glines-gameover.png'; md5=949d09a01ee02944bf3f278ce1ebc2ba"
+msgstr ""
+"@@image: 'figures/glines-gameover.png'; md5=949d09a01ee02944bf3f278ce1ebc2ba"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/glines.xml:329(None)
+msgid ""
+"@@image: 'figures/preferences.png'; md5=745336aefd6ade740f6064bdf4121379"
+msgstr ""
+"@@image: 'figures/preferences.png'; md5=745336aefd6ade740f6064bdf4121379"
+
+#: C/glines.xml:32(title)
+msgid "<application>Five or More</application> Manual"
+msgstr "Manuel de <application>Cinq ou plus</application>"
+
+#: C/glines.xml:34(para)
+msgid ""
+"To play Five or More one must align colored pieces as the board gets filled "
+"with randomly placed pieces. When five or more pieces of the same color get "
+"lined up, they disappear. The game ends when the board gets filled up all "
+"the way."
+msgstr ""
+"Pour jouer à Cinq ou plus, il faut aligner les pièces de couleur alors que "
+"le plateau se remplit aléatoirement de pièces. Quand au moins cinq pièces de "
+"même couleur sont alignées, elles disparaissent. Le jeu s'arrête quand le "
+"plateau est complètement plein."
+
+#: C/glines.xml:43(year)
+msgid "2000-2002"
+msgstr "2000-2002"
+
+#: C/glines.xml:44(holder)
+msgid "Emese Kovács"
+msgstr "Emese Kovács"
+
+#: C/glines.xml:59(publishername) C/glines.xml:72(orgname)
+#: C/glines.xml:100(para)
+msgid "GNOME Documentation Project"
+msgstr "Projet de documentation de GNOME"
+
+#: C/glines.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Permission vous est donnée de copier, distribuer et/ou modifier ce document "
+"selon les termes de la Licence GNU Free Documentation License, Version 1.1 "
+"ou ultérieure publiée par la Free Software Foundation sans section "
+"inaltérable, sans texte de première page de couverture ni texte de dernière "
+"page de couverture. Vous trouverez un exemplaire de cette licence en suivant "
+"ce <ulink type=\"help\" url=\"ghelp:fdl\">lien</ulink> ou dans le fichier "
+"COPYING-DOCS fourni avec le présent manuel."
+
+#: C/glines.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Ce manuel fait partie de la collection de manuels GNOME distribués selon les "
+"termes de la licence de documentation libre GNU. Si vous souhaitez "
+"distribuer ce manuel indépendamment de la collection, vous devez joindre un "
+"exemplaire de la licence au document, comme indiqué dans la section 6 de "
+"celle-ci."
+
+#: C/glines.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"La plupart des noms utilisés par les entreprises pour distinguer leurs "
+"produits et services sont des marques déposées. Lorsque ces noms "
+"apparaissent dans la documentation GNOME et que les membres du projet de "
+"Documentation GNOME sont informés de l'existence de ces marques déposées, "
+"soit ces noms entiers, soit leur première lettre est en majuscule."
+
+#: C/glines.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"LE PRÉSENT DOCUMENT EST FOURNI « TEL QUEL », SANS AUCUNE GARANTIE, EXPRESSE "
+"OU IMPLICITE, Y COMPRIS, ET SANS LIMITATION, LES GARANTIES DE BONNE QUALITÉ "
+"MARCHANDE OU D'APTITUDE À UN EMPLOI PARTICULIER OU AUTORISÉ DU DOCUMENT OU "
+"DE SA VERSION MODIFIÉE. L'UTILISATEUR ASSUME TOUT RISQUE RELATIF À LA "
+"QUALITÉ, À LA PERTINENCE ET À LA PERFORMANCE DU DOCUMENT OU DE SA VERSION DE "
+"MISE À JOUR. SI LE DOCUMENT OU SA VERSION MODIFIÉE S'AVÉRAIT DÉFECTUEUSE, "
+"L'UTILISATEUR (ET NON LE RÉDACTEUR INITIAL, L'AUTEUR, NI TOUT AUTRE "
+"PARTICIPANT) ENDOSSERA LES COÛTS DE TOUTE INTERVENTION, RÉPARATION OU "
+"CORRECTION NÉCESSAIRE. CETTE DÉNÉGATION DE RESPONSABILITÉ CONSTITUE UNE "
+"PARTIE ESSENTIELLE DE CETTE LICENCE. AUCUNE UTILISATION DE CE DOCUMENT OU DE "
+"SA VERSION MODIFIÉE N'EST AUTORISÉE AUX TERMES DU PRÉSENT ACCORD, EXCEPTÉ "
+"SOUS CETTE DÉNÉGATION DE RESPONSABILITÉ ; "
+
+#: C/glines.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"EN AUCUNE CIRCONSTANCE ET SOUS AUCUNE INTERPRÉTATION DE LA LOI, QU'IL "
+"S'AGISSE DE RESPONSABILITÉ CIVILE (Y COMPRIS LA NÉGLIGENCE), CONTRACTUELLE "
+"OU AUTRE, L'AUTEUR, LE RÉDACTEUR INITIAL, TOUT PARTICIPANT ET TOUT "
+"DISTRIBUTEUR DE CE DOCUMENTOU DE SA VERSION DE MISE À JOUR AINSI QUE TOUT "
+"FOURNISSEUR DE QUELQUE PARTIE QUE CE SOIT NE POURRONT ÊTRE TENUS "
+"RESPONSABLES À L'ÉGARD DE QUICONQUE POUR TOUT DOMMAGE DIRECT, INDIRECT, "
+"PARTICULIER OU ACCIDENTEL DE TOUT TYPE Y COMPRIS, SANS LIMITATION, LES "
+"DOMMAGES LIÉS À LA PERTE DE CLIENTÈLE, AUX ARRÊTS DE TRAVAIL, AUX "
+"DÉFAILLANCES ET AUX DYSFONCTIONNEMENTS INFORMATIQUES OU TOUT AUTRE DOMMAGE "
+"OU PERTE LIÉE À L'UTILISATION DU PRÉSENT DOCUMENT ET DE SES VERSIONS DE MISE "
+"À JOUR, ET CE MÊME SI CES PARTIES ONT ÉTÉ INFORMÉES DE LA POSSIBILITÉ DE "
+"TELS DOMMAGES."
+
+#: C/glines.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"LE PRÉSENT DOCUMENT ET SES VERSIONS MODIFIÉES SONT FOURNIS SELON LES TERMES "
+"DE LA LICENCE DE DOCUMENTATION LIBRE GNU SACHANT QUE : <placeholder-1/>"
+
+#: C/glines.xml:69(firstname)
+msgid "Emese"
+msgstr "Emese"
+
+#: C/glines.xml:70(surname)
+msgid "Kovács"
+msgstr "Kovács"
+
+#: C/glines.xml:73(email)
+msgid "emese@gnome.hu"
+msgstr "emese@gnome.hu"
+
+#: C/glines.xml:94(revnumber)
+msgid "Five or More Manual V2.8"
+msgstr "Manuel de Cinq ou plus v2.8"
+
+#: C/glines.xml:95(date)
+msgid "September 2004"
+msgstr "Septembre 2004"
+
+#: C/glines.xml:97(para)
+msgid "Emese Kovács <email>emese@gnome.hu</email>"
+msgstr "Emese Kovács <email>emese@gnome.hu</email>"
+
+#: C/glines.xml:105(releaseinfo)
+msgid "This manual describes version 2.12 of Five or More."
+msgstr "Ce manuel documente la version 2.12 de Cinq ou plus."
+
+#: C/glines.xml:112(title)
+msgid "Feedback"
+msgstr "Votre avis"
+
+#: C/glines.xml:113(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Five or "
+"More</application> application or this manual, follow the directions in the "
+"<ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback "
+"Page</ulink>."
+msgstr ""
+"Pour rapporter une anomalie ou émettre une suggestion concernant "
+"<application>Cinq ou plus</application> ou ce manuel, procédez comme indiqué "
+"sur la <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">page de "
+"réactions sur GNOME</ulink>."
+
+#: C/glines.xml:123(primary)
+msgid "Five or More"
+msgstr "Cinq ou plus"
+
+#: C/glines.xml:130(title)
+msgid "Introduction"
+msgstr "Introduction"
+
+#: C/glines.xml:132(para)
+msgid ""
+"<application>Five or More</application>, is the Gnome port of the once "
+"popular Windows game called <application>Color Lines</application> The "
+"game's objective is to align as often as possible five or more objects of "
+"the same color and shape causing them to disappear. Play as long as "
+"possible, and be #1 in the High Scores."
+msgstr ""
+"<application>Cinq ou plus</application> est un portage sur GNOME du jeu "
+"Windows bien connu à l'époque : <application>Color Lines</application>. Le "
+"but du jeu est d'aligner autant que possible cinq ou plus d'objets de "
+"couleur et de forme identique, ce qui les fait disparaître. Jouez aussi "
+"longtemps que possible et visez le n°1 des meilleurs scores."
+
+#: C/glines.xml:141(para)
+msgid ""
+"To run <application>Five or More</application>, select <guimenuitem>Five or "
+"More</guimenuitem> from the <guisubmenu>Games</guisubmenu> submenu of the "
+"<guimenu>Main Menu</guimenu>, or type <command>glines</command> on the "
+"command line."
+msgstr ""
+"Pour lancer <application>Cinq ou plus</application>, choisissez "
+"<guimenuitem>Cinq ou plus</guimenuitem> dans le sous-menu <guisubmenu>Jeux</"
+"guisubmenu> du <guimenu>Menu principal</guimenu> ou saisissez "
+"<command>glines</command> dans un terminal."
+
+#: C/glines.xml:149(para)
+msgid ""
+"<application>Five or More</application> is included in the <filename>GNOME-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.8 of <application>Five or More</"
+"application>."
+msgstr ""
+"<application>Cinq ou plus</application> est inclus dans le paquet "
+"<filename>GNOME-games</filename> qui fait lui-même partie de l'environnement "
+"de bureau GNOME. Ce document présente la version 2.8 de <application>Cinq ou "
+"plus</application>."
+
+#: C/glines.xml:163(title)
+msgid "Playing Five or More"
+msgstr "Jouer à Cinq ou plus"
+
+#: C/glines.xml:164(para)
+msgid ""
+"Playing <application>Five or More</application> is easy. At startup, you "
+"find yourself with five objects randomly positioned on the board. Each turn, "
+"you are allowed to move one object. You can move it anywhere on the board as "
+"long as there is a clear path. Afterward, the computer drops more objects at "
+"random positions (the exact number depends on the size of the game). You can "
+"preview the next objects to be dropped in the upper left corner of the "
+"game's window. If you manage to align five objects of the same shape and "
+"color, they disappear and you are given an extra move before more objects "
+"drop."
+msgstr ""
+"Jouer à <application>Five or More</application> est facile. Au démarrage, "
+"vous vous trouvez avec cinq objets positionnés au hasard sur un plateau de "
+"jeu. À chaque tour, vous avez le droit de déplacer un objet. Vous pouvez le "
+"déplacer à n'importe quel endroit pour autant qu'un chemin y mène. Ensuite, "
+"l'ordinateur ajoute d'autres objets au hasard (le nombre exact dépendant de "
+"la taille du plateau). Vous apercevez les prochains objets qui seront "
+"déposés dans l'angle supérieur gauche de la fenêtre de jeu. Si vous "
+"réussissez à aligner cinq objets de couleur et de forme identiques, ils "
+"disparaissent et vous obtenez le droit de déplacer un objet supplémentaire "
+"avant que de nouveaux objets soient ajoutés."
+
+#: C/glines.xml:178(title)
+msgid "Basic usage"
+msgstr "Utilisation de base"
+
+#: C/glines.xml:179(para)
+msgid ""
+"Starting <application>Five or More</application> presents you with the "
+"<interface>game board</interface> and a new game starts. What it looks like "
+"is shown in <xref linkend=\"mainwindow-fig\"/>."
+msgstr ""
+"Au démarrage de <application>Cinq ou plus</application>, vous voyez "
+"apparaître un <interface>plateau de jeu</interface> et une nouvelle partie "
+"commence. La <xref linkend=\"mainwindow-fig\"/> vous montre à quoi cela "
+"ressemble."
+
+#: C/glines.xml:186(title)
+msgid "The main window when you start a game."
+msgstr "La fenêtre principale au démarrage du jeu."
+
+#. ==== End of Figure ====
+#: C/glines.xml:197(para)
+msgid ""
+"As the game progresses, the board gets more and more crowded (unless you are "
+"really good...) and making objects disappear gets harder and harder. The "
+"game is over, when the board is full."
+msgstr ""
+"Plus le jeu progresse, plus le plateau devient occupé (sauf si vous êtes "
+"très fort...), et il devient de plus en plus difficile de faire disparaître "
+"des objets. Le jeu se termine lorsque le plateau est rempli."
+
+#: C/glines.xml:205(title)
+msgid "Game over!"
+msgstr "Jeu terminé !"
+
+#: C/glines.xml:222(title)
+msgid "Playing the Game"
+msgstr "Règles du jeu"
+
+#: C/glines.xml:223(para)
+msgid ""
+"A game of <application>Five or More</application> begins with some random "
+"objects on the board."
+msgstr ""
+"Une partie de <application>Cinq ou plus</application> commence avec quelques "
+"objets répartis au hasard sur le plateau."
+
+#: C/glines.xml:227(para)
+msgid ""
+"To make a move, click on one of the objects. When an object is activated it "
+"starts rotating (or doing something else depending on the theme, but let us "
+"not anticipate…). You can then select its destination by clicking an empty "
+"square. If the path to the destination is clear the activated item travels "
+"there. If the destination square is occupied by another object nothing will "
+"be moved and the selection will be transferred to the new object. If the "
+"path is not clear (you cannot jump objects over obstacles!) the application "
+"prints a warning in the status bar (bottom of the window) and the original "
+"object remains active."
+msgstr ""
+"Pour déplacer un objet, cliquez sur l'un des objets. Celui-ci se met alors à "
+"tourner sur lui-même (ou une autre action, selon le thème, mais n'anticipons "
+"pas...). Vous pouvez ensuite sélectionner sa destination en cliquant sur une "
+"case vide. Si un chemin libre mène à la destination, l'objet activé se "
+"déplace jusqu'à cet endroit. Si la case de destination est déjà occupée, "
+"aucun déplacement ne sera effectué, et c'est l'objet de la case occupée qui "
+"devient sélectionné. S'il n'y a pas de chemin qui mène à la destination (il "
+"n'est pas possible de sauter par dessus des obstacles !), vous verrez "
+"apparaître un avertissement dans la barre d'état (au bas de la fenêtre). "
+"L'objet de départ reste actif."
+
+#: C/glines.xml:239(para)
+msgid ""
+"As objects disappear, you get points. The points you score depends on the "
+"number of objects you managed to align (see <xref linkend=\"glines-table1\"/"
+">). Your score is shown in the upper right corner of the window."
+msgstr ""
+"En faisant disparaître des objets, vous gagnez des points. Le nombre de "
+"points obtenus dépend du nombre d'objets que vous avez réussi à aligner "
+"(voir <xref linkend=\"glines-table1\"/>). Votre score s'affiche dans le coin "
+"supérieur droit de la fenêtre."
+
+#: C/glines.xml:248(title) C/glines.xml:344(title)
+msgid "Scoring in Five or More"
+msgstr "Attribution des points dans Cinq ou plus"
+
+#: C/glines.xml:252(entry)
+msgid "Number of objects"
+msgstr "Nombre d'objets"
+
+#: C/glines.xml:253(entry)
+msgid "Score given"
+msgstr "Points obtenus"
+
+#: C/glines.xml:258(entry) C/glines.xml:360(entry)
+msgid "5"
+msgstr "5"
+
+#: C/glines.xml:259(entry) C/glines.xml:278(entry)
+msgid "10"
+msgstr "10"
+
+#: C/glines.xml:262(entry)
+msgid "6"
+msgstr "6"
+
+#: C/glines.xml:263(entry) C/glines.xml:286(entry)
+msgid "12"
+msgstr "12"
+
+#: C/glines.xml:266(entry) C/glines.xml:358(entry) C/glines.xml:359(entry)
+#: C/glines.xml:367(entry) C/glines.xml:374(entry) C/glines.xml:375(entry)
+msgid "7"
+msgstr "7"
+
+#: C/glines.xml:267(entry)
+msgid "18"
+msgstr "18"
+
+#: C/glines.xml:270(entry)
+msgid "8"
+msgstr "8"
+
+#: C/glines.xml:271(entry)
+msgid "28"
+msgstr "28"
+
+#: C/glines.xml:274(entry) C/glines.xml:365(entry) C/glines.xml:366(entry)
+msgid "9"
+msgstr "9"
+
+#: C/glines.xml:275(entry)
+msgid "42"
+msgstr "42"
+
+#: C/glines.xml:279(entry)
+msgid "82"
+msgstr "82"
+
+#: C/glines.xml:282(entry)
+msgid "11"
+msgstr "11"
+
+#: C/glines.xml:283(entry)
+msgid "108"
+msgstr "108"
+
+#: C/glines.xml:287(entry)
+msgid "138"
+msgstr "138"
+
+#: C/glines.xml:290(entry)
+msgid "13"
+msgstr "13"
+
+#: C/glines.xml:291(entry)
+msgid "172"
+msgstr "172"
+
+#: C/glines.xml:294(entry)
+msgid "14"
+msgstr "14"
+
+#: C/glines.xml:295(entry)
+msgid "210"
+msgstr "210"
+
+#: C/glines.xml:302(title)
+msgid "Using the Keyboard"
+msgstr "Utilisation du clavier"
+
+#: C/glines.xml:303(para)
+msgid ""
+"Instead of using the mouse you can use the keyboard to play "
+"<application>Five or More</application>. To use the keyboard, hit an arrow "
+"key and a cursor will appear near the center of the board. The arrow keys "
+"will move the cursor. When the cursor is over the object you want to move, "
+"use the spacebar to select it. Then shift the cursor to the object's "
+"destination and hit the space bar again to move the object."
+msgstr ""
+"Vous pouvez utiliser le clavier à la place de la souris pour jouer à "
+"<application>Cinq ou plus</application>. Pour utiliser le clavier, appuyez "
+"sur une touche flèche et un curseur apparaît près du centre du plateau. Les "
+"touches flèches déplacent le curseur. Lorsque le curseur se trouve au-dessus "
+"d'un objet à déplacer, appuyez sur la barre espace pour le sélectionner. "
+"Déplacez ensuite le curseur jusqu'à la destination souhaitée de l'objet et "
+"appuyez de nouveau sur la barre espace pour effectuer le déplacement."
+
+#: C/glines.xml:304(para)
+msgid ""
+"If you start using the mouse again, the cursor will disappear. The cursor "
+"will reappear if you use the arrow keys again."
+msgstr ""
+"Si vous recommencez à utiliser la souris, le curseur disparaît. Mais il "
+"réapparaîtra si vous appuyez de nouveau sur une touche flèche."
+
+#: C/glines.xml:317(title)
+msgid "Customizing the Game"
+msgstr "Personnalisation du jeu"
+
+#: C/glines.xml:318(para)
+msgid ""
+"You can configure <application>Five or More</application> by clicking on "
+"<guimenuitem>Preferences</guimenuitem> in the applications "
+"<guimenu>Settings</guimenu> menu. The following <interface>dialog</"
+"interface> will appear:"
+msgstr ""
+"Vous pouvez configurer <application>Cinq ou plus</application> en "
+"choisissant <guimenuitem>Préférences</guimenuitem> dans le menu des "
+"<guimenu>Préférences</guimenu>. La <interface>boîte de dialogue</interface> "
+"suivante apparaît :"
+
+#: C/glines.xml:326(title)
+msgid "Preferences"
+msgstr "Préférences"
+
+#. ==== End of Figure ====
+#: C/glines.xml:335(para)
+msgid ""
+"You can select different object styles and background colors in the "
+"<guimenu>Themes</guimenu> section. If you find it difficult distinguishing "
+"the colours, try the shapes theme."
+msgstr ""
+"Vous pouvez sélectionner différents styles d'objets et de couleurs d'arrière-"
+"plan dans la section <guimenu>Thèmes</guimenu>. Si vous avez de la peine à "
+"distinguer les couleurs, utilisez plutôt le thème « shapes » (formes)."
+
+#: C/glines.xml:340(para)
+msgid ""
+"The <guimenu>Board Size</guimenu> section lets you select the size of the "
+"board. Each size has a slightly different balance: larger sizes give you "
+"more space to move, but more objects arrive each turn. The parameters for "
+"each size are given in <xref linkend=\"table-sizes\"/>."
+msgstr ""
+"La section <guimenu>Taille du plateau</guimenu> vous permet de choisir la "
+"taille du plateau. Chaque taille dispose de caractéristiques particulières : "
+"un grand plateau vous donne plus d'espace pour déplacer les objets, mais "
+"plus d'objets sont déposés à chaque tour de jeu. Les paramètres "
+"correspondant à chaque taille sont donnés dans le <xref linkend=\"table-sizes"
+"\"/>."
+
+#: C/glines.xml:348(entry)
+msgid "Size"
+msgstr "Taille"
+
+#: C/glines.xml:349(entry)
+msgid "Width"
+msgstr "Largeur"
+
+#: C/glines.xml:350(entry)
+msgid "Height"
+msgstr "Hauteur"
+
+#: C/glines.xml:351(entry)
+msgid "Number of Types"
+msgstr "Types d'objets"
+
+#: C/glines.xml:352(entry)
+msgid "Objects per Turn"
+msgstr "Objets par tour"
+
+#: C/glines.xml:357(entry)
+msgid "Small"
+msgstr "Petite"
+
+#: C/glines.xml:361(entry) C/glines.xml:368(entry)
+msgid "3"
+msgstr "3"
+
+#: C/glines.xml:364(entry)
+msgid "Medium"
+msgstr "Moyenne"
+
+#: C/glines.xml:371(entry)
+msgid "Large"
+msgstr "Grande"
+
+#: C/glines.xml:372(entry)
+msgid "20"
+msgstr "20"
+
+#: C/glines.xml:373(entry)
+msgid "15"
+msgstr "15"
+
+#: C/glines.xml:381(para)
+msgid ""
+"You can speed up the movement of the objects by checking the Use fast moves "
+"box in the <guimenu>General</guimenu> preferences section."
+msgstr ""
+"Vous pouvez accélérer le mouvement des objets en cochant « Utiliser des "
+"déplacements rapides » dans la section <guimenu>Général</guimenu> des "
+"préférences."
+
+#: C/glines.xml:385(para)
+msgid ""
+"Any changes you make are instantly applied and remembered for the next time "
+"you run <application>Five or More</application>."
+msgstr ""
+"Toute modification est immédiatement appliquée et enregistrée pour le "
+"prochain lancement de <application>Cinq ou plus</application>."
+
+#: C/glines.xml:391(title)
+msgid "How to create new themes"
+msgstr "Création de nouveaux thèmes"
+
+#: C/glines.xml:392(para)
+msgid ""
+"Each theme consists of a single PNG image file. This image consists of an "
+"array of seven rows, corresponding to the different object colors/shapes, "
+"and four columns, each of which is a frame in the animation of the object. "
+"The actual size of the image is irrelevant, it will be rescaled, but the sub-"
+"images must form a four by seven grid to get the correct effect. When using "
+"SVG remember that the image size is the page size, if your grid does not "
+"fill the page try shrinking the page size. Use an existing theme as a guide."
+msgstr ""
+"Un thème est composé d'un seul fichier image PNG. Cette image est formée "
+"d'un tableau de sept rangées, correspondant aux différentes couleurs ou "
+"formes d'objets, et de quatre colonnes, où chaque colonne représente une "
+"phase de l'animation de l'objet. La taille réelle de l'image importe peu, "
+"car elle est automatiquement redimensionnée, mais chaque sous-image doit "
+"être correctement placée dans une grille régulière de sept fois quatre cases "
+"pour obtenir un bel effet. Si vous utilisez le format SVG, n'oubliez pas que "
+"la taille de l'image est la taille de la page. Si la grille ne remplit pas "
+"toute la page, essayez de diminuer la taille de la page. Nous vous "
+"conseillons d'utiliser un thème existant comme modèle."
+
+#: C/glines.xml:422(title)
+msgid "Authors"
+msgstr "Auteurs"
+
+#: C/glines.xml:423(para)
+msgid ""
+"<application>Five or More</application> was written by Róbert Szókovács "
+"(<email>szo@appaloosacorp.hu</email>) and Szabolcs Bán (<email>shooby@gnome."
+"hu</email>). This manual was written by Emese Kovács (<email>emese@gnome.hu</"
+"email>). For information on how to make comments, suggestions and to report "
+"bugs please see the <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
+"\">feedback document</ulink>."
+msgstr ""
+"<application>Cinq ou plus</application> a été écrit par Róbert Szókovács "
+"(<email>szo@appaloosacorp.hu</email>) et Szabolcs Bán (<email>shooby@gnome."
+"hu</email>). Ce manuel a été écrit par Emese Kovács (<email>emese@gnome.hu</"
+"email>). Pour obtenir des informations sur la manière de soumettre des "
+"commentaires et des suggestions ou pour rapporter une anomalie, consultez la "
+"<ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">page de "
+"réactions sur GNOME</ulink>."
+
+#: C/glines.xml:448(title)
+msgid "License"
+msgstr "Licence"
+
+#: C/glines.xml:449(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <citetitle>GNU General Public License</citetitle> as "
+"published by the Free Software Foundation; either version 2 of the License, "
+"or (at your option) any later version."
+msgstr ""
+"Ce programme est un logiciel libre ; vous pouvez le redistribuer ou le "
+"modifier selon les termes de la <citetitle>GNU General Public License</"
+"citetitle>, tels que publiés par la Free Software Foundation ; soit la "
+"version 2 de cette licence ou (à votre choix) toute version ultérieure."
+
+#: C/glines.xml:456(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"Ce programme est distribué dans l’espoir qu’il sera utile, mais SANS AUCUNE "
+"GARANTIE, ni explicite ni implicite; sans même les garanties de "
+"commercialisation ou d’adaptation dans un but spécifique. Se référer à la "
+"<citetitle>GNU General Public License</citetitle> pour plus de détails."
+
+#: C/glines.xml:462(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink url=\"http://www.fsf.org\" "
+"type=\"http\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"Une copie de la <citetitle>GNU General Public License</citetitle> est inclue "
+"sous forme d'annexe au <citetitle>Guide d'utilisation du bureau GNOME</"
+"citetitle>. Vous pouvez également obtenir une copie de la <citetitle>GNU "
+"General Public License</citetitle> à la Free Software Foundation en visitant "
+"<ulink url=\"http://www.fsf.org\" type=\"http\">leur site Web</ulink> ou en "
+"écrivant à <address> Free Software Foundation, Inc. <street>59 Temple Place</"
+"street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-"
+"1307</postcode><country>USA</country></address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/glines.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+"Jonathan Ernst <jonathan@ernstfamily.ch>, 2007\n"
+"Claude Paroz <claude@2xlibre.net>, 2007-2009\n"
+"Bruno Brouard <annoa.b@gmail.com>, 2008"

@@ -1,0 +1,604 @@
+# Italian translation of gnotravex help
+# Copyright (C) 2010 the gnotravex copyright holder
+# This file is distributed under the same licese of the gnotravex package
+# Milo Casagrande <milo@ubuntu.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnotravex help\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-11 20:09+0000\n"
+"PO-Revision-Date: 2010-03-12 22:35+0100\n"
+"Last-Translator: Milo Casagrande <milo@ubuntu.com>\n"
+"Language-Team: Italian <tp@lists.linux.it>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Italian\n"
+
+#: C/winning.page:9(desc)
+msgid "Simple tips on how to possibly win a game."
+msgstr "Semplici suggerimenti su come poter vincere al gioco."
+
+#: C/winning.page:12(name) C/usage.page:11(name) C/size.page:10(name)
+#: C/shortcut.page:11(name) C/multiplayer.page:10(name) C/move.page:11(name)
+#: C/index.page:17(name) C/hint.page:10(name) C/gameplay.page:10(name)
+msgid "Milo Casagrande"
+msgstr "Milo Casagrande"
+
+#: C/winning.page:13(email) C/usage.page:12(email) C/size.page:11(email)
+#: C/shortcut.page:12(email) C/multiplayer.page:11(email)
+#: C/move.page:12(email) C/index.page:18(email) C/hint.page:11(email)
+#: C/gameplay.page:11(email)
+msgid "milo@ubuntu.com"
+msgstr "milo@ubuntu.com"
+
+#: C/winning.page:16(p) C/usage.page:19(p) C/size.page:14(p)
+#: C/shortcut.page:15(p) C/multiplayer.page:14(p) C/move.page:15(p)
+#: C/index.page:21(p) C/gameplay.page:14(p)
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons Share Alike 3.0"
+
+#: C/winning.page:20(title)
+msgid "Win <app>GNOME Tetravex</app>"
+msgstr "Vincere a <app>GNOME Tetravex</app>"
+
+#: C/winning.page:23(p)
+msgid ""
+"The following tips will not assure you to win a game, they are intended as a "
+"simple aid."
+msgstr ""
+"I suggerimenti che seguono non garantiscono di vincere una partita, sono da "
+"considerarsi dei semplici aiuti."
+
+#: C/winning.page:30(title)
+msgid "Look for a single number"
+msgstr "Cercare un numero unico"
+
+#: C/winning.page:31(p)
+msgid ""
+"When you start a new game, look for a single number, or a number that has no "
+"similar numbers that can be placed next to it."
+msgstr ""
+"Quando viene avviata una nuova partita, cercare di trovare un numero unico, "
+"un numero privo di altri numeri simili che possano essere posizionati vicino."
+
+#: C/winning.page:35(p)
+msgid ""
+"If you have one such number, that piece is a valid starting piece, since you "
+"know where it has to be placed."
+msgstr ""
+"Se si riesce a trovare un numero simile, quel pezzo è un valido candidato "
+"per essere il pezzo di partenza poiché è noto dove dovrà essere posizionato."
+
+#: C/winning.page:39(p)
+msgid ""
+"Note that the bigger the size of the board, the harder is to find such a "
+"number."
+msgstr ""
+"Notare che più grande è la dimensione della tavola di gioco, più difficile è "
+"trovare un tale numero."
+
+#: C/winning.page:46(title)
+msgid "Have a tip to share?"
+msgstr "Avete un suggerimento da condividere?"
+
+# (ndt) la lascio un po' più sull'easy...
+#: C/winning.page:47(p)
+msgid ""
+"If you have a tip to share about <app>GNOME Tetravex</app>, or any other "
+"GNOME games, write us at gnome-doc-list@gnome.org. We will add them here!"
+msgstr ""
+"Se avete un suggerimento riguardo <app>GNOME Tetravex</app> o un qualsiasi "
+"altro gioco di GNOME, scrivete all'indirizzo gnome-doc-list@gnome.org. I "
+"suggerimenti verranno inseriti in questa pagina!"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/usage.page:61(None)
+msgid ""
+"@@image: 'figures/gnotravex-video.ogv'; md5=14cface4ec2b0c84aa5a925242694de0"
+msgstr "non serve"
+
+#: C/usage.page:8(desc)
+msgid "How to play <app>GNOME Tetravex</app>."
+msgstr "Come giocare a <app>GNOME Tetravex</app>."
+
+#: C/usage.page:15(name) C/index.page:13(name)
+msgid "Rob Bradford"
+msgstr "Rob Bradford"
+
+#: C/usage.page:16(email) C/index.page:14(email)
+msgid "robster@debian.org"
+msgstr "robster@debian.org"
+
+#: C/usage.page:23(title)
+msgid "Play <app>GNOME Tetravex</app>"
+msgstr "Giocare a <app>GNOME Tetravex</app>"
+
+#: C/usage.page:26(title)
+msgid "Basic usage"
+msgstr "Utilizzo di base"
+
+#: C/usage.page:27(p)
+msgid ""
+"The game window is divided into two boxes: the one on the right side of the "
+"window contains the pieces that needs to be arranged; the one on the left "
+"side of the window is where the pieces from the right box will be arranged "
+"and moved. Each piece is divided into four little triangles containing a "
+"number."
+msgstr ""
+"La finestra di gioco è suddivisa in due riquadri: quello sulla destra della "
+"finestra contiene i pezzi che è necessario sistemare; quello sulla sinistra "
+"della finestra è dove i pezzi dal riquadro a destra vanno spostati. Ogni "
+"singolo pezzo è a sua volta suddiviso in quattro piccolo triangoli ciascuno "
+"contenente un numero."
+
+#: C/usage.page:34(p)
+msgid ""
+"The scope of the game is to position the pieces so that only two identical "
+"numbers are next to each other."
+msgstr ""
+"Lo scopo del gioco è di posizionare i pezzi in modo tale che solo due numeri "
+"uguali siano vicino l'uno all'altro."
+
+#: C/usage.page:38(p)
+msgid ""
+"It is not possible to position the pieces so that different number are next "
+"to each other."
+msgstr ""
+"Non è possibile posizionare i pezzi in modo che due numeri diversi siano "
+"vicini l'un l'altro."
+
+#: C/usage.page:42(p)
+msgid ""
+"The game is completed when you have positioned all the pieces in their right "
+"positions."
+msgstr ""
+"Il gioco è completato quando tutti i pezzi sono posizionati correttamente."
+
+#: C/usage.page:47(p)
+msgid ""
+"When you start <app>GNOME Tetravex</app>, the game will start immediately, "
+"and the time will start counting."
+msgstr ""
+"Quando viene avviato <app>GNOME Tetravex</app>, il gioco si avvia "
+"automaticamente e il tempo inizia a essere cronometrato."
+
+#: C/usage.page:56(title)
+msgid "Video demonstration"
+msgstr "Dimostrazione video"
+
+#: C/usage.page:57(p)
+msgid ""
+"This short video shows how the game works, and what are the possible "
+"movements."
+msgstr ""
+"Questo breve video mostra il funzionamento del gioco e quali siano le "
+"possibili mosse."
+
+#: C/usage.page:61(media)
+msgid "Simple demonstration of a game"
+msgstr "Semplice dimostrazione di un gioco"
+
+#: C/size.page:7(desc)
+msgid "Change the size of the game board."
+msgstr "Modificare la dimensione della tavola di gioco."
+
+#: C/size.page:17(title)
+msgid "Game board size"
+msgstr "Dimensione del gioco"
+
+#: C/size.page:19(p)
+msgid ""
+"To change the size of the game board, in order to increase or decrease the "
+"complexity of the game, choose <gui>Size</gui> from the main menu bar, and "
+"then select the dimension of the board."
+msgstr ""
+"Per modificare la dimensione della tavola di gioco in modo da incrementare o "
+"diminuire la complessità del gioco, dalla barra dei menù scegliere "
+"<gui>Dimensione</gui> e quindi selezionare la dimensione del gioco."
+
+#: C/size.page:24(p)
+msgid ""
+"You can select from five different dimension, from 2×2 to 6×6. The default "
+"one is 3×3."
+msgstr ""
+"È possibile scegliere tra cinque dimensioni diverse, da 2×2 a 6×6. Quella "
+"predefinita è 3×3."
+
+#: C/size.page:28(p)
+msgid ""
+"If the pieces are too small, resizing the window will change their size."
+msgstr ""
+"Se i pezzi sono troppo piccoli, ridimensionando la finestra verrà modificata "
+"anche la loro dimensione."
+
+#: C/shortcut.page:8(desc)
+msgid "Use the keyboard to play the game."
+msgstr "Usare la tastiera per giocare."
+
+#: C/shortcut.page:19(title)
+msgid "Keyboard shortcuts"
+msgstr "Scorciatoie da tastiera"
+
+#: C/shortcut.page:22(title)
+msgid "Game shortcuts"
+msgstr "Scorciatoie del gioco"
+
+#: C/shortcut.page:23(p)
+msgid ""
+"The following table groups the most useful shortcuts for playing <app>GNOME "
+"Tetravex</app>."
+msgstr ""
+"La seguente tabella raggruppa le più utili scorciatoie da tastiera per "
+"giocare a <app>GNOME Tetravex</app>."
+
+#: C/shortcut.page:28(p)
+msgid "Shortcut"
+msgstr "Scorciatoia"
+
+#: C/shortcut.page:28(p)
+msgid "Description"
+msgstr "Descrizione"
+
+#: C/shortcut.page:32(key) C/shortcut.page:49(key) C/shortcut.page:58(key)
+#: C/shortcut.page:66(key) C/shortcut.page:74(key)
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: C/shortcut.page:32(key)
+msgid "N"
+msgstr "N"
+
+#: C/shortcut.page:35(p)
+msgid "Start a new game."
+msgstr "Avvia una nuova partita."
+
+#: C/shortcut.page:40(key)
+msgid "Pause"
+msgstr "Pausa"
+
+#: C/shortcut.page:43(p)
+msgid "Pause or resume the game."
+msgstr "Mette in pausa o riprende la partita."
+
+#: C/shortcut.page:49(key)
+msgid "Up"
+msgstr "Su"
+
+#: C/shortcut.page:53(p)
+msgid "Move all the pieces in the left box up by one."
+msgstr "Sposta tutti i pezzi nel riquadro di sinistra in su di uno."
+
+#: C/shortcut.page:58(key)
+msgid "Down"
+msgstr "Giù"
+
+#: C/shortcut.page:61(p)
+msgid "Move all the pieces in the left box down by one."
+msgstr "Sposta tutti i pezzi nel riquadro di sinistra in giù di uno."
+
+#: C/shortcut.page:66(key)
+msgid "Left"
+msgstr "Sinistra"
+
+#: C/shortcut.page:69(p)
+msgid "Move all the pieces in the left box left by one."
+msgstr "Sposta tutti i pezzi nel riquadro di sinistra a sinistra di uno."
+
+#: C/shortcut.page:74(key)
+msgid "Right"
+msgstr "Destra"
+
+#: C/shortcut.page:77(p)
+msgid "Move all the pieces in the left box right by one."
+msgstr "Sposta tutti i pezzi nel riquadro di sinistra a destra di uno."
+
+#: C/multiplayer.page:7(desc)
+msgid "How to play with other people."
+msgstr "Come giocare con altre persone."
+
+#: C/multiplayer.page:18(title)
+msgid "Play with other people"
+msgstr "Giocare con altre persone"
+
+#: C/multiplayer.page:20(p)
+msgid ""
+"With <app>GNOME Tetravex</app> it is not possible to play with or against "
+"other people over the Internet or a local network."
+msgstr ""
+"Con <app>GNOME Tetravex</app> non è possibile giocare con o contro altre "
+"persone attraverso Internet o una rete locale."
+
+#: C/move.page:8(desc)
+msgid "How to move the pieces on the game board."
+msgstr "Come spostare i pezzi all'interno del gioco."
+
+#: C/move.page:19(title)
+msgid "Move the pieces"
+msgstr "Spostare i pezzi"
+
+#: C/move.page:22(title)
+msgid "Move a piece"
+msgstr "Spostare un pezzo"
+
+#: C/move.page:23(p)
+msgid ""
+"To move a piece, you need to click-and-hold on it, drag it from its current "
+"position to its new position, either on the right box or on the left box, "
+"and release the mouse button."
+msgstr ""
+"Per spostare un pezzo è necessario fare clic su di esso e tenere premuto il "
+"pulsante, trascinarlo dalla posizione corrente a quella nuova nel riquadro "
+"di destra o quello di sinistra e infine rilasciare il pulsante del mouse."
+
+#: C/move.page:28(p)
+msgid "These moves are not permanent and can be reversed."
+msgstr "Questi spostamenti non sono definitivi e possono essere annullati."
+
+#: C/move.page:32(p)
+msgid ""
+"The pieces in the left box can be moved all at once in one direction. See "
+"<link xref=\"shortcut\"/> for more information."
+msgstr ""
+"I pezzi nel riquadro di sinistra possono essere mossi tutti assieme in una "
+"direzione. Per maggiori informazioni, consultare <link xref=\"shortcut\"/>."
+
+#: C/move.page:39(title)
+msgid "Avoid the click-and-hold"
+msgstr "Evitare il mantenimento del clic"
+
+#: C/move.page:40(p)
+msgid ""
+"If you do not feel comfortable with the click-and-hold action to move the "
+"pieces, it is possible to change that behavior so that you only have to "
+"click on a piece to move it, and click again to release it in its new "
+"position."
+msgstr ""
+"Se il metodo di spostamento dei pezzi tramite clic e il mantenimento della "
+"pressione sul pulsante del mouse non è confortevole, è possibile modificare "
+"questo comportamento in modo da dover eseguire un clic su un pezzo per "
+"poterlo spostare e un altro clic per rilasciare il pezzo alla sua nuova "
+"posizione."
+
+#: C/move.page:45(p)
+msgid ""
+"To do that, from the main menu bar, choose <gui style=\"menu\">Move</gui>, "
+"and select <gui style=\"checkbox\">Click to Move</gui>."
+msgstr ""
+"Per fare ciò, dalla barra dei menù, scegliere <gui style=\"menu\">Sposta</"
+"gui> e selezionare <gui style=\"checkbox\">Clic per muovere</gui>."
+
+#: C/license.page:8(desc)
+msgid "Legal information."
+msgstr "Informazioni legali."
+
+#: C/license.page:11(title)
+msgid "License"
+msgstr "Licenza"
+
+#: C/license.page:12(p)
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
+msgstr ""
+"Quest'opera è disponibile nei termini della licenza Creative Commons "
+"Attribution-Share Alike 3.0 Unported."
+
+#: C/license.page:20(p)
+msgid "You are free:"
+msgstr "Siete liberi di:"
+
+#: C/license.page:25(em)
+msgid "To share"
+msgstr "Condividere"
+
+#: C/license.page:26(p)
+msgid "To copy, distribute and transmit the work."
+msgstr "Copiare, distribuire e trasmettere quest'opera."
+
+#: C/license.page:29(em)
+msgid "To remix"
+msgstr "Di modificare"
+
+#: C/license.page:30(p)
+msgid "To adapt the work."
+msgstr "Di modificare quest'opera."
+
+#: C/license.page:33(p)
+msgid "Under the following conditions:"
+msgstr "Alle seguenti condizioni:"
+
+#: C/license.page:38(em)
+msgid "Attribution"
+msgstr "Attribuzione"
+
+#: C/license.page:39(p)
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+"È necessario attribuire la paternità dell'opera nei modi indicati "
+"dall'autore o da chi ha dato l'opera in licenza e in modo tale da non "
+"suggerire che essi avallino voi o il modo in cui viene usata l'opera."
+
+#: C/license.page:46(em)
+msgid "Share Alike"
+msgstr "Condividere allo stesso modo"
+
+#: C/license.page:47(p)
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Se quest'opera viene modificata, trasformata o ne viene creata una nuova "
+"basata su questa, è possibile distribuire la nuova opera solamente nei "
+"termini della stessa licenza o di una compatibile."
+
+#: C/license.page:53(p)
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"Per il testo completo della licenza, consultare il <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">sito web di "
+"CreativeCommons</link> oppure leggere il <link href=\"http://creativecommons."
+"org/licenses/by-sa/3.0/deed.it\">commons deed</link>."
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/index.page:26(None)
+msgid ""
+"@@image: 'figures/gnotravex-logo.png'; md5=daf379ccd659b42a71cd0f2661f651e4"
+msgstr "non serve"
+
+#: C/index.page:8(title) C/index.page:9(title)
+msgid "GNOME Tetravex"
+msgstr "GNOME Tetravex"
+
+#: C/index.page:10(desc)
+msgid "GNOME Tetravex help."
+msgstr "Aiuto di GNOME Tetravex"
+
+#: C/index.page:25(title)
+msgid ""
+"<media type=\"image\" mime=\"image/png\" src=\"figures/gnotravex-logo.png"
+"\">GNOME Tetravex logo</media> GNOME Tetravex"
+msgstr ""
+"<media type=\"image\" mime=\"image/png\" src=\"figures/gnotravex-logo.png"
+"\">Logo di GNOME Tetravex</media> GNOME Tetravex"
+
+#: C/index.page:31(title)
+msgid "Basic Gameplay &amp; Usage"
+msgstr "Regole e utilizzo"
+
+#: C/index.page:35(title)
+msgid "Multiplayer Game"
+msgstr "Multigiocatori"
+
+#: C/index.page:39(title)
+msgid "Tips &amp; Tricks"
+msgstr "Suggerimenti e trucchi"
+
+#: C/hint.page:7(desc)
+msgid "Use hints or solve the game automatically."
+msgstr "Usare gli indizi per risolvere automaticamente una partita."
+
+#: C/hint.page:14(title)
+msgid "Hints"
+msgstr "Indizi"
+
+#: C/hint.page:17(p)
+msgid ""
+"If you use one of the following methods to complete the game, your scores "
+"will not be included among the high scores."
+msgstr ""
+"Se viene utilizzato uno dei seguenti metodi per completare una partita, il "
+"proprio punteggio non verrà incluso tra i punteggi migliori."
+
+#: C/hint.page:25(title)
+msgid "Use the hints system"
+msgstr "Usare il sistema degli indizi"
+
+#: C/hint.page:27(p)
+msgid ""
+"At any time in the game, if you do not know how to start it, or where to "
+"move a piece, it is possible to use the built-in hints system."
+msgstr ""
+"In qualsiasi momento del gioco, se non si sa come iniziare o dove spostare "
+"un pezzo, è possibile utilizzare il sistema integrato degli indizi."
+
+#: C/hint.page:31(p)
+msgid ""
+"The system will move one piece from the right box to its correct position "
+"into the left box."
+msgstr ""
+"Il sistema degli indizi sposterà un pezzo dal riquadro di destra nella "
+"posizione corretta in quello di sinistra."
+
+#: C/hint.page:35(p)
+msgid "To use the hints system, perform one of the following:"
+msgstr ""
+"Per utilizzare il sistema degli indizi, seguire uno dei seguenti metodi:"
+
+#: C/hint.page:40(p)
+msgid "Press <keyseq><key>Ctrl</key><key>H</key></keyseq>."
+msgstr "Premere <keyseq><key>Ctrl</key><key>H</key></keyseq>."
+
+#: C/hint.page:45(p)
+msgid ""
+"Choose <guiseq><gui style=\"menu\">Game</gui><gui style=\"menuitem\">Hint</"
+"gui></guiseq>."
+msgstr ""
+"Scegliere <guiseq><gui style=\"menu\">Gioco</gui><gui style=\"menuitem"
+"\">Indizio</gui></guiseq>."
+
+#: C/hint.page:52(title)
+msgid "Solve the game"
+msgstr "Risolvere il gioco"
+
+#: C/hint.page:53(p)
+msgid ""
+"If you get stuck in the game, or you want to solve it automatically, choose "
+"<guiseq><gui style=\"menu\">Game</gui><gui style=\"menuitem\">Solve</gui></"
+"guiseq>."
+msgstr ""
+"Se non si riesce a venire a capo della partita o per completarla "
+"automaticamente, scegliere <guiseq><gui style=\"menu\">Gioco</gui><gui style="
+"\"menuitem\">Risolvi</gui></guiseq>."
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gameplay.page:32(None)
+msgid ""
+"@@image: 'figures/gnotravex-main-window.png'; "
+"md5=dd9c9be1bb7b724d6be5e76ffa6ee4d8"
+msgstr "fatto"
+
+#: C/gameplay.page:7(desc)
+msgid "Introduction to <app>GNOME Tetravex</app>."
+msgstr "Introduzione a <app>GNOME Tetravex</app>."
+
+#: C/gameplay.page:18(title)
+msgid "Gameplay"
+msgstr "Il gioco"
+
+#: C/gameplay.page:20(p)
+msgid ""
+"<app>GNOME Tetravex</app> is a simple puzzle game which scope is to move the "
+"various pieces from one side of the board to the other side, so that the "
+"same numbers depicted on the pieces are touching each other."
+msgstr ""
+"<app>GNOME Tetravex</app> è un semplice rompicapo il cui obiettivo è quello "
+"di spostare diversi pezzi da una parte all'altra del tavolo di gioco, in "
+"modo tale che i numeri uguali, raffigurati sulle tessere di gioco, combacino."
+
+#: C/gameplay.page:25(p)
+msgid ""
+"The game is timed, and these times are used as the score for the game. You "
+"have to move all the pieces in the least time possible."
+msgstr ""
+"Il gioco è cronometrato e questi tempi vengono usati come punteggio. È "
+"necessario spostare tutti i pezzi nel minor tempo possibile."
+
+#: C/gameplay.page:30(title)
+msgid "Main game window"
+msgstr "Finestra principale del gioco"
+
+#: C/gameplay.page:31(desc)
+msgid "<app>Tetravex</app> main window"
+msgstr "Finestra principale di <app>Tetravex</app>"
+
+#: C/gameplay.page:33(p)
+msgid "<app>Tetravex</app> main window."
+msgstr "Finestra principale di <app>Tetravex</app>."
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/index.page:0(None)
+msgid "translator-credits"
+msgstr ""
+"Milo Casagrande <milo@ubuntu.com>, 2010\n"
+"Alessio Treglia<quadrispro@ubuntu-it.org, 2008"

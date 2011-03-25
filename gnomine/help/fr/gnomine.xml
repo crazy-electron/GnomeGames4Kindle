@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.14">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "January 2006">
+<!ENTITY app "<application>Mines</application>">
+<!ENTITY appname "Mines">
+<!ENTITY version "2.14">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="fr">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Manuel de <application>Mines</application></title>
+    <abstract role="description">
+      <para>Mines est la version GNOME du jeu de réflexion bien connu Démineur, qui consiste à éviter des mines à partir d'informations données sur l'emplacement des mines voisines.</para>
+    </abstract>
+    <copyright>
+      <year>2006</year>
+      <holder>Callum McKenzie</holder>
+<!--   Based on an earlier manual by   <holder>Tim Riehle</holder> -->
+    </copyright><copyright><year>2007</year><holder>Bruno Brouard (annoa.b@gmail.com)</holder></copyright><copyright><year>2007-2008</year><holder>Claude Paroz (claude@2xlibre.net)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Projet de documentation GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+        <para>Ce document possède une double licence. Permission vous est donnée de distribuer et/ou modifier ce document selon les termes de la <ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink> sous laquelle le <link linkend="license">programme est placé</link>, ou vous pouvez le distribuer selon les termes de la licence GNU Free Documentation License. Un exemplaire de celle-ci suit.</para>
+
+	<para>Permission vous est donnée de copier, distribuer et/ou modifier ce document selon les termes de la Licence GNU Free Documentation License, Version 1.1 ou ultérieure publiée par la Free Software Foundation sans section inaltérable, sans texte de première page de couverture ni texte de dernière page de couverture. Vous trouverez un exemplaire de cette licence en suivant ce <ulink type="help" url="ghelp:fdl">lien</ulink> ou dans le fichier COPYING-DOCS fourni avec le présent manuel.</para>
+         <para>Ce manuel fait partie de la collection de manuels GNOME distribués selon les termes de la licence de documentation libre GNU. Si vous souhaitez distribuer ce manuel indépendamment de la collection, vous devez joindre un exemplaire de la licence au document, comme indiqué dans la section 6 de celle-ci.</para>
+
+	<para>La plupart des noms utilisés par les entreprises pour distinguer leurs produits et services sont des marques déposées. Lorsque ces noms apparaissent dans la documentation GNOME et que les membres du projet de Documentation GNOME sont informés de l'existence de ces marques déposées, soit ces noms entiers, soit leur première lettre est en majuscule.</para>
+
+	<para>LE PRÉSENT DOCUMENT ET SES VERSIONS MODIFIÉES SONT FOURNIS SELON LES TERMES DE LA LICENCE DE DOCUMENTATION LIBRE GNU SACHANT QUE : <orderedlist>
+		<listitem>
+		  <para>LE PRÉSENT DOCUMENT EST FOURNI « TEL QUEL », SANS AUCUNE GARANTIE, EXPRESSE OU IMPLICITE, Y COMPRIS, ET SANS LIMITATION, LES GARANTIES DE BONNE QUALITÉ MARCHANDE OU D'APTITUDE À UN EMPLOI PARTICULIER OU AUTORISÉ DU DOCUMENT OU DE SA VERSION MODIFIÉE. L'UTILISATEUR ASSUME TOUT RISQUE RELATIF À LA QUALITÉ, À LA PERTINENCE ET À LA PERFORMANCE DU DOCUMENT OU DE SA VERSION DE MISE À JOUR. SI LE DOCUMENT OU SA VERSION MODIFIÉE S'AVÉRAIT DÉFECTUEUSE, L'UTILISATEUR (ET NON LE RÉDACTEUR INITIAL, L'AUTEUR, NI TOUT AUTRE PARTICIPANT) ENDOSSERA LES COÛTS DE TOUTE INTERVENTION, RÉPARATION OU CORRECTION NÉCESSAIRE. CETTE DÉNÉGATION DE RESPONSABILITÉ CONSTITUE UNE PARTIE ESSENTIELLE DE CETTE LICENCE. AUCUNE UTILISATION DE CE DOCUMENT OU DE SA VERSION MODIFIÉE N'EST AUTORISÉE AUX TERMES DU PRÉSENT ACCORD, EXCEPTÉ SOUS CETTE DÉNÉGATION DE RESPONSABILITÉ ; ET</para>
+		</listitem>
+		<listitem>
+		  <para>EN AUCUNE CIRCONSTANCE ET SOUS AUCUNE INTERPRÉTATION DE LA LOI, QU'IL S'AGISSE DE RESPONSABILITÉ CIVILE (Y COMPRIS LA NÉGLIGENCE), CONTRACTUELLE OU AUTRE, L'AUTEUR, LE RÉDACTEUR INITIAL, TOUT PARTICIPANT ET TOUT DISTRIBUTEUR DE CE DOCUMENTOU DE SA VERSION DE MISE À JOUR AINSI QUE TOUT FOURNISSEUR DE QUELQUE PARTIE QUE CE SOIT NE POURRONT ÊTRE TENUS RESPONSABLES À L'ÉGARD DE QUICONQUE POUR TOUT DOMMAGE DIRECT, INDIRECT, PARTICULIER OU ACCIDENTEL DE TOUT TYPE Y COMPRIS, SANS LIMITATION, LES DOMMAGES LIÉS À LA PERTE DE CLIENTÈLE, AUX ARRÊTS DE TRAVAIL, AUX DÉFAILLANCES ET AUX DYSFONCTIONNEMENTS INFORMATIQUES OU TOUT AUTRE DOMMAGE OU PERTE LIÉE À L'UTILISATION DU PRÉSENT DOCUMENT ET DE SES VERSIONS DE MISE À JOUR, ET CE MÊME SI CES PARTIES ONT ÉTÉ INFORMÉES DE LA POSSIBILITÉ DE TELS DOMMAGES.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Callum</firstname> 
+	<surname>McKenzie</surname> 
+	<affiliation> 
+	  <address> <email>callum@spooky-possum.org</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+	
+    <revhistory>
+      <revision> 
+	<revnumber>Manuel de Mines V2.9</revnumber> 
+	<date>Janvier 2006</date> 
+	<revdescription> 
+	  <para role="author">Callum McKenzie <email>callum@spooky-possum.org</email></para>
+	  <para role="publisher">Projet de documentation GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Ce manuel documente la version 2.14 de Mines.</releaseinfo>
+    <!-- The following feedback information only applies to applications
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Votre avis</title> 
+      <para>Pour rapporter une anomalie ou émettre une suggestion concernant <application>Mines</application> ou ce manuel, procédez selon les instructions de la <ulink url="http://bugzilla.gnome.org">base de données des anomalies de GNOME.</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME Mines</primary> 
+  </indexterm>
+  
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+  <sect1 id="intro">
+    <title>Introduction</title>
+
+    <para><application><application>Mines</application></application> est un casse-tête dont le but est de localiser des mines qui flottent sur un océan en utilisant seulement votre cerveau et en ayant un peu de chance.</para>
+
+    <para>Le jeu démarre par une grille recouverte de carrés et sans savoir ce qu'il y a en dessous. En cliquant sur un carré, vous découvrez ce qu'il y a en dessous : soit de l'océan, soit une mine. S'il y a une mine, pas de chance, le jeu est terminé. Si vous découvrez un carré vide, vous survivez et pouvez refaire une tentative. Un peu d'aide vous est apportée ; si vous découvrez un morceau d'océan vide, un nombre indique combien il y a de mines dans les carrés adjacents (ou pas de nombre s'il n'y a pas de mines). Une fois que vous avez découvert quelques carrés vides, vous pouvez commencer à deviner si les carrés qui restent cachent une mine ou pas. Vous gagnez une fois que vous avez découvert tous les carrés qui ne cachent pas de mines et repéré tous les carrés minés.</para>
+
+    <figure id="main-window">
+      <title>Les étapes du jeu : le démarrage, le jeu, l'échec et la victoire.</title>
+    	    <mediaobject><imageobject>
+    	      <imagedata fileref="figures/main-window.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <para>Pour repérer un carré qui cache une mine, cliquez dessus avec le bouton droit pour y placer un drapeau. Si vous cliquez sur un carré sur lequel un nombre est écrit et que vous avez placé exactement ce nombre de drapeaux sur les carrés adjacents, alors les carrés restants se découvrent. Si vous n'avez pas repéré correctement les mines, cela explose et le jeu est terminé. Les carrés qui touchent aux carrés ne possédant aucune mine adjacente (c.-à-d. les carrés vides) sont automatiquement découverts.</para>
+
+    <figure id="status-bar">
+      <title>Information importante.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/statusbar.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <para>Vous êtes chronométré. Pour être bon à ce jeu, il faut être à la fois rapide et ne pas se tromper. Le chronomètre s'arrête dès que vous avez trouvé toutes les mines et découvert tous les carrés sans mine. Votre score correspond à la durée obtenue ; plus elle est petite, mieux c'est.</para>
+
+    <para>La durée de la partie est affichée dans le coin inférieur droit de la fenêtre. À côté, sur la gauche, un compteur affiche le nombre de mines que vous avez repérées dans la grille sur le nombre total de mines cachées.</para>
+
+    <figure id="faces">
+      <title>Le visage jaune vous indique comment vous allez.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/faces.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <!-- Face graphics image. -->
+
+  </sect1>
+
+
+  <sect1 id="details">
+    <title>Les détails</title>
+
+    <para>Cette section donne des informations sur le contrôle du jeu et sur les menus importants. Si vous désirez de l'aide pour trouver les mines, lisez la <link linkend="strategy">section stratégie</link>.</para>
+
+    <sect2>
+      <title>Le but du jeu</title>
+
+      <para>À partir d'un océan de carrés dont le contenu est inconnu, vous devez repérer tous les carrés minés et découvrir tous les carrés vides. Vous n'êtes pas obligé de marquer les carrés minés, mais c'est beaucoup plus facile si vous le faites. Une fois que vous avez découvert tous les carrés non minés, tous les carrés minés restants seront marqués pour vous.</para>
+
+      <para>Vous perdez si vous cliquez avec le bouton gauche sur une mine ou si vous faites un nettoyage automatique d'un carré possédant une mine. Afin d'éviter les accidents, vous ne pouvez pas faire de nettoyage automatique autour d'un carré sans avoir repéré un nombre de mines égal à celui indiqué sur le carré.</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Utilisation de la souris</title>
+      
+      <informaltable>
+        <tgroup cols="2">
+	<!-- FIXME: proper headers. -->
+	  <thead>
+	    <row>
+	      <entry>Action</entry><entry>Résultat</entry>
+	    </row>
+	  </thead>
+	  <tbody>
+	    <row>
+	      <entry>Clic gauche sur un carré non découvert.</entry>
+	      <entry>Découvre le contenu du carré. Pour le meilleur ou le pire.</entry>
+	    </row>
+	    <row>
+	      <entry>Clic gauche sur un carré découvert.</entry>
+	      <entry>Nettoyage automatique. Permet de découvrir les carrés non marqués autour du carré cliqué, mais seulement si le nombre de carrés repérés est égal au nombre indiqué sur ce carré.</entry>
+	    </row>
+	    <row>
+	      <entry>Clic droit sur un carré non découvert.</entry>
+	      <entry>Marque le carré comme étant miné à l'aide d'un drapeau. Si le carré est déjà marqué, le drapeau est retiré.</entry>
+	    </row>
+	  </tbody>
+	</tgroup>
+      </informaltable>
+
+      <tip><para>Si vous avez l'habitude des manipulations plus traditionnelles avec la souris, pas d'inquiétude, ils fonctionnent toujours.</para></tip>
+    </sect2>
+
+    <sect2>
+      <title>Taille du jeu et difficulté</title>
+
+      <para>En choisissant le menu <menuchoice><guimenu>Préférences</guimenu><guimenuitem>Préférences</guimenuitem></menuchoice>, vous pouvez changer la taille du plateau. Des tailles plus grandes prennent évidemment plus de temps et nécessitent plus de concentration. Les petits plateaux sont plus frénétiques. Il est possible de choisir des tailles parmi Petite, Moyenne, Grande et Personnalisée.</para> 
+
+    <figure id="preferences-img">
+      <title>Boîte de dialogue Préférences.</title>
+    	    <mediaobject><imageobject>
+	      <imagedata fileref="figures/preferences.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+      <para>Sur la droite de la boîte de dialogue, il y a trois paramètres pour configurer la taille personnalisée. Horizontale et Verticale désignent la largeur et hauteur de la grille en nombre de carrés. Évidemment, Nombre de mines correspond au nombre de mines à trouver. Si ce nombre est choisi trop grand ou trop petit, le jeu devient alors très facile. Le nombre de mines est limité à un peu moins que le nombre total de carrés.</para>
+
+    </sect2>
+    
+    <sect2>
+      <title>Drapeau « Je ne suis pas sûr »</title>
+
+      <informalfigure id="imnotsureflagsimg">
+    	    <mediaobject><imageobject>
+  	      <imagedata fileref="figures/imnotsureflagscheckbox.png" format="PNG"/>
+	    </imageobject></mediaobject>
+      </informalfigure>
+
+      <para>Dans la boîte de dialogue, il y a une case à cocher appelée Utiliser le drapeau « Je ne suis pas sûr ». Si vous cochez celle-ci, et que vous cliquez ensuite avec le bouton droit sur un carré, vous verrez successivement apparaître le drapeau habituel de marquage des mines, un drapeau avec un point d'interrogation, puis aucun drapeau. Ce nouveau drapeau sert à vous aider dans votre raisonnement pour repérer les emplacements des mines dont vous n'êtes pas certain. Ces drapeaux n'ont aucun effet sur le jeu ; vous devez toujours utiliser le nombre approprié de drapeaux rouges pour pouvoir nettoyer autour d'un carré numéroté.</para>
+
+      <figure id="flags-img">
+	<title>Séquence des drapeaux quand l'option Utiliser le drapeau « Je ne suis pas sûr » est cochée.</title>
+    	    <mediaobject><imageobject>
+  	      <imagedata fileref="figures/flags.png" format="PNG"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+    </sect2>
+
+    <sect2>
+      <title>Utiliser l'avertissement « Trop de drapeaux »</title>
+
+      <para>L'autre case à cocher dans cette boîte de dialogue s'appelle Utiliser l'avertissement « Trop de drapeaux ». Cette fonctionnalité vous permet d'être averti lorsque vous avez placé trop de drapeaux. Par défaut, cette fonctionnalité est désactivée car elle fournit tellement d'indices qu'elle pourrait être considérée comme de la « triche ».</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Astuces</title>
+    
+      <para>Si vous êtes bloqué (il est assez courant d'aboutir à deux options que vous ne pouvez pas résoudre de manière logique), vous pouvez demander une astuce. En utilisant <guimenuitem>Astuce</guimenuitem> du menu <guimenu>Jeu</guimenu>, un carré unique est découvert (ainsi que les carrés adjacents s'ils sont blancs). Le choix du carré est aléatoire mais devrait vous aider. 10 secondes de pénalité sont ajoutées à votre temps quand vous utilisez une astuce.</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Meilleurs scores</title>
+
+      <para>Si le score obtenu est parmi les dix meilleurs scores, la liste des meilleurs scores apparaît et vous pouvez modifier le nom inscrit dans ce tableau. Il est également possible de consulter les scores plus tard en choisissant <guimenuitem>Scores</guimenuitem> du menu <guimenu>Jeu</guimenu>. Le menu déroulant en haut de la boîte de dialogue vous permet d'examiner les scores pour les autres tailles de plateau.</para>
+
+    <figure id="high-score-img">
+      <title>La boîte de dialogue Scores.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/highscores.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+      <tip>
+        <para>Le meilleur score de la taille personnalisée n'a en général aucune signification. N'importe quel autre joueur peut réduire la taille du plateau et obtenir un meilleur temps. Si vous n'avez joué qu'une seule fois avec une taille personnalisée, cela vous indique le score obtenu. C'est la seule raison de son enregistrement.</para>
+      </tip>
+    </sect2>
+
+    <sect2>
+      <title>Taille de la fenêtre</title>
+      
+      <para>La taille des carrés augmente ou diminue lorsque vous changez la taille de la fenêtre du jeu. Si vous voulez utiliser la taille maximale de l'écran, utilisez l'option <guimenuitem>Plein écran</guimenuitem> du menu <guimenu>Préférences</guimenu>. Vous pouvez également utiliser la touche <keycap>F11</keycap> pour basculer en mode plein écran.</para>
+    </sect2>
+
+    <sect2>
+      <title>Pause</title>
+
+      <para>Le jeu est mis en pause de manière automatique quand vous activez une autre fenêtre, ou vous pouvez choisir <guimenuitem>Pause</guimenuitem> dans le menu <guimenu>Jeu</guimenu>. La zone de jeu est cachée afin que vous ne puissiez pas réfléchir à l'avance pendant que le chronomètre est stoppé. Pour continuer de jouer, appuyez sur le bouton « Cliquez pour continuer ».</para>
+    </sect2>
+
+  </sect1>
+
+ <!-- ================ Usage ================================ -->
+
+  <sect1 id="strategy">
+    <title>Stratégie</title>
+
+    <para>La première moitié de cette section explique les méthodes très basiques pour déduire la position des mines. Si vous êtes familier avec ce jeu, passez directement à la sous-section <link linkend="advanced">Situations plus complexes</link>.</para>
+
+    <sect2>
+      <title>Les bases</title>
+      <para>Voici quelques situations de bases qui devraient vous paraître incroyablement évidentes, mais si vous vous prenez la tête sur la manière de jouer avec ce jeu, celles-ci devraient être utiles. Le premier cas est quand un carré isolé est non découvert et que la plupart des carrés autour de lui indiquent 1. Ce carré non découvert est miné.</para>
+
+      <figure>
+        <title>Le cas le plus simple</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-1.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Le cas simple suivant est quand vous avez deux carrés adjacents non découverts et que les deux carrés d'un côté indiquent 2. S'il n'y a pas d'autres voisins non découverts, alors les deux carrés sont minés.</para>
+
+      <figure>
+        <title>Le cas deux mines</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-2.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Enfin, quand il y a trois carrés non découverts en ligne et que le carré découvert à côté de celui du milieu est un 3 (là encore, ce carré ne doit pas avoir d'autres voisins) alors ces trois carrés sont minés.</para>
+
+      <figure>
+        <title>Le cas trois mines</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-3.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>C'étaient les cas les plus simples. D'autres permutations de ces situations simples sont possibles, par exemple les trois carrés sur l'exemple précédent pourraient être en forme de L.</para>
+      <para>Une analyse simple permet de résoudre la plupart des situations, mais pas toutes. Avant de lire les sections suivantes dans lesquelles nous vous donnons des astuces plus complexes, vous devriez d'abord jouer un peu pour voir ce que vous êtes capables de faire par vous-même.</para>
+    </sect2>
+
+    <sect2 id="advanced">
+      <title>Situations plus complexes</title>
+      
+      <para>Voici quelques situations plus complexes. Elles présentent un niveau de difficulté supplémentaire par rapport à la section précédente, donc nous espérons que vous avez suivi notre conseil et joué un peu dans un premier temps.</para>
+
+      <para>Dans l'exemple ci-dessous, les mines sont à gauche des 1. Nous avons deviné ceci par un raisonnement par élimination. Si le carré à gauche du 2 était miné, alors les premiers 1 auraient tous les deux déjà leur nombre maximum de mines, ne laissant aucune place pour la seconde mine du 2 (puisqu'elles seraient également à côté des 1). Ayant éliminé le carré du centre, il ne reste plus que deux carrés possibles pour le 2, ils sont donc tous les deux minés.</para>
+
+      <figure>
+        <title>Un schéma pas si évident.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-1.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Cette situation peut être dissimulée, regardez par exemple la figure ci-dessous. C'est la même situation mais le carré miné supplémentaire à droite a incrémenté tous les nombres de 1.</para>
+
+      <figure>
+        <title>La mine supplémentaire dissimule une copie de l'exemple précédent.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-2.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+<para>Maintenant nous allons essayer un exemple compliqué qui illustre deux points. Le premier est que même si vous n'êtes pas sûr des carrés minés, restreindre les possibilités vous aide. Le second est que savoir quels carrés ne sont pas minés est presque aussi bien que connaître ceux qui le sont.</para>
+
+<para>Supposez sur la figure suivante que le point de départ du raisonnement est la présence de la mine dans le carré en haut à gauche et que par conséquent les deux carrés marqués 2 sur la gauche n'ont besoin que d'une seule mine supplémentaire. Ensuite notez que le 2 le plus à gauche impose qu'un des carrés non découvert en dessous est miné, mais nous ne savons pas encore lequel. Puisqu'au moins un de ces carrés est miné et qu'il y a deux voisins pour le second 2 alors nous savons que ce 2 est également satisfait par l'un de ces deux carrés (nous ne savons toujours pas lequel des deux). Cela signifie que le carré en dessous du 4 n'est pas miné puisque c'est un voisin du second 2 et pas un des deux carrés que nous avons précédemment identifié. Ce carré obligatoirement non miné laisse maintenant le 4 avec seulement 4 voisins - qui doivent être tous minés. Non seulement nous savons maintenant où sont les mines autour du 4 mais en plus, cela nous indique lequel des deux carrés à côté du 2 est miné !</para>
+
+      <figure>
+        <title>Une situation bien complexe.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-3.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+
+<para>Ce type de situation est complexe. Pour tous les autres exemples, vous pouvez apprendre les schémas pour éviter d'avoir à trop réfléchir. Les situations comparables à cette figure n'apparaissent pas facilement ou ne sont pas facilement identifiables. Il est souvent plus facile de simplement ignorer ces situations et de continuer à jouer autre part dans l'espoir de pouvoir commencer à dévoiler des carrés à partir de l'autre côté.</para>
+
+</sect2>
+<sect2>
+
+    <title>Astuces</title>
+
+    <para>Souvenez-vous, le bord de la grille est comme une grande surface déminée (mais sans les nombres). Travailler près du bord de la grille est souvent la meilleure manière d'avancer.</para>
+
+    <para>De temps en temps, vous vous retrouvez dans une situation où il n'y a pas moyen de déduire la configuration. Dans ces cas, soit vous essayez au hasard, soit vous utilisez la fonction astuce (<menuchoice><guimenu>Jeu</guimenu><guimenuitem>Astuce</guimenuitem></menuchoice>). De temps en temps, il n'y a pas une chance sur deux et au lieu de choisir une astuce, vous pouvez préférer miser sur le tirage le plus probable.</para>
+
+    <para>Dernière astuce : vous vous souvenez du compteur en bas à gauche de l'écran qui vous indique combien il vous reste de mines à trouver ? Souvent, vers la fin du jeu, ce nombre peut vous aider à deviner les éventuelles positions des mines. C'est à vous de deviner comment faire.</para>
+
+    </sect2>
+ </sect1>
+
+ <sect1 id="authors">
+  <title>Auteurs</title>
+  <para><application>GNOME Mines</application> a été écrit par Pista (<email>szekeres@cyberspace.mht.bme.hu</email>). Ce manuel a été écrit par Callum McKenzie (<email>callum@spooky-possum.org</email>) avec l'aide de Vincent Povirk et à partir du précédent manuel de Tim Riehle (<email>tkriehle@citilink.com</email>). Pour rapporter une anomalie ou émettre une suggestion concernant cette application ou ce manuel, procédez comme indiqué sur ce <ulink url="ghelp:user-guide?feedback-bugs" type="help">document</ulink>.</para>
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licence</title>
+  <para>Ce programme est un logiciel libre ; vous pouvez le redistribuer et/ou le modifier selon les termes de la <ulink type="help" url="gnome-help:gpl"><citetitle>GNU General Public License</citetitle></ulink>, tels que publiés par la <ulink type="http" url="http://www.fsf.org">Free Software Foundation</ulink>; soit la version 2 de cette licence ou (à votre choix) toute version ultérieure.</para>
+  <para>Ce programme est distribué dans l’espoir qu’il sera utile, mais SANS AUCUNE GARANTIE, ni explicite ni implicite; sans même les garanties de commercialisation ou d’adaptation dans un but spécifique. Se référer à la <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> pour plus de détails.</para>
+  <para>Une copie de la <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> est incluse sous forme d'annexe au <citetitle>Guide d'utilisation du bureau GNOME</citetitle>. Vous pouvez également obtenir une copie de la <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> à la Free Software Foundation en visitant <ulink type="http" url="http://www.fsf.org">leur site Web</ulink> ou en écrivant à <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

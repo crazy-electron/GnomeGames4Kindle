@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.28">
+<!ENTITY manrevision "1.0">
+<!ENTITY date "July 2009">
+<!ENTITY app "<application>Lights Off</application>">
+<!ENTITY appname "Lights Off">
+<!ENTITY version "1.0">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sv">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Handbok för <application>Släck Lyset</application></title>
+
+    <abstract role="description">
+      <para>Släck lyset är ett pusselspel där målet är att släcka alla brickorna på brädet. Varje klick alternerar tillståndet för den klickade brickan och dess icke-diagonala grannar.</para>
+    </abstract>
+
+    <copyright>
+      <year>2010</year>
+      <holder>TIm Horton</holder>
+    </copyright><copyright><year>2011</year><holder>Henrik Löwendahl (henrik.lowendahl@purplescout.se)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Gnome-dokumentationsprojektet</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Tillstånd att kopiera, distribuera och/eller modifiera detta dokument ges under villkoren i GNU Free Documentation License (GFDL), version 1.1 eller senare, utgivet av Free Software Foundation utan standardavsnitt och omslagstexter.  En kopia av GFDL finns att hämta på denna <ulink type="help" url="ghelp:fdl">länk</ulink> eller i filen COPYING-DOCS som medföljer denna handbok.</para>
+         <para>Denna handbok utgör en av flera GNOME-handböcker som distribueras under villkoren i GFDL.  Om du vill distribuera denna handbok separat från övriga handböcker kan du göra detta genom att lägga till en kopia av licensavtalet i handboken enligt instruktionerna i avsnitt 6 i licensavtalet.</para>
+
+	<para>Flera namn på produkter och tjänster är registrerade varumärken. I de fall dessa namn förekommer i GNOME-dokumentation - och medlemmarna i GNOME-dokumentationsprojektet är medvetna om dessa varumärken - är de skrivna med versaler eller med inledande versal.</para>
+
+	<para>DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET TILLHANDAHÅLLS UNDER VILLKOREN I GNU FREE DOCUMENTATION LICENSE ENDAST UNDER FÖLJANDE FÖRUTSÄTTNINGAR: <orderedlist>
+		<listitem>
+		  <para>DOKUMENTET TILLHANDAHÅLLS I "BEFINTLIGT SKICK" UTAN NÅGRA SOM HELST GARANTIER, VARE SIG UTTRYCKLIGA ELLER UNDERFÖRSTÅDDA, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, GARANTIER ATT DOKUMENTET ELLER EN MODIFIERAD VERSION AV DOKUMENTET INTE INNEHÅLLER NÅGRA FELAKTIGHETER, ÄR LÄMPLIGT FÖR ETT VISST ÄNDAMÅL ELLER INTE STRIDER MOT LAG. HELA RISKEN VAD GÄLLER KVALITET, EXAKTHET OCH UTFÖRANDE AV DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET LIGGER HELT OCH HÅLLET PÅ ANVÄNDAREN. OM ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT SKULLE VISA SIG INNEHÅLLA FELAKTIGHETER I NÅGOT HÄNSEENDE ÄR DET DU (INTE DEN URSPRUNGLIGA SKRIBENTEN, FÖRFATTAREN ELLER NÅGON ANNAN MEDARBETARE) SOM FÅR STÅ FÖR ALLA EVENTUELLA KOSTNADER FÖR SERVICE, REPARATIONER ELLER KORRIGERINGAR. DENNA GARANTIFRISKRIVNING UTGÖR EN VÄSENTLIG DEL AV DETTA LICENSAVTAL. DETTA INNEBÄR ATT ALL ANVÄNDNING AV ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT BEVILJAS ENDAST UNDER DENNA ANSVARSFRISKRIVNING;</para>
+		</listitem>
+		<listitem>
+		  <para>UNDER INGA OMSTÄNDIGHETER ELLER INOM RAMEN FÖR NÅGON LAGSTIFTNING, OAVSETT OM DET GÄLLER KRÄNKNING (INKLUSIVE VÅRDSLÖSHET), KONTRAKT ELLER DYLIKT, SKA FÖRFATTAREN, DEN URSPRUNGLIGA SKRIBENTEN ELLER ANNAN MEDARBETARE ELLER ÅTERFÖRSÄLJARE AV DOKUMENTET ELLER AV EN MODIFIERAD VERSION AV DOKUMENTET ELLER NÅGON LEVERANTÖR TILL NÅGON AV NÄMNDA PARTER STÄLLAS ANSVARIG GENTEMOT NÅGON FÖR NÅGRA DIREKTA, INDIREKTA, SÄRSKILDA ELLER OFÖRUTSEDDA SKADOR ELLER FÖLJDSKADOR AV NÅGOT SLAG, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, SKADOR BETRÄFFANDE FÖRLORAD GOODWILL, HINDER I ARBETET, DATORHAVERI ELLER NÅGRA ANDRA TÄNKBARA SKADOR ELLER FÖRLUSTER SOM KAN UPPKOMMA PÅ GRUND AV ELLER RELATERAT TILL ANVÄNDNINGEN AV DOKUMENTET ELLER MODIFIERADE VERSIONER AV DOKUMENTET, ÄVEN OM PART SKA HA BLIVIT INFORMERAD OM MÖJLIGHETEN TILL SÅDANA SKADOR.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL),
+and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+	
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Tim</firstname> 
+	<surname>Horton</surname> 
+	<affiliation> 
+	  <address> <email>hortont@gnome.org</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.29" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Handbok för Släck lyset v1.0</revnumber> 
+	<date>Januari 2010</date> 
+	<revdescription> 
+	  <para role="author">Tim Horton <email>hortont@gnome.org</email></para>
+	  <para role="publisher">Gnome-dokumentationsprojektet</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Denna handbok beskriver version 2.28 av Släck lyset.</releaseinfo>
+    <!-- The following feedback information only applies to applications
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove this
+    section altogether -->
+    <legalnotice> 
+      <title>Återkoppling</title> 
+      <para>För att rapportera ett fel eller lämna ett förslag rörande programmet <application>Släck Lyset</application> eller denna handbok, följ instruktionerna på <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME:s återkopplingssida</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Släck lyset</primary> 
+  </indexterm>
+
+<!-- ==============================Document Body==================-->
+
+<sect1 id="s1-intro">
+ <title>Introduktion</title>
+
+<!--synopsis of game-->
+  <para><application>Släck lyset</application> är ett pusselspel där målet är att släcka alla brickorna på brädet. Varje klick alternerar tillståndet för den klickade brickan och dess icke-diagonala grannar.</para>
+
+<!--running game-->
+   <para>För att köra <application>Släck lyset</application>, välj <menuchoice><guimenu>Program</guimenu><guisubmenu>Spel</guisubmenu><guimenuitem>Släck lyset</guimenuitem></menuchoice> eller skriv <command>lightsoff</command> i kommandoraden.</para>
+
+<!--part of gnome-games-->
+   <para><application>Släck lyset</application> är inkluderat i paketet <filename>gnome-games</filename>, vilket är en del av skrivbordsmiljön GNOME. Det här dokumentet beskriver version 1.0 av  <application>Släck lyset</application>.</para>
+</sect1>
+
+<sect1 id="s1-playing">
+ <title>Spela <application>Släck lyset</application></title>
+  <para>Du rör dig framåt genom nivåerna genom att antingen släcka alla brickorna på en nivå, eller använda de pilformade knapparna nära botten av spelet. Dessa knappar tillåter dig att hoppa över nivåer, eller återgå till tidigare nivåer, utan begränsningar.</para>
+   <sect2 id="s2-block-moving">
+     <title>Manipulera brädet</title>
+      <para>Det finns bara en sak att göra i <application>Släck lyset</application>: klicka på en bricka på spelbrädet. Den antingen klicka på brickan med musen, eller använda piltangenterna för att välja den. Första gången du trycker ner en piltangent under en omgång <application>Släck lyset</application>, kommer en markör visas, som du kan flytta runt med tangentbordet; tryck på retur för att klicka på brickan under markören.</para>
+      <para>När en bricka blir klickad, kommer både den och dess icke-diagonala grannar att alternera sitt tillstånd. Målet är att släcka alla brickorna på spelbrädet.</para>
+   </sect2>
+   <sect2 id="s2-newgame">
+     <title>Starta ett nytt spel</title>
+      <para>För att starta ett nytt spel, gå till <menuchoice><guimenu>Spel</guimenu><guimenuitem>Nytt spel</guimenuitem></menuchoice>. Att gå vidare till nya nivåer är samma för mellan spel och mellan datorer, så <menuchoice><guimenuitem>Nytt spel</guimenuitem></menuchoice> bör endast väljas om du verkligen vill återgå till början av spelet.</para>
+    </sect2>
+</sect1>
+
+ 
+<sect1 id="s1-customizegame">
+ <title>Anpassa <application>Släck lyset</application></title>
+   <sect2 id="s2-customlook">
+    <title>Anpassa utseendet för <application>Släck lyset</application></title>
+    <para>Under <menuchoice><guimenu>Spel</guimenu><guimenuitem>Inställningar</guimenuitem></menuchoice> kan du anpassa brickornas utseende i <application>Släck lyset</application>. Ett antal olika stilar är inkluderade, varav vissa använder sig av ditt färgerna i ditt GNOME-tema. Detta kan inaktiveras med alternativet <guilabel>Använd färger från GNOME-tema</guilabel> i inställningsfönstret.</para>
+    </sect2>
+   </sect1>
+
+<sect1 id="authors">
+  <title>Upphovsmän</title>
+  <para><application>Släck lyset</application> skrevs av Tim Horton 2009 och underhålls av Gnome Games-gruppen sedan dess. Denna handbok skrevs av Tim Horton. För att rapportera ett fel eller lämna ett förslag rörande detta program eller denna handbok, följ instruktionerna i <ulink url="ghelp:user-guide?feedback-bugs" type="help">detta dokument</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+</sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="s1-license">
+  <title>Licens</title>
+  <para>Detta program är fri programvara. Du kan distribuera det och/eller modifiera det under villkoren i <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> som publicerats av Free Software Foundation, antingen version 2 eller (om du så vill) någon senare version.</para>
+  <para>Detta program distribueras i hopp om att det ska vara användbart, men UTAN NÅGON SOM HELST GARANTI, även utan underförstådd garanti om SÄLJBARHET eller LÄMPLIGHET FÖR NÅGOT SPECIELLT ÄNDAMÅL. Se <citetitle>GNU General Public License</citetitle> för ytterligare information.</para>
+  <para>En kopia av <citetitle>GNU General Public License</citetitle> finns inkluderad som en bilaga till <citetitle>Användarguide för GNOME</citetitle>. Du kan även få en kopia av <citetitle>GNU General Public License</citetitle> från Free Software Foundation genom att besöka <ulink type="http" url="http://www.fsf.org">deras webbplats</ulink> eller genom att skriva till <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

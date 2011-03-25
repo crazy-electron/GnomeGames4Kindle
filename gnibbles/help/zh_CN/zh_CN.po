@@ -1,0 +1,843 @@
+# Chinese (China) translation for gnome-games.
+# Copyright (C) 2010 gnome-games's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-games package.
+# M Zhang <mymzhang@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games master\n"
+"POT-Creation-Date: 2010-07-14 00:07+0000\n"
+"PO-Revision-Date: 2010-07-15 11:18+0800\n"
+"Last-Translator: YunQiang Su <wzssyqa@gmail.com>\n"
+"Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnibbles.xml:188(None)
+msgid "@@image: 'figures/intro.png'; md5=fba0b0fc807a1eed13d9b5bba6a8d9fa"
+msgstr "@@image: 'figures/intro.png'; md5=fba0b0fc807a1eed13d9b5bba6a8d9fa"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnibbles.xml:211(None)
+msgid "@@image: 'figures/playing.png'; md5=68c63b494278113a82ac864a277891c4"
+msgstr "@@image: 'figures/playing.png'; md5=68c63b494278113a82ac864a277891c4"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnibbles.xml:411(None)
+msgid "@@image: 'figures/game.png'; md5=3103fe2ce969c658bf74cbf66fb2ec64"
+msgstr "@@image: 'figures/game.png'; md5=3103fe2ce969c658bf74cbf66fb2ec64"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnibbles.xml:493(None)
+msgid "@@image: 'figures/worm_op.png'; md5=b6ccbcdd5d11fe28a75fd23c0d96483a"
+msgstr "@@image: 'figures/worm_op.png'; md5=b6ccbcdd5d11fe28a75fd23c0d96483a"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnibbles.xml:54(None)
+msgid "@@image: 'figures/connect.png'; md5=9a03bf23f04eacfd6feb9de823d6e321"
+msgstr "@@image: 'figures/connect.png'; md5=9a03bf23f04eacfd6feb9de823d6e321"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnibbles.xml:77(None)
+msgid "@@image: 'figures/tables.png'; md5=96e520cee7fdbee56636794251a52b0d"
+msgstr "@@image: 'figures/tables.png'; md5=96e520cee7fdbee56636794251a52b0d"
+
+#: C/gnibbles.xml:28(title)
+msgid "<application>Nibbles</application> Manual"
+msgstr "<application>贪吃蛇</application> 手册"
+
+#: C/gnibbles.xml:31(para)
+msgid ""
+"Nibbles is a worm game for GNOME. The player controls a 2D worm while trying "
+"to get food. Getting food gives points, but hitting anything causes a loss "
+"of points. When all points are lost, the player loses."
+msgstr ""
+"Nibbles 是一个 GNOME 下的贪吃蛇游戏。玩家控制一条试图获取食物的 2D 蛇。获取食"
+"物得到点数，但是碰到任何物体会损失点数。当所有点数损失掉时，玩家便输掉游戏。"
+
+#: C/gnibbles.xml:40(year)
+msgid "2000"
+msgstr "2000"
+
+#: C/gnibbles.xml:41(holder)
+msgid "Kevin Breit"
+msgstr "Kevin Breit"
+
+#: C/gnibbles.xml:57(publishername) C/gnibbles.xml:70(orgname)
+#: C/gnibbles.xml:98(para)
+msgid "GNOME Documentation Project"
+msgstr "GNOME 文档项目"
+
+#: C/gnibbles.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"对于本文档的复制、分发和／或修改必须遵循自由软件基金会 (Free Software "
+"Foundation) 发布的 GNU 自由文档许可证 (GFDL) 版本 1.1 或更高版本，该许可证没"
+"有固定的部分、没有封面和背页文本。您可以在此<ulink type=\"help\" url=\"ghelp:"
+"fdl\">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副"
+"本。"
+
+#: C/gnibbles.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"本手册是以 GFDL 许可协议发布的 GNOME 手册集合的一部分。如果您要单独分发本手"
+"册，您可以将许可协议的副本添加到手册后再这样做，如许可协议的第 6 部分所述。"
+
+#: C/gnibbles.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 GNOME 文"
+"档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而"
+"表明它们是商标。"
+
+#: C/gnibbles.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"文档按“原样”提供，不提供任何明示或暗示的保证，包括但不限于：文档或文档的修改"
+"版本没有适销性方面的缺陷、适合特定目的的适用性，以及没有侵权行为。您将自行承"
+"担本文档以及文档修改版本的质量、准确性以及性能方面的风险。如果任何文档或文档"
+"修改版本存在缺陷，您(而不是最初的编写者、作者或撰写人)将承担所有必需的服务、"
+"维修或更正的费用。此免责声明是本许可证的重要组成部分。如果不接受此免责声明，"
+"那么您就没有权利使用任何文档或文档的修改版本；并且"
+
+#: C/gnibbles.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"无论在任何情况以及在任何法律理论下，本文档或文档修改版本的作者、最初的编写"
+"者、任何撰写人或任何分发者，或者任意这些方的任何提供者都不对任何人由于使用本"
+"文档或文档修改版本引起或带来的任何直接的、间接的、特殊的、偶然的或继发的损失"
+"承担任何民事(包括疏忽)、合同或其它方面的责任，这些损失包括但不限于信誉损失、"
+"工作停止、计算机失败或故障，或任何以及所有其它损失或由此引发的或与之相关的损"
+"失，即使这些方已被告知存在出现此类损失的可能性时也是如此。"
+
+#: C/gnibbles.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"本文档以及文档的修改版本都是在遵循 GNU 自由文档许可证的条款下提供，这表示具有"
+"以下含义：<placeholder-1/>"
+
+#: C/gnibbles.xml:67(firstname)
+msgid "Kevin"
+msgstr "Kevin"
+
+#: C/gnibbles.xml:68(surname)
+msgid "Breit"
+msgstr "Breit"
+
+#: C/gnibbles.xml:71(email)
+msgid "battery841@mypad.com"
+msgstr "battery841@mypad.com"
+
+#: C/gnibbles.xml:92(revnumber)
+msgid "Nibbles Manual V2.20"
+msgstr "贪吃蛇手册 2.20 版"
+
+#: C/gnibbles.xml:93(date)
+msgid "May 2007"
+msgstr "2007年5月"
+
+#: C/gnibbles.xml:95(para)
+msgid "Kevin Breit <email>battery841@mypad.com</email>"
+msgstr "Kevin Breit <email>battery841@mypad.com</email>"
+
+#: C/gnibbles.xml:103(releaseinfo)
+msgid "This manual describes version 2.20 of Nibbles."
+msgstr "本手册描述的是 2.20 版的贪吃蛇。"
+
+#: C/gnibbles.xml:110(title)
+msgid "Feedback"
+msgstr "反馈"
+
+#: C/gnibbles.xml:111(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Nibbles</"
+"application> application or this manual, follow the directions in the <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
+"ulink>."
+msgstr ""
+"对<application>贪吃蛇</application>应用程序或本手册报告错误或提供建议，请遵"
+"从 <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME 反馈页面"
+"</ulink>中的指导。"
+
+#: C/gnibbles.xml:121(primary)
+msgid "Nibbles"
+msgstr "贪吃蛇"
+
+#: C/gnibbles.xml:128(title)
+msgid "Introduction"
+msgstr "简介"
+
+#: C/gnibbles.xml:130(para)
+msgid ""
+"<application>Nibbles</application> is a game where the user controls a worm. "
+"The worm moves around the board, eating diamonds while avoiding the walls "
+"placed around it."
+msgstr ""
+"<application>贪吃蛇</application>是由玩家来控制一条蛇的一个游戏。蛇在面板上到"
+"处移动，吃掉钻石，同时避免碰到置于周围的墙壁。"
+
+#: C/gnibbles.xml:134(para)
+msgid ""
+"To run <application>Nibbles</application>, select "
+"<menuchoice><guisubmenu>Games</guisubmenu><guimenuitem>Nibbles</"
+"guimenuitem></menuchoice> from the <guimenu>Applications</guimenu> menu, or "
+"type <command>gnibbles</command> on the command line."
+msgstr ""
+"要运行<application>贪吃蛇</application>，请从<guimenu>应用程序</guimenu>菜单"
+"中选择<menuchoice><guisubmenu>游戏</guisubmenu><guimenuitem>贪吃蛇</"
+"guimenuitem></menuchoice>，或在命令行中键入<command>gnibbles</command>。"
+
+#: C/gnibbles.xml:144(para)
+msgid ""
+"<application>Nibbles</application> is included in the <filename>gnome-games</"
+"filename> package, which is part of the GNOME desktop environment. This "
+"document describes version 2.20 of <application>Nibbles</application>."
+msgstr ""
+"<application>贪吃蛇</application>包含于<filename>gnome-games</filename>软件"
+"包，为 GNOME 桌面环境的一部分。本文档描述的是 2.20 版的<application>贪吃蛇</"
+"application>。"
+
+#: C/gnibbles.xml:153(title)
+msgid "Nibbles Objective"
+msgstr "贪吃蛇目标"
+
+#: C/gnibbles.xml:154(para)
+msgid ""
+"The objective of Nibbles is quite simple. You control the worm and if the "
+"worm runs into a wall or runs into itself, you die. You get ten lives before "
+"your game is over. You win by either beating your own high score (or a "
+"friend's) or by completing all the levels. It is also possible to play "
+"against worms with artificial intelligence."
+msgstr ""
+"贪吃蛇的目标十分简单。由您来控制蛇，如果蛇碰到墙壁，或碰到自己，蛇会死掉。在"
+"游戏完成前，您可以得到10条命。您可以通过超过自己(或朋友的)最高分数，或完成所"
+"有级别来获得胜利。也可以同智能的蛇来游戏。"
+
+#: C/gnibbles.xml:161(para)
+msgid ""
+"Nibbles also features <link linkend=\"network-games\">multiplayer</link> "
+"support with up to six competing human players in hotseat or network mode."
+msgstr ""
+"在热座模式或网络模式下，贪吃蛇也提供<link linkend=\"network-games\">多人游戏"
+"</link>支持，最多可以有6个玩家。"
+
+#: C/gnibbles.xml:171(title)
+msgid "Using Nibbles"
+msgstr "使用贪吃蛇"
+
+#: C/gnibbles.xml:172(para)
+msgid ""
+"<application>Nibbles</application> is a simple game to play. The only keys "
+"that are needed are the arrow keys."
+msgstr ""
+"<application>贪吃蛇</application> 为一个玩法简单的游戏。游戏所需的键只有方向"
+"键。"
+
+#: C/gnibbles.xml:179(title)
+msgid "Basic usage"
+msgstr "基本使用"
+
+#: C/gnibbles.xml:184(title)
+msgid "Nibbles Introduction Window"
+msgstr "贪吃蛇简介窗口"
+
+#: C/gnibbles.xml:191(phrase)
+msgid "Nibbles Introduction Window."
+msgstr "贪吃蛇简介窗口。"
+
+#: C/gnibbles.xml:180(para)
+msgid ""
+"Starting <application>Nibbles</application> opens the <interface>main "
+"window</interface> shown below. <placeholder-1/>"
+msgstr ""
+"启动<application>贪吃蛇</application>，会打开如下所示的<interface>主窗口</"
+"interface>。 <placeholder-1/>"
+
+#: C/gnibbles.xml:197(para)
+msgid ""
+"To start the game, select <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>New Game</guimenuitem></menuchoice>."
+msgstr ""
+"要开始游戏，请选择 <menuchoice><guimenu>游戏</guimenu><guimenuitem>新建</"
+"guimenuitem></menuchoice>。"
+
+#: C/gnibbles.xml:207(title)
+msgid "Nibbles During Gameplay"
+msgstr "游戏进行时的贪吃蛇"
+
+#: C/gnibbles.xml:214(phrase)
+msgid "Nibbles During Gameplay."
+msgstr "游戏进行时的贪吃蛇。"
+
+#: C/gnibbles.xml:201(para)
+msgid ""
+"When the game starts, the worm will come out of the left side of the screen. "
+"You use the up arrow to make the direction of the worm go up. Use the right "
+"arrow to turn the worm right, left arrow to turn the worm left, and down "
+"arrow to turn the worm down. <placeholder-1/>"
+msgstr ""
+"当游戏启动后，蛇会从屏幕左侧出来。您可以使用上方向键让蛇的方向为向上。使用右"
+"方向键让蛇转向右方，左方向键转向左方向，下方向键使蛇转向下方向。<placeholder-"
+"1/>"
+
+#: C/gnibbles.xml:230(title)
+msgid "Menus"
+msgstr "菜单"
+
+#: C/gnibbles.xml:231(para)
+msgid ""
+"The menu bar, located at the top of the <interface>Main Window</interface>, "
+"contains the following menus:"
+msgstr "菜单栏，位于<interface>主窗口</interface>的顶端，包含如下菜单项："
+
+#: C/gnibbles.xml:238(guimenu)
+msgid "Game"
+msgstr "游戏"
+
+#: C/gnibbles.xml:244(para)
+msgid ""
+"<menuchoice><shortcut><keysym>Ctrl+N</keysym></shortcut><guimenuitem>New "
+"Game</guimenuitem></menuchoice> This starts a new game of "
+"<application>Nibbles</application>."
+msgstr ""
+"<menuchoice><shortcut><keysym>Ctrl+N</keysym></shortcut><guimenuitem>新建</"
+"guimenuitem></menuchoice> 启动新的<application>贪吃蛇</application>游戏。"
+
+#: C/gnibbles.xml:255(para)
+msgid ""
+"<menuchoice><shortcut><keysym>Ctrl+G</keysym></shortcut><guimenuitem>Network "
+"Game</guimenuitem></menuchoice> This starts a network multiplayer game using "
+"GGZ Gaming Zone."
+msgstr ""
+"<menuchoice><shortcut><keysym>Ctrl+G</keysym></shortcut><guimenuitem>网络游戏"
+"</guimenuitem></menuchoice> 启动使用 GGZ 游戏空间的网络多人游戏。"
+
+#: C/gnibbles.xml:266(para)
+msgid ""
+"<menuchoice><guimenuitem>Scores</guimenuitem></menuchoice> This shows the "
+"high scores."
+msgstr ""
+"<menuchoice><guimenuitem>分数</guimenuitem></menuchoice> 显示最高得分。"
+
+#: C/gnibbles.xml:274(para)
+msgid ""
+"<menuchoice><guimenuitem>Pause game</guimenuitem></menuchoice> This will "
+"pause your game. Click on the <quote>Pause Game </quote> menu option to "
+"resume game."
+msgstr ""
+"<menuchoice><guimenuitem>暂停游戏</guimenuitem></menuchoice> 暂停您的游戏。点"
+"击 <quote>暂停游戏 </quote> 菜单选项可以恢复游戏。"
+
+#: C/gnibbles.xml:283(para)
+msgid ""
+"<menuchoice><guimenuitem>End Game</guimenuitem></menuchoice> End the current "
+"game and return to the title screen."
+msgstr ""
+"<menuchoice><guimenuitem>结束游戏</guimenuitem></menuchoice> 结束当前游戏，返"
+"回标题屏幕。"
+
+#: C/gnibbles.xml:291(para)
+msgid ""
+"<menuchoice><shortcut><keysym>Ctrl-Q</keysym></shortcut><guimenuitem>Exit</"
+"guimenuitem></menuchoice> This quits the application."
+msgstr ""
+"<menuchoice><shortcut><keysym>Ctrl-Q</keysym></shortcut><guimenuitem>退出</"
+"guimenuitem></menuchoice> 退出程序。"
+
+#: C/gnibbles.xml:240(para) C/gnibbles.xml:309(para) C/gnibbles.xml:328(para)
+#: C/gnibbles.xml:348(para)
+msgid "This menu contains: <placeholder-1/>"
+msgstr "此菜单包含：<placeholder-1/>"
+
+#: C/gnibbles.xml:307(guimenu)
+msgid "View"
+msgstr "查看"
+
+#: C/gnibbles.xml:313(para)
+msgid ""
+"<menuchoice><guimenuitem>Fullscreen</guimenuitem></menuchoice> This toggles "
+"your game window to be fullscreen."
+msgstr ""
+"<menuchoice><guimenuitem>全屏</guimenuitem></menuchoice> 将您的游戏窗口切换到"
+"全屏。"
+
+#: C/gnibbles.xml:326(guimenu)
+msgid "Settings"
+msgstr "设置"
+
+#: C/gnibbles.xml:332(para)
+msgid ""
+"<menuchoice><guimenuitem>Preferences</guimenuitem></menuchoice> This opens "
+"your window to edit <link linkend=\"prefs\"> preferences.</link>"
+msgstr ""
+"<menuchoice><guimenuitem>首选项</guimenuitem></menuchoice> 打开窗口编辑 "
+"<link linkend=\"prefs\"> 首选项。</link>"
+
+#: C/gnibbles.xml:346(guimenu)
+msgid "Help"
+msgstr "帮助"
+
+#: C/gnibbles.xml:352(para)
+msgid ""
+"<menuchoice><shortcut><keysym>F1</keysym></shortcut><guimenuitem>Contents</"
+"guimenuitem></menuchoice> Display this manual."
+msgstr ""
+"<menuchoice><shortcut><keysym>F1</keysym></shortcut><guimenuitem>目录</"
+"guimenuitem></menuchoice>  显示本手册。"
+
+#: C/gnibbles.xml:361(para)
+msgid ""
+"<guimenuitem>About</guimenuitem> This opens the <interface>About</interface> "
+"dialog which shows basic information about <application>Nibbles</"
+"application>, such as the author's name, the version number of the game."
+msgstr ""
+"<guimenuitem>关于</guimenuitem> 打开<interface>关于</interface>对话框，显示"
+"<application>贪吃蛇</application>的基本信息，如作者姓名，游戏版本号。"
+
+#: C/gnibbles.xml:376(title)
+msgid "Diamonds"
+msgstr "钻石"
+
+#: C/gnibbles.xml:377(para)
+msgid ""
+"<application>Nibbles</application> has numerous different diamonds to eat. "
+"They are each a different color and serve a different function. Only the "
+"pale purple diamond is guaranteed to be around long enough for you to eat it "
+"(in fact, you have to eat them to finish the level). The other diamonds are "
+"all bonuses, but they only stick around for a short time. We'll leave it up "
+"to you to discover just what the bonus each colour gives, but they all "
+"affect either the score, the length of the worm, or both. Be careful when "
+"going for these bonus diamonds, don't cut yourself off from the ordinary "
+"diamonds that you need to finish the level."
+msgstr ""
+"<application>贪吃蛇</application>可以吃掉许多不同的钻石。它们颜色各不相同，具"
+"有不同的功能。只有浅紫色的钻石在足够长的时候才能吃掉它(实际上，您的蛇必须吃掉"
+"它们以完成这一关)。其他的钻石全部是奖励，但是它们仅存在很短的时间。我们会留给"
+"您来发现每种颜色获得什么奖励，但是它们全部影响分数，蛇的长度，或者两个都影"
+"响。当走向这些奖励钻石时要小心，不要切断你走向结束这一关的普通钻石的路。"
+
+#: C/gnibbles.xml:395(title)
+msgid "Customization"
+msgstr "自定义"
+
+#: C/gnibbles.xml:396(para)
+msgid ""
+"To change the application settings, select <menuchoice><guimenu>Settings</"
+"guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>. This opens the "
+"<interface>Preferences</interface> dialog. All preferences are automatically "
+"saved and applied as you change them."
+msgstr ""
+"要改变程序设置，请选择<menuchoice><guimenu>设置</guimenu><guimenuitem>首选项"
+"</guimenuitem></menuchoice>。这会打开<interface>首选项</interface>对话框。当"
+"您改变设置时，所有设置会自动保存及应用。"
+
+#: C/gnibbles.xml:407(title)
+msgid "Game Preferences Tab"
+msgstr "游戏首选项标签页"
+
+#: C/gnibbles.xml:414(phrase)
+msgid "Game Preferences Tab."
+msgstr "游戏首选项标签页。"
+
+#: C/gnibbles.xml:424(term)
+msgid "Speed"
+msgstr "速度"
+
+#: C/gnibbles.xml:426(para)
+msgid "This controls the speed of the worm."
+msgstr "控制蛇的速度。"
+
+#: C/gnibbles.xml:432(term)
+msgid "Play levels in random order"
+msgstr "以随机顺序排列关卡"
+
+#: C/gnibbles.xml:434(para)
+msgid "Selecting this causes the level advancement to happen in random order."
+msgstr "选择该项会实现以随机顺序升级。"
+
+#: C/gnibbles.xml:441(term)
+msgid "Enable fake bonuses"
+msgstr "启用虚假奖品"
+
+#: C/gnibbles.xml:443(para)
+msgid ""
+"When enabled, this allows for two blue diamonds on the screen at a time. One "
+"diamond makes you shrink instead of grow when eaten."
+msgstr ""
+"当启用该选项时，屏幕上会允许同时有两个蓝色钻石。其中的一个钻石会让蛇在吃东西"
+"时长度变短而不是变长。"
+
+#: C/gnibbles.xml:451(term)
+msgid "Enable sounds"
+msgstr "启用声音"
+
+#: C/gnibbles.xml:453(para)
+msgid "Controls the use of sound in the game."
+msgstr "控制游戏中声音的使用。"
+
+#: C/gnibbles.xml:459(term)
+msgid "Starting level"
+msgstr "初始级别"
+
+#: C/gnibbles.xml:461(para)
+msgid ""
+"Which level to start with. Use this if you want to jump immediately to a "
+"challenging level."
+msgstr "启动时的级别。如果您要立即切换到挑战级别，使用该项。"
+
+#: C/gnibbles.xml:468(term)
+msgid "Number of human players"
+msgstr "人类玩家数目"
+
+#: C/gnibbles.xml:470(para)
+msgid "There is room for up to six players."
+msgstr "最多允许有 6 名玩家。"
+
+#: C/gnibbles.xml:476(term)
+msgid "Number of AI players"
+msgstr "AI 游戏者数目"
+
+#: C/gnibbles.xml:478(para)
+msgid ""
+"There is room for up to six AI players. Note that the total number of human "
+"and AI players must be less than or equal to six."
+msgstr "最多允许 6 个 AI 玩家。注意人类玩家与 AI 玩家的总数必须小于或等于 6。"
+
+#: C/gnibbles.xml:420(para)
+msgid ""
+"The properties in the <guilabel>Game</guilabel> tab are: <placeholder-1/>"
+msgstr "<guilabel>游戏</guilabel> 标签页中的属性为：<placeholder-1/>"
+
+#: C/gnibbles.xml:489(title)
+msgid "Worm Preferences Tab"
+msgstr "贪吃蛇属性标签页"
+
+#: C/gnibbles.xml:496(phrase)
+msgid "Worm Preferences Tab."
+msgstr "贪吃蛇属性标签页。"
+
+#: C/gnibbles.xml:507(term)
+msgid "Keyboard controls"
+msgstr "键盘控制"
+
+#: C/gnibbles.xml:509(para)
+msgid ""
+"This list let you change the keyboard controls for the given worm. To change "
+"a control, double click on the appropriate entry and then press the key you "
+"want to use for that control."
+msgstr ""
+"本列表允许您改变给定蛇的键盘控制按键。要改变控制，双击合适的项，然后按下您想"
+"要用作控制的按键。"
+
+#: C/gnibbles.xml:517(term)
+msgid "Use relative motion"
+msgstr "使用相对移动"
+
+#: C/gnibbles.xml:519(para)
+msgid ""
+"Rather than left sending your worm toward the left of the screen, right "
+"toward the right and so on, the left and right keys make the worm perform a "
+"left or right turn. For example, if the worm is moving to the left and you "
+"press the left control it turns to head toward the bottom of the screen."
+msgstr ""
+"这项，不是让左方向键让蛇向屏幕的左方走，右方向键让蛇向右走等，而是左右方向键"
+"让蛇向左或向右转。例如，蛇正在向左走，而您按下了左键，将控制它转向屏幕的底"
+"部。"
+
+#: C/gnibbles.xml:529(term)
+msgid "Worm color"
+msgstr "贪吃蛇颜色"
+
+#: C/gnibbles.xml:531(para)
+msgid ""
+"Customize the color of your worm so you can tell it from your opponent's "
+"worm in multi-player mode."
+msgstr "自定义蛇的颜色，在多人模式下您可以将对手的蛇区分开来。"
+
+#: C/gnibbles.xml:486(para)
+msgid ""
+"<placeholder-1/> The properties in the <guilabel>Worm 1 </guilabel>through "
+"<guilabel> Worm 6</guilabel> tabs let you set individual preferences for the "
+"different worms. <placeholder-2/>"
+msgstr ""
+"<placeholder-1/> <guilabel>蛇 1 </guilabel> 到 <guilabel> 蛇 6</guilabel> 标"
+"签页中的属性选项允许您为不同的蛇设置单独的属性。 <placeholder-2/>"
+
+#: C/gnibbles.xml:10(title)
+msgid "Network Games"
+msgstr "网络游戏"
+
+#: C/gnibbles.xml:11(para)
+msgid ""
+"Nibbles support networked multiplayer games which is provided by <ulink type="
+"\"http\" url=\"http://www.ggzgamingzone.org\">GGZ Gaming Zone</ulink>. By "
+"connecting to a Nibbles server on the Internet, you can challenge other "
+"players in multiplayer games. For news, updates and a list of servers to "
+"connect to, see the <ulink type=\"http\" url=\"http://www.gnome.org/projects/"
+"gnome-games/\">gnome-games website</ulink>."
+msgstr ""
+"贪吃蛇支持网络多人游戏，由<ulink type=\"http\" url=\"http://www."
+"ggzgamingzone.org\">GGZ 游戏空间</ulink>提供支持。通过连接因特网上的贪吃蛇服"
+"务器，您可以在多人游戏中挑战其他玩家。了解新闻、更新以及可连接服务器的列表，"
+"参见<ulink type=\"http\" url=\"http://www.gnome.org/projects/gnome-games/"
+"\">gnome-games 网站</ulink>。"
+
+#: C/gnibbles.xml:18(para)
+msgid ""
+"To start the multiplayer game of Nibbles, select <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>Network Game</guimenuitem></menuchoice> on the Nibbles "
+"menu."
+msgstr ""
+"要启动多人贪吃蛇游戏，请在贪吃蛇菜单栏中选择<menuchoice><guimenu>游戏</"
+"guimenu><guimenuitem>网络游戏</guimenuitem></menuchoice> 。"
+
+#: C/gnibbles.xml:24(title)
+msgid "Connecting to a Nibbles network server"
+msgstr "连接到贪吃蛇网络服务器"
+
+#: C/gnibbles.xml:25(para)
+msgid ""
+"The Nibbles connection dialog is shown initially when starting a new network "
+"game. This dialog allows you to select a server to connect to, and the "
+"username that you will have while connected to that server."
+msgstr ""
+"在启动新的网络游戏时，会首先显示连接对话框。对话框允许您选择要连接的服务器，"
+"连接到服务器时将要拥有的用户名。"
+
+#: C/gnibbles.xml:31(para)
+msgid ""
+"It is possible to connect to a server with either a guest account or a "
+"normal registered account. Guest accounts allows you to anonymously login, "
+"while a normal login account allows you to reserve your own username which "
+"is protected by the password that you choose."
+msgstr ""
+"可以以游客帐号或正常注册的帐号连接到服务器。游客帐号允许您匿名登录，而正常登"
+"录帐号允许您保留您的用户名，并由您指定的密码来保护。"
+
+#: C/gnibbles.xml:38(para)
+msgid ""
+"The <guimenuitem>Guest Login</guimenuitem> option should be selected if you "
+"want an anonymous guest account. If you want to create a new login account, "
+"then select the <guimenuitem>First-time Login</guimenuitem> option, with the "
+"username, password and email of your choice. If you have already created "
+"your account, you can connect by selecting the <guimenuitem>Normal Login</"
+"guimenuitem> option, and enter the username and password that you have "
+"chosen."
+msgstr ""
+"如果您需要一个匿名的游客帐号，应当选定<guimenuitem>游客登录</guimenuitem> 选"
+"项。如果您要创建新的登录账号，选择<guimenuitem>第一次登录</guimenuitem>选项，"
+"提供您选择的用户名、密码、以及电子邮件地址。如果您已创建帐号，您可以通过选择"
+"<guimenuitem>正常登录</guimenuitem>选项来连接，并键入您选择的用户名及密码。"
+
+#: C/gnibbles.xml:46(para)
+msgid ""
+"To connect to a server, click on the <guimenuitem>Connect</guimenuitem> "
+"button."
+msgstr "要连接到服务器，请点击<guimenuitem>连接</guimenuitem>按钮。"
+
+#: C/gnibbles.xml:50(title) C/gnibbles.xml:57(phrase)
+msgid "The Nibbles network connection dialog."
+msgstr "贪吃蛇网络连接对话框。"
+
+#: C/gnibbles.xml:65(title)
+msgid "Joining a game room"
+msgstr "加入游戏房间"
+
+#: C/gnibbles.xml:66(para)
+msgid ""
+"Once you have successfully connected to a server, you can choose which game "
+"room to join. To play a multiplayer game of Nibbles, select the Nibbles "
+"room. If you want to host your own game, then click on the Launch button. "
+"This creates a new table where other players can participate in a game "
+"against you. If there are any other games already started, then you can "
+"double-click on an existing game table to join it. The list of game tables "
+"on the right shows you the number of available seats, which means the number "
+"of players that can join the game table."
+msgstr ""
+"一旦您成功连接到服务器，您可以选择要加入的游戏房间。要进行贪吃蛇的多人游戏，"
+"请选择贪吃蛇房间。如果您要主持游戏，点击“发起”按钮。这会创建一个新的游戏桌"
+"面，其他人可以加入游戏当中与您比赛。如果已经有其他已开始的游戏，您可以双击已"
+"存在的游戏桌面以加入他们。右侧的游戏桌面列表显示可用座位的数目，也就是可以加"
+"入游戏桌面的游戏者数目。"
+
+#: C/gnibbles.xml:73(title) C/gnibbles.xml:80(phrase)
+msgid ""
+"This Nibbles network dialog allows you to join a game room to find other "
+"players."
+msgstr "贪吃蛇对话框允许您加入游戏房间寻找其他玩家。"
+
+#: C/gnibbles.xml:85(para)
+msgid ""
+"When creating a new table for Nibbles games, a preference dialog is "
+"displayed which allows you to customize the game, such as set the minimum "
+"number of players for the game. Once the total number of seats have been "
+"taken, then no more players are allowed to join that game table."
+msgstr ""
+"当创建新的贪吃蛇游戏桌面时，会显示一个首选项对话框，允许您自定义游戏，如设定"
+"参加游戏玩家的最小数目。一旦全部座位都已占据，那么不会允许更多的玩家加入游戏"
+"桌面。"
+
+#: C/gnibbles.xml:90(para)
+msgid ""
+"It is possible to chat with other players in network games. Ask for advice "
+"or help playing the games, but please be polite against other players."
+msgstr ""
+"在网络游戏时可以同其他游戏者进行聊天。可询问建议或提供游戏帮助，但请对其他玩"
+"家保持礼貌。"
+
+#: C/gnibbles.xml:97(title)
+msgid "Waiting for other players to join the game"
+msgstr "等待其他玩家加入游戏"
+
+#: C/gnibbles.xml:98(para)
+msgid ""
+"Once you have successfully joined a game table, then you have to wait until "
+"enough players have joined the table. The <guimenuitem>Players List</"
+"guimenuitem> menu item allows you to see a list of the players who have "
+"joined the game. The game will begin immediately when the total number of "
+"players in the the game have been reached."
+msgstr ""
+"一旦您成功加入一个游戏桌面，您必须等到足够的玩家加入游戏桌面。 <guimenuitem>"
+"玩家列表</guimenuitem>菜单项许您查看已加入游戏玩家的列表。当游戏玩家总数达到"
+"足够数目时，游戏会立即开始。"
+
+#: C/gnibbles.xml:107(title)
+msgid "Playing multiplayer Nibbles games"
+msgstr "进行多人贪吃蛇游戏"
+
+#: C/gnibbles.xml:108(para)
+msgid ""
+"Multiplayer Nibbles games have pretty much the same rules as normal Nibbles "
+"games, except that you are now playing against human players. This means "
+"that other strategies might possibly be better than when playing against AI "
+"players."
+msgstr ""
+"多人贪吃蛇游戏同普通贪吃蛇游戏一样，有相当多相同的规则，仅有的例外是您在同人"
+"类玩家进行游戏。这意味着其他人的策略可能会好于 AI 玩家游戏时的策略。"
+
+#: C/gnibbles.xml:113(para)
+msgid ""
+"Once a player has won, the game ends and you can return to the initial "
+"network game screen. Then you can play yet another game of addictive Nibbles "
+"multiplayer!"
+msgstr ""
+"一旦玩家得胜，游戏会结束，您会回到初始网络游戏界面。然后您可以同贪吃蛇多人游"
+"戏者进行其他游戏。"
+
+#: C/gnibbles.xml:555(title)
+msgid "Authors"
+msgstr "作者"
+
+#: C/gnibbles.xml:556(para)
+msgid ""
+"<application>Nibbles</application> was written by Sean MacIsaac "
+"<email>sjm@acm.org</email> and Ian Peters <email>itp@gnu.org</email>. This "
+"manual was written by Kevin Breit <email>battery841@mypad.com</email>. "
+"Nibbles was updated with network support by Andreas Røsdal "
+"<email>andreasr@gnome.org</email>. To report a bug or make a suggestion "
+"regarding this application or this manual, follow the directions in this "
+"<ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">document</ulink>."
+msgstr ""
+"<application>贪吃蛇</application>由 Sean MacIsaac <email>sjm@acm.org</email> "
+"与 Ian Peters <email>itp@gnu.org</email>编写。本手册由 Kevin Breit "
+"<email>battery841@mypad.com</email>编写。贪吃蛇的网络支持更新由 Andreas "
+"Røsdal <email>andreasr@gnome.org</email>添加。对本应用程序或本手册报告错误或"
+"提供建议，请遵循<ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">"
+"文档</ulink>中的指导。"
+
+#: C/gnibbles.xml:582(title)
+msgid "License"
+msgstr "许可协议"
+
+#: C/gnibbles.xml:583(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>GNU General Public License</citetitle></ulink> as published by "
+"the Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version."
+msgstr ""
+"本程序为自由软件；您可以在自由软件基金会出版的<ulink type=\"help\" url="
+"\"gnome-help:gpl\"><citetitle>通用公共许可证</citetitle></ulink>条款下，重新"
+"分发和/或更改它；可以选择许可证的版本 2 或更高的版本(自行选择)。"
+
+#: C/gnibbles.xml:591(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"此程序发布的目的是希望它对您有用，但没有任何担保；即使是对商业应用或其它任何"
+"目的。参见 <citetitle> GNU 通用公共许可证</citetitle>以获得更多细节。"
+
+#: C/gnibbles.xml:597(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. 59 Temple Place - Suite 330 Boston, MA 02111-1307 "
+"USA </address>"
+msgstr ""
+"一份<citetitle>GNU 通用公共许可证 </citetitle>副本以附录的形式包含于"
+"<citetitle>GNOME 用户指南</citetitle>。您也可通过访问<ulink type=\"http\" "
+"url=\"http://www.fsf.org\"> 自由软件基金会网站 </ulink>或写信给<address>Free "
+"Software Foundation, Inc. 59 Temple Place - Suite 330 Boston，MA 02111-1307 "
+"USA </address>从自由软件基金会获取<citetitle>GNU 通用公共许可证</citetitle>的"
+"副本。"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/gnibbles.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+"开源软件国际化简体中文组(http://i18n.linux.net.cn)\n"
+"Zhang Miao <mymzhang@gmail.com>, 2009"

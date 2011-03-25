@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="license" xml:lang="sr">
+  
+  <info>
+    <link type="seealso" xref="index"/>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-28" status="draft"/>
+    <desc>Правне информације.</desc>
+  </info>
+
+  <title>Лиценца</title>
+  <p>Овај рад се дистрибуира под Ауторство-Делити под истим условима 3.0 лиценцом.</p>
+  <p>Дозвољено је:</p>
+  <terms>
+    <item>
+      <title><em>Делити</em></title>
+      <p>Умножавати, дистрибуирати и јавно саопштавати дело.</p>
+    </item>
+    <item>
+      <title><em>Ремиксовати</em></title>
+      <p>Прерадити дело.</p> 
+    </item>
+  </terms>
+  <p>Под следећим условима:</p>
+  <terms>
+    <item>
+      <title><em>Ауторство</em></title>
+      <p>Морате да наведете име изворног аутора на начин који је одређен од стране изворног аутора или даваоца лиценце (али не тако што ћете сугерисати да вас подржава или одобрава ваше коришћење дела).</p>
+    </item>
+    <item>
+      <title><em>Делити под истим условима</em></title>
+      <p>Ако мењате, преобликујете или употребите дело у свом делу, прераду морате да дистрибуирате под истом или сличном лиценцом.</p>
+    </item>
+  </terms>
+  <p>За цео текст лиценце, погледајте <link href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">CreativeCommons веб сајт</link> или прочитајте цео <link href="http://creativecommons.org/licenses/by-sa/3.0/">Commons уговор</link>.</p>
+</page>

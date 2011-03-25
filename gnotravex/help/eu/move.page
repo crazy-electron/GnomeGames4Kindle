@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="move" xml:lang="eu">
+
+  <info>
+    <link type="guide" xref="index#play" group="two"/>
+    <link type="seealso" xref="usage"/>
+    <desc>How to move the pieces on the game board.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  
+  <title>Move the pieces</title>
+  
+  <section id="move-piece">
+    <title>Move a piece</title>
+    <p>
+      To move a piece, you need to click-and-hold on it, drag it from its current
+      position to its new position, either on the right box or on the
+      left box, and release the mouse button.
+    </p>
+    <p>
+      These moves are not permanent and can be reversed.
+    </p>
+    <note>
+      <p>
+        The pieces in the left box can be moved all at once in one direction. See 
+        <link xref="shortcut"/> for more information.
+      </p>
+    </note>
+  </section>
+  <section id="move-avoid">
+    <title>Avoid the click-and-hold</title>
+    <p>
+      If you do not feel comfortable with the click-and-hold action to move the
+      pieces, it is possible to change that behavior so that you only have to
+      click on a piece to move it, and click again to release it in its new position.
+    </p>
+    <p>
+      To do that, from the main menu bar, choose <gui style="menu">Move</gui>, 
+      and select <gui style="checkbox">Click to Move</gui>.
+    </p>
+  </section>
+</page>

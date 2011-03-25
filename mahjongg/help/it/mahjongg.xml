@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.26">
+<!ENTITY manrevision "2.26">
+<!ENTITY date "June 2009">
+<!ENTITY app "<application>Mahjongg</application>">
+<!ENTITY appname "Mahjongg">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="it">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+  
+    <title>Manuale di <application>Mahjongg</application></title>
+    <abstract role="description">
+      <para>Mahjongg è una versione in solitario del classico gioco orientale di tessere. Lo scopo del gioco è eliminare dalla tavola più tessere possibili, selezionando le coppie uguali.</para>
+    </abstract>
+    <copyright>
+      <year>1998</year>
+      <holder>Free Software Foundation</holder>
+    </copyright>
+    <copyright>
+      <year>2000</year>
+      <holder>Eric Baudais (Autore della documentazione)</holder>
+    </copyright>  
+	    <copyright>
+      <year>2009</year>
+      <holder>Paul Cutler (Documentation Author)</holder>
+    </copyright><copyright><year>2009</year><holder>Milo Casagrande (milo@ubuntu.com)</holder></copyright><copyright><year>2008</year><holder>Alessio Treglia (quadrispro@ubuntu.com)</holder></copyright> 
+    
+    <!-- translators: uncomment this:
+    
+  <copyright>
+  <year>2000</year>
+  <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+    -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Progetto di documentazione GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Questo documento può essere copiato, distribuito e/o modificato solo in conformità con i termini della GNU Free Documentation License (GFDL) Versione 1.1 o delle versioni successive pubblicate dalla Free Software Foundation senza sezioni invariabili, frontespizi e testi di copertina. Una copia della GFDL è disponibile a questo <ulink type="help" url="ghelp:fdl">collegamento</ulink> o nel file COPYING-DOCS distribuito con questo manuale.</para>
+         <para>Questo manuale è parte di una collezione di manuali di GNOME distribuita sotto la GFDL. Se si vuole distribuire questo manuale separatamente dalla collezione, lo si può fare aggiungendo una copia della licenza al manuale, come descritto nella sezione 6 della licenza.</para>
+
+	<para>Molti dei nomi utilizzati dalle aziende per distinguere i loro prodotti e servizi sono rivendicati come marchi commerciali. Dove questi nomi appaiono nella documentazione di GNOME, e i membri del progetto di documentazione di GNOME sono informati di questi marchi commerciali, allora i nomi sono in lettere maiuscole o con la lettera iniziale maiuscola.</para>
+
+	<para>QUESTO DOCUMENTO E LE SUE VERSIONI MODIFICATE SONO FORNITI IN BASE AI TERMINI DELLA GNU FREE DOCUMENTATION LICENSE, SOTTO INTESO CHE: <orderedlist>
+		<listitem>
+		  <para>IL DOCUMENTO VIENE FORNITO SENZA GARANZIE DI ALCUN TIPO,ESPLICITE O IMPLICITE, INCLUSE, MA SENZA LIMITAZIONE, LE GARANZIE ATTESTANTI CHE IL DOCUMENTO O LE SUE VERSIONI MODIFICATE SIANO PRIVI DI DIFETTI, COMMERCIALIZZABILI, IDONEI A UN DETERMINATO SCOPO O CHE NON VIOLINO DIRITTI DI TERZI. SI DECLINA QUALUNQUE RESPONSABILITÀ RIGUARDO AI RISCHI INERENTI LA QUALITÀ, L'ACCURATEZZA E LE PRESTAZIONI DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA. QUALORA UN DOCUMENTO O UNA SUA VERSIONE MODIFICATA DOVESSERO PRESENTARE QUALUNQUE TIPO DI DIFETTO,IL COSTO DI EVENTUALI INTERVENTI DI ASSISTENZA, RIPARAZIONE O CORREZIONE SARÀ A CARICO DELL'UTENTE (NON DEL REDATTORE INIZIALE, DELL'AUTORE O DI ALTRI COLLABORATORI). QUESTA LIMITAZIONE DELLA GARANZIA COSTITUISCE PARTE ESSENZIALE DELLA LICENZA. L'USO DEL DOCUMENTO O DELLE SUE VERSIONI MODIFICATE È CONSENTITO SOLO ENTRO I TERMINI DI QUESTA LIMITAZIONE DELLA GARANZIA; E</para>
+		</listitem>
+		<listitem>
+		  <para>IN NESSUNA CIRCOSTANZA E PER NESSUNA RAGIONE LEGALE, INCLUSI I PRINCIPI DI COLPA (INCLUSA LA NEGLIGENZA), ACCORDO CONTRATTUALE O ALTRO, SARÀ POSSIBILE CONSIDERARE L'AUTORE, IL REDATTORE INIZIALE, GLI ALTRI COLLABORATORI, QUALUNQUE DISTRIBUTORE DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA O QUALUNQUE FORNITORE DELLE PERSONE CITATE, RESPONSABILE NEI CONFRONTI DI QUALUNQUE PERSONA PER DANNI DIRETTI, INDIRETTI, SPECIALI, INCIDENTALI O CONSEGUENTI DI QUALUNQUE NATURA, INCLUSI, MA SENZA LIMITAZIONE, I DANNI PER PERDITA DI AVVIAMENTO, INTERRUZIONE DEL LAVORO, GUASTO O MALFUNZIONAMENTO DEL COMPUTER O QUALUNQUE ALTRO DANNO O PERDITA DERIVANTE O CORRELATA ALL'USO DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA, ANCHE QUALORA LE PERSONE CITATE FOSSERO STATE INFORMATE DELLA POSSIBILITÀ DI TALI DANNI.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer">
+	<firstname>Eric</firstname> 
+	<surname>Baudais</surname> 
+	<affiliation> 
+	  <address> <email>baudais@okstate.edu</email> </address> 
+	</affiliation> 
+      </author> 
+	        <author role="maintainer">
+	<firstname>Artur</firstname> 
+	<surname>Szymanski</surname> 
+	<affiliation> 
+	</affiliation> 
+      </author>
+	        <author role="maintainer">
+	<firstname>Paul</firstname> 
+	<surname>Cutler</surname> 
+	<affiliation> 
+		<orgname>Progetto di documentazione GNOME</orgname>
+	  <address> <email>pcutler@gnome.org</email> </address> 
+	</affiliation> 
+      </author> 
+
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="candidate"/>
+	
+	    <revhistory>
+      <!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+
+      <revision>
+        <revnumber>Mahjongg Manual V 2.26</revnumber>
+        <date>2009-06-16</date>
+        <revdescription>
+          <para role="author">Paul Cutler</para>
+          <para role="publisher">Progetto di documentazione GNOME</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>Mahjongg Manual V 2.26</revnumber>
+        <date>2009-06-16</date>
+        <revdescription>
+          <para role="author">Artur Szymanski</para>
+        </revdescription>
+      </revision>	  
+      <revision> 
+	<revnumber>Mahjongg Manual V2.10;</revnumber> 
+	<date>Giugno 2005</date> 
+	<revdescription> 
+	  <para role="author">Eric Baudais <email>baudais@okstate.edu</email></para>
+	  <para role="publisher">Progetto di documentazione GNOME</para>
+	</revdescription> 
+	</revision>
+	</revhistory>
+
+    <releaseinfo>This manual describes version 2.26 of Mahjongg.
+    </releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Commenti</title> 
+      <para>Per segnalare un problema o inviare suggerimenti sull'applicazione <application>Mahjongg</application> o su questo manuale, seguire le istruzioni presenti alla <ulink url="ghelp:user-guide?feedback-bugs" type="help">pagina di commenti su GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME Mahjongg</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="intro">
+    <title>Introduzione</title>
+
+    <para>
+      <application>Mahjongg</application> is a solitaire (one player) version of the classic Eastern tile game, 
+      Mahjongg.  It has all the functionality you expect from a tile or 
+      card game.  You can change the type of tiles, the background, and 
+      the difficulty level, among other things, in the 
+      <link linkend="prefs">Preferences</link> dialog.  
+      Other features, like the <link linkend="pause"><guibutton>Pause
+      </guibutton> button</link>, make the game more 
+      competitive when you play against the clock. 
+    </para>
+
+    <sect2 id="history">
+      <title>Una breve storia di Mahjongg</title>
+
+      <!-- FIXME: Explain more about solitaire version.-->
+      <para>I set di tessere di Mahjongg sono utilizzati per giocare a molte varianti del gioco originale. La versione di Mahjongg alla quale si giocherà è quella del solitario. A ogni tessera è associato un preciso <ulink type="http" url="http://www.xs4all.nl/~korntner/mahjong/fortune/index.html">significato</ulink>.</para>
+
+      <para>
+	Mahjongg's origins are not fully known, but many theories have been put 
+	forth.  One such theory says that Noah played Mahjongg on the ark because 
+	the East hand is dominant, presumably the direction the rains came, in the 
+	flood.  Another theory says that the Chinese philosopher, Confucius, made 
+	the game.  The three <quote>Cardinal</quote> tiles have the same names as 
+	his three Cardinal virtues, Chung (middle) the Red, Fa (prosperity) the 
+	Green, and Po (white) the White, corresponding with Benevolence, Sincerity, 
+	and Filial Piety.  Still another theory says that Mahjongg is derived from 
+	other Chinese games.  <quote>Ya Pei</quote> is played with 32 cards made of 
+	wood or ivory and have the same oblong shape as present day Mahjongg tiles.  
+	<quote>Ma Tiae</quote> is played with 40 paper cards, similar in appearance, 
+	numbering 1 to 9 in four different suits along with the flower cards.  It has 
+	been suggested that two brothers made the game, around 1850 A.D., from a 
+	combination of these two games.
+      </para>
+
+      <para>Nel primo 1900, Mahjongg venne introdotto nei club inglesi a Shanghai. Mr. Babcock cominciò a importare le tessere di Mahjongg nel mondo occidentale. Egli ridusse le regole all'essenziale e pose dei numeri arabi sulle tessere. Nel 1923 Mahjongg raggiunse il culmine del successo, con l'importazione da parte delle grandi società dei giochi, come Parker Bros., Milton Bradley e United States Playing Card, di migliaia di tessere di Mahjongg.</para>
+
+      <para>Furono inventate diverse regole e nel 1924 venne formato lo Standardization Committee of the American Official Laws of Mah-Jongg per scriverne le regole. Ancora oggi molti club giocano con regole diverse e qualche volta vengono aggiunte delle tessere jolly oppure di fiori. I giocatori della versione per computer vengono incuriositi dalla bellezza e dai dettagli dei set creati a mano degli anni '20 e '30 e ne vanno alla ricerca nei negozi di antiquariato e nei mercatini. Molti dei nuovi giocatori sono stati introdotti al gioco unicamente dalla versione a solitario e stanno lentamente capendo l'intrigo e la sfida offerti dal gioco tradizionale. <footnote>
+	  <para>Parti del presente testo sono estratte dal <ulink type="http" url="http://www.mahjongmuseum.com/">Museo Mah Jong</ulink> e riadattate.</para>
+	</footnote></para>
+    </sect2>
+  </sect1>
+  
+   <!-- ============= Playing Mahjongg ============================= -->
+
+  <sect1 id="usage">
+    <title>Giocare a Mahjongg</title>
+
+    <para>
+      You start with five levels of tiles which are stacked so some are 
+      covered up by the tiles on top.  The harder the level you set in the 
+      <link linkend="prefs"><interface>Preferences</interface> dialog</link>, 
+      the more tiles are covered when the game starts.  The object of 
+      <application>Mahjongg</application> is to remove all the tiles 
+      from the game.  To remove tiles you have to find matching pairs which 
+      look alike.  A matching tile will usually have the same number of buttons 
+      or markings on it or will look similar to each other.
+    </para>
+
+    <para>
+      As an example, the highlighted tile, in the <link linkend="mahjongg-fig">
+      figure below</link>, has six buttons.  The matching tile is the one which 
+      also has six buttons.  The tile is on the right-hand end of the third row from the bottom and there is another near the top of the fourth row from the bottom.
+      If you want to match the tile on the top level, you need to look for the 
+      tile with the same green bamboo symbols.  Do you see a matching tile yet?  
+      There are three tiles, which are visible, that match the tile on the top 
+      level.  Two are to the left and the lower right. The third one is on the top row, but you can't
+      remove that tile yet because the tile isn't 
+      on the outside of the stack of tiles.  Later you will learn which 
+      tiles can be removed and which tiles can't be removed even though they match.
+      Find the other two matching tiles, which are visible, on your own.
+    </para>
+
+    <figure id="mahjongg-fig">
+      <title>Finestra principale di Mahjongg</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/mahjongg.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Finestra principale.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>
+      <application>Mahjongg</application> is played by 
+      clicking on two matching tiles that are then removed. Play
+      continues until all the tiles are removed or there are no
+      available pairs.
+    </para>
+
+    <para>Solo le ultime tessere a sinistra e a destra appoggiate su ogni livello possono essere selezionate. Questo perché non è possibile rimuovere quelle tessere che non si trovano all'estrema sinistra né all'estrema destra. Se le tessere si trovano sui lati di sinistra o di destra di livelli diversi, possono venire rimosse una volta trovato un'altra tessera uguale.</para>
+
+    <para>
+      If you can't match any more tiles, a 
+      dialog will appear telling you no more tiles can be matched and giving 
+      you the option of shuffling the tiles (adding an additional 60 seconds 
+      penalty to the game clock), starting a new game or undoing your
+      last move (although you may have to undo many more moves to find your mistake).
+    </para>
+
+    <figure id="info-fig1">
+      <title>Dialogo di informazione</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/no-move.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Dialogo di informazione.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+    
+    <sect2 id="toolbar">
+      <title>Barra degli strumenti</title>
+
+      <para>
+	The <interface>toolbar</interface>, located below the
+	<interface>Menu Bar</interface>, contains the following buttons:
+      </para>
+      
+      <variablelist>
+	<varlistentry>
+	  <term><guibutton>Nuovo</guibutton></term>
+	  <listitem>
+	    <para>Questo pulsante avvia una nuova partita con le impostazioni correnti.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Ricomincia</guibutton></term>
+	  <listitem>
+	    <para>Questo pulsante riavvia la partita in corso dall'inizio, senza mischiare le tessere.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry id="pause">
+	  <term><guibutton>Pausa</guibutton></term>
+	  <listitem>
+	    <para>Questo pulsante mette in pausa la partita. Quando il gioco viene messo in pausa, l'orologio nell'angolo in basso a destra della <interface>Finestra principale</interface> si ferma e non è più possibile guardare le tessere.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Undo Move</guibutton></term>
+	  <listitem>
+	    <para>Questo pulsante ripristina le posizioni delle ultime due tessere mosse, fino all'inizio del gioco.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Redo Move</guibutton></term>
+	  <listitem>
+	    <para>
+	      This button replays your previous move, the <guibutton>Undo Move</guibutton> 
+	      button took back.
+	    </para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Suggerimento</guibutton></term>
+	  <listitem>
+	    <para>
+	      This button gives you a pair of matching tiles to remove. Each time you use it,
+	      30 seconds penalty will be added to the game clock. 
+	    </para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+      <para>La barra di stato in basso nella finestra fornisce informazioni sullo stato attuale della partita:</para>
+      <variablelist>
+	<varlistentry>
+	  <term><guilabel>Tessere rimaste:</guilabel></term>
+	  <listitem>
+	    <para>Questo mostra il numero di tessere rimaste.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guilabel>Mosse rimaste:</guilabel></term>
+	  <listitem>
+	    <para>
+	      This shows the number 
+	      of possible matches you can make.
+	    </para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guilabel>Time:</guilabel></term>
+	  <listitem>
+	    <para>
+	      This shows the elapsed time from game start.
+	    </para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+      
+      <figure id="toolbar-fig">
+	<title>Barra degli strumenti di Mahjongg</title>
+	<screenshot>
+	   <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/toolbar.png" format="PNG" srccredit="Eric Baudais"/>
+	  </imageobject>
+    <textobject> 
+      <phrase>Barra degli strumenti.</phrase> 
+    </textobject> 
+  </mediaobject>
+	</screenshot>
+      </figure>
+      
+    </sect2>
+    
+    <sect2 id="menubar">
+      <title>Menù</title>
+      <para>La barra dei menù, posizionata in alto nella <interface>Finestra principale</interface>, contiene i seguenti menù:</para>
+
+      <variablelist>
+	<varlistentry>
+	  <term><guimenu>Gioco</guimenu></term>
+	  <listitem>
+	    <para>Il menù contiene: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para>
+		    <menuchoice>
+		      <shortcut>
+			<keycap>Ctrl-N</keycap>
+		      </shortcut>
+		      <guimenuitem>New</guimenuitem>
+		    </menuchoice> — 
+		    This item starts a new game.
+		  </para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Ricomincia</guimenuitem></menuchoice>: azzera e riavvia la partita in corso.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Pausa</guimenuitem></menuchoice>: mette in pausa il gioco, fermando l'orologio e nascondendo le tessere.</para>
+		</listitem>
+		<listitem>
+		  <para>
+		    <menuchoice>
+		      <shortcut>
+			<keycap>Ctrl-Z</keycap>
+		      </shortcut>
+		      <guimenuitem>Undo move</guimenuitem>
+		    </menuchoice> — 
+		    This item takes back two tiles you removed until 
+		    you reach the beginning of the game.
+		  </para>
+		</listitem>
+		<listitem>
+		  <para>
+		    <menuchoice>
+		      <shortcut>
+			<keycap>Ctrl-R</keycap>
+		      </shortcut>
+		      <guimenuitem>Redo move</guimenuitem>
+		    </menuchoice> — 
+		    This item replays your previous move the <guibutton>Undo</guibutton> 
+		    button took back.  When you reach the state you started undoing the 
+		    message <quote>No more redo!</quote> appears at the bottom left corner 
+		    of the <interface>Main Window</interface>.
+		  </para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Suggerimento</guimenuitem></menuchoice>: fornisce una coppia di tessere uguale da rimuovere.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Punteggi</guimenuitem></menuchoice>: mostra una finestra di dialogo contenente l'elenco dei migliori 10 punteggi. I punteggi sono identificati da un nome utente e il tempo impiegato per completare la partita.</para>
+		</listitem>
+		<listitem>
+		  <para id="quit">
+		    <menuchoice>
+		      <shortcut>
+			<keycap>Ctrl-Q</keycap>
+		      </shortcut>
+		      <guimenuitem>Quit</guimenuitem>
+		    </menuchoice> — 
+		    This item allows you to quit the game.
+		  </para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term><guimenu>Impostazioni</guimenu></term>
+	  <listitem>
+	    <para>Il menù contiene: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para>
+		    <menuchoice>
+		      <shortcut>
+			<keycap>F11</keycap>
+		      </shortcut>
+		      <guimenuitem>Fullscreen</guimenuitem>
+		    </menuchoice> — 
+		    This item allows to play the game in fullscreen mode. 
+		    To leave fullscreen press <keycap>F11</keycap> or 
+		    click <guibutton>Leave Fullscreen</guibutton> button on
+		    <interface>toolbar</interface>.    
+		  </para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Barra degli strumenti</guimenuitem></menuchoice>: determina se la <link linkend="toolbar"><interface>barra degli strumenti</interface></link> viene mostrata o no. Se selezionata, la <interface>barra degli strumenti</interface> viene mostrata nell'ultima posizione in cui la si è lasciata, altrimenti non viene mostrata.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Preferenze</guimenuitem></menuchoice>: apre il dialogo <link linkend="prefs">Preferenze</link>.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guimenu>Aiuto</guimenu></term>
+	  <listitem>
+	    <para>Il menù contiene: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para>
+		    <menuchoice>
+                      <shortcut>
+			<keycap>F1</keycap>
+		      </shortcut>
+		      <guimenuitem>Contents</guimenuitem>
+		    </menuchoice> — 
+		    This item shows this manual.
+		  </para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Informazioni</guimenuitem></menuchoice>: fornisce brevi informazioni su <application>GNOME Mahjongg</application>, come i nomi degli autori e il numero di versione dell'applicazione.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+
+    </sect2>
+  </sect1>
+  
+   <!-- ============= Customization ============================= -->
+
+  <sect1 id="prefs">
+    <title>Personalizzazione</title>
+    <para>Per modificare le impostazioni dell'applicazione, selezionare <guimenuitem>Preferenze</guimenuitem> dal menù <guimenu>Impostazioni</guimenu>. Questo aprirà la <link linkend="preferences-fig">finestra di dialogo <interface>Preferenze</interface></link>.</para>
+    
+    <figure id="preferences-fig">
+<!-- FIXME: This dialog is the old one. -->
+<!-- ALAN: looks correct like version 2.10 to me -->
+      <title>Finestra di dialogo Preferenze</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Finestra di dialogo Preferenze.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Tutte le opzioni vengono applicate e salvate immediatamente.</para>
+    
+    <para>Le proprietà presenti nella finestra di dialogo <interface>Preferenze</interface> sono:</para>
+      
+      <itemizedlist mark="opencircle">
+	<listitem>
+	  <para><guilabel>Set tessere</guilabel>: selezionare lo stile delle tessere da questo elenco.</para>
+	</listitem>
+	<listitem>
+	  <para><guilabel>Disposizione</guilabel>: modifica la difficoltà del gioco cambiando la disposizione delle tessere. Le versioni con le tessere più allargate (facili) consentono di vedere un maggior numero di tessere rispetto alle versioni più compatte (difficili), che non consentono di vedere molti pezzi.</para>
+	</listitem>
+	<listitem>
+	  <para><guilabel>Colori</guilabel>: modifica il colore dello sfondo con la <interface>tavolozza dei colori</interface> per selezionare un nuovo colore.</para>
+	</listitem>
+      </itemizedlist>
+
+    <para>Per modificare la dimensione delle tessere è sufficiente ridimensionare la finestra nel modo tradizionale, le tessere verranno ingrandite per riempirla.</para>
+
+  </sect1>
+  
+<!-- ALAN: Better to leave this section out than to say something unhelpful 
+and risk annoying the user.  
+ <sect1 id="bugs">
+  <title>Known Bugs and Limitations</title>
+  <para>
+   This application has no known bugs.
+  </para>
+ </sect1>
+-->
+
+ <!-- ============= Authors ============================= -->
+
+ <sect1 id="authors">
+  <title>Autori</title>
+  <para>
+   <application>Mahjongg</application> was written by Francisco 
+   Bustamante (<email>pancho@nuclecu.unam.mx</email>), Michael Meeks 
+   (<email>mmeeks@gnu.org</email>), Max Watson, Heinz Hempe, and 
+   Philippe Chavin.  Tiles for <application>Mahjongg</application>
+   were made by Jonathan Buzzard and Max Watson.    This manual was written by Eric Baudais
+   (<email>baudais@okstate.edu</email>).
+   To report a bug or make a suggestion regarding this application or
+   this manual, follow the directions in this 
+   <ulink url="ghelp:user-guide?feedback-bugs" type="help">document</ulink>.
+  </para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licenza</title>
+  <para>Questo programma e i disegni delle tessere sono software libero; è lecito redistribuirli e/o modificarli secondo i termini della <citetitle>GNU General Public License</citetitle> come è pubblicata dalla Free Software Foundation; o la versione 2 della licenza o (a propria scelta) una versione successiva.</para>
+  <para>Questo programma è distribuito nella speranza che sia utile, ma SENZA ALCUNA GARANZIA; senza neppure la garanzia implicita di NEGOZIABILITÀ o di APPLICABILITÀ PER UN PARTICOLARE SCOPO. Si veda la <citetitle>GNU General Public License</citetitle> per avere maggiori dettagli.</para>
+  <para>Una copia della <citetitle>GNU General Public License</citetitle> è inclusa nell'appendice del <citetitle>Manuale dell'utente GNOME</citetitle>. Inoltre è possibile ottenere una copia della <citetitle>GNU General Public License</citetitle> dalla Free Software Foundation visitando <ulink url="http://www.fsf.org" type="http">il sito web</ulink> oppure scrivendo a <address> Free Software Foundation, Inc. <street>51 Franklin Street, Fifth Floor</street><city>Boston</city>, <state>MA</state><postcode>02110-1301</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

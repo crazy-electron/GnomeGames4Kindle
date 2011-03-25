@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "June 2004">
+<!ENTITY app "<application>Quadrapassel</application>">
+<!ENTITY appname "Quadrapassel">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="it">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title><application>Quadrapassel</application> Manual</title>
+
+    <abstract role="description">
+      <para>
+	Quadrapassel is GNOME's version of Tetris, the classic game of 
+	interlocking four-piece blocks. As they fall from the top, 
+	the player must orient them to fit the other blocks at the 
+	bottom so that they form a complete horizontal line, in which 
+	case that line disappears and the player gains points.
+      </para>
+    </abstract>
+
+    <copyright>
+      <year>2004</year>
+      <holder>Angela Boyle</holder>
+    </copyright><copyright><year>2008</year><holder>Alessio Treglia (quadrispro@ubuntu-it.org)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Progetto di documentazione GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Questo documento può essere copiato, distribuito o modificato solo in conformità con i termini della GNU Free Documentation License (GFDL) Versione 1.1 o delle versioni successive pubblicate dalla Free Software Foundation senza sezioni invariabili, frontespizi e testi di copertina. Una copia della GFDL è disponibile a questo <ulink type="help" url="ghelp:fdl">collegamento</ulink> o nel file COPYING-DOCS distribuito con questo manuale.</para>
+         <para>Questo manuale è parte di una collezione di manuali di GNOME distribuita sotto la GFDL. Se si vuole distribuire questo manuale separatamente dalla collezione, lo si può fare aggiungendo una copia della licenza al manuale, come descritto nella sezione 6 della licenza.</para>
+
+	<para>Molti dei nomi utilizzati dalle aziende per distinguere i loro prodotti e servizi sono rivendicati come marchi commerciali. Dove questi nomi appaiono nella documentazione di GNOME, e i membri del progetto di documentazione di GNOME sono informati di questi marchi commerciali, allora i nomi sono in lettere maiuscole o con la lettera iniziale maiuscola.</para>
+
+	<para>QUESTO DOCUMENTO E LE SUE VERSIONI MODIFICATE SONO FORNITI IN BASE AI TERMINI DELLA GNU FREE DOCUMENTATION LICENSE, SOTTO INTESO CHE: <orderedlist>
+		<listitem>
+		  <para>IL DOCUMENTO VIENE FORNITO SENZA GARANZIE DI ALCUN TIPO,ESPLICITE O IMPLICITE, INCLUSE, MA SENZA LIMITAZIONE, LE GARANZIE ATTESTANTI CHE IL DOCUMENTO O LE SUE VERSIONI MODIFICATE SIANO PRIVI DI DIFETTI, COMMERCIALIZZABILI, IDONEI A UN DETERMINATO SCOPO O CHE NON VIOLINO DIRITTI DI TERZI. SI DECLINA QUALUNQUE RESPONSABILITÀ RIGUARDO AI RISCHI INERENTI LA QUALITÀ, L'ACCURATEZZA E LE PRESTAZIONI DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA. QUALORA UN DOCUMENTO O UNA SUA VERSIONE MODIFICATA DOVESSERO PRESENTARE QUALUNQUE TIPO DI DIFETTO,IL COSTO DI EVENTUALI INTERVENTI DI ASSISTENZA, RIPARAZIONE O CORREZIONE SARÀ A CARICO DELL'UTENTE (NON DEL REDATTORE INIZIALE, DELL'AUTORE O DI ALTRI COLLABORATORI). QUESTA LIMITAZIONE DELLA GARANZIA COSTITUISCE PARTE ESSENZIALE DELLA LICENZA. L'USO DEL DOCUMENTO O DELLE SUE VERSIONI MODIFICATE È CONSENTITO SOLO ENTRO I TERMINI DI QUESTA LIMITAZIONE DELLA GARANZIA; E</para>
+		</listitem>
+		<listitem>
+		  <para>IN NESSUNA CIRCOSTANZA E PER NESSUNA RAGIONE LEGALE, INCLUSI I PRINCIPI DI COLPA (INCLUSA LA NEGLIGENZA), ACCORDO CONTRATTUALE O ALTRO, SARÀ POSSIBILE CONSIDERARE L'AUTORE, IL REDATTORE INIZIALE, GLI ALTRI COLLABORATORI, QUALUNQUE DISTRIBUTORE DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA O QUALUNQUE FORNITORE DELLE PERSONE CITATE, RESPONSABILE NEI CONFRONTI DI QUALUNQUE PERSONA PER DANNI DIRETTI, INDIRETTI, SPECIALI, INCIDENTALI O CONSEGUENTI DI QUALUNQUE NATURA, INCLUSI, MA SENZA LIMITAZIONE, I DANNI PER PERDITA DI AVVIAMENTO, INTERRUZIONE DEL LAVORO, GUASTO O MALFUNZIONAMENTO DEL COMPUTER O QUALUNQUE ALTRO DANNO O PERDITA DERIVANTE O CORRELATA ALL'USO DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA, ANCHE QUALORA LE PERSONE CITATE FOSSERO STATE INFORMATE DELLA POSSIBILITÀ DI TALI DANNI.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL),
+and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+	
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Angela</firstname> 
+	<surname>Boyle</surname> 
+	<affiliation> 
+	  <address> <email>anjela@u.washington.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Quadrapassel Manual V2.8</revnumber> 
+	<date>Giugno 2004</date> 
+	<revdescription> 
+	  <para role="author">Angela Boyle <email>anjela@u.washington.edu</email></para>
+	  <para role="publisher">Progetto di documentazione GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>This manual describes version 2.12 of Quadrapassel.
+    </releaseinfo>
+    <!-- The following feedback information only applies to applications
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove this
+    section altogether -->
+    <legalnotice> 
+      <title>Commenti</title> 
+      <para>To report a bug or make a suggestion regarding the <application>Quadrapassel</application>
+application or
+	this manual, follow the directions in the 
+	<ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME Feedback Page</ulink>. 
+      </para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Quadrapassel</primary> 
+  </indexterm>
+
+<!-- ==============================Document Body==================-->
+
+<sect1 id="s1-intro">
+ <title>Introduzione</title>
+
+<!--synopsis of game-->
+  <para><application>Quadrapassel</application> comes from the classic falling-block game, <application>Tetris</application>. The goal of the game is to create complete horizontal lines of blocks, which will disappear. The blocks come in seven different shapes made from four blocks each: one straight, two L-shaped, one square, and two S-shaped. The blocks fall from the top center of the screen in a random order. You rotate the blocks and move them across the screen to drop them in complete lines. You score by dropping blocks fast and completing lines. As your score gets higher, you level up and the blocks fall faster.</para>
+
+<!--running game-->
+   <para>To run <application>Quadrapassel</application>, select <menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice>, or type <command>quadrapassel</command> in the command line.</para>
+
+<!--part of gnome-games-->
+   <para><application>Quadrapassel</application> is included in the <filename>gnome-games</filename> package, which is part of the GNOME desktop environment. This document describes version 2.8 of <application>Quadrapassel</application>.</para>
+</sect1>
+
+<sect1 id="s1-playing">
+ <title>Playing <application>Quadrapassel</application></title>
+  <para>È possibile ottenere punti in due modi: completando le righe e facendo cadere i blocchi velocemente.</para>
+   <sect2 id="s2-block-moving">
+     <title>Spostare i blocchi</title>
+      <para>Durante il gioco sono necessarie solo le quattro frecce direzionali.</para>
+       <itemizedlist>
+        <listitem>
+         <para><keycap>Sinistra</keycap> e <keycap>Destra</keycap> muovono il blocco nelle direzioni corrispondenti nella schermata.</para>
+        </listitem>
+        <listitem>
+         <para>Con il tasto <keycap>Su</keycap> si ruota il blocco. Il senso predefinito della rotazione è antiorario ed è possibile cambiarlo andando in <menuchoice><guimenu>Impostazioni</guimenu><guimenuitem>Preferenze</guimenuitem></menuchoice> e deselezionando l'opzione <guilabel>Ruotare in senso antiorario</guilabel>.</para>
+        </listitem>
+        <listitem>
+         <para>Con i tasti <keycap>Giù</keycap> e <keycap>Barra spaziatrice</keycap> si può spostare il blocco velocemente verso il basso. Con il tasto <keycap>Giù</keycap> si accelera la caduta del blocco, con la <keycap>Barra spaziatrice</keycap> si sposta il blocco direttamente nella parte inferiore.</para>
+        </listitem>
+       </itemizedlist> 
+   </sect2>
+   <sect2 id="s2-newgame">
+     <title>Cominciare una nuova partita</title>
+      <para>Per iniziare una nuova partita è sufficiente andare su <menuchoice><guimenu>Gioco</guimenu><guimenuitem>Nuovo</guimenuitem></menuchoice>. La partita inizierà con la caduta dei blocchi dal centro della parte superiore della finestra. All'inizio della partita non sono presenti blocchi nella finestra di gioco e, nell'angolo in alto a destra, viene mostrato il prossimo blocco che cadrà. <guilabel>Punteggio</guilabel> mostra il numero di punti guadagnati, <guilabel>Linee</guilabel> mostra il numero di linee completate e <guilabel>Livello</guilabel> mostra l'attuale livello di difficoltà in cui ci si trova.</para>
+    </sect2>
+    <sect2 id="s2-pausegame">
+     <title>Mettere in pausa la partita</title>
+      <para>Per mettere in pausa la propria partita, andare su <menuchoice><guimenu>Gioco</guimenu><guimenuitem>Pausa</guimenuitem></menuchoice>. È possibile sospendere una partita solo mentre la si sta giocando, inoltre non c'è un tempo limite per la pausa. Per riprendere a giocare, andare nuovamente su <menuchoice><guimenu>Gioco</guimenu><guimenuitem>Pausa</guimenuitem></menuchoice>.</para>
+    </sect2>
+    <sect2 id="s2-endgame">
+     <title>Terminare le partita</title>
+      <para>Go to <menuchoice><guimenu>Game</guimenu><guimenuitem>End Game</guimenuitem></menuchoice> to end your current game without quiting Quadrapassel.</para>
+    </sect2>
+    <sect2 id="s2-quitgame">
+     <title>Quiting the <application>Quadrapassel</application></title>
+      <para>To completely quit <application>Quadrapassel</application> go to <menuchoice><guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem></menuchoice>. If you are in the middle of a game when you quit, you will end your game without saving your score.</para>
+    </sect2>
+    <sect2 id="s2-scoring">
+     <title>Ottenere punti</title>
+     <para>Ci sono due metodi per ottenere i punti: velocizzando la caduta dei blocchi e cancellando linee complete degli stessi. Cancellando le linee si totalizzano più punti, ma facendo cadere velocemente i blocchi si ottengono più velocemente. Con l'aumentare del livello di gioco i blocchi cadranno sempre più velocemente; il livello più alto è il numero 10, durante il quale si avrà a disposizione poco più di un secondo di tempo per gestire ogni blocco.</para>
+    </sect2> 
+    <sect2 id="s2-pastscores">
+     <title>Visualizzare i punteggi passati</title>
+      <para>È possibile visualizzare i dieci migliori punteggi del proprio computer facendo clic su <menuchoice><guimenu>Gioco</guimenu><guimenuitem>Punteggi</guimenuitem></menuchoice>. I nomi degli utenti vengono affiancati al punteggio ottenuto e alla data in cui hanno giocato.</para>
+    </sect2> 
+</sect1>
+
+ 
+<sect1 id="s1-customizegame">
+ <title>Customizing <application>Quadrapassel</application></title>
+  <sect2 id="s2-customstartup">
+   <title>Personalizzare l'inizio del gioco</title>
+    <para>By going to <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>, you can customize a variety of features for the start-up of each Quadrapassel game: number and density of pre-filled rows, and starting level. "Pre-filled rows" refers to how many rows will already have blocks in them when you start each new game.</para>
+    <sect3 id="s3-numberpfr">
+     <title>Numero di righe già riempite</title>
+      <para>È possibile modificare il numero di righe già riempite da blocchi all'inizio di ogni nuova partita utilizzando la casella corrispondente. È possibile iniziare le partita con un numero di righe già riempite pari a un massimo di 19, mentre, in modo predefinito, tale numero sarà 0.</para>
+     </sect3>
+     <sect3 id="s3-densitypfr">
+      <title>Densità dei blocchi nelle righe già riempite</title>
+       <para>È possibile modificare la densità dei blocchi nelle righe già riempite all'inizio di ogni gioco. È possibile modificare la densità fino a un massimo di 10 blocchi. Si dovrebbe prima scegliere quante righe si desiderano avere già riempite con l'opzione <guilabel>Numero di righe già riempite</guilabel>. La densità predefinita è tre.</para>
+     </sect3>
+     <sect3 id="s3-startlevel">
+      <title>Livello iniziale</title>
+       <para>È possibile cambiare il livello di difficoltà iniziale. Il livello più alto è il livello 10, il quale è anche il livello massimo di gioco. Il livello iniziale predefinito è 1.</para>
+     </sect3>
+   </sect2>
+   <sect2 id="s3-customblocks">
+    <title>Customizing the Gameplay</title>
+    <para>Attraverso <menuchoice><guimenu>Impostazioni</guimenu><guimenuitem>Preferenze</guimenuitem></menuchoice> è possibile personalizzare una scelta di caratteristiche legate ai blocchi, come i colori, il senso di rotazione e l'anteprima del blocco successivo.</para>
+      <sect3 id="s3-sound">
+	<title>Abilitare i suoni</title>
+	<para>Con questa opzione si possono abilitare e disabilitare gli effetti sonori. Se si sta giocando in un luogo condiviso con altre persone, è probabile che si desideri disabilitare tale opzione.</para>
+      </sect3>
+     <sect3 id="s3-nextblock">
+      <title>Anteprima prossimo blocco</title>
+        <para>Scegliere questa opzione se si desidera conoscere quale sarà il prossimo oggetto a cadere. Questa caratteristica può essere d'aiuto per pianificare il posizionamento dei propri blocchi.</para>
+     </sect3>
+     <sect3 id="s3-blockcolors">
+      <title>Usare colori casuali per i blocchi</title>
+       <para>Scegliere se si desidera che le varie configurazioni dei blocchi vengano colorate in maniera definita oppure in modo casuale. Se si usano i colori per facilitare l'identificazione dei blocchi, la scelta casuale dei colori rende il gioco più difficile.</para>
+     </sect3>
+     <sect3 id="s3-difficult-block-mode">
+      <title>Choose Difficult Blocks</title>
+       <para>Choose this option if you want to select mode that is designed specifically to annoy the player. With this feature enabled, you never get the piece you want, and very seldom complete a row. Next block preview doesn't correspond to actual piece you get next, but to the one you probably wish to get.</para>
+     </sect3>
+     <sect3 id="s3-block-rotation">
+      <title>Ruotare in senso antiorario</title>
+       <para>Scegliere questa opzione se si desidera ruotare i blocchi in senso antiorario.</para>
+     </sect3>
+     <sect3 id="s3-show-target">
+      <title>Mostrare dove atterrerà il blocco</title>
+        <para>Se questa opzione è abilitata verrà utilizzata un'immagine grigia per segnalare la posizione nella quale cadrà il blocco. Questa caratteristica è molto utile per i giocatori alle prime armi, mentre i giocatori esperti la considereranno una distrazione.</para>
+     </sect3>
+   </sect2>
+   <sect2 id="s2-customlook">
+    <title>Customizing the Look of <application>Quadrapassel</application></title>
+    <para>Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>, you can customize the look of <application>Quadrapassel</application>: images for the blocks.</para>
+     <sect3 id="s3-blockimage">
+      <title>Immagine del blocco</title>
+       <para>È possibile cambiare lo stile dei blocchi, incluse le immagini e la dimensione. Sono disponibili vari stili già pronti.</para>
+     </sect3>
+     <sect3 id="s3-background">
+       <title>Sfondo</title> <para>If you drag your favorite image
+       into the <application>Quadrapassel</application> window it will be
+       used as the background. If you want a solid color as the
+       background drag one in from either the color picker or from
+       <application>nautlilus'</application> <guimenuitem>Backgrounds
+       and Emblems</guimenuitem> dialog (the reset item from that
+       dialog also works).</para>
+     </sect3>
+    </sect2>
+   </sect1>
+
+<sect1 id="authors">
+  <title>Autori</title>
+  <para>
+   <application>Quadrapassel</application> was written by J. Marcin Gorycki
+   in 1999 and maintained by Gnome Games Team since then. This manual was
+   written by Angela Boyle.
+   To report a bug or make a suggestion regarding this application or
+   this manual, follow the directions in this
+   <ulink url="ghelp:user-guide?feedback-bugs" type="help">document</ulink>.
+  </para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+</sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="s1-license">
+  <title>Licenza</title>
+  <para>Questo programma e le opere artistiche sono software libero; è lecito redistribuirli e/o modificarli secondo i termini della <citetitle>GNU General Public License</citetitle> come è pubblicata dalla Free Software Foundation; o la versione 2 della licenza o (a propria scelta) una versione successiva.</para>
+  <para>Questo programma è distribuito nella speranza che sia utile, ma SENZA ALCUNA GARANZIA; senza neppure la garanzia implicita di NEGOZIABILITÀ o di APPLICABILITÀ PER UN PARTICOLARE SCOPO. Si veda la <citetitle>GNU General Public License</citetitle> per avere maggiori dettagli.</para>
+  <para>Una copia della <citetitle>GNU General Public License</citetitle> è inclusa nell'appendice del <citetitle>Manuale dell'utente GNOME</citetitle>. Inoltre è possibile ottenere una copia della <citetitle>GNU General Public License</citetitle> dalla Free Software Foundation visitando <ulink url="http://www.fsf.org" type="http">il sito web</ulink> oppure scrivendo a <address> Free Software Foundation, Inc. <street>51 Franklin Street, Fifth Floor</street><city>Boston</city>, <state>MA</state><postcode>02110-1301</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

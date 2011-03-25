@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.20">
+<!ENTITY manrevision "2.20">
+<!ENTITY date "May 2007">
+<!ENTITY app "<application>Nibbles</application>">
+<!ENTITY appname "Nibbles">
+<!ENTITY VERSION "2.20">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="cs">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+ <articleinfo>
+  <title>Příručka ke hře <application>Červíci</application></title>
+
+    <abstract role="description">
+      <para>Červíci jsou hra s červy pro GNOME. Hráč ovládá ve 2D červy, kteří hledají něco k snědku. Získáním potravy dostávají body, ale v případě, že narazí, body ztrácí. Ve chvíli, kdy přijdou o všechny body, je hráč ztracen.</para>
+    </abstract>
+
+  <copyright>
+   <year>2000</year>
+   <holder>Kevin Breit</holder>
+  </copyright><copyright><year>2009.</year><holder>Marek Černocký (marek@manet.cz)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Dokumentační projekt GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU Free Documentation License, verze 1.1 nebo jakékoli další verze vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů předních desek a bez textů zadních desek. Kopie této licence je zahrnuta v oddílu jménem <ulink type="help" url="ghelp:fdl">GNU Free Documentation License</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou.</para>
+         <para>Tato příručka je součástí kolekce příruček GNOME, distribuovaných pod licencí GNU FDL. Pokud chcete tento dokument šířit odděleně od kolekce, musíte přiložit kopii licence dle popisu v sekci 6 dané licence.</para>
+
+	<para>Mnoho užívaných jmen určených k zviditelnění produktů nebo služeb jsou ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s velkým písmenem na začátku.</para>
+
+	<para>DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <orderedlist>
+		<listitem>
+		  <para>DOKUMENT JE POSKYTOVÁN V PODOBĚ „JAK JE“ BEZ ZÁRUKY V JAKÉKOLIV PODOBĚ, NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ VERZE, JE BEZCHYBNÝ NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL NEBO NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ DOKUMENTU, NEBO JEHO UPRAVENÉ VERZE, LEŽÍ NA VÁS. POKUD KVŮLI TOMUTO DOKUMENTU, NEBO JEHO UPRAVENÉ VERZI, NASTANE PROBLÉM, VY (NIKOLIV PŮVODNÍ AUTOR NEBO JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE JAKÉKOLIV NÁKLADY ZA NUTNÉ ÚPRAVY, OPRAVY ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE ZÁKLADNÍ SOUČÁST TÉTO LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ, PODLE TÉTO DOHODY, POVOLENO UŽÍVÁNÍ ANI ÚPRAVY TOHOTO DOKUMENTU; DÁLE</para>
+		</listitem>
+		<listitem>
+		  <para>ZA ŽÁDNÝCH OKOLNOSTÍ A ŽÁDNÝCH PRÁVNÍCH PŘEDPOKLADŮ, AŤ SE JEDNÁ O PŘEČIN (VČETNĚ NEDBALOSTNÍCH), SMLOUVU NEBO JINÉ, NENÍ AUTOR, PŮVODNÍ PISATEL, KTERÝKOLIV PŘISPĚVATEL NEBO KTERÝKOLIV DISTRIBUTOR TOHOTO DOKUMENTU NEBO UPRAVENÉ VERZE DOKUMENTU NEBO KTERÝKOLIV DODAVATEL NĚKTERÉ Z TĚCHTO STRAN ODPOVĚDNÝ NĚJAKÉ OSOBĚ ZA PŘÍMÉ, NEPŘÍMÉ, SPECIÁLNÍ, NAHODILÉ NEBO NÁSLEDNÉ ŠKODY JAKÉHOKOLIV CHARAKTERU, VČETNĚ, ALE NEJEN, ZA POŠKOZENÍ ZE ZTRÁTY DOBRÉHO JMÉNA, PŘERUŠENÍ PRÁCE, PORUCHY NEBO NESPRÁVNÉ FUNKCE POČÍTAČE NEBO JINÉHO A VŠECH DALŠÍCH ŠKOD NEBO ZTRÁT VYVSTÁVAJÍCÍCH Z NEBO VZTAHUJÍCÍCH SE K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Kevin</firstname> 
+	<surname>Breit</surname> 
+	<affiliation> 
+	  <orgname>Dokumentační projekt GNOME</orgname> 
+	  <address> <email>battery841@mypad.com</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+    <revhistory>
+      <revision> 
+	<revnumber>Příručka V2.20 ke hře Červíci</revnumber> 
+	<date>Květen 2007</date> 
+	<revdescription> 
+	  <para role="author">Kevin Breit <email>battery841@mypad.com</email></para>
+	  <para role="publisher">Dokumentační projekt GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Tato příručka popisuje hru Červíci ve verzi 2.20</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Ohlasy</title> 
+      <para>Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k aplikaci <application>Červíci</application> nebo této příručce, postupujte dle instrukcí na stránce <ulink url="ghelp:user-guide?feedback-bugs" type="help">Stránka s ohlasy na GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+ </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Červíci</primary> 
+  </indexterm> 
+
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+ <sect1 id="intro">
+  <title>Úvod</title>
+
+  <para><application>Červíci</application> jsou hra, ve které uživatelé ovládají červy. Červi se pohybují po ploše, pojídají diamanty a přitom se vyhýbají okolním zdem.</para>
+
+  <para><application>Červíky</application> spustíte volbou <menuchoice><guisubmenu>Hry</guisubmenu><guimenuitem>Červíci</guimenuitem></menuchoice> z nabídky <guimenu>Aplikace</guimenu> nebo zadáním <command>gnibbles</command> v příkazové řádce.</para>
+
+  <para>Hra <application>Červíci</application> je součástí balíku <filename>gnome-games</filename>, který patří k pracovnímu prostředí GNOME. Tento dokument popisuje verzi 2.20 aplikace <application>Červíci</application>.</para>
+ </sect1>
+
+ <sect1 id="objective">
+ <title>Cíl hry Červíci</title>
+  <para>Podstata hry Červíci je docela prostá. Ovládáte červa a když červ narazí do zdi nebo sám do sebe, tak zemřete. Máte k dispozici deset životů, než hra skončí. Vyhrajete buď překonáním svého vlastního  nejvyššího skóre (nebo svých přátel) nebo dokončením všech úrovní. Můžete také hrát proti červům s umělou inteligencí.</para>
+  <para>Červíci rovněž podporují <link linkend="network-games">hru pro více hráčů</link> až se šesti lidskými hráči přímo u počítače nebo přes síť.</para>
+ </sect1>
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+ <sect1 id="usage">
+  <title>Používání hry Červíci</title>
+  <para>Hra <application>Červíci</application> je jednoduchá na hraní. Jediné klávesy, které potřebujete, jsou šipky.</para>
+
+  <!-- ========= Basic Usage =========================== -->
+<sect2 id="mainwin">
+<title>Základy používání</title>
+<para>Po spuštění <application>Červíků</application> se otevře <interface>hlavní okno</interface>, které můžete vidět níže. <figure id="intro-fig">
+<title>Úvodní okno Červíků</title>
+<screenshot>
+ <mediaobject> 
+    <imageobject>
+<imagedata fileref="figures/intro.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Úvodní okno hry Červíci.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure></para>
+<para>Hru započnete volbou <menuchoice><guimenu>Hra</guimenu><guimenuitem>Nová</guimenuitem></menuchoice>.</para>
+<para>Jakmile hra započne, po obrazovce zleva vyrazí červ. Použijte šipku nahoru, abyste ho přinutili lézt nahoru, šipku vpravo, aby lezl doprava, šipku vlevo, aby lezl doleva a šipku dolů, aby lezl dolů. <figure id="gameplay">
+<title>Průběh hraní Červíků</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/playing.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Hra Červíci během hraní.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure></para>
+</sect2>
+
+<!-- This section should also describe main elements of graphic user
+interface, such as menus and buttons, unless this description
+is too long - in that case, it should be moved to a separate
+section. For example -->
+
+
+<!-- ========= Menus =========================== -->
+<sect2 id="menubar">
+   <title>Nabídky</title>
+   <para>Panel nabídek, který se nachází v horní části <interface>hlavního okna</interface>, obsahuje následující nabídky:</para>
+
+   <variablelist>
+    <varlistentry>
+     <term><guimenu>Hra</guimenu></term>
+     <listitem>
+      <para>Tato nabídka obsahuje: <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+N</keysym></shortcut><guimenuitem>Nová</guimenuitem></menuchoice> Tímto začnete novou hru <application>Červíků</application>.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+G</keysym></shortcut><guimenuitem>Síťová hra</guimenuitem></menuchoice> Tímto začnete síťovou hru pro více hráčů přes GGZ Gaming Zone.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Skóre</guimenuitem></menuchoice> Tímto zobrazíte tabulku nejvyšších skóre.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Pozastavit</guimenuitem></menuchoice> Tímto svoji hru pozastavíte. Opětovným kliknutím na nabídku <quote>Pozastavit</quote> hru znovu rozjedete.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Ukončit hru</guimenuitem></menuchoice> Tímto ukončíte současnou hru a vrátíte se na úvodní obrazovku.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl-Q</keysym></shortcut><guimenuitem>Ukončit</guimenuitem></menuchoice> Tímto ukončíte celou aplikaci.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+   <varlistentry>
+     <term><guimenu>Zobrazit</guimenu></term>
+     <listitem>
+      <para>Tato nabídka obsahuje: <itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>Celá obrazovka</guimenuitem></menuchoice> Tímto přepínáte okno se svojí hrou na celou obrazovku.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Nastavení</guimenu></term>
+     <listitem>
+      <para>Tato nabídka obsahuje: <itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>Předvolby</guimenuitem></menuchoice> Tímto otevřete dialogové okno, ve kterém můžete měnit <link linkend="prefs">nastavení hry</link>.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Nápověda</guimenu></term>
+     <listitem>
+      <para>Tato nabídka obsahuje: <itemizedlist>
+        <listitem>
+          <para><menuchoice><shortcut><keysym>F1</keysym></shortcut><guimenuitem>Obsah</guimenuitem></menuchoice> Zobrazí tuto příručku.</para>
+         <para><menuchoice><guimenuitem>O aplikaci</guimenuitem></menuchoice> Tímto otevřete dialogové okno <interface>O aplikaci</interface>, které zobrazuje základní informace o hře <application>Červíci</application>, jako je jméno autora a číslo verze aplikace.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+  </sect2>
+  <sect2 id="diamonds">
+  <title>Diamanty</title>
+   <para><application>Červíci</application> mají k jídlu četné druhy diamantů. Každý má jinou barvu a slouží k jinému účelu. Pouze bledě fialový diamant je zárukou, že se dostatečně prodloužíte, když ho sníte (ve skutečnosti jej musíte sníst, abyste dokončili úroveň). Všechny další diamanty jsou bonusy, ale objevují se jen na chvíli. Necháváme na vás, abyste objevili, co bonus které barvy přináší, všechny však mají vliv buď na vaše skóre nebo délku červa nebo obojí. Buďte obezřetní, když jdete pro tyto bonusové diamanty, neodřízněte se od běžných diamantů, které potřebujete pro dokončení úrovně.</para>
+  </sect2>   
+ </sect1>
+
+
+ <!-- ============= Customization ============================= -->
+ <sect1 id="prefs">
+  <title>Přizpůsobení</title>
+  <para>Pokud chcete změnit nastavení aplikace, zvolte <menuchoice><guimenu>Nastavení</guimenu><guimenuitem>Předvolby</guimenuitem></menuchoice>. Tím se otevře dialogové okno <interface>Předvolby Červíků</interface> . Všechny předvolby se automaticky uloží a použijí, jakmile je změníte.</para>
+
+  <figure id="game-prefs">
+    <title>Karta Hra v předvolbách.</title>
+    <screenshot>
+       <mediaobject> 
+    <imageobject>
+      <imagedata fileref="figures/game.png" format="PNG" srccredit="Kevin Breit"/>
+          </imageobject>
+    <textobject> 
+      <phrase>Karta Hra v dialogovém okně předvoleb.</phrase> 
+    </textobject> 
+  </mediaobject>
+    </screenshot>
+  </figure>
+
+  <para>Vlastnosti na kartě <guilabel>Hra</guilabel> jsou: <variablelist>
+    <varlistentry>
+    <term>Rychlost</term>
+    <listitem>
+     <para>Tímto se ovládá rychlost červů.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Hrát úrovně v náhodném pořadí</term>
+    <listitem>
+     <para>Tato volba způsobí, že pokročilost úrovní se vybírá v náhodném pořadí.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Povolit falešné bonusy</term>
+    <listitem>
+     <para>Když to povolíte, mohou se na obrazovce objevovat naráz dva modré diamanty. Jeden z nich, když ho sníte, způsobí vaše scvrknutí místo růstu.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Povolit zvuky</term>
+     <listitem>
+      <para>Ovládá používání zvuků ve hře.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Počáteční úroveň</term>
+     <listitem>
+      <para>V které úrovni se začíná. To využijete, když chcete ihned skočit do složitější úrovně.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Počet lidských hráčů</term>
+     <listitem>
+      <para>Je zde prostor až pro šest hráčů.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Počet počítačových hráčů</term>
+     <listitem>
+      <para>Je zde prostor až pro šest hráčů s umělou inteligencí. Upozorňujeme, že celkový počet lidských a počítačových hráčů musí být dohromady menší nebo roven šesti.</para>
+     </listitem>
+    </varlistentry>
+   </variablelist></para>
+  <para><figure id="worm-prefs">
+    <title>Karta s vlastnostmi červa v předvolbách</title>
+    <screenshot>
+       <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/worm_op.png" format="PNG" srccredit="Kevin Breit"/>
+         </imageobject>
+    <textobject> 
+      <phrase>Karta s vlastnostmi červa v dialogovém okně předvoleb.</phrase> 
+    </textobject> 
+  </mediaobject>
+    </screenshot>
+  </figure> Vlastnosti na kartách <guilabel>Červ 1 </guilabel> až <guilabel>Červ 6</guilabel> vám umožňují nastavit předvolby odlišně pro každého jednotlivého červa. <variablelist>
+    <varlistentry>
+    <term>Ovládání klávesnicí</term>
+    <listitem>
+     <para>Tento seznam vám dovoluje měnit klávesové zkratky pro daného červa. Když chcete ovládání změnit, dvojitě klikněte na příslušnou položku a stiskněte klávesu, kterou chcete k ovládání používat.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Používat relativní pohyb</term>
+    <listitem>
+     <para>Místo aby vlevo posílalo vašeho červa doleva po obrazovce, vpravo doprava atd., tak klávesy vlevo a vpravo nutí červa zahýbat vlevo a vpravo. Například, když se červ sune doleva a vy zmáčknete ovládání vlevo, tak zahne po obrazovce směrem dolů.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Barva červa</term>
+    <listitem>
+     <para>Přizpůsobte si barvu svého červa, abyste jej rozlišili od protivníků ve hře s více hráči.</para>
+    </listitem>
+    </varlistentry>
+   </variablelist></para>
+
+ </sect1>
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Síťové hry</title>
+  <para>Červíci podporují sítové hry pro více hráčů, které poskytuje <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink>. Díky připojení k serveru Červíci na Internetu můžete vyzvat k souboji další hráče. Novinky, aktualizace a seznam serverů, ke kterým se můžete připojit, najdete na <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">webu gnome-games</ulink>.</para>
+  <para>Pokud chcete začít hru pro více hráčů, zvolte v nabídce <menuchoice><guimenu>Hra</guimenu><guimenuitem>Síťová hra</guimenuitem></menuchoice>.</para> 
+
+<sect2 id="connecting">
+<title>Připojení k síťovému serveru Červíci</title>
+<para>Na úvod nové síťové hry se objeví připojovací dialog. V dialogovém okně si můžete vybrat server, ke kterému se chcete připojit, a uživatelské jméno, které chcete během připojení k serveru používat.</para>
+
+<para>K serveru se lze přihlásit buď přes účet host nebo přes normální registrovaný účet. Jako host se přihlásíte anonymně, zatímco normální uživatelsky účet vám umožní si rezervovat dle svého výběru své vlastní uživatelské jméno chráněné heslem.</para>
+
+<para>Volbu <guimenuitem>Přihlášení hosta</guimenuitem> si vyberte, pokud se chcete přihlásit přes anonymním účtem hosta. Pokud chcete vytvořit nový přihlašovací účet, tak zvolte možnost <guimenuitem>První přihlášení</guimenuitem> s uživatelským jménem, heslem a e-mailem dle svého výběru. Jestliže už máte svůj účet vytvořený, připojte se s volbou <guimenuitem>Normální přihlášení</guimenuitem> a zadaným svým správným uživatelským jménem a heslem.</para>
+<para>Připojení k serveru začnete kliknutím na tlačítko <guimenuitem>Připojit</guimenuitem>.</para>
+<figure id="connect">
+<title>Připojovací dialog k síti Červíci.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Připojovací dialog k síti Červíci.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Vstup do herní místnosti</title>
+<para>Jakmile jste úspěšně přihlášení k serveru, můžete si vybrat, do které herní místnosti chcete vstoupit. Jestliže chcete hrát hru Červíci pro více hráčů, tak zvolte místnost Červíci. Pokud chcete hostovat svoji vlastní hru, tak klikněte na tlačítko Spustit. Tím se vytvoří nový stůl, na kterém si ostatní hráči mohou zahrát hru proti vám. Pokud je k dispozici nějaká další již spuštěná hra, pak se můžete dvojitým kliknutím na tomto existujícím herním stole zapojit do hry.</para>
+<figure id="tables">
+<title>Toto dialogové okno sítě Červíci vám umožňuje vstoupit do herní místnosti, kde najdete další hráče.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Toto dialogové okno sítě Červíci vám umožňuje vstoupit do herní místnosti, kde najdete další hráče.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>Když vytvoříte nový stůl pro hry Červíci, objeví se dialogové okno, ve kterém si můžete hru přizpůsobit, např. nastavit minimální počet hráčů pro hru. Jakmile se naplní celkový počet míst, nemůže se již žádný další hráč k hernímu stolu přidat.</para>
+<para>S ostatními hráči síťové hry si můžete povídat. Můžete požádat o radu nebo pomoc s hrou, ale vždy se k ostatním hráčům chovejte slušně.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Čekání, až se další hráči zapojí do hry</title>
+<para>Až se úspěšně přidáte k hernímu stolu, musíte čekat dokud se nepřidá dostatečný počet dalších hráčů. Nabídka <guimenuitem>Seznam hráčů</guimenuitem> vám umožní se podívat na seznam hráčů, kteří se ke hře přidali. Hra začne hned, jak je dosaženo celkového počtu hráčů ve hře.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Jak hrát Červíci pro více hráčů</title>
+<para>Hry Červíci pro více hráčů mají úplně stejná pravidla, jako normální hry Červíci, akorát že nyní hrajete proti lidským hráčům. To znamená, že strategie protivníka by mohla být lepší, než při hraní proti umělé inteligenci.</para>
+<para>Až některý hráč zvítězí, tak hra končí a vy se můžete vrátit na úvodní obrazovku síťové hry. Po té se můžete pustit od další hry návykových Červíků pro více hráčů.</para>
+</sect2>
+
+</sect1>
+
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Autoři</title>
+  <para>Hru <application>Červíci</application> napsali Sean MacIsaac <email>sjm@acm.org</email> a Ian Peters <email>itp@gnu.org</email>. Tuto příručku napsal Kevin Breit <email>battery841@mypad.com</email>. Červíky aktualizoval na verzi se síťovou podporou Andreas Røsdal <email>andreasr@gnome.org</email>. Pokud chcete nahlásit chybu nebo podat návrh týkající se této aplikace nebo tohoto návodu, tak se řiďte instrukcemi v tomto <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentu</ulink>.</para> 
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licence</title>
+  <para>Tento program je svobodný software. Můžete jej dále šířit a/nebo upravovat za dodržení podmínek <ulink type="help" url="gnome-help:gpl"><citetitle>GNU General Public License</citetitle></ulink>, tak jak ji vydala Free Software Foundation ve verzi 2 nebo (dle vaší volby) novější.</para>
+  <para>Tento program je šířen s přesvědčením, že může být užitečný, ale BEZ JAKÝCHKOLIV ZÁRUK, bez předpokládané záruky na OBCHODOVATELNOST nebo VHODNOST PRO URČITÝ ÚČEL. Více podrobností najdete v <citetitle>GNU General Public License</citetitle>.</para>
+  <para>Kopie <citetitle>GNU General Public License</citetitle> je zahrnuta v dodatku <citetitle>Uživatelské přiručky GNOME</citetitle>. Kopii <citetitle>GNU General Public License</citetitle> můžete také získat od Free Software Foundation navštívením <ulink type="http" url="http://www.fsf.org">jejich webu</ulink> nebo zasláním žádosti na <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

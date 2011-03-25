@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="move" xml:lang="sr">
+
+  <info>
+    <link type="guide" xref="index#play" group="two"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Како да померате делове на табли за игру.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  
+  <title>Померање делова</title>
+  
+  <section id="move-piece">
+    <title>Померити део</title>
+    <p>Да бисте померили део, морате прво да га кликнете и држите га тако, а онда га превлачите са тренутног места на ново место, било на десну или леву кутију, а онда отпустите дугме миша.</p>
+    <p>Ова померања нису коначна и део се увек може вратити назад.</p>
+    <note>
+      <p>Сви делови у левој кутији се могу заједно померити у неком правцу. Погледајте <link xref="shortcut"/> за детаље.</p>
+    </note>
+  </section>
+  <section id="move-avoid">
+    <title>Избегните дуго држање дугмета миша</title>
+    <p>Ако вам није пријатно да кликнете и држите притиснуто дугме миша да бисте померали делове, могуће је променити то понашање тако да је довољно само да једном кликнете на део и да почнете да га померате, а да поново кликнете да бисте га спустили на ново место.</p>
+    <p>Да бисте урадили ово, из траке главног менија отворите <gui style="menu">Помери</gui> и одаберите <gui style="checkbox">Кликните за потез</gui>.</p>
+  </section>
+</page>

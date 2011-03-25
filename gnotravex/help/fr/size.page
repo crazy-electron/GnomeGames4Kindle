@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="size" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#play" group="three"/>
+    <desc>Modifier la taille du plateau de jeu.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-18" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  <title>Taille du plateau</title>
+
+  <p>Pour augmenter ou diminuer la difficulté du jeu, il faut modifier la taille du plateau de jeu en choisissant <gui>Taille</gui> dans la barre de menus principale, puis en sélectionnant la dimension du plateau.</p>
+  <p>Vous pouvez choisir parmi cinq dimensions différentes, de 2x2 à 6x6. La valeur par défaut est 3x3.</p>
+  <note style="tip">
+    <p>Si les pièces sont trop petites, un redimensionnement de la taille de la fenêtre modifiera leur taille.</p>
+  </note>
+</page>

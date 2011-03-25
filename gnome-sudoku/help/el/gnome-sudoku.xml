@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.21.90">
+<!ENTITY manrevision "3.0">
+<!ENTITY date "February 2008">
+<!ENTITY app "<application>Sudoku</application>">
+<!ENTITY appname "Sudoku">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 06, 2003
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="el">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Τεκμηρίωση του <application>Σουντόκου</application></title>       
+
+    <abstract role="description">
+      <para>Η εφαρμογή Σουντόκου σας επιτρέπει να παίξετε το δημοφιλές παιχνίδι λογικής σουντόκου, όπου πρέπει να συμπληρώσετε ένα τετράγωνο μεγέθους 9x9 με τους σωστούς αριθμούς.</para>
+    </abstract>
+
+    <copyright> 
+      <year>2008</year> 
+      <holder>Thomas M. Hinkle</holder> 
+    </copyright><copyright><year>δείτε http://www.gnome.gr/</year><holder>Για περισσότερα</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Έργο Τεκμηρίωσης GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Δίνεται άδεια για αντιγραφή, διανομή και/ή τροποποίηση του εγγράφου υπό τους όρους της GNU Free Documentation License (GFDL), Έκδοση 1.1 ή μεταγενέστερη εκδιδόμενη από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Σταθερά Εδάφια, χωρίς Εξώφυλλα Κειμένου, και χωρίς Οπισθόφυλλα Κειμένου. Μπορείτε να βρείτε ένα αντίγραφο της GFDL σε αυτόν τον <ulink type="help" url="ghelp:fdl">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανεμήθηκε με αυτόν τον οδηγό.</para>
+         <para>Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του GNOME, όπως διανέμεται υπό τους όρους της GFDL. Εάν επιθυμείτε να διανείμετε αυτή την τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση συνοδεύεται από αντίγραφο της άδειας όπως περιγράφεται στον τομέα 6 της άδειας.</para>
+
+	<para>Πολλά από τα ονόματα που χρησιμοποιούνται από εταιρίες για να ξεχωρίσουν τα προϊόντα και τις υπηρεσίες είναι σήματα κατατεθέν. Όπου αυτά τα ονόματα εμφανίζονται στην τεκμηρίωση GNOME, και τα μέλη της ομάδας τεκμηρίωσης GNOME έχουν γνώση αυτών, τότε αυτά αναγράφονται με κεφαλαίους χαρακτήρες ή με αρχικούς κεφαλαίους χαρακτήρες.</para>
+
+	<para>ΤΟ ΈΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ GNU FREE DOCUMENTATION LICENSE ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: <orderedlist>
+		<listitem>
+		  <para>Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ ΠΑΡΕΧΕΤΑΙ "ΩΣ ΕΧΕΙ", ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ ΟΤΙ ΜΠΟΡΕΙ ΝΑ ΕΞΥΠΗΡΕΤΗΣΕΙ ΚΑΠΟΙΟ ΣΚΟΠΟ Η ΟΤΙ ΕΙΝΑΙ ΧΩΡΙΣ ΣΦΑΛΜΑ. ΟΛΟΚΛΗΡΗ Η ΕΥΘΥΝΗ ΓΙΑ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ ΚΑΙ ΛΕΙΤΟΥΡΓΙΚΟΤΗΤΑ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΝΗΚΕΙ ΣΕ ΕΣΑΣ. ΕΑΝ Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ Ή ΠΑΡΑΛΛΑΓΗ ΑΥΤΗΣ ΕΙΝΑΙ ΛΑΘΟΣ ΚΑΤΑ ΚΑΠΟΙΟ ΤΡΟΠΟ ΕΣΕΙΣ ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΗΝ ΕΥΘΥΝΗ ΤΗΣ ΔΙΟΡΘΩΣΗΣ. Η ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ ΠΟΥ ΣΥΝΟΔΕΥΕΙ ΑΥΤΗ ΤΗΝ ΤΕΚΜΗΡΙΩΣΗ ΕΙΝΑΙ ΑΝΑΠΟΣΠΑΣΤΟ ΚΟΜΜΑΤΙ ΑΥΤΗΣ. ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ.</para>
+		</listitem>
+		<listitem>
+		  <para>ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΝΟΜΙΚΗ ΣΥΝΘΗΚΗ, ΕΙΤΕ ΜΕΣΩ ΣΥΜΒΟΛΑΙΩΝ Ή ΑΛΛΙΩΣ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ Ο ΣΥΓΓΡΑΦΕΑΣ, Ο ΔΙΑΝΟΜΕΑΣ, Η ΑΛΛΟΣ ΣΥΝΥΠΕΥΘΥΝΟΣ ΓΙΑ ΤΗΝ ΣΥΓΓΡΑΦΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ, ΓΙΑ ΕΜΜΕΣΕΣ Η ΑΜΕΣΕΣ, ΤΥΧΑΙΕΣ Ή ΜΗ ΖΗΜΙΕΣ ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+		<firstname>Thomas</firstname> 
+		<surname>Hinkle</surname> 
+		<affiliation> 
+	  		<orgname>Έργο Τεκμηρίωσης GNOME</orgname> 
+	  		<!-- The email address of the author is optional and is commented out by default. 
+			<address> <email>doc-writer2@gnome.org</email> </address> 
+			-->
+		</affiliation> 
+      </author> 
+      
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->  
+    <revhistory>
+      <revision> 
+		<revnumber>Τεκμηρίωση του GNOME Sudoku V3.0</revnumber> 
+		<date>Φεβρουάριος 2008</date> 
+		<revdescription> 
+	  		<para role="author">Thomas M. Hinkle</para>
+	  		<para role="publisher">Έργο Τεκμηρίωσης GNOME</para>
+		</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Αυτή η τεκμηρίωση καλύπτει την έκδοση 2.21.90 του Σουντόκου.</releaseinfo> 
+    <legalnotice> 
+      <title>Ανάδραση</title> 
+      <para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με την εφαρμογή <application>Σουντόκου</application> ή αυτή την τεκμηρίωση, ακολουθήστε τις  οδηγίες στη σελίδα <ulink url="ghelp:user-guide?feedback-bugs" type="help">ανάδρασης του GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>Σουντόκου για GNOME</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+    <primary>Σουντόκου</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="myapp-introduction"> 
+    <title>Εισαγωγή</title> 
+    <para>Η εφαρμογή <application>Σουντόκου</application> σας επιτρέπει να παίξετε το δημοφιλές παιχνίδι λογικής σουντόκου, καθώς και να παράγετε νέα παζλ Σουντόκου.</para>
+    <para>Οι κανόνες του Σουντόκου είναι αρκετά απλοί. Πρέπει να συμπληρώσετε όλα τα τετραγωνίδια με έναν αριθμό από το 1 ως το 9, κατά τρόπο τέτοιο ώστε κάθε γραμμή, κάθε στήλη και κάθε τετράγωνο μεγέθους 3Χ3 να περιέχει όλους τους αριθμούς από το 1 ως το 9. Με άλλα λόγια, πρέπει να συμπληρώσετε όλα τα τετραγωνίδια έτσι ώστε κανένας αριθμός να μην εμφανίζεται δύο φορές στην ίδια γραμμή, στήλη ή τετράγωνο 3Χ3.</para>
+
+    <para>Αυτές οι δύο θεωρήσεις είναι και οι δύο βασικοί τρόποι σκέψης ενός παίκτη κατά τη διάρκεια του παιχνιδιού. Από τη μία πλευρά αναρωτιέται: “Πώς θα χωρέσω όλους τους αριθμούς στο τετράγωνό μου;” Από την άλλη αναρωτιέται: “Ποιοι αριθμοί μπορούν να μπουν σε αυτό το τετραγωνίδιο χωρίς να έρχονται σε σύγκρουση με τους υπόλοιπους αριθμούς στην ίδια γραμμή, στήλη και τετράγωνο 3x3;”</para>
+
+    <para>Παρά την απλή λογική του παιχνιδιού, τα παζλ Σουντόκου μπορεί να ποικίλλουν πολύ ως προς τον βαθμό δυσκολίας. Το <application>Σουντόκου</application> σας επιτρέπει να διαλέξετε το βαθμό δυσκολίας για το παζλ που θα παίξετε. Αν κρατήσετε τις αρχικές ρυθμίσεις θα ξεκινήσετε με εύκολα παζλ, αλλά ο βαθμός δυσκολίας θα αυξάνεται σταδιακά, καθώς βελτιώνονται οι επιδόσεις σας.</para>
+
+  </sect1>
+
+<!-- =========== Getting Started ============================== -->
+<!-- Use the Getting Started section to describe the steps required
+     to start the application and to describe the user interface components
+     of the application. If there is other information that it is important
+     for readers to know before they start using the application, you should
+     also include this information here. 
+     If the information about how to get started is very short, you can 
+     include it in the Introduction and omit this section. -->
+
+  <sect1 id="myapp-getting-started"> 
+    <title>Πρώτα βήματα</title> 
+
+    <sect2 id="myapp-start">
+    <title>Για να ξεκινήσετε το <application>Σουντόκου</application></title>
+    <para>Μπορείτε να ξεκινήσετε το <application>Σουντόκου</application> με τους εξής τρόπους:</para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>Μενού <guimenu>εφαρμογές</guimenu></term>
+    		<listitem>
+    		<para>Επιλέξτε <menuchoice><guisubmenu>Παιχνίδια </guisubmenu><guimenuitem>Σουντόκου</guimenuitem></menuchoice>.</para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Γραμμή εντολών</term>
+    		<listitem>
+    		<para>Για να ξεκινήσετε το <application>Σουντόκου</application> από τη γραμμή εντολών,  πληκτρολογήστε την ακόλουθη εντολή και μετά πιέστε <keycap>Return</keycap>:</para>
+    		<para> 
+			<command>gnome-sudoku</command> 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+    </sect2>
+
+    <sect2 id="myapp-when-start">
+    <title>Αφού ξεκινήσετε το <application>Σουντόκου</application></title>
+    <para>Όταν θα ξεκινήσετε το <application>Σουντόκου</application> για πρώτη φορά, θα εμφανιστεί η οθόνη επιλογής παζλ, όπου μπορείτε να επιλέξετε το βαθμό δυσκολίας για το παζλ που θα παίξετε. Αν έχετε παίξει και στο παρελθόν και υπάρχουν παζλ που έμειναν ημιτελή, τότε μπορείτε να επιλέξετε και αυτά τα παζλ από αυτή την οθόνη.</para>
+    <para>Στην οθόνη επιλογής παζλ εμφανίζεται η δυσκολία του παζλ. Το χρώμα του περιγράμματος της εικόνας του παζλ αντιστοιχεί στο βαθμό δυσκολίας. Ένα σκούρο κόκκινο παζλ, για παράδειγμα, είναι δυσκολότερο από ένα ανοιχτό κόκκινο.</para>
+    <para>Κάντε διπλό κλικ στο παζλ που επιλέξατε για να αρχίσετε το παιχνίδι.</para>
+
+<figure id="new-game-fig"> 
+	<title>Ξεκινώντας το Σουντόκου</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/starting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Ξεκινώντας το Σουντόκου: διαλέξτε επίπεδο δυσκολίας.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    
+    <para>Μπορείτε να αλλάξετε παζλ ανά πάσα στιγμή, πατώντας <guibutton>Νέο</guibutton>. Θα επιστρέψετε στην οθόνη επιλογής παζλ, από όπου μπορείτε να επιλέξετε ό,τι παζλ θέλετε.</para>
+    
+    </sect2>
+    
+    </sect1>
+    <sect1 id="myapp-basic-play">
+    <title>Βασικοί κανόνες παιχνιδιού</title>
+    <para>Ξεκινάτε να παίζετε συμπληρώνοντας τους αριθμούς 1-9 στα τετραγωνίδια, έτσι ώστε καμία γραμμή, στήλη και τετράγωνο 3x3 να μην περιέχει τον ίδιο αριθμό περισσότερες από μία φορές.</para>
+    <para>Μπορείτε να εισάγετε αριθμούς με το πληκτρολόγιο ή με το ποντίκι.</para>
+    <variablelist>
+    	<varlistentry>
+	<term>Πληκτρολόγιο</term>
+	<listitem><para>Χρησιμοποιήστε τα βέλη ή το ποντίκι για να επιλέξετε το τετραγωνίδιο που επιθυμείτε να συμπληρώσετε. Τώρα πληκτρολογήστε τον αριθμό που επιθυμείτε. Αν πατήσετε <keycap>Backspace</keycap>, ο αριθμός διαγράφεται.</para></listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Ποντίκι</term>
+	<listitem>
+	  <para>Κάντε κλικ σε ένα τετραγωνίδιο για να το επιλέξετε, και μετά κάντε ξανά κλικ στο κέντρο του για να εμφανίσετε ένα παράθυρο με τους αριθμούς 1-9. Κάντε κλικ σε έναν αριθμό για να τον επιλέξετε ή πατήστε <guibutton>Εκκαθάριση</guibutton> για να αδειάσετε το τετραγωνίδιο. Το παράθυρο με τους αριθμούς εμφανίζεται και αν κάνετε διπλό κλικ στο κέντρο του τετραγωνιδίου.</para>
+	</listitem>
+		</varlistentry>
+	</variablelist>
+    <note>
+    <para>Αν εισάγετε αριθμό που έρχεται σε σύγκρουση με κάποιον άλλο αριθμό στο παζλ, οι αριθμοί αυτοί θα επισημανθούν με κόκκινο χρώμα. </para>
+    <figure id="error-highlight-fig"> 
+	<title>Επισήμανση λαθών</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/error_highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Οι κινήσεις που δεν επιτρέπονται επισημαίνονται με κόκκινο χρώμα.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    </note>
+    </sect1>
+    <sect1 id="myapp-saving">
+    <title>Αποθήκευση και συνέχιση του παιχνιδιού</title>
+    <para>Το παζλ αποθηκεύεται αυτόματα κάθε λίγα λεπτά, καθώς και κάθε φορά που αλλάζετε παιχνίδι ή κλείνετε την εφαρμογή.</para>
+        <figure id="open-game-fig"> 
+	<title>Συνέχιση παλαιότερου παιχνιδιού</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/resuming.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Συνέχιση ενός παλαιότερου παιχνιδιού από την οθόνη επιλογής παζλ.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    <para>Όποτε ξεκινάτε το <application>Σουντόκου</application> ή πατάτε <guibutton>Νέο</guibutton>, τα αποθηκευμένα παιχνίδια εμφανίζονται στην οθόνη επιλογής παζλ. Βλέπετε μία σμίκρυνση του αποθηκευμένου παζλ, την ημερομηνία και τον χρόνο που είχε διαρκέσει το παιχνίδι σας. Για να ανοίξετε ένα αποθηκευμένο παζλ απλά κάντε διπλό κλικ πάνω στην εικόνα του.</para>
+    <para>Αν επιθυμείτε να διακόψετε ένα παιχνίδι και να ξεκινήσετε νέο, απλά επιλέξτε <guibutton>Νέο</guibutton> και ξεκινήστε το νέο παιχνίδι.</para>
+    </sect1>
+
+<!-- ================ Usage ================================ -->
+<!-- Use this section to describe how to use the application to perform the tasks for 
+  which the application is designed. -->
+  <sect1 id="myapp-hints"> 
+    <title>Χαρακτηριστικά</title> 
+    <!-- ================ Usage Subsection ================================ -->
+
+        <para>Το Σουντόκου για GNOME παρέχει έναν αριθμό χρήσιμων χαρακτηριστικών.</para>
+
+      <variablelist>
+    	<varlistentry><term>Σημειώσεις</term>
+	<listitem>
+		<para>Οι <firstterm>Σημειώσεις</firstterm> ή το <firstterm>Μολύβι</firstterm> σας επιτρέπουν να κρατάτε σημειώσεις σε κάθε τετραγωνίδιο. Πολλοί παίκτες χρησιμοποιούν τις σημειώσεις για να θυμούνται ποιες είναι οι δυνατές τιμές για κάθε τετραγωνίδιο.</para>
+	</listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Υποδείξεις και αυτόματη συμπλήρωση</term>
+	<listitem>
+	<para>Μπορείτε να χρησιμοποιήσετε τις <firstterm>Υποδείξεις</firstterm> ή την <firstterm>Αυτόματη συμπλήρωση</firstterm> αν θέλετε το Σουντόκου να σας δείξει ποιες είναι οι δυνατές τιμές για ένα τετραγωνίδιο ή να το συμπληρώσει αυτομάτως.</para>
+	</listitem>
+	</varlistentry>
+
+		<varlistentry>
+	<term>Επισήμανση</term>
+	<listitem>
+	<para>Αν χρησιμοποιήσετε την επισήμανση, η τρέχουσα γραμμή, στήλη και τετράγωνο 3x3 επισημαίνονται με διαφορετικά χρώματα, διευκολύνοντάς σας στην αναζήτηση.</para>
+	</listitem>
+	</varlistentry>
+
+	<varlistentry>
+	<term>Μνήμες</term>
+	<listitem>
+	  <para>Οι μνήμες σας επιτρέπουν να θυμάστε τις επιλογές σας όταν κάνετε δοκιμές. Όταν αποθηκεύετε σε μία <firstterm>μνήμη</firstterm> μια σειρά από κινήσεις, οι αριθμοί εισάγονται με ειδικό χρώμα για να μπορείτε να διακρίνετε αυτές τις κινήσεις από τις προηγούμενες.</para>
+	</listitem>
+	</varlistentry>
+        </variablelist>
+	
+	<sect2 id="myapp-notes"> 
+      <title>Σημειώσεις</title> 
+      <para>Για να κρατήσετε σημειώσεις (αυτή η δυνατότητα είναι γνωστή και ως “μολύβι”) σε κάποιο τετραγωνίδιο, πρώτα επιλέγετε το τετραγωνίδιο με το ποντίκι ή το πληκτρολόγιο. Στη συνέχεια κάντε ένα από τα ακόλουθα:</para>
+      <itemizedlist>
+      <listitem><para>Κάντε κλικ στο πάνω μέρος του τετραγωνιδίου (αν το τετραγωνίδιο έχει ήδη επιλεχθεί, όποτε περνάτε με το ποντίκι πάνω από αυτή την περιοχή, εμφανίζεται ένα ορθογώνιο πλαίσιο).</para></listitem>
+      <listitem><para>Πληκτρολογήστε <keycap>Ν</keycap></para></listitem>
+      </itemizedlist>
+      <para>Θα εμφανιστεί ένα πλαίσιο όπου μπορείτε να πληκτρολογήσετε τις σημειώσεις σας. Πατήστε <keycap>Return</keycap> όταν τελειώσετε.</para>
+      
+      <note><para>Μπορείτε, επίσης, να κρατήσετε σημειώσεις και στο κάτω μέρος του τετραγωνιδίου, είτε κάνοντας κλικ στο κάτω μέρος του, είτε πληκτρολογώντας <keycap>Μ</keycap>. Όμως αυτό το τμήμα του τετραγωνιδίου χρησιμεύει και για την εμφάνιση των <firstterm>υποδείξεων</firstterm>, οπότε μην το χρησιμοποιήσετε για σημειώσεις αν σκοπεύετε να ζητήσετε υποδείξεις.</para></note>
+      <note><para>Μπορείτε να εκκαθαρίσετε τις σημειώσεις στην κορυφή το τετραγώνου πατώντας <keycap>Alt-N</keycap> και στη βάση του τετραγώνου πατώντας <keycap>Alt-M</keycap>.</para></note>
+      <note><para>Μπορείτε να προσθέσετε έναν αριθμό στις σημειώσεις στην κορυφή του τετραγώνου πατώντας <keycap>Ctrl-1</keycap> έως <keycap>Ctrl-9</keycap> και να αφαιρέσετε έναν αριθμό από τις σημειώσεις πατώντας <keycap>Alt-1</keycap> έως <keycap>Alt-9</keycap>.</para></note>
+</sect2>
+    <!-- ================ Usage Subsection ================================ -->
+	 <sect2 id="myapp-manipulate-view"> 
+      <title>Υποδείξεις και αυτόματη συμπλήρωση</title>
+
+		             <note>
+
+	      <para>Οι <firstterm>Υποδείξεις</firstterm> και η <firstterm>Συμπλήρωση</firstterm> υπολογίζονται με βάση τις λογικές πιθανότητες που ισχύουν για το παζλ ως έχει τη συγκεκριμένη στιγμή. <emphasis>Δεν</emphasis> συμπληρώνονται από τις λύσεις. Αν είχατε κάνει λάθος σε προηγούμενη κίνηση, μπορεί να συμπληρωθούν ή να υποδειχθούν λανθασμένες τιμές.</para>
+
+	    </note>
+      
+      
+      <sect3 id="myapp-hint">
+          <title>Υποδείξεις</title>
+	              <para>Το Σουντόκου μπορεί να σας προσφέρει υποδείξεις με βάση το τι έχετε συμπληρώσει μέχρι στιγμής. Μπορείτε να ζητήσετε υπόδειξη για ένα ήδη επιλεγμένο τετραγωνίδιο πατώντας το <guibutton>Υπόδειξη</guibutton>, επιλέγοντας <menuchoice><guisubmenu>Εργαλεία</guisubmenu><guimenuitem>Υπόδειξη</guimenuitem></menuchoice>, ή πληκτρολογώντας <keycap>Ctrl+H</keycap>. Θα εμφανιστούν έτσι όλες οι δυνατές τιμές στο κάτω μέρος του τετραγωνιδίου.</para>
+    <figure id="hint-fig"> 
+	<title>Υποδείξεις</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/hints.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Αν πατήσετε Υπόδειξη, οι δυνατές τιμές εμφανίζονται στο κάτω μέρος του τετραγωνιδίου.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+		      
+	    <para>Αν θέλετε να διαγράψετε ή να τροποποιήσετε την υπόδειξη, κάντε κλικ στο κάτω μέρος του τετραγωνιδίου.</para>
+	    <para>Για τα πολύ δύσκολα παζλ, μπορείτε να ζητήσετε από το <application>Σουντόκου</application> να εμφανίζει όλες τις δυνατές τιμές για όλα τα τετραγωνίδια. Για να ενεργοποιήσετε αυτή τη λειτουργία επιλέξτε <menuchoice><guisubmenu>Εργαλεία</guisubmenu><guimenuitem>Πάντα εμφάνιση υπόδειξης</guimenuitem></menuchoice>. Σημειώστε ότι με αυτή τη λειτουργία τα εύκολα παζλ μπορεί να καταλήξουν <emphasis>υπερβολικά</emphasis> εύκολα, οπότε χρησιμοποιήστε τη με φειδώ.</para>
+<figure id="all-hints-fig"> 
+	<title>Το <application>Σουντόκου</application> με ενεργοποιημένη τη λειτουργία "Πάντα εμφάνιση υπόδειξης".</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/always_show_hint.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Ένα δύσκολο παζλ με ενεργοποιημένη τη λειτουργία "Πάντα εμφάνιση υπόδειξης".</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+	    
+	    
+	    </sect3>
+	    <sect3 id="myapp-autofill">
+	    <title>Συμπλήρωση τετραγωνιδίου</title>
+
+	    <para>Για να συμπληρώσετε αυτόματα ένα τετραγωνίδιο όπου υπάρχει μόνο μία δυνατή επιλογή μπορείτε να πατήσετε <guibutton>Συμπλήρωση</guibutton>, να επιλέξετε <menuchoice><guisubmenu>Εργαλεία</guisubmenu><guimenuitem>Συμπλήρωση</guimenuitem></menuchoice>, ή να πληκτρολογήσετε <keycap>Ctrl+F</keycap>. Αυτή η επιλογή χρησιμεύει π.χ. όταν έχετε ήδη συμπληρώσει 8 τετραγωνίδια σε μία γραμμή και θέλετε να συμπληρώσετε γρήγορα και το τελευταίο άδειο τετραγωνίδιο.</para>
+	    <para>Αν οι δυνατές τιμές για το τετραγωνίδιο είναι περισσότερες από μία, δεν θα συμβεί τίποτα.</para>	    
+	    </sect3>
+	    <sect3 id="myapp-fill-all">
+	    <title>Συμπλήρωση όλων των τετραγωνιδίων</title>
+
+	    <para>Μπορείτε να συμπληρώσετε αυτομάτα όλα τα τετραγωνίδια για τα οποία υπάρχει μία μόνο λογική λύση τη συγκεκριμένη χρονική στιγμή. Επιλέξτε <menuchoice><guisubmenu>Εργαλεία</guisubmenu><guimenuitem>Συμπλήρωση όλων των τετραγωνιδίων</guimenuitem></menuchoice> ή πληκτρολογήστε <keycap>Ctrl+A</keycap>.</para>
+	    
+	    <warning>
+
+	    	    <para>Αυτό το χαρακτηριστικό θα πρέπει να χρησιμοποιείται μόνο αν έχετε κολλήσει σε ένα δύσκολο παιχνίδι. Αν το χρησιμοποιήσετε σε εύκολα παιχνίδια, κινδυνεύετε να συμπληρώσετε όλο το παζλ με ένα μόνο κλικ, κάτι που θα καθιστούσε το παιχνίδι ιδιαίτερα βαρετό!</para>
+		    </warning>
+	    	    </sect3>
+
+    </sect2> 
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-highlighting"> 
+      <title>Επισήμανση</title> 
+      <para>Μπορείτε να ενεργοποιήσετε την επισήμανση έτσι ώστε να επισημαίνονται αυτόματα και με διαφορετικά χρώματα η επιλεγμένη γραμμή, στήλη και τετράγωνο 3x3. Έτσι, είναι πιο εύκολο να βρείτε ποιες τιμές δεν επιτρέπονται για το επιλεγμένο τετραγωνίδιο. Για να ενεργοποιήσετε την επισήμανση μπορείτε:</para> 
+      <itemizedlist>
+      <listitem><para>Να κάνετε κλικ στο <guibutton>Επισήμανση</guibutton></para></listitem>
+      <listitem><para><menuchoice><guisubmenu>Προβολή</guisubmenu><guimenuitem>Επισήμανση</guimenuitem></menuchoice></para></listitem>
+      </itemizedlist>
+
+<figure id="highlight-fig"> 
+	<title>Το <application>Σουντόκου</application> με επισήμανση</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Η επισήμανση κάνει πιο εύκολη την αναζήτηση στις διαφορετικές γραμμές, στήλες και τετράγωνα 3x3.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      </sect2>
+
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-trackers"> 
+      <title>Μνήμες</title> 
+      <para>Μπορείτε να χρησιμοποιήσετε μνήμες για να θυμάστε μια σειρά από διαδοχικές κινήσεις. Οι κινήσεις που επισημαίνονται κατ' αυτόν τον τρόπο εισάγονται με διαφορετικό χρώμα, για να φαίνονται καλύτερα. Αν το επιθυμείτε, μπορείτε να διαγράψετε όλες τις κινήσεις μιας μνήμης μαζί. Αυτή η δυνατότητα είναι ιδιαίτερα χρήσιμη σε δύσκολα παζλ όπου χρησιμοποιούνται δοκιμές στην τύχη.</para>
+      <note><para>Ορισμένοι παίκτες πιστεύουν ότι δεν πρέπει ποτέ κανείς να κάνει δοκιμές στην τύχη για να λύσει το παζλ. Αυτοί οι παίκτες καλύτερα να μην χρησιμοποιούν αυτό το χαρακτηριστικό.</para></note>
+
+            <para>Μπορείτε να εμφανίζετε και να κρύβετε τις μνήμες με τους παρακάτω τρόπους:</para>
+
+	    <itemizedlist>
+
+	      <listitem>
+	       <para>
+		<menuchoice> 
+			  <guimenu>Εργαλεία</guimenu> 
+			  <guimenuitem>Απομνημόνευση κινήσεων</guimenuitem>
+		</menuchoice>
+	       </para>
+	     </listitem>
+             <listitem><para>Κλικ στο <guibutton>Απομνημόνευση κινήσεων</guibutton></para></listitem>
+           </itemizedlist>
+      <para>Έτσι εμφανίζεται μία λίστα με μνήμες στη δεξιά πλευρά του παραθύρου. Για να δημιουργήσετε νέα μνήμη κάντε κλικ στο <guibutton>Προσθήκη μνήμης</guibutton>. Από εδώ και στο εξής όλοι οι αριθμοί που εισάγετε θα αποθηκεύονται από την επιλεγμένη μνήμη.</para>
+      <para>Για να διαγράψετε όλους τους αριθμούς μιας μνήμης επιλέξτε τη συγκεκριμένη μνήμη από τη λίστα και πατήστε <guibutton>Εκκαθάριση μνήμης</guibutton>. Μπορείτε να διαγράψετε όλους τους αριθμούς που <emphasis>δεν</emphasis> ανήκουν σε συγκεκριμένη μνήμη πατώντας <guibutton>Εκκαθάριση άλλων</guibutton>.</para>
+    </sect2> 
+  </sect1>
+  <!-- ============= Customization ============================= -->
+  <!-- Use this section to describe how to customize the application. -->
+  <sect1 id="myapp-printing"> 
+    <title>Εκτύπωση Σουντόκου</title> 
+    <para>Το Σουντόκου του GNOME μπορεί να εκτυπώσει παζλ για να τα λύσετε στο χαρτί. Αυτό χρησιμεύει αν πρέπει να φύγετε από τον υπολογιστή αλλά θέλετε να τελειώσετε το παιχνίδι σας, ή αν θέλετε να τυπώσετε μερικά παζλ για να τα λύσετε αργότερα.</para>
+
+    <para>Για να τυπώσετε το παζλ που παίζετε αυτή τη στιγμή πατήστε <guibutton>Εκτύπωση</guibutton> ή επιλέξτε <menuchoice><guimenu>Παιχνίδι</guimenu> <guimenuitem>Εκτύπωση</guimenuitem></menuchoice>. Έτσι θα εκτυπωθούν και οι αριθμοί που έχετε ήδη συμπληρώσει.</para>
+    
+    <para>Για να εκτυπώσετε κενά παζλ, επιλέξτε <menuchoice><guimenu>Παιχνίδι</guimenu><guimenuitem> Εκτύπωση πολλαπλών Σουντόκου</guimenuitem></menuchoice>.</para>
+
+      <para>Εμφανίζεται ένα διάλογος εκτύπωσης από τον οποίο μπορείτε να επιλέξετε πόσα παιχνίδια θα εκτυπώσετε και πόσα παιχνίδια θα εμφανίζονται σε κάθε σελίδα (όσο περισσότερα παιχνίδια ανά σελίδα, τόσο μικρότερο το μέγεθός τους).</para>
+
+      <para>Μπορείτε επίσης να επιλέξετε μία κλίμακα βαθμών δυσκολίας. Τα παιχνίδια θα τυπωθούν με σειρά δυσκολίας από το ευκολότερο στο δυσκολότερο.</para>
+
+      <para>Για να δημιουργήσετε το δικό σας 25σέλιδο βιβλίο Σουντόκου μπορείτε να επιλέξετε την εκτύπωση 100 σουντόκου, 4 ανά σελίδα, με κλίμακα δυσκολίας από Εύκολο μέχρι Δύσκολο.</para>
+
+<figure id="printing-fig"> 
+	<title>Εκτύπωση βιβλίου με Σουντόκου από το <application>Σουντόκου</application>.</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/Print_Sudokus.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Εκτυπώνονται 25 σελίδες με 4 σουντόκου ανά σελίδα.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      <para>Το <application>Σουντόκου</application> δεν εκτυπώνει παιχνίδια που έχετε ήδη παίξει. Αν τυπώνετε τα παιχνίδια για να τα δώσετε σε φίλους, ή αν δεν σας πειράζει να ξαναπαίξετε ένα παιχνίδι, μπορείτε να επιλέξετε <guibutton>Να περιλαμβάνονται παιχνίδια που έχετε ήδη παίξει στη λίστα παιχνιδιών προς  εκτύπωση</guibutton>.</para>
+
+      <para>Επίσης, μπορείτε να επιλέξετε χειροκίνητα τα παιχνίδια που θα εκτυπώσετε, αναπτύσσοντας τη <guibutton>Λίστα παιχνιδιών</guibutton> και επιλέγοντας παζλ από τη λίστα αυτή.</para>
+    
+  </sect1>
+  
+  <sect1 id="mayapp-bugs">
+  <title>Γνωστά σφάλματα και περιορισμοί</title>
+  <sect2>
+  <title>Περιορισμένα στατιστικά παζλ</title>
+
+    <para>Το Σουντόκου για GNOME ιεραρχεί τα παζλ με βάση των αριθμό των τετραγωνιδίων που μπορούν να συμπληρωθούν άμεσα. Ο διάλογος με τα στατιστικά στοιχεία του παζλ εμφανίζει το συνολικό βαθμό δυσκολίας, καθώς και τρία ακόμη στοιχεία:</para>
+
+    <itemizedlist>
+    <listitem><para>Πόσα τετραγωνίδια μπορούν να συμπληρωθούν με εις άτοπον απαγωγή στην αρχή του παιχνιδιού (π.χ. σε αυτό το τετράγωνο 3x3 μπορεί να μπει μόνο το 2, άρα ο ζητούμενος αριθμός είναι το 2).</para></listitem>
+    <listitem><para>Πόσα τετραγωνίδια μπορούν να συμπληρωθούν αν πατήσετε συμπλήρωση στην αρχή του παιχνιδιού (π.χ. μόνο ένα τετράγωνο σε αυτή τη γραμμή μπορεί να περιέχει το 2, άρα εδώ μπαίνει το 2).</para></listitem>
+    <listitem><para>Πόσές φορές χρειάστηκε να κάνει δοκιμές στην τύχη, να “μαντέψει” δηλαδή, ο υπολογιστής για να λύσει το παζλ.</para></listitem>
+    </itemizedlist>
+    <para>Πολύ χρήστες απογοητεύονται όταν μαθαίνουν ότι ο υπολογιστής κάνει τυχαίες δοκιμές, ειδικά εφόσον ορισμένοι ειδικοί στο Σουντόκου λένε ότι δεν πρέπει ποτέ κανείς να μαντεύει για να λύσει ένα παζλ. Υπάρχουν και άλλοι αλγόριθμοι που μπορούν να χρησιμοποιηθούν για να διευκολύνουν τον υπολογιστή στην επίλυση των σουντόκου, όπως ο “ξιφίας” και τα μοτίβα Χ.</para>
+
+    <para>Προς το παρόν, το <application>Σουντόκου</application> χρησιμοποιεί μόνο τους δύο προαναφερθέντες αλγόριθμους, καθώς και τυχαίες δοκιμές. Αν ο διάλογος των στατιστικών αναφέρει ότι το <application>Σουντόκου</application> αναγκάστηκε να χρησιμοποιήσει Χ τυχαίες δοκιμές, αυτό <emphasis>δεν</emphasis> σημαίνει ότι και ένας άνθρωπος θα χρειαστεί να χρησιμοποιήσει τυχαίες δοκιμές για να επιλύσει το συγκεκριμένο παζλ.</para>
+  
+  </sect2>
+
+ </sect1>
+
+<!-- ============= About ================================== -->
+<!-- This section contains info about the program (not docs), such as
+      author's name(s), web page, license, feedback address. This
+      section is optional: primary place for this info is "About.." box of
+      the program. However, if you do wish to include this info in the
+      manual, this is the place to put it. Alternatively, you can put this information in the title page.-->
+  <sect1 id="myapp-about"> 
+    <title>Περί <application>Σουντόκου</application></title> 
+    <para>Το <application>Sudoku</application> γράφτηκε από τον Tom Hinkle (<email>tmhinkle@gmail.com</email>). Το <application>Σουντόκου</application> ανήκει πλέον στα παιχνίδια του GNOME.</para>
+    <para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με αυτή την εφαρμογή  ή την τεκμηρίωσή της, ακολουθήστε τις οδηγίες στη σελίδα ανάδρασης του <ulink url="ghelp:user-guide?feedback-bugs" type="help">Οδηγού Χρηστών GNOME</ulink>.</para>
+
+    <para>Αυτό το πρόγραμμα διανέμεται υπό τους όρους της GNU General Public license όπως έχει δημοσιευτεί από το Ίδρυμα Ελεύθερου λογισμικού· είτε της δεύτερη έκδοσης της άδειας, είτε (κατ' επιλογή σας) οποιασδήποτε νεότερης έκδοσης. Μπορείτε να βρείτε αντίγραφο αυτής της άδειας στον  ακόλουθο <ulink url="ghelp:gpl" type="help ">σύνδεσμο</ulink>, ή στο αρχείο COPYING που περιλαμβάνεται στον πηγαίο κώδικα αυτού του προγράμματος.</para>
+
+  </sect1> 
+</article>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.11">
+<!ENTITY date "January 2008">
+<!ENTITY appname "Swell Foop">
+<!ENTITY app "<application>Swell Foop</application>">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://live.gnome.org/DocumentationProject
+  Template version: 3.0 beta
+  Template last modified 2006-11-21
+
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sv">
+  <articleinfo> 
+    <title><application>Swell Foop</application> Manual</title>       
+    
+    <abstract role="description">
+      <para>
+	Swell Foop is a puzzle game, of which the objective is to clear 
+	the window of as many pieces as possible by clicking on groups 
+	of the same colored pieces. That group will vanish and the 
+	pieces on top will fall until there are none left or no more 
+	color groups.
+      </para>
+    </abstract>
+
+    <copyright> 
+      <year>2005</year> 
+      <holder>Callum McKenzie</holder> 
+    </copyright><copyright><year>2007, 2008, 2009</year><holder>Daniel Nylander (po@danielnylander.se)</holder></copyright> 
+
+    <publisher role="maintainer"> 
+      <publishername>Dokumentationsprojekt för GNOME</publishername> 
+    </publisher> 
+
+	  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="legal.xml"/>   
+   <!-- This file legal.xml contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+		<firstname>Callum</firstname> 
+		<surname>McKenzie</surname> 
+		<affiliation> 
+	  		<orgname>Dokumentationsprojekt för GNOME</orgname> 
+	  		<address> <email>callum@physics.otago.ac.nz</email> </address> 
+		</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. --> 
+    <revhistory>
+      <revision> 
+		    <revnumber>Swell Foop Manual V2.11</revnumber>
+		    <date>Januari 2008</date> 
+		    <revdescription> 
+    			<para>Adaptation of the Swell Foop manual to new template.</para>		    
+	  		  <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+	  		  <para role="publisher">Dokumentationsprojekt för GNOME</para>
+    		</revdescription> 
+      </revision> 
+      <revision> 
+		    <revnumber>Swell Foop Manual V2.10</revnumber>
+		    <date>Februari 2005</date> 
+		    <revdescription> 
+    			<para>Initial version for the new Swell Foop.</para>		    
+	  		  <para role="author">Callum McKenzie <email>callum@physics.otago.ac.nz</email></para>
+	  		  <para role="publisher">Dokumentationsprojekt för GNOME</para>
+    		</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>This manual describes version 2.12 of Swell Foop.
+    </releaseinfo> 
+    <legalnotice> 
+      <title>Återkoppling</title> 
+      <para>To report a bug or make a suggestion regarding the <application>Swell Foop</application> game or
+      this manual, follow the directions in the <ulink url="ghelp:user-guide?feedback-bugs" type="help">Feedback section of the GNOME User Guide</ulink>. 
+      </para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>Swell Foop</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+
+  <sect1 id="introduction"> 
+    <title>Playing <application>Swell Foop</application></title> 
+    <para><application>Swell Foop</application> is a puzzle game. The goal is to remove as many objects as possible in as few moves as possible. Objects that are adjacent to each other get removed as a group. The remaining objects then collapse to fill in the gaps and new groups are formed. You cannot remove single objects.</para>
+
+    <figure id="start-up">
+      <title><application>Swell Foop</application> at the beginning of a new game.</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/start-up.png" format="PNG"/>
+	        </imageobject>
+	      </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Brädet startar som en fullt rutnät med objekt. Beroende på den storlek du valt på brädet finns det antingen tre eller fyra typer av objekt. Om en grupp av objekt är närliggande och alla av samma typ kan de tas bort enkelt genom att klicka på dem med musen (eller genom att trycka på blankstegstangenten). När du flyttar musen över en grupp som kan du ta bort kommer objekten att börja flyttas. Antalet objekt i gruppen, och poängen som du kan få för att ta bort gruppen, visas i nedre vänstra hörnet av fönstret. Ju fler objekt i gruppen, ju fler poäng kommer du att få. När gruppen har tagits bort kommer objekt ovanför att falla ner för att fylla utrymmet. Om en hel kolumn töms kommer objekten att glida åt vänster för att fylla tomrummet.</para>
+
+    <table id="play" frame="all"><title>Playing <application>Swell Foop</application></title>
+      <tgroup cols="2" colsep="0">
+      <tbody>
+        <row><entry><para>1. Eliminera grupper av två eller fler <screenshot>
+         <mediaobject>
+           <imageobject>
+             <imagedata fileref="figures/play1.png" format="PNG"/>
+           </imageobject>
+         </mediaobject>
+         </screenshot></para></entry>
+       <entry><para>2. Objekten faller ner för att fylla tomrummen <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/play2.png" format="PNG"/>
+            </imageobject>
+          </mediaobject>
+          </screenshot></para></entry></row>
+        <row><entry><para>3. Objekten flyttas åt vänster för att fylla tomma kolumner <screenshot>
+         <mediaobject>
+           <imageobject>
+             <imagedata fileref="figures/play3.png" format="PNG"/>
+           </imageobject>
+         </mediaobject>
+         </screenshot></para></entry>
+       <entry><para>4. Nya grupper formas och cykeln upprepas <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/play4.png" format="PNG"/>
+            </imageobject>
+          </mediaobject>
+          </screenshot></para></entry></row>
+      </tbody>
+      </tgroup>
+    </table>
+
+    <para>Poängen är baserade på antalet objekt som du tar bort:</para>
+    
+    <informaltable frame="topbot">
+    <tgroup cols="2" align="center">
+    <thead><row>
+    <entry>Antal objekt</entry>
+    <entry>Poäng</entry>
+    </row></thead>
+    <tbody>
+    <row><entry>2</entry><entry>0</entry></row>
+    <row><entry>3</entry><entry>1</entry></row>
+    <row><entry>4</entry><entry>4</entry></row>
+    <row><entry>5</entry><entry>9</entry></row>
+    <row><entry>6</entry><entry>16</entry></row>
+    <row><entry>7</entry><entry>25</entry></row>
+    <row><entry>8</entry><entry>36</entry></row>
+    <row><entry>9</entry><entry>49</entry></row>
+    <!-- Translators: this is a vertical continuation character -->
+    <row><entry>⋮</entry><entry>⋮</entry></row>
+    <row><entry>n</entry><entry>(n - 2)<superscript>2</superscript></entry></row>
+    </tbody>
+    </tgroup>
+    </informaltable>
+    <para>Om du tömmer brädet får du en bonus på 1000 poäng.</para>
+  </sect1>
+
+  <sect1 id="swell-foop-customisation">
+    <title>Anpassning</title>
+
+    <sect2 id="changing-the-look">
+      <title>Ändra utseendet</title>
+      <para>Ändra storleken på objekten är lika enkelt som att ändra storleken på fönstret. För att få maximal användning av skärmen, välj alternativet <guimenuitem>Helskärm</guimenuitem> från menyn <guimenu>Visa</guimenu>.</para>
+
+      <para>För att ändra utseendet på objekten, använd menyobjektet <guimenuitem>Tema</guimenuitem> i menyn <guimenu>Visa</guimenu>. Val av nytt objekt ändrar temat omedelbart.</para>
+
+        <para>You can also create your own themes, although the process is not very straight-forward yet. Use a copy of an existing theme as a template and alter it with your favorite paint program. Put the result in <filename>$XDG_DATA_HOME/gnome-games/swell-foop/themes/2.10/</filename>. It will be automatically included on the themes list next time you run <application>Swell Foop</application>. <filename>$XDG_DATA_HOME</filename> is usually <filename>~/.local/share/</filename>.</para>
+    </sect2>
+
+    <sect2 id="changing-the-size">
+      <title>Ändra storleken</title>
+      <para>Menyn <guimenu>Storlek</guimenu> innehåller tre inställningar: liten, mellan och stor. Förutom att öka antalet objekt ökar även den stora inställningen antalet olika objekt.</para>
+    </sect2>
+
+    <sect2 id="changing-the-speed">
+    <title>Ändra hastigheten</title>
+    <para>Standardanimationen är designad till att vara mjuk och lätt. Om du tycker om att spela snabbt och ursinnigt kanske det här är för långsamt för dig. Genom att välja alternativet <guimenuitem>Snabb animation</guimenuitem> från menyn <guimenu>Visa</guimenu> kan du öka hastigheten i spelet men förlorar animationskvalitet.</para>
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="swell-foop-strategy">
+    <title>Strategi</title>
+
+    <para>Den viktigaste regeln när man siktar på höga poäng är att tänka framåt: varje grupp du tar bort kommer att forma och förstöra andra grupper.</para>
+
+<para>Ta bort högre grupper först, såvida inte borttagning av en annan grupp gör den större. Vertikala lagda objekt kan inte läggas fel men horisontella kan det. </para>
+
+    <para>Eftersom poängen ökar kvadratiskt är alltid stora grupper av objekt bättre. Till exempel är skillnaden mellan en grupp på sex objekt och en grupp på sju objekt nio poäng. I en situation där du har ett val mellan att sammanfoga två grupper av två till fyra eller bara lägga till en till gruppen av sex bör du lägga till det enstaka objektet. Även om grupperna av två som du får kvar inte ger några poäng kommer den större gruppens poäng att ge mer totalt.</para>
+
+    <para>Glöm inte bonusen på tusen poäng för att tömma brädet från bollar. För att få 1000 poäng från en enda grupp behöver du 34 objekt. Du kommer antagligen inte befinna dig i en situation där du måste offra en grupp så stor för att tömma brädet.</para>
+  </sect1>
+
+<!-- ============= About ================================== -->
+  <sect1 id="swell-foop-about"> 
+    <title>About <application>Swell Foop</application></title> 
+    <para><application>Swell Foop</application> was written by Callum McKenzie
+      (<email>callum@physics.otago.ac.nz</email>). To find more information about
+      <application>Swell Foop</application>, please visit the 
+      <ulink url="http://live.gnome.org/GnomeGames/" type="http">GNOME Games web page</ulink>. </para>
+    <para>För att rapportera ett fel eller föreslå någonting angående det här programmet eller den här handboken, följ anvisningarna i <ulink url="ghelp:user-guide?feedback-bugs" type="help">återkopplingsavsnittet i användarguiden för GNOME</ulink>.</para>
+
+    <para>Det här programmet distribueras under villkoren för GNU General Public License som publicerats av Free Software Foundation; antingen version 2 av licensen, eller (enligt dig) någon senare version. En <ulink url="ghelp:gpl" type="help">kopia av den här licensen</ulink> finns inkluderad med den här dokumentationen, en annan kan hittas i filen COPYING som inkluderats med källkoden för det här programmet.</para>
+
+  </sect1> 
+</article>

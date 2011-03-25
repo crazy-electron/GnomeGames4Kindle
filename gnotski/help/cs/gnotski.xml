@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.10">
+<!ENTITY date "March 2004">
+<!ENTITY app "<application>Klotski</application>">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="cs">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Příručka ke hře <application>Klotski</application></title>
+
+    <abstract role="description">
+      <para>Klotski je logická hra, jejímž cílem je dostat označkovaný blok na značky, což se dělá přesouváním bloků.</para>
+    </abstract>
+
+    <copyright>
+      <year>2002</year> 
+      <holder>Andrew Sobala</holder> 
+    </copyright><copyright><year>2009.</year><holder>Marek Černocký (marek@manet.cz)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Dokumentační projekt GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU Free Documentation License, verze 1.1 nebo jakékoli další verze vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů předních desek a bez textů zadních desek. Kopie této licence je zahrnuta v oddílu jménem <ulink type="help" url="ghelp:fdl">GNU Free Documentation License</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou.</para>
+         <para>Tato příručka je součástí kolekce příruček GNOME, distribuovaných pod licencí GNU FDL. Pokud chcete tento dokument šířit odděleně od kolekce, musíte přiložit kopii licence dle popisu v sekci 6 dané licence.</para>
+
+	<para>Mnoho užívaných jmen určených k zviditelnění produktů nebo služeb jsou ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s velkým písmenem na začátku.</para>
+
+	<para>DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <orderedlist>
+		<listitem>
+		  <para>DOKUMENT JE POSKYTOVÁN V PODOBĚ „JAK JE“ BEZ ZÁRUKY V JAKÉKOLIV PODOBĚ, NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ VERZE, JE BEZCHYBNÝ NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL NEBO NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ DOKUMENTU, NEBO JEHO UPRAVENÉ VERZE, LEŽÍ NA VÁS. POKUD KVŮLI TOMUTO DOKUMENTU, NEBO JEHO UPRAVENÉ VERZI, NASTANE PROBLÉM, VY (NIKOLIV PŮVODNÍ AUTOR NEBO JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE JAKÉKOLIV NÁKLADY ZA NUTNÉ ÚPRAVY, OPRAVY ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE ZÁKLADNÍ SOUČÁST TÉTO LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ, PODLE TÉTO DOHODY, POVOLENO UŽÍVÁNÍ ANI ÚPRAVY TOHOTO DOKUMENTU; DÁLE</para>
+		</listitem>
+		<listitem>
+		  <para>ZA ŽÁDNÝCH OKOLNOSTÍ A ŽÁDNÝCH PRÁVNÍCH PŘEDPOKLADŮ, AŤ SE JEDNÁ O PŘEČIN (VČETNĚ NEDBALOSTNÍCH), SMLOUVU NEBO JINÉ, NENÍ AUTOR, PŮVODNÍ PISATEL, KTERÝKOLIV PŘISPĚVATEL NEBO KTERÝKOLIV DISTRIBUTOR TOHOTO DOKUMENTU NEBO UPRAVENÉ VERZE DOKUMENTU NEBO KTERÝKOLIV DODAVATEL NĚKTERÉ Z TĚCHTO STRAN ODPOVĚDNÝ NĚJAKÉ OSOBĚ ZA PŘÍMÉ, NEPŘÍMÉ, SPECIÁLNÍ, NAHODILÉ NEBO NÁSLEDNÉ ŠKODY JAKÉHOKOLIV CHARAKTERU, VČETNĚ, ALE NEJEN, ZA POŠKOZENÍ ZE ZTRÁTY DOBRÉHO JMÉNA, PŘERUŠENÍ PRÁCE, PORUCHY NEBO NESPRÁVNÉ FUNKCE POČÍTAČE NEBO JINÉHO A VŠECH DALŠÍCH ŠKOD NEBO ZTRÁT VYVSTÁVAJÍCÍCH Z NEBO VZTAHUJÍCÍCH SE K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+		<firstname>Andrew</firstname> 
+		<surname>Sobala</surname> 
+		<affiliation> 
+	  		<orgname>Dokumentační projekt GNOME</orgname> 
+	  		<address> <email>andrew@sobala.net</email> </address> 
+		</affiliation> 
+      </author> 
+
+	<othercredit role="author">
+		<firstname>Lars</firstname>
+		<surname>Rydlinge</surname>
+		<affiliation>
+			<orgname>Projekt GNOME</orgname>
+			<address> <email>Lars.Rydlinge@HIG.SE</email> </address>
+		</affiliation>
+	</othercredit>
+
+	<othercredit role="maintainer">
+		<firstname>Ross</firstname>
+		<surname>Burton</surname>
+		<affiliation>
+			<orgname>Projekt GNOME</orgname>
+			<address> <email>ross@burtonini.com</email> </address>
+		</affiliation>
+	</othercredit>
+
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->  
+    <revhistory>
+<!--
+      <revision> 
+		<revnumber>Full title of previous manual.</revnumber> 
+		<date>Release date of previous manual.</date> 
+		<revdescription> 
+	  		<para role="author">Documentation Writer 1 
+	    	<email>docwriter1@gnome.org</email>
+	  		</para>
+	  		<para role="publisher">GNOME Documentation Project</para>
+		</revdescription> 
+      </revision> 
+-->
+
+	<revision>
+		<revnumber>V2.0</revnumber>
+		<date>13. srpna 2002</date>
+		<revdescription>
+	  		<para role="author">Andrew Sobala <email>andrew@sobala.net</email></para>
+	  		<para role="publisher">Dokumentační projekt GNOME</para>
+		</revdescription> 
+	</revision>
+
+    </revhistory> 
+
+    <releaseinfo>Tato příručka popisuje GNOME Klotski ve verzi 2.12.</releaseinfo> 
+    <legalnotice> 
+      <title>Ohlasy</title> 
+      <para>Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k aplikaci <application>Klotski</application> nebo této příručce, postupujte dle instrukcí na stránce <ulink url="ghelp:user-guide?feedback-bugs" type="help">Stránka s ohlasy na GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>GNOME Klotski</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="gnotski-introduction"> 
+	<title>Úvod</title> 
+	<para>Aplikace <application>Klotski</application> je klonem hry Klotski. Podstatou hry je přesunout označkovaný blok na místo určené zelenými značkami.</para>
+
+	<para>Hru <application>Klotski</application> napsal Lars Rydlinge (<email>Lars.Rydlinge@HIG.SE</email>).</para>
+
+	<para><application>Klotski</application> je součástí balíku <filename>gnome-games</filename>, který patří k pracovnímu prostředí GNOME. Tento dokument popisuje verzi 2.12 aplikace <application>Klotski</application>.</para>
+
+	<para>Tento program je šířen podle ustanovení GNU General Public License, vydávané Free Software Foundation; a to buď verze 2 této licence anebo (podle vlastního uvážení) kterékoliv pozdější verze. Kopii této licence naleznete pod tímto <ulink url="ghelp:gpl" type="help">odkazek</ulink> nebo v souboru COPYING přiloženém ke zdrojovým kódům tohoto programu. </para>
+
+	<para>Pokud chcete nahlásit chybu nebo podat návrh týkající se této aplikace nebo tohoto návodu, tak se řiďte instrukcemi v tomto <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentu</ulink>.</para>
+  </sect1>
+
+<!-- ===========Objective ============================== -->
+<sect1 id="gnotski-objective">
+	<title>Cíl hry</title>
+	<para>Podstatou hry <application>Klotski</application> je přesunout označkovaný blok na zelené značky</para>
+	<!-- ==== End of Figure ==== -->
+</sect1>
+
+<!-- =========== Getting Started ============================== -->
+
+  <sect1 id="gnotski-playing"> 
+	<title>Jak hrát <application>Klotski</application></title> 
+	<para>
+	<itemizedlist> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-start"/></para> 
+	</listitem>
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-ui"/></para> 
+	</listitem> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-new-game"/></para> 
+	</listitem> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-moving"/></para> 
+	</listitem>
+	</itemizedlist> </para>
+
+	<!-- =========== To start gnotski ============================== -->
+	<sect2 id="gnotski-start">
+		<title>Spuštění hry <application>Klotski</application></title>
+		<para>Hru <application>Klotski</application> můžete spustit z nabídky aplikací výběrem <menuchoice><guisubmenu>Hry</guisubmenu><guimenuitem>Klotski</guimenuitem></menuchoice>.</para>
+	</sect2>
+
+	<!-- =========== The main window ============================== -->
+	<sect2 id="gnotski-ui">
+		<title>Hlavní okno</title>
+		<para>Po spuštění hry <application>Klotski</application> se zobrazí následující okno.</para>
+
+		<!-- ==== Figure ==== -->
+		<figure id="gnotski-figure-mainwindow"> 
+			<title>Okno hry <application>Klotski</application> po spuštění</title> 
+			<screenshot> 
+				<mediaobject> 
+				<imageobject>
+					<imagedata fileref="figures/gnotski_start_window.png" format="PNG"/> 
+				</imageobject>
+				<textobject> 
+					<phrase>Zobrazuje placeholder-1/&gt; hlavní okno. To obsahuje pruh s názvem, panel nabídek, hrací plochu a stavový řádek. Panel nabídek obsahuje nabídky Hra a Nápověda.</phrase> 
+				</textobject> 
+		        	</mediaobject> 
+			</screenshot>
+		</figure>
+		<!-- ==== End of Figure ==== -->
+
+		<para>Okno hry <application>Klotski</application> obsahuje následující prvky: <variablelist>
+		<varlistentry>
+			<term>Panel nabídek</term>
+			<listitem>
+			<variablelist>
+			<varlistentry>
+				<term>Nabídka Hra</term>
+				<listitem>
+				<para>Nabídka Hra vám umožňuje spustit novou hru, zobrazit tabulku nejlepších výsledků a ukončit program.</para>
+				</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Nabídka Nápověda</term>
+				<listitem>
+				<para>Nabídka Nápověda vám umožňuje přístup k dokumentaci hry <application>Klotski</application>.</para>
+				</listitem>
+			</varlistentry>
+			</variablelist>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term>Hrací plocha</term>
+			<listitem>
+			<para>Na hrací ploše jsou zobrazené bloky současné hry. Můžete po ní přesouvat bloky pomocí myši, jak popisuje <xref linkend="gnotski-moving"/>.</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term>Panel nástrojů</term>
+			<listitem>
+			<para>Stavový řádek vás informuje, kolik jste již provedli tahů.</para>
+			</listitem>
+		</varlistentry>
+		</variablelist></para>
+
+	</sect2>
+
+	<!-- =========== Starting a new game ============================== -->
+	<sect2 id="gnotski-new-game">
+		<title>Spuštění nové hry</title>
+		<para>Novou hru začnete použitím nabídky <guimenu>Hra</guimenu>. Pomocí položek <guimenuitem>Následující hádanka</guimenuitem> a <guimenuitem>Předchozí hádanka</guimenuitem> můžete procházek hlavolamy postupně. Hlavolamy jsou rozdělené do tří kategorií, které najdete v podnabídkách <guisubmenu>Stezka HuaRong</guisubmenu>, <guisubmenu>Sbírka výzev</guisubmenu> a <guisubmenu>Sbírka dovedností</guisubmenu>. V každé této podnabídce jsou názvy hlavolamů, které odkazují na daný scénář hry.</para>
+		<example>
+		<title>Spuštění hry</title>
+		<para>Když chcete spustit nejtěžší nabízenou hru, vyberte <menuchoice><guimenu>Hra</guimenu><guisubmenu>Sbírka dovedností</guisubmenu><guimenuitem>Sluneční svit</guimenuitem></menuchoice>.</para></example>
+	</sect2>
+
+	<!-- ===========Moving blocks ============================== -->
+	<sect2 id="gnotski-moving">
+		<title>Přesouvání bloků</title>
+		<para>Blok přesunete tak, že na něj kliknete, držíte zmáčknuté tlačítko myši a přesunete jej na nové místo. Přesouvat nelze zelené bloky a bloky tvořící hranice hry. Blok nemůžete přesunout na místo, které je již obsazené jiným blokem, s výjimkou, že můžete přesunout označkovaný blok skrz zelené bloky ve vítězném tahu.</para>
+	</sect2>
+
+</sect1>
+
+<!-- Known bugs.  Try to manage user expectations and warn them of known bugs
+but it is better to omit this section than give a false sense of perfection
+<sect1 id="gnotski-bugs">
+	<title>Known Bugs and Limitations</title>
+	<para>
+        There are no known bugs in this game.
+	</para>
+</sect1>
+-->
+
+<sect1 id="authors">
+  <title>Autoři</title>
+  <para>Hru <application>Klotski</application> napsal Lars Rydlinge (<email>lars.rydlinge@hig.se</email>). Tuto příručku napsal Andrew Sobala. Pokud chcete nahlásit chybu nebo podat návrh týkající se této aplikace nebo tohoto návodu, tak se řiďte instrukcemi v tomto <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentu</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+</sect1>
+
+ <sect1 id="license">
+  <title>Licence</title>
+  <para>Tento program, včetně grafických návrhů, je svobodný software. Můžete jej dále šířit a/nebo upravovat za dodržení podmínek <ulink type="help" url="gnome-help:gpl"><citetitle>GNU General Public License</citetitle></ulink>, tak jak ji vydala Free Software Foundation ve verzi 2 nebo (dle vaší volby) novější.</para>
+  <para>Tento program je šířen s přesvědčením, že může být užitečný, ale BEZ JAKÝCHKOLIV ZÁRUK, bez předpokládané záruky na OBCHODOVATELNOST nebo VHODNOST PRO URČITÝ ÚČEL. Více podrobností najdete v <citetitle>GNU General Public License</citetitle>.</para>
+  <para>Kopie <citetitle>GNU General Public License</citetitle> je zahrnuta v dodatku <citetitle>Uživatelské přiručky GNOME</citetitle>. Kopii <citetitle>GNU General Public License</citetitle> můžete také získat od Free Software Foundation navštívením <ulink type="http" url="http://www.fsf.org">jejich webu</ulink> nebo zasláním žádosti na <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+
+</article>

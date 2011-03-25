@@ -1,0 +1,49 @@
+*** This file is preserved for historical interest only ***
+*** it is no longer maintained.                         ***
+
+Gyahtzee: Gnomified Yahtzee
+
+Compiling from source:
+----------------------
+
+See the file INSTALL for help compiling gyahtzee.
+
+
+Yahtzee in general:
+-------------------
+
+This is an implementation of yahtzee.  Yahtzee is sort of poker with
+dice and less $$.  You roll five dice three times and try to create
+the best "hand."  Your two rerolls may include any or all of your
+dice.
+
+
+Playing this version:
+---------------------
+
+When play starts, you see the results of your first throw of the dice.
+Click on the dice you wish to roll again and they will turn into X's
+(anybody got a better idea, they can send me a 64x64 pixmap).  When you
+have selected all the dice you wish to reroll, press the Roll! button.
+When you have a hand you like or have run out of chances to throw
+the dice, click on a row corresponding to what you think is your best
+scoring combination.  It is very possible to have a score of zero
+and if you click on the wrong row, you will be scored accordingly.
+(Say for example, you get yahtzee -- 5 of a kind -- and click on the
+large straight row, you will receive a zero in your large straigt score).
+You can only use each combination once, i.e. once you've entered
+something in a slot, you can't change the score later if you roll a
+better hand.  Somebody else can write a yahtzee strategy document.
+
+When your turn is up, the computers will play their turns. 
+
+You can change some computer options in the properties window.
+
+
+Getting the latest version:
+---------------------------
+
+http://www.geocities.com/CapeCanaveral/Lab/7731/gyahtzee.html
+
+As soon as I get write access, it will be in gnome CVS.
+

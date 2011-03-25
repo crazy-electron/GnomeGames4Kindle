@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.20">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "February 2008">
+<!ENTITY app "<application>Iagno</application>">
+<!ENTITY appname "Iagno">
+<!ENTITY version "2.9">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="fr">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo>
+ <title>Manuel de <application>Iagno</application></title>
+
+    <abstract role="description">
+      <para>Iagno est le jeu de stratégie à deux joueurs Othello, également connu sous le nom de Reversi et comparable au jeu Go. Les pièces sont des jetons dont un côté est noir, l'autre blanc. L'objectif du joueur est de retourner les jetons de son adversaire, en l'empêchant de faire de même. Une fois que le plateau est rempli de jetons, le gagnant est le joueur qui possède le plus de jetons de sa couleur sur le plateau.</para>
+    </abstract>
+
+ <copyright>
+  <year>2000</year>
+  <holder>Eric Baudais</holder>
+ </copyright><copyright><year>2007-2008</year><holder>Claude Paroz (claude@2xlibre.net)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Projet de documentation GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Permission vous est donnée de copier, distribuer et/ou modifier ce document selon les termes de la Licence GNU Free Documentation License, Version 1.1 ou ultérieure publiée par la Free Software Foundation sans section inaltérable, sans texte de première page de couverture ni texte de dernière page de couverture. Vous trouverez un exemplaire de cette licence en suivant ce <ulink type="help" url="ghelp:fdl">lien</ulink> ou dans le fichier COPYING-DOCS fourni avec le présent manuel.</para>
+         <para>Ce manuel fait partie de la collection de manuels GNOME distribués selon les termes de la licence de documentation libre GNU. Si vous souhaitez distribuer ce manuel indépendamment de la collection, vous devez joindre un exemplaire de la licence au document, comme indiqué dans la section 6 de celle-ci.</para>
+
+	<para>La plupart des noms utilisés par les entreprises pour distinguer leurs produits et services sont des marques déposées. Lorsque ces noms apparaissent dans la documentation GNOME et que les membres du projet de Documentation GNOME sont informés de l'existence de ces marques déposées, soit ces noms entiers, soit leur première lettre est en majuscule.</para>
+
+	<para>LE PRÉSENT DOCUMENT ET SES VERSIONS MODIFIÉES SONT FOURNIS SELON LES TERMES DE LA LICENCE DE DOCUMENTATION LIBRE GNU SACHANT QUE : <orderedlist>
+		<listitem>
+		  <para>LE PRÉSENT DOCUMENT EST FOURNI « TEL QUEL », SANS AUCUNE GARANTIE, EXPRESSE OU IMPLICITE, Y COMPRIS, ET SANS LIMITATION, LES GARANTIES DE MARCHANDABILITÉ, D'ADÉQUATION À UN OBJECTIF PARTICULIER OU DE NON INFRACTION DU DOCUMENT OU DE SA VERSION MODIFIÉE. L'UTILISATEUR ASSUME TOUT RISQUE RELATIF À LA QUALITÉ, À LA PERTINENCE ET À LA PERFORMANCE DU DOCUMENT OU DE SA VERSION DE MISE À JOUR. SI LE DOCUMENT OU SA VERSION MODIFIÉE S'AVÉRAIT DÉFECTUEUSE, L'UTILISATEUR (ET NON LE RÉDACTEUR INITIAL, L'AUTEUR, NI TOUT AUTRE PARTICIPANT) ENDOSSERA LES COÛTS DE TOUTE INTERVENTION, RÉPARATION OU CORRECTION NÉCESSAIRE. CETTE DÉNÉGATION DE RESPONSABILITÉ CONSTITUE UNE PARTIE ESSENTIELLE DE CETTE LICENCE. AUCUNE UTILISATION DE CE DOCUMENT OU DE SA VERSION MODIFIÉE N'EST AUTORISÉE AUX TERMES DU PRÉSENT ACCORD, EXCEPTÉ SOUS CETTE DÉNÉGATION DE RESPONSABILITÉ ; </para>
+		</listitem>
+		<listitem>
+		  <para>EN AUCUNE CIRCONSTANCE ET SOUS AUCUNE INTERPRÉTATION DE LA LOI, QU'IL S'AGISSE D'UN DÉLIT CIVIL (Y COMPRIS LA NÉGLIGENCE), CONTRACTUEL OU AUTRE, L'AUTEUR, LE RÉDACTEUR INITIAL, TOUT PARTICIPANT OU TOUT DISTRIBUTEUR DE CE DOCUMENT OU DE SA VERSION MODIFIÉE, OU TOUT FOURNISSEUR DE L'UNE DE CES PARTIES NE POURRA ÊTRE TENU RESPONSABLE À L'ÉGARD DE QUICONQUE POUR TOUT DOMMAGE DIRECT, INDIRECT, PARTICULIER, OU ACCIDENTEL DE TOUT TYPE Y COMPRIS, SANS LIMITATION, LES DOMMAGES LIÉS À LA PERTE DE CLIENTÈLE, À UN ARRÊT DE TRAVAIL, À UNE DÉFAILLANCE OU UN MAUVAIS FONCTIONNEMENT INFORMATIQUE, OU À TOUT AUTRE DOMMAGE OU PERTE LIÉE À L'UTILISATION DU DOCUMENT ET DE SES VERSIONS MODIFIÉES, MÊME SI LADITE PARTIE A ÉTÉ INFORMÉE DE L'ÉVENTUALITÉ DE TELS DOMMAGES.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Eric</firstname> 
+	<surname>Baudais</surname> 
+	<affiliation> 
+	  <address> <email>baudais@okstate.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+<revhistory>
+  <revision> 
+    <revnumber>Manuel de Iagno v2.9</revnumber> 
+    <date>Février 2008</date> 
+    <revdescription> 
+      <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+      <para role="publisher">Projet de documentation GNOME</para>
+    </revdescription> 
+  </revision>
+  <revision> 
+    <revnumber>Manuel de Iagno v2.8</revnumber> 
+    <date>Septembre 2004</date> 
+    <revdescription> 
+      <para role="author">Eric Baudais <email>baudais@okstate.edu</email></para>
+      <para role="publisher">Projet de documentation GNOME</para>
+	</revdescription> 
+  </revision>
+  <revision>
+   <revnumber>0.1</revnumber>
+   <date>4 février 2000</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Fin du premier brouillon.</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>0.2</revnumber>
+   <date>5 février 2000</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Ajout d'une note de pied de page à la section pourquoi. Quelques fautes corrigées.</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>0.3</revnumber>
+   <date>7 février 2000</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Documentation rendue compatible avec le modèle GDP. Section sur le jeu clarifiée.</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>1.0</revnumber>
+   <date>7 avril 2000</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Manuel Iagno placé sous licence FDL. Copies d'écran mises à jour avec le thème standard du GDP, MicroGUI.</revremark>
+  </revision>
+ </revhistory>
+
+    <releaseinfo>Ce manuel documente la version 2.20 de Iagno.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Votre avis</title> 
+      <para>Pour rapporter une anomalie ou émettre une suggestion concernant <application>Iagno</application> ou ce manuel, procédez comme indiqué sur la <ulink url="ghelp:user-guide?feedback-bugs" type="help">page des réactions sur GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Iagno</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="intro">
+ <title>Introduction</title>
+ <sect2 id="what">
+  <title>Qu'est-ce que Iagno ?</title>
+  
+  <para><application>Iagno</application> est une version informatisée du jeu Reversi, appelé plus communément Othello. <application>Iagno</application> est un jeu de stratégie à deux joueurs, comparable à Go. Il présente un plateau de 8 cases sur 8 et des jetons dont un côté est noir et l'autre blanc. L'objectif de <application>Iagno</application> est de retourner le plus possible de jetons de votre adversaire, sans que celui-ci ne retourne les vôtres. Le retournement des jetons se fait en piégeant les jetons de votre adversaire entre deux jetons de votre couleur.</para>
+
+  <para>Iagno peut également se jouer à <link linkend="network-games">plusieurs joueurs</link>, soit sur le même ordinateur, soit en réseau.</para>
+
+  <para>Pour lancer <application>Iagno</application>, choisissez <guimenuitem>Iagno</guimenuitem> dans le sous-menu <guisubmenu>Jeux</guisubmenu> du <guimenu>Menu principal</guimenu> ou saisissez <command>iagno</command> dans un terminal.</para>
+ </sect2>
+
+ <sect2 id="why">
+  <title>Pourquoi Othello est-il appelé Iagno ?</title>
+  <para>Vous vous demandez peut-être pourquoi ce jeu est appelé <application>Iagno</application> au lieu d'Othello ou même gnothello. La réponse est compliquée, et implique des aspects tels que le droit des marques, les avocats et tout le tralala. Au lieu d'en rester là, je vais vous raconter un mensonge long et compliqué sur l'origine du nom <application>Iagno</application>.</para>
+  <para>Par une nuit agitée, telle qu'on les imagine souvent en Angleterre, un programmeur esseulé était assis devant son écran d'ordinateur. Ian avait terminé son chef d'œuvre ludique. C'était une version totalement interactive d'Othello. Il décida de manipuler le nom et de l'appeler gnothello car le jeu était écrit avec GNOME.</para>
+  <para>Plus tard, lors d'une rencontre avec ses amis, comme tous les programmeurs aiment le faire, il leur présenta son chef d'œuvre. Ils lui ont ri au nez et ont affirmé que son jeu était sans intérêt et un essai raté de devenir un vrai hacker. Après que Ian les eut chassés, il décida de renommer son programme Iago <footnote>
+   <para>Iago est le châtiment d'Othello dans la pièce <citetitle>Othello </citetitle> de William Shakespeare.</para>
+  </footnote> en raison de la méchanceté qu'il avait récoltée avec ce jeu. Mais cela ne sonnait par encore assez bien. Tous les programmes GNOME comportent une partie du nom GNOME, pensa-t-il. Après mûre réflexion, Ian se décida pour le nom que nous nous sommes tous mis à aimer, <application>Iagno</application>.</para>
+ </sect2>
+</sect1>
+
+<sect1 id="playing">
+ <title>Jouer à Iagno</title>
+ <para>Au départ, le plateau présente quatre jetons placés au centre. Les jetons de la même couleur se situent sur une diagonale, comme le montre la <xref linkend="start-shot"/>.</para>
+ 
+ <figure id="start-shot">
+  <title>Position de départ</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/START.png" format="PNG" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Copie d'écran de la position de départ.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+ <para>Les noirs commencent et placent un jeton sur le plateau afin qu'il encadre un ou des jetons blancs entre deux jetons noirs. Lorsque les noirs placent un jeton sur le plateau, tous les jetons blancs qui se trouvent entre le nouveau jeton noir et un autre jeton noir, soit horizontalement, verticalement ou en diagonale, sont retournés et deviennent noirs, comme le montre la <xref linkend="first-shot"/>.</para>
+
+ <figure id="first-shot">
+  <title>Premier coup</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/FIRST.png" format="PNG" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Copie d'écran après le premier coup.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+ <para>Lorsque des jetons de l'adversaire sont encadrés par deux jetons de même couleur dans la même rangée, le joueur capture tous les jetons adverses jusqu'au prochain jeton de sa couleur, comme le montre la <xref linkend="block-shot"/>. Le joueur ne peut retourner que des jetons qui sont le résultat direct du placement d'un nouveau jeton sur le plateau. Une fois qu'un jeton est posé sur le plateau, le joueur ne peut ni l'enlever, ni le placer ailleurs. Si un joueur ne peut pas placer de jeton permettant de retourner un jeton de l'adversaire, il perd son tour. La partie se termine lorsqu'aucun joueur ne peut plus jouer. <figure id="block-shot">
+  <title>Les blancs ne peuvent pas retourner le jeton noir au centre de la colonne du milieu, car des jetons blancs bloquent les extrémités de cette colonne. Si c'était au tour des noirs, ils pourraient placer un jeton au sommet de la colonne, mais ils ne pourraient retourner que le premier des deux jetons blancs.</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/BLOCK.png" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Copie d'écran du blocage des noirs.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure></para>
+
+</sect1>
+
+<sect1 id="settings">
+ <title>Paramètres du jeu</title>
+
+ <sect2 id="player">
+  <title>Couleur et difficulté du joueur</title>
+ 
+  <para>Lorsque vous lancez Iagno, le joueur humain a les noirs et l'ordinateur a les blancs avec le premier niveau de difficulté. Dans l'onglet <guimenuitem>Jeu</guimenuitem> de la boîte de dialogue des <guisubmenu>Préférences</guisubmenu>, vous pouvez définir le type de joueur pour chaque couleur. Évidemment, le joueur humain, c'est vous. Le niveau un est le niveau le plus facile de l'ordinateur et le niveau trois est le niveau le plus difficile. Vous pouvez définir les deux couleurs comme « humain » afin de jouer contre un ami, ou définir les deux couleurs avec un niveau pour voir s'affronter l'ordinateur avec lui-même.</para>
+ </sect2>
+
+ <sect2 id="quick-moves">
+  <title>Option de mouvements rapides</title>
+
+  <para>Cette option se trouve dans le menu <guimenu>Paramètres</guimenu>. Allez ensuite dans le sous-menu <guisubmenu>Préférences</guisubmenu> et dans l'onglet <guimenuitem>Jeu</guimenuitem>. L'option est désactivée par défaut. Lorsque vous l'activez, cette option accélère le placement des jetons par le joueur informatique.</para>
+
+  <note>
+   <title>Note :</title>
+   <para>L'activation de cette option ne force pas les coups du joueur informatique et cela n'abaisse pas le niveau de difficulté.</para>
+  </note>
+ </sect2>
+ 
+ <sect2 id="enable-sound">
+  <title>Activation ou désactivation du son</title>
+
+  <para>La dernière option de l'onglet <guimenuitem>Jeu</guimenuitem> de la boîte de dialogue des <guilabel>Préférences</guilabel> permet d'activer ou de désactiver tous les sons lors des parties de <application>Iagno</application>.</para>
+
+  <figure id="player-shot">
+   <title>La fenêtre des Préférences avec l'onglet Jeu visible.</title>
+   <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/PLAYER.png" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Capture d'écran des paramètres de jeu.</phrase> 
+    </textobject> 
+  </mediaobject>
+   </screenshot>
+  </figure>
+
+ </sect2>
+
+</sect1>
+
+<sect1 id="animations">
+ <title>Apparence</title>
+
+ <para>Toutes les options d'animation se trouvent dans l'onglet <guimenuitem>Apparence</guimenuitem> du menu <menuchoice><guimenu>Paramètres</guimenu><guisubmenu>Préférences</guisubmenu></menuchoice>.</para>
+
+ <sect2 id="animation-amount">
+  <title>Animation</title>
+
+  <para>Cette section permet de contrôler la quantité d'animation se produisant lors du retournement des jetons, à l'aide de boutons radios. Avec l'option <guibutton>Aucune</guibutton>, les jetons changent de couleur de façon instantanée. Avec l'option <guibutton>Partielle</guibutton>, les jetons se retournent lentement. C'est avec l'option <guibutton>Complète</guibutton> que les jetons se retournent de la manière la plus fluide.</para>
+
+ </sect2>
+
+ <sect2 id="stagger-flips">
+  <title>Retournements progressifs</title>
+  
+  <para>Avec cette option, les jetons capturés dans une rangée, une colonne ou en diagonale se retournent les uns après les autres, comme des dominos, au lieu de se retourner tous ensemble. Cela n'a aucune influence sur le jeu lui-même, c'est un effet purement esthétique.</para>
+
+ </sect2>
+
+ <sect2 id="grid">
+  <title>Afficher la grille</title>
+
+  <para>Cette option place une grille en surimpression du plateau de jeu. La grille peut être utile, car elle indique avec précision les endroits où les joueurs peuvent placer des jetons.</para>
+
+  <tip>
+   <title>Astuce :</title>
+   <para>Cette option devrait être activée pour les débutants afin qu'ils puissent avoir une meilleure vision générale du plateau.</para>
+  </tip>
+
+ </sect2>
+
+ <sect2 id="flip-final">
+  <title>Retourner le résultat final</title>
+
+  <para>Cette option déplace tous les jetons noirs au sommet du plateau et tous les jetons blancs au fond du plateau à la fin de la partie. Cela permet de mieux se rendre compte visuellement du résultat final de la partie.</para>
+
+  <note>
+   <title>Note :</title>
+   <para>Cette option ne modifie en aucun cas le résultat de la partie.</para>
+  </note>
+
+ </sect2>
+
+ <sect2 id="tile-set">
+  <title>Jeu de pièces</title>
+  <para>Cette option permet de choisir le type de plateau et de jetons à l'affichage. Si vous souhaitez créer votre propre jeu de jetons, utilisez le jeu « classic » comme modèle et modifiez la texture et les couleurs pour les différents effets. Si vous créez un nouveau jeu de pièces fonctionnel pour Iagno, envoyez-le à Ian Peters <email>itp@gnu.org</email> et il l'incluera dans la prochaine distribution.</para>
+
+  <important>
+   <title>Important :</title>
+   <para>Il existe deux jeux de pièces qui se ressemblent, mais dont les animations sont différentes : woodtrim et classic.</para>
+  </important>
+
+  <figure id="animation-shot">
+   <title>La fenêtre des Préférences avec l'onglet Apparence visible.</title>
+   <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/ANIMATION.png" srccredit="Eric Baudais"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Copie d'écran des paramètres d'animation.</phrase> 
+    </textobject> 
+  </mediaobject>
+   </screenshot>
+  </figure>
+
+ </sect2>
+
+</sect1>
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Parties en réseau</title>
+  <para>Iagno prend en charge le jeu multijoueur en réseau dans le cadre de la <ulink type="http" url="http://www.ggzgamingzone.org">Zone de jeux GGZ</ulink>. En vous connectant sur un serveur Iagno sur Internet, vous pouvez défier d'autres joueurs dans des parties à plusieurs joueurs. Pour obtenir des informations récentes et une liste de serveurs disponibles, consultez le <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">site Web des jeux GNOME</ulink>.</para>
+  <para>Pour commencer une nouvelle partie de Iagno en réseau, choisissez <menuchoice><guimenu>Jeu</guimenu><guimenuitem>Partie en réseau</guimenuitem></menuchoice> dans le menu de Iagno.</para> 
+
+<sect2 id="connecting">
+<title>Connexion à un serveur réseau de Iagno</title>
+<para>La boîte de dialogue de connexion de Iagno apparaît dès que vous demandez une nouvelle partie en réseau. Cette boîte de dialogue vous permet de vous connecter à un serveur et de définir le nom d'utilisateur que vous utiliserez pour cette connexion.</para>
+
+<para>On peut se connecter à un serveur avec un compte invité ou avec un compte nominatif standard. Les comptes invités vous permettent de vous connecter de manière anonyme, alors qu'un compte nominatif vous permet de réserver votre propre nom d'utilisateur qui sera protégé par un mot de passe de votre choix.</para>
+
+<para>L'option <guimenuitem>Connexion en tant qu'invité</guimenuitem> doit être sélectionnée si vous souhaitez vous connecter de façon anonyme. Si vous souhaitez créer un nouveau compte, choisissez l'option <guimenuitem>Première connexion</guimenuitem>, en indiquant un nom d'utilisateur, un mot de passe et une adresse électronique de votre choix. Si vous disposez déjà d'un compte, vous pouvez vous connecter en utilisant l'option <guimenuitem>Connexion normale</guimenuitem> et en indiquant votre nom d'utilisateur et votre mot de passe.</para>
+<para>Pour vous connecter à un serveur, cliquez sur le bouton <guimenuitem>Se connecter</guimenuitem>.</para>
+<figure id="connect">
+<title>La boîte de dialogue de connexion de Iagno.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>La boîte de dialogue de connexion de Iagno.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Entrée dans un salon de jeu</title>
+<para>Après une connexion réussie à un serveur, vous pouvez choisir de rejoindre un salon de jeu. Pour jouer en réseau à Iagno, sélectionnez le salon « Iagno ». Si vous souhaitez héberger vous-même une partie, cliquez sur le bouton Lancer. Cela crée une nouvelle table pouvant accueillir des adversaires pour jouer contre vous. S'il y a d'autres parties déjà lancées, vous pouvez double-cliquer sur une table de salon de jeu pour la rejoindre. La liste des tables de jeu sur la droite vous montre le nombre de sièges disponibles, ce qui correspond au nombre de joueurs pouvant rejoindre la table de jeu.</para>
+<figure id="tables">
+<title>La boîte de dialogue réseau de Iagno vous permet de rejoindre un salon de jeu pour y trouver d'autres joueurs.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>La boîte de dialogue réseau de Iagno vous permet de rejoindre un salon de jeu pour y trouver d'autres joueurs.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>Lorsque vous créez une nouvelle table pour des parties de Iagno, une boîte de dialogue de préférences apparaît. Elle vous permet de personnaliser la partie, comme par exemple le nombre minimum de joueurs pour une partie. Dès que le nombre total de sièges est occupé, plus aucun autre joueur ne peut rejoindre la table de jeu.</para>
+<para>Il est possible de converser avec d'autres joueurs lors de parties en réseau. Vous pouvez demander conseil ou de l'aide sur la manière de jouer, mais de grâce, soyez poli envers les autres joueurs.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Attente de l'arrivée d'autres joueurs</title>
+<para>Après avoir rejoint une table de jeu, il s'agit de patienter jusqu'à ce qu'un nombre suffisant de joueurs aient rejoint la table. L'élément de menu <guimenuitem>Liste des joueurs</guimenuitem> permet de voir une liste de joueurs qui ont rejoint la table de jeu. La partie démarre immédiatement dès que le nombre total de joueurs pour cette partie est atteint.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Parties de Iagno en réseau</title>
+<para>Les parties de Iagno en réseau présentent à peu près les mêmes règles que les parties normales, à la différence que vous jouez cette fois contre des adversaires humains. Cela signifie qu'il faut peut-être utiliser d'autres stratégies que lors des parties contre l'ordinateur.</para>
+<para>Dès qu'un joueur a gagné, la partie se termine et vous pouvez retourner à l'écran initial du jeu en réseau. Vous pouvez alors recommencer une autre partie passionante de Iagno en réseau !</para>
+</sect2>
+
+</sect1>
+
+
+
+
+<sect1 id="bugs">
+ <title>Problèmes connus et limitations</title>
+
+ <itemizedlist mark="opencircle">
+    <listitem>
+     <para>Le joueur informatique de Iagno est facile à battre.</para>
+    </listitem>
+ </itemizedlist>
+
+</sect1>
+
+<sect1 id="credits">
+ <title>Auteurs</title>
+  <para><application>Iagno</application> a été écrit par Ian Peters (<email>itp@gnu.org</email>). Ce manuel a été écrit par Eric Baudais (<email>baudais@okstate.edu</email>). Pou rapporter une anomalie ou émettre une suggestion concernant cette application ou ce manuel, suivez les indications fournies dans ce <ulink url="ghelp:user-guide?feedback-bugs" type="help">document</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licence</title>
+  <para>Ce programme est du logiciel libre ; vous pouvez le redistribuer et/ou le modifier selon les termes de la <citetitle>GNU General Public License</citetitle>, tels que publiés par la Free Software Foundation ; soit la version 2 de cette licence ou (à votre choix) toute version ultérieure.</para>
+  <para>Ce programme est distribué dans l’espoir qu’il sera utile, mais SANS AUCUNE GARANTIE, ni explicite ni implicite; sans même les garanties de commercialisation ou d’adaptation dans un but spécifique. Se référer à la <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> pour plus de détails.</para>
+  <para>Une copie de la <citetitle>GNU General Public License</citetitle> est incluse sous forme d'annexe au <citetitle>Guide d'utilisation du bureau GNOME</citetitle>. Vous pouvez également obtenir une copie de la <citetitle>GNU General Public License</citetitle> à la Free Software Foundation en visitant <ulink type="http" url="http://www.fsf.org">leur site Web</ulink> ou en écrivant à <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

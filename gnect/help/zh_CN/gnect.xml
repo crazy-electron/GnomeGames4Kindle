@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Four-in-a-Row</application>">
+<!ENTITY appname "Four-in-a-Row">
+<!ENTITY version "2.8">
+]>
+<!-- ===== DOCUMENT HEADER ===== -->
+<article id="index" lang="zh_CN">
+<!-- please do not change the id -->
+<!-- translators, change lang to the appropriate code -->
+  <articleinfo>
+    <title>四子连线小游戏手册</title>
+    <abstract role="description">
+      <para>四子连线小游戏的目标是，让自己抢在对手之前 ，把四个子摆成一条直线或斜线。这个小游戏可以和电脑玩也可以和其他人对战。</para>
+    </abstract>
+
+    <copyright>
+      <year>2001-2002</year>
+      <holder>Timothy Musson</holder>
+    </copyright><copyright><year>2010</year><holder>TeliuTe (teliute@163.com)</holder></copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+     <year>2000</year>
+     <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+    <publisher role="maintainer"> 
+      <publishername>GNOME 文档项目</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+	<para>对于本文档的复制、分发和/或修改必须遵循自由软件基金会 (Free Software Foundation) 发布的 GNU 自由文档许可证 (GFDL) 版本 1.1 或更高版本，该许可证没有固定的部分、没有封面和背页文本。您可以在此<ulink type="help" url="ghelp:fdl">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副本。</para>
+         <para>本手册是在 GFDL 许可之下分发的 GNOME 手册集合的一部分。如果想要单独分发此手册，可以在手册中添加该许可证的一份副本然后分发，如该许可证的第 6 部分所述。</para>
+
+	<para>各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 GNOME 文档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而表明它们是商标。</para>
+
+	<para>本文档以及文档的修改版本都是在遵循 GNU 自由文档许可证的条款下提供，这表示具有以下含义：<orderedlist>
+		<listitem>
+		  <para>文档按“原样”提供，不提供任何明示或暗示的保证，包括但不限于：文档或文档的修改版本没有适销性方面的缺陷、适合特定目的的适用性，以及没有侵权行为。您将自行承担本文档以及文档修改版本的质量、准确性以及性能方面的风险。如果任何文档或文档修改版本存在缺陷，您(而不是最初的编写者、作者或撰写人)将承担所有必需的服务、维修或更正的费用。此免责声明是本许可证的重要组成部分。如果不接受此免责声明，那么您就没有权利使用任何文档或文档的修改版本；并且</para>
+		</listitem>
+		<listitem>
+		  <para>无论在任何情况以及在任何法律理论下，本文档或文档修改版本的作者、最初的编写者、任何撰写人或任何分发者，或者任意这些方的任何提供者都不对任何人由于使用本文档或文档修改版本引起或带来的任何直接的、间接的、特殊的、偶然的或继发的损失承担任何民事(包括疏忽)、合同或其它方面的责任，这些损失包括但不限于信誉损失、工作停止、计算机失败或故障，或任何以及所有其它损失或由此引发的或与之相关的损失，即使这些方已被告知存在出现此类损失的可能性时也是如此。</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+
+    <authorgroup>
+      <author>
+        <firstname>Timothy</firstname>
+        <surname>Musson</surname>
+        <affiliation>
+          <!-- <orgname></orgname> -->
+          <address><email>trmusson@ihug.co.nz</email></address>
+        </affiliation>
+      </author>
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+
+      <othercredit role="translator">
+        <firstname>Latin</firstname> 
+        <surname>Translator 1</surname> 
+        <affiliation> 
+          <orgname>Latin Translation Team</orgname> 
+          <address> <email>translator@gnome.org</email> </address> 
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+        <revnumber>四子连线小游戏手册2.8版</revnumber>
+        <date>2004年9月</date>
+        <revdescription>
+          <para role="author">Timothy Musson <email>trmusson@ihug.co.nz</email></para>
+          <para role="publisher"/>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>本手册讲述的是四子连线手册2.12版。</releaseinfo>
+
+    <legalnotice>
+      <title>反馈</title>
+      <para>要报告关于四子连线程序或使用手册中的缺陷，或者提出建议，请参照 <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME 反馈页</ulink> 上的指导。</para>
+    </legalnotice>
+  </articleinfo>
+
+
+  <!-- ============= Document Body ============================= -->
+
+  <!-- ============= Introduction ============================== -->
+
+
+  <sect1 id="intro">
+
+    <title>介绍</title>
+
+    <para><application>四子连线</application>是 GNOME 项目中的一个智力游戏，游戏目标是抢在您的对手(其他人或电脑)之前，把四个子摆成一条直线或斜线。</para>
+
+    <para>要运行 <application>四子连线</application> 小游戏，在 <guimenu>主菜单</guimenu> 中点 <guisubmenu>游戏</guisubmenu> 菜单，再点 <guimenuitem>四子连线</guimenuitem> 项，或者在命令行输入 <command>gnect</command></para>
+
+    <para><application>四子连线</application>小游戏包含在 <filename>GNOME 游戏</filename> 软件包内，它是 GNOME 桌面环境的一部分。本手册讲述的是<application>四子连线</application>小游戏2.8版。</para>
+
+   <para>四子连线还支持 <link linkend="network-games">多人模式</link>，支持双人对战或者网络模式。</para>
+
+
+  </sect1>
+
+
+  <!-- ============= Usage ===================================== -->
+
+
+  <sect1 id="usage">
+
+    <title>基本用法</title>
+
+    <!-- ===== How to play ===== -->
+
+    <sect2 id="playing">
+
+      <title>玩四子连线小游戏</title>
+
+      <para>要开始新一局四子连线游戏，点菜单 <menuchoice><guimenu>游戏</guimenu><guimenuitem>新游戏</guimenuitem></menuchoice>。</para>
+
+      <para><interface>游戏面板</interface>上有六行七列，最上边一行是提示当前该哪个用户落子。每次会落下一个子，落在这一列的最下面。</para>
+        
+      <para>要落一个子，只需在这一列中点一下即可。要用键盘的话，用左右方向键移动上边的子，按下方向键落子，会落在这一列的最下边。</para>
+
+      <!-- Figure -->
+      <mediaobject id="mainwindow-fig">
+        <imageobject>
+          <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="trm"/>
+        </imageobject>
+        <textobject>
+          <phrase>四子连线主窗口</phrase>
+        </textobject>
+        <caption><para>四子连线主窗口</para></caption>
+      </mediaobject>
+
+      <para>当一方的四个子排成一条直线或斜线时就羸了，如果面板填满了而谁都没有赢，那就是平局。</para>
+
+    </sect2>
+    
+    <!-- ===== Commands ===== -->  
+    
+    <sect2 id="commands">
+      <title>操作命令</title>
+      <anchor id="menubar"/><!-- id for removed section -->
+      
+      <para>要撤消一步移动，点菜单 <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>Z</keycap></keycombo></shortcut><guimenuitem>撤消移动</guimenuitem></menuchoice>。如果您是跟好友玩，这将撤消一次移动，如果是跟电脑玩，这将撤消电脑的一步和您的一步，重复操作可以回到盘面初始的状况。</para>
+      <para>点菜单 <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>H</keycap></keycombo></shortcut><guimenuitem>提示</guimenuitem></menuchoice> 可以得到下一步的提示，提示结果会显示在状态栏中。</para>
+      
+      <para>点菜单 <menuchoice><guimenuitem>得分</guimenuitem></menuchoice> 可以显示当前玩家的比分情况，如果玩家更改了首选项，比分将会清零。</para>      
+
+      
+    </sect2>  
+
+    <!-- ===== Preferences ===== -->
+
+    <sect2 id="prefsdialog">
+
+      <title>首选项</title>
+
+      <para>要更改游戏的设置，点 <guimenu>设置</guimenu> 菜单，选择 <guimenuitem>首选项</guimenuitem>，打开 <interface>首选项</interface> 对话框。</para>
+
+      <para>在 <guilabel>游戏</guilabel> 标签配置选项： <variablelist>
+
+          <varlistentry>
+            <term><guilabel>玩家一</guilabel> 和 <guilabel>玩家二</guilabel></term>
+            <listitem>
+              <para>这两列告诉 <application>四子连线</application> 对战的双方，如果一方是电脑，还有它的智力级别。要进行双人对战，玩家一和玩家二都选择人。</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>主题</guilabel></term>
+            <listitem>
+              <para>主题菜单列出了可用的主题，你可以选择自己喜欢的样式。</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>启用动画</guilabel></term>
+            <listitem>
+              <para>这里你可以选择是否开启动画效果。</para>
+            </listitem>
+          </varlistentry>
+
+        </variablelist></para>
+      <para>最后是 <guilabel>控制</guilabel> 标签，可以设定键盘操作。要更改一项控制，双击对应的项，然后输入一个新的按键。</para>
+
+    </sect2>
+  </sect1>
+
+
+  <!-- ===== Custom Themes ===================================== -->
+
+
+  <sect1 id="custom">
+
+    <title>创建新主题</title>
+
+    <para>这一节包含制作<application>四子连线</application>新主题的内容，假定您已经熟悉基本的文本编辑、图片处理和命令行操作。</para>
+
+    <sect2 id="images">
+
+      <title>图片</title>
+
+      <para><application>四子连线</application>的面板包括相等的格子，从左到右排成水平一行：</para>
+
+      <orderedlist>
+        <listitem>
+          <para>玩家一的弹珠出现在面板上</para>
+        </listitem>
+        <listitem>
+          <para>玩家二的弹珠出现在面板上</para>
+        </listitem>
+        <listitem>
+          <para>游戏面板的背景</para>
+        </listitem>
+        <listitem>
+          <para>顶部行的背景</para>
+        </listitem>
+        <listitem>
+          <para>玩家一的弹珠出现在面板上边的行中</para>
+        </listitem>
+        <listitem>
+          <para>玩家二的弹珠出现在面板上边的行中</para>
+        </listitem>
+      </orderedlist>
+
+      <figure id="shot1">
+        <title>面板的例子</title>
+        <screenshot>
+          <screeninfo>这幅图片显示了面板中六个格子的状况</screeninfo>
+          <graphic format="PNG" fileref="figures/tileset.png" srccredit="TRM"/>
+        </screenshot>
+      </figure>
+
+      <para>格子三和四要覆盖游戏面板和顶部行，除非在主题文件中指定了全屏背景图片。</para>
+
+      <tip>
+        <title>小提示</title>
+        <para>推荐使用 PNG 图片作为格子设置。如果想让背景显示的话，第一、二、五和六格子应该包含一些透明部分。第三和四格子应该是实心不透明的，甚至使用全屏背景图的时候也是这样。</para>
+      </tip>
+
+      <tip>
+        <title>小提示</title>
+        <para>格子可以是方块或矩形的，或者其他您喜欢的形状。<application>四子连线</application> 里大部分的格子是使用50×50像素的方块。</para>
+      </tip>
+
+      <para>对于全屏背景图片，还有一点工作要做。假设您的格子边长是50像素。游戏会显示7×7个格子，包括了顶部的一行，这样背景图片就是350×350像素。</para>
+
+      <tip>
+        <title>小提示</title>
+        <para><application>四子连线</application> 会自动缩放背景图片，如果没有其他的设置。这意味着您可以制作“大”、“小”两个版本的主题，都使用相同的一幅背景图，只要有一个大的和小的格子图。</para>
+      </tip>
+
+      <para>因此，您可以制作一个格子图和它配套的背景图，下一步就是把它们放在正确的位置上。</para>
+
+    </sect2>
+
+
+    <sect2 id="directories">
+
+      <title>放置在一起</title>
+
+      <para>最后一步是把图片放到<application>四子连线</application>可以找到的地方，您可以把它们放在四子连线的安装文件夹中(这取决于您的系统)，但放在自己的主文件夹中，将是一个更好的主意。</para>
+
+      <para>创建一个 <filename class="directory">~/.gnect</filename> 文件夹和一个 <filename class="directory">~/.gnect/pixmaps</filename> 文件夹，文件名很重要，错了的话<application>四子连线</application>将不能找到它们。</para>
+
+      <para>把图片复制到 pixmaps 文件夹中。</para>
+
+      <para>如果您从命令行启动<application>四子连线</application>，它会给出一些新主题出错的信息，如果没有出错，您就会在 <interface>首选项对话框</interface> 中，看到新的主题。</para>
+
+      <para>开心玩吧！</para>
+
+    </sect2>
+
+
+  </sect1>
+
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>网络游戏</title>
+  <para>四子连线由 <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink> 提供网络对战平台，通过连接到四子连线服务器上，您可以和其他网络玩家对战。最新的服务器列表，请访问 <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">gnome-games website</ulink>。</para>
+  <para>要开始网络对战，点菜单  <menuchoice><guimenu>游戏</guimenu><guimenuitem>网络游戏</guimenuitem></menuchoice>。</para> 
+
+<sect2 id="connecting">
+<title>连接到四子连线网络服务器</title>
+<para>当启动一个新的网络游戏时，首先出来连接对话框，您可以选择连接服务器、连接到服务器的用户名。</para>
+
+<para>可以用访客(guest)帐户或者普通的注册帐户连接，访客帐户允许您匿名登录，而用普通帐号使用您自己的用户名和密码登录。</para>
+
+<para>如果您想以访客身份匿名登录，请选中 <guimenuitem>访客登录</guimenuitem> 选项，如果您想创建一个新的帐户，选中 <guimenuitem>首次登录</guimenuitem> 选项，输入自己的用户名、密码和电子邮箱。如果您已经有帐户，则选中 <guimenuitem>普通登录</guimenuitem> 选项，然后输入自己的用户名和密码登录。</para>
+<para>要连接到服务器，点击 <guimenuitem>连接</guimenuitem> 按钮。</para>
+<figure id="connect">
+<title>四子连线网络连接对话框。</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>四子连线网络连接对话框。</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>加入一个游戏房间</title>
+<para>一旦您连接成功，就可以选择加入到哪一个游戏房间，要玩四子连线游戏，选择四子连线房间。如果您想自己做主机，点击上面的运行按钮，创建一个新的桌子，别人可以和你对战。如果别人已经建好了，那么您可以双击一个桌子加入。右边列出了游戏桌可用的座位号，您可以选择加入其中一个，这也显示了多少人可以加入到这个桌子的对战中来。</para>
+<figure id="tables">
+<title>四子连线网络对话框允许您加入一个游戏房间，查找其他用户。</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>四子连线网络对话框允许您加入一个游戏房间，查找其他用户。</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>当创建一个新的游戏桌时，会显示一个选项对话框，您可以设置游戏的玩家数。一旦数目确定，多的用户就不让加进来了。</para>
+<para>游戏中还可以与其他用户聊天，寻求游戏的帮助提示等，注意请保持礼貌交谈。</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>等待其他用户加入游戏</title>
+<para>一旦您成功加入游戏桌，这时就得等待其他用户加入到这张桌子。在<guimenuitem>玩家列表</guimenuitem>菜单项中，您可以查看哪些玩家加入到游戏中。当玩家数达到足够时将立即开始游戏。</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>玩网络四子连线游戏</title>
+<para>网络四子连线跟通常的玩法一样，只是现在您是跟其他人对战，这意味着有些策略比对付电脑会更有用。</para>
+<para>一旦一个玩家羸了，游戏就会结束，您可以回到初始的屏幕，跟其他人继续玩网络四子连线！</para>
+</sect2>
+
+</sect1>
+
+
+
+  <!-- ===== Bugs ============================================== -->
+
+
+  <sect1 id="bugs">
+
+    <title>已知缺陷和限制</title>
+
+    <para>有时候一个弹珠下落的动画看起来不是那么平滑顺畅。</para>
+
+  </sect1>
+
+
+  <!-- ===== Authors =========================================== -->
+
+
+  <sect1 id="authors">
+
+    <title>作者</title>
+
+    <para><application>四子连线</application>小游戏由 Timothy Musson (<email>trmusson@ihug.co.nz</email>) 和 David Neary (<email>bolsh@gimp.org</email>)编写，许多人也在<application>四子连线</application>项目启动后，花费时间多次帮助它。</para>
+    <para><ulink type="http" url="http://www.ce.unipr.it/~gbe/velena.html">Velena Engine</ulink>，<application>四子连线</application>的主要电脑玩家程序，由 Giuliano Bertoletti 编写，我们非常感谢他允许使用他的成果，没有它 <application>四子连线</application> 也就没有什么可玩性了。</para>
+    <para>本手册由 Timothy Musson 编写。</para>
+    <para>要报告本程序或本手册的缺陷或者提出建议，请参照 <ulink url="ghelp:user-guide?feedback-bugs" type="help">文档</ulink> 上的指导。</para>
+
+
+<!-- For translations: uncomment this:
+
+  <para>
+    Latin translation was done by ME
+    (<email>MYNAME@MYADDRESS</email>). Please send all comments and
+    suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+-->
+
+  </sect1>
+
+
+  <!-- ============= License =================================== -->
+
+
+  <sect1 id="license">
+
+    <title>许可协议</title>
+
+    <para>本程序是自由软件，您可以在遵守自由软件基金会发布的 <citetitle>GNU 通用许可证</citetitle> 第2版或更高(如您所愿)版本下，重新分发和/或修改它。</para>
+
+    <para>本程序的发布意图是希望它有所用处，但请注意它没有任何担保，甚至不包括商业用途、以及特殊目的保证。更多相关细节，请参阅 <citetitle>GNU 通用公共许可证</citetitle>。</para>
+
+    <para>在<citetitle>GNOME 用户指南</citetitle> 的附录中包含了一份 <citetitle>GNU 通用许可证</citetitle>的副本，您也可以通过访问自由软件基金会的<ulink type="http" url="http://www.fsf.org">网站</ulink>上获得 <citetitle>GNU 通用许可证</citetitle>的副本，或者写信给 <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address> 来索取。</para>
+
+  </sect1>
+
+</article>

@@ -1,0 +1,88 @@
+<sect1 id="Streets_And_Alleys"><!--<sect1info>
+    <copyright>
+      <year>2001</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname>
+    </author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>Streets and Alleys</title>
+
+  <para>Written by Rosanna Yuen </para>
+
+          <sect2><title>Setup</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>Type of Deck</entry>
+	  <entry>Standard Deck</entry>
+	</row>
+	<row>
+	  <entry>Foundation</entry>
+	  <entry>
+	    Four piles in the middle column.  To be built from Ace to
+	    King.  Topmost card in each Foundation can be played back on
+	    to the Tableau.
+	  </entry>
+	</row>
+	<row>
+	  <entry>Tableau</entry>
+	  <entry>
+	    Eight slots (four to the left and four to the right of
+	    Foundations.)  Deal all cards face up and extended on to
+	    these eight piles so that there are seven cards in each pile
+	    on the left flank and six cards in each pile on the right
+	    flank and all cards are showing.
+	  </entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>Goal</title>
+
+  <para>
+    Move all cards to the Foundation piles.
+  </para>
+
+          </sect2>
+        <sect2><title>Rules</title>
+
+  <para>
+    Cards in the Tableau are built down regardless of suit.  Only one
+    card can be moved at a time.  Empty piles can be filled with any
+    single card.
+  </para>
+  <para>
+    Foundations are built up in suit.
+  </para>
+
+          </sect2>
+        <sect2><title>Scoring</title>
+
+  <para>
+    Each card in the Foundation piles scores one point.
+  </para>
+  <para>
+    Maximum possible score:  52
+  </para>
+
+          </sect2>
+        <sect2><title>Strategy</title>
+
+  <para>
+    Build evenly on to Foundations if possible.  Try and get an empty
+    Tableau slot.
+  </para>
+  </sect2>
+</sect1>
+
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="license" xml:lang="zh_CN">
+  
+  <info>
+    <link type="seealso" xref="index"/>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-28" status="draft"/>
+    <desc>法律信息。</desc>
+  </info>
+
+  <title>许可</title>
+  <p>这个作品基于 署名-相同方式共享 3.0 Unported 进行发布。</p>
+  <p>您可以自由：</p>
+  <terms>
+    <item>
+      <title><em>分享</em></title>
+      <p>复制、发行或传播本作品</p>
+    </item>
+    <item>
+      <title><em>创作演绎</em></title>
+      <p>创作或演绎本作品</p> 
+    </item>
+  </terms>
+  <p>惟须遵守下列条件：</p>
+  <terms>
+    <item>
+      <title><em>署名</em></title>
+      <p>必须按照作者或者许可人指定的方式对作品进行署名。</p>
+    </item>
+    <item>
+      <title><em>相同方式共享</em></title>
+      <p>如果您改变、转换本作品或者以本作品为基础进行创作，您只能采用与本协议相同的许可协议发布基于本作品的演绎作品。</p>
+    </item>
+  </terms>
+  <p>要查看完整的许可证文笔，请前往 <link href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">创作共用网站</link>，或者阅读完整的 <link href="http://creativecommons.org/licenses/by-sa/3.0/">普通文本</link>。</p>
+</page>

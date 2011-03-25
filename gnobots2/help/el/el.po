@@ -1,0 +1,843 @@
+# Translation of gnobots2 Manual in Greek
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"POT-Creation-Date: 2009-02-24 22:02+0000\n"
+"PO-Revision-Date: 2009-02-25 22:36+0200\n"
+"Last-Translator: Μάριος Ζηντίλης <m.zindilis@dmajor.org>\n"
+"Language-Team: Greek <team@gnome.gr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnobots2.xml:253(None)
+msgid ""
+"@@image: 'figures/gnobots2-main.png'; md5=aade859d773abd55a6f903b51d92e4b9"
+msgstr ""
+"@@image: 'figures/gnobots2-main.png'; md5=aade859d773abd55a6f903b51d92e4b9"
+
+#: C/gnobots2.xml:26(title)
+msgid "<application>Robots</application> Manual"
+msgstr "Εγχειρίδιο του <application>Ρομπότ</application>"
+
+#: C/gnobots2.xml:29(para)
+msgid ""
+"Robots is a graphical version of the original text based robots game, which "
+"can be found on a number of UNIX systems. The player must outwit the robots "
+"chasing him/her by getting them to run into each other."
+msgstr ""
+"Το Ρομπότ είναι μια εκδοχή με γραφικά του αυθεντικού παιχνιδιού ρομπότ που "
+"βασιζόταν σε χαρακτήρες, και το οποιό μπορεί να βρεθεί σε αρκετά συστήματα "
+"UNIX. Ο παίκτης πρέπει να ξεγελάσει τα ρομπότ που τον/την κυνηγούν κάνοντάς "
+"τα να πέσουν το ένα πάνω στο άλλο."
+
+#: C/gnobots2.xml:38(year)
+msgid "2001"
+msgstr "2001"
+
+#: C/gnobots2.xml:39(holder)
+msgid "Patanjali Somayaji, Mark Rae"
+msgstr "Patanjali Somayaji, Mark Rae"
+
+#: C/gnobots2.xml:55(publishername) C/gnobots2.xml:103(para)
+#: C/gnobots2.xml:113(para)
+msgid "GNOME Documentation Project"
+msgstr "Έργο τεκμηρίωσης του GNOME"
+
+#: C/gnobots2.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Επιτρέπεται η αντιγραφή, αναδιανομή και/η τροποποίηση αυτού του εγγράφου υπό "
+"τους όρους της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), Έκδοση 1.1 ή νεότερη "
+"που εκδόθηκε από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Αμετάβλητα Τμήματα, "
+"χωρίς Κείμενο Εξωφύλλου, και χωρίς Κείμενο Οπισθοφύλλου. Μπορείτε να βρείτε "
+"ένα αντίγραφο της GFDL σε αυτό το <ulink type=\"help\" url=\"ghelp:fdl"
+"\">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανέμεται με αυτό το "
+"εγχειρίδιο."
+
+#: C/gnobots2.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Το εγχειρίδιο αυτό είναι τμήμα της συλλογής εγχειριδίων GNOME που διανέμεται "
+"υπό την άδεια GFDL. Αν επιθυμείτε να διανήμετε το παρόν εγχειρίδιο χωριστά "
+"από την συλλογή, μπορείτε να το κάνετε προσθέτοντας ένα αντίγραφο της άδειας "
+"στο εγχειρίδιο, όπως περιγράφεται στο τμήμα 6 της άδειας."
+
+#: C/gnobots2.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Πολλά από τα ονόματα που χρησιμοποιούνται από επιχειρήσεις για να διακρίνουν "
+"τα προϊόντα τους και τις υπηρεσίες ζητούνται σαν εμπορικά σήματα. Όπου "
+"εμφανίζονται αυτά τα ονόματα σε κάποια τεκμηρίωση του GNOME, και τα μέλη του "
+"GNOME Documentation Project γνωρίζουν για αυτά τα εμπορικά σήματα, τότε τα "
+"ονόματα είναι με κεφαλαία γράμματα ή με αρχικά κεφαλαία γράμματα."
+
+#: C/gnobots2.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ ΠΑΡΕΧΕΤΑΙ \"ΩΣ ΕΧΕΙ\", ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ ΚΑΝΕΝΟΣ ΕΙΔΟΥΣ, "
+"ΕΚΦΡΑΣΜΕΝΗ 'Η ΝΟΟΥΜΕΝΗ, ΠΕΡΙΛΑΜΒΑΝΟΜΕΝΩΝ, ΧΩΡΙΣ ΠΕΡΙΟΡΙΣΜΟ, ΕΓΓΥΗΣΕΩΝ ΟΤΙ ΤΟ "
+"ΕΓΓΡΑΦΟ 'Η ΠΑΡΑΛΛΑΓΕΣ ΤΟΥ ΕΓΓΡΑΦΟΥ ΕΙΝΑΙ ΕΛΕΥΘΕΡΑ ΚΑΘΕ ΕΛΑΤΤΩΜΑΤΟΣ, "
+"ΕΜΠΟΡΕΥΣΙΜΑ, ΚΑΤΑΛΛΗΛΑ ΓΙΑ ΕΝΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ, Η ΜΗ-ΠΑΡΑΒΑΙΝΟΝΤΑ. Η "
+"ΕΥΘΥΝΗ ΓΙΑ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ, ΚΑΙ ΑΠΟΔΟΣΗ ΤΟΥ ΕΓΓΡΑΦΟΥ ΕΙΝΑΙ "
+"ΑΠΟΚΛΕΙΣΤΙΚΑ ΔΙΚΗ ΣΑΣ. ΑΝ ΟΠΟΙΟΔΗΠΟΤΕ ΕΓΓΡΑΦΟ Η ΠΑΡΑΛΛΑΓΗ ΤΟΥΑΠΟΔΕΙΚΤΟΥΝ "
+"ΕΛΑΤΤΩΜΑΤΙΚΑ ΜΕ ΟΠΟΙΟΔΗΠΟΤΕ ΤΡΟΠΟ, ΕΣΕΙΣ (ΚΑΙ ΟΧΙ Ο ΑΡΧΙΚΟΣ ΣΥΓΓΡΑΦΕΑΣ 'Η "
+"ΟΠΟΙΟΣΔΗΠΟΤΕ ΣΥΜΒΑΛΛΟΝΤΑΣ) ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΟ ΚΟΣΤΟΣ ΟΠΟΙΑΣΔΗΠΟΤΕ ΑΝΑΓΚΑΙΑΣ "
+"ΥΠΗΡΕΣΙΑΣ, ΕΠΙΣΚΕΥΗΣ 'Η ΔΙΟΡΘΩΣΗΣ. Η ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ ΠΟΥ ΣΥΝΟΔΕΥΕΙ ΑΥΤΗ ΤΗΝ "
+"ΤΕΚΜΗΡΙΩΣΗ ΕΙΝΑΙ ΑΝΑΠΟΣΠΑΣΤΟ ΚΟΜΜΑΤΙ ΑΥΤΗΣ. ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή "
+"ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ "
+"ΕΥΘΥΝΗΣ. ΚΑΙ"
+
+#: C/gnobots2.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"ΚΑΙ ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΣΕ ΚΑΜΙΑ ΝΟΜΟΛΟΓΙΑ ΑΣΤΙΚΟΥ ΑΔΙΚΗΜΑΤΟΣ "
+"(ΠΕΡΙΛΑΜΒΑΝΟΜΕΝΗΣ ΕΚΕΙΝΟΥ ΤΗΣ ΑΜΕΛΕΙΑΣ), ΣΥΜΒΟΛΑΙΟΥ Ή ΑΛΛΟΥ, Ο ΣΥΝΤΑΚΤΗΣ, Ο "
+"ΑΡΧΙΚΟΣ ΣΥΓΓΡΑΦΕΑΣ, ΟΠΟΙΟΣΔΗΠΟΤΕ ΣΥΝΕΡΓΑΤΗΣ Ή ΟΠΟΙΟΣΔΗΠΟΤΕ ΔΙΑΝΟΜΕΑΣ ΤΟΥ "
+"ΕΓΓΡΑΦΟΥ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ ΤΟΥ ΕΓΓΡΑΦΟΥ, Ή ΟΠΟΙΣΔΗΠΟΤΕ ΠΡΟΜΗΘΕΥΤΗΣ "
+"ΟΠΟΙΟΥΔΗΠΟΤΕ ΕΚ ΤΩΝ ΑΝΩΤΕΡΩ ΠΡΟΣΩΠΩΝ ΕΙΝΑΙ ΥΠΕΥΘΥΝΟΣ ΕΝΑΝΤΙ ΟΙΟΥΔΗΠΟΤΕ "
+"ΠΡΟΣΩΠΟΥ ΓΙΑ ΟΠΟΙΑΔΗΠΟΤΕ ΑΜΕΣΗ, ΕΜΜΕΣΗ, ΙΔΙΑΙΤΗΕΡΗ, ΑΤΥΧΗ Ή ΣΥΝΕΠΑΓΟΜΕΝΗ "
+"ΒΛΑΒΗ ΟΙΟΥΔΗΠΟΤΕ ΧΑΡΑΚΤΗΡΑ ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΩΝ, ΧΩΡΙΣ ΠΕΡΙΟΡΙΣΜΟΥΣ, ΒΛΑΒΕΣ "
+"ΕΞΑΙΤΙΑΣ ΑΠΩΛΕΙΑΣ ΠΕΛΑΤΕΙΑΣ, ΣΤΑΣΗ ΕΡΓΑΣΙΑΣ, ΑΣΤΟΧΙΑ Ή ΚΑΚΗ ΛΕΙΤΟΥΡΓΙΑ "
+"ΥΠΟΛΟΓΙΣΤΗ, Ή ΟΠΟΙΑΔΗΠΟΤΕ ΚΑΙ ΚΑΘΕ ΑΛΛΗ ΒΛΑΒΗ Ή ΑΠΩΛΕΙΑ ΠΟΥ ΘΑ ΕΓΕΙΡΕΙ Ή "
+"ΣΧΕΤΙΖΕΤΑΙ ΜΕ ΤΗΝ ΧΡΗΣΗ ΤΟΥ ΕΓΓΡΑΦΟΥ ΚΑΙ ΟΠΟΙΑΣΔΗΠΟΤΕ ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ "
+"ΤΟΥ ΕΓΓΡΑΦΟΥ, ΑΚΟΜΗ ΚΑΙ ΑΝ ΚΑΠΟΙΟ ΑΠΟ ΑΥΤΑ ΤΑ ΠΡΟΣΩΠΑ ΕΙΝΑΙ ΕΝΗΜΕΡΟ ΓΙΑ ΤΗΝ "
+"ΠΙΘΑΝΟΤΗΤΑ ΠΡΟΚΛΗΣΗΣ ΤΕΤΟΙΩΝ ΒΛΑΒΩΝ."
+
+#: C/gnobots2.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"τΟ ΕΓΓΡΑΦΟ ΚΑΙ ΟΙ ΤΡΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ "
+"ΕΛΕΥΘΕΡΗΣ ΑΔΕΙΑΣ ΤΕΚΜΗΡΙΩΣΗΣ GNU ΜΕ ΤΙΣ ΕΠΙΠΛΕΟΝ ΓΝΩΣΤΟΠΟΙΗΣΕΙΣ: "
+"<placeholder-1/>"
+
+#: C/gnobots2.xml:65(firstname)
+msgid "Patanjali"
+msgstr "Patanjali"
+
+#: C/gnobots2.xml:66(surname)
+msgid "Somayaji"
+msgstr "Somayaji"
+
+#: C/gnobots2.xml:68(email)
+msgid "patanjali@mindless.com"
+msgstr "patanjali@mindless.com"
+
+#: C/gnobots2.xml:72(firstname)
+msgid "Mark"
+msgstr "Mark"
+
+#: C/gnobots2.xml:73(surname)
+msgid "Rae"
+msgstr "Rae"
+
+#: C/gnobots2.xml:75(email)
+msgid "m.rae@inpharmatica.co.uk"
+msgstr "m.rae@inpharmatica.co.uk"
+
+#: C/gnobots2.xml:94(revnumber)
+msgid "Robots Manual V2.8"
+msgstr "Εγχειρίδιο του Ρομπότ, Έκδοση 2.8"
+
+#: C/gnobots2.xml:95(date)
+msgid "September 2004"
+msgstr "Σεπτέμβριος 2004 "
+
+#: C/gnobots2.xml:97(para)
+msgid "Patanjali Somayaji <email>patanjali@mindless.com</email>"
+msgstr "Patanjali Somayaji <email>patanjali@mindless.com</email>"
+
+#: C/gnobots2.xml:100(para)
+msgid "Mark Rae <email>m.rae@inpharmatica.co.uk</email>"
+msgstr "Mark Rae <email>m.rae@inpharmatica.co.uk</email>COPYING-DOCS"
+
+#: C/gnobots2.xml:107(revnumber)
+msgid "Robots Manual V2.9"
+msgstr "Εγχειρίδιο του Ρομπότ, Έκδοση 2.9"
+
+#: C/gnobots2.xml:108(date)
+msgid "August 2007"
+msgstr "Αύγουστος 2007"
+
+#: C/gnobots2.xml:110(para)
+msgid "Claude Paroz <email>claude@2xlibre.net</email>"
+msgstr "Claude Paroz <email>claude@2xlibre.net</email>"
+
+#: C/gnobots2.xml:118(releaseinfo)
+msgid "This manual describes version 2.18 of Robots."
+msgstr "Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.18 του Ρομπότ."
+
+#: C/gnobots2.xml:125(title)
+msgid "Feedback"
+msgstr "Ανάδραση"
+
+#: C/gnobots2.xml:126(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Robots</"
+"application> application or this manual, follow the directions in the <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</ulink>."
+msgstr ""
+"Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με την εφαρμογή "
+"<application>Ρομπότ</application> ή αυτό το έγγραφο, ακολουθήστε τις  οδηγίες στη <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">σελίδα "
+"ανάδρασης του GNOME</ulink>."
+
+#: C/gnobots2.xml:137(primary)
+msgid "GNOME Robots"
+msgstr "GNOME Ρομπότ"
+
+#: C/gnobots2.xml:144(title)
+msgid "Introduction"
+msgstr "Εισαγωγή"
+
+#: C/gnobots2.xml:146(para)
+msgid ""
+"<application>GNOME Robots</application> is a game where you try and avoid a "
+"band of marauding robots which are, for no adequately explained reason, "
+"trying to kill you. It is based on the text-based robots game which can be "
+"found on a number of UNIX systems."
+msgstr ""
+"Το <application>Ρομπότ</application> είναι ένα παιχνίδι στο οποίο "
+"προσπαθείτε να αποφύγετε μια συμμορία επιτιθέμενων ρομπότ τα οποία, για "
+"κάποια ανεξιχνίαστη αιτία, προσπαθούν να σας σκοτώσουν. Βασίζεται στο "
+"παιχνίδι ρομπότ με χαρακτήρες κειμένου που μπορεί να βρεθεί σε αρκετά UNIX "
+"συστήματα."
+
+#: C/gnobots2.xml:153(para)
+msgid ""
+"This new version includes two types of robots, movable junkheaps, multiple "
+"game configurations, user definable keyboard layouts, and sound, as well as "
+"all of the features which were present in the original GNOME Robots game."
+msgstr ""
+"Αυτή η καινούρια έκδοση περιλαμβάνει δυο νέους τύπους ρομπότ, κινούμενους "
+"σκουπιδοντενεκέδες, πολλαπλές ρυθμίσεις του παιχνιδιού, παραμετροποιήσιμες "
+"διατάξεις πληκτρολογίου, και ήχο, όπως επίσης και όλα τα χαρακτηριστικά που "
+"υπήρχαν στο αυθεντικό παιχνίδι Ρομπότ."
+
+#: C/gnobots2.xml:160(para)
+msgid ""
+"To run <application>GNOME Robots</application>, select "
+"<menuchoice><guisubmenu>Games</guisubmenu><guimenuitem>Robots</guimenuitem></"
+"menuchoice> from the <guimenu>Main Menu</guimenu>, or type "
+"<command>gnobots2</command> on the command line."
+msgstr ""
+"Για να εκτελέσετε το <application>Ρομπότ</application> επιλέξτε  "
+"<menuchoice><guisubmenu>Παιχνίδια</guisubmenu><guimenuitem>Ρομπότ</"
+"guimenuitem></menuchoice> από το <guimenu>Κυρίως μενού</guimenu>, ή "
+"πληκτρολογήστε <command>gnobots2</command> στη γραμμή εντολής."
+
+#: C/gnobots2.xml:170(para)
+msgid ""
+"<application>GNOME Robots</application> is included in the <filename>gnome-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.18 of <application>GNOME Robots</"
+"application>."
+msgstr ""
+"Το <application>GNOME Ρομπότ</application> περιλαμβάνεται στο πακέτο "
+"<filename>gnome-games</filename>, το οποίο είναι μέρος του περιβάλλοντος "
+"εργασίας GNOME. Αυτό το έγγραφο περιγράφει την έκδοση 2.18 του "
+"<application>GNOME Ρομπότ</application>."
+
+#: C/gnobots2.xml:179(title)
+msgid "GNOME Robots Objective"
+msgstr "Αντικειμενικός σκοπός του Ρομπότ"
+
+#: C/gnobots2.xml:180(para)
+msgid ""
+"The objective of GNOME Robots is quite simple. You are surrounded by a "
+"number of robots or other hostile adversaries. As you move about they will "
+"move directly towards you for every move that you make. Their goal is to "
+"kill you. Your goal is to kill all the robots on the board by taking "
+"advantage of their vulnerabilities."
+msgstr ""
+"Ο αντικειμενικός σκοπός του Ρομπότ είναι απλός. Είστε περικυκλωμένοι από "
+"μερικά ρομπότ και άλλους εχθρικούς παράγοντες. Καθώς κινείστε θα κινούνται "
+"κι αυτά κατ' ευθείαν προς εσάς σε κάθε κίνηση που κάνετε. Ο στόχος τους "
+"είναι να σας σκοτώσουν. Ο δικός σας στόχος είναι να σκοτώσετε όλα τα ρομπότ "
+"στο ταμπλώ εκμεταλλευόμενοι τις αδυναμίες τους."
+
+#: C/gnobots2.xml:188(para)
+msgid ""
+"Robots are destroyed when they collide with each other, or when they collide "
+"with the debris of some previous collision. You die if a robot ends up right "
+"next to you."
+msgstr ""
+"Τα ρομπότ καταστρέφονται όλα αλληλοσυγκρούονται, ή όταν συγκρούονται στα "
+"συντρίμια μιας προηγούμενης σύγκρουσης. Εσείς πεθαίνετε όταν ένα ρομπότ "
+"βρεθεί ακριβώς δίπλα σας."
+
+#: C/gnobots2.xml:194(para)
+msgid ""
+"In some of the game configurations (you can choose from five different sets "
+"of rules), you can push the junkheaps around to form barricades to protect "
+"you. Also, if you are daring enough, you can Splat! the robots by pushing "
+"junkheaps on top of them for an additional bonus."
+msgstr ""
+"Σε μερικές ρυθμίσεις του παιχνιδιού (μπορείτε να διαλέξετε ανάμεσα σε πέντε "
+"σετ κανόνων), μπορείτε να σπρώξετε τους σκουπιδοντενεκέδες και να "
+"δημιουργήσετε οδοφράγματα που θα σας προστατεύουν. Επίσης, αν είστε αρκετά "
+"τολμηρός, μπορείτε να χρησιμοποιήσετε το Λιώσιμο! σπρώχνοντας τους "
+"σκουπιδοντενεκέδες πάνω στα ρομπότ για μερικούς επιπλέον βαθμούς."
+
+#: C/gnobots2.xml:199(para)
+msgid ""
+"You can also save yourself by teleporting yourself to a random location. "
+"Unfortunately, randomly teleporting means that you might end up being right "
+"next to a robot, so they can kill you when they make their move. Luckily, "
+"there are also safe teleports which will place you out of immediate danger, "
+"but there are only a limited supply of them. You can earn more free "
+"teleports as you go along (how you gain them depends on the chosen game), "
+"but typically you get one for each robot that is destroyed while you are "
+"'waiting', up to a maximum of 10. If you don't want to waste your saved-up "
+"safe teleports, you can choose to teleport randomly if you think it's safe "
+"enough."
+msgstr ""
+"Μπορείτε επίσης να σωθείτε αν τηλεμεταφερθείτε σε μια τυχαία τοποθεσία. "
+"Δυστυχώς, η τυχαία τηλεμεταφορά σημαίνει ότι μπορεί να καταλήξετε ακριβώς "
+"δίπλα σε ένα ρομπότ, οπότε και μπορούν να σας σκοτώσουν όταν κάνουν την "
+"κίνησή τους. Ευτυχώς, υπάρχουν και ασφαλείς τηλεμεταφορές που θα σας "
+"τοποθετήσουν μακριά από άμεσο κίνδυνο, αλλά ο αριθμός τους είναι "
+"περιορισμένος. Μπορείτε να κερδίσετε περισσότερες τηλεμεταφορές καθώς "
+"προχωράτε (ο τρόπος που τις κερδίζετε εξαρτάται από τον τύπο παιχνιδιού), "
+"αλλά τυπικά θα κερδίζετε μία για κάθε ρομπότ που καταστρέφεται ενώ "
+"\"αναμένετε\", με μέγιστες τις δέκα. Αν δε θέλετε να σπαταλήσετε τις "
+"αποθηκευμένες ασφαλείς τηλεμεταφορές, μπορείτε να επιλέξετε να "
+"τηλεμεταφερθείτε τυχαία αν νομίζετε ότι είναι αρκετά ασφαλές."
+
+#: C/gnobots2.xml:213(para)
+msgid ""
+"If you press the <guibutton>Wait</guibutton> button (see below) you will no "
+"longer be able to move until either all of the robots (which still move "
+"towards you) are gone, or you are killed. Doing this is risky, but may earn "
+"you extra safe teleports."
+msgstr ""
+"Αν πατήσετε την <guibutton>Αναμονή</guibutton> (δείτε πιο κάτω) δε θα "
+"μπορείτε να κινηθείτε, είτε μέχρι όλα τα ρομπότ (που συνεχίζουν να κινούνται "
+"προς εσάς) έχουν σκοτωθεί, ή μέχρι εσείς να σκοτωθείτε. Η Αναμονή είναι "
+"επικύνδυνη, αλλά μπορεί να κερδίσετε μερικές επιπλέον ασφαλείς τηλεμεταφορές."
+
+#: C/gnobots2.xml:220(para)
+msgid ""
+"If you manage to reach the point where more than half of the screen is "
+"occupied by robots, the number of robots will be reset to the starting "
+"amount, allowing you to continue."
+msgstr ""
+"Αν καταφέρετε να φτάσετε στο σημείο στο οποίο περισσότερη από τη μισή οθόνη "
+"καταλαμβάνεται από ρομπότ, τότε ο αριθμός των ρομπότ θα επανέλθει στον "
+"αρχικό, επιτρέποντάς σας να συνεχίσετε."
+
+#: C/gnobots2.xml:231(title)
+msgid "Using GNOME Robots"
+msgstr "Χρησιμοποιώντας το Ρομπότ"
+
+#: C/gnobots2.xml:232(para)
+msgid ""
+"<application>GNOME Robots</application> is extremely simple to play. You can "
+"use either the mouse or the keyboard. This section describes basic usage of "
+"<application>GNOME Robots</application>."
+msgstr ""
+"Το <application>GNOME Ρομπότ</application> είναι πολύ απλό. Μπορείτε να "
+"χρησιμοποιήσετε είτε το ποντίκι είτε το πληκτρολόγιο. Αυτό το τμήμα "
+"περιγράφει τη βασική χρήση του <application>GNOME Ρομπότ</application>."
+
+#: C/gnobots2.xml:241(title)
+msgid "Basic usage"
+msgstr "Βασική χρήση"
+
+#: C/gnobots2.xml:249(title)
+msgid "GNOME Robots Main Window"
+msgstr "Το κύριο παράθυρο του Ρομπότ"
+
+#: C/gnobots2.xml:256(phrase)
+msgid "GNOME Robots Main Window."
+msgstr "Το κύριο παράθυρο του Ρομπότ."
+
+#: C/gnobots2.xml:242(para)
+msgid ""
+"Starting <application>GNOME Robots</application> opens the <interface>Main "
+"window</interface>, shown in <xref linkend=\"mainwindow-fig\"/>. "
+"<placeholder-1/>"
+msgstr ""
+"Η εκκίνηση του <application>Ρομπότ</application> ανοίγει το <interface>Κύριο "
+"παράθυρο</interface>, το οποίο φαίνεται στην <xref linkend=\"mainwindow-fig"
+"\"/>. <placeholder-1/>"
+
+#: C/gnobots2.xml:264(para)
+msgid ""
+"To start a new game, choose <guimenuitem>New</guimenuitem> in the "
+"<guimenu>Game</guimenu> menu or click on the <guibutton>New</guibutton> "
+"button on the toolbar."
+msgstr ""
+"Για να αρχίσετε ένα νέο παιχνίδι, επιλέξτε το <guimenuitem>Νέο</guimenuitem> "
+"στο μενού <guimenu>Παιχνίδι</guimenu> ή πατήστε στο κουμπί <guibutton>Νέο</"
+"guibutton> στη μπάρα εργαλείων."
+
+#: C/gnobots2.xml:270(para)
+msgid ""
+"To move, either click in the direction you want to move (the cursor will "
+"show you which way you will go) or press the appropriate key on the keyboard "
+"(keypad by default). Clicking on the little man will keep you still. To "
+"teleport (safely or unsafely), and to wait, use the buttons on the toolbar "
+"or use the items in the <guimenu>Move</guimenu> menu."
+msgstr ""
+"Για να κινηθείτε, είτε πατήστε στη διεύθυνση που θέλετε να κινειθείτε (το "
+"βελάκι θα σας δείξει προς ποιά κατεύθυνση θα πάτε) είτε πατήστε το "
+"αντίστοιχο κουμπί στο πληκτρολόγιο (εξ ορισμού το αριθμητικό). Πατώντας στο "
+"ανθρωπάκι θα μείνετε ακίνητοι. Για να τηλεμεταφερθείτε (με ασφάλεια ή "
+"χωρίς), και για να αναμένετε, χρησιμοποιήστε τα κουμπιά στη μπάρα εργαλείων "
+"ή τα αντικείμενα στο μενού <guimenu>Μετακίνηση</guimenu>."
+
+#: C/gnobots2.xml:286(title)
+msgid "Menus"
+msgstr "Μενού"
+
+#: C/gnobots2.xml:287(para)
+msgid ""
+"The menu bar, located at the top of the <interface>game board</interface>, "
+"contains the following menus:"
+msgstr ""
+"Η μπάρα μενού, που βρίσκεται στο πάνω μέρος του <interface>ταμπλώ</"
+"interface>, περιέχει τα ακόλουθα μενού:"
+
+#: C/gnobots2.xml:295(guimenu)
+msgid "Game"
+msgstr "Παιχνίδι"
+
+#: C/gnobots2.xml:301(para)
+msgid ""
+"<menuchoice><shortcut><keysym>Ctrl-N</keysym></shortcut><guimenuitem>New</"
+"guimenuitem></menuchoice> — starts a new game of GNOME Robots."
+msgstr ""
+"<menuchoice><shortcut><keysym>Ctrl-N</keysym></shortcut><guimenuitem>Νέο</"
+"guimenuitem></menuchoice> — ξεκινάει ένα νέο παιχνίδι Ρομπότ."
+
+#: C/gnobots2.xml:311(para)
+msgid ""
+"<menuchoice><guimenuitem>Scores</guimenuitem></menuchoice> — shows the "
+"higher scores."
+msgstr ""
+"<menuchoice><guimenuitem>Βαθμολογίες</guimenuitem></menuchoice> — δείχνει "
+"τις ψηλότερες βαθμολογίες."
+
+#: C/gnobots2.xml:321(keysym)
+msgid "Ctrl-Q"
+msgstr "Ctrl-Q"
+
+#: C/gnobots2.xml:322(guimenuitem)
+msgid "Quit"
+msgstr "Έξοδος"
+
+#: C/gnobots2.xml:297(para)
+msgid "This menu contains three items: <placeholder-1/>"
+msgstr "Το μενού περιέχει τρία αντικείμενα: <placeholder-1/>"
+
+#: C/gnobots2.xml:332(guimenu)
+msgid "Move"
+msgstr "Μετακίνηση"
+
+#: C/gnobots2.xml:338(para)
+msgid "<guimenuitem>Teleport</guimenuitem>— teleports you in a safe location."
+msgstr ""
+"<guimenuitem>Τηλεμεταφορά</guimenuitem>— σας τηλεμεταφέρει σε μια ασφαλή "
+"τοποθεσία."
+
+#: C/gnobots2.xml:344(para)
+msgid "<guimenuitem>Random</guimenuitem>— teleports you in a random location."
+msgstr ""
+"<guimenuitem>Τυχαία</guimenuitem>— σας τηλεμεταφέρει σε μια τυχαία τοποθεσία."
+
+#: C/gnobots2.xml:350(para)
+msgid "<guimenuitem>Wait</guimenuitem>— places you in wait mode."
+msgstr "<guimenuitem>Αναμονή</guimenuitem>— σας βάζει σε κατάσταση αναμονής."
+
+#: C/gnobots2.xml:334(para) C/gnobots2.xml:380(para)
+msgid "This menu contains: <placeholder-1/>"
+msgstr "Αυτό το μενού περιέχει: <placeholder-1/>"
+
+#: C/gnobots2.xml:361(guimenu)
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#: C/gnobots2.xml:367(para)
+msgid ""
+"<guimenuitem>Preferences</guimenuitem> which brings up the preferences "
+"dialog box."
+msgstr ""
+"<guimenuitem>Προτιμήσεις</guimenuitem>το οποίο ανοίγει το διάλογο "
+"προτιμήσεων."
+
+#: C/gnobots2.xml:363(para)
+msgid ""
+"The <guimenu>Settings</guimenu> menu contains only one item: <placeholder-1/>"
+msgstr ""
+"Το μενού <guimenu>Ρυθμίσεις</guimenu> περιέχει μόνο ένα αντικείμενο: "
+"<placeholder-1/>"
+
+#: C/gnobots2.xml:378(guimenu)
+msgid "Help"
+msgstr "Βοήθεια"
+
+#: C/gnobots2.xml:384(para)
+msgid "<guimenuitem>Contents</guimenuitem>— shows this manual."
+msgstr "<guimenuitem>Περιεχόμενα</guimenuitem>— εμφανίζει αυτό το εγχειρίδιο."
+
+#: C/gnobots2.xml:390(para)
+msgid ""
+"<guimenuitem>About</guimenuitem>— shows basic information about "
+"<application>GNOME Robots</application>, such as the author's name and the "
+"application version number."
+msgstr ""
+"<guimenuitem>Περί</guimenuitem>— δείχνει βασικές πληροφορίες για το "
+"<application>GNOME Ρομπότ</application>, όπως το όνομα του δημιουργού και "
+"τον αριθμό έκδοσης της εφαρμογής."
+
+#: C/gnobots2.xml:409(title)
+msgid "Using the keyboard"
+msgstr "Χρήση του πληκτρολογίου"
+
+#: C/gnobots2.xml:410(para)
+msgid ""
+"You can use the keyboard to control the little man. By default, the keys "
+"from the keypad are configured for the game. However you can customize the "
+"key mappings in the <guimenuitem>Keyboard</guimenuitem> tab in the "
+"<guimenuitem>Preferences</guimenuitem> dialog. To select a different key for "
+"a command, double-click on the line for that command and then press the key "
+"you want to use."
+msgstr ""
+"Μπορείτε να χρησιμοποιείτε το πληκτρολόγιο για να ελέγχετε το ανθρωπάκι. Εξ "
+"ορισμού, τα πλήκτρα από το αριθμητικό πληκτρολόγιο είναι ρυθμισμένα για το "
+"παιχνίδι. Ωστόσο, μπορείτε να τροποποιήσετε τις αναθέσεις πλήκτρων στην "
+"καρτέλα <guimenuitem>Πληκτρολόγιο</guimenuitem> στο διάλογο "
+"<guimenuitem>Προτιμήσεις</guimenuitem>. Για να επιλέξετε ένα διαφορετικό "
+"πλήκτρο για μια εντολή, κάντε διπλό κλικ στη γραμμή για εκείνη την εντολή "
+"και πατήστε το πλήκτρο που θέλετε να χρησιμοποιείτε."
+
+#: C/gnobots2.xml:420(title)
+msgid "Default Key Mappings"
+msgstr "Προεπιλεγμένες αναθέσεις πλήκτρων"
+
+#: C/gnobots2.xml:427(title)
+msgid "Switch off the NumLock Key"
+msgstr "Κλείστε το πλήκτρο NumLock"
+
+#: C/gnobots2.xml:428(para)
+msgid "You may need to switch off the NumLock to make these work."
+msgstr ""
+"Μπορεί να χρειαστεί να κλείσετε το πλήκτρο NumLock για να δουλέψουν αυτά."
+
+#: C/gnobots2.xml:433(para)
+msgid "Up Left: <keycap>Home</keycap>"
+msgstr "Πάνω αριστερά: <keycap>Home</keycap>"
+
+#: C/gnobots2.xml:436(para)
+msgid "Up: <keycap>Up</keycap>"
+msgstr "Πάνω: <keycap>Πάνω</keycap>"
+
+#: C/gnobots2.xml:439(para)
+msgid "Up Right: <keycap>Page Up</keycap>"
+msgstr "Πάνω δεξιά: <keycap>Page Up</keycap>"
+
+#: C/gnobots2.xml:442(para)
+msgid "Left: <keycap>Left</keycap>"
+msgstr "Αριστερά: <keycap>Αριστερά</keycap>"
+
+#: C/gnobots2.xml:445(para)
+msgid "Stand Still: <keycap>Begin</keycap>"
+msgstr "Μείνε ακίνητος: <keycap>Begin</keycap>"
+
+#: C/gnobots2.xml:448(para)
+msgid "Right: <keycap>Right</keycap>"
+msgstr "Δεξιά: <keycap>Δεξιά</keycap>"
+
+#: C/gnobots2.xml:451(para)
+msgid "Down Left: <keycap>End</keycap>"
+msgstr "Κάτω αριστερά: <keycap>End</keycap>"
+
+#: C/gnobots2.xml:454(para)
+msgid "Down: <keycap>Down</keycap>"
+msgstr "Κάτω: <keycap>Κάτω</keycap>"
+
+#: C/gnobots2.xml:457(para)
+msgid "Down Right: <keycap>Page Down</keycap>"
+msgstr "Κάτω δεξιά: <keycap>Page Down</keycap>"
+
+#: C/gnobots2.xml:460(para)
+msgid "Teleport: <keycap>+</keycap>"
+msgstr "Τηλεμεταφορά: <keycap>+</keycap>"
+
+#: C/gnobots2.xml:463(para)
+msgid "Randomly Teleport: <keycap>*</keycap>"
+msgstr "Τυχαία τηλεμεταφορά: <keycap>*</keycap>"
+
+#: C/gnobots2.xml:466(para)
+msgid "Wait: <keycap>Enter</keycap>"
+msgstr "Αναμονή: <keycap>Enter</keycap>"
+
+#: C/gnobots2.xml:423(para)
+msgid ""
+"By default, you use the numeric keypad on the right-hand side of the "
+"keyboard (not the separate arrow keys). <placeholder-1/><placeholder-2/>"
+msgstr ""
+"Εξ ορισμού, χρησιμοποιείτε τον αριθμητικό πληκτρολόγιο στα δεξιά του "
+"πληκτρολογίου (όχι τα ξεχωριστά βελάκια). <placeholder-1/><placeholder-2/>"
+
+#: C/gnobots2.xml:480(title)
+msgid "Customizing GNOME Robots"
+msgstr "Εξατομίκευση του GNOME Ρομπότ"
+
+#: C/gnobots2.xml:499(para)
+msgid ""
+"The safe moves option will help you to avoid being killed due to a mistake. "
+"If you try to make a move that would lead to your death when there is a safe "
+"move available, you will not be allowed to proceed. But be warned: if there "
+"was no safe move available, other than teleporting, the move will be allowed "
+"to proceed."
+msgstr ""
+"Η επιλογή Χρήση ασφαλών κινήσεων θα σας βοηθήσει να αποφύγετε το θάνατο κατά "
+"λάθος. Αν προσπαθήσετε να κάνετε μια κίνηση που θα οδηγήσει στο θάνατό σας "
+"ενώ υπάρχει άλλη ασφαλής κίνηση διαθέσιμη, δε θα μπορείτε να προχωρήσετε. "
+"Αλλά προσέξτε: αν δεν υπάρχει κάποια ασφαλής κίνηση διαθέσιμη, εκτός από την "
+"τηλεμεταφορά, τότε η λανθασμένη σας κίνηση θα εκτελεστεί."
+
+#: C/gnobots2.xml:507(para)
+msgid ""
+"There is also a <quote>super safe mode</quote>. If you select this, you get "
+"beeped when there is no safe move and your only option is to teleport out."
+msgstr ""
+"Υπάρχει επίσης μια λειτουργία <quote>υπερασφαλών κινήσεων</quote>. Αν την "
+"επιλέξετε, θα ακούγεται ένα μπιπ όταν δεν υπάρχει καμμιά ασφαλής κίνηση και "
+"η μόνη σας επιλογή είναι η τηλεμεταφορά."
+
+#: C/gnobots2.xml:514(para)
+msgid ""
+"If you select the sound checkbox the game will play sounds for various "
+"events throughout the game."
+msgstr ""
+"Αν επιλέξετε την Ενεργοποίηση ήχων τότε θα ακούγονται διάφοροι ήχοι για "
+"διάφορα γεγονότα κατά τη διάρκεια του παιχνιδιού."
+
+#: C/gnobots2.xml:520(para)
+msgid ""
+"The <quote>Splats</quote> checkbox selects whether you want the sound played "
+"and a small <quote>Splat!</quote> to appear on the screen."
+msgstr ""
+"Η επιλογή σπλατ ελέγχει κατά πόσο θα ακούγεται ένας ήχος και θα εμφανίζεται "
+"ένα <quote>Splat!</quote> στην οθόνη."
+
+#: C/gnobots2.xml:489(para)
+msgid ""
+"<guimenuitem>Game</guimenuitem> — This page allows you to choose the type of "
+"game you want to play. The drop-down box at the top of the page allows you "
+"to choose from a number of predefined games. You can't change these options "
+"in the middle of a game, so they will be disabled then. There are also "
+"several options at the bottom of the dialog: <placeholder-1/>"
+msgstr ""
+"<guimenuitem>Παιχνίδι</guimenuitem> — σ' αυτή τη σελίδα μπορείτε να "
+"διαλέξετε τον τύπο του παιχνιδιού που θέλετε να παίξετε. Η αναδιπλούμενη "
+"λίστα στο πάνω μέρος της σελίδας σας επιτρέπει να διαλέξετε ανάμεσα σε ένα "
+"αριθμό από προσδιορισμένα παιχνίδια. Δε μπορείτε να αλλάξετε αυτή την "
+"επιλογή στη μέση ενός παιχνιδιού, οπότε και θα είναι απενεργοποιημένη. "
+"Υπάρχουν επίσης μερικές επιλογές στο κάτω μέρος του διαλόγου: <placeholder-1/"
+">"
+
+#: C/gnobots2.xml:531(para)
+msgid ""
+"<guimenuitem>Appearance</guimenuitem> — This page allows you to select the "
+"graphics used throughout the game from the list in the dropdown-box. You can "
+"also select the background colour from this tab."
+msgstr ""
+"<guimenuitem>Εμφάνιση</guimenuitem> — Αυτή η σελίδα σας επιτρέπει να "
+"επιλέξετε τα γραφικά που θα χρησιμοποιούνται στο παιχνίδι από την "
+"αναδιπλούμενη λίστα. Μπορείτε επίσης να επιλέξετε το χρώμα του παρασκηνίου "
+"από αυτή την καρτέλα."
+
+#: C/gnobots2.xml:541(para)
+msgid ""
+"<guimenuitem>Keyboard</guimenuitem> — This screen allows you to define your "
+"own keyboard controls. To select a different key for a command, double-click "
+"on the button for that command and then press the key you want to use."
+msgstr ""
+"<guimenuitem>Πληκτρολόγιο</guimenuitem> — Αυτή η οθόνη σας επιτρέπει να "
+"ορίσετε τον έλεγχο από το πληκτρολόγιο. Για να επιλέξετε ένα διαφορετικό "
+"πλήκτρο για μια εντολή, κάντε διπλό κλικ πλήκτρο για εκείνη την εντολή και "
+"μετά πατήστε το κουμπί που θέλετε να χρησιμοποιήσετε."
+
+#: C/gnobots2.xml:481(para)
+msgid ""
+"You can modify the behaviour and appearance of the game by selecting "
+"<guimenuitem> Preferences</guimenuitem> under the <guimenu>Settings</"
+"guimenu> menu. This brings up a dialog with three tabs: <placeholder-1/>"
+msgstr ""
+"Μπορείτε να τροποποιήσετε τη συμπεριφορά και την εμφάνιση του παιχνιδιού "
+"επιλέγοντας <guimenuitem>Προτιμήσεις</guimenuitem> από το μενού "
+"<guimenu>Ρυθμίσεις</guimenu>. Αυτό θα ανοίξει ένα διάλογο με τρεις καρτέλες: "
+"<placeholder-1/>"
+
+#: C/gnobots2.xml:552(para)
+msgid ""
+"Any changes you make take effect immediately and are automatically saved."
+msgstr ""
+"Ό,τι αλλαγές κάνετε θα εφαρμοστούν αμέσως και θα αποθηκευτούν αυτόματα."
+
+#: C/gnobots2.xml:556(para)
+msgid ""
+"You can design your own graphics for the game if you want. The graphics "
+"files are found in <filename class=\"directory\"> $PREFIX/share/gnome-games/"
+"gnobots2/pixmaps </filename>, where $PREFIX is the prefix into which GNOME "
+"was installed. This is usually either <filename class=\"directory\">/usr</"
+"filename> or <filename class=\"directory\">/usr/local</filename>."
+msgstr ""
+"Μπορείτε να σχεδιάσετε τα δικά σας γραφικά για το παιχνίδι αν θέλετε. Τα "
+"αρχεία γραφικών βρίσκονται στο <filename class=\"directory\"> $PREFIX/share/"
+"gnome-games/gnobots2/pixmaps </filename>, όπου $PREFIX είναι το prefix στο "
+"οποίο εγκαταστάθηκε το GNOME. Αυτό είναι συνήθως είτε το <filename class="
+"\"directory\">/usr</filename> είτε το <filename class=\"directory\">/usr/"
+"local</filename>."
+
+#: C/gnobots2.xml:567(para)
+msgid ""
+"Each character is 16x16 pixels and there are 14 of them arranged in a PNG "
+"file which is 224x16 pixels in size. You can look at the existing files to "
+"see the order in which they must be arranged to produce the correct animated "
+"sequences."
+msgstr ""
+"Κάθε χαρακτήρας είναι 16Χ16 εικονοστοιχεία και υπάρχουν 14 χαρακτήρες "
+"παραταγμένοι σε ένα PNG αρχείο μεγέθους 224Χ16 εικονοστοιχεία. Μπορείτε να "
+"δείτε τα υφιστάμενα αρχεία για να δείτε τη σειρά με την οποία πρέπει να "
+"είναι παραταγμένοι για να παράγξετε τις σωστές κινήσεις."
+
+#: C/gnobots2.xml:573(para)
+msgid ""
+"Any graphics files which are placed in the directory are auto-detected, so "
+"you don't need to alter any configuration files. You can also define your "
+"own game configurations by creating extra <filename> .cfg </filename> files "
+"which are stored in the <filename class=\"directory\"> $PREFIX/share/gnome-"
+"games/gnobots2/games </filename> directory."
+msgstr ""
+"Τα αρχεία γραφικών που θα τοποθετηθούν στον κατάλογο θα ανιχνευθούν "
+"αυτόματα, οπότε δε χρειάζεται να τροποποιήσετε αρχεία ρυθμίσεων. Μπορείτε "
+"επίσης να ορίσετε δικά σας αρχείο ρυθμίσεων του παιχνιδιού δημιουργώντας "
+"επιπλέον <filename> .cfg </filename> αρχεία τα οποίο είναι αποθηκευμένα στο "
+"κατάλογο <filename class=\"directory\"> $PREFIX/share/gnome-games/gnobots2/"
+"games </filename>."
+
+#: C/gnobots2.xml:605(title)
+msgid "Authors"
+msgstr "Δημιουργοί"
+
+#: C/gnobots2.xml:606(para)
+msgid ""
+"<application>GNOME Robots</application> was written by Mark Rae (<email>m."
+"rae@inpharmatica.co.uk</email>). This manual was written by Patanjali "
+"Somayaji (<email>patanjali@mindless.com</email>), from the original HTML "
+"documentation by Mark Rae. To report a bug or make a suggestion regarding "
+"this application or this manual, follow the directions in this <ulink url="
+"\"ghelp:user-guide?feedback-bugs\" type=\"help\">document</ulink>."
+msgstr ""
+"Το <application>Ρομπότ</application> γράφτηκε από τον Mark Rae (<email>m."
+"rae@inpharmatica.co.uk</email>). Αυτό το εγχειρίδιο γράφτηκε από τον "
+"Patanjali Somayaji (<email>patanjali@mindless.com</email>), από την "
+"αυθεντική τεκμηρίωση σε HTML από τον Mark Rae. Για να αναφέρετε ένα σφάλμα ή "
+"να κάνετε μια εισήγηση σχετικά με αυτό το εγχειρίδιο. ακολουθήστε τις "
+"οδηγίες σ' αυτό το <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
+"\">έγγραφο</ulink>."
+
+#: C/gnobots2.xml:633(title)
+msgid "License"
+msgstr "Άδεια"
+
+#: C/gnobots2.xml:634(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>GNU General Public License</citetitle></ulink> as published by "
+"the Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version."
+msgstr ""
+"Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό: μπορείτε να το αναδιανείμετε ή/"
+"και να το τροποποιείτε υπό τους όρους της <ulink type=\"help\" url=\"gnome-"
+"help:gpl\"><citetitle>Γενικής Δημόσιας Άδειας GNU</citetitle></ulink> όπως "
+"εκδίδεται από το Ίδρυμα Ελεύθερου Λογισμικού, είτε στην έκδοση 2 της άδειας, "
+"είτε (κατά την άποψή σας) οποιαδήποτε μεταγενέστερη έκδοση."
+
+#: C/gnobots2.xml:642(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"Αυτό το πρόγραμμα διανέμεται με την ελπίδα οτι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ "
+"ΚΑΜΙΑ ΑΠΟΛΥΤΩΣ ΕΓΓΥΗΣΗ - χωρίς ακόμη και την έμμεση εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ "
+"ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Για περισσότερες λεπτομέρειες δείτε "
+"τη <citetitle>GNU General Public License</citetitle>."
+
+#: C/gnobots2.xml:648(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>51 Franklin Street, Fifth Floor</"
+"street><city>Boston</city>, <state>MA</state><postcode>02110-1301</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"Ένα αντίγραφο της <citetitle>GNU General Public License</citetitle> "
+"συμπεριλαμβάνεται ως παράρτημα στον  <citetitle>Οδηγό Χρηστών GNOME </"
+"citetitle>. Μπορείτε επίσης να αποκτήσετε ένα αντίγραφο της <citetitle>GNU "
+"General Public License</citetitle> από το Ίδρυμα Ελεύθερου Λογισμικού "
+"επισκεπτόμενοι <ulink url=\"http://www.fsf.org\" type=\"http\"> την "
+"ιστοσελίδα τους</ulink> ή γράφωντας τους στη διεύθυνση <address> Free "
+"Software Foundation, Inc. <street>51 Franklin Street, Fifth Floor</street> "
+"<city>Boston</city>, <state>MA</state><postcode>02110-1301</"
+"postcode><country>USA</country></address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/gnobots2.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+"Ελληνική μεταφραστική ομάδα GNOME\n"
+"Μάριος Ζηντίλης <m.zindilis@dmajor.org>\n"
+"\n"
+"Για περισσότερα δείτε http://www.gnome.gr/"

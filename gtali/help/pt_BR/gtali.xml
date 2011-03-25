@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Tali</application>">
+<!ENTITY appname "Tali">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="pt_BR">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Manual do <application>Tali</application></title>
+    <abstract role="description">
+      <para>Tali é como o Yahtzee para GNOME ou como pôquer com dados. O jogador lança os dados para tentar fazer as melhores combinações possíveis, como quadra, seqüência menor, e full house. O jogador tem direito a 3 lançamentos por vez e pode manter alguns dados a cada lançamento.</para>
+    </abstract>
+    <copyright>
+      <year>2001</year>
+      <holder>Scott D. Heavner</holder>
+    </copyright><copyright><year>2008.</year><holder>Vladimir Melo (vladimirmelo.psi@gmail.com)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Projeto de Documentação do GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Permissão concedida para copiar, distribuir e/ou modificar este documento dentro dos termos da GNU Free Documentation License (GFDL), Versão 1.1 ou qualquer versão superior publicada pela Free Software Foundation sem nenhuma Seção Imutável, Textos de Capa e Contra-Capa. Você pode achar uma cópia do GFDL neste <ulink type="help" url="ghelp:fdl">link</ulink> ou no arquivo COPYING-DOCS distribuído com este manual.</para>
+         <para>Este manual é parte de uma coleção de manuais do GNOME distribuída sob a GFDL. Se você quiser distribuir este manual separadamente da coleção, você pode fazê-lo adicionando uma cópia da licença ao manual, como descrito na seção 6 da licença.</para>
+
+	<para>Muitos dos nomes usados por empresas para distinguir seus produtos e serviços são marcas registradas. Onde esses nomes aparecerem em qualquer documentação do GNOME e os membros do Projeto de Documentação do GNOME estiverem cientes daquelas marcas registradas, os nomes aparecerão em letras maiúsculas ou com iniciais em maiúsculas.</para>
+
+	<para>DOCUMENTO E VERSÕES MODIFICADAS DO DOCUMENTO SÃO FORNECIDAS PELOS TERMOS DA GNU FREE DOCUMENTATION LICENSE COM O CONHECIMENTO ADICIONAL DE QUE: <orderedlist>
+		<listitem>
+		  <para>DOCUMENTO É FORNECIDO "NO ESTADO", SEM GARANTIA DE QUALQUER TIPO, TANTO EXPRESSA QUANTO IMPLÍCITA, INCLUINDO, SEM LIMITAÇÕES, GARANTIAS DE QUE O DOCUMENTO OU VERSÃO MODIFICADA DO MESMO É COMERCIALIZADO LIVRE DE DEFEITOS, PRÓPRIO PARA UM PROPÓSITO ESPECÍFICO OU QUE NÃO HÁ INFRAÇÕES. TODO RISCO DE QUALIDADE, PRECISÃO E PERFORMANCE DO DOCUMENTO OU VERSÃO MODIFICADA É COM VOCÊ. SE ALGUM DOCUMENTO OU VERSÃO MODIFICADA É PROVADO DEFEITUOSO EM QUALQUER ASPECTO, VOCÊ (NÃO O ESCRITOR INICIAL, AUTOR OU QUALQUER COLABORADOR) ASSUME O CUSTO DE QUALQUER SERVIÇO NECESSÁRIO, REPARO OU CORREÇÃO. ESTE AVISO DE GARANTIA CONSTITUI UMA PARTE ESSENCIAL DA LICENÇA. NENHUM USO DE QUALQUER DOCUMENTO OU VERSÃO MODIFICADA DO DOCUMENTO É AUTORIZADO EXCETO SOB ESTA CONDIÇÃO; E</para>
+		</listitem>
+		<listitem>
+		  <para>SOB NENHUMA CIRCUNSTÂNCIA E SOB NENHUMA TEORIA LEGAL, TANTO EM DANOS (INCLUINDO POR NEGLIGÊNCIA), CONTRATO OU OUTROS, DEVE O AUTOR, ESCRITOR INICIAL OU COLABORADOR OU QUALQUER DISTRIBUIDOR DO DOCUMENTO, VERSÃO MODIFICADA OU QUALQUER FORNECEDOR DE QUALQUER DESSES GRUPOS, SER CONSIDERADO RESPONSÁVEL A QUALQUER PESSOA POR QUALQUER DANO DIRETO, INDIRETO, ESPECIAL, INCIDENTAL OU CONSEQÜENCIAL DE QUALQUER INDIVÍDUO, INCLUINDO, SEM LIMITAÇÕES, DANOS POR PERDA DE BOA VONTADE, PARADA DE TRABALHO, FALHA DE COMPUTADOR, MAL FUNCIONAMENTO OU QUALQUER E TODOS OS OUTROS DANOS OU PERDAS RESULTANTES OU RELACIONADAS AO USO DO DOCUMENTO E VERSÕES MODIFICADAS, MESMO QUE ESSE GRUPO TENHA SIDO INFORMADO DA POSSIBILIDADE DE TAIS DANOS.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+	
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Scott D</firstname> 
+	<surname>Heavner</surname> 
+	<affiliation> 
+	  <address> <email>sdh@po.cwru.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Manual do Tali V2.8</revnumber> 
+	<date>Setembro de 2004</date> 
+	<revdescription> 
+	  <para role="author">Scott D Heavner <email>sdh@po.cwru.edu</email></para>
+	  <para role="publisher">Projeto de Documentação do GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Este manual descreve a versão 2.12 do Tali.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Feedback</title> 
+      <para>Para relatar um erro ou dar uma sugestão sobre o aplicativo <application>Tali</application> ou sobre este manual, siga as orientações na <ulink url="ghelp:user-guide?feedback-bugs" type="help">Página de Feedback do GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME Tali</primary> 
+  </indexterm>
+
+ <!-- ============= Document Body ============================= -->
+
+  <sect1 id="intro">
+    <title>Introdução</title>
+
+    <para><application>GNOME Tali</application> é uma espécie de pôquer com dados e menos dinheiro. Você lança cinco dados três vezes e tenta criar a melhor <quote>mão</quote>. Seus dois lançamentos seguintes podem incluir alguns ou todos os dados.</para>
+    <para><application>GNOME Tali</application> é muito similar ao jogo de dados Yahtzee que é uma marca registrada de Hasbro, Inc.</para>
+
+    <para>Para executar o <application>GNOME Tali</application>, selecione <menuchoice><guisubmenu>Jogos</guisubmenu><guimenuitem>GNOME Tali</guimenuitem></menuchoice> do <guimenu>Menu principal</guimenu>, ou digite <command>gtali</command> na linha de comando.</para>
+
+    <para><application>GNOME Tali</application> está incluído no pacote <filename>gnome-games</filename>, que é parte do ambiente de trabalho GNOME. Este documento descreve a versão 2.8 do <application>GNOME Tali</application>.</para>
+  </sect1>
+
+  <sect1 id="playing">
+    <title>Jogando GNOME Tali</title>
+
+    <figure id="shot1">
+      <title>GNOME Tali em ação</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="Trevor Curtis"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Tela da janela principal do GNOME Tali.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Quando o jogo inicia, você vê os resultados do seu primeiro lançamento de dados.</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Clique nos dados que você deseja lançar novamente.</para>
+        </listitem>
+        <listitem>
+          <para>Quando você tiver selecionado todos os dados que deseja lançar novamente, pressione o botão <guibutton>Lançar!</guibutton>.</para>
+        </listitem>
+        <listitem>
+	  <para>Quando você tiver uma mão que goste ou não tiver mais chances de lançar o dado, clique em uma linha correspondente ao que você imagina ser a melhor combinação de pontos. É bem possível que tenha um zero na pontuação e se você clicar na linha errada, você vai receber a pontuação equivalente (Digamos que por exemplo, você consegue um yahtzee -- uma quina -- e clica na linha de seqüência máxima, você vai receber um zero na sua pontuação de seqüência máxima).</para>
+      </listitem>
+    </orderedlist>
+
+    <para>Você pode usar cada combinação apenas uma vez, i.e. uma vez que tiver colocado algo em uma posição, você não pode alterar a pontuação mais tarde se lançar uma mão melhor.</para>
+
+    <para>Existe uma exceção para esta regra, se você lançar um yahtzee uma segunda vez você pode colocá-lo na linha de yahtzee novamente para cinqüenta pontos adicionais. Você pode continuar fazendo isso cada vez que conseguir outro yahtzee. No fim do jogo você terá direito a lançamentos adicionais para preencher as outras linhas. Fique atento que se você não pontuar na sua linha de yahtzee (i.e. você preencheu aquela linha com algo que não era um yahtzee) então você não poderá colocar um yahtzee mais tarde, zero será a sua pontuação.</para>
+
+    <para>Existe também um bônus de 35 pontos se você atingir um total de 63 pontos ou mais nas seis linhas superiores.</para>
+
+    <sect2 id="keyboard">
+    <title>Usando o teclado</title> 
+
+      <para>Como uma alternativa ao uso do mouse, as teclas 1 até 5 alternam os dados exatamente como se tivesse clicado neles. A tecla 1 corresponde ao primeiro dado e assim por diante. Use os controles normais para lançar os dados e selecionar uma linha. i.e. use tab para alternar entre os botões de lançamento e a área de pontuação, use as setas para navegar para cima e para baixo nas linhas e use a barra de espaço para selecionar.</para>
+    
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="options">
+    <title>Opções do jogo</title>
+
+    <figure id="shot2">
+      <title>Preferências do GNOME Tali</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences.png" format="PNG" srccredit="Trevor Curtis"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Caixa de diálogo das preferências do GNOME Tali.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+      <variablelist><title>Jogadores humanos</title>
+	<varlistentry>
+	  <term><guimenuitem>Número de jogadores</guimenuitem></term>
+	  <listitem>
+            <para>Selecione o número de jogadores humanos. Como descrito acima, é permitido um total de seis jogadores.</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>  
+      
+    <variablelist><title>Oponentes do computador</title>
+      <varlistentry>
+        <term><guimenuitem>Espera entre lançamentos</guimenuitem></term>
+	<listitem>
+	  <para>Faça os oponentes computadores pausarem entre os lançamentos de dados de forma que possa ver o que eles estão fazendo. Torna o jogo um pouco mais lento.</para>
+        </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guimenuitem>Número de oponentes</guimenuitem></term>
+	  <listitem>
+            <para>Selecione o número de oponentes computadores. É permitido um total de seis jogadores humanos e computadores. Se você tentar aumentar este número próximo ao limite, o número de jogadores humanos será diminuído para manter o total de apenas seis jogadores.</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>
+      
+    <variablelist><title>Tipo de jogo</title>
+      <varlistentry>
+        <term><guimenuitem>Versão do jogo</guimenuitem></term>
+	<listitem>
+	  <para>Jogue a versão normal (similar ao Yahtzee) ou a versão com cores (similar ao Kismet). Quando você alterar o tipo do jogo, você deve reiniciar o jogo para ver o novo tipo.</para>
+        </listitem>
+	</varlistentry>
+      </variablelist>
+      
+      <variablelist>
+	<varlistentry>
+	    <term><guimenuitem>Nomes dos jogadores</guimenuitem></term>
+	    <listitem>
+	      <para>Para alterar o nome dos jogadores, apenas digite novos nomes nas caixas.</para>
+	    </listitem>
+	</varlistentry>
+      </variablelist>
+    </sect1>
+
+    <sect1 id="strategy">
+      <title>Estratégia do jogo</title>
+      <para>Os 63 pontos necessários para o bônus na metade superior correspondem a conseguir três de cada combinação de dados em cada linha. Se você pontuar mais que três dados nas cinco ou seis linhas então será capaz de posicionar um lançamento ruim nas outras linhas e ainda conseguir o bônus. Na versão de Cores, você consegue um bônus de 55 se sua metade superior totalizar entre 71 e 77, e um bônus de 75 se o total de sua metade superior for maior que 77.</para>
+      <para>Não se esqueça dos múltiplos yahtzees, se você lançar um segundo yahtzee, pode também colocá-lo na linha de yahtzee para obter mais pontos. Isto se aplica apenas ao jogo normal.</para>
+    </sect1>	
+ <!-- ============= Bugs ================================== -->
+ <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of. 
+      
+      Better to leave this section out than to say something unhelpful. 
+-->
+
+ <sect1 id="bugs">
+  <title>Erros conhecidos e limitações</title>
+  <para>Quando você alterna o tipo de jogo, o jogo não usa as novas imagens de dados até que reinicie o gtali. O jogo deve funcionar corretamente com os dados "errados".</para>
+ </sect1>
+
+
+ <sect1 id="glossary">
+   <title>Glossário</title>
+   <note>
+     <para>Lembre-se que a ordem dos dados não é importante.</para>
+   </note>
+   <glossary>
+       <glossentry id="threeofakind"><glossterm>Trinca</glossterm>
+         <glossdef><para>Três dos dados têm o mesmo número. A pontuação é o total de todos os dados. Ex.: 1, 2, 2, 2, 5.</para></glossdef>
+       </glossentry>
+       <glossentry id="fourofakind"><glossterm>Quadra</glossterm>
+         <glossdef><para>Quatro dos dados têm o mesmo número. A pontuação é o total de todos os dados. Ex.: 2, 5, 5, 5, 5. No jogo de Cores, a pontuação é 25 mais o total de todos os dados.</para></glossdef>
+       </glossentry>
+       <glossentry id="yahtzee"><glossterm>Quina</glossterm>
+         <glossdef><para>Cinco dados idênticos, ex.: 3, 3, 3, 3, 3. No jogo de Cores, a pontuação é 50 mais o total de todos os dados.</para></glossdef>
+       </glossentry>
+       <glossentry id="fullhouse"><glossterm>Full House</glossterm>
+         <glossdef><para>Cinco dados consistem em dois grupos: um grupo de três com os mesmos números e outro grupo de dois com os mesmos números. Ex.: 1, 1, 1, 4, 4. No jogo de Cores, a pontuação é 15 mais o total de todos os dados.</para></glossdef>
+       </glossentry>
+       <glossentry id="fullhousesamecolor"><glossterm>Full House da mesma cor</glossterm>
+         <glossdef><para>Esta categoria é usada apenas no jogo de Cores. Cinco dados consistem em dois grupos: um grupo de três com os mesmos números e outro grupo de dois com os mesmos números. Os números devem ser todos da mesma cor. Ex.: 3, 3, 3, 4, 4. Dois dados são da mesma cor se seu números totalizam 7: 1 e 6 são pretos, 2 e 5 são vermelhos, e 3 e 4 são verdes. A pontuação é 20 mais o total de todos os dados.</para></glossdef>
+       </glossentry>
+       <glossentry id="twopairsamecolor"><glossterm>Dois pares da mesma cor</glossterm>
+         <glossdef><para>Esta categoria é usada apenas no jogo de Cores. Cinco dados consistem em dois grupos: um grupo de dois com os mesmos números e outro grupo de dois com os mesmos números. Os pares devem ser todos da mesma cor. Ex.: 3, 3, 4, 4. Dois dados são da mesma cor se suas números totalizam 7: 1 e 6 são pretos, 2 e 5 são vermelhos, e 3 e 4 são verdes. O quinto dados pode ser de qualquer valor. A pontuação é o total de todos os dados. </para></glossdef>
+       </glossentry>
+       <glossentry id="flush"><glossterm>Flush</glossterm>
+         <glossdef><para>Esta categoria é usada apenas no jogo de Cores. Cinco dados que são todos da mesma "cor": Dois dados são da mesma cor se seus números totalizarem 7: 1 e 6 são pretos, 2 e 5 são vermelhos, e 3 e 4 são verdes. O quinto dado pode ser de qualquer valor. Vale 35 pontos.</para></glossdef>
+       </glossentry>
+       <glossentry id="largestraight"><glossterm>Seqüência maior</glossterm>
+         <glossdef><para>Cinco dados com números consecutivos. Ex.: 2, 3, 4, 5, 6. Vale 40 pontos.</para></glossdef>
+       </glossentry>
+       <glossentry id="smallstraight"><glossterm>Seqüência menor</glossterm>
+         <glossdef><para>Quatro dados com números consecutivos. O quinto dado pode ser qualquer número. Ex.: 2, 3, 4, 5, 5. Esta categoria é usada apenas no jogo normal. Vale 30 pontos.</para></glossdef>
+       </glossentry>
+   </glossary>
+ </sect1>
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Autores</title>
+  <para><application>GNOME Tali</application> foi escrito por Scott Heavner (<email>sdh@po.cwru.edu</email>) e Orest Zborowski. Este manual foi escrito por Scott D Heavner (<email>sdh@po.cwru.edu</email>) com material extra adicionado por Callum McKenzie (<email>callum@physics.otago.ac.nz</email>). Para relatar um erro ou dar uma sugestão sobre este aplicativo ou sobre este manual, siga as orientações neste <ulink url="ghelp:user-guide?feedback-bugs" type="help">documento</ulink>.</para>
+
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licença</title>
+  <para>Este programa é um software livre; você pode redistribuí-lo e/ou modificá-lo sob os termos da <ulink type="help" url="gnome-help:gpl"><citetitle>GNU General Public License</citetitle></ulink> numa publicação da Free Software Foundation; em sua versão 2 da Licença, ou (em sua opção) sua versão superior.</para>
+  <para>Este programa é distribuído na esperança que será útil, mas SEM GARANTIA ALGUMA; nem mesmo a garantia implícita de COMERCIABILIDADE ou ADEQUAÇÃO A UMA FINALIDADE ESPECIFICA. Consulte a <citetitle>GNU General Public License</citetitle> para mais detalhes.</para>
+  <para>Uma cópia da <citetitle>Licença Pública Geral GNU</citetitle> é incluída como um apêndice do <citetitle>Guia do Usuário do GNOME</citetitle>. Você também pode obter uma cópia da <citetitle>Licença Pública Geral GNU</citetitle> na Free Software Foundation ao visitar <ulink type="http" url="http://www.fsf.org">o site deles</ulink> ou ao escrever para <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

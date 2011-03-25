@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.21.90">
+<!ENTITY manrevision "3.0">
+<!ENTITY date "February 2008">
+<!ENTITY app "<application>Sudoku</application>">
+<!ENTITY appname "Sudoku">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 06, 2003
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="zh_CN">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title><application>数独</application>手册</title>       
+
+    <abstract role="description">
+      <para>数独是一个用来玩流行的数独逻辑谜题游戏的程序，玩家必须用正确的数字填写一个9乘9的盒子。</para>
+    </abstract>
+
+    <copyright> 
+      <year>2008</year> 
+      <holder>Thomas M. Hinkle</holder> 
+    </copyright><copyright><year>2009</year><holder>Aron Xu (aronxu@gnome.org)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOME 文档项目</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>对于本文档的复制、分发和/或修改必须遵循自由软件基金会发布的 GNU 自由文档许可证 (GFDL)  1.1 版或更高版本， 该许可证没有固定的部分、没有封面和背页文本。您可以在此<ulink type="help" url="ghelp:fdl">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副本。</para>
+         <para>这个手册是在GFDL下发行的GNOME手册的的一部分。如果你想将这个手册分离开整个手册集合来重新发布，你可以这么做，但是要按照该许可证第六段所描述的，向这个手册添加这个许可证的副本。</para>
+
+	<para>各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 GNOME 文档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而表明它们是商标。</para>
+
+	<para>本文档以及文档的修改版本都是在遵循 GNU 自由文档许可证的条款下提供，这表示具有以下含义：<orderedlist>
+		<listitem>
+		  <para>文档按“原样”提供，不提供任何明示或暗示的保证，包括但不限于：文档或文档的修改版本没有适销性方面的缺陷、适合特定目的的适用性，以及没有侵权行为。您将自行承担本文档以及文档修改版本的质量、准确性以及性能方面的风险。如果任何文档或文档修改版本存在缺陷，您(而不是最初的编写者、作者或撰写人)将承担所有必需的服务、维修或更正的费用。此免责声明是本许可证的重要组成部分。如果不接受此免责声明，那么您就没有权利使用任何文档或文档的修改版本；并且</para>
+		</listitem>
+		<listitem>
+		  <para>无论在任何情况以及在任何法律理论下，本文档或文档修改版本的作者、最初的编写者、任何撰写人或任何分发者，或者任意这些方的任何提供者都不对任何人由于使用本文档或文档修改版本引起或带来的任何直接的、间接的、特殊的、偶然的或继发的损失承担任何民事(包括疏忽)、合同或其它方面的责任，这些损失包括但不限于信誉损失、工作停止、计算机失败或故障，或任何以及所有其它损失或由此引发的或与之相关的损失，即使这些方已被告知存在出现此类损失的可能性时也是如此。</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+		<firstname>Thomas</firstname> 
+		<surname>Hinkle</surname> 
+		<affiliation> 
+	  		<orgname>GNOME 文档项目</orgname> 
+	  		<!-- The email address of the author is optional and is commented out by default. 
+			<address> <email>doc-writer2@gnome.org</email> </address> 
+			-->
+		</affiliation> 
+      </author> 
+      
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->  
+    <revhistory>
+      <revision> 
+		<revnumber>GNOME 数独手册 V3.0</revnumber> 
+		<date>2008年02月</date> 
+		<revdescription> 
+	  		<para role="author">Thomas M. Hinkle</para>
+	  		<para role="publisher">GNOME 文档项目</para>
+		</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>这个手册描述了 2.21.90 版本的数独游戏</releaseinfo> 
+    <legalnotice> 
+      <title>反馈</title> 
+      <para>要报告关于<application>数独</application>程序或其手册的错误或者提供建议，请参照 <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME 反馈页</ulink>的说明。</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>GNOME 数独</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+    <primary>数独</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="myapp-introduction"> 
+    <title>介绍</title> 
+    <para><application>数独</application>是一个用来生成和玩流行的数独逻辑谜题（也称作数字拼图）的程序。</para>
+    <para>数独的规则非常简单。为了完成这个难题，有必须在每个方块里填写 1-9 这九个数字，使得每行、每列、每个 3x3 的盒子里都有 1-9 这九个数字。另外一种描述是，你必须将 1-9 填入，使得每行、每列、每个 3x3 的盒子里都没有一个数出现两次。</para>
+
+    <para>这两种看待谜题的不同方式是玩家在游戏时思考的两种原则方法。一方面，您问自己，“我如何填写盒子中的所有数字？”。另一方面，您问自己，“这个框中可以填写哪些数字，而不与同一行、同一列或者 3x3 的盒子中的其他数字冲突？”</para>
+
+    <para>不管这个游戏多么的朴素，数独可以变化得非常苦难。<application>数独</application>允许你选择难度。默认情况下的难度是简单，并且会随着你的长进而增加难度。</para>
+
+  </sect1>
+
+<!-- =========== Getting Started ============================== -->
+<!-- Use the Getting Started section to describe the steps required
+     to start the application and to describe the user interface components
+     of the application. If there is other information that it is important
+     for readers to know before they start using the application, you should
+     also include this information here. 
+     If the information about how to get started is very short, you can 
+     include it in the Introduction and omit this section. -->
+
+  <sect1 id="myapp-getting-started"> 
+    <title>入门</title> 
+
+    <sect2 id="myapp-start">
+    <title>启动<application>数独</application></title>
+    <para>你可以按照下面的方法启动<application>数独</application></para> 
+    <variablelist>
+    	<varlistentry>
+    		<term><guimenu>应用程序</guimenu>菜单</term>
+    		<listitem>
+    		<para>选择<menuchoice><guisubmenu>游戏 </guisubmenu><guimenuitem>数独</guimenuitem></menuchoice>。</para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>命令行</term>
+    		<listitem>
+    		<para>要从命令行启动<application>数独</application>，键入以下命令，然后按 <keycap>回车</keycap>：</para>
+    		<para> 
+			<command>gnome-sudoku</command> 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+    </sect2>
+
+    <sect2 id="myapp-when-start">
+    <title>当您启动<application>数独</application></title>
+    <para>当您第一次启动<application>数独</application>，您会看到谜题选择窗口，这里您可以想玩的谜题的难度。如果您之前玩过并且有未完成的谜题，您也可以从这个窗口中选择那些谜题。</para>
+    <para>在谜题选择窗口显示了谜题的难度。围绕谜题图片的颜色与难度相对应。例如，一个暗红色的谜题比一个浅红色的谜题难。</para>
+    <para>双击您选择的谜题以开始游戏。</para>
+
+<figure id="new-game-fig"> 
+	<title>启动数独</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/starting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>开始数独游戏：选择一个难度。</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    
+    <para>你可以在任何时候通过按<guibutton>新游戏</guibutton>改变谜题。这个将会显示一个选择窗口，你可以在哪里选择你想要的数独。</para>
+    
+    </sect2>
+    
+    </sect1>
+    <sect1 id="myapp-basic-play">
+    <title>基本的游戏玩法</title>
+    <para>要玩这个游戏，开始在方块中填写数字 1-9，使得没有哪一行、列、或者 3x3 的盒子拥有超过一次的数字。</para>
+    <para>您可以用键盘或者鼠标在方块中填写数字</para>
+    <variablelist>
+    	<varlistentry>
+	<term>键盘</term>
+	<listitem><para>使用箭头键或者鼠标来选择您想填充的方块。然后输入您项填入方块的数字。按<keycap>退格</keycap>将会删除数字。</para></listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>鼠标</term>
+	<listitem>
+	  <para>点击一个方块来选择它，然后点击方块的中心来调出有数字 1-9 的按钮。点击一个数字来选择它，或者点击<guibutton>清除</guibutton>来清除方块。您也可以双击方块的中心来调出数字按钮。</para>
+	</listitem>
+		</varlistentry>
+	</variablelist>
+    <note>
+    <para>如果您输入一个和网格中其他数字相冲突的数字，冲突的数字将会以红色高亮显示。</para>
+    <figure id="error-highlight-fig"> 
+	<title>错误高亮</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/error_highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>非法动作将会用红色高亮显示。</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    </note>
+    </sect1>
+    <sect1 id="myapp-saving">
+    <title>保存和恢复游戏</title>
+    <para>数独每隔几分钟以及您改变游戏或者关闭程序时自动保存一次。</para>
+        <figure id="open-game-fig"> 
+	<title>恢复旧的游戏</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/resuming.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>从谜题选择窗口恢复一个旧游戏。</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    <para>无论何时您启动<application>数独</application>或者点击<guibutton>新游戏</guibutton>，您保存的游戏将会在谜题选择窗口列出。您会看到保存的谜题的缩略图、最后游戏时间以及您已经玩了多长时间。要打开谜题，只需双击它。</para>
+    <para>如果您想停止玩一个游戏并开始另一个，只需选择<guibutton>新游戏</guibutton>并开始新的游戏。</para>
+    </sect1>
+
+<!-- ================ Usage ================================ -->
+<!-- Use this section to describe how to use the application to perform the tasks for 
+  which the application is designed. -->
+  <sect1 id="myapp-hints"> 
+    <title>特性</title> 
+    <!-- ================ Usage Subsection ================================ -->
+
+        <para>GNOME 数组提供很多特性来帮助您玩谜题。</para>
+
+      <variablelist>
+    	<varlistentry><term>注记</term>
+	<listitem>
+		<para><firstterm>注记</firstterm>允许您在每个方块做注记。很多玩家使用注记来跟踪方块的可能值。</para>
+	</listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>提示与自动填充</term>
+	<listitem>
+	<para>您可以使用<firstterm>提示</firstterm>和<firstterm>自动填充</firstterm>来让 GNOME 数独告诉您一个方块的可能值或者为您自动填充一个方块。</para>
+	</listitem>
+	</varlistentry>
+
+		<varlistentry>
+	<term>高亮</term>
+	<listitem>
+	<para>在高亮模式下，当前行、列和盒子都以不同颜色高亮显示，让查看盘面更加容易。</para>
+	</listitem>
+	</varlistentry>
+
+	<varlistentry>
+	<term>跟踪器</term>
+	<listitem>
+	  <para>跟踪器使跟踪试错法的解答变得容易。当您<firstterm>跟踪</firstterm>一系列动作，数字以特殊的颜色输入以便帮助您将这些动作从之前的动作中区分开来。</para>
+	</listitem>
+	</varlistentry>
+        </variablelist>
+	
+	<sect2 id="myapp-notes"> 
+      <title>做注记</title> 
+      <para>要在一个方块中写注记，首先用键盘或鼠标选择方块。然后做以下动作的一个：</para>
+      <itemizedlist>
+      <listitem><para>点击方块的上部区域（当您将鼠标移动到一个已选择的方块时，该区域用方块高亮显示）</para></listitem>
+      <listitem><para>按<keycap>N</keycap></para></listitem>
+      </itemizedlist>
+      <para>这会调出一个输入栏，您可以在里面输注记。当您编辑完注记，按<keycap>回车</keycap>。</para>
+      
+      <note><para>您也可以通过点击方块底部或者按 <keycap>M</keycap> 以在方块的底部做注记。然而，这个区域在您要求<firstterm>提示</firstterm>的时候会被使用，因此如果您同时准备使用提示的话，不应使用此区域来做个人注记。</para></note>
+      <note><para>您可以通过按 <keycap>Alt-N</keycap> 清除方块上部的注记，按 <keycap>Alt-M</keycap> 清除下部的。</para></note>
+      <note><para>您可以通过按 <keycap>Ctrl-1</keycap> 到 <keycap>Ctrl-9</keycap> 来为方块上部的注记增加一个数字，按 <keycap>Alt-1</keycap> 到 <keycap>Alt-9</keycap> 来从注记中删除一个数字。</para></note>
+</sect2>
+    <!-- ================ Usage Subsection ================================ -->
+	 <sect2 id="myapp-manipulate-view"> 
+      <title>提示与自动填充</title>
+
+		             <note>
+
+	      <para><firstterm>提示</firstterm>和<firstterm>填充</firstterm>特性基于当前盘面的逻辑上的可能性而工作。如果您在前面的动作中犯了错误，这些特性可能填入或者提示错误的值。 </para>
+
+	    </note>
+      
+      
+      <sect3 id="myapp-hint">
+          <title>提示</title>
+	              <para>GNOME 数独可以基于您当前的盘面给出提示。您可以通过点击<guibutton>提示</guibutton>、选择<menuchoice><guisubmenu>工具</guisubmenu><guimenuitem>提示</guimenuitem></menuchoice>或者按 <keycap>Control-H</keycap> 来为当前选择的方块要求提示。这会在方块的底部放入一个可能值的列表。</para>
+    <figure id="hint-fig"> 
+	<title>提示</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/hints.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>当您点击提示，可能值被显示在方块的底部。</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+		      
+	    <para>如果您想删除或者改变提示，您可以通过点击方块的底部来修改文字。</para>
+	    <para>对于非常难的谜题，您可以选择让<application>数独</application>显示所有方块的可能值。要开启这一模式，勾选<menuchoice><guisubmenu>工具</guisubmenu><guimenuitem>总是显示提示</guimenuitem></menuchoice>。注意这会让简单谜题<emphasis>过于</emphasis>容易，因此您应当谨慎使用此模式。</para>
+<figure id="all-hints-fig"> 
+	<title>在总是显示提示模式下的 <application>数独</application></title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/always_show_hint.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>激活了总是显示提示模式的困难谜题。</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+	    
+	    
+	    </sect3>
+	    <sect3 id="myapp-autofill">
+	    <title>填充方块</title>
+
+	    <para>要自动填充仅有一个可能值的方块，您可以点击<guibutton>填充</guibutton>、选择<menuchoice><guisubmenu>工具</guisubmenu><guimenuitem>填充</guimenuitem></menuchoice>或者按<keycap>Control-F</keycap>。举个例子，这在您填充了一行中 8 或 9 个方块并想快速填充最后一个空方块时很有用。</para>
+	    <para>如果条目的有效值多于一个，什么都不会发生。</para>	    
+	    </sect3>
+	    <sect3 id="myapp-fill-all">
+	    <title>填充所有方块</title>
+
+	    <para>您可以自动填充当前逻辑上仅有一个值的所有方块。要这么做，选择<menuchoice><guisubmenu>工具</guisubmenu><guimenuitem>填充所有方块</guimenuitem></menuchoice>，或者按<keycap>Control-A</keycap>。</para>
+	    
+	    <warning>
+
+	    	    <para>这个特性应当仅用来在您被一个困难的游戏卡住时帮助您。在一个简单的游戏中使用这个特性可能会一键解决整个谜题，导致游戏很无聊！</para>
+		    </warning>
+	    	    </sect3>
+
+    </sect2> 
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-highlighting"> 
+      <title>高亮</title> 
+      <para>您可以开启高亮从而自动用不同颜色高亮当前行、列和盒子。这使观察哪些值不能进入当前方块更加容易。要打开高亮，您可以：</para> 
+      <itemizedlist>
+      <listitem><para>点击<guibutton>高亮显示</guibutton></para></listitem>
+      <listitem><para><menuchoice><guisubmenu>查看</guisubmenu><guimenuitem>高亮显示</guimenuitem></menuchoice></para></listitem>
+      </itemizedlist>
+
+<figure id="highlight-fig"> 
+	<title>带高亮的<application>数独</application></title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>高亮使察看行、列和盒子变得容易。</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      </sect2>
+
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-trackers"> 
+      <title>跟踪器</title> 
+      <para>您可以用跟踪器来一次跟踪多个动作。受跟踪的动作将以不同颜色输入，使它们在视觉上相区别。您也可以一次性删除所有跟踪的动作。这在用试错法解困难的谜题时尤为有用。</para>
+      <note><para>一些数独玩家认为绝不应使用试错法解决谜题。这些玩家不应使用这一特性。</para></note>
+
+            <para>您可以通过做以下动作的一个开启跟踪界面：</para>
+
+	    <itemizedlist>
+
+	      <listitem>
+	       <para>
+		<menuchoice> 
+			  <guimenu>工具</guimenu> 
+			  <guimenuitem>跟踪挑拣</guimenuitem>
+		</menuchoice>
+	       </para>
+	     </listitem>
+             <listitem><para>点击<guibutton>跟踪条件</guibutton></para></listitem>
+           </itemizedlist>
+      <para>这会在当前游戏的右边调出一个跟踪器列表。通过点击<guibutton>添加跟踪器</guibutton>创建一个新跟踪器。从这点开始，您输入的任何值都会是所选跟踪器的一部分。</para>
+      <para>您可以通过从列表中选择跟踪器并点击<guibutton>清除跟踪器</guibutton>来清除一个跟踪器中所有值。您可以通过点击<guibutton>清除其它</guibutton>来清除不是这个跟踪器的所有值。</para>
+    </sect2> 
+  </sect1>
+  <!-- ============= Customization ============================= -->
+  <!-- Use this section to describe how to customize the application. -->
+  <sect1 id="myapp-printing"> 
+    <title>打印数独</title> 
+    <para>GNOME 数独可以为您打印游戏以在纸上玩。如果您不得不离开电脑但想完成您已开始的游戏，或者您想打印一堆谜题来以后做，这很有用。</para>
+
+    <para>要打印您正在玩的谜题，点击<guibutton>打印</guibutton>或者选择<menuchoice><guimenu>游戏</guimenu><guimenuitem>打印</guimenuitem></menuchoice>。这会包含您已经填入的数字。</para>
+    
+    <para>要打印空谜题，选择<menuchoice><guimenu>游戏</guimenu><guimenuitem>打印多个数独</guimenuitem></menuchoice>。</para>
+
+      <para>您接着会看到一个打印对话框，让您选择想要打印多少个游戏以及每页想打印多少个（每页打印的游戏越多，游戏就越小）。</para>
+
+      <para>您也可以选择希望的游戏所处的难度范围。游戏将以从最简单到最难的难度顺序打印。</para>
+
+      <para>要为自己创建一个 25 页的迷你数独书，您可以选择打印 100 个数独，每页 4 个，游戏从简单到难。</para>
+
+<figure id="printing-fig"> 
+	<title>从<application>数独</application>打印一个迷你数独书</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/Print_Sudokus.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>这回打印 25 页，每页 4 个数独。</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      <para><application>数独</application>默认不会打印您已经玩过的游戏。如果您为一个朋友打印游戏，或者您不在意重复游戏，您可以勾选<guibutton>在待打印游戏列表中包含已玩过的游戏</guibutton>。</para>
+
+      <para>您也可以手动选择想要打印的游戏，展开<guibutton>游戏列表</guibutton>并在列表中选择多个谜题。</para>
+    
+  </sect1>
+  
+  <sect1 id="mayapp-bugs">
+  <title>已知问题和限制</title>
+  <sect2>
+  <title>受限的谜题统计信息</title>
+
+    <para>GNOME 数独根据可以迅速填充的方块数来对谜题评级。谜题统计信息框向您显示了总体评级和三条信息：</para>
+
+    <itemizedlist>
+    <listitem><para>通过消去法可以填充的方块数，从空的格子开始（例如，此盒子中仅能填一个 2，则它必然是 2）</para></listitem>
+    <listitem><para>通过填充法可以填充的方块数，从空的格子开始（例如，此行中仅有一个方块可以是 2，则它必然是 2）</para></listitem>
+    <listitem><para>在求解谜题中，计算机必须用试错法或“猜测”来解决谜题的次数。</para></listitem>
+    </itemizedlist>
+    <para>很多用户对计算机求解器使用试错法感到不安，特别是自一些数独高手说绝不应使用猜测来解决谜题以来。可以应用很多其它算法来帮助计算机求解数独，例如三链数删减和矩形对角线模式。</para>
+
+    <para>目前，<application>数独</application>仅使用上面描述的两种算法以及试错法。当统计信息框说<application>数独</application>需要使用 X  次试错法，它并<emphasis>不</emphasis>意味着人也要用试错法来解决谜题。</para>
+  
+  </sect2>
+
+ </sect1>
+
+<!-- ============= About ================================== -->
+<!-- This section contains info about the program (not docs), such as
+      author's name(s), web page, license, feedback address. This
+      section is optional: primary place for this info is "About.." box of
+      the program. However, if you do wish to include this info in the
+      manual, this is the place to put it. Alternatively, you can put this information in the title page.-->
+  <sect1 id="myapp-about"> 
+    <title>关于<application>数独</application></title> 
+    <para><application>数独</application>由 Tom Hinkle (<email>tmhinkle@gmail.com</email>)编写。<application>数独</application>现在是 GNOME 游戏的一部分。</para>
+    <para>要报告关于此程序和手册的错误或者提建议，请参阅 <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME 用户指南</ulink>的反馈部分。</para>
+
+    <para>这个程序在由自由软件基金会发布的 GNU 通用公共许可证协议下分发，可以是许可证第二版或(由您选择)的更新版本。协议副本可以在这个<ulink url="ghelp:gpl" type="help">链接</ulink>中找到，或者在程序源代码包中包含的 COPYING 文件中找到。</para>
+
+  </sect1> 
+</article>

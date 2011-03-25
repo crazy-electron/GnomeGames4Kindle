@@ -1,0 +1,112 @@
+Things to fix:
+  - multi-line statusbar messages text get cuts off in the toolbar on maemo,
+    instead of being two lines (and we might need to make the text smaller)
+  - consider setting board.c:MAX_DELTA to 0.25 which looks nicer
+  - check why some calls in cscmi.c are protected by the exception catcher,
+    while others are not
+  - now that we put CallData on the stack, we shouldn't need to explicitly
+    gc_protect our objects in game.c
+
+Ideas:
+  - reimplement game timeout handling (no rule sets require them atm)
+  - portrait mode
+  - implement a11y
+
+Game features:
+
+Implement the dealable feature. See bug #445955.
+
+                            dealable?
+agnes                       DONE
+athena                      DONE
+auld_lang_syne              DONE
+aunt_mary                   DONE
+backbone                    DONE
+bakers_dozen                NOT NEEDED
+bakers_game                 NOT NEEDED
+bear_river
+beleaguered_castle          NOT NEEDED
+block_ten                   NOT NEEDED
+bristol                     DONE
+camelot                     DONE
+canfield                    DONE
+carpet                      DONE
+chessboard                  NOT NEEDED
+clock                       NOT NEEDED
+cover                       NOT NEEDED
+cruel                       DONE
+diamond_mine                NOT NEEDED
+doublets                    DONE
+eagle_wing                  DONE
+easthaven                   
+eight_off                   NOT NEEDED
+elevator                    DONE
+escalator                   DONE
+first_law
+fortress                    NOT NEEDED
+fortunes
+fourteen                    NOT NEEDED
+forty_thieves
+freecell                    NOT NEEDED
+gaps                        maybe needed (double-click action)
+gay_gordons                 NOT NEEDED
+giant
+glenwood
+gold_mine                   DONE
+golf
+gypsy
+helsinki
+hopscotch
+isabel                      NOT NEEDED
+jamestown                   NOT NEEDED
+jumbo
+kansas
+king_albert                 NOT NEEDED
+kings_audience
+klondike
+klondike_three_decks        DONE
+labyrinth
+lady_jane
+maze                        NOT NEEDED
+monte_carlo
+napoleons_tomb
+neighbor
+odessa                      maybe (double-click action)
+osmosis
+peek
+pileon                      NOT NEEDED
+plait
+poker                       NOT NEEDED
+quatorze                    NOT NEEDED
+royal_east
+saratoga                    DONE
+scorpion
+scuffle
+seahaven                    NOT NEEDED
+sir_tommy
+spider
+spiderette
+spider_three_decks
+straight_up
+streets_and_alleys          NOT NEEDED
+template
+ten_across                  NOT NEEDED
+terrace
+thieves
+thirteen                    DONE
+thumb_and_pouch             DONE
+treize
+triple_peaks                DONE
+union_square
+valentine
+westhaven
+whitehead                   DONE
+will_o_the_wisp             
+yield
+yukon                       NOT NEEDED
+zebra                       NOT NEEDED
+
+
+[This is now an empty section. It will occasionally be used to track which
+games have, or have not, been adapted for particular features. The
+droppable feature was the last such example (see bug #305609).]

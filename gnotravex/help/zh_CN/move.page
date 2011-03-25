@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="move" xml:lang="zh_CN">
+
+  <info>
+    <link type="guide" xref="index#play" group="two"/>
+    <link type="seealso" xref="usage"/>
+    <desc>如何移动盘面上的方块</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  
+  <title>移动方块</title>
+  
+  <section id="move-piece">
+    <title>移动方块</title>
+    <p>要移动一个方块，您需要点击并按住方块，然后把它拖动到新的位置（左侧的盒子或者右侧的盒子都可以），最后松开鼠标。</p>
+    <p>这些移动并不是永久的，可以恢复。</p>
+    <note>
+      <p>左侧盒子里面的方块可以同时向某个方向移动一格，详见 <link xref="快捷键"/>。</p>
+    </note>
+  </section>
+  <section id="move-avoid">
+    <title>我不想拖动</title>
+    <p>如果您觉得拖动方块不太舒服，可以更改一下行为，这样您只要点击一个方块，到了新的位置再点击一下就可以了。</p>
+    <p>要这样做，找到菜单栏，选择 <gui style="menu">移动</gui>，点击 <gui style="checkbox">单击移动</gui> 即可。</p>
+  </section>
+</page>

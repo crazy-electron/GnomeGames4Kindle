@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Four-in-a-Row</application>">
+<!ENTITY appname "Four-in-a-Row">
+<!ENTITY version "2.8">
+]>
+<!-- ===== DOCUMENT HEADER ===== -->
+<article id="index" lang="ca">
+<!-- please do not change the id -->
+<!-- translators, change lang to the appropriate code -->
+  <articleinfo>
+    <title>Manual del Quatre en ratlla</title>
+    <abstract role="description">
+      <para>L'objectiu del Quatre en ratlla és col·locar quatre fitxes en fila vertical, horitzontal o diagonal mentre l'adversari intenta bloquejar-vos i fer la seva fila de quatre. El Quatre en ratlla es pot jugar contra una altra persona o contra l'ordinador.</para>
+    </abstract>
+
+    <copyright>
+      <year>2001-2002</year>
+      <holder>Timothy Musson</holder>
+    </copyright><copyright><year>2007, 2008</year><holder>Joan Duran (jodufi@gmail.com)</holder></copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+     <year>2000</year>
+     <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+    <publisher role="maintainer"> 
+      <publishername>Projecte de documentació del GNOME</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+	<para>Teniu permís per a copiar, distribuir i/o modificar aquest document, sota els termes de la Llicència de documentació lliure GNU (GFDL), versió 1.1 o qualsevol versió publicada posteriorment per la Free Software Foundation, sense seccions invariants, sense texts de portada i sense texts de contraportada. Podeu trobar una còpia de la GFDL en aquest <ulink type="help" url="ghelp:fdl">enllaç</ulink> o en el fitxer COPYING-DOCS distribuït amb aquest manual.</para>
+         <para>Aquest manual forma part d'una col·lecció de manuals del GNOME distribuïts sota la GFDL. Si voleu distribuir aquest manual independentment de la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal com es descriu a la secció 6 de la llicència.</para>
+
+	<para>Molts dels noms que les empreses utilitzen per a distingir els seus productes i serveis es consideren marques comercials. Quan aquests noms apareguin en qualsevol documentació del GNOME, si els membres del Projecte de documentació del GNOME han estat avisats pel que fa a les marques, els noms apareixeran en majúscules o amb les inicials en majúscules.</para>
+
+	<para>EL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT S'OFEREIXEN SOTA ELS TERMES DE LA LLICÈNCIA DE DOCUMENTACIÓ LLIURE DE GNU, TENINT EN COMPTE QUE: <orderedlist>
+		<listitem>
+		  <para>EL DOCUMENT S'OFEREIX «TAL COM ÉS», SENSE CAP TIPUS DE GARANTIA, NI EXPLÍCITA NI IMPLÍCITA; AIXÒ INCLOU, SENSE LIMITAR-S'HI, LES GARANTIES QUE EL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT NO TINGUI DEFECTES, SIGUI COMERCIALITZABLE, SIGUI ADEQUAT PER A UN ÚS CONCRET O NO INFRINGEIXI CAP LLEI. TOT EL RISC PEL QUE FA A LA QUALITAT, EXACTITUD I RENDIMENT DEL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT ÉS VOSTRE. EN CAS QUE EL DOCUMENT RESULTÉS DEFECTUÓS EN QUALSEVOL ASPECTE, VÓS (NO PAS L'ESCRIPTOR INICIAL, L'AUTOR O CAP ALTRE COL·LABORADOR) ASSUMIU TOT EL COST DE MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA; I </para>
+		</listitem>
+		<listitem>
+		  <para>EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGUI PER AGREUJAMENT (INCLOENT-HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR ORIGINAL, QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA VERSIÓ MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN RESPONSABLES DAVANT DE NINGÚ PER CAP DANY DIRECTE, INDIRECTE, ESPECIAL, ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITAR-S'HI, ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FEINA, FALLADA O MALFUNCIONAMENT DE L'ORDINADOR, O QUALSEVOL ALTRA PÈRDUA O DANY RELACIONAT AMB L'ÚS DEL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT, FINS I TOT SI S'HA INFORMAT AQUESTA PART DE LA POSSIBILITAT D'AQUESTS DANYS.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+
+    <authorgroup>
+      <author>
+        <firstname>Timothy</firstname>
+        <surname>Musson</surname>
+        <affiliation>
+          <!-- <orgname></orgname> -->
+          <address><email>trmusson@ihug.co.nz</email></address>
+        </affiliation>
+      </author>
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+
+      <othercredit role="translator">
+        <firstname>Latin</firstname> 
+        <surname>Translator 1</surname> 
+        <affiliation> 
+          <orgname>Latin Translation Team</orgname> 
+          <address> <email>translator@gnome.org</email> </address> 
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+        <revnumber>Manual del Quatre en ratlla (versió 2.8)</revnumber>
+        <date>Setembre de 2004</date>
+        <revdescription>
+          <para role="author">Timothy Musson <email>trmusson@ihug.co.nz</email></para>
+          <para role="publisher"/>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>Aquest manual descriu la versió 2.12 del Quatre en ratlla.</releaseinfo>
+
+    <legalnotice>
+      <title>Comentaris</title>
+      <para>To report a bug or make a suggestion regarding the Four-in-a-Row
+        application or this manual, follow the directions in the
+        <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME Feedback Page</ulink>.
+      </para>
+    </legalnotice>
+  </articleinfo>
+
+
+  <!-- ============= Document Body ============================= -->
+
+  <!-- ============= Introduction ============================== -->
+
+
+  <sect1 id="intro">
+
+    <title>Introducció</title>
+
+    <para>El <application>Quatre en ratlla</application> és un joc de quatre en ratlla per al projecte GNOME. L'objectiu del joc és construir una línia amb quatre boles mentre intenteu impedir que l'adversari (humà o ordinador) construeixi la seva línia. La línia pot ser horitzontal, vertical o diagonal.</para>
+
+    <para>Per a executar el <application>Quatre en ratlla</application>, seleccioneu <guimenuitem>Quatre en ratlla</guimenuitem> en el submenú <guimenu>Jocs</guimenu> del <guimenu>Menú principal</guimenu> o introduïu <command>gnect</command> en la línia d'ordres.</para>
+
+    <para>El <application>Quatre en ratlla</application> està inclòs en el paquet <filename>gnome-games</filename>, el qual és part de l'entorn d'escriptori GNOME. Aquest document descriu la versió 2.8 del <application>Quatre en ratlla</application>.</para>
+
+   <para>El quatre en ratlla també admet partides <link linkend="network-games">multijugador</link> amb dos jugadors humans en mode cadira-calenta o en xarxa.</para>
+
+
+  </sect1>
+
+
+  <!-- ============= Usage ===================================== -->
+
+
+  <sect1 id="usage">
+
+    <title>Utilització bàsica</title>
+
+    <!-- ===== How to play ===== -->
+
+    <sect2 id="playing">
+
+      <title>Jugar al Quatre en ratlla</title>
+
+      <para>Per a iniciar una partida nova del Quatre en ratlla, seleccioneu <menuchoice><guimenu>Partida</guimenu><guimenuitem>Nova</guimenuitem></menuchoice>.</para>
+
+      <para>El <interface>tauler de joc</interface> consisteix en set columnes i sis files. A sobre d'aquestes, una fila especial indica quin és el jugador actual i la bola que s'està jugant. Cada moviment consisteix en deixar caure una bola en una de les columnes. La bola aterra a la fila buida més alta de la columna seleccionada.</para>
+        
+      <para>Per a fer un moviment, feu clic en la columna amb el ratolí. Per a jugar amb el teclat, mogueu la bola de la fila superior amb les tecles de cursor esquerra i dreta, i deixeu-la en el seu lloc amb la tecla de cursor avall. La bola caurà a la fila buida més alta d'aquesta columna.</para>
+
+      <!-- Figure -->
+      <mediaobject id="mainwindow-fig">
+        <imageobject>
+          <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="trm"/>
+        </imageobject>
+        <textobject>
+          <phrase>Finestra principal del Quatre en ratlla</phrase>
+        </textobject>
+        <caption><para>Finestra principal del Quatre en ratlla</para></caption>
+      </mediaobject>
+
+      <para>Es guanya la partida quan un dels dos jugadors aconsegueix alinear quatre de les seves boles horitzontalment, verticalment o diagonalment. Si el tauler s'omple sense un guanyador, la partida s'acaba amb empat.</para>
+
+    </sect2>
+    
+    <!-- ===== Commands ===== -->  
+    
+    <sect2 id="commands">
+      <title>Ordres</title>
+      <anchor id="menubar"/><!-- id for removed section -->
+      
+      <para>Per a desfer un moviment, seleccioneu <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>Z</keycap></keycombo></shortcut><guimenuitem>Desfés el moviment</guimenuitem></menuchoice>. Si esteu jugant contra un amic, això desfarà un moviment. Si esteu jugant contra l'ordinador, això desfarà l'últim moviment de l'ordinador i després el vostre. Repetir-ho farà que el tauler torni a l'estat inicial.</para>
+      <para>Seleccioneu <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>H</keycap></keycombo></shortcut><guimenuitem>Pista</guimenuitem></menuchoice> per a obtenir una suggeriment de l'ordinador per al moviment següent. Aquesta es mostra a la barra d'estat.</para>
+      
+      <para>Seleccioneu <menuchoice><guimenuitem>Puntuacions</guimenuitem></menuchoice> per a mostrar el número de victòries i empats de la sessió actual. La puntuació es posarà a zero si es modifica la secció de jugadors en les preferències.</para>      
+
+      
+    </sect2>  
+
+    <!-- ===== Preferences ===== -->
+
+    <sect2 id="prefsdialog">
+
+      <title>Preferències</title>
+
+      <para>Per a canviar els paràmetres del joc, seleccioneu <guimenuitem>Preferències</guimenuitem> en el menú <guimenu>Paràmetres</guimenu>. Això obre el <interface>diàleg de preferències</interface>.</para>
+
+      <para>Les opcions de configuració en la pestanya <guilabel>Partida</guilabel> són: <variablelist>
+
+          <varlistentry>
+            <term><guilabel>Jugador un</guilabel> i <guilabel>Jugador dos</guilabel></term>
+            <listitem>
+              <para>Aquestes dues columnes indiquen al <application>Quatre en ratlla</application> qui està jugant i, si és l'ordinador, en quin nivell jugarà. Per a jugar contra un amic, seleccioneu Humà per al Jugador un i per al Jugador dos.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Tema</guilabel></term>
+            <listitem>
+              <para>El menú de tema llista els temes disponibles i us permet seleccionar el preferit.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Habilita les animacions</guilabel></term>
+            <listitem>
+              <para>Aquí podeu commutar l'animació del joc entre habilitada i inhabilitada.</para>
+            </listitem>
+          </varlistentry>
+
+        </variablelist></para>
+      <para>Finalment hi ha la pestanya de <guilabel>Controls</guilabel> per a canviar els controls del teclat. Per a canviar un control, feu doble clic en l'entrada apropiada i premeu la tecla nova.</para>
+
+    </sect2>
+  </sect1>
+
+
+  <!-- ===== Custom Themes ===================================== -->
+
+
+  <sect1 id="custom">
+
+    <title>Crear temes nous</title>
+
+    <para>Aquesta secció s'inclou en el cas que voleu fer els vostres temes per al <application>Quatre en ratlla</application>. S'assumeix que esteu acostumat a l'edició bàsica de text, programari de gràfics i la línia d'ordres.</para>
+
+    <sect2 id="images">
+
+      <title>Imatges</title>
+
+      <para>Els jocs de fitxes del <application>Quatre en ratlla</application> contenen sis fitxes de la mateixa mida, alineades horitzontalment. D'esquerra a dreta:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Bola del jugador un com apareix en el tauler de joc</para>
+        </listitem>
+        <listitem>
+          <para>Bola del jugador dos com apareix en el tauler de joc</para>
+        </listitem>
+        <listitem>
+          <para>Fons del tauler de joc</para>
+        </listitem>
+        <listitem>
+          <para>Fons de la fila superior</para>
+        </listitem>
+        <listitem>
+          <para>Bola del jugador un com apareix en la fila superior</para>
+        </listitem>
+        <listitem>
+          <para>Bola del jugador dos com apareix en la fila superior</para>
+        </listitem>
+      </orderedlist>
+
+      <figure id="shot1">
+        <title>Exemple d'un joc de fitxes</title>
+        <screenshot>
+          <screeninfo>Aquesta imatge mostra les sis fitxes d'un joc de fitxes</screeninfo>
+          <graphic format="PNG" fileref="figures/tileset.png" srccredit="TRM"/>
+        </screenshot>
+      </figure>
+
+      <para>Les fitxes tres i quatre es repetiran per tot el tauler de joc i la fila superior a no ser que s'especifiqui una imatge de fons de pantalla completa en el fitxer de temes.</para>
+
+      <tip>
+        <title>Consell</title>
+        <para>Es recomana el format PNG per als jocs de fitxes. La primera, segona, cinquena i sisena fitxes haurien de contenir alguna transparència si voleu que el fons es vegi a través d'elles. La tercera i quarta fitxa haurien de ser sòlides, sense transparències, encara que utilitzeu una imatge de fons de pantalla completa amb el tema.</para>
+      </tip>
+
+      <tip>
+        <title>Consell</title>
+        <para>Les fitxes poden ser quadrades o rectangulars, i de qualsevol mida que vulgueu. La majoria de jocs de fitxes que venen amb el <application>Quatre en ratlla</application> utilitzen fitxes quadrades que mesuren 50 píxels per 50 píxels.</para>
+      </tip>
+
+      <para>Per a utilitzar una imatge de fons de pantalla completa, hi ha més feina a fer. Diguem que les fitxes mesuren 50 per 50 píxels. Les dimensions del joc són 7 per 7 fitxes, incloent la fila superior, de manera que la imatge de fons per al joc de fitxes mesuraria 350 per 350 píxels.</para>
+
+      <tip>
+        <title>Consell</title>
+        <para>El <application>Quatre en ratlla</application> escala automàticament la imatge de fons si no coincideix amb el joc de fitxes. Això significa que podeu fer versions «gran» i «petita» del tema, les dues utilitzant la mateixa imatge de fons, per tenir una versió gran i una petita del joc de fitxes.</para>
+      </tip>
+
+      <para>Per tant, ara teniu un joc de fitxes i potser una imatge de fons que va amb el joc. El pas següent és posar-ho en la ubicació correcta.</para>
+
+    </sect2>
+
+
+    <sect2 id="directories">
+
+      <title>Ajuntar-ho tot</title>
+
+      <para>L'últim pas es posar les imatges on el <application>Quatre en ratlla</application> pugui trobar-ho. Podeu posar-ho en el directori d'instal·lació del Quatre en ratlla (que dependrà del sistema en particular), però segurament el directori d'inici sigui la millor idea.</para>
+
+      <para>Creu un directori <filename class="directory">~/.gnect</filename> i també <filename class="directory">~/.gnect/pixmaps</filename>. Aquests noms són importants, ja que el <application>Quatre en ratlla</application> no mirarà enlloc més.</para>
+
+      <para>Copieu les imatges en el directori pixmaps.</para>
+
+      <para>Si inicieu el <application>Quatre en ratlla</application> des de la línia d'ordres, us donarà indicis sobre qualsevol problema que tingui amb el tema nou. Si no n'hi ha, trobareu el tema nou llistat en el <interface>diàleg de preferències</interface>.</para>
+
+      <para>A divertir-se!</para>
+
+    </sect2>
+
+
+  </sect1>
+
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Jocs en xarxa</title>
+  <para>El Quatre en ratlla admet partides en xarxa multijugador, proporcionat per el <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink>. En connectar a un servidor de Quatre en ratlla d'Internet, podeu desafiar altres jugadors en partides multijugador. Per a obtenir notícies, actualitzacions i una llista de servidors on connectar-vos, vegeu el <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">lloc web del gnome-games</ulink>.</para>
+  <para>Per a iniciar la partida multijugador del Quatre en ratlla, seleccioneu <menuchoice><guimenu>Partida</guimenu><guimenuitem>Joc en xarxa</guimenuitem></menuchoice> en el menú del Quatre en ratlla.</para> 
+
+<sect2 id="connecting">
+<title>Connectar a un servidor de xarxa Quatre en ratlla</title>
+<para>El diàleg de connexió del Quatre en ratlla es mostra quan s'inicia una partida en xarxa nova. Aquest diàleg us permet seleccionar un servidor on connectar-vos, i especificar el nom d'usuari que tindreu en connectar-vos-hi.</para>
+
+<para>És possible connectar-vos a un servidor amb un compte de convidat o un compte registrat normal. Els comptes de convidats us permeten entrar anònimament, mentre que si entreu amb un compte normal us permet reservar el nom d'usuari que està protegit per la contrasenya que seleccioneu.</para>
+
+<para>Hauríeu de seleccionar l'opció <guimenuitem>Entrada com a convidat</guimenuitem> si voleu un compte de convidat anònim. Si voleu crear un compte d'entrada nou, seleccioneu l'opció <guimenuitem>Entrada per primera vegada</guimenuitem>, amb el nom d'usuari, contrasenya i correu electrònic que vulgueu. Si ja heu creat un compte, us podeu connectar si seleccioneu l'opció <guimenuitem>Entrada normal</guimenuitem> i introduïu el nom d'usuari i la contrasenya que heu triat.</para>
+<para>Per a connectar-vos a un servidor, feu clic en el botó <guimenuitem>Connecta</guimenuitem>.</para>
+<figure id="connect">
+<title>El diàleg de connexió a la xarxa del Quatre en ratlla.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>El diàleg de connexió a la xarxa del Quatre en ratlla.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Entrada a una sala de joc</title>
+<para>Quan us hàgiu connectat a un servidor, podeu seleccionar a quina sala de joc voleu entrar. Per a jugar una partida multijugador del Quatre en ratlla, seleccioneu la sala del Quatre en ratlla. Si voleu ser l'amfitrió d'una partida, feu clic en el botó Llança. Creareu un tauler nou on els altres jugadors poden jugar contra vos. Si hi ha altres partides iniciades, podeu fer doble clic en un tauler de partida existent per a entrar-hi. La llista de taulers de partides a la dreta mostra el número de seients disponibles, que significa el número de jugadors que poden entrar al tauler de partida.</para>
+<figure id="tables">
+<title>Aquest diàleg de xarxa del Quatre en ratlla us permet entrar a una sala de joc per a cercar altres jugadors.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Aquest diàleg de xarxa del Quatre en ratlla us permet entrar a una sala de joc per a cercar altres jugadors.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>Quan creeu un tauler nou per a partides del Quatre en ratlla, es mostrarà un diàleg de preferències que us permet personalitzar la partida, com ara establir el número mínim de jugadors per a la partida. Quan el número total de seients s'hagin ocupat, no es permetrà entrar a més jugadors en aquest tauler de partida.</para>
+<para>És possible fer un xat amb altres jugadors en els jocs en xarxa. Demaneu consell o ajuda mentre jugueu les partides, però sigueu educat amb els altres jugadors.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Espera que els altres jugadors entrin a la partida</title>
+<para>Quan hàgiu entrat a un tauler de joc, heu d'esperar fins que hagin entrat suficients jugadors al tauler. L'element de menú <guimenuitem>Llista de jugadors</guimenuitem> us permet veure una llista de jugadors que han entrat a la partida. La partida començarà de seguida que s'hagi aconseguit el número total de jugadors.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Jugar partides multijugador en el Quatre en ratlla</title>
+<para>Les partides multijugador en el Quatre en ratlla tenen més o menys les mateixes regles que una partida normal del Quatre en ratlla, excepte que esteu jugant contra jugadors humans. Això significa que possiblement altres estratègies siguin millors que les utilitzades contra jugadors d'intel·ligència artificial.</para>
+<para>Quan un jugador hagi guanyat, la partida finalitza i podeu tornar a la pantalla inicial de joc en xarxa. Llavors podeu jugar una altra partida addictiva multijugador del Quatre en ratlla.</para>
+</sect2>
+
+</sect1>
+
+
+
+  <!-- ===== Bugs ============================================== -->
+
+
+  <sect1 id="bugs">
+
+    <title>Errors i limitacions conegudes</title>
+
+    <para>A vegades l'animació de caiguda de les boles no sembla tant suau com hauria de ser.</para>
+
+  </sect1>
+
+
+  <!-- ===== Authors =========================================== -->
+
+
+  <sect1 id="authors">
+
+    <title>Autors</title>
+
+    <para>En Timothy Musson (<email>trmusson@ihug.co.nz</email>) i en David Neary (<email>bolsh@gimp.org</email>) han escrit el <application>Quatre en ratlla</application>. Altres persones han invertit temps en ajudar de diferents maneres des de que va començar la feina del <application>Quatre en ratlla</application>.</para>
+    <para>En Giuliano Bertoletti ha escrit el <ulink type="http" url="http://www.ce.unipr.it/~gbe/velena.html">motor Velena</ulink>, el jugador automàtic principal del <application>Quatre en ratlla</application>. Li estem molt agraïts per deixar-nos incloure el seu treball, sense el qual el <application>Quatre en ratlla</application> segurament no valdria la pena.</para>
+    <para>En Timothy Musson ha escrit aquest manual.</para>
+    <para>Per a informar d'un error o fer algun suggeriment quant a aquest aplicació o aquest manual, seguiu les indicacions a la <ulink url="ghelp:user-guide?feedback-bugs" type="help">pàgina de comentaris del GNOME</ulink>.</para>
+
+
+<!-- For translations: uncomment this:
+
+  <para>
+    Latin translation was done by ME
+    (<email>MYNAME@MYADDRESS</email>). Please send all comments and
+    suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+-->
+
+  </sect1>
+
+
+  <!-- ============= License =================================== -->
+
+
+  <sect1 id="license">
+
+    <title>Llicència</title>
+
+    <para>Aquest programa és programari lliure; podeu redistribuir-lo i/o modificar-lo sota els termes de la <citetitle>Llicència pública general de GNU</citetitle> tal com publica la Free Software Foundation; tant en la versió 2 de la llicència, o (a la vostra opció) una versió posterior.</para>
+
+    <para>Aquest programa es distribueix amb l'esperança de que sigui útil, però SENSE CAP GARANTIA; fins i tot sense la garantia implícita de COMERCIALITZACIÓ o ADEQUACIÓ A UN ÚS CONCRET. Per a més detalls vegeu la <citetitle>Llicència pública general de GNU</citetitle>.</para>
+
+    <para>S'inclou una còpia de la <citetitle>Llicència pública general de GNU</citetitle> en l'apèndix de la <citetitle>Guia d'usuaris del GNOME</citetitle>. També podeu obtenir una copia de la <citetitle>Llicència pública general de GNU</citetitle> de la Free Software Foundation visitant el <ulink type="http" url="http://www.fsf.org">seu lloc web</ulink> o escrivint a <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+
+  </sect1>
+
+</article>

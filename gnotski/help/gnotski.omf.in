@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?>
+<omf>
+  <resource>
+    <subject category="GNOME|Games"/>
+    <type>manual</type>
+    <relation seriesid="3f83b2c8-40c4-4d38-b7b6-e59ac1efb954"/>
+    <rights type="GNU FDL" license.version="1.1" holder="Andrew Sobala"/>
+  </resource>
+</omf>

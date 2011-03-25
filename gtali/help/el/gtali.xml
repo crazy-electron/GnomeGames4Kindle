@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Tali</application>">
+<!ENTITY appname "Tali">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="el">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Εγχειρίδιο του <application>Τάλι</application></title>
+    <abstract role="description">
+      <para>Το Τάλι μοιάζει με το Yahtzee ή με πόκερ για ζάρια. Ο παίχτης ρίχνει τα ζάρια με στόχο να επιτύχει τον καλύτερο δυνατό συνδυασμό, π.χ. καρέ, μικρή κέντα, φουλ. Ο παίκτης δικαιούται τρεις ζαριές τη φορά. Για κάθε ζαριά μπορεί να αποφασίσει αν θα κρατήσει κάποια από τα ζάρια που έχει ή αν θα ξαναρίξει όλα τα ζάρια.</para>
+    </abstract>
+    <copyright>
+      <year>2001</year>
+      <holder>Scott D. Heavner</holder>
+    </copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Έργο Τεκμηρίωσης GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Δίνεται άδεια για αντιγραφή, διανομή και/ή τροποποίηση του εγγράφου υπό τους όρους της GNU Free Documentation License (GFDL), Έκδοση 1.1 ή μεταγενέστερη εκδιδόμενη από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Σταθερά Εδάφια, χωρίς Εξώφυλλα Κειμένου, και χωρίς Οπισθόφυλλα Κειμένου. Μπορείτε να βρείτε ένα αντίγραφο της GFDL σε αυτόν τον <ulink type="help" url="ghelp:fdl">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανεμήθηκε με αυτόν τον οδηγό.</para>
+         <para>Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του GNOME όπως διανέμεται υπό τους όρους της GFDL. Εάν επιθυμείτε να διανείμετε αυτή την τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 της άδειας.</para>
+
+	<para>Πολλά από τα ονόματα που χρησιμοποιούνται από εταιρίες για να ξεχωρίσουν τα προϊόντα και τις υπηρεσίες είναι σήματα κατατεθέν. Όπου αυτά τα ονόματα εμφανίζονται στην τεκμηρίωση GNOME, και τα μέλη της ομάδας τεκμηρίωσης GNOME έχουν γνώση αυτών, τότε αυτά αναγράφονται με κεφαλαίους χαρακτήρες ή με αρχικούς κεφαλαίους χαρακτήρες.</para>
+
+	<para>ΤΟ ΈΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ GNU FREE DOCUMENTATION LICENSE ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: <orderedlist>
+		<listitem>
+		  <para>Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ ΠΑΡΕΧΕΤΑΙ "ΩΣ ΕΧΕΙ", ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ ΟΤΙ ΜΠΟΡΕΙ ΝΑ ΕΞΥΠΗΡΕΤΗΣΕΙ ΚΑΠΟΙΟ ΣΚΟΠΟ Η ΟΤΙ ΕΙΝΑΙ ΧΩΡΙΣ ΣΦΑΛΜΑ. ΟΛΟΚΛΗΡΗ Η ΕΥΘΥΝΗ ΓΙΑ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ ΚΑΙ ΛΕΙΤΟΥΡΓΙΚΟΤΗΤΑ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΝΗΚΕΙ ΣΕ ΕΣΑΣ. ΕΑΝ Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ Ή ΠΑΡΑΛΛΑΓΗ ΑΥΤΗΣ ΕΙΝΑΙ ΛΑΘΟΣ ΚΑΤΑ ΚΑΠΟΙΟ ΤΡΟΠΟ ΕΣΕΙΣ ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΗΝ ΕΥΘΥΝΗ ΤΗΣ ΔΙΟΡΘΩΣΗΣ. Η ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ ΠΟΥ ΣΥΝΟΔΕΥΕΙ ΑΥΤΗ ΤΗΝ ΤΕΚΜΗΡΙΩΣΗ ΕΙΝΑΙ ΑΝΑΠΟΣΠΑΣΤΟ ΚΟΜΜΑΤΙ ΑΥΤΗΣ. ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ.</para>
+		</listitem>
+		<listitem>
+		  <para>ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΝΟΜΙΚΗ ΣΥΝΘΗΚΗ, ΕΙΤΕ ΜΕΣΩ ΣΥΜΒΟΛΑΙΩΝ Ή ΑΛΛΙΩΣ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ Ο ΣΥΓΓΡΑΦΕΑΣ, Ο ΔΙΑΝΟΜΕΑΣ, Η ΑΛΛΟΣ ΣΥΝΥΠΕΥΘΥΝΟΣ ΓΙΑ ΤΗΝ ΣΥΓΓΡΑΦΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ, ΓΙΑ ΕΜΜΕΣΕΣ Η ΑΜΕΣΕΣ, ΤΥΧΑΙΕΣ Ή ΜΗ ΖΗΜΙΕΣ ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+	
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Scott D</firstname> 
+	<surname>Heavner</surname> 
+	<affiliation> 
+	  <address> <email>sdh@po.cwru.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Τεκμηρίωση του Τάλι V2.8</revnumber> 
+	<date>Σεπτέμβριος 2004</date> 
+	<revdescription> 
+	  <para role="author">Scott D Heavner <email>sdh@po.cwru.edu</email></para>
+	  <para role="publisher">Έργο Τεκμηρίωσης GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Αυτή η τεκμηρίωση καλύπτει την έκδοση 2.12 του Τάλι.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Ανάδραση</title> 
+      <para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με το <application>Τάλι</application> ή την τεκμηρίωση του, ακολουθήστε τις οδηγίες στη <ulink url="ghelp:user-guide?feedback-bugs" type="help">σελίδα ανάδρασης GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME Tali</primary> 
+  </indexterm>
+
+ <!-- ============= Document Body ============================= -->
+
+  <sect1 id="intro">
+    <title>Εισαγωγή</title>
+
+    <para>Το <application>Τάλι</application> είναι ένα είδος πόκερ για ζάρια και με λιγότερα λεφτά. Ρίχνετε τα ζάρια τρεις φορές προσπαθώντας να αποκτήσετε το καλύτερο δυνατό <quote>φύλλο</quote>. Σε κάθε νέα ζαριά μπορείτε να ξαναρίξετε όσα ζάρια θέλετε.</para>
+    <para>Το <application>Τάλι</application> μοιάζει πολύ με το παιχνίδι για ζάρια Yahtzee που αποτελεί σήμα κατατεθέν της Hasbro, Inc.</para>
+
+    <para>Για να παίξετε <application>Τάλι</application>, επιλέξτε <menuchoice><guisubmenu>Παιχνίδια</guisubmenu><guimenuitem>Τάλι</guimenuitem></menuchoice> από το <guimenu>Κύριο μενού</guimenu>, ή πληκτρολογήστε <command>gtali</command> στη γραμμή εντολών.</para>
+
+    <para>Το <application>Τάλι</application> συμπεριλαμβάνεται στο πακέτο <filename>gnome-games</filename>, που αποτελεί τμήμα της επιφάνειας εργασίας του GNOME. Αυτή η τεκμηρίωση καλύπτει την έκδοση 2.12 του <application>Τάλι</application>/.</para>
+  </sect1>
+
+  <sect1 id="playing">
+    <title>Παίζοντας Τάλι</title>
+
+    <figure id="shot1">
+      <title>Το Τάλι εν δράσει</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="Trevor Curtis"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Στιγμιότυπο του κύριου παραθύρου του Τάλι.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Στο ξεκίνημα του παιχνιδιού βλέπετε τα αποτελέσματα της πρώτης σας ζαριάς.</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Κάντε κλικ πάνω στα ζάρια που θέλετε να ξαναρίξετε.</para>
+        </listitem>
+        <listitem>
+          <para>Αφού επιλέξετε τα ζάρια που επιθυμείτε να ξαναρίξετε, πατήστε το κουμπί <guibutton>Ρίξτε τα ζάρια!</guibutton>.</para>
+        </listitem>
+        <listitem>
+	  <para>Αν αποκτήσετε έναν καλό συνδυασμό ή αν δε δικαιούστε άλλες ζαριές, κάντε κλικ στη γραμμή που θεωρείτε ότι αντιστοιχεί στο συνδυασμό που θα σας δώσει την καλύτερη βαθμολογία. Είναι δυνατό να λάβετε μηδενική βαθμολογία. Αν λοιπόν επιλέξετε κατά λάθος άλλη γραμμή, η βαθμολογία σας θα είναι μηδενική. (Αν για παράδειγμα έχετε yahtzee (πέντε όμοια) και κάνετε κλικ στη γραμμή της μεγάλης κέντας, θα λάβετε μηδέν βαθμούς στη γραμμή της μεγάλης κέντας).</para>
+      </listitem>
+    </orderedlist>
+
+    <para>Κάθε συνδυασμός μπορεί να χρησιμοποιηθεί μόνο μία φορά. Άρα, αν έχετε ήδη βαθμολογία σε κάποια γραμμή, δεν μπορείτε να την αλλάξετε αργότερα, αν φέρετε καλύτερη ζαριά.</para>
+
+    <para>Υπάρχει μόνο μία εξαίρεση στον κανόνα: Όσες φορές και να φέρετε πέντε όμοια, μπορείτε να χρησιμοποιείτε τη γραμμή "Πέντε όμοια" και να παίρνετε άλλους πενήντα βαθμούς. Στο τέλος του παιχνιδιού θα δικαιούστε επιπλέον ζαριές μέχρι να γεμίσετε όλες τις γραμμές. Σας προειδοποιούμε όμως ότι αν εισάγετε μηδέν βαθμούς στη γραμμή "Πέντε όμοια" (γιατί την επιλέξατε παρόλο που δεν είχατε τον κατάλληλο συνδυασμό), τότε δεν θα μπορείτε να τη χρησιμοποιήσετε στη συνέχεια, ακόμη κι αν φέρετε πέντε όμοια. Άρα, η τελική σας βαθμολογία για τη γραμμή αυτή θα είναι μηδέν.</para>
+
+    <para>Επίσης, παίρνετε μπόνους 35 βαθμούς επιπλέον, αν η συνολική σας βαθμολογία για τις έξι πάνω γραμμές είναι 63 ή παραπάνω.</para>
+
+    <sect2 id="keyboard">
+    <title>Συντομεύσεις πληκτρολογίου</title> 
+
+      <para>Αντί να κάνετε κλικ με το ποντίκι μπορείτε να χρησιμοποιείτε τα πλήκτρα 1 έως 5 για να εναλλάσσετε την κατάσταση των ζαριών. Το πλήκτρο 1 αντιστοιχεί στο πρώτο ζάρι κ.ο.κ. Για να ρίξετε τα ζάρια και να επιλέξετε γραμμή μπορείτε να χρησιμοποιήσετε τις συνήθεις συντομεύσεις: το Tab για να μετακινείστε από το κουμπί "Ρίξτε τα ζάρια!" στον πίνακα με τις βαθμολογίες, τα βέλη για να μετακινείστε από τη μια γραμμή στην άλλη, και το διάστημα για να επιλέγετε.</para>
+    
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="options">
+    <title>Επιλογές παιχνιδιού</title>
+
+    <figure id="shot2">
+      <title>Προτιμήσεις του Τάλι</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences.png" format="PNG" srccredit="Trevor Curtis"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Διάλογος προτιμήσεων του Τάλι.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+      <variablelist><title>Άνθρωποι παίκτες</title>
+	<varlistentry>
+	  <term><guimenuitem>Αριθμός παικτών</guimenuitem></term>
+	  <listitem>
+            <para>Επιλογή του αριθμού ανθρώπων παικτών. Συνολικά επιτρέπονται μέχρι και έξι παίκτες.</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>  
+      
+    <variablelist><title>Παίκτες υπολογιστή</title>
+      <varlistentry>
+        <term><guimenuitem>Καθυστέρηση μεταξύ ζαριών</guimenuitem></term>
+	<listitem>
+	  <para>Αναγκάζει τους παίκτες του υπολογιστή να κάνουν μια μικρή παύση από ζαριά σε ζαριά, ώστε να μπορείτε να παρακολουθείτε τις κινήσεις τους. Επιβραδύνει λίγο το ρυθμό του παιχνιδιού.</para>
+        </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guimenuitem>Αριθμός αντιπάλων</guimenuitem></term>
+	  <listitem>
+            <para>Επιλογή του αριθμού των παικτών του υπολογιστή. Συνολικά επιτρέπονται έξι παίκτες (άνθρωποι ή παίκτες υπολογιστή). Αν αυξήσετε υπερβολικά τον αριθμό των παικτών του υπολογιστή, ο αριθμός των ανθρώπων θα μειωθεί, προκειμένου οι συνολικοί παίκτες να μην υπερβούν τους έξι.</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>
+      
+    <variablelist><title>Είδος παιχνιδιού</title>
+      <varlistentry>
+        <term><guimenuitem>Χρησιμοποιούμενη εκδοχή του παιχνιδιού</guimenuitem></term>
+	<listitem>
+	  <para>Μπορείτε να παίξετε είτε την κλασική εκδοχή (που μοιάζει με το Yahtzee) ή την εκδοχή με τα χρώματα (που μοιάζει με το Kismet). Αν αλλάξετε είδος παιχνιδιού, θα πρέπει να ξεκινήσετε νέο παιχνίδι για να χρησιμοποιήσετε το νέο είδος.</para>
+        </listitem>
+	</varlistentry>
+      </variablelist>
+      
+      <variablelist>
+	<varlistentry>
+	    <term><guimenuitem>Ονόματα παικτών</guimenuitem></term>
+	    <listitem>
+	      <para>Για να αλλάξετε τα ονόματα των παικτών, απλά εισάγετε νέα ονόματα στα κατάλληλα πεδία.</para>
+	    </listitem>
+	</varlistentry>
+      </variablelist>
+    </sect1>
+
+    <sect1 id="strategy">
+      <title>Στρατηγική του παιχνιδιού</title>
+      <para>Για να αποκτήσετε τους 63 βαθμούς που χρειάζονται για το μπόνους στον πάνω πίνακα θα πρέπει να έχετε τρία όμοια σε κάθε μία από τις πρώτες έξι γραμμές. Αν έχετε παραπάνω από τρία πεντάρια ή εξάρια, τότε μπορείτε να πάρετε το μπόνους ακόμη και αν φέρετε χαμηλότερη βαθμολογία στους άσσους και τα δυάρια. Όταν παίζετε "Χρώματα", το μπόνους είναι 55 βαθμοί αν η βαθμολογία στον πάνω πίνακα είναι μεταξύ 71 και 77, και 75 βαθμοί για βαθμολογίες πάνω από 77.</para>
+      <para>Μην ξεχνάτε ότι δικαιούστε περισσότερα από ένα "Πέντε όμοια". Αν λοιπόν ξαναφέρετε πέντε όμοια, μπορείτε να επιλέξετε και πάλι την αντίστοιχη γραμμή και να αυξήσετε τη βαθμολογία σας. Αυτό ισχύει μόνο για το κλασικό παιχνίδι.</para>
+    </sect1>	
+ <!-- ============= Bugs ================================== -->
+ <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of. 
+      
+      Better to leave this section out than to say something unhelpful. 
+-->
+
+ <sect1 id="bugs">
+  <title>Γνωστά σφάλματα και περιορισμοί</title>
+  <para>Όταν αλλάζετε είδος παιχνιδιου, το παιχνίδι συνεχίζει να χρησιμοποιεί τα παλαιά εικονίδια για τα ζάρια μέχρι να επανεκκινήσετε το gtali. Θα παίζετε το νέο είδος παιχνιδιού, αλλά με τα "λάθος" ζάρια.</para>
+ </sect1>
+
+
+ <sect1 id="glossary">
+   <title>Γλωσσάρι</title>
+   <note>
+     <para>Θυμηθείτε ότι η σειρά των ζαριών δεν παίζει ρόλο.</para>
+   </note>
+   <glossary>
+       <glossentry id="threeofakind"><glossterm>Τρία όμοια</glossterm>
+         <glossdef><para>Τρία ζάρια έχουν τον ίδιο αριθμό. Η βαθμολογία προκύπτει από το σύνολο όλων των ζαριών. Π.χ. 1+2+2+2+5=12</para></glossdef>
+       </glossentry>
+       <glossentry id="fourofakind"><glossterm>Καρέ</glossterm>
+         <glossdef><para>Τέσσερα ζάρια έχουν τον ίδιο αριθμό. Η βαθμολογία προκύπτει από το σύνολο όλων των ζαριών. Π.χ. 2+5+5+5+5=22. Όταν παίζετε "Χρώματα", η βαθμολογία είναι 25 συν το  σύνολο όλων των ζαριών.</para></glossdef>
+       </glossentry>
+       <glossentry id="yahtzee"><glossterm>Πέντε όμοια</glossterm>
+         <glossdef><para>Πέντε όμοια ζάρια. Π.χ. 3,3,3,3,3. Στα "Χρώματα", η βαθμολογία είναι 50 συν το σύνολο όλων των ζαριών.</para></glossdef>
+       </glossentry>
+       <glossentry id="fullhouse"><glossterm>Φουλ</glossterm>
+         <glossdef><para>Πέντε ζάρια σε δύο ομάδες: Μία ομάδα τριών ζαριών με τον ίδιο αριθμό και μία ομάδα δύο ζαριών με τον ίδιο αριθμό. Π.χ. 1,1,1,4,4. Στα "Χρώματα", η βαθμολογία είναι 15 συν το σύνολο όλων των ζαριών.</para></glossdef>
+       </glossentry>
+       <glossentry id="fullhousesamecolor"><glossterm>Φουλ με Χρώμα</glossterm>
+         <glossdef><para>Αυτή η κατηγορία χρησιμοποιείται μόνο στα "Χρώματα". Περιλαμβάνει πέντε ζάρια σε δύο ομάδες: Μία ομάδα τριών ζαριών με τον ίδιο αριθμό και μία ομάδα δύο ζαριών με τον ίδιο αριθμό. Όλοι οι αριθμοί πρέπει να έχουν το ίδιο χρώμα. Π.χ. 3,3,3,4,4. Δύο ζάρια έχουν τον ίδιο αριθμό αν το άθροισμά τους είναι 7: το 1 και το 6 είναι μαύρα, το 2 και το 5 κόκκινα, το 3 και το 4 πράσινα. Η βαθμολογία αυτού του συνδυασμού είναι 20 συν  σύνολο όλων των ζαριών.</para></glossdef>
+       </glossentry>
+       <glossentry id="twopairsamecolor"><glossterm>Δύο ζευγάρια ίδιου χρώματος</glossterm>
+         <glossdef><para>Αυτή η κατηγορία χρησιμοποιείται μόνο στα "Χρώματα". Περιλαμβάνει δύο ομάδες ζαριών: Μία ομάδα δύο ζαριών με τον ίδιο αριθμό και μία δεύτερη ομάδα δύο ζαριών με τον ίδιο αριθμό. Και τα τέσσερα ζάρια των ζευγαριών πρέπει να έχουν το ίδιο χρώμα. Π.χ. 3,3,4,4. Δύο ζάρια έχουν τον ίδιο αριθμό αν το άθροισμά τους είναι 7: το 1 και το 6 είναι μαύρα, το 2 και το 5 κόκκινα, το 3 και το 4 πράσινα. Το πέμπτο ζάρι μπορεί να είναι οτιδήποτε. Η βαθμολογία προκύπτει από το σύνολο όλων των ζαριών.</para></glossdef>
+       </glossentry>
+       <glossentry id="flush"><glossterm>Χρώμα</glossterm>
+         <glossdef><para>Αυτή η κατηγορία χρησιμοποιείται μόνο στα "Χρώματα". Περιλαμβάνει πέντε ζάρια του ίδιου χρώματος: Δύο ζάρια έχουν το ίδιο χρώμα αν το άθροισμά τους είναι 7: το 1 και το 6 είναι μαύρα, το 2 και το 5 κόκκινα, το 3 και το 4 πράσινα. Αυτός ο συνδυασμός δίνει 35 βαθμούς.</para></glossdef>
+       </glossentry>
+       <glossentry id="largestraight"><glossterm>Μεγάλη κέντα</glossterm>
+         <glossdef><para>Πέντε ζάρια με διαδοχικούς αριθμούς. Π.χ. 2,3,4,5,6. Αυτός ο συνδυασμός δίνει 40 βαθμούς.</para></glossdef>
+       </glossentry>
+       <glossentry id="smallstraight"><glossterm>Μικρή κέντα</glossterm>
+         <glossdef><para>Τέσσερα ζάρια με διαδοχικούς αριθμούς. Το πέμπτο ζάρι μπορεί να είναι οτιδήποτε. Π.χ. 2,3,4,5,5. Αυτή η κατηγορία χρησιμοποιείται μόνο στο κλασικό παιχνίδι. Βαθμολογείται με 30 βαθμούς.</para></glossdef>
+       </glossentry>
+   </glossary>
+ </sect1>
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Συγγραφείς</title>
+  <para>Το <application>Τάλι</application> γράφτηκε από το Scott Heavner (<email>sdh@po.cwru.edu</email>) και τον Orest Zborowski. Η τεκμηρίωση γράφτηκε από το Scott D Heavner (<email>sdh@po.cwru.edu</email>), με πρόσθετο υλικό από τον Callum McKenzie (<email>callum@physics.otago.ac.nz</email>). Για να αναφέρετε σφάλματα ή να κάνετε υποδείξεις για την εφαρμογή ή την τεκμηρίωσή της, ακολουθείστε τις οδηγίες σε αυτό το <ulink url="ghelp:user-guide?feedback-bugs" type="help">έγγραφο</ulink>.</para>
+
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Άδεια χρήσης</title>
+  <para>Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό. Επιτρέπεται η αναδιανομή ή/και τροποποίησή του υπό τους όρους της <ulink type="help" url="gnome-help:gpl"><citetitle>GNU General Public License</citetitle></ulink> όπως αυτή δημοσιεύεται από το Ίδρυμα Ελεύθερου Λογισμικού (Free Software Foundation) - είτε της έκδοσης 2 της άδειας, είτε (κατ' επιλογή σας) οποιασδήποτε μεταγενέστερης έκδοσης.</para>
+  <para>Αυτό το πρόγραμμα διανέμεται με την ελπίδα οτι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ ΚΑΜΙΑ ΑΠΟΛΥΤΩΣ ΕΓΓΥΗΣΗ - χωρίς ακόμη και την έμμεση εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε για περισσότερες λεπτομέρειες τη <citetitle>GNU General Public License</citetitle>.</para>
+  <para>Αντίγραφο της <citetitle>GNU General Public License</citetitle> συμπεριλαμβάνεται ως παράρτημα στο <citetitle>Εγχειρίδιο χρήσης του GNOME</citetitle>. Μπορείτε επίσης να αποκτήσετε ένα αντίγραφό της από το Ίδρυμα Ελεύθερου Λογισμικού (Free Software Foundation) επισκεπτόμενοι την <ulink type="http" url="http://www.fsf.org">ιστοσελίδα τους</ulink> ή γράφοντας στη διεύθυνση <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address>.</para>
+ </sect1>
+</article>

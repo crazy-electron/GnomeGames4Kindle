@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "August 2007">
+<!ENTITY app "<application>Robots</application>">
+<!ENTITY appname "Robots">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="eu"> 
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title><application>Robots</application>en eskuliburua</title>
+
+    <abstract role="description">
+      <para>UNIX sistema askotan aurki daitekeen eta testu moduko roboten jokoan oinarrituta dago Robots. Jokalariak robotak saihestu eta robotak elkarren aurka talka egitea lortu behar du.</para>
+    </abstract>
+
+      <copyright>
+        <year>2001</year>
+        <holder>Patanjali Somayaji, Mark Rae</holder>
+      </copyright><copyright><year>2008.</year><holder>Hizkuntza Politikarako Sailburuordetza (hizpol@ej.gv.es)</holder></copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+      <year>2000</year>
+      <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOMEren dokumentazio-proiektua</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Baimena ematen da dokumentu hau kopiatu, banatu eta/edo aldatzeko, Free Software Foundation-ek argitaratutako GNU Dokumentazio Librearen Lizentziaren 1.1. bertsioan edo berriago batean ezarritako baldintzetan, atal aldaezinik gabe, aurreko azaleko testurik gabe eta atzeko azaleko testurik gabe. GFDL lizentziaren kopia <ulink type="help" url="ghelp:fdl">esteka honetan</ulink> edo eskuliburu honekin batera ematen den COPYING-DOCS fitxategian aurkituko duzu.</para>
+         <para>Eskuliburu hau GFDL lizentziarekin banatzen diren GNOME eskuliburuen bildumakoa da. Eskuliburu hau bildumatik bereizita banatu nahi baduzu, banatu dezakezu, baina eskuliburuari lizentziaren kopia bat gehitu beharko diozu lizentzian bertan 6. atalean azaltzen den bezala.</para>
+
+	<para>Enpresek beren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu gisa hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, eta GNOMEren Dokumentazio Proiektuko kideak marka komertzialak direla konturatzen direnean, izen horiek maiuskulaz idatzita agertuko dira, osorik edo hasierako letra bakarrik.</para>
+
+	<para>DOKUMENTUA ETA DOKUMENTUAREN BERTSIO ALDATUAK GNU DOKUMENTAZIO LIBREAREN LIZENTZIAREN BALDINTZEN ARABERA EMATEN DIRA, ETA ONDOREN ZEHAZTEN DIRENAK ONARTZERA BEHARTZEN DUTE: <orderedlist>
+		<listitem>
+		  <para>DOKUMENTUA "DAGOEN-DAGOENEAN" EMATEN DA, INOLAKO BERMERIK GABE, EZ ESPRESUKI ADIERAZITAKORIK ETA EZ INPLIZITURIK ERE; BESTEAK BESTE EZ DA BERMATZEN DOKUMENTUA EDO BERTSIO ALDATUA AKATSIK GABEA DENIK, MERKATURATZEKO EDO XEDE JAKIN BATERAKO EGOKIA DENIK EDO ARAURIK HAUSTEN EZ DUENIK, HORI GUZTIA MUGARIK GABE. DOKUMENTUAREN EDO DOKUMENTUAREN BERTSIO ALDATUAREN KALITATEARI, ZEHAZTASUNARI ETA PERFORMANTZIARI BURUZKO ERANTZUKIZUN OSOA ZUREA DA. DOKUMENTUREN BATEK EDO BERTSIO ALDATUREN BATEK EDOZEIN MOTATAKO AKATSIK IZANEZ GERO, ZUK (EZ HASIERAKO IDAZLEAK, EZ EGILEAK ETA EZ INONGO KOLABORATZAILEK) ZEURE GAIN HARTU BEHARKO DUZU BERRIKUSTEKO, KONPONTZEKO EDO ZUZENTZEKO BEHAR DIREN ZERBITZU GUZTIEN KOSTUA. BERME-UKATZE HAU LIZENTZIA HONEN FUNTSEZKO ZATIA DA. EZ DA BAIMENIK EMATEN EZEIN DOKUMENTU EDO BERTSIO ALDATU ERABILTZEKO, BALDIN ETA EZ BADA BERME-UKATZE HAU ONARTZEN.</para>
+		</listitem>
+		<listitem>
+		  <para>EZIN IZANGO DA INONGO ZIRKUNSTANTZIARIK EDO LEGE-TEORIARIK OINARRI HARTU --EZ ERANTZUKIZUN ZIBILARI BURUZKORIK (ZABARKERIA BARNE HARTUTA), EZ KONTRATUARI BURUZKORIK, EZ BESTERIK-- DOKUMENTU HONEN EDO BERTSIO ALDATU BATEN EGILEA, HASIERAKO IDAZLEA, EDOZEIN KOLABORATZAILE EDO BANATZAILE, EDO ALDERDI HORIEN EDOZEIN HORNITZAILE BESTE PERTSONA BATEN AURREAN ERANTZULE EGITEKO, PERTSONA HORREK EDOZEIN MOTATAKO KALTEA JASAN DUELAKO (ZUZENEKOA, ZEHARKAKOA, BEREZIA, INTZIDENTALA EDO ONDORIOZKOA), HALA NOLA (ETA MUGARIK GABE) BEZEROAK GALTZEA, LANA ETEN BEHARRA, ORDENAGAILUAK EZ IBILTZEA EDO GAIZKI IBILTZEA, EDO DOKUMENTUA NAHIZ HAREN BERTSIO ALDATUAK ERABILTZETIK ONDORIOZTATZEN DIREN EDO ERABILERA HORREKIN ZERIKUSIA DUTEN KALTEAK EDO GALERAK, ALDERDIARI KALTE HORIEK GERTA ZITEZKEELA ADITZERA EMAN BAZAIO ERE.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Patanjali </firstname> 
+	<surname>Somayaji </surname> 
+	<affiliation> 
+	  <address> <email>patanjali@mindless.com</email> </address> 
+	</affiliation> 
+      </author> 
+      <author> 
+	<firstname>Mark</firstname> 
+	<surname>Rae</surname> 
+	<affiliation> 
+	  <address> <email>m.rae@inpharmatica.co.uk</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Robots-en eskuliburuaren 2.8 bertsioa</revnumber> 
+	<date>2004ko iraila</date> 
+	<revdescription> 
+	  <para role="author">Patanjali Somayaji <email>patanjali@mindless.com</email></para>
+	  <para role="author">Mark Rae <email>m.rae@inpharmatica.co.uk</email></para>
+	  <para role="publisher">GNOMEren dokumentazio-proiektua</para>
+	</revdescription> 
+      </revision> 
+      <revision> 
+	<revnumber>Robots-en eskuliburuaren 2.9 bertsioa</revnumber> 
+	<date>2007ko abuztua</date> 
+	<revdescription> 
+	  <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+	  <para role="publisher">GNOMEren dokumentazio-proiektua</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Robots-en 2.18 bertsioa azaltzen da eskuliburu honetan.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Ohar-bidaltzea</title> 
+      <para><application>Robots</application>i buruzko akatsen berri emateko edo oharrak bidaltzeko, <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOMEra oharrak bidaltzeko orria</ulink>n aurkituko dituzu argibideak.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME Robots</primary> 
+  </indexterm>
+
+   <!-- ============= Document Body ============================= -->
+
+   <!-- ============= Introduction ============================== -->
+   <sect1 id="intro">
+     <title>Sarrera</title>
+
+     <para><application>GNOME Robots</application> jokoan alde batetik bestera dabilen robot taldea saihesten saiatu behar duzu, inongo arrazoi zehatzik gabe zu hiltzen saiatuko baitira. UNIX sistema askotan aurkitu daitekeen roboten testu-jokoan oinarritzen da.</para>
+     <para>Bertsio berri honek hainbat berrikuntza ditu: bi robot mota, hondakin pila mugikorrak, jokoaren hainbat konfigurazio, erabiltzaileak definitzeko moduko teklatu-diseinuak, soinua eta GNOMEren jatorrizko Robots jokoan zeuden osagarri guztiak.</para>
+
+     <para><application>GNOME Robots</application> abiarazteko, hautatu <menuchoice><guisubmenu>Jokoak</guisubmenu><guimenuitem>Robots</guimenuitem></menuchoice> <guimenu>Aplikazioak</guimenu> menuan, edo idatzi <command>gnobots2</command> komando-lerroan.</para>
+
+     <para><application>GNOME Robots</application> <filename>gnome-games</filename> paketearen barruan sartzen da, eta hori GNOMEren mahaigaineko ingurunearen parte da. Dokumentu honek <application>GNOME Robots</application>en 2,18 bertsioa deskribatzen du.</para>
+   </sect1>
+ 
+   <sect1 id="objective">
+     <title>GNOME Robots-en xedea</title>
+     <para>GNOME Robots-en helburua nahiko xinplea da. Robotez edo bestelako aurkari kaltegarriez inguratuta zaude. Mugitzen zaren heinean, etsaiak zuregana mugituko dira egiten duzun mugimendu bakoitzeko. Beren helburua zu hiltzea da. Zure helburua da joko-taulan ageri diren robot guztiak hiltzea haien ahultasunaz baliatuz.</para>
+   
+     <para>Robotak suntsitu egiten dira elkarren artean talka egitean, edo beste talka batzuetako hondakinekin topo egitean. Robot bat zure ondoan kokatzen bada, hil egingo zara.</para>
+
+     <para>Jokoaren zenbait konfiguraziotan (bost arau multzoren artean aukeratu dezakezu), hondakin pilak mugi ditzakezu eta, hala, zeure burua babestuko duten barrikadak egin. Ausarta baldin bazara, robotei ‘plast!’ egin diezaiekezu; horretarako, bota hondakin pilak haien gainera eta gainordaina lortuko duzu.</para>
+     <para>Zeure burua salbatzeko, aldendu zaitez ausazko lekuren batera. Zoritxarrez, ausazko tokiren batera aldentzean, baliteke robot baten ondora joatea; eta beraz, beren mugimendua egiten dutenean hil egin zaitzakete. Zorionez, aldentze seguruak ere badira, eta, horien bidez, berehala aldenduko zara arriskutik. Aldentze seguruen kopurua, ordea, mugatua da. Aurrera zoazen heinean aldentze seguru gehiago irabaz ditzakezu (nola irabazi aukeratutako jokoaren araberakoa da). Gehienetan, ‘itxaroten’ ari zaren bitartean suntsitzen den robot bakoitzeko lortzen duzu aldentze seguru bat, eta gehienez ere 10 lor daitezke. Irabazitako aldentze seguru horiek erabili nahi ez badituzu, ausaz aldendu zaitezke nahikoa segurua dela iruditzen bazaizu..</para>
+   
+     <para><guibutton>Itxaron</guibutton> botoia sakatzen baduzu (ikus behean), ezingo zara mugitu robot guztiak (oraindik ere zure inguruan mugitzen ari dira) alde egiten duten arte edo hiltzen zaituzten arte. Hori egitea arriskutsua da, baina aldentze seguru gehiago lor ditzakezu.</para>
+   
+     <para>Pantailaren erdia baino gehiago robotez beteta dagoen puntura iristea lortzen baduzu, robot kopurua hasierako kopurura itzuliko da, eta jokoan jarraitu ahal izango duzu.</para>
+  </sect1>
+
+
+  <!-- ================ Usage ================================ -->
+  <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="usage">
+    <title>GNOME Robots erabiltzea</title>
+    <para><application>GNOME Robots</application>en jolastea oso erraza da. Sagua edo teklatua erabil ditzakezu. Atal honek <application>GNOME Robots</application>en oinarrizko erabilera deskribatzen du.</para>
+
+    <!-- ========= Basic Usage =========================== -->
+    <sect2 id="mainwin">
+      <title>Oinarrizko erabilera</title>
+      <para><application>GNOME Robots</application> abiaraztean, <interface>Leiho nagusia</interface> irekitzen da; ikus <xref linkend="mainwindow-fig"/>. <figure id="mainwindow-fig">
+	  <title>GNOME Robots-en leiho nagusia</title>
+	  <screenshot>
+	  <mediaobject> 
+ 	   <imageobject>
+ 	 <imagedata fileref="figures/gnobots2-main.png" format="PNG" srccredit="Patanjali"/>
+ 	   </imageobject>
+ 	   <textobject> 
+ 	     <phrase>GNOME Robots-en leiho nagusia</phrase> 
+ 	   </textobject> 
+ 	 </mediaobject>
+	  </screenshot>
+	</figure></para> 
+
+      <para>Partida berri bat hasteko, aukeratu <guimenuitem>Berria</guimenuitem> <guimenu>Jokoa</guimenu> menuan, edo egin klik tresna-barrako <guibutton>Berria</guibutton> botoian.</para>
+
+      <para>Mugitzeko, egin klik mugitu nahi duzun norabidean (kurtsoreak erakutsiko dizu zer norabidetan joango zaren) edo sakatu dagokion tekla teklatuan (lehenespenez zenbakizko teklatuan). Gizontxoan klik egiten baduzu, geldi geratuko zara. Aldentzeko (segurua izan edo ez) eta itxaroteko, erabili tresna-barrako botoiak edo erabili <guimenu>Mugitu</guimenu> menuko gaiak.</para>
+    </sect2>
+  </sect1>
+    
+
+  
+  <!-- ========= Menus =========================== --> 
+  
+   <sect1 id="menubar">
+    <title>Menuak</title>
+    <para>Menu-barra <interface>jokoaren taula</interface>ren gainean kokatuta dago eta menu hauek ditu:</para>
+
+
+    <variablelist>
+      <varlistentry>
+        <term><guimenu>Jokoa</guimenu></term>
+        <listitem>
+        <para>Menu honek hiru elementu ditu: <itemizedlist>	
+            <listitem>
+	    <para>
+            <menuchoice> 
+	       <shortcut><keysym>Ctrl-N</keysym></shortcut>
+               <guimenuitem>New</guimenuitem> 
+		  </menuchoice> — starts a new game of GNOME Robots.
+	   
+            </para>
+            </listitem>     
+       
+	    <listitem>
+	    <para>
+              <menuchoice>
+              <guimenuitem>Scores</guimenuitem>
+		  </menuchoice> — shows the higher scores.
+		</para>
+            </listitem>
+
+       	    <listitem>
+            <para>
+              <menuchoice>
+              <shortcut><keysym>Ktrl-Q</keysym></shortcut>
+              <guimenuitem>Irten</guimenuitem>
+              </menuchoice>
+            </para>
+            </listitem>
+          </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>Mugitu</guimenu></term>
+        <listitem>
+        <para>Menu honek elementu hauek ditu: <itemizedlist>
+          <listitem>
+            <para>
+              <guimenuitem>Teleport</guimenuitem>—
+              teleports you in a safe location.
+            </para>
+          </listitem>
+          <listitem>
+          <para>
+            <guimenuitem>Random</guimenuitem>— teleports you in
+            a random location.
+          </para>
+          </listitem>
+          <listitem>
+          <para>
+            <guimenuitem>Wait</guimenuitem>— places you in wait mode.
+          </para>
+          </listitem>
+        </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>Ezarpenak</guimenu></term>
+	<listitem>
+	<para><guimenu>Ezarpenak</guimenu> menuak elementu bakarra du: <itemizedlist>
+	    <listitem>
+	    <para><guimenuitem>Hobespenak</guimenuitem>: hobespenen elkarrizketa-koadroa irekitzen du.</para>
+	    </listitem>
+	  </itemizedlist></para>
+	</listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>Laguntza</guimenu></term>
+        <listitem>
+        <para>Menu honek elementu hauek ditu: <itemizedlist>
+          <listitem>
+            <para>
+              <guimenuitem>Contents</guimenuitem>—
+              shows this manual.
+            </para>
+          </listitem>
+          <listitem>
+          <para>
+            <guimenuitem>About</guimenuitem>— shows
+              basic information about
+              <application>GNOME Robots</application>, such as
+              the author's name and the application version number.
+          </para>
+          </listitem>
+        </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect1>
+ 
+ <!-- =========Using the Keyboard============== -->
+ 
+  
+  <sect1 id="keyboard">
+    <title>Teklatua erabiltzea</title>
+    <para>Gizontxoa kontrolatzeko, teklatua erabil dezakezu. Lehenespenez, zenbakizko teklatuaren teklak jokorako konfiguratuta daude. Hala ere, teklak pertsonalizatu egin ditzakezu <guimenuitem>Hobespenak</guimenuitem> elkarrizketa-koadroko <guimenuitem>Teklatua</guimenuitem> fitxan. Komando baterako beste tekla bat hautatu nahi baduzu, egin klik bi aldiz komando horren lerroan eta sakatu erabili nahi duzun tekla.</para>
+
+      <sect2 id="default-keys">     
+      <title>Teklen mapatze lehenetsia</title>
+      <para>Lehenespenez, teklatuaren eskuinaldean dagoen zenbakizko teklatua erabili behar duzu (eta ez gezi-teklak). <note>
+        <title>BlokZenb tekla desaktibatzea</title>
+          <para>Aukera hau erabiltzeko, BlokZenb tekla desaktibatu beharko duzu.</para>
+        </note><orderedlist>
+          <listitem><para>Gora ezkerrera: <keycap>Hasi</keycap></para></listitem> 
+          <listitem><para>Gora: <keycap>Gora</keycap></para></listitem>
+          <listitem><para>Gora eskuinera: <keycap>Orria gora</keycap></para></listitem>
+          <listitem><para>Ezkerrera: <keycap>Ezkerrera</keycap></para></listitem>
+          <listitem><para>Bertan geratu: <keycap>Hasi</keycap></para></listitem>
+          <listitem><para>Eskuinera: <keycap>Eskuinera</keycap></para></listitem>
+          <listitem><para>Behera ezkerrera: <keycap>Amaitu</keycap></para></listitem>
+          <listitem><para>Behera: <keycap>Behera</keycap></para></listitem>
+          <listitem><para>Behera eskuinera: <keycap>Orria behera</keycap></para></listitem>
+          <listitem><para>Aldendu: <keycap>+</keycap></para></listitem>
+          <listitem><para>Ausaz aldendu: <keycap>*</keycap></para></listitem>
+          <listitem><para>Itxaron: <keycap>Sartu</keycap></para></listitem>
+        </orderedlist></para>	  
+    </sect2>
+
+      
+  </sect1>
+   
+  <!-- ============= Customization ============================= -->
+  
+  <sect1 id="customization">
+    <title>GNOME Robots pertsonalizatzea</title>
+    <para>Jokoaren jokabidea eta itxura alda ditzakezu; horretarako, hautatu <guimenuitem>Hobespenak</guimenuitem>, <guimenu>Ezarpenak</guimenu> menuan. Hiru fitxa dituen elkarrizketa-koadro bat agertuko da: <itemizedlist>
+        <listitem>
+        <para>
+	    <guimenuitem>Game</guimenuitem> — This page allows
+        you to choose the type of game you want to play.  The
+        drop-down box at the top of the page allows you to choose from
+        a number of predefined games. You can't change these options in
+        the middle of a game, so they will be disabled then. There are
+        also several options at the bottom of the dialog:
+	
+	
+        <orderedlist>
+          <listitem><para>Mugimendu seguruen aukerak lagundu egingo dizu akats baten erruz ez hiltzen. Mugimendu seguru bat egin dezakezunean, heriotzara eramango zaituen mugimendu bat egiten saiatuz gero ezin izango duzu aurrera egin. Baina kontuz: mugimendu seguru bat egiteko aukerarik ez badago (aldentzea soilik), mugimendua gauzatzen utziko dizu.</para></listitem>
+          <listitem><para><quote>Modu oso segurua</quote> ere badago. Hori hautatzen baduzu, soinu bat entzungo da mugimendu segururik egiteko aukerarik ez duzun kasuetan eta zure aukera bakarra aldentzea den kasuetan.</para></listitem>
+          <listitem><para>Soinuaren kontrol-laukia hautatzen baduzu, jokoak soinuak egingo ditu hainbat gertaeratan.</para></listitem>
+          <listitem><para><quote>Plast</quote> kontrol-laukia hautatzen baduzu, soinua entzungo duzu eta <quote>Plast!</quote> ikur txikia agertuko da pantailan.</para></listitem>
+        </orderedlist>
+	
+	</para>
+	</listitem>
+        <listitem>
+        <para>
+	    <guimenuitem>Appearance</guimenuitem> — This page
+          allows you to select the graphics used throughout the game
+          from the list in the dropdown-box. You can also select the
+          background colour from this tab.
+        </para>
+        </listitem>
+
+        <listitem>
+        
+        <para>
+	    <guimenuitem>Keyboard</guimenuitem> —
+          This screen allows you to define your own keyboard
+          controls. To select a different key
+          for a command, double-click on the button for that command and then
+          press the key you want to use.
+        </para>
+        </listitem>
+      </itemizedlist></para>
+
+    <para>Egiten dituzun aldaketak berehala aplikatu eta automatikoki gordeko dira.</para>
+
+    <para>
+      You can design your own graphics for the game if you want. The graphics
+      files are found in
+      <filename class="directory">
+      $PREFIX/share/gnome-games/gnobots2/pixmaps
+      </filename>, where $PREFIX is the prefix into which GNOME
+      was installed. This is usually either 
+      <filename class="directory">/usr</filename>
+      or 
+      <filename class="directory">/usr/local</filename>.
+    </para>
+    <para>Karaktere bakoitzak 16x16 pixel izaten ditu eta 14 karaktere egoten dira PNG fitxategi batean. Azken honek 224x16 pixeleko tamaina izaten du. Bertan dauden fitxategietan begira dezakezu, animazio-sekuentzia egokia produzitzeko fitxategiok zer hurrenkeratan egon behar duten ikusteko.</para>
+    <para>
+      Any graphics files which are placed in the directory are auto-detected,
+      so you don't need to alter any configuration files.
+      You can also define your own game configurations by creating extra
+      <filename>
+      .cfg
+      </filename> files which are stored in the 
+      <filename class="directory">
+      $PREFIX/share/gnome-games/gnobots2/games
+      </filename>
+      directory.
+    </para>
+  </sect1> 
+ 
+  <!-- ============= Various Sections ============================= -->
+ 
+ 
+  <!-- ============= Bugs ================================== -->
+  <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of. -->
+<!--  <sect1 id="bugs">
+    <title>Known Bugs and Limitations</title>
+    <para>
+      This application has no known bugs.
+    </para>
+  </sect1>
+-->
+
+<!-- ============= Authors ================================ -->
+
+  <sect1 id="authors">
+    <title>Egileak</title>
+    <para><application>GNOME Robots</application> Mark Rae-k (<email>m.rae@inpharmatica.co.uk</email>) idatzi zuen. Eskuliburu hau Patanjali Somayaji-k (<email>patanjali@mindless.com</email>) idatzi zuen, Mark Rae-ren jatorrizko HTML dokumentazioan oinarrituta. Aplikazio honi buruzko akatsen berri emateko edo oharrak bidaltzeko, <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentua</ulink>n aurkituko dituzu argibideak.</para>
+
+    <!-- For translations: uncomment this:
+
+    <para>
+      Latin translation was done by ME
+      (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+      suggestions regarding this translation to SOMEWHERE.
+    </para>
+
+    -->
+
+  </sect1>
+
+
+  <!-- ============= Application License ============================= -->
+
+  <sect1 id="license">
+    <title>Lizentzia</title>
+    <para>Programa hau software librea da; birbana eta/edo alda dezakezu Free Software Foundation-ek argitaratutako <ulink type="help" url="gnome-help:gpl"><citetitle>Lizentzia Publiko Orokorra</citetitle></ulink>ren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako baldintzak betez gero.</para>
+    <para>Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO BERMERIK GABE; era berean, ez da bermatzen beraren EGOKITASUNA MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO. Argibide gehiago nahi izanez gero, ikus <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>.</para>
+    <para><citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia <citetitle>GNOMEren erabiltzaile</citetitle>aren gidaren eranskinean daukazu. <citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle>ren kopia bat Free Software Foundation-en bidez ere lor dezakezu, <ulink type="http" url="http://www.fsf.org">haien webgunea</ulink> bisitatuz, edo hona idatziz: <address> Free Software Foundation, Inc. <street>51 Franklin Street, Fifth Floor</street><city>Boston</city>, <state>MA</state><postcode>02110-1301</postcode><country>USA</country></address></para>
+  </sect1>
+
+</article>

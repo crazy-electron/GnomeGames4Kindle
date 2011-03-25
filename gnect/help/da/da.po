@@ -1,0 +1,927 @@
+# Danish translation for gnome-games.
+# Copyright (C) 2010 gnome-games.
+# This file is distributed under the same license as the gnome-games package.
+# Joe Hansen (joedalton2@yahoo.dk), 2009, 2010.
+# Korrekturlæst Torben Grøn Helligsø, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games master\n"
+"POT-Creation-Date: 2010-01-14 18:48+0100\n"
+"PO-Revision-Date: 2010-01-06 22:31+0200\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../C/network-games.xml:10(title)
+msgid "Network Games"
+msgstr "Netværksspil"
+
+#: ../C/network-games.xml:11(para)
+msgid ""
+"support networked multiplayer games which is provided by GGZ Gaming Zone. By "
+"connecting to a server on the Internet, you can challenge other players in "
+"multiplayer games. For news, updates and a list of servers to connect to, "
+"see the gnome-games website. To start the multiplayer game of , select Game "
+"Network Game on the menu. Connecting to a network server The connection "
+"dialog is shown initially when starting a new network game. This dialog "
+"allows you to select a server to connect to, and the username that you will "
+"have while connected to that server. It is possible to connect to a server "
+"with either a guest account or a normal registered account. Guest accounts "
+"allows you to anonymously login, while a normal login account allows you to "
+"reserve your own username which is protected by the password that you "
+"choose. The Guest Login option should be selected if you want an anonymous "
+"guest account. If you want to create a new login account, then select the "
+"First-time Login option, with the username, password and email of your "
+"choice. If you have already created your account, you can connect by "
+"selecting the Normal Login option, and enter the username and password that "
+"you have chosen. To connect to a server, click on the Connect button. The "
+"network connection dialog. The network connection dialog. Joining a game "
+"room Once you have successfully connected to a server, you can choose which "
+"game room to join. To play a multiplayer game of , select the room. If you "
+"want to host your own game, then click on the Launch button. This creates a "
+"new table where other players can participate in a game against you. If "
+"there are any other games already started, then you can double-click on an "
+"existing game table to join it. The list of game tables on the right shows "
+"you the number of available seats, which means the number of players that "
+"can join the game table. This network dialog allows you to join a game room "
+"to find other players. This network dialog allows you to join a game room to "
+"find other players. When creating a new table for games, a preference dialog "
+"is displayed which allows you to customize the game, such as set the minimum "
+"number of players for the game. Once the total number of seats have been "
+"taken, then no more players are allowed to join that game table. It is "
+"possible to chat with other players in network games. Ask for advice or help "
+"playing the games, but please be polite against other players. Waiting for "
+"other players to join the game Once you have successfully joined a game "
+"table, then you have to wait until enough players have joined the table. The "
+"Players List menu item allows you to see a list of the players who have "
+"joined the game. The game will begin immediately when the total number of "
+"players in the the game have been reached. Playing multiplayer games "
+"Multiplayer games have pretty much the same rules as normal games, except "
+"that you are now playing against human players. This means that other "
+"strategies might possibly be better than when playing against AI players. "
+"Once a player has won, the game ends and you can return to the initial "
+"network game screen. Then you can play yet another game of addictive "
+"multiplayer!"
+msgstr ""
+
+#: ../C/legal.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Tilladelse er givet til at kopiere, distribuere og/eller ændre dette "
+"dokument under betingelserne i GNU Free Documentation License (GFDL), "
+"Version 1.1 eller enhver senere version udgivet af Free Software Foundation; "
+"uden invariante afsnit, forsidetekster, samt bagsidetekster. Du kan se en "
+"kopi af GFDL her <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> eller i "
+"filen COPYING-DOCS som distribueres sammen med denne manual."
+
+#: ../C/legal.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Denne manual er en del af den samling af GNOME-manualer som udgives under "
+"GFDL. Hvis du ønsker at distribuere denne manuel adskilt fra samlingen, kan "
+"du gøre dette ved at tilføje en kopi af licensen til manualen, som beskrevet "
+"i afsnit 6 af licensen."
+
+#: ../C/legal.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Mange af navnene brugt af firmaer til at skelne deres produkter og tjenester "
+"er registrerede varemærker. Der hvor disse navne optræder i GNOME-"
+"dokumentationen, og medlemmerne af GNOME-dokumentationsprojektet er blevet "
+"gjort opmærksomme på disse varemærker, er navnene skrevet med store "
+"bogstaver eller store forbogstaver."
+
+#: ../C/legal.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"DETTE DOKUMENT GØRES TILGÆNGELIGT SÅDAN SOM DET ER, UDEN NOGEN FORM FOR "
+"GARANTI, HVERKEN UDTALT ELLER ANTYDET, DERIBLANDT, UDEN BEGRÆNSNINGER, "
+"GARANTIER OM AT DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET ER FRIT FOR "
+"DEFEKTER, PASSENDE TIL ET BESTEMT FORMÅL ELLER IKKE-KRÆNKENDE. DU HÆFTER "
+"SELV FOR HELE RISIKOEN VEDRØRENDE KVALITET, KORREKTHED OG YDELSE FOR "
+"DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET. SKULLE ET DOKUMENT, ELLER "
+"EN ÆNDRET VERSION AF ET DOKUMENT VISE SIG AT VÆRE DEFEKT PÅ EN HVILKEN SOM "
+"HELST MÅDE, HÆFTER DU FOR BETALING FOR EVENTUEL NØDVENDIG SERVICE, "
+"REPARATION ELLER KORREKTION (OG IKKE HVERKEN DEN OPRINDELIGE FORFATTER, "
+"SKRIBENT ELLER NOGEN ANDEN BIDRAGYDER). DENNE ERKLÆRING OM GARANTIFORBEHOLD "
+"ER EN ESSENTIEL DEL AF DENNE LICENS. INGEN BRUG AF NOGET DOKUMENT ELLER "
+"ÆNDRET VERSION AF DOKUMENTET ER AUTORISERET HERUNDER BORTSET FRA DENNE "
+"ANSVARSFRASKRIVELSE OG"
+
+#: ../C/legal.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"UNDER INGEN OMSTÆNDIGHEDER OG UNDER INGEN JURIDISK TEORI, UANSET OM DET ER "
+"EN BEVIDST SKADENDE HANDLING (INKLUSIVE UFORSVARLIGHED) ELLER PÅ HVILKEN SOM "
+"HELST ANDEN MÅDE, KAN FORFATTEREN, SKRIBENT, BIDRAGYDERE, DISTRIBUTØRER "
+"ELLER FORSYNER AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER GØRES "
+"ANSVARLIG OVERFOR NOGEN PERSON FOR NOGEN DIREKTE, INDIREKTE, SPECIEL, "
+"TILFÆLDIG ELLER FØLGENDE SKADE PÅFØRT NOGEN INKLUSIVE, UDEN BEGRÆNSNING, "
+"SKADE SOM FØLGE AF TAB AF RYGTE, ARBEJDSSTOP, COMPUTERFEJL ELLER -SVIGT, "
+"ELLER ENHVER ANDEN FORM FOR SKADE ELLER TAB SOM ER OPSTÅET I FORBINDELSE MED "
+"BRUG AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER HERAF, SELV HVIS EN "
+"SÅDAN PART HAR VÆRET INFORMERET OM MULIGHEDEN FOR SÅDANNE SKADER."
+
+#: ../C/legal.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"DOKUMENTET OG ÆNDREDE VERSIONER AF DOKUMENTET STILLES TIL RÅDIGHED UNDER GNU "
+"FREE DOCOMENTATION LICENSE MED FØLGENDE BETINGELSER: <placeholder-1/>"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: ../C/gnect.xml:176(None)
+msgid "@@image: 'figures/mainwindow.png'; md5=372e2515d12d07635a88bff671cc1a14"
+msgstr ""
+"@@image: 'figures/mainwindow.png'; md5=372e2515d12d07635a88bff671cc1a14"
+
+#: ../C/gnect.xml:22(title)
+msgid "Four-in-a-Row Manual"
+msgstr "Manual til Fire på stribe"
+
+#: ../C/gnect.xml:24(para)
+msgid ""
+"The object of Four-in-a-Row is to place four pieces in a vertical, "
+"horizontal, or diagonal row while the opponent tries to block and make his/"
+"her own row of four. Four-in-a-Row can be played against another human or "
+"the computer."
+msgstr ""
+"Formålet med Fire på stribe er at placere fire spillebrikker efter hinanden "
+"vandret, lodret eller diagonalt, mens modstanderen forsøger at blokere og "
+"placere sin egen række med fire spillebrikker. Fire på stribe kan spilles "
+"mod en anden person eller mod computeren."
+
+#: ../C/gnect.xml:33(year)
+msgid "2001-2002"
+msgstr "2001-2002"
+
+#: ../C/gnect.xml:34(holder)
+msgid "Timothy Musson"
+msgstr "Timothy Musson"
+
+#: ../C/gnect.xml:47(publishername)
+msgid "GNOME Documentation Project"
+msgstr "GNOME's dokumentationsprojekt"
+
+#: ../C/gnect.xml:54(firstname)
+msgid "Timothy"
+msgstr "Timothy"
+
+#: ../C/gnect.xml:55(surname)
+msgid "Musson"
+msgstr "Musson"
+
+#: ../C/gnect.xml:58(email)
+msgid "trmusson@ihug.co.nz"
+msgstr "trmusson@ihug.co.nz"
+
+#: ../C/gnect.xml:81(revnumber)
+msgid "Four-in-a-Row Manual V2.8"
+msgstr "Manual til Fire på stribe version 2.8"
+
+#: ../C/gnect.xml:84(para)
+msgid "Timothy Musson <email>trmusson@ihug.co.nz</email>"
+msgstr "Timothy Musson <email>trmusson@ihug.co.nz</email>"
+
+#: ../C/gnect.xml:92(releaseinfo)
+msgid "This manual describes version 2.12 of Four-in-a-Row."
+msgstr "Denne manual beskriver version 2.12 af Fire på stribe."
+
+#: ../C/gnect.xml:96(title)
+msgid "Feedback"
+msgstr "Tilbagemeldinger"
+
+#: ../C/gnect.xml:97(para)
+msgid ""
+"To report a bug or make a suggestion regarding the Four-in-a-Row application "
+"or this manual, follow the directions in the <ulink url=\"ghelp:user-guide?"
+"feedback-bugs\" type=\"help\">GNOME Feedback Page</ulink>."
+msgstr ""
+"Hvis du ønsker at indrapportere en fejl eller komme med et forslag "
+"vedrørende programmet Fire på stribe eller denne manual så følg vejledningen "
+"på siden <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
+"\">tilbagemeldinger omkring GNOME</ulink>."
+
+#: ../C/gnect.xml:113(title)
+msgid "Introduction"
+msgstr "Introduktion"
+
+#: ../C/gnect.xml:115(para)
+msgid ""
+"<application>Four-in-a-Row</application> is a four-in-a-row game for the "
+"GNOME Project. The object of the game is to build a line of four of your "
+"marbles while trying to stop your opponent (human or computer) building a "
+"line of his or her own. A line can be horizontal, vertical or diagonal."
+msgstr ""
+"<application>Fire på stribe</application> er et spil af typen Fire på stribe "
+"til GNOME-projektet. Formålet med spillet er at bygge en linje af fire af "
+"dine marmorkugler, mens du forsøger at forhindre din modstander (person "
+"eller computer) i at bygge sin linje. En linje kan være lodret, vandret "
+"eller skrå (diagonal)."
+
+#: ../C/gnect.xml:123(para)
+msgid ""
+"To run <application>Four-in-a-Row</application>, select <guimenuitem>Four-in-"
+"a-Row</guimenuitem> from the <guisubmenu>Games</guisubmenu> submenu of the "
+"<guimenu>Main Menu</guimenu>, or type <command>gnect</command> on the "
+"command line."
+msgstr ""
+"For at køre <application>Fire på stribe</application> vælges "
+"<guimenuitem>Fire på stribe</guimenuitem> fra undermenuen <guisubmenu>Spil</"
+"guisubmenu> i <guimenu>Hovedmenuen</guimenu>, eller der tastes "
+"<command>gnect</command> fra kommandolinjen."
+
+#: ../C/gnect.xml:131(para)
+msgid ""
+"<application>Four-in-a-Row</application> is included in the <filename>GNOME-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.8 of <application>Four-in-a-Row</"
+"application>."
+msgstr ""
+"<application>Fire på stribe</application> er inkluderet i pakken "
+"<filename>GNOME-games</filename>, som er en del af skrivebordsmiljøet GNOME. "
+"Dette dokument beskriver version 2.8 af <application>Fire på stribe</"
+"application>."
+
+#: ../C/gnect.xml:137(para)
+msgid ""
+"Four-in-a-Row also features <link linkend=\"network-games\">multiplayer</"
+"link> support with two human players in hotseat or network mode."
+msgstr ""
+"Fire på stribe understøtter også <link linkend=\"network-games\">flere "
+"spillere</link> i form af to spillere der udfordrer hinanden eller via "
+"netværket."
+
+#: ../C/gnect.xml:151(title)
+msgid "Basic Usage"
+msgstr "Grundlæggende brug"
+
+#: ../C/gnect.xml:157(title)
+msgid "Playing Four-in-a-Row"
+msgstr "Sådan spiller du Fire på stribe"
+
+#: ../C/gnect.xml:159(para)
+msgid ""
+"To start a new game of Four-in-a-Row choose <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>New Game</guimenuitem></menuchoice>."
+msgstr ""
+"For at begynde et spil Fire på stribe vælges <menuchoice><guimenu>Spil</"
+"guimenu><guimenuitem>Nyt spil</guimenuitem></menuchoice>."
+
+#: ../C/gnect.xml:163(para)
+msgid ""
+"The <interface>game board</interface> consists of seven columns and six "
+"rows. Above it, a special row indicates the current player and the marble "
+"about to be played. Each move consists of dropping a marble in one of the "
+"columns. The marble lands on the topmost empty row of the chosen column."
+msgstr ""
+"<interface>Brættet</interface> består af syv kolonner og seks rækker. "
+"Ovenfor viser en speciel række den aktuelle spiller og den marmorkugle som "
+"skal placeres. Hvert træk består i at sænke en marmorkugle i en af "
+"kolonnerne. Marmorkuglen lander på den øverste tomme række i den valgte "
+"kolonne."
+
+#: ../C/gnect.xml:168(para)
+msgid ""
+"To make a move, click on a column with the mouse. To play with the keyboard, "
+"move the marble in the top row with the left and right arrow keys, and drop "
+"it in place with the down arrow key. Your marble will drop into the topmost "
+"empty row of that column."
+msgstr ""
+"For at udføre et træk klikkes på en kolonne med musen. For at spille med "
+"tastaturet flyttes marmorkuglen i den øverste række med venstre og højre "
+"piletast, og sænkes med piletasten der peger nedad. Din marmorkugle vil "
+"lande i den øverste tomme række i den kolonne."
+
+#: ../C/gnect.xml:179(phrase) ../C/gnect.xml:181(para)
+msgid "Four-in-a-Row's Main Window"
+msgstr "Fire på stribes hovedvindue"
+
+#: ../C/gnect.xml:184(para)
+msgid ""
+"The game is won when one of the two players manages to line up four of his "
+"or her marbles horizontally, vertically or diagonally. If the board fills up "
+"without a win, the game ends in a draw."
+msgstr ""
+"Spillet er vundet, når det lykkes en af de to spillere at placere en linje "
+"af fire marmorkugler enten vandret, lodret eller diagonalt. Hvis brættet "
+"bliver fyldt op uden fire på stribe, så ender spillet uafgjort."
+
+#: ../C/gnect.xml:195(title)
+msgid "Commands"
+msgstr "Kommandoer"
+
+#. id for removed section
+#: ../C/gnect.xml:198(para)
+msgid ""
+"To take back a move, choose <menuchoice><shortcut><keycombo><keysym>Ctrl</"
+"keysym><keycap>Z</keycap></keycombo></shortcut><guimenuitem>Undo move</"
+"guimenuitem></menuchoice>. If you're playing against a friend, this will "
+"undo one move. If you're playing against the computer, this will undo the "
+"computer's last move and then yours. Repeating this will return the board to "
+"its initial state."
+msgstr ""
+"For at fortryde et træk vælges <menuchoice><shortcut><keycombo><keysym>Ctrl</"
+"keysym><keycap>Z</keycap></keycombo></shortcut><guimenuitem>Fortryd træk</"
+"guimenuitem></menuchoice>. Hvis du spiller mod en ven, vil dette fortryde et "
+"træk. Hvis du spiller mod computeren vil computerens sidste træk blive "
+"omgjort og så dit. Gentagelse af dette vil føre brættet tilbage til sin "
+"udgangsposition."
+
+#: ../C/gnect.xml:210(para)
+msgid ""
+"Choose <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>H</"
+"keycap></keycombo></shortcut><guimenuitem>Hint</guimenuitem></menuchoice> to "
+"get a suggestion from the computer for your next move. This is shown in the "
+"status bar."
+msgstr ""
+"Vælg <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>H</"
+"keycap></keycombo></shortcut><guimenuitem>Fif</guimenuitem></menuchoice> for "
+"at få et forslag fra computeren til dit næste træk. Forslaget vises i "
+"statusbjælken."
+
+#: ../C/gnect.xml:218(para)
+msgid ""
+"Choose <menuchoice><guimenuitem>Scores</guimenuitem></menuchoice> to show a "
+"tally of wins and draws for the current playing session. The scores will be "
+"reset to zero if Player Selection is changed in Preferences."
+msgstr ""
+"Vælg <menuchoice><guimenuitem>Point</guimenuitem></menuchoice> for at vise "
+"det totale antal sejre og uafgjorte for den aktuelle spilsession. Pointene "
+"vil blive nulstillet hvis spillervalget ændres under indstillinger."
+
+#: ../C/gnect.xml:233(title)
+msgid "Preferences"
+msgstr "Indstillinger"
+
+# nb settings ikke korrekt oversat i selve filen i ubuntu 9.10.
+# Den hedder indstillinger og så indstillinger igen.
+#: ../C/gnect.xml:235(para)
+msgid ""
+"To change the game's settings, select <guimenuitem>Preferences</guimenuitem> "
+"from the <guimenu>Settings</guimenu> menu. This opens the "
+"<interface>Preferences Dialog</interface>."
+msgstr ""
+"For at ændre spillets opsætning vælges <guimenuitem>Indstillinger</"
+"guimenuitem> fra menuen <guimenu>Opsætning</guimenu>. Dette åbner "
+"dialogvinduet <interface>Indstillinger</interface>."
+
+#: ../C/gnect.xml:249(term)
+msgid "<guilabel>Player One</guilabel> and <guilabel>Player Two</guilabel>"
+msgstr ""
+"<guilabel>Første spiller</guilabel> og <guilabel>Anden spiller</guilabel>"
+
+#: ../C/gnect.xml:254(para)
+msgid ""
+"These two columns tell <application>Four-in-a-Row</application> who's "
+"playing and, if it is the computer, how hard they play. To play against a "
+"friend, select Human for both Player One and Player Two."
+msgstr ""
+"Disse to kolonner fortæller <application>Fire på stribe</application> hvem "
+"som spiller, og hvis det er computeren, hvilken sværhedsgrad den har. For at "
+"spille mod en ven vælges Menneske for både Første spiller og Anden spiller."
+
+#: ../C/gnect.xml:264(guilabel)
+msgid "Theme"
+msgstr "Tema"
+
+#: ../C/gnect.xml:266(para)
+msgid ""
+"The theme menu lists available themes and lets you choose your favourite."
+msgstr "Temamenuen viser tilgængelige temaer og lader dig vælge din favorit."
+
+#: ../C/gnect.xml:274(guilabel)
+msgid "Enable Animation"
+msgstr "Aktiver animering"
+
+# "Her kan du slå spilanimering til og fra."
+#: ../C/gnect.xml:276(para)
+msgid "Here you can toggle the game's animation on or off."
+msgstr "Her kan du aktivere spillets animering."
+
+#: ../C/gnect.xml:242(para)
+msgid ""
+"Configuration options in the <guilabel>Game</guilabel> tab are: <placeholder-"
+"1/>"
+msgstr ""
+"Konfigurationsindstillingerne i fanebladet <guilabel>Spil</guilabel> er: "
+"<placeholder-1/>"
+
+#: ../C/gnect.xml:284(para)
+msgid ""
+"Finally there is a <guilabel>Controls</guilabel> tab to change the keyboard "
+"controls. To change a control, double click the appropriate entry and then "
+"press the new key."
+msgstr ""
+"Endelig er der fanebladet <guilabel>Tastaturstyreenheder</guilabel> der kan "
+"ændre på styringen via tastaturet. For at ændre en tastefunktion "
+"dobbeltklikkes der på en post, og så trykkes der på en ny tast."
+
+#: ../C/gnect.xml:299(title)
+msgid "Creating New Themes"
+msgstr "Oprettelse af nye temaer"
+
+#: ../C/gnect.xml:301(para)
+msgid ""
+"This section's included in case you'd like to make your own themes for "
+"<application>Four-in-a-Row</application>. It assumes you're familiar with "
+"basic text editing, graphics software and the command line."
+msgstr ""
+"Dette afsnit er skrevet i det tilfælde, du ønsker at lave dine egne temaer "
+"for <application>Fire på stribe</application>. Afsnittet forudsætter at du "
+"er velkendt med grundlæggende tekstredigering, grafiske programmer og "
+"kommandolinjen."
+
+#: ../C/gnect.xml:309(title)
+msgid "Images"
+msgstr "Billeder"
+
+#: ../C/gnect.xml:311(para)
+msgid ""
+"<application>Four-in-a-Row</application>'s tile sets contain six tiles of "
+"equal size, lined up horizontally. From left to right:"
+msgstr ""
+"<application>Fire på stribes</application> feltsæt indeholder seks felter af "
+"ens størrelse, opsat vandret. Fra venstre mod højre:"
+
+#: ../C/gnect.xml:318(para)
+msgid "Player One's marble as it appears on the game board"
+msgstr "Første spillers marmorkugle som den fremgår af spilbrættet"
+
+#: ../C/gnect.xml:321(para)
+msgid "Player Two's marble as it appears on the game board"
+msgstr "Anden spillers marmorkugle som den fremgår af spilbrættet"
+
+#: ../C/gnect.xml:324(para)
+msgid "The game board's background"
+msgstr "Spilbrættets baggrund"
+
+#: ../C/gnect.xml:327(para)
+msgid "The top row's background"
+msgstr "Den øverste rækkes baggrund"
+
+#: ../C/gnect.xml:330(para)
+msgid "Player One's marble as it appears on the top row"
+msgstr "Første spillers marmorkugle som den fremstår på den øverste række"
+
+#: ../C/gnect.xml:333(para)
+msgid "Player Two's marble as it appears on the top row"
+msgstr "Anden spillers marmorkugle som den fremstår på den øverste række"
+
+#: ../C/gnect.xml:338(title)
+msgid "An example tile set"
+msgstr "Et eksempel på et feltsæt"
+
+#: ../C/gnect.xml:340(screeninfo)
+msgid "This image shows the six tiles in a tile set"
+msgstr "Dette billede viser de seks felter i et feltsæt"
+
+#: ../C/gnect.xml:345(para)
+msgid ""
+"Tiles three and four will be repeated over the game board and top row unless "
+"a full window background image is specified in the theme file."
+msgstr ""
+"Felterne tre og fire vil blive gentaget hen over spilbrættet og øverste "
+"række medmindre et fuldt vinduebaggrundsbillede er angivet i temafilen."
+
+#: ../C/gnect.xml:352(title) ../C/gnect.xml:363(title)
+#: ../C/gnect.xml:379(title)
+msgid "TIP"
+msgstr "FIF"
+
+#: ../C/gnect.xml:353(para)
+msgid ""
+"PNG format is recommended for tile sets. The first, second, fifth and sixth "
+"tiles should contain some transparency if you want the background to show "
+"through. The third and fourth tiles should be solid, with no transparency, "
+"even if you'll be using a full window background image with your theme."
+msgstr ""
+"PNG-format anbefales for feltsæt. Det første, anden, femte og sjette felt "
+"bør indeholde en vis grad af gennemsigtighed, hvis du ønsker, at baggrunden "
+"skal skinne igennem. Det tredje og fjerde felt bør være et dækkende billede "
+"uden gennemsigtighed, også selvom du bruger et fuldt vinduebaggrundsbillede "
+"med dit tema."
+
+#: ../C/gnect.xml:364(para)
+msgid ""
+"Tiles can be square or rectangular, and any size you like. Most of the tile "
+"sets that come with <application>Four-in-a-Row</application> use square "
+"tiles measuring 50 pixels by 50 pixels."
+msgstr ""
+"Felter kan være kvadratiske eller rektangulære og i enhver størrelse du "
+"måtte ønske. De fleste af de medfølgende feltsæt i <application>Fire på "
+"stribe</application> bruger kvadrater der måler 50 x 50 billedpunkter."
+
+#: ../C/gnect.xml:371(para)
+msgid ""
+"For a full window background image, there's a bit more work to do. Let's say "
+"your tiles measure 50 by 50 pixels each. The game's display measures 7 by 7 "
+"tiles, including the top row, so the ideal background image for your tile "
+"set measures 350 by 350 pixels."
+msgstr ""
+"For et fuldt dækkende vinduebaggrundsbillede skal der lidt mere til. For "
+"eksempel hvis dine felter måler 50 x 50 billedpunkter hver. Spillets "
+"visningsmål er 7 x 7 felter iberegnet den øverste række, så det ideelle "
+"baggrundsbillede til dit feltsæt måler 350 x 350 billedpunkter."
+
+#: ../C/gnect.xml:380(para)
+msgid ""
+"<application>Four-in-a-Row</application> will automatically scale the "
+"background image if it doesn't match the tile set. This means you can make "
+"\"large\" and \"small\" versions of your theme, both using the same "
+"background image, just by having a large and a small version of your tile "
+"set."
+msgstr ""
+"<application>Fire på stribe</application> vil automatisk skalere "
+"baggrundsbilledet, hvis det ikke passer til feltsættet. Dette betyder, at du "
+"kan lave \"store\" og \"små\" versioner af dit tema, der begge bruger det "
+"samme baggrundsbillede, bare ved at have en stor og en lille version af dit "
+"feltsæt."
+
+#: ../C/gnect.xml:388(para)
+msgid ""
+"So, you now have a tile set and perhaps a background image to go with it. "
+"The next step is to put them in the right place."
+msgstr ""
+"Nu har du så et feltsæt og måske et passende baggrundsbillede. Det næste "
+"trin er at placere dem det korrekte sted."
+
+# Samle det hele
+#: ../C/gnect.xml:398(title)
+msgid "Putting It Together"
+msgstr "Nu skal det hele samles"
+
+#: ../C/gnect.xml:400(para)
+msgid ""
+"The last step is to put your image(s) where <application>Four-in-a-Row</"
+"application> can find them. You could put them in Four-in-a-row's install "
+"directory (which will depend on your particular system), but your home "
+"directory's probably a better idea."
+msgstr ""
+"Det sidste trin består i at placere dine billeder hvor <application>Fire på "
+"stribe</application> kan finde dem. Du kan placere dem i installationsmappen "
+"for Fire på stribe (som vil afhænge af dit system), men din hjemmemappe er "
+"sikkert en bedre ide."
+
+#: ../C/gnect.xml:407(para)
+msgid ""
+"Make a <filename class=\"directory\">~/.gnect</filename> directory, and a "
+"<filename class=\"directory\">~/.gnect/pixmaps</filename> directory. Those "
+"names are important, as <application>Four-in-a-Row</application> won't look "
+"anywhere else."
+msgstr ""
+"Opret mappen <filename class=\"directory\">~/.gnect</filename>, og mappen "
+"<filename class=\"directory\">~/.gnect/pixmaps</filename>. Disse navne er "
+"vigtige, da <application>Fire på stribe</application> ikke kigger andre "
+"steder."
+
+#: ../C/gnect.xml:414(para)
+msgid "Copy your image(s) into the pixmaps directory."
+msgstr "Kopier dine billeder ind i mappen pixmaps."
+
+#: ../C/gnect.xml:418(para)
+msgid ""
+"If you start <application>Four-in-a-Row</application> from the command line, "
+"it'll give you clues about any problems it has with your new theme. If it "
+"has none, you'll find your new theme listed the <interface>Preferences "
+"Dialog</interface>."
+msgstr ""
+"Hvis du starter <application>Fire på stribe</application> fra "
+"kommandolinjen, vil den give dig lidt hjælp til eventuelle problemer med dit "
+"nye tema. Hvis der ikke er nogen problemer, vil du se dit nye tema på listen "
+"under <interface>Indstillinger</interface>."
+
+# Mor dig!
+#: ../C/gnect.xml:425(para)
+msgid "Have fun!"
+msgstr "God fornøjelse!"
+
+#: ../C/gnect.xml:447(title)
+msgid "Known Bugs and Limitations"
+msgstr "Kendte fejl og begrænsninger"
+
+#: ../C/gnect.xml:449(para)
+msgid ""
+"Occasionally a marble-dropping animation doesn't look as smooth as it should."
+msgstr ""
+"Undertiden ser animationen for en marmorkugle ikke så glidende ud, som den "
+"burde, når kuglen falder."
+
+#: ../C/gnect.xml:462(title)
+msgid "Authors"
+msgstr "Forfattere"
+
+#: ../C/gnect.xml:464(para)
+msgid ""
+"<application>Four-in-a-Row</application> was written by Timothy Musson "
+"(<email>trmusson@ihug.co.nz</email>) and David Neary (<email>bolsh@gimp.org</"
+"email>). Various others have taken the time to help in many ways since work "
+"on <application>Four-in-a-Row</application> began."
+msgstr ""
+"<application>Fire på stribe</application> blev skrevet af Timothy Musson "
+"(<email>trmusson@ihug.co.nz</email>) og David Neary (<email>bolsh@gimp.org</"
+"email>). Forskellige andre har brugt tid og kræfter på at hjælpe på mange "
+"måder siden arbejdet med <application>Fire på stribe</application> begyndte."
+
+#: ../C/gnect.xml:469(para)
+msgid ""
+"The <ulink type=\"http\" url=\"http://www.ce.unipr.it/~gbe/velena.html"
+"\">Velena Engine</ulink>, <application>Four-in-a-Row</application>'s main "
+"computer player, was written by Giuliano Bertoletti. We're grateful to him "
+"for allowing us to include his work, without which <application>Four-in-a-"
+"Row</application> wouldn't be nearly as worthwhile."
+msgstr ""
+"<ulink type=\"http\" url=\"http://www.ce.unipr.it/~gbe/velena.html\">Motoren "
+"Velena</ulink>, <application>Fire på stribe</application>s computerspiller, "
+"blev skrevet af Giuliano Bertoletti. Vi er taknemmelige for, at han har "
+"ladet os bruge sit arbejde. Et arbejde som har givet os et bedre spil "
+"<application>Fire på stribe</application>."
+
+#: ../C/gnect.xml:476(para)
+msgid "This manual was written by Timothy Musson."
+msgstr "Denne manual blev skrevet af Timothy Musson."
+
+#: ../C/gnect.xml:479(para)
+msgid ""
+"To report a bug or make a suggestion regarding this application or this "
+"manual, follow the directions in this <ulink url=\"ghelp:user-guide?feedback-"
+"bugs\" type=\"help\">document</ulink>."
+msgstr ""
+"Hvis du ønsker at indrapportere en fejl eller komme med et forslag "
+"vedrørende denne manual så følg vejledningen i dette <ulink url=\"ghelp:user-"
+"guide?feedback-bugs\" type=\"help\">dokument</ulink>."
+
+#: ../C/gnect.xml:504(title)
+msgid "License"
+msgstr "Licens"
+
+#: ../C/gnect.xml:506(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <citetitle>GNU General Public License</citetitle> as "
+"published by the Free Software Foundation; either version 2 of the License, "
+"or (at your option) any later version."
+msgstr ""
+"Dette program er frit software; du kan distribuere det og/eller ændre det "
+"under betingelserne i <citetitle>GNU General Public License</citetitle> der "
+"udgives af Free Software Foundation; enten version 2 eller (ved dit valg) "
+"enhver senere version."
+
+#: ../C/gnect.xml:514(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"Dette program distribueres i håb om at det vil vise sig nyttigt, men UDEN "
+"NOGEN FORM FOR GARANTI, uden selv de underforståede garantier omkring "
+"SALGBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Yderligere detaljer kan "
+"læses i <citetitle>GNU General Public License</citetitle>."
+
+#: ../C/gnect.xml:521(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink url=\"http://www.fsf.org\" "
+"type=\"http\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"En kopi af <citetitle>GNU General Public License</citetitle> er inkluderet "
+"som et tillæg til <citetitle>GNOME's brugervejledning</citetitle>. Du kan "
+"også indhente en kopi af <citetitle>GNU General Public License</citetitle> "
+"fra the Free Software Foundtation ved at besøge <ulink url=\"http://www.fsf."
+"org\" type=\"http\">deres hjemmeside</ulink> eller ved at skrive til "
+"<address> Free Software Foundation, Inc. <street>59 Temple Place</street> - "
+"Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: ../C/gnect.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+"Joe Hansen, 2009, 2010.\n"
+"\n"
+"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
+"Mere info: http://www.dansk-gruppen.dk"
+
+#~ msgid "@@image: 'figures/connect.png'; md5=9a03bf23f04eacfd6feb9de823d6e321"
+#~ msgstr ""
+#~ "@@image: 'figures/connect.png'; md5=9a03bf23f04eacfd6feb9de823d6e321"
+
+#~ msgid "@@image: 'figures/tables.png'; md5=96e520cee7fdbee56636794251a52b0d"
+#~ msgstr "@@image: 'figures/tables.png'; md5=96e520cee7fdbee56636794251a52b0d"
+
+#~ msgid "September 2004"
+#~ msgstr "September 2004"
+
+#~ msgid ""
+#~ "Four-in-a-Row support networked multiplayer games which is provided by "
+#~ "<ulink type=\"http\" url=\"http://www.ggzgamingzone.org\">GGZ Gaming "
+#~ "Zone</ulink>. By connecting to a Four-in-a-Row server on the Internet, "
+#~ "you can challenge other players in multiplayer games. For news, updates "
+#~ "and a list of servers to connect to, see the <ulink type=\"http\" url="
+#~ "\"http://www.gnome.org/projects/gnome-games/\">gnome-games website</"
+#~ "ulink>."
+#~ msgstr ""
+#~ "Fire på stribe understøtter at flere personer kan spille mod hinanden via "
+#~ "netværk hos <ulink type=\"http\" url=\"http://www.ggzgamingzone.org\">GGZ "
+#~ "Gaming Zone</ulink>. Ved at forbinde dig til en server med Fire på stribe "
+#~ "på internettet kan du udfordre andre personer. For nyheder, opdateringer "
+#~ "og en serverliste se <ulink type=\"http\" url=\"http://www.gnome.org/"
+#~ "projects/gnome-games/\">gnome-games' hjemmeside</ulink>."
+
+#~ msgid ""
+#~ "To start the multiplayer game of Four-in-a-Row, select "
+#~ "<menuchoice><guimenu>Game</guimenu><guimenuitem>Network Game</"
+#~ "guimenuitem></menuchoice> on the Four-in-a-Row menu."
+#~ msgstr ""
+#~ "For at spille mod andre personer via netværk i Fire på stribe vælges "
+#~ "<menuchoice><guimenu>Spil</guimenu><guimenuitem>Netværksspil</"
+#~ "guimenuitem></menuchoice> på menuen i Fire på stribe."
+
+#~ msgid "Connecting to a Four-in-a-Row network server"
+#~ msgstr "Forbindelse med en netværksserver med Fire på stribe"
+
+#~ msgid ""
+#~ "The Four-in-a-Row connection dialog is shown initially when starting a "
+#~ "new network game. This dialog allows you to select a server to connect "
+#~ "to, and the username that you will have while connected to that server."
+#~ msgstr ""
+#~ "Forbindelsesdialogen for Fire på stribe vises når et nyt netværksspil "
+#~ "startes. Denne dialog gør det muligt for dig at vælge en server du kan "
+#~ "forbinde til, og brugernavnet du bruger, mens du er forbundet til den "
+#~ "server."
+
+#~ msgid ""
+#~ "It is possible to connect to a server with either a guest account or a "
+#~ "normal registered account. Guest accounts allows you to anonymously "
+#~ "login, while a normal login account allows you to reserve your own "
+#~ "username which is protected by the password that you choose."
+#~ msgstr ""
+#~ "Det er muligt at forbinde til en server enten via en gæstekonto eller via "
+#~ "en normalt registreret konto. Gæstekonti gør det muligt at logge anonymt "
+#~ "ind, mens en normal konto gør det muligt at reservere dit eget brugernavn "
+#~ "som beskyttes af den adgangskode du vælger."
+
+#~ msgid ""
+#~ "The <guimenuitem>Guest Login</guimenuitem> option should be selected if "
+#~ "you want an anonymous guest account. If you want to create a new login "
+#~ "account, then select the <guimenuitem>First-time Login</guimenuitem> "
+#~ "option, with the username, password and email of your choice. If you have "
+#~ "already created your account, you can connect by selecting the "
+#~ "<guimenuitem>Normal Login</guimenuitem> option, and enter the username "
+#~ "and password that you have chosen."
+#~ msgstr ""
+#~ "Tilvalget <guimenuitem>Gæsteindlogning</guimenuitem> bør vælges hvis du "
+#~ "ønsker en anonym gæstekonto. Hvis du ønsker at oprette en ny logindkonto, "
+#~ "så vælg <guimenuitem>Førstegangsindlogning</guimenuitem> med brugernavn "
+#~ "adgangskode eller e-post-adresse efter eget valg. Hvis du allerede har "
+#~ "oprettet din konto, kan du forbinde ved at vælge <guimenuitem>Normal "
+#~ "indlogning</guimenuitem>, og indtaste dit brugernavn og din adgangskode."
+
+#~ msgid ""
+#~ "To connect to a server, click on the <guimenuitem>Connect</guimenuitem> "
+#~ "button."
+#~ msgstr ""
+#~ "For at binde til en server klikkes på knappen <guimenuitem>Tilslut</"
+#~ "guimenuitem>."
+
+#~ msgid "The Four-in-a-Row network connection dialog."
+#~ msgstr "Netværksforbindelsesdialogen til Fire på stribe."
+
+#~ msgid "Joining a game room"
+#~ msgstr "Gå ind i et spilværelse"
+
+#~ msgid ""
+#~ "Once you have successfully connected to a server, you can choose which "
+#~ "game room to join. To play a multiplayer game of Four-in-a-Row, select "
+#~ "the Four-in-a-Row room. If you want to host your own game, then click on "
+#~ "the Launch button. This creates a new table where other players can "
+#~ "participate in a game against you. If there are any other games already "
+#~ "started, then you can double-click on an existing game table to join it. "
+#~ "The list of game tables on the right shows you the number of available "
+#~ "seats, which means the number of players that can join the game table."
+#~ msgstr ""
+#~ "Når du har sluttet dig til en server, kan du vælge hvilket spilværelse du "
+#~ "ønsker at slutte dig til. For at spille Fire på stribe vælges rummet med "
+#~ "navnet Four-in-a-Row (Fire på stribe). Hvis du ønsker at være vært for "
+#~ "dit eget spil så klik på startknappen. Dette opretter et nyt bord hvor "
+#~ "andre spillere kan deltage i et spil mod dig. Hvis der allerede er andre "
+#~ "spil i gang, så kan du klikke på et eksisterende spil for at slutte dig "
+#~ "til det. Listen over spilborde til højre viser dig det tilgængelige antal "
+#~ "pladser, hvilket er det antal spillere, som kan slutte sig til spilbordet."
+
+#~ msgid ""
+#~ "This Four-in-a-Row network dialog allows you to join a game room to find "
+#~ "other players."
+#~ msgstr ""
+#~ "I denne netværksdialog kan du slutte dig til et spilværelse hvor du kan "
+#~ "finde andre spillere."
+
+#~ msgid ""
+#~ "When creating a new table for Four-in-a-Row games, a preference dialog is "
+#~ "displayed which allows you to customize the game, such as set the minimum "
+#~ "number of players for the game. Once the total number of seats have been "
+#~ "taken, then no more players are allowed to join that game table."
+#~ msgstr ""
+#~ "Når der oprettes et nyt bord for Fire på stribe, vises en "
+#~ "indstillingsdialog som gør, at du kan tilpasse spillet, såsom at angive "
+#~ "det mindste antal personer i spillet. Når det totale antal pladser er "
+#~ "blevet valgt, er der ikke flere personer, som kan slutte sig til "
+#~ "spilbordet."
+
+#~ msgid ""
+#~ "It is possible to chat with other players in network games. Ask for "
+#~ "advice or help playing the games, but please be polite against other "
+#~ "players."
+#~ msgstr ""
+#~ "Det er muligt at skrive sammen med andre personer i netværksspil. Spørg "
+#~ "efter råd eller hjælp vedrørende spillene, men husk at være høflig over "
+#~ "for de andre."
+
+# Venter på at andre spillere slutter sig til spillet
+#~ msgid "Waiting for other players to join the game"
+#~ msgstr "Ventetid inden øvrige spillere slutter sig til spillet"
+
+#~ msgid ""
+#~ "Once you have successfully joined a game table, then you have to wait "
+#~ "until enough players have joined the table. The <guimenuitem>Players "
+#~ "List</guimenuitem> menu item allows you to see a list of the players who "
+#~ "have joined the game. The game will begin immediately when the total "
+#~ "number of players in the the game have been reached."
+#~ msgstr ""
+#~ "Når du først har sluttet dig til et spilbord, så må du vente indtil nok "
+#~ "personer har sluttet sig til bordet. Menupunktet "
+#~ "<guimenuitem>Spillerliste</guimenuitem> giver dig mulighed for at se en "
+#~ "liste over spillere som har sluttet sig til. Spillet vil begynde, så "
+#~ "snart det totale antal personer i spillet er nået."
+
+#~ msgid "Playing multiplayer Four-in-a-Row games"
+#~ msgstr "Sådan spiller du flere i Fire på stribe"
+
+#~ msgid ""
+#~ "Multiplayer Four-in-a-Row games have pretty much the same rules as normal "
+#~ "Four-in-a-Row games, except that you are now playing against human "
+#~ "players. This means that other strategies might possibly be better than "
+#~ "when playing against AI players."
+#~ msgstr ""
+#~ "Spil for flere personer har nogenlunde de samme regler som normale spil i "
+#~ "Fire på stribe, med undtagelse af at du nu spiller mod andre personer - "
+#~ "ikke computeren. Dette indebærer at andre strategier kan være bedre, end "
+#~ "når du spiller mod den kunstige intelligens."
+
+#~ msgid ""
+#~ "Once a player has won, the game ends and you can return to the initial "
+#~ "network game screen. Then you can play yet another game of addictive Four-"
+#~ "in-a-Row multiplayer!"
+#~ msgstr ""
+#~ "Når en person har vundet, slutter spillet, og du kan gå tilbage til den "
+#~ "oprindelige netværksskærm. Så har du mulighed for igen at spille et "
+#~ "vanedannede Fire på stribe!"

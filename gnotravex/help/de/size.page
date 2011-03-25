@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="size" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#play" group="three"/>
+    <desc>Ändern der Größe des Spielfelds.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-18" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  <title>Spielfeldgröße</title>
+
+  <p>Um den Schwierigkeitsgrad des Spiels zu erhöhen oder zu verringern, können Sie die Größe des Spielfelds ändern. Wählen Sie hierzu <gui>Größe</gui> in der Menüleiste und wählen Sie anschließend die gewünschte Größe des Spielfelds aus.</p>
+  <p>Sie können aus fünf verschiedenen Dimensionen wählen, von 2 mal 2 bis 6 mal 6. Die Vorgabe ist 3 mal 3.</p>
+  <note style="tip">
+    <p>Falls die Steine zu klein sind, können Sie das Spielfenster und damit auch die Spielsteine vergrößern.</p>
+  </note>
+</page>

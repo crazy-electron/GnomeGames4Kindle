@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="size" xml:lang="sr@latin">
+
+  <info>
+    <link type="guide" xref="index#play" group="three"/>
+    <desc>Promena veličine table za igru.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-18" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  <title>Veličina table</title>
+
+  <p>Da biste promenili veličinu table i tako smanjili ili povećali težinu igre, odaberite <gui>Veličina</gui>  iz glavnog menija i onda odaberite željene dimenzije table.</p>
+  <p>Možete birati između pet različitih dimenzija, od 2×2 do 6×6. Podrazumevana je 3×3.</p>
+  <note style="tip">
+    <p>Ako su delovi premali, povećanje veličine prozora će promeniti i veličinu delova.</p>
+  </note>
+</page>

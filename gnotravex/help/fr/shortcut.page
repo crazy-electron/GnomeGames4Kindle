@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="shortcut" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Utiliser le clavier pour jouer.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-21" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Raccourcis clavier</title>
+
+  <section id="shortcuts-game">
+    <title>Raccourcis du jeu</title>
+    <p>Le tableau suivant regroupe les raccourcis les plus utiles pour jouer à <app>GNOME Tetravex</app>.</p>
+    <table frame="all" rules="rows cols">
+      <tr>
+        <td><p>Raccourci</p></td><td><p>Description</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>N</key></keyseq></p>
+        </td>
+        <td>
+          <p>Commence une nouvelle partie.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><key>Pause</key></p>
+        </td>
+        <td>
+          <p>Suspendre ou reprendre la partie.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            <keyseq><key>Ctrl</key><key>Flèche haut</key></keyseq>
+          </p>
+        </td>
+        <td>
+          <p>Déplacer toutes les pièces de la boîte de gauche d'une case vers le haut.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Flèche bas</key></keyseq></p>
+        </td>
+        <td>
+          <p>Déplacer toutes les pièces de la boîte de gauche d'une case vers le bas.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Flèche gauche</key></keyseq></p>
+        </td>
+        <td>
+          <p>Déplacer toutes les pièces de la boîte de gauche d'une case vers la gauche.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Flèche droite</key></keyseq></p>
+        </td>
+        <td>
+          <p>Déplacer toutes les pièces de la boîte de gauche d'une case vers la droite.</p>
+        </td>
+      </tr>
+    </table>
+  </section>
+</page>

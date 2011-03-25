@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.14">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "January 2006">
+<!ENTITY app "<application>Mines</application>">
+<!ENTITY appname "Mines">
+<!ENTITY version "2.14">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="zh_CN">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title><application>扫雷</application> 手册</title>
+    <abstract role="description">
+      <para>扫雷是 GNOME 对流行的逻辑谜题扫雷的呈现，其包含当收到关于雷的位置的提示时避开雷。</para>
+    </abstract>
+    <copyright>
+      <year>2006</year>
+      <holder>Callum McKenzie</holder>
+<!--   Based on an earlier manual by   <holder>Tim Riehle</holder> -->
+    </copyright><copyright><year>2009</year><holder>ZhangMiao (mymzhang@gmail.com)</holder></copyright><copyright><year>2010</year><holder>lainme (lainme993@gmail.com)</holder></copyright><copyright><year>2011</year><holder>TeliuTe (teliute@163.com)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOME 文档项目</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+        <para>这份文档是双重授权的。您可以遵循<ulink type="help" url="gnome-help:gpl">GNU 通用公共许可证</ulink>来发布和/或修改它，这也是<link linkend="license">此程序的遵循许可</link>，或者您可以在 GNU 自由文档许可证下分发它。要带有这段文字的副本。</para>
+
+	<para>对于本文档的复制、分发和/或修改必须遵循自由软件基金会发布的 GNU 自由文档许可证 (GFDL)  1.1 版或更高版本， 该许可证没有固定的部分、没有封面和背页文本。您可以在此<ulink type="help" url="ghelp:fdl">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副本。</para>
+         <para>本手册是在GFDL许可下GNOME手册集合的一部分。如果您想单独分发本手册，您可以参照许可协议的第6部分，在本手册上添加一份许可的拷贝后再这样做。</para>
+
+	<para>各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 GNOME 文档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而表明它们是商标。</para>
+
+	<para>本文档以及文档的修改版本都是在遵循 GNU 自由文档许可证的条款下提供，这表示具有以下含义：<orderedlist>
+		<listitem>
+		  <para>文档按“原样”提供，不提供任何明示或暗示的保证，包括但不限于：文档或文档的修改版本没有适销性方面的缺陷、适合特定目的的适用性，以及没有侵权行为。您将自行承担本文档以及文档修改版本的质量、准确性以及性能方面的风险。如果任何文档或文档修改版本存在缺陷，您(而不是最初的编写者、作者或撰写人)将承担所有必需的服务、维修或更正的费用。此免责声明是本许可证的重要组成部分。如果不接受此免责声明，那么您就没有权利使用任何文档或文档的修改版本；并且</para>
+		</listitem>
+		<listitem>
+		  <para>无论在任何情况以及在任何法律理论下，本文档或文档修改版本的作者、最初的编写者、任何撰写人或任何分发者，或者任意这些方的任何提供者都不对任何人由于使用本文档或文档修改版本引起或带来的任何直接的、间接的、特殊的、偶然的或继发的损失承担任何民事(包括疏忽)、合同或其它方面的责任，这些损失包括但不限于信誉损失、工作停止、计算机失败或故障，或任何以及所有其它损失或由此引发的或与之相关的损失，即使这些方已被告知存在出现此类损失的可能性时也是如此。</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Callum</firstname> 
+	<surname>McKenzie</surname> 
+	<affiliation> 
+	  <address> <email>callum@spooky-possum.org</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+	
+    <revhistory>
+      <revision> 
+	<revnumber>扫雷手册 版本2.9</revnumber> 
+	<date>2006年1月</date> 
+	<revdescription> 
+	  <para role="author">Callum McKenzie <email>callum@spooky-possum.org</email></para>
+	  <para role="publisher">GNOME 文档项目</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>本手册描述的是扫雷的2.14版本。</releaseinfo>
+    <!-- The following feedback information only applies to applications
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>反馈</title> 
+      <para>要报告关于<application>扫雷</application>程序或其手册的错误或者提供建议，请参照 <ulink url="http://bugzilla.gnome.org">GNOME 错误报告数据库</ulink>的说明。</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME扫雷</primary> 
+  </indexterm>
+  
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+  <sect1 id="intro">
+    <title>简介</title>
+
+    <para><application><application>扫雷</application></application>是一个智力游戏，您仅凭自己的大脑和一小点运气来在一片方块中定位雷的位置。</para>
+
+    <para>您启动游戏会出现被遮蔽的方块组成的网格，而不知道它们里面是什么。点击一个方块会显示出它里面的东西；或是空的地面或是雷。如果您点到一个雷，坏事就会发生，整个游戏结束了。如果您打开一个空的方块，您会幸存并着手另一次尝试。我们确实会给您一些帮助；假如您找到印有数字的空阔地面的话，它告诉您在周围方块中有多少个雷（或没有数字，如果周围没有雷）。一旦您扫出一些方块便可以开始推断哪些方块有雷哪些没有。当您找到全部没有雷的方块并标记了全部有雷的方块，您就赢了游戏。</para>
+
+    <figure id="main-window">
+      <title>游戏的过程：开始，进行游戏，失败，和胜利。</title>
+    	    <mediaobject><imageobject>
+    	      <imagedata fileref="figures/main-window.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <para>要将一个方块标记为有雷，您在它上面单击右键，然后那里会插上旗帜。如果您点击有数字的方块，并且在周围方块放置了正好这么多的旗帜，那么剩下的方块就会被揭开。如果您没有正确标记出雷，就会发生爆炸并且游戏结束。周围没有雷的方块（例如空白方块）会自动清理出周围方块。</para>
+
+    <figure id="status-bar">
+      <title>重要的信息。</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/statusbar.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <para>正在为您计时。为了取得好的成绩，你必须又快又准地进行游戏。一旦你发现了所有的地雷并揭开所有无地雷的方块，停止计时。您的分数就是所用的时间；越短越好。</para>
+
+    <para>您已用的时间在窗口的右下角显示。在它旁边，左侧，是对您已扫出的雷的数目的统计以及隐藏在盘面上的总数。</para>
+
+    <figure id="faces">
+      <title>黄脸表示您进行游戏时的状况。</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/faces.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <!-- Face graphics image. -->
+
+  </sect1>
+
+
+  <sect1 id="details">
+    <title>细节</title>
+
+    <para>本节提供了关于控制和重要的菜单项的信息。如果您需要弄明白雷在哪里，参见<link linkend="strategy">策略一节</link>。</para>
+
+    <sect2>
+      <title>目标</title>
+
+      <para>开始所有方块下面都是未知的，您必须找出所有的地雷，翻开空的方块。您不必给有雷的方块插上旗标，但是这样做会减少很多不必要的麻烦，一旦您翻开了所有不是雷的方块，剩余的方块会自动做上标记。</para>
+
+      <para>如果您点上了一个雷，或者自动时碰到一个雷，您就会输了。要避免这种情况的发生，您不应该允许自动清理，除非标记的雷跟给定的雷数目相同。</para>
+
+    </sect2>
+
+    <sect2>
+      <title>使用鼠标</title>
+      
+      <informaltable>
+        <tgroup cols="2">
+	<!-- FIXME: proper headers. -->
+	  <thead>
+	    <row>
+	      <entry>动作</entry><entry>结果</entry>
+	    </row>
+	  </thead>
+	  <tbody>
+	    <row>
+	      <entry>左单击未揭开的方块。</entry>
+	      <entry>揭开方块的内容。情况变好或者变坏。</entry>
+	    </row>
+	    <row>
+	      <entry>左单击已揭开的方块。</entry>
+	      <entry>自动清理，翻开点击位置周围没有标记的方块，但是只有标记的地雷数目跟给定的数目相匹配时才可以。</entry>
+	    </row>
+	    <row>
+	      <entry>右单击未揭开的方块。</entry>
+	      <entry>标记方块为雷。如果它已经被标记，则标记会被删除。</entry>
+	    </row>
+	  </tbody>
+	</tgroup>
+      </informaltable>
+
+      <tip><para>如果您习惯更传统的鼠标控制，别担心，它们依然有用。</para></tip>
+    </sect2>
+
+    <sect2>
+      <title>游戏面板大小和难度</title>
+
+      <para>点菜单 <menuchoice><guimenu>设置</guimenu><guimenuitem>首选项</guimenuitem></menuchoice>，您可以设置游戏面板大小，大的场地明显需要更多时间和精力，小的场地更容易抓狂。这儿提供了小、中、大和自定义大小。</para> 
+
+    <figure id="preferences-img">
+      <title>首选项对话框。</title>
+    	    <mediaobject><imageobject>
+	      <imagedata fileref="figures/preferences.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+      <para>在对话框的右边有三个控制大小的参数，水平和垂直是用于网格和方块的宽度和高度，地雷数量是——这个显而易见——是您想找出的地雷数量，如果设的太大或者太小都会使游戏变得简单，雷的数目不能超过方块的数量。</para>
+
+    </sect2>
+    
+    <sect2>
+      <title>“不确定”旗标</title>
+
+      <informalfigure id="imnotsureflagsimg">
+    	    <mediaobject><imageobject>
+  	      <imagedata fileref="figures/imnotsureflagscheckbox.png" format="PNG"/>
+	    </imageobject></mediaobject>
+      </informalfigure>
+
+      <para>在属性对话框里还有一个“不确定”旗标，如果您选中此项，当用右键连续点击一个方块时，它会先显示普通旗标，也就是地雷的旗标，然后是一个问号不确定旗标，再就是无旗标。这个新的旗标可以帮您推理，标记一个不太确定是否是雷的方块。这些旗标不影响游戏，您仍然要使用红色的地雷标记，以便清理周围的方块。</para>
+
+      <figure id="flags-img">
+	<title>当“不确定”旗标激活时的旗标序列。</title>
+    	    <mediaobject><imageobject>
+  	      <imagedata fileref="figures/flags.png" format="PNG"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+    </sect2>
+
+    <sect2>
+      <title>使用“太多旗标”警告</title>
+
+      <para>另一个复选框是“太多旗标”警告，选中此项，当您放置太多旗标时，会显示一个警告信息。默认不选中此项，因为它给出了太多提示，可能会被认为是“作弊”。</para>
+
+    </sect2>
+
+    <sect2>
+      <title>提示</title>
+    
+      <para>如果您扫雷受阻－通常是在快结束时，两种可能都合理，您没法解决时－要么猜一下，要么看一下提示。当您点菜单 <guimenu>游戏</guimenu> 选择 <guimenuitem>提示</guimenuitem>，会翻开一个方块(如果它是空的，则是周围的方块)。这是随机选择的，但是也会有所帮助，无论您是否采纳，都会加上10秒的时间。</para>
+
+    </sect2>
+
+    <sect2>
+      <title>高分</title>
+
+      <para>如果您的积分在前10名，就会显示在得分榜上，还有一个机会更改得分榜上的记录名。您还可以稍后点<guimenu>游戏</guimenu>菜单，选择<guimenuitem>得分</guimenuitem>菜单项，来查看得分榜。点击上面的下拉列表可以查看其他大小面板的得分情况。</para>
+
+    <figure id="high-score-img">
+      <title>高分对话框。</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/highscores.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+      <tip>
+        <para>自定义大小的得分榜没什么意义，许多玩家可以让面板很小从而获得很好的成绩。如果您只玩自定义大小，它将告诉您玩的多么好，这是它记录的唯一原因。</para>
+      </tip>
+    </sect2>
+
+    <sect2>
+      <title>窗口大小</title>
+      
+      <para>设置窗口以使方块大小合适。如果您想最大限度地使用屏幕，<guimenu>设置</guimenu>菜单下有<guimenuitem>全屏</guimenuitem>选项。您也可以使用<keycap>F11</keycap>切换岛全屏模式。</para>
+    </sect2>
+
+    <sect2>
+      <title>暂停游戏</title>
+
+      <para>当您打开其他窗口时，游戏自动暂停，或者也可以点<guimenu>游戏</guimenu>菜单，选择<guimenuitem>暂停</guimenuitem>命令。面板会变成空白，这样您就不能在时钟停止时思考。要继续进行游戏，点击“按下可恢复”按钮。</para>
+    </sect2>
+
+  </sect1>
+
+ <!-- ================ Usage ================================ -->
+
+  <sect1 id="strategy">
+    <title>策略</title>
+
+    <para>前半节讲述的是扫雷基本推理，如果您已经熟悉了如果玩，可以跳到 <link linkend="advanced">复杂情形</link> 一节。</para>
+
+    <sect2>
+      <title>基本</title>
+      <para>有些基本情形是显而易见的，只是对您全面了解游戏是有帮助的。第一种情形是有一个孤立的扣着的方块，它旁边绝大多数方块已经翻开，显示的是1，这个扣着的方块下面是一个雷。</para>
+
+      <figure>
+        <title>最简单的情况。</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-1.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>第二种简单的情形是，两个扣着的方块相互挨着的方块都是扣着的，它们的一边都显示的是数字2,如果旁边没有其他相邻的方块，这两个方块下面都有雷。</para>
+
+      <figure>
+        <title>2个地雷的情况。</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-2.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>最后，一条线上有三个没翻开的方块，中间的显示的是3(再说一下，方块没有别的没翻开的相邻方块)，那么这三个方块下面都是雷。</para>
+
+      <figure>
+        <title>3个地雷的情况。</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-3.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>这些都是简单的情形，也可能还有别的简单情况，比如上面讲到的三个方块，可以排列成 L 形。</para>
+      <para>简单的推理可以解决大多数迷题，但不是全部。在进入下一节前，这儿我们给一些地更高级的提示，您应当更进一步，看看您自己是如何解决的。</para>
+    </sect2>
+
+    <sect2 id="advanced">
+      <title>高级的情况</title>
+      
+      <para>这儿是一些更为复杂的情形，它们比上一节要更深一些，因此，我们希望您能听取意见先玩得深入一些。</para>
+
+      <para>在这个例子中，地雷在1左边的方块下面，我们用排除法来解释。如果2左边的方块是雷，那么两个1都会满足雷的最大数，中间的方块不可能再放第二个雷了(因为它们都和1相连)，排除了中间这个不是雷，那么这儿有两个雷，所以上面两个都是雷了。</para>
+
+      <figure>
+        <title>一种不是很明显的样式。</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-1.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>这种情形可能被忽视，如下图所示，也是这种情况，只是多的雷在右边方块，所有数字都加上了1。</para>
+
+      <figure>
+        <title>多出地雷的图示，跟上一例相同。</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-2.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+<para>现在我们来试一个复杂的例子，这个图有两个要点，第一点您甚至不能确定哪个方块有雷，缩小可能性是有用的。第二点是弄清哪个方块没有雷，可以更好地确定有雷的方块。</para>
+
+<para>确定了这两点，在下图中，我们首先确定左上角的方块有雷，由于左边标着的2，只需再找到一个雷。再继续找，最左边的两个方块下面有一个雷，但我们仍然不知道是哪一个。因为它们两个里面至少有一个雷，但都和2相邻，我们知道任何一个方块都满足2的条件(我们还是不知道是哪一个)。这就意味着4的下面比较清楚，因为它也是与两个2相邻，但跟我们前面讲的最左边的方块不相邻。这个空方块要挨着四个相邻方块－每个下面都应该有雷。这不仅告诉我们4周围哪一个是雷，现在也告诉我们哪一个挨着2的方块有雷。</para>
+
+      <figure>
+        <title>得到的结果</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-3.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+
+<para>这类情况需要一定的技巧，在其他的例子中，您可以学到通过对比图样来避免费脑筋，而此例中的情况不容易出现或者简单地识别。常常被忽略先翻开了别的地方，可以从另外一些方面来清除这些方块。</para>
+
+</sect2>
+<sect2>
+
+    <title>提示</title>
+
+    <para>记住，面板的四个边也是一个大的已清除区域(但是不会显示数字)。经常在边上找找是前进的最简单方法。</para>
+
+    <para>有时您被一种无法解开的情形所困绕，无法解脱。这时候要么您试着猜一下，或者也可以使用提示功能(点菜单<menuchoice><guimenu>游戏</guimenu><guimenuitem>提示</guimenuitem></menuchoice>)。有时它并不是对半开的情况，相比获得一个提示，您可能更愿意用赌一把来解决问题。</para>
+
+    <para>最后一个提示：注意窗口左下边的记数提示，您还剩多少雷？越接近结尾，这个数字越能帮助您找到雷可能的位置。让您明白该如何去做。</para>
+
+    </sect2>
+ </sect1>
+
+ <sect1 id="authors">
+  <title>作者</title>
+  <para><application>GNOME 扫雷</application> 由Pista (<email>szekeres@cyberspace.mht.bme.hu</email>)开发。本手册由 Callum McKenzie (<email>callum@spooky-possum.org</email>)在 Vincent Povirk 的帮助下写成，并基于早先 Tim Riehle (<email>tkriehle@citilink.com</email>)所作的手册。 对本程序报告错误或提供建议，请参考<ulink url="ghelp:user-guide?feedback-bugs" type="help">此文档</ulink>。</para>
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>许可</title>
+  <para>这个程序是自由软件；您可以在遵循由<ulink type="http" url="http://www.fsf.org">自由软件基金会</ulink>发布的 <citetitle><ulink type="help" url="gnome-help:gpl">GNU 通用公共许可证</ulink></citetitle>的条款下重新分发它和/或修改它；可以是许可证第二版，或（由您选择）任何更新版本。</para>
+  <para>本程序的分发是希望它会有用，但没有任何保证；甚至没有商业性的或对特定目的适用性的暗指。更多细节请参看 <citetitle><ulink type="help" url="gnome-help:gpl">GNU 通用公共许可证</ulink></citetitle>。</para>
+  <para>在<citetitle>GNOME 用户指南</citetitle> 的附录中包含了一份 <citetitle>GNU 通用许可证</citetitle>的副本，您也可以通过访问自由软件基金会的<ulink type="http" url="http://www.fsf.org">网站</ulink>上获得 <citetitle>GNU 通用许可证</citetitle>的副本，或者写信给 <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address> 来索取。</para>
+ </sect1>
+</article>

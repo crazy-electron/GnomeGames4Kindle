@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "August 2007">
+<!ENTITY app "<application>Robots</application>">
+<!ENTITY appname "Robots">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="fr"> 
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Manuel de <application>GNOME Robots</application></title>
+
+    <abstract role="description">
+      <para>Robots est une version graphique du jeu original « robots » en mode texte que l'on trouve sur un certain nombre de systèmes UNIX. Le joueur doit échapper aux robots qui le poursuivent en provoquant des collisions entre eux.</para>
+    </abstract>
+
+      <copyright>
+        <year>2001</year>
+        <holder>Patanjali Somayaji, Mark Rae</holder>
+      </copyright><copyright><year>2007-2008</year><holder>Claude Paroz (claude@2xlibre.net)</holder></copyright><copyright><year>2009</year><holder>Bruno Brouard (annoa.b@gmail.com)</holder></copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+      <year>2000</year>
+      <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Projet de documentation GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Permission vous est donnée de copier, distribuer et/ou modifier ce document selon les termes de la Licence GNU Free Documentation License, Version 1.1 ou ultérieure publiée par la Free Software Foundation sans section inaltérable, sans texte de première page de couverture ni texte de dernière page de couverture. Vous trouverez un exemplaire de cette licence en suivant ce <ulink type="help" url="ghelp:fdl">lien</ulink> ou dans le fichier COPYING-DOCS fourni avec le présent manuel.</para>
+         <para>Ce manuel fait partie de la collection de manuels GNOME distribués selon les termes de la licence de documentation libre GNU. Si vous souhaitez distribuer ce manuel indépendamment de la collection, vous devez joindre un exemplaire de la licence au document, comme indiqué dans la section 6 de celle-ci.</para>
+
+	<para>La plupart des noms utilisés par les entreprises pour distinguer leurs produits et services sont des marques déposées. Lorsque ces noms apparaissent dans la documentation GNOME et que les membres du projet de Documentation GNOME sont informés de l'existence de ces marques déposées, soit ces noms entiers, soit leur première lettre est en majuscule.</para>
+
+	<para>LE PRÉSENT DOCUMENT ET SES VERSIONS MODIFIÉES SONT FOURNIS SELON LES TERMES DE LA LICENCE DE DOCUMENTATION LIBRE GNU SACHANT QUE : <orderedlist>
+		<listitem>
+		  <para>LE PRÉSENT DOCUMENT EST FOURNI « TEL QUEL », SANS AUCUNE GARANTIE, EXPRESSE OU IMPLICITE, Y COMPRIS, ET SANS LIMITATION, LES GARANTIES DE MARCHANDABILITÉ, D'ADÉQUATION À UN OBJECTIF PARTICULIER OU DE NON INFRACTION DU DOCUMENT OU DE SA VERSION MODIFIÉE. L'UTILISATEUR ASSUME TOUT RISQUE RELATIF À LA QUALITÉ, À LA PERTINENCE ET À LA PERFORMANCE DU DOCUMENT OU DE SA VERSION DE MISE À JOUR. SI LE DOCUMENT OU SA VERSION MODIFIÉE S'AVÉRAIT DÉFECTUEUSE, L'UTILISATEUR (ET NON LE RÉDACTEUR INITIAL, L'AUTEUR, NI TOUT AUTRE PARTICIPANT) ENDOSSERA LES COÛTS DE TOUTE INTERVENTION, RÉPARATION OU CORRECTION NÉCESSAIRE. CETTE DÉNÉGATION DE RESPONSABILITÉ CONSTITUE UNE PARTIE ESSENTIELLE DE CETTE LICENCE. AUCUNE UTILISATION DE CE DOCUMENT OU DE SA VERSION MODIFIÉE N'EST AUTORISÉE AUX TERMES DU PRÉSENT ACCORD, EXCEPTÉ SOUS CETTE DÉNÉGATION DE RESPONSABILITÉ ; </para>
+		</listitem>
+		<listitem>
+		  <para>EN AUCUNE CIRCONSTANCE ET SOUS AUCUNE INTERPRÉTATION DE LA LOI, QU'IL S'AGISSE D'UN DÉLIT CIVIL (Y COMPRIS LA NÉGLIGENCE), CONTRACTUEL OU AUTRE, L'AUTEUR, LE RÉDACTEUR INITIAL, TOUT PARTICIPANT OU TOUT DISTRIBUTEUR DE CE DOCUMENT OU DE SA VERSION MODIFIÉE, OU TOUT FOURNISSEUR DE L'UNE DE CES PARTIES NE POURRA ÊTRE TENU RESPONSABLE À L'ÉGARD DE QUICONQUE POUR TOUT DOMMAGE DIRECT, INDIRECT, PARTICULIER, OU ACCIDENTEL DE TOUT TYPE Y COMPRIS, SANS LIMITATION, LES DOMMAGES LIÉS À LA PERTE DE CLIENTÈLE, À UN ARRÊT DE TRAVAIL, À UNE DÉFAILLANCE OU UN MAUVAIS FONCTIONNEMENT INFORMATIQUE, OU À TOUT AUTRE DOMMAGE OU PERTE LIÉE À L'UTILISATION DU DOCUMENT ET DE SES VERSIONS MODIFIÉES, MÊME SI LADITE PARTIE A ÉTÉ INFORMÉE DE L'ÉVENTUALITÉ DE TELS DOMMAGES.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Patanjali</firstname> 
+	<surname>Somayaji</surname> 
+	<affiliation> 
+	  <address> <email>patanjali@mindless.com</email> </address> 
+	</affiliation> 
+      </author> 
+      <author> 
+	<firstname>Mark</firstname> 
+	<surname>Rae</surname> 
+	<affiliation> 
+	  <address> <email>m.rae@inpharmatica.co.uk</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Manuel de Robots v2.8</revnumber> 
+	<date>Septembre 2004</date> 
+	<revdescription> 
+	  <para role="author">Patanjali Somayaji <email>patanjali@mindless.com</email></para>
+	  <para role="author">Mark Rae <email>m.rae@inpharmatica.co.uk</email></para>
+	  <para role="publisher">Projet de documentation GNOME</para>
+	</revdescription> 
+      </revision> 
+      <revision> 
+	<revnumber>Manuel de Robots v2.9</revnumber> 
+	<date>Août 2007</date> 
+	<revdescription> 
+	  <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+	  <para role="publisher">Projet de documentation GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Ce manuel documente la version 2.18 de Robots.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Votre avis</title> 
+      <para>Pour rapporter une anomalie ou émettre une suggestion concernant <application>Robots</application> ou ce manuel, procédez comme indiqué sur la <ulink url="ghelp:user-guide?feedback-bugs" type="help">page des réactions sur GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME Robots</primary> 
+  </indexterm>
+
+   <!-- ============= Document Body ============================= -->
+
+   <!-- ============= Introduction ============================== -->
+   <sect1 id="intro">
+     <title>Introduction</title>
+
+     <para><application>GNOME Robots</application> est un jeu où vous devez essayer d'éviter une bande de robots maléfiques qui, pour une raison indéterminée, tentent de vous tuer. Ce jeu est basé sur le jeu de robots en mode texte que l'on peut trouver sur bon nombre de systèmes UNIX.</para>
+     <para>Cette nouvelle version contient deux types de robots, des obstacles que l'on peut déplacer, plusieurs configurations possibles de jeu, des dispositions de clavier personnalisables, du son, en plus de toutes les autres fonctionnalités qui se trouvaient dans la version originale de GNOME Robots.</para>
+
+     <para>Pour lancer <application>GNOME Robots</application>, choisissez <menuchoice><guisubmenu>Jeux</guisubmenu><guimenuitem>Robots</guimenuitem></menuchoice> dans le <guimenu>Menu principal</guimenu>, ou saisissez <command>gnobots2</command> dans un terminal.</para>
+
+     <para><application>GNOME Robots</application> est inclus dans le paquet <filename>gnome-games</filename>, faisant lui-même partie de l'environnement de bureau GNOME. Ce document décrit la version 2.18 de <application>GNOME Robots</application>.</para>
+   </sect1>
+ 
+   <sect1 id="objective">
+     <title>But de GNOME Robots</title>
+     <para>Le but de GNOME Robots est assez simple. Vous êtes entouré d'un certain nombre de robots ou d'autres adversaires hostiles. Lorsque vous vous déplacez, ceux-ci se déplacent vers vous à chacun de vos mouvements. Leur objectif est de vous tuer. Votre objectif est de tuer tous les robots du plateau en profitant de leurs vulnérabilités.</para>
+   
+     <para>Les robots sont détruits lorsqu'ils entrent en collision entre eux ou avec des débris de précédentes collisions. Vous mourez si l'un des robots se retrouve juste à côté de vous.</para>
+
+     <para>Dans certaines configurations du jeu (vous avez le choix entre cinq configurations), vous pouvez déplacer les obstacles pour former des barricades afin de vous protéger. De plus, si vous êtes assez téméraire, vous pouvez faire un « Splat » en poussant les obstacles sur les robots et obtenir ainsi un bonus supplémentaire.</para>
+     <para>Vous pouvez aussi vous échapper en vous téléportant à un endroit choisi au hasard. Malheureusement, lors d'une téléportation aléatoire, il est possible que vous atterrissiez juste à côté d'un robot, ce qui vous sera fatal lors du déplacement suivant. Mais heureusement, il existe aussi des téléportations sans danger qui vous sortiront d'un danger tout proche, mais leur nombre est limité. Vous pouvez obtenir des téléportations supplémentaires tout en vous déplaçant (la façon d'en obtenir dépend du type de jeu choisi), mais dans la plupart des cas, vous en obtenez une pour chaque robot détruit lorsque vous êtes en attente, jusqu'à concurrence de 10. Si vous ne voulez pas galvauder votre solde de téléportations sans danger, vous pouvez décider de vous téléporter aléatoirement, si vous pensez que vous ne risquez pas grand chose.</para>
+   
+     <para>Si vous appuyez sur le bouton <guibutton>Attente</guibutton> (voir ci-dessous), vous ne pourrez plus vous déplacer jusqu'à ce que tous les robots soient morts (ils se déplacent toujours vers vous), ou jusqu'à votre mort. C'est donc une attitude risquée, mais elle peut vous rapporter des téléportations sans danger supplémentaires.</para>
+   
+     <para>Si vous en arrivez au point où plus de la moitié de l'écran est occupé par des robots, le nombre de robots est ramené au nombre de départ, vous permettant de continuer.</para>
+  </sect1>
+
+
+  <!-- ================ Usage ================================ -->
+  <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="usage">
+    <title>Utilisation de GNOME Robots</title>
+    <para><application>GNOME Robots</application> est vraiment très simple à jouer. Vous pouvez utiliser la souris ou le clavier. Cette section décrit l'utilisation de base de <application>GNOME Robots</application>.</para>
+
+    <!-- ========= Basic Usage =========================== -->
+    <sect2 id="mainwin">
+      <title>Utilisation de base</title>
+      <para>Le lancement de <application>GNOME Robots</application> fait apparaître la <interface>fenêtre principale</interface>, illustrée par la <xref linkend="mainwindow-fig"/>. <figure id="mainwindow-fig">
+	  <title>Fenêtre principale de GNOME Robots</title>
+	  <screenshot>
+	  <mediaobject> 
+ 	   <imageobject>
+ 	 <imagedata fileref="figures/gnobots2-main.png" format="PNG" srccredit="Patanjali"/>
+ 	   </imageobject>
+ 	   <textobject> 
+ 	     <phrase>Fenêtre principale de GNOME Robots.</phrase> 
+ 	   </textobject> 
+ 	 </mediaobject>
+	  </screenshot>
+	</figure></para> 
+
+      <para>Pour démarrer une nouvelle partie, choisissez <guimenuitem>Nouveau</guimenuitem> dans le menu <guimenu>Jeu</guimenu> ou cliquez sur le bouton <guibutton>Nouveau</guibutton> de la barre d'outils.</para>
+
+      <para>Pour vous déplacer, vous pouvez soit cliquer dans la direction souhaitée (le curseur vous indique cette direction), soit appuyer sur la touche appropriée du clavier (pavé numérique par défaut). Si vous cliquez sur le petit homme, vous resterez sur place. Pour vous téléporter (aléatoirement ou sans danger) et pour vous mettre en attente, utilisez les boutons de la barre d'outils ou les éléments du menu <guimenu>Déplacer</guimenu>.</para>
+    </sect2>
+  </sect1>
+    
+
+  
+  <!-- ========= Menus =========================== --> 
+  
+   <sect1 id="menubar">
+    <title>Menus</title>
+    <para>La barre de menus, située au sommet du <interface>plateau de jeu</interface>, contient les menus suivants :</para>
+
+
+    <variablelist>
+      <varlistentry>
+        <term><guimenu>Jeu</guimenu></term>
+        <listitem>
+        <para>Ce menu contient trois éléments : <itemizedlist>	
+            <listitem>
+	    <para><menuchoice><shortcut><keysym>Ctrl-N</keysym></shortcut><guimenuitem>Nouveau</guimenuitem></menuchoice> — démarre une nouvelle partie de GNOME Robots.</para>
+            </listitem>     
+       
+	    <listitem>
+	    <para><menuchoice><guimenuitem>Scores</guimenuitem></menuchoice> — affiche les plus hauts scores.</para>
+            </listitem>
+
+       	    <listitem>
+            <para>
+              <menuchoice>
+              <shortcut><keysym>Ctrl-Q</keysym></shortcut>
+              <guimenuitem>Quitter</guimenuitem>
+              </menuchoice>
+            </para>
+            </listitem>
+          </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>Déplacer</guimenu></term>
+        <listitem>
+        <para>Ce menu contient : <itemizedlist>
+          <listitem>
+            <para><guimenuitem>Téléportation</guimenuitem>— vous téléporte dans un endroit sûr.</para>
+          </listitem>
+          <listitem>
+          <para><guimenuitem>Aléatoirement</guimenuitem>— vous téléporte dans un endroit choisi au hasard.</para>
+          </listitem>
+          <listitem>
+          <para><guimenuitem>Attente</guimenuitem>— vous place en mode Attente.</para>
+          </listitem>
+        </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>Paramètres</guimenu></term>
+	<listitem>
+	<para>Le menu <guimenu>Paramètres</guimenu> ne contient qu'un seul élément : <itemizedlist>
+	    <listitem>
+	    <para><guimenuitem>Préférences</guimenuitem> fait apparaître la boîte de dialogue des préférences.</para>
+	    </listitem>
+	  </itemizedlist></para>
+	</listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>Aide</guimenu></term>
+        <listitem>
+        <para>Ce menu contient : <itemizedlist>
+          <listitem>
+            <para><guimenuitem>Sommaire</guimenuitem>— affiche ce manuel.</para>
+          </listitem>
+          <listitem>
+          <para><guimenuitem>À propos</guimenuitem>— affiche des informations élémentaires sur <application>GNOME Robots</application>, telles que le nom des auteurs et le numéro de version de l'application.</para>
+          </listitem>
+        </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect1>
+ 
+ <!-- =========Using the Keyboard============== -->
+ 
+  
+  <sect1 id="keyboard">
+    <title>Utilisation du clavier</title>
+    <para>Vous pouvez utiliser le clavier pour diriger le petit homme. Par défaut, ce sont les touches du pavé numérique qui sont configurées pour jouer. Vous pouvez cependant personnaliser les touches servant à contrôler le jeu dans l'onglet <guimenuitem>Clavier</guimenuitem> de la boîte de dialogue des <guimenuitem>Préférences</guimenuitem>. Pour changer la touche correspondant à une commande, double-cliquez sur la ligne de cette commande et appuyez sur la touche que vous voulez utiliser.</para>
+
+      <sect2 id="default-keys">     
+      <title>Correspondance de touches par défaut</title>
+      <para>Par défaut, il faut utiliser les touches du clavier numérique à droite de votre clavier (et non pas le pavé des touches flèches). <note>
+        <title>Désactiver le verrouillage numérique</title>
+          <para>Il est possible que vous deviez désactiver la touche Verr. Num. pour que les touches fonctionnent convenablement.</para>
+        </note><orderedlist>
+          <listitem><para>En haut à gauche : <keycap>Origine</keycap></para></listitem> 
+          <listitem><para>En haut : <keycap>Flèche haut</keycap></para></listitem>
+          <listitem><para>En haut à droite : <keycap>Page haut</keycap></para></listitem>
+          <listitem><para>À gauche : <keycap>Flèche gauche</keycap></para></listitem>
+          <listitem><para>Rester sur place : <keycap>5</keycap></para></listitem>
+          <listitem><para>À droite : <keycap>Flèche droite</keycap></para></listitem>
+          <listitem><para>En bas à gauche : <keycap>Fin</keycap></para></listitem>
+          <listitem><para>En bas : <keycap>Flèche bas</keycap></para></listitem>
+          <listitem><para>En bas à droite : <keycap>Page bas</keycap></para></listitem>
+          <listitem><para>Téléportation (sans danger) : <keycap>+</keycap></para></listitem>
+          <listitem><para>Téléportation aléatoire : <keycap>*</keycap></para></listitem>
+          <listitem><para>Mise en attente : <keycap>Entrée</keycap></para></listitem>
+        </orderedlist></para>	  
+    </sect2>
+
+      
+  </sect1>
+   
+  <!-- ============= Customization ============================= -->
+  
+  <sect1 id="customization">
+    <title>Personnalisation de GNOME Robots</title>
+    <para>Vous pouvez modifier le comportement et l'apparence du jeu en choisissant <guimenuitem>Préférences</guimenuitem> dans le menu <guimenu>Paramètres</guimenu>. Une boîte de dialogue apparaît avec trois onglets : <itemizedlist>
+        <listitem>
+        <para><guimenuitem>Jeu</guimenuitem> — Cet onglet permet de choisir le type de jeu à jouer. Le menu déroulant au sommet de la page permet de sélectionner un certain nombre de jeux prédéfinis. Vous ne pouvez pas modifier ces options en cours de partie, elles sont donc désactivées à certains moments. On trouve également quelques autres options au bas de cette boîte de dialogue : <orderedlist>
+          <listitem><para>L'option des mouvements sans danger évite que vous vous fassiez tuer suite à une erreur. Si vous essayez d'effectuer un déplacement qui provoquerait votre mort alors qu'un mouvement sûr est possible, vous serez bloqué. Mais prenez garde, car si aucun mouvement sans danger n'est possible, excepté la téléportation, le mouvement sera tout de même effectué.</para></listitem>
+          <listitem><para>Il existe également un mode <quote>vraiment sans danger</quote>. Avec cette option, un bip est émis lorsqu'aucun mouvement sans danger n'est possible et que la seule possibilité est de vous faire téléporter.</para></listitem>
+          <listitem><para>Si vous cochez la case d'activation des sons, le jeu émet des sons pour différents événements durant une partie.</para></listitem>
+          <listitem><para>La case d'activation des <quote>Splats</quote> permet de faire apparaître un petit <quote>Splat!</quote> à l'écran accompagné d'un son.</para></listitem>
+        </orderedlist></para>
+	</listitem>
+        <listitem>
+        <para><guimenuitem>Appearance</guimenuitem> — Cet onglet permet de sélectionner dans la liste déroulante le graphisme utilisé pour jouer. Il est aussi possible de choisir la couleur d'arrière-plan.</para>
+        </listitem>
+
+        <listitem>
+        
+        <para><guimenuitem>Keyboard</guimenuitem> — Cet onglet permet de définir ses propres touches de commandes par le clavier. Pour choisir une touche différente pour une commande, double-cliquez sur la ligne de cette commande et appuyez sur la touche que vous souhaitez utiliser.</para>
+        </listitem>
+      </itemizedlist></para>
+
+    <para>Tout changement prend effet immédiatement et est automatiquement enregistré.</para>
+
+    <para>Vous pouvez concevoir vos propres graphismes si vous le souhaitez. Les fichiers correspondants se trouvent dans <filename class="directory">$PREFIX/share/gnome-games/gnobots2/pixmaps</filename> où $PREFIX correspond à l'emplacement d'installation de GNOME. C'est généralement <filename class="directory">/usr</filename> ou <filename class="directory">/usr/local</filename>.</para>
+    <para>Chaque personnage mesure 16x16 pixels, et il y en a 14 combinés dans un fichier PNG de 224x16 pixels. Vous pouvez examiner les fichiers existants pour savoir dans quel ordre il faut les placer afin de produire des séquences animées adéquates.</para>
+    <para>Tout fichier graphique placé dans ce répertoire est automatiquement détecté. Il n'est donc pas nécessaire de modifier un fichier de configuration. Il est aussi possible de définir ses propres configurations de jeu en créant des fichiers <filename>.cfg</filename> supplémentaires et en les plaçant dans le répertoire <filename class="directory">$PREFIX/share/gnome-games/gnobots2/games</filename>.</para>
+  </sect1> 
+ 
+  <!-- ============= Various Sections ============================= -->
+ 
+ 
+  <!-- ============= Bugs ================================== -->
+  <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of. -->
+<!--  <sect1 id="bugs">
+    <title>Known Bugs and Limitations</title>
+    <para>
+      This application has no known bugs.
+    </para>
+  </sect1>
+-->
+
+<!-- ============= Authors ================================ -->
+
+  <sect1 id="authors">
+    <title>Auteurs</title>
+    <para><application>GNOME Robots</application> a été écrit par Mark Rae (<email>m.rae@inpharmatica.co.uk</email>). Ce manuel a été écrit par Patanjali Somayaji (<email>patanjali@mindless.com</email>) à partir de la documentation HTML originelle de MarK Rae. Pour rapporter une anomalie ou émettre une suggestion concernant cette application ou ce manuel, procédez comme indiqué sur ce <ulink url="ghelp:user-guide?feedback-bugs" type="help">document</ulink>.</para>
+
+    <!-- For translations: uncomment this:
+
+    <para>
+      Latin translation was done by ME
+      (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+      suggestions regarding this translation to SOMEWHERE.
+    </para>
+
+    -->
+
+  </sect1>
+
+
+  <!-- ============= Application License ============================= -->
+
+  <sect1 id="license">
+    <title>Licence</title>
+    <para>Ce programme est un logiciel libre ; vous pouvez le redistribuer ou le modifier selon les termes de la <ulink type="help" url="gnome-help:gpl"><citetitle>GNU General Public License</citetitle></ulink>, tels que publiés par la Free Software Foundation ; soit la version 2 de cette licence ou (à votre choix) toute version ultérieure.</para>
+    <para>Ce programme est distribué dans l’espoir qu’il sera utile, mais SANS AUCUNE GARANTIE, ni explicite ni implicite; sans même les garanties de commercialisation ou d’adaptation dans un but spécifique. Se référer à la <citetitle>GNU General Public License</citetitle> pour plus de détails.</para>
+    <para>Une copie de la <citetitle>GNU General Public License</citetitle> est incluse sous forme d'annexe au <citetitle>Guide d'utilisation du bureau GNOME</citetitle>. Vous pouvez également obtenir une copie de la <citetitle>GNU General Public License</citetitle> à la Free Software Foundation en visitant <ulink type="http" url="http://www.fsf.org">leur site Web</ulink> ou en écrivant à <address> Free Software Foundation, Inc. <street>51 Franklin Street, Fifth Floor</street><city>Boston</city>, <state>MA</state><postcode>02110-1301</postcode><country>USA</country></address></para>
+  </sect1>
+
+</article>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.14">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "January 2006">
+<!ENTITY app "<application>Mines</application>">
+<!ENTITY appname "Mines">
+<!ENTITY version "2.14">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="it">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Manuale di <application>Mine</application></title>
+    <abstract role="description">
+      <para>Mine è la versione per GNOME del famoso gioco puzzle di logica del campo minato, nel quale bisogna scovare le mine con l'aiuto di alcuni indizi sulla loro posizione.</para>
+    </abstract>
+    <copyright>
+      <year>2006</year>
+      <holder>Callum McKenzie</holder>
+<!--   Based on an earlier manual by   <holder>Tim Riehle</holder> -->
+    </copyright><copyright><year>2008</year><holder>Alessio Treglia (quadrispro@ubuntu-it.org)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Progetto di documentazione GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+        <para>Questo documento viene distribuito con una doppia licenza. È possibile distribuirlo e/o modificarlo in conformità con i termini della <ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink>, che è la stessa licenza con la quale viene <link linkend="license">distribuito il programma</link>, oppure in conformità con i termini della GNU Free Documentation License (GFDL). Segue una copia di tale licenza.</para>
+
+	<para>Questo documento può essere copiato, distribuito e/o modificato solo in conformità con i termini della GNU Free Documentation License (GFDL) Versione 1.1 o delle versioni successive pubblicate dalla Free Software Foundation senza sezioni invariabili, frontespizi e testi di copertina. Una copia della GFDL è disponibile a questo <ulink type="help" url="ghelp:fdl">collegamento</ulink> o nel file COPYING-DOCS distribuito con questo manuale.</para>
+         <para>Questo manuale è parte di una collezione di manuali di GNOME distribuita sotto la GFDL. Se si vuole distribuire questo manuale separatamente dalla collezione, lo si può fare aggiungendo una copia della licenza al manuale, come descritto nella sezione 6 della licenza.</para>
+
+	<para>Molti dei nomi utilizzati dalle aziende per distinguere i loro prodotti e servizi sono rivendicati come marchi commerciali. Dove questi nomi appaiono nella documentazione di GNOME, e i membri del progetto di documentazione di GNOME sono informati di questi marchi commerciali, allora i nomi sono in lettere maiuscole o con la lettera iniziale maiuscola.</para>
+
+	<para>QUESTO DOCUMENTO E LE SUE VERSIONI MODIFICATE SONO FORNITI IN BASE AI TERMINI DELLA GNU FREE DOCUMENTATION LICENSE, SOTTO INTESO CHE: <orderedlist>
+		<listitem>
+		  <para>IL DOCUMENTO VIENE FORNITO SENZA GARANZIE DI ALCUN TIPO,ESPLICITE O IMPLICITE, INCLUSE, MA SENZA LIMITAZIONE, LE GARANZIE ATTESTANTI CHE IL DOCUMENTO O LE SUE VERSIONI MODIFICATE SIANO PRIVI DI DIFETTI, COMMERCIALIZZABILI, IDONEI A UN DETERMINATO SCOPO O CHE NON VIOLINO DIRITTI DI TERZI. SI DECLINA QUALUNQUE RESPONSABILITÀ RIGUARDO AI RISCHI INERENTI LA QUALITÀ, L'ACCURATEZZA E LE PRESTAZIONI DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA. QUALORA UN DOCUMENTO O UNA SUA VERSIONE MODIFICATA DOVESSERO PRESENTARE QUALUNQUE TIPO DI DIFETTO,IL COSTO DI EVENTUALI INTERVENTI DI ASSISTENZA, RIPARAZIONE O CORREZIONE SARÀ A CARICO DELL'UTENTE (NON DEL REDATTORE INIZIALE, DELL'AUTORE O DI ALTRI COLLABORATORI). QUESTA LIMITAZIONE DELLA GARANZIA COSTITUISCE PARTE ESSENZIALE DELLA LICENZA. L'USO DEL DOCUMENTO O DELLE SUE VERSIONI MODIFICATE È CONSENTITO SOLO ENTRO I TERMINI DI QUESTA LIMITAZIONE DELLA GARANZIA; E</para>
+		</listitem>
+		<listitem>
+		  <para>IN NESSUNA CIRCOSTANZA E PER NESSUNA RAGIONE LEGALE, INCLUSI I PRINCIPI DI COLPA (INCLUSA LA NEGLIGENZA), ACCORDO CONTRATTUALE O ALTRO, SARÀ POSSIBILE CONSIDERARE L'AUTORE, IL REDATTORE INIZIALE, GLI ALTRI COLLABORATORI, QUALUNQUE DISTRIBUTORE DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA O QUALUNQUE FORNITORE DELLE PERSONE CITATE, RESPONSABILE NEI CONFRONTI DI QUALUNQUE PERSONA PER DANNI DIRETTI, INDIRETTI, SPECIALI, INCIDENTALI O CONSEGUENTI DI QUALUNQUE NATURA, INCLUSI, MA SENZA LIMITAZIONE, I DANNI PER PERDITA DI AVVIAMENTO, INTERRUZIONE DEL LAVORO, GUASTO O MALFUNZIONAMENTO DEL COMPUTER O QUALUNQUE ALTRO DANNO O PERDITA DERIVANTE O CORRELATA ALL'USO DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA, ANCHE QUALORA LE PERSONE CITATE FOSSERO STATE INFORMATE DELLA POSSIBILITÀ DI TALI DANNI.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Callum</firstname> 
+	<surname>McKenzie</surname> 
+	<affiliation> 
+	  <address> <email>callum@spooky-possum.org</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+	
+    <revhistory>
+      <revision> 
+	<revnumber>Manuale di Mine V2.9</revnumber> 
+	<date>Gennaio 2006</date> 
+	<revdescription> 
+	  <para role="author">Callum McKenzie <email>callum@spooky-possum.org</email></para>
+	  <para role="publisher">Progetto di documentazione GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Questo manuale descrive la versione 2.14 di Mine</releaseinfo>
+    <!-- The following feedback information only applies to applications
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Commenti</title> 
+      <para>Per segnalare un problema o inviare suggerimenti sull'applicazione <application>Mine</application> o su questo manuale, seguire le istruzioni presenti nella pagina del <ulink url="ghelp:user-guide?feedback-bugs" type="help">database dei bug di GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME Mine</primary> 
+  </indexterm>
+  
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+  <sect1 id="intro">
+    <title>Introduzione</title>
+
+    <para><application><application>Mine</application></application> è un gioco di puzzle dove bisogna localizzare le mine vaganti in un oceano, facendo uso solo del proprio cervello e di un pizzico di fortuna.</para>
+
+    <para>Il gioco inizia con una griglia contenente delle caselle coperte, senza alcuna possibilità di sapere cosa vi sia in esse. Facendo clic su una casella se ne può scoprire il contenuto: uno spazio vuoto oppure una mina. Nel caso in cui si trovi una mina il gioco termina, in caso contrario si sopravvive e si ha la possibilità di provare ancora. Un piccolo aiuto: se si trova un riquadro vuoto al cui interno è stampato un numero, esso specifica quante mine sono presenti nei riquadri adiacenti (se non c'è alcun numero significa che non vi sono mine adiacenti). Una volta trovati dei riquadri vuoti è possibile iniziare a dedurre in quali di quelli adiacenti potrebbero essere presenti delle mine e in quali no. Per vincere il gioco bisogna rivelare il contenuto di tutte le caselle vuote e marcare tutte quelle contenenti mine.</para>
+
+    <figure id="main-window">
+      <title>Le fasi del gioco: l'inizio, la ricerca, la sconfitta e la vittoria.</title>
+    	    <mediaobject><imageobject>
+    	      <imagedata fileref="figures/main-window.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <para>Per marcare una casella come occupata da una mina, è sufficiente posizionarvi sopra una bandierina facendo clic su di essa con il tasto destro del mouse. Se è stato fatto clic su una casella contenente un numero e se le caselle adiacenti a essa sono occupate da un numero eguale di bandierine, allora tutte le caselle rimanenti sono state scoperte. Nel caso in cui non le mine non fossero state individuate con precisione, si avrà un esplosione e il gioco sarà finito. Se un riquadro non ha mine nelle vicinanze, le caselle adiacenti ad esso verranno scoperte automaticamente.</para>
+
+    <figure id="status-bar">
+      <title>Informazione importante.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/statusbar.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <para>Si viene cronometrati e la cosa migliore è giocare velocemente e senza commettere errori. Una volta trovate tutte le mine e scoperte le caselle vuote, il cronometro verrà fermato. Il proprio punteggio è rappresentato dal tempo impiegato nel completare il gioco; i tempi più brevi sono i migliori.</para>
+
+    <para>Il tempo di gioco viene visualizzato nella parte in basso a destra della finestra. Sull'altro lato, a sinistra, c'è il numero delle mine trovate a delle caselle ancora coperte sulla scacchiera.</para>
+
+    <figure id="faces">
+      <title>La faccina gialla mostra l'andamento del gioco.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/faces.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <!-- Face graphics image. -->
+
+  </sect1>
+
+
+  <sect1 id="details">
+    <title>Dettagli</title>
+
+    <para>Questa sezione fornisce informazioni sui controlli e sulle voci di menù. Se si necessita di un aiuto su come trovare le mine, consultare la <link linkend="strategy">sezione sulla strategia</link>.</para>
+
+    <sect2>
+      <title>Lo scopo del gioco</title>
+
+      <para>Iniziando da un oceano di caselle dal contenuto sconosciuto, si devono marcare tutte le caselle contenenti mine e scoprire le altre vuote. Non è proprio necessario marcare le caselle con le mine, ma farlo semplifica il gioco. Una volta scoperte tutte le caselle vuote, le rimanenti caselle contenenti mine verranno automaticamente marcate.</para>
+
+      <para>Se si fa clic con il tasto sinistro su una casella con una mina, o se la si scopre automaticamente, il gioco termina con una sconfitta. Per prevenire incidenti, viene impedito di scoprire automaticamente le caselle adiacenti a un'altra se il numero contenuto in quest'ultima non eguaglia il numero di mine adiacenti già marcate.</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Usare il mouse</title>
+      
+      <informaltable>
+        <tgroup cols="2">
+	<!-- FIXME: proper headers. -->
+	  <thead>
+	    <row>
+	      <entry>Azione</entry><entry>Risultato</entry>
+	    </row>
+	  </thead>
+	  <tbody>
+	    <row>
+	      <entry>Clic sinistro su una casella coperta.</entry>
+	      <entry>Scopre il contenuto della casella, nel bene o nel male.</entry>
+	    </row>
+	    <row>
+	      <entry>Clic sinistro su una casella già scoperta.</entry>
+	      <entry>Scopre automaticamente i riquadri adiacenti alla casella selezionata, ma solo se il numero dei riquadri marcati è uguale al numero contenuto nella casella.</entry>
+	    </row>
+	    <row>
+	      <entry>Clic destro su una casella coperta.</entry>
+	      <entry>Segna la casella come contenente una mina; nel caso fosse già stata segnata, la smarca.</entry>
+	    </row>
+	  </tbody>
+	</tgroup>
+      </informaltable>
+
+      <tip><para>Se si è abituati a utilizzare i controlli più tradizionali con il mouse, continueranno comunque a funzionare.</para></tip>
+    </sect2>
+
+    <sect2>
+      <title>Dimensione del gioco e difficoltà</title>
+
+      <para>Scegliendo <menuchoice><guimenu>Impostazioni</guimenu><guimenuitem>Preferenze</guimenuitem></menuchoice> dal menù è possibile modificare la dimensione del campo. Maggiori saranno le dimensioni e più lungo sarà il tempo necessario per la risoluzione, inoltre sarà richiesta una maggiore concentrazione; a dimensioni minori corrisponde un gioco più frenetico. Sono disponibili le seguenti dimensioni: Piccolo, Medio, Grande, Personalizzato.</para> 
+
+    <figure id="preferences-img">
+      <title>La finestra di preferenze.</title>
+    	    <mediaobject><imageobject>
+	      <imagedata fileref="figures/preferences.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+      <para>Nella parte destra della finestra di dialogo sono presenti tre parametri, utili per impostare una dimensione personalizzata. «Orizzontale» e «Verticale» rappresentano la larghezza e l'altezza espresse in numeri di quadrati del campo desiderato. Il numero di mine rappresenta, ovviamente, il numero di mine che dovranno essere trovate. Impostare questo parametro su un numero troppo alto o troppo basso renderà il gioco molto semplice. Il numero massimo di mine che è possibile impostare è di poco inferiore al totale dei riquadri.</para>
+
+    </sect2>
+    
+    <sect2>
+      <title>Bandierine "Non sono sicuro"</title>
+
+      <informalfigure id="imnotsureflagsimg">
+    	    <mediaobject><imageobject>
+  	      <imagedata fileref="figures/imnotsureflagscheckbox.png" format="PNG"/>
+	    </imageobject></mediaobject>
+      </informalfigure>
+
+      <para>Nella finestra delle proprietà è presente una casella di controllo chiamata «Usa le bandierine "Non sono sicuro"». Se si abilita tale opzione, facendo clic con il tasto destro su una casella su questa si alterneranno una normale bandierina, usata per segnalare la presenza di una mina, una bandierina con un punto interrogativo e la casella stessa vuota. Ciò potrebbe essere d'aiuto in modo da marcare quei riquadri sospetti, nei quali, però, non si è sicuri che vi siano effettivamente delle mine. Questo tipo di bandierine non ha alcun effetto sul gioco, per scoprire le caselle vicine a un'altra numerata sarà sempre necessario utilizzare il numero appropriato di bandierine rosse.</para>
+
+      <figure id="flags-img">
+	<title>La sequenza di bandierine che compaiono quando l'opzione «Usa le bandierine "Non sono sicuro"» è abilitata.</title>
+    	    <mediaobject><imageobject>
+  	      <imagedata fileref="figures/flags.png" format="PNG"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+    </sect2>
+
+    <sect2>
+      <title>«Usare avviso "Troppe bandierine"»</title>
+
+      <para>L'altra casella di controllo presente nel dialogo nella preferenze si intitola «Usare avviso "Troppe bandierine"». Con questa funzionalità verrà mostrato un avviso quando sul campo sono state posizionate troppe bandierine. Tale opzione è disabilitata in maniera predefinita poiché fornisce un suggerimento che potrebbe essere considerato un "trucco".</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Suggerimenti</title>
+    
+      <para>Se si rimane bloccati (è ragionevolmente comune rimanere con due scelte impossibili da risolvere logicamente) è possibile tirare a indovinare oppure chiedere un suggerimento. Quando si sceglie <guimenuitem>Suggerimento</guimenuitem> dal menù <guimenu>Gioco</guimenu> viene rivelato il contenuto di una singola casella (più quelle adiacenti se la stessa risulta vuota). La scelta della casella è casuale ma potrebbe comunque essere d'aiuto. Per ogni suggerimento utilizzato vengono aggiunti 10 secondi di penalità al tempo di gioco.</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Punteggi alti</title>
+
+      <para>Se il proprio punteggio risulta fra i migliori dieci, verrà mostrato l'elenco dei punteggi migliori, con la possibilità di cambiare il nome registrato nella tabella dei punteggi alti. Successivamente sarà possibile rivedere i punti totalizzati scegliendo <guimenuitem>Punteggi</guimenuitem> dal menù <guimenu>Gioco</guimenu>. Il menù a discesa nella parte alta della finestra consente di scegliere fra i punteggi per le altre dimensioni della scacchiera.</para>
+
+    <figure id="high-score-img">
+      <title>La finestra dei punteggi alti.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/highscores.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+      <tip>
+        <para>Attualmente totalizzare un punteggio alto per la dimensione personalizzata è inutile, poiché qualsiasi altro giocatore può diminuire la dimensione della scacchiera e ottenere un tempo migliore. Al contrario, se si è gli unici a giocare con la dimensione personalizzata allora tale classifica è utile per rendersi conto dei propri progressi. Questa è l'unica ragione per la quale questi punteggi vengono ancora registrati. </para>
+      </tip>
+    </sect2>
+
+    <sect2>
+      <title>Dimensione della finestra</title>
+      
+      <para>Ridimensionando la finestra, anche i riquadri vengono ingranditi o rimpiccioliti. Se si desidera utilizzare la massima dimensione è possibile utilizzare l'opzione <guimenuitem>Schermo intero</guimenuitem> presente nel menù <guimenu>Impostazioni</guimenu>; in alternativa è possibile utilizzare il tasto <keycap>F11</keycap> per abilitare e disabilitare la modalità a schermo intero.</para>
+    </sect2>
+
+    <sect2>
+      <title>Mettere in pausa il gioco</title>
+
+      <para>Il gioco può essere messo in pausa automaticamente all'avvio semplicemente spostandosi su un'altra finestra, oppure scegliendo <guimenuitem>Pausa</guimenuitem> dal menù <guimenu>Gioco</guimenu>. Il campo viene oscurato in modo tale da impedire di ragionare sul gioco mentre il cronometro è fermo. Per giocare nuovamente premere il pulsante «Premere per riprendere».</para>
+    </sect2>
+
+  </sect1>
+
+ <!-- ================ Usage ================================ -->
+
+  <sect1 id="strategy">
+    <title>Strategia</title>
+
+    <para>La prima parte di questa sezione fornisce delle nozioni di base su come dedurre la posizione delle mine. Se si ha una certa familiarità con il gioco è possibile proseguire con la sottosezione <link linkend="advanced">Situazioni avanzate</link>.</para>
+
+    <sect2>
+      <title>Nozioni di base</title>
+      <para>Alcune situazioni sono incredibilmente banali, ma se si sta cercando di imparare a giocare potrebbero tornare utili. Il primo caso si verifica quando si ha una sola casella coperta e la maggior parte di quelle adiacenti contiene il numero 1: tale casella contiene una mina.</para>
+
+      <figure>
+        <title>Il caso più semplice.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-1.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Il successivo caso si verifica quando sullo stesso lato di due caselle coperte adiacenti è presente un 2. Se gli altri riquadri adiacenti sono stati tutti scoperti, allora entrambe le caselle contengono delle mine.</para>
+
+      <figure>
+        <title>Il caso a due mine.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-2.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Infine, se ci sono tre caselle coperte di fila e il riquadro affianco quella centrale contiene un 3 (tale riquadro non dovrebbe averne altri vicini) allora sono presenti tre mine.</para>
+
+      <figure>
+        <title>Il caso a tre mine.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-3.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Questi sono i tre casi più semplici. Sono possibili altre permutazioni di tali situazioni, per esempio le tre caselle nell'esempio precedente potrebbero essere posizionate a forma di L.</para>
+      <para>Con una semplice analisi si potranno risolvere la maggior parte dei puzzle, ma non tutti. Prima di passare alle prossime sezioni, dove verranno forniti suggerimenti più avanzati, si dovrebbe provare a giocare e a mettere in pratica quello che si è imparato.</para>
+    </sect2>
+
+    <sect2 id="advanced">
+      <title>Situazioni avanzate</title>
+      
+      <para>Le seguenti situazioni sono più complicate rispetto a quelle della precedente sezione, si spera che l'utente abbia seguito il precedente consiglio e abbia fatto un po' di pratica.</para>
+
+      <para>Nel seguente esempio le mine si trovano sulla sinistra degli uno, ed è possibile giungere a tale conclusione per eliminazione. Se la casella a sinistra del 2 fosse una mina, verrebbe raggiunto subito il massimo di mine adiacenti a entrambi gli 1, non lasciando così nessuna casella libera per la seconda mina adiacente al 2, la quale sarebbe adiacente a uno dei riquadri contenenti 1. Dopo aver eliminato la casella centrale, rimangono quei due riquadri necessari al 2, i quali dunque contengono delle mine.</para>
+
+      <figure>
+        <title>Una configurazione non proprio ovvia.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-1.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Tale configurazione può presentarsi anche in altre situazioni, come per esempio nell'immagine sottostante. Si tratta della stessa situazione, ma le caselle aggiuntive sulla destra sono state tutte incrementate di 1.</para>
+
+      <figure>
+        <title>Le caselle aggiuntive mascherano una copia del precedente esempio.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-2.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+<para>Ora si procederà con un esempio complicato, nel quale verranno illustrati due punti: con il primo si vuole evidenziare il fatto che se non si è sicuri di conoscere le caselle contenenti le mine, restringere il campo delle possibilità può essere di molto aiuto; con il secondo si desidera sottolineare che sapere con sicurezza quali caselle non contengono mine equivale a conoscere quali invece le contengono.</para>
+
+<para>Si supponga di sapere che, nell'immagine sottostante, la casella in alto a sinistra sia minata e che, dunque, le due caselle contrassegnate dal numero 2 richiedano un'altra mina. Si prosegue osservando che il 2 più a sinistra implica che una delle caselle coperte sottostanti sia minata, ma non si conosce quale effettivamente lo sia. Dato che almeno una di queste deve contenere una mina ed entrambe sono vicine al secondo 2 allora è chiaro che quest'ultimo viene soddisfatto da una di queste due caselle (ancora non si sa quale delle due). Ciò significa che la casella sottostante il 4 è libera da mine poiché è vicina al secondo 2 e non una delle due precedentemente citate. Questa casella libera ora lascia il 4 con solo 4 riquadri vicini, ognuno dei quali contiene una mina e ciò non indica solo quali mine circondano il 4 ma anche quale, fra quelle affianco al 2, è minata!</para>
+
+      <figure>
+        <title>Complessa come sembra.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-3.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+
+<para>Mentre in tutti gli altri esempi è possibile imparare a cercare configurazioni simili, evitando quindi lunghi ragionamenti, questo tipo di situazioni risulta complesso. Altre situazioni simili a quella mostrata nell'immagine non compaiono frequentemente né in situazioni facilmente riconoscibili, spesso risulta più facile ignorarle e continuare a giocare sperando di riuscire a cominciare a scoprire i riquadri dall'altro lato della scacchiera.</para>
+
+</sect2>
+<sect2>
+
+    <title>Consigli</title>
+
+    <para>È utile ricordare che il bordo della scacchiera è proprio come una grande area scoperta, solo senza numeri. Spesso lavorare in prossimità del bordo è la via più facile per andare avanti nel gioco.</para>
+
+    <para>A volte ci si può trovare in situazioni nelle quali non c'è modo di dedurre a quali configurazioni corrispondano. In questi casi sarà necessario provare a indovinare oppure usare la funzione di suggerimento (<menuchoice><guimenu>Gioco</guimenu><guimenuitem>Suggerimento</guimenuitem></menuchoice>). A volte potrebbe presentarsi delle situazioni non del tipo 50 a 50 e invece di avere un suggerimento potrebbe essere più gradito scommettere sul risultato più probabile.</para>
+
+    <para>Un ultimo suggerimento: ricordate il contatore nell'angolo in basso della finestra che tiene il conto delle mine trovate? Spesso, poco prima della fine del gioco, questo numero può aiutare a immaginare quali caselle potrebbero essere minate. Come farlo sta alla vostra immaginazione!</para>
+
+    </sect2>
+ </sect1>
+
+ <sect1 id="authors">
+  <title>Autori</title>
+  <para><application>GNOME Mine</application> è stato scritto da Pista (<email>szekers@cyberspace.mht.bme.hu</email>). Questo manuale è stato scritto da Callum McKenzie (<email>callum@spooky-possum.org</email>) con l'aiuto di Vincent Povirk e sulla base del precedente manuale di Tim Riehle (<email>tkriehle@citilink.com</email>). Per segnalare bug o inviare commenti o suggerimenti su questa applicazione o su questo manuale consultare questo <ulink url="ghelp:user-guide?feedback-bugs" type="help">documento</ulink>.</para>
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licenza</title>
+  <para>Questo programma è software libero; è lecito redistribuirlo e/o modificarlo secondo i termini della <citetitle>GNU General Public License</citetitle> come è pubblicata dalla Free Software Foundation; o la versione 2 della licenza o (a propria scelta) una versione successiva.</para>
+  <para>Questo programma  è distribuito nella  speranza che sia  utile, ma SENZA  ALCUNA GARANZIA; senza  neppure la  garanzia implicita  di NEGOZIABILITÀ o di APPLICABILITÀ PER UN PARTICOLARE SCOPO. Si veda la <citetitle>GNU General Public License</citetitle> per avere maggiori dettagli.</para>
+  <para>Una copia della <citetitle>GNU General Public License</citetitle> è inclusa nell'appendice del <citetitle>Manuale dell'utente GNOME</citetitle>. Inoltre è possibile ottenere una copia della <citetitle>GNU General Public License</citetitle> dalla Free Software Foundation visitando <ulink url="http://www.fsf.org" type="http">il sito web</ulink> oppure scrivendo a <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

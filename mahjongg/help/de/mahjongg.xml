@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.26">
+<!ENTITY manrevision "2.26">
+<!ENTITY date "June 2009">
+<!ENTITY app "<application>Mahjongg</application>">
+<!ENTITY appname "Mahjongg">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="de">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+  
+    <title><application>Mahjongg</application>-Handbuch</title>
+    <abstract role="description">
+      <para>Mahjongg ist eine Solitärversion des klassischen fernöstlichen Spiels. Ziel ist es, so viele Steine wie möglich aus dem Spielfeld zu entfernen, indem zusammengehörige Steine aus dem Spiel genommen werden.</para>
+    </abstract>
+    <copyright>
+      <year>1998</year>
+      <holder>Free Software Foundation</holder>
+    </copyright>
+    <copyright>
+      <year>2000</year>
+      <holder>Eric Baudais (Autor der Dokumentation)</holder>
+    </copyright>  
+	    <copyright>
+      <year>2009</year>
+      <holder>Paul Cutler (Autor der Dokumentation)</holder>
+    </copyright><copyright><year>2008, 2009</year><holder>Mario Blättermann (mariobl@gnome.org)</holder></copyright><copyright><year>2008</year><holder>Philipp Kerling (k.philipp@gmail.com)</holder></copyright> 
+    
+    <!-- translators: uncomment this:
+    
+  <copyright>
+  <year>2000</year>
+  <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+    -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOME-Dokumentationsprojekt</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Das vorliegende Dokument kann gemäß den Bedingungen der GNU Free Documentation License (GFDL), Version 1.1 oder jeder späteren, von der Free Software Foundation veröffentlichten Version ohne unveränderbare Abschnitte sowie ohne Texte auf dem vorderen und hinteren Buchdeckel kopiert, verteilt und/oder modifiziert werden. Eine Kopie der GFDL finden Sie unter diesem <ulink type="help" url="ghelp:fdl">Link</ulink> oder in der mit diesem Handbuch gelieferten Datei COPYING-DOCS.</para>
+         <para>Dieses Handbuch ist Teil einer Sammlung von GNOME-Handbüchern, die unter der GFDL veröffentlicht werden. Wenn Sie dieses Handbuch getrennt von der Sammlung weiterverbreiten möchten, können Sie das tun, indem Sie eine Kopie der Lizenz zum Handbuch hinzufügen, wie es in Abschnitt 6 der Lizenz beschrieben ist.</para>
+
+	<para>Viele der Namen, die von Unternehmen verwendet werden, um ihre Produkte und Dienstleistungen von anderen zu unterscheiden, sind eingetragene Warenzeichen. An den Stellen, an denen diese Namen in einer GNOME-Dokumentation erscheinen, werden die Namen in Großbuchstaben oder mit einem großen Anfangsbuchstaben geschrieben.</para>
+
+	<para>DAS DOKUMENT UND VERÄNDERTE FASSUNGEN DES DOKUMENTS WERDEN UNTER DEN BEDINGUNGEN DER GNU FREE DOCUMENTATION LICENSE ZUR VERFÜGUNG GESTELLT MIT DEM WEITERGEHENDEN VERSTÄNDNIS, DASS: <orderedlist>
+		<listitem>
+		  <para>DIESES DOKUMENT WIRD »WIE VORLIEGEND« GELIEFERT, OHNE GARANTIEN IRGENDEINER ART, SOWOHL AUSDRÜCKLICH GENANNTE ALS AUCH ANGEDEUTETE. DIES BEZIEHT SICH AUCH OHNE EINSCHRÄNKUNG AUF GARANTIEN, DASS DIESES DOKUMENT ODER VERÄNDERTE FASSUNGEN DIESES DOKUMENTS FREI VON HANDELSDEFEKTEN, FÜR EINEN BESTIMMTEN ZWECK GEEIGNET IST ODER DASS ES KEINE RECHTE DRITTER VERLETZT. DAS VOLLE RISIKO WAS QUALITÄT, GENAUIGKEIT UND LEISTUNG DES DOKUMENTS ODER VERÄNDERTE FASSUNGEN DES DOKUMENTS LIEGT BEI IHNEN. SOLLTE EIN DOKUMENT ODER EINE VERÄNDERTE FASSUNG DAVON FEHLER IRGENDEINER ART BEINHALTEN, TRAGEN SIE (NICHT DER URSPRUNGSAUTOR, DER AUTOR ODER EIN MITWIRKENDER) DIE KOSTEN FÜR NOTWENDIGE DIENSTLEISTUNGEN, REPARATUREN ODER FEHLERKORREKTUREN. DIESER HAFTUNGSAUSSCHLUSS IST EIN ESSENZIELLER TEIL DIESER LIZENZ. DIE VERWENDUNG EINES DOKUMENTS ODER EINER VERÄNDERTEN VERSION DES DOKUMENTS IST NICHT GESTATTET AUßER UNTER BEACHTUNG DIESES HAFTUNGSAUSSCHLUSSES UND</para>
+		</listitem>
+		<listitem>
+		  <para>UNTER KEINEN UMSTÄNDEN UND AUF BASIS KEINER RECHTSGRUNDLAGE, EGAL OB DURCH UNERLAUBTEN HANDLUNGEN (EINSCHLIEßLICH FAHRLÄSSIGKEIT), VERTRAG ODER ANDERWEITIG KANN DER AUTOR, URSPRUNGSAUTOR, EIN MITWIRKENDER ODER EIN VERTRIEBSPARTNER DIESES DOKUMENTS ODER EINER VERÄNDERTEN FASSUNG DES DOKUMENTS ODER EIN ZULIEFERER EINER DIESER PARTEIEN, HAFTBAR GEMACHT WERDEN FÜR DIREKTE, INDIREKTE, SPEZIELLE, VERSEHENTLICHE ODER FOLGESCHÄDEN JEGLICHER ART, EINSCHLIEßLICH UND OHNE EINSCHRÄNKUNGEN SCHÄDEN DURCH VERLUST VON KULANZ, ARBEITSAUSFALL, COMPUTERVERSAGEN ODER COMPUTERFEHLFUNKTIONEN ODER ALLE ANDEREN SCHÄDEN ODER VERLUSTE, DIE SICH AUS ODER IN VERBINDUNG MIT DER VERWENDUNG DES DOKUMENTS UND VERÄNDERTER FASSUNGEN DES DOKUMENTS ERGEBEN, AUCH WENN DIE OBEN GENANNTEN PARTEIEN ÜBER DIE MÖGLICHKEIT SOLCHER SCHÄDEN INFORMIERT WAREN.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer">
+	<firstname>Eric</firstname> 
+	<surname>Baudais</surname> 
+	<affiliation> 
+	  <address> <email>baudais@okstate.edu</email> </address> 
+	</affiliation> 
+      </author> 
+	        <author role="maintainer">
+	<firstname>Artur</firstname> 
+	<surname>Szymanski</surname> 
+	<affiliation> 
+	</affiliation> 
+      </author>
+	        <author role="maintainer">
+	<firstname>Paul</firstname> 
+	<surname>Cutler</surname> 
+	<affiliation> 
+		<orgname>GNOME-Dokumentationsprojekt</orgname>
+	  <address> <email>pcutler@gnome.org</email> </address> 
+	</affiliation> 
+      </author> 
+
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="candidate"/>
+	
+	    <revhistory>
+      <!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+
+      <revision>
+        <revnumber>Mahjongg-Handbuch V2.26</revnumber>
+        <date>16. Juni 2009</date>
+        <revdescription>
+          <para role="author">Paul Cutler</para>
+          <para role="publisher">GNOME-Dokumentationsprojekt</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>Mahjongg-Handbuch V2.26</revnumber>
+        <date>16. Juni 2009</date>
+        <revdescription>
+          <para role="author">Artur Szymanski</para>
+        </revdescription>
+      </revision>	  
+      <revision> 
+	<revnumber>Mahjongg-Handbuch V2.10;</revnumber> 
+	<date>Juni 2005</date> 
+	<revdescription> 
+	  <para role="author">Eric Baudais <email>baudais@okstate.edu</email></para>
+	  <para role="publisher">GNOME-Dokumentationsprojekt</para>
+	</revdescription> 
+	</revision>
+	</revhistory>
+
+    <releaseinfo>Dieses Handbuch beschreibt Version 2.26 von Mahjongg.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Rückmeldungen</title> 
+      <para>Um Fehler zu melden oder einen Vorschlag zur Anwendung <application>Mahjongg</application> oder zu diesem Handbuch zu machen, folgen Sie den Anweisungen auf der <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME-Seite für Rückmeldungen</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME Mahjongg</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="intro">
+    <title>Einführung</title>
+
+    <para><application>Mahjongg</application> ist eine Solitärversion (d.h. Ein-Spieler-Version) des unter diesem Namen bekannten fernöstlichen Spiels. Es verfügt über die allgemein bekannten Funktionen, die Sie von Karten- oder Brettspielen erwarten. Sie können die Art der Spielsteine, den Hintergrund, den Schwierigkeitsgrad und noch manch andere Dinge im <link linkend="prefs">Einstellungsdialog</link> ändern. Andere Merkmale, wie der <link linkend="pause"><guibutton>Pause</guibutton></link>-Knopf, machen Sie konkurrenzfähig, wenn Sie gegen die Uhr spielen.</para>
+
+    <sect2 id="history">
+      <title>Eine kurze Geschichte von Mahjongg</title>
+
+      <!-- FIXME: Explain more about solitaire version.-->
+      <para>Mahjongg-Spielsteinsätze erlauben viele Variationen des Originalspiels. Sie spielen hier die Solitärversion. Jeder Spielstein hat eine damit zu assoziierende <ulink type="http" url="http://www.xs4all.nl/~korntner/mahjong/fortune/index.html">Bedeutung</ulink>.</para>
+
+      <para>Der Ursprung von Mahjongg ist nicht vollständig bekannt, darüber kursieren verschiedene Theorien. Eine besagt, dass Noah auf der Arche Mahjongg spielte, weil die östliche Richtung in der Flut dominant ist, vermutlich auch die Richtung, aus der der Regen kam. Eine weitere Theorie erklärt den chinesischen Philosophen Konfuzius zum Erfinder des Spiels. Die drei <quote>Kardinal</quote>-Steine tragen die gleichen Namen wie seine drei Kardinaltugenden. Chung (Mitte),der Rote, Fa (Wohlstand), der Grüne, und Po (weiß), der Weiße, stehen für Wohltätigkeit, Aufrichtigkeit und kindliche Frömmigkeit. Noch eine andere Theorie versteht Mahjongg als eine Ableitung aus anderen chinesischen Spielen. <quote>Ya Pei</quote> wird mit 32 aus Holz oder Elfenbein gefertigten Karten gespielt, welche die gleichen rechteckigen Formen wie heutige Mahjongg-Steine aufweisen. <quote>Ma Tiae</quote> wird mit 40 Papierkarten gespielt, ähnlich im Erscheinungsbild und nummeriert mit den Ziffern von 1 bis 9 in vier verschiedenen Sätzen, ähnlich den Quartettspielen. Es wird angenommen, dass zwei Brüder um das Jahr 1850 Mahjongg als Kombination dieser zwei Spiele entwickelten.</para>
+
+      <para>In den frühen Jahren des 19. Jahrhunderts wurde Mahjongg in die englischen Clubs in Shanghai eingeführt. Mr. Babcock begann mit dem Export der Mahjongg-Spielsteine in die westliche Welt. Er verkleinerte das Regelwerk bis auf ein paar Grundregeln und ersetzte die Beschriftung der Spielsteine durch arabische Ziffern. Im Jahre 1923 erreichte der Mahjongg-Boom seinen Höhepunkt. Große Spieleanbieter wie Parker Bros., Milton Bradley, und United States Playing Card importierten die Mahjongg-Spielsets zu Tausenden.</para>
+
+      <para>Viele verschiedene Regeln entstanden und im Jahre 1924 wurde das »Standardization Committee of the American Official Laws of Mah-Jongg« (Amerikanisches Standardisierungskomitee der offiziellen Mahjongg-Regeln) gebildet, um ein Regelwerk zu erstellen. Auch heute noch spielen viele Clubs nach eigenen Regeln und verwenden beispielsweise Joker-Steine. Spieler der Computerversion waren fasziniert von den handgearbeiteten Spielsteinen aus den 20er und 30er Jahren des 20. Jahrhunderts und begannen in Antiquitätenläden und auf Flohmärkten danach zu suchen. Viele neue Spieler fanden ausschließlich über die Solitärversion den Weg zu diesem Spiel und begannen langsam zu verinnerlichen, welche Faszination und Herausforderung dieses traditionelle Spiel bietet. <footnote>
+	  <para>Dieser Text ist teilweise dem <ulink type="http" url="http://www.mahjongmuseum.com/">Mah Jong Museum.</ulink> entnommen.</para>
+	</footnote></para>
+    </sect2>
+  </sect1>
+  
+   <!-- ============= Playing Mahjongg ============================= -->
+
+  <sect1 id="usage">
+    <title>Mahjongg spielen</title>
+
+    <para>Sie beginnen mit in fünf Ebenen gestapelten Spielsteinen, wobei einige davon durch darüber liegende Steine verdeckt werden. Je schwerer das Spiel im Dialog <link linkend="prefs"><interface>Einstellungen</interface></link> gewählt wurde, umso mehr Steine sind bei Spielbeginn verdeckt. Das Ziel von <application>Mahjongg</application> ist, alle Steine aus dem Spielfeld zu entfernen. Um Steine zu entfernen, müssen Sie zusammengehörende, gleich aussehende Paare finden. Zusammengehörende Paare haben üblicherweise die gleiche Anzahl von Punkten oder Markierungen, oder anders ausgedrückt, sie müssen einander gleichen.</para>
+
+    <para>Ein Beispiel: Der hervorgehobene Spielstein im <link linkend="mahjongg-fig">Bild unten</link> hat sechs Punkte. Der dazu gehörende Stein ist derjenige, der ebenfalls sechs Punkte hat. Dieser Stein liegt am rechten Ende der dritten Zeile von unten, und es gibt einen weiteren nahe der Mitte der vierten Zeile von unten. Wenn Sie den Stein in der obersten Ebene entfernen wollen, müssen Sie nach einem weiteren Stein mit den gleichen grünen Bambus-Symbolen suchen. Sehen Sie noch einen passenden Stein? Es gibt drei sichtbare und zum Stein in der obersten Ebene passende Steine. Einer liegt links, ein weiterer unten rechts. Der dritte Stein liegt in der obersten Zeile. Allerdings können Sie diesen nicht entfernen, weil der Stein nicht an der rechten oder linken Außenseite der Steinreihe liegt. Später werden Sie lernen, welche zusammen passenden Steine unmittelbar entfernt werden können und welche nicht. Die Suche nach den beiden anderen sichtbaren passenden Steinen überlasse ich Ihnen.</para>
+
+    <figure id="mahjongg-fig">
+      <title>Hauptfenster von Mahjongg</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/mahjongg.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Hauptfenster.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para><application>Mahjongg</application> wird gespielt, indem Sie auf zwei gleiche Spielsteine klicken, wodurch diese vom Spielfeld entfernt werden. Das Spiel wird fortgesetzt, bis alle Steine entfernt sind oder keine zusammengehörigen Paare mehr vorhanden sind.</para>
+
+    <para>Nur die äußersten linken und rechten Steine jeder Ebene können ausgewählt werden. Der Grund ist, dass Sie Steine, die nicht an den linken oder rechten Seiten liegen, nicht entfernen können. Wenn die Steine in verschiedenen Ebenen liegen und an der linken oder rechten Seite, genügt es, einen dazu passenden zu finden, um das Paar zu entfernen.</para>
+
+    <para>Wenn Sie keine Steine mehr entfernen können, informiert Sie ein Dialog darüber. Dieser Dialog bietet Ihnen weiterhin an, die Steine neu zu mischen (wodurch 60 Sekunden Strafzeit zur Spielzeit hinzugezählt werden) oder den letzten Zug rückgängig zu machen. Sie können (und müssen gegebenenfalls) auch mehrere Züge zurückgehen, um den Fehler zu finden.</para>
+
+    <figure id="info-fig1">
+      <title>Informationsdialog</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/no-move.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Informationsdialog.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+    
+    <sect2 id="toolbar">
+      <title>Werkzeugleiste</title>
+
+      <para>Die <interface>Werkzeugleiste</interface> unterhalb der <interface>Menüleiste</interface> enthält die folgenden Knöpfe:</para>
+      
+      <variablelist>
+	<varlistentry>
+	  <term><guibutton>Neu</guibutton></term>
+	  <listitem>
+	    <para>Diese Schaltfläche startet ein neues Spiel mit den aktuellen Einstellungen.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Neu starten</guibutton></term>
+	  <listitem>
+	    <para>Diese Schaltfläche startet das laufende Spiel neu. Die Anordnung der Spielsteine wird auf den ursprünglichen Zustand zurückgesetzt.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry id="pause">
+	  <term><guibutton>Pause</guibutton></term>
+	  <listitem>
+	    <para>Diese Schaltfläche unterbricht das Spiel. Wenn das Spiel unterbrochen ist, wird die Uhr in der rechten unteren Ecke des <interface>Hauptfensters</interface> angehalten. Gleichzeitig verschwinden auch die Oberflächen der Spielsteine.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Zug rückgängig</guibutton></term>
+	  <listitem>
+	    <para>Diese Schaltfläche setzt solange jeweils ein entferntes Spielsteinpaar ins Spiel zurück, bis der Anfang des Spiels wieder erreicht ist.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Zug wiederholen</guibutton></term>
+	  <listitem>
+	    <para>Dieser Knopf wiederholt Ihren letzten Zug, den Sie mit <guibutton>Zug rückgängig</guibutton> zurückgenommen haben.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Hinweis</guibutton></term>
+	  <listitem>
+	    <para>Dieser Knopf weist Sie auf ein entfernbares Spielsteinpaar hin. Bei jeder Nutzung dieses Knopfes werden 30 Sekunden Strafzeit zur Spielzeit hinzugefügt.</para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+      <para>Die Statuszeile am unteren Rand des Fensters informiert Sie über den aktuellen Status des Spiels: </para>
+      <variablelist>
+	<varlistentry>
+	  <term><guilabel>Verbleibende Steine:</guilabel></term>
+	  <listitem>
+	    <para>Dies zeigt die Anzahl der verbleibenden zusammengehörigen Spielsteinpaare.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guilabel>Verbleibende Züge:</guilabel></term>
+	  <listitem>
+	    <para>Dies zeigt die Anzahl der möglichen Züge, die Sie ausführen können.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guilabel>Zeit:</guilabel></term>
+	  <listitem>
+	    <para>Dies zeigt die vergangene Zeit seit dem Start des Spiels.</para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+      
+      <figure id="toolbar-fig">
+	<title>Werkzeugleiste von Mahjongg</title>
+	<screenshot>
+	   <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/toolbar.png" format="PNG" srccredit="Eric Baudais"/>
+	  </imageobject>
+    <textobject> 
+      <phrase>Werkzeugleiste.</phrase> 
+    </textobject> 
+  </mediaobject>
+	</screenshot>
+      </figure>
+      
+    </sect2>
+    
+    <sect2 id="menubar">
+      <title>Menüs</title>
+      <para>Die Menüleiste am oberen Rand des <interface>Hauptfensters</interface> enthält folgende Menüs:</para>
+
+      <variablelist>
+	<varlistentry>
+	  <term><guimenu>Spiel</guimenu></term>
+	  <listitem>
+	    <para>Dieses Menü enthält: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>Strg-N</keycap></shortcut><guimenuitem>Neu</guimenuitem></menuchoice> — beginnt ein neues Spiel.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Neu starten</guimenuitem></menuchoice> — Dieser Eintrag setzt das aktuelle Spiel auf den Anfangszustand zurück.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Pause</guimenuitem></menuchoice> — Das Spiel wird unterbrochen, die Uhr angehalten und die Steinoberflächen ausgeblendet.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>Strg-Z</keycap></shortcut><guimenuitem>Zug rückgängig</guimenuitem></menuchoice> — Dieser Eintrag fügt jeweils ein entferntes Spielsteinpaar wieder hinzu, bis der Anfang des Spiels erreicht ist.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>Strg-R</keycap></shortcut><guimenuitem>Zug wiederholen</guimenuitem></menuchoice> — Dieser Eintrag wiederholt Ihren letzten Zug, den Sie mit <guibutton>Zug rückgängig</guibutton> zurückgenommen haben. Wenn Sie den Anfangszustand wieder erreicht haben, erscheint die Meldung <quote>Keine Wiederholung möglich!</quote> in der linken unteren Ecke des <interface>Hauptfensters</interface>.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Hinweis</guimenuitem></menuchoice> — Dies weist Sie auf zwei zusammengehörige und somit entfernbare Steine hin.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Ergebnisse</guimenuitem></menuchoice> — Dieser Eintrag öffnet einen Informationsdialog, der die zehn besten Ergebnisse zeigt, geordnet nach Benutzernamen und der dafür benötigten Zeit.</para>
+		</listitem>
+		<listitem>
+		  <para id="quit"><menuchoice><shortcut><keycap>Strg-Q</keycap></shortcut><guimenuitem>Beenden</guimenuitem></menuchoice> — Dieser Eintrag erlaubt Ihnen das Beenden des Spiels.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term><guimenu>Einstellungen</guimenu></term>
+	  <listitem>
+	    <para>Dieses Menü enthält: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>F11</keycap></shortcut><guimenuitem>Vollbild</guimenuitem></menuchoice> — Mit Hilfe dieses Eintrages können Sie das Spiel im Vollbildmodus spielen. Um den Vollbildmodus zu verlassen, drücken Sie <keycap>F11</keycap> oder klicken Sie auf den Knopf<guibutton>Vollbild verlassen</guibutton> in der <interface>Werkzeugleiste</interface>.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Werkzeugleiste</guimenuitem></menuchoice> — in diesem Eintrag legen Sie fest, ob die <link linkend="toolbar"><interface>Werkzeugleiste</interface></link> angezeigt werden soll oder nicht. Wenn das Kästchen angekreuzt ist, wird die <interface>Werkzeugleiste</interface> dort angezeigt, wo Sie sie zuletzt platziert haben. Wenn das Kästchen nicht angekreuzt ist, wird die <interface>Werkzeugleiste</interface> nicht angezeigt.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Einstellungen</guimenuitem></menuchoice> — Dieser Eintrag öffnet den <link linkend="prefs">Einstellungsdialog</link>.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guimenu>Hilfe</guimenu></term>
+	  <listitem>
+	    <para>Dieses Menü enthält: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>F1</keycap></shortcut><guimenuitem>Inhalte</guimenuitem></menuchoice> — Dieser Eintrag zeigt dieses Handbuch an.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Info</guimenuitem></menuchoice> — Dieser Eintrag zeigt einige grundlegende Informationen über <application>GNOME Mahjongg</application> an, wie die Namen der Autoren und die Versionsnummer der Anwendung.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+
+    </sect2>
+  </sect1>
+  
+   <!-- ============= Customization ============================= -->
+
+  <sect1 id="prefs">
+    <title>Anpassen</title>
+    <para>Um die Einstellungen der Anwendung zu ändern, wählen Sie <guimenuitem>Einstellungen</guimenuitem> im Menü <guimenu>Einstellungen</guimenu>. Der <link linkend="preferences-fig"><interface>Einstellungsdialog</interface></link> wird angezeigt.</para>
+    
+    <figure id="preferences-fig">
+<!-- FIXME: This dialog is the old one. -->
+<!-- ALAN: looks correct like version 2.10 to me -->
+      <title>Einstellungsdialog</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Einstellungsdialog.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Alle Optionen werden sofort angewendet und gespeichert.</para>
+    
+    <para>Im Dialog <interface>Einstellungsdialog</interface> können Sie folgendes ändern:</para>
+      
+      <itemizedlist mark="opencircle">
+	<listitem>
+	  <para><guilabel>Spielsteinsatz:</guilabel> — Wählen Sie das Aussehen der Spielsteine aus der Liste.</para>
+	</listitem>
+	<listitem>
+	  <para><guilabel>Karte wählen:</guilabel> — Ändert den Schwierigkeitsgrad des Spiels, indem die Art der Spielsteinanordnung verändert wird. Die ausgebreitete Version (Leicht) zeigt mehr Spielsteine, während die Kompaktversion (Schwer) viele Steine zunächst verdeckt.</para>
+	</listitem>
+	<listitem>
+	  <para><guilabel>Hintergrundfarbe:</guilabel> — Ein <interface>Farbwähler</interface> wird angezeigt, in welchem Sie eine neue Farbe auswählen können.</para>
+	</listitem>
+      </itemizedlist>
+
+    <para>Um die Größe der Spielsteine anzupassen, genügt es, die Größe des Spielfeldes zu verändern. Die Größe der Spielsteine wird dabei ebenfalls verändert, um das Spielfeld zu füllen.</para>
+
+  </sect1>
+  
+<!-- ALAN: Better to leave this section out than to say something unhelpful 
+and risk annoying the user.  
+ <sect1 id="bugs">
+  <title>Known Bugs and Limitations</title>
+  <para>
+   This application has no known bugs.
+  </para>
+ </sect1>
+-->
+
+ <!-- ============= Authors ============================= -->
+
+ <sect1 id="authors">
+  <title>Autoren</title>
+  <para><application>GNOME Mahjongg</application> wurde von Francisco Bustamante (<email>pancho@nuclecu.unam.mx</email>), Michael Meeks (<email>mmeeks@gnu.org</email>), Max Watson, Heinz Hempe, und Philippe Chavin geschrieben. Die Spielsteine für <application>GNOME Mahjongg</application> wurden von Jonathan Buzzard und Max Watson entworfen. Dieses Handbuch wurde von Eric Baudais geschrieben (<email>baudais@okstate.edu</email>). Um Fehler zu melden oder einen Vorschlag zu dieser Anwendung oder zu diesem Handbuch zu machen, folgen Sie den Anweisungen in diesem <ulink url="ghelp:user-guide?feedback-bugs" type="help">Dokument</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Lizenz</title>
+  <para>Dieses Programm und die enthaltenen Grafiken sind freie Software; Sie können es weiterverbreiten und/oder ändern unter den Bedingungen der <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> wie sie von der <ulink type="http" url="http://www.fsf.org">Free Software Foundation</ulink> veröffentlicht wurde; entweder in Version 2 der Lizenz oder (nach Ihrer Wahl) jeder neueren Version.</para>
+  <para>Dieses Programm wird in der Hoffnung verbreitet, dass es nützlich ist, aber OHNE JEGLICHE GARANTIE; auch ohne eine GEBRAUCHSTAUGLICHKEITSGARANTIE oder eine Garantie über die TAUGLICHKEIT FÜR EINEN BESTIMMTEN ZWECK. Lesen Sie die <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> für genauere Hinweise.</para>
+  <para>Eine Kopie der <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> ist im Anhang des <citetitle>GNOME Benutzerhandbuchs</citetitle> enthalten. Sie können außerdem eine Kopie der <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> von der Free Software Foundation erhalten, indem Sie auf <ulink type="http" url="http://www.fsf.org">ihre Internetseite</ulink> gehen oder an die <address>Free Software Foundation, Inc.<street>51 Franklin Street, Fifth Floor</street><city>Boston</city>, <state>MA</state><postcode>02111-1301</postcode><country>USA</country></address> schreiben.</para>
+ </sect1>
+</article>

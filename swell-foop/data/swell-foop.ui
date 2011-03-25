@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<interface>
+	<requires lib="gtk+" version="2.14"/>
+	<object class="GtkWindow" id="game_window">
+		<signal name="hide" handler="quit"/>
+		<property name="title" translatable="yes">Swell Foop</property>
+		<property name="icon_name">gnome-swell-foop</property>
+		<property name="resizable">False</property>
+		<accel-groups>
+			<group name="accel_group"/>
+		</accel-groups>
+		<child>
+			<object class="GtkVBox" id="game_vbox">
+				<property name="visible">True</property>
+				<property name="orientation">vertical</property>
+				<child>
+					<object class="GtkMenuBar" id="menu_bar">
+						<property name="visible">True</property>
+						<child>
+							<object class="GtkMenuItem" id="game_menu_item">
+								<property name="visible">True</property>
+								<property name="label" translatable="yes">_Game</property>
+								<property name="use_underline">True</property>
+								<child type="submenu">
+									<object class="GtkMenu" id="game_menu">
+										<property name="visible">True</property>
+										<child>
+											<object class="GtkImageMenuItem" id="new_game_item">
+												<signal name="activate" handler="new_game"/>
+												<property name="label">games-new-game</property>
+												<property name="visible">True</property>
+												<property name="use_underline">True</property>
+												<property name="use_stock">True</property>
+												<property name="accel_group">accel_group</property>
+											</object>
+										</child>
+										<child>
+											<object class="GtkImageMenuItem" id="scores_item">
+												<signal name="activate" handler="show_scores"/>
+												<property name="label">games-scores</property>
+												<property name="visible">True</property>
+												<property name="use_underline">True</property>
+												<property name="use_stock">True</property>
+												<property name="accel_group">accel_group</property>
+											</object>
+										</child>
+										<child>
+											<object class="GtkImageMenuItem" id="show_preferences_item">
+												<signal name="activate" handler="show_settings"/>
+												<property name="label">gtk-preferences</property>
+												<property name="visible">True</property>
+												<property name="use_underline">True</property>
+												<property name="use_stock">True</property>
+												<property name="accel_group">accel_group</property>
+											</object>
+										</child>
+										<child>
+											<object class="GtkSeparatorMenuItem" id="separator1" />
+										</child>
+										<child>
+											<object class="GtkImageMenuItem" id="undo_move_item">
+												<property name="label">games-undo-move</property>
+												<property name="use_underline">True</property>
+												<property name="use_stock">True</property>
+											</object>
+										</child>
+										<child>
+											<object class="GtkImageMenuItem" id="redo_move_item">
+												<property name="label">games-redo-move</property>
+												<property name="use_underline">True</property>
+												<property name="use_stock">True</property>
+											</object>
+										</child>
+										<child>
+											<object class="GtkSeparatorMenuItem" id="separator3" />
+										</child>
+										<child>
+											<object class="GtkImageMenuItem" id="quit_item">
+												<signal name="activate" handler="quit"/>
+												<property name="label">gtk-quit</property>
+												<property name="visible">True</property>
+												<property name="use_underline">True</property>
+												<property name="use_stock">True</property>
+												<property name="accel_group">accel_group</property>
+											</object>
+										</child>
+									</object>
+								</child>
+							</object>
+						</child>
+						<child>
+							<object class="GtkMenuItem" id="help_menu_item">
+								<property name="visible">True</property>
+								<property name="label" translatable="yes">_Help</property>
+								<property name="use_underline">True</property>
+								<child type="submenu">
+									<object class="GtkMenu" id="help_menu">
+										<property name="visible">True</property>
+										<child>
+											<object class="GtkImageMenuItem" id="show_help_item">
+												<signal name="activate" handler="show_help"/>
+												<property name="label">games-contents</property>
+												<property name="visible">True</property>
+												<property name="use_underline">True</property>
+												<property name="use_stock">True</property>
+												<property name="accel_group">accel_group</property>
+											</object>
+										</child>
+										<child>
+											<object class="GtkImageMenuItem" id="show_about_item">
+												<signal name="activate" handler="show_about"/>
+												<property name="label">gtk-about</property>
+												<property name="visible">True</property>
+												<property name="use_underline">True</property>
+												<property name="use_stock">True</property>
+												<property name="accel_group">accel_group</property>
+											</object>
+										</child>
+									</object>
+								</child>
+							</object>
+						</child>
+					</object>
+					<packing>
+						<property name="expand">False</property>
+						<property name="position">0</property>
+					</packing>
+				</child>
+				<child>
+					<object class="GtkClutterEmbed" id="clutter" />
+				</child>
+				<child>
+					<object class="GtkHSeparator" id="separator5" />
+				</child>
+				<child>
+					<object class="GtkHBox" id="statusbar">
+						<property name="homogeneous">True</property>
+						<child>
+							<object class="GtkLabel" id="message_label">
+								<property name="visible">True</property>
+								<property name="label"></property>
+							</object>
+							<packing>
+								<property name="expand">True</property>
+								<property name="fill">False</property>
+							</packing>
+						</child>
+						<child>
+							<object class="GtkLabel" id="score_label">
+								<property name="visible">True</property>
+								<property name="label"></property>
+							</object>
+							<packing>
+								<property name="expand">True</property>
+								<property name="fill">False</property>
+							</packing>
+						</child>
+					</object>
+				</child>
+			</object>
+		</child>
+	</object>
+	<object class="GtkAccelGroup" id="accel_group"/>
+</interface>
+

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="shortcut" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Χρήση του πληκτρολογίου για το παιχνίδι.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-21" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Συντομεύσεις πληκτρολογίου</title>
+
+  <section id="shortcuts-game">
+    <title>Συντομεύσεις παιχνιδιού</title>
+    <p>Ο ακόλουθος πίνακας συνοψίζει τις πιο χρήσιμες συντομεύσεις για το παίξιμο του <app>GNOME Τετραβέξ</app>.</p>
+    <table frame="all" rules="rows cols">
+      <tr>
+        <td><p>Συντόμευση</p></td><td><p>Περιγραφή</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>N</key></keyseq></p>
+        </td>
+        <td>
+          <p>Ξεκίνημα νέου παιχνιδιού.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><key>Pause</key></p>
+        </td>
+        <td>
+          <p>Παύση ή συνέχιση παιχνιδιού.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            <keyseq><key>Ctrl</key><key>Πάνω</key></keyseq>
+          </p>
+        </td>
+        <td>
+          <p>Μετακίνηση όλων των κομματιών στο αριστερό μέρος κατά ένα κουτί προς τα πάνω.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Κάτω</key></keyseq></p>
+        </td>
+        <td>
+          <p>Μετακίνηση όλων των κομματιών στο αριστερό κουτί κατά ένα κουτί προς τα κάτω.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Αριστερά</key></keyseq></p>
+        </td>
+        <td>
+          <p>Μετακίνηση όλων των κομματιών στο αριστερό μέρος κατά ένα κουτάκι προς τα αριστερά.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Δεξιά</key></keyseq></p>
+        </td>
+        <td>
+          <p>Μετακίνηση όλων των κομματιών στο αριστερό μέρος κατά ένα κουτί προς τα δεξιά.</p>
+        </td>
+      </tr>
+    </table>
+  </section>
+</page>

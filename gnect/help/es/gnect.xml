@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Four-in-a-Row</application>">
+<!ENTITY appname "Four-in-a-Row">
+<!ENTITY version "2.8">
+]>
+<!-- ===== DOCUMENT HEADER ===== -->
+<article id="index" lang="es">
+<!-- please do not change the id -->
+<!-- translators, change lang to the appropriate code -->
+  <articleinfo>
+    <title>Manual de Cuatro en raya</title>
+    <abstract role="description">
+      <para>El objetivo de Cuatro en raya es poner cuatro fichas en una fila vertical, horizontal o diagonal mientras que el oponente intenta bloquearle y hacer su propia fila de cuatro fichas. Cuatro en raya se puede jugar contra otra persona o contra el equipo.</para>
+    </abstract>
+
+    <copyright>
+      <year>2001-2002</year>
+      <holder>Timothy Musson</holder>
+    </copyright><copyright><year>2007-2009</year><holder>Jorge González (jorgegonz@svn.gnome.org)</holder></copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+     <year>2000</year>
+     <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+    <publisher role="maintainer"> 
+      <publishername>Proyecto de Documentación de GNOME</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+	<para>Se concede permiso para copiar, distribuir o modificar este documento según las condiciones de la GNU Free Documentation License (GFDL), Versión 1.1 o cualquier versión posterior publicada por la Free Software Foundation sin Secciones invariantes, Textos de portada y Textos de contraportada. Encontrará una copia de la GFDL en este <ulink type="help" url="ghelp:fdl">enlace</ulink> o en el archivo COPYING-DOCS distribuido con este manual.</para>
+         <para>Este manual forma parte de una colección de documentos de GNOME distribuidos según la GFDL. Si desea distribuir este manual de forma independiente de la colección, puede hacerlo agregando una copia de la licencia al documento, según se describe en la sección 6 de la misma.</para>
+
+	<para>Muchos de los nombres utilizados por las empresas para distinguir sus productos y servicios se consideran marcas comerciales. Cuando estos nombres aparezcan en la documentación de GNOME, y siempre que se haya informado a los miembros del Proyecto de documentación de GNOME de dichas marcas comerciales, los nombres aparecerán en mayúsculas o con las iniciales en mayúsculas.</para>
+
+	<para>ESTE DOCUMENTO Y LAS VERSIONES MODIFICADAS DEL MISMO SE OFRECEN SEGÚN LAS CONDICIONES ESTABLECIDAS EN LA LICENCIA DE DOCUMENTACIÓN LIBRE DE GNU (GFDL) Y TENIENDO EN CUENTA QUE: <orderedlist>
+		<listitem>
+		  <para>EL DOCUMENTO SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, NI EXPLÍCITA NI IMPLÍCITA INCLUYENDO, SIN LIMITACIÓN, GARANTÍA DE QUE EL DOCUMENTO O VERSIÓN MODIFICADA DE ÉSTE CAREZCA DE DEFECTOS COMERCIALES, SEA ADECUADO A UN FIN CONCRETO O INCUMPLA ALGUNA NORMATIVA. TODO EL RIESGO RELATIVO A LA CALIDAD, PRECISIÓN Y UTILIDAD DEL DOCUMENTO O SU VERSIÓN MODIFICADA RECAE EN USTED. SI CUALQUIER DOCUMENTO O VERSIÓN MODIFICADA DE AQUÉL RESULTARA DEFECTUOSO EN CUALQUIER ASPECTO, USTED (Y NO EL REDACTOR INICIAL, AUTOR O CONTRIBUYENTE) ASUMIRÁ LOS COSTES DE TODA REPARACIÓN, MANTENIMIENTO O CORRECCIÓN NECESARIOS. ESTA RENUNCIA DE GARANTÍA ES UNA PARTE ESENCIAL DE ESTA LICENCIA. NO SE AUTORIZA EL USO DE NINGÚN DOCUMENTO NI VERSIÓN MODIFICADA DE ÉSTE POR EL PRESENTE, SALVO DENTRO DEL CUMPLIMIENTO DE LA RENUNCIA;Y</para>
+		</listitem>
+		<listitem>
+		  <para>EN NINGUNA CIRCUNSTANCIA NI BAJO NINGUNA TEORÍA LEGAL, SEA POR ERROR (INCLUYENDO NEGLIGENCIA) CONTRATO O DOCUMENTO DE OTRO TIPO, EL AUTOR, EL ESCRITOR INICIAL, EL AUTOR DE APORTACIONES NI NINGÚN DISTRIBUIDOR DEL DOCUMENTO O VERSIÓN MODIFICADA DEL DOCUMENTO, NI NINGÚN PROVEEDOR DE NINGUNA DE ESAS PARTES, SERÁ RESPONSABLE ANTE NINGUNA PERSONA POR NINGÚN DAÑO DIRECTO, INDIRECTO, ESPECIAL, INCIDENTAL O DERIVADO DE NINGÚN TIPO, INCLUYENDO, SIN LIMITACIÓN DAÑOS POR PÉRDIDA DE FONDO DE COMERCIO, PARO TÉCNICO, FALLO INFORMÁTICO O AVERÍA O CUALQUIER OTRO POSIBLE DAÑO O AVERÍA DERIVADO O RELACIONADO CON EL USO DEL DOCUMENTO O SUS VERSIONES MODIFICADAS, AUNQUE DICHA PARTE HAYA SIDO INFORMADA DE LA POSIBILIDAD DE QUE SE PRODUJESEN ESOS DAÑOS.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+
+    <authorgroup>
+      <author>
+        <firstname>Timothy</firstname>
+        <surname>Musson</surname>
+        <affiliation>
+          <!-- <orgname></orgname> -->
+          <address><email>trmusson@ihug.co.nz</email></address>
+        </affiliation>
+      </author>
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+
+      <othercredit role="translator">
+        <firstname>Latin</firstname> 
+        <surname>Translator 1</surname> 
+        <affiliation> 
+          <orgname>Latin Translation Team</orgname> 
+          <address> <email>translator@gnome.org</email> </address> 
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+        <revnumber>Manual de Cuatro en raya V2.8</revnumber>
+        <date>Septiembre de 2004</date>
+        <revdescription>
+          <para role="author">Timothy Musson <email>trmusson@ihug.co.nz</email></para>
+          <para role="publisher"/>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>Este manual describe la versión 2.12 de Cuatro en raya.</releaseinfo>
+
+    <legalnotice>
+      <title>Comentarios</title>
+      <para>Para informar de un fallo o hacer alguna sugerencia sobre la aplicación Cuatro en raya o sobre este manual, siga las indicaciones en la <ulink url="ghelp:user-guide?feedback-bugs" type="help">Página de comentarios de GNOME</ulink>.</para>
+    </legalnotice>
+  </articleinfo>
+
+
+  <!-- ============= Document Body ============================= -->
+
+  <!-- ============= Introduction ============================== -->
+
+
+  <sect1 id="intro">
+
+    <title>Introducción</title>
+
+    <para><application>Cuatro en raya</application> es un juego de cuatro en raya para el proyecto GNOME. El objetivo del juego es construir una línea de cuatro canicas mientras intenta impedir que su oponente (humano o máquina) construya su propia línea. Una línea puede ser horizontal, vertical o diagonal.</para>
+
+    <para>Para ejecutar <application>Cuatro en raya</application>, seleccione <guimenuitem>Cuatro en raya</guimenuitem> del submenú <guisubmenu>Juegos</guisubmenu> del <guimenu>Menú principal</guimenu>, o escriba <command>gnect</command> en la línea de comandos.</para>
+
+    <para><application>Cuatro en raya</application> está incluido en el paquete <filename>GNOME-games</filename>, que es parte del entorno de escritorio GNOME. Este documento describe la versión 2.8 de <application>Cuatro en raya</application>.</para>
+
+   <para>Cuatro en raya también soporta <link linkend="network-games">multijugador</link> con dos jugadores humanos en el mismo equipo o en modo red.</para>
+
+
+  </sect1>
+
+
+  <!-- ============= Usage ===================================== -->
+
+
+  <sect1 id="usage">
+
+    <title>Uso básico</title>
+
+    <!-- ===== How to play ===== -->
+
+    <sect2 id="playing">
+
+      <title>Jugar a Cuatro en raya</title>
+
+      <para>Para iniciar una nueva partida de Cuatro en raya elija <menuchoice><guimenu>Juego</guimenu><guimenuitem>Nueva partida</guimenuitem></menuchoice>.</para>
+
+      <para>El <interface>tablero de juego</interface> consiste en siete columnas y seis filas. Encima de esto, una fila especial indica el jugador actual y la caninca que se está jugando. Cada movimiento consiste en soltar una canica en una de las columnas. La canica aterriza en la fila vacía inferior de la columna elegida.</para>
+        
+      <para>Para hacer un movimiento, pulse sobre una columna con el ratón. Para jugar con el teclado, mueva la canina de la fila superior con las teclas de flecha izquierda y derecha, y suéltela en su lugar con la tecla de flecha abajo. Su canica caerá en la fila vacía inferior de esa columna.</para>
+
+      <!-- Figure -->
+      <mediaobject id="mainwindow-fig">
+        <imageobject>
+          <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="trm"/>
+        </imageobject>
+        <textobject>
+          <phrase>Ventana principal de Cuatro en raya</phrase>
+        </textobject>
+        <caption><para>Ventana principal de Cuatro en raya</para></caption>
+      </mediaobject>
+
+      <para>El juego lo gana quien consigue formar una línea horizontal, vertical o diagonal de cuatro de sus canicas. Si el tablero se llena sin un ganador, el juego acaba en empate.</para>
+
+    </sect2>
+    
+    <!-- ===== Commands ===== -->  
+    
+    <sect2 id="commands">
+      <title>Comandos</title>
+      <anchor id="menubar"/><!-- id for removed section -->
+      
+      <para>Para deshacer un movimiento, elija <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>Z</keycap></keycombo></shortcut><guimenuitem>Deshacer movimiento</guimenuitem></menuchoice>. Si está jugando contra un amigo, esto deshará un movimiento. si está jugando controla el equipo, esto deshará su último movimiento y el del equipo. Repetir esto hará que se vuelva al estado inicial del tablero.</para>
+      <para>Elija <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>H</keycap></keycombo></shortcut> <guimenuitem>Sugerencia</guimenuitem></menuchoice> para obtener una sugerencia del equipo para su siguiente movimiento. Esto se muestra en la barra de estado.</para>
+      
+      <para>Elija <menuchoice><guimenuitem>Puntuación</guimenuitem></menuchoice> para mostrar la cuenta de victorias y empates para la sesión actual. La puntuación se borrará a cero si se cambia la selección de jugadores en las Preferencias.</para>      
+
+      
+    </sect2>  
+
+    <!-- ===== Preferences ===== -->
+
+    <sect2 id="prefsdialog">
+
+      <title>Preferencias</title>
+
+      <para>Para cambiar los ajustes del juego, seleccione <guimenuitem>Preferencias</guimenuitem> del menú <guimenu>Ajustes</guimenu>. Esto abrirá el <interface>diálogo de preferencias</interface>.</para>
+
+      <para>Las opciones de configuración en la pestaña <guilabel>Juego</guilabel> son: <variablelist>
+
+          <varlistentry>
+            <term><guilabel>Jugador uno</guilabel> y <guilabel>Jugador dos</guilabel></term>
+            <listitem>
+              <para>Estas dos columnas indican a <application>Cuatro en raya</application> quién está jugando, y si es el equipo, en qué nivel lo hará. Para jugar contra un amigo, seleccione Humano tanto para el Jugador uno como para el Jugador dos.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Tema</guilabel></term>
+            <listitem>
+              <para>El menú temas muestra los temas disponibles y le permite elegir su favorito.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Activar animación</guilabel></term>
+            <listitem>
+              <para>Aquí puede conmutar la animación del juego entre activada o desactivada.</para>
+            </listitem>
+          </varlistentry>
+
+        </variablelist></para>
+      <para>Finalmente hay una pestaña de <guilabel>Controles</guilabel> para cambiar los controles del teclado. Para cambiar un control, pulse dos veces con el ratón sobre la entrada apropiada y después pulse una nueva tecla.</para>
+
+    </sect2>
+  </sect1>
+
+
+  <!-- ===== Custom Themes ===================================== -->
+
+
+  <sect1 id="custom">
+
+    <title>Crear nuevos temas</title>
+
+    <para>Esta sección se incluye en caso de que quiera hacer sus propios temas para <application>Cuatro en raya</application>. Se asume que le es familiar la edición básica de texto, software de gráficos y la línea de comandos.</para>
+
+    <sect2 id="images">
+
+      <title>Imágenes</title>
+
+      <para>Los juegos de piezas de <application>Cuatro en raya</application> contienen seis figuras de igual tamaño, alineadas horizontalmente. De izquierda a derecha:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Canica del jugador uno tal y como aparece en el tablero de juego</para>
+        </listitem>
+        <listitem>
+          <para>Canica del jugador dos tal y como aparece en el tablero de juego</para>
+        </listitem>
+        <listitem>
+          <para>El fondo del tablero de juego</para>
+        </listitem>
+        <listitem>
+          <para>El fondo de la fila superior</para>
+        </listitem>
+        <listitem>
+          <para>Canica del jugador uno tal y como aparece en la fila superior</para>
+        </listitem>
+        <listitem>
+          <para>Canica del jugador dos tal y como aparece en la fila superior</para>
+        </listitem>
+      </orderedlist>
+
+      <figure id="shot1">
+        <title>Un ejemplo de un juego de piezas</title>
+        <screenshot>
+          <screeninfo>Esta imagen muestra las seis piezas en un juego de piezas</screeninfo>
+          <graphic format="PNG" fileref="figures/tileset.png" srccredit="TRM"/>
+        </screenshot>
+      </figure>
+
+      <para>Las piezas tres y cuatro se repetirán por todo el tablero de juego y la fila superior a no ser que se especifique una imagen de ventana completa como imagen de fondo en el archivo del tema.</para>
+
+      <tip>
+        <title>Consejo</title>
+        <para>Se recomienda usar el formato de archivo PNG para los juegos de piezas. La primera, segunda, quinta y sexta piezas deberían contener alguna transparencia si quiere que el fondo se muestre a través de ellas. La tercera y cuarta piezas deberían ser sólidas, sin transparencia, incluso si usará una imagen de ventana completa como fondo para su tema.</para>
+      </tip>
+
+      <tip>
+        <title>Consejo</title>
+        <para>Las piezas pueden ser cuadradas o rectangulares, y de cualquier tamaño que desee. La mayoría de los juegos de piezas que vienen con <application>Cuatro en raya</application> usan piezas cuadradas de 50 píxeles por 50 píxeles de tamaño.</para>
+      </tip>
+
+      <para>Para usar una imagen de ventana completa como imagen de fondo, hay algo más de trabajo que hacer. Digamos que sus piezas tienen un tamaño de 50 por 50 píxeles. Las dimensiones del juego son de 7 por 7 casillas, incluyendo la fila superior, de tal forma que la imagen de fondo ideal para su juego de piezas tendría un tamaño de 350 por 350 píxeles.</para>
+
+      <tip>
+        <title>Consejo</title>
+        <para><application>Cuatro en raya</application> escalará automáticamente la imagen de fondo si no concuerda con el juego de piezas. Esto significa que puede hacer una versión «grande» y «pequeña» de su tema, ambas usarán la misma imagen de fondo, simplemente teniendo una versión grande y una pequeña de su juego de piezas.</para>
+      </tip>
+
+      <para>Así que ahora tiene un juego de piezas y quizá una imagen de fondo que va con él. El siguiente paso es juntarlo todo en el lugar adecuado.</para>
+
+    </sect2>
+
+
+    <sect2 id="directories">
+
+      <title>Juntarlo todo</title>
+
+      <para>El último paso es poner sus imágenes donde <application>Cuatro en raya</application> pueda encontrarlas. Podría ponerlas en el directorio de instalación de Cuatro en raya (que depende de su sistema en particular) pero su directorio personal probablemente es mejor idea.</para>
+
+      <para>Cree un directorio <filename class="directory">~/.gnect</filename>, y también <filename class="directory">~/.gnect/pixmaps</filename>. Esos nombres son importantes, ya que <application>Cuatro en raya</application> no buscará en ningún otro lugar.</para>
+
+      <para>Copie sus imágenes en el directorio pixmaps.</para>
+
+      <para>Si inicia <application>Cuatro en raya</application> desde la línea de comandos, le dará indicios sobre cualquier problema que tenga con su nuevo tema. Si no tiene ninguno, encontrará su nuevo tema en la lista del <interface>diálogo de preferencias</interface>.</para>
+
+      <para>¡Diviértase!</para>
+
+    </sect2>
+
+
+  </sect1>
+
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Juegos en red</title>
+  <para>Cuatro en raya soporta juegos en red multijugador, proporcionados por <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink>. Al conectar Cuatro en raya a un servidor en internet, puede desafiar otros jugadores en juegos multijugador. Para obtener noticias, actualizaciones y una lista de los servidores a los que conectar, vea la <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">página web de juegos GNOME</ulink>.</para>
+  <para>Para iniciar una nueva partida multijugador de Cuatro en raya seleccione <menuchoice><guimenu>Juego</guimenu><guimenuitem>Juego en red</guimenuitem></menuchoice> del menú de Cuatro en raya.</para> 
+
+<sect2 id="connecting">
+<title>Conectar Cuatro en raya con un servidor de red</title>
+<para>El diálogo de conexión de Cuatro en raya se muestra inicialmente al comenzar un nuevo juego en red. Éste diálogo le permite seleccionar un servidor al que conectarse y el nombre de usuario que tendrá mientras esté conectado a ese servidor.</para>
+
+<para>Es posible conectarse a un servidor tanto con una cuenta de invitado como con una cuenta normal registrada. Las cuentas de invitado le permiten registrarse anónimamente, mientras que una cuenta normal le permite reservar su propio nombre de usuario que está protegido por la contraseña que elija.</para>
+
+<para>Debería seleccionar la opción <guimenuitem>Inicio de sesión como invitado</guimenuitem> si quiere iniciar una sesión anónima. Si quiere crear una nueva cuenta, entonces seleccione la opción <guimenuitem>Inicio de sesión por primera vez</guimenuitem>, con el nombre de usuario, contraseña y correo electrónico que quiera. Si ya ha creado una cuenta, puede conectarse con ella seleccionando la opción <guimenuitem>Inicio de sesión normal</guimenuitem> e introduciendo el nombre de usuario y contraseña que eligió.</para>
+<para>Para conectar a un servidor, pulse en el botón <guimenuitem>Conectar</guimenuitem>.</para>
+<figure id="connect">
+<title>El diálogo de conexión en red de Cuatro en raya.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>El diálogo de conexión en red de Cuatro en raya.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Unirse a una sala de juego</title>
+<para>Una vez que se haya conectado a un servidor, elija a qué sala de juego quiere unirse. Para jugar una partida multijugador de Cuatro en raya, seleccione la sala Cuatro en raya. Si quiere hospedar su propia partida, entonces pulse el botón Lanzar. Esto creará un nuevo tablero donde otros jugadores pueden participar en la partida contra usted. Si ya hay algún otro juego iniciado, puede pulsar con el ratón dos veces sobre un tablero para unirse a él. La lista de tableros de juegos a la derecha le muestra el número de asientos disponibles, que significa el número de jugadores que pueden unirse al tablero.</para>
+<figure id="tables">
+<title>El diálogo de Cuatro en raya le permite unirse a una sala de juego y encontrar otros jugadores.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>El diálogo de Cuatro en raya le permite unirse a una sala de juego y encontrar otros jugadores.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>Cuando cree una nueva tablero para partidas de Cuatro en raya, se mostrará un diálogo de preferencias que le permite personalizar el juego, tales como el mínimo número de jugadores para la partida. Una vez que todos los asientos se han ocupado, entonces no se permitirá a más jugadores que se unan a ese tablero.</para>
+<para>Es posible chatear con otros jugadores en los juegos en red. Pregunte por un consejo o ayuda mientras juega las partidas, pero sea educado con los otros jugadores.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Esperar a que otros jugadores se unan al juego</title>
+<para>Una vez que se ha unido satisfactoriamente a una partida, tiene que esperar hasta que se unan suficientes jugadores. El elemento del menú <guimenuitem>Lista de jugadores</guimenuitem> le permite ver la lista de los jugadores que se han unido a la partida. El juego comenzará inmediatamente cuando se alcance el número de jugadores necesario.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Jugar a Cuatro en raya en modo multijugador</title>
+<para>Las partidas multijugador en Cuatro en raya tienen más o menos las mimas reglas que una partida normal de Cuatro en raya, salvo que ahora juega contra jugadores humanos. Esto significa que posiblemente otras estrategias sean mejores que las usadas contra los jugadores IA.</para>
+<para>Una vez que un jugador ha ganado, el juego termina y puede volver a la pantalla iniciar de juego en red. Entonces puede jugar otra adictiva partida de Cuatro en raya.</para>
+</sect2>
+
+</sect1>
+
+
+
+  <!-- ===== Bugs ============================================== -->
+
+
+  <sect1 id="bugs">
+
+    <title>Errores conocidos y limitaciones</title>
+
+    <para>Ocasionalmente la caída de las canincas no parece tan suave como debería.</para>
+
+  </sect1>
+
+
+  <!-- ===== Authors =========================================== -->
+
+
+  <sect1 id="authors">
+
+    <title>Autores</title>
+
+    <para>Timothy Musson (<email>trmusson@ihug.co.nz</email>) y David Neary (<email>bolsh@gimp.org</email>) escribieron <application>Cuatro en raya</application>. Otros varios se han tomado su tiempo para ayudar de muchas maneras desde que comenzó el trabajo en <application>Cuatro en raya</application>.</para>
+    <para>El <ulink type="http" url="http://www.ce.unipr.it/~gbe/velena.html">motor Velena</ulink>, el jugador automático principal de <application>Cuatro en raya</application>, fue escrito por Giuliano Bertoletti. Le estamos muy agradecidos por dejarnos incluir su trabajo, sin el cual <application>Cuatro en raya</application> probablemente no merecería la pena.</para>
+    <para>Timothy Musson escribió este manual.</para>
+    <para>Para informar sobre un fallo o hacer sugerencias sobre esta aplicación o este manual, siga las indicaciones en este <ulink url="ghelp:user-guide?feedback-bugs" type="help">documento</ulink>.</para>
+
+
+<!-- For translations: uncomment this:
+
+  <para>
+    Latin translation was done by ME
+    (<email>MYNAME@MYADDRESS</email>). Please send all comments and
+    suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+-->
+
+  </sect1>
+
+
+  <!-- ============= License =================================== -->
+
+
+  <sect1 id="license">
+
+    <title>Licencia</title>
+
+    <para>Este programa es software libre; puede redistribuirlo y/o modificarlo bajo los términos de la <citetitle>Licencia Pública General GNU</citetitle> tal como se publica por la Free Software Foundation; ya sea la versión 2 de la Licencia, o (a su elección) cualquier versión posterior.</para>
+
+    <para>Este programa se distribuye con la esperanza de que le sea útil, pero SIN NINGUNA GARANTÍA; sin incluso la garantía implícita de MERCANTILIDAD o IDONEIDAD PARA UN PROPÓSITO PARTICULAR. Vea la <citetitle>Licencia Pública General GNU</citetitle> para más detalles.</para>
+
+    <para>Una copia de la <citetitle>Licencia Pública General GNU</citetitle> está incluida en el apéndice de la <citetitle>Guía de Usuario de GNOME</citetitle>. También puede obtener una copia de la <citetitle>Licencia Pública General GNU</citetitle> de la Free Software Foundation visitando <ulink url="http://www.fsf.org" type="http">su página web</ulink> o escribiendo a la <address>Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+
+  </sect1>
+
+</article>

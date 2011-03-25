@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Five or More</application>">
+<!ENTITY appname "Five or More">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- This doc is based on the GDP template from GNOME 1.2
+     Its syntax and DTD has been updated to validate with xmllint.
+     The content needs to be updated (it basically needs to be finished)
+     edited and indexed.
+   -->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="it"> 
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+ <articleinfo>
+  <title>Manuale di <application>Cinque o più</application></title>
+  <abstract role="description">
+    <para>Per giocare a Cinque o più bisogna allineare i pezzi colorati mentre la scacchiera viene riempita con pezzi collocati a caso. Quando cinque o più pezzi dello stesso colore sono allineati scompaiono. Il gioco termina quando la scacchiera viene completamente riempita.</para>
+  </abstract>
+
+  <copyright>
+   <year>2000-2002</year>
+   <holder>Emese Kovács</holder>
+  </copyright><copyright><year>2008</year><holder>Alessio Treglia (quadrispro@ubuntu-it.org)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>Progetto di documentazione GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Questo documento può essere copiato, distribuito e/o modificato solo in conformità con i termini della GNU Free Documentation License (GFDL) Versione 1.1 o delle versioni successive pubblicate dalla Free Software Foundation senza sezioni invariabili, frontespizi e testi di copertina. Una copia della GFDL è disponibile a questo <ulink type="help" url="ghelp:fdl">collegamento</ulink> o nel file COPYING-DOCS distribuito con questo manuale.</para>
+         <para>Questo manuale è parte di una collezione di manuali di GNOME distribuita sotto la GFDL. Se si vuole distribuire questo manuale separatamente dalla collezione, lo si può fare aggiungendo una copia della licenza al manuale, come descritto nella sezione 6 della licenza.</para>
+
+	<para>Molti dei nomi utilizzati dalle aziende per distinguere i loro prodotti e servizi sono rivendicati come marchi commerciali. Dove questi nomi appaiono nella documentazione di GNOME, e i membri del progetto di documentazione di GNOME sono informati di questi marchi commerciali, allora i nomi sono in lettere maiuscole o con la lettera iniziale maiuscola.</para>
+
+	<para>QUESTO DOCUMENTO E LE SUE VERSIONI MODIFICATE SONO FORNITI IN BASE AI TERMINI DELLA GNU FREE DOCUMENTATION LICENSE, SOTTO INTESO CHE: <orderedlist>
+		<listitem>
+		  <para>IL DOCUMENTO VIENE FORNITO SENZA GARANZIE DI ALCUN TIPO,ESPLICITE O IMPLICITE, INCLUSE, MA SENZA LIMITAZIONE, LE GARANZIE ATTESTANTI CHE IL DOCUMENTO O LE SUE VERSIONI MODIFICATE SIANO PRIVI DI DIFETTI, COMMERCIALIZZABILI, IDONEI A UN DETERMINATO SCOPO O CHE NON VIOLINO DIRITTI DI TERZI. SI DECLINA QUALUNQUE RESPONSABILITÀ RIGUARDO AI RISCHI INERENTI LA QUALITÀ, L'ACCURATEZZA E LE PRESTAZIONI DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA. QUALORA UN DOCUMENTO O UNA SUA VERSIONE MODIFICATA DOVESSERO PRESENTARE QUALUNQUE TIPO DI DIFETTO,IL COSTO DI EVENTUALI INTERVENTI DI ASSISTENZA, RIPARAZIONE O CORREZIONE SARÀ A CARICO DELL'UTENTE (NON DEL REDATTORE INIZIALE, DELL'AUTORE O DI ALTRI COLLABORATORI). QUESTA LIMITAZIONE DELLA GARANZIA COSTITUISCE PARTE ESSENZIALE DELLA LICENZA. L'USO DEL DOCUMENTO O DELLE SUE VERSIONI MODIFICATE È CONSENTITO SOLO ENTRO I TERMINI DI QUESTA LIMITAZIONE DELLA GARANZIA; E</para>
+		</listitem>
+		<listitem>
+		  <para>IN NESSUNA CIRCOSTANZA E PER NESSUNA RAGIONE LEGALE, INCLUSI I PRINCIPI DI COLPA (INCLUSA LA NEGLIGENZA), ACCORDO CONTRATTUALE O ALTRO, SARÀ POSSIBILE CONSIDERARE L'AUTORE, IL REDATTORE INIZIALE, GLI ALTRI COLLABORATORI, QUALUNQUE DISTRIBUTORE DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA O QUALUNQUE FORNITORE DELLE PERSONE CITATE, RESPONSABILE NEI CONFRONTI DI QUALUNQUE PERSONA PER DANNI DIRETTI, INDIRETTI, SPECIALI, INCIDENTALI O CONSEGUENTI DI QUALUNQUE NATURA, INCLUSI, MA SENZA LIMITAZIONE, I DANNI PER PERDITA DI AVVIAMENTO, INTERRUZIONE DEL LAVORO, GUASTO O MALFUNZIONAMENTO DEL COMPUTER O QUALUNQUE ALTRO DANNO O PERDITA DERIVANTE O CORRELATA ALL'USO DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA, ANCHE QUALORA LE PERSONE CITATE FOSSERO STATE INFORMATE DELLA POSSIBILITÀ DI TALI DANNI.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+	<firstname>Emese</firstname> 
+	<surname>Kovács</surname> 
+	<affiliation> 
+	  <orgname>Progetto di documentazione GNOME</orgname> 
+	  <address> <email>emese@gnome.hu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+    <revhistory>
+      <revision> 
+	<revnumber>Manuale di Cinque o più V2.8</revnumber> 
+	<date>Settembre 2004</date> 
+	<revdescription> 
+	  <para role="author">Emese Kovács <email>emese@gnome.hu</email></para>
+	  <para role="publisher">Progetto di documentazione GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Questo manuale descrive la versione 2.12 di Cinque o più.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Commenti</title> 
+      <para>Per segnalare un problema o inviare suggerimenti sull'applicazione <application>Cinque o più</application> o su questo manuale, seguire le istruzioni presenti alla <ulink url="ghelp:user-guide?feedback-bugs" type="help">pagina di commenti su GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Cinque o più</primary> 
+  </indexterm> 
+
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+ <sect1 id="intro">
+  <title>Introduzione</title>
+
+  <para><application>Cinque o più</application>, è la versione per GNOME del popolare gioco per Windows chiamato <application>Linee colorate</application>. Lo scopo del gioco è allineare il maggior numero possibile di combinazioni di cinque o più elementi dello stesso colore e dimensione, facendoli scomparire. Gioca più a lungo possibile, diventerai il numero 1 in classifica!</para>
+
+  <para>Per avviare <application>Cinque o più</application>, selezionare <guimenuitem>Cinque o più</guimenuitem> dal sottomenù <guisubmenu>Giochi</guisubmenu> del menù <guimenu>Applicazioni</guimenu>, oppure digitare <command>glines</command> in una finestra di terminale.</para>
+
+  <para><application>Cinque o più</application> è incluso nel pacchetto <filename>gnome-games</filename>, che fa parte dell'ambiente grafico GNOME. Questo documento descrive la versione 2.8 di <application>Cinque o più</application>.</para>
+
+ </sect1>
+
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="usage">
+    <title>Giocare a Cinque o più</title>
+    <para>
+      Playing <application>Five or More</application> is easy. At startup, you find
+      yourself with five objects randomly positioned on the board. Each turn,
+      you are allowed to move one object. You can move it anywhere on the board as long as there is a clear path. Afterward, the computer drops more objects
+      at random positions (the exact number depends on the size of the game). You can preview the next objects to be
+      dropped in the upper left corner of the game's window.
+      If you manage to align five objects of the same shape and color, they
+      disappear and you are given an extra move before more objects
+      drop.
+    </para>
+
+
+  <!-- ========= Basic Usage =========================== -->
+  <sect2 id="mainwin">
+   <title>Utilizzo di base</title>
+   <para>All'avvio di <application>Cinque o più</application> viene mostrata la <interface>scacchiera di gioco</interface> e viene avviata una nuova partita. Nella <xref linkend="mainwindow-fig"/> ne viene mostrato un esempio.</para>
+
+    <!-- ==== Figure ==== -->
+	<figure id="mainwindow-fig">
+	  <title>La finestra principale dell'inizio di un nuovo gioco.</title>
+	  <screenshot>
+	      <mediaobject>
+	      <imageobject>
+	      <imagedata fileref="figures/glines-startgame.png" format="PNG" srccredit="emese"/>
+	      </imageobject>
+	      </mediaobject>
+	  </screenshot>
+	</figure>
+     <!-- ==== End of Figure ==== -->
+
+   <para>Man mano che il gioco prosegue la scacchiera si riempie sempre di più (a meno che che il giocatore non sia davvero bravo...) e far scomparire gli oggetti diventa sempre più difficile. Il gioco finisce quando la scacchiera risulta completamente piena.</para>
+   
+   <!-- ==== Figure ==== -->
+   <figure id="gameover-fig">
+	  <title>Fine del gioco!</title>
+	  <screenshot>
+    <mediaobject>
+     <imageobject>
+      <imagedata fileref="figures/glines-gameover.png" format="PNG" srccredit="emese kovacs"/>
+     </imageobject>
+    </mediaobject>
+ </screenshot>
+</figure>  
+   <!-- ==== End of Figure ==== -->
+   
+  </sect2>
+
+
+  <!-- ========= Rulez =========================== -->
+
+    <sect2 id="rules"> 
+      <title>Giocare una partita</title>
+      <para>Una partita di <application>Cinque o più</application> comincia con alcuni oggetti posizionati in modo casuale sulla scacchiera.</para>
+      <para>Per fare una mossa, fare clic su uno degli oggetti. Quando selezionati, gli oggetti cominciano a ruotare (o a fare altro, a seconda del tema). È possibile selezionare la destinazione facendo clic su un riquadro vuoto. Se il percorso è libero, l'oggetto selezionato si sposta fino alla destinazione, mentre se la casella di destinazione risulta occupata da un altro oggetto non verrà mosso nulla e tale oggetto verrà selezionato. Se il percorso fra le due caselle non risulta libero (non è consentito agli oggetti scavalcarne altri) verrà mostrato un avviso nella barra di stato, posta nella parte in basso del finestra, e l'oggetto selezionato rimarrà attivo.</para>
+      <para>Come gli oggetti scompaiono si ottengono dei punti. I punti totalizzati dipendono dal numero di oggetti che si riesce ad allineare (vedere <xref linkend="glines-table1"/>). Il proprio punteggio viene mostrato nell'angolo in alto a destra della finestra.</para>
+      
+    <!-- ====  Table 1.  ==== -->
+    <table id="glines-table1">
+     <title>Punteggio in Cinque o più</title>
+      <tgroup cols="2" align="center">
+       <thead>
+        <row>
+         <entry>Numero degli oggetti</entry>
+         <entry>Punteggio assegnato</entry>
+        </row>
+       </thead>
+       <tbody>
+       <row>
+        <entry>5</entry>
+        <entry>10</entry>
+       </row>
+       <row>
+        <entry>6</entry>
+        <entry>12</entry>
+       </row>
+       <row>
+        <entry>7</entry>
+        <entry>18</entry>
+       </row>
+       <row>
+        <entry>8</entry>
+        <entry>28</entry>
+       </row>
+       <row>
+        <entry>9</entry>
+        <entry>42</entry>
+       </row>
+       <row>
+        <entry>10</entry>
+        <entry>82</entry>
+       </row>
+       <row>
+        <entry>11</entry>
+        <entry>108</entry>
+       </row>
+       <row>
+        <entry>12</entry>
+        <entry>138</entry>
+       </row>
+      <row>
+        <entry>13</entry>
+        <entry>172</entry>
+      </row>
+      <row>
+        <entry>14</entry>
+        <entry>210</entry>
+       </row>
+      </tbody>
+     </tgroup> 
+    </table>
+
+  <sect3>
+  <title>Usare la tastiera</title>
+  <para>Al posto del mouse è possibile utilizzare la tastiera per giocare a <application>Cinque o più</application>. Per usare la tastiera, premere un tasto freccia; apparirà un cursore vicino al centro della scacchiera. Per spostare tale cursore sarà sufficiente utilizzare i tasti freccia. Quando il cursore si trova sopra l'oggetto che si desidera spostare, selezionarlo con la barra spaziatrice, quindi spostare il cursore sulla destinazione desiderata e premere nuovamente la barra spaziatrice per muovere l'oggetto.</para><para>Se si utilizza nuovamente il mouse, il cursore scomparirà; apparirà di nuovo se si utilizzano ancora i tasti freccia.</para>
+  </sect3>
+
+
+   <!-- ==== End of Table ==== -->
+
+
+    </sect2>
+
+
+  </sect1>
+  <sect1 id="settings">
+  <title>Personalizzare il gioco</title>
+  <para>È possibile configurare <application>Cinque o più</application> facendo clic su <guimenuitem>Preferenze</guimenuitem> nel menù <guimenu>Impostazioni</guimenu>. Apparirà la seguente <interface>finestra di dialogo</interface>:</para>
+ <!-- ==== Figure ==== -->
+   <figure>
+     <title>Preferenze</title>   
+    <mediaobject id="preferences-dialogbox">
+     <imageobject>
+      <imagedata fileref="figures/preferences.png" format="PNG" srccredit="emese"/>
+     </imageobject>
+    </mediaobject>
+  </figure>    
+    <!-- ==== End of Figure ==== -->
+
+  <para>È possibile selezionare stili diversi per gli oggetti e colori di sfondo nella sezione <guimenu>Temi</guimenu>. Se si trova difficile distinguere i colori è possibile provare il tema delle forme.</para>
+  <para>La sezione <guimenu>Dimensione tavola</guimenu> consente di selezionare la dimensione della scacchiera. Ogni dimensione possiede un bilanciamento leggermente diverso: dimensioni maggiori corrispondono a un più ampio spazio per fare le proprie mosse ma anche a un numero maggiore di oggetti aggiunti ad ogni turno. I parametri per ogni dimensione sono elencati nella <xref linkend="table-sizes"/>.</para>
+    <table id="table-sizes">
+     <title>Punteggio in Cinque o più</title>
+      <tgroup cols="5" align="center">
+       <thead>
+        <row>
+         <entry align="left">Dimensione</entry>
+         <entry>Larghezza</entry>
+         <entry>Altezza</entry>
+	 <entry>Numero di tipi</entry>
+         <entry>Oggetti per turno</entry>
+        </row>
+       </thead>
+       <tbody>
+       <row>
+        <entry align="left">Piccola</entry>
+        <entry>7</entry>
+        <entry>7</entry>
+        <entry>5</entry>
+        <entry>3</entry>
+       </row>
+       <row>
+        <entry align="left">Media</entry>
+        <entry>9</entry>
+        <entry>9</entry>
+        <entry>7</entry>
+        <entry>3</entry>
+       </row>
+       <row>
+        <entry align="left">Grande</entry>
+        <entry>20</entry>
+        <entry>15</entry>
+        <entry>7</entry>
+        <entry>7</entry>
+       </row>
+      </tbody>
+     </tgroup> 
+    </table>
+
+  <para>È possibile aumentare la velocità dello spostamento degli oggetti semplicemente mettendo il segno di spunta all'opzione «Usa mosse rapide» nella sezione <guimenu>General</guimenu> della finestra di preferenze.</para>
+  <para>Tutte le modifiche apportate vengono applicate immediatamente e saranno caricate automaticamente al prossimo avvio di <application>Cinque o più</application>.</para>
+  </sect1>
+  <sect1 id="themes">
+    <title>Come creare nuovi temi</title> 
+    <para>Ogni tema consiste in un singolo file di immagine PNG. Questa immagine consiste in un array di sette righe, corrispondenti ai diversi colori/forme, e quattro colonne, ognuna delle quali è un fotogramma dell'animazione dell'oggetto. La dimensione reale dell'immagine è irrilevante, la quale potrà essere scalata, ma le sotto-immagini devono formare una griglia quattro per sette per ottenere l'effetto giusto. Quando si utilizza SVG si deve ricordare che la dimensione dell'immagine è la dimensione della pagina; se la propria griglia non riempie la pagina provare a ridurre la dimensione della pagina. È consigliato utilizzare un tema esistente come guida.</para>
+  </sect1>
+
+ <!-- ============= Bugs ================================== -->
+ <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of 
+
+      Better to omit this section than give false impression of perfection
+      Add back in if there is something worth saying
+
+ <sect1 id="bugs">
+  <title>Known Bugs and Limitations</title>
+  <para>
+   This application has no known bugs.
+  </para>
+ </sect1>
+-->
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Autori</title>
+  <para><application>Cinque o più</application> è stato scritto da Róbert Szókovács (<email>szo@appaloosacorp.hu</email>) e Szabolcs Bán (<email>shooby@gnome.hu</email>). Questo manuale è stato scritto da by Emese Kovács (<email>emese@gnome.hu</email>). Per informazioni su come riportare bug e inviare commenti o suggerimenti consultare <ulink url="ghelp:user-guide?feedback-bugs" type="help">questo documento</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licenza</title>
+  <para>Questo programma è software libero; è lecito redistribuirlo e/o modificarlo secondo i termini della <citetitle>GNU General Public License</citetitle> come è pubblicata dalla Free Software Foundation; o la versione 2 della licenza o (a propria scelta) una versione successiva.</para>
+  <para>Questo programma  è distribuito nella  speranza che sia  utile, ma SENZA  ALCUNA GARANZIA; senza  neppure la  garanzia implicita  di NEGOZIABILITÀ o di APPLICABILITÀ PER UN PARTICOLARE SCOPO. Si veda la <citetitle>GNU General Public License</citetitle> per avere maggiori dettagli.</para>
+  <para>Una copia della <citetitle>GNU General Public License</citetitle> è inclusa nell'appendice del <citetitle>Manuale dell'utente GNOME</citetitle>. Inoltre è possibile ottenere una copia della <citetitle>GNU General Public License</citetitle> dalla Free Software Foundation visitando <ulink url="http://www.fsf.org" type="http">il sito web</ulink> oppure scrivendo a <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

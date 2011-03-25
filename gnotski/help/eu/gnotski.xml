@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.10">
+<!ENTITY date "March 2004">
+<!ENTITY app "<application>Klotski</application>">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="eu">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title><application>Klotski</application>ren eskuliburua</title>
+
+    <abstract role="description">
+      <para>Klotski buru-hausgarri bat da. Joko honen helburua eredu-blokea berdez markatuta dagoen eremura eramatea da, baina horretarako bere bidean dauden blokeak mugitu behar dira.</para>
+    </abstract>
+
+    <copyright>
+      <year>2002</year> 
+      <holder>Andrew Sobala</holder> 
+    </copyright><copyright><year>2008.</year><holder>Hizkuntza Politikarako Sailburuordetza (hizpol@ej.gv.es)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOMEren dokumentazio-proiektua</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Baimena ematen da dokumentu hau kopiatu, banatu eta/edo aldatzeko Free Software Foundation-ek argitaratutako GNU Dokumentazio Librearen Lizentziaren 1.1. bertsioan edo berriago batean ezarritako baldintzetan, atal aldaezinik gabe, aurreko azaleko testurik gabe eta atzeko azaleko testurik gabe. GFDL lizentziaren kopia <ulink type="help" url="ghelp:fdl">esteka honetan</ulink> edo eskuliburu honekin batera ematen den COPYING-DOCS fitxategian aurkituko duzu.</para>
+         <para>Eskuliburu hau GFDL lizentziarekin banatzen diren GNOME eskuliburuen bildumakoa da. Eskuliburu hau bildumatik bereizita banatu nahi baduzu, banatu dezakezu, baina eskuliburuari lizentziaren kopia bat gehitu beharko diozu, lizentzian bertan 6. atalean azaltzen den bezala.</para>
+
+	<para>Enpresek beren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu gisa hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, eta GNOMEren Dokumentazio Proiektuko kideak marka komertzialak direla konturatzen direnean, izen horiek osorik maiuskulaz edo hasierako letra maiuskulaz idatzi dituzte.</para>
+
+	<para>DOKUMENTUA ETA DOKUMENTUAREN BERTSIO ALDATUAK GNU DOKUMENTAZIO LIBREAREN LIZENTZIAREN BALDINTZEN ARABERA EMATEN DIRA, ETA ONDOREN ZEHAZTEN DIRENAK ONARTZERA BEHARTZEN DUTE: <orderedlist>
+		<listitem>
+		  <para>DOKUMENTUA "DAGOEN-DAGOENEAN" EMATEN DA, INOLAKO BERMERIK GABE, EZ ESPRESUKI ADIERAZITAKORIK ETA EZ INPLIZITURIK ERE; BESTEAK BESTE, EZ DA BERMATZEN DOKUMENTUA EDO BERTSIO ALDATUA AKATSIK GABEA DENIK, MERKATURATZEKO EDO XEDE JAKIN BATERAKO EGOKIA DENIK EDO ARAURIK HAUSTEN EZ DUENIK, HORI GUZTIA MUGARIK GABE. DOKUMENTUAREN EDO DOKUMENTUAREN BERTSIO ALDATUAREN KALITATEARI, ZEHAZTASUNARI ETA PERFORMANTZIARI BURUZKO ERANTZUKIZUN OSOA ZUREA DA. DOKUMENTUREN BATEK EDO BERTSIO ALDATUREN BATEK EDOZEIN MOTATAKO AKATSIK IZANEZ GERO, ZUK (EZ HASIERAKO IDAZLEAK, EZ EGILEAK ETA EZ INONGO KOLABORATZAILEK) ZEURE GAIN HARTU BEHARKO DUZU BERRIKUSTEKO, KONPONTZEKO EDO ZUZENTZEKO BEHAR DIREN ZERBITZU GUZTIEN KOSTUA. BERME-UKATZE HAU LIZENTZIA HONEN FUNTSEZKO ZATIA DA. EZ DA BAIMENIK EMATEN EZEIN DOKUMENTU EDO BERTSIO ALDATU ERABILTZEKO, BALDIN ETA EZ BADA BERME-UKATZE HAU ONARTZEN.</para>
+		</listitem>
+		<listitem>
+		  <para>EZIN IZANGO DA INONGO ZIRKUNSTANTZIARIK EDO LEGE-TEORIARIK OINARRI HARTU --EZ ERANTZUKIZUN ZIBILARI BURUZKORIK (ZABARKERIA BARNE HARTUTA), EZ KONTRATUARI BURUZKORIK, EZ BESTERIK-- DOKUMENTU HONEN EDO BERTSIO ALDATU BATEN EGILEA, HASIERAKO IDAZLEA, EDOZEIN KOLABORATZAILE EDO BANATZAILE, EDO ALDERDI HORIEN EDOZEIN HORNITZAILE BESTE PERTSONA BATEN AURREAN ERANTZULE EGITEKO, PERTSONA HORREK EDOZEIN MOTATAKO KALTEA JASAN DUELAKO (ZUZENEKOA, ZEHARKAKOA, BEREZIA, INTZIDENTALA EDO ONDORIOZKOA), HALA NOLA (ETA MUGARIK GABE) BEZEROAK GALTZEA, LANA ETEN BEHARRA, ORDENAGAILUAK EZ IBILTZEA EDO GAIZKI IBILTZEA, EDO DOKUMENTUA NAHIZ HAREN BERTSIO ALDATUAK ERABILTZETIK ONDORIOZTATZEN DIREN EDO ERABILERA HORREKIN ZERIKUSIA DUTEN KALTEAK EDO GALERAK, ALDERDIARI KALTE HORIEK GERTA ZITEZKEELA ADITZERA EMAN BAZAIO ERE.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+		<firstname>Andrew</firstname> 
+		<surname>Sobala</surname> 
+		<affiliation> 
+	  		<orgname>GNOMEren dokumentazio-proiektua</orgname> 
+	  		<address> <email>andrew@sobala.net</email> </address> 
+		</affiliation> 
+      </author> 
+
+	<othercredit role="author">
+		<firstname>Lars</firstname>
+		<surname>Rydlinge</surname>
+		<affiliation>
+			<orgname>GNOME proiektua</orgname>
+			<address> <email>Lars.Rydlinge@HIG.SE</email> </address>
+		</affiliation>
+	</othercredit>
+
+	<othercredit role="maintainer">
+		<firstname>Ross</firstname>
+		<surname>Burton</surname>
+		<affiliation>
+			<orgname>GNOME proiektua</orgname>
+			<address> <email>ross@burtonini.com</email> </address>
+		</affiliation>
+	</othercredit>
+
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->  
+    <revhistory>
+<!--
+      <revision> 
+		<revnumber>Full title of previous manual.</revnumber> 
+		<date>Release date of previous manual.</date> 
+		<revdescription> 
+	  		<para role="author">Documentation Writer 1 
+	    	<email>docwriter1@gnome.org</email>
+	  		</para>
+	  		<para role="publisher">GNOME Documentation Project</para>
+		</revdescription> 
+      </revision> 
+-->
+
+	<revision>
+		<revnumber>2.0 bertsioa</revnumber>
+		<date>2002ko abuztuaren 13a</date>
+		<revdescription>
+	  		<para role="author">Andrew Sobala <email>andrew@sobala.net</email></para>
+	  		<para role="publisher">GNOMEren dokumentazio-proiektua</para>
+		</revdescription> 
+	</revision>
+
+    </revhistory> 
+
+    <releaseinfo>GNOME Klotski-ren 2.12 bertsioa azaltzen da eskuliburu honetan.</releaseinfo> 
+    <legalnotice> 
+      <title>Ohar-bidaltzea</title> 
+      <para><application>Klotski</application>ri buruzko akatsen berri emateko edo oharrak bidaltzeko, <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOMEra oharrak bidaltzeko orria</ulink>n aurkituko dituzu argibideak.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>GNOME Klotski</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="gnotski-introduction"> 
+	<title>Sarrera</title> 
+	<para><application>Klotski</application> aplikazioa Klotski jokoaren klona da. Helburua eredu-blokea berdez markatuta dagoen eremura eramatea da.</para>
+
+	<para><application>Klotski</application> Lars Rydlinge-k (<email>Lars.Rydlinge@HIG.SE</email>) idatzi zuen.</para>
+
+	<para><application>Klotski</application> <filename>gnome-games</filename> paketearen barruan sartzen da, eta hori GNOMEren mahaigaineko ingurunearen parte da. Dokumentu honek <application>Klotski</application>ren 2.12 bertsioa deskribatzen du.</para>
+
+	<para>Programa hau Free Software Foundation-ek argitaratutako GNU Lizentzia Publiko Orokorraren 2. bertsioan edo (nahiago baduzu) bertsio berriago batean jasotako baldintzen arabera banatzen da. Lizentzia horren kopia <ulink url="ghelp:gpl" type="help">esteka</ulink>honetan edo programa honen iturburu-kodean sartutako COPYING fitxategian aurkituko duzu.</para>
+
+	<para>Aplikazio honi buruzko akatsen berri emateko edo oharrak bidaltzeko, <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentua</ulink>n aurkituko dituzu argibideak.</para>
+  </sect1>
+
+<!-- ===========Objective ============================== -->
+<sect1 id="gnotski-objective">
+	<title>Xedea</title>
+	<para><application>Klotski</application>ren helburua da eredu-blokea berdez markatutako eremura mugitzea, ahalik eta mugimendu gutxien eginda. Horretarako, blokeak banan-banan mugitu behar dituzu saguarekin, margotutako blokea markatutako eremura eramatea lortzen duzun arte. <figure id="gnotski-figure-win"> 
+		<title>Irabazteko mugimendua</title> 
+		<screenshot> 
+			<mediaobject> 
+			<imageobject>
+				<imagedata fileref="figures/gnotski_win.png" format="PNG"/> 
+			</imageobject>
+			<textobject> 
+				<phrase>Eredu-blokea berdez markatutako eremura mugitu behar da.</phrase> 
+			</textobject> 
+	        	</mediaobject> 
+		</screenshot>
+	</figure></para>
+	<!-- ==== End of Figure ==== -->
+</sect1>
+
+<!-- =========== Getting Started ============================== -->
+
+  <sect1 id="gnotski-playing"> 
+	<title><application>Klotski</application>n jolastea</title> 
+	<para>
+	<itemizedlist> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-start"/></para> 
+	</listitem>
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-ui"/></para> 
+	</listitem> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-new-game"/></para> 
+	</listitem> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-moving"/></para> 
+	</listitem>
+	</itemizedlist> </para>
+
+	<!-- =========== To start gnotski ============================== -->
+	<sect2 id="gnotski-start">
+		<title><application>Klotski</application> abiaraztea</title>
+		<para><application>Klotski</application>-ren Aplikazioak menutik abiaraz dezakezu; horretarako, aukeratu <menuchoice><guisubmenu>Jokoak</guisubmenu><guimenuitem>Gnotski</guimenuitem></menuchoice>.</para>
+	</sect2>
+
+	<!-- =========== The main window ============================== -->
+	<sect2 id="gnotski-ui">
+		<title>Leiho nagusia</title>
+		<para><application>Klotski</application> abiarazten duzunean, leiho hau azalduko da.</para>
+
+		<!-- ==== Figure ==== -->
+		<figure id="gnotski-figure-mainwindow"> 
+			<title><application>Klotski</application>ren hasierako leihoa</title> 
+			<screenshot> 
+				<mediaobject> 
+				<imageobject>
+					<imagedata fileref="figures/gnotski_start_window.png" format="PNG"/> 
+				</imageobject>
+				<textobject> 
+					<phrase>Leiho nagusia bistaratzen du (<application>Klotski</application>). Titulu-barra, menu-barra, joko-eremua eta egoera-barra erakusten ditu. Menu-barrak menu hauek ditu: Jokoak eta Laguntza.</phrase> 
+				</textobject> 
+		        	</mediaobject> 
+			</screenshot>
+		</figure>
+		<!-- ==== End of Figure ==== -->
+
+		<para><application>Klotski</application>ren leihoan elementu hauek daude: <variablelist>
+		<varlistentry>
+			<term>Menu-barra</term>
+			<listitem>
+			<variablelist>
+			<varlistentry>
+				<term>Jokoa menua</term>
+				<listitem>
+				<para>Menu honen bidez joko berriak hasi, puntuaziorik onenak ikusi eta programatik irten zaitezke.</para>
+				</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Laguntza menua</term>
+				<listitem>
+				<para>Laguntza menuak <application>Klotski</application>ren dokumentazioa ikusteko aukera ematen dizu.</para>
+				</listitem>
+			</varlistentry>
+			</variablelist>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term>Joko-eremua</term>
+			<listitem>
+			<para>Joko-eremuak uneko blokeak erakusten dizkizu. Blokeak saguarekin arrastatu ditzakezu <xref linkend="gnotski-moving"/>n deskribatzen den moduan.</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term>Egoera-barra</term>
+			<listitem>
+			<para>Honek orain arte zenbat mugimendu egin dituzun erakusten du.</para>
+			</listitem>
+		</varlistentry>
+		</variablelist></para>
+
+	</sect2>
+
+	<!-- =========== Starting a new game ============================== -->
+	<sect2 id="gnotski-new-game">
+		<title>Beste joko bat hastea</title>
+		<para>Erabili <guimenu>Joko menua</guimenu> joko berri bat hasteko. <guimenuitem>Hurrengo jokoa</guimenuitem> eta <guimenuitem>Aurreko jokoa</guimenuitem> elementuek aukera ematen dizute jokoetan sekuentzialki nabigatzeko. <guisubmenu>HuaRong bidea</guisubmenu>, <guisubmenu>Erronka paketea</guisubmenu>, <guisubmenu>Trebetasuna paketea</guisubmenu> eta <guisubmenu>Minoru eskalada</guisubmenu> azpimenuetako lau kategoriena da joko bakoitza. Azpimenu horietan, jokoaren izen bakoitza agertoki bati dagokio.</para>
+		<example>
+		<title>Jokoa hastea</title>
+		<para>Jokorik zailena hasteko, aukeratu <menuchoice><guimenu>Jokoa</guimenu><guisubmenu>Minoru eskalada</guisubmenu><guimenuitem>Eskalada 24 pro</guimenuitem></menuchoice></para></example>
+	</sect2>
+
+	<!-- ===========Moving blocks ============================== -->
+	<sect2 id="gnotski-moving">
+		<title>Blokeak mugitzea</title>
+		<para>Bloke bat mugitzeko, egin klik gainean, ez askatu saguaren botoia eta arrastatu ezazu kokaleku berrira. Bloke berdeak edo jokoa inguratzen duen blokea ezin dituzu mugitu. Ezin duzu bloke bat mugitu beste bloke bat dagoen lekura. Salbuespen gisa, eredu-blokea bloke berdeetan zehar mugi dezakezu irabazteko.</para>
+	</sect2>
+
+</sect1>
+
+<!-- Known bugs.  Try to manage user expectations and warn them of known bugs
+but it is better to omit this section than give a false sense of perfection
+<sect1 id="gnotski-bugs">
+	<title>Known Bugs and Limitations</title>
+	<para>
+        There are no known bugs in this game.
+	</para>
+</sect1>
+-->
+
+<sect1 id="authors">
+  <title>Egileak</title>
+  <para><application>Klotski</application> Lars Rydlinge-k (<email>lars.rydlinge@hig.se</email>) idatzi zuen. Eskuliburu hau Angela Sobala-k idatzi zuen. Aplikazio honi buruzko akatsen berri emateko edo oharrak bidaltzeko, <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentua</ulink>n aurkituko dituzu argibideak.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+</sect1>
+
+ <sect1 id="license">
+  <title>Lizentzia</title>
+  <para>Programa hau eta irudiak software librea dira; birbana eta/edo alda dezakezu Free Software Foundation-ek argitaratutako <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako baldintzak betez gero.</para>
+  <para>Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO BERMERIK GABE; era berean, ez da bermatzen beraren EGOKITASUNA MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO. Argibide gehiago nahi izanez gero, ikus <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>.</para>
+  <para><citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia <citetitle>GNOMEren erabiltzaile</citetitle>aren gidaren eranskinean daukazu. <citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle>ren kopia bat lor dezakezu Free Software Foundation-en bidez. Bisitatu <ulink type="http" url="http://www.fsf.org">haien webgunea</ulink>, edo idatzi hona: <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - 330. Suitea <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>AEB</country></address></para>
+ </sect1>
+
+</article>

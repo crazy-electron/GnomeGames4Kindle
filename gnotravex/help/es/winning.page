@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="winning" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="hint"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Consejos sencillos acerca de posibilidades de cómo ganar un juego.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-26" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  
+  <title>Ganar <app>Tetravex</app></title>
+  
+  <note>
+    <p>Los siguientes consejos no aseguran que gane una partida, simplemente están como una ayuda.</p>
+  </note>
+  
+  <section id="winning-single">
+    <title>Mirar un sólo número</title>
+    <p>Al iniciar una partida nueva fíjese en un sólo número o un número que no tenga números similares que se puedan ubicar junto a él.</p>
+    <p>Si encuentra tal número esa pieza es válida para empezar, ya que sabe dónde debe ponerla.</p>
+    <p>Note que a mayor tamaño de tablero es más difícil encontrar tales números.</p>
+  </section>
+  <!-- This is just an idea... need to think about it... -->
+  <section id="winning-share">
+    <title>¿Tiene una sugerencia que compartir?</title>
+    <p>Si tiene alguna sugerencia acerca de <app>Tetravex</app> o cualquier otro juego de GNOME, escríbanos a gnome-doc-list@gnome.org. Las añadiremos todas aquí.</p>
+  </section>
+</page>

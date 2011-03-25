@@ -1,0 +1,939 @@
+# Czech translation of mahjongg help.
+# Copyright (C) 2009 the author(s) of gnome-games.
+# This file is distributed under the same license as the mahjongg help.
+# Marek Černocký <marek@manet.cz>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games gnome-2-28\n"
+"POT-Creation-Date: 2009-07-04 11:46+0000\n"
+"PO-Revision-Date: 2009-07-04 20:38+0100\n"
+"Last-Translator: Marek Černocký <marek@manet.cz>\n"
+"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-Language: Czech\n"
+"X-Poedit-Country: CZECH REPUBLIC\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/mahjongg.xml:267(None)
+msgid "@@image: 'figures/mahjongg.png'; md5=4899a2e3d49d42f06c31576492edbc8f"
+msgstr "@@image: 'figures/mahjongg.png'; md5=4c1a071047d9e870238456bc0aa316df"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/mahjongg.xml:305(None)
+msgid "@@image: 'figures/no-move.png'; md5=edd6baeeb895787484c3fc446615cd14"
+msgstr "@@image: 'figures/no-move.png'; md5=bff9bf481450ef39406efbb94ac8c373"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/mahjongg.xml:417(None)
+msgid "@@image: 'figures/toolbar.png'; md5=ee97ea171b1eb2510f7376734b590791"
+msgstr "@@image: 'figures/toolbar.png'; md5=e8d9501a935bf8609f2e531e8c321581"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/mahjongg.xml:632(None)
+msgid ""
+"@@image: 'figures/preferences.png'; md5=0c04907f6aeaf7b3620e2c21e54d2025"
+msgstr ""
+"@@image: 'figures/preferences.png'; md5=0d88ffa74b3bfca1eed3bc8709e86f59"
+
+#: C/mahjongg.xml:25(title)
+msgid "<application>Mahjongg</application> Manual"
+msgstr "Příručka ke hře <application>Mahjongg</application>"
+
+#: C/mahjongg.xml:27(para)
+msgid ""
+"Mahjongg is a solitaire version of the classic Eastern tile game. It "
+"involves clearing as much of the board as possible by matching corresponding "
+"tiles and taking them out of play."
+msgstr ""
+"Mahjongg je verze pro jednoho hráče klasické východní hry s kameny. "
+"Podstatou je co nejvíce vyprázdnit hrací plochu tím, že hledáte do páru "
+"stejné kameny, které se pak ze hry odstraní."
+
+#: C/mahjongg.xml:34(year)
+msgid "1998"
+msgstr "1998"
+
+#: C/mahjongg.xml:35(holder)
+msgid "Free Software Foundation"
+msgstr "Free Software Foundation"
+
+#: C/mahjongg.xml:38(year)
+msgid "2000"
+msgstr "2000"
+
+#: C/mahjongg.xml:39(holder)
+msgid "Eric Baudais (Documentation Author)"
+msgstr "Eric Baudais (Autor dokumentace)"
+
+#: C/mahjongg.xml:42(year)
+msgid "2009"
+msgstr "2009"
+
+#: C/mahjongg.xml:43(holder)
+msgid "Paul Cutler (Documentation Author)"
+msgstr "Paul Cutler (Autor dokumentace)"
+
+#: C/mahjongg.xml:57(publishername) C/mahjongg.xml:83(orgname)
+#: C/mahjongg.xml:114(para) C/mahjongg.xml:131(para)
+msgid "GNOME Documentation Project"
+msgstr "Dokumentační projekt GNOME"
+
+#: C/mahjongg.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU "
+"Free Documentation License, verze 1.1 nebo jakékoli další verze vydané "
+"nadací Free Software Foundation; bez neměnných oddílů, bez textů předních "
+"desek a bez textů zadních desek. Kopie této licence je zahrnuta v oddílu "
+"jménem <ulink type=\"help\" url=\"ghelp:fdl\">GNU Free Documentation "
+"License</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou."
+
+#: C/mahjongg.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Tato příručka je součástí kolekce příruček GNOME, distribuovaných pod "
+"licencí GNU FDL. Pokud chcete tento dokument šířit odděleně od kolekce, "
+"musíte přiložit kopii licence dle popisu v sekci 6 dané licence."
+
+#: C/mahjongg.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Mnoho užívaných jmen určených k zviditelnění produktů nebo služeb jsou "
+"ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a "
+"členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se "
+"jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s "
+"velkým písmenem na začátku."
+
+#: C/mahjongg.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"DOKUMENT JE POSKYTOVÁN V PODOBĚ „JAK JE“ BEZ ZÁRUKY V JAKÉKOLIV PODOBĚ, "
+"NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ "
+"VERZE, JE BEZCHYBNÝ NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL NEBO "
+"NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ DOKUMENTU, "
+"NEBO JEHO UPRAVENÉ VERZE, LEŽÍ NA VÁS. POKUD KVŮLI TOMUTO DOKUMENTU, NEBO "
+"JEHO UPRAVENÉ VERZI, NASTANE PROBLÉM, VY (NIKOLIV PŮVODNÍ AUTOR NEBO "
+"JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE JAKÉKOLIV NÁKLADY ZA NUTNÉ ÚPRAVY, OPRAVY "
+"ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE ZÁKLADNÍ SOUČÁST TÉTO "
+"LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ, PODLE TÉTO DOHODY, POVOLENO UŽÍVÁNÍ ANI "
+"ÚPRAVY TOHOTO DOKUMENTU; DÁLE"
+
+#: C/mahjongg.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"ZA ŽÁDNÝCH OKOLNOSTÍ A ŽÁDNÝCH PRÁVNÍCH PŘEDPOKLADŮ, AŤ SE JEDNÁ O PŘEČIN "
+"(VČETNĚ NEDBALOSTNÍCH), SMLOUVU NEBO JINÉ, NENÍ AUTOR, PŮVODNÍ PISATEL, "
+"KTERÝKOLIV PŘISPĚVATEL NEBO KTERÝKOLIV DISTRIBUTOR TOHOTO DOKUMENTU NEBO "
+"UPRAVENÉ VERZE DOKUMENTU NEBO KTERÝKOLIV DODAVATEL NĚKTERÉ Z TĚCHTO STRAN "
+"ODPOVĚDNÝ NĚJAKÉ OSOBĚ ZA PŘÍMÉ, NEPŘÍMÉ, SPECIÁLNÍ, NAHODILÉ NEBO NÁSLEDNÉ "
+"ŠKODY JAKÉHOKOLIV CHARAKTERU, VČETNĚ, ALE NEJEN, ZA POŠKOZENÍ ZE ZTRÁTY "
+"DOBRÉHO JMÉNA, PŘERUŠENÍ PRÁCE, PORUCHY NEBO NESPRÁVNÉ FUNKCE POČÍTAČE NEBO "
+"JINÉHO A VŠECH DALŠÍCH ŠKOD NEBO ZTRÁT VYVSTÁVAJÍCÍCH Z NEBO VZTAHUJÍCÍCH SE "
+"K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY "
+"TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ."
+
+#: C/mahjongg.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU "
+"FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <placeholder-1/>"
+
+#: C/mahjongg.xml:67(firstname)
+msgid "Eric"
+msgstr "Eric"
+
+#: C/mahjongg.xml:68(surname)
+msgid "Baudais"
+msgstr "Baudais"
+
+#: C/mahjongg.xml:70(email)
+msgid "baudais@okstate.edu"
+msgstr "baudais@okstate.edu"
+
+#: C/mahjongg.xml:74(firstname)
+msgid "Artur"
+msgstr "Artur"
+
+#: C/mahjongg.xml:75(surname)
+msgid "Szymanski"
+msgstr "Szymanski"
+
+#: C/mahjongg.xml:80(firstname)
+msgid "Paul"
+msgstr "Paul"
+
+#: C/mahjongg.xml:81(surname)
+msgid "Cutler"
+msgstr "Cutler"
+
+#: C/mahjongg.xml:84(email)
+msgid "pcutler@gnome.org"
+msgstr "pcutler@gnome.org"
+
+#: C/mahjongg.xml:110(revnumber) C/mahjongg.xml:118(revnumber)
+msgid "Mahjongg Manual V 2.26"
+msgstr "Příručka V2.26 ke hře Mahjongg"
+
+#: C/mahjongg.xml:111(date) C/mahjongg.xml:119(date)
+msgid "2009-06-16"
+msgstr "16.6.2009"
+
+#: C/mahjongg.xml:113(para)
+msgid "Paul Cutler"
+msgstr "Paul Cutler"
+
+#: C/mahjongg.xml:121(para)
+msgid "Artur Szymanski"
+msgstr "Artur Szymanski"
+
+#: C/mahjongg.xml:125(revnumber)
+msgid "Mahjongg Manual V2.10;"
+msgstr "Příručka V2.10 ke hře Mahjongg"
+
+#: C/mahjongg.xml:126(date)
+msgid "June 2005"
+msgstr "Červen 2005"
+
+#: C/mahjongg.xml:128(para)
+msgid "Eric Baudais <email>baudais@okstate.edu</email>"
+msgstr "Eric Baudais <email>baudais@okstate.edu</email>"
+
+#: C/mahjongg.xml:136(releaseinfo)
+msgid "This manual describes version 2.26 of Mahjongg."
+msgstr "Tato příručka popisuje Mahjongg ve verzi 2.26."
+
+#: C/mahjongg.xml:143(title)
+msgid "Feedback"
+msgstr "Ohlasy "
+
+#: C/mahjongg.xml:144(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Mahjongg</"
+"application> application or this manual, follow the directions in the <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
+"ulink>."
+msgstr ""
+"Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k aplikaci "
+"<application>Mahjongg</application> nebo této příručce, postupujte dle "
+"instrukcí na stránce <ulink url=\"ghelp:user-guide?feedback-bugs\" type="
+"\"help\">Stránka s ohlasy na GNOME</ulink>."
+
+#: C/mahjongg.xml:154(primary)
+msgid "GNOME Mahjongg"
+msgstr "GNOME Mahjongg"
+
+#: C/mahjongg.xml:160(title)
+msgid "Introduction"
+msgstr "Úvod"
+
+#: C/mahjongg.xml:162(para)
+msgid ""
+"<application>Mahjongg</application> is a solitaire (one player) version of "
+"the classic Eastern tile game, Mahjongg. It has all the functionality you "
+"expect from a tile or card game. You can change the type of tiles, the "
+"background, and the difficulty level, among other things, in the <link "
+"linkend=\"prefs\">Preferences</link> dialog. Other features, like the <link "
+"linkend=\"pause\"><guibutton>Pause </guibutton> button</link>, make the game "
+"more competitive when you play against the clock."
+msgstr ""
+"<application>Mahjongg</application> je solitérová (hra pro jednoho hráče) "
+"verze klasické východní hry s kameny, Mahjongg. Má vše, co očekáváte od hry "
+"s kameny nebo kartami. Můžete měnit typ kamenů, pozadí, úroveň složitosti, "
+"společně s dalšími věcmi v dialogovém okně <link linkend=\"prefs\">Předvolby "
+"Mahjongg</link>. Další funkce, jako např. <link linkend=\"pause\">tlačítko "
+"<guibutton>Pozastavit</guibutton></link>, dělají hru použitelnou v "
+"soutěžích, kdy hrajete na čas."
+
+#: C/mahjongg.xml:174(title)
+msgid "A Brief History of Mahjongg"
+msgstr "Stručná historie hry Mahjongg"
+
+#. FIXME: Explain more about solitaire version.
+#: C/mahjongg.xml:177(para)
+msgid ""
+"Mahjongg tile sets are used to play many variations of the original game. "
+"The version of Mahjongg you play is the solitaire one. Each tile also has a "
+"<ulink type=\"http\" url=\"http://www.xs4all.nl/~korntner/mahjong/fortune/"
+"index.html\"> meaning</ulink> associated with it."
+msgstr ""
+"Sada kamenů Mahjongg se používá k hraní mnoha variant originální hry. Verze "
+"Mahjongg, kterou hrajete je pro jednoho hráče. Každý kámen má také určitý "
+"<ulink type=\"http\" url=\"http://www.xs4all.nl/~korntner/mahjong/fortune/"
+"index.html\">význam</ulink>, který je s ním spojován."
+
+#: C/mahjongg.xml:185(para)
+msgid ""
+"Mahjongg's origins are not fully known, but many theories have been put "
+"forth. One such theory says that Noah played Mahjongg on the ark because the "
+"East hand is dominant, presumably the direction the rains came, in the "
+"flood. Another theory says that the Chinese philosopher, Confucius, made the "
+"game. The three <quote>Cardinal</quote> tiles have the same names as his "
+"three Cardinal virtues, Chung (middle) the Red, Fa (prosperity) the Green, "
+"and Po (white) the White, corresponding with Benevolence, Sincerity, and "
+"Filial Piety. Still another theory says that Mahjongg is derived from other "
+"Chinese games. <quote>Ya Pei</quote> is played with 32 cards made of wood or "
+"ivory and have the same oblong shape as present day Mahjongg tiles. "
+"<quote>Ma Tiae</quote> is played with 40 paper cards, similar in appearance, "
+"numbering 1 to 9 in four different suits along with the flower cards. It has "
+"been suggested that two brothers made the game, around 1850 A.D., from a "
+"combination of these two games."
+msgstr ""
+"Původ hry Mahjongg není zcela znám, ale je o tom spousta teorií. Jedna "
+"taková teorií říká, že Noe hrál Mahjongg na arše, protože východ je pro hru "
+"dominantní stranou, a déšť při potopě přicházel z tohoto směru. Jiná teorie "
+"říká, že hru vytvořil čínský filozof Konfucius. Tři <quote>hlavní</quote> "
+"kameny mají stejné názvy jako jeho tři hlavní ctnosti, červený Chung "
+"(střed), zelený Fa (úspěch) bílý Po (bílý) dopovídají laskavosti, upřimnosti "
+"a úctě k rodičům. Jiná teorie zase říká, že Mahjongg vznikl z jiné čínské "
+"hry. <quote>Ya Pei</quote> se hraje s 32 kartami, které jsou vyrobené ze "
+"dřeva nebo slonoviny a mají stejný obdélníkový tvar jako nynější kameny v "
+"Mahjongg. <quote>Ma Tiae</quote> se hraje se 40 kartami podobného vzhledu "
+"očíslovanými od 1 do 9 ve čtyřech různých barvách spolu s květinovými "
+"kartami. Předpokládá se, že dva bratři hru Mahjongg vytvořili okolo roku "
+"1850 n. l. kombinací těchto dvou her."
+
+#: C/mahjongg.xml:202(para)
+msgid ""
+"In the early 1900's Mahjongg was introduced into English clubs in Shanghai. "
+"Mr. Babcock started the importation of Mahjongg tiles to the Western world. "
+"He stripped down the rules to the very basics and even put Arabic numerals "
+"on the tiles. 1923 was the height of the Mahjongg craze with major gaming "
+"companies, like Parker Bros., Milton Bradley, and United States Playing "
+"Card, importing Mahjongg tile sets by the thousands."
+msgstr ""
+"Počátkem 20. století byl Mahjongg uveden v anglickém klubu v Šanghaji. Pan "
+"Babcock začal dovážet kameny pro Mahjongg do západního světa. Upravil "
+"pravidla, aby byla velmi jednoduchá, a také na kameny přidal arabské "
+"číslice. V roce 1923 dosáhlo šílenství okolo hry Mahjongg vrcholu a herní "
+"společnosti jak Parker Bros., Milton Bradley a United States Playing Card "
+"dovážely sady kamenů pro Mahjongg po tisících."
+
+#: C/mahjongg.xml:222(para)
+msgid ""
+"Portions of this text were adapted from the <ulink type=\"http\" url="
+"\"http://www.mahjongmuseum.com/\">Mah Jong Museum.</ulink>"
+msgstr ""
+"Úryvky tohoto textu byly převzaty z <ulink type=\"http\" url=\"http://www."
+"mahjongmuseum.com/\">Mah Jong Museum.</ulink>"
+
+#: C/mahjongg.xml:211(para)
+msgid ""
+"Many different rules sprang up and in 1924 the Standardization Committee of "
+"the American Official Laws of Mah-Jongg was formed to write a rule book. "
+"Still today many clubs play by different rules and sometimes even add flower "
+"or joker tiles. Players of the computer version are becoming intrigued with "
+"the beauty and detail of the hand crafted sets of the 1920's and 1930's and "
+"are searching antique shops and flea markets for sets of their own. Many new "
+"players are being introduced to the game solely through the solitaire "
+"version and are slowly realizing the intrigue and challenge that the "
+"traditional game offers. <placeholder-1/>"
+msgstr ""
+"Objevovalo se plno různých verzí pravidel a tak v roce 1924 Standardization "
+"Committee of the American Official Laws of Mah-Jongg dospěla k rozhodnutí "
+"pravidla sepsat. Dodnes se v mnoha klubech hraje podle odlišných pravidel a "
+"někde dokonce přidávají květinové nebo žolíkové kameny. Hráče počítačové "
+"verze zaujaly krásné a detailně propracované ručně dělané sady z dvacátých a "
+"třicátých let devatenáctého století a začali je shánět ve starožitnictví a "
+"na bleších trzích, aby mohli vlastnit originály. Mnoho nových hráčů se "
+"nejprve seznámilo pouze se solitérovou verzí a teprve poté pomalu pronikali "
+"do nástrah a složitostí, kterými oplývá tradiční hra. <placeholder-1/>"
+
+#: C/mahjongg.xml:234(title)
+msgid "Playing Mahjongg"
+msgstr "Jak hrát <application>Mahjongg</application>"
+
+#: C/mahjongg.xml:236(para)
+msgid ""
+"You start with five levels of tiles which are stacked so some are covered up "
+"by the tiles on top. The harder the level you set in the <link linkend="
+"\"prefs\"><interface>Preferences</interface> dialog</link>, the more tiles "
+"are covered when the game starts. The object of <application>Mahjongg</"
+"application> is to remove all the tiles from the game. To remove tiles you "
+"have to find matching pairs which look alike. A matching tile will usually "
+"have the same number of buttons or markings on it or will look similar to "
+"each other."
+msgstr ""
+"Začínáte s pěti vrstvami kamenů, které jsou naskládané tak, že kameny nahoře "
+"zakrývají některé kameny pod sebou. Čím máte nastavenou vyšší obtížnost v "
+"<link linkend=\"prefs\">dialogovém okně <interface>Předvolby</interface></"
+"link>, tím více kamenů je na začátku hry zakrytých. Podstatou hry "
+"<application>Mahjongg</application> je všechny kameny odebrat. Abyste ale "
+"mohli kameny odebrat musíte najít dva stejně vypadající do páru. Shodné "
+"kameny mají stejný počet teček nebo značek nebo prostě vypadají stejně."
+
+#: C/mahjongg.xml:247(para)
+msgid ""
+"As an example, the highlighted tile, in the <link linkend=\"mahjongg-fig\"> "
+"figure below</link>, has six buttons. The matching tile is the one which "
+"also has six buttons. The tile is on the right-hand end of the third row "
+"from the bottom and there is another near the top of the fourth row from the "
+"bottom. If you want to match the tile on the top level, you need to look for "
+"the tile with the same green bamboo symbols. Do you see a matching tile yet? "
+"There are three tiles, which are visible, that match the tile on the top "
+"level. Two are to the left and the lower right. The third one is on the top "
+"row, but you can't remove that tile yet because the tile isn't on the "
+"outside of the stack of tiles. Later you will learn which tiles can be "
+"removed and which tiles can't be removed even though they match. Find the "
+"other two matching tiles, which are visible, on your own."
+msgstr ""
+"Například zvýrazněný kámen v <link linkend=\"mahjongg-fig\">následujícím "
+"obrázku</link> má šest teček. Shodný kámen je ten, který má také šest teček. "
+"Takový kámen je po pravé straně na konci třetí řady odspodu a nebo je další "
+"blízko vrcholu ve čtvrté řadě odspodu. Pokud chcete kameny shodné s tím v "
+"nejhořejší vrstvě, musíte hledat kameny se stejnými symboly bambusů. Už "
+"takové vidíte? Jsou tam tři viditelné, které se s tím nejvrchnějším shodují. "
+"Dva z nich jsou na pravém konci, jeden uprostřed a druhý o něco níže. Třetí "
+"z nich je v horní řadě, ale ten nemůžete v tuto chvíli odstranit, protože "
+"neleží na kraji hromady. Později vám přesněji vysvětlíme, které kameny lze "
+"odebírat a které ne, přestože se shodují. Hledání dalších shodných dvojic "
+"viditelných kamenů už je na vás."
+
+#: C/mahjongg.xml:262(title)
+msgid "Mahjongg's Main Window"
+msgstr "Hlavní okno hry Mahjongg"
+
+#: C/mahjongg.xml:270(phrase)
+msgid "Main window."
+msgstr "Hlavní okno."
+
+#: C/mahjongg.xml:276(para)
+msgid ""
+"<application>Mahjongg</application> is played by clicking on two matching "
+"tiles that are then removed. Play continues until all the tiles are removed "
+"or there are no available pairs."
+msgstr ""
+"<application>Mahongg</application> se hraje klikáním na dva shodné kameny, "
+"které se následně odeberou. Hra pokračuje dokud neodstraníte všechny kameny "
+"nebo už nemáte žádný další dostupný pár."
+
+#: C/mahjongg.xml:283(para)
+msgid ""
+"Only tiles at the far left and right edges on each level can be selected. "
+"This is because you can't remove any tiles which aren't at the far left and "
+"far right sides. If the tiles are on a different level and at the left or "
+"right sides, those can be removed when you find another matching tile."
+msgstr ""
+"Vybírat lze pouze kameny na levém a pravém okraji kterékoliv vrstvy. To je "
+"proto, že nelze odebírat kameny, které nejsou na levém nebo pravém okraji. "
+"Kameny, které se nacházejí v různých úrovních na levé nebo pravé straně, lze "
+"odebrat v případě, že mezi nimi najdete dva shodné."
+
+#: C/mahjongg.xml:291(para)
+msgid ""
+"If you can't match any more tiles, a dialog will appear telling you no more "
+"tiles can be matched and giving you the option of shuffling the tiles "
+"(adding an additional 60 seconds penalty to the game clock), starting a new "
+"game or undoing your last move (although you may have to undo many more "
+"moves to find your mistake)."
+msgstr ""
+"Ve chvíli, kdy už nemůžete spárovat žádné kameny, se objeví dialogové okno "
+"oznamující, že už nejsou možné žádné další tahy a nabídne vám promíchání "
+"kamenů (za což dostanete k hodnocení penalizaci 60 sekund), započetí nové "
+"hry a nebo vrácení posledního tahu zpět (i když možná budete muset vrátit "
+"zpět daleko více tahů, než najdete, kde jste udělali chybu)."
+
+#: C/mahjongg.xml:300(title)
+msgid "Information Dialog"
+msgstr "Informační dialog"
+
+#: C/mahjongg.xml:308(phrase)
+msgid "Information Dialog."
+msgstr "Informační dialog."
+
+#: C/mahjongg.xml:315(title)
+msgid "Toolbar"
+msgstr "Panel nástrojů"
+
+#: C/mahjongg.xml:317(para)
+msgid ""
+"The <interface>toolbar</interface>, located below the <interface>Menu Bar</"
+"interface>, contains the following buttons:"
+msgstr ""
+"<interface>Panel nástrojů</interface>, který je umístěný pod "
+"<interface>panelem nabídek</interface>, obsahuje následující tlačítka:"
+
+#: C/mahjongg.xml:324(guibutton)
+msgid "New"
+msgstr "Nová"
+
+#: C/mahjongg.xml:326(para)
+msgid "This button starts a new game with the current settings."
+msgstr "Toto tlačítko začne novou hru se současným nastavením."
+
+#: C/mahjongg.xml:332(guibutton)
+msgid "Restart"
+msgstr "Restartovat"
+
+#: C/mahjongg.xml:334(para)
+msgid ""
+"This button restarts the current game to the beginning without shuffling the "
+"tiles."
+msgstr ""
+"Toto tlačítko restartuje současnou hru do počátečního stavu bez zamíchání "
+"kamenů."
+
+#: C/mahjongg.xml:341(guibutton)
+msgid "Pause"
+msgstr "Pozastavit"
+
+#: C/mahjongg.xml:343(para)
+msgid ""
+"This button pauses the game. When the game is paused, the clock, at the "
+"bottom right corner of the <interface>Main Window</interface>, stops and you "
+"cannot see any of the tile's faces."
+msgstr ""
+"Toto tlačítko pozastaví hru. Zatímco je hra pozastavená, hodiny v levém "
+"dolním rohu <interface>hlavního okna</interface> neběží a znaky na kamenech "
+"jsou pro vás skryté."
+
+#: C/mahjongg.xml:351(guibutton)
+msgid "Undo Move"
+msgstr "Tah zpět"
+
+#: C/mahjongg.xml:353(para)
+msgid ""
+"This button replaces two tiles you removed until you reach the beginning of "
+"the game."
+msgstr ""
+"Toto tlačítko vrátí zpět dva kameny, které jste odstranili, pokud nejste na "
+"úplném začátku hry."
+
+#: C/mahjongg.xml:360(guibutton)
+msgid "Redo Move"
+msgstr "Tah znovu"
+
+#: C/mahjongg.xml:362(para)
+msgid ""
+"This button replays your previous move, the <guibutton>Undo Move</guibutton> "
+"button took back."
+msgstr ""
+"Toto tlačítko zahraje znovu předchozí tah, který jste tlačítkem "
+"<guibutton>Tah zpět</guibutton> vzali zpátky."
+
+#: C/mahjongg.xml:369(guibutton)
+msgid "Hint"
+msgstr "Rada"
+
+#: C/mahjongg.xml:371(para)
+msgid ""
+"This button gives you a pair of matching tiles to remove. Each time you use "
+"it, 30 seconds penalty will be added to the game clock."
+msgstr ""
+"Toto tlačítko vám doporučí pár stejných kamenů, které lze odstranit. "
+"Pokaždé, když tuto funkci použijete, obdržíte k času hry penalizaci 30 "
+"sekund."
+
+#: C/mahjongg.xml:378(para)
+msgid ""
+"The status bar at the bottom of the window gives you information on the "
+"current state of the game:"
+msgstr ""
+"Stavový řádek v dolní části okna vám podává informace o současném stavu hry:"
+
+#: C/mahjongg.xml:384(guilabel)
+msgid "Tiles Left:"
+msgstr "Zbývá kamenů:"
+
+#: C/mahjongg.xml:386(para)
+msgid "This shows the number of tiles remaining to be matched."
+msgstr "Zobrazuje počet kamenů, které je potřeba vypárovat."
+
+#: C/mahjongg.xml:393(guilabel)
+msgid "Moves Left:"
+msgstr "Zbývá tahů:"
+
+#: C/mahjongg.xml:395(para)
+msgid "This shows the number of possible matches you can make."
+msgstr "Zobrazuje počet možných tahů, které můžete provést."
+
+#: C/mahjongg.xml:402(guilabel)
+msgid "Time:"
+msgstr "Čas:"
+
+#: C/mahjongg.xml:404(para)
+msgid "This shows the elapsed time from game start."
+msgstr "Zobrazuje čas strávený od započetí hry."
+
+#: C/mahjongg.xml:412(title)
+msgid "Mahjongg's Toolbar"
+msgstr "Panel nástrojů hry Mahjongg"
+
+#: C/mahjongg.xml:420(phrase)
+msgid "Toolbar."
+msgstr "Panel nástrojů."
+
+#: C/mahjongg.xml:429(title)
+msgid "Menus"
+msgstr "Nabídky"
+
+#: C/mahjongg.xml:430(para)
+msgid ""
+"The menu bar, located at the top of the <interface>Main Window</interface>, "
+"contains the following menus:"
+msgstr ""
+"Panel s nabídkami, umístění v horní části <interface>hlavního okna</"
+"interface>, obsahuje následující nabídky:"
+
+#: C/mahjongg.xml:437(guimenu)
+msgid "Game"
+msgstr "Hra"
+
+#: C/mahjongg.xml:443(para)
+msgid ""
+"<menuchoice><shortcut><keycap>Ctrl-N</keycap></shortcut><guimenuitem>New</"
+"guimenuitem></menuchoice> — This item starts a new game."
+msgstr ""
+"<menuchoice><shortcut><keysym>Ctrl-N</keysym></shortcut><guimenuitem>Nová</"
+"guimenuitem></menuchoice> — Tato položka začne novou hru."
+
+#: C/mahjongg.xml:454(para)
+msgid ""
+"<menuchoice><guimenuitem>Restart</guimenuitem></menuchoice> — This item "
+"resets the current game to the start."
+msgstr ""
+"<menuchoice><guimenuitem>Restartovat</guimenuitem></menuchoice> — Tato "
+"položka restartuje současnou hru do počátečního stavu."
+
+#: C/mahjongg.xml:462(para)
+msgid ""
+"<menuchoice><guimenuitem>Pause</guimenuitem></menuchoice> — This pauses the "
+"game, stopping the clock and hiding the tiles."
+msgstr ""
+"<menuchoice><guimenuitem>Pozastavit</guimenuitem></menuchoice> — Tímto se "
+"hra pozastaví, přestane běžet čas a skryjí se kameny."
+
+#: C/mahjongg.xml:471(para)
+msgid ""
+"<menuchoice><shortcut><keycap>Ctrl-Z</keycap></shortcut><guimenuitem>Undo "
+"move</guimenuitem></menuchoice> — This item takes back two tiles you removed "
+"until you reach the beginning of the game."
+msgstr ""
+"<menuchoice><shortcut><keysym>Ctrl-Z</keysym></shortcut><guimenuitem>Tah "
+"zpět</guimenuitem></menuchoice> — Tímto se vrátí zpět dva kameny, které jste "
+"odstranily, pokud tedy nejste na úplném začátku hry."
+
+#: C/mahjongg.xml:483(para)
+msgid ""
+"<menuchoice><shortcut><keycap>Ctrl-R</keycap></shortcut><guimenuitem>Redo "
+"move</guimenuitem></menuchoice> — This item replays your previous move the "
+"<guibutton>Undo</guibutton> button took back. When you reach the state you "
+"started undoing the message <quote>No more redo!</quote> appears at the "
+"bottom left corner of the <interface>Main Window</interface>."
+msgstr ""
+"<menuchoice><shortcut><keysym>Ctrl-R</keysym></shortcut><guimenuitem>Tah "
+"znovu</guimenuitem></menuchoice> — Tato položka znovu zahraje předchozí tah, "
+"který jste volbou <guibutton>Tah zpět</guibutton> vzali zpátky. Jakmile "
+"dosáhnete stavu, kdy jste začali vracet tahy zpět, objeví se v levém dolním "
+"rohu <interface>hlavního okna</interface> zpráva <quote>Nejsou žádné další "
+"tahy na vrácení!</quote>."
+
+#: C/mahjongg.xml:497(para)
+msgid ""
+"<menuchoice><guimenuitem>Hint</guimenuitem></menuchoice> — This item gives "
+"you a pair of matching tiles to remove."
+msgstr ""
+"<menuchoice><guimenuitem>Rada</guimenuitem></menuchoice> — Tato položka vám "
+"ukáže pár shodných kamenů, které lze odstranit."
+
+#: C/mahjongg.xml:505(para)
+msgid ""
+"<menuchoice><guimenuitem>Scores</guimenuitem></menuchoice> — This item "
+"brings up a dialog showing you the ten best scores. The dialog has the "
+"scores identified by user name and the time it took to complete the game."
+msgstr ""
+"<menuchoice><guimenuitem>Skóre</guimenuitem></menuchoice> — Tato položka "
+"zobrazí dialogové okno s nejlepšími skóre. U každého výsledku je uvedené "
+"jméno hráče a čas, ve kterém hru dokončil. "
+
+#: C/mahjongg.xml:515(para)
+msgid ""
+"<menuchoice><shortcut><keycap>Ctrl-Q</keycap></shortcut><guimenuitem>Quit</"
+"guimenuitem></menuchoice> — This item allows you to quit the game."
+msgstr ""
+"<menuchoice><shortcut><keysym>Ctrl-Q</keysym></"
+"shortcut><guimenuitem>Ukončit</guimenuitem></menuchoice> — Touto položkou "
+"můžete ukončit aplikaci."
+
+#: C/mahjongg.xml:439(para) C/mahjongg.xml:533(para) C/mahjongg.xml:579(para)
+msgid "The menu contains: <placeholder-1/>"
+msgstr "Nabídka obsahuje: <placeholder-1/>"
+
+#: C/mahjongg.xml:531(guimenu)
+msgid "Settings"
+msgstr "Nastavení"
+
+#: C/mahjongg.xml:537(para)
+msgid ""
+"<menuchoice><shortcut><keycap>F11</keycap></"
+"shortcut><guimenuitem>Fullscreen</guimenuitem></menuchoice> — This item "
+"allows to play the game in fullscreen mode. To leave fullscreen press "
+"<keycap>F11</keycap> or click <guibutton>Leave Fullscreen</guibutton> button "
+"on <interface>toolbar</interface>."
+msgstr ""
+"<menuchoice><shortcut><keycap>F11</keycap></"
+"shortcut><guimenuitem>Fullscreen</guimenuitem></menuchoice> — Díky této "
+"položce můžete hru hrát v režimu přes celou obrazovku. Pokud chcete "
+"celoobrazovkový režim opustit, tak zmáčkněte <keycap>F11</keycap> nebo "
+"klikněte na tlačítko <guibutton>Opustit celou obrazovku</guibutton> na "
+"<interface>panelu nástrojů</interface>."
+
+#: C/mahjongg.xml:551(para)
+msgid ""
+"<menuchoice><guimenuitem>Toolbar</guimenuitem></menuchoice> — This item "
+"determines whether the <link linkend=\"toolbar\"><interface>toolbar</"
+"interface></link> is shown or not. If the item is checked, the "
+"<interface>toolbar</interface> is shown in the last place you put it. If the "
+"item is unchecked, the <interface>toolbar</interface> is not shown."
+msgstr ""
+"<menuchoice><guimenuitem>Panel nástrojů</guimenuitem></menuchoice> — Tato "
+"položka určuje, zda se má <link linkend=\"toolbar\"><interface>panel "
+"nástrojů</interface></link> zobrazovat nebo ne. Pokud je položka zaškrtnutá, "
+"je <interface>panel nástrojů</interface> zobrazený na pozici, kde jste jej "
+"naposledy umístili. Pokud položka není zaškrtnutá, <interface>toolbar</"
+"interface> se nezobrazuje."
+
+#: C/mahjongg.xml:564(para)
+msgid ""
+"<menuchoice><guimenuitem>Preferences</guimenuitem></menuchoice> — This item "
+"brings up the <link linkend=\"prefs\">Preferences </link> dialog."
+msgstr ""
+"<menuchoice><guimenuitem>Předvolby</guimenuitem></menuchoice> — Tato položka "
+"otevře dialogové okno <link linkend=\"prefs\">Předvolby Mahjongg</link>."
+
+#: C/mahjongg.xml:577(guimenu)
+msgid "Help"
+msgstr "Nápověda"
+
+#: C/mahjongg.xml:583(para)
+msgid ""
+"<menuchoice><shortcut><keycap>F1</keycap></shortcut><guimenuitem>Contents</"
+"guimenuitem></menuchoice> — This item shows this manual."
+msgstr ""
+"<menuchoice><shortcut><keysym>F1</keysym></shortcut><guimenuitem>Obsah</"
+"guimenuitem></menuchoice> — Tato položka zobrazí tuto příručku."
+
+#: C/mahjongg.xml:594(para)
+msgid ""
+"<menuchoice><guimenuitem>About</guimenuitem></menuchoice> — This item gives "
+"you some basic information about <application>GNOME Mahjongg</application>, "
+"such as the author's names and the application version number."
+msgstr ""
+"<menuchoice><guimenuitem>O aplikaci</guimenuitem></menuchoice> — Tato "
+"položka vám podá některé základní informace o <application>GNOME Mahjongg</"
+"application>, jako jsou jména autorů a číslo verze aplikace."
+
+#: C/mahjongg.xml:615(title)
+msgid "Customization"
+msgstr "Přizpůsobení"
+
+#: C/mahjongg.xml:616(para)
+msgid ""
+"To change the application's settings, select <guimenuitem>Preferences</"
+"guimenuitem> from the <guimenu>Settings</guimenu> menu. This opens the <link "
+"linkend=\"preferences-fig\"><interface>Preferences </interface> dialog</"
+"link>."
+msgstr ""
+"Pokud chcete změnit nastavení aplikace, vyberte <guimenuitem>Předvolby</"
+"guimenuitem> z nabídky <guimenu>Natavení</guimenu>. Tím se otevře <link "
+"linkend=\"preferences-fig\">dialogové okno <interface>Předvolby Mahjongg</"
+"interface></link>."
+
+#. ALAN: looks correct like version 2.10 to me
+#: C/mahjongg.xml:627(title)
+msgid "Preferences Dialog"
+msgstr "Dialogové okno Předvolby"
+
+#: C/mahjongg.xml:635(phrase)
+msgid "Preferences dialog."
+msgstr "Dialogové okno předvoleb."
+
+#: C/mahjongg.xml:641(para)
+msgid "All the options are applied and saved immediately."
+msgstr "Všechny volby se ihned použijí a uloží."
+
+#: C/mahjongg.xml:645(para)
+msgid "The properties in the <interface>Preferences</interface> dialog are:"
+msgstr ""
+"V <link linkend=\"preferences-fig\">dialogovém okně <interface>Předvolby</"
+"interface></link> jsou:"
+
+#: C/mahjongg.xml:651(para)
+msgid ""
+"<guilabel>Tile Set:</guilabel> — Select the look of the tiles from this list."
+msgstr ""
+"<guilabel>Sada kamenů</guilabel> — Vyberte si ze seznamu vzhled kamenů."
+
+#: C/mahjongg.xml:657(para)
+msgid ""
+"<guilabel>Select Map:</guilabel> — Change the difficulty of the game by "
+"altering how the tiles are stacked. The more spread out (easy) version lets "
+"you see more of the tiles while the more compact (hard) version does not let "
+"you see many tiles."
+msgstr ""
+"<guilabel>Select Map</guilabel> — Změňte si obtížnost hry díky změně "
+"uspořádání kamenů. Ve více rozházených (jednodušších) verzích vidíte více "
+"kamenů, zatímco ve více kompaktních (těžších) verzích moc kamenů naráz "
+"neuvidíte."
+
+#: C/mahjongg.xml:666(para)
+msgid ""
+"<guilabel>Background Color:</guilabel> — Change the color of the background "
+"by bringing up a <interface> color picker</interface> to let you select a "
+"new color."
+msgstr ""
+"<guilabel>Barva pozadí</guilabel> — Kliknutím na tlačítko se objeví "
+"dialogové okno <interface>výběr barvy</interface>, ve kterém si můžete "
+"vybrat novou barvu pozadí."
+
+#: C/mahjongg.xml:675(para)
+msgid ""
+"To alter the size of the tiles simply resize the window in the normal way. "
+"The tiles will expand to fill it."
+msgstr ""
+"Pokud chcete změnit velikost kamenů, jednoduše změňte běžným způsobem "
+"velikost okna. Kameny se roztáhnou tak, aby jej zaplnily."
+
+#: C/mahjongg.xml:693(title)
+msgid "Authors"
+msgstr "Autoři"
+
+#: C/mahjongg.xml:694(para)
+msgid ""
+"<application>Mahjongg</application> was written by Francisco Bustamante "
+"(<email>pancho@nuclecu.unam.mx</email>), Michael Meeks (<email>mmeeks@gnu."
+"org</email>), Max Watson, Heinz Hempe, and Philippe Chavin. Tiles for "
+"<application>Mahjongg</application> were made by Jonathan Buzzard and Max "
+"Watson. This manual was written by Eric Baudais (<email>baudais@okstate.edu</"
+"email>). To report a bug or make a suggestion regarding this application or "
+"this manual, follow the directions in this <ulink url=\"ghelp:user-guide?"
+"feedback-bugs\" type=\"help\">document</ulink>."
+msgstr ""
+"<application>Mahjongg</application> napsali Francisco Bustamante "
+"(<email>pancho@nuclecu.unam.mx</email>), Michael Meeks (<email>mmeeks@gnu."
+"org</email>), Max Watson, Heinz Hempe a Philippe Chavin. Kameny pro "
+"<application>GNOME Mahjongg</application> navrhli Jonathan Buzzard a Max "
+"Watson. Tuto příručku napsal Eric Baudais (<email>baudais@okstate.edu</"
+"email>). Pokud chcete nahlásit chybu nebo podat návrh týkající se této "
+"aplikace nebo tohoto návodu, tak se řiďte instrukcemi v tomto <ulink url="
+"\"ghelp:user-guide?feedback-bugs\" type=\"help\">dokumentu</ulink>."
+
+#: C/mahjongg.xml:722(title)
+msgid "License"
+msgstr "Licence"
+
+#: C/mahjongg.xml:723(para)
+msgid ""
+"This program and tile artwork is free software; you can redistribute it and/"
+"or modify it under the terms of the <citetitle>GNU General Public License</"
+"citetitle> as published by the Free Software Foundation; either version 2 of "
+"the License, or (at your option) any later version."
+msgstr ""
+"Tento program, včetně grafického návrhu kamenů, je svobodný software. Můžete "
+"jej dále šířit a/nebo upravovat za dodržení podmínek <ulink type=\"help\" "
+"url=\"gnome-help:gpl\"><citetitle>GNU General Public License</citetitle></"
+"ulink>, tak jak ji vydala Free Software Foundation ve verzi 2 nebo (dle vaší "
+"volby) novější."
+
+#: C/mahjongg.xml:730(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"Tento program je šířen s přesvědčením, že může být užitečný, ale BEZ "
+"JAKÝCHKOLIV ZÁRUK, bez předpokládané záruky na OBCHODOVATELNOST nebo "
+"VHODNOST PRO URČITÝ ÚČEL. Více podrobností najdete v <citetitle>GNU General "
+"Public License</citetitle>."
+
+#: C/mahjongg.xml:736(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>51 Franklin Street, Fifth Floor</"
+"street><city>Boston</city>, <state>MA</state><postcode>02110-1301</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"Kopie <citetitle>GNU General Public License</citetitle> je zahrnuta v "
+"dodatku <citetitle>Uživatelské přiručky GNOME</citetitle>. Kopii "
+"<citetitle>GNU General Public License</citetitle> můžete také získat od Free "
+"Software Foundation navštívením <ulink type=\"http\" url=\"http://www.fsf.org"
+"\">jejich webu</ulink> nebo zasláním žádosti na <address> Free Software "
+"Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</"
+"city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</"
+"country></address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/mahjongg.xml:0(None)
+msgid "translator-credits"
+msgstr "Marek Černocký <marek@manet.cz>, 2009."
+
+#~ msgid ""
+#~ "The <interface>toolbar</interface> can be moved around the "
+#~ "<interface>desktop</interface>. If you click on the far left side of it, "
+#~ "you will be able to drag it any place on the <interface>desktop</"
+#~ "interface> you wish. The <interface>toolbar</interface> also snaps into "
+#~ "place at the top and left side of the <interface>Main Window </interface> "
+#~ "in <application>GNOME Mahjongg</application>, but the default place the "
+#~ "toolbar is located, and the best in my opinion, is under the "
+#~ "<interface>menubar</interface>."
+#~ msgstr ""
+#~ "<interface>Panel nástrojů</interface> si můžete volně přesouvat po "
+#~ "<interface>pracovní ploše</interface>. Pokud na něm kliknete úplně vlevo, "
+#~ "můžete jej táhnout po <interface>pracovní ploše</interface> na místo, na "
+#~ "kterém si jej přejete mít. Při přetahování se <interface>panel nástrojů</"
+#~ "interface> přichytává k horní a levé části <interface>hlavního okna</"
+#~ "interface> <application>GNOME Mahjongg</application>, ale jeho výchozí, a "
+#~ "zřejmě i nejvhodnější, místo je pod <interface>panelem nabídek</"
+#~ "interface>."

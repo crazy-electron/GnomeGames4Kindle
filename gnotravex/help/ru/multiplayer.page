@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="multiplayer" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="index#multi"/>
+  	<desc>How to play with other people.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-18" status="draft"/> 
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Play with other people</title>
+
+  <p>
+    With <app>GNOME Tetravex</app> it is not possible to play with or against 
+    other people over the Internet or a local network.
+  </p>
+</page>

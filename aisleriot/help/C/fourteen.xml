@@ -1,0 +1,73 @@
+<sect1 id="Fourteen">  <!--<sect1info>
+    <copyright>
+      <year>1999</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname></author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>Fourteen</title>
+
+  <para>Written by Rosanna Yuen</para>
+
+          <sect2><title>Setup</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>Type of Deck</entry>
+	  <entry>Standard Deck</entry>
+	</row>
+	<row>
+	  <entry>Tableau</entry>
+	  <entry>
+	    Deal all cards face up evenly on to twelve piles.  The first
+	    four piles will each have five cards while the other piles
+	    will all have four cards.  The exposed card in each pile is
+	    in play.  Empty piles cannot be filled.
+	  </entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>Goal</title>
+
+  <para>
+    Remove all cards.
+  </para>
+
+          </sect2>
+        <sect2><title>Rules</title>
+
+  <para>
+    Cards can be removed in pairs that add up to fourteen.  Aces are
+    worth one and Jacks, Queens, and Kings are worth 11, 12, and 13
+    respectively.
+  </para>
+
+          </sect2>
+        <sect2><title>Scoring</title>
+
+  <para>
+    Each card removed scores one point.
+  </para>
+  <para>
+    Maximum possible score:  52
+  </para>
+
+          </sect2>
+        <sect2><title>Strategy</title>
+
+  <para>
+    Watch your step!  Try to move cards that are resting on matching
+    pairs as otherwise you might get stuck.
+  </para>
+        </sect2>
+</sect1>

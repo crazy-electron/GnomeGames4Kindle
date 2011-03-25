@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Four-in-a-Row</application>">
+<!ENTITY appname "Four-in-a-Row">
+<!ENTITY version "2.8">
+]>
+<!-- ===== DOCUMENT HEADER ===== -->
+<article id="index" lang="sr@latin">
+<!-- please do not change the id -->
+<!-- translators, change lang to the appropriate code -->
+  <articleinfo>
+    <title>Uputstvo za Četiri u nizu</title>
+    <abstract role="description">
+      <para>Cilj igre Četiri u nizu je postaviti četiri dela jedan do drugog uspravno, vodoravno ili dijagonalno, dok vas protivnik u tome ometa i pokušava da uradi to isto. Četiri u nizu možete igrati protiv drugara ili protiv računara.</para>
+    </abstract>
+
+    <copyright>
+      <year>2001-2002</year>
+      <holder>Timothy Musson</holder>
+    </copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+     <year>2000</year>
+     <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+    <publisher role="maintainer"> 
+      <publishername>Projekat Gnomove dokumentacije</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+	<para>Dozvoljeno umnožavanje, širenje, vršenje izmena ovog dokumenta pod uslovima Gnu-ove Slobodne Dokumentacione Dozvole (GSDD), verzije 1.1 ili bilo koje naknadne verzije bez nepromenjivih odeljaka, teksta na naslovnoj i poslednjoj strani, a koju je objavila Zadužbina Slobodnog Softvera. Primerak GSDD-e možete pronaći na ovoj <ulink type="help" url="ghelp:fdl">adresi</ulink> ili u datoteci COPYING-DOCS koja je priložena uz ovo uputstvo.</para>
+         <para>Ovo uputstvo je deo skupa Gnomovih dokumenata objavljenih pod GFDL. Ukoliko želite da raspodeljujete ovo uputstvo odvojeno od skupa, to možete uraditi dodavanjem primerka licence dokumentu, kako je opisano u odeljku 6 same licence.</para>
+
+	<para>Mnogi nazivi koje kompanije koriste u cilju prepoznatljivosti svojih proizvoda i usluga predstavljaju robne marke. Kada (ukoliko) se takvi nazivi pojavljuju(spominju) u bilo kojem Gnomovom dokumentu, a članovi Gnomovog dokumentacionog projekta imaju saznanja o tome, tada su nazivi ispisani velikim slovima ili sa velikim početnim slovima.</para>
+
+	<para>OVAJ DOKUMENT I NJEGOVE IZMENJENE VERZIJE SU DOSTUPNE POD USLOVIMA GNU-OVE SLOBODNE DOKUMENTACIONE DOZVOLE UZ DODATNU SAGLASNOST DA: <orderedlist>
+		<listitem>
+		  <para>DOKUMENT JE DOSTUPAN SA SVIM SVOJIM DOBRIM I LOŠIM STRANAMA BEZ BILO KAKVOG JAMSTVA, BILO ONO IZREČENO ILI NE, UKLJUČUJUĆI BEZ OGRANIČENJA, JAMSTVO DA JE OVAJ DOKUMENT ILI NJEGOVA IZMENJENA VERZIJA BEZ NEDOSTATAKA, SPREMAN ZA TRŽIŠTE, SVRSISHODAN I NE NARUŠAVA ZAKONSKE NORME. CELOKUPAN RIZIK KOJI SE ODNOSI NA KVALITET, TAČNOST I DOMET (UČINAK) DOKUMENTA ILI NJEGOVE IZMENJENE VERZIJE SNOSI KORISNIK. UKOLIKO SE U BILO KOJEM DOKUMENTU ILI NJEGOVOJ IZMENJENOJ VERZIJI POJAVI NEDOSTATAK (GREŠKA) BILO KOJE VRSTE, KORISNIK (A NE AUTOR IZVORNE VERZIJE, BILO KOJI DRUGI AUTOR ILI SARADNIK) SNOSI SVE TROŠKOVE NEOPHODNOG SERVISIRANJA, POPRAVKE ILI ISPRAVKE. OVO OGRANIČENJE JAMSTVA PREDSTAVLJA SASTAVNI DEO OVE DOZVOLE. UPOTREBA BILO KOJEG DOKUMENTA ILI NJEGOVE IZMENJENE VERZIJE NIJE DOZVOLJENA OSIM POD USLOVIMA OVOG OGRANIČENJA JAMSTVA.</para>
+		</listitem>
+		<listitem>
+		  <para>NI POD KAKVIM OKOLNOSTIMA ILI ZAKONU, BILO ZBOG KRŠENJA (ILI NEMARA) UGOVORA, ILI NA BILO KOJI DRUGI NAČIN, AUTOR (PRVOBITNE VERZIJE), SARADNIK ILI ISPORUČIVALAC DOKUMENTA ILI NJEGOVE IZMENJENE VERZIJE, NITI DOBAVLJAČ BILO KOJE OD NAVEDENIH STRANA NEĆE SNOSITI MATERIJALNU ODGOVORNOST ZA NASTALA DIREKTNA, INDIREKTNA, POSEBNA, SLUČAJNA ILI TIME NASTALA OŠTEĆENJA BILO KOJE VRSTE UKLJUČUJUĆI, BEZ OGRANIČENJA, ŠTETU NANESENU UGLEDU FIRME, PRESTANKU PROIZVODNJE, OTKAZIVANJE RADA RAČUNARA ILI KVARA KAO I ZA SVE OSTALE ŠTETE ILI GUBITKE NASTALE USLED KORIŠĆENJA DOKUMENTA I NJEGOVIH IZMENJENIH VERZIJA ČAK I AKO JE OŠTEĆENA STRANA BILA OBAVEŠTENA O MOGUĆNOSTI NASTANKA TE ŠTETE.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+
+    <authorgroup>
+      <author>
+        <firstname>Timothy</firstname>
+        <surname>Musson</surname>
+        <affiliation>
+          <!-- <orgname></orgname> -->
+          <address><email>trmusson@ihug.co.nz</email></address>
+        </affiliation>
+      </author>
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+
+      <othercredit role="translator">
+        <firstname>Latin</firstname> 
+        <surname>Translator 1</surname> 
+        <affiliation> 
+          <orgname>Latin Translation Team</orgname> 
+          <address> <email>translator@gnome.org</email> </address> 
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+        <revnumber>Uputstvo za Četiri u nizu v2.8</revnumber>
+        <date>Septembar 2004.</date>
+        <revdescription>
+          <para role="author">Timothy Musson <email>trmusson@ihug.co.nz</email></para>
+          <para role="publisher"/>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>Ovo upustvo je napisano za Četiri u nizu 2.12.</releaseinfo>
+
+    <legalnotice>
+      <title>Primedbe</title>
+      <para>Da biste prijavili grešku ili dali predlog u vezi programa <application>Četiri u nizu</application> ili njegovog uputstva, pratite smernice na <ulink url="ghelp:user-guide?feedback-bugs" type="help">Gnomovoj strani za primedbe</ulink>.</para>
+    </legalnotice>
+  </articleinfo>
+
+
+  <!-- ============= Document Body ============================= -->
+
+  <!-- ============= Introduction ============================== -->
+
+
+  <sect1 id="intro">
+
+    <title>Uvod</title>
+
+    <para><application>Četiri u nizu</application> je klasična igra povezivanja četiri dela u niz napisana za Gnomov projekat. Cilj igre je napraviti liniju od četiri klikera, a u isto vreme sprečiti vašeg protivnika (drugog čoveka ili računara) da ih on isto napravi. Linija može biti vodoravna, uspravna ili dijagonalna.</para>
+
+    <para>Da biste pokrenuli <application>Četiri u nizu</application>, odaberite <guimenuitem>Četiri u nizu</guimenuitem> iz podmenija <guisubmenu>Igre</guisubmenu> sa <guimenu>Glavnog menija</guimenu>, ili otkucajte <command>gnect</command> na komandnoj liniji.</para>
+
+    <para><application>Četiri u nizu</application> je uključen u <filename>gnome-games</filename> paket, koji je deo Gnomovog radnog okruženja. Ovaj dokument je napisan <application>Četiri u nizu</application> 2.8.</para>
+
+   <para>Četiri u nizu podržava i igranje više igrača <link linkend="network-games">preko mreže</link> ili na istom računaru gde naizmenično igra jedan, pa drugi.</para>
+
+
+  </sect1>
+
+
+  <!-- ============= Usage ===================================== -->
+
+
+  <sect1 id="usage">
+
+    <title>Osnovna upotreba</title>
+
+    <!-- ===== How to play ===== -->
+
+    <sect2 id="playing">
+
+      <title>Igranje Četiri u nizu</title>
+
+      <para>Da biste pokrenuli novu igru, odaberite <menuchoice><guimenu>Igra</guimenu><guimenuitem>Nova</guimenuitem></menuchoice>.</para>
+
+      <para><interface>Tabla za igru</interface> sadrži sedam stubaca i šest redova. Iznad njih, poseban red prikazuje kliker trenutnog igrača. Svaki potez se svodi na spuštanje klikera na jedan od stubaca. Kliker će se spustiti na najviši prazan red odabranog stupca.</para>
+        
+      <para>Da biste odigrali potez, kliknite mišem na stubac. Da biste igrali sa tastaturom, pomerite kliker u najvišem redu tasterima za levo i desno, i spustite ga sa tasterom za dole. Vaš kliker će pasti na najviši prazan red tog stupca.</para>
+
+      <!-- Figure -->
+      <mediaobject id="mainwindow-fig">
+        <imageobject>
+          <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="trm"/>
+        </imageobject>
+        <textobject>
+          <phrase>Glavni prozor Četiri u nizu</phrase>
+        </textobject>
+        <caption><para>Glavni prozor Četiri u nizu</para></caption>
+      </mediaobject>
+
+      <para>Igra je dobijena kada jedan od igrača uspe da poređa četiri njegova/njena klikera vodoravno, uspravno ili dijagonalno. Ako se tabla za igru napuni bez pobednika, igra se završava nerešeno.</para>
+
+    </sect2>
+    
+    <!-- ===== Commands ===== -->  
+    
+    <sect2 id="commands">
+      <title>Komande</title>
+      <anchor id="menubar"/><!-- id for removed section -->
+      
+      <para>Da biste vratili potez, odaberite <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>Z</keycap></keycombo></shortcut><guimenuitem>Opozovi potez</guimenuitem></menuchoice>. Ako igrate protiv prijatelja, ovo će opozvati vaš poslednji potez, a ako igrate protiv računara, ovo će opozvati i njegov i vaš poslednji potez. Ponavljanjem ove komande, tabla će se vratiti u početno stanje.</para>
+      <para>Odaberite <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>H</keycap></keycombo></shortcut><guimenuitem>Savet</guimenuitem></menuchoice> da biste dobili predlog od računara za vaš sledeći potez. Savet će se prikazati u traci sa stanjem.</para>
+      
+      <para>Odaberite <menuchoice><guimenuitem>Rezultati</guimenuitem></menuchoice> da biste prikazali broj pobeda i nerešenih igara za trenutnu sesiju. Rezultati će biti poništeni ako se promeni izbor igrača u Postavkama.</para>      
+
+      
+    </sect2>  
+
+    <!-- ===== Preferences ===== -->
+
+    <sect2 id="prefsdialog">
+
+      <title>Postavke</title>
+
+      <para>Da biste promenili podešavanja igre, odaberite <guimenuitem>Postavke</guimenuitem> iz menija <guimenu>Podešavanja</guimenu>. Ovim će se otvoriti <interface>dijalog postavki</interface>.</para>
+
+      <para>Opcije podešavanja u jezičku <guilabel>Igra</guilabel> su: <variablelist>
+
+          <varlistentry>
+            <term><guilabel>Prvi igrač</guilabel> i <guilabel>Drugi igrač</guilabel></term>
+            <listitem>
+              <para>Ova dva stupca govore igri <application>Četiri u nizu</application> ko igra, a ako je neki od igrača računar, onda i kojom težinom da igra. Da biste igrali protiv prijatelja, odaberite Čovek i za prvog i za drugog igrača.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Tema</guilabel></term>
+            <listitem>
+              <para>Meni sa temama prikazuje dostupne teme i daje vam da izaberete omiljenu.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Uključi animacije</guilabel></term>
+            <listitem>
+              <para>Ovde možete uključiti i isključiti animacije u igri.</para>
+            </listitem>
+          </varlistentry>
+
+        </variablelist></para>
+      <para>Na kraju, postoji i jezičak <guilabel>Kontrola tastaturom</guilabel> za izmeni naredbi kada igrate preko tastature. Da biste izmenili naredbu, kliknite dvaput na odgovarajući unos i pritisnite novi taster.</para>
+
+    </sect2>
+  </sect1>
+
+
+  <!-- ===== Custom Themes ===================================== -->
+
+
+  <sect1 id="custom">
+
+    <title>Pravljenje novih tema</title>
+
+    <para>Ovaj odeljak objašnjava kako da napravite nove teme za <application>Četiri u nizu</application>. On podrazumeva se da ste upoznati sa osnovama uređivanja teksta, programom za grafiku i komandnom linijom.</para>
+
+    <sect2 id="images">
+
+      <title>Slike</title>
+
+      <para>Skup figura za <application>Četiri u nizu</application> sadrži šest figura iste veličine, poređane vodoravno. To su, sa leva na desno:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Kliker prvog igrača kao što će biti prikazan na tabli</para>
+        </listitem>
+        <listitem>
+          <para>Kliker drugog igrača kao što će biti prikazan na tabli</para>
+        </listitem>
+        <listitem>
+          <para>Pozadina table za igru</para>
+        </listitem>
+        <listitem>
+          <para>Pozadina najvišeg reda</para>
+        </listitem>
+        <listitem>
+          <para>Kliker prvog igrača kao što će biti prikazan u najvišem redu</para>
+        </listitem>
+        <listitem>
+          <para>Kliker drugog igrača kao što će biti prikazan u najvišem redu</para>
+        </listitem>
+      </orderedlist>
+
+      <figure id="shot1">
+        <title>Primer skupa figura</title>
+        <screenshot>
+          <screeninfo>Slika prikazuje šest figura u skupu figura</screeninfo>
+          <graphic format="PNG" fileref="figures/tileset.png" srccredit="TRM"/>
+        </screenshot>
+      </figure>
+
+      <para>Treća i četvrta figura će biti ponavljane preko cele table i preko najvišeg reda, osim ako se u datoteci za temu ne naglasi da pozadinska slika ide preko celog prozora igre.</para>
+
+      <tip>
+        <title>SAVET</title>
+        <para>Za skupove figura se preporučuje PNG format. Prva, druga, peta i šesta figura treba da sadrže providnost ako želite da se kroz njih vidi pozadina. Treća i četvrta figura bi trebale da budu neprozirne, čak iako koristite pozadinsku sliku preko celog prozora za vašu temu.</para>
+      </tip>
+
+      <tip>
+        <title>SAVET</title>
+        <para>Figure mogu biti pravougaone ili kvadratne i koje god veličine želite. Većina skupova figura koje dolaze uz <application>Četiri u nizu</application> koriste kvadratne figure veličine 50 sa 50 piksela.</para>
+      </tip>
+
+      <para>Za pozadinsku sliku preko celog prozora, ima još malo posla da se uradi. Neka su na primer vaše figure 50 sa 50 piksela svaka. Prikaz igre je 7 sa 7 figura, uključujući i najviši red, tako da je idealna veličina pozadinske slike 350 sa 350 piksela.</para>
+
+      <tip>
+        <title>SAVET</title>
+        <para><application>Četiri u nizu</application> će automatski proširiti vašu sliku ako ne odgovara skupu figura. Ovo znači da možete imati „velike“ i „male“ verzije vaše teme, tako da obe koriste istu pozadinsku sliku, tako što ćete imati veću i manju verziju vačeg skupa figura.</para>
+      </tip>
+
+      <para>Sada imate skup figura i možda pozadinsku sliku uz skup figura. Sledeći korak je da ih stavite na pravo mesto.</para>
+
+    </sect2>
+
+
+    <sect2 id="directories">
+
+      <title>Spajanje svega</title>
+
+      <para>Poslednji korak je da stavite sliku(e) tamo gde ih  <application>Četiri u nizu</application> može naći. Možete ih staviti u instalacionu fasciklu igre (koja zavisi od vašeg sistema), ali je vaša lična fascikla verovatno bolja ideja.</para>
+
+      <para>Napravite <filename class="directory">~/.gnect</filename> fasciklu i u njoj <filename class="directory">~/.gnect/pixmaps</filename> fasciklu. Ova imena su važna jer <application>Četiri u nizu</application> neće da gleda nigde drugde.</para>
+
+      <para>Umnožite vašu sliku(e) u „pixmaps“ fasciklu.</para>
+
+      <para>Ako pokrenete <application>Četiri u nizu</application> iz komandne linije, igra će vam dati nagoveštaje o bilo kojim problemima koje ima sa vašom temom. Ako problema nema, naći ćete vašu novu temu na spisku tema u <interface>prozorčetu sa postavkama</interface>.</para>
+
+      <para>Uživajte!</para>
+
+    </sect2>
+
+
+  </sect1>
+
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Mrežne igre</title>
+  <para>Četiri u nizu podržava i mrežne igre za više igrača koju obezbeđuje <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Zona igre</ulink>. Povezivanjem na server Četiri u nizu na Internetu, možete izazvati druge igrače u igrama sa više igrača. Za vesti, ažuriranje i spisak servera za povezivanje, pogledajte <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">veb stranu Gnomovih igara</ulink>.</para>
+  <para>Da pokrenete Četiri u nizu igru za više igrača, odaberite <menuchoice><guimenu>Igra</guimenu><guimenuitem>Mrežna igra</guimenuitem></menuchoice> iz glavnog menija.</para> 
+
+<sect2 id="connecting">
+<title>Povezivanje na mrežni server Četiri u nizu</title>
+<para>Pri pokretanju nove mrežne igre, prvo se pokazuje prozorče za povezivanje. Iz ovog prozorčeta možete izabrati server za povezivanje i korisničko ime koje ćete imati kada se povežete.</para>
+
+<para>Moguće je povezati se na server sa bilo gostinskog naloga ili kao normalni registrovani nalog. Gostinski nalozi vam omogućuju anonimnu prijavu, dok vam normalni nalozi dozvoljavaju da rezervišete vaše korisničko ime zaštićeno lozinkom koju odaberete.</para>
+
+<para>Opcija <guimenuitem>Prijava kao gost</guimenuitem> treba da bude odabrana ako želite anonimnu prijavu. Ako želite da napravite novi nalog za prijavljivanje, odaberite <guimenuitem>Prva prijava</guimenuitem>, sa željenim korisničkim imenom, lozinkom i e-poštom. Ako već imate nalog, možete se povezati izborom opcije <guimenuitem>Normalna prijava</guimenuitem> i zatim uneti vaše korisničko ime i lozinku.</para>
+<para>Da biste se povezali na server, kliknite na dugme <guimenuitem>Poveži se</guimenuitem>.</para>
+<figure id="connect">
+<title>Prozorče za mrežno povezivanje Četiri u nizu za mrežno povezivanje.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Prozorče za mrežno povezivanje Četiri u nizu za mrežno povezivanje.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Pridruživanje sobi za igru</title>
+<para>Kad ste se uspešno povezali na server, možete odabrati sobu kojoj želite da se pridružite. Da biste igrali Četiri u nizu, odabertite sobu Four-in-a-Row. Ako želite da vi pravite igru, kliknite dugme „Pokreni“. Ovim se pravi nova tabla gde drugi mogu da igraju protiv vas. Ako ima već pokrenutih igara, možete kliknuti duplim klikom na postojeću igru da biste joj se pridružili. Spisak tabli za igru sa desne strane vam pokazuje broj slobodnih mesta, što označava broj igrača koji se mogu pridružiti.</para>
+<figure id="tables">
+<title>Mrežno prozorče za Četiri u nizu vam omogućava da se pridružite sobi za igru da biste našli druge igrače.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Mrežno prozorče za Četiri u nizu vam omogućava da se pridružite sobi za igru da biste našli druge igrače.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>Pri pravljenju nove table za igru Četiri u nizu, prikazuje se prozorče sa postavkama koje vam omogućava da prilagodite igru, kao npr. najmanji broj igrača za igru. Kada je ukupni broj mesta zauzet, igrači se više ne mogu pridružiti tabli za igru.</para>
+<para>Moguće je ćaskati sa ostalim igračima u mreži. Pitajte za savet ili pomoć pri igranju igre, ali molimo, budite ljubazni prema ostalim igračima.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Čekanje da se ostali igrači pridruže igri</title>
+<para>Kada ste se uspešno pridružili tabli za igru, morate sačekati da se potreban broj igrača pridruži. Stavka menija <guimenuitem>Spisak igrača</guimenuitem> vam omogućava da vidite igrače koji su se pridružili igri. Igra će početi odmah pošto se dostigne potreban broj igrača.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Igranje Četiri u nizu sa više igrača</title>
+<para>Igranje Četiri u nizu sa više igrača ima ista pravila kao obična igra Četiri u nizu, osim što sada igrate protiv drugog čoveka. To znači da neke druge strategije igre mogu biti biti bolje u odnosu na to kad igrate protiv računara.</para>
+<para>Kada neki igrač pobedi, igra se završava i možete se vratiti na početni ekran mrežne igre. Onda možete igrati još jednu zanimljivu igru Četiri u nizu sa više igrača!</para>
+</sect2>
+
+</sect1>
+
+
+
+  <!-- ===== Bugs ============================================== -->
+
+
+  <sect1 id="bugs">
+
+    <title>Poznate greške i ograničenja</title>
+
+    <para>Nekad animacija padanja klikera ne izgleda onako glatko kao što bi trebala da bude.</para>
+
+  </sect1>
+
+
+  <!-- ===== Authors =========================================== -->
+
+
+  <sect1 id="authors">
+
+    <title>Autori</title>
+
+    <para><application>Četiri u nizu</application> su napisali Timothy Musson (<email>trmusson@ihug.co.nz</email>) i David Neary (<email>bolsh@gimp.org</email>). Mnogi drugi su izdvojili svoje vreme da bi pomogli na mnogo načina od kada je rad na igri <application>Četiri u nizu</application> počeo.</para>
+    <para><ulink type="http" url="http://www.ce.unipr.it/~gbe/velena.html">Motor Velenu</ulink>, glavnog računarskog igrača igre <application>Četiri u nizu</application> je napisao Giuliano Bertoletti. Zahvalni smo mu što je dozvolio da se njegovo delo uključi u igru, bez koga igra <application>Četiri u nizu</application> ne bi bila ni blizu upotrebljiva.</para>
+    <para>Ovo uputstvo je napisao Timothy Musson.</para>
+    <para>Da biste prijavili greške ili dali predlog u vezi ovog programa ili njegovog uputstva, pratite smernice iz <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumenta</ulink>.</para>
+
+
+<!-- For translations: uncomment this:
+
+  <para>
+    Latin translation was done by ME
+    (<email>MYNAME@MYADDRESS</email>). Please send all comments and
+    suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+-->
+
+  </sect1>
+
+
+  <!-- ============= License =================================== -->
+
+
+  <sect1 id="license">
+
+    <title>Licenca</title>
+
+    <para>Ovaj program je slobodan softver; možete ga raspodeljivati i/ili ga menjati pod uslovima <citetitle>GNU Opšte Javne Licence (GNU GPL)</citetitle> kako je objavljuje Zadužbina za Slobodni Softver (FSF); bilo verzije 2 te Licence, bilo (po vašem nahođenju) bilo koje novije verzije.</para>
+
+    <para>Ovaj program se raspodeljuje u nadi da će biti od koristi, ali BEZ IKAKVIH GARANCIJA; čak i bez podrazumevane garancije KORISNOSTI ili PRILAGOĐENOSTI ODREĐENOJ NAMENI.  Vidite <citetitle>GNU Opštu Javnu Licencu</citetitle> za više detalja.</para>
+
+    <para>Primerak <citetitle>GNU Opšte Javne Licence</citetitle> je uključen u dodatku <citetitle>Gnomovog korisničkog vodiča</citetitle>. Takođe možete nabaviti primerak <citetitle>GNU Opšte Javne Licence</citetitle> od Zadužbine za Slobodni Softver odlazeći na <ulink url="http://www.fsf.org" type="http">njihovu veb adresu</ulink> ili pišući na <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+
+  </sect1>
+
+</article>

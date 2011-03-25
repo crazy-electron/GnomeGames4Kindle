@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.20">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "February 2008">
+<!ENTITY app "<application>Iagno</application>">
+<!ENTITY appname "Iagno">
+<!ENTITY version "2.9">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sr@latin">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo>
+ <title>Uputstvo za <application>Jagno</application></title>
+
+    <abstract role="description">
+      <para>Jagno je Otelo igra strategije za dva igrača, takođe poznata i kao Reversi i slična je igri Go. Figure su sa jedne strane crne, a sa druge strane bele. Cilj igre je da obrnete protivničke figure na svoju boju, dok se trudite da protivnik ne uradi to isto. Kada se tabla napuni figurama, pobednik je igrač sa više figura u njegovoj boji.</para>
+    </abstract>
+
+ <copyright>
+  <year>2000.</year>
+  <holder>Eric Baudais</holder>
+ </copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Projekat Gnomove dokumentacije</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Dozvoljeno je umnožavanje, širenje, vršenje izmena ovog dokumenta pod uslovima Gnu-ove Slobodne Dokumentacione Dozvole (GSDD), verzije 1.1 ili bilo koje naknadne verzije bez nepromenjivih odeljaka, teksta na naslovnoj i poslednjoj strani, a koju je objavila Zadužbina Slobodnog Softvera. Primerak GSDD-e možete pronaći na ovoj <ulink type="help" url="ghelp:fdl">adresi</ulink> ili u datoteci COPYING-DOCS koja je priložena uz ovo uputstvo.</para>
+         <para>Ovo uputstvo je deo skupa Gnom dokumenata objavljenih pod GFDL. Ukoliko želite da raspodeljujete ovo uputstvo odvojeno od skupa, to možete uraditi dodavanjem primerka licence dokumentu, kako je opisano u odeljku 6 same licence.</para>
+
+	<para>Mnogi nazivi koje kompanije koriste u cilju prepoznatljivosti svojih proizvoda i usluga predstavljaju robne marke. Kada (ukoliko) se takvi nazivi pojavljuju(spominju) u bilo kojem Gnomovom dokumentu, a članovi Gnomovog dokumentacionog projekta imaju saznanja o tome, tada su nazivi ispisani velikim slovima ili sa velikim početnim slovima.</para>
+
+	<para>OVAJ DOKUMENT I NJEGOVE IZMENJENE VERZIJE SU DOSTUPNE POD USLOVIMA GNU-OVE SLOBODNE DOKUMENTACIONE DOZVOLE UZ DODATNU SAGLASNOST DA: <orderedlist>
+		<listitem>
+		  <para>DOKUMENT JE DOSTUPAN SA SVIM SVOJIM DOBRIM I LOŠIM STRANAMA BEZ BILO KAKVOG JAMSTVA, BILO ONO IZREČENO ILI NE, UKLJUČUJUĆI BEZ OGRANIČENJA, JAMSTVO DA JE OVAJ DOKUMENT ILI NJEGOVA IZMENJENA VERZIJA BEZ NEDOSTATAKA, SPREMAN ZA TRŽIŠTE, SVRSISHODAN I NE NARUŠAVA ZAKONSKE NORME. CELOKUPAN RIZIK KOJI SE ODNOSI NA KVALITET, TAČNOST I DOMET (UČINAK) DOKUMENTA ILI NJEGOVE IZMENJENE VERZIJE SNOSI KORISNIK. UKOLIKO SE U BILO KOJEM DOKUMENTU ILI NJEGOVOJ IZMENJENOJ VERZIJI POJAVI NEDOSTATAK (GREŠKA) BILO KOJE VRSTE, KORISNIK (A NE AUTOR IZVORNE VERZIJE, BILO KOJI DRUGI AUTOR ILI SARADNIK) SNOSI SVE TROŠKOVE NEOPHODNOG SERVISIRANJA, POPRAVKE ILI ISPRAVKE. OVO OGRANIČENJE JAMSTVA PREDSTAVLJA SASTAVNI DEO OVE DOZVOLE. UPOTREBA BILO KOJEG DOKUMENTA ILI NJEGOVE IZMENJENE VERZIJE NIJE DOZVOLJENA OSIM POD USLOVIMA OVOG OGRANIČENJA JAMSTVA.</para>
+		</listitem>
+		<listitem>
+		  <para>NI POD KAKVIM OKOLNOSTIMA ILI ZAKONU, BILO ZBOG KRŠENJA (ILI NEMARA) UGOVORA, ILI NA BILO KOJI DRUGI NAČIN, AUTOR (PRVOBITNE VERZIJE), SARADNIK ILI ISPORUČIVALAC DOKUMENTA ILI NJEGOVE IZMENJENE VERZIJE, NITI DOBAVLJAČ BILO KOJE OD NAVEDENIH STRANA NEĆE SNOSITI MATERIJALNU ODGOVORNOST ZA NASTALA DIREKTNA, INDIREKTNA, POSEBNA, SLUČAJNA ILI TIME NASTALA OŠTEĆENJA BILO KOJE VRSTE UKLJUČUJUĆI, BEZ OGRANIČENJA, ŠTETU NANESENU UGLEDU FIRME, PRESTANKU PROIZVODNJE, OTKAZIVANJE RADA RAČUNARA ILI KVARA KAO I ZA SVE OSTALE ŠTETE ILI GUBITKE NASTALE USLED KORIŠĆENJA DOKUMENTA I NJEGOVIH IZMENJENIH VERZIJA ČAK I AKO JE OŠTEĆENA STRANA BILA OBAVEŠTENA O MOGUĆNOSTI NASTANKA TE ŠTETE.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Eric</firstname> 
+	<surname>Baudais</surname> 
+	<affiliation> 
+	  <address> <email>baudais@okstate.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+<revhistory>
+  <revision> 
+    <revnumber>Uputstvo za Jagno v2.9</revnumber> 
+    <date>Februar 2008.</date> 
+    <revdescription> 
+      <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+      <para role="publisher">Projekat Gnomove dokumentacije</para>
+    </revdescription> 
+  </revision>
+  <revision> 
+    <revnumber>Uputstvo za Jagno v2.8</revnumber> 
+    <date>Septembar 2004.</date> 
+    <revdescription> 
+      <para role="author">Eric Baudais <email>baudais@okstate.edu</email></para>
+      <para role="publisher">Projekat Gnomove dokumentacije</para>
+	</revdescription> 
+  </revision>
+  <revision>
+   <revnumber>0.1v</revnumber>
+   <date>4. februar 2000.</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Završen prvi nacrt.</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>0.2</revnumber>
+   <date>5. februar 2000.</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Dodao fusnotu u sekciji „zašto“. Ispravio par grešaka.</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>0.3</revnumber>
+   <date>7. februar 2000.</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Usaglasio dokumentaciju sa GDP šablonom. Pojasnio sekciju o igranju.</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>1.0</revnumber>
+   <date>7. april 2000.</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>uputstvo za Jagno licencirano pod SDD licencom. Ažurirani snimci ekrana da odgovaraju GDP temi, MicroGUI.</revremark>
+  </revision>
+ </revhistory>
+
+    <releaseinfo>Ovo upustvo je napisano za Jagno 2.20.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Primedbe</title> 
+      <para>Da biste prijavili grešku ili dali predlog u vezi programa <application>Jagno</application> ili njegovog uputstva, pratite smernice na <ulink url="ghelp:user-guide?feedback-bugs" type="help">Gnomovoj strani za primedbe</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Jagno</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="intro">
+ <title>Uvod</title>
+ <sect2 id="what">
+  <title>Šta je Jagno?</title>
+  
+  <para><application>Jagno</application> je računarska verzija igre Reversi, popularnije nazvane Otelo. <application>Jagno</application> je igra strategije za dva igrača, slično kao i Go. Tabla je veličine 8 sa 8 na koju se postavljaju crne figure sa jedne strane i bele sa druge. Cilj igre <application>Jagno</application> je da okrenete što više protivničkih figura na vašu boju. Ovo se radi tako što se protivničke figure zarobljavaju oko dve figure vaše boje.</para>
+
+  <para>Jagno podržava i igranje više igrača <link linkend="network-games">preko mreže</link> ili na istom računaru gde naizmenično igra jedan, pa drugi.</para>
+
+  <para>Da biste pokrenuli <application>Jagno</application>, odaberite stavku <guimenuitem>Jagno</guimenuitem> iz podmenija <guisubmenu>Igre</guisubmenu> sa <guimenu>Glavnog menija</guimenu>, ili otkucajte <command>iagno</command> u komandnoj liniji.</para>
+ </sect2>
+
+ <sect2 id="why">
+  <title>Zašto se Otelo zove Jagno?</title>
+  <para>Verovatno se pitate zašto se ova igra zove <application>Jagno</application> umesto Otelo ili Gnotelo. Odgovor je komplikovan i uključuje žigove, advokate i šta sve ne. Umesto da vas ostavim sa ovim odgovorom, ispričaću vam dugu i komplikovanu laž o poreklu imena <application>Jagno</application>.</para>
+  <para>Jedne olujne noći u Engleskoj, nalik na one kakve se sreću u bajkama, usamljeni programer je sedeo ispred ekrana svog računara. Jan je završavao svoju remek delo igricu. To je bila potpuno interaktivna igra Otela  i odlučio je da napravi igru rečima i da je nazove Gnotelo, jer je pisana za Gnom.</para>
+  <para>Kasnije su mu došli prijatelji, i kao svi programeri, hvalio se svojim remek delom. Svi su mu se smejali u lice i rekli su mu da je igra beskorisna i da je to bedan pokušaj da bude pravi haker. Pošto ih je Jan izbacio napolje, rešio je da nazove svoj program Jago <footnote>
+   <para>Jago je Otelov neprijatelj u Šekspirovom komadu <citetitle>Otelo</citetitle>.</para>
+  </footnote> zbog zla koje se pojavilo zbog pokazivanja ove igre. Ali, i dalje nešto nije štimalo. Svi Gnomovi programi imaju neki deo Gnoma u nazivu, pa se Jan i dalje premišljao. Na kraju se odlučio za ime pod kojim danas znamo i volimo ovaj program, <application>Jagno</application>.</para>
+ </sect2>
+</sect1>
+
+<sect1 id="playing">
+ <title>Igranje Jagna</title>
+ <para>Na tabli se u početku nalaze četiri figure u kvadratu na sredini. Figure imaju istu boju na krajevima, kao što prikazuje <xref linkend="start-shot"/>.</para>
+ 
+ <figure id="start-shot">
+  <title>Početna pozicija</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/START.png" format="PNG" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Snimak ekrana početne pozicije.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+ <para>Crni igra prvi i tako stavlja figuru na tablu da zarobljava belu figuru između dve crne figure. Kada crni postavi svoju figuru, sve bele figure na tabli koje se nalaze između novopostavljene crne figure i drugih crnih figura, vodoravno, uspravno ili dijagonalno se okreću i postaju crne (<xref linkend="first-shot"/>).</para>
+
+ <figure id="first-shot">
+  <title>Prvi potez</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/FIRST.png" format="PNG" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Snimak ekrana prvog poteza.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+ <para>Kada je figura zarobljena između dve druge figure istih boja u istom redu, igrač osvaja figure sve dok se ne naiđe na drugu figuru u boji tog igrača, kao što prikazuje <xref linkend="block-shot"/>. Igrač, dakle, može uzeti samo figure koje se okreću kao direktna posledica stavljanja figure na tablu. Jednom kada je figura postavljena na tablu, igrač je ne može ukloniti ili premestiti. Ako igrač nema potez, gubi svoj red. Igra se završava kada nijedan igrač ne može da odigra potez. <figure id="block-shot">
+  <title>Beli ne može da osvoji crnu figuru u centru središnjeg stupca jer bele figure blokiraju krajeve tog stupca. Da je, kojim slučajem, na potezu crni, mogao bi da stavi figuru na vrh te kolone, ali bi tako samo okrenuo prvu figuru beloga.</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/BLOCK.png" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Snimak ekrana blokiranja crnog.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure></para>
+
+</sect1>
+
+<sect1 id="settings">
+ <title>Podešavanja igre</title>
+
+ <sect2 id="player">
+  <title>Boje igrača i nivo težine</title>
+ 
+  <para>Kada se Jagno pokrene, ljudski igrač igra crnog, a računarski igrač igra belog sa prvim nivoom težine. Korišćenjem jezička <guimenuitem>Igra</guimenuitem> u prozorčetu sa <guisubmenu>podešavanjima</guisubmenu>, možete podesiti tipove igrača za obe boje. Ljudski igrač ste naravno vi, prvi nivo je najlakši nivo računarskog igrača, dok je treći nivo najteži. Možete podesiti da igraju dva ljudska igrača da biste igrali sa prijateljem, ili dva računarska igrača da biste samo posmatrali duel računara.</para>
+ </sect2>
+
+ <sect2 id="quick-moves">
+  <title>Opcija brzog poteza</title>
+
+  <para>Ova opcija se nalazi u meniju <guimenu>Podešavanja</guimenu>. Idite na podmeni <guisubmenu>Opcije</guisubmenu> i jezičak <guimenuitem>Igra </guimenuitem>. Opcija je prvobitno isključena, a ako se uključi, omogućiće da računarski igrač brže stavlja svoje figure.</para>
+
+  <note>
+   <title>Napomena:</title>
+   <para>Uključivanjem ove opcije računar se ne tera na potez i ne smanjuje mu se nivo težine.</para>
+  </note>
+ </sect2>
+ 
+ <sect2 id="enable-sound">
+  <title>Uključi/isključi zvukove</title>
+
+  <para>Poslednja opcija na jezičku <guimenuitem>Igra</guimenuitem> u prozorčetu <guilabel>Podešavanja</guilabel> dozvoljava vam da uključujete ili isključujete zvukove dok igrate <application>Jagno</application>.</para>
+
+  <figure id="player-shot">
+   <title>Meni „Podešavanja“ sa istaknutim jezičkom „Igra“.</title>
+   <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/PLAYER.png" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Snimak ekrana podešavanja igre.</phrase> 
+    </textobject> 
+  </mediaobject>
+   </screenshot>
+  </figure>
+
+ </sect2>
+
+</sect1>
+
+<sect1 id="animations">
+ <title>Izgled</title>
+
+ <para>Sve opcije animacije se nalaze u meniju <menuchoice><guimenu>Podešavanja</guimenu><guisubmenu>Opcije </guisubmenu></menuchoice>, kada kliknte na jezičak <guimenuitem>Izgled</guimenuitem>.</para>
+
+ <sect2 id="animation-amount">
+  <title>Animacija</title>
+
+  <para>Ovom opcijom se, uz pomoć radio dugmadi, upravlja količinom animacije kada se figure okreću. Odabiranjem opcije <guibutton>Nikakva</guibutton>, figure će se okretati trenutno. Odabiranjem opcije <guibutton>Delimična</guibutton>, figure će se okretati polako. Odabiranjem opcije <guibutton>Kompletna</guibutton>, figure će se okretati polako i glatko.</para>
+
+ </sect2>
+
+ <sect2 id="stagger-flips">
+  <title>Razbacaj figure</title>
+  
+  <para>Ovom opcijom se zarobljene figure po redu, stupcu ili dijagonali okreću jedna za drugom, kao domine, umesto da se sve okrenu odjednom. Ne utiče na igru, ali izgleda kul.</para>
+
+ </sect2>
+
+ <sect2 id="grid">
+  <title>Prikaži mrežu</title>
+
+  <para>Ovom opcijom se prikazuje mreža preko podloge za igru. Prikazivanje mreže je korisno jer na taj način igrač tačno zna gde će figura biti postavljena.</para>
+
+  <tip>
+   <title>Savet:</title>
+   <para>Ova opcija treba biti uključena za početnike da bi imali bolji pregled igre.</para>
+  </tip>
+
+ </sect2>
+
+ <sect2 id="flip-final">
+  <title>Obrni konačni rezultat</title>
+
+  <para>Ovom opcijom se na kraju igre sve crne figure pomeraju na vrh table, a sve bele na njeno dno. Ovim se omogućava da se vizuelno prikaže ishod partije.</para>
+
+  <note>
+   <title>Napomena:</title>
+   <para>Ova opcija ni na koji način ne utiče na ishod igre.</para>
+  </note>
+
+ </sect2>
+
+ <sect2 id="tile-set">
+  <title>Skup figura</title>
+  <para>Ova opcija vam omogućava da odaberete tip table i figura koje se prikazuju, Ako želite da napravite vaš skup figura, uzmite classic skup figura kao osnovu i promenite teksturu i boje za različite efekte. Kada napravite novi skup figura, pošaljite ga Janu Pitersu <email>itp@gnu.org</email> i on će ga uključiti u naredno izdanje.</para>
+
+  <important>
+   <title>Važno:</title>
+   <para>Postoje dva skupa figura koji izgledaju isto, ali imaju drugačije animacije -- woodtrim i classic.</para>
+  </important>
+
+  <figure id="animation-shot">
+   <title>Meni „Podešavanja“ sa istaknutim jezičkom „Izgled“.</title>
+   <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/ANIMATION.png" srccredit="Eric Baudais"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Snimak ekrana podešavanja animacije.</phrase> 
+    </textobject> 
+  </mediaobject>
+   </screenshot>
+  </figure>
+
+ </sect2>
+
+</sect1>
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Mrežne igre</title>
+  <para>Jagno podržava i mrežne igre za više igrača koju obezbeđuje <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Zona igre</ulink>. Povezivanjem na server Četiri u nizu na internetu, možete izazvati druge igrače u igrama sa više igrača. Za vesti, ažuriranja i spisak servera za povezivanje, pogledajte <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">veb stranu Gnomovih igara</ulink>.</para>
+  <para>Da pokrenete Jagno igru za više igrača, odaberite <menuchoice><guimenu>Igra</guimenu><guimenuitem>Mrežna igra</guimenuitem></menuchoice> iz glavnog menija.</para> 
+
+<sect2 id="connecting">
+<title>Povezivanje na Jagno mrežni server</title>
+<para>Pri pokretanju nove mrežne igre, prvo se pokazuje prozorče za povezivanje. Odavde možete izabrati server za povezivanje i korisničko ime koje ćete imati kada se povežete.</para>
+
+<para>Moguće je povezati se na server sa bilo gostinskog naloga ili kao normalni registrovani nalog. Gostinski nalozi vam omogućuju anonimnu prijavu, dok vam normalni nalozi dozvoljavaju da rezervišete vaše korisničko ime zaštićeno lozinkom koju odaberete.</para>
+
+<para>Opcija <guimenuitem>Prijava kao gost</guimenuitem> treba da bude odabrana ako želite anonimnu prijavu. Ako želite da napravite novi nalog za prijavljivanje, odaberite <guimenuitem>Prva prijava</guimenuitem>, sa željenim korisničkim imenom, lozinkom i e-adresom. Ako već imate nalog, možete se povezati opcijom <guimenuitem>Normalna prijava</guimenuitem>, pri čemu unosite postojeće korisničko ime i lozinku.</para>
+<para>Da biste se povezali na server, kliknite na dugme <guimenuitem>Poveži se</guimenuitem>.</para>
+<figure id="connect">
+<title>Jagno prozorče za mrežno povezivanje.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Jagno prozorče za mrežno povezivanje.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Pridruživanje sobi za igru</title>
+<para>Kad ste se uspešno povezali na server, možete izabrati sobu kojoj želite da se pridružite. Da biste igrali Jagno, odaberite sobu Iagno. Ako želite da napravite igru, kliknite na dugme „Pokreni“. Ovim se pravi nova tabla gde drugi mogu da igraju protiv vas. Ako ima već pokrenutih igara, možete kliknuti duplim klikom na postojeću igru da biste joj se pridružili. Spisak tabli za igru sa desne strane vam pokazuje broj slobodnih mesta, što označava broj igrača koji se mogu pridružiti.</para>
+<figure id="tables">
+<title>Jagno mrežno prozorče vam omogućava da se pridružite sobi za igru i nađete druge igrače.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Jagno mrežno prozorče vam omogućava da se pridružite sobi za igru i nađete druge igrače.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>Pri pravljenju nove Jagno table za igru, prikazuje se prozorče sa postavkama koje vam omogućavaju da prilagodite igru. Na primer, najmanji broj igrača za igru. Kada je ukupni broj mesta zauzet, igrači se više ne mogu pridružiti tabli za igru.</para>
+<para>Moguće je ćaskati sa ostalim igračima u mrežnim igrama. Pitajte za savet ili pomoć pri igranju igre, ali molimo, budite ljubazni prema ostalim igračima.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Čekanje da se ostali igrači pridruže igri</title>
+<para>Kada ste se uspešno pridružili tabli za igru, morate sačekati da se potreban broj igrača pridruži. Stavka menija <guimenuitem>Spisak igrača</guimenuitem> vam omogućava da vidite igrače koji su se pridružili igri. Igra će početi odmah pošto se dostigne potreban broj igrača.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Igranje Jagna sa više igrača</title>
+<para>Igranje Jagna sa više igrača ima ista pravila kao običan Jagno, osim što sada igrate protiv drugog čoveka. To znači da neke druge strategije igre mogu biti biti bolje u odnosu na to kad igrate protiv računara.</para>
+<para>Kada neki igrač pobedi, igra se završava i možete se vratiti na početni ekran mrežne igre. Onda možete igrati još jednu zanimljivu Jagno igru sa više igrača!</para>
+</sect2>
+
+</sect1>
+
+
+
+
+<sect1 id="bugs">
+ <title>Poznate greške i ograničenja</title>
+
+ <itemizedlist mark="opencircle">
+    <listitem>
+     <para>Računarskog igrača za Jagno je lako pobediti.</para>
+    </listitem>
+ </itemizedlist>
+
+</sect1>
+
+<sect1 id="credits">
+ <title>Autori</title>
+  <para><application>Jagno</application> je napisao Ian Peters (<email>itp@gnu.org</email>). Ovo uputstvo je napisao Eric Baudais (<email>baudais@okstate.edu</email>). Da biste prijavili greške ili dali predlog u vezi ovog programa ili njegovog uputstva, pratite smernice iz <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumenta</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licenca</title>
+  <para>Ovaj program je slobodan softver; možete ga raspodeljivati i/ili ga menjati pod uslovima <citetitle>GNU Opšte Javne Licence (GNU GPL)</citetitle> kako je objavljuje Zadužbina za Slobodni Softver (FSF); bilo verzije 2 te Licence, bilo (po vašem nahođenju) bilo koje novije verzije.</para>
+  <para>Ovaj program se raspodeljuje u nadi da će biti od koristi, ali BEZ IKAKVIH GARANCIJA; čak i bez podrazumevane garancije KORISNOSTI ili PRILAGOĐENOSTI ODREĐENOJ NAMENI.  Vidite <citetitle>GNU Opštu Javnu Licencu</citetitle> za više detalja.</para>
+  <para>Primerak <citetitle>GNU Opšte Javne Licence</citetitle> je uključen u dodatku <citetitle>Gnomovog korisničkog vodiča</citetitle>. Takođe možete nabaviti primerak <citetitle>GNU Opšte Javne Licence</citetitle> od Zadužbine za Slobodni Softver odlazeći na <ulink url="http://www.fsf.org" type="http">njihovu veb adresu</ulink> ili pišući na <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

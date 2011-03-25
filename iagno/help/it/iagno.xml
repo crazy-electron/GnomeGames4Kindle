@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.20">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "February 2008">
+<!ENTITY app "<application>Iagno</application>">
+<!ENTITY appname "Iagno">
+<!ENTITY version "2.9">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="it">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo>
+ <title>Manuale di <application>Iagno</application></title>
+
+    <abstract role="description">
+      <para>Iagno è il gioco di strategia per due giocatori chiamato Otello, altrimenti conosciuto come Reversi e simile a Go. I pezzi sono dei dischetti colorati di nero su un lato nero e di bianco sull'altro. L'obiettivo del giocatore è girare i pezzi dell'avversario per farli diventare del proprio colore, cercando di fermare l'avversario che cercherà di fare lo stesso. Quando la scacchiera sarà stata riempita dai dischetti, il giocatore con più pezzi su di essa sarà il vincitore.</para>
+    </abstract>
+
+ <copyright>
+  <year>2000</year>
+  <holder>Eric Baudais</holder>
+ </copyright><copyright><year>2008</year><holder>Alessio Treglia (quadrispro@ubuntu-it.org)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Progetto di documentazione GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Questo documento può essere copiato, distribuito e/o modificato solo in conformità con i termini della GNU Free Documentation License (GFDL) Versione 1.1 o delle versioni successive pubblicate dalla Free Software Foundation senza sezioni invariabili, frontespizi e testi di copertina. Una copia della GFDL è disponibile a questo <ulink type="help" url="ghelp:fdl">collegamento</ulink> o nel file COPYING-DOCS distribuito con questo manuale.</para>
+         <para>Questo manuale è parte di una collezione di manuali di GNOME distribuita sotto la GFDL. Se si vuole distribuire questo manuale separatamente dalla collezione, lo si può fare aggiungendo una copia della licenza al manuale, come descritto nella sezione 6 della licenza.</para>
+
+	<para>Molti dei nomi utilizzati dalle aziende per distinguere i loro prodotti e servizi sono rivendicati come marchi commerciali. Dove questi nomi appaiono nella documentazione di GNOME, e i membri del progetto di documentazione di GNOME sono informati di questi marchi commerciali, allora i nomi sono in lettere maiuscole o con la lettera iniziale maiuscola.</para>
+
+	<para>QUESTO DOCUMENTO E LE SUE VERSIONI MODIFICATE SONO FORNITI IN BASE AI TERMINI DELLA GNU FREE DOCUMENTATION LICENSE, SOTTO INTESO CHE: <orderedlist>
+		<listitem>
+		  <para>IL DOCUMENTO VIENE FORNITO SENZA GARANZIE DI ALCUN TIPO,ESPLICITE O IMPLICITE, INCLUSE, MA SENZA LIMITAZIONE, LE GARANZIE ATTESTANTI CHE IL DOCUMENTO O LE SUE VERSIONI MODIFICATE SIANO PRIVI DI DIFETTI, COMMERCIALIZZABILI, IDONEI A UN DETERMINATO SCOPO O CHE NON VIOLINO DIRITTI DI TERZI. SI DECLINA QUALUNQUE RESPONSABILITÀ RIGUARDO AI RISCHI INERENTI LA QUALITÀ, L'ACCURATEZZA E LE PRESTAZIONI DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA. QUALORA UN DOCUMENTO O UNA SUA VERSIONE MODIFICATA DOVESSERO PRESENTARE QUALUNQUE TIPO DI DIFETTO,IL COSTO DI EVENTUALI INTERVENTI DI ASSISTENZA, RIPARAZIONE O CORREZIONE SARÀ A CARICO DELL'UTENTE (NON DEL REDATTORE INIZIALE, DELL'AUTORE O DI ALTRI COLLABORATORI). QUESTA LIMITAZIONE DELLA GARANZIA COSTITUISCE PARTE ESSENZIALE DELLA LICENZA. L'USO DEL DOCUMENTO O DELLE SUE VERSIONI MODIFICATE È CONSENTITO SOLO ENTRO I TERMINI DI QUESTA LIMITAZIONE DELLA GARANZIA; E</para>
+		</listitem>
+		<listitem>
+		  <para>IN NESSUNA CIRCOSTANZA E PER NESSUNA RAGIONE LEGALE, INCLUSI I PRINCIPI DI COLPA (INCLUSA LA NEGLIGENZA), ACCORDO CONTRATTUALE O ALTRO, SARÀ POSSIBILE CONSIDERARE L'AUTORE, IL REDATTORE INIZIALE, GLI ALTRI COLLABORATORI, QUALUNQUE DISTRIBUTORE DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA O QUALUNQUE FORNITORE DELLE PERSONE CITATE, RESPONSABILE NEI CONFRONTI DI QUALUNQUE PERSONA PER DANNI DIRETTI, INDIRETTI, SPECIALI, INCIDENTALI O CONSEGUENTI DI QUALUNQUE NATURA, INCLUSI, MA SENZA LIMITAZIONE, I DANNI PER PERDITA DI AVVIAMENTO, INTERRUZIONE DEL LAVORO, GUASTO O MALFUNZIONAMENTO DEL COMPUTER O QUALUNQUE ALTRO DANNO O PERDITA DERIVANTE O CORRELATA ALL'USO DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA, ANCHE QUALORA LE PERSONE CITATE FOSSERO STATE INFORMATE DELLA POSSIBILITÀ DI TALI DANNI.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Eric</firstname> 
+	<surname>Baudais</surname> 
+	<affiliation> 
+	  <address> <email>baudais@okstate.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+<revhistory>
+  <revision> 
+    <revnumber>Manuale di Iagno V2.9</revnumber> 
+    <date>Febbraio 2008</date> 
+    <revdescription> 
+      <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+      <para role="publisher">Progetto di documentazione GNOME</para>
+    </revdescription> 
+  </revision>
+  <revision> 
+    <revnumber>Manuale di Iagno V2.8</revnumber> 
+    <date>Settembre 2004</date> 
+    <revdescription> 
+      <para role="author">Eric Baudais <email>baudais@okstate.edu</email></para>
+      <para role="publisher">Progetto di documentazione GNOME</para>
+	</revdescription> 
+  </revision>
+  <revision>
+   <revnumber>0.1</revnumber>
+   <date>4 febbraio 2000</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Prima bozza terminata.</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>0.2</revnumber>
+   <date>5 febbraio 2000</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Aggiunta una nota a piè di pagina. Corretti alcuni errori tipografici.</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>0.3</revnumber>
+   <date>7 febbraio 2000</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Documento redatto secondo il modello del GDP. Resa più chiara la sezione giocare.</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>1.0</revnumber>
+   <date>7 aprile 2000</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Manuale di Iagno rilasciato nei termini della licenza FDL. Adattate le schermate al tema standard del GDP, MicroGUI.</revremark>
+  </revision>
+ </revhistory>
+
+    <releaseinfo>Questo manuale si riferisce alla versione 2.20 di Iagno.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Commenti</title> 
+      <para>Per segnalare un problema o inviare suggerimenti sull'applicazione <application>Iagno</application> o su questo manuale, seguire le istruzioni presenti alla <ulink url="ghelp:user-guide?feedback-bugs" type="help">pagina di commenti su GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Iagno</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="intro">
+ <title>Introduzione</title>
+ <sect2 id="what">
+  <title>Cos'è Iagno?</title>
+  
+  <para><application>Iagno</application> è una versione per computer del gioco Reversi, più conosciuto con il nome di Othello. <application>Iagno</application> è un gioco di strategia a due giocatori simile a Go. Sulla scacchiera, di dimensioni 8 per 8, vengono poste le pedine, di colore bianco su un lato e nero sull'altro. L'obiettivo di <application>Iagno</application> è capovolgere al proprio colore il maggior numero possibile di pedine del proprio avversario senza che egli faccia lo stesso. È possibile fare questo racchiudendo le pedine dell'avversario fra altre due del proprio colore.</para>
+
+  <para>Iagno supporta il <link linkend="network-games">multiplayer</link> per due giocatori umani in locale o in modalità di rete.</para>
+
+  <para>Per avviare <application>Iagno</application>, selezionare <guimenuitem>Iagno</guimenuitem> dal sottomenù <guisubmenu>Giochi</guisubmenu> del menù <guimenu>Applicazioni</guimenu>, oppure digitare <command>iagno</command> sulla riga di comando.</para>
+ </sect2>
+
+ <sect2 id="why">
+  <title>Perché è un Othello chiamato Iagno?</title>
+  <para>Probabilmente ci si starà chiedendo perché questo gioco è chiamato <application>Iagno</application> invece che Othello oppure gnothello. La risposta è complicata e riguarda cose come marchi registrati e avvocati e non. Piuttosto che lasciare le cose così come sono, verrà raccontata una lunga e complicata bugia sull'origine del nome <application>Iagno</application>.</para>
+  <para>In una notte tempestosa, come quelle tanto descritte in Inghilterra, un solitario programmatore era seduto davanti allo schermo del proprio computer. Ian aveva appena terminato il suo capolavoro di gioco, si trattava di un gioco interattivo di Othello ed egli decise di giocare con il suo nome, chiamandolo gnothello, proprio perché scritto usando GNOME.</para>
+  <para>Successivamente, una volta arrivati i suoi amici, come tutti i programmatori mostrò loro il suo capolavoro. Tutti gli risero in faccia e gli dissero che il suo inutile gioco non era altro che un pietoso tentativo di dimostrarsi un vero hacker. Dopo averli cacciati fuori, a causa della malignità dimostrata nei confronti del suo programma, Ian decise di rinominarlo in Iago <footnote>
+   <para>Iago è la nemesi di Othello nella tragedia <citetitle>Othello </citetitle> di William Shakespeare.</para>
+  </footnote>. Ma il suono di tale nome non lo soddisfaceva pienamente, così Ian ragionò sul fatto che tutti i nomi dei programmi di GNOME contengono qualche parte della stessa parola GNOME. Dopo molti pensieri, egli decide per il nome che noi oggi stiamo custodendo, <application>Iagno </application>.</para>
+ </sect2>
+</sect1>
+
+<sect1 id="playing">
+ <title>Giocare a Iagno</title>
+ <para>La scacchiera iniziale contiene quattro pedine sistemate in un riquadro centrale. Le pedine agli angoli hanno lo stesso colore, come mostrato in <xref linkend="start-shot"/>.</para>
+ 
+ <figure id="start-shot">
+  <title>Posizione iniziale</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/START.png" format="PNG" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Schermata della posizione iniziale</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+ <para>Il nero gioca per primo e posiziona una pedina sulla scacchiera in modo da racchiudere quelle del bianco fra due delle sue. Tutte le pedine del bianco racchiuse in riga orizzontale, verticale o diagonale dall'ultima pedina appena posizionata e un'altra nera, vengono girate e diventano nere, come mostrato in <xref linkend="first-shot"/>.</para>
+
+ <figure id="first-shot">
+  <title>Prima mossa</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/FIRST.png" format="PNG" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Schermata della prima mossa.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+ <para>Quando una pedina si trova racchiusa fra altre due dello stesso colore e nella stessa riga, il giocatore cattura le pedine fino a quando non ne incontra un'altra del suo stesso colore, come mostrato in <xref linkend="block-shot"/>. Il giocatore può prendere solo le pedine che sono il risultato del posizionamento di un'altra pedina sulla scacchiera. Una volta posizionata una pedina il giocatore non può più rimuoverla e spostarla da qualche altra parte. Se un giocatore non può muovere salta il suo turno. Il gioco finisce quando nessun giocatore può più effettuare altre mosse. <figure id="block-shot">
+  <title>Il bianco non può catturare la pedina nera al centro della colonna di mezzo, poiché ci sono delle pedine bianche che bloccano entrambi i lati finali della stessa. Se fosse il turno del nero, invece, lo stesso potrebbe posizionare una pedina in testa alla colonna, capovolgendo solo la prima delle due pedine bianche.</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/BLOCK.png" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Schermata di un blocco del nero.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure></para>
+
+</sect1>
+
+<sect1 id="settings">
+ <title>Impostazioni di gioco</title>
+
+ <sect2 id="player">
+  <title>Colore dei giocatori e difficoltà</title>
+ 
+  <para>Quando si avvia Iagno il giocatore umano gioca con il nero e il computer con il bianco con il primo livello di difficoltà. Usando la scheda <guimenuitem>Gioco</guimenuitem> nella finestra <guisubmenu>Preferenze</guisubmenu> è possibile impostare il tipo di giocatore per ogni colore. Per umano si intende il giocatore, il livello uno e il livello tre sono rispettivamente il più semplice e il più difficile per il computer. È possibile impostare come umani entrambi i giocatori se si desidera giocatore contro un amico, oppure impostarli entrambi come computer per guardare il computer giocare contro se stesso.</para>
+ </sect2>
+
+ <sect2 id="quick-moves">
+  <title>Opzione Usare mosse rapide</title>
+
+  <para>L'opzione è presente nel menù <guimenu>Impostazioni</guimenu>. Andare nel sottomenù <guisubmenu>Preferenze</guisubmenu>, dunque fare clic sulla scheda <guimenuitem>Gioco </guimenuitem>, in modo predefinito l'opzione è deselezionata. Se si abilita tale opzione il computer posizionerà in modo più veloce le proprie pedine.</para>
+
+  <note>
+   <title>Nota:</title>
+   <para>Abilitando quest'opzione non verranno forzate le mosse del computer, dunque non comporterà una riduzione del livello di difficoltà.</para>
+  </note>
+ </sect2>
+ 
+ <sect2 id="enable-sound">
+  <title>Abilitare/disabilitare i suoni</title>
+
+  <para>L'ultima opzione della scheda <guimenuitem>Gioco</guimenuitem> della finestra <guilabel>Preferenze</guilabel> consente di abilitare o disabilitare tutti i suoni durante lo svolgimento di una partita di <application>Iagno</application>.</para>
+
+  <figure id="player-shot">
+   <title>Il menù Preferenze con la scheda Gioco evidenziata.</title>
+   <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/PLAYER.png" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Schermata delle impostazioni del gioco.</phrase> 
+    </textobject> 
+  </mediaobject>
+   </screenshot>
+  </figure>
+
+ </sect2>
+
+</sect1>
+
+<sect1 id="animations">
+ <title>Aspetto</title>
+
+ <para>Tutte le opzioni dell'animazione sono raggiungibili dal menù <menuchoice><guimenu>Impostazioni</guimenu><guisubmenu>Preferenze</guisubmenu></menuchoice> nella scheda <guimenuitem>Aspetto</guimenuitem> evidenziata.</para>
+
+ <sect2 id="animation-amount">
+  <title>Animazione</title>
+
+  <para>Utilizzando la casella di scelta relativa a questa opzione si può controllare la qualità dell'animazione che viene riprodotta quando viene girato un pezzo. Selezionando l'opzione <guibutton>Nessuna</guibutton> il colore del pezzi verrà cambiato all'istante. Selezionando l'opzione <guibutton>Parziale</guibutton> i pezzi verranno girati lentamente, mentre selezionando <guibutton>Completa</guibutton> l'animazione risulterà più lenta e curata nei dettagli.</para>
+
+ </sect2>
+
+ <sect2 id="stagger-flips">
+  <title>Capovolgimenti sfalsati</title>
+  
+  <para>Se si abilita questa opzione, quando verranno catturate delle pedine lungo una riga, una colonna o una diagonale, queste, invece di venire capovolte tutte contemporaneamente, verranno girate una dopo l'altra, in un modo simile al domino. Tale opzione non ha alcun effetto sul gioco, lo renderà solo più carino.</para>
+
+ </sect2>
+
+ <sect2 id="grid">
+  <title>Mostra griglia</title>
+
+  <para>Questa opzione mostrerà una griglia sulla superficie della scacchiera. È utile visualizzare la griglia poiché mostra al giocatore l'esatta posizione delle pedine che si stanno posizionando.</para>
+
+  <tip>
+   <title>Suggerimento:</title>
+   <para>Questa opzione può risultare utile ai principianti per una visione più chiara del gioco.</para>
+  </tip>
+
+ </sect2>
+
+ <sect2 id="flip-final">
+  <title>Raggruppa le pedine alla fine</title>
+
+  <para>Con questa opzione, alla fine della partita, tutte le pedine nere verranno raggruppate nella parte alta della scacchiera e le pedine bianche nella parte bassa. Ciò faciliterà la visione del risultato finale del gioco.</para>
+
+  <note>
+   <title>Nota:</title>
+   <para>Questa opzione non modifica in nessun modo il risultato della partita.</para>
+  </note>
+
+ </sect2>
+
+ <sect2 id="tile-set">
+  <title>Raccolta di pedine</title>
+  <para>Questa opzione consente di scegliere il tipo della scacchiera e delle pedine da visualizzare. Se si desidera creare una propria collezione di pedine utilizzare come modello la collezione classica e cambiare il disegno e i colori per i differenti effetti. Quando si crea una nuova collezione funzionante correttamente con Iagno inviarla a Ian Peters <email>itp@gnu.org</email>, che la includerà con la successiva distribuzione.</para>
+
+  <important>
+   <title>Importante:</title>
+   <para>Sono disponibili due collezioni di pedine, «woodtrim» e «classic», le quali possono sembrare uguali ma in realtà hanno delle animazioni differenti.</para>
+  </important>
+
+  <figure id="animation-shot">
+   <title>Il menù Preferenze con la scheda Aspetto evidenziata.</title>
+   <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/ANIMATION.png" srccredit="Eric Baudais"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Schermata delle impostazioni dell'animazione.</phrase> 
+    </textobject> 
+  </mediaobject>
+   </screenshot>
+  </figure>
+
+ </sect2>
+
+</sect1>
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Partite di rete</title>
+  <para>Iagno ha il supporto per le partite in rete multigiocatore fornite da <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink>. Collegandosi a un server su Internet di <application>Iagno</application> è possibile sfidare altri giocatori in partite multigiocatore. Per avere notizie, aggiornamenti e una lista di server ai quali connettersi, consultare il <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">sito web di gnome-games</ulink>.</para>
+  <para>Per iniziare una partita multigiocatore di Iagno, selezionare <menuchoice><guimenu>Gioco</guimenu><guimenuitem>Partita in rete</guimenuitem></menuchoice> dal menù dell'applicazione.</para> 
+
+<sect2 id="connecting">
+<title>Collegarsi a un server di rete di Iagno</title>
+<para>Avviando una nuova partita di rete viene mostrata la finestra di dialogo di connessione di Iagno. In questa finestra è possibile scegliere un server al quale connettersi e il nome utente da utilizzare per la connessione.</para>
+
+<para>È possibile collegarsi a un server utilizzando un accesso anonimo oppure un normale account già registrato. Gli account anonimi consentono di accedere in anonimato, mentre un accesso normale consente di riservare il proprio nome utente, protetto da una password a scelta dell'utente.</para>
+
+<para>L'opzione <guimenuitem>Accesso anonimo</guimenuitem> va selezionata se si desidera utilizzare un account anonimo. Se si desidera creare un nuovo account normale, selezionare l'opzione <guimenuitem>Primo accesso</guimenuitem>, con un nome utente, una password e un indirizzo email a scelta. Se si ha già creato un account, è possibile collegarsi selezionando l'opzione <guimenuitem>Accesso normale</guimenuitem>, inserendo il proprio nome utente e la propria password.</para>
+<para>Per collegarsi a un server è sufficiente fare clic sul pulsante <guimenuitem>Connetti</guimenuitem>.</para>
+<figure id="connect">
+<title>La finestra di dialogo della connessione di Iagno.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>La finestra di dialogo della connessione di Iagno.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Entrare in una stanza da gioco</title>
+<para>Una volta connessi al server è possibile scegliere la stanza nella quale entrare. Per partecipare a una partita multigiocatore di Iagno, selezionare la stanza Iagno. Se invece si desidera ospitare una partita è sufficiente fare clic sul pulsante Avvia. Verrà creato un nuovo tavolo al quale altri giocatori potranno partecipare per iniziare delle nuove sfide. Se sono presenti altre partite già iniziate è possibile fare clic sopra un tavolo di gioco già avviato per parteciparvi. L'elenco dei tavoli di gioco sulla destra mostra il numero di posti disponibili, che rappresentano il numero di giocatori che possono prendere parte al tavolo di gioco.</para>
+<figure id="tables">
+<title>Questo dialogo di rete di Iagno consente di partecipare a una partita per cercare altri giocatori.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Questo dialogo di rete di Iagno consente di partecipare a una partita per cercare altri giocatori.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>Quando si crea un nuovo tavolo per partite di Iagno viene mostrato un dialogo di preferenze che consente di personalizzare alcuni aspetti del gioco, come il numero minimo di giocatori per la partita. Una volta occupati tutti i posti liberi, nessun giocatore potrà più partecipare al tavolo di gioco.</para>
+<para>È possibile chiacchierare con gli altri giocatori durante le partite di rete. Si possono chiedere aiuti e consigli, ma bisogna essere sempre gentili nei confronti degli altri giocatori.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Aspettare che altri giocatori partecipino alla partita</title>
+<para>Dopo aver preso parte a un tavolo di gioco sarà necessario attendere che un numero sufficiente di giocatori entri nel gioco. La voce di menù <guimenuitem>Elenco giocatori</guimenuitem> consente di vedere un elenco di giocatori che partecipano al gioco. Una volta raggiunto il numero totale di giocatori per il gioco, la partita inizierà immediatamente.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Giocare partite multigiocatore di Iagno</title>
+<para>Le partite multigiocatore di Iagno hanno praticamente le stesse regole delle partite normali, fatta eccezione per il fatto che si sta giocando contro altri giocatori umani. Ciò significa che probabilmente le strategie altrui saranno migliori rispetto a quando si gioca contro l'intelligenza artificiale.</para>
+<para>Quando un giocatore vince, la partita termina e sarà possibile tornare alla schermata iniziale della partita di rete. Sarà possibile giocare un'altra entusiasmante partita multigiocatore di Iagno!</para>
+</sect2>
+
+</sect1>
+
+
+
+
+<sect1 id="bugs">
+ <title>Problemi noti e limiti</title>
+
+ <itemizedlist mark="opencircle">
+    <listitem>
+     <para>Il giocatore del computer di Iagno è facile da battere.</para>
+    </listitem>
+ </itemizedlist>
+
+</sect1>
+
+<sect1 id="credits">
+ <title>Autori</title>
+  <para><application>Iagno</application> è stato scritto da Ian Peters (<email>itp@gnu.org</email>). Questo manuale è stato scritto da Eric Baudais (<email>baudais@okstate.edu</email>). Per segnalare un problema o inviare suggerimenti su questa applicazione o su questo manuale, seguire le istruzioni contenute in questo <ulink url="ghelp:user-guide?feedback-bugs" type="help">documento</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licenza</title>
+  <para>Questo programma è software libero; è lecito redistribuirlo e/o modificarlo secondo i termini della <citetitle>GNU General Public License</citetitle> come è pubblicata dalla Free Software Foundation; o la versione 2 della licenza o (a propria scelta) una versione successiva.</para>
+  <para>Questo programma è distribuito nella speranza che sia utile, ma SENZA ALCUNA GARANZIA; senza neppure la garanzia implicita di NEGOZIABILITÀ o di APPLICABILITÀ PER UN PARTICOLARE SCOPO. Si veda la <citetitle>GNU General Public License</citetitle> per avere maggiori dettagli.</para>
+  <para>Una copia della <citetitle>GNU General Public License</citetitle> è inclusa nell'appendice del <citetitle>Manuale dell'utente GNOME</citetitle>. Inoltre è possibile ottenere una copia della <citetitle>GNU General Public License</citetitle> dalla Free Software Foundation visitando <ulink url="http://www.fsf.org" type="http">il sito web</ulink> oppure scrivendo a <address> Free Software Foundation, Inc. <street>51 Franklin Street, Fifth Floor</street><city>Boston</city>, <state>MA</state><postcode>02110-1301</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

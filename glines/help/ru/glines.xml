@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Five or More</application>">
+<!ENTITY appname "Five or More">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- This doc is based on the GDP template from GNOME 1.2
+     Its syntax and DTD has been updated to validate with xmllint.
+     The content needs to be updated (it basically needs to be finished)
+     edited and indexed.
+   -->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ru"> 
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+ <articleinfo>
+  <title>Руководство по игре <application>Цветные линии</application></title>
+  <abstract role="description">
+    <para>
+	To play Five or More one must align colored pieces as the board
+	gets filled with randomly placed pieces. When five or more pieces
+	of the same color get lined up, they disappear. The game ends
+	when the board gets filled up all the way.
+    </para>
+  </abstract>
+
+  <copyright>
+   <year>2000-2002</year>
+   <holder>Emese Kovács</holder>
+  </copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>Проект документации GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Следующим разрешается копировать и/или модифицировать этот документ при условии соблюдения GNU Free Documentation License (GFDL), версии 1.1 или любой более поздней опубликованной Фондом свободного программного обеспечения версией без неизменяемых частей, без текстов на обложках. Вы можете найти копию лицензии по этой <ulink type="help" url="ghelp:fdl">ссылке</ulink> или в файле COPYING-DOCS, распространяемом с этим документом.</para>
+         <para>Этот документ является частью документации GNOME, распространяемой под лицензией GFDL. Если вы хотите распространять этот документ отдельно от общей документации, вы должны приложить копию лицензии к документу, как написано в части 6 лицензии.</para>
+
+	<para>Многие имена и марки используются компаниями для различения их продуктов и услуг и являются торговыми марками. Эти марки присутствуют в любой части документации GNOME, и члены проекта документирования GNOME знают об этом. Имена выделяются заглавными буквами или начальной заглавной буквой.</para>
+
+	<para>ДОКУМЕНТ И ИЗМЕНЁННЫЕ ВЕРСИИ ДОКУМЕНТА ПРЕДСТАВЛЯЮТСЯ ПОЛЬЗОВАТЕЛЮ ПОД ЛИЦЕНЗИЕЙ GNU FREE DOCUMENTATION LICENSE С УВЕДОМЛЕНИЕМ О ТОМ, ЧТО <orderedlist>
+		<listitem>
+		  <para>ДОКУМЕНТ РАСПРОСТРАНЯЕТСЯ "КАК ЕСТЬ", БЕЗ ВСЯКИХ ГАРАНТИЙ, ПРИДУМАННЫХ ИЛИ УНАСЛЕДОВАННЫХ, БЕЗ ОГРАНИЧЕНИЙ, ГАРАНТИЙ ТОГО ЧТО ДОКУМЕНТ ИЛИ МОДИФИЦИРОВАННАЯ ВЕРСИЯ ДОКУМЕНТА СВОБОДНА ОТ ДЕФЕКТОВ, ТОЛЬКО ДЛЯ СПЕЦИАЛЬНОГО ИСПОЛЬЗОВАНИЯ НЕ ЗАКЛЮЧАЮЩЕГО В СЕБЕ РИСКИ КАЧЕСТВА, АККУРАТНОСТИ ИЛИ СООТВЕТСТВИЯ ДОКУМЕНТА ИЛИ ИЗМЕНЁННЫХ ВЕРСИЙ ДОКУМЕНТА ВАШИМ ТРЕБОВАНИЯМ. ЕСЛИ ДОКУМЕНТ ИЛИ МОДИФИЦИРОВАННАЯ ВЕРСИЯ ДОКУМЕНТА ИМЕЕТ НЕДОСТАТКИ, ВЫ (А НЕ АВТОР ДОКУМЕНТА ИЛИ ЕГО ПОМОЩНИК) ДОЛЖНЫ САМИ ПРИЛОЖИТЬ УСИЛИЯ К ЕГО ДОРАБОТКИ, КОРРЕКЦИИ ИЛИ ВОССТАНОВЛЕНИЮ. ЭТО ПРЕДУПРЕЖДЕНИЕ СОСТАВЛЯЕТ СУЩЕСТВЕННУЮ ЧАСТЬ ЛИЦЕНЗИИ. ДОКУМЕНТ НЕ ДОЛЖЕН ИСПОЛЬЗОВАТЬСЯ БЕЗ ДАННОГО ПРЕДУПРЕЖДЕНИЯ И</para>
+		</listitem>
+		<listitem>
+		  <para>НИ ПРИ КАКИХ ОБСТОЯТЕЛЬСТВАХ И НИ ПРИ КАКОМ ЗАКОННОМ СПОСОБЕ, НИ ПО КАКОМУ СОГЛАШЕНИЮ ИЛИ ДРУГОЙ ПРИЧИНЕ, АВТОР, СОЗДАТЕЛЬ ИЛИ ПОМОЩНИКИ НЕ НЕСУТ ОТВЕТСТВЕННОСТЬ ЗА ПРЯМОЕ, КОСВЕННОЕ, СПЕЦИАЛЬНОЕ, СЛУЧАЙНОЕ ИЛИ ПРЕДНАМЕРЕННОЕ ПОВРЕЖДЕНИЕ ЛЮБОГО СВОЙСТВА, ВКЛЮЧАЯ БЕЗ ОГРАНИЧЕНИЯ ПОТЕРЮ ЖЕЛАНИЯ, РАБОТОСПОСОБНОСТИ, КОМПЬЮТЕРНЫЕ СБОИ ИЛИ НЕПРАВИЛЬНОЕ ВЗАИМОДЕЙСТВИЕ, ВМЕСТЕ ИЛИ ПО-ОТДЕЛЬНОСТИ. НИКАКИЕ ПОВРЕЖДЕНИЯ И ПОТЕРИ НЕ МОГУТ БЫТЬ ВОЗЛОЖЕНЫ НА АВТОРА ДОКУМЕНТА ИЛИ МОДИФИЦИРОВАННОЙ ВЕРСИИ ДОКУМЕНТА, ДАЖЕ ЕСЛИ СТОРОНА БЫЛА ПРОИНФОРМИРОВАНА О ВОЗМОЖНОСТИ ТАКИХ ПОВРЕЖДЕНИЙ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+	<firstname>Emese</firstname> 
+	<surname>Kovács</surname> 
+	<affiliation> 
+	  <orgname>Проект документации GNOME</orgname> 
+	  <address> <email>emese@gnome.hu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+    <revhistory>
+      <revision> 
+	<revnumber>Руководство по игре Цветные линии вер. 2.8</revnumber> 
+	<date>Сентябрь 2004</date> 
+	<revdescription> 
+	  <para role="author">Emese Kovács <email>emese@gnome.hu</email></para>
+	  <para role="publisher">Проект документации GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Это руководство описывает Цветные линии версии 2.12 или старше.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Обратная связь</title> 
+      <para>Чтобы сообщить об ошибке или внести предложение относительно игры Цветные линии или данного руководства, следуйте ссылке <ulink url="ghelp:user-guide?feedback-bugs" type="help">Обратная связь с GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Цветные линии</primary> 
+  </indexterm> 
+
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+ <sect1 id="intro">
+  <title>Введение</title>
+
+  <para><application>Цветные линии</application> - это перенесённая в Gnome когда-то популярная в Windows игра, называемая <application>Color Lines</application>. Задачей игры является выравнивать так часто, как только возможно пять или более объектов одинакового цвета и формы, заставляя их исчезать. Играйте как можно дольше и будете № 1 в списке результатов.</para>
+
+  <para>Для запуска <application>Цветных линий</application> выберите <guimenuitem>Цветные линии</guimenuitem> из подменю <guisubmenu>Игры</guisubmenu> <guimenu>Главного меню</guimenu> или наберите <command>glines</command> в командной строке.</para>
+
+  <para><application>Цветные линии</application> включены в пакет <filename>GNOME-games</filename>, который является частью окружения рабочего стола GNOME. Этот документ описывает версию 2.8 <application>Цветных линий</application>.</para>
+
+ </sect1>
+
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="usage">
+    <title>Правила игры в Цветные линии</title>
+    <para>
+      Playing <application>Five or More</application> is easy. At startup, you find
+      yourself with five objects randomly positioned on the board. Each turn,
+      you are allowed to move one object. You can move it anywhere on the board as long as there is a clear path. Afterward, the computer drops more objects
+      at random positions (the exact number depends on the size of the game). You can preview the next objects to be
+      dropped in the upper left corner of the game's window.
+      If you manage to align five objects of the same shape and color, they
+      disappear and you are given an extra move before more objects
+      drop.
+    </para>
+
+
+  <!-- ========= Basic Usage =========================== -->
+  <sect2 id="mainwin">
+   <title>Основы пользования</title>
+   <para>После запуска <application>Цветных линий</application> перед вами представлено <interface>игровое поле</interface> и новая игра начинается. Как это выглядит показывает <xref linkend="mainwindow-fig"/>.</para>
+
+    <!-- ==== Figure ==== -->
+	<figure id="mainwindow-fig">
+	  <title>Главное окно после старта игры.</title>
+	  <screenshot>
+	      <mediaobject>
+	      <imageobject>
+	      <imagedata fileref="figures/glines-startgame.png" format="PNG" srccredit="emese"/>
+	      </imageobject>
+	      </mediaobject>
+	  </screenshot>
+	</figure>
+     <!-- ==== End of Figure ==== -->
+
+   <para>По мере продолжения игры игровое поле становится всё более и более заполненным (если вы действительно не так хороши...), и заставить объекты исчезнуть становится всё труднее и труднее. Игра завершена, когда доска заполнена.</para>
+   
+   <!-- ==== Figure ==== -->
+   <figure id="gameover-fig">
+	  <title>Конец игры!</title>
+	  <screenshot>
+    <mediaobject>
+     <imageobject>
+      <imagedata fileref="figures/glines-gameover.png" format="PNG" srccredit="emese kovacs"/>
+     </imageobject>
+    </mediaobject>
+ </screenshot>
+</figure>  
+   <!-- ==== End of Figure ==== -->
+   
+  </sect2>
+
+
+  <!-- ========= Rulez =========================== -->
+
+    <sect2 id="rules"> 
+      <title>Как играть</title>
+      <para>Игра <application>Цветные линии</application> начинается с несколькими случайно расположенными на доске объектами.</para>
+      <para>Чтобы сделать передвижение, щёлкните на одном из объектов. Когда объект активирован, он начинает вращаться. (или делать что-то ещё в зависимости от темы, но давайте не будем забегать вперёд;). Вы можете затем выбрать место его назначения щелчком на пустой квадрате. Если путь до места назначения свободен, активированный объект передвигается туда. Если квадрат назначения занят другим объектом, передвижения не происходит и выбирается новый объект. Если путь не свободен (вы не можете перепрыгнуть объектами через препятствия!), программа выведет предупреждение в строке состояния (внизу окна) и первоначальный объект останется активированным.</para>
+      <para>По мере исчезновения объектов вы получаете очки. Количество получаемых очков зависит от количества объектов, которые вы выровняете (смотрите <xref linkend="glines-table1"/>). Ваш счёт показан в верхнем правом углу окна.</para>
+      
+    <!-- ====  Table 1.  ==== -->
+    <table id="glines-table1">
+     <title>Подсчёт очков в Цветных линиях</title>
+      <tgroup cols="2" align="center">
+       <thead>
+        <row>
+         <entry>Количество объектов</entry>
+         <entry>Полученные очки</entry>
+        </row>
+       </thead>
+       <tbody>
+       <row>
+        <entry>5</entry>
+        <entry>10</entry>
+       </row>
+       <row>
+        <entry>6</entry>
+        <entry>12</entry>
+       </row>
+       <row>
+        <entry>7</entry>
+        <entry>18</entry>
+       </row>
+       <row>
+        <entry>8</entry>
+        <entry>28</entry>
+       </row>
+       <row>
+        <entry>9</entry>
+        <entry>42</entry>
+       </row>
+       <row>
+        <entry>10</entry>
+        <entry>82</entry>
+       </row>
+       <row>
+        <entry>11</entry>
+        <entry>108</entry>
+       </row>
+       <row>
+        <entry>12</entry>
+        <entry>138</entry>
+       </row>
+      <row>
+        <entry>13</entry>
+        <entry>172</entry>
+      </row>
+      <row>
+        <entry>14</entry>
+        <entry>210</entry>
+       </row>
+      </tbody>
+     </tgroup> 
+    </table>
+
+  <sect3>
+  <title>Использование клавиатуры</title>
+  <para>Вместо использования мыши вы можете использовать клавиатуру для игры в <application>Цветные линии</application>. Чтобы использовать клавиатуру, нажмите на клавиши со стрелками (клавиши передвижения курсора) и курсор появится около центра доски. Клавиши со стрелками передвигают курсор. Когда курсор над объектом, который вы хотите передвинуть, используйте пробел, чтобы активировать его. Затем подведите курсор к месту назначения объекта и нажмите пробел снова для совершения передвижения объекта.</para><para>Если вы начнёте использовать мышь снова, курсор исчезнет. Курсор появится, если вы снова станете использовать клавиши со стрелками.</para>
+  </sect3>
+
+
+   <!-- ==== End of Table ==== -->
+
+
+    </sect2>
+
+
+  </sect1>
+  <sect1 id="settings">
+  <title>Настройка игры</title>
+  <para>Вы можете настроить <application>Цветные линии</application>, выбрав пункт <guimenuitem>Параметры</guimenuitem> в меню <guimenu>Установки</guimenu>. Появится следующий <interface>диалог</interface>:</para>
+ <!-- ==== Figure ==== -->
+   <figure>
+     <title>Параметры</title>   
+    <mediaobject id="preferences-dialogbox">
+     <imageobject>
+      <imagedata fileref="figures/preferences.png" format="PNG" srccredit="emese"/>
+     </imageobject>
+    </mediaobject>
+  </figure>    
+    <!-- ==== End of Figure ==== -->
+
+  <para>Вы можете выбрать различные стили объектов и цвет фона в секции <guimenu>Темы</guimenu>. Если вы испытываете трудности в различении цветов, попробуйте тему shapes (формы).</para>
+  <para>
+   The <guimenu>Board Size</guimenu> section lets you select the size of the board. Each size has a slightly different balance: larger sizes give you more space to move, but more objects arrive each turn. The parameters for each size are given in <xref linkend="table-sizes"/>.
+  </para>
+    <table id="table-sizes">
+     <title>Подсчёт очков в Цветных линиях</title>
+      <tgroup cols="5" align="center">
+       <thead>
+        <row>
+         <entry align="left">Размер</entry>
+         <entry>Ширина</entry>
+         <entry>Высота</entry>
+	 <entry>Количество типов</entry>
+         <entry>Объектов после перемещения</entry>
+        </row>
+       </thead>
+       <tbody>
+       <row>
+        <entry align="left">Маленький</entry>
+        <entry>7</entry>
+        <entry>7</entry>
+        <entry>5</entry>
+        <entry>3</entry>
+       </row>
+       <row>
+        <entry align="left">Средний</entry>
+        <entry>9</entry>
+        <entry>9</entry>
+        <entry>7</entry>
+        <entry>3</entry>
+       </row>
+       <row>
+        <entry align="left">Большой</entry>
+        <entry>20</entry>
+        <entry>15</entry>
+        <entry>7</entry>
+        <entry>7</entry>
+       </row>
+      </tbody>
+     </tgroup> 
+    </table>
+
+  <para>Вы можете ускорить передвижения объектов, отметив пункт Использовать быстрые ходы в секции <guimenu>Общие</guimenu> Параметров.</para>
+  <para>Любые изменения, которые вы производите, применяются немедленно и сохраняются при последующих запусках игры <application>Цветные линии</application>.</para>
+  </sect1>
+  <sect1 id="themes">
+    <title>Создание новых тем</title> 
+    <para>Каждая тема содержит единственный файл PNG. Этот рисунок содержит совокупность из семи рядов, соответствующих различным объектам цвет/форма, и четырёх колонок, каждая из которых является фреймом при анимации объектов. Действительный размер картинки не имеет значения, она будет перемасштабирована, но встроенные картинки должны иметь форму сетки четыре на семь, чтобы получился правильный эффект. При использовании файлов SVG помните, что размер рисунка - это размер страницы, если ваша сетка не заполняет страницу, попытайтесь уменьшить размер страницы. Используйте существующую тему в качестве руководства.</para>
+  </sect1>
+
+ <!-- ============= Bugs ================================== -->
+ <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of 
+
+      Better to omit this section than give false impression of perfection
+      Add back in if there is something worth saying
+
+ <sect1 id="bugs">
+  <title>Known Bugs and Limitations</title>
+  <para>
+   This application has no known bugs.
+  </para>
+ </sect1>
+-->
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Авторы</title>
+  <para>Игра <application>Цветные линии</application> была написана Róbert Szókovács (<email>szo@appaloosacorp.hu</email>) и Szabolcs Bán (<email>shooby@gnome.hu</email>). Это руководство было написано Emese Kovács (<email>emese@gnome.hu</email>). Информацию о том, как сделать комментарии, предложения и сообщить об ошибке, пожалуйста, смотрите <ulink url="ghelp:user-guide?feedback-bugs" type="help">страницу обратной связи</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Лицензия</title>
+  <para>Эта программа является свободно распространяемым программным обеспечением; вы можете распространять и/или модифицировать ее согласно условиям <citetitle>GNU General Public License</citetitle>, версии 2 или более поздней её версии.</para>
+  <para>Эта программа распространяется с предположением, что она будет полезной, но БЕЗ ВСЯКОЙ ГАРАНТИИ; без подразумеваемой гарантии ТОВАРНОГО СОСТОЯНИЯ при продаже или ПРИГОДНОСТИ ДЛЯ ИСПОЛЬЗОВАНИЯ В КОНКРЕТНЫХ ЦЕЛЯХ. За деталями обращайтесь к <citetitle>GNU General Public License</citetitle>.</para>
+  <para>Копия <citetitle>GNU General Public License</citetitle> включена в качестве приложения к <citetitle>Руководству пользователя GNOME</citetitle>. Вы также можете получить копию <citetitle>GNU General Public License</citetitle> в <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

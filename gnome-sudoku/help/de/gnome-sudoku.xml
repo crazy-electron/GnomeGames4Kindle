@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.21.90">
+<!ENTITY manrevision "3.0">
+<!ENTITY date "February 2008">
+<!ENTITY app "<application>Sudoku</application>">
+<!ENTITY appname "Sudoku">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 06, 2003
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="de">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title><application>Sudoku</application>-Handbuch</title>       
+
+    <abstract role="description">
+      <para>Sudoku ist eine Anwendung, um das populäre Sudoku-Logikpuzzle zu spielen. Dabei müssen 9 mal 9 Kästchen große Quadrate mit den richtigen Ziffern gefüllt werden.</para>
+    </abstract>
+
+    <copyright> 
+      <year>2008</year> 
+      <holder>Thomas M. Hinkle</holder> 
+    </copyright><copyright><year>2008.</year><holder>Mario Blättermann (mario.blaettermann@t-online.de)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOME-Dokumentationsprojekt</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Das vorliegende Dokument kann gemäß den Bedingungen der GNU Free Documentation License (GFDL), Version 1.1 oder jeder späteren, von der Free Software Foundation veröffentlichten Version ohne unveränderbare Abschnitte sowie ohne Texte auf dem vorderen und hinteren Buchdeckel kopiert, verteilt und/oder modifiziert werden. Eine Kopie der GFDL finden Sie unter diesem <ulink type="help" url="ghelp:fdl">Link</ulink> oder in der mit diesem Handbuch gelieferten Datei COPYING-DOCs.</para>
+         <para>Dieses Handbuch ist Teil einer Sammlung von GNOME-Handbüchern, die unter der GFDL veröffentlicht werden. Wenn Sie dieses Handbuch getrennt von der Sammlung weiterverbreiten möchten, können Sie das tun, indem Sie eine Kopie der Lizenz zum Handbuch hinzufügen, wie es in Abschnitt 6 der Lizenz beschrieben ist.</para>
+
+	<para>Viele der Namen, die von Unternehmen verwendet werden, um ihre Produkte und Dienstleistungen von anderen zu unterscheiden, sind eingetragene Warenzeichen. An den Stellen, an denen diese Namen in einer GNOME-Dokumentation erscheinen, werden die Namen in Großbuchstaben oder mit einem großen Anfangsbuchstaben geschrieben, wenn das GNOME-Dokumentationsprojekt auf diese Warenzeichen hingewiesen wird.</para>
+
+	<para>DAS DOKUMENT UND VERÄNDERTE FASSUNGEN DES DOKUMENTS WERDEN UNTER DEN BEDINGUNGEN DER GNU FREE DOCUMENTATION LICENSE ZUR VERFÜGUNG GESTELLT MIT DEM WEITERGEHENDEN VERSTÄNDNIS, DASS: <orderedlist>
+		<listitem>
+		  <para>DIESES DOKUMENT WIRD "WIE ES IST" ZUR VERFÜGUNG GESTELLT, OHNE GARANTIEN IRGENDEINER ART, SOWOHL AUSDRÜCKLICH GENANNTE ALS AUCH ANGEDEUTETE. DIES BEZIEHT SICH AUCH OHNE EINSCHRÄNKUNG AUF GARANTIEN, DASS DIESES DOKUMENT ODER VERÄNDERTE FASSUNGEN DIESES DOKUMENTS FREI VON HANDELSDEFEKTEN, FÜR EINEN BESTIMMTEN ZWECK GEEIGNET IST ODER DASS ES KEINE RECHTE DRITTER VERLETZT. DAS VOLLE RISIKO WAS QUALITÄT, GENAUIGKEIT UND LEISTUNG DES DOKUMENTS ODER VERÄNDERTE FASSUNGEN DES DOKUMENTS LIEGT BEI IHNEN. SOLLTE EIN DOKUMENT ODER EINE VERÄNDERTE FASSUNG DAVON FEHLER IRGENDEINER ART BEINHALTEN, TRAGEN SIE (NICHT DER URSPRUNGSAUTOR, DER AUTOR ODER EIN MITWIRKENDER) DIE KOSTEN FÜR NOTWENDIGE DIENSTLEISTUNGEN, REPARATUREN ODER FEHLERKORREKTUREN. DIESER HAFTUNGSAUSSCHLUSS IST EIN ESSENZIELLER TEIL DIESER LIZENZ. DIE VERWENDUNG EINES DOKUMENTS ODER EINER VERÄNDERTEN VERSION DES DOKUMENTS IST NICHT GESTATTET AUßER UNTER BEACHTUNG DIESES HAFTUNGSAUSSCHLUSSES UND</para>
+		</listitem>
+		<listitem>
+		  <para>UNTER KEINEN UMSTÄNDEN UND AUF BASIS KEINER RECHTSGRUNDLAGE, EGAL OB DURCH UNERLAUBTEN HANDLUNGEN (EINSCHLIEßLICH FAHRLÄSSIGKEIT), VERTRAG ODER ANDERWEITIG KANN DER AUTOR, URSPRUNGSAUTOR, EIN MITWIRKENDER ODER EIN VERTRIEBSPARTNER DIESES DOKUMENTS ODER EINER VERÄNDERTEN FASSUNG DES DOKUMENTS ODER EIN ZULIEFERER EINER DIESER PARTEIEN, HAFTBAR GEMACHT WERDEN FÜR DIREKTE, INDIREKTE, SPEZIELLE, VERSEHENTLICHE ODER FOLGESCHÄDEN JEGLICHER ART, EINSCHLIEßLICH UND OHNE EINSCHRÄNKUNGEN SCHÄDEN DURCH VERLUST VON KULANZ, ARBEITSAUSFALL, COMPUTERVERSAGEN ODER COMPUTERFEHLFUNKTIONEN ODER ALLE ANDEREN SCHÄDEN ODER VERLUSTE, DIE SICH AUS ODER IN VERBINDUNG MIT DER VERWENDUNG DES DOKUMENTS UND VERÄNDERTER FASSUNGEN DES DOKUMENTS ERGEBEN, AUCH WENN DIE OBEN GENANNTEN PARTEIEN ÜBER DIE MÖGLICHKEIT SOLCHER SCHÄDEN INFORMIERT WAREN.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+		<firstname>Thomas</firstname> 
+		<surname>Hinkle</surname> 
+		<affiliation> 
+	  		<orgname>GNOME-Dokumentationsprojekt</orgname> 
+	  		<!-- The email address of the author is optional and is commented out by default. 
+			<address> <email>doc-writer2@gnome.org</email> </address> 
+			-->
+		</affiliation> 
+      </author> 
+      
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->  
+    <revhistory>
+      <revision> 
+		<revnumber>GNOME-Sudoku-Handbuch V3.0</revnumber> 
+		<date>Februar 2008</date> 
+		<revdescription> 
+	  		<para role="author">Thomas M. Hinkle</para>
+	  		<para role="publisher">GNOME-Dokumentationsprojekt</para>
+		</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Dieses Handbuch beschreibt Version 2.21.90 von Sudoku</releaseinfo> 
+    <legalnotice> 
+      <title>Rückmeldungen</title> 
+      <para>Um Fehler zu melden oder einen Vorschlag zur Anwendung <application>Sudoku</application> oder zu diesem Handbuch zu machen, folgen Sie den Anweisungen auf der <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME Seite für Rückmeldungen</ulink>."</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>GNOME-Sudoku</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+    <primary>sudoku</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="myapp-introduction"> 
+    <title>Einführung</title> 
+    <para><application>Sudoku</application> ist eine Anwendung zum Erzeugen und Lösen der populären Sudoku-Logikpuzzles (auch unter dem Namen "Number Place" bekannt).</para>
+    <para>Die Regeln von Sudoku sind recht einfach. Um das Puzzle zu vervollständigen, müssen Sie in jedes Kästchen eine der Ziffern von 1 bis 9 eintragen, und zwar so, dass in jeder Zeile, jeder Spalte und jedem 3x3 Kästchen großen Teilbereich genau diese Ziffern vorkommen. Anders betrachtet bedeutet das, dass in jeder Zeile, Spalte und in jedem der Teilbereiche keine Ziffer doppelt erscheinen darf.</para>
+
+    <para>Die folgenden zwei Herangehensweisen sind die prinzipiellen Wege, wie die Spieler auf die Suche nach einer Lösung gehen. Einerseits werden Sie sich fragen: “Wie bekomme ich all diese Ziffern in das Spielfeld?” andererseits: “Welche Ziffern passen in dieses Kästchen, ohne dass sie zu anderen Ziffern in der gleichen Zeile, Spalte oder im gleichen 3 mal 3 Kästchen großen Teilbereich im Widerspruch stehen?”</para>
+
+    <para>Der Einfachheit des Spiels zum Trotz können Sudoku-Puzzles in ihrem Schwierigkeitsgrad in weiten Grenzen variieren. Normalerweise werden Sie mit einfachen Puzzles beginnen und bei zunehmender Erfahrung deren Schwierigkeitsgrad steigern.</para>
+
+  </sect1>
+
+<!-- =========== Getting Started ============================== -->
+<!-- Use the Getting Started section to describe the steps required
+     to start the application and to describe the user interface components
+     of the application. If there is other information that it is important
+     for readers to know before they start using the application, you should
+     also include this information here. 
+     If the information about how to get started is very short, you can 
+     include it in the Introduction and omit this section. -->
+
+  <sect1 id="myapp-getting-started"> 
+    <title>Erste Schritte</title> 
+
+    <sect2 id="myapp-start">
+    <title>So starten Sie <application>Sudoku</application></title>
+    <para>Sie können <application>Sudoku</application> auf folgende Arten starten:</para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>Menü <guimenu>Anwendungen</guimenu></term>
+    		<listitem>
+    		<para>Wählen Sie <menuchoice><guisubmenu>Spiele</guisubmenu><guimenuitem>Sudoku</guimenuitem></menuchoice>.</para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Befehlszeile</term>
+    		<listitem>
+    		<para>Um <application>Sudoku</application> in einer Befehlszeile zu starten, geben Sie folgenden Befehl ein und drücken dann auf <keycap>Enter</keycap>:</para>
+    		<para> 
+			<command>gnome-sudoku</command> 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+    </sect2>
+
+    <sect2 id="myapp-when-start">
+    <title>Beim Start von <application>Sudoku</application></title>
+    <para>Wenn Sie <application>Sudoku</application> zum ersten Mal starten, sehen Sie ein Puzzle-Auswahlfenster, in dem Sie den Schwierigkeitsgrad des Puzzles auswählen können, das Sie spielen möchten. Wenn Sie zuvor schon gespielt haben und es einige unvollendete Puzzles gibt, stehen diese ebenfalls zur Auswahl.</para>
+    <para>Im Puzzle-Auswahlfenster wird der Schwierigkeitsgrad des Puzzles angezeigt. Die Farbe, mit der das Puzzle umrandet ist, korrespondiert dabei mit dem Schwierigkeitsgrad. Beispielsweise ist ein dunkelrotes Puzzle schwieriger als eines mit einer hellroten Umrandung.</para>
+    <para>Doppelklicken Sie auf das Puzzle Ihrer Wahl, um das Spiel zu starten.</para>
+
+<figure id="new-game-fig"> 
+	<title>Sudoku starten</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/starting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Sudoku starten: Wahl des Schwierigkeitsgrads.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    
+    <para>Jederzeit können Sie das Puzzle durch Klick auf die Schaltfläche <guibutton>Neu</guibutton> wechseln. Dies zeigt Ihnen wieder das Puzzle-Auswahlfenster, in welchem Sie ein beliebiges Puzzle auswählen können.</para>
+    
+    </sect2>
+    
+    </sect1>
+    <sect1 id="myapp-basic-play">
+    <title>Grundlagen des Spiels</title>
+    <para>Beginnen Sie mit dem Eintragen der Ziffern 1-9 in die Kästchen, so dass in jeder Zeile, jeder Spalte und in jedem 3 mal 3 Kästchen großen Teilbereich jede Ziffer nicht mehr als einmal vorkommt.</para>
+    <para>Sie können eine Ziffer sowohl mit der Tastatur als auch mit der Maus eintragen.</para>
+    <variablelist>
+    	<varlistentry>
+	<term>Tastatur</term>
+	<listitem><para>Verwenden Sie die Pfeiltasten oder die Maus zur Auswahl des Kästchens, das Sie ausfüllen möchten. Dann geben Sie die gewünschte Ziffer ein. Ein Druck auf die <keycap>Backspace</keycap>-Taste enfernt die Ziffer wieder.</para></listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Maus</term>
+	<listitem>
+	  <para>Klicken Sie auf ein Kästchen, um es auszuwählen. Ein weiterer Klick in die Mitte des Kästchens zeigt die Schaltflächen mit den Ziffern 1-9 an. Klicken Sie dann auf eine Ziffer, um sie auszuwählen, oder verwenden Sie die <guibutton>Leeren</guibutton>-Schaltfläche, um den Inhalt des Kästchens zu löschen. Ein Doppelklick in die Mitte des Kästchens zeigt ebenfalls Ziffern-Schaltflächen an.</para>
+	</listitem>
+		</varlistentry>
+	</variablelist>
+    <note>
+    <para>Falls Sie eine Ziffer eintragen, die im Widerspruch zu anderen Ziffern des Spielfeldes steht, werden die widersprüchlichen Ziffern rot hervorgehoben.</para>
+    <figure id="error-highlight-fig"> 
+	<title>Hervorhebung von Fehlern</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/error_highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Ein ungültiger Eintrag wird rot hervorgehoben.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    </note>
+    </sect1>
+    <sect1 id="myapp-saving">
+    <title>Speichern und Fortsetzen von Spielen</title>
+    <para>Sudokus werden automatisch in Abständen von einigen Minuten gespeichert, sowie immer dann, wenn Sie das Spiel wechseln oder die Anwendung schließen.</para>
+        <figure id="open-game-fig"> 
+	<title>Fortsetzen gespeicherter Spiele</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/resuming.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Wiederaufnehmen eines Spiels aus dem Puzzle-Auswahlfenster.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    <para>Wann immer Sie <application>Sudoku</application> starten oder auf <guibutton>Neu</guibutton> klicken, werden Ihre gespeicherten Spiele im Puzzle-Auswahlfenster aufgelistet. Sie sehen ein verkleinertes Bild des gespeicherten Spiels und die bisher dafür benötigte Zeit. Sie können eines dieser Puzzles mit einem Doppelklick öffnen.</para>
+    <para>Wenn Sie ein Spiel beenden möchten, um ein neues zu starten, wählen Sie einfach <guibutton>Neu</guibutton> und beginnen ein neues Spiel.</para>
+    </sect1>
+
+<!-- ================ Usage ================================ -->
+<!-- Use this section to describe how to use the application to perform the tasks for 
+  which the application is designed. -->
+  <sect1 id="myapp-hints"> 
+    <title>Hilfsmittel</title> 
+    <!-- ================ Usage Subsection ================================ -->
+
+        <para>GNOME Sudoku stellt eine Reihe von Hilfsmitteln zur Verfügung, die Sie beim Ausfüllen unterstützen.</para>
+
+      <variablelist>
+    	<varlistentry><term>Notizen</term>
+	<listitem>
+		<para><firstterm>Notizen</firstterm> oder <firstterm>Stiftmarkierungen</firstterm> ermöglichen es, Kästchen mit Notizen zu versehen. Viele Spieler verwenden dies, um mögliche Werte für die Kästchen vorzumerken.</para>
+	</listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Hinweise und automatisches Ausfüllen</term>
+	<listitem>
+	<para>Sie können <firstterm>Hinweis</firstterm> und <firstterm>Füllen</firstterm> verwenden, um sich mögliche Werte für ein Kästchen anzeigen zu lassen oder ein Kästchen automatisch ausfüllen zu lassen.</para>
+	</listitem>
+	</varlistentry>
+
+		<varlistentry>
+	<term>Spielhilfe</term>
+	<listitem>
+	<para>In diesem Hervorhebungsmodus werden die aktuelle Zeile, Spalte und Teibereich in verschiedenen Farben hervorgehoben, um das Spielfeld besser überblicken zu können.</para>
+	</listitem>
+	</varlistentry>
+
+	<varlistentry>
+	<term>Änderungen markieren</term>
+	<listitem>
+	  <para>Das Markieren von Änderungen erleichtert die Lösung vor allem dann, wenn sie Kästchen versuchsweise ausfüllen, um deren Einfluss auf andere Einträge zu testen. Wenn Sie eine Anzahl Einträge <firstterm>markieren</firstterm>, dann werden die Ziffern in einer anderen Farbe dargestellt, um diese Einträge von den anderen Einträgen im Spielfeld besser unterscheiden zu können.</para>
+	</listitem>
+	</varlistentry>
+        </variablelist>
+	
+	<sect2 id="myapp-notes"> 
+      <title>Notizen verwenden</title> 
+      <para>Um ein Kästchen mit einer Notiz zu versehen, wählen Sie zuerst das Kästchen mit der Tastatur oder der Maus aus. Dann führen Sie einen der folgenden Schritte aus:</para>
+      <itemizedlist>
+      <listitem><para>Klicken Sie in den oberen Bereich eines Kästchens (dieser Bereich wird hervorgehoben, wenn Sie die Maus über einem ausgewählten Kästchen bewegen).</para></listitem>
+      <listitem><para>Drücken Sie <keycap>N</keycap></para></listitem>
+      </itemizedlist>
+      <para>Das zeigt ein Feld an, in welchem Sie Ihre Notizen eingeben können. Drücken Sie auf <keycap>Enter</keycap>, sobald Sie mit dem Bearbeiten Ihrer Notiz fertig sind.</para>
+      
+      <note><para>Sie können Ihre Notizen auch in den unteren Bereich eines Kästchens schreiben, indem Sie in diesen Bereich klicken oder auf <keycap>M</keycap> drücken. Allerdings wird dieser Bereich auch für die Anzeige der <firstterm>Hinweise</firstterm> verwendet. Deshalb sollten Sie dort keine Notizen hinterlassen, sofern Sie auch Hinweise angezeigt bekommen möchten.</para></note>
+      <note><para>Sie können die Notizen am oberen Rand des Feldes löschen, indem Sie <keycap>Alt-N</keycap> drücken. Die unteren Notizen löschen Sie mit <keycap>Alt-M</keycap></para></note>
+      <note><para>Sie können eine Ziffer am oberen Rand des Feldes hinzufügen oder entfernen, indem Sie zum Hinzufügen <keycap>Strg-1</keycap> bis <keycap>Strg-9</keycap> drücken beziehungsweise zum Entfernen <keycap>Alt-1</keycap> bis <keycap>Alt-9</keycap>.</para></note>
+</sect2>
+    <!-- ================ Usage Subsection ================================ -->
+	 <sect2 id="myapp-manipulate-view"> 
+      <title>Hinweise und automatisches Ausfüllen</title>
+
+		             <note>
+
+	      <para>Die Werkzeuge <firstterm>Hinweis</firstterm> und <firstterm>Füllen</firstterm> basieren auf den logischen Lösungsmöglichkeiten des aktuellen Spielfeldes. Sie untersuchen <emphasis>nicht</emphasis>, ob eine endgültige logische Lösung möglich ist. Wenn Ihnen in einer früheren Eintragung ein Fehler unterlaufen ist, könnten durch die Benutzung dieser Werkzeuge eventuell weitere falsche Einträge entstehen.</para>
+
+	    </note>
+      
+      
+      <sect3 id="myapp-hint">
+          <title>Hinweise</title>
+	              <para>GNOME-Sudoku kann Ihnen Hinweise geben, basierend auf dem aktuellen Spielfeld. Sie können für das gegenwärtig ausgewählte Kästchen einen Hinweis anfordern, indem Sie entweder auf <guibutton>Hinweis</guibutton> klicken, <menuchoice><guisubmenu>Werkzeuge</guisubmenu><guimenuitem>Hinweis</guimenuitem></menuchoice> wählen, oder <keycap>Strg-H</keycap> drücken. Daraufhin wird eine Liste möglicher Werte im unteren Bereich des Kästchens angezeigt.</para>
+    <figure id="hint-fig"> 
+	<title>Hinweise</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/hints.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Wenn Sie auf "Hinweis" klicken, wird eine Liste möglicher Werte im unteren Bereich des Kästchens angezeigt.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+		      
+	    <para>Wenn Sie den Hinweis entfernen oder ändern möchten, klicken Sie in den unteren Berich des Kästchens, um den Text zu bearbeiten.</para>
+	    <para>Für sehr schwierige Puzzles können sie sich von <application>Sudoku</application> auch mögliche Werte für alle Kästchen anzeigen lassen. Um diesen Modus zu aktivieren, wählen Sie <menuchoice><guisubmenu>Werkzeuge</guisubmenu><guimenuitem>Hinweis immer anzeigen</guimenuitem></menuchoice>. Beachten Sie jedoch, dass dadurch leichte Puzzles <emphasis>zu</emphasis> leicht werden können. Verwenden Sie diesen Modus daher eher sparsam.</para>
+<figure id="all-hints-fig"> 
+	<title><application>Sudoku</application> im Hinweis-immer-anzeigen-Modus</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/always_show_hint.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Ein schwieriges Puzzle mit aktiviertem Hinweis-immer-anzeigen-Modus</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+	    
+	    
+	    </sect3>
+	    <sect3 id="myapp-autofill">
+	    <title>Füllen</title>
+
+	    <para>Um ein Kästchen automatisch ausfüllen zu lassen, wenn es nur einen möglichen Wert gibt, klicken Sie entweder auf <guibutton>Füllen</guibutton>, wählen <menuchoice><guisubmenu>Werkzeuge</guisubmenu><guimenuitem>Füllen</guimenuitem></menuchoice>, oder drücken <keycap>Strg-F</keycap>. Dies ist nützlich, wenn in einer Zeile bereits 8 oder 9 Kästchen ausgefüllt sind und Sie wollen schnell das letzte fehlende Kästchen ausfüllen.</para>
+	    <para>Falls es mehr als einen möglichen Wert gibt, wird nichts eingetragen.</para>	    
+	    </sect3>
+	    <sect3 id="myapp-fill-all">
+	    <title>Alle Kästchen füllen</title>
+
+	    <para>Sie können automatisch alle Kästchen ausfüllen lassen, für die es momentan nur eine mögliche Lösung gibt. Dazu wählen Sie entweder <menuchoice><guisubmenu>Tools</guisubmenu><guimenuitem>Alle Kästchen füllen</guimenuitem></menuchoice> oder drücken <keycap>Strg-A</keycap>.</para>
+	    
+	    <warning>
+
+	    	    <para>Diese Funktion sollten Sie nur verwenden, wenn Sie sich in einem sehr schwierigen Spiel festgefahren haben. Bei einem leichten Spiel kann dies zum sofortigen Ausfüllen des ganzen Spielfeldes mit nur einem Klick führen! Das Resultat wäre ein recht langweiliges Spiel.</para>
+		    </warning>
+	    	    </sect3>
+
+    </sect2> 
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-highlighting"> 
+      <title>Spielhilfe</title> 
+      <para>Sie können den Hervorhebungsmodus aktivieren, um die aktuelle Zeile, Spalte und den aktuellen Teilbereich in verschiedenen Farben darzustellen. Dadurch sehen Sie möglicherweise leichter, welche Werte nicht in das aktuelle Kästchen passen. Um diesen Modus einzuschalten, können Sie:</para> 
+      <itemizedlist>
+      <listitem><para>auf <guibutton>Spielhilfe</guibutton> klicken</para></listitem>
+      <listitem><para><menuchoice><guisubmenu>Ansicht</guisubmenu><guimenuitem>Spielhilfe</guimenuitem></menuchoice></para></listitem>
+      </itemizedlist>
+
+<figure id="highlight-fig"> 
+	<title><application>Sudoku</application> mit Spielhilfe</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Die Spielhilfe erleichtert den Blick auf Zeilen, Spalten und Teilbereiche.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      </sect2>
+
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-trackers"> 
+      <title>Änderungen markieren</title> 
+      <para>Sie können Änderungen markieren, um mehrere Eintragungen zu kennzeichnen. Markierte Einträge werden in einer anderen Farbe angezeigt, so dass sie sich optisch von anderen Einträgen unterscheiden. Ausserdem können Sie alle zusammenhängend markierten Einträge auf einmal entfernen. Dies ist bei schwierigen Puzzles nützlich, bei denen Sie mehrere Lösungswege ausprobieren wollen.</para>
+      <note><para>Manche Sudoku-Spieler glauben, niemals verschiedene Lösungswege auszuprobieren, um ein Puzzle zu lösen. Diese Spieler sollten dieses Hilfsmittel nicht verwenden.</para></note>
+
+            <para>Sie können die Anzeige der markierten Änderungen auf folgende Arten aktivieren:</para>
+
+	    <itemizedlist>
+
+	      <listitem>
+	       <para>
+		<menuchoice> 
+			  <guimenu>Werkzeuge</guimenu> 
+			  <guimenuitem>Änderungen markieren</guimenuitem>
+		</menuchoice>
+	       </para>
+	     </listitem>
+             <listitem><para>Klicken Sie auf <guibutton>Änderungen markieren</guibutton></para></listitem>
+           </itemizedlist>
+      <para>Dadurch wird eine Liste der Markierungen rechts neben dem aktuellen Spiel angezeigt. Eine neue Markierung erzeugen Sie, indem Sie auf <guibutton>Markierer hinzufügen</guibutton> klicken. Von da an werden alle Ziffern, die Sie eintragen, zum ausgewählten Markierer hinzugefügt.</para>
+      <para>Sie können alle zum Markierer gehörenden Einträge löschen, indem Sie den gewünschten Markierer in der Liste auswählen und auf <guibutton>Markierer leeren</guibutton> klicken. Um alle Einträge zu löschen, die <emphasis>nicht</emphasis> zum ausgewählten Markierer gehören, klicken Sie auf <guibutton>Andere löschen</guibutton>.</para>
+    </sect2> 
+  </sect1>
+  <!-- ============= Customization ============================= -->
+  <!-- Use this section to describe how to customize the application. -->
+  <sect1 id="myapp-printing"> 
+    <title>Sudokus drucken</title> 
+    <para>GNOME-Sudoku kann Spielpläne für Sie drucken, um auf Papier zu spielen. Das ist nützlich, wenn Sie den Computer verlassen müssen, aber ein begonnenes Spiel beenden möchten, oder wenn Sie eine Reihe von Spielplänen drucken möchten, um sie später zu lösen.</para>
+
+    <para>Wenn Sie mitten im Spiel ein Puzzle drucken möchten, klicken Sie auf <guibutton>Drucken</guibutton> oder wählen Sie <menuchoice><guimenu>Spiel</guimenu><guimenuitem>Drucken</guimenuitem></menuchoice>. Das schließt die bereits eingetragenen Ziffern ein.</para>
+    
+    <para>Um leere bzw. noch unbearbeitete Puzzles zu drucken, wählen Sie <menuchoice><guimenu>Spiel</guimenu><guimenuitem>Mehrere Sudokus drucken</guimenuitem></menuchoice>.</para>
+
+      <para>Es wird ein Druckdialog angezeigt, in dem Sie auswählen können, wieviele Sudokus insgesamt und wieviele Sudokus pro Seite Sie drucken möchten. Je mehr Sudokus pro Seite ausgewählt werden, umso kleiner werden die einzelnen Spielpläne.</para>
+
+      <para>Ausserdem können Sie noch die Schwierigkeitsstufe der Spiele bestimmen. Die Spielpläne werden in aufsteigender Folge vom leichtesten bis zum schwersten ausgedruckt.</para>
+
+      <para>Um ein 25-seitiges Mini-Sudoku-Buch für sich selbst auszudrucken, wählen Sie 100 Sudokus, bei 4 Sudokus pro Seite, mit Schwierigkeitsstufen von leicht bis schwer.</para>
+
+<figure id="printing-fig"> 
+	<title>Drucken eines Mini-Sudoku-Buchs mit <application>Sudoku</application></title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/Print_Sudokus.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Dies druckt 25 Seiten mit 4 Sudokus pro Seite.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      <para>Standardmäßig druckt <application>Sudoku</application> keine Spiele, die Sie bereits gespielt haben. Wenn Sie Spielpläne für einen Freund ausdrucken wollen, oder wenn es Ihnen nichts ausmacht, Spiele zu wiederholen, markieren Sie das Ankreuzfeld <guibutton>Nehme Spiele zum Drucken auf, die Du schon gespielt hast</guibutton>.</para>
+
+      <para>Sie können die zu druckenden Spiele auch auswählen, indem Sie die <guibutton>Spielliste</guibutton> ausklappen und mehrere Spiele in dieser Liste auswählen.</para>
+    
+  </sect1>
+  
+  <sect1 id="mayapp-bugs">
+  <title>Bekannte Fehler und Einschränkungen</title>
+  <sect2>
+  <title>Eingeschränkte Puzzle-Statistiken</title>
+
+    <para>GNOME-Sudoku gliedert die Puzzles nach der Anzahl der Kästchen, die unmittelbar ausgefüllt werden können. In den Rätselstatistiken werden der berchnete Schwierigkeitsgrad sowie weitere drei Informationen angezeigt:</para>
+
+    <itemizedlist>
+    <listitem><para>Die Anzahl der Kästchen, die nach dem Ausschlussverfahren ausgefüllt werden können. Beispiel: Nur die Ziffer 2 passt in dieses Kästchen, folglich muss eine 2 eingetragen werden.</para></listitem>
+    <listitem><para>Die Anzahl der Kästchen, die direkt ausfüllbar sind. Beispiel: Nur ein einziges Kästchen in dieser Zeile kann eine 2 sein, folglich muss eine 2 eingetragen werden.</para></listitem>
+    <listitem><para>Die Anzahl, wie oft der Computer den Inhalt eines Kästchens durch Ausprobieren oder “Erraten” gefunden hat.</para></listitem>
+    </itemizedlist>
+    <para>Viele Benutzer meinen, dass der Computer die Lösung nicht durch Ausprobieren sucht, besonders seit einige Sudoku-Gurus sagen, dass man niemals raten sollte, um ein Puzzle zu lösen. Es gibt auch eine Anzahl anderer Algorithmen, die implementiert werden können, um dem Computer zur Lösung zu verhelfen, beispielsweise "Swordfish" und "X-Wings".</para>
+
+    <para>Gegenwärtig benutzt <application>Sudoku</application> sowohl die zwei oben genannten Algorithmen als auch den Weg über das Ausprobieren. Wenn die Rätselstatistik sagt, dass <application>Sudoku</application> X-mal nur durch Ausprobieren ein Kästchen ausfüllen konnte, dann muss das <emphasis>nicht</emphasis> heißen, dass auch ein Mensch die Lösung nur durch Ausprobieren finden kann.</para>
+  
+  </sect2>
+
+ </sect1>
+
+<!-- ============= About ================================== -->
+<!-- This section contains info about the program (not docs), such as
+      author's name(s), web page, license, feedback address. This
+      section is optional: primary place for this info is "About.." box of
+      the program. However, if you do wish to include this info in the
+      manual, this is the place to put it. Alternatively, you can put this information in the title page.-->
+  <sect1 id="myapp-about"> 
+    <title>Über <application>Sudoku</application></title> 
+    <para><application>Sudoku</application> wurde von Tom Hinkle geschrieben (<email>tmhinkle@gmail.com</email>). <application>Sudoku</application> ist Teil der GNOME-Spiele.</para>
+    <para>Um Fehler zu melden oder einen Vorschlag zu dieser Anwendung oder zu diesem Handbuch zu machen, folgen Sie den Anweisungen im <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME-Benutzerhandbuch</ulink>."</para>
+
+    <para>Dieses Programm ist freie Software. Sie können es unter den Bedingungen der <citetitle>GNU General Public License</citetitle>, wie von der Free Software Foundation veröffentlicht, weitergeben und/oder modifizieren, entweder gemäß Version 2 der Lizenz oder (nach Ihrer Option) jeder späteren Version. Eine Kopie der <citetitle>GNU General Public License</citetitle> ist finden Sie finden in der <ulink url="ghelp:gpl" type="help">GPL</ulink>, oder in der Datei COPYING, die im Quellcode dieses Programms enthalten ist.</para>
+
+  </sect1> 
+</article>

@@ -1,0 +1,218 @@
+# Russian translation for gnotravex help
+
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games gnotravex trunk\n"
+"POT-Creation-Date: 2008-06-12 03:45+0000\n"
+"PO-Revision-Date: 2008-06-13 17:00+0300\n"
+"Last-Translator: Aleksandr Burobin <sa-bu@mail.ru>\n"
+"Language-Team: Russian <gnome-cyr@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnotravex.xml:170(None) 
+msgid "@@image: 'figures/gnotravex_mainwindow.png'; md5=e49d762a2dd5d6ba466e0c7cef7703ce"
+msgstr "@@image: 'figures/gnotravex_mainwindow.png'; md5=e39f2677739d7adf511dcd59e2867aba"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnotravex.xml:193(None) 
+msgid "@@image: 'figures/gnotravex_game.png'; md5=4d0a4512ee72329134fa0f5a1a3205e9"
+msgstr "@@image: 'figures/gnotravex_game.png'; md5=877fa984d8b088e54d64b4f9b01cd51e"
+
+#: C/gnotravex.xml:25(title) 
+msgid "<application>Tetravex</application> Manual"
+msgstr "Руководство по игре <application>Тетравекс</application>"
+
+#: C/gnotravex.xml:28(para) 
+msgid "Tetravex is a simple puzzle game in which pieces have numbers on each side. The pieces must be positioned so that the same numbers touch each other, during which you are being timed. The times are then stored in a system-wide scoreboard."
+msgstr "Тетравекс - это простая игра-головоломка, в которой плитки имеют число на каждой стороне. Необходимо расположить все плитки так, чтобы они соприкасались одинаковыми числами. Затраченное время показывается в строке статуса."
+
+#: C/gnotravex.xml:37(year) 
+msgid "2001"
+msgstr "2001"
+
+#: C/gnotravex.xml:38(holder) 
+msgid "Rob Bradford"
+msgstr "Роб Брэдфорд"
+
+#: C/gnotravex.xml:52(publishername) C/gnotravex.xml:90(para) 
+msgid "GNOME Documentation Project"
+msgstr "Проект документации GNOME"
+
+#: C/gnotravex.xml:2(para) 
+msgid "Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any later version published by the Free Software Foundation with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
+msgstr "Следующим разрешается копировать и/или модифицировать этот документ при условии соблюдения GNU Free Documentation License (GFDL), версии 1.1 или любой более поздней опубликованной Фондом свободного программного обеспечения версией без неизменяемых частей, без текстов на обложках. Вы можете найти копию лицензии по этой <ulink type=\"help\" url=\"ghelp:fdl\">ссылке</ulink> или в файле COPYING-DOCS, распространяемом с этим документом."
+
+#: C/gnotravex.xml:12(para) 
+msgid "This manual is part of a collection of GNOME manuals distributed under the GFDL. If you want to distribute this manual separately from the collection, you can do so by adding a copy of the license to the manual, as described in section 6 of the license."
+msgstr "Этот документ является частью документации GNOME, распространяемой по лицензии GFDL. Если вы хотите распространять этот документ отдельно от общей документации, вы должны приложить копию лицензии к документу, как написано в части 6 лицензии."
+
+#: C/gnotravex.xml:19(para) 
+msgid "Many of the names used by companies to distinguish their products and services are claimed as trademarks. Where those names appear in any GNOME documentation, and the members of the GNOME Documentation Project are made aware of those trademarks, then the names are in capital letters or initial capital letters."
+msgstr "Многие имена и марки используются компаниями для различения их продуктов и услуг и являются торговыми марками. Эти марки присутствуют в документации GNOME, и члены проекта документирования GNOME знают об этом. Имена выделяются заглавными буквами или начальной заглавной буквой."
+
+#: C/gnotravex.xml:35(para) 
+msgid "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr "ДОКУМЕНТ РАСПРОСТРАНЯЕТСЯ \"КАК ЕСТЬ\", БЕЗ ВСЯКИХ ГАРАНТИЙ, ПРИДУМАННЫХ ИЛИ УНАСЛЕДОВАННЫХ, БЕЗ ОГРАНИЧЕНИЙ, ГАРАНТИЙ ТОГО ЧТО ДОКУМЕНТ ИЛИ МОДИФИЦИРОВАННАЯ ВЕРСИЯ ДОКУМЕНТА СВОБОДНА ОТ ДЕФЕКТОВ, ТОЛЬКО ДЛЯ СПЕЦИАЛЬНОГО ИСПОЛЬЗОВАНИЯ НЕ ЗАКЛЮЧАЮЩЕГО В СЕБЕ РИСКИ КАЧЕСТВА, АККУРАТНОСТИ ИЛИ СООТВЕТСТВИЯ ДОКУМЕНТА ИЛИ ИЗМЕНЁННЫХ ВЕРСИЙ ДОКУМЕНТА ВАШИМ ТРЕБОВАНИЯМ. ЕСЛИ ДОКУМЕНТ ИЛИ МОДИФИЦИРОВАННАЯ ВЕРСИЯ ДОКУМЕНТА ИМЕЕТ НЕДОСТАТКИ, ВЫ (А НЕ АВТОР ДОКУМЕНТА ИЛИ ЕГО ПОМОЩНИК) ДОЛЖНЫ САМИ ПРИЛОЖИТЬ УСИЛИЯ К ЕГО ДОРАБОТКЕ, КОРРЕКЦИИ ИЛИ ВОССТАНОВЛЕНИЮ. ЭТО ПРЕДУПРЕЖДЕНИЕ СОСТАВЛЯЕТ СУЩЕСТВЕННУЮ ЧАСТЬ ЛИЦЕНЗИИ. ДОКУМЕНТ НЕ ДОЛЖЕН ИСПОЛЬЗОВАТЬСЯ БЕЗ ДАННОГО ПРЕДУПРЕЖДЕНИЯ И"
+
+#: C/gnotravex.xml:55(para) 
+msgid "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES."
+msgstr "НИ ПРИ КАКИХ ОБСТОЯТЕЛЬСТВАХ И НИ ПРИ КАКОМ ЗАКОННОМ СПОСОБЕ, НИ ПО КАКОМУ СОГЛАШЕНИЮ ИЛИ ДРУГОЙ ПРИЧИНЕ, АВТОР, СОЗДАТЕЛЬ ИЛИ ПОМОЩНИКИ НЕ НЕСУТ ОТВЕТСТВЕННОСТЬ ЗА ПРЯМОЕ, КОСВЕННОЕ, СПЕЦИАЛЬНОЕ, СЛУЧАЙНОЕ ИЛИ ПРЕДНАМЕРЕННОЕ ПОВРЕЖДЕНИЕ ЛЮБОГО СВОЙСТВА, ВКЛЮЧАЯ БЕЗ ОГРАНИЧЕНИЯ ПОТЕРЮ ЖЕЛАНИЯ, РАБОТОСПОСОБНОСТИ, КОМПЬЮТЕРНЫЕ СБОИ ИЛИ НЕПРАВИЛЬНОЕ ВЗАИМОДЕЙСТВИЕ, ВМЕСТЕ ИЛИ ПО-ОТДЕЛЬНОСТИ. НИКАКИЕ ПОВРЕЖДЕНИЯ И ПОТЕРИ НЕ МОГУТ БЫТЬ ВОЗЛОЖЕНЫ НА АВТОРА ДОКУМЕНТА ИЛИ МОДИФИЦИРОВАННОЙ ВЕРСИИ ДОКУМЕНТА, ДАЖЕ ЕСЛИ СТОРОНА БЫЛА ПРОИНФОРМИРОВАНА О ВОЗМОЖНОСТИ ТАКИХ ПОВРЕЖДЕНИЙ"
+
+#: C/gnotravex.xml:28(para) 
+msgid "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: <placeholder-1/>"
+msgstr "ДОКУМЕНТ И ИЗМЕНЁННЫЕ ВЕРСИИ ДОКУМЕНТА ПРЕДСТАВЛЯЮТСЯ ПОЛЬЗОВАТЕЛЮ ПОД ЛИЦЕНЗИЕЙ GNU FREE DOCUMENTATION LICENSE С УВЕДОМЛЕНИЕМ О ТОМ, ЧТО: <placeholder-1/>"
+
+#: C/gnotravex.xml:62(firstname) 
+msgid "Rob"
+msgstr "Роб"
+
+#: C/gnotravex.xml:63(surname) 
+msgid "Bradford"
+msgstr "Брэдфорд"
+
+#: C/gnotravex.xml:65(email) 
+msgid "robster@debian.org"
+msgstr "robster@debian.org"
+
+#: C/gnotravex.xml:84(revnumber) 
+msgid "Tetravex Manual V2.10"
+msgstr "Руководство по игре Тетравекс версия 2.10"
+
+#: C/gnotravex.xml:85(date) 
+msgid "June 2005"
+msgstr "Июнь 2005"
+
+#: C/gnotravex.xml:87(para) 
+msgid "Rob Bradford <email>rob@funky-penguin.co.uk</email>"
+msgstr "Роб Брэдфорд <email>rob@funky-penguin.co.uk</email>"
+
+#: C/gnotravex.xml:95(releaseinfo) 
+msgid "This manual describes version 2.12 of Tetravex."
+msgstr "Это руководство описывает версию 2.12 игры Тетравекс"
+
+#: C/gnotravex.xml:102(title) 
+msgid "Feedback"
+msgstr "Обратная связь"
+
+#: C/gnotravex.xml:103(para) 
+msgid "To report a bug or make a suggestion regarding the <application>Tetravex</application> application or this manual, follow the directions in the <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</ulink>."
+msgstr "Чтобы сообщить об ошибке или внести предложение относительно игры <application>Тетравекс</application> или данного руководства, следуйте ссылке <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">Страница обратной связи GNOME</ulink>."
+
+#: C/gnotravex.xml:113(primary) 
+msgid "GNOME Tetravex"
+msgstr "Тетравекс для среды GNOME"
+
+#: C/gnotravex.xml:119(title) 
+msgid "Introduction"
+msgstr "Введение"
+
+#: C/gnotravex.xml:121(para) 
+msgid "<application>GNOME Tetravex</application> is a simple puzzle where pieces must be positioned so that the same numbers are touching each other. Your game is timed, these times are stored in a system-wide scoreboard."
+msgstr "<application>Тетравекс для среды GNOME</application> — это простая головоломка в которой необходимо расположить все плитки одинаковыми числами друг к другу. Это игра на время, которое показывается в строке статуса."
+
+#: C/gnotravex.xml:127(para) 
+msgid "To run <application>GNOME Tetravex</application>, select <menuchoice><guisubmenu>Games</guisubmenu><guimenuitem>Gnotravex</guimenuitem></menuchoice> from the <guimenu>Main Menu</guimenu>, or type <command>gnotravex</command> on the command line."
+msgstr "Для запуска игры <application>Тетравекс</application>, выберите <menuchoice><guisubmenu>Игры</guisubmenu><guimenuitem>Тетравекс</guimenuitem></menuchoice> из <guimenu>Главного меню</guimenu> или наберите <command>gnotravex</command> в командной строке."
+
+#: C/gnotravex.xml:137(para) 
+msgid "<application>GNOME Tetravex</application> is included in the <filename>gnome-games</filename> package, which is part of the GNOME desktop environment. This document describes version 2.10 of <application>GNOME Tetravex</application>."
+msgstr "Игра <application>Тетравекс</application> включена в пакет <filename>gnome-games</filename>, который является частью среды рабочего стола GNOME. Это руководство описывает версию 2.12 игры <application>Тетравекс</application>."
+
+#: C/gnotravex.xml:146(title) 
+msgid "Playing GNOME Tetravex"
+msgstr "Правила игры в Тетравекс"
+
+#: C/gnotravex.xml:148(para) 
+msgid "<application>GNOME Tetravex</application> is a simple puzzle game, this section covers how to play the game."
+msgstr "<application>Тетравекс</application> — простая игра-гловоломка. Этот раздел объясняет как играть в эту игру."
+
+#: C/gnotravex.xml:154(title) 
+msgid "Basic usage"
+msgstr "Основы"
+
+#: C/gnotravex.xml:156(title) 
+msgid "Playing the game"
+msgstr "Как играть"
+
+#: C/gnotravex.xml:157(para) 
+msgid "Starting <application>GNOME Tetravex</application> opens the <interface>Main window</interface>, shown in <xref linkend=\"mainwindow-fig\"/>. The window is divided into two boxes. The right hand side contains a box containing the pieces you have yet to place and the left hand box is where you arrange the pieces."
+msgstr "При запуске <application>Тетравекс</application> вы увидите <interface>главное окно</interface>, как показывает <xref linkend=\"mainwindow-fig\"/>. Окно разделено на две части. С правой стороны находятся плитки которые нужно переложить в левую часть."
+
+#: C/gnotravex.xml:166(title) 
+msgid "GNOME Tetravex Main Window"
+msgstr "Главное окно игры Тетравекс"
+
+#: C/gnotravex.xml:173(phrase) 
+msgid "GNOME Tetravex Main Window."
+msgstr "Главное окно игры Тетравекс"
+
+#: C/gnotravex.xml:179(para) 
+msgid "You can start playing the game immediately. You may restart the game by selecting <menuchoice><guisubmenu>File</guisubmenu><guimenuitem>New game</guimenuitem></menuchoice><xref linkend=\"playing-fig\"/>"
+msgstr "Вы можете начинать игру сразу после запуска. Перезапустить игру можно выбрав <menuchoice><guisubmenu>Игра</guisubmenu><guimenuitem>Новая игра</guimenuitem></menuchoice><xref linkend=\"playing-fig\"/>"
+
+#: C/gnotravex.xml:189(title) 
+msgid "A GNOME Tetravex Game"
+msgstr "Тетравекс в игре"
+
+#: C/gnotravex.xml:196(phrase) 
+msgid "A GNOME Tetravex Game."
+msgstr "Тетравекс в игре"
+
+#: C/gnotravex.xml:201(para) 
+msgid "The tiles are divided into four, you must position them so that only two numbers that are the same are next to each other. The game wil not let you position the tiles so that different numbers are next to each other. You position the pieces by dragging them from their current position either in the right hand box or the main box to their new position. These moves are not permanent and can be readily reversed. You may also move all the pieces in the left hand box at once by using the commands: <menuchoice><guisubmenu>Move</guisubmenu><guimenuitem>Left/Right/Up/Down</guimenuitem></menuchoice>"
+msgstr "Каждая плитка разделена на четыре части, ваша задача расположить их сторонами с одинаковыми числами друг к другу. Игра не позволит положить плитки с разными числами друг к другу. Вы должны перетаскивать плитки с правой части на их новую позицию слева. Вы можете перемещать плитки сколько угодно раз. Вы также можете передвинуть все плитки в левой части выбрав в меню: <menuchoice><guisubmenu>Ход</guisubmenu><guimenuitem>Влево/Вправо/Вверх/Вниз</guimenuitem></menuchoice>"
+
+#: C/gnotravex.xml:216(title) 
+msgid "Winning the game"
+msgstr "Как выиграть"
+
+#: C/gnotravex.xml:217(para) 
+msgid "The game is completed when you have positioned all the squares in the right positions. When you have completed the game you are shown your ranking in the high scores table, if you get a high enough score. If you have used either Hint or Solve your score will not be included in the high scores table."
+msgstr "Игра будет выиграна, когда все плитки будут расставлены на свои места. По завершении игры, если Вы набрали достаточно очков, то увидите своё место в таблице рекордов. Если Вы воспользуетесь подсказкой или решением, то ваш результат не будет включён в таблицу рекордов."
+
+#: C/gnotravex.xml:230(title) 
+msgid "Customization"
+msgstr "Настройка"
+
+#: C/gnotravex.xml:231(para) 
+msgid "Under the <guimenuitem>Settings</guimenuitem> menu you can change the size of the grid from two by two up to six by six. The default is three by three."
+msgstr "В меню <guimenuitem>Размер</guimenuitem> вы можете изменить размер поля от 2x2 до 6x6. Изначально это поле 3x3."
+
+#: C/gnotravex.xml:235(para) 
+msgid "If the tiles are too small, resizing the window will change the size of the tiles."
+msgstr "Если плитки слишком малы, то увеличьте размер окна, этим вы увеличите и размер плиток."
+
+#: C/gnotravex.xml:256(title) 
+msgid "Authors"
+msgstr "Авторы"
+
+#: C/gnotravex.xml:257(para) 
+msgid "<application>GNOME Tetravex</application> was written by Lars Rydlinge (<email>lars.rydlinge@hig.se</email>). This manual was written by Rob Bradford (<email>rob@funky-penguin.co.uk</email>). To report a bug or make a suggestion regarding this application or this manual, follow the directions in this <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">document</ulink>."
+msgstr "<application>Тетравекс для среды GNOME</application> написан Ларсом Ридлингом (<email>lars.rydlinge@hig.se</email>). Это руководство написано Робом Брэдфордом (<email>rob@funky-penguin.co.uk</email>). Чтобы сообщить об ошибке или внести предложение относительно игры или данного руководства, следуйте ссылке в <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">этом документе</ulink>."
+
+#: C/gnotravex.xml:277(title) 
+msgid "License"
+msgstr "Лицензия"
+
+#: C/gnotravex.xml:278(para) 
+msgid "This program is free software; you can redistribute it and/or modify it under the terms of the <citetitle>GNU General Public License</citetitle> as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
+msgstr "Эта программа является свободно распространяемым программным обеспечением; вы можете распространять и/или модифицировать ее согласно условиям <citetitle>GNU General Public License</citetitle> которые опубликованы Free Software Foundation; версии 2 или более поздней её версий."
+
+#: C/gnotravex.xml:284(para) 
+msgid "This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public License</citetitle> for more details."
+msgstr "Эта программа распространяется с предположением, что она будет полезной, но БЕЗ ВСЯКОЙ ГАРАНТИИ; без подразумеваемой гарантии ТОВАРНОГО СОСТОЯНИЯ при продаже или ПРИГОДНОСТИ ДЛЯ ИСПОЛЬЗОВАНИЯ В КОНКРЕТНЫХ ЦЕЛЯХ. За деталями обращайтесь к <citetitle>GNU General Public License</citetitle>."
+
+#: C/gnotravex.xml:290(para) 
+msgid "A copy of the <citetitle>GNU General Public License</citetitle> is included as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also obtain a copy of the <citetitle>GNU General Public License</citetitle> from the Free Software Foundation by visiting <ulink url=\"http://www.fsf.org\" type=\"http\">their Web site</ulink> or by writing to <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address>"
+msgstr "Копия <citetitle>GNU General Public License</citetitle> включена в качестве приложения к <citetitle>Руководству пользователя GNOME</citetitle>. Вы также можете получить копию <citetitle>GNU General Public License</citetitle> от Free Software Foundation если посетите <ulink url=\"http://www.fsf.org\" type=\"http\">их веб сайт</ulink> или напишите письмо по адресу <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/gnotravex.xml:0(None) 
+msgid "translator-credits"
+msgstr "Aleksandr Burobin <sa-bu@mail.ru>, 2008"
+

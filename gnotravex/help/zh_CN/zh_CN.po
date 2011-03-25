@@ -1,0 +1,553 @@
+# Chinese (China) translation for gnome-games.
+# Copyright (C) 2010 gnome-games's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-games package.
+# Xhacker Liu <liu.dongyuan@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games master\n"
+"POT-Creation-Date: 2010-08-06 11:55+0000\n"
+"PO-Revision-Date: 2010-08-13 18:47+0800\n"
+"Last-Translator: Xhacker Liu <liu.dongyuan@gmail.com>\n"
+"Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: C/winning.page:9(desc)
+msgid "Simple tips on how to possibly win a game."
+msgstr "赢得游戏的一些小技巧。"
+
+#: C/winning.page:12(name) C/usage.page:11(name) C/size.page:10(name)
+#: C/shortcut.page:11(name) C/multiplayer.page:10(name) C/move.page:11(name)
+#: C/index.page:17(name) C/hint.page:10(name) C/gameplay.page:10(name)
+msgid "Milo Casagrande"
+msgstr "Milo Casagrande"
+
+#: C/winning.page:13(email) C/usage.page:12(email) C/size.page:11(email)
+#: C/shortcut.page:12(email) C/multiplayer.page:11(email)
+#: C/move.page:12(email) C/index.page:18(email) C/hint.page:11(email)
+#: C/gameplay.page:11(email)
+msgid "milo@ubuntu.com"
+msgstr "milo@ubuntu.com"
+
+#: C/winning.page:16(p) C/usage.page:19(p) C/size.page:14(p)
+#: C/shortcut.page:15(p) C/multiplayer.page:14(p) C/move.page:15(p)
+#: C/index.page:21(p) C/gameplay.page:14(p)
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons Share Alike 3.0"
+
+#: C/winning.page:20(title)
+msgid "Win <app>GNOME Tetravex</app>"
+msgstr "赢得 <app>GNOME 四邻</app>"
+
+#: C/winning.page:23(p)
+msgid ""
+"The following tips will not assure you to win a game, they are intended as a "
+"simple aid."
+msgstr "下面的技巧并不能保证您赢得游戏，他们只是简单地帮帮您。"
+
+#: C/winning.page:30(title)
+msgid "Look for a single number"
+msgstr "看看有没有单独的数字"
+
+#: C/winning.page:31(p)
+msgid ""
+"When you start a new game, look for a single number, or a number that has no "
+"similar numbers that can be placed next to it."
+msgstr "游戏开始的时候，看看有没有单独的数字，或者没法在旁边放置任何块的数字。"
+
+#: C/winning.page:35(p)
+msgid ""
+"If you have one such number, that piece is a valid starting piece, since you "
+"know where it has to be placed."
+msgstr ""
+"如果找到这这样的一个数字，那么从这一块开始会十分不错，你知道应该把它放在哪"
+"里。"
+
+#: C/winning.page:39(p)
+msgid ""
+"Note that the bigger the size of the board, the harder is to find such a "
+"number."
+msgstr "注意盘面的尺寸越大，越难找到这样的数字。"
+
+#: C/winning.page:46(title)
+msgid "Have a tip to share?"
+msgstr "想要分享一条技巧？"
+
+#: C/winning.page:47(p)
+msgid ""
+"If you have a tip to share about <app>GNOME Tetravex</app>, or any other "
+"GNOME games, write us at gnome-doc-list@gnome.org. We will add them here!"
+msgstr ""
+"如果您有什么关于 <app>GNOME 四邻</app> 或者其他 GNOME 游戏的小技巧，请写信至 "
+"gnome-doc-list@gnome.org。我们会把它加到这里的！"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/usage.page:61(None)
+msgid ""
+"@@image: 'figures/gnotravex-video.ogv'; md5=14cface4ec2b0c84aa5a925242694de0"
+msgstr ""
+"@@image: 'figures/gnotravex-video.ogv'; md5=14cface4ec2b0c84aa5a925242694de0"
+
+#: C/usage.page:8(desc)
+msgid "How to play <app>GNOME Tetravex</app>."
+msgstr "如何玩 <app>GNOME 四邻</app>。"
+
+#: C/usage.page:15(name) C/index.page:13(name)
+msgid "Rob Bradford"
+msgstr "Rob Bradford"
+
+#: C/usage.page:16(email) C/index.page:14(email)
+msgid "robster@debian.org"
+msgstr "robster@debian.org"
+
+#: C/usage.page:23(title)
+msgid "Play <app>GNOME Tetravex</app>"
+msgstr "玩 <app>GNOME 四邻</app>"
+
+#: C/usage.page:26(title)
+msgid "Basic usage"
+msgstr "基本使用"
+
+#: C/usage.page:27(p)
+msgid ""
+"The game window is divided into two boxes: the one on the right side of the "
+"window contains the pieces that needs to be arranged; the one on the left "
+"side of the window is where the pieces from the right box will be arranged "
+"and moved. Each piece is divided into four little triangles containing a "
+"number."
+msgstr ""
+"游戏窗口分成了两个盒子：窗口右侧的盒子包含了一打堆需要摆放的方块；这些方块要"
+"放到窗口左侧的盒子里面去。每个方块由四个三角形组成，它们各包含一个数字。"
+
+#: C/usage.page:34(p)
+msgid ""
+"The scope of the game is to position the pieces so that only two identical "
+"numbers are next to each other."
+msgstr "游戏的目标是合理地摆放所有方块，使相邻的两个数字是一样的。"
+
+#: C/usage.page:38(p)
+msgid ""
+"It is not possible to position the pieces so that different number are next "
+"to each other."
+msgstr "不能这样摆放方块，否则相邻的数字就不一样了。"
+
+#: C/usage.page:42(p)
+msgid ""
+"The game is completed when you have positioned all the pieces in their right "
+"positions."
+msgstr "当您把所有的方块放在正确的位置时，游戏就完成了。"
+
+#: C/usage.page:47(p)
+msgid ""
+"When you start <app>GNOME Tetravex</app>, the game will start immediately, "
+"and the time will start counting."
+msgstr "当您启动 <app>GNOME 四邻</app>，游戏会立即开始，同时开始计时。"
+
+#: C/usage.page:56(title)
+msgid "Video demonstration"
+msgstr "视频演示"
+
+#: C/usage.page:57(p)
+msgid ""
+"This short video shows how the game works, and what are the possible "
+"movements."
+msgstr "这个小视频告诉您游戏是怎么玩的，怎样的移动是正确的。"
+
+#: C/usage.page:61(media)
+msgid "Simple demonstration of a game"
+msgstr "游戏的简单演示"
+
+#: C/size.page:7(desc)
+msgid "Change the size of the game board."
+msgstr "改变游戏盘面尺寸。"
+
+#: C/size.page:17(title)
+msgid "Game board size"
+msgstr "游戏盘面尺寸"
+
+#: C/size.page:19(p)
+msgid ""
+"To change the size of the game board, in order to increase or decrease the "
+"complexity of the game, choose <gui>Size</gui> from the main menu bar, and "
+"then select the dimension of the board."
+msgstr ""
+"要改变游戏盘面尺寸，也就是调整游戏的难度，从菜单栏选择 <gui>大小</gui>，并选"
+"取合适的盘面尺寸。"
+
+#: C/size.page:24(p)
+msgid ""
+"You can select from five different dimension, from 2×2 to 6×6. The default "
+"one is 3×3."
+msgstr "您可以从五种盘面尺寸中进行选择，从 2×2 到 6×6。默认尺寸是 3×3。"
+
+#: C/size.page:28(p)
+msgid ""
+"If the pieces are too small, resizing the window will change their size."
+msgstr "如果觉得方块太小的，调整窗口的大小可以调整它们的尺寸。"
+
+#: C/shortcut.page:8(desc)
+msgid "Use the keyboard to play the game."
+msgstr "使用键盘进行游戏。"
+
+#: C/shortcut.page:19(title)
+msgid "Keyboard shortcuts"
+msgstr "键盘快捷键"
+
+#: C/shortcut.page:22(title)
+msgid "Game shortcuts"
+msgstr "游戏快捷键"
+
+#: C/shortcut.page:23(p)
+msgid ""
+"The following table groups the most useful shortcuts for playing <app>GNOME "
+"Tetravex</app>."
+msgstr "下面的表格显示了玩 <app>GNOME 四邻</app> 时可以用到的一些快捷键。"
+
+#: C/shortcut.page:28(p)
+msgid "Shortcut"
+msgstr "快捷键"
+
+#: C/shortcut.page:28(p)
+msgid "Description"
+msgstr "介绍"
+
+#: C/shortcut.page:32(key) C/shortcut.page:49(key) C/shortcut.page:58(key)
+#: C/shortcut.page:66(key) C/shortcut.page:74(key)
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: C/shortcut.page:32(key)
+msgid "N"
+msgstr "N"
+
+#: C/shortcut.page:35(p)
+msgid "Start a new game."
+msgstr "新建一盘游戏。"
+
+#: C/shortcut.page:40(key)
+msgid "Pause"
+msgstr "Pause"
+
+#: C/shortcut.page:43(p)
+msgid "Pause or resume the game."
+msgstr "暂停/继续游戏。"
+
+#: C/shortcut.page:49(key)
+msgid "Up"
+msgstr "上方向键"
+
+#: C/shortcut.page:53(p)
+msgid "Move all the pieces in the left box up by one."
+msgstr "将左侧盒子里的所有方块上移一格。"
+
+#: C/shortcut.page:58(key)
+msgid "Down"
+msgstr "下方向键"
+
+#: C/shortcut.page:61(p)
+msgid "Move all the pieces in the left box down by one."
+msgstr "将左侧盒子里的所有方块下移一格。"
+
+#: C/shortcut.page:66(key)
+msgid "Left"
+msgstr "左方向键"
+
+#: C/shortcut.page:69(p)
+msgid "Move all the pieces in the left box left by one."
+msgstr "将左侧盒子里的所有方块左移一格。"
+
+#: C/shortcut.page:74(key)
+msgid "Right"
+msgstr "右方向键"
+
+#: C/shortcut.page:77(p)
+msgid "Move all the pieces in the left box right by one."
+msgstr "将左侧盒子里的所有方块右移一格。"
+
+#: C/multiplayer.page:7(desc)
+msgid "How to play with other people."
+msgstr "如何与他人进行游戏。"
+
+#: C/multiplayer.page:18(title)
+msgid "Play with other people"
+msgstr "和别人一块玩"
+
+#: C/multiplayer.page:20(p)
+msgid ""
+"With <app>GNOME Tetravex</app> it is not possible to play with or against "
+"other people over the Internet or a local network."
+msgstr "哦，<app>GNOME 四邻</app> 没法与他人一块玩。"
+
+#: C/move.page:8(desc)
+msgid "How to move the pieces on the game board."
+msgstr "如何移动盘面上的方块"
+
+#: C/move.page:19(title)
+msgid "Move the pieces"
+msgstr "移动方块"
+
+#: C/move.page:22(title)
+msgid "Move a piece"
+msgstr "移动方块"
+
+#: C/move.page:23(p)
+msgid ""
+"To move a piece, you need to click-and-hold on it, drag it from its current "
+"position to its new position, either on the right box or on the left box, "
+"and release the mouse button."
+msgstr ""
+"要移动一个方块，您需要点击并按住方块，然后把它拖动到新的位置（左侧的盒子或者"
+"右侧的盒子都可以），最后松开鼠标。"
+
+#: C/move.page:28(p)
+msgid "These moves are not permanent and can be reversed."
+msgstr "这些移动并不是永久的，可以恢复。"
+
+#: C/move.page:32(p)
+msgid ""
+"The pieces in the left box can be moved all at once in one direction. See "
+"<link xref=\"shortcut\"/> for more information."
+msgstr ""
+"左侧盒子里面的方块可以同时向某个方向移动一格，详见 <link xref=\"快捷键\"/>。"
+
+#: C/move.page:39(title)
+msgid "Avoid the click-and-hold"
+msgstr "我不想拖动"
+
+#: C/move.page:40(p)
+msgid ""
+"If you do not feel comfortable with the click-and-hold action to move the "
+"pieces, it is possible to change that behavior so that you only have to "
+"click on a piece to move it, and click again to release it in its new "
+"position."
+msgstr ""
+"如果您觉得拖动方块不太舒服，可以更改一下行为，这样您只要点击一个方块，到了新"
+"的位置再点击一下就可以了。"
+
+#: C/move.page:45(p)
+msgid ""
+"To do that, from the main menu bar, choose <gui style=\"menu\">Move</gui>, "
+"and select <gui style=\"checkbox\">Click to Move</gui>."
+msgstr ""
+"要这样做，找到菜单栏，选择 <gui style=\"menu\">移动</gui>，点击 <gui style="
+"\"checkbox\">单击移动</gui> 即可。"
+
+#: C/license.page:8(desc)
+msgid "Legal information."
+msgstr "法律信息。"
+
+#: C/license.page:11(title)
+msgid "License"
+msgstr "许可"
+
+#: C/license.page:12(p)
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
+msgstr "这个作品基于 署名-相同方式共享 3.0 Unported 进行发布。"
+
+#: C/license.page:20(p)
+msgid "You are free:"
+msgstr "您可以自由："
+
+#: C/license.page:25(em)
+msgid "To share"
+msgstr "分享"
+
+#: C/license.page:26(p)
+msgid "To copy, distribute and transmit the work."
+msgstr "复制、发行或传播本作品"
+
+#: C/license.page:29(em)
+msgid "To remix"
+msgstr "创作演绎"
+
+#: C/license.page:30(p)
+msgid "To adapt the work."
+msgstr "创作或演绎本作品"
+
+#: C/license.page:33(p)
+msgid "Under the following conditions:"
+msgstr "惟须遵守下列条件："
+
+#: C/license.page:38(em)
+msgid "Attribution"
+msgstr "署名"
+
+#: C/license.page:39(p)
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr "必须按照作者或者许可人指定的方式对作品进行署名。"
+
+#: C/license.page:46(em)
+msgid "Share Alike"
+msgstr "相同方式共享"
+
+#: C/license.page:47(p)
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"如果您改变、转换本作品或者以本作品为基础进行创作，您只能采用与本协议相同的许"
+"可协议发布基于本作品的演绎作品。"
+
+#: C/license.page:53(p)
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"要查看完整的许可证文笔，请前往 <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/legalcode\">创作共用网站</link>，或者阅读完整的 <link "
+"href=\"http://creativecommons.org/licenses/by-sa/3.0/\">普通文本</link>。"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/index.page:26(None)
+msgid ""
+"@@image: 'figures/gnotravex-logo.png'; md5=daf379ccd659b42a71cd0f2661f651e4"
+msgstr ""
+"@@image: 'figures/gnotravex-logo.png'; md5=daf379ccd659b42a71cd0f2661f651e4"
+
+#: C/index.page:8(title) C/index.page:9(title)
+msgid "GNOME Tetravex"
+msgstr "GNOME 四邻"
+
+#: C/index.page:10(desc)
+msgid "GNOME Tetravex help."
+msgstr "GNOME 四邻 帮助。"
+
+#: C/index.page:25(title)
+msgid ""
+"<media type=\"image\" mime=\"image/png\" src=\"figures/gnotravex-logo.png"
+"\">GNOME Tetravex logo</media> GNOME Tetravex"
+msgstr ""
+"<media type=\"image\" mime=\"image/png\" src=\"figures/gnotravex-logo.png"
+"\">GNOME 四邻 标志</media> GNOME 四邻"
+
+#: C/index.page:31(title)
+msgid "Basic Gameplay &amp; Usage"
+msgstr "基本游戏使用"
+
+#: C/index.page:35(title)
+msgid "Multiplayer Game"
+msgstr "多人游戏"
+
+#: C/index.page:39(title)
+msgid "Tips &amp; Tricks"
+msgstr "技巧和诀窍"
+
+#: C/hint.page:7(desc)
+msgid "Use hints or solve the game automatically."
+msgstr "使用提示来自动解决游戏"
+
+#: C/hint.page:14(title)
+msgid "Hints"
+msgstr "提示"
+
+#: C/hint.page:17(p)
+msgid ""
+"If you use one of the following methods to complete the game, your scores "
+"will not be included among the high scores."
+msgstr "如果您使用下面的方法完成游戏，您的分数将不会包含在得分排行榜上面。"
+
+#: C/hint.page:25(title)
+msgid "Use the hints system"
+msgstr "使用提示系统"
+
+#: C/hint.page:27(p)
+msgid ""
+"At any time in the game, if you do not know how to start it, or where to "
+"move a piece, it is possible to use the built-in hints system."
+msgstr "在您玩游戏的时候，如果您不知道该怎么办了，您可以使用内建的提示系统。"
+
+#: C/hint.page:31(p)
+msgid ""
+"The system will move one piece from the right box to its correct position "
+"into the left box."
+msgstr "系统会从右侧的盒子里移动一个方块到左侧正确的位置。"
+
+#: C/hint.page:35(p)
+msgid "To use the hints system, perform one of the following:"
+msgstr "使用提示系统的几个方法："
+
+#: C/hint.page:40(p)
+msgid "Press <keyseq><key>Ctrl</key><key>H</key></keyseq>."
+msgstr "按 <keyseq><key>Ctrl</key><key>H</key></keyseq>。"
+
+#: C/hint.page:45(p)
+msgid ""
+"Choose <guiseq><gui style=\"menu\">Game</gui><gui style=\"menuitem\">Hint</"
+"gui></guiseq>."
+msgstr ""
+"点击菜单中的 <guiseq><gui style=\"menu\">游戏</gui><gui style=\"menuitem\">提"
+"示</gui></guiseq>。"
+
+#: C/hint.page:52(title)
+msgid "Solve the game"
+msgstr "解决游戏"
+
+#: C/hint.page:53(p)
+msgid ""
+"If you get stuck in the game, or you want to solve it automatically, choose "
+"<guiseq><gui style=\"menu\">Game</gui><gui style=\"menuitem\">Solve</gui></"
+"guiseq>."
+msgstr ""
+"如果您已经被游戏搞晕了，想要自动解决游戏，选择菜单中的 <guiseq><gui style="
+"\"menu\">游戏</gui><gui style=\"menuitem\">解开</gui></guiseq>。"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gameplay.page:32(None)
+msgid ""
+"@@image: 'figures/gnotravex-main-window.png'; "
+"md5=dd9c9be1bb7b724d6be5e76ffa6ee4d8"
+msgstr ""
+"@@image: 'figures/gnotravex-main-window.png'; "
+"md5=dd9c9be1bb7b724d6be5e76ffa6ee4d8"
+
+#: C/gameplay.page:7(desc)
+msgid "Introduction to <app>GNOME Tetravex</app>."
+msgstr "<app>GNOME 四邻</app> 的介绍。"
+
+#: C/gameplay.page:18(title)
+msgid "Gameplay"
+msgstr "游戏玩法"
+
+#: C/gameplay.page:20(p)
+msgid ""
+"<app>GNOME Tetravex</app> is a simple puzzle game which scope is to move the "
+"various pieces from one side of the board to the other side, so that the "
+"same numbers depicted on the pieces are touching each other."
+msgstr ""
+"<app>GNOME 四邻</app> 是一个简单的解谜游戏，目标是把右侧的方块全部移动到左"
+"侧，每个方块的四面都邻接着相同的数字。"
+
+#: C/gameplay.page:25(p)
+msgid ""
+"The game is timed, and these times are used as the score for the game. You "
+"have to move all the pieces in the least time possible."
+msgstr "游戏会计时，用来确定得分排行榜。您需要尽快把所有的方块都搞定。"
+
+#: C/gameplay.page:30(title)
+msgid "Main game window"
+msgstr "主游戏窗口"
+
+#: C/gameplay.page:31(desc)
+msgid "<app>Tetravex</app> main window"
+msgstr "<app>四邻</app> 主窗口"
+
+#: C/gameplay.page:33(p)
+msgid "<app>Tetravex</app> main window."
+msgstr "<app>四邻</app> 主窗口。"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/index.page:0(None)
+msgid "translator-credits"
+msgstr "Xhacker Liu <liu.dongyuan@gmail.com>, 2010"

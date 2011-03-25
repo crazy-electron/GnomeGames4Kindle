@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.21.90">
+<!ENTITY manrevision "3.0">
+<!ENTITY date "February 2008">
+<!ENTITY app "<application>Sudoku</application>">
+<!ENTITY appname "Sudoku">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 06, 2003
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="eu">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title><application>Sudoku</application>ren eskuliburua</title>       
+
+    <abstract role="description">
+      <para>Sudoku aplikazioarekin logikako sudoku joko ospetsuan jolas zaitezke, non 9 x 9 neurriko karratua mete behar den zenbaki egokiegin.</para>
+    </abstract>
+
+    <copyright> 
+      <year>2008</year> 
+      <holder>Thomas M. Hinkle</holder> 
+    </copyright><copyright><year>2008.</year><holder>Hizkuntza Politikarako Sailburuordetza (hizpol@ej.gv.es)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOMEren dokumentazio-proiektua</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Baimena ematen da dokumentu hau kopiatu, banatu eta/edo aldatzeko, Free Software Foundation-ek argitaratutako GNU Dokumentazio Librearen Lizentziaren 1.1. bertsioan edo berriago batean ezarritako baldintzetan, atal aldaezinik gabe, aurreko azaleko testurik gabe eta atzeko azaleko testurik gabe. GFDL lizentziaren kopia <ulink type="help" url="ghelp:fdl">esteka honetan</ulink> edo eskuliburu honekin batera ematen den COPYING-DOCS fitxategian aurkituko duzu.</para>
+         <para>Eskuliburu hau GFDL lizentziarekin banatzen diren GNOME eskuliburuen bildumakoa da. Eskuliburu hau bildumatik bereizita banatu nahi baduzu, banatu dezakezu, baina eskuliburuari lizentziaren kopia bat gehitu beharko diozu lizentzian bertan 6. atalean azaltzen den bezala.</para>
+
+	<para>Enpresek beren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu gisa hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, eta GNOMEren Dokumentazio Proiektuko kideak marka komertzialak direla konturatzen direnean, izen horiek maiuskulaz idatzita agertuko dira, osorik edo hasierako letra bakarrik.</para>
+
+	<para>DOKUMENTUA ETA DOKUMENTUAREN BERTSIO ALDATUAK GNU DOKUMENTAZIO LIBREAREN LIZENTZIAREN BALDINTZEN ARABERA EMATEN DIRA, ETA ONDOREN ZEHAZTEN DIRENAK ONARTZERA BEHARTZEN DUTE: <orderedlist>
+		<listitem>
+		  <para>DOKUMENTUA "DAGOEN-DAGOENEAN" EMATEN DA, INOLAKO BERMERIK GABE, EZ ESPRESUKI ADIERAZITAKORIK ETA EZ INPLIZITURIK ERE; BESTEAK BESTE EZ DA BERMATZEN DOKUMENTUA EDO BERTSIO ALDATUA AKATSIK GABEA DENIK, MERKATURATZEKO EDO XEDE JAKIN BATERAKO EGOKIA DENIK EDO ARAURIK HAUSTEN EZ DUENIK, HORI GUZTIA MUGARIK GABE. DOKUMENTUAREN EDO DOKUMENTUAREN BERTSIO ALDATUAREN KALITATEARI, ZEHAZTASUNARI ETA PERFORMANTZIARI BURUZKO ERANTZUKIZUN OSOA ZUREA DA. DOKUMENTUREN BATEK EDO BERTSIO ALDATUREN BATEK EDOZEIN MOTATAKO AKATSIK IZANEZ GERO, ZUK (EZ HASIERAKO IDAZLEAK, EZ EGILEAK ETA EZ INONGO KOLABORATZAILEK) ZEURE GAIN HARTU BEHARKO DUZU BERRIKUSTEKO, KONPONTZEKO EDO ZUZENTZEKO BEHAR DIREN ZERBITZU GUZTIEN KOSTUA. BERME-UKATZE HAU LIZENTZIA HONEN FUNTSEZKO ZATIA DA. EZ DA BAIMENIK EMATEN EZEIN DOKUMENTU EDO BERTSIO ALDATU ERABILTZEKO, BALDIN ETA EZ BADA BERME-UKATZE HAU ONARTZEN.</para>
+		</listitem>
+		<listitem>
+		  <para>EZIN IZANGO DA INONGO ZIRKUNSTANTZIARIK EDO LEGE-TEORIARIK OINARRI HARTU --EZ ERANTZUKIZUN ZIBILARI BURUZKORIK (ZABARKERIA BARNE HARTUTA), EZ KONTRATUARI BURUZKORIK, EZ BESTERIK-- DOKUMENTU HONEN EDO BERTSIO ALDATU BATEN EGILEA, HASIERAKO IDAZLEA, EDOZEIN KOLABORATZAILE EDO BANATZAILE, EDO ALDERDI HORIEN EDOZEIN HORNITZAILE BESTE PERTSONA BATEN AURREAN ERANTZULE EGITEKO, PERTSONA HORREK EDOZEIN MOTATAKO KALTEA JASAN DUELAKO (ZUZENEKOA, ZEHARKAKOA, BEREZIA, INTZIDENTALA EDO ONDORIOZKOA), HALA NOLA (ETA MUGARIK GABE) BEZEROAK GALTZEA, LANA ETEN BEHARRA, ORDENAGAILUAK EZ IBILTZEA EDO GAIZKI IBILTZEA, EDO DOKUMENTUA NAHIZ HAREN BERTSIO ALDATUAK ERABILTZETIK ONDORIOZTATZEN DIREN EDO ERABILERA HORREKIN ZERIKUSIA DUTEN KALTEAK EDO GALERAK, ALDERDIARI KALTE HORIEK GERTA ZITEZKEELA ADITZERA EMAN BAZAIO ERE.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+		<firstname>Thomas</firstname> 
+		<surname>Hinkle</surname> 
+		<affiliation> 
+	  		<orgname>GNOMEren dokumentazio-proiektua</orgname> 
+	  		<!-- The email address of the author is optional and is commented out by default. 
+			<address> <email>doc-writer2@gnome.org</email> </address> 
+			-->
+		</affiliation> 
+      </author> 
+      
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->  
+    <revhistory>
+      <revision> 
+		<revnumber>GNOME Sudoku-ren eskuliburuaren 3.0 bertsioa</revnumber> 
+		<date>2008ko otsaila</date> 
+		<revdescription> 
+	  		<para role="author">Thomas M. Hinkle</para>
+	  		<para role="publisher">GNOMEren dokumentazio-proiektua</para>
+		</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Sudoku-ren 2.21.90 bertsioa azaltzen da eskuliburu honetan.</releaseinfo> 
+    <legalnotice> 
+      <title>Ohar-bidaltzea</title> 
+      <para><application>Sudoku</application>ri buruzko akatsen berri emateko edo oharrak bidaltzeko, <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOMEra oharrak bidaltzeko orria</ulink>n aurkituko dituzu argibideak.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>GNOME Sudoku</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+    <primary>sudokua</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="myapp-introduction"> 
+    <title>Sarrera</title> 
+    <para>Sudokuak (Number Place izenez ere ezagutzen diren logika-jokoak) sortzeko eta egiteko aplikazioa da <application>Sudoku</application>.</para>
+    <para>Sudokuaren arauak nahiko errazak dira. Jokoa osatzeko, lauki bakoitzean 1etik 9ra doan zenbaki bat jarri behar duzu, eta, era berean, taulako lerro, zutabe eta 3x3ko koadro bakoitzean 1etik 9rako zenbaki guztiek egon behar dute. Beste modu batera esanda, lauki guztiak bete behar dituzu, baina lerro, zutabe eta 3x3ko koadro berean ezin da zenbakirik errepikatu.</para>
+
+    <para>
+        These two different ways of looking at the puzzle are two of
+    the principle ways players think as they play. On the one hand,
+    you ask yourself, “How can I fit all the numbers in this
+    box?” On the other hand, you ask yourself, “What
+    numbers can fit in this square without causing a conflict with
+    other numbers in the same row, column, or 3x3 box?”
+
+    </para>
+
+    <para>Jokoa xinplea izan arren, zenbaki-sareen zailtasuna aldatzen joan daiteke. <application>Sudoku</application> aplikazioak zenbaki-sarearen zailtasun-maila hautatzeko aukera ematen dizu. Lehenespenez, zenbaki-sare errazekin hasiko da, eta apurka-apurka, hobetzen zoazen heinean, zailtasun-maila handituz joango da.</para>
+
+  </sect1>
+
+<!-- =========== Getting Started ============================== -->
+<!-- Use the Getting Started section to describe the steps required
+     to start the application and to describe the user interface components
+     of the application. If there is other information that it is important
+     for readers to know before they start using the application, you should
+     also include this information here. 
+     If the information about how to get started is very short, you can 
+     include it in the Introduction and omit this section. -->
+
+  <sect1 id="myapp-getting-started"> 
+    <title>Erabiltzen hastea</title> 
+
+    <sect2 id="myapp-start">
+    <title><application>Sudoku</application> abiaraztea</title>
+    <para>Aukera hauek dituzu <application>Sudoku</application> abiarazteko:</para> 
+    <variablelist>
+    	<varlistentry>
+    		<term><guimenu>Aplikazioak</guimenu> menua</term>
+    		<listitem>
+    		<para>Aukeratu <menuchoice><guisubmenu>Jokoak</guisubmenu><guimenuitem>Sudoku</guimenuitem></menuchoice>.</para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Komando-lerroa</term>
+    		<listitem>
+    		<para><application>Sudoku</application> komando-lerrotik abiarazteko, idatzi komando hau, eta sakatu <keycap>Sartu</keycap>:</para>
+    		<para> 
+			<command>gnome-sudoku</command> 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+    </sect2>
+
+    <sect2 id="myapp-when-start">
+    <title><application>Sudoku </application> abiarazten duzunean</title>
+    <para>Aurreneko aldiz <application>Sudoku</application> abiarazten duzunean joko-hautatzailearen pantaila ikus dezakezu, jokatzea nahi duzun zailtasuneko jokoa hautatzeko. Aurrez jokatu baduzu, eta amaitu gabeko jokoak utzi badituzu, pantaila honetan hauta ditzakezu joko horiek.</para>
+    <para>Joko-hautatzailearen pantailan jokoaren zailtasuna agertzen da. Jokoaren irudiaren inguruan dagoen koloreak zailtasun bati dagokio. Gorri ilunez inguratutako jokoa gorri argia duen jokoaren baino zailagoa da, adibidez.</para>
+    <para>Egin klik bikoitza aukeratutako jokoan jolasten hasteko.</para>
+
+<figure id="new-game-fig"> 
+	<title>Sudokua abiaraztea</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/starting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Sudokua abiaraztea: aukeratu zailtasun maila.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    
+    <para>Zenbaki-sare desberdin bat egiteko, egin klik <guibutton>Berria</guibutton> botoian. Horrek zenbaki-sarea aukeratzeko pantailara eramango zaitu, eta bertan nahi duzun zenbaki-sarea hautatu ahal izango duzu.</para>
+    
+    </sect2>
+    
+    </sect1>
+    <sect1 id="myapp-basic-play">
+    <title>Oinarrizko jokoa</title>
+    <para>Jolasteko, hasi laukietan 1etik 9rako zenbakiak jartzen. Gogoan izan lerro, zutabe eta 3x3ko koadro berean ezin dela zenbakirik errepikatu.</para>
+    <para>Lauki batean zenbaki bat jartzeko, teklatua edo sagua erabil ditzakezu.</para>
+    <variablelist>
+    	<varlistentry>
+	<term>Teklatua</term>
+	<listitem><para>Erabili gezi-teklak edo sagua, bete nahi duzun laukia hautatzeko. Ondoren, idatzi laukian jarri nahi duzun zenbakia. <keycap>Atzera</keycap> sakatzen baduzu, zenbakia ezabatu egingo duzu.</para></listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Sagua</term>
+	<listitem>
+	  <para>Egin klik hautatu nahi duzun laukian; ondoren, egin klik laukiaren erdian eta 1etik 9rako zenbakiak agertuko dira. Egin klik hautatu nahi duzun zenbakian, edo egin klik <guibutton>Garbitu</guibutton> botoian laukia garbitzeko. Laukiaren erdian klik bikoitza egiten baduzu, zenbakien botoiak agertuko dira.</para>
+	</listitem>
+		</varlistentry>
+	</variablelist>
+    <note>
+    <para>Zenbaki bat sartzen baduzu eta zenbaki-sareko beste zenbakiren batekin arazoak sortzen baditu, zenbakiok gorriz nabarmenduko dira.</para>
+    <figure id="error-highlight-fig"> 
+	<title>Akatsak nabarmentzea</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/error_highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Mugimendu ilegalak gorriz nabarmenduko dira.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    </note>
+    </sect1>
+    <sect1 id="myapp-saving">
+    <title>Partida gordetzea eta berriz hastea</title>
+    <para>Sudokuak automatikoki gordetzen dira minutu gutxiro, baita jokuz aldatzean edo aplikazioa ixtean.</para>
+        <figure id="open-game-fig"> 
+	<title>Joko zaharrak jarraitzea</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/resuming.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Joko zaharra jarraitzea joko-hautatzailearen pantailatik.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    <para><application>Sudoku</application> abiaratzen edo<guibutton>Berria</guibutton> botoian klik egiten duzun bakoitzean aurrez gordetako jokoak zerrendatuko dira joko-hautapenaren pantailan. Gordetako jokoaren koadro txikia ikusiko duzu, azken aldiz jokatu zenueneko data eta zenbat denboran aritu zinen jokatzen. Jokoa irekitzeko, nahikoa da bertan klik bikoitza egitea.</para>
+    <para>Zenbaki-sare bat utzi eta beste batekin hasi nahi baduzu, hautatu <guibutton>Berria</guibutton> eta hasi zenbaki-sare berria egiten.</para>
+    </sect1>
+
+<!-- ================ Usage ================================ -->
+<!-- Use this section to describe how to use the application to perform the tasks for 
+  which the application is designed. -->
+  <sect1 id="myapp-hints"> 
+    <title>Ezaugarriak</title> 
+    <!-- ================ Usage Subsection ================================ -->
+
+        <para>GNOME Sudoku-k zenbaki-sareak sortzen lagunduko dizuten elementu asko ditu.</para>
+
+      <variablelist>
+    	<varlistentry><term>Oharrak</term>
+	<listitem>
+		<para><firstterm>Oharrak</firstterm> edo <firstterm>Arkatz-oharrak</firstterm> elementuek lauki bakoitzean oharrak idazteko aukera ematen dizute. Erabiltzaile askok lauki bakoitzean jar daitezkeen balioak idazteko erabiltzen dituzte.</para>
+	</listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Iradokizunak eta automatikoki betetzea</term>
+	<listitem>
+	<para><firstterm>Iradokizunak</firstterm> eta <firstterm>Automatikoki bete</firstterm> aukerak erabil ditzakezu GNOME Sudoku-k lauki batean jar daitezkeen balioak esan ditzan edo laukia automatikoki bete dezan.</para>
+	</listitem>
+	</varlistentry>
+
+		<varlistentry>
+	<term>Nabarmentzea</term>
+	<listitem>
+	<para>Nabarmentze moduan, uneko lerroa, zutabea eta koadroa hainbat kolorerekin nabarmentzen dira, taula errazago azter dezazun.</para>
+	</listitem>
+	</varlistentry>
+
+	<varlistentry>
+	<term>Aztarnariak</term>
+	<listitem>
+	  <para>Aztarnariei esker, proba eta akatsen segimendua egin dezakezu. Mugimendu sorta baten <firstterm>segimendua</firstterm> egiten duzunean, zenbakiak kolore berezi batez agertzen dira, eta, hala, mugimendu horiek eta aurretik egindako mugimenduak bereiz ditzakezu.</para>
+	</listitem>
+	</varlistentry>
+        </variablelist>
+	
+	<sect2 id="myapp-notes"> 
+      <title>Oharrak hartzea</title> 
+      <para>To write notes (also known as “pencilmarks”) in a square, first select the square with the keyboard or mouse. Then, do one of the following:</para>
+      <itemizedlist>
+      <listitem><para>Egin klik laukiaren goialdean (sagua hautatutako laukiaren inguruan mugitzen duzunean, eremuan koadro bat agertuko da).</para></listitem>
+      <listitem><para>Idatzi <keycap>N</keycap></para></listitem>
+      </itemizedlist>
+      <para>Zure oharrak idazteko eremu bat agertuko da. Zure oharra idazten amaitu duzunean idatzi <keycap>Sartu</keycap>.</para>
+      
+      <note><para>Laukiaren behealdean ere idatz ditzakezu oharrak. Horretarako, egin klik laukiaren behealdean edo idatzi <keycap>M</keycap>. Hala ere, eremu hori <firstterm>iradokizunak</firstterm> eskatzen dituzunean erabiltzen da; beraz, komenigarria da eremu hori zure oharretarako ez erabiltzea iradokizunen bat eskatzeko asmoa baldin baduzu.</para></note>
+      <note><para>You can clear the notes at the top of the square by typing <keycap>Alt-N</keycap> and at the bottom of the square by typing <keycap>Alt-M</keycap>.</para></note>
+      <note><para>You can add a number to the notes at the top of the square by typing <keycap>Ctrl-1</keycap> through <keycap>Ctrl-9</keycap> and remove a number from the notes by typing <keycap>Alt-1</keycap> through <keycap>Alt-9</keycap>.</para></note>
+</sect2>
+    <!-- ================ Usage Subsection ================================ -->
+	 <sect2 id="myapp-manipulate-view"> 
+      <title>Iradokizunak eta automatikoki betetzea</title>
+
+		             <note>
+
+	      <para><firstterm>Iradokizunak</firstterm> eta <firstterm>Bete</firstterm> elementuak zenbaki-sareak dituen aukera logikoetan oinarritzen dira. <emphasis>Ez</emphasis> dute soluzioa ematen. Lehenago akatsen bat egin baduzu, okerreko balioak zein diren idatziko edo iradokiko dituzte.</para>
+
+	    </note>
+      
+      
+      <sect3 id="myapp-hint">
+          <title>Iradokizunak</title>
+	              <para>Betetzen ari zaren zenbaki-sarean oinarrituta egiten ditu iradokizunak GNOME Sudoku-k. Hautatu duzun laukiari buruzko iradokizun bat eskatzeko, egin klik <guibutton>Iradokizuna</guibutton> botoian, hautatu <menuchoice><guisubmenu>Tresnak</guisubmenu><guimenuitem>Iradokizuna</guimenuitem></menuchoice> edo idatzi <keycap>Ktrl-H</keycap>. Laukiaren behealdean, jar daitezkeen balioen zerrenda agertuko da.</para>
+    <figure id="hint-fig"> 
+	<title>Iradokizunak</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/hints.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>‘Iradokizuna’ botoian klik egitean, jar daitezkeen balioak agertzen dira laukiaren behealdean.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+		      
+	    <para>Iradokizuna ezabatu edo aldatu nahi baduzu, egin klik laukiaren azpialdean eta editatu testua.</para>
+	    <para>Zenbaki-sarea oso zaila denean, <application>Sudoku</application>k lauki guztietan jar daitezkeen balioak erakustea aukeratu dezakezu. Modu hori aktibatzeko, aktibatu/desaktibatu <menuchoice><guisubmenu>Tresnak</guisubmenu><guimenuitem>Erakutsi beti iradokizunak</guimenuitem></menuchoice>. Kontuan izan aukera horrek zenbaki-sare errazak <emphasis>oso</emphasis> erraz bihur ditzakeela; beraz, neurriz erabili behar da.</para>
+<figure id="all-hints-fig"> 
+	<title><application>Sudoku</application> ‘Erakutsi beti iradokizunak’ moduan</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/always_show_hint.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>‘Erakutsi beti iradokizunak’ modua aktibatua duen zenbaki-sare zaila.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+	    
+	    
+	    </sect3>
+	    <sect3 id="myapp-autofill">
+	    <title>Laukia betetzea</title>
+
+	    <para>Balio bakarra onar dezakeen lauki bat automatikoki betetzeko, egin klik <guibutton>Bete</guibutton> botoian, hautatu <menuchoice><guisubmenu>Tresnak</guisubmenu><guimenuitem>Bete</guimenuitem></menuchoice> edo idatzi <keycap>Ktrl-F</keycap>. Erabilgarria da, esaterako, lerro bateko 9 laukietatik 8 bete dituzunean eta hutsik dagoen azkeneko laukia azkar bete nahi duzunean.</para>
+	    <para>Lauki horretan balio bat baino gehiago jar badaiteke, ez da ezer gertatuko.</para>	    
+	    </sect3>
+	    <sect3 id="myapp-fill-all">
+	    <title>Lauki guztiak betetzea</title>
+
+	    <para>Memento horretan balio logiko bakarra har dezaketen laukiak automatikoki bete ditzakezu. Horretarako, hautatu <menuchoice><guisubmenu>Tresnak</guisubmenu><guimenuitem>Bete lauki guztiak</guimenuitem></menuchoice> edo idatzi <keycap>Ktrl-A</keycap>.</para>
+	    
+	    <warning>
+
+	    	    <para>Zenbaki-sare zail batekin oso trabatua zaudenean soilik erabili beharko zenuke elementu hau. Zenbaki-sare erraz batean elementu hau erabiltzen baduzu, zenbaki-sare osoa ebatz dezakezu klik bakarrarekin, eta jokoa oso aspergarria gertatuko da.</para>
+		    </warning>
+	    	    </sect3>
+
+    </sect2> 
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-highlighting"> 
+      <title>Nabarmentzea</title> 
+      <para>Unean erabiltzen ari zaren lerroa, zutabea eta koadroa hainbat koloretan automatikoki nabarmentzeko elementua aktiba dezakezu. Hala, errazagoa izan daiteke lauki baten barruan joan ezin diren balioak zein diren ikustea. Nabarmentzea aktibatzeko/desaktibatzeko, hau egin dezakezu:</para> 
+      <itemizedlist>
+      <listitem><para>Egin klik <guibutton>Nabarmentzailea</guibutton> botoian.</para></listitem>
+      <listitem><para><menuchoice><guisubmenu>Ikuspegia</guisubmenu><guimenuitem>Nabarmentzailea</guimenuitem></menuchoice></para></listitem>
+      </itemizedlist>
+
+<figure id="highlight-fig"> 
+	<title><application>Sudoku</application>, nabarmentzailearekin</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Nabarmenduta, lerroak, zutabeak eta koadroak errazago azter daitezke.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      </sect2>
+
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-trackers"> 
+      <title>Aztarnariak</title> 
+      <para>Aldi berean egiten dituzun mugimendu anitzen segimendua egiteko, aztarnaria erabil dezakezu. Segimendua egiten zaien mugimenduak beste kolore batez agertuko dira, eta, hala, desberdindu egingo dira. Segimendua egin zaien mugimendu guztiak batera ezaba ditzakezu. Oso erabilgarria da zenbaki-sare zailak proben eta akatsen bidez ebazteko.</para>
+      <note><para>Zenbait jokalarik uste dute zenbaki-sare bat ez litzatekeela inoiz proben eta akatsen bidez ebatzi behar. Erabiltzaile horiek ez lukete elementu hori erabili behar.</para></note>
+
+            <para>Nabarmentze-interfazea aktibatzeko/desaktibatzeko jarraitu urrats hauei:</para>
+
+	    <itemizedlist>
+
+	      <listitem>
+	       <para>
+		<menuchoice> 
+			  <guimenu>Tresnak</guimenu> 
+			  <guimenuitem>Egin jarritako zenbakien segimendua</guimenuitem>
+		</menuchoice>
+	       </para>
+	     </listitem>
+             <listitem><para>Egin klik <guibutton>Egin jarritako zenbakien segimendua</guibutton> botoian.</para></listitem>
+           </itemizedlist>
+      <para>Erabilitako aztarnarien zerrenda agertuko da jokoaren eskuinaldean. Aztarnari berri bat sortzeko egin klik <guibutton>Gehitu aztarnaria</guibutton> botoian. Puntu horretatik aurrera sartzen duzun edozein zenbaki hautatutako aztarnariaren barruan sartuko da..</para>
+      <para>Aztarnari baten balio guztiak ezabatzeko, hautatu aztarnaria zerrendan eta egin klik <guibutton>Garbitu aztarnaria</guibutton> botoian. Aztarnari baten barruan sartzen <emphasis>ez</emphasis> diren balio guztiak ezabatzeko, egin klik <guibutton>Garbitu besteak</guibutton> botoian.</para>
+    </sect2> 
+  </sect1>
+  <!-- ============= Customization ============================= -->
+  <!-- Use this section to describe how to customize the application. -->
+  <sect1 id="myapp-printing"> 
+    <title>Sudokua inprimatzea</title> 
+    <para>GNOME Sudokuk zenbaki-sareak inprimatzeko aukera ematen du, paperean jolasteko. Erabilgarria da ordenagailua utzi behar baduzu baina hasita daukazun zenbaki-sare bat amaitu nahi baduzu, edo geroago egiteko zenbaki-sare sorta bat inprimatu nahi baduzu.</para>
+
+    <para>Erdi egina duzun zenbaki-sarea inprimatzeko, egin klik <guibutton>Inprimatu</guibutton> botoian edo hautatu <menuchoice><guimenu>Jokoa</guimenu><guimenuitem>Inprimatu</guimenuitem></menuchoice>. Jada jarri dituzun zenbakiak ere inprimatuko ditu.</para>
+    
+    <para>Hutsik dauden zenbaki-sareak inprimatzeko, hautatu <menuchoice><guimenu>Jokoa</guimenu><guimenuitem>Inprimatu sudoku bat baino gehiago </guimenuitem></menuchoice>.</para>
+
+      <para>Inprimaketaren elkarrizketa-koadroa agertuko da eta bertan aukeratu ahal izango duzu zenbat zenbaki-sare inprimatu nahi duzun eta orri bakoitzean zenbat zenbaki-sare nahi dituzun (orri bakoitzean zenbat eta zenbaki-sare gehiago inprimatu, orduan eta txikiagoak izango dira zenbaki-sareak).</para>
+
+      <para>Zenbaki-sareen zailtasun-maila ere aukeratu ahal izango duzu. Errazenetik zailenerako ordenan inprimatuko ditu.</para>
+
+      <para>25 orrialdeko sudoku-liburuxka bat sortzeko, 100 sudoku inprimatzea hauta dezakezu, 4 sudoku orrialdeko, errazenetik zailenera.</para>
+
+<figure id="printing-fig"> 
+	<title><application>Sudoku</application> aplikaziotik sudoku-liburuxka bat inprimatzea.</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/Print_Sudokus.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>25 orri inprimatuko ditu, 4 sudoku orri bakoitzean.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      <para>Lehenespenez, <application>Sudoku</application> aplikazioak ez ditu jada eginak dituzun zenbaki-sareak inprimatuko. Lagun batentzat zenbaki-sareak inprimatzen ari bazara, edo jada egindakoak berriro egiteak axola ez badizu, aktibatu <guibutton>Sartu jada egin dituzun jokoak inprimatzeko jokoen zerrendan</guibutton> aukera.</para>
+
+      <para>Inprimatu nahi dituzun zenbaki-sareak eskuz ere hauta ditzakezu. Horretarako, zabaldu ezazu <guibutton>Jokoen zerrenda</guibutton> eta hautatu zerrendan nahi dituzun zenbaki-sare guztiak.</para>
+    
+  </sect1>
+  
+  <sect1 id="mayapp-bugs">
+  <title>Ezagutzen diren programa-erroreak eta mugak</title>
+  <sect2>
+  <title>Zenbaki-sareen estatistika mugatuak</title>
+
+    <para>Azkar bete daitekeen lauki kopuruaren arabera sailkatzen ditu GNOME Sudoku-k zenbaki-sareak. Zenbaki-sareen estatistika-koadroak balorazioa erakusten du eta hiru informazio atal:</para>
+
+    <itemizedlist>
+    <listitem><para>Eliminazioz bete daitezkeen laukien kopurua, hutsik dagoen saretatik hasiz (adibidez, koadro batean 2a soilik joan badaiteke, 2a izango da).</para></listitem>
+    <listitem><para>Osatuz bete daitezkeen laukien kopurua, hutsik dagoen saretatik hasiz (adibidez, lerro honetako lauki bakarrean joan daiteke 2a, beraz 2a da).</para></listitem>
+    <listitem><para>The number of times in solving the puzzle that the computer had to use trial-and-error, or “guessing”, to solve the puzzle.</para></listitem>
+    </itemizedlist>
+    <para>Erabiltzaile asko atsekabetu egiten dira jakitean ordenagailuak probak eta akatsak erabiltzen dituela zenbaki-sareak ebazteko, batez ere Sudokuaren zenbait maisuk esan zutenetik ez dela probarik egin behar zenbaki-sare bat ebazteko. Badira beste algoritmo asko ordenagailuari sudokuak ebazten laguntzeko; esaterako, swordfish eta X-wings ereduak.</para>
+
+    <para>Gaur egun, <application>Sudoku</application> aplikazioak hor goian aipatutako bi algoritmoak soilik erabiltzen ditu, proba eta akatsez gain. Estatistika-koadroak esaten duenean <application>Sudoku</application> aplikazioak probak eta akatsak X aldiz erabili behar izan dituela, <emphasis>ez</emphasis> du esan nahi pertsona batek probak eta akatsak erabili beharko lituzkeenik zenbaki-sarea ebazteko.</para>
+  
+  </sect2>
+
+ </sect1>
+
+<!-- ============= About ================================== -->
+<!-- This section contains info about the program (not docs), such as
+      author's name(s), web page, license, feedback address. This
+      section is optional: primary place for this info is "About.." box of
+      the program. However, if you do wish to include this info in the
+      manual, this is the place to put it. Alternatively, you can put this information in the title page.-->
+  <sect1 id="myapp-about"> 
+    <title><application>Sudoku</application>ri buruz</title> 
+    <para><application>Sudoku</application> Tom Hinkle-k (<email>tmhinkle@gmail.com</email>) idatzi zuen. <application>Sudoku</application> orain GNOMEko zati da.</para>
+    <para>Programa-errore baten berri emateko, edo aplikazioari nahiz eskuliburuari buruzko iradokizunak egiteko, jarraitu <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOMEren erabiltzailearen gida</ulink>ren azalpenei.</para>
+
+    <para>Programa hau Free Software Foundation-ek argitaratutako GNU Lizentzia Publiko Orokorraren 2. bertsioan edo (nahiago baduzu) bertsio berriago batean jasotako baldintzen arabera banatzen da. Lizentzia horren kopia <ulink url="ghelp:gpl" type="help">esteka</ulink>honetan edo programa honen iturburu-kodean sartutako COPYING fitxategian aurkituko duzu.</para>
+
+  </sect1> 
+</article>

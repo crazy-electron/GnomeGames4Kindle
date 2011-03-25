@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.26">
+<!ENTITY manrevision "2.26">
+<!ENTITY date "June 2009">
+<!ENTITY app "<application>Mahjongg</application>">
+<!ENTITY appname "Mahjongg">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="da">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+  
+    <title>Manual til <application>Mahjongg</application></title>
+    <abstract role="description">
+      <para>Mahjongg er en version af det klassiske østlige brikspil. Det handler om at rydde så meget af brættet som muligt ved at finde ens brikker og fjerne dem fra spillet.</para>
+    </abstract>
+    <copyright>
+      <year>1998</year>
+      <holder>Free Software Foundation</holder>
+    </copyright>
+    <copyright>
+      <year>2000</year>
+      <holder>Eric Baudais (Dokumentationsforfatter)</holder>
+    </copyright>  
+	    <copyright>
+      <year>2009</year>
+      <holder>Paul Cutler (Dokumentationsforfatter)</holder>
+    </copyright><copyright><year>2010.</year><holder>Joe Hansen</holder></copyright> 
+    
+    <!-- translators: uncomment this:
+    
+  <copyright>
+  <year>2000</year>
+  <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+    -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOME's dokumentationsprojekt</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Tilladelse er givet til at kopiere, distribuere og/eller ændre dette dokument under betingelserne i GNU Free Documentation License (GFDL), version 1.1 eller enhver senere version udgivet af Free Software Foundation; uden invariante afsnit, forsidetekster, samt bagsidetekster. Du kan se en kopi af GFDL her <ulink type="help" url="ghelp:fdl">link</ulink> eller i filen COPYING-DOCS som distribueres sammen med denne manual.</para>
+         <para>Denne manual er en del af den samling af GNOME-manualer som udgives under GFDL. Hvis du ønsker at distribuere denne manuel adskilt fra samlingen, kan du gøre dette ved at tilføje en kopi af licensen til manualen, som beskrevet i afsnit 6 af licensen.</para>
+
+	<para>En stor del af de navne som anvendes af firmaer til at identificere deres produkter og tjenester hævdes som værende varemærker. Hvor disse navne fremgår i en hvilken som helst GNOME-dokumentation, og medlemmerne af GNOME-dokumentationsprojeket er gjort opmærksom på disse varemærker, så er disse navne vist med store bogstaver eller stort begyndelsesbogstav.</para>
+
+	<para>DETTE DOKUMENT OG MODIFICEREDE VERSIONER GØRES TILGÆNGELIGT UNDER BETINGELSERNE I GNU FREE DOCUMENTATION LICENSE UNDER DEN FORUDSÆTNING AT: <orderedlist>
+		<listitem>
+		  <para>DETTE DOKUMENT GØRES TILGÆNGELIGT SÅDAN SOM DET ER, UDEN NOGEN FORM FOR GARANTI, HVERKEN UDTALT ELLER ANTYDET, DERIBLANDT, UDEN BEGRÆNSNINGER, GARANTIER OM AT DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET ER FRIT FOR DEFEKTER, PASSENDE TIL ET BESTEMT FORMÅL ELLER IKKE-KRÆNKENDE. DU HÆFTER SELV FOR HELE RISIKOEN VEDRØRENDE KVALITET, KORREKTHED OG YDELSE FOR DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET. SKULLE ET DOKUMENT, ELLER EN ÆNDRET VERSION AF ET DOKUMENT VISE SIG AT VÆRE DEFEKT PÅ EN HVILKEN SOM HELST MÅDE, HÆFTER DU FOR BETALING FOR EVENTUEL NØDVENDIG SERVICE, REPARATION ELLER KORREKTION (OG IKKE HVERKEN DEN OPRINDELIGE FORFATTER, SKRIBENT ELLER NOGEN ANDEN BIDRAGYDER). DENNE ERKLÆRING OM GARANTIFORBEHOLD ER EN ESSENTIEL DEL AF DENNE LICENS. INGEN BRUG AF NOGET DOKUMENT ELLER ÆNDRET VERSION AF DOKUMENTET ER AUTORISERET HERUNDER BORTSET FRA DENNE ANSVARSFRASKRIVELSE; OG</para>
+		</listitem>
+		<listitem>
+		  <para>UNDER INGEN OMSTÆNDIGHEDER OG UNDER INGEN JURIDISK TEORI, UANSET OM DET ER EN BEVIDST SKADENDE HANDLING (INKLUSIVE UFORSVARLIGHED) ELLER PÅ HVILKEN SOM HELST ANDEN MÅDE, KAN FORFATTEREN, SKRIBENT, BIDRAGYDERE, DISTRIBUTØRER ELLER LEVERANDØR AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER GØRES ANSVARLIG OVERFOR NOGEN PERSON FOR NOGEN DIREKTE, INDIREKTE, SPECIEL, TILFÆLDIG ELLER FØLGENDE SKADE PÅFØRT NOGEN INKLUSIVE, UDEN BEGRÆNSNING, SKADE SOM FØLGE AF TAB AF RYGTE, ARBEJDSSTOP, COMPUTERFEJL ELLER -SVIGT, ELLER ENHVER ANDEN FORM FOR SKADE ELLER TAB SOM ER OPSTÅET I FORBINDELSE MED BRUG AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER HERAF, SELV HVIS EN SÅDAN PART HAR VÆRET INFORMERET OM MULIGHEDEN FOR SÅDANNE SKADER.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer">
+	<firstname>Eric</firstname> 
+	<surname>Baudais</surname> 
+	<affiliation> 
+	  <address> <email>baudais@okstate.edu</email> </address> 
+	</affiliation> 
+      </author> 
+	        <author role="maintainer">
+	<firstname>Artur</firstname> 
+	<surname>Szymanski</surname> 
+	<affiliation> 
+	</affiliation> 
+      </author>
+	        <author role="maintainer">
+	<firstname>Paul</firstname> 
+	<surname>Cutler</surname> 
+	<affiliation> 
+		<orgname>GNOME's dokumentationsprojekt</orgname>
+	  <address> <email>pcutler@gnome.org</email> </address> 
+	</affiliation> 
+      </author> 
+
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="candidate"/>
+	
+	    <revhistory>
+      <!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+
+      <revision>
+        <revnumber>Mahjonggmanual version 2.26</revnumber>
+        <date>2009-06-16</date>
+        <revdescription>
+          <para role="author">Paul Cutler</para>
+          <para role="publisher">GNOME's dokumentationsprojekt</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>Mahjonggmanual version 2.26</revnumber>
+        <date>2009-06-16</date>
+        <revdescription>
+          <para role="author">Artur Szymanski</para>
+        </revdescription>
+      </revision>	  
+      <revision> 
+	<revnumber>Mahjonggmanual version 2.10</revnumber> 
+	<date>Juni 2005</date> 
+	<revdescription> 
+	  <para role="author">Eric Baudais <email>baudais@okstate.edu</email></para>
+	  <para role="publisher">GNOME's dokumentationsprojekt</para>
+	</revdescription> 
+	</revision>
+	</revhistory>
+
+    <releaseinfo>Denne manual beskriver version 2.26 af Mahjongg.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Tilbagemeldinger</title> 
+      <para>Hvis du ønsker at indrapportere en fejl eller komme med et forslag vedrørende <application>Mahjongg</application> eller denne manual så følg vejledningen på siden <ulink url="ghelp:user-guide?feedback-bugs" type="help">tilbagemeldinger omkring GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME Mahjongg</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="intro">
+    <title>Introduktion</title>
+
+    <para><application>Mahjongg</application> er en version af det klassiske østlige brikspil Mahjongg beregnet for en person. Det har al den funktionalitet du kan forvente fra et brik- eller kortspil. Du kan ændre typen af brikker, baggrunden og sværhedsgraden, blandt andre ting i dialogen <link linkend="prefs">Indstillinger</link>. Andre egenskaber som knappen <link linkend="pause"><guibutton>Pause </guibutton></link>, gør spillet mere konkurrencepræget når du spiller mod uret.</para>
+
+    <sect2 id="history">
+      <title>En kort historie om Mahjongg</title>
+
+      <!-- FIXME: Explain more about solitaire version.-->
+      <para>Briksæt til Mahjongg bruges til at spille mange variationer af det oprindelige spil. Den udgave af Mahjongg du spiller her er den for en person. Hver brik har også en <ulink type="http" url="http://www.xs4all.nl/~korntner/mahjong/fortune/index.html"> betydning</ulink> forbundet med sig.</para>
+
+      <para>Mahjonggs oprindelse er ikke fuldstændig kendt, men mange teorier er fremlagt. En sådan siger at Noah spillede Mahjongg på Arken da den østlige hånd er dominerende, sikkert den retning som regnen kom fra under oversvømmelsen. En anden teori siger at den kinesiske filosof Konfucius fremstillede spillet. De tre <quote>Kardinalbrikker</quote> har de samme navne som hans tre kardinale dyder, Chung (midten) den Røde, Fa (rigdom) den Grønne og Po (hvid) den Hvide, svarende til velvilje, oprigtighed og barnlig fromhed. En anden teori siger at Mahjongg er afledt af et andet kinesisk spil. <quote>Ya Pei</quote> spilles med 32 kort lavet af træ eller elfenben og har den samme aflange form som de nuværnede Mahjonggbrikker. <quote>Ma Tiae</quote> spilles med 40 papirkort, ens i udseende, med tallene 1-9 i fire forskellige sæt sammen med blomsterkortene. Det er blevet foreslået at to brødre lavede spillet, omkring 1850, via en kombination af disse to spil.</para>
+
+      <para>I starten af 1900-tallet blev Mahjongg introduceret i engelske klubber i Shanghai. Mr. Babcock startede importen af Mahjonggbrikker til Vesten. Han forenklede reglerne til det grundlæggende og satte arabiske tal på brikkerne. 1923 var et højdepunkt for Mahjongg med store handelsfirmaer som Parker Bros., Milton Bradley og United States Playing Card, der importerede Mahjonggspillesæt i tusindvis.</para>
+
+      <para>Mange forskellige regler kom frem og i 1924 blev the Standardization Committee of the American Official Laws of Mah-Jongg dannet for at skrive en regelbog. Men mange klubber spiller i dag stadig med forskellige regler og undertiden tilføjes også blomster- eller jokerbrikker. Spillere af computerversionen bliver fanget af skønheden og detaljen i de håndlavede sæt fra 1920'erne og 1930'erne og leder i antikbutikker og loppemarkeder efter deres egne sæt. Mange nye spillere bliver introduceret til spillet alene via enkeltspillerversionen og opdager langsomt fascinationen og udfordringen som de traditionelle spil tilbyder. <footnote>
+	  <para>Dele af denne tekst anvendte <ulink type="http" url="http://www.mahjongmuseum.com/">Mah Jong Museum</ulink> som kilde.</para>
+	</footnote></para>
+    </sect2>
+  </sect1>
+  
+   <!-- ============= Playing Mahjongg ============================= -->
+
+  <sect1 id="usage">
+    <title>Sådan spiller du Mahjongg</title>
+
+    <para>Du starter med fem niveauer af brikker, som stables så nogle er dækket af andre brikker. Jo højere niveau du angiver i dialogen <link linkend="prefs"><interface>Indstillinger</interface></link>, jo flere brikker er dækket når spillet starter. Formålet med <application>Mahjongg</application> er at fjerne alle brikker fra spillet. For at fjerne brikker skal du finde brikker der er ens. Ens brikker vil normalt have det samme antal knapper eller markeringer på sig eller vil ligne hinanden.</para>
+
+    <para>For eksempel har den fremhævede brik i <link linkend="mahjongg-fig"> figuren nedenfor</link> seks prikker. Den tilsvarende brik er den som også har seks prikker. Brikken er til højre yderst på den tredje række fra bunden og der er en anden nær toppen af den fjerde række fra bunden. Hvis du ønsker at parre brikken på det øverste niveau, skal du kigge efter brikken med det samme grønne bambussymbol. Kan du se en tilsvarende brik? Der er tre brikker som er synlige, som svarer til brikken på øverste niveau. To er mod venstre og nede til højre. Den tredje er på den øverste række, men du kan ikke fjerne den brik endnu, da den ikke er yderst på stakken af brikker. Senere vil du lære hvilke brikker som kan fjernes ,og hvilke der ikke kan fjernes, selvom de er ens. Find de andre tilsvarende brikker, som er synlige, på egen hånd.</para>
+
+    <figure id="mahjongg-fig">
+      <title>Mahjonggs hovedvindue</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/mahjongg.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Hovedvindue.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para><application>Mahjongg</application> spilles ved at klikke på to ens brikker som så fjernes. Spillet fortsætter indtil alle brikker er fjernet eller der ingen ens par er tilbage.</para>
+
+    <para>Kun brikker yderst til venstre og højre på hvert niveau kan vælges. Dette skyldes, at du ikke kan fjerne brikker som ikke er yderst mod venstre eller højre. Hvis brikkerne er på et forskelligt niveau og på venstre eller højre side, kan de fjernes, hvis du finder en tilsvarende brik.</para>
+
+    <para>Hvis du ikke kan parre flere brikker vil en dialog komme frem der fortæller dig at ikke flere brikker kan parres og giver dig muligheden for at blande de resterende brikker igen (dette tilføjer ekstra 60 sekunder straftid til uret), starte et nyt spil eller fortryde dit sidste træk (du skal nok fortryde flere gange for at finde dit forkerte træk).</para>
+
+    <figure id="info-fig1">
+      <title>Informationsdialog</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/no-move.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Informationsdialog.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+    
+    <sect2 id="toolbar">
+      <title>Værktøjslinje</title>
+
+      <para><interface>Værktøjslinjen</interface> placeret nedenfor <interface>menulinjen</interface> indeholder de følgende knapper:</para>
+      
+      <variablelist>
+	<varlistentry>
+	  <term><guibutton>Ny</guibutton></term>
+	  <listitem>
+	    <para>Denne knap starter et nyt spil med den aktuelle opsætning.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Genstart</guibutton></term>
+	  <listitem>
+	    <para>Denne knap genstarter det aktuelle spil fra starten af uden at blande brikkerne.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry id="pause">
+	  <term><guibutton>Pause</guibutton></term>
+	  <listitem>
+	    <para>Denne knap sætter spillet på pause. Når spillet er på pause stopper uret placeret i bunden af det højre hjørne af <interface>Hovedvinduet</interface>, og du kan ikke se nogle af brikkernes tegninger.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Fortryd træk</guibutton></term>
+	  <listitem>
+	    <para>Denne knap genplacerer to brikker du fjernede indtil du når begyndelsen af spillet.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Gentag træk</guibutton></term>
+	  <listitem>
+	    <para>Denne knap viser dit forrige træk igen, som knappen <guibutton>Fortryk træk</guibutton> tilbageførte.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Fif</guibutton></term>
+	  <listitem>
+	    <para>Denne knap viser dig to ens brikker, du kan fjerne. Hver gang du bruger den vil 30 sekunder blive tilføjet til spiluret.</para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+      <para>Statusbjælken i bunden af vinduet viser dig statusinformation om det aktuelle spil:</para>
+      <variablelist>
+	<varlistentry>
+	  <term><guilabel>Brikker tilbage:</guilabel></term>
+	  <listitem>
+	    <para>Her vises antallet af resterende brikker i spillet.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guilabel>Træk tilbage:</guilabel></term>
+	  <listitem>
+	    <para>Her vises antallet af mulige ens par.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guilabel>Tidsforbrug:</guilabel></term>
+	  <listitem>
+	    <para>Her vises den forbrugte spiltid.</para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+      
+      <figure id="toolbar-fig">
+	<title>Mahjonggs værktøjslinje</title>
+	<screenshot>
+	   <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/toolbar.png" format="PNG" srccredit="Eric Baudais"/>
+	  </imageobject>
+    <textobject> 
+      <phrase>Værktøjslinje.</phrase> 
+    </textobject> 
+  </mediaobject>
+	</screenshot>
+      </figure>
+      
+    </sect2>
+    
+    <sect2 id="menubar">
+      <title>Menuer</title>
+      <para>Menulinjen, placeret øverst i <interface>Hovedvinduet</interface>, indeholder de følgende menuer:</para>
+
+      <variablelist>
+	<varlistentry>
+	  <term><guimenu>Spil</guimenu></term>
+	  <listitem>
+	    <para>Menuen indeholder: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>Ctrl-N</keycap></shortcut><guimenuitem>Nyt</guimenuitem></menuchoice> — Dette punkt starter et nyt spil.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Genstart</guimenuitem></menuchoice> — Dette punkt nulstiller det aktuelle spil til begyndelsen.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Pause</guimenuitem></menuchoice> — Dette sætter spillet på pause, stopper uret og skjuler brikkerne.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>Ctrl-Z</keycap></shortcut><guimenuitem>Fortryd træk</guimenuitem></menuchoice> — Dette punkt fortryder fjernelsen af to brikker, indtil du når begyndelsen af spillet.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>Ctrl-R</keycap></shortcut><guimenuitem>Gentag træk</guimenuitem></menuchoice> — Dette punkt erstatter dit forrige træk som <guibutton>Fortryd</guibutton> tilbageførte. Når du når punktet hvor dine fortrydelsestræk begyndte fremkommer følgende besked <quote>Ikke flere fortrydelsestræk!</quote> nederst i venstre hjørne af <interface>Hovedvinduet</interface>.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Fif</guimenuitem></menuchoice> — Dette punkt viser dig et par ens brikker, der kan fjernes.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Resultater</guimenuitem></menuchoice> — Dette punkt viser en dialog med de ti bedste resultater. Dialogen viser resultaterne med brugernavn og den tid der gik med at færdiggøre spillet.</para>
+		</listitem>
+		<listitem>
+		  <para id="quit"><menuchoice><shortcut><keycap>Ctrl-Q</keycap></shortcut><guimenuitem>Afslut</guimenuitem></menuchoice> — Dette punkt gør, at du kan forlade spillet.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term><guimenu>Opsætning</guimenu></term>
+	  <listitem>
+	    <para>Menuen indeholder: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>F11</keycap></shortcut><guimenuitem>Fuldskærm</guimenuitem></menuchoice> — Dette punkt gør at du kan spille i fuldskærmtilstand. For at forlade fuldskærm trykkes på <keycap>F11</keycap> eller knappen <guibutton>Forlad fuldskærm</guibutton> på <interface>værktøjslinjen</interface>.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Værktøjslinje</guimenuitem></menuchoice> — Dette punkt afgør hvorvidt <link linkend="toolbar"><interface>værktøjslinjen</interface></link> vises eller ej. Hvis punktet er afkrydset vises <interface>værktøjslinjen</interface> på den sidste placering du havde den. Hvis punktet ikke er afkrydset vises <interface>værktøjslinjen</interface> ikke.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Indstillinger</guimenuitem></menuchoice> — Dette punkt viser dialogen <link linkend="prefs">Indstillinger</link>.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guimenu>Hjælp</guimenu></term>
+	  <listitem>
+	    <para>Menuen indeholder: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>F1</keycap></shortcut><guimenuitem>Indhold</guimenuitem></menuchoice> — Dette punkt viser denne manual.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Om</guimenuitem></menuchoice> — Dette punkt viser dig lidt grundlæggende information om <application>GNOME Mahjongg</application>, såsom forfatterens navn og programmets versionsnummer.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+
+    </sect2>
+  </sect1>
+  
+   <!-- ============= Customization ============================= -->
+
+  <sect1 id="prefs">
+    <title>Tilpasning</title>
+    <para>For at ændre programmets opsætning, vælg <guimenuitem>Indstillinger</guimenuitem> fra menuen <guimenu>Opsætning</guimenu>. Dette viser dialogen <link linkend="preferences-fig"><interface>Indstillinger</interface></link>.</para>
+    
+    <figure id="preferences-fig">
+<!-- FIXME: This dialog is the old one. -->
+<!-- ALAN: looks correct like version 2.10 to me -->
+      <title>Dialog for indstillinger</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Dialog for indstillinger.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Alle indstillingerne anvendes og gemmes øjeblikkeligt.</para>
+    
+    <para>Egenskaberne i dialogen <interface>Indstillinger</interface> er:</para>
+      
+      <itemizedlist mark="opencircle">
+	<listitem>
+	  <para><guilabel>Brikker:</guilabel> — Vælg udseendet på brikkerne fra denne liste.</para>
+	</listitem>
+	<listitem>
+	  <para><guilabel>Vælg kort:</guilabel> — Her kan du ændre sværhedsgraden på spillet ved at ændre på hvordan brikkerne er lagt op. Den mere spredte (nem) version lader dig se flere af brikkerne, mens den mere kompakte (svær) version kun lader dig se få brikker.</para>
+	</listitem>
+	<listitem>
+	  <para><guilabel>Baggrundsfarve:</guilabel> — Ændr farven på baggrunden ved at hente en <interface>farvevælger</interface> frem så du kan vælge en ny farve.</para>
+	</listitem>
+      </itemizedlist>
+
+    <para>For at ændre størrelsen på brikkerne ændrer du vinduet på den normale måde. Brikkerne vil udvides for at fylde vinduet ud.</para>
+
+  </sect1>
+  
+<!-- ALAN: Better to leave this section out than to say something unhelpful 
+and risk annoying the user.  
+ <sect1 id="bugs">
+  <title>Known Bugs and Limitations</title>
+  <para>
+   This application has no known bugs.
+  </para>
+ </sect1>
+-->
+
+ <!-- ============= Authors ============================= -->
+
+ <sect1 id="authors">
+  <title>Forfattere</title>
+  <para><application>Mahjongg</application> blev skrevet af Francisco Bustamante (<email>pancho@nuclecu.unam.mx</email>), Michael Meeks (<email>mmeeks@gnu.org</email>), Max Watson, Heinz Hempe og Philippe Chavin. Brikkerne til <application>Mahjongg</application> blev lavet af Jonathan Buzzard og Max Watson. Denne manual blev skrevet af Eric Baudais (<email>baudais@okstate.edu</email>). Hvis du ønsker at indrapportere en fejl eller komme med et forslag vedrørende <application>Mahjongg</application> eller denne manual så følg vejledningen på siden <ulink url="ghelp:user-guide?feedback-bugs" type="help">tilbagemeldinger omkring GNOME</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licens</title>
+  <para>Dette program og grafikken for brikkerne er fri software. Du kan redistribuere og/eller modificere det under de betingelser som er angivet i <citetitle>GNU General Public License </citetitle>, som udgivet af Free Software Foundation. Enten version 2 af licensen eller (efter eget valg) enhver senere version.</para>
+  <para>Dette program distribueres i håb om at det vil vise sig nyttigt, men UDEN NOGEN FORM FOR GARANTI, uden selv de underforståede garantier omkring SALGBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Yderligere detaljer kan læses i <citetitle>GNU General Public License</citetitle>.</para>
+  <para>En kopi af <citetitle>GNU General Public License</citetitle> er inkluderet som et bilag til <citetitle>GNOME's brugervejledning</citetitle>. Du kan også indhente en kopi af <citetitle>GNU General Public License</citetitle> fra the Free Software Foundation ved at besøge <ulink type="http" url="http://www.fsf.org">deres hjemmeside</ulink> eller ved at skrive til <address> Free Software Foundation, Inc. <street>51 Franklin Street, Fifth Floor</street><city>Boston</city>, <state>MA</state><postcode>02110-1301</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

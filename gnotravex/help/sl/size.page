@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="size" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#play" group="three"/>
+    <desc>Spremeni velikost igralne plošče.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-18" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  <title>Velikost igralne plošče</title>
+
+  <p>Za spremembo velikosti igralne plošče, ki spremeni zapletenost igre, v glavnem meniju <gui>Velikost</gui> izberite velikost plošče.</p>
+  <p>Izberete lahko med petimi različnimi velikostmi od 2x2 do 6x6. Privzeta velikost je 3x3.</p>
+  <note style="tip">
+    <p>V kolikor so ploščice premajhne, je mogoče s povečanjem velikosti okna povečati tudi velikost ploščic.</p>
+  </note>
+</page>

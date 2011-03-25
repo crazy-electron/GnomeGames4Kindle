@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "June 2004">
+<!ENTITY app "<application>Quadrapassel</application>">
+<!ENTITY appname "Quadrapassel">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="el">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Τεκμηρίωση για τα <application>Τουβλάκια</application></title>
+
+    <abstract role="description">
+      <para>Τα Τουβλάκια είναι μια εκδοχή για το GNOME του Tetris, του κλασσικού παιχνιδιού τακτοποίησης των κομματιών. Καθώς πέφτουν από πάνω, ο χρήστης πρέπει να τα προσανατολίσει ώστε να ταιριάξουν στα άλλα κομμάτια στο κάτω μέρος, ώστε να διαμορφώνονται πλήρεις οριζόντιες γραμμές. Σ' αυτή την περίπτωση οι γραμμές εξαφανίζονται και ο παίκτης κερδίζει πόντους.</para>
+    </abstract>
+
+    <copyright>
+      <year>2004</year>
+      <holder>Angela Boyle</holder>
+    </copyright><copyright><year>2007</year><holder>Χρήστος Μπούνταλης (mpounta@gmail.com)</holder></copyright><copyright><year>2010</year><holder>Νικόλαος Μπακαούκας (nikolaosx1@gmail.com)</holder></copyright><copyright><year>2010</year><holder>Μιχάλης Κοτσαρίνης (mk73628@gmail.com)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Έργο τεκμηρίωσης GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Δίνεται άδεια για αντιγραφή, διανομή και/ή τροποποίηση του εγγράφου υπό τους όρους της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), Έκδοση 1.1 ή μεταγενέστερη εκδιδόμενη από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Σταθερά Εδάφια, χωρίς Εξώφυλλα Κειμένου, και χωρίς Οπισθόφυλλα Κειμένου. Μπορείτε να βρείτε ένα αντίγραφο της GFDL σε αυτόν τον <ulink type="help" url="ghelp:fdl">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανεμήθηκε με αυτόν τον οδηγό.</para>
+         <para>Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του GNOME όπως διανέμεται υπό τους όρους του GFDL. Εάν επιθυμείτε να διανείμετε αυτή την τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 της άδειας.</para>
+
+	<para>Πολλά από τα ονόματα που χρησιμοποιούνται από εταιρίες για να ξεχωρίσουν τα προϊόντα και τις υπηρεσίες είναι σήματα κατατεθέν. Όπου αυτά τα ονόματα εμφανίζονται στην τεκμηρίωση GNOME, και τα μέλη της ομάδας τεκμηρίωσης GNOME έχουν γνώση αυτών, τότε αυτά αναγράφονται με κεφαλαίους χαρακτήρες ή με αρχικούς κεφαλαίους χαρακτήρες.</para>
+
+	<para>ΤΟ ΈΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ ΑΔΕΙΑΣ GNU FREE DOCUMENTATION ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: <orderedlist>
+		<listitem>
+		  <para>Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ ΠΑΡΕΧΕΤΑΙ "ΩΣ ΕΧΕΙ", ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ ΟΤΙ ΜΠΟΡΕΙ ΝΑ ΕΞΥΠΗΡΕΤΗΣΕΙ ΚΑΠΟΙΟ ΣΚΟΠΟ Η ΟΤΙ ΕΙΝΑΙ ΧΩΡΙΣ ΣΦΑΛΜΑ. ΟΛΟΚΛΗΡΗ Η ΕΥΘΥΝΗ ΓΙΑ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ ΚΑΙ ΛΕΙΤΟΥΡΓΙΚΟΤΗΤΑ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΝΗΚΕΙ ΣΕ ΕΣΑΣ. ΕΑΝ Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ Ή ΠΑΡΑΛΛΑΓΗ ΑΥΤΗΣ ΕΙΝΑΙ ΛΑΘΟΣ ΚΑΤΑ ΚΑΠΟΙΟ ΤΡΟΠΟ ΕΣΕΙΣ ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΗΝ ΕΥΘΥΝΗ ΤΗΣ ΔΙΟΡΘΩΣΗΣ. Η ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ ΠΟΥ ΣΥΝΟΔΕΥΕΙ ΑΥΤΗ ΤΗΝ ΤΕΚΜΗΡΙΩΣΗ ΕΙΝΑΙ ΑΝΑΠΟΣΠΑΣΤΟ ΚΟΜΜΑΤΙ ΑΥΤΗΣ. ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ.</para>
+		</listitem>
+		<listitem>
+		  <para>ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΝΟΜΙΚΗ ΣΥΝΘΗΚΗ, ΕΙΤΕ ΜΕΣΩ ΣΥΜΒΟΛΑΙΩΝ Ή ΑΛΛΙΩΣ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ Ο ΣΥΓΓΡΑΦΕΑΣ, Ο ΔΙΑΝΟΜΕΑΣ, Η ΑΛΛΟΣ ΣΥΝΥΠΕΥΘΥΝΟΣ ΓΙΑ ΤΗΝ ΣΥΓΓΡΑΦΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ, ΓΙΑ ΕΜΜΕΣΕΣ Η ΑΜΕΣΕΣ, ΤΥΧΑΙΕΣ Ή ΜΗ ΖΗΜΙΕΣ ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL),
+and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+	
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Angela</firstname> 
+	<surname>Boyle</surname> 
+	<affiliation> 
+	  <address> <email>anjela@u.washington.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Τεκμηρίωση για τα Τουβλάκια έκδοση 2.8</revnumber> 
+	<date>Ιούνιος 2004</date> 
+	<revdescription> 
+	  <para role="author">Angela Boyle <email>anjela@u.washington.edu</email></para>
+	  <para role="publisher">Έργο τεκμηρίωσης GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.12 του παιχνιδιού Τουβλάκια.</releaseinfo>
+    <!-- The following feedback information only applies to applications
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove this
+    section altogether -->
+    <legalnotice> 
+      <title>Ανάδραση</title> 
+      <para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με τα <application>Τουβλάκια</application>  ή αυτή την τεκμηρίωση, ακολουθήστε τις οδηγίες στη σελίδα <ulink url="ghelp:user-guide?feedback-bugs" type="help">σελίδα ανατροφοδότησης του GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Τουβλάκια</primary> 
+  </indexterm>
+
+<!-- ==============================Document Body==================-->
+
+<sect1 id="s1-intro">
+ <title>Εισαγωγή</title>
+
+<!--synopsis of game-->
+  <para>Τα Τουβλάκια προέρχονται από το κλασικό παιχνίδι κύβων, <application>Tetris</application>. Ο στόχος του παιχνιδιού είναι να δημιουργηθούν οι πλήρεις οριζόντιες γραμμές κύβων, οι οποίες θα εξαφανιστούν. Οι κύβοι έρχονται σε επτά διαφορετικές μορφές που γίνονται από τέσσερις κύβους κάθε ένας: ένας ευθύς, δύο με σχήμα L, ένα τετράγωνο, και δύο σχήμα S. Οι κύβοι πέφτουν από το πάνω κέντρο της οθόνης με τυχαία σειρά. Εσείς περιστρέφετε τους κύβους και τους κινείτε στην οθόνη για να τους ρίξετε και να δημιουργήσετε πλήρεις γραμμές. Αυξάνετε την βαθμολογία σας με τη ρίψη των κύβων γρήγορων και την ολοκλήρωση των γραμμών. Όσο η βαθμολογία σας αυξάνεται, αυξάνεται και το επίπεδο δυσκολίας, και η πτώση των κύβων γίνεται γρηγορότερη.</para>
+
+<!--running game-->
+   <para>Για να παίξετε με τα <application>Τουβλάκια</application>, επιλέξτε <menuchoice><guimenu>Εφαρμογές</guimenu><guisubmenu>Παιγνίδια</guisubmenu><guimenuitem>Τουβλάκια</guimenuitem></menuchoice>, ή πληκτρολογείστε <command>quadrapassel</command> στην γραμμή εντολών.</para>
+
+<!--part of gnome-games-->
+   <para>Tα <application>Τουβλάκια</application> συμπεριλαμβάνεται στο πακέτο <filename>gnome-games</filename>, το οποίο είναι κομμάτι του γραφικού περιβάλλοντος επιφάνειας εργασίας GNOME. Αυτό το έγγραφο περιγράφει την έκδοση 2.8 του παιχνιδιού <application>Τουβλάκια</application>.</para>
+</sect1>
+
+<sect1 id="s1-playing">
+ <title>Παίζοντας με τα <application>Τουβλάκια</application></title>
+  <para>Μπορείτε να αυξήσετε την βαθμολογία σας με δύο τρόπους: συμπληρώνοντας γραμμές και ρίχνοντας τους κύβους γρήγορα.</para>
+   <sect2 id="s2-block-moving">
+     <title>Μετακινώντας τους κύβους</title>
+      <para>Για να παίξετε το παιχνίδι, χρειάζεστε μόνο τα τέσσερα πλήκτρα βέλη.</para>
+       <itemizedlist>
+        <listitem>
+         <para>Το <keycap>Left</keycap> (Αριστερό Βέλος) και το <keycap>Right</keycap> (Δεξί Βέλος) μετακινούν τον κύβο αντίστοιχα στην οθόνη.</para>
+        </listitem>
+        <listitem>
+         <para>Το <keycap>Up</keycap> (Πάνω Βέλος) περιστρέφει τον κύβο. Η προεπιλεγμένη φοράς περιστροφής είναι προς τα αριστερά. Μπορείτε να αλλάξετε την φορά πηγαίνωντας στο <menuchoice><guimenu>Ρυθμίσεις</guimenu><guimenuitem>Επιλογές</guimenuitem></menuchoice> και ξεδιαλέγωντας το <guilabel>Περιστροφή κύβων προς τα αριστερά</guilabel>.</para>
+        </listitem>
+        <listitem>
+         <para>Το <keycap>Down</keycap> (Κάτω Βέλος) και το <keycap>Space Bar</keycap> μετακινούν το κύβο κάτω στην οθόνη γρηγορότερα. Το <keycap>Down</keycap> (Κάτω Βέλος) μετακινεί το κύβο κάτω γρηγορότερα. Το <keycap>Space-bar</keycap> μετακινεί το κύβο κατευθείαν στο χαμηλότερο δυνατό σημείο.</para>
+        </listitem>
+       </itemizedlist> 
+   </sect2>
+   <sect2 id="s2-newgame">
+     <title>Εκκίνηση Νέου Παιγνιδιού</title>
+      <para>Για να ξεκινήσετε ένα νέο παιγνίδι, πηγαίνετε στο <menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Νέο Παιγνίδι</guimenuitem></menuchoice>Το παιγνίδι θα ξεκινήσει με κύβους να πέφτουν από το κέντρο και κορυφή της οθόνης. Η προεπιλεγμένη αρχή του παιγνιδιού δεν έχει κύβους στην οθόνη και δείχνει το επόμενο κύβο ο οποίος θα πέσει στην πάνω δεξιά γωνία. <guilabel>Βαθμολογία</guilabel> δείχνει την βαθμολογία σας στο παιγνίδι. <guilabel>Γραμμές</guilabel> δείχνει τον αριθμό των γραμμών που έχετε συμπληρώσει.<guilabel>Επίπεδο</guilabel> δείχνει το επίπεδο δυσκολίας στο οποίο παίζεται εκείνη την στιγμή.</para>
+    </sect2>
+    <sect2 id="s2-pausegame">
+     <title>Παύση Παιχνιδιού</title>
+      <para>Για να σταματήσετε προσωρινά το παιγνίδι, πηγαίνετε στο <menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Παύση Παιγνιδιού</guimenuitem></menuchoice>. Μπορείτε να σταματήσετε ένα παιγνίδι μόνο όταν παίζετε. Το χρονικό όριο για το οποίο σταματάει το παιγνίδι είναι απεριόριστο. Για να συνεχίσετε το παιγνίδι, πηγαίνετε πίσω στο <menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Παύση Παιγνιδιού</guimenuitem></menuchoice>. </para>
+    </sect2>
+    <sect2 id="s2-endgame">
+     <title>Τέλος Παιγνιδιού</title>
+      <para>Επιλέξτε <menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Τέλος Παιγνιδιού</guimenuitem></menuchoice> για να τερματίσετε το τρέχον παιγνίδι το χωρίς να εγκαταλείψετε τα Τουβλάκια.</para>
+    </sect2>
+    <sect2 id="s2-quitgame">
+     <title>Κλείσιμο του παιχνιδιού <application>Τουβλάκια</application></title>
+      <para>Για να εγκαταλείψετε πλήρως την εφαρμογή <application>Τουβλάκια</application> επιλέξτε <menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Έξοδος</guimenuitem></menuchoice>. Εάν είστε στην μέση του παιγνιδιού όταν γίνεται η έξοδος, το παιγνίδι θα τελειώσει χωρίς να αποθηκευτεί η βαθμολογία σας.</para>
+    </sect2>
+    <sect2 id="s2-scoring">
+     <title>Βαθμολογία</title>
+     <para>Αυξάνετε την βαθμολογία σας με δύο μεθόδους: είτε ρίχνοντας του κύβους γρηγορότερα είτε διαγράφοντας τις ολοκληρωμένες γραμμές των κύβων. Όταν διαγράφετε γραμμές, κερδίζετε περισσότερους πόντους, αλλά ρίχνοντας τους κύβους γρηγορότερα θα στοιβάζονται και περισσότεροι. Καθώς ανεβαίνετε επίπεδα, οι κύβοι θα ξεκινήσουν να πέφτουν γρηγορότερα. Το μεγαλύτερο επίπεδο είναι το 10, στο οποίο έχετε μόλις ένα δευτερόλεπτο να διαχειριστείτε τον κάθε κύβο. </para>
+    </sect2> 
+    <sect2 id="s2-pastscores">
+     <title>Προβολή πίνακα βαθμολογίας</title>
+      <para>Μπορείτε να δείτε τις κορυφαίες 10 βαθμολογίες στον υπολογιστή σας μέσω του <menuchoice><guimenu>Παιγνίδι</guimenu><guimenuitem>Βαθμολογίες</guimenuitem></menuchoice>. Τα ονόματα των χρηστών εμφανίζονται δίπλα στην βαθμολογία τους και την ημερομηνία κατά την οποίαν έπαιξαν.</para>
+    </sect2> 
+</sect1>
+
+ 
+<sect1 id="s1-customizegame">
+ <title>Παραμετροποίηση του παιχνιδιού <application>Τουβλάκια</application></title>
+  <sect2 id="s2-customstartup">
+   <title>Παραμετροποίηση του παιγνιδιού κατά την εκκίνηση</title>
+    <para>Πηγαίνοντας στις <menuchoice><guimenu>Ρυθμίσεις</guimenu><guimenuitem>Επιλογές</guimenuitem></menuchoice>, μπορείτε να προσαρμόσετε ποικιλία χαρακτηριστικών γνωρισμάτων για το ξεκίνημα κάθε παιχνιδιού Τουβλάκια: αριθμό και πυκνότητα των προ-γεμισμένων σειρών, και αρχικό επίπεδο. Οι "Προ-γεμισμένες σειρές " αναφέρονται σε πόσες σειρές θα έχουν ήδη τους κύβους όταν αρχίζετε ένα νέο παιχνίδι.</para>
+    <sect3 id="s3-numberpfr">
+     <title>Αριθμός προ-συμπληρωμένων γραμμών:</title>
+      <para>Μπορείτε να αλλάξετε τον αριθμό σειρών που έχουν ήδη τους κύβους στο ξεκίνημα κάθε νέου παιχνιδιού με τη χρησιμοποίηση του κιβωτίου περιστροφής. Μπορείτε να αρχίσετε με μέχρι 19 σειρές που γεμίζονται εκ των προτέρων στο ξεκίνημα του παιχνιδιού σας. Ο αριθμός προεπιλογής προ-γεμισμένων σειρών είναι μηδέν.</para>
+     </sect3>
+     <sect3 id="s3-densitypfr">
+      <title>Πυκνότητα κύβων στις προ-συμπληρωμένες γραμμές:</title>
+       <para>Μπορείτε να αλλάξετε την πυκνότητα των κύβων στις προ-γεμισμένες σειρές στην αρχή κάθε παιγνιδιού. Μπορείτε να διαλέξετε πυκνότητα έως και 10 κύβους. Θα πρέπει πρώτα να διαλέξετε πόσες γραμμές θέλετε να προ-γεμίσετε κάτω από τον <guilabel>Αριθμό προ-συμπληρωμένων γραμμών</guilabel>. Η προ-επιλεγμένη πυκνότητα των κύβων είναι τρία.</para>
+     </sect3>
+     <sect3 id="s3-startlevel">
+      <title>Επίπεδο εκκίνησης</title>
+       <para>Μπορείτε να καθορίσετε το επίπεδο δυσκολίας στο οποίο ξεκινάτε. Το μεγαλύτερο επίπεδο είναι το 10, το οποίο είναι το μεγαλύτερο που μπορείτε να παίξετε. Το προεπιλεγμένο επίπεδο εκκίνησης είναι το ένα.</para>
+     </sect3>
+   </sect2>
+   <sect2 id="s3-customblocks">
+    <title>Παραμετροποίηση του παιχνιδίού</title>
+    <para>Από τις <menuchoice><guimenu>Ρυθμίσεις</guimenu><guimenuitem>Επιλογές</guimenuitem></menuchoice>, μπορείτε να παραμετροποιήσετε μια ποικιλία δυνατοτήτων σχετικών με τους κύβους: προεπισκόπηση επόμενου κύβου, χρώματα των κύβων, και περιστροφή των κύβων. </para>
+      <sect3 id="s3-sound">
+	<title>Ενεργοποίηση ήχων</title>
+	<para>Απ/Ενεργοποιήστε τον ήχο χρησιμοποιώντας αυτήν την επιλογή. Εάν παίζετε αυτό το παιγνίδι σε ένα μέρος στο οποίο βρίσκονται και άλλοι άνθρωποι, θα πρέπει πιθανότατα να τον απενεργοποιήσετε. </para>
+      </sect3>
+     <sect3 id="s3-nextblock">
+      <title>Προεπισκόπιση επόμενου κύβου</title>
+        <para>Διαλέξτε αυτή την επιλογή αν θέλετε να βλέπετε τον επόμενο κύβο που πρόκειται να πέσει. Αυτή η δυνατότητα σας βοηθάει να σχεδιάζετε την τοποθέτηση των κύβων.</para>
+     </sect3>
+     <sect3 id="s3-blockcolors">
+      <title>Τυχαία χρώματα κύβων</title>
+       <para>Διαλέξτε αν θέλετε οι ποικίλες παραμετροποιήσεις των κύβων να υπακούν σε χρωματικό κώδικα ή να είναι τυχαία χρωματισμένες. Εάν χρησιμοποιείτε το χρώμα για να αναγνωρίσετε τους κύβους, τα τυχαία χρώματα θα αυξήσουν το βαθμό δυσκολίας του παιγνιδιού. </para>
+     </sect3>
+     <sect3 id="s3-difficult-block-mode">
+      <title>Επιλέξτε δύσκολους κύβους</title>
+       <para>Διαλέξτε αυτήν την επιλογή εάν θέλετε να ενεργοποιήσετε τον τρόπο λειτουργίας του παιχνιδιού που έχει ως μοναδικό σκοπό να σπάσει τα νεύρα του παίχτη. Με αυτό το χαρακτηριστικό ενεργοποιημένο, δεν σας έρχεται ποτέ το κομμάτι που θέλετε, και πολύ σπάνια θα γεμίσει μια σειρά. Η προβολή του επόμενου τούβλου δεν αντιστοιχεί στο πραγματικό κομμάτι που θα εμφανιστεί, αλλά μάλλον αυτού που θα θέλατε να σας έρθει.</para>
+     </sect3>
+     <sect3 id="s3-block-rotation">
+      <title>Περιστροφή κύβων αριστερόστροφα</title>
+       <para>Διαλέξτε αυτήν την επιλογή αν θέλετε οι κύβοι να περιστρέφονται αριστερόστροφα ή όχι. </para>
+     </sect3>
+     <sect3 id="s3-show-target">
+      <title>Εμφάνιση της θέσης προσγείωσης του κομματιού</title>
+        <para>Εάν χρησιμοποιείτε αυτήν την δυνατότητα μία γκρι εικόνα θα σας δείχνει την τοποθεσία όπου θα προσγειωθεί ο κύβος. Αυτή η δυνατότητα είναι πολύ χρήσιμη για τους αρχάριους παίχτες, οι έμπειροι παίχτες όμως θα θεωρήσουν ότι αποσπά την προσοχή.</para>
+     </sect3>
+   </sect2>
+   <sect2 id="s2-customlook">
+    <title>Παραμετροποίηση της εμφάνισης του παιχνιδιού <application>Τουβλάκια</application></title>
+    <para>Κάτω από τις <menuchoice><guimenu>Ρυθμίσεις</guimenu><guimenuitem>Επιλογές</guimenuitem></menuchoice>, μπορείτε να παραμετροποιήσετε την εμφάνιση του παιχνιδιού <application> Τουβλάκια</application>: εικόνες για τα τουβλάκια.</para>
+     <sect3 id="s3-blockimage">
+      <title>Εικόνα κύβου</title>
+       <para>Μπορείτε να αλλάξετε το στυλ των κύβων, συμπεριλαμβανομένων εικόνας και μεγέθους. Υπάρχει μια ποικιλία προ-κατασκευασμένων στυλ. </para>
+     </sect3>
+     <sect3 id="s3-background">
+       <title>Παρασκήνιο</title> <para>Εάν σύρετε την αγαπημένη εικόνα σας στο παράθυρο <application>Τουβλάκια</application> θα χρησιμοποιηθεί ως παρασκήνιο. Εάν θέλετε ένα μόνο χρώμα ως παρασκήνιο τότε σύρετε ένα είτε μέσα από τον συλλέκτη χρώματος, είτε από το παράθυρο διαλόγου του <application>nautlilus'</application><guimenuitem>Παρασκήνια και Εμβλήματα</guimenuitem> (το επαναφορά αντικειμένου από αυτό το παράθυρο διαλόγου δουλεύει επίσης).</para>
+     </sect3>
+    </sect2>
+   </sect1>
+
+<sect1 id="authors">
+  <title>Συγγραφείς</title>
+  <para>Τα <application> Τουβλάκια</application> δημιουργήθηκαν από τον J. Marcin Gorycki το 1999 και συντηρούνται από την Ομάδα παιχνιδιών του GNOME έκτοτε. Αυτή η τεκμηρίωση γράφτηκε από την Angela Boyle. Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με αυτή την εφαρμογή ή αυτή την τεκμηρίωση, ακολουθήστε τις οδηγίες σε αυτό το <ulink url="ghelp:user-guide?feedback-bugs" type="help">έγγραφο</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+</sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="s1-license">
+  <title>Άδεια χρήσης</title>
+  <para>Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό. Επιτρέπεται η αναδιανομή ή/και τροποποίησή του υπό τους όρους της Γενικής Άδειας Δημόσιας Χρήσης GNU (<ulink type="help" url="gnome-help:gpl"><citetitle>GNU General Public License</citetitle></ulink>) όπως αυτή δημοσιεύεται από το Ίδρυμα Ελεύθερου Λογισμικού (Free Software Foundation) - είτε της έκδοσης 2 της άδειας, είτε (κατ' επιλογήν) οποιασδήποτε μεταγενέστερης έκδοσης.</para>
+  <para>Αυτό το πρόγραμμα διανέμεται με την ελπίδα οτι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ ΚΑΜΜΙΑ ΑΠΟΛΥΤΩΣ ΕΓΓΥΗΣΗ - χωρίς ακόμη και την έμμεση εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε για περισσότερες λεπτομέρειες την Γενική Άδεια Δημόσιας Χρήσης GNU (<citetitle>GNU General Public License</citetitle>).</para>
+  <para>Ένα αντίγραφο της Γενικής Δημόσιας Άδειας Χρήσης (<citetitle>GNU General Public License</citetitle>) συμπεριλαμβάνεται ως παράρτημα στον  <citetitle>Οδηγό Χρηστών GNOME </citetitle>. Μπορείτε επίσης να αποκτήσετε ένα αντίγραφο της Γενικής Δημόσιας Άδειας Χρήσης (<citetitle>GNU General Public License</citetitle>) από το Free Software Foundation επισκεπτόμενοι <ulink url="http://www.fsf.org" type="http"> την ιστοσελίδα τους</ulink> ή γράφωντας τους στο<address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

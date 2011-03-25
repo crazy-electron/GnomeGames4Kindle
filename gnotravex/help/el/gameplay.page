@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="gameplay" xml:lang="el">
+      
+  <info>
+    <link type="guide" xref="index"/>
+    <desc>Εισαγωγή στο <app>GNOME Τετραβέξ</app>.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+   <credit type="author">
+    <name>Milo Casagrande</name>
+    <email>milo@ubuntu.com</email>
+   </credit>
+   <license>
+     <p>Creative Commons Share Alike 3.0</p>
+   </license>
+  </info>
+
+  <title>Παίξιμο</title>
+
+  <p>Το <app>GNOME Τετραβέξ</app> είναι ένα απλό παιχνίδι γρίφου, σκοπός του οποίου είναι να μετακινήσετε τα κομμάτια από ένα μέρος του ταμπλώ στο άλλο, ώστε οι ίδιοι αριθμοί που εικονίζονται στα κομμάτια να εφάπτονται.</p>
+  <p>Το παιχνίδι χρονομετρείται, και ο χρόνος σας είναι το σκορ σας στο παιχνίδι. Πρέπει να μετακινήσετε όλα τα κομμάτια στο συντομότερο δυνατό χρόνο.</p>
+  <figure>
+    <title>Κύριο παράθυρο του παιχνιδιού</title>
+    <desc>Κύριο παράθυρο του GNOME Τετραβέξ</desc>
+    <media type="image" src="figures/gnotravex-main-window.png" mime="image/png" style="center">
+      <p>Κύριο παράθυρο του <app>Τετραβέξ</app>.</p>
+    </media>
+  </figure>
+
+</page>

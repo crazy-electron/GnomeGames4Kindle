@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+export LD_LIBRARY_PATH="%pkglibdir%${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+/usr/bin/env seed %pkgdatadir%/lightsoff/main.js

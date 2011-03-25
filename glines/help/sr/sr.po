@@ -1,0 +1,678 @@
+# Serbian translation of gnome-games
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2009.
+#
+# This file is distributed under the same license as the gnome-games package.
+#
+# Translated on 2009-10-23 by Бранко Кокановић <branko.kokanovic@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games master\n"
+"POT-Creation-Date: 2009-10-27 22:12+0000\n"
+"PO-Revision-Date: 2009-10-27 23:25+0100\n"
+"Last-Translator: Бранко Кокановић <branko.kokanovic@gmail.com>\n"
+"Language-Team: Serbian <gnom@prevod.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n%"
+"10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/glines.xml:190(None)
+msgid ""
+"@@image: 'figures/glines-startgame.png'; md5=e6e58f72dc4802d89a45a7726f4c7fd7"
+msgstr ""
+"@@image: 'figures/glines-startgame.png'; md5=e6e58f72dc4802d89a45a7726f4c7fd7"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/glines.xml:209(None)
+msgid ""
+"@@image: 'figures/glines-gameover.png'; md5=949d09a01ee02944bf3f278ce1ebc2ba"
+msgstr ""
+"@@image: 'figures/glines-gameover.png'; md5=949d09a01ee02944bf3f278ce1ebc2ba"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/glines.xml:329(None)
+msgid ""
+"@@image: 'figures/preferences.png'; md5=745336aefd6ade740f6064bdf4121379"
+msgstr ""
+"@@image: 'figures/preferences.png'; md5=745336aefd6ade740f6064bdf4121379"
+
+#: C/glines.xml:32(title)
+msgid "<application>Five or More</application> Manual"
+msgstr "Упутство за <application>Пет или више</application>"
+
+#: C/glines.xml:34(para)
+msgid ""
+"To play Five or More one must align colored pieces as the board gets filled "
+"with randomly placed pieces. When five or more pieces of the same color get "
+"lined up, they disappear. The game ends when the board gets filled up all "
+"the way."
+msgstr ""
+"Циљ игре Пет или више је да поравнате делове исте боје. За то време се табла пуни "
+"новим, случајно постављеним деловима. Када се пет или више делова исте боје "
+"поравнају, они нестају. Игра се завршава када се табла попуни до краја."
+
+#: C/glines.xml:43(year)
+msgid "2000-2002"
+msgstr "2000-2002"
+
+#: C/glines.xml:44(holder)
+msgid "Emese Kovács"
+msgstr "Emese Kovács"
+
+#: C/glines.xml:59(publishername) C/glines.xml:72(orgname)
+#: C/glines.xml:100(para)
+msgid "GNOME Documentation Project"
+msgstr "Пројекат Гномове документације"
+
+#: C/glines.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Дозвољено умножавање, ширење, вршење измена овог документа под условима Гну-"
+"ове Слободне Документационе Дозволе (ГСДД), верзије 1.1 или било које "
+"накнадне верзије без непромењивих одељака, текста на насловној и последњој "
+"страни, а коју је објавила Задужбина Слободног Софтвера. Примерак ГСДД-е "
+"можете пронаћи на овој <ulink type=\"help\" url=\"ghelp:fdl\">адреси</ulink> "
+"или у датотеци COPYING-DOCS која је приложена уз ово упутство."
+
+#: C/glines.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Ово упутство је део скупа Гномових докумената објављених под GFDL. Уколико "
+"желите да расподељујете ово упутство одвојено од скупа, то можете урадити "
+"додавањем примерка лиценце документу, како је описано у одељку 6 саме "
+"лиценце."
+
+#: C/glines.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Многи називи које компаније користе у циљу препознатљивости својих производа "
+"и услуга представљају робне марке. Када (уколико) се такви називи појављују"
+"(спомињу) у било којем Гномовом документу, а чланови Гномовог "
+"документационог пројекта имају сазнања о томе, тада су називи исписани "
+"великим словима или са великим почетним словима."
+
+#: C/glines.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"ДОКУМЕНТ ЈЕ ДОСТУПАН СА СВИМ СВОЈИМ ДОБРИМ И ЛОШИМ СТРАНАМА БЕЗ БИЛО КАКВОГ "
+"ЈАМСТВА, БИЛО ОНО ИЗРЕЧЕНО ИЛИ НЕ, УКЉУЧУЈУЋИ БЕЗ ОГРАНИЧЕЊА, ЈАМСТВО ДА ЈЕ "
+"ОВАЈ ДОКУМЕНТ ИЛИ ЊЕГОВА ИЗМЕЊЕНА ВЕРЗИЈА БЕЗ НЕДОСТАТАКА, СПРЕМАН ЗА "
+"ТРЖИШТЕ, СВРСИСХОДАН И НЕ НАРУШАВА ЗАКОНСКЕ НОРМЕ. ЦЕЛОКУПАН РИЗИК КОЈИ СЕ "
+"ОДНОСИ НА КВАЛИТЕТ, ТАЧНОСТ И ДОМЕТ (УЧИНАК) ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ "
+"ВЕРЗИЈЕ СНОСИ КОРИСНИК. УКОЛИКО СЕ У БИЛО КОЈЕМ ДОКУМЕНТУ ИЛИ ЊЕГОВОЈ "
+"ИЗМЕЊЕНОЈ ВЕРЗИЈИ ПОЈАВИ НЕДОСТАТАК (ГРЕШКА) БИЛО КОЈЕ ВРСТЕ, КОРИСНИК (А НЕ "
+"АУТОР ИЗВОРНЕ ВЕРЗИЈЕ, БИЛО КОЈИ ДРУГИ АУТОР ИЛИ САРАДНИК) СНОСИ СВЕ "
+"ТРОШКОВЕ НЕОПХОДНОГ СЕРВИСИРАЊА, ПОПРАВКЕ ИЛИ ИСПРАВКЕ. ОВО ОГРАНИЧЕЊЕ "
+"ЈАМСТВА ПРЕДСТАВЉА САСТАВНИ ДЕО ОВЕ ДОЗВОЛЕ. УПОТРЕБА БИЛО КОЈЕГ ДОКУМЕНТА "
+"ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ НИЈЕ ДОЗВОЉЕНА ОСИМ ПОД УСЛОВИМА ОВОГ ОГРАНИЧЕЊА "
+"ЈАМСТВА."
+
+#: C/glines.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"НИ ПОД КАКВИМ ОКОЛНОСТИМА ИЛИ ЗАКОНУ, БИЛО ЗБОГ КРШЕЊА (ИЛИ НЕМАРА) УГОВОРА, "
+"ИЛИ НА БИЛО КОЈИ ДРУГИ НАЧИН, АУТОР (ПРВОБИТНЕ ВЕРЗИЈЕ), САРАДНИК ИЛИ "
+"ИСПОРУЧИВАЛАЦ ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ, НИТИ ДОБАВЉАЧ БИЛО КОЈЕ "
+"ОД НАВЕДЕНИХ СТРАНА НЕЋЕ СНОСИТИ МАТЕРИЈАЛНУ ОДГОВОРНОСТ ЗА НАСТАЛА "
+"ДИРЕКТНА, ИНДИРЕКТНА, ПОСЕБНА, СЛУЧАЈНА ИЛИ ТИМЕ НАСТАЛА ОШТЕЋЕЊА БИЛО КОЈЕ "
+"ВРСТЕ УКЉУЧУЈУЋИ, БЕЗ ОГРАНИЧЕЊА, ШТЕТУ НАНЕСЕНУ УГЛЕДУ ФИРМЕ, ПРЕСТАНКУ "
+"ПРОИЗВОДЊЕ, ОТКАЗИВАЊЕ РАДА РАЧУНАРА ИЛИ КВАРА КАО И ЗА СВЕ ОСТАЛЕ ШТЕТЕ ИЛИ "
+"ГУБИТКЕ НАСТАЛЕ УСЛЕД КОРИШЋЕЊА ДОКУМЕНТА И ЊЕГОВИХ ИЗМЕЊЕНИХ ВЕРЗИЈА ЧАК И "
+"АКО ЈЕ ОШТЕЋЕНА СТРАНА БИЛА ОБАВЕШТЕНА О МОГУЋНОСТИ НАСТАНКА ТЕ ШТЕТЕ."
+
+#: C/glines.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"ОВАЈ ДОКУМЕНТ И ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СУ ДОСТУПНЕ ПОД УСЛОВИМА ГНУ-ОВЕ "
+"СЛОБОДНЕ ДОКУМЕНТАЦИОНЕ ДОЗВОЛЕ УЗ ДОДАТНУ САГЛАСНОСТ ДА: <placeholder-1/>"
+
+#: C/glines.xml:69(firstname)
+msgid "Emese"
+msgstr "Emese"
+
+#: C/glines.xml:70(surname)
+msgid "Kovács"
+msgstr "Kovács"
+
+#: C/glines.xml:73(email)
+msgid "emese@gnome.hu"
+msgstr "emese@gnome.hu"
+
+#: C/glines.xml:94(revnumber)
+msgid "Five or More Manual V2.8"
+msgstr "Упутство за Пет или више v2.8"
+
+#: C/glines.xml:95(date)
+msgid "September 2004"
+msgstr "Септембар 2004."
+
+#: C/glines.xml:97(para)
+msgid "Emese Kovács <email>emese@gnome.hu</email>"
+msgstr "Emese Kovács <email>emese@gnome.hu</email>"
+
+#: C/glines.xml:105(releaseinfo)
+msgid "This manual describes version 2.12 of Five or More."
+msgstr "Ово упуство је написано за Пет или више 2.12."
+
+#: C/glines.xml:112(title)
+msgid "Feedback"
+msgstr "Примедбе"
+
+#: C/glines.xml:113(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Five or "
+"More</application> application or this manual, follow the directions in the "
+"<ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback "
+"Page</ulink>."
+msgstr ""
+"Да бисте пријавили грешку или дали предлог у вези програма <application>Пет "
+"или више</application> или његовог упутства, пратите смернице на <ulink url="
+"\"ghelp:user-guide?feedback-bugs\" type=\"help\">Гномовој страни за "
+"примедбе</ulink>."
+
+#: C/glines.xml:123(primary)
+msgid "Five or More"
+msgstr "Пет или више"
+
+#: C/glines.xml:130(title)
+msgid "Introduction"
+msgstr "Увод"
+
+#: C/glines.xml:132(para)
+msgid ""
+"<application>Five or More</application>, is the Gnome port of the once "
+"popular Windows game called <application>Color Lines</application> The "
+"game's objective is to align as often as possible five or more objects of "
+"the same color and shape causing them to disappear. Play as long as "
+"possible, and be #1 in the High Scores."
+msgstr ""
+"<application>Пет или више</application> је Гномова верзија некад популарне "
+"игре за Windows зване <application>Color Lines</application>. Циљ игре је "
+"поравњавати, што је чешће могуће, пет или више објеката исте боје и облика. "
+"Поравнати објекти тиме нестају. Игра се игра док год има расположивих потеза "
+"да бисте били број 1 на листи најбољих резултата."
+
+#: C/glines.xml:141(para)
+msgid ""
+"To run <application>Five or More</application>, select <guimenuitem>Five or "
+"More</guimenuitem> from the <guisubmenu>Games</guisubmenu> submenu of the "
+"<guimenu>Main Menu</guimenu>, or type <command>glines</command> on the "
+"command line."
+msgstr ""
+"Да бисте покренули <application>Пет или више</application>, одаберите "
+"<guisubmenu>Игре</guisubmenu><guimenuitem>Пет или више</guimenuitem> из "
+"<guimenu>Главног менија</guimenu>, или откуцајте <command>glines</command> "
+"у командној линији."
+
+#: C/glines.xml:149(para)
+msgid ""
+"<application>Five or More</application> is included in the <filename>GNOME-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.8 of <application>Five or More</"
+"application>."
+msgstr ""
+"<application>Пет или више</application> је укључена у <filename>gnome-games</"
+"filename> пакет, који је део Гномовог радног окружења. Овај документ је "
+"написан за издање 2.8 програма <application>Пет или више</application>."
+
+#: C/glines.xml:163(title)
+msgid "Playing Five or More"
+msgstr "Играње Пет или више"
+
+#: C/glines.xml:164(para)
+msgid ""
+"Playing <application>Five or More</application> is easy. At startup, you "
+"find yourself with five objects randomly positioned on the board. Each turn, "
+"you are allowed to move one object. You can move it anywhere on the board as "
+"long as there is a clear path. Afterward, the computer drops more objects at "
+"random positions (the exact number depends on the size of the game). You can "
+"preview the next objects to be dropped in the upper left corner of the "
+"game's window. If you manage to align five objects of the same shape and "
+"color, they disappear and you are given an extra move before more objects "
+"drop."
+msgstr ""
+"Играње игре <application>Пет или више</application> је лако. На почетку "
+"имате пет случајно постављених објеката на табли. У сваком кругу, дозвољено "
+"вам је да померите један објекат. Можете га померити било где на табли, али "
+"морате да имате слободан пут до места на које желите да га померите. После "
+"тога, рачунар убацује још објеката на случајне позиције (тачан број нових "
+"објеката зависи од величине табле). У горњем левом углу прозора игре можете "
+"видети објекте који ће наредни бити убачени. Ако успете да поравнате пет "
+"објеката исте боје и облика, они нестају, а вама се даје шанса за додатни "
+"потез пре него што се објекти поново убаце."
+
+#: C/glines.xml:178(title)
+msgid "Basic usage"
+msgstr "Основно коришћење"
+
+#: C/glines.xml:179(para)
+msgid ""
+"Starting <application>Five or More</application> presents you with the "
+"<interface>game board</interface> and a new game starts. What it looks like "
+"is shown in <xref linkend=\"mainwindow-fig\"/>."
+msgstr ""
+"Покретањем игре <application>Пет или више</application> се приказује "
+"<interface>табла за игру</interface> и нова игра почиње. <xref linkend="
+"\"mainwindow-fig\"/> приказује како то изгледа."
+
+#: C/glines.xml:186(title)
+msgid "The main window when you start a game."
+msgstr "Главни прозор када покренете игру."
+
+#. ==== End of Figure ====
+#: C/glines.xml:197(para)
+msgid ""
+"As the game progresses, the board gets more and more crowded (unless you are "
+"really good...) and making objects disappear gets harder and harder. The "
+"game is over, when the board is full."
+msgstr ""
+"Како игра напредује, табла се све више и више пуни (осим ако нисте баш "
+"добри...) и постаје све теже и теже да поравњате објекате. Када се табла "
+"напуни до краја, игра је готова."
+
+#: C/glines.xml:205(title)
+msgid "Game over!"
+msgstr "Игра је готова!"
+
+#: C/glines.xml:222(title)
+msgid "Playing the Game"
+msgstr "Играње игре"
+
+#: C/glines.xml:223(para)
+msgid ""
+"A game of <application>Five or More</application> begins with some random "
+"objects on the board."
+msgstr ""
+"Игра <application>Пет или више</application> започиње са неколико случајних "
+"објеката на табли."
+
+#: C/glines.xml:227(para)
+msgid ""
+"To make a move, click on one of the objects. When an object is activated it "
+"starts rotating (or doing something else depending on the theme, but let us "
+"not anticipate…). You can then select its destination by clicking an empty "
+"square. If the path to the destination is clear the activated item travels "
+"there. If the destination square is occupied by another object nothing will "
+"be moved and the selection will be transferred to the new object. If the "
+"path is not clear (you cannot jump objects over obstacles!) the application "
+"prints a warning in the status bar (bottom of the window) and the original "
+"object remains active."
+msgstr ""
+"Да бисте одиграли потез, кликните на неки од објеката. Када изаберете објекат, "
+"он почиње да се окреће (или крене да ради нешто друго у зависности "
+"од теме, али хајде да не нагађамо...). Након тога можете изабрати одредиште "
+"кликом на празан квадрат. Ако је путања до одредишта чиста, одабрани "
+"објекат путује до њега. Ако је одредиште заузето неким другим објектом, нема "
+"померања и уместо првог се одабира тај други објекат. Ако путања до "
+"одредишта није чиста (не можете прескакати друге објекте као да су "
+"препреке!), програм исписује упозорење у траци стања (на дну прозора), а "
+"првобитни објекат остаје изабран."
+
+#: C/glines.xml:239(para)
+msgid ""
+"As objects disappear, you get points. The points you score depends on the "
+"number of objects you managed to align (see <xref linkend=\"glines-table1\"/"
+">). Your score is shown in the upper right corner of the window."
+msgstr ""
+"Кад објекти нестану, добијате поене. Број поена које добијате зависи од "
+"броја објеката које сте успели да поравнате (<xref linkend=\"glines-table1\"/"
+">). Ваш резултат је приказан у горњем десном углу прозора."
+
+#: C/glines.xml:248(title) C/glines.xml:344(title)
+msgid "Scoring in Five or More"
+msgstr "Поени у Пет или више"
+
+#: C/glines.xml:252(entry)
+msgid "Number of objects"
+msgstr "Број објеката"
+
+#: C/glines.xml:253(entry)
+msgid "Score given"
+msgstr "Добијених поена"
+
+#: C/glines.xml:258(entry) C/glines.xml:360(entry)
+msgid "5"
+msgstr "5"
+
+#: C/glines.xml:259(entry) C/glines.xml:278(entry)
+msgid "10"
+msgstr "10"
+
+#: C/glines.xml:262(entry)
+msgid "6"
+msgstr "6"
+
+#: C/glines.xml:263(entry) C/glines.xml:286(entry)
+msgid "12"
+msgstr "12"
+
+#: C/glines.xml:266(entry) C/glines.xml:358(entry) C/glines.xml:359(entry)
+#: C/glines.xml:367(entry) C/glines.xml:374(entry) C/glines.xml:375(entry)
+msgid "7"
+msgstr "7"
+
+#: C/glines.xml:267(entry)
+msgid "18"
+msgstr "18"
+
+#: C/glines.xml:270(entry)
+msgid "8"
+msgstr "8"
+
+#: C/glines.xml:271(entry)
+msgid "28"
+msgstr "28"
+
+#: C/glines.xml:274(entry) C/glines.xml:365(entry) C/glines.xml:366(entry)
+msgid "9"
+msgstr "9"
+
+#: C/glines.xml:275(entry)
+msgid "42"
+msgstr "42"
+
+#: C/glines.xml:279(entry)
+msgid "82"
+msgstr "82"
+
+#: C/glines.xml:282(entry)
+msgid "11"
+msgstr "11"
+
+#: C/glines.xml:283(entry)
+msgid "108"
+msgstr "108"
+
+#: C/glines.xml:287(entry)
+msgid "138"
+msgstr "138"
+
+#: C/glines.xml:290(entry)
+msgid "13"
+msgstr "13"
+
+#: C/glines.xml:291(entry)
+msgid "172"
+msgstr "172"
+
+#: C/glines.xml:294(entry)
+msgid "14"
+msgstr "14"
+
+#: C/glines.xml:295(entry)
+msgid "210"
+msgstr "210"
+
+#: C/glines.xml:302(title)
+msgid "Using the Keyboard"
+msgstr "Коришћење тастатуре"
+
+#: C/glines.xml:303(para)
+msgid ""
+"Instead of using the mouse you can use the keyboard to play "
+"<application>Five or More</application>. To use the keyboard, hit an arrow "
+"key and a cursor will appear near the center of the board. The arrow keys "
+"will move the cursor. When the cursor is over the object you want to move, "
+"use the spacebar to select it. Then shift the cursor to the object's "
+"destination and hit the space bar again to move the object."
+msgstr ""
+"Уместо миша, можете да користите тастатуру за играње <application>Пет или "
+"више</application>. Да бисте користили тастатуру, притисните било који "
+"тастер са стрелицом и показивач ће се појавити око центра табле. Тастери са "
+"стрелицама ће померати показивач, а када је показивач изнад неког објекта, "
+"искористите тастер Space да га означите. Онда померите показивач до "
+"одредишта и поново притисните тастер Space да померите објекат."
+
+#: C/glines.xml:304(para)
+msgid ""
+"If you start using the mouse again, the cursor will disappear. The cursor "
+"will reappear if you use the arrow keys again."
+msgstr ""
+"Ако почнете опет да користите миша, показивач ће нестати. Ако поново "
+"притиснете неки тастер са стрелицама, опет ће бити приказан."
+
+#: C/glines.xml:317(title)
+msgid "Customizing the Game"
+msgstr "Прилагођавање игре"
+
+#: C/glines.xml:318(para)
+msgid ""
+"You can configure <application>Five or More</application> by clicking on "
+"<guimenuitem>Preferences</guimenuitem> in the applications "
+"<guimenu>Settings</guimenu> menu. The following <interface>dialog</"
+"interface> will appear:"
+msgstr ""
+"Можете подесити <application>Пет или више</application> преко ставке "
+"<guimenuitem>Опције</guimenuitem> из менија <guimenu>Подешавања</guimenu>. "
+"Приказаће се следећи <interface>прозорчић</interface>:"
+
+#: C/glines.xml:326(title)
+msgid "Preferences"
+msgstr "Поставке"
+
+#. ==== End of Figure ====
+#: C/glines.xml:335(para)
+msgid ""
+"You can select different object styles and background colors in the "
+"<guimenu>Themes</guimenu> section. If you find it difficult distinguishing "
+"the colours, try the shapes theme."
+msgstr ""
+"Можете одабрати другачије стилове објеката и боје позадине у одељку "
+"<guimenu>Теме</guimenu>. Ако приметите да вам је тешко да распознајете боје, "
+"пробајте тему са облицима."
+
+#: C/glines.xml:340(para)
+msgid ""
+"The <guimenu>Board Size</guimenu> section lets you select the size of the "
+"board. Each size has a slightly different balance: larger sizes give you "
+"more space to move, but more objects arrive each turn. The parameters for "
+"each size are given in <xref linkend=\"table-sizes\"/>."
+msgstr ""
+"Одељак <guimenu>Величина табле</guimenu> вам дозвољава да одаберете жељену "
+"величину табле. Свака од величина има другачији нагласак: велике табле вам "
+"дају више простора за померање, али и више објеката долази у сваком кругу. "
+"<xref linkend=\"table-sizes\"/> приказује параметре за све величине табли."
+
+#: C/glines.xml:348(entry)
+msgid "Size"
+msgstr "Величина"
+
+#: C/glines.xml:349(entry)
+msgid "Width"
+msgstr "Ширина"
+
+#: C/glines.xml:350(entry)
+msgid "Height"
+msgstr "Висина"
+
+#: C/glines.xml:351(entry)
+msgid "Number of Types"
+msgstr "Број различитих типова"
+
+#: C/glines.xml:352(entry)
+msgid "Objects per Turn"
+msgstr "Објеката по кругу"
+
+#: C/glines.xml:357(entry)
+msgid "Small"
+msgstr "Мало"
+
+#: C/glines.xml:361(entry) C/glines.xml:368(entry)
+msgid "3"
+msgstr "3"
+
+#: C/glines.xml:364(entry)
+msgid "Medium"
+msgstr "Средње"
+
+#: C/glines.xml:371(entry)
+msgid "Large"
+msgstr "Велико"
+
+#: C/glines.xml:372(entry)
+msgid "20"
+msgstr "20"
+
+#: C/glines.xml:373(entry)
+msgid "15"
+msgstr "15"
+
+#: C/glines.xml:381(para)
+msgid ""
+"You can speed up the movement of the objects by checking the Use fast moves "
+"box in the <guimenu>General</guimenu> preferences section."
+msgstr ""
+"Можете убрзати померања објеката опцијом „Користи брзе потезе“ у одељку "
+"<guimenu>Основно</guimenu> из поставки."
+
+#: C/glines.xml:385(para)
+msgid ""
+"Any changes you make are instantly applied and remembered for the next time "
+"you run <application>Five or More</application>."
+msgstr ""
+"Свака промена коју начините се одмах примењује и памти за следећи пут када "
+"покренете <application>Пет или више</application>."
+
+#: C/glines.xml:391(title)
+msgid "How to create new themes"
+msgstr "Како да направите нове теме"
+
+#: C/glines.xml:392(para)
+msgid ""
+"Each theme consists of a single PNG image file. This image consists of an "
+"array of seven rows, corresponding to the different object colors/shapes, "
+"and four columns, each of which is a frame in the animation of the object. "
+"The actual size of the image is irrelevant, it will be rescaled, but the sub-"
+"images must form a four by seven grid to get the correct effect. When using "
+"SVG remember that the image size is the page size, if your grid does not "
+"fill the page try shrinking the page size. Use an existing theme as a guide."
+msgstr ""
+"Свака тема се састоји од једне PNG слике. Ова слика садржи низ од седам "
+"редова, који одговарају различитим објектима/облицима, и четири колоне, где "
+"је свака по један кадар код анимације објекта. Конкретна величина слике није "
+"битна јер ће бити смањена и проширена по потреби, али унутрашње слике морају "
+"да формирају мрежу четири са седам да би се постигао правилан ефекат. "
+"Запамтите да је код коришћења SVG формата величина слика једнака величини "
+"стране. Ако вам мрежа не попуњава целу страну, пробајте да смањите величину "
+"стране. Искористите постојеће теме као водич."
+
+#: C/glines.xml:422(title)
+msgid "Authors"
+msgstr "Аутори"
+
+#: C/glines.xml:423(para)
+msgid ""
+"<application>Five or More</application> was written by Róbert Szókovács "
+"(<email>szo@appaloosacorp.hu</email>) and Szabolcs Bán (<email>shooby@gnome."
+"hu</email>). This manual was written by Emese Kovács (<email>emese@gnome.hu</"
+"email>). For information on how to make comments, suggestions and to report "
+"bugs please see the <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
+"\">feedback document</ulink>."
+msgstr ""
+"<application>Пет или више</application> су написали Róbert Szókovács "
+"(<email>szo@appaloosacorp.hu</email>) и Szabolcs Bán (<email>shooby@gnome."
+"hu</email>). Ово упутство је написао Emese Kovács (<email>emese@gnome.hu</"
+"email>). Да бисте пријавили грешке или дали предлог у вези овог програма или "
+"његовог упутства, пратите смернице из <ulink url=\"ghelp:user-guide?feedback-"
+"bugs\" type=\"help\">документа</ulink>."
+
+#: C/glines.xml:448(title)
+msgid "License"
+msgstr "Лиценца"
+
+#: C/glines.xml:449(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <citetitle>GNU General Public License</citetitle> as "
+"published by the Free Software Foundation; either version 2 of the License, "
+"or (at your option) any later version."
+msgstr ""
+"Овај програм је слободан софтвер; можете га расподељивати и/или га мењати "
+"под условима <citetitle>ГНУ Опште Јавне Лиценце (GNU GPL)</citetitle> како "
+"је објављује Задужбина за Слободни Софтвер (FSF); било верзије 2 те Лиценце, "
+"било (по вашем нахођењу) било које новије верзије."
+
+#: C/glines.xml:456(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"Овај програм се расподељује у нади да ће бити од користи, али БЕЗ ИКАКВИХ "
+"ГАРАНЦИЈА; чак и без подразумеване гаранције КОРИСНОСТИ или ПРИЛАГОЂЕНОСТИ "
+"ОДРЕЂЕНОЈ НАМЕНИ.  Видите <citetitle>ГНУ Општу Јавну Лиценцу</citetitle> за "
+"више детаља."
+
+#: C/glines.xml:462(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink url=\"http://www.fsf.org\" "
+"type=\"http\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"Примерак <citetitle>ГНУ Опште Јавне Лиценце</citetitle> је укључен у додатку "
+"<citetitle>Гномовог корисничког водича</citetitle>. Такође можете набавити "
+"примерак <citetitle>ГНУ Опште Јавне Лиценце</citetitle> од Задужбине за "
+"Слободни Софтвер одлазећи на <ulink url=\"http://www.fsf.org\" type=\"http"
+"\">њихову веб адресу</ulink> или пишући на <address> Free Software "
+"Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</"
+"city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</"
+"country></address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/glines.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+"Бранко Кокановић <branko.kokanovic@gmail.com>\n"
+"\n"
+"Prevod.org — превод на српски језик"

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="winning" xml:lang="zh_CN">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="hint"/>
+    <link type="seealso" xref="usage"/>
+    <desc>赢得游戏的一些小技巧。</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-26" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  
+  <title>赢得 <app>GNOME 四邻</app></title>
+  
+  <note>
+    <p>下面的技巧并不能保证您赢得游戏，他们只是简单地帮帮您。</p>
+  </note>
+  
+  <section id="winning-single">
+    <title>看看有没有单独的数字</title>
+    <p>游戏开始的时候，看看有没有单独的数字，或者没法在旁边放置任何块的数字。</p>
+    <p>如果找到这这样的一个数字，那么从这一块开始会十分不错，你知道应该把它放在哪里。</p>
+    <p>注意盘面的尺寸越大，越难找到这样的数字。</p>
+  </section>
+  <!-- This is just an idea... need to think about it... -->
+  <section id="winning-share">
+    <title>想要分享一条技巧？</title>
+    <p>如果您有什么关于 <app>GNOME 四邻</app> 或者其他 GNOME 游戏的小技巧，请写信至 gnome-doc-list@gnome.org。我们会把它加到这里的！</p>
+  </section>
+</page>

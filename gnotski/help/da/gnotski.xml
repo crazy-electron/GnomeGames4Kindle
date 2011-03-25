@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.10">
+<!ENTITY date "March 2004">
+<!ENTITY app "<application>Klotski</application>">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="da">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Manual til <application>Klotski</application></title>
+
+    <abstract role="description">
+      <para>Klotski er et puslespil, hvis formål er at få de mønstrede blokke til markøren, hvilket gøres ved at flytte blokkene der er i vejen.</para>
+    </abstract>
+
+    <copyright>
+      <year>2002</year> 
+      <holder>Andrew Sobala</holder> 
+    </copyright><copyright><year>2009.</year><holder>Joe Hansen (joedalton2@yahoo.dk)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOME-dokumentationsprojekt</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Der gives tilladelse til at kopiere, distribuere og/eller ændre dette dokument under betingelserne i GNU Free Documentation License (GFDL), version 1.1 eller enhver senere version udgivet af Free Software Foundation; uden invariante afsnit, forsidetekster, samt bagsidetekster. Du kan se en kopi af GFDL her <ulink type="help" url="ghelp:fdl">link</ulink>, eller i filen COPYING-DOCS som distribueres sammen med denne manual.</para>
+         <para>Denne manual er en del af den samling af GNOME-manualer som udgives under GFDL. Hvis du ønsker at distribuere denne manuel adskilt fra samlingen, kan du gøre dette ved at tilføje en kopi af licensen til manualen, som beskrevet i afsnit 6 af licensen.</para>
+
+	<para>En stor del af de navne som anvendes af firmaer til at identificere deres produkter og tjenester hævdes som værende varemærker. Hvor disse navne fremgår i en hvilken som helst GNOME-dokumentation, og medlemmerne af GNOME-dokumentationsprojeket er gjort opmærksom på disse varemærker, så er disse navne vist med store bogstaver eller stort begyndelsesbogstav.</para>
+
+	<para>DOKUMENTET OG ÆNDREDE VERSIONER AF DOKUMENTET STILLES TIL RÅDIGHED UNDER GNU FREE DOCOMENTATION LICENSE MED FØLGENDE BETINGELSER: <orderedlist>
+		<listitem>
+		  <para>DETTE DOKUMENT GØRES TILGÆNGELIGT SÅDAN SOM DET ER, UDEN NOGEN FORM FOR GARANTI, HVERKEN UDTALT ELLER ANTYDET, DERIBLANDT, UDEN BEGRÆNSNINGER, GARANTIER OM AT DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET ER FRIT FOR DEFEKTER, PASSENDE TIL ET BESTEMT FORMÅL ELLER IKKE-KRÆNKENDE. DU HÆFTER SELV FOR HELE RISIKOEN VEDRØRENDE KVALITET, KORREKTHED OG YDELSE FOR DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET. SKULLE ET DOKUMENT, ELLER EN ÆNDRET VERSION AF ET DOKUMENT VISE SIG AT VÆRE DEFEKT PÅ EN HVILKEN SOM HELST MÅDE, HÆFTER DU FOR BETALING FOR EVENTUEL NØDVENDIG SERVICE, REPARATION ELLER KORREKTION (OG IKKE HVERKEN DEN OPRINDELIGE FORFATTER, SKRIBENT ELLER NOGEN ANDEN BIDRAGYDER). DENNE ERKLÆRING OM GARANTIFORBEHOLD ER EN ESSENTIEL DEL AF DENNE LICENS. INGEN BRUG AF NOGET DOKUMENT ELLER ÆNDRET VERSION AF DOKUMENTET ER AUTORISERET HERUNDER BORTSET FRA DENNE ANSVARSFRASKRIVELSE OG</para>
+		</listitem>
+		<listitem>
+		  <para>UNDER INGEN OMSTÆNDIGHEDER OG UNDER INGEN JURIDISK TEORI, UANSET OM DET ER EN BEVIDST SKADENDE HANDLING (INKLUSIVE UFORSVARLIGHED) ELLER PÅ HVILKEN SOM HELST ANDEN MÅDE, KAN FORFATTEREN, SKRIBENT, BIDRAGYDERE, DISTRIBUTØRER ELLER FORSYNER AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER GØRES ANSVARLIG OVERFOR NOGEN PERSON FOR NOGEN DIREKTE, INDIREKTE, SPECIEL, TILFÆLDIG ELLER FØLGENDE SKADE PÅFØRT NOGEN INKLUSIVE, UDEN BEGRÆNSNING, SKADE SOM FØLGE AF TAB AF RYGTE, ARBEJDSSTOP, COMPUTERFEJL ELLER -SVIGT, ELLER ENHVER ANDEN FORM FOR SKADE ELLER TAB SOM ER OPSTÅET I FORBINDELSE MED BRUG AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER HERAF, SELV HVIS EN SÅDAN PART HAR VÆRET INFORMERET OM MULIGHEDEN FOR SÅDANNE SKADER.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+		<firstname>Andrew</firstname> 
+		<surname>Sobala</surname> 
+		<affiliation> 
+	  		<orgname>GNOME-dokumentationsprojekt</orgname> 
+	  		<address> <email>andrew@sobala.net</email> </address> 
+		</affiliation> 
+      </author> 
+
+	<othercredit role="author">
+		<firstname>Lars</firstname>
+		<surname>Rydlinge</surname>
+		<affiliation>
+			<orgname>GNOME-projektet</orgname>
+			<address> <email>Lars.Rydlinge@HIG.SE</email> </address>
+		</affiliation>
+	</othercredit>
+
+	<othercredit role="maintainer">
+		<firstname>Ross</firstname>
+		<surname>Burton</surname>
+		<affiliation>
+			<orgname>GNOME-projektet</orgname>
+			<address> <email>ross@burtonini.com</email> </address>
+		</affiliation>
+	</othercredit>
+
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->  
+    <revhistory>
+<!--
+      <revision> 
+		<revnumber>Full title of previous manual.</revnumber> 
+		<date>Release date of previous manual.</date> 
+		<revdescription> 
+	  		<para role="author">Documentation Writer 1 
+	    	<email>docwriter1@gnome.org</email>
+	  		</para>
+	  		<para role="publisher">GNOME Documentation Project</para>
+		</revdescription> 
+      </revision> 
+-->
+
+	<revision>
+		<revnumber>Version 2.0</revnumber>
+		<date>13. august 2002</date>
+		<revdescription>
+	  		<para role="author">Andrew Sobala <email>andrew@sobala.net</email></para>
+	  		<para role="publisher">GNOME-dokumentationsprojekt</para>
+		</revdescription> 
+	</revision>
+
+    </revhistory> 
+
+    <releaseinfo>Denne manual beskriver version 2.12 af GNOME Klotski.</releaseinfo> 
+    <legalnotice> 
+      <title>Tilbagemeldinger</title> 
+      <para>Hvis du ønsker at indrapportere en fejl eller komme med et forslag vedrørende <application>Klotksi</application> eller denne manual så følg vejledningen på siden <ulink url="ghelp:user-guide?feedback-bugs" type="help">tilbagemeldinger omkring GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>GNOME Klotski</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="gnotski-introduction"> 
+	<title>Introduktion</title> 
+	<para>Programmet <application>Klotski</application> er en klon af spillet Klotski. Målet er at flytte den mønstrede blok til området afgrænset af grønne markører.</para>
+
+	<para><application>Klotski</application> blev skrevet af Lars Rydlinge (<email>Lars.Rydlinge@HIG.SE</email>).</para>
+
+	<para><application>Klotski</application> er inkluderet i pakken gnome-games, som er en del af skrivebordsmiljøet GNOME. Dette dokument beskriver version 2.12 af <application>Klotski</application>.</para>
+
+	<para>Dette program distribueres under betingelserne i GNU General Public License som udgivet af the Free Software Foundation; enten version 2 af denne licens eller (efter eget valg) enhver senere version. En kopi af denne licens kan ses på <ulink url="ghelp:gpl" type="help">link</ulink>, eller i filen COPYING inkluderet med kildekoden for dette program.</para>
+
+	<para>Hvis du ønsker at indrapportere en fejl eller komme med et forslag vedrørende dette program eller denne manual så følg vejledningen på siden <ulink url="ghelp:user-guide?feedback-bugs" type="help">tilbagemeldinger omkring GNOME</ulink>.</para>
+  </sect1>
+
+<!-- ===========Objective ============================== -->
+<sect1 id="gnotski-objective">
+	<title>Mål</title>
+	<para>Målet med <application>Klotski</application> er at flytte den mønstrede blok til de grønne markører i så få træk som muligt. Du gør dette ved at flytte blokkene en ad gangen med musen, indtil du kan få den mønstrede blok hen til markørerne. <figure id="gnotski-figure-win"> 
+		<title>Det vindende træk</title> 
+		<screenshot> 
+			<mediaobject> 
+			<imageobject>
+				<imagedata fileref="figures/gnotski_win.png" format="PNG"/> 
+			</imageobject>
+			<textobject> 
+				<phrase>Den mønstrede blok skal flyttes til området omgrænset af grønne markører.</phrase> 
+			</textobject> 
+	        	</mediaobject> 
+		</screenshot>
+	</figure></para>
+	<!-- ==== End of Figure ==== -->
+</sect1>
+
+<!-- =========== Getting Started ============================== -->
+
+  <sect1 id="gnotski-playing"> 
+	<title>Sådan spilles <application>Klotski</application></title> 
+	<para>
+	<itemizedlist> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-start"/></para> 
+	</listitem>
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-ui"/></para> 
+	</listitem> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-new-game"/></para> 
+	</listitem> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-moving"/></para> 
+	</listitem>
+	</itemizedlist> </para>
+
+	<!-- =========== To start gnotski ============================== -->
+	<sect2 id="gnotski-start">
+		<title>Start af <application>Klotski</application></title>
+		<para>Du kan starte <application>Klotski</application> fra programmenuen ved at vælge <menuchoice><guisubmenu>Spil</guisubmenu><guimenuitem>Klotski</guimenuitem></menuchoice>.</para>
+	</sect2>
+
+	<!-- =========== The main window ============================== -->
+	<sect2 id="gnotski-ui">
+		<title>Hovedvinduet</title>
+		<para>Når du starter <application><application>Klotski</application></application>, vises følgende vindue.</para>
+
+		<!-- ==== Figure ==== -->
+		<figure id="gnotski-figure-mainwindow"> 
+			<title>Opstartsvindue for <application>Klotski</application></title> 
+			<screenshot> 
+				<mediaobject> 
+				<imageobject>
+					<imagedata fileref="figures/gnotski_start_window.png" format="PNG"/> 
+				</imageobject>
+				<textobject> 
+					<phrase>Viser hovedvinduet for <application>Klotski</application>. Indeholder titelbjælke, menubjælke spilområde og statusbjælke. Menubjælken indeholder spil- og hjælpemenuerne.</phrase> 
+				</textobject> 
+		        	</mediaobject> 
+			</screenshot>
+		</figure>
+		<!-- ==== End of Figure ==== -->
+
+		<para>Vinduet <application>Klotski</application> indeholder følgende elementer: <variablelist>
+		<varlistentry>
+			<term>Menubjælke</term>
+			<listitem>
+			<variablelist>
+			<varlistentry>
+				<term>Spilmenu</term>
+				<listitem>
+				<para>Spilmenuen gør, at du kan starte nye spil, se tidligere resultater og afslutte spillet.</para>
+				</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Hjælpemenu</term>
+				<listitem>
+				<para>Denne hjælpemenu gør, at du kan se dokumentationen til <application>Klotski</application></para>
+				</listitem>
+			</varlistentry>
+			</variablelist>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term>Spilområde</term>
+			<listitem>
+			<para>Spilområdet viser blokkene i det aktuelle spil. Du kan trække blokkene omkring med musen som beskrevet i <xref linkend="gnotski-moving"/>.</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term>Statusbjælke</term>
+			<listitem>
+			<para>Statusbjælken viser hvor mange træk, du har foretaget indtil nu.</para>
+			</listitem>
+		</varlistentry>
+		</variablelist></para>
+
+	</sect2>
+
+	<!-- =========== Starting a new game ============================== -->
+	<sect2 id="gnotski-new-game">
+		<title>Begynd på et nyt spil</title>
+		<para>Brug menuen <guimenu>Spil</guimenu> for at starte et nyt spil. Punkterne <guimenuitem>Næste opgave</guimenuitem> og <guimenuitem>Forrige opgave</guimenuitem> gør, at du kan navigere puslespillene sekventielt. Hvert puslespil tilhører en af fire kategorier der kan ses i undermenuen med navnene <guisubmenu>HuaRong-sporet</guisubmenu>, <guisubmenu>Udfordringspakken</guisubmenu>, <guisubmenu>Kvalifikationspakken</guisubmenu> og <guisubmenu>Minoru Climb</guisubmenu>. I disse undermenuer, referer hvert spil til et spilscenarie.</para>
+		<example>
+		<title>Begynd et spil</title>
+		<para>For at spille det sværeste spil vælges <menuchoice><guimenu>Spil</guimenu><guisubmenu>Minoru Climb</guisubmenu><guimenuitem>Climb 24 Pro</guimenuitem></menuchoice></para></example>
+	</sect2>
+
+	<!-- ===========Moving blocks ============================== -->
+	<sect2 id="gnotski-moving">
+		<title>Flytte blokke</title>
+		<para>For at flytte en blok: Klik på den, hold museknappen nede og træk blokken til sin nye placering. Du kan ikke flytte de grønne blokke eller blokken som omgrænser spillet. Du kan ikke flytte en blok til en plads, der allerede er optaget af en anden blok med den undtagelse, at du må flytte den mønstrede blok igennem de grønne blokke for at vinde.</para>
+	</sect2>
+
+</sect1>
+
+<!-- Known bugs.  Try to manage user expectations and warn them of known bugs
+but it is better to omit this section than give a false sense of perfection
+<sect1 id="gnotski-bugs">
+	<title>Known Bugs and Limitations</title>
+	<para>
+        There are no known bugs in this game.
+	</para>
+</sect1>
+-->
+
+<sect1 id="authors">
+  <title>Forfattere</title>
+  <para><application>Klotski</application> blev skrevet af Lars Rydlinge (<email>lars.rydlinge@hig.se</email>). Denne manual blev skrevet af Andrew Sobala. For at indrapportere en fejl, eller komme med et forslag vedrørende dette program eller denne manual, så følg vejledningen i dette <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokument</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+</sect1>
+
+ <sect1 id="license">
+  <title>Licens</title>
+  <para>Dette program og dets grafik er frit software: du kan distribuere den og/eller ændre den under betingelserne i <citetitle>GNU General Public License</citetitle> der udgives af Free Software Foundation; enten version 2 eller (ved dit valg) enhver senere version.</para>
+  <para>Dette program distribueres i håb om, at det vil vise sig nyttigt, men
+UDEN NOGEN FORM FOR GARANTI, uden selv de underforståede garantier
+omkring SALGBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Yderligere
+detaljer kan læses i <citetitle>GNU General Public License</citetitle>.</para>
+  <para>En kopi af <citetitle>GNU General Public License</citetitle> er inkluderet som et tillæg til <citetitle>GNOME-brugervejledningen</citetitle>. Du kan også få en kopi af <citetitle>GNU General Public License</citetitle> fra Free Software Foundtation ved at besøge <ulink url="http://www.fsf.org" type="http">deres internetside</ulink> eller skrive til <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+
+</article>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="hint" xml:lang="it">
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Usare gli indizi per risolvere automaticamente una partita.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-23" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+  </info>
+  <title>Indizi</title>
+
+  <note style="warning">
+    <p>Se viene utilizzato uno dei seguenti metodi per completare una partita, il proprio punteggio non verrà incluso tra i punteggi migliori.</p>
+  </note>
+
+  <section id="hint-hints">
+  
+    <title>Usare il sistema degli indizi</title>
+    
+    <p>In qualsiasi momento del gioco, se non si sa come iniziare o dove spostare un pezzo, è possibile utilizzare il sistema integrato degli indizi.</p>
+    <p>Il sistema degli indizi sposterà un pezzo dal riquadro di destra nella posizione corretta in quello di sinistra.</p>
+    <p>Per utilizzare il sistema degli indizi, seguire uno dei seguenti metodi:</p>
+    <list>
+      <item>
+        <p>Premere <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Scegliere <guiseq><gui style="menu">Gioco</gui><gui style="menuitem">Indizio</gui></guiseq>.</p>
+      </item>
+    </list>
+  </section>
+  <section id="hint-solve">
+    <title>Risolvere il gioco</title>
+    <p>Se non si riesce a venire a capo della partita o per completarla automaticamente, scegliere <guiseq><gui style="menu">Gioco</gui><gui style="menuitem">Risolvi</gui></guiseq>.</p>
+  </section>
+</page>

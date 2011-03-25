@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="move" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#play" group="two"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Kako premikati kose na igralni plošči.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  
+  <title>Premaknite kose</title>
+  
+  <section id="move-piece">
+    <title>Premakni kos</title>
+    <p>Za premikanje kosa ga morate kliknite in držati, ga povleči iz njegovega trenutnega mesta na njegovo novo mesto na desnem ali leveo polju in nato spustiti miškin gumb.</p>
+    <p>Ti premiki niso trajni in jih je mogoče razveljaviti.</p>
+    <note>
+      <p>Kose v levem polju je mogoče premakniti vse hkrati v eno smer. Oglejte si <link xref="shortcut"/> za več podrobnosti.</p>
+    </note>
+  </section>
+  <section id="move-avoid">
+    <title>Izgoni se kliku in držanju</title>
+    <p>V primeru, da vam dejanje klikni-in-drži za premikanje kosov ni všeč, lahko spremenite obnašanje tako, da morate za premik kosa nanj klikniti in znova klikniti za spust na novem mestu. </p>
+    <p>Za to v meniju glavne vrstice izberite <gui style="menu">Premakni</gui> in izberite <gui style="checkbox">Klikni za premik</gui>.</p>
+  </section>
+</page>

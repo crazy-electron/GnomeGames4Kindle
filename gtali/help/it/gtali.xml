@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Tali</application>">
+<!ENTITY appname "Tali">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="it">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Manuale di <application>Tali</application></title>
+    <abstract role="description">
+      <para>Tali per GNOME è un gioco simile a Yahtzee oppure al poker con i dadi. Il giocatore lancia i dati per tentare di ottenere le combinazioni migliori, come il poker, la scala e il full. A ogni turno, il giocatore ha la possibilità di effettuare 3 lanci e di bloccare una serie di dadi.</para>
+    </abstract>
+    <copyright>
+      <year>2001</year>
+      <holder>Scott D. Heavner</holder>
+    </copyright><copyright><year>2008</year><holder>Alessio Treglia (quadrispro@ubuntu-it.org)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Progetto di documentazione GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Questo documento può essere copiato, distribuito e/o modificato solo in conformità con i termini della GNU Free Documentation License (GFDL) Versione 1.1 o delle versioni successive pubblicate dalla Free Software Foundation senza sezioni invariabili, frontespizi e testi di copertina. Una copia della GFDL è disponibile a questo <ulink type="help" url="ghelp:fdl">collegamento</ulink> o nel file COPYING-DOCS distribuito con questo manuale.</para>
+         <para>Questo manuale è parte di una collezione di manuali di GNOME distribuita sotto la GFDL. Se si vuole distribuire questo manuale separatamente dalla collezione, lo si può fare aggiungendo una copia della licenza al manuale, come descritto nella sezione 6 della licenza.</para>
+
+	<para>Molti dei nomi utilizzati dalle aziende per distinguere i loro prodotti e servizi sono rivendicati come marchi commerciali. Dove questi nomi appaiono nella documentazione di GNOME, e i membri del progetto di documentazione di GNOME sono informati di questi marchi commerciali, allora i nomi sono in lettere maiuscole o con la lettera iniziale maiuscola.</para>
+
+	<para>QUESTO DOCUMENTO E LE SUE VERSIONI MODIFICATE SONO FORNITI IN BASE AI TERMINI DELLA GNU FREE DOCUMENTATION LICENSE, SOTTO INTESO CHE: <orderedlist>
+		<listitem>
+		  <para>IL DOCUMENTO VIENE FORNITO SENZA GARANZIE DI ALCUN TIPO,ESPLICITE O IMPLICITE, INCLUSE, MA SENZA LIMITAZIONE, LE GARANZIE ATTESTANTI CHE IL DOCUMENTO O LE SUE VERSIONI MODIFICATE SIANO PRIVI DI DIFETTI, COMMERCIALIZZABILI, IDONEI A UN DETERMINATO SCOPO O CHE NON VIOLINO DIRITTI DI TERZI. SI DECLINA QUALUNQUE RESPONSABILITÀ RIGUARDO AI RISCHI INERENTI LA QUALITÀ, L'ACCURATEZZA E LE PRESTAZIONI DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA. QUALORA UN DOCUMENTO O UNA SUA VERSIONE MODIFICATA DOVESSERO PRESENTARE QUALUNQUE TIPO DI DIFETTO,IL COSTO DI EVENTUALI INTERVENTI DI ASSISTENZA, RIPARAZIONE O CORREZIONE SARÀ A CARICO DELL'UTENTE (NON DEL REDATTORE INIZIALE, DELL'AUTORE O DI ALTRI COLLABORATORI). QUESTA LIMITAZIONE DELLA GARANZIA COSTITUISCE PARTE ESSENZIALE DELLA LICENZA. L'USO DEL DOCUMENTO O DELLE SUE VERSIONI MODIFICATE È CONSENTITO SOLO ENTRO I TERMINI DI QUESTA LIMITAZIONE DELLA GARANZIA; E</para>
+		</listitem>
+		<listitem>
+		  <para>IN NESSUNA CIRCOSTANZA E PER NESSUNA RAGIONE LEGALE, INCLUSI I PRINCIPI DI COLPA (INCLUSA LA NEGLIGENZA), ACCORDO CONTRATTUALE O ALTRO, SARÀ POSSIBILE CONSIDERARE L'AUTORE, IL REDATTORE INIZIALE, GLI ALTRI COLLABORATORI, QUALUNQUE DISTRIBUTORE DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA O QUALUNQUE FORNITORE DELLE PERSONE CITATE, RESPONSABILE NEI CONFRONTI DI QUALUNQUE PERSONA PER DANNI DIRETTI, INDIRETTI, SPECIALI, INCIDENTALI O CONSEGUENTI DI QUALUNQUE NATURA, INCLUSI, MA SENZA LIMITAZIONE, I DANNI PER PERDITA DI AVVIAMENTO, INTERRUZIONE DEL LAVORO, GUASTO O MALFUNZIONAMENTO DEL COMPUTER O QUALUNQUE ALTRO DANNO O PERDITA DERIVANTE O CORRELATA ALL'USO DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA, ANCHE QUALORA LE PERSONE CITATE FOSSERO STATE INFORMATE DELLA POSSIBILITÀ DI TALI DANNI.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+	
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Scott D</firstname> 
+	<surname>Heavner</surname> 
+	<affiliation> 
+	  <address> <email>sdh@po.cwru.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Manuale di Tali V2.8</revnumber> 
+	<date>Settembre 2004</date> 
+	<revdescription> 
+	  <para role="author">Scott D Heavner <email>sdh@po.cwru.edu</email></para>
+	  <para role="publisher">Progetto di documentazione GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Questo manuale si riferisce alla versione 2.12 di Tali.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Commenti</title> 
+      <para>Per segnalare un problema o inviare suggerimenti sull'applicazione <application>Tali</application> o su questo manuale, seguire le istruzioni presenti alla <ulink url="ghelp:user-guide?feedback-bugs" type="help">pagina di commenti su GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME Tali</primary> 
+  </indexterm>
+
+ <!-- ============= Document Body ============================= -->
+
+  <sect1 id="intro">
+    <title>Introduzione</title>
+
+    <para><application>GNOME Tali</application> è una sorta di poker con i dadi e con pochi soldi. Si lanciano cinque dati per tre volte e si tenta di ottenere la <quote>mano</quote> migliore. Negli altri due tentativi si può non utilizzare alcun dado oppure tutti i propri dadi.</para>
+    <para><application>GNOME Tali</application> è molto simile al gioco di dadi Yahtzee, prodotto dalla Hasbro, Inc.</para>
+
+    <para>Per avviare <application>GNOME Tali</application>, selezionare <menuchoice><guisubmenu>Giochi</guisubmenu><guimenuitem>Tali</guimenuitem></menuchoice> dal menù <guimenu>Applicazioni</guimenu>, oppure digitare <command>gtali</command> in una finestra di terminale.</para>
+
+    <para><application>GNOME Tali</application> è incluso nel pacchetto <filename>gnome-games</filename>, che fa parte dell'ambiente grafico GNOME. Questo documento descrive la versione 2.8 di <application>GNOME Tali</application>.</para>
+  </sect1>
+
+  <sect1 id="playing">
+    <title>Giocare a GNOME Tali</title>
+
+    <figure id="shot1">
+      <title>GNOME Tali in azione</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="Trevor Curtis"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Schermata principale di GNOME Tali.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Quando comincia la partita, è possibile vedere i risultati del primo lancio dei dadi.</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Fare clic sul dado desiderato per lanciarlo di nuovo.</para>
+        </listitem>
+        <listitem>
+          <para>Quando si sono selezionati tutti i dadi che si desiderano rilanciare, premere il pulsante <guibutton>Lancia i dadi!</guibutton>.</para>
+        </listitem>
+        <listitem>
+	  <para>Se si è in possesso di una buona mano oppure se sono terminate le possibilità di lanciare i dadi, fare clic sulla riga ritenuta avere la migliore combinazione. È molto probabile avere un punteggio pari a zero e facendo clic sulla riga sbagliata i propri punteggi verranno aggiornati di conseguenza. Per esempio, se si possiede uno yahtzee (5 dadi dello stesso numero), facendo clic sulla riga della scala lunga si riceverà uno zero come punteggio per tale combinazione.</para>
+      </listitem>
+    </orderedlist>
+
+    <para>È possibile utilizzare le combinazioni solo una volta, per esempio, una volta inserito un valore in una riga, non sarà più possibile modificarlo nel caso si ottenga una mano migliore.</para>
+
+    <para>C'è un'eccezione a questa regola: se dal lancio si ottiene un secondo yahtzee è possibile inserirlo nuovamente nella relativa riga, ottenendo 50 punti di bonus; è possibile fare ciò ogni volta che si ottiene uno yahtzee. Alla fine del gioco verranno assegnati dei lanci aggiuntivi in modo da riempire le altre righe. Bisogna prestare attenzione al fatto che nel caso in cui la riga degli yahtzee abbia un punteggio pari a zero (se è stata riempita da punteggi diversi da yahtzee, per esempio), non sarà più possibile memorizzare al suo interno il punteggio di uno yahtzee: il suo valore rimarrà zero.</para>
+
+    <para>C'è un ulteriore bonus di 35 punti se si totalizzano 63 punti o più nelle sei righe superiori.</para>
+
+    <sect2 id="keyboard">
+    <title>Usare la tastiera</title> 
+
+      <para>In alternativa all'uso del mouse, è possibile utilizzare i tasti dall'1 al 5 per selezionare o deselezionare i dadi, proprio come con il clic del mouse; il tasto 1 corrisponde al primo dado e così via. Si possono usare i soliti controlli per lanciare i dadi e selezionare una riga. Si possono utilizzare, per esempio, il pulsante «Tab» per spostarsi dal pulsante <guibutton>Lancia i dadi!</guibutton> e l'area dei punteggi, i tasti freccia per scorrere in alto e in basso le righe e la barra spaziatrice per selezionare.</para>
+    
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="options">
+    <title>Opzioni di gioco</title>
+
+    <figure id="shot2">
+      <title>Preferenze di GNOME Tali</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences.png" format="PNG" srccredit="Trevor Curtis"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Finestra delle preferenze di GNOME Tali</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+      <variablelist><title>Giocatori (umani)</title>
+	<varlistentry>
+	  <term><guimenuitem>Numero di giocatori</guimenuitem></term>
+	  <listitem>
+            <para>Seleziona il numero di giocatori umani. Come descritto in precedenza, è possibile selezionare fino a un totale di sei giocatori.</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>  
+      
+    <variablelist><title>Avversari (computer)</title>
+      <varlistentry>
+        <term><guimenuitem>Ritardo fra i lanci</guimenuitem></term>
+	<listitem>
+	  <para>Imposta una pausa fra i lanci dei giocatori del computer, in modo da consentire di guardare cosa sta accadendo. Può rallentare alcune partite.</para>
+        </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guimenuitem>Numero di avversari</guimenuitem></term>
+	  <listitem>
+            <para>Selezionare il numero di avversari controllati dal computer, il numero massimo consentito di giocatori (sia umani che del computer) in totale è sei. Se si tenta di aumentare questo numero fino al limite, il numero dei giocatori umani verrà decrementato in modo da avere sempre un massimo di sei giocatori.</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>
+      
+    <variablelist><title>Tipo di gioco</title>
+      <varlistentry>
+        <term><guimenuitem>Versione della partita da giocare</guimenuitem></term>
+	<listitem>
+	  <para>È possibile giocare alla versione normale (simile a Yahtzee) oppure alla versione colorata (simile a Kismet). Quando si cambia il tipo della partita è necessario riavviare il gioco per visualizzare il nuovo tipo.</para>
+        </listitem>
+	</varlistentry>
+      </variablelist>
+      
+      <variablelist>
+	<varlistentry>
+	    <term><guimenuitem>Nomi dei giocatori</guimenuitem></term>
+	    <listitem>
+	      <para>Per cambiare i nomi dei giocatori è sufficiente inserire i nuovi nomi desiderati nei riquadri.</para>
+	    </listitem>
+	</varlistentry>
+      </variablelist>
+    </sect1>
+
+    <sect1 id="strategy">
+      <title>Strategia di gioco</title>
+      <para>I 63 punti necessari per il bonus nella parte superiore corrispondono a ottenere tre dadi in ogni riga. Nel caso in cui si siano totalizzati dei punteggi a tre o più dadi nelle righe cinque e sei, allora ci si può permettere di piazzare un punteggio basso nella riga degli uno o dei due e prendere comunque il bonus. Nella versione «Colori», si otterrà un bonus di 55 punti se il totale superiore sarà compreso fra 71 e 77 e un bonus aggiuntivo di ulteriori 75 punti se il totale sarà invece maggiore di 77.</para>
+      <para>A proposito degli yahtzee multipli, non bisogna dimenticare che se si lancia un secondo yahtzee è possibile inserirlo anche nella relativa riga in modo da ottenere altri punti. Tale regola si applica solo al tipo di gioco regolare.</para>
+    </sect1>	
+ <!-- ============= Bugs ================================== -->
+ <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of. 
+      
+      Better to leave this section out than to say something unhelpful. 
+-->
+
+ <sect1 id="bugs">
+  <title>Problemi e limiti noti</title>
+  <para>Quando si cambia il tipo di gioco, le nuove immagini per i dadi non verranno caricate fino al successivo riavvio. È possibile giocare correttamente con i dadi "sbagliati".</para>
+ </sect1>
+
+
+ <sect1 id="glossary">
+   <title>Glossario</title>
+   <note>
+     <para>È utile ricordare che l'ordine dei dadi non è importante.</para>
+   </note>
+   <glossary>
+       <glossentry id="threeofakind"><glossterm>Tris</glossterm>
+         <glossdef><para>Tre dati hanno lo stesso numero. Il punteggio è dato dal totale di tutti i dati. Esempio: 1, 2, 2, 2, 5.</para></glossdef>
+       </glossentry>
+       <glossentry id="fourofakind"><glossterm>Poker</glossterm>
+         <glossdef><para>Quattro dadi hanno lo stesso numero. Il punteggio è dato dal totale di tutti i dadi. Esempio: 2, 5, 5, 5, 5. Nel gioco «Colori», il punteggio è 25 più il totale di tutti i dadi.</para></glossdef>
+       </glossentry>
+       <glossentry id="yahtzee"><glossterm>5 dello stesso tipo</glossterm>
+         <glossdef><para>Cinque dadi identici, per esempio 3, 3, 3, 3, 3. Nel gioco «Colori», il punteggio è 50 più il totale di tutti i dadi</para></glossdef>
+       </glossentry>
+       <glossentry id="fullhouse"><glossterm>Full</glossterm>
+         <glossdef><para>Cinque dadi divisi in due gruppi: un gruppo formato da tre dadi dello stesso numero e un altro gruppo formato da due dadi con lo stesso numero, esempio: 1, 1, 1, 4, 4. Nel gioco «Colori», il punteggio è 15 più il totale di tutti i dadi.</para></glossdef>
+       </glossentry>
+       <glossentry id="fullhousesamecolor"><glossterm>Full dello stesso colore</glossterm>
+         <glossdef><para>Tale categoria è usata solo nel gioco «Colori». Cinque dadi divisi in due gruppi: un gruppo formato da tre dadi dello stesso numero e un altro gruppo formato da due dadi con lo stesso numero. I numeri devono essere tutti dello stesso colore, per esempio: 3, 3, 3, 4, 4. Due dadi sono dello stesso colore se il loro totale è 7: 1 e 6 sono neri, 2 e 5 sono rossi, 3 e 4 sono verdi. Il punteggio è 20 più il totale di tutti i dadi.</para></glossdef>
+       </glossentry>
+       <glossentry id="twopairsamecolor"><glossterm>Doppia coppia di colori</glossterm>
+         <glossdef><para>Questa categoria è usata solo nel gioco «Colori». Cinque dadi divisi in due gruppi: un gruppo di due dadi con gli stessi numeri e un altro gruppo di due dadi con gli stessi numeri. Le coppie devono essere degli stessi colori, per esemio: 3, 3, 4, 4. Due dadi sono dello stesso colore se il loro totale è 7: 1 e 6 sono neri, 2 e 5 sono rossi, 3 e 4 sono verdi. Il quinto dado può avere qualsiasi valore, il punteggio è il totale di tutti i dadi.</para></glossdef>
+       </glossentry>
+       <glossentry id="flush"><glossterm>Colore</glossterm>
+         <glossdef><para>Questa categoria è usata solo nel gioco «Colori». Cinque dadi sono tutti dello stesso "colore": due dadi sono dello stesso colore se il loro totale è 7: 1 e 6 sono neri, 2 e 5 sono rossi, 3 e 4 sono verdi. Il quinto dado può avere qualsiasi valore, il punteggio è 35 punti.</para></glossdef>
+       </glossentry>
+       <glossentry id="largestraight"><glossterm>Scala lunga</glossterm>
+         <glossdef><para>Cinque dadi con numeri consecutivi, per esempio: 2, 3, 4, 5, 6. Il punteggio è 40 punti.</para></glossdef>
+       </glossentry>
+       <glossentry id="smallstraight"><glossterm>Scala corta</glossterm>
+         <glossdef><para>Quattro dadi con numeri consecutivi; il quinto può avere qualsiasi valore. Per esempio: 2, 3, 4, 5, 5. Questa categoria è usata solo nel gioco regolare. Il punteggio è 30 punti.</para></glossdef>
+       </glossentry>
+   </glossary>
+ </sect1>
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Autori</title>
+  <para><application>GNOME Tali</application> è stato scritto da Scott Heavner (<email>sdh@po.cwru.edu</email>) e Orest Zborowski. Questo manuale è stato scritto da Scott D Heavner (<email>sdh@po.cwru.edu</email>) con del materiale aggiuntivo di Callum McKenzie (<email>callum@physics.otago.ac.nz</email>). Per informazioni su come riportare bug e inviare commenti o suggerimenti, seguire le indicazioni contenute in questo <ulink url="ghelp:user-guide?feedback-bugs" type="help">documento</ulink>.</para>
+
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licenza</title>
+  <para>Questo programma è software libero; è lecito redistribuirlo e/o modificarlo secondo i termini della <citetitle>GNU General Public License</citetitle> come è pubblicata dalla Free Software Foundation; o la versione 2 della licenza o (a propria scelta) una versione successiva.</para>
+  <para>Questo programma  è distribuito nella  speranza che sia  utile, ma SENZA  ALCUNA GARANZIA; senza  neppure la  garanzia implicita  di NEGOZIABILITÀ o di APPLICABILITÀ PER UN PARTICOLARE SCOPO. Si veda la <citetitle>GNU General Public License</citetitle> per avere maggiori dettagli.</para>
+  <para>Una copia della <citetitle>GNU General Public License</citetitle> è inclusa nell'appendice del <citetitle>Manuale dell'utente GNOME</citetitle>. Inoltre è possibile ottenere una copia della <citetitle>GNU General Public License</citetitle> dalla Free Software Foundation visitando <ulink url="http://www.fsf.org" type="http">il sito web</ulink> oppure scrivendo a <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

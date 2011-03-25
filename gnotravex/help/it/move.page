@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="move" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="index#play" group="two"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Come spostare i pezzi all'interno del gioco.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  
+  <title>Spostare i pezzi</title>
+  
+  <section id="move-piece">
+    <title>Spostare un pezzo</title>
+    <p>Per spostare un pezzo è necessario fare clic su di esso e tenere premuto il pulsante, trascinarlo dalla posizione corrente a quella nuova nel riquadro di destra o quello di sinistra e infine rilasciare il pulsante del mouse.</p>
+    <p>Questi spostamenti non sono definitivi e possono essere annullati.</p>
+    <note>
+      <p>I pezzi nel riquadro di sinistra possono essere mossi tutti assieme in una direzione. Per maggiori informazioni, consultare <link xref="shortcut"/>.</p>
+    </note>
+  </section>
+  <section id="move-avoid">
+    <title>Evitare il mantenimento del clic</title>
+    <p>Se il metodo di spostamento dei pezzi tramite clic e il mantenimento della pressione sul pulsante del mouse non è confortevole, è possibile modificare questo comportamento in modo da dover eseguire un clic su un pezzo per poterlo spostare e un altro clic per rilasciare il pezzo alla sua nuova posizione.</p>
+    <p>Per fare ciò, dalla barra dei menù, scegliere <gui style="menu">Sposta</gui> e selezionare <gui style="checkbox">Clic per muovere</gui>.</p>
+  </section>
+</page>

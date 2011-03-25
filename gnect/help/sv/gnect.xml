@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Four-in-a-Row</application>">
+<!ENTITY appname "Four-in-a-Row">
+<!ENTITY version "2.8">
+]>
+<!-- ===== DOCUMENT HEADER ===== -->
+<article id="index" lang="sv">
+<!-- please do not change the id -->
+<!-- translators, change lang to the appropriate code -->
+  <articleinfo>
+    <title>Handbok för Fyra-i-rad</title>
+    <abstract role="description">
+      <para>
+	The object of Four-in-a-Row is to place four pieces in a vertical, 
+	horizontal, or diagonal row while the opponent tries to block and
+	make his/her own row of four. Four-in-a-Row can be played against 
+	another human or the computer.
+      </para>
+    </abstract>
+
+    <copyright>
+      <year>2001-2002</year>
+      <holder>Timothy Musson</holder>
+    </copyright><copyright><year>2007, 2009</year><holder>Daniel Nylander (po@danielnylander.se)</holder></copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+     <year>2000</year>
+     <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+    <publisher role="maintainer"> 
+      <publishername>Dokumentationsprojekt för GNOME</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+	<para>Tillstånd att kopiera, distribuera och/eller modifiera detta dokument ges under villkoren i GNU Free Documentation License (GFDL), version 1.1 eller senare, utgivet av Free Software Foundation utan standardavsnitt och omslagstexter.  En kopia av GFDL finns att hämta på denna <ulink type="help" url="ghelp:fdl">länk</ulink> eller i filen COPYING-DOCS som medföljer denna handbok.</para>
+         <para>Denna handbok utgör en av flera GNOME-handböcker som distribueras under villkoren i GFDL.  Om du vill distribuera denna handbok separat från övriga handböcker kan du göra detta genom att lägga till en kopia av licensavtalet i handboken enligt instruktionerna i avsnitt 6 i licensavtalet.</para>
+
+	<para>Flera namn på produkter och tjänster är registrerade varumärken. I de fall dessa namn förekommer i GNOME-dokumentation - och medlemmarna i GNOME-dokumentationsprojektet är medvetna om dessa varumärken - är de skrivna med versaler eller med inledande versal.</para>
+
+	<para>DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET TILLHANDAHÅLLS UNDER VILLKOREN I GNU FREE DOCUMENTATION LICENSE ENDAST UNDER FÖLJANDE FÖRUTSÄTTNINGAR: <orderedlist>
+		<listitem>
+		  <para>DOKUMENTET TILLHANDAHÅLLS I "BEFINTLIGT SKICK" UTAN NÅGRA SOM HELST GARANTIER, VARE SIG UTTRYCKLIGA ELLER UNDERFÖRSTÅDDA, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, GARANTIER ATT DOKUMENTET ELLER EN MODIFIERAD VERSION AV DOKUMENTET INTE INNEHÅLLER NÅGRA FELAKTIGHETER, ÄR LÄMPLIGT FÖR ETT VISST ÄNDAMÅL ELLER INTE STRIDER MOT LAG. HELA RISKEN VAD GÄLLER KVALITET, EXAKTHET OCH UTFÖRANDE AV DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET LIGGER HELT OCH HÅLLET PÅ ANVÄNDAREN. OM ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT SKULLE VISA SIG INNEHÅLLA FELAKTIGHETER I NÅGOT HÄNSEENDE ÄR DET DU (INTE DEN URSPRUNGLIGA SKRIBENTEN, FÖRFATTAREN ELLER NÅGON ANNAN MEDARBETARE) SOM FÅR STÅ FÖR ALLA EVENTUELLA KOSTNADER FÖR SERVICE, REPARATIONER ELLER KORRIGERINGAR. DENNA GARANTIFRISKRIVNING UTGÖR EN VÄSENTLIG DEL AV DETTA LICENSAVTAL. DETTA INNEBÄR ATT ALL ANVÄNDNING AV ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT BEVILJAS ENDAST UNDER DENNA ANSVARSFRISKRIVNING;</para>
+		</listitem>
+		<listitem>
+		  <para>UNDER INGA OMSTÄNDIGHETER ELLER INOM RAMEN FÖR NÅGON LAGSTIFTNING, OAVSETT OM DET GÄLLER KRÄNKNING (INKLUSIVE VÅRDSLÖSHET), KONTRAKT ELLER DYLIKT, SKA FÖRFATTAREN, DEN URSPRUNGLIGA SKRIBENTEN ELLER ANNAN MEDARBETARE ELLER ÅTERFÖRSÄLJARE AV DOKUMENTET ELLER AV EN MODIFIERAD VERSION AV DOKUMENTET ELLER NÅGON LEVERANTÖR TILL NÅGON AV NÄMNDA PARTER STÄLLAS ANSVARIG GENTEMOT NÅGON FÖR NÅGRA DIREKTA, INDIREKTA, SÄRSKILDA ELLER OFÖRUTSEDDA SKADOR ELLER FÖLJDSKADOR AV NÅGOT SLAG, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, SKADOR BETRÄFFANDE FÖRLORAD GOODWILL, HINDER I ARBETET, DATORHAVERI ELLER NÅGRA ANDRA TÄNKBARA SKADOR ELLER FÖRLUSTER SOM KAN UPPKOMMA PÅ GRUND AV ELLER RELATERAT TILL ANVÄNDNINGEN AV DOKUMENTET ELLER MODIFIERADE VERSIONER AV DOKUMENTET, ÄVEN OM PART SKA HA BLIVIT INFORMERAD OM MÖJLIGHETEN TILL SÅDANA SKADOR.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+
+    <authorgroup>
+      <author>
+        <firstname>Timothy</firstname>
+        <surname>Musson</surname>
+        <affiliation>
+          <!-- <orgname></orgname> -->
+          <address><email>trmusson@ihug.co.nz</email></address>
+        </affiliation>
+      </author>
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+
+      <othercredit role="translator">
+        <firstname>Latin</firstname> 
+        <surname>Translator 1</surname> 
+        <affiliation> 
+          <orgname>Latin Translation Team</orgname> 
+          <address> <email>translator@gnome.org</email> </address> 
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+        <revnumber>Handbok för Fyra-i-rad v2.8</revnumber>
+        <date>September 2004</date>
+        <revdescription>
+          <para role="author">Timothy Musson <email>trmusson@ihug.co.nz</email></para>
+          <para role="publisher"/>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>Den här handboken beskriver version 2.12 av Fyra-i-rad.</releaseinfo>
+
+    <legalnotice>
+      <title>Återkoppling</title>
+      <para>För att rapportera ett fel eller föreslå någonting angående programmet Fyra-i-rad eller den här handboken, följ anvisningarna på <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME:s återkopplingssida</ulink>.</para>
+    </legalnotice>
+  </articleinfo>
+
+
+  <!-- ============= Document Body ============================= -->
+
+  <!-- ============= Introduction ============================== -->
+
+
+  <sect1 id="intro">
+
+    <title>Introduktion</title>
+
+    <para><application>Fyra-i-rad</application> är ett fyra-i-rad-spel för GNOME-projektet. Målet med spelet är att bygga en rad med fyra av dina kulor under tiden du försöker stoppa din motståndare (mänsklig eller datorn) från att bygga en egen rad. En rad kan vara horisonell, vertikal eller diagonal.</para>
+
+    <para>För att köra <application>Fyra-i-rad</application>, välj <guimenuitem>Fyra-i-rad</guimenuitem> från undermenyn <guisubmenu>Spel</guisubmenu> till <guimenu>Huvudmenyn</guimenu>, eller ange <command>gnect</command> på kommandoraden.</para>
+
+    <para><application>Fyra-i-rad</application> är inkluderat i paketet <filename>GNOME-games</filename> som är en del av skrivbordsmiljön GNOME. Det här dokumentet beskriver version 2.8 av <application>Fyra-i-rad</application>.</para>
+
+   <para>
+     Four-in-a-Row also features <link linkend="network-games">multiplayer</link> support with two 
+     human players in hotseat or network mode.
+   </para>
+
+
+  </sect1>
+
+
+  <!-- ============= Usage ===================================== -->
+
+
+  <sect1 id="usage">
+
+    <title>Grundläggande användning</title>
+
+    <!-- ===== How to play ===== -->
+
+    <sect2 id="playing">
+
+      <title>Spela Fyra-i-rad</title>
+
+      <para>För att starta ett nytt spel i Fyra-i-rad, välj <menuchoice><guimenu>Spel</guimenu><guimenuitem>Nytt spel</guimenuitem></menuchoice>.</para>
+
+      <para><interface>Spelbrädet</interface> innehåller sju kolumner och sex rader. Ovanför det finns en speciell rad som indikerar den aktuella spelaren och kulan som ska spelas ut. Varje drag innebär ett släpp av en kula i en av kolumnerna. Kulan landar på den översta lediga raden i den valda kolumnen.</para>
+        
+      <para>För att göra ett drag, klicka på en kolumn med musen. För att spela med tangentbordet, flytta kulan i toppraden med vänster och höger piltangent, och släpp den med nedåtpiltangenten. Din kula kommer att släppas till den översta lediga raden i den kolumnen.</para>
+
+      <!-- Figure -->
+      <mediaobject id="mainwindow-fig">
+        <imageobject>
+          <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="trm"/>
+        </imageobject>
+        <textobject>
+          <phrase>Huvudfönstret i Fyra-i-rad</phrase>
+        </textobject>
+        <caption><para>Huvudfönstret i Fyra-i-rad</para></caption>
+      </mediaobject>
+
+      <para>Spelet har vunnits när en av de två spelarna har klarat att rada upp fyra kulor horisontellt, vertikalt eller diagonalt. Om brädet fylls upp utan att någon vinner blir omgången oavgjord.</para>
+
+    </sect2>
+    
+    <!-- ===== Commands ===== -->  
+    
+    <sect2 id="commands">
+      <title>Kommandon</title>
+      <anchor id="menubar"/><!-- id for removed section -->
+      
+      <para>För att ångra ett drag, välj <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>Z</keycap></keycombo></shortcut><guimenuitem>Ångra drag</guimenuitem></menuchoice>. Om du spelar mot en vän kommer det här att ångra ett drag. Om du spelar mot datorn kommer det här att ångra datorns sista drag och sedan ditt. Upprepning av det här kommer att återställa brädet till dess initiala tillstånd.</para>
+      <para>Välj <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>H</keycap></keycombo></shortcut><guimenuitem>Tips</guimenuitem></menuchoice> för att få ett förslag från datorn för ditt nästkommande drag. Det här tipset visas i statusraden.</para>
+      
+      <para>Välj <menuchoice><guimenuitem>Poänglista</guimenuitem></menuchoice> för att visa en poängberäkning över vinster och oavgjorda omgångar för den aktuella spelsessionen. Poängen kommer att nollställas om spelarvalet ändras under Inställningar.</para>      
+
+      
+    </sect2>  
+
+    <!-- ===== Preferences ===== -->
+
+    <sect2 id="prefsdialog">
+
+      <title>Inställningar</title>
+
+      <para>För att ändra spelets inställningar, välj <guimenuitem>Inställningar</guimenuitem> från menyn <guimenu>Inställningar</guimenu>. Det här öppnar dialogrutan <interface>Inställningar</interface>.</para>
+
+      <para>Konfigurationsalternativen under fliken <guilabel>Spel</guilabel> är: <variablelist>
+
+          <varlistentry>
+            <term><guilabel>Spelare ett</guilabel> och <guilabel>Spelare två</guilabel></term>
+            <listitem>
+              <para>Dessa två kolumner talar om för <application>Fyra-i-rad</application> vem som spelar och, om det är datorn, hur svårt de ska spela. För att spela mot din vän, välj Mänsklig för både Spelare ett och Spelare två.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Tema</guilabel></term>
+            <listitem>
+              <para>Temamenyn listar tillgängliga teman och låter dig välja ditt favorittema.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Aktivera animation</guilabel></term>
+            <listitem>
+              <para>Här kan du växla animationen i spelet på eller av.</para>
+            </listitem>
+          </varlistentry>
+
+        </variablelist></para>
+      <para>Till sist finns fliken <guilabel>Styrning</guilabel> för att ändra tangentbordsstyrningen. För att ändra en tangent, dubbelklicka på den lämpliga posten och tryck sedan den nya tangenten.</para>
+
+    </sect2>
+  </sect1>
+
+
+  <!-- ===== Custom Themes ===================================== -->
+
+
+  <sect1 id="custom">
+
+    <title>Skapa nya teman</title>
+
+    <para>Det här avsnittet finns inkluderat i det fall du vill skapa dina egna teman för <application>Fyra-i-rad</application>. Den antar att du känner till grundläggande textredigering, grafikprogramvara och kommandoraden.</para>
+
+    <sect2 id="images">
+
+      <title>Bilder</title>
+
+      <para>Kuluppsättningarna i <application>Fyra-i-rad</application> innehåller sex kulor med lika storlek, uppradade horisontellt. Från vänster till höger:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Kulan för Spelare ett som den visas på spelbrädet</para>
+        </listitem>
+        <listitem>
+          <para>Kulan för Spelare två som den visas på spelbrädet</para>
+        </listitem>
+        <listitem>
+          <para>Spelbrädets bakgrund</para>
+        </listitem>
+        <listitem>
+          <para>Toppradens bakgrund</para>
+        </listitem>
+        <listitem>
+          <para>Kulan för Spelare ett som den visas på toppraden</para>
+        </listitem>
+        <listitem>
+          <para>Kulan för Spelare två som den visas på toppraden</para>
+        </listitem>
+      </orderedlist>
+
+      <figure id="shot1">
+        <title>Ett exempel på en uppsättning kulor</title>
+        <screenshot>
+          <screeninfo>Den här bilden visar six kulor i en uppsättning</screeninfo>
+          <graphic format="PNG" fileref="figures/tileset.png" srccredit="TRM"/>
+        </screenshot>
+      </figure>
+
+      <para>Kulorna tre och fyra kommer att upprepas på spelbrädet och toppraden såvida inte en bakgrundsbild har angivits i temafilen.</para>
+
+      <tip>
+        <title>TIPS</title>
+        <para>PNG-formatet rekommenderas för kuluppsättningar. Första, andra, femte och sjätte kulan ska innehåll viss transparens om du vill att bakgrunden ska skina igenom. Tredje och fjärde kulan ska vara solida, utan transparens, även om du kommer att använda en bakgrundsbild med ditt tema.</para>
+      </tip>
+
+      <tip>
+        <title>TIPS</title>
+        <para>
+          Tiles can be square or rectangular, and any size you like. Most
+          of the tile sets that come with <application>Four-in-a-Row</application> use square tiles measuring
+          50 pixels by 50 pixels.
+        </para>
+      </tip>
+
+      <para>För en fullständig bakgrundsbild i fönstret finns det lite arbete att göra. Låt oss säga att dina kulor mäter 50 x 50 bildpunkter. Spelets bräde mäter 7 x 7 kulor, inklusive toppraden, så den ideala bakgrundsbilden för din kuluppsättning mäter 350 x 350 bildpunkter.</para>
+
+      <tip>
+        <title>TIPS</title>
+        <para>
+          <application>Four-in-a-Row</application> will automatically scale the background image if it doesn't
+          match the tile set. This means you can make "large" and "small"
+          versions of your theme, both using the same background image,
+          just by having a large and a small version of your tile set.
+        </para>
+      </tip>
+
+      <para>Så, nu har du en kuluppsättning och kanske en passande bakgrundsbild till den. Nästa steg är att sätta dem samman på rätt plats.</para>
+
+    </sect2>
+
+
+    <sect2 id="directories">
+
+      <title>Sätt ihop det</title>
+
+      <para>
+        The last step is to put your image(s) where <application>Four-in-a-Row</application> can
+        find them. You could put them in Four-in-a-row's install directory (which will
+        depend on your particular system), but your home directory's probably
+        a better idea.
+      </para>
+
+      <para>
+        Make a <filename class="directory">~/.gnect</filename> directory,
+        and a <filename class="directory">~/.gnect/pixmaps</filename>
+        directory. Those names are important, as <application>Four-in-a-Row</application> won't look
+        anywhere else.
+      </para>
+
+      <para>Kopiera dina bilder till katalogen pixmaps.</para>
+
+      <para>
+        If you start <application>Four-in-a-Row</application> from the command line, it'll give you clues about
+        any problems it has with your new theme. If it has none, you'll
+        find your new theme listed the
+        <interface>Preferences Dialog</interface>.
+      </para>
+
+      <para>Mycket nöje!</para>
+
+    </sect2>
+
+
+  </sect1>
+
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Network Games</title>
+  <para>
+    Four-in-a-Row support networked multiplayer games which is provided by <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink>. By connecting to a Four-in-a-Row server
+    on the Internet, you can challenge other players in multiplayer games.
+    For news, updates and a list of servers to connect to, see the <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">gnome-games website</ulink>.
+  </para>
+  <para>
+    To start the multiplayer game of Four-in-a-Row, select <menuchoice><guimenu>Game</guimenu> 
+    <guimenuitem>Network Game</guimenuitem></menuchoice> on the Four-in-a-Row menu.
+  </para> 
+
+<sect2 id="connecting">
+<title>Connecting to a Four-in-a-Row network server</title>
+<para>
+The Four-in-a-Row connection dialog is shown initially when starting a new
+network game. This dialog allows you to select a server to connect to,
+and the username that you will have while connected to that server.  
+</para>
+
+<para>
+It is possible to connect to a server with either a guest account or a normal
+registered account. Guest accounts allows you to anonymously login, while
+a normal login account allows you to reserve your own username which
+is protected by the password that you choose.
+</para>
+
+<para> The <guimenuitem>Guest Login</guimenuitem> option should be selected
+if you want an anonymous guest account. If you want to create a new 
+login account, then select the <guimenuitem>First-time Login</guimenuitem> 
+option, with the username, password and email of your choice.
+If you have already created your account, you can connect by selecting
+the <guimenuitem>Normal Login</guimenuitem> option, and enter the
+username and password that you have chosen.
+</para>
+<para>
+To connect to a server, click on the <guimenuitem>Connect</guimenuitem> button.
+</para>
+<figure id="connect">
+<title>The Four-in-a-Row network connection dialog.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>The Four-in-a-Row network connection dialog.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Joining a game room</title>
+<para>
+Once you have successfully connected to a server, you can choose which game room to join. To play a multiplayer game of Four-in-a-Row, select the Four-in-a-Row room. If you want to host your own game, then click on the Launch button. This creates a new table where other players can participate in a game against you. 
+If there are any other games already started, then you can double-click on an existing game table to join it.
+The list of game tables on the right shows you the number of available seats, which means the
+number of players that can join the game table.
+</para>
+<figure id="tables">
+<title>This Four-in-a-Row network dialog allows you to join a game room to find other players.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>This Four-in-a-Row network dialog allows you to join a game room to find other players.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>
+When creating a new table for Four-in-a-Row games, a preference dialog is displayed which allows you to
+customize the game, such as set the minimum number of players for the game. Once the total
+number of seats have been taken, then no more players are allowed to join that game table.
+</para>
+<para>
+It is possible to chat with other players in network games. Ask for advice or help playing the games,
+but please be polite against other players.
+</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Waiting for other players to join the game</title>
+<para>
+Once you have successfully joined a game table, then you have to wait until enough
+players have joined the table. The <guimenuitem>Players List</guimenuitem> menu item
+allows you to see a list of the players who have joined the game.
+The game will begin immediately when the total number of players in the the game have been reached.
+</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Playing multiplayer Four-in-a-Row games</title>
+<para>
+Multiplayer Four-in-a-Row games have pretty much the same rules as normal Four-in-a-Row games,
+except that you are now playing against human players. This means that other
+strategies might possibly be better than when playing against AI players.
+</para>
+<para>
+Once a player has won, the game ends and you can return to the initial network game screen.
+Then you can play yet another game of addictive Four-in-a-Row multiplayer!
+</para>
+</sect2>
+
+</sect1>
+
+
+
+  <!-- ===== Bugs ============================================== -->
+
+
+  <sect1 id="bugs">
+
+    <title>Kända fel och begränsningar</title>
+
+    <para>Ibland ser inte en kulsläppning lika mjuk ut som den bör vara.</para>
+
+  </sect1>
+
+
+  <!-- ===== Authors =========================================== -->
+
+
+  <sect1 id="authors">
+
+    <title>Upphovsmän</title>
+
+    <para><application>Fyra-i-rad</application> skrevs av Timothy Musson (<email>trmusson@ihug.co.nz</email>) och David Neary (<email>bolsh@gimp.org</email>). Diverse andra personer har tagit sig tid att hjälpa till på många olika sätt sedan arbetet med <application>Fyra-i-rad</application> började.</para>
+    <para>
+      The <ulink type="http" url="http://www.ce.unipr.it/~gbe/velena.html">Velena Engine</ulink>,
+      <application>Four-in-a-Row</application>'s main computer player, was written by Giuliano Bertoletti.
+      We're grateful to him for allowing us to include his work, without
+      which <application>Four-in-a-Row</application> wouldn't be nearly as worthwhile.
+    </para>
+    <para>Den här handboken skrevs av Timothy Musson.</para>
+    <para>För att rapportera ett fel eller föreslå någonting angående det här programmet eller den här handboken, följ anvisningarna i det här <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentet</ulink>.</para>
+
+
+<!-- For translations: uncomment this:
+
+  <para>
+    Latin translation was done by ME
+    (<email>MYNAME@MYADDRESS</email>). Please send all comments and
+    suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+-->
+
+  </sect1>
+
+
+  <!-- ============= License =================================== -->
+
+
+  <sect1 id="license">
+
+    <title>Licens</title>
+
+    <para>Det här programmet är fri programvara; du kan distribuera det och/eller ändra det under villkoren för <citetitle>GNU General Public License</citetitle> som publicerats av Free Software Foundation; antingen version 2 av licensen, eller (om du vill) någon senare version.</para>
+
+    <para>Detta program distribueras i hopp om att det ska vara användbart, men UTAN NÅGON SOM HELST GARANTI, även utan underförstådd garanti om SÄLJBARHET eller LÄMPLIGHET FÖR NÅGOT SPECIELLT ÄNDAMÅL. Se <citetitle>GNU General Public License</citetitle> för ytterligare information.</para>
+
+    <para>En kopia av <citetitle>GNU General Public License</citetitle> har inkluderats som en bilaga till <citetitle>Användarhandbok för skrivbordet</citetitle>. Du kan även få en kopia av <citetitle>GNU General Public License</citetitle> från Free Software Foundation genom att besöka <ulink url="http://www.fsf.org" type="http">deras webbplats</ulink> eller genom att skriva till <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+
+  </sect1>
+
+</article>

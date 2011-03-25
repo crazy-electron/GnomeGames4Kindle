@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.14">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "January 2006">
+<!ENTITY app "<application>Mines</application>">
+<!ENTITY appname "Mines">
+<!ENTITY version "2.14">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="da">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Manual til <application>Minestryger</application></title>
+    <abstract role="description">
+      <para>Minestryger er GNOME's udgave af det populære logiske puslespil, som involverer at undgå miner og modtage fif til placeringen af minerne.</para>
+    </abstract>
+    <copyright>
+      <year>2006</year>
+      <holder>Callum McKenzie</holder>
+<!--   Based on an earlier manual by   <holder>Tim Riehle</holder> -->
+    </copyright><copyright><year>2010.</year><holder>Joe Hansen</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOME-dokumentationsprojektet</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+        <para>Dette dokument er udgivet under to licenser. Du kan enten distribuere og/eller ændre dokumentet under betingelserne i <ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink>, som <link linkend="license">programmet er licenseret</link> under, eller du kan distribuere dokumentet under betingelserne i GNU Free Documentation License. En kopi af denne følger.</para>
+
+	<para>Tilladelse er givet til at kopiere, distribuere og/eller ændre dette dokument under betingelserne i GNU Free Documentation License (GFDL), Version 1.1 eller enhver senere version udgivet af Free Software Foundation; uden invariante afsnit, forsidetekster, samt bagsidetekster. Du kan se en kopi af GFDL her <ulink type="help" url="ghelp:fdl">link</ulink> eller i filen COPYING-DOCS som distribueres sammen med denne manual.</para>
+         <para>Denne manual er en del af den samling af GNOME-manualer som udgives under GFDL. Hvis du ønsker at distribuere denne manuel adskilt fra samlingen, kan du gøre dette ved at tilføje en kopi af licensen til manualen, som beskrevet i afsnit 6 af licensen.</para>
+
+	<para>Mange af navnene brugt af firmaer til at skelne deres produkter og tjenester er registrerede varemærker. Der hvor disse navne optræder i GNOME-dokumentationen, og medlemmerne af GNOME-dokumentationsprojektet er blevet gjort opmærksomme på disse varemærker, er navnene skrevet med store bogstaver eller store forbogstaver.</para>
+
+	<para>DOKUMENTET OG ÆNDREDE VERSIONER AF DOKUMENTET STILLES TIL RÅDIGHED UNDER GNU FREE DOCOMENTATION LICENSE MED FØLGENDE BETINGELSER: <orderedlist>
+		<listitem>
+		  <para>DETTE DOKUMENT GØRES TILGÆNGELIGT SÅDAN SOM DET ER, UDEN NOGEN FORM FOR GARANTI, HVERKEN UDTALT ELLER ANTYDET, DERIBLANDT, UDEN BEGRÆNSNINGER, GARANTIER OM AT DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET ER FRIT FOR DEFEKTER, PASSENDE TIL ET BESTEMT FORMÅL ELLER IKKE-KRÆNKENDE. DU HÆFTER SELV FOR HELE RISIKOEN VEDRØRENDE KVALITET, KORREKTHED OG YDELSE FOR DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET. SKULLE ET DOKUMENT, ELLER EN ÆNDRET VERSION AF ET DOKUMENT VISE SIG AT VÆRE DEFEKT PÅ EN HVILKEN SOM HELST MÅDE, HÆFTER DU FOR BETALING FOR EVENTUEL NØDVENDIG SERVICE, REPARATION ELLER KORREKTION (OG IKKE HVERKEN DEN OPRINDELIGE FORFATTER, SKRIBENT ELLER NOGEN ANDEN BIDRAGYDER). DENNE ERKLÆRING OM GARANTIFORBEHOLD ER EN ESSENTIEL DEL AF DENNE LICENS. INGEN BRUG AF NOGET DOKUMENT ELLER ÆNDRET VERSION AF DOKUMENTET ER AUTORISERET HERUNDER BORTSET FRA DENNE ANSVARSFRASKRIVELSE OG</para>
+		</listitem>
+		<listitem>
+		  <para>UNDER INGEN OMSTÆNDIGHEDER OG UNDER INGEN JURIDISK TEORI, UANSET OM DET ER EN BEVIDST SKADENDE HANDLING (INKLUSIVE UFORSVARLIGHED) ELLER PÅ HVILKEN SOM HELST ANDEN MÅDE, KAN FORFATTEREN, SKRIBENT, BIDRAGYDERE, DISTRIBUTØRER ELLER FORSYNER AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER GØRES ANSVARLIG OVERFOR NOGEN PERSON FOR NOGEN DIREKTE, INDIREKTE, SPECIEL, TILFÆLDIG ELLER FØLGENDE SKADE PÅFØRT NOGEN INKLUSIVE, UDEN BEGRÆNSNING, SKADE SOM FØLGE AF TAB AF RYGTE, ARBEJDSSTOP, COMPUTERFEJL ELLER -SVIGT, ELLER ENHVER ANDEN FORM FOR SKADE ELLER TAB SOM ER OPSTÅET I FORBINDELSE MED BRUG AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER HERAF, SELV HVIS EN SÅDAN PART HAR VÆRET INFORMERET OM MULIGHEDEN FOR SÅDANNE SKADER.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Callum</firstname> 
+	<surname>McKenzie</surname> 
+	<affiliation> 
+	  <address> <email>callum@spooky-possum.org</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+	
+    <revhistory>
+      <revision> 
+	<revnumber>Manual til Minestryger version 2.9</revnumber> 
+	<date>Januar 2006</date> 
+	<revdescription> 
+	  <para role="author">Callum McKenzie <email>callum@spooky-possum.org</email></para>
+	  <para role="publisher">GNOME-dokumentationsprojektet</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Denne manual beskriver version 2.14 af Minestryger.</releaseinfo>
+    <!-- The following feedback information only applies to applications
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Tilbagemeldinger</title> 
+      <para>Hvis du ønsker at indrapportere en fejl eller komme med et forslag vedrørende programmet <application>Minestryger</application> eller denne manual så følg vejledningen på siden <ulink url="http://bugzilla.gnome.org">fejlrapporteringsdatabase til GNOME.</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME - Minestryger</primary> 
+  </indexterm>
+  
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+  <sect1 id="intro">
+    <title>Indledning</title>
+
+    <para><application><application>Minestryger</application></application> er et puslespil, hvor du finder placeringen på miner, der flyder rundt i et ocean. Du bruger kun din hjerne og en smule held.</para>
+
+    <para>Du starter spillet med et gitter af dækkede felter og ingen ide om hvad der er under dem. Ved at klikke på et felt afsløres det hvad der er derunder: Enten tomt hav eller en mine. Hvis du rammer en mine går det galt og spillet er slut. Hvis du finder et tomt havfelt overlever du og kan forsøge igen. Vi giver en lille smule hjælp; hvis du finder et tomt havfelt står der et nummer på det der fortæller dig, hvor mange miner der er omkring dette havfelt (eller intet nummer hvis der ingen omkringliggende miner er). Når du først har fundet et par tomme felter, kan du begynde at regne ud, hvilke felter som har miner og hvilke som ikke har. Du vinder spillet, når du har fundet alle felterne uden miner og markeret alle felterne med miner.</para>
+
+    <figure id="main-window">
+      <title>Stadierne i spillet: Begyndelsen, spillet, nederlaget og sejren.</title>
+    	    <mediaobject><imageobject>
+    	      <imagedata fileref="figures/main-window.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <para>For at markere et felt som havende en mine højreklikker du på feltet og et flag placeres på feltet. Hvis du klikker på et felt med et nummer, og du har placeret præcis det antal flag på omkringliggende felter så afsløres de resterende felter. Hvis du ikke har markeret felterne korrekt, vil der ske en eksplosion og spillet er forbi. Felter uden omkringliggende miner (det vil sige tomme havfelter) vil automatisk få deres omkringliggende felter ryddet.</para>
+
+    <figure id="status-bar">
+      <title>Vigtig information.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/statusbar.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <para>Du spiller på tid. For at mestre dette spil skal du både arbejde hurtigt og korrekt. Når du først har fundet alle minerne og afsløret alle de uminerede felter stopper uret. Dit resultat er tiden, du var om spillet; jo kortere jo bedre.</para>
+
+    <para>Tidsforbruget vises i bunden af vinduet til højre. Ved siden af til venstre er vist det antal miner du har ryddet indtil nu og det samlede antal skjulte miner på brættet.</para>
+
+    <figure id="faces">
+      <title>Det gule ansigt viser dig hvor godt du klarer dig.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/faces.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <!-- Face graphics image. -->
+
+  </sect1>
+
+
+  <sect1 id="details">
+    <title>Detaljerne</title>
+
+    <para>Dette afsnit giver information om styringen og de vigtige menupunkter. Hvis du har brug for hjælp til at regne ud hvor minerne er så se <link linkend="strategy">strategiafsnittet</link>.</para>
+
+    <sect2>
+      <title>Målet</title>
+
+      <para>Spillet begynder med et hav af felter med ukendt indhold og du skal markere alle felterne med miner og rydde alle andre felter. Du behøver ikke markere felterne med miner, men spillet er meget nemmere hvis du gør det. Når du først har ryddet alle de uminerede felter, vil alle tilbageværende felter med miner blive markeret for dig.</para>
+
+      <para>Hvis du venstreklikker på en mine, eller automatisk rydder et felt med en mine på taber du. For at forhindre uheld, har du ikke lov til automatisk at rydde omkring et felt med mindre antallet af markerede miner svarer til nummeret på feltet.</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Brug af musen</title>
+      
+      <informaltable>
+        <tgroup cols="2">
+	<!-- FIXME: proper headers. -->
+	  <thead>
+	    <row>
+	      <entry>Handling</entry><entry>Resultat</entry>
+	    </row>
+	  </thead>
+	  <tbody>
+	    <row>
+	      <entry>Venstreklik på uviste felter.</entry>
+	      <entry>Viser indholdet på det felt. Kan være både godt og skidt.</entry>
+	    </row>
+	    <row>
+	      <entry>Venstreklik på et afsløret felt.</entry>
+	      <entry>Automatisk rydning. Afslører de umarkerede felter omkring det felt der klikkes på, men kun hvis nok felter er blevet markeret, så det svarer til tallet på feltet.</entry>
+	    </row>
+	    <row>
+	      <entry>Højreklik på et uafsløret felt.</entry>
+	      <entry>Markerer feltet som minebesat. Hvis feltet allerede er markeret vil markeringen blive fjernet.</entry>
+	    </row>
+	  </tbody>
+	</tgroup>
+      </informaltable>
+
+      <tip><para>Hvis du er vant til den mere traditionelle musekontrol, så kan du stadig bruge den.</para></tip>
+    </sect2>
+
+    <sect2>
+      <title>Spilstørrelse og sværhedsgrad</title>
+
+      <para>Ved at vælge <menuchoice><guimenu>Opsætning</guimenu><guimenuitem>Indstillinger</guimenuitem></menuchoice> fra menuen kan du ændre størrelsen på spillene. Større bræt tager længere tid og kræver mere koncentration. Mindre spil er mere hektiske. Vi tilbyder størrelserne: lille, mellem, stor og tilpasset.</para> 
+
+    <figure id="preferences-img">
+      <title>Indstillingsvinduet.</title>
+    	    <mediaobject><imageobject>
+	      <imagedata fileref="figures/preferences.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+      <para>I højre side af vinduet er der tre parametre, der kontrollerer den tilpassede størrelse. Vandret og lodret er bredden og højden på det ønskede gitter angivet i firkanter. Antallet af miner er - indlysende nok - det antal miner du skal lokalisere. Hvis antallet er for højet eller for lavt bliver spillet meget nemt. Antallet af miner er begrænset til en smule under det totale antal firkanter.</para>
+
+    </sect2>
+    
+    <sect2>
+      <title>Flagene "Jeg er ikke sikker"</title>
+
+      <informalfigure id="imnotsureflagsimg">
+    	    <mediaobject><imageobject>
+  	      <imagedata fileref="figures/imnotsureflagscheckbox.png" format="PNG"/>
+	    </imageobject></mediaobject>
+      </informalfigure>
+
+      <para>Der er en afkrydsningsboks i egenskabsvinduet med navnet Brug "Jeg er ikke sikker-flag". Hvis du slår denne til, så vil et højreklik på et felt få det til at skifte mellem de normale flag der bruges til at markere feltet som mineret, et flag med et spørgsmålstegn og intet flag. Dette nye flag er til for at hjælpe dig med at tænke situationen igennem, så du kan markere felter som måske indeholder en mine, men som du ikke er helt sikker på. Disse flag har ingen effekt på spillet; du skal stadig bruge det passende antal røde markeringsflag for at kunne rydde omkring et nummereret felt.</para>
+
+      <figure id="flags-img">
+	<title>Sekvensen af flag når "Jeg er ikke sikker-flaget" er slået til.</title>
+    	    <mediaobject><imageobject>
+  	      <imagedata fileref="figures/flags.png" format="PNG"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+    </sect2>
+
+    <sect2>
+      <title>Brug advarslen "For mange flag"</title>
+
+      <para>Den anden afkrydsningsboks i indstilingsvinduet har navnet Skriv "for mange flag-advarsel". Denne egenskab vil vise dig en advarsel, hvis du har placeret for mange flag. Denne indstilling er slået fra som standard, da den giver så meget hjælp, at det går under betegnelsen snyderi.</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Fif</title>
+    
+      <para>Hvis du sidder fast - det er meget normalt at ende op med to valg som du ikke logisk kan løse - så kan du enten gætte, eller spørge efter et fif. Når du vælger <guimenuitem>Fif</guimenuitem> fra menuen <guimenu>Spil</guimenu> afsløres et enkelt felt (samt omkringliggende felter hvis feltet er blankt). Valget af felt er tilfældigt, men bør hjælpe. Der tilføjes 10 sekunder straftid hver gang du bruger et fif.</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Resultater</title>
+
+      <para>Hvis dit resultat er i top ti bliver du vist på resultatlisten og har muligheden for at ændre navnet optaget i resultatlisten. Du kan også senere se resultaterne ved at vælge <guimenuitem>Resultater</guimenuitem> fra menuen <guimenu>Spil</guimenu>. Rullegardinet i toppen af vinduet lader dig se resultaterne for andre brætstørrelser.</para>
+
+    <figure id="high-score-img">
+      <title>Resultatvinduet.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/highscores.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+      <tip>
+        <para>Resultatlisten for den tilpassede størrelse er normalt uden mening. Enhver anden spiller kan gøre spilstørrelsen mindre og opnå en bedre tid. Hvis du kun spiller en bestemt størrelse under tilpasset, så kan du stadig se hvordan du klarer dig. Det er den eneste grund til at den registreres.</para>
+      </tip>
+    </sect2>
+
+    <sect2>
+      <title>Vinduestørrelse</title>
+      
+      <para>Tilpasning af vinduet gør felterne større eller mindre. Hvis du ønsker at udnytte skærmen maksimalt kan tilvalget guimenuitem&gt;Fuldskærm</para>
+    </sect2>
+
+    <sect2>
+      <title>Sætte spillet på pause</title>
+
+      <para>Spillet kan automatisk sættes på pause når du begynder at bruge et andet vindue, eller ved at vælge <guimenuitem>Pause</guimenuitem> fra menuen <guimenu>Spil</guimenu>. Spilområdet er blankt, så du kan ikke tænke fremad mens uret er stoppet. For igen at starte spillet trykkes på knappen "Tryk for at genoptage".</para>
+    </sect2>
+
+  </sect1>
+
+ <!-- ================ Usage ================================ -->
+
+  <sect1 id="strategy">
+    <title>Strategi</title>
+
+    <para>Den første halvdel af dette afsnit forklarer den grundlæggende udledning af hvor minerne er. Hvis du kender spillet, så spring ned til underafsnittet <link linkend="advanced">Avancerede situationer</link>.</para>
+
+    <sect2>
+      <title>Det grundlæggende</title>
+      <para>Dette er nogle få grundlæggende spilsituationer hvor det bør være lige til, men hvis du kæmper med at finde ud af hvordan spillet fungerer er de brugbare. Det første tilfælde er, hvor du har et isoleret dækket felt og de fleste felter omkring det siger 1. Dette dækkede felt er en mine.</para>
+
+      <figure>
+        <title>Det simpleste tilfælde.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-1.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Det næstenkleste tilfælde er hvor du har to dækkede felter ved siden af hinanden og begge felter på den ene side er markeret med 2. Hvis de ingen andre uryddede naboer har, så er begge felter minebelagt.</para>
+
+      <figure>
+        <title>Tilfældet med to miner.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-2.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Endelig, når der er tre uafklarede felter i en række og det ryddede felt ved siden af den midterste er en 3'er (igen må dette felt ikke have nogen andre naboer) så er alle tre minebelagt.</para>
+
+      <figure>
+        <title>Tilfældet med tre miner.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-3.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Dette er de enkleste tilfælde. Andre afledninger af disse enkle spilsituationer er mulige, for eksempel kan de tre felter i det forrige eksempel være i en L-form.</para>
+      <para>Enkel analyse vil løse det meste af puslespillet, men ikke det hele. Før vi går videre til næste afsnit, hvor vi giver mere avancerede fif, bør du spille en smule og se hvad du selv kan regne ud.</para>
+    </sect2>
+
+    <sect2 id="advanced">
+      <title>Avancerede situationer</title>
+      
+      <para>Der er nogle mere komplicerede situationer. De er noget mere avancerede end i sidste afsnit, så det er en god ide at følge vores råd om at spille en smule før du går videre her.</para>
+
+      <para>I eksemplet nedenfor er minerne mod venstre for de markerede. Vi regner dette ud via en elimineringsproces. Hvis feltet mod venstre af de to var en mine så ville 1'erne begge have deres maksimale antal miner hvilket ikke ville give en ledig plads til den anden mine for 2'eren (da de også vil være placeret ved 1'erne). Ved at have elimineret det midterste felt står vi tilbage med to felter som er krævet for 2'eren så de er begge mineret.</para>
+
+      <figure>
+        <title>Et ikke så indlysende mønster.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-1.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Denne spilsituation kan være forklædt. Se for eksempel figuren nedenfor. Det er den samme situation, men det ekstra minerede felt til højre har øget alle tallene med 1.</para>
+
+      <figure>
+        <title>Den ekstra mine skjuler en kopi af det forrige eksempel.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-2.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+<para>Nu forsøger vi med et kompliceret tilfælde. Det illustrerer to pointer. Den første er at selv om du ikke er sikker på, hvilket firkanter der er mineret, er en begrænsning af mulighederne hjælpsomt. Den anden er at vide hvilke felter der ikke er mineret er næsten så godt som at vide, hvilke der er.</para>
+
+<para>Antag, i figuren nedenfor, at vi går i gang vel vidende at det øverste venstre felt er mineret og at de to felter markeret med 2 til venstre kræver en mere mine. Observer at den yderste venstre 2 indikerer at en af de dækkede felter nedenfor den er mineret, men vi ved endnu ikke hvilken. Da mindst et af disse felter er mineret og de begge er naboer af det andet 2 så ved vi at 2 også er dækket af et af disse to felter (vi ved stadig ikke hvilken). Dette betyder at feltet nedenfor 4'eren er uden mine da den også er nabo af den anden 2'er og ikke et af de to felter vi netop har identificeret. Dette tomme felt efterlader nu 4'eren med netop fire naboer - alle må derfor være minebelagt. Det fortæller os ikke kun hvilke miner der er omkring 4'eren, men fortæller os også hvilke af felterne ved siden af 2'eren der er minebelagt!</para>
+
+      <figure>
+        <title>Så svært som det kan blive.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-3.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+
+<para>Denne slags spilsituation er svær. I alle de andre eksempel kan du lære at kigge efter mønstre og undgå at tænke over spilsituationen. Spilsituationer som vist i figuren kommer ikke nemt frem eller er nemt at se. Ofte er det nemmere bare at ignorere dem og spille andre steder på brættet i håb om, at du kan begynde at rydde felter fra en anden side.</para>
+
+</sect2>
+<sect2>
+
+    <title>Fif</title>
+
+    <para>Husk at kanten på brættet er det samme som et stort ryddet område (men uden numrene). Ofte er arbejde ved kanten af brættet den nemmeste vej frem.</para>
+
+    <para>Undertiden ender du i spilsituationer hvor du på ingen måde kan udlede hvor minerne er. I disse tilfælde må du enten gætte eller bruge fif-funktionen (<menuchoice><guimenu>Spil</guimenu><guimenuitem>Fif</guimenuitem></menuchoice>). Undertiden er det ikke en 50/50 spilsituation og frem for at bruge et fif vil du måske gamble på det mest sandsynlige.</para>
+
+    <para>Et endeligt fif: Husk tælleren nederst til venstre i vinduet som fortæller dig hvor mange miner du har tilbage? Ofte, mod slutningen af spillet, kan dette tal hjælpe dig med at regne mulige placeringer ud for minerne. Hvordan du gør det overlader vi til dig at regne ud.</para>
+
+    </sect2>
+ </sect1>
+
+ <sect1 id="authors">
+  <title>Forfattere</title>
+  <para><application>GNOME Minestryger</application> blev skrevet af Pista (<email>szekeres@cyberspace.mht.bme.hu</email>). Denne manual blev skrevet af Callum McKenzie (<email>callum@spooky-possum.org</email>) med hjælp fra Vincent Povirk og baseret på en tidligere manual af Tim Riehle (<email>tkriehle@citilink.com</email>). Hvis du ønsker at indrapportere en fejl eller komme med et forslag vedrørende dette program eller denne manual så følg vejledningen i dette <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokument</ulink>.</para>
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licens</title>
+  <para>Dette program er frit software; du kan distribuere det og/eller ændre det under betingelserne i <citetitle>GNU General Public License</citetitle> der udgives af Free Software Foundation; enten version 2 eller (ved dit valg) enhver senere version.</para>
+  <para>Dette program distribueres i håb om at det vil vise sig nyttigt, men UDEN NOGEN FORM FOR GARANTI, uden selv de underforståede garantier omkring SALGBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Yderligere detaljer kan læses i <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle>.</para>
+  <para>En kopi af <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> er inkluderet som et tillæg til <citetitle>GNOME's brugervejledning</citetitle>. Du kan også indhente en kopi af <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> fra the Free Software Foundtation ved at besøge <ulink type="http" url="http://www.fsf.org">deres hjemmeside</ulink> eller ved at skrive til <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

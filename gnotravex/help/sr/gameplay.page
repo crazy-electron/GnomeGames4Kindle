@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="gameplay" xml:lang="sr">
+      
+  <info>
+    <link type="guide" xref="index"/>
+    <desc>Увод у <app>Гномову слагалицу</app>.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+   <credit type="author">
+    <name>Milo Casagrande</name>
+    <email>milo@ubuntu.com</email>
+   </credit>
+   <license>
+     <p>Creative Commons Share Alike 3.0</p>
+   </license>
+  </info>
+
+  <title>Играње</title>
+
+  <p><app>Гномова слагалица</app> је једноставна слагалица у којој је циљ преместити разне делове са бројевима са десне стране на леву страну табле, али тако да се само исти бројеви на деловима међусобно додирују.</p>
+  <p>У игри се мери време, и ово време се користи као резултат игре. Морате померити све делове у што краћем времену.</p>
+  <figure>
+    <title>Главни прозор игре</title>
+    <desc>Главни прозор <app>Гномове слагалице</app></desc>
+    <media type="image" src="figures/gnotravex-main-window.png" mime="image/png" style="center">
+      <p>Главни прозор <app>Гномове слагалице</app>.</p>
+    </media>
+  </figure>
+
+</page>

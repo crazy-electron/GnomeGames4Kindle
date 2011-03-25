@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.14">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "January 2006">
+<!ENTITY app "<application>Mines</application>">
+<!ENTITY appname "Mines">
+<!ENTITY version "2.14">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="cs">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Příručka ke hře <application>Miny</application></title>
+    <abstract role="description">
+      <para>Miny jsou GNOME variantou populární logického hlavolamu Minesweeper (odminovávač), ve které se vyhýbáte minám podle nápověd o jejich umístění.</para>
+    </abstract>
+    <copyright>
+      <year>2006</year>
+      <holder>Callum McKenzie</holder>
+<!--   Based on an earlier manual by   <holder>Tim Riehle</holder> -->
+    </copyright><copyright><year>2009.</year><holder>Marek Černocký (marek@manet.cz)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Dokumentační projekt GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+        <para>Tento dokument má dvojitou licenci. Můžete jej buď šířit a/nebo upravovat pod podmínkami <ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink>, pod kterou je i <link linkend="license">licencovaný program</link> nebo šířit pod podmínkami GNU Free Documentation License. Její kopie následuje.</para>
+
+	<para>Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU Free Documentation License, verze 1.1 nebo jakékoli další verze vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů předních desek a bez textů zadních desek. Kopie této licence je zahrnuta v oddílu jménem <ulink type="help" url="ghelp:fdl">GNU Free Documentation License</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou.</para>
+         <para>Tato příručka je součástí kolekce příruček GNOME, distribuovaných pod licencí GNU FDL. Pokud chcete tento dokument šířit odděleně od kolekce, musíte přiložit kopii licence dle popisu v sekci 6 dané licence.</para>
+
+	<para>Mnoho užívaných jmen určených k zviditelnění produktů nebo služeb jsou ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s velkým písmenem na začátku.</para>
+
+	<para>DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <orderedlist>
+		<listitem>
+		  <para>DOKUMENT JE POSKYTOVÁN V PODOBĚ „JAK JE“ BEZ ZÁRUKY V JAKÉKOLIV PODOBĚ, NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ VERZE, JE BEZCHYBNÝ NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL NEBO NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ DOKUMENTU, NEBO JEHO UPRAVENÉ VERZE, LEŽÍ NA VÁS. POKUD KVŮLI TOMUTO DOKUMENTU, NEBO JEHO UPRAVENÉ VERZI, NASTANE PROBLÉM, VY (NIKOLIV PŮVODNÍ AUTOR NEBO JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE JAKÉKOLIV NÁKLADY ZA NUTNÉ ÚPRAVY, OPRAVY ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE ZÁKLADNÍ SOUČÁST TÉTO LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ, PODLE TÉTO DOHODY, POVOLENO UŽÍVÁNÍ ANI ÚPRAVY TOHOTO DOKUMENTU; DÁLE</para>
+		</listitem>
+		<listitem>
+		  <para>ZA ŽÁDNÝCH OKOLNOSTÍ A ŽÁDNÝCH PRÁVNÍCH PŘEDPOKLADŮ, AŤ SE JEDNÁ O PŘEČIN (VČETNĚ NEDBALOSTNÍCH), SMLOUVU NEBO JINÉ, NENÍ AUTOR, PŮVODNÍ PISATEL, KTERÝKOLIV PŘISPĚVATEL NEBO KTERÝKOLIV DISTRIBUTOR TOHOTO DOKUMENTU NEBO UPRAVENÉ VERZE DOKUMENTU NEBO KTERÝKOLIV DODAVATEL NĚKTERÉ Z TĚCHTO STRAN ODPOVĚDNÝ NĚJAKÉ OSOBĚ ZA PŘÍMÉ, NEPŘÍMÉ, SPECIÁLNÍ, NAHODILÉ NEBO NÁSLEDNÉ ŠKODY JAKÉHOKOLIV CHARAKTERU, VČETNĚ, ALE NEJEN, ZA POŠKOZENÍ ZE ZTRÁTY DOBRÉHO JMÉNA, PŘERUŠENÍ PRÁCE, PORUCHY NEBO NESPRÁVNÉ FUNKCE POČÍTAČE NEBO JINÉHO A VŠECH DALŠÍCH ŠKOD NEBO ZTRÁT VYVSTÁVAJÍCÍCH Z NEBO VZTAHUJÍCÍCH SE K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Callum</firstname> 
+	<surname>McKenzie</surname> 
+	<affiliation> 
+	  <address> <email>callum@spooky-possum.org</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+	
+    <revhistory>
+      <revision> 
+	<revnumber>Příručka V2.9 ke hře Miny</revnumber> 
+	<date>Leden 206</date> 
+	<revdescription> 
+	  <para role="author">Callum McKenzie <email>callum@spooky-possum.org</email></para>
+	  <para role="publisher">Dokumentační projekt GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Tato příručka popisuje Miny verze 2.14</releaseinfo>
+    <!-- The following feedback information only applies to applications
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Ohlasy</title> 
+      <para>Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k aplikaci <application>Miny</application> nebo této příručce, postupujte dle instrukcí na stránce <ulink url="ghelp:gnome-feedback" type="help">Stránka s ohlasy na GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Miny</primary> 
+  </indexterm>
+  
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+  <sect1 id="intro">
+    <title>Úvod</title>
+
+    <para><application><application>Miny</application></application> jsou herní hlavolam, ve kterém se snažíte při plavbě oceánem najít miny jen s pomocí mozku a trochy štěstí.</para>
+
+    <para>Hru začínáte s mřížkou zakrytých polí a bez tušení, co se pod nimi skrývá. Kliknutím na políčko odkryjete, co v něm je - prázdný oceán nebo mina. Pokud narazíte na minu, tak máte smůlu a hra končí. Pokud odkryjete prázdné políčko, tak jste přežili a můžete pokoušet osud dál. Poskytneme vám ale drobnou pomoc. Když najdete prázdný kousek oceánu, vypíše se vám číslo, které říká, kolik min leží v okolních políčcích. A nebo se neobjeví žádné číslo, což znamená, že v okolí žádná mina není. Jakmile najdete pár čistých polí, můžete začít dedukovat, která políčka jsou zaminovaná a která ne. Vyhráváte ve chvíli, kdy odkryjete všechna nezaminovaná políčka a označíte všechna zaminovaná.</para>
+
+    <figure id="main-window">
+      <title>Stavy hry: začátek, průběh, prohra, výhra.</title>
+    	    <mediaobject><imageobject>
+    	      <imagedata fileref="figures/main-window.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <para>Políčka s minou označíte kliknutím pravým tlačítkem a místo se označí vlaječkou. Pokud kliknete na políčko s číslem a v okolí máte rozmístěný správný počet vlaječek na správných místech, zbývající políčka se odkryjí. Pokud ale vlaječky nejsou rozmístěné správně, pak dojde k explozi a hra končí. Políčka, která nesousedí s minami (t.j. prázdná políčka) automaticky odkryjí jejich sousední políčka.</para>
+
+    <figure id="status-bar">
+      <title>Důležité informace</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/statusbar.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <para>Počítá se vám čas. Abyste byli v této hře dobří, musíte postupovat rychle a současně správně. Jakmile najdete všechny miny a odkryjete všechna nezaminovaná políčka, čas se zastaví. Vaším skóre je čas, kterého jste dosáhli. Čím kratší, tím lepší.</para>
+
+    <para>Čas, kterého jste dosáhli, se zobrazuje v pravé dolní části okna. Naproti v levé části je počet min, které jste našli a celkový počet min na herní desce.</para>
+
+    <figure id="faces">
+      <title>Žluté ksichtíky vám naznačují, jak si vedete</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/faces.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <!-- Face graphics image. -->
+
+  </sect1>
+
+
+  <sect1 id="details">
+    <title>Podrobnosti</title>
+
+    <para>Tato kapitola poskytuje informace o ovládání a důležitých položkách nabídky. Pokud potřebujete nápovědu objasňující, kde jsou miny, přeskočte na <link linkend="strategy">kapitolu o strategii</link>.</para>
+
+    <sect2>
+      <title>Cíl</title>
+
+      <para>Začínáte na oceánu polí s neznámým obsahem. Musíte označit všechna políčka s minami a odkrýt všechna prázdná políčka. Políčka s minami nemusíte nutně označovat, ale je pro vás snadnější, když to budete dělat. Pokud odkryjete všechna nezaminovaná políčka, zbývající zaminovaná políčka se vám označí.</para>
+
+      <para>Pokud kliknete na minu nebo necháte automaticky vyčistit zaminovaná políčka, jste ztraceni. Aby nedocházelo k nehodám, není možné automaticky vyčistit okolní políčka v případě, že počet polí označených jako zaminovaná neodpovídá počtu vypsanému v políčku.</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Používání myši</title>
+      
+      <informaltable>
+        <tgroup cols="2">
+	<!-- FIXME: proper headers. -->
+	  <thead>
+	    <row>
+	      <entry>Úkon</entry><entry>Výsledek</entry>
+	    </row>
+	  </thead>
+	  <tbody>
+	    <row>
+	      <entry>Kliknutí levým tlačítkem na neodkrytém políčku.</entry>
+	      <entry>Odkryje obsah tohoto políčka. Buď si polepšíte nebo dopadnete špatně.</entry>
+	    </row>
+	    <row>
+	      <entry>Kliknutí levým tlačítkem na odkrytém políčku.</entry>
+	      <entry>Automatické vyčištění. Odkryje neoznačená políčka okolo políčka, na které jste klikli, ale pouze v případě, že počet označených políček odpovídá číslu uvedenému v políčku.</entry>
+	    </row>
+	    <row>
+	      <entry>Kliknutí pravým tlačítkem na neodkrytém políčku.</entry>
+	      <entry>Označí políčko jako zaminované. Pokud je již označené, tak se značka odstraní.</entry>
+	    </row>
+	  </tbody>
+	</tgroup>
+      </informaltable>
+
+      <tip><para>I když používáte starobylé myši, nemusíte se bát, stále fungují.</para></tip>
+    </sect2>
+
+    <sect2>
+      <title>Velikost hry a obtížnost</title>
+
+      <para>Po spuštění <menuchoice><guimenu>Nastavení</guimenu><guimenuitem>Volby</guimenuitem></menuchoice> z nabídky můžete měnit velikost hry. Větší hra trvá déle a vyžaduje více koncentrace. Menší hra bývá zběsilejší. K dispozici máte malou, střední, velkou a vlastní velikost.</para> 
+
+    <figure id="preferences-img">
+      <title>Dialog voleb.</title>
+    	    <mediaobject><imageobject>
+	      <imagedata fileref="figures/preferences.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+      <para>Na pravé straně dialogu jsou tři parametry pro zadání vlastní velikosti. Vodorovně a svisle jsou šířka a výška požadované mřížky polí. Počet min, jak je asi jasné, udává počet min, které chcete hledat. Pokud je toto číslo příliš velké nebo příliš malé, stává se hra velmi snadnou. Počet min je omezen na hodnotu mírně nižší, než je počet polí.</para>
+
+    </sect2>
+    
+    <sect2>
+      <title>Vlaječka „Nejsem si jist“</title>
+
+      <informalfigure id="imnotsureflagsimg">
+    	    <mediaobject><imageobject>
+  	      <imagedata fileref="figures/imnotsureflagscheckbox.png" format="PNG"/>
+	    </imageobject></mediaobject>
+      </informalfigure>
+
+      <para>V nastavení je volba nazvaná Používat vlaječky „Nejsem si jist(á)“. V případě, že ji povolíte, bude se při klikání pravým tlačítkem na políčku cyklicky přepínat normální vlaječka označující zaminované políčko, vlaječka s otazníkem a prázdná plocha bez vlaječky. Tato nová vlaječka s otazníkem je pomůcka pro vás, abyste si mohli označit políčko, o kterém si myslíte, že by mohlo být zaminované, ale nejste si jistí. Vlaječka nemá žádný vliv na průběh hry. Stále musíte nastavit správný počet červených vlaječek, aby se mohla vyčistit políčka okolo.</para>
+
+      <figure id="flags-img">
+	<title>Sekvence vlaječek v případě povolené vlaječky „Nejsem si jist“.</title>
+    	    <mediaobject><imageobject>
+  	      <imagedata fileref="figures/flags.png" format="PNG"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+    </sect2>
+
+    <sect2>
+      <title>Použít varování „Příliš mnoho vlaječek“</title>
+
+      <para>Další volba v dialogu s nastavením je nazvaná Použít varování „Příliš mnoho vlaječek“. Díky ní se vám zobrazí varování v případě, že umístíte příliš mnoho vlaječek. Standardně je vypnutá, protože poskytuje radu, která by mohla být považovaná za „podvádění“.</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Rady</title>
+    
+      <para>Pokud se při hře zaseknete - a občas se stává, že skončíte na dvou možnostech, které nelze logicky rozhodnout - tak můžete buď hádat nebo požádat o radu. Pokud zvolíte <guimenuitem>Rada</guimenuitem> z nabídky <guimenu>Hra</guimenu>, odkryje se jedno políčko (plus okolní políčka, pokud je prázdné). Políčko je zvolené náhodně, ale i tak vám to může pomoci. Za poskytnutí rady jste však penalizování 10 trestnými vteřinami.</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Nejvyšší skóre</title>
+
+      <para>Pokud se se svým skóre dostanete do první desítky, zobrazí se vám seznam Skóre min a můžete upravit jméno, které se do tabulky zapíše. Skóre si můžete později znovu zobrazit přes <guimenuitem>Skóre</guimenuitem> z nabídky <guimenu>Hra</guimenu>. Pomocí vyskakovacího seznamu v horní části dialogu si můžete prohlédnout skóre i pro ostatní velikosti hry.</para>
+
+    <figure id="high-score-img">
+      <title>Dialog s nejvyšším skóre.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/highscores.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+      <tip>
+        <para>Nejvyšší skóre pro vlastní velikost je obvykle nesmyslné. Nějaký jiný hráč si může nastavit menší velikost a tím dosáhnout lepších výsledků. Jen v případě, že hrajete vždy se stejnou vlastní velikostí, řekne vám to, jak jste doopravdy byli dobří. To je jediný důvod, proč se i přesto tyto údaje zaznamenávají.</para>
+      </tip>
+    </sect2>
+
+    <sect2>
+      <title>Velikost okna</title>
+      
+      <para>Změna velikosti okna mění velikost polí. Pokud chcete maximálně využít obrazovku, máte k dispozici volbu <guimenuitem>Celá obrazovka</guimenuitem> pod nabídkou <guimenu>Nastavení</guimenu>. K přepínání celoobrazovkového režimu můžete také použít <keycap>F11</keycap>.</para>
+    </sect2>
+
+    <sect2>
+      <title>Pozastavení hry</title>
+
+      <para>Hra se pozastaví automaticky v případě, že se přepnete do jiného okna a nebo ji můžete pozastavit ručně pomocí <guimenuitem>Pozastavit</guimenuitem> v nabídce <guimenu>Hra</guimenu>. Hrací oblast se smaže, abyste si nemohli promýšlet tahy dopředu, když jsou zastavené hodiny. Pokračování hry spustíte tlačítkem „Pokračujte stisknutím“.</para>
+    </sect2>
+
+  </sect1>
+
+ <!-- ================ Usage ================================ -->
+
+  <sect1 id="strategy">
+    <title>Strategie</title>
+
+    <para>První část této kapitoly vysvětluje úplně základní dedukce, kde se miny nachází. Pokud jste s hraním hry důvěrně seznámení, můžete přeskočit dolů na podkapitolu <link linkend="advanced">Pokročilé situace</link>.</para>
+
+    <sect2>
+      <title>Základy</title>
+      <para>Zde je několik základních situací, které by měly být naprosto jasné, ale pokud s hraním hry zápolíte, mohly by vám být užitečné. V prvním případě máte izolované zakryté políčko a většina políček okolo je označená 1. Zakryté políčko je zaminované.</para>
+
+      <figure>
+        <title>Nejjednodušší situace.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-1.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>V následujícím jednoduchém případě máte dvě zakrytá navzájem sousedící políčka a obě obě políčka sousedící na stejné straně jsou označené číslem 2. Pokud v jejich sousedství nejsou žádná další nevyčištěná políčka, pak obě políčka jsou zaminovaná.</para>
+
+      <figure>
+        <title>Situace se dvěma minami.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-2.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Nakonec zde máme tři zakrytá políčka v řadě a vyčištěná políčka po jedná straně jsou s číslem 3 (a opět by tato políčka neměla mít žádné neodkryté sousedy), kdy ona tři políčka jsou zaminovaná.</para>
+
+      <figure>
+        <title>Situace se třemi minami</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-3.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Toto jsou nejjednodušší situace. Možné jsou i různé varianty těchto jednoduchých situací, např. tři políčka z předchozího příkladu mohou být umístěná do L.</para>
+      <para>Jednoduchá analýza řeší větší část hlavolamu, ale ne vše. Dříve než přejdeme na další kapitolu, kde dostanete pokročilejší rady, měli byste si trochu zahrát, abyste viděli, co dokážete sami.</para>
+    </sect2>
+
+    <sect2 id="advanced">
+      <title>Pokročilé situace</title>
+      
+      <para>Zde jsou složitější situace. Na rozdíl od předchozí kapitoly jsou již na vyšší úrovni, takže doufáme, že jste si vzali k srdci naši radu a nejdříve si trochu pohráli.</para>
+
+      <para>V následujícím příkladu jsou miny nalevo od jedniček. Vyřešili jsme to postupným vylučováním. Pokud by políčko nalevo od 2 byla mina, pak by i obě sousedních políčka s 1 měla svůj plný počet min a nezbylo by místo na druhou minu pro 2 (poněvadž sousedí s políčky s 1). Když takto vyloučíme prostřední políčko, zůstali nám dvě políčka, která potřebujeme pro políčko s 2, a tudíž jsou obě zaminovaná.</para>
+
+      <figure>
+        <title>Nepříliš jasná sestava.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-1.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Situaci můžeme ještě zkomplikovat, např. podle dalšího obrázku. Je to ta stejná situace, akorát s ještě další minou napravo, která zvyšuje všechna čísla o 1.</para>
+
+      <figure>
+        <title>Ještě jedna mina mění předlohu z předchozího příkladu.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-2.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+<para>A teď zkusíme něco složitějšího. Ukáže nám to dvě věci. Zaprvé, že i když si nejsme jistí, která políčka jsou zaminovaná, i snížení možností je užitečné. A zadruhé, že znalost, která políčka nejsou zaminovaná je stejně užitečná, jako která jsou.</para>
+
+<para>Předpokládejme, podle obrázku níže, že začínáme se znalosti, že horní levé políčko je zaminované a tak dvě políčka označené 2 nalevo vyžadují jen jednu další minu. Dale si všimněte, že 2 nejvíce vlevo naznačuje, že jedno ze zakrytých polí pod je zaminované, ale nevíme které z nich. Poněvadž nejméně jedno z těchto polí je zaminované a obě dvě jsou v sousedství druhé 2, víme že tato 2 je také uspokojená jedním z těchto dvou polí (ale stále nevíme kterým z nich). Znamená to, že políčko pod 4 je čisté, protože je také sousedem druhé 2 a té už jsem určili jedno z předchozích dvou políček. Tímto prázdným políčkem nám pro 4 zůstávají jen čtyři sousedé, takže všichni čtyři musí být zaminovaní. To nám nakonec řeklo, nejen která čtyři políčka okolo 4 jsou zaminovaná, ale i které políčka pod 2 je zaminované.</para>
+
+      <figure>
+        <title>Tak záludné jak to vypadá.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-3.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+
+<para>Tato kategorie situací je ošemetná. Ve všech dalších příkladech se můžete naučit podívat a rozložení a přemýšlením ho vyřešit. Situace jako je tato vám ale nepřinese ovoce tak snadno. Často je jednodušší ji pro teď ignorovat, pokračovat v hraní v jiném místě a doufat, že se postupně vyčistí další políčko okolo.</para>
+
+</sect2>
+<sect2>
+
+    <title>Typy</title>
+
+    <para>Pamatujte, že okraj hrací desky je v podstatě to stejné jako velká vyčištěná plocha (ale bez čísel). Hraní u kraje desky je často nejjednodušší cestou, jak se pohnout vpřed.</para>
+
+    <para>Občas můžete skončit v situaci, kdy není způsob, jak vydedukovat rozložení. V těchto situacích můžete buď hádat nebo použít funkci rady (<menuchoice><guimenu>Hra</guimenu><guimenuitem>Rada</guimenuitem></menuchoice>). Někdy to není jen sázka 50/50 a když nevyužijete radu, tak jdete do hazardu, který obvykle skončí prohrou.</para>
+
+    <para>A jedna rada na závěr: Pamatujte, že počítadlo v levém dolním rohu okna vám říká, kolik min vám ještě zbývá. Na konci hry vám toto číslo často může pomoci odhalit, na kterých místech mohou miny být. Jak to udělat už si ale musíte vyřešit sami.</para>
+
+    </sect2>
+ </sect1>
+
+ <sect1 id="authors">
+  <title>Autoři</title>
+  <para><application>GNOME Miny</application> napsal Pista (<email>szekeres@cyberspace.mht.bme.hu</email>). Tuto příručku napsal Callum McKenzie (<email>callum@spooky-possum.org</email>) za pomoci Vincenta Povirka na základě starší příručky, kterou napsal Tim Riehle (<email>tkriehle@citilink.com</email>). Pokud chcete nahlásit chybu nebo podat návrh týkající se této aplikace nebo tohoto návodu, tak se řiďte instrukcemi v tomto <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentu</ulink>.</para>
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licence</title>
+  <para>Tento program je svobodný software. Můžete jej dále šířit a/nebo upravovat za dodržení podmínek <ulink type="help" url="gnome-help:gpl"><citetitle>GNU General Public License</citetitle></ulink>, tak jak ji vydala Free Software Foundation ve verzi 2 nebo (dle vaší volby) novější.</para>
+  <para>Tento program je šířen s přesvědčením, že může být užitečný, ale BEZ JAKÝCHKOLIV ZÁRUK, bez předpokládané záruky na OBCHODOVATELNOST nebo VHODNOST PRO URČITÝ ÚČEL. Více podrobností najdete v <citetitle>GNU General Public License</citetitle>.</para>
+  <para>Kopie <citetitle>GNU General Public License</citetitle> je zahrnuta v dodatku <citetitle>Uživatelské přiručky GNOME</citetitle>. Kopii <citetitle>GNU General Public License</citetitle> můžete také získat od Free Software Foundation navštívením <ulink type="http" url="http://www.fsf.org">jejich webu</ulink> nebo zasláním žádosti na <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

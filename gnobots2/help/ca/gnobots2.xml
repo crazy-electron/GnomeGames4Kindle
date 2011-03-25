@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "August 2007">
+<!ENTITY app "<application>Robots</application>">
+<!ENTITY appname "Robots">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ca"> 
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Manual del <application>Robots</application></title>
+
+    <abstract role="description">
+      <para>El Robots és una versió gràfica del joc de robots original basat en text, que es pot trobar en alguns sistemes UNIX. El jugador ha d'evitar els robots que el volen caçar fent que xoquin entre ells.</para>
+    </abstract>
+
+      <copyright>
+        <year>2001</year>
+        <holder>Patanjali Somayaji, Mark Rae</holder>
+      </copyright><copyright><year>2007-2009</year><holder>Joan Duran (jodufi@gmail.com)</holder></copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+      <year>2000</year>
+      <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Projecte de documentació del GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Teniu permís per a copiar, distribuir i/o modificar aquest document, sota els termes de la Llicència de documentació lliure GNU (GFDL), versió 1.1 o qualsevol versió publicada posteriorment per la Free Software Foundation, sense seccions invariants, sense texts de portada i sense texts de contraportada. Podeu trobar una còpia de la GFDL en aquest <ulink type="help" url="ghelp:fdl">enllaç</ulink> o en el fitxer COPYING-DOCS distribuït amb aquest manual.</para>
+         <para>Aquest manual forma part d'una col·lecció de manuals del GNOME distribuïts sota la GFDL. Si voleu distribuir aquest manual independentment de la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal com es descriu a la secció 6 de la llicència.</para>
+
+	<para>Molts dels noms que les empreses utilitzen per a distingir els seus productes i serveis es consideren marques comercials. Quan aquests noms apareguin en qualsevol documentació del GNOME, si els membres del Projecte de documentació del GNOME han estat avisats pel que fa a les marques, els noms apareixeran en majúscules o amb les inicials en majúscules.</para>
+
+	<para>EL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT S'OFEREIXEN SOTA ELS TERMES DE LA LLICÈNCIA DE DOCUMENTACIÓ LLIURE DE GNU, TENINT EN COMPTE QUE: <orderedlist>
+		<listitem>
+		  <para>EL DOCUMENT S'OFEREIX «TAL COM ÉS», SENSE CAP TIPUS DE GARANTIA, NI EXPLÍCITA NI IMPLÍCITA; AIXÒ INCLOU, SENSE LIMITAR-S'HI, LES GARANTIES QUE EL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT NO TINGUI DEFECTES, SIGUI COMERCIALITZABLE, SIGUI ADEQUAT PER A UN ÚS CONCRET O NO INFRINGEIXI CAP LLEI. TOT EL RISC PEL QUE FA A LA QUALITAT, EXACTITUD I RENDIMENT DEL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT ÉS VOSTRE. EN CAS QUE EL DOCUMENT RESULTÉS DEFECTUÓS EN QUALSEVOL ASPECTE, VÓS (NO PAS L'ESCRIPTOR INICIAL, L'AUTOR O CAP ALTRE COL·LABORADOR) ASSUMIU TOT EL COST DE MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA; I </para>
+		</listitem>
+		<listitem>
+		  <para>EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGUI PER AGREUJAMENT (INCLOENT-HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR ORIGINAL, QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA VERSIÓ MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN RESPONSABLES DAVANT DE NINGÚ PER CAP DANY DIRECTE, INDIRECTE, ESPECIAL, ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITAR-S'HI, ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FEINA, FALLADA O MALFUNCIONAMENT DE L'ORDINADOR, O QUALSEVOL ALTRA PÈRDUA O DANY RELACIONAT AMB L'ÚS DEL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT, FINS I TOT SI S'HA INFORMAT AQUESTA PART DE LA POSSIBILITAT D'AQUESTS DANYS.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Patanjali</firstname> 
+	<surname>Somayaji</surname> 
+	<affiliation> 
+	  <address> <email>patanjali@mindless.com</email> </address> 
+	</affiliation> 
+      </author> 
+      <author> 
+	<firstname>Mark</firstname> 
+	<surname>Rae</surname> 
+	<affiliation> 
+	  <address> <email>m.rae@inpharmatica.co.uk</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Manual del Robots (versió 2.8)</revnumber> 
+	<date>Setembre de 2004</date> 
+	<revdescription> 
+	  <para role="author">Patanjali Somayaji <email>patanjali@mindless.com</email></para>
+	  <para role="author">Mark Rae <email>m.rae@inpharmatica.co.uk</email></para>
+	  <para role="publisher">Projecte de documentació del GNOME</para>
+	</revdescription> 
+      </revision> 
+      <revision> 
+	<revnumber>Manual del Robots (versió 2.9)</revnumber> 
+	<date>Agost de 2007</date> 
+	<revdescription> 
+	  <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+	  <para role="publisher">Projecte de documentació del GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Aquest manual descriu la versió 2.18 del Robots.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Comentaris</title> 
+      <para>Per a informar d'un error o fer algun suggeriment sobre el <application>Robots</application> o aquest manual, seguiu les indicacions a la <ulink url="ghelp:user-guide?feedback-bugs" type="help">pàgina de comentaris del GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Robots</primary> 
+  </indexterm>
+
+   <!-- ============= Document Body ============================= -->
+
+   <!-- ============= Introduction ============================== -->
+   <sect1 id="intro">
+     <title>Introducció</title>
+
+     <para>El <application>Robots</application> és un joc on heu d'intentar evitar una colla de robots que, per alguna raó inexplicable, estan intentant matar-vos. Està basat en una versió del joc de robots en mode text que es pot trobar en alguns sistemes UNIX.</para>
+     <para>Aquesta versió nova inclou dos tipus de robots, ferralla mòbil, múltiples configuracions del joc, disposició del teclat definible per l'usuari i sons, així com també les característiques que ja hi havia en el joc Robots original.</para>
+
+     <para>Per a executar el <application>Robots</application>, seleccioneu <menuchoice><guimenu>Jocs</guimenu><guimenuitem>Robots</guimenuitem></menuchoice> del <guimenu>Menú principal</guimenu>, o introduïu <command>gnobots2</command> en la línia d'ordres.</para>
+
+     <para>El <application>Robots</application> està inclòs en el paquet <filename>gnome-games</filename>, el qual és part de l'entorn d'escriptori GNOME. Aquest document descriu la versió 2.18 del <application>Robots</application>.</para>
+   </sect1>
+ 
+   <sect1 id="objective">
+     <title>Objectiu del Robots</title>
+     <para>L'objectiu del Robots és bastant senzill. Esteu rodejat per un número de robots o adversaris hostils. A mesura que us mogueu ells es mouran directament cap a on sou per cada moviment que realitzeu. El seu objectiu és matar-vos. El vostre objectiu és matar tots els robots en el tauler aprofitant les seves vulnerabilitats.</para>
+   
+     <para>Els robots es destrueixen quan xoquen entre ells, o quan xoquen contra les restes d'una explosió anterior. Morireu si un robot s'ubica al vostre costat.</para>
+
+     <para>En algunes configuracions del joc (podeu seleccionar entre cinc configuracions diferents) podeu empènyer la ferralla per a construir barricades per a protegir-vos. A més a més, si sou suficientment valent, podeu fer xocar els robots empenyent la ferralla sobre ells i aconseguir punts addicionals.</para>
+     <para>Us podeu salvar teleportant-vos a una ubicació aleatòria. Desafortunadament, la teleportació aleatòria significa que podeu acabar al costat d'un robot, i us podrà matar quan l'hi toqui moure's. Afortunadament, també existeixen teleportacions segures que us ubicaran fora del perill immediat, però només en disposeu d'una quantitat limitada. Podeu aconseguir-ne més al llarg de la partida (com obtenir-les depèn del joc seleccionat), però generalment n'obtindreu un per cada robot que es destrueixi mentre «espereu», fins a un màxim de 10. Si no voleu gastar les teleportacions segures i creieu que és suficientment segur, podeu seleccionar teleportar-vos aleatòriament.</para>
+   
+     <para>Si premeu el botó <guibutton>Espera</guibutton> (veure a sota) no us podreu moure fins que tots els robots (que es continuen movent directament cap a on sou) desapareguin, o us matin. Fer això és arriscat, però podeu aconseguir teleportacions segures addicionals.</para>
+   
+     <para>Si aconseguiu arribar a un punt en què la meitat de la pantalla està ocupada per robots, el número de robots tornarà a la quantitat inicial, i us permetrà continuar.</para>
+  </sect1>
+
+
+  <!-- ================ Usage ================================ -->
+  <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="usage">
+    <title>Utilització del Robots</title>
+    <para>És molt fàcil jugar al <application>Robots</application>. Podeu utilitzar el ratolí o el teclat. Aquesta secció descriu l'ús bàsic del <application>Robots</application>.</para>
+
+    <!-- ========= Basic Usage =========================== -->
+    <sect2 id="mainwin">
+      <title>Utilització bàsica</title>
+      <para>En iniciar el <application>Robots</application> s'obrirà la <interface>finestra principal</interface>, com es mostra a la <xref linkend="mainwindow-fig"/>. <figure id="mainwindow-fig">
+	  <title>Finestra principal del Robots</title>
+	  <screenshot>
+	  <mediaobject> 
+ 	   <imageobject>
+ 	 <imagedata fileref="figures/gnobots2-main.png" format="PNG" srccredit="Patanjali"/>
+ 	   </imageobject>
+ 	   <textobject> 
+ 	     <phrase>Finestra principal del Robots.</phrase> 
+ 	   </textobject> 
+ 	 </mediaobject>
+	  </screenshot>
+	</figure></para> 
+
+      <para>Per a iniciar una partida nova, seleccioneu <guimenuitem>Nova</guimenuitem> en el menú <guimenu>Partida</guimenu> o feu clic en el botó <guibutton>Nova</guibutton> de la barra d'eines.</para>
+
+      <para>Per a moure-us, podeu fer clic en la direcció on us voleu moure (el cursor us mostrarà en quina direcció anireu) o podeu prémer la tecla apropiada del teclat (per defecte el teclat numèric). Fer clic a l'homenet farà quedar-vos quiet. Per a teleportar-vos (amb seguretat o sense) i esperar, utilitzeu el botó de la barra d'eines o els elements del menú <guimenu>Mou</guimenu>.</para>
+    </sect2>
+  </sect1>
+    
+
+  
+  <!-- ========= Menus =========================== --> 
+  
+   <sect1 id="menubar">
+    <title>Menús</title>
+    <para>La barra de menú, ubicada a la part superior del <interface>tauler del joc</interface>, conté els menús següents:</para>
+
+
+    <variablelist>
+      <varlistentry>
+        <term><guimenu>Partida</guimenu></term>
+        <listitem>
+        <para>Aquest menú conté tres elements: <itemizedlist>	
+            <listitem>
+	    <para><menuchoice><shortcut><keysym>Ctrl-N</keysym></shortcut><guimenuitem>Nova</guimenuitem></menuchoice> — inicia una partida nova del Robots.</para>
+            </listitem>     
+       
+	    <listitem>
+	    <para><menuchoice><guimenuitem>Puntuacions</guimenuitem></menuchoice> — mostra les puntuacions màximes.</para>
+            </listitem>
+
+       	    <listitem>
+            <para>
+              <menuchoice>
+              <shortcut><keysym>Ctrl-Q</keysym></shortcut>
+              <guimenuitem>Surt</guimenuitem>
+              </menuchoice>
+            </para>
+            </listitem>
+          </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>Mou</guimenu></term>
+        <listitem>
+        <para>Aquest menú conté: <itemizedlist>
+          <listitem>
+            <para><guimenuitem>Teleporta</guimenuitem>— us teleporta a un emplaçament segur.</para>
+          </listitem>
+          <listitem>
+          <para><guimenuitem>Aleatori</guimenuitem>— us teleporta a un emplaçament aleatori.</para>
+          </listitem>
+          <listitem>
+          <para><guimenuitem>Espera</guimenuitem>— us deixa en mode espera.</para>
+          </listitem>
+        </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>Paràmetres</guimenu></term>
+	<listitem>
+	<para>El menú <guimenu>Paràmetres</guimenu> només conté un element: <itemizedlist>
+	    <listitem>
+	    <para><guimenuitem>Preferències</guimenuitem> el qual mostra el quadre de diàleg de preferències.</para>
+	    </listitem>
+	  </itemizedlist></para>
+	</listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>Ajuda</guimenu></term>
+        <listitem>
+        <para>Aquest menú conté: <itemizedlist>
+          <listitem>
+            <para><guimenuitem>Continguts</guimenuitem>— mostra aquest manual.</para>
+          </listitem>
+          <listitem>
+          <para><guimenuitem>Quant a</guimenuitem>— mostra informació bàsica sobre el <application>Robots</application>, com el nom dels autors i el número de versió de l'aplicació.</para>
+          </listitem>
+        </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect1>
+ 
+ <!-- =========Using the Keyboard============== -->
+ 
+  
+  <sect1 id="keyboard">
+    <title>Utilització del teclat</title>
+    <para>Podeu utilitzar el teclat per a controlar l'homenet. Per defecte, les tecles del teclat numèric estan configurades per al joc. Tot i així, podeu personalitzar el mapa del teclat en la pestanya <guimenuitem>Teclat</guimenuitem> del diàleg <guimenuitem>Preferències</guimenuitem>. Per a seleccionar una altra tecla per a una ordre, feu doble clic en la línia d'aquesta ordre i premeu la tecla que voleu utilitzar.</para>
+
+      <sect2 id="default-keys">     
+      <title>Mapa del teclat predeterminat</title>
+      <para>Per defecte utilitzareu el teclat numèric situat a la banda dreta del teclat (no són les tecles de cursor separades). <note>
+        <title>Desactivar la tecla de fixació del teclat numèric</title>
+          <para>Potser heu de desactivar la tecla de fixació del teclat numèric perquè funcioni.</para>
+        </note><orderedlist>
+          <listitem><para>Amunt esquerra: <keycap>Inici</keycap></para></listitem> 
+          <listitem><para>Amunt: <keycap>Amunt</keycap></para></listitem>
+          <listitem><para>Abaix dreta: <keycap>Retrocedir pàgina</keycap></para></listitem>
+          <listitem><para>Esquerra: <keycap>Esquerra</keycap></para></listitem>
+          <listitem><para>Quedar-se quiet: <keycap>Inici</keycap></para></listitem>
+          <listitem><para>Dreta: <keycap>Dreta</keycap></para></listitem>
+          <listitem><para>Abaix dreta: <keycap>Fi</keycap></para></listitem>
+          <listitem><para>Abaix: <keycap>Abaix</keycap></para></listitem>
+          <listitem><para>Abaix dreta: <keycap>Avançar pàgina</keycap></para></listitem>
+          <listitem><para>Teleportació: <keycap>+</keycap></para></listitem>
+          <listitem><para>Teleportació aleatòria: <keycap>*</keycap></para></listitem>
+          <listitem><para>Espera: <keycap>Retorn</keycap></para></listitem>
+        </orderedlist></para>	  
+    </sect2>
+
+      
+  </sect1>
+   
+  <!-- ============= Customization ============================= -->
+  
+  <sect1 id="customization">
+    <title>Personalització del Robots</title>
+    <para>Podeu modificar l'entorn i l'aparença del joc si seleccioneu <guimenuitem>Preferències</guimenuitem> en el menú <guimenu>Paràmetres</guimenu>. Això us mostrarà un diàleg amb tres pestanyes: <itemizedlist>
+        <listitem>
+        <para><guimenuitem>Partida</guimenuitem> — Aquesta pestanya us permet seleccionar el tipus de joc que voleu jugar. El quadre desplegable a la part superior de la pàgina us permet seleccionar un número de jocs predeterminats. No podeu canviar aquestes opcions enmig d'una partida, de manera que durant la partida es desactivaran. També hi ha vàries opcions en la part inferior del diàleg: <orderedlist>
+          <listitem><para>La opció de moviments segurs us ajudarà a evitar morir per error. Si intenteu fer un moviment que us porti a la mort quan hi ha un moviment segur disponible, no el podreu fer. Però atenció: si no hi ha cap moviment segur disponible apart de teleportar-se, s'us deixarà fer el moviment.</para></listitem>
+          <listitem><para>També hi ha <quote>moviments supersegurs</quote>. Si seleccioneu aquesta opció, sonarà una alarma quan no hi hagi moviments segurs i l'única opció sigui teleportar-vos.</para></listitem>
+          <listitem><para>Si seleccioneu la casella de selecció del so, el joc reproduirà sons per a diferents esdeveniments al llarg de la partida.</para></listitem>
+          <listitem><para>La casella de selecció <quote>xocs</quote> selecciona si voleu que es reprodueixi un so i aparegui un petit <quote>Splat!</quote> a la pantalla.</para></listitem>
+        </orderedlist></para>
+	</listitem>
+        <listitem>
+        <para><guimenuitem>Aparença</guimenuitem> — Aquesta pestanya us permet seleccionar els gràfics que s'utilitzen en la partida mitjançant un quadre desplegable. També podeu seleccionar el color de fons.</para>
+        </listitem>
+
+        <listitem>
+        
+        <para><guimenuitem>Teclat</guimenuitem> — Aquesta pestanya us permet definir els controls del teclat. Per a seleccionar una altra tecla per a una ordre, feu doble clic en la línia d'aquesta ordre i premeu la tecla que voleu utilitzar.</para>
+        </listitem>
+      </itemizedlist></para>
+
+    <para>Qualsevol canvi que realitzeu tindrà efecte immediatament i es desarà automàticament.</para>
+
+    <para>Si voleu podeu dissenyar els vostres gràfics per al joc. Els fitxers dels gràfics es troben a <filename class="directory"> $PREFIX/share/pixmaps/gnobots2 </filename>, on $PREFIX és el prefix sota el qual està instal·lat el GNOME. Generalment aquest és <filename class="directory">/usr</filename> o <filename class="directory">/usr/local</filename>.</para>
+    <para>Cada caràcter és de 16x16 píxels i n'hi ha 14 organitzats en un fitxer PNG amb una mida de 224x16 píxels. Podeu mirar els fitxers existents per a veure l'ordre en què han d'anar ordenats per a produir les seqüències d'animació adequades.</para>
+    <para>Qualsevol fitxer de gràfics que s'ubiqui en el directori es detectarà automàticament, de manera que no heu de modificar cap fitxer de configuració. També podeu definir les vostres configuracions del joc si creeu fitxers <filename> .cfg </filename> addicionals que s'han d'emmagatzemar en el directori <filename class="directory"> $PREFIX/share/gnobots2 </filename>.</para>
+  </sect1> 
+ 
+  <!-- ============= Various Sections ============================= -->
+ 
+ 
+  <!-- ============= Bugs ================================== -->
+  <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of. -->
+<!--  <sect1 id="bugs">
+    <title>Known Bugs and Limitations</title>
+    <para>
+      This application has no known bugs.
+    </para>
+  </sect1>
+-->
+
+<!-- ============= Authors ================================ -->
+
+  <sect1 id="authors">
+    <title>Autors</title>
+    <para>En Mark Rae (<email>m.rae@inpharmatica.co.uk</email>) ha escrit el <application>Robots</application>. En Patanjali Somayaji (<email>patanjali@mindless.com</email>) ha escrit aquest manual basant-se amb la documentació HTML original de'n Mark Rae. Per a informar d'un error o fer algun suggeriment d'aquesta aplicació o aquest manual, seguiu les indicacions d'aquest <ulink url="ghelp:user-guide?feedback-bugs" type="help">document</ulink>.</para>
+
+    <!-- For translations: uncomment this:
+
+    <para>
+      Latin translation was done by ME
+      (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+      suggestions regarding this translation to SOMEWHERE.
+    </para>
+
+    -->
+
+  </sect1>
+
+
+  <!-- ============= Application License ============================= -->
+
+  <sect1 id="license">
+    <title>Llicència</title>
+    <para>Aquest programa és programari lliure; podeu redistribuir-lo i/o modificar-lo sota els termes de la <ulink type="help" url="gnome-help:gpl"><citetitle>Llicència pública general de GNU</citetitle></ulink> tal com publica la Free Software Foundation; tant en la versió 2 de la llicència, o (a la vostra opció) una versió posterior.</para>
+    <para>Aquest programa es distribueix amb l'esperança de que sigui útil, però SENSE CAP GARANTIA; fins i tot sense la garantia implícita de COMERCIALITZACIÓ o ADEQUACIÓ A UN ÚS CONCRET. Per a més detalls vegeu la <citetitle>Llicència pública general de GNU</citetitle>.</para>
+    <para>S'inclou una còpia de la <citetitle>Llicència pública general de GNU</citetitle> en l'apèndix de la <citetitle>Guia d'usuaris del GNOME</citetitle>. També podeu obtenir una copia de la <citetitle>Llicència pública general de GNU</citetitle> de la Free Software Foundation visitant el <ulink type="http" url="http://www.fsf.org">seu lloc web</ulink> o escrivint a <address> Free Software Foundation, Inc. <street>51 Franklin Street, Fifth Floor</street><city>Boston</city>, <state>MA</state><postcode>02110-1301</postcode><country>USA</country></address></para>
+  </sect1>
+
+</article>

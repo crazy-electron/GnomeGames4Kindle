@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.14">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "January 2006">
+<!ENTITY app "<application>Mines</application>">
+<!ENTITY appname "Mines">
+<!ENTITY version "2.14">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sv">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Handbok för <application>Minor</application></title>
+    <abstract role="description">
+      <para>
+	Mines is GNOME's take on the popular logic puzzle minesweeper, 
+	which includes avoiding mines while receiving clues for 
+	the location of the mines.
+      </para>
+    </abstract>
+    <copyright>
+      <year>2006</year>
+      <holder>Callum McKenzie</holder>
+<!--   Based on an earlier manual by   <holder>Tim Riehle</holder> -->
+    </copyright><copyright><year>2007, 2009</year><holder>Daniel Nylander (po@danielnylander.se)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Dokumentationsprojekt för GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+        <para>Det här dokumentet är dubbellicensierat. Du kan antingen distribuera och/eller ändra det under villkoren för <ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink>, som <link linkend="license">programmer är licensierat</link> under, eller du kan distribuera det under villkoren för GNU Free Documentation License. En kopia av dessa följer.</para>
+
+	<para>Tillstånd att kopiera, distribuera och/eller modifiera detta dokument ges under villkoren i GNU Free Documentation License (GFDL), version 1.1 eller senare, utgivet av Free Software Foundation utan standardavsnitt och omslagstexter.  En kopia av GFDL finns att hämta på denna <ulink type="help" url="ghelp:fdl">länk</ulink> eller i filen COPYING-DOCS som medföljer denna handbok.</para>
+         <para>Denna handbok utgör en av flera GNOME-handböcker som distribueras under villkoren i GFDL.  Om du vill distribuera denna handbok separat från övriga handböcker kan du göra detta genom att lägga till en kopia av licensavtalet i handboken enligt instruktionerna i avsnitt 6 i licensavtalet.</para>
+
+	<para>Flera namn på produkter och tjänster är registrerade varumärken. I de fall dessa namn förekommer i GNOME-dokumentation - och medlemmarna i GNOME-dokumentationsprojektet är medvetna om dessa varumärken - är de skrivna med versaler eller med inledande versal.</para>
+
+	<para>DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET TILLHANDAHÅLLS UNDER VILLKOREN I GNU FREE DOCUMENTATION LICENSE ENDAST UNDER FÖLJANDE FÖRUTSÄTTNINGAR: <orderedlist>
+		<listitem>
+		  <para>DOKUMENTET TILLHANDAHÅLLS I "BEFINTLIGT SKICK" UTAN NÅGRA SOM HELST GARANTIER, VARE SIG UTTRYCKLIGA ELLER UNDERFÖRSTÅDDA, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, GARANTIER ATT DOKUMENTET ELLER EN MODIFIERAD VERSION AV DOKUMENTET INTE INNEHÅLLER NÅGRA FELAKTIGHETER, ÄR LÄMPLIGT FÖR ETT VISST ÄNDAMÅL ELLER INTE STRIDER MOT LAG. HELA RISKEN VAD GÄLLER KVALITET, EXAKTHET OCH UTFÖRANDE AV DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET LIGGER HELT OCH HÅLLET PÅ ANVÄNDAREN. OM ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT SKULLE VISA SIG INNEHÅLLA FELAKTIGHETER I NÅGOT HÄNSEENDE ÄR DET DU (INTE DEN URSPRUNGLIGA SKRIBENTEN, FÖRFATTAREN ELLER NÅGON ANNAN MEDARBETARE) SOM FÅR STÅ FÖR ALLA EVENTUELLA KOSTNADER FÖR SERVICE, REPARATIONER ELLER KORRIGERINGAR. DENNA GARANTIFRISKRIVNING UTGÖR EN VÄSENTLIG DEL AV DETTA LICENSAVTAL. DETTA INNEBÄR ATT ALL ANVÄNDNING AV ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT BEVILJAS ENDAST UNDER DENNA ANSVARSFRISKRIVNING;</para>
+		</listitem>
+		<listitem>
+		  <para>UNDER INGA OMSTÄNDIGHETER ELLER INOM RAMEN FÖR NÅGON LAGSTIFTNING, OAVSETT OM DET GÄLLER KRÄNKNING (INKLUSIVE VÅRDSLÖSHET), KONTRAKT ELLER DYLIKT, SKA FÖRFATTAREN, DEN URSPRUNGLIGA SKRIBENTEN ELLER ANNAN MEDARBETARE ELLER ÅTERFÖRSÄLJARE AV DOKUMENTET ELLER AV EN MODIFIERAD VERSION AV DOKUMENTET ELLER NÅGON LEVERANTÖR TILL NÅGON AV NÄMNDA PARTER STÄLLAS ANSVARIG GENTEMOT NÅGON FÖR NÅGRA DIREKTA, INDIREKTA, SÄRSKILDA ELLER OFÖRUTSEDDA SKADOR ELLER FÖLJDSKADOR AV NÅGOT SLAG, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, SKADOR BETRÄFFANDE FÖRLORAD GOODWILL, HINDER I ARBETET, DATORHAVERI ELLER NÅGRA ANDRA TÄNKBARA SKADOR ELLER FÖRLUSTER SOM KAN UPPKOMMA PÅ GRUND AV ELLER RELATERAT TILL ANVÄNDNINGEN AV DOKUMENTET ELLER MODIFIERADE VERSIONER AV DOKUMENTET, ÄVEN OM PART SKA HA BLIVIT INFORMERAD OM MÖJLIGHETEN TILL SÅDANA SKADOR.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Callum</firstname> 
+	<surname>McKenzie</surname> 
+	<affiliation> 
+	  <address> <email>callum@spooky-possum.org</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+	
+    <revhistory>
+      <revision> 
+	<revnumber>Handbok för Minor v2.9</revnumber> 
+	<date>Januari 2006</date> 
+	<revdescription> 
+	  <para role="author">Callum McKenzie <email>callum@spooky-possum.org</email></para>
+	  <para role="publisher">Dokumentationsprojekt för GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Den här handboken beskriver version 2.14 av Minor.</releaseinfo>
+    <!-- The following feedback information only applies to applications
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Återkoppling</title> 
+      <para>För att rapportera ett fel eller föreslå någonting angående programmet <application>Minor</application> eller den här handboken, följ anvisningarna i <ulink url="http://bugzilla.gnome.org">GNOME:s felrapporteringsdatabas.</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME Minor</primary> 
+  </indexterm>
+  
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+  <sect1 id="intro">
+    <title>Introduktion</title>
+
+    <para><application><application>Minor</application></application> är ett pusselspel där du lokaliserar minor som flyter runt i en ocean, endast med hjälp av din hjärna och med lite tur.</para>
+
+    <para>Du startar spelet med ett rutnät fyllt av täckta rutor och har ingen aning vad som döljer sig i dem. Klicka på en ruta för att se vad som finns där: antingen ingenting eller en mina. Om du hittar en mina går det dåligt för dig och spelet är över. Om du avtäcker en tom ruta, överlever du och får försöka igen. Vi ger dig dock lite hjälp; om du hittar en tom ruta kommer en siffra att skrivas ut som berättar för dig hur många minor som finns i de angränsande rutorna (eller ingen siffra om det inte finns några minor i närheten). När du har hittat ett par tomma rutor kan du börja att fundera på vilka rutor som innehåller minor och vilka som inte gör det. Du vinner spelet när du har avtäckt alla rutor som inte innehåller minor och markerat alla rutor som innehåller minor.</para>
+
+    <figure id="main-window">
+      <title>Etapperna i spelet: starten, spelandet, förlorandet och vinsten.</title>
+    	    <mediaobject><imageobject>
+    	      <imagedata fileref="figures/main-window.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <para>För att markera en ruta som en mina så högerklickar du på den och en flagga kommer att placeras där. Om du klickar på en ruta med en siffra på dig och du har placerat det antalet flaggor på angränsande rutor kommer resten av rutorna att avtäckas. Om du inte markerade minorna korrekt kommer en explosion att inträffa och spelet är över. Rutor som inte har några angränsande minor (alltså tomma rutor) får sina angränsande rutor avtäckta automatiskt.</para>
+
+    <figure id="status-bar">
+      <title>Viktig information.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/statusbar.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <para>Du spelar på tid. För att vara bra på det här spelet måste du både arbeta snabbt och korrekt. När du har hittat alla minorna och avtäckt alla rutor som inte innehåller minor kommer klockan att stoppas. Din poäng är den tid som du använde; ju kortare, desto bättre.</para>
+
+    <para>Tiden som du använt visas i högra nederkanten av fönstret. Förutom den, på vänster sida, finns en räknare för antal minor som du har hittat och det totala antalet dolda minor på brädet. </para>
+
+    <figure id="faces">
+      <title>Det gula ansiktet visar hur bra det går för dig.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/faces.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <!-- Face graphics image. -->
+
+  </sect1>
+
+
+  <sect1 id="details">
+    <title>Detaljerna</title>
+
+    <para>Det här avsnittet tillhandahåller information om styrningen och de viktiga menyobjekten. Om du behöver hjälp med att lista ut var minorna finns, se <link linkend="strategy">strategiavsnittet</link>.</para>
+
+    <sect2>
+      <title>Målet</title>
+
+      <para>Med början i en ocean av rutor med okänt innehåller måste du markera alla rutor som innehåller minor och avtäcka alla rutor som inte innehåller några minor. Du måste faktiskt inte markera rutorna med minor men det är mycket enklare för dig om du gör det. När du har hittat alla rutor utan minor kommer återstående minerade rutor att markeras åt dig.</para>
+
+      <para>Om du vänsterklickar på en mina, eller automatiskt rensar en ruta som innehåller en mina, kommer du att förlora. För att undvika olyckor så tillåts du inte att automatiskt rensa runt en ruta såvida inte antalet markerade minor är samma som siffran som angivits i rutan.</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Användning av musen</title>
+      
+      <informaltable>
+        <tgroup cols="2">
+	<!-- FIXME: proper headers. -->
+	  <thead>
+	    <row>
+	      <entry>Åtgärd</entry><entry>Resultat</entry>
+	    </row>
+	  </thead>
+	  <tbody>
+	    <row>
+	      <entry>Vänsterklicka på en täckt ruta.</entry>
+	      <entry>Avtäcker innehållet i den rutan. Kan gå bra, kan gå mindre bra.</entry>
+	    </row>
+	    <row>
+	      <entry>Vänsterklicka på en avtäckt ruta.</entry>
+	      <entry>Rensa automatiskt. Avtäcker de omarkerade rutorna runt den klickade rutan, men endast om tillräckligt många rutor har markerats för att matcha antalet i rutan.</entry>
+	    </row>
+	    <row>
+	      <entry>Högerklicka på en täckt ruta.</entry>
+	      <entry>Markerar rutan som en mina. Om den redan är markerad kommer markeringen att tas bort.</entry>
+	    </row>
+	  </tbody>
+	</tgroup>
+      </informaltable>
+
+      <tip><para>Om du är van vid den mer traditionella musstyrningen, var lugn, de fungerar fortfarande.</para></tip>
+    </sect2>
+
+    <sect2>
+      <title>Spelets storlek och svårighetsgrad</title>
+
+      <para>Genom att välja <menuchoice><guimenu>Inställningar</guimenu><guimenuitem>Inställningar</guimenuitem></menuchoice> från menyn kan du ändra storleken på spelen. Större storlekar tar så klart längre tid och kräver mer koncentration. Mindre spel är mer hektiska. Vi tillhandahåller storlekarna Liten, Mellan, Stor och Egen storlek.</para> 
+
+    <figure id="preferences-img">
+      <title>Inställningsdialogrutan.</title>
+    	    <mediaobject><imageobject>
+	      <imagedata fileref="figures/preferences.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+      <para>På högra sidan av dialogrutan finns det tre parametrar för att styra den anpassade storleken. Horisontellt och vertikalt är bredden och höjden för det önskade rutnätet. Antalet minor är - så klart - antalet minor som du ska hitta. Om det här antalet är för högt eller för lågt inställt kommer spelet att bli mycket enkelt. Antalet minor är begränsat till ett fåtal mindre än det totala antalet rutor.</para>
+
+    </sect2>
+    
+    <sect2>
+      <title>"Jag är inte säker"-flaggor</title>
+
+      <informalfigure id="imnotsureflagsimg">
+    	    <mediaobject><imageobject>
+  	      <imagedata fileref="figures/imnotsureflagscheckbox.png" format="PNG"/>
+	    </imageobject></mediaobject>
+      </informalfigure>
+
+      <para>Det finns en kryssruta i egenskapsdialogrutan som heter Använd "Jag är inte säker"-flaggor. Om du aktiverar den kommer, vid högerklick på en ruta, den att växla mellan normala flaggor som används för att markera rutan som minerad, en flagga med ett frågetecken samt ingen flagga. Den här nya flaggan finns där för att hjälpa dig att bestämma dig, för att markera minor som du tror kan vara en mina men inte helt säker på det. Dessa flaggor har ingen effekt på spelet, du har fortfarande det lämpliga antalet röda markeringsflaggor för att kunna rensa runt en numrerad ruta.</para>
+
+      <figure id="flags-img">
+	<title>Sekvensen för flaggor när "Jag är inte säker"-flaggor är aktiverat.</title>
+    	    <mediaobject><imageobject>
+  	      <imagedata fileref="figures/flags.png" format="PNG"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+    </sect2>
+
+    <sect2>
+      <title>Använd varning för "många flaggor"</title>
+
+      <para>Den andra kryssrutan i egenskapsdialogrutan heter Använd varning för "många flaggor". Den här funktionen kommer att visa en varning när du har placerat ut för många flaggor. Den är inaktiverad som standard eftersom den ger en stor fingervisning och som kan anses vara "fusk".</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Tips</title>
+    
+      <para>
+        If you get stuck - it is reasonably common to end up with two
+        options that you can't logically resolve - then you can either
+        guess, or ask for a hint. When you choose 
+	<guimenuitem>Hint</guimenuitem> from the <guimenu>Game</guimenu>
+        menu a single square is revealed (plus surrounding
+        squares if it is blank). The choice of square is random, but
+        should be helpful. There is 10 second penalty added to your
+        time whenever you use a hint.
+      </para>
+
+    </sect2>
+
+    <sect2>
+      <title>Poänglistan</title>
+
+      <para>
+        If your score is in the top ten you will be shown the list of top scores and have an
+        opportunity to change the name recorded in the high score table. You can
+        also review the scores later by choosing 
+	<guimenuitem>Scores</guimenuitem> from the <guimenu>Game</guimenu>
+        menu. The drop-down menu at the top of the dialog lets you
+        look at the scores for other board sizes.
+      </para>
+
+    <figure id="high-score-img">
+      <title>Poänglistdialogrutan.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/highscores.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+      <tip>
+        <para>The high score for the custom size is usually meaningless. Any
+	other player can make the game size smaller and get a better time. If
+        you only ever play one custom size then it will tell you how
+	well you are doing. This is the only reason it is still recorded.</para>
+      </tip>
+    </sect2>
+
+    <sect2>
+      <title>Fönsterstorlek</title>
+      
+      <para>Resizing the window makes the squares bigger or smaller to
+    suit. If you want to make maximum use of the screen then there is a
+    <guimenuitem>Fullscreen</guimenuitem> option under the
+    <guimenu>Settings</guimenu> menu. You can
+    also use the <keycap>F11</keycap> key to toggle full-screen mode.
+      </para>
+    </sect2>
+
+    <sect2>
+      <title>Pausa spelet</title>
+
+      <para>Spelet kan pausas automatiskt när du börjar använda ett annat fönster, eller pausas genom att välja <guimenuitem>Gör paus</guimenuitem> från menyn <guimenu>Spel</guimenu>. Spelområdet döljs så att du inte kan tänka i förväg under tiden klockan är stoppad. För att börja spela igen så trycker du på knappen "Tryck för att återuppta".</para>
+    </sect2>
+
+  </sect1>
+
+ <!-- ================ Usage ================================ -->
+
+  <sect1 id="strategy">
+    <title>Strategi</title>
+
+    <para>
+      The first half of this section explains the very basics of
+    deducing where mines are. If you are familiar with how to play the
+    game skip down to the <link linkend="advanced">Advanced Situations</link> subsection.
+    </para>
+
+    <sect2>
+      <title>Grunderna</title>
+      <para>
+        These are a few basic situations which should be incredibly
+      obvious, but if you're struggling with how to play the game,
+      they should be useful. The first case is where you have an
+      isolated covered square and most of the squares around it read
+      1. That covered square is a mine. 
+      </para>
+
+      <figure>
+        <title>Den enklaste situationen.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-1.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>
+        The next simplest case is where you have two covered squares
+        adjacent to each other and both squares on one side are marked
+        with a 2. If they have no other uncleared neighbors, then
+        both squares are mines.
+      </para>
+
+      <figure>
+        <title>The two mine case.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-2.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>
+        Finally, when there are three uncovered squares in a row and
+        the clear square beside the middle one is a 3 (once again this
+        square should have no other neighbors) then all three are mines.
+      </para>
+
+      <figure>
+        <title>The three mine case.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-3.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>
+        These are the simplest cases. Other permutations on these
+        simple situations are possible, for example the three squares
+        in the previous example could be in an L shape. 
+      </para>
+      <para>
+        Simple analysis will solve most of the
+        puzzle, but not all. Before going on to the next sections,
+        where we give you more advanced hints, you should play
+        for a bit and see what you can work out for yourself.
+      </para>
+    </sect2>
+
+    <sect2 id="advanced">
+      <title>Avancerade situationer</title>
+      
+      <para>
+        These are some more complicated situations. They are a bit of
+        a step up from the last section, so we hope you took our
+        advice and played for a bit first.
+      </para>
+
+      <para>
+      In the example below the mines are to the left of
+      the ones. We figure this out by a process of elimination. If the
+      square to the left of the 2 was a mine then the 1s
+      would both have their maximum number of mines leaving no free square for
+      the second mine adjacent to the 2 (since they would also be
+      adjacent to the 1s). Having eliminated the middle square we are
+      left with two squares we require for the 2 so they are both mined.
+      </para>
+
+      <figure>
+        <title>A not-so-obvious pattern.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-1.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>
+      This situation can be disguised, for example consider the figure
+      below. It is the same situation, but the extra mined square on
+      the right has increased all the numbers by 1.
+      </para>
+
+      <figure>
+        <title>The extra mine disguises a copy of the previous example.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-2.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+<para>
+Now we're going to try a complicated example. It illustrates two
+points. The first is that even if you aren't sure which squares are
+mined, restricting the possibilities is helpful. The second is that
+knowing which squares aren't mined is nearly as good as knowing which
+are mined.
+</para>
+
+<para>
+Assume that, in the figure below, we start off knowing that the top
+left square is mined and so the two squares marked 2 on the left only
+require one more mine. Next observe that the left-most 2 implies that
+one of the covered squares beneath it is mined, but we don't yet know
+which one. Since at least one of these squares is mined and they are
+both neighbors of the second 2 then we know that that 2 is also
+satisfied by one of these two squares (we still don't know which
+one). This means that the square beneath the 4 is clear because it is
+also a neighbor of the second 2 and not one of the two squares we
+identified previously. 
+This one blank square now leaves the 4 with only four neighbors - all
+of which must be mines. Not only does it tell us which mines surround
+the 4, it now tells us which of the squares beside the 2 is mined!
+</para>
+
+      <figure>
+        <title>As tricky as it gets.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-3.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+
+<para>
+This sort of situation is tricky. In all the other examples you can
+learn to look for patterns and avoid thinking hard. Situations like
+the one in the figure don't crop up easily or in easily recognisable
+places. Often it is easier to just ignore them and keep playing
+elsewhere in the hope that you can start clearing the squares from the
+other side.
+</para>
+
+</sect2>
+<sect2>
+
+    <title>Tips</title>
+
+    <para>
+      Remember, the edge of the board is just the same as a large
+      cleared area (but without the numbers). Often working
+      at the edge of the board is the easiest way forward. 
+    </para>
+
+    <para>
+      Sometimes you end up in a situation where there is no way to
+      deduce what the configuration is. In these cases you either have
+      to guess or use the hint function
+      (<menuchoice><guimenu>Game</guimenu><guimenuitem>Hint</guimenuitem></menuchoice>).
+      Sometimes it isn't a 50/50 situation and instead of taking a hint
+      you might like to gamble on the most likely outcome.
+    </para>
+
+    <para>
+      One final hint: remember the counter on the bottom left of the window
+      that tells you how many mines you have left? Often, near the end
+      of the game, this number can help you figure out what possible
+      places mines can be. How to do this is  up
+      to you to figure out.
+    </para>
+
+    </sect2>
+ </sect1>
+
+ <sect1 id="authors">
+  <title>Upphovsmän</title>
+  <para><application>GNOME Minor</application> skrevs av Pista (<email>szekeres@cyberspace.mht.bme.hu</email>). Den här handboken skrevs av Callum McKenzie (<email>callum@spooky-possum.org</email>) med hjälp från Vincent Povirk och baserades på en tidigare handbok av Tim Riehle (<email>tkriehle@citilink.com</email>). För att rapportera ett fel eller föreslå någonting angående det här programmet eller den här handboken, följ anvisningarna i det här <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentet</ulink>.</para>
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licens</title>
+  <para>Det här programmet är fri programvara; du kan distribuera det och/eller ändra det under villkoren för <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> som publicerats av <ulink type="http" url="http://www.fsf.org">Free Software Foundation</ulink>; antingen version 2 av licensen, eller (upp till dig) någon senare version.</para>
+  <para>Det här programmet distribueras i hopp om att det ska vara användbart, men UTAN NÅGRA GARANTIER; även utan garanti för SÄLJBARHET eller LÄMPLIGHET FÖR ETT SPECIFIKT ÄNDAMÅL. Se <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> för mer information.</para>
+  <para>En kopia av <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> finns inkluderad som en bilaga till <citetitle>Användarguide för GNOME</citetitle>. Du kan även få en kopia av <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> från Free Software Foundation genom att besöka <ulink type="http" url="http://www.fsf.org">deras webbplats</ulink> eller genom att skriva till <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

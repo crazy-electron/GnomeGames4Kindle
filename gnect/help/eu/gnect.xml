@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Four-in-a-Row</application>">
+<!ENTITY appname "Four-in-a-Row">
+<!ENTITY version "2.8">
+]>
+<!-- ===== DOCUMENT HEADER ===== -->
+<article id="index" lang="eu">
+<!-- please do not change the id -->
+<!-- translators, change lang to the appropriate code -->
+  <articleinfo>
+    <title>Lauko artzain-jokoaren eskuliburua</title>
+    <abstract role="description">
+      <para>Lauko artzain-jokoaren helburua lau pieza errenkada bertikal, horizontal edo diagonalean jartzea da, aurkariak zure errenkada blokeatzen edo bere lauko errenkada sortzen saiatzen den bitartean. Lauko artzain-jokoa beste gizaki baten edo ordenagailu baten aurka joka daiteke.</para>
+    </abstract>
+
+    <copyright>
+      <year>2001-2002</year>
+      <holder>Timothy Musson</holder>
+    </copyright><copyright><year>2008.</year><holder>Hizkuntza Politikarako Sailburuordetza (hizpol@ej.gv.es)</holder></copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+     <year>2000</year>
+     <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+    <publisher role="maintainer"> 
+      <publishername>GNOMEren dokumentazio-proiektua</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+	<para>Baimena ematen da dokumentu hau kopiatu, banatu eta/edo aldatzeko Free Software Foundation-ek argitaratutako GNU Dokumentazio Librearen Lizentziaren 1.1. bertsioan edo berriago batean ezarritako baldintzetan, atal aldaezinik gabe, aurreko azaleko testurik gabe eta atzeko azaleko testurik gabe. GFDL lizentziaren kopia <ulink type="help" url="ghelp:fdl">esteka honetan</ulink> edo eskuliburu honekin batera ematen den COPYING-DOCS fitxategian aurkituko duzu.</para>
+         <para>Eskuliburu hau GFDL lizentziarekin banatzen diren GNOME eskuliburuen bildumakoa da. Eskuliburu hau bildumatik bereizita banatu nahi baduzu, banatu dezakezu, baina eskuliburuari lizentziaren kopia bat gehitu beharko diozu, lizentzian bertan 6. atalean azaltzen den bezala.</para>
+
+	<para>Enpresek beren produktuak eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu gisa hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, eta GNOMEren Dokumentazio Proiektuko kideak marka komertzialak direla konturatzen direnean, izen horiek osorik maiuskulaz edo hasierako letra maiuskulaz idatzi dituzte.</para>
+
+	<para>DOKUMENTUA ETA DOKUMENTUAREN BERTSIO ALDATUAK GNU DOKUMENTAZIO LIBREAREN LIZENTZIAREN BALDINTZEN ARABERA EMATEN DIRA, ETA ONDOREN ZEHAZTEN DIRENAK ONARTZERA BEHARTZEN DUTE: <orderedlist>
+		<listitem>
+		  <para>DOKUMENTUA "DAGOEN-DAGOENEAN" EMATEN DA, INOLAKO BERMERIK GABE, EZ ESPRESUKI ADIERAZITAKORIK ETA EZ INPLIZITURIK ERE; BESTEAK BESTE, EZ DA BERMATZEN DOKUMENTUA EDO BERTSIO ALDATUA AKATSIK GABEA DENIK, MERKATURATZEKO EDO XEDE JAKIN BATERAKO EGOKIA DENIK EDO ARAURIK HAUSTEN EZ DUENIK, HORI GUZTIA MUGARIK GABE. DOKUMENTUAREN EDO DOKUMENTUAREN BERTSIO ALDATUAREN KALITATEARI, ZEHAZTASUNARI ETA PERFORMANTZIARI BURUZKO ERANTZUKIZUN OSOA ZUREA DA. DOKUMENTUREN BATEK EDO BERTSIO ALDATUREN BATEK EDOZEIN MOTATAKO AKATSIK IZANEZ GERO, ZUK (EZ HASIERAKO IDAZLEAK, EZ EGILEAK ETA EZ INONGO KOLABORATZAILEK) ZEURE GAIN HARTU BEHARKO DUZU BERRIKUSTEKO, KONPONTZEKO EDO ZUZENTZEKO BEHAR DIREN ZERBITZU GUZTIEN KOSTUA. BERME-UKATZE HAU LIZENTZIA HONEN FUNTSEZKO ZATIA DA. EZ DA BAIMENIK EMATEN EZEIN DOKUMENTU EDO BERTSIO ALDATU ERABILTZEKO, BALDIN ETA EZ BADA BERME-UKATZE HAU ONARTZEN.</para>
+		</listitem>
+		<listitem>
+		  <para>EZIN IZANGO DA INONGO ZIRKUNSTANTZIARIK EDO LEGE-TEORIARIK OINARRI HARTU --EZ ERANTZUKIZUN ZIBILARI BURUZKORIK (ZABARKERIA BARNE HARTUTA), EZ KONTRATUARI BURUZKORIK, EZ BESTERIK-- DOKUMENTU HONEN EDO BERTSIO ALDATU BATEN EGILEA, HASIERAKO IDAZLEA, EDOZEIN KOLABORATZAILE EDO BANATZAILE, EDO ALDERDI HORIEN EDOZEIN HORNITZAILE BESTE PERTSONA BATEN AURREAN ERANTZULE EGITEKO, PERTSONA HORREK EDOZEIN MOTATAKO KALTEA JASAN DUELAKO (ZUZENEKOA, ZEHARKAKOA, BEREZIA, INTZIDENTALA EDO ONDORIOZKOA), HALA NOLA (ETA MUGARIK GABE) BEZEROAK GALTZEA, LANA ETEN BEHARRA, ORDENAGAILUAK EZ IBILTZEA EDO GAIZKI IBILTZEA, EDO DOKUMENTUA NAHIZ HAREN BERTSIO ALDATUAK ERABILTZETIK ONDORIOZTATZEN DIREN EDO ERABILERA HORREKIN ZERIKUSIA DUTEN KALTEAK EDO GALERAK, ALDERDIARI KALTE HORIEK GERTA ZITEZKEELA ADITZERA EMAN BAZAIO ERE.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+
+    <authorgroup>
+      <author>
+        <firstname>Timothy</firstname>
+        <surname>Musson</surname>
+        <affiliation>
+          <!-- <orgname></orgname> -->
+          <address><email>trmusson@ihug.co.nz</email></address>
+        </affiliation>
+      </author>
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+
+      <othercredit role="translator">
+        <firstname>Latin</firstname> 
+        <surname>Translator 1</surname> 
+        <affiliation> 
+          <orgname>Latin Translation Team</orgname> 
+          <address> <email>translator@gnome.org</email> </address> 
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+        <revnumber>Lauko artzain-jokoaren eskuliburuaren 2.8 bertsioa</revnumber>
+        <date>2004ko iraila</date>
+        <revdescription>
+          <para role="author">Timothy Musson <email>trmusson@ihug.co.nz</email></para>
+          <para role="publisher"/>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>Eskuliburu honek lauko artzain-jokoaren 2.12 bertsioa azaltzen du.</releaseinfo>
+
+    <legalnotice>
+      <title>Ohar-bidaltzea</title>
+      <para>To report a bug or make a suggestion regarding the Four-in-a-Row
+        application or this manual, follow the directions in the
+        <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME Feedback Page</ulink>.
+      </para>
+    </legalnotice>
+  </articleinfo>
+
+
+  <!-- ============= Document Body ============================= -->
+
+  <!-- ============= Introduction ============================== -->
+
+
+  <sect1 id="intro">
+
+    <title>Sarrera</title>
+
+    <para><application>Lauko artzain-jokoa</application> GNOME proiekturen lauko artzain-jokoa da. Jokoaren helburua da lau puxtarriko lerro bat osatzea, zure aurkariak (gizakia edo ordenagailua) lerroa osatzea saihesten duzun bitartean. Lerroa horizontala, bertikala edo diagonala izan daiteke.</para>
+
+    <para><application>Lauko artzain-jokoa</application> abiarazteko, hautatu <guimenu>Menu nagusia</guimenu>n <guisubmenu>Jokoak</guisubmenu> azpimenuko <guimenuitem>Lauko artzain-jokoa</guimenuitem> edo idatzi <command>gnect</command> komando-lerroan.</para>
+
+    <para><application>Lauko artzain-jokoa</application> <filename>GNOME-games</filename> paketearen barruan sartzen da, eta hori GNOMEren mahaigaineko ingurunearen parte da. Dokumentu honek <application>Lauko artzain-jokoa</application> aplikazioaren 2,8 bertsioa deskribatzen du.</para>
+
+   <para>Lauko artzain-jokoak <link linkend="network-games">jokalari askorentzat</link> aukera eskaintzen du: bi jokalarik jolastu dezakete, bai ordenagailu berean, bai sare moduan ere.</para>
+
+
+  </sect1>
+
+
+  <!-- ============= Usage ===================================== -->
+
+
+  <sect1 id="usage">
+
+    <title>Oinarrizko erabilera</title>
+
+    <!-- ===== How to play ===== -->
+
+    <sect2 id="playing">
+
+      <title>Lauko artzain-jokoan jolastea</title>
+
+      <para>Lauko artzain-jokoan partida berri bat abiarazteko, hautatu <menuchoice><guimenu>Jokoa</guimenu><guimenuitem>Joko berria</guimenuitem></menuchoice>.</para>
+
+      <para><interface>Jokoaren taula</interface> zazpi zutabez eta sei errenkadaz osatuta dago. Horren gainean, errenkada berezi batek uneko jokalaria eta puxtarria zein diren adierazten du. Mugimendu bakoitzean zutabeetariko batean askatu behar da puxtarria. Puxtarria aukeratutako zutabean hutsik dagoen goiko lehenengo errenkadan geldituko da.</para>
+        
+      <para>Mugimendu bat egiteko, egin klik saguarekin zutabe batean. Teklatuarekin jolasteko, mugitu puxtarria Ezkerrera eta Eskuinera geziekin, eta utzi bere tokian Behera geziarekin. Puxtarria zutabe horren goi-goiko errenkadan geldituko da.</para>
+
+      <!-- Figure -->
+      <mediaobject id="mainwindow-fig">
+        <imageobject>
+          <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="trm"/>
+        </imageobject>
+        <textobject>
+          <phrase>Lauko artzain-jokoaren leiho nagusia</phrase>
+        </textobject>
+        <caption><para>Lauko artzain-jokoaren leiho nagusia</para></caption>
+      </mediaobject>
+
+      <para>Bi jokalarietako batek lau puxtarriko lerro horizontal, bertikal edo diagonal bat osatzen duenean amaitzen da partida. Taula betetzen bada eta ez badago garailerik, partida berdinketan amaitzen da.</para>
+
+    </sect2>
+    
+    <!-- ===== Commands ===== -->  
+    
+    <sect2 id="commands">
+      <title>Komandoak</title>
+      <anchor id="menubar"/><!-- id for removed section -->
+      
+      <para>Mugimendu bat indargabetzeko, aukeratu <menuchoice><shortcut><keycombo><keysym>Ktrl</keysym><keycap>Z</keycap></keycombo></shortcut><guimenuitem>Mugimendua indargabetu</guimenuitem></menuchoice>. Lagun baten aurka jolasten ari bazara, aukera honek mugimendua indargabetuko du. Ordenagailuaren aurka jolasten ari bazara, ordenagailuaren azken mugimendua indargabetuko du eta ondoren zurea. Ekintza hori errepikatzen baduzu, taula hasierako egoerara itzuliko da.</para>
+      <para>Aukeratu <menuchoice><shortcut><keycombo><keysym>Ktrl</keysym><keycap>H</keycap></keycombo></shortcut><guimenuitem>Iradokizuna</guimenuitem></menuchoice> ordenagailuak hurrengo mugimendurako iradokizun bat egin dezan. Egoera-barran agertuko da.</para>
+      
+      <para>Aukeratu <menuchoice><guimenuitem>Puntuazioak</guimenuitem></menuchoice> jolasten ari zaren saioko garaipen- eta berdinketa-zerrenda ikusteko. Hobespenetan jokalariaren hautapena aldatzen bada, puntuazioa zeron jarriko da.</para>      
+
+      
+    </sect2>  
+
+    <!-- ===== Preferences ===== -->
+
+    <sect2 id="prefsdialog">
+
+      <title>Hobespenak</title>
+
+      <para>Jokoaren ezarpenak aldatzeko, hautatu <guimenu>Ezarpenak</guimenu> menuan <guimenuitem>Hobespenak</guimenuitem>. Horrek <interface>Hobespenen elkarrizketa-koadroa</interface> irekiko du.</para>
+
+      <para><guilabel>Jokoa</guilabel> fitxan konfigurazio-aukera hauek daude: <variablelist>
+
+          <varlistentry>
+            <term><guilabel>Lehen jokalaria</guilabel> eta <guilabel>Bigarren jokalaria</guilabel></term>
+            <listitem>
+              <para>Bi zutabe horiek esaten dute <application>Lauko artzain-jokoa</application>n zein jolasten ari den, eta, jolasten ari dena ordenagailua bada, zer moduz ari diren. Lagun baten aurka jolasteko, hautatu ‘Giza jokalaria’ lehen jokalariarentzat eta bigarren jokalariarentzat.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Gaia</guilabel></term>
+            <listitem>
+              <para>‘Gaia menua’n erabilgarri dauden gaien zerrenda agertzen da, eta gogokoena aukeratu ahal izango duzu.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Gaitu animazioak</guilabel></term>
+            <listitem>
+              <para>Aukera honen bidez, jokoko animazioa aktiba edo desaktiba dezakezu.</para>
+            </listitem>
+          </varlistentry>
+
+        </variablelist></para>
+      <para>Azkenik, teklatuko kontrolak aldatzeko <guilabel>Kontrolak</guilabel> fitxa dago. Kontrol bat aldatzeko, egin klik bi aldiz dagokion botoian, eta, ondoren, sakatu tekla berria.</para>
+
+    </sect2>
+  </sect1>
+
+
+  <!-- ===== Custom Themes ===================================== -->
+
+
+  <sect1 id="custom">
+
+    <title>Gai berriak sortzea</title>
+
+    <para>Atal honek aukera ematen dizu <application>Lauko artzain-jokoa</application>n zure gaiak sortzeko. Horretarako, testuak editatzeko oinarrizko softwarea, irudi-softwarea eta komando-lerroa ezagutu behar dituzu.</para>
+
+    <sect2 id="images">
+
+      <title>Irudiak</title>
+
+      <para><application>Lauko artzain-jokoa</application> aplikazioaren fitxa multzoak tamaina bereko sei fitxa ditu, horizontalki lerrokatuak. Ezkerretik eskuinera:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Lehen jokalariaren puxtarria, jokoaren taulan agertzen den moduan</para>
+        </listitem>
+        <listitem>
+          <para>Bigarren jokalariaren puxtarria, jokoaren taulan agertzen den moduan</para>
+        </listitem>
+        <listitem>
+          <para>Jokoaren taulako atzeko planoa</para>
+        </listitem>
+        <listitem>
+          <para>Goiko errenkadaren atzeko planoa</para>
+        </listitem>
+        <listitem>
+          <para>Lehen jokalariaren puxtarria, goiko errenkadan agertzen den moduan</para>
+        </listitem>
+        <listitem>
+          <para>Bigarren jokalariaren puxtarria, goiko errenkadan agertzen den moduan</para>
+        </listitem>
+      </orderedlist>
+
+      <figure id="shot1">
+        <title>Fitxa multzoaren adibidea</title>
+        <screenshot>
+          <screeninfo>Irudi honetan, sei fitxaz osatutako fitxa multzoa agertzen da.</screeninfo>
+          <graphic format="PNG" fileref="figures/tileset.png" srccredit="TRM"/>
+        </screenshot>
+      </figure>
+
+      <para>Hirugarren eta laugarren fitxak errepikatu egingo dira jokoaren taulan eta goiko errenkadan, ez bada gai-fitxategian leiho osoko atzeko planoaren irudia zehazten.</para>
+
+      <tip>
+        <title>IRADOKIZUNA</title>
+        <para>Fitxa multzoetan PNG formatua gomendatzen da. Lehen, bigarren, bosgarren eta seigarren fitxek gardentasunen bat izan behar dute atzeko planoa ikusi nahi baduzu. Hirugarren eta laugarren fitxek solidoak izan behar dute, gardentasunik gabeak, nahiz eta leiho osoko atzeko planoaren irudia agertu zure gaiarekin.</para>
+      </tip>
+
+      <tip>
+        <title>IRADOKIZUNA</title>
+        <para>Fitxak karratuak edo angeluzuzenak eta nahi duzun tamainatakoak izan daitezke. <application>Lauko artzain-jokoa</application> aplikazioaren fitxa multzo gehienek 50 X 50 pixel neurtzen duten fitxa karratuak erabiltzen dituzte.</para>
+      </tip>
+
+      <para>Leiho osoa hartzen duen atzeko planoaren irudia lortzeko, lan pixka bat gehiago egin behar da. Eman dezagun fitxa bakoitza 50 X 50 pixelekoa dela. Jokoaren pantailak 7 X 7 fitxa ditu, goiko errenkada barne. Beraz, zure fitxa multzoarentzat atzeko planoaren irudirik egokiena 350 X 350 pixelekoa izango da.</para>
+
+      <tip>
+        <title>IRADOKIZUNA</title>
+        <para><application>Lauko artzain-jokoa</application>k automatikoki jarriko du eskalan atzeko planoaren irudia, fitxa multzoan sartzen ez bada. Horrek esan nahi du zure gaiaren bertsio "handiak" eta "txikiak" egin ditzakezula, bai atzeko planoaren irudi bera erabiliz, bai fitxa multzoaren bertsio handia eta txikia erabiliz.</para>
+      </tip>
+
+      <para>Hortaz, orain erabil dezakezun fitxa multzo bat duzu, eta agian atzeko planoaren irudi bat ere bai. Hurrengo pausoa toki egokian jartzea izango da.</para>
+
+    </sect2>
+
+
+    <sect2 id="directories">
+
+      <title>Batera jartzea</title>
+
+      <para>Azkeneko urratsa da irudia(k) <application>Lauko artzain-jokoa</application> aplikazioak aurkitu ditzakeen tokian jartzea. Lauko artzain-jokoaren instalazio-direktorioan  jar ditzakezu (zure sistemaren araberakoa izango da), baina ziurrenik zure etxeko direktorioa egokiagoa izango da.</para>
+
+      <para>Sortu <filename class="directory">~/.gnect</filename> direktorio bat, eta <filename class="directory">~/.gnect/pixmaps</filename> direktorio bat ere bai. Izen horiek garrantzitsuak dira, <application>Lauko artzain-jokoa</application>k ez baitu inon gehiago bilatuko.</para>
+
+      <para>Kopiatu itzazu zure irudiak pixmaps direktorioan.</para>
+
+      <para><application>Lauko artzain-jokoa</application> komando-lerrotik abiarazten baduzu, gai berriarekin dituen arazoei buruzko argibideak emango dizkizu. Arazorik ez badu, beste gai bat aurkituko duzu <interface> Hobespenen elkarrizketa-koadroa</interface>ren zerrendan.</para>
+
+      <para>Ondo pasa!</para>
+
+    </sect2>
+
+
+  </sect1>
+
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Sareko partidak</title>
+  <para>Lauko artzain-jokoak jokalari askorentzako partidak onartzen ditu, <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink>ren eskutik. Interneteko lauko artzain-jokoaren zerbitzari batera konektatuz gero, erronka jo diezaiekezu beste jokalari batzuei jokalari askorentzako partidetan. Albisteak, eguneratzeak eta konekta zaitezkeen zerbitzarien zerrendak jasotzeko, ikus <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">gnome jokoen web-orria</ulink>.</para>
+  <para>Lauko artzain-jokoan jokalari askorentzako partida berri bat abiarazteko, hautatu <menuchoice><guimenu>Jokoa</guimenu><guimenuitem>Sareko jokoa</guimenuitem></menuchoice> lauko artzain-jokoaren menuan.</para> 
+
+<sect2 id="connecting">
+<title>Lauko artzain-jokoaren sare-zerbitzarira konektatzea</title>
+<para>Lauko artzain-jokora konektatzeko elkarrizketa-koadroa, sareko partida berri bat abiarazten denean agertzen da. Konektatu nahi duzun zerbitzaria hautatzeko aukera ematen dizu elkarrizketa-koadroak, baita zerbitzari horretara konektatuta zauden bitartean izango duzun erabiltzaile-izena hautatzeko aukera ere.</para>
+
+<para>Gonbidatu moduan edo erregistratutako kontu normal batekin konekta zaitezke zerbitzarira. Gonbidatu moduan konektatzeak anonimoki sartzeko aukera ematen dizu; kontu normal batek, aldiz, zure erabiltzaile-izena gordetzeko aukera ematen dizu, eta aukeratzen duzun pasahitzarekin babesten du.</para>
+
+<para><guimenuitem>Saioa gonbidatu gisa hasi</guimenuitem> aukera hautatu beharko duzu, gonbidatu-kontu anonimo bat nahi baduzu. Kontu berri bat sortu nahi baduzu, hautatu <guimenuitem>Lehenengoz saioa hasi</guimenuitem> aukera, nahi duzun erabiltzaile-izena, pasahitza eta helbide elektronikoa erabiliz.  Zure kontua sortua duzunean, <guimenuitem>Saio-hasiera normala</guimenuitem> aukera hautatuz konekta zaitezke, eta, jarraian, aukeratu dituzun erabiltzaile-izena eta pasahitza sartu beharko dituzu.</para>
+<para>Zerbitzari batera konektatzeko, egin klik <guimenuitem>Konektatu</guimenuitem> botoian.</para>
+<figure id="connect">
+<title>Lauko artzain-jokoaren sare-konexioaren elkarrizketa-koadroa.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Lauko artzain-jokoaren sare-konexioaren elkarrizketa-koadroa.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Joko-gela batean sartzea</title>
+<para>Zerbitzari batera ongi konektatu zarenean, zein joko-gelatan sartu nahi duzun aukeratu dezakezu. Lauko artzain-jokoan jokalari askorentzako partida bat jolasteko, hautatu lauko artzain-jokoaren gela. Zuk zeuk partida bat aurkeztu nahi baduzu, egin klik Abiarazi botoian. Horrek taula berri bat sortzen du eta gainerako jokalariek zure aurkako partidan parte har dezakete. Jada abiarazitako partidarik baldin badago, taulan bi aldiz klik egin dezakezu partidara sartzeko. Eskuinaldean dagoen partida-zerrendak erabilgarri dagoen eserleku kopurua erakusten dizu, hau da, jokoaren taulara sar daitezkeen jokalarien kopurua.</para>
+<figure id="tables">
+<title>Lauko artzain-jokoaren sareko elkarrizketa-koadroak aukera ematen dizu joko-gela batean sartu eta beste jokalari batzuk bilatzeko .</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Lauko artzain-jokoaren sareko elkarrizketa-koadroak aukera ematen dizu joko-gela batean sartu eta beste jokalari batzuk bilatzeko .</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>Lauko artzain-jokoaren taula berri bat sortzerakoan, hobespenen elkarrizketa-koadro bat bistaratzen da eta partida pertsonalizatzeko aukera ematen dizu; partida joka dezaketen gutxieneko jokalari kopurua, esaterako. Eserleku kopuru osoa hartuta dagoenean, partida horretan ezin da jokalari gehiago sartu.</para>
+<para>Sareko partidetan aukera dago gainerako jokalariekin berriketan egiteko. Eskatu jokoaren inguruko aholkuak edo laguntza, baina mesedez izan zaitez adeitsua gainerako jokalariekin.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Beste jokalariak partidan sartu zain</title>
+<para>Partidan sartu zarenean, jokalari nahikoa elkartu arte itxoin beharko duzu. <guimenuitem>Jokalarien zerrenda</guimenuitem> menu-elementuak partidara sartu diren jokalarien zerrenda ikusteko aukera ematen dizu. Partidako jokalari kopuru osoa lortzen denean hasiko da partida.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Lauko artzain-jokoan jokalari askorekin jolastea</title>
+<para>Lauko artzain-jokoan jokalari askorekin jolastean, lauko-artzain joko normalean ezartzen diren antzeko arauak ezartzen dira, giza aurkarien aurka jolasten ari zarenean izan ezik. Horren arabera, estrategiek AA jokalarien aurka jolastean baino hobeak izan behar dute.</para>
+<para>Jokalari batek irabazten duenean, partida amaitu egiten da eta hasierako sareko jokoen pantailara itzul zaitezke. Hainbeste mendekotasun sortzen duen jokalari askorentzako artzain-joko honetan beste partida bat ere jolastu dezakezu.</para>
+</sect2>
+
+</sect1>
+
+
+
+  <!-- ===== Bugs ============================================== -->
+
+
+  <sect1 id="bugs">
+
+    <title>Ezagutzen diren programa-erroreak eta mugak</title>
+
+    <para>Batzuetan, puxtarria jaregiteko animazioak ez du izan behar lukeen itxura leuna.</para>
+
+  </sect1>
+
+
+  <!-- ===== Authors =========================================== -->
+
+
+  <sect1 id="authors">
+
+    <title>Egileak</title>
+
+    <para><application>Lauko artzain-jokoa</application> Timothy Musson-ek (<email>trmusson@ihug.co.nz</email>) eta David Neary-k (<email>bolsh@gimp.org</email>) idatzi zuten. Beste askok beren denbora eskaini dute <application>Lauko artzain-jokoa</application>ren lana hasi zenetik era askotan laguntzeko.</para>
+    <para><ulink type="http" url="http://www.ce.unipr.it/~gbe/velena.html">Velena motorra</ulink>, <application>Lauko artzain-jokoa</application>ren ordenagailu-jokalari nagusia, Giuliano Bertoletti-k idatzi zuen. Eskerrak ematen dizkiogu bere lana hemen sartzen uzteagatik, hori gabe <application>Lauko artzain-jokoa</application>k ez bailuke mereziko.</para>
+    <para>Eskuliburu hau Timothy Musson-ek idatzi zuen.</para>
+    <para>Aplikazio honi buruzko akatsen berri emateko edo oharrak bidaltzeko, <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentua</ulink>n aurkituko dituzu argibideak.</para>
+
+
+<!-- For translations: uncomment this:
+
+  <para>
+    Latin translation was done by ME
+    (<email>MYNAME@MYADDRESS</email>). Please send all comments and
+    suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+-->
+
+  </sect1>
+
+
+  <!-- ============= License =================================== -->
+
+
+  <sect1 id="license">
+
+    <title>Lizentzia</title>
+
+    <para>Programa hau software librea da; birbana eta/edo alda dezakezu Free Software Foundation-ek argitaratutako <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako baldintzak betez gero.</para>
+
+    <para>Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO BERMERIK GABE; era berean, ez da bermatzen beraren EGOKITASUNA MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO. Argibide gehiago nahi izanez gero, ikus <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>.</para>
+
+    <para><citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia <citetitle>GNOMEren erabiltzaile</citetitle>aren gidaren eranskinean daukazu. <citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle>ren kopia bat Free Software Foundation-en bidez ere lor dezakezu, <ulink url="http://www.fsf.org" type="http">haren webgunea</ulink> bisitatuz, edo hona idatziz: <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - 330. Suitea <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>AEB</country></address></para>
+
+  </sect1>
+
+</article>

@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.26">
+<!ENTITY manrevision "2.26">
+<!ENTITY date "June 2009">
+<!ENTITY app "<application>Mahjongg</application>">
+<!ENTITY appname "Mahjongg">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="zh_CN">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+  
+    <title><application>麻将</application>小游戏手册</title>
+    <abstract role="description">
+      <para>麻将是一个典型的东方骨牌类游戏，它要清除面板上相同花色的骨牌，把它们牌桌上拿出去。</para>
+    </abstract>
+    <copyright>
+      <year>1998</year>
+      <holder>自由软件基金会</holder>
+    </copyright>
+    <copyright>
+      <year>2000</year>
+      <holder>Eric Baudais (文档作者)</holder>
+    </copyright>  
+	    <copyright>
+      <year>2009</year>
+      <holder>Paul Cutler (文档作者)</holder>
+    </copyright><copyright><year>2010</year><holder>TeliuTe (teliute@163.com)</holder></copyright> 
+    
+    <!-- translators: uncomment this:
+    
+  <copyright>
+  <year>2000</year>
+  <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+    -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOME 文档项目</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>对于本文档的复制、分发和/或修改必须遵循自由软件基金会 (Free Software Foundation) 发布的 GNU 自由文档许可证 (GFDL) 版本 1.1 或更高版本，该许可证没有固定的部分、没有封面和背页文本。您可以在此<ulink type="help" url="ghelp:fdl">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副本。</para>
+         <para>本手册是在 GFDL 许可之下分发的 GNOME 手册集合的一部分。如果想要单独分发此手册，可以在手册中添加该许可证的一份副本然后分发，如该许可证的第 6 部分所述。</para>
+
+	<para>各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 GNOME 文档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而表明它们是商标。</para>
+
+	<para>本文档以及文档的修改版本都是在遵循 GNU 自由文档许可证的条款下提供，这表示具有以下含义：<orderedlist>
+		<listitem>
+		  <para>文档按“原样”提供，不提供任何明示或暗示的保证，包括但不限于：文档或文档的修改版本没有适销性方面的缺陷、适合特定目的的适用性，以及没有侵权行为。您将自行承担本文档以及文档修改版本的质量、准确性以及性能方面的风险。如果任何文档或文档修改版本存在缺陷，您(而不是最初的编写者、作者或撰写人)将承担所有必需的服务、维修或更正的费用。此免责声明是本许可证的重要组成部分。如果不接受此免责声明，那么您就没有权利使用任何文档或文档的修改版本；并且</para>
+		</listitem>
+		<listitem>
+		  <para>无论在任何情况以及在任何法律理论下，本文档或文档修改版本的作者、最初的编写者、任何撰写人或任何分发者，或者任意这些方的任何提供者都不对任何人由于使用本文档或文档修改版本引起或带来的任何直接的、间接的、特殊的、偶然的或继发的损失承担任何民事(包括疏忽)、合同或其它方面的责任，这些损失包括但不限于信誉损失、工作停止、计算机失败或故障，或任何以及所有其它损失或由此引发的或与之相关的损失，即使这些方已被告知存在出现此类损失的可能性时也是如此。</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer">
+	<firstname>Eric</firstname> 
+	<surname>Baudais</surname> 
+	<affiliation> 
+	  <address> <email>baudais@okstate.edu</email> </address> 
+	</affiliation> 
+      </author> 
+	        <author role="maintainer">
+	<firstname>Artur</firstname> 
+	<surname>Szymanski</surname> 
+	<affiliation> 
+	</affiliation> 
+      </author>
+	        <author role="maintainer">
+	<firstname>Paul</firstname> 
+	<surname>Cutler</surname> 
+	<affiliation> 
+		<orgname>GNOME 文档项目</orgname>
+	  <address> <email>pcutler@gnome.org</email> </address> 
+	</affiliation> 
+      </author> 
+
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="candidate"/>
+	
+	    <revhistory>
+      <!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+
+      <revision>
+        <revnumber>Mahjongg Manual V 2.26</revnumber>
+        <date>2009-06-16</date>
+        <revdescription>
+          <para role="author">Paul Cutler</para>
+          <para role="publisher">GNOME 文档项目</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>Mahjongg Manual V 2.26</revnumber>
+        <date>2009-06-16</date>
+        <revdescription>
+          <para role="author">Artur Szymanski</para>
+        </revdescription>
+      </revision>	  
+      <revision> 
+	<revnumber>Mahjongg Manual V2.10;</revnumber> 
+	<date>2005年6月</date> 
+	<revdescription> 
+	  <para role="author">Eric Baudais <email>baudais@okstate.edu</email></para>
+	  <para role="publisher">GNOME 文档项目</para>
+	</revdescription> 
+	</revision>
+	</revhistory>
+
+    <releaseinfo>本手册讲述的是麻将小游戏2.26版。</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>反馈</title> 
+      <para>要报告关于<application>麻将</application>程序或使用手册中的缺陷，或者提出建议，请参照 <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME 反馈页</ulink> 上的指导。</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME 麻将</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="intro">
+    <title>介绍</title>
+
+    <para><application>麻将</application>是一个典型的东方骨牌类游戏(单人版)，它拥有所有您期望的棋牌类游戏功能。您可以更改牌的类型、背景色和难度级别，更多功能请打开 <link linkend="prefs">首选项</link> 对话框。更多的特性，如 <link linkend="pause"><guibutton>暂停</guibutton> 按钮</link>，当您采用计时方式时，让游戏更具有竞技的意味。</para>
+
+    <sect2 id="history">
+      <title>麻将简短历史叙述</title>
+
+      <!-- FIXME: Explain more about solitaire version.-->
+      <para>麻将牌有各种变化的玩法，这个版本的麻将是对对碰的一种。每个骨牌有一个对应的 <ulink type="http" url="http://www.xs4all.nl/~korntner/mahjong/fortune/index.html">含义</ulink>。</para>
+
+      <para>麻将的起源并不十分清楚，但一些理论表明可以追溯到4世纪。理论之一是诺亚在方舟上玩麻将，因为东方是占主导的，用以推测在雨季雨水到来的方向。另一种理论是，中国的哲学家孔子，发明了这个游戏，三种<quote>基本的</quote> 骨牌代表代表三种基本的美德， Chung(中庸)是红色，Fa(幸运)是绿色，Po(公正)是白色，与仁爱、诚实和孝悌相一致。还有其他的理论认为麻将是源自一些中国游戏。<quote>Ya Pei</quote> 是用32张木板或象牙制作的牌来玩，形状是长方形的，跟现在的麻将有些相似。<quote>Ma Tiae</quote>用40张外观类似的纸牌玩，用四套不同的数字1到9花牌。有人提出是两兄弟大约在1850年，通过这两个游戏组合发明的。</para>
+
+      <para>最早是二十世纪，麻将被介绍到上海的英国俱乐部。巴高克先生把麻将进口到西方世界，他只保留了最基本的游戏规则，甚至牌面都是用的阿拉伯数字。1923年各个赌博公司掀起麻将热，像帕克兄弟、Milton Bradley 和 United States Playing Card，进口了几千副麻将。</para>
+
+      <para>麻将有多种游戏规则，美国官方法规制定标准化委员会于1924年编写了一本游戏规则。直到今天，许多俱乐部还实行不同的规则，有时甚至添加花色和白板。电脑游戏版本的玩家在20世纪20年代到30年代开始对制作精美的手工艺感兴趣，在古董店和跳蚤市场寻找属于自己的一套麻将。大多新玩家通过骨牌了解到这个游戏，慢慢被这个传统游戏的智慧和精妙所吸引。<footnote>
+	  <para>这部分内容改编自 <ulink type="http" url="http://www.mahjongmuseum.com/">Mah Jong Museum</ulink>。</para>
+	</footnote></para>
+    </sect2>
+  </sect1>
+  
+   <!-- ============= Playing Mahjongg ============================= -->
+
+  <sect1 id="usage">
+    <title>玩麻将小游戏</title>
+
+    <para>开始桌面上有五层骨牌，上面的会压着下面一部分。游戏难度可以在 <link linkend="prefs"><interface>首选项</interface> 对话框</link>中设置，刚开始大多数的骨牌是被压着的。<application>麻将</application> 游戏要消去所有的骨牌，要消去一张牌，您必须找到另一个跟它相同花色的，一般是相同点数和相同的图案。</para>
+
+    <para>以<link linkend="mahjongg-fig">下图</link>高亮的牌为例，跟它配对的牌应当是个六饼，位置在右边倒数第三行边上，还有一个匹配的在倒数第四行中间。如果您想和最上面的骨牌配对，就要找到一个相同的绿色七条，看到了吗？有三个跟它相同的骨牌，两个在左下边，第三个在最上边一行，但这个不能配对消去。因为只有两边的牌才能消除，通过练习慢慢就知道了哪些牌可以消去，哪些不能消除。自己试着找两个相同可以消去的骨牌。</para>
+
+    <figure id="mahjongg-fig">
+      <title>麻将小游戏主窗口</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/mahjongg.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>主窗口。</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>在<application>麻将</application>小游戏中，点击两个相同的骨牌就可以消去它们，不断地消除直到清空所有的骨牌，或者盘面上没有可消除的牌。</para>
+
+    <para>在每一层中，只有最左边和最右边的牌可以选择，这是因为您不能移动被挤压着的骨牌。如果各个层最左边或最右边的骨牌，能找到另外相同的一个，就可以消去它们。</para>
+
+    <para>如果找不到任何可以匹配的骨牌，就会出来一个提示对话框，您可以选择重新洗牌(另外增加60秒游戏时间)、重新开始新游戏或者撤消最后一次移动(当然您可以撤消很多次，找出走错的那一步)。</para>
+
+    <figure id="info-fig1">
+      <title>信息提示框</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/no-move.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>信息提示框。</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+    
+    <sect2 id="toolbar">
+      <title>工具栏</title>
+
+      <para><interface>工具栏</interface> 在<interface>菜单栏</interface>的下边，包含下面几项内容：</para>
+      
+      <variablelist>
+	<varlistentry>
+	  <term><guibutton>新建</guibutton></term>
+	  <listitem>
+	    <para>点这个按钮，用当前的设置开始一个新游戏。</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>重新开始</guibutton></term>
+	  <listitem>
+	    <para>点这个按钮不会改变当前的盘面，并返回到游戏的最开头。</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry id="pause">
+	  <term><guibutton>暂停</guibutton></term>
+	  <listitem>
+	    <para>点这个按钮会暂停游戏。游戏暂停时，在<interface>主窗口</interface>右下角的时钟会停下，骨牌会翻扣过来看不到牌面。</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>撤消移动</guibutton></term>
+	  <listitem>
+	    <para>点这个按钮将放回上次移动的骨牌，一直可以撤回到游戏开始。</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>重做移动</guibutton></term>
+	  <listitem>
+	    <para>这个按钮跟撤消相反，重新消除上次<guibutton>撤消移动</guibutton>的骨牌。</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>提示</guibutton></term>
+	  <listitem>
+	    <para>点这个按钮，会提示您两个可以移动的骨牌，使用一次将会扣除30秒的比赛时间。</para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+      <para>状态栏在主窗口的底部，给出一些游戏的当前信息：</para>
+      <variablelist>
+	<varlistentry>
+	  <term><guilabel>剩下的牌：</guilabel></term>
+	  <listitem>
+	    <para>显示盘面上还剩下的骨牌数量。</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guilabel>剩余的着法：</guilabel></term>
+	  <listitem>
+	    <para>这里显示当前可以消除的骨牌数，每消去一次后可能会发生变化。</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guilabel>时间：</guilabel></term>
+	  <listitem>
+	    <para>这里显示游戏用去的时间。</para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+      
+      <figure id="toolbar-fig">
+	<title>麻将小游戏工具栏</title>
+	<screenshot>
+	   <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/toolbar.png" format="PNG" srccredit="Eric Baudais"/>
+	  </imageobject>
+    <textobject> 
+      <phrase>工具栏。</phrase> 
+    </textobject> 
+  </mediaobject>
+	</screenshot>
+      </figure>
+      
+    </sect2>
+    
+    <sect2 id="menubar">
+      <title>菜单</title>
+      <para>菜单栏位于<interface>主窗口</interface>的顶部，包含下面这些菜单：</para>
+
+      <variablelist>
+	<varlistentry>
+	  <term><guimenu>游戏</guimenu></term>
+	  <listitem>
+	    <para>菜单栏包括：<itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>Ctrl-N</keycap></shortcut><guimenuitem>新建</guimenuitem></menuchoice> — 点击此项开始一个新游戏。</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>重新开始</guimenuitem></menuchoice> — 这一项重新开始当前盘面的游戏。</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>暂停</guimenuitem></menuchoice> — 暂停当前的游戏，停止计时并隐藏牌面。</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>Ctrl-Z</keycap></shortcut><guimenuitem>撤消移动</guimenuitem></menuchoice> — 点击此项将放回上次移动的骨牌，一直可以撤回到游戏开始。</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>Ctrl-R</keycap></shortcut><guimenuitem>重做移动</guimenuitem></menuchoice> — 这一项跟撤消相反，重新消除上次 <guibutton>撤消移动</guibutton>的骨牌。当没有可重做时，在<interface>主窗口</interface>的左下角会提示 <quote>不能再重做!</quote></para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>提示</guimenuitem></menuchoice> — 这一项会帮您找出两个相同的骨牌。</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>得分</guimenuitem></menuchoice> — 点击此项会显示一个得分排行榜，里面记录了上榜用户名和完成所用的时间。</para>
+		</listitem>
+		<listitem>
+		  <para id="quit"><menuchoice><shortcut><keycap>Ctrl-Q</keycap></shortcut><guimenuitem>退出</guimenuitem></menuchoice> — 点击此项退出游戏。</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term><guimenu>设置</guimenu></term>
+	  <listitem>
+	    <para>菜单栏包括：<itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>F11</keycap></shortcut><guimenuitem>全屏</guimenuitem></menuchoice> — 点击此项会进入全屏模式。要返回普通模式，可以按 <keycap>F11 键</keycap>，或者点击 <interface>工具栏</interface> 上的 <guibutton>离开全屏</guibutton> 按钮。</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>工具栏</guimenuitem></menuchoice> — 这一项切换是否显示 <link linkend="toolbar"><interface>工具栏</interface></link>。选中此项将显示<interface>工具栏</interface>，如果未选中则不显示<interface>工具栏</interface>。</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>首选项</guimenuitem></menuchoice> — 点击此项显示 <link linkend="prefs">首选项</link> 对话框。</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guimenu>帮助</guimenu></term>
+	  <listitem>
+	    <para>菜单栏包括：<itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>F1</keycap></shortcut><guimenuitem>目录</guimenuitem></menuchoice> — 点击此项显示本手册。</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>关于</guimenuitem></menuchoice> — 点击此项给出 <application>GNOME 麻将</application> 游戏的基本信息，比如作者、程序版本等。</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+
+    </sect2>
+  </sect1>
+  
+   <!-- ============= Customization ============================= -->
+
+  <sect1 id="prefs">
+    <title>自定义</title>
+    <para>要更改程序设置，点<guimenu>设置</guimenu>菜单，选择<guimenuitem>首选项</guimenuitem>，然后打开 <link linkend="preferences-fig"><interface>首选项</interface> 对话框</link>。</para>
+    
+    <figure id="preferences-fig">
+<!-- FIXME: This dialog is the old one. -->
+<!-- ALAN: looks correct like version 2.10 to me -->
+      <title>首选项对话框</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>首选项对话框。</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>所有更改会立即保存并应用。</para>
+    
+    <para><interface>首选项</interface>对话框的内容：</para>
+      
+      <itemizedlist mark="opencircle">
+	<listitem>
+	  <para><guilabel>牌面设置:</guilabel> — 选择骨牌牌面的外观。</para>
+	</listitem>
+	<listitem>
+	  <para><guilabel>选择牌局:</guilabel> — 通过更改骨牌的堆叠方式改变游戏难度。排得愈开愈简单，可以看到下面的牌面，而堆得越紧凑越难，您不能看到下面的牌面。</para>
+	</listitem>
+	<listitem>
+	  <para><guilabel>背景色:</guilabel> — 通过使用<interface>拾色器</interface>来更改背景色。</para>
+	</listitem>
+      </itemizedlist>
+
+    <para>要更改骨牌的大小，只需简单缩放游戏窗口，牌面将自动跟着缩放。</para>
+
+  </sect1>
+  
+<!-- ALAN: Better to leave this section out than to say something unhelpful 
+and risk annoying the user.  
+ <sect1 id="bugs">
+  <title>Known Bugs and Limitations</title>
+  <para>
+   This application has no known bugs.
+  </para>
+ </sect1>
+-->
+
+ <!-- ============= Authors ============================= -->
+
+ <sect1 id="authors">
+  <title>作者</title>
+  <para><application>麻将</application>小游戏由 Francisco Bustamante (<email>pancho@nuclecu.unam.mx</email>)、Michael Meeks (<email>mmeeks@gnu.org</email>)、Max Watson, Heinz Hempe 和 Philippe Chavin 编写。牌面由 Jonathan Buzzard 和 Max Watson 制作。本文档由 Eric Baudais (<email>baudais@okstate.edu</email>)编写。要报告本程序或本手册的缺陷或者提出建议，请参照 <ulink url="ghelp:user-guide?feedback-bugs" type="help">文档</ulink> 上的指导。</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>许可协议</title>
+  <para>本程序是自由软件，您可以在遵守自由软件基金会发布的 <ulink type="help" url="gnome-help:gpl"><citetitle>GNU 通用许可证</citetitle></ulink> 第2版或更高(如您所愿)版本下，重新分发和/或修改它。</para>
+  <para>本程序的发布意图是希望它有所用处，但请注意它没有任何担保，甚至不包括商业用途、以及特殊目的保证。更多相关细节，请参阅 <citetitle>GNU 通用许可证</citetitle>。</para>
+  <para>在<citetitle>GNOME 用户指南</citetitle> 的附录中包含了一份 <citetitle>GNU 通用许可证</citetitle>的副本，您也可以通过访问自由软件基金会的<ulink type="http" url="http://www.fsf.org">网站</ulink>上获得 <citetitle>GNU 通用许可证</citetitle>的副本，或者写信给 <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address> 来索取。</para>
+ </sect1>
+</article>

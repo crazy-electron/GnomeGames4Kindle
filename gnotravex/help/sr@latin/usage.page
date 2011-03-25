@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="usage" xml:lang="sr@latin">
+
+  <info>
+    <link type="guide" xref="index#play" group="one"/>
+    <link type="seealso" xref="gameplay"/>
+    <desc>Kako da igrate <app>Gnomovu slagalicu</app>.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <credit type="author">
+      <name>Rob Bradford</name>
+      <email>robster@debian.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>    
+  </info>
+
+  <title>Igranje <app>Gnomove slagalice</app></title>
+
+  <section id="usage-basic">
+    <title>Osnovna upotreba</title>
+    <p>Prozor za igru je podeljen na dve kutije: kutija na desnoj strani sadrži sve delove koje treba složiti; kutija na levoj strani je mesto gde delovi iz desne kutije treba da budu pomereni i složeni. Svaki deo je podeljen na četiri mala trougla koji sadrže po jedan broj.</p>
+    <p>Uslov u igri je da se delovi poređaju tako da su samo isti brojevi jedan do drugog.</p>
+    <p>Nemoguće je postaviti delove tako da dva različita broja budu jedan do drugog.</p>
+    <p>Igra je završena kada postavite sve delove na njihove pozicije.</p>
+    <note>
+      <p>Čim pokrenete <app>Gnomovu slagalicu</app> započinje nova igra i vreme kreće da teče.</p>
+    </note>
+
+  </section>
+  
+  <section id="usage-video">
+    <title>Video demonstracija</title>
+    <p>
+      This short video shows how the game works, and what are the possible movements.
+    </p>
+    <p>
+      <media type="video" mime="application/ogg" src="figures/gnotravex-video.ogv">Mala demonstracija igre</media>
+    </p>
+  </section>
+</page>

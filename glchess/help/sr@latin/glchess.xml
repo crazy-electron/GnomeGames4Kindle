@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.18">
+<!ENTITY date "December">
+<!ENTITY app "<application>Chess</application>">
+<!ENTITY appname "Chess">
+<!ENTITY version "2.22">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sr@latin">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo>
+ <title>Uputstvo za <application>Šah</application></title>
+ 
+ <abstract role="description">
+       <para>glŠah je klasična igra šaha na tabli, u kojoj dva igrača simuliraju bitku tako što jedu protivničke figure, a na kraju i kralja. Igra se može igrati u 2D ili 3D režimu, preko celog ekrana ili u prozoru.</para>
+ </abstract>
+ <copyright>
+  <year>2006-2008</year>
+  <holder>Andreas Røsdal</holder>
+ </copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>Projekat Gnomove dokumentacije</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Dozvoljeno umnožavanje, širenje, vršenje izmena ovog dokumenta pod uslovima Gnu-ove Slobodne Dokumentacione Dozvole (GSDD), verzije 1.1 ili bilo koje naknadne verzije bez nepromenjivih odeljaka, teksta na naslovnoj i poslednjoj strani, a koju je objavila Zadužbina Slobodnog Softvera. Primerak GSDD-e možete pronaći na ovoj <ulink type="help" url="ghelp:fdl">adresi</ulink> ili u datoteci COPYING-DOCS koja je priložena uz ovo uputstvo.</para>
+         <para>Ovo uputstvo je deo skupa Gnom dokumenata objavljenih pod GFDL. Ukoliko želite da raspodeljujete ovo uputstvo odvojeno od skupa, to možete uraditi dodavanjem primerka licence dokumentu, kako je opisano u odeljku 6 same licence.</para>
+
+	<para>Mnogi nazivi koje kompanije koriste u cilju prepoznatljivosti svojih proizvoda i usluga predstavljaju robne marke. Kada (ukoliko) se takvi nazivi pojavljuju(spominju) u bilo kojem Gnomovom dokumentu, a članovi Gnomovog dokumentacionog projekta imaju saznanja o tome, tada su nazivi ispisani velikim slovima ili sa velikim početnim slovima.</para>
+
+	<para>OVAJ DOKUMENT I NJEGOVE IZMENJENE VERZIJE SU DOSTUPNE POD USLOVIMA GNU-OVE SLOBODNE DOKUMENTACIONE DOZVOLE UZ DODATNU SAGLASNOST DA: <orderedlist>
+		<listitem>
+		  <para>DOKUMENT JE DOSTUPAN SA SVIM SVOJIM DOBRIM I LOŠIM STRANAMA BEZ BILO KAKVOG JAMSTVA, BILO ONO IZREČENO ILI NE, UKLJUČUJUĆI BEZ OGRANIČENJA, JAMSTVO DA JE OVAJ DOKUMENT ILI NJEGOVA IZMENJENA VERZIJA BEZ NEDOSTATAKA, SPREMAN ZA TRŽIŠTE, SVRSISHODAN I NE NARUŠAVA ZAKONSKE NORME. CELOKUPAN RIZIK KOJI SE ODNOSI NA KVALITET, TAČNOST I DOMET (UČINAK) DOKUMENTA ILI NJEGOVE IZMENJENE VERZIJE SNOSI KORISNIK. UKOLIKO SE U BILO KOJEM DOKUMENTU ILI NJEGOVOJ IZMENJENOJ VERZIJI POJAVI NEDOSTATAK (GREŠKA) BILO KOJE VRSTE, KORISNIK (A NE AUTOR IZVORNE VERZIJE, BILO KOJI DRUGI AUTOR ILI SARADNIK) SNOSI SVE TROŠKOVE NEOPHODNOG SERVISIRANJA, POPRAVKE ILI ISPRAVKE. OVO OGRANIČENJE JAMSTVA PREDSTAVLJA SASTAVNI DEO OVE DOZVOLE. UPOTREBA BILO KOJEG DOKUMENTA ILI NJEGOVE IZMENJENE VERZIJE NIJE DOZVOLJENA OSIM POD USLOVIMA OVOG OGRANIČENJA JAMSTVA.</para>
+		</listitem>
+		<listitem>
+		  <para>NI POD KAKVIM OKOLNOSTIMA ILI ZAKONU, BILO ZBOG KRŠENJA (ILI NEMARA) UGOVORA, ILI NA BILO KOJI DRUGI NAČIN, AUTOR (PRVOBITNE VERZIJE), SARADNIK ILI ISPORUČIVALAC DOKUMENTA ILI NJEGOVE IZMENJENE VERZIJE, NITI DOBAVLJAČ BILO KOJE OD NAVEDENIH STRANA NEĆE SNOSITI MATERIJALNU ODGOVORNOST ZA NASTALA DIREKTNA, INDIREKTNA, POSEBNA, SLUČAJNA ILI TIME NASTALA OŠTEĆENJA BILO KOJE VRSTE UKLJUČUJUĆI, BEZ OGRANIČENJA, ŠTETU NANESENU UGLEDU FIRME, PRESTANKU PROIZVODNJE, OTKAZIVANJE RADA RAČUNARA ILI KVARA KAO I ZA SVE OSTALE ŠTETE ILI GUBITKE NASTALE USLED KORIŠĆENJA DOKUMENTA I NJEGOVIH IZMENJENIH VERZIJA ČAK I AKO JE OŠTEĆENA STRANA BILA OBAVEŠTENA O MOGUĆNOSTI NASTANKA TE ŠTETE.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+	<firstname>Andreas</firstname> 
+	<surname>Røsdal</surname> 
+	<affiliation> 
+	  <address> <email>andrearo@pvv.ntnu.no</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+<revhistory>
+      <revision> 
+	<revnumber>Uputstvo za Šah v2.18</revnumber> 
+	<date>Decembar</date> 
+	<revdescription> 
+	  <para role="author">Andreas Røsdal <email>andrearo@pvv.ntnu.no</email></para>
+	  <para role="publisher">Projekat Gnomove dokumentacije</para>
+	</revdescription> 
+      </revision>
+  <revision>
+   <revnumber>1</revnumber>
+   <date>Decembar 2006.</date>
+   <authorinitials>AR</authorinitials>
+   <revremark>Završen prvi nacrt.</revremark>
+  </revision>
+ </revhistory>
+
+    <releaseinfo>Ovo uputstvo je napisano za Šah 2.18.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Primedbe</title> 
+      <para>Da biste prijavili grešku ili dali predlog u vezi programa <application>Šah</application> ili njegovog uputstva, pratite smernice na <ulink url="ghelp:user-guide?feedback-bugs" type="help">Gnomovoj strani za primedbe</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>glŠah</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="intro">
+ <title>Uvod</title>
+ <sect2 id="what">
+  <title>Pregled Šaha</title>
+  
+  <para>Šah je strategijska igra na tabli za dva igrača. <application>glŠah</application> je 2D/3D šahovska igra, pri čemu igrači mogu biti bilo kombinacija ljudi i/ili računarskih programa. glŠah prepoznaje spoljne šahovske programe (motore) i koristi ih za računarske igrače. Igru je originalno razvio Robert Ancell, a sada je deo Gnomovih igara.</para>
+
+  <para><application>glŠah</application> je napisan u jeziku Piton, a koristi GTK+ i Kairo kao pozadinu za iscrtavanje šahovske table. 3D podrška je opciono dostupna koristeći OpenGL preko Pitonovig OpenGL i GtkGLExt biblioteka. Kao i u ostalim 3D programima, preporučuje se hardverska akceleracija, ali će igra raditi solidno i sa softverskom akceleracijom. Uz glŠah se isporučuje i Gnuov šah, podrazumevan algoritam za veštačku inteligenciju. glŠah se može igrati i preko mreže, sa drugim igračima preko interneta.</para>
+  <para>Šah se igra na kvadratnoj tabli koja ima 64 polja sa naizmeničnim bojama polja. Oba igrača započinju igru sa šesnaest figura: jednim kraljem, jednom kraljicom, dva topa, dva konja, dva lovca i osam piona. Jedan igrač upravlja belim figurama, a drugi crnim; igrač koji upravlja belim figurama igra prvi. Potezi igrača se naizmenično smenjuju; neki potezi uključuju „jedenje“ protivničke figure i ona se onda uklanja sa table. Cilj igre je matirati protivničkog kralja. Ovo se dešava kada je kralj pod direktnim napadom (u šahu), a ne postoji način da se on pomeri da ne bude opet napadnut. Teoretičari su razvili opsežne šahovske strategije i taktike od kada je igra nastala.</para>
+<para>Sadašnja oblik igre je nastao u Južnoj Evropi u drugoj polovini 15. veka pošto je izveden od sličnih, mnogo starijih igara azijskog porekla. Šah je jedna od najpopularnijih igara na tabli. Tradicija takmičarskog šaha počinje u 16. veku. Prvi zvanični svetski šahovski šampion, Vilhelm Štajnic je osvojio titulu 1886. godine; njegov moderni ekvivalent, Vladimir Kramnik, je 14. šampion u nizu. Postoje i Šahovske olimpijade koje se odigravaju na svake dve godine. Od 20. veka, dve međunarodne organizacije, Svetska šahovska federacija i International Correspondence Chess Federation su organizovale i nadgledale najbolja svetska takmičenja i dodelu  međunarodnih titula.</para>
+<para>Jedan od ciljeva prvih računarskih naučnika je bio napraviti šahovsku mašinu, kao pozadinu samog sučelja, a i na današnji šah duboko utiče uticaj ogromnih sposobnosti trenutnih šahovskih programa. 1997. godine, u meču između Garija Kasparova, tadašnjeg svetskog šampiona i Deep Blue šahovskog programa firme IBM, je dokazano da računar može da pobedi i najjačeg ljudskog igrača.</para>
+
+  <para>Da biste pokrenuli <application>glŠah</application>, izaberite <guimenuitem>Šah</guimenuitem> iz podmenija <guisubmenu>Igre</guisubmenu> menija <guimenu>Programi</guimenu>, ili otkucajte <command>glchess</command> u komandnoj liniji.</para>
+ </sect2>
+
+</sect1>
+
+
+<sect1 id="playing-glchess">
+ <title>Igranje glŠaha</title>
+ <sect2 id="main-game-window">
+<title>Glavni prozor igre</title>
+
+     <para>Pokretanjem glŠaha se prikazuje glavni prozor kao što je prikazano na slici ispod. Igra se igra pomeranjem figura koristeći miša. Igrači se smenjuju pomerajući figuru odgovarajuće boje, iz jedne pozicije u drugu, ispravnu poziciju. Glavni prozor je podeljen na tri glavna dela: U meniju na vrhu i oblasti trake alata se mogu izvršiti najčešće akcije. Šahovska tabla je na sredini prozora, gde se figure pomeraju korišćenjem miša. Konačno, na dnu je prikazan panel istorijata igre, gde se nalaze podaci o istoriji igre, preostalom vremenu za igru i dugmad za prikaz prethodnih ili sledećih poteza.</para>
+
+ <figure id="main-game-shot">
+  <title>Glavni prozor glŠaha</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Glavni prozor glŠaha.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+</sect2>
+
+<sect2>
+<title>Pokretanje nove igre</title>
+<para>Da biste pokrenuli novu igru, pritisnite dugme <guibutton>Nova igra</guibutton> iz trake alata. Prikazaće se prozorče za novu igru na kome se nova igra može podesiti željenim opcijama. U odeljku za <interface>postavke igre</interface> se određuje ime igre i vreme za potez svakog igrača. U odeljku <interface>igrači</interface> je moguće postaviti broj ljudskih i računarskih igrača. Ako ste instalirali bilo koji podržani šahovski motor, on će biti prikazan u spisku dostupnih igrača. Konačno, podešavanja težine računarskih igrača je moguće postaviti u odeljku <interface>težina</interface>.</para>
+
+ <figure id="new-game-shot">
+  <title>Prozorče za pokretanje nove igre</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/new_game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Prozorče za pokretanje nove igre glŠaha.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+</sect2>
+
+
+
+
+<sect2 id="menubar">
+   <title>Meniji</title>
+   <para>Traka menija, koja se nalazi na vrhu <interface>Glavnog prozora</interface>, sadrži sledeće menije:</para>
+
+   <variablelist>
+    <varlistentry>
+     <term><guimenu>Igra</guimenu></term>
+     <listitem>
+      <para>Ovaj meni sadrži: <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+N</keysym></shortcut><guimenuitem>Novo</guimenuitem></menuchoice> Pokreće novu igru <application>Šaha</application>.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+O</keysym></shortcut><guimenuitem>Otvori</guimenuitem></menuchoice> Učitava prethodno sačuvanu igru.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+S</keysym></shortcut><guimenuitem>Sačuvaj</guimenuitem></menuchoice> Čuva trenutnu igru šaha.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><guimenuitem>Sačuvaj kao</guimenuitem></menuchoice> Čuva trenutnu igru šaha pod novim imenom datoteke.</para>
+        </listitem>
+
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+L</keysym></shortcut><guimenuitem>Mrežna igra</guimenuitem></menuchoice> Započinje novu mrežnu igru korišćenjem GGZ Zone igre.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Predaj se</guimenuitem></menuchoice> Odobravanje prekida igre tako da protivnik pobeđuje.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Zahtevaj remi</guimenuitem></menuchoice> Ako je zahtevani remi prihvaćen, igra se završava bez pobednika.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+Q</keysym></shortcut><guimenuitem>Izađi</guimenuitem></menuchoice> Završava igru.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+
+    <varlistentry>
+     <term><guimenu>Pregled</guimenu></term>
+     <listitem>
+      <para>Ovaj meni sadrži: <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>F11</keysym></shortcut><guimenuitem>Ceo ekran</guimenuitem></menuchoice> Prikazuje prozor igre u režimu preko celog ekrana.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><guimenuitem>3D šahovski pogled</guimenuitem></menuchoice> Omogućava 3D režim pogleda koristeći OpenGL. Ovo zahteva da imate instalirane biblioteke Python OpenGL i Python GTKGLExt, kao i dobro podešenu 3D grafičku kartu. Kontaktirajte administratora sistema ako imate problema. U svakom slučaju, igru uvek možete igrati u 2D režimu.</para>
+        </listitem>
+	 <listitem>
+         <para><menuchoice><guimenuitem>Prikaži dnevnik igre</guimenuitem></menuchoice> Prikazuje dnevnike radi otklanjanja grešaka u programu glŠah i aktivnim šahovskim motorima.</para>
+        </listitem>
+     </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+   <varlistentry>
+     <term><guimenu>Podešavanja</guimenu></term>
+     <listitem>
+      <para>Ovaj meni sadrži: <itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>Podešavanja</guimenuitem></menuchoice> Otvara prozor za uređivanje <link linkend="prefs"> podešavanja.</link></para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Pomoć</guimenu></term>
+     <listitem>
+      <para>Ovaj meni sadrži: <itemizedlist>
+        <listitem>
+          <para><menuchoice><shortcut><keysym>F1</keysym></shortcut><guimenuitem>Sadržaj</guimenuitem></menuchoice> Prikazuje ovo uputstvo.</para>
+         <para><guimenuitem>O programu</guimenuitem> Otvara prozorče <interface>„O programu“</interface> koje prikazuje osnovne podatke o <application>glŠahu</application>, kao što su ime autora i izdanje programa.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+
+
+</sect2>
+
+
+</sect1>
+
+
+<sect1 id="chess-rules">
+ <title>Šahovska pravila</title>
+ <sect2 id="rules-of-chess">
+  <title>Pravila igre šah</title>
+<!--
+The reference for this chapter is http://en.wikipedia.org/wiki/Chess
+-->
+  <para>Šah se igra na kvadratnoj tabli sa osam redova (označenih sa brojevima od 1 do 8) i osam kolona (označenih latiničnim slovima a do h). Bela i crna boja šezdeset i četiri polja se naizmenično menjaju, a zovu se još i „svetla“ i „tamna“ polja. Šahovska tabla se tako postavlja da je svakom igraču belo polje u donjem desnom uglu, a figure se postavljaju kao što je prikazano na slici, tako da je svaka kraljica na polju iste boje kao i ona.</para><para>Svaki igrač počinje igru sa 16 figura: figure svakog od igrača se sastoje od jednog kralja, jedne kraljice, dva topa, dva lovca, dva konja i osam piona. Jedan igrač, koji se zove još i „beli“ upravlja belim figurama, a drugi igrač, „crni“, upravlja crnim figurama; beli uvek igra prvi. Boje se odabiraju ili prijateljskim dogovorom, na sreću ili ih odabira režiser turnira. Igrači naizmenično igraju pomerajući po jednu figuru (sa izuzetkom rokade, kada se dve figure pomeraju odjednom). Figure se ili pomeraju na slobodno polje, ili na polje koje zauzima protivnička figura i tad je ta figura uzeta i uklanja se iz igre. Sa izuzetkom an pasana, sve figure jedu protivničke figure pomerajući se na polje koje zauzima protivnička figura.</para>
+ <sect3 id="rules-piece-king">
+  <title>Kralj</title>
+<para>Kada se kralja nalazi pod direktnim napadom jedne (ili može i dve) protivničke figure, kaže se da je igrač u šahu. Kada je u šahu, igraču su dozvoljeni samo oni potezi koji izvlače kralja iz šaha. Igrač takođe ne sme da napravi nijedan potez da svog kralja dovede u šah. Cilj igre je šah-matirati protivnika; ovo se dešava kada je kralj u šahu, a ne postoji nijedan potez koji kralja izvlači iz protivničkog napada.</para><para>Kralj se može pomerati jedno polje vodoravno, uspravno ili dijagonalno. Jednom za vreme igre, svaki kralj ima pravo da izvrši specijalni dupli potez, rokadu. Rokada se sastoji od pomeranja kralja dva polja prema topu, a zatim pomeranje topa na polje koje je kralj preskočio. Rokada je moguća samo ako su zadovoljeni sledeći uslovi:</para>
+<itemizedlist spacing="compact">
+  <listitem>
+   <para>Igrač nije pre rokade pomerao ni kralja ni topa sa kojim se vrši rokada.</para>
+  </listitem>
+  <listitem>
+   <para>Između kralja i topa ne postoji nijedna figura.</para>
+  </listitem>
+  <listitem>
+   <para>Kralj ne sme biti pod šahom, niti sme da prođe kroz polja koja su pod napadom protivnika. Kao i sa ostalim potezima, rokada ne može da se obavi ako bi time kralj ušao u šah.</para>
+ </listitem>
+  <listitem>
+   <para>Kralj i top moraju biti na istom redu (da se isključi mogućnost rokade izvedenim pionom).</para>
+  </listitem>
+</itemizedlist>
+</sect3>
+ <sect3 id="rules-piece-rook">
+  <title>Top</title>
+<para>Top se može pomerati bilo koji broj slobodnih polja vodoravno ili uspravno (takođe je uključen i kraljev specijalni potez rokade).</para>
+</sect3>
+ <sect3 id="rules-piece-bishop">
+  <title>Lovac</title>
+<para>Lovac se može pomerati bilo koji broj slobodnih polja dijagonalno. Primetite da lovac nikad ne menja boju polja na kome stoji, pa igrači govore često o „belom“ i „crnom“ lovcu.</para>
+</sect3>
+ <sect3 id="rules-piece-queen">
+  <title>Kraljica</title>
+<para>Kraljica se može pomerati bilo koji broj slobodnih polja vodoravno, uspravno ili dijagonalno.</para>
+</sect3>
+ <sect3 id="rules-piece-knight">
+  <title>Konj</title>
+<para>Konj može da preskače zauzeta polja i pomera se dva polja vodoravno i jedno polje uspravno ili obrnuto, praveći tako „L“ oblik. Konj na sredini table ima osam polja na koja može da se pomeri. Primetite da svaki put kada se konj pomeri, menja boju polja na kome stoji.</para>
+</sect3>
+ <sect3 id="rules-piece-pawns">
+  <title>Pioni</title>
+<para>Pioni imaju najsloženija pravila kretanja: Pion se može pokretati samo jedno polje napred ako to polje nije zauzeto. Ako se pion do tad nije pomerao, moguće je i da se pomeri dva polja napred ako su oba polja ispred njega slobodna. Pion se ne može kretati unazad. Ako se pion prvi put pomeri dva polja i posle odigranog poteza se nalazi pored protivničkog piona, protivnik može da jede „an pasan“ tog piona, kao da se prvi pešak kretao samo jedno polje napred. Pioni su jedine figure koje jedu drugačije od kretanja. Pioni mogu da pojedu protivničku figuru samo na dva dijalognalna polja ispred njih, ali se ne mogu pomeriti na ova polja ukoliko na njima nema protivničke figure. Ako pion dođe do poslednjeg reda, onda se pretvara (promoviše) u kraljicu, topa, lovca ili konja iste boje. U praksi se pešaci gotovo uvek pretvaraju u kraljicu.</para>
+</sect3>
+
+<sect3 id="rules-movement-others">
+<title>Preostala pravila kretanja</title>
+<para>Sa izuzetkom konja, figure ne mogu preskakati jedne preko drugih. Figure iste boje („prijateljske figure“) se ne mogu preskočiti ako su u liniji kretanja, i prijateljska figura ne može da zameni drugu prijateljsku figuru. Protivničke figure isto ne mogu da se preskoče, ali mogu da se „pojedu“. Kada se figura pojede (ili uzme), napadačka figura staje na polje koje je zauzimala pojedena figura (an pasan je jedini izuzetak). Pojedena figura se uklanja iz igre i ne može se više vratiti u igru. Kralj se ne može pojesti, može se samo dovesti u šah. Ako igrač ne može da izvuče kralja iz šaha, dolazi do mata, i igra je izgubljena.</para><para>Šahovske igre ne moraju da se završe matom — bilo koji od igrača može predati partiju ako pozicija deluje izgubljeno. Igre se takođe mogu završiti i remijem (nerešeno). Remi može nastati iz više situacija, uključujući i sporazumni remi, pat, pravilom tri ponavljanja, pravilom pedeset poteza ili remi nemogućnošću da bilo koji igrač matira (obično jer nema dovoljno materijala da se napravi mat).</para>
+</sect3>
+</sect2>
+
+
+<sect2 id="timed-games">
+<title>Vremenski ograničene igre</title>
+<para>Igre se mogu igrati i sa vremenskim ograničenjem postavljanjem vremena za igru pri pravljenju nove igre. U vremenski ograničenim igrama svaki igrač ima određeno vreme za potez, a vreme se smanjuje samo dok je igrač na potezu.</para>
+</sect2>
+
+<sect2 id="draw">
+<title>Remiziranje</title>
+<para>Ovo je igra koja se završava bez pobede za ijednog igrača. Većina nerešenih igara nastaje sporazumnim remijem. Drugi načini da se igra završi remijem su pat, pravilo tri ponavljanja, pravilo pedeset poteza i nedovoljan materijal za mat. Za poziciju se kaže da je remi (ili remi pozicija) ako bilo koji igrač može, pravilno igrajući, kad-tad naterati igru u poziciju kada se igra mora završiti remijem, bez obzira na poteze drugog igrača.</para>
+
+
+<sect3 id="stalemate">
+<title>Pat</title>
+<para>Pat je pozicija u kojoj igrač koji je na potezu ne može da odigra nijedan ispravan potez, a kralj mu nije u šahu. Pat prouzrokuje trenutni remi.</para>
+</sect3>
+
+<sect3 id="threefold-repetition">
+<title>Pravilo tri ponavljanja</title>
+<para>Igra je remizirana ako se ista pozicija pojavi tri puta, a na potezu je isti igrač, a svaki igrač ima isti skup mogućih poteza svaki put (ovo drugo uključuje i pravo da se uzme an pasan i pravo na rokadu).</para>
+</sect3>
+
+
+<sect3 id="fifty-move-rule">
+<title>Pravilo pedeset poteza</title>
+<para>Pravilo pedeset poteza kaže da se igra završava remijem ako posle pedeset poteza nije pomeren nijedan pion ili nije pojedena nijedna figura.</para>
+</sect3>
+
+<sect3 id="insuff-material">
+<title>Nedovoljno materijala za pobedu</title>
+<para>Ovo je scenario u kome su pojedeni svi pioni, pri čemu jedna strana ima samo kralja, a druga strana ima jednog kralja plus jednog konja ili jednog lovca. Ovakva pozicija je remi jer je nemoguće da dominantna strana matira bez obzira na poteze koje igra. Situacije u kojima je mat moguć samo ako lošija strana greši su pokrivene pravilom pedeset poteza.</para>
+</sect3>
+
+
+</sect2>
+
+</sect1>
+
+
+
+
+<sect1 id="prefs">
+ <title>Podešavanja igre</title>
+
+
+<sect2 id="game-prefs">
+  <title>Postavke igre</title>
+  <para>Ovo prozorče postavki vam omogućava da izmenite orijentaciju table, notaciju koja se prikazuje, kao i u koju figuru će se zameniti pion ako izađe.</para>
+
+ <figure id="preferences-game-shot">
+  <title>Prozorče postavki glŠah igre</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences_game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Prozorče postavki glŠah igre.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+
+</sect2>
+
+
+
+<sect2 id="view-prefs">
+  <title>Postavke pregleda</title>
+  <para>Ovo prozorče postavki vama omogućava da izmenite izgled i osećaj igre glŠah.</para>
+
+ <figure id="preferences-view-shot">
+  <title>Prozorče postavki pregleda igre glŠah</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences_view.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Prozorče postavki pregleda igre glŠah.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+
+</sect2>
+
+</sect1>
+
+
+<sect1 id="engines">
+ <title>Šahovske mašine</title>
+
+     <para>glŠah bi trebalo da je u mogućnosti da koristi bilo koji protokol za šahovsku komunikaciju ili Univerzalni Šahovski Interfejs kompatibilnih šahovskih mašina, uključujući sledeće šahovske mašine:</para>
+
+<!-- Please keep AI list synchronized with glchess/data/ai.xml -->
+<itemizedlist spacing="compact">
+  <listitem>
+	<para>GNUChess</para>
+  </listitem>
+  <listitem>
+	<para>Sjeng</para>
+  </listitem>
+  <listitem>
+	<para>Amy</para>
+ </listitem>
+  <listitem>
+	<para>Crafty</para>
+  </listitem>
+  <listitem>
+	<para>Faile</para>
+  </listitem>
+  <listitem>
+	<para>Phalanx</para>
+  </listitem>
+  <listitem>
+	<para>Glaurung</para>
+  </listitem>
+  <listitem>
+	<para>HoiChess</para>
+  </listitem>
+  <listitem>
+	<para>Diablo</para>
+  </listitem>
+  <listitem>
+	<para>BBChess</para>
+  </listitem>
+  <listitem>
+	<para>Fruit</para>
+  </listitem>
+  <listitem>
+	<para>Amundsen</para>
+  </listitem>
+  <listitem>
+	<para>Shredder</para>
+  </listitem>
+  <listitem>
+	<para>Toga II</para>
+  </listitem>
+  <listitem>
+	<para>Boo's Chess Engine</para>
+  </listitem>
+
+
+</itemizedlist>
+
+</sect1>
+
+
+<sect1 id="bugs">
+ <title>Poznate greške i ograničenja</title>
+
+ <itemizedlist mark="opencircle">
+    <listitem>
+     <para>Ne postoji nijedna dokumentovana greška ili ograničenje glŠaha. Da biste pronašli oblasti u kojima možete poboljšati glŠah, pogledate datoteku TODO koja se isporučuje uz igru.</para>
+    </listitem>
+ </itemizedlist>
+
+</sect1>
+
+<sect1 id="credits">
+ <title>Autori</title>
+  <para><application>glŠah</application> je napisao Robert Ancell, i sada se održava uz Gnomove igre. Ovo uputstvo je izvorno napisao Andreas Røsdal koristeći nekoliko izvora pod GNU Opštom Javnom Licencom. Da biste prijavili greške ili dali predlog u vezi ovog programa ili njegovog uputstva, pratite smernice iz <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumenta</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licenca</title>
+  <para>Ovaj program je slobodan softver; možete ga raspodeljivati i/ili ga menjati pod uslovima <citetitle>GNU Opšte Javne Licence (GNU GPL)</citetitle> kako je objavljuje Zadužbina za Slobodni Softver (FSF); bilo verzije 2 te Licence, bilo (po vašem nahođenju) bilo koje novije verzije.</para>
+  <para>Ovaj program se raspodeljuje u nadi da će biti od koristi, ali BEZ IKAKVIH GARANCIJA; čak i bez podrazumevane garancije KORISNOSTI ili PRILAGOĐENOSTI ODREĐENOJ NAMENI.  Vidite <citetitle>GNU Opštu Javnu Licencu</citetitle> za više detalja.</para>
+  <para>Primerak <citetitle>GNU Opšte Javne Licence</citetitle> je uključen u dodatku <citetitle>Gnomovog korisničkog vodiča</citetitle>. Takođe možete nabaviti primerak <citetitle>GNU Opšte Javne Licence</citetitle> od Zadužbine za Slobodni Softver odlazeći na <ulink url="http://www.fsf.org" type="http">njihovu veb adresu</ulink> ili pišući na <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

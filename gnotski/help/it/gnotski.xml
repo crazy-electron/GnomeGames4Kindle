@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.10">
+<!ENTITY date "March 2004">
+<!ENTITY app "<application>Klotski</application>">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="it">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Manuale di <application>Klotski</application>.</title>
+
+    <abstract role="description">
+      <para>Klotski è un gioco di puzzle lo scopo del quale è quello di muovere i blocchi in modo tale da posizionare il blocco segnato sopra i segnaposti.</para>
+    </abstract>
+
+    <copyright>
+      <year>2002</year> 
+      <holder>Andrew Sobala</holder> 
+    </copyright><copyright><year>2008</year><holder>Alessio Treglia (quadrispro@ubuntu-it.org)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Progetto di documentazione GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Questo documento può essere copiato, distribuito e/o modificato solo in conformità con i termini della GNU Free Documentation License (GFDL) Versione 1.1 o delle versioni successive pubblicate dalla Free Software Foundation senza sezioni invariabili, frontespizi e testi di copertina. Una copia della GFDL è disponibile a questo <ulink type="help" url="ghelp:fdl">collegamento</ulink> o nel file COPYING-DOCS distribuito con questo manuale.</para>
+         <para>Questo manuale è parte di una collezione di manuali di GNOME distribuita sotto la GFDL. Se si vuole distribuire questo manuale separatamente dalla collezione, lo si può fare aggiungendo una copia della licenza al manuale, come descritto nella sezione 6 della licenza.</para>
+
+	<para>Molti dei nomi utilizzati dalle aziende per distinguere i loro prodotti e servizi sono rivendicati come marchi commerciali. Dove questi nomi appaiono nella documentazione di GNOME, e i membri del progetto di documentazione di GNOME sono informati di questi marchi commerciali, allora i nomi sono in lettere maiuscole o con la lettera iniziale maiuscola.</para>
+
+	<para>QUESTO DOCUMENTO E LE SUE VERSIONI MODIFICATE SONO FORNITI IN BASE AI TERMINI DELLA GNU FREE DOCUMENTATION LICENSE, SOTTO INTESO CHE: <orderedlist>
+		<listitem>
+		  <para>IL DOCUMENTO VIENE FORNITO SENZA GARANZIE DI ALCUN TIPO,ESPLICITE O IMPLICITE, INCLUSE, MA SENZA LIMITAZIONE, LE GARANZIE ATTESTANTI CHE IL DOCUMENTO O LE SUE VERSIONI MODIFICATE SIANO PRIVI DI DIFETTI, COMMERCIALIZZABILI, IDONEI A UN DETERMINATO SCOPO O CHE NON VIOLINO DIRITTI DI TERZI. SI DECLINA QUALUNQUE RESPONSABILITÀ RIGUARDO AI RISCHI INERENTI LA QUALITÀ, L'ACCURATEZZA E LE PRESTAZIONI DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA. QUALORA UN DOCUMENTO O UNA SUA VERSIONE MODIFICATA DOVESSERO PRESENTARE QUALUNQUE TIPO DI DIFETTO,IL COSTO DI EVENTUALI INTERVENTI DI ASSISTENZA, RIPARAZIONE O CORREZIONE SARÀ A CARICO DELL'UTENTE (NON DEL REDATTORE INIZIALE, DELL'AUTORE O DI ALTRI COLLABORATORI). QUESTA LIMITAZIONE DELLA GARANZIA COSTITUISCE PARTE ESSENZIALE DELLA LICENZA. L'USO DEL DOCUMENTO O DELLE SUE VERSIONI MODIFICATE È CONSENTITO SOLO ENTRO I TERMINI DI QUESTA LIMITAZIONE DELLA GARANZIA; E</para>
+		</listitem>
+		<listitem>
+		  <para>IN NESSUNA CIRCOSTANZA E PER NESSUNA RAGIONE LEGALE, INCLUSI I PRINCIPI DI COLPA (INCLUSA LA NEGLIGENZA), ACCORDO CONTRATTUALE O ALTRO, SARÀ POSSIBILE CONSIDERARE L'AUTORE, IL REDATTORE INIZIALE, GLI ALTRI COLLABORATORI, QUALUNQUE DISTRIBUTORE DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA O QUALUNQUE FORNITORE DELLE PERSONE CITATE, RESPONSABILE NEI CONFRONTI DI QUALUNQUE PERSONA PER DANNI DIRETTI, INDIRETTI, SPECIALI, INCIDENTALI O CONSEGUENTI DI QUALUNQUE NATURA, INCLUSI, MA SENZA LIMITAZIONE, I DANNI PER PERDITA DI AVVIAMENTO, INTERRUZIONE DEL LAVORO, GUASTO O MALFUNZIONAMENTO DEL COMPUTER O QUALUNQUE ALTRO DANNO O PERDITA DERIVANTE O CORRELATA ALL'USO DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA, ANCHE QUALORA LE PERSONE CITATE FOSSERO STATE INFORMATE DELLA POSSIBILITÀ DI TALI DANNI.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+		<firstname>Andrew</firstname> 
+		<surname>Sobala</surname> 
+		<affiliation> 
+	  		<orgname>Progetto di documentazione GNOME</orgname> 
+	  		<address> <email>andrew@sobala.net</email> </address> 
+		</affiliation> 
+      </author> 
+
+	<othercredit role="author">
+		<firstname>Lars</firstname>
+		<surname>Rydlinge</surname>
+		<affiliation>
+			<orgname>Progetto GNOME</orgname>
+			<address> <email>Lars.Rydlinge@HIG.SE</email> </address>
+		</affiliation>
+	</othercredit>
+
+	<othercredit role="maintainer">
+		<firstname>Ross</firstname>
+		<surname>Burton</surname>
+		<affiliation>
+			<orgname>Progetto GNOME</orgname>
+			<address> <email>ross@burtonini.com</email> </address>
+		</affiliation>
+	</othercredit>
+
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->  
+    <revhistory>
+<!--
+      <revision> 
+		<revnumber>Full title of previous manual.</revnumber> 
+		<date>Release date of previous manual.</date> 
+		<revdescription> 
+	  		<para role="author">Documentation Writer 1 
+	    	<email>docwriter1@gnome.org</email>
+	  		</para>
+	  		<para role="publisher">GNOME Documentation Project</para>
+		</revdescription> 
+      </revision> 
+-->
+
+	<revision>
+		<revnumber>V2.0</revnumber>
+		<date>13 Agosto 2002</date>
+		<revdescription>
+	  		<para role="author">Andrew Sobala <email>andrew@sobala.net</email></para>
+	  		<para role="publisher">Progetto di documentazione GNOME</para>
+		</revdescription> 
+	</revision>
+
+    </revhistory> 
+
+    <releaseinfo>Questo manuale si riferisce alla versione 2.12 di GNOME Klotski.</releaseinfo> 
+    <legalnotice> 
+      <title>Commenti</title> 
+      <para>Per segnalare un problema o inviare suggerimenti sull'applicazione <application>Klotski</application> o su questo manuale, seguire le istruzioni presenti alla <ulink url="ghelp:user-guide?feedback-bugs" type="help">pagina di commenti su GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>GNOME Klotski</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="gnotski-introduction"> 
+	<title>Introduzione</title> 
+	<para>L'applicazione <application>Klotski</application> è un clone del gioco Klotski. Lo scopo è spostare il blocco segnato nell'area delimitata dai segnaposti verdi.</para>
+
+	<para><application>Klotski</application> è stato scritto da Lars Rydlinge (<email>Lars.Rydlinge@HIG.SE</email>).</para>
+
+	<para><application>Klotski</application> è incluso nel pacchetto gnome-games, che fa parte dell'ambiente grafico GNOME. Questo documento si riferisce alla versione 2.12 di <application>Klotski</application>.</para>
+
+	<para>Questo programma è distribuito secondo i termini della GNU General Public License come pubblicata dalla Free Software Foundation; sia la versione 2 di questa licenza, che (secondo la proprio scelta) ogni altra versione successiva. Una copia di questa licenza può essere trovata a questo <ulink url="ghelp:gpl" type="help">collegamento</ulink>, oppure nel file COPYING incluso con il codice sorgente di questo programma.</para>
+
+	<para>Per segnalare un problema o inviare suggerimenti su questa applicazione o su questo manuale, seguire le istruzioni presenti in questo <ulink url="ghelp:user-guide?feedback-bugs" type="help">documento</ulink>.</para>
+  </sect1>
+
+<!-- ===========Objective ============================== -->
+<sect1 id="gnotski-objective">
+	<title>Scopo del gioco</title>
+	<para>Lo scopo di <application>Klotski</application> è muovere il blocco segnato sopra i segnaposti verdi con il minor numero di mosse possibile. È possibile fare questo spostando i blocchi uno alla volta con il mouse, fino al posizionamento del blocco segnato sopra i segnaposti verdi. <figure id="gnotski-figure-win"> 
+		<title>Lo spostamento vincente</title> 
+		<screenshot> 
+			<mediaobject> 
+			<imageobject>
+				<imagedata fileref="figures/gnotski_win.png" format="PNG"/> 
+			</imageobject>
+			<textobject> 
+				<phrase>Il blocco segnato dovrebbe essere spostato nello spazio delimitato dai segnaposti verdi.</phrase> 
+			</textobject> 
+	        	</mediaobject> 
+		</screenshot>
+	</figure></para>
+	<!-- ==== End of Figure ==== -->
+</sect1>
+
+<!-- =========== Getting Started ============================== -->
+
+  <sect1 id="gnotski-playing"> 
+	<title>Giocare a <application>Klotski</application></title> 
+	<para>
+	<itemizedlist> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-start"/></para> 
+	</listitem>
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-ui"/></para> 
+	</listitem> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-new-game"/></para> 
+	</listitem> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-moving"/></para> 
+	</listitem>
+	</itemizedlist> </para>
+
+	<!-- =========== To start gnotski ============================== -->
+	<sect2 id="gnotski-start">
+		<title>Avviare <application>Klotski</application></title>
+		<para>È possibile avviare <application>Klotski</application> dal menù <guimenu>Applicazioni</guimenu> scegliendo <menuchoice><guisubmenu>Giochi</guisubmenu><guimenuitem>Klotski</guimenuitem></menuchoice>.</para>
+	</sect2>
+
+	<!-- =========== The main window ============================== -->
+	<sect2 id="gnotski-ui">
+		<title>La finestra principale</title>
+		<para>All'avvio di <application><application>Klotski</application></application> compare la seguente finestra.</para>
+
+		<!-- ==== Figure ==== -->
+		<figure id="gnotski-figure-mainwindow"> 
+			<title>Finestra di avvio di <application>Klotski</application></title> 
+			<screenshot> 
+				<mediaobject> 
+				<imageobject>
+					<imagedata fileref="figures/gnotski_start_window.png" format="PNG"/> 
+				</imageobject>
+				<textobject> 
+					<phrase>Mostra <application>Klotski</application> la finestra principale. Contiene la barra del titolo, la barra dei menù, l'area di gioco e la barra di stato. La barra dei menù contiene i menù Gioco e Aiuto.</phrase> 
+				</textobject> 
+		        	</mediaobject> 
+			</screenshot>
+		</figure>
+		<!-- ==== End of Figure ==== -->
+
+		<para>La finestra di <application>Klotski</application> contiene i seguenti elementi: <variablelist>
+		<varlistentry>
+			<term>Barra dei menù</term>
+			<listitem>
+			<variablelist>
+			<varlistentry>
+				<term>Menù Gioco</term>
+				<listitem>
+				<para>Il menù di gioco consente di iniziare nuove partite, visualizzare i punteggi più alti e uscire dal programma.</para>
+				</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Menù Aiuto</term>
+				<listitem>
+				<para>Il menù di aiuto consente di visualizzare la documentazione per <application>Klotski</application></para>
+				</listitem>
+			</varlistentry>
+			</variablelist>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term>Area di gioco</term>
+			<listitem>
+			<para>L'area di gioco mostra i blocchi della partita corrente. È possibile trascinare i blocchi con il mouse come descritto nella sezione <xref linkend="gnotski-moving"/>.</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term>Barra di stato</term>
+			<listitem>
+			<para>La barra di stato mostra il numero di mosse precedentemente effettuate.</para>
+			</listitem>
+		</varlistentry>
+		</variablelist></para>
+
+	</sect2>
+
+	<!-- =========== Starting a new game ============================== -->
+	<sect2 id="gnotski-new-game">
+		<title>Iniziare una nuova partita</title>
+		<para>Per iniziare una nuova partita è possibile usare il menù <guimenu>Gioco</guimenu>. Le voci <guimenuitem>Rompicapo successivo</guimenuitem> e <guimenuitem>Rompicampo precedente</guimenuitem> consentono di navigare i rompicapo in modo sequenziale. Ogni rompicapo appartiene a una delle quattro categorie presenti nel sottomenù chiamato <guisubmenu>Traccia di HuaRong</guisubmenu>, <guisubmenu>Pacco sfida</guisubmenu>, <guisubmenu>Pacco capacità</guisubmenu>, e <guisubmenu>Rampa Minoru</guisubmenu>. In questi sottomenù, ogni nome di rompicapo si riferisce a uno scenario di gioco.</para>
+		<example>
+		<title>Iniziare una partita</title>
+		<para>Per iniziare la partita più difficile fra quelle disponibili, scegliere <menuchoice><guimenu>Gioco</guimenu><guisubmenu>Rampa Minoru</guisubmenu><guimenuitem>Rampa 24 Pro</guimenuitem></menuchoice></para></example>
+	</sect2>
+
+	<!-- ===========Moving blocks ============================== -->
+	<sect2 id="gnotski-moving">
+		<title>Spostare i blocchi</title>
+		<para>Per spostare un blocco fare clic sopra di esso, tenere premuto il pulsante del mouse e trascinarlo nella nuova posizione. È impossibile muovere i blocchi verdi o i blocchi che delimitano il gioco. Non si può muovere un blocco su uno spazio già occupato da un altro blocco, con l'eccezione che è possibile muovere il blocco segnato sopra quelli verdi per vincere.</para>
+	</sect2>
+
+</sect1>
+
+<!-- Known bugs.  Try to manage user expectations and warn them of known bugs
+but it is better to omit this section than give a false sense of perfection
+<sect1 id="gnotski-bugs">
+	<title>Known Bugs and Limitations</title>
+	<para>
+        There are no known bugs in this game.
+	</para>
+</sect1>
+-->
+
+<sect1 id="authors">
+  <title>Autori</title>
+  <para><application>Klotski</application> è stato scritto da Lars Rydlinge (<email>lars.rydlinge@hig.se</email>). Questo manuale è stato scritto da Andrew Sobala. Per segnalare un problema o inviare suggerimenti su questa applicazione o su questo manuale, seguire le indicazioni contenute in questo <ulink url="ghelp:user-guide?feedback-bugs" type="help">documento</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+</sect1>
+
+ <sect1 id="license">
+  <title>Licenza</title>
+  <para>Questo programma e i disegni dei pezzi sono software libero; è lecito redistribuirli e/o modificarli secondo i termini della <citetitle>GNU General Public License</citetitle> come è pubblicata dalla Free Software Foundation; o la versione 2 della licenza o (a propria scelta) una versione successiva.</para>
+  <para>Questo programma  è distribuito nella  speranza che sia  utile, ma SENZA  ALCUNA GARANZIA; senza  neppure la  garanzia implicita  di NEGOZIABILITÀ o di APPLICABILITÀ PER UN PARTICOLARE SCOPO. Si veda la <citetitle>GNU General Public License</citetitle> per avere maggiori dettagli.</para>
+  <para>Una copia della <citetitle>GNU General Public License</citetitle> è inclusa nell'appendice del <citetitle>Manuale dell'utente GNOME</citetitle>. Inoltre è possibile ottenere una copia della <citetitle>GNU General Public License</citetitle> dalla Free Software Foundation visitando <ulink url="http://www.fsf.org" type="http">il sito web</ulink> oppure scrivendo a <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+
+</article>

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.20">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "February 2008">
+<!ENTITY app "<application>Iagno</application>">
+<!ENTITY appname "Iagno">
+<!ENTITY version "2.9">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="eu">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo>
+ <title><application>Iagno</application>ren eskuliburua</title>
+
+    <abstract role="description">
+      <para>Othello (Reversi gisa ere ezaguna eta Go-ren antzekoa) estrategiako jokoaren bi jokalarientzako bertsioa da Iagno. Piezak alde batetik beltzak eta bestetik zuriak dira, eta helburua jokalari batek aurkariaren fitxak bere kolorera biratzea da, aurkariak gauza bera egitea saihestea saiatuz. Behin taula lauzaz betetakoan, taulan kolore berdineko lauza gehien dituen jokalariak irabazten du.</para>
+    </abstract>
+
+ <copyright>
+  <year>2000</year>
+  <holder>Eric Baudais</holder>
+ </copyright><copyright><year>2008.</year><holder>Hizkuntza Politikarako Sailburuordetza (hizpol@ej.gv.es)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOMEren dokumentazio-proiektua</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Baimena ematen da dokumentu hau kopiatu, banatu eta/edo aldatzeko Free Software Foundation-ek argitaratutako GNU Dokumentazio Librearen Lizentziaren 1.1. bertsioan edo berriago batean ezarritako baldintzetan, atal aldaezinik gabe, aurreko azaleko testurik gabe eta atzeko azaleko testurik gabe. GFDL lizentziaren kopia <ulink type="help" url="ghelp:fdl">esteka honetan</ulink> edo eskuliburu honekin batera ematen den COPYING-DOCS fitxategian aurkituko duzu.</para>
+         <para>Eskuliburu hau GFDL lizentziarekin banatzen diren GNOME eskuliburuen bildumakoa da. Eskuliburu hau bildumatik bereizita banatu nahi baduzu, banatu dezakezu, baina eskuliburuari lizentziaren kopia bat gehitu beharko diozu, lizentzian bertan 6. atalean azaltzen den bezala.</para>
+
+	<para>Enpresek beren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu gisa hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, eta GNOMEren Dokumentazio Proiektuko kideak marka komertzialak direla konturatzen direnean, izen horiek osorik maiuskulaz edo hasierako letra maiuskulaz idatzi dituzte.</para>
+
+	<para>DOKUMENTUA ETA DOKUMENTUAREN BERTSIO ALDATUAK GNU DOKUMENTAZIO LIBREAREN LIZENTZIAREN BALDINTZEN ARABERA EMATEN DIRA, ETA ONDOREN ZEHAZTEN DIRENAK ONARTZERA BEHARTZEN DUTE: <orderedlist>
+		<listitem>
+		  <para>DOKUMENTUA "DAGOEN-DAGOENEAN" EMATEN DA, INOLAKO BERMERIK GABE, EZ ESPRESUKI ADIERAZITAKORIK ETA EZ INPLIZITURIK ERE; BESTEAK BESTE, EZ DA BERMATZEN DOKUMENTUA EDO BERTSIO ALDATUA AKATSIK GABEA DENIK, MERKATURATZEKO EDO XEDE JAKIN BATERAKO EGOKIA DENIK EDO ARAURIK HAUSTEN EZ DUENIK, HORI GUZTIA MUGARIK GABE. DOKUMENTUAREN EDO DOKUMENTUAREN BERTSIO ALDATUAREN KALITATEARI, ZEHAZTASUNARI ETA PERFORMANTZIARI BURUZKO ERANTZUKIZUN OSOA ZUREA DA. DOKUMENTUREN BATEK EDO BERTSIO ALDATUREN BATEK EDOZEIN MOTATAKO AKATSIK IZANEZ GERO, ZUK (EZ HASIERAKO IDAZLEAK, EZ EGILEAK ETA EZ INONGO KOLABORATZAILEK) ZEURE GAIN HARTU BEHARKO DUZU BERRIKUSTEKO, KONPONTZEKO EDO ZUZENTZEKO BEHAR DIREN ZERBITZU GUZTIEN KOSTUA. BERME-UKATZE HAU LIZENTZIA HONEN FUNTSEZKO ZATIA DA. EZ DA BAIMENIK EMATEN EZEIN DOKUMENTU EDO BERTSIO ALDATU ERABILTZEKO, BALDIN ETA EZ BADA BERME-UKATZE HAU ONARTZEN.</para>
+		</listitem>
+		<listitem>
+		  <para>EZIN IZANGO DA INONGO ZIRKUNSTANTZIARIK EDO LEGE-TEORIARIK OINARRI HARTU --EZ ERANTZUKIZUN ZIBILARI BURUZKORIK (ZABARKERIA BARNE HARTUTA), EZ KONTRATUARI BURUZKORIK, EZ BESTERIK-- DOKUMENTU HONEN EDO BERTSIO ALDATU BATEN EGILEA, HASIERAKO IDAZLEA, EDOZEIN KOLABORATZAILE EDO BANATZAILE, EDO ALDERDI HORIEN EDOZEIN HORNITZAILE BESTE PERTSONA BATEN AURREAN ERANTZULE EGITEKO, PERTSONA HORREK EDOZEIN MOTATAKO KALTEA JASAN DUELAKO (ZUZENEKOA, ZEHARKAKOA, BEREZIA, INTZIDENTALA EDO ONDORIOZKOA), HALA NOLA (ETA MUGARIK GABE) BEZEROAK GALTZEA, LANA ETEN BEHARRA, ORDENAGAILUAK EZ IBILTZEA EDO GAIZKI IBILTZEA, EDO DOKUMENTUA NAHIZ HAREN BERTSIO ALDATUAK ERABILTZETIK ONDORIOZTATZEN DIREN EDO ERABILERA HORREKIN ZERIKUSIA DUTEN KALTEAK EDO GALERAK, ALDERDIARI KALTE HORIEK GERTA ZITEZKEELA ADITZERA EMAN BAZAIO ERE.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Eric</firstname> 
+	<surname>Baudais</surname> 
+	<affiliation> 
+	  <address> <email>baudais@okstate.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+<revhistory>
+  <revision> 
+    <revnumber>Iagno-ren 2.9 bertsioa</revnumber> 
+    <date>2008ko otsaila</date> 
+    <revdescription> 
+      <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+      <para role="publisher">GNOMEren dokumentazio-proiektua</para>
+    </revdescription> 
+  </revision>
+  <revision> 
+    <revnumber>Iagno-ren 2.8 bertsioa</revnumber> 
+    <date>2004ko iraila</date> 
+    <revdescription> 
+      <para role="author">Eric Baudais <email>baudais@okstate.edu </email></para>
+      <para role="publisher">GNOMEren dokumentazio-proiektua</para>
+	</revdescription> 
+  </revision>
+  <revision>
+   <revnumber>0.1</revnumber>
+   <date>2000ko otsailaren 4a</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Lehen zirriborroa osatuta</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>0.2</revnumber>
+   <date>2000ko otsailaren 5a</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>‘Zergatik’ atalari oin-oharra erantsita. Tipografia-akats batzuk zuzenduta.</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>0.3</revnumber>
+   <date>2000ko otsailaren 7a</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>GDP txantiloiarekin bateragarria den dokumentua egina. Jokoaren atala ondo azalduta.</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>1.0</revnumber>
+   <date>2000ko apirilaren 7a</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Iagno-ren eskuliburuak FDL lizentzia lortu du. GDP gai estandarraren (MicroGUI) pantaila-argazkiak eguneratuta.</revremark>
+  </revision>
+ </revhistory>
+
+    <releaseinfo>Eskuliburu honek Iagno-ren 2.20 bertsioa azaltzen du</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Ohar-bidaltzea</title> 
+      <para><application>Iagno</application>ri buruzko akatsen berri emateko edo oharrak bidaltzeko, <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOMEra oharrak bidaltzeko orria</ulink>n aurkituko dituzu argibideak.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Iagno</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="intro">
+ <title>Sarrera</title>
+ <sect2 id="what">
+  <title>Zer da Iagno?</title>
+  
+  <para>Reversi jokoaren (Othello izenez ere ezaguna) ordenagailurako bertsioa da <application>Iagno</application>. <application>Iagno</application> bi jokalariko estrategia-jokoa da, Go-ren antzekoa. Taula 8 bider 8koa da. Alde batean fitxa beltzak jartzen dira, eta bestean zuriak. <application>Iagno</application>ren helburua da aurkariaren fitxa gehien iraultzea eta zure koloreko bihurtzea, eta aurkariak zure fitxa gutxien iraultzea. Horretarako, aurkariaren fitxak zure koloreko bi fitxen artean harrapatu behar dituzu.</para>
+
+  <para>Iagno-k <link linkend="network-games">jokalari askorentzako</link> aukera eskaintzen du: bi jokalarik jolastu dezakete, bai ordenagailu berean, bai sare moduan.</para>
+
+  <para><application>Iagno</application> abiarazteko, hautatu <guimenu>Menu nagusia</guimenu>n <guisubmenu>Jokoak</guisubmenu> azpimenuko <guimenuitem>Iagno</guimenuitem> edo idatzi <command>iagno</command> komando-lerroan.</para>
+ </sect2>
+
+ <sect2 id="why">
+  <title>Othello-ri zergatik deitzen zaio Iagno?</title>
+  <para>Zure buruari galdetuko diozu zergatik deitzen zaion joko honi <application>Iagno</application>, Othello edo gnothello deitu beharrean. Erantzuna ez da erraza, eta, gainera, markak, abokatuak eta halakoak sartzen dira tartean. Kontu hori hor utzi beharrean, <application>Iagno</application> izenari buruzko gezur luze eta korapilatsu bat kontatuko dizuet.</para>
+  <para>Gau ekaiztsu batean, Ingalaterran hain ohiko diren horietako batean, programatzaile bakarti bat ordenagailuaren aurrean eserita zegoen. Ian-ek jokoei buruzko maisulan bat bukatu zuen. Othello-ren tankerako joko interaktibo bat zen, eta, izenarekin hitz-jokoa eginez, gnothello deitzea erabaki zuen, jokoa GNOME erabiliz sortu baitzuen.</para>
+  <para>Lagunak etorri zitzaizkionean, programatzaile guztiek egin ohi duten moduan, bere maisulana erakutsi zien. Denek egin zioten barre aurpegira, eta esan zioten joko horrek ez zuela ezertarako balio eta ahalegin tamalgarria egin zuela benetako hackerra izateko. Lagunak pikutara bidali ondoren, programari Iano <footnote>
+   <para>William Shakespeare-ren <citetitle>Othello</citetitle> laneko pertsonaia gaiztoa da Iago.</para>
+  </footnote> izena ematea erabaki zuen, bere jokoak ekarri zion zorigaitzaren omenez. Baina, hala ere, izenak ez zuen ondo ematen. GNOMEren programa guztiek dute GNOME izenaren zati bat, pentsatu zuen Ian-ek. Asko pentsatu ondoren, orain hain gogoko dugun izena jartzea erabaki zuen, <application>Iagno</application>.</para>
+ </sect2>
+</sect1>
+
+<sect1 id="playing">
+ <title>Iagno-n jokatzea</title>
+ <para>Jokoaren hasieran, taularen erdiko koadroan lau fitxa agertzen dira. Izkina bakoitzeko fitxek kolore bera dute, <xref linkend="start-shot"/>en erakusten den moduan.</para>
+ 
+ <figure id="start-shot">
+  <title>Hasierako kokapena</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/START.png" format="PNG" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Hasierako kokapenaren pantaila-argazkia.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+ <para>Beltzak hasten dira fitxa bat taulan jarriz; fitxa zuriak bi fitxa beltzen artean harrapatzen saiatu behar dira. Fitxa beltz bat taulan jarri eta fitxa horren eta beste fitxa beltz baten artean horizontalki, bertikalki edo diagonalki lerro berean fitxa zuriak daudenean, fitxa zuri horiek irauli eta beltz bihurtzen dira, <xref linkend="first-shot"/>en erakusten den moduan.</para>
+
+ <figure id="first-shot">
+  <title>Lehenengo mugimendua</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/FIRST.png" format="PNG" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Lehenengo mugimenduaren pantaila-argazkia.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+ <para>Fitxa bat kolore bereko eta lerro bereko bi fitxen artean harrapatuta dagoenean, jokalariak fitxak bereganatzen ditu aurkariaren koloreko fitxa batekin aurkitzen den arte, <xref linkend="block-shot"/>en erakusten den bezala. Jokalariak taulan fitxa bat jartzearen ondorio zuzena diren fitxak soilik beregana ditzake. Behin fitxa bat taulan jarri denean, ezin da ez hortik kendu ez beste nonbait kokatu. Jokalari batek ezin badu mugimendurik egin, bere txanda galtzen du. Bi jokalarietako batek mugimendurik egin ezin dezakeenean amaitzen da jokoa. <figure id="block-shot">
+  <title>Zuriak ezin ditu erdiko zutabearen erdian dauden fitxa beltzak harrapatu, fitxa zuriak zutabearen muturrak blokeatzen ari baitira. Beltzen txanda izango balitz, fitxa beltz bat jar lezake zutabearen goialdean baina bi fitxa zurietako lehenengoa soilik irauliko luke.</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/BLOCK.png" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Blokeatutako fitxa beltz baten pantaila-argazkia.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure></para>
+
+</sect1>
+
+<sect1 id="settings">
+ <title>Jokoaren ezarpenak</title>
+
+ <sect2 id="player">
+  <title>Jokalariaren kolorea eta zailtasuna</title>
+ 
+  <para>Iagno abiarazten duzunean, giza jokalariak fitxa beltzekin jolasten du eta ordenagailu-jokalariak zuriekin, eta lehenengo zailtasun-mailan hasten dira. <guisubmenu>Hobespenak</guisubmenu> elkarrizketa-koadroko <guimenuitem>Jokoa</guimenuitem> fitxa erabilita, kolore bakoitzerako jokalari mota bat zehaztu dezakezu. Giza jokalaria zu zara, noski; lehenengo maila da ordenagailu-jokalaririk errazena, eta hirugarrena, mailarik zailena. Bi giza jokalari jar ditzakezu, lagun baten aurka jolasteko; edo bi ordenagailu-jokalari, ordenagailuak nola jolasten duen ikusteko.</para>
+ </sect2>
+
+ <sect2 id="quick-moves">
+  <title>'Mugimendu azkarrak' aukera</title>
+
+  <para>Aukera <guimenu>Ezarpenak</guimenu> menuan dago. Joan <guimenuitem>Jokoa</guimenuitem> fitxako <guisubmenu>Hobespenak</guisubmenu> azpimenura eta desaktibatuta egongo da. Aukera hau aktibatzen duzunean, ordenagailu-jokalariak azkarrago jarriko ditu bere fitxak.</para>
+
+  <note>
+   <title>Oharra:</title>
+   <para>Aukera hau gaituta egoteak ez du ordenagailu-jokalaria fitxa mugitzera behartzen, eta ez du zailtasun-maila jaisten.</para>
+  </note>
+ </sect2>
+ 
+ <sect2 id="enable-sound">
+  <title>Gaitu/desgaitu soinua</title>
+
+  <para><guilabel>Hobespenak</guilabel>  elkarrizketa-koadroko <guimenuitem>Jokoa</guimenuitem> fitxan dagoen azken aukerak <application>Iagno</application>n jolastean soinu guztia gaitzea edo desgaitzea uzten dizu.</para>
+
+  <figure id="player-shot">
+   <title>Jokoa fitxa nabarmenduta duen Hobespenak menua.</title>
+   <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/PLAYER.png" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Jokoaren ezarpenen pantaila-argazkia.</phrase> 
+    </textobject> 
+  </mediaobject>
+   </screenshot>
+  </figure>
+
+ </sect2>
+
+</sect1>
+
+<sect1 id="animations">
+ <title>Itxura</title>
+
+ <para>Animazio-aukera guztiak <menuchoice><guimenu>Ezarpenak</guimenu><guisubmenu>Hobespenak</guisubmenu></menuchoice> menuan daude eta <guimenuitem>Itxura</guimenuitem> fitxa nabarmenduta dago.</para>
+
+ <sect2 id="animation-amount">
+  <title>Animazioa</title>
+
+  <para>Aukera horrek fitxa bat iraultzen denean agertzen den animazioa kontrolatzen du. <guibutton>Bat ere ez</guibutton> hautatzen baduzu, fitxak bat-batean aldatuko dira kolorez. <guibutton>Partziala</guibutton> aukera hautatzen baduzu, animazioak poliki irauliko ditu fitxak. <guibutton>Osoa</guibutton> aukera hautatzen baduzu, animazioak poliki eta leunki irauliko ditu fitxak.</para>
+
+ </sect2>
+
+ <sect2 id="stagger-flips">
+  <title>Banan-banan irauli</title>
+  
+  <para>Aukera horrek banaka iraultzen ditu lerro, zutabe edo diagonal berean bereganatutako fitxak, dominoak bezala, eta ez denak batera. Ez du inolako eraginik jolasean baina itxura bikaina du.</para>
+
+ </sect2>
+
+ <sect2 id="grid">
+  <title>Erakutsi sareta</title>
+
+  <para>Aukera honek sareta bistaratuko du joko-taularen gainean. Sareta bistaratzea erabilgarria da jokalariari zehazki erakusten baitio non ari den fitxa bakoitza kokatzen.</para>
+
+  <tip>
+   <title>Iradokizuna:</title>
+   <para>Aukera honek gaituta egon beharko luke jokalari hasiberrientzat, jokoa argiago ikusteko.</para>
+  </tip>
+
+ </sect2>
+
+ <sect2 id="flip-final">
+  <title>Erakutsi azken emaitzak</title>
+
+  <para>Aukera honek taularen goialdera mugitzen ditu fitxa beltz guztiak jokoaren amaieran, eta fitxa zuri guztiak, taularen behealdera. Horrek jokoaren emaitzak ikusteko aukera ematen dizu.</para>
+
+  <note>
+   <title>Oharra:</title>
+   <para>Aukera honek ez dio jokoaren emaitzari inola ere eragiten.</para>
+  </note>
+
+ </sect2>
+
+ <sect2 id="tile-set">
+  <title>Fitxa-jokoa</title>
+  <para>Aukera honek bistaratuko diren taula mota eta fitxa motak aukeratzen uzten dizu. Zure fitxa mota sortu nahi baduzu, erabili fitxa klasikoa txantiloi moduan eta aldatu egitura eta koloreak hainbat efektu lortzeko. Iagno-n jolasteko fitxa mota berri bat sortzen duzunean, bidal iezaiozu Ian Peters-i <email>itp@gnu.org</email> eta hurrengo banaketarekin batera argitaratuko du.</para>
+
+  <important>
+   <title>Garrantzitsua:</title>
+   <para>Antzeko itxura duten hiru fitxa mota daude, baina animazio desberdina dute: -- woodtrim eta classic.</para>
+  </important>
+
+  <figure id="animation-shot">
+   <title>Itxura fitxa nabarmendua duen Hobespenak menua.</title>
+   <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/ANIMATION.png" srccredit="Eric Baudais"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Animazioaren ezarpenen pantaila-argazkia.</phrase> 
+    </textobject> 
+  </mediaobject>
+   </screenshot>
+  </figure>
+
+ </sect2>
+
+</sect1>
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Sareko partidak</title>
+  <para>Iagno-k jokalari askorentzako partidak onartzen ditu, <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink>ren eskutik. Interneteko Iagno jokoaren zerbitzari batera konektatuz gero, erronka jo diezaiekezu beste jokalari batzuei jokalari askorentzako partidetan. Albisteak, eguneratzeak eta konekta zaitezkeen zerbitzarien zerrendak jasotzeko, ikus <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">gnome jokoen web-orria</ulink>.</para>
+  <para>Jokalari askorentzako jokoa abiarazteko, hautatu <menuchoice><guimenu>Jokoa</guimenu><guimenuitem>Sareko partida</guimenuitem></menuchoice>.</para> 
+
+<sect2 id="connecting">
+<title>Iagno-ren sareko zerbitzari batera konektatzea</title>
+<para>Iagno jokora konektatzeko elkarrizketa-koadroa sareko partida berri bat abiarazten denean agertzen da. Konektatu nahi duzun zerbitzaria hautatzeko aukera ematen dizu elkarrizketa-koadro honek, bai eta zerbitzari horretara konektatuta zauden bitartean izango duzun erabiltzaile-izena hautatzeko aukera ere.</para>
+
+<para>Gonbidatu moduan edo erregistratutako kontu normal batekin konekta zaitezke zerbitzarira. Gonbidatu moduan konektatzeak anonimoki sartzeko aukera ematen dizu; kontu normal batek, aldiz, zure erabiltzaile-izena gordetzeko aukera ematen dizu, eta aukeratzen duzun pasahitzarekin babesten du.</para>
+
+<para><guimenuitem>Saioa gonbidatu gisa hasi</guimenuitem> aukera hautatu beharko duzu, gonbidatu-kontu anonimo bat nahi baduzu. Kontu berri bat sortu nahi baduzu, hautatu <guimenuitem>Lehenengoz saioa hasi</guimenuitem> aukera, nahi duzun erabiltzaile-izena, pasahitza eta helbide elektronikoa erabiliz.  Zure kontua sortua duzunean, <guimenuitem>Saio-hasiera normala</guimenuitem> aukera hautatuz konekta zaitezke, eta, jarraian, aukeratu dituzun erabiltzaile-izena eta pasahitza sartu beharko dituzu.</para>
+<para>Zerbitzari batera konektatzeko, egin klik <guimenuitem>Konektatu</guimenuitem> botoian.</para>
+<figure id="connect">
+<title>Iagno-ren sare-konexioaren elkarrizketa-koadroa.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Iagno-ren sare-konexioaren elkarrizketa-koadroa.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Joko-gela batean sartzea</title>
+<para>Zerbitzari batera ongi konektatu zarenean, zein joko-gelatan sartu nahi duzun aukeratu dezakezu. Iagno-ren partida bat jokalari askorekin jolasteko, hautatu Iagno gela. Zuk zeuk partida bat aurkeztu nahi baduzu, egin klik Abiarazi botoian. Horrek taula berri bat sortzen du eta gainerako jokalariek zure aurkako partidan parte har dezakete. Jada abiarazitako partidarik baldin badago, taulan bi aldiz klik egin dezakezu partidara sartzeko. Eskuinaldean dagoen partida-zerrendak erabilgarri dagoen eserleku kopurua erakusten dizu, hau da, jokoaren taulara sar daitezkeen jokalarien kopurua.</para>
+<figure id="tables">
+<title>Iagno-ren sareko elkarrizketa-koadroak aukera ematen dizu joko-gela batean sartu eta beste jokalari batzuk bilatzeko.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Iagno-ren sareko elkarrizketa-koadroak aukera ematen dizu joko-gela batean sartu eta beste jokalari batzuk bilatzeko.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>Iagno-ren taula berri bat sortzerakoan, hobespenen elkarrizketa-koadroa bistaratzen da eta partida pertsonalizatzeko aukera emango dizu, partida joka dezakeen gutxieneko jokalari kopurua, esaterako. Eserleku kopuru osoa hartuta dagoenean, partida horretan ezin da jokalari gehiago sartu.</para>
+<para>Sareko partidetan aukera dago gainerako jokalariekin berriketan egiteko. Eskatu jokoaren inguruko aholkuak edo laguntza, baina mesedez izan zaitez adeitsua gainerako jokalariekin.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Beste jokalariak partidan sartu zain</title>
+<para>Partidan sartu zarenean, jokalari nahikoa elkartu arte itxoin beharko duzu. <guimenuitem>Jokalarien zerrenda</guimenuitem> menu-elementuak partidara sartu diren jokalarien zerrenda ikusteko aukera ematen dizu. Partidako jokalari kopuru osoa lortzen denean hasiko da partida.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Iagno partida bat jokalari askorekin jolastea</title>
+<para>Iagno-n jokalari askorekin jolastean, Iagno arruntean dauden antzeko arauak ezartzen dira, giza aurkarien aurka jolasten ari zarenean izan ezik. Horren arabera, estrategiek AA jokalarien aurka jolastean baino hobeak izan behar dute.</para>
+<para>Jokalari batek irabazten duenean, partida amaitu egiten da, eta hasierako sareko jokoen pantailara itzul zaitezke. Beste partida bat ere jolastu dezakezu hainbeste mendekotasun sortzen duen jokalari askorentzako Iagno-n.</para>
+</sect2>
+
+</sect1>
+
+
+
+
+<sect1 id="bugs">
+ <title>Ezagutzen diren akatsak eta mugak</title>
+
+ <itemizedlist mark="opencircle">
+    <listitem>
+     <para>Iagno-ren ordenagailu-jokalariari irabaztea erraza da.</para>
+    </listitem>
+ </itemizedlist>
+
+</sect1>
+
+<sect1 id="credits">
+ <title>Egileak</title>
+  <para><application>Iagno</application> Ian Peters-ek (<email>itp@gnu.org</email>) idatzi zuen. Eskuliburu hau Eric Baudais-ek (<email>baudais@okstate.edu</email>) idatzi zuen. Aplikazio honi buruzko akatsen berri emateko edo oharrak bidaltzeko, <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentua</ulink>n aurkituko dituzu argibideak.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Lizentzia</title>
+  <para>Programa hau software librea da; birbana eta/edo alda dezakezu Free Software Foundation-ek argitaratutako <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako baldintzak betez gero.</para>
+  <para>Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO BERMERIK GABE; era berean, ez da bermatzen beraren EGOKITASUNA MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO. Argibide gehiago nahi izanez gero, ikus <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>.</para>
+  <para><citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia <citetitle>GNOMEren erabiltzaile</citetitle>aren gidaren eranskinean daukazu. <citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle>ren kopia bat lor dezakezu Free Software Foundation-en bidez. Bisitatu <ulink type="http" url="http://www.fsf.org">haien webgunea</ulink>, edo idatzi hona: <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - 330. Suitea <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>AEB</country></address></para>
+ </sect1>
+</article>

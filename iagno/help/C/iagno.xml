@@ -1,0 +1,588 @@
+<?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+    "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+  <!ENTITY legal SYSTEM "legal.xml">
+  <!ENTITY NETWORKGAMES SYSTEM "network-games.xml"> 
+  <!ENTITY appversion "2.20">
+  <!ENTITY manrevision "2.9">
+  <!ENTITY date "February 2008">
+  <!ENTITY app "<application>Iagno</application>">
+  <!ENTITY appname "Iagno">
+  <!ENTITY version "2.9">
+]>
+
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="en">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo>
+ <title>&app; Manual</title>
+
+    <abstract role="description">
+      <para>
+	Iagno is the two player strategy game of Othello, which is also known as
+	Reversi and is similar to Go. The pieces are tiles that are black on one 
+	side and white on the other and the objective is for the player to flip 
+	his/her opponent's tiles to his/her color, while keeping the opponent 
+	from doing the same. Once the board is filled with tiles, the winner is 
+	the player with the most of his/her color tiles on the board.
+      </para>
+    </abstract>
+
+ <copyright>
+  <year>2000</year>
+  <holder>Eric Baudais</holder>
+ </copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername> GNOME Documentation Project </publishername> 
+    </publisher> 
+
+   &legal;
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Eric</firstname> 
+	<surname>Baudais</surname> 
+	<affiliation> 
+	  <address> <email>baudais@okstate.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+<revhistory>
+  <revision> 
+    <revnumber>&appname; Manual V&manrevision;</revnumber> 
+    <date>&date;</date> 
+    <revdescription> 
+      <para role="author">Claude Paroz
+        <email>claude@2xlibre.net</email>
+      </para>
+      <para role="publisher">GNOME Documentation Project</para>
+    </revdescription> 
+  </revision>
+  <revision> 
+    <revnumber>&appname; Manual V2.8</revnumber> 
+    <date>September 2004</date> 
+    <revdescription> 
+      <para role="author">Eric Baudais
+        <email>baudais@okstate.edu</email>
+      </para>
+      <para role="publisher">GNOME Documentation Project</para>
+	</revdescription> 
+  </revision>
+  <revision>
+   <revnumber>0.1</revnumber>
+   <date>4 February 2000</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>
+   First draft completed.
+   </revremark>
+  </revision>
+
+  <revision>
+   <revnumber>0.2</revnumber>
+   <date>5 February 2000</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>
+   Added a footnote to why section.  Fixed some typos.
+   </revremark>
+  </revision>
+
+  <revision>
+   <revnumber>0.3</revnumber>
+   <date>7 February 2000</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>
+   Made the doc compliant with the GDP template.  Clarified 
+   the playing section.
+   </revremark>
+  </revision>
+
+  <revision>
+   <revnumber>1.0</revnumber>
+   <date>7 April 2000</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>
+   Licensed the Iagno Manual under the FDL.  Updated the 
+   screenshots to the GDP standard theme, MicroGUI.
+   </revremark>
+  </revision>
+ </revhistory>
+
+    <releaseinfo>This manual describes version &appversion; of &appname;.
+    </releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Feedback</title> 
+      <para>To report a bug or make a suggestion regarding the &app; application or
+	this manual, follow the directions in the 
+	<ulink url="ghelp:user-guide?feedback-bugs"
+	  type="help">GNOME Feedback Page</ulink>. 
+      </para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Iagno</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="intro">
+ <title>Introduction</title>
+ <sect2 id="what">
+  <title>What is Iagno?</title>
+  
+  <para>
+  <application>Iagno</application> is a computer version of 
+  the game Reversi, more popularly called Othello.  
+  <application>Iagno</application> is a two player strategy 
+  game similar to Go.  The board is 8 by 8 with tiles that 
+  are black on one side and white on the other side.  The 
+  object of <application>Iagno</application> is to flip as 
+  many of your opponent's tiles to your color as possible 
+  without your opponent flipping your tiles.  This is done 
+  by trapping your opponent's tiles between two tiles of 
+  your own color.
+  </para>
+
+  <para>
+    &appname; also features <link linkend="network-games">multiplayer</link> support with two 
+    human players in hotseat or network mode.
+  </para>
+
+  <para>
+   To run <application>Iagno</application>, select
+   <guimenuitem>Iagno</guimenuitem> from the
+   <guisubmenu>Games</guisubmenu> submenu of the <guimenu>Main
+   Menu</guimenu>, or type <command>iagno</command> on the
+   command line. 
+  </para>
+ </sect2>
+
+ <sect2 id="why">
+  <title>Why is Othello called Iagno?</title>
+  <para>
+  You're probably wondering why this game is called
+  <application>Iagno</application> instead of Othello or
+  even gnothello.  The answer is complicated, and involves
+  things like trademarks and lawyers and whatnot.
+  Instead of leaving 
+  it at that, I'll tell you a long and complicated lie about 
+  the origin of the name <application>Iagno</application>.
+  </para>
+  <para>
+  On a stormy night, like those depicted so much in England, 
+  a lonely programmer was sitting in front of his computer 
+  screen.  Ian had finished his masterpiece in gaming.  It 
+  was a fully interactive game of Othello and he decided
+  to play a pun with the name and called it gnothello for 
+  the game was written using GNOME.  
+  </para>
+  <para>
+  Later his buddies came over and like all programmers he 
+  showed off his masterpiece.  They all laughed in his face 
+  and told Ian that his game was worthless and a pitiful 
+  attempt to be a true hacker.  After Ian kicked them out 
+  he decided to rename his program Iago 
+  <footnote>
+   <para>
+   Iago is Othello's nemesis in the play <citetitle>Othello
+   </citetitle> by William Shakespeare.
+   </para>
+  </footnote>
+  for the evil which 
+  had manifested itself due to his game.  Yet it still 
+  didn't sound right.  All GNOME programs have some part 
+  of GNOME in it, Ian thought.  After much thought he decided 
+  on the name we have come to cherish, <application>Iagno
+  </application>.
+  </para>
+ </sect2>
+</sect1>
+
+<sect1 id="playing">
+ <title>Playing Iagno</title>
+ <para>
+ The board starts with four tiles arranged in a box on the 
+ middle of the board. The tiles have the same color at each 
+ corner, as shown in <xref linkend="start-shot"/>. 
+ </para>
+ 
+ <figure id="start-shot">
+  <title>Starting Position</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/START.png" format="PNG" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Screenshot of the starting position.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+ <para>
+ Black goes first and places a tile on the board such that it 
+ traps white's tiles between two of black's tiles. When black places 
+ a tile on the board all of white's tiles between black's newly placed 
+ tile and another black tile, in a horizontal, vertical, or diagonal row, are flipped over 
+ and become black, as shown in <xref linkend="first-shot"/>.
+ </para>
+
+ <figure id="first-shot">
+  <title>First Move</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/FIRST.png" format="PNG" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Screenshot of the first move.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+ <para>
+ When there is tile trapped between two tiles, of an identical color 
+ in the same row, the player captures tiles until another tile of the 
+ player's color is encountered, as shown in <xref linkend="block-shot"/>.  
+ The player can only take tiles that are 
+ a direct result of the placing a tile on the board. Once a tile is 
+ placed on the board the player cannot remove it and place the tile 
+ somewhere else. If a player cannot move they forfeit their turn.  
+ The game ends when it is no longer possible for either player to move.
+
+ <figure id="block-shot">
+  <title>White cannot capture the black tile in the center of the
+  middle column because there are white tiles blocking the ends of that
+  column. If it where blacks turn instead, black could place a tile at
+  the top of the column but would only flip the first of the two white
+  tiles.</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/BLOCK.png" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Screenshot of black blocking.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+ </para>
+
+</sect1>
+
+<sect1 id="settings">
+ <title>Game Settings</title>
+
+ <sect2 id="player">
+  <title>Player Color and Difficulty</title>
+ 
+  <para>
+  When you start Iagno the human player plays black and the computer player 
+  plays white with the first level of difficulty. Using the
+  <guimenuitem>Game</guimenuitem> tab in the
+  <guisubmenu>Preferences</guisubmenu> dialog you can set the type of
+  player for each color. Human is of course you, level one is the
+  easiest computer player and level three is the hardest. You can set
+  both to human to play against a friend or set both to computer to
+  watch the computer play itself.
+  </para>
+ </sect2>
+
+ <sect2 id="quick-moves">
+  <title>Quick Moves Option</title>
+
+  <para>
+  This option is in the <guimenu>Settings</guimenu> menu. Then go to the 
+  <guisubmenu>Preferences</guisubmenu> submenu in the <guimenuitem>Game
+  </guimenuitem> tab and it is initially off. When enabled this option 
+  makes the computer player place its tiles faster. 
+  </para>
+
+  <note>
+   <title>Note:</title>
+   <para>
+   Enabling this option does not force the computer player to move and does 
+   not reduce the level of difficulty.
+   </para>
+  </note>
+ </sect2>
+ 
+ <sect2 id="enable-sound">
+  <title>Enable/Disable Sound</title>
+
+  <para>
+  The last option of the <guimenuitem>Game</guimenuitem> tab in the
+  <guilabel>Preferences</guilabel> dialog allows you to enable or disable all
+  sounds when playing in &app;. 
+  </para>
+
+  <figure id="player-shot">
+   <title>The Preferences menu with the Game tab highlighted.</title>
+   <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/PLAYER.png" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Screenshot of the game settings.</phrase> 
+    </textobject> 
+  </mediaobject>
+   </screenshot>
+  </figure>
+
+ </sect2>
+
+</sect1>
+
+<sect1 id="animations">
+ <title>Appearance</title>
+
+ <para>
+ All the animation option are in the 
+ <menuchoice>
+  <guimenu>Settings</guimenu>
+  <guisubmenu>Preferences </guisubmenu>
+ </menuchoice>
+ menus with the <guimenuitem>Appearance</guimenuitem> tab highlighted.
+ </para>
+
+ <sect2 id="animation-amount">
+  <title>Animation</title>
+
+  <para>
+  This option controls the amount of animation present when each tile is 
+  flipped, using radio buttons.  Selecting the option <guibutton>none
+  </guibutton> will cause the tiles to change color instantaneously.  
+  Selecting the <guibutton>option</guibutton> partial will cause the 
+  animation to flip the tiles slowly.  Selecting the <guibutton>complete
+  </guibutton> option will cause the tiles to flip slowly and smoothly.
+  </para>
+
+ </sect2>
+
+ <sect2 id="stagger-flips">
+  <title>Stagger Flips</title>
+  
+  <para>
+  This option causes captured tiles along a row, column, or diagonal to
+  flip one after another, like dominoes, instead of all flipping
+  simultaneously.  It has no effect on game play, but looks cool.
+  </para>
+
+ </sect2>
+
+ <sect2 id="grid">
+  <title>Show Grid</title>
+
+  <para>
+  This option will display a grid on top of the playing surface.  The 
+  grid is useful to display because it shows the player exactly where 
+  they are placing each tile.
+  </para>
+
+  <tip>
+   <title>Tip:</title>
+   <para>
+   This option should be enabled for beginning players to see the gameplay 
+   more clearly.
+   </para>
+  </tip>
+
+ </sect2>
+
+ <sect2 id="flip-final">
+  <title>Flip Final Results</title>
+
+  <para>
+  This option moves all the black tiles to the top of the board and all the 
+  white tiles to the bottom of the board at the end of the game.  This allows 
+  you to visually see the outcome of the game.
+  </para>
+
+  <note>
+   <title>Note:</title>
+   <para>
+   This option does not affect the outcome of the game in any way.
+   </para>
+  </note>
+
+ </sect2>
+
+ <sect2 id="tile-set">
+  <title>Tile Set</title>
+  <para>
+  This option lets you choose the type of board and tiles which are displayed.  
+  If you want to make your own tile sets use the classic tile set as a template 
+  and change the texture and colors for different effects.  When you make a new 
+  tile set that works with Iagno send it to Ian Peters <email>itp@gnu.org</email> 
+  and he will include it with the next distribution.
+  </para>
+
+  <important>
+   <title>Important:</title>
+   <para>
+   There are two tile sets which look the same, but have different
+   animations -- woodtrim and classic.
+   </para>
+  </important>
+
+  <figure id="animation-shot">
+   <title>The Preferences menu with the Appearance tab highlighted.</title>
+   <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/ANIMATION.png" srccredit="Eric Baudais"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Screenshot of the animation settings.</phrase> 
+    </textobject> 
+  </mediaobject>
+   </screenshot>
+  </figure>
+
+ </sect2>
+
+</sect1>
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+ &NETWORKGAMES;
+
+
+
+<sect1 id="bugs">
+ <title>Known Bugs and Limitations</title>
+
+ <itemizedlist mark="opencircle">
+    <listitem>
+     <para>
+	The computer player for Iagno is easy to beat.
+     </para>
+    </listitem>
+ </itemizedlist>
+
+</sect1>
+
+<sect1 id="credits">
+ <title>Authors</title>
+  <para>
+   <application>Iagno</application> was written by Ian Peters
+   (<email>itp@gnu.org</email>).    This manual was written by Eric Baudais
+   (<email>baudais@okstate.edu</email>).
+   To report a bug or make a suggestion regarding this application or
+   this manual, follow the directions in this 
+   <ulink url="ghelp:user-guide?feedback-bugs" type="help">document</ulink>.
+  </para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>License</title>
+  <para>
+   This program is free software; you can redistribute it and/or
+   modify it under the terms of the <citetitle>GNU General Public
+   License</citetitle> as published by the Free Software Foundation;
+   either version 2 of the License, or (at your option) any later
+   version.
+  </para>
+  <para>
+   This program is distributed in the hope that it will be useful, but
+   WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   <citetitle>GNU General Public License</citetitle> for more details.
+  </para>
+  <para>
+   A copy of the <citetitle>GNU General Public License</citetitle> is
+   included as an appendix to the <citetitle>GNOME Users
+   Guide</citetitle>.  You may also obtain a copy of the
+   <citetitle>GNU General Public License</citetitle> from the Free
+   Software Foundation by visiting <ulink type="http"
+   url="http://www.fsf.org">their Web site</ulink> or by writing to
+   <address>
+    Free Software Foundation, Inc.
+    <street>59 Temple Place</street> - Suite 330
+    <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode>
+    <country>USA</country>
+   </address>
+  </para>
+ </sect1>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

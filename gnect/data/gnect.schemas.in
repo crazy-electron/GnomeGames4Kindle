@@ -1,0 +1,102 @@
+<gconfschemafile>
+
+  <schemalist>
+      <schema>
+      <key>/schemas/apps/gnect/player1</key>
+      <applyto>/apps/gnect/player1</applyto>
+      <owner>gnect</owner>
+      <type>int</type>
+      <default>0</default>
+      <locale name="C">
+        <short>Level of Player One</short>
+        <long>Zero is human; one through three correspond to the level of the computer player.</long>
+      </locale>
+      </schema>
+
+      <schema>
+      <key>/schemas/apps/gnect/player2</key>
+      <applyto>/apps/gnect/player2</applyto>
+      <owner>gnect</owner>
+      <type>int</type>
+      <default>1</default>
+      <locale name="C">
+        <short>Level of Player Two</short>
+        <long>Zero is human; one through three correspond to the level of the computer player.</long>
+      </locale>
+      </schema>
+
+      <schema>
+      <key>/schemas/apps/gnect/theme_id</key>
+      <applyto>/apps/gnect/theme_id</applyto>
+      <owner>gnect</owner>
+      <type>int</type>
+      <default>3</default>
+      <locale name="C">
+        <short>Theme ID</short>
+        <long>A number specifying the preferred theme.</long>
+      </locale>
+      </schema>
+
+      <schema>
+      <key>/schemas/apps/gnect/animate</key>
+      <applyto>/apps/gnect/animate</applyto>
+      <owner>gnect</owner>
+      <type>bool</type>
+      <default>TRUE</default>
+      <locale name="C">
+        <short>Animate</short>
+        <long>Whether or not to use animation.</long>
+      </locale>
+      </schema>
+
+      <schema>
+      <key>/schemas/apps/gnect/sound</key>
+      <applyto>/apps/gnect/sound</applyto>
+      <owner>gnect</owner>
+      <type>bool</type>
+      <default>TRUE</default>
+      <locale name="C">
+        <short>Sound</short>
+        <long>Whether or not to play event sounds.</long>
+      </locale>
+      </schema>
+
+      <schema>
+      <key>/schemas/apps/gnect/keyleft</key>
+      <applyto>/apps/gnect/keyleft</applyto>
+      <owner>gnect</owner>
+      <type>int</type>
+      <default>65361</default>
+      <locale name="C">
+        <short>Move left</short>
+        <long>Key press to move left.</long>
+      </locale>
+      </schema>
+
+      <schema>
+      <key>/schemas/apps/gnect/keyright</key>
+      <applyto>/apps/gnect/keyright</applyto>
+      <owner>gnect</owner>
+      <type>int</type>
+      <default>65363</default>
+      <locale name="C">
+        <short>Move right</short>
+        <long>Key press to move right.</long>
+      </locale>
+      </schema>
+
+      <schema>
+      <key>/schemas/apps/gnect/keydrop</key>
+      <applyto>/apps/gnect/keydrop</applyto>
+      <owner>gnect</owner>
+      <type>int</type>
+      <default>65364</default>
+      <locale name="C">
+        <short>Drop marble</short>
+        <long>Key press to drop a marble.</long>
+      </locale>
+      </schema>
+  </schemalist>
+
+</gconfschemafile>
+

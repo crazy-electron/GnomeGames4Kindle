@@ -1,0 +1,73 @@
+<sect1 id="Isabel"><!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>Isabel</title>
+
+  <para>Written by Rosanna Yuen</para>
+
+          <sect2><title>Setup</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>Type of Deck</entry>
+	  <entry>Standard Deck</entry>
+	</row>
+	<row>
+	  <entry>Tableau</entry>
+	  <entry>
+	    Thirteen piles.  Deal three cards face down and one card
+	    face up on every pile.
+	  </entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>Goal</title>
+
+  <para>
+    Remove all cards.
+  </para>
+
+          </sect2>
+        <sect2><title>Rules</title>
+
+  <para>
+    Remove cards in pairs of equal rank.  Every time a card is removed,
+    the card underneath is flipped face up and becomes playable.  Empty
+    slots are not filled.
+  </para>
+
+          </sect2>
+        <sect2><title>Scoring</title>
+
+  <para>
+    Each pair of cards removed scores two points.
+  </para>
+  <para>
+    Maximum possible score:  52
+  </para>
+
+          </sect2>
+        <sect2><title>Strategy</title>
+
+  <para>
+    Each pile starts with four cards.  The trick is to remember how many
+    cards each slot has left at any given time so that you can try to
+    remove cards evenly.
+  </para>
+        </sect2>
+</sect1>

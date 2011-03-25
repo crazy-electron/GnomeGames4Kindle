@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="move" xml:lang="da">
+
+  <info>
+    <link type="guide" xref="index#play" group="two"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Sådan flytter du brikker på spilbrættet.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  
+  <title>Flyt brikkerne</title>
+  
+  <section id="move-piece">
+    <title>Flyt en brik</title>
+    <p>For at flytte en brik skal du klikke på den og holde museknappen nede. Træk den så fra sin nuværende placering til sin nye placering, enten i den højre boks eller den venstre, og slip så museknappen.</p>
+    <p>Disse flytninger er ikke permanentet og kan omgøres.</p>
+    <note>
+      <p>Brikkerne i den venstre boks kan flyttes på en gang i en retning. Se <link xref="shortcut"/> for yderligere information.</p>
+    </note>
+  </section>
+  <section id="move-avoid">
+    <title>Undgå klik og hold</title>
+    <p>Hvis du ikke er komfortabel med handlingen klik og hold til at flytte brikker omkring med, så er det muligt at ændre opførelsen, så du kan nøjes med at klikke på en brik for at flytte den, og så klikke igen på dens nye placering.</p>
+    <p>For at gøre dette, vælg <gui style="menu">Flyt</gui>, og vælg <gui style="checkbox">Klik for at flytte</gui> fra hovedmenuen.</p>
+  </section>
+</page>

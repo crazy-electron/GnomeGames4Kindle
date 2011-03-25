@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Five or More</application>">
+<!ENTITY appname "Five or More">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- This doc is based on the GDP template from GNOME 1.2
+     Its syntax and DTD has been updated to validate with xmllint.
+     The content needs to be updated (it basically needs to be finished)
+     edited and indexed.
+   -->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="cs"> 
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+ <articleinfo>
+  <title>Příručka ke hře <application>Pět nebo víc</application></title>
+  <abstract role="description">
+    <para>Hra Pět nebo víc se hraje tak, že musíte uspořádávat barevné kameny, které se na hrací desce objevují na náhodných místech. Pokud dostanete pět stejných barev do jedné řady, tak řada zmizí. V okamžiku, kdy se celá hrací deska zaplní kameny, hra končí.</para>
+  </abstract>
+
+  <copyright>
+   <year>2000-2002</year>
+   <holder>Emese Kovács</holder>
+  </copyright><copyright><year>2009.</year><holder>Marek Černocký (marek@manet.cz)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>Dokumentační projekt GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU Free Documentation License, verze 1.1 nebo jakékoli další verze vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů předních desek a bez textů zadních desek. Kopie této licence je zahrnuta v oddílu jménem <ulink type="help" url="ghelp:fdl">GNU Free Documentation License</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou.</para>
+         <para>Tato příručka je součástí kolekce příruček GNOME, distribuovaných pod licencí GNU FDL. Pokud chcete tento dokument šířit odděleně od kolekce, musíte přiložit kopii licence dle popisu v sekci 6 dané licence.</para>
+
+	<para>Mnoho užívaných jmen určených k zviditelnění produktů nebo služeb jsou ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s velkým písmenem na začátku.</para>
+
+	<para>DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <orderedlist>
+		<listitem>
+		  <para>DOKUMENT JE POSKYTOVÁN V PODOBĚ „JAK JE“ BEZ ZÁRUKY V JAKÉKOLIV PODOBĚ, NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ VERZE, JE BEZCHYBNÝ NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL NEBO NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ DOKUMENTU, NEBO JEHO UPRAVENÉ VERZE, LEŽÍ NA VÁS. POKUD KVŮLI TOMUTO DOKUMENTU, NEBO JEHO UPRAVENÉ VERZI, NASTANE PROBLÉM, VY (NIKOLIV PŮVODNÍ AUTOR NEBO JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE JAKÉKOLIV NÁKLADY ZA NUTNÉ ÚPRAVY, OPRAVY ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE ZÁKLADNÍ SOUČÁST TÉTO LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ, PODLE TÉTO DOHODY, POVOLENO UŽÍVÁNÍ ANI ÚPRAVY TOHOTO DOKUMENTU; DÁLE</para>
+		</listitem>
+		<listitem>
+		  <para>ZA ŽÁDNÝCH OKOLNOSTÍ A ŽÁDNÝCH PRÁVNÍCH PŘEDPOKLADŮ, AŤ SE JEDNÁ O PŘEČIN (VČETNĚ NEDBALOSTNÍCH), SMLOUVU NEBO JINÉ, NENÍ AUTOR, PŮVODNÍ PISATEL, KTERÝKOLIV PŘISPĚVATEL NEBO KTERÝKOLIV DISTRIBUTOR TOHOTO DOKUMENTU NEBO UPRAVENÉ VERZE DOKUMENTU NEBO KTERÝKOLIV DODAVATEL NĚKTERÉ Z TĚCHTO STRAN ODPOVĚDNÝ NĚJAKÉ OSOBĚ ZA PŘÍMÉ, NEPŘÍMÉ, SPECIÁLNÍ, NAHODILÉ NEBO NÁSLEDNÉ ŠKODY JAKÉHOKOLIV CHARAKTERU, VČETNĚ, ALE NEJEN, ZA POŠKOZENÍ ZE ZTRÁTY DOBRÉHO JMÉNA, PŘERUŠENÍ PRÁCE, PORUCHY NEBO NESPRÁVNÉ FUNKCE POČÍTAČE NEBO JINÉHO A VŠECH DALŠÍCH ŠKOD NEBO ZTRÁT VYVSTÁVAJÍCÍCH Z NEBO VZTAHUJÍCÍCH SE K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+	<firstname>Emese</firstname> 
+	<surname>Kovács</surname> 
+	<affiliation> 
+	  <orgname>Dokumentační projekt GNOME</orgname> 
+	  <address> <email>emese@gnome.hu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+    <revhistory>
+      <revision> 
+	<revnumber>Příručka V2.8 ke hře Pět nebo víc</revnumber> 
+	<date>Září 2004</date> 
+	<revdescription> 
+	  <para role="author">Emese Kovács <email>emese@gnome.hu</email></para>
+	  <para role="publisher">Dokumentační projekt GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Tato příručka popisuje Pět nebo víc verze 2.12.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Ohlasy</title> 
+      <para>Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k aplikaci <application>Pět nebo víc</application> nebo této příručce, postupujte dle instrukcí na stránce <ulink url="ghelp:user-guide?feedback-bugs" type="help">Stránka s ohlasy na GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Pět nebo víc</primary> 
+  </indexterm> 
+
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+ <sect1 id="intro">
+  <title>Úvod</title>
+
+  <para><application>Pět nebo víc</application> je do Gnome přenesená populární hra původem z Windows nazývaná <application>Color Lines</application>. Základem hry je seřadit co nejčastěji pět nebo více kamenů stejné barvy a tvaru, což způsobí, že zmizí. Hrajte, dokud je na hrací ploše místo, a staňte se „number one“ v nejlepších skóre.</para>
+
+  <para>Hru <application>Pět nebo víc</application> spustíte volbou <guimenuitem>Pět nebo víc</guimenuitem> z podnabídky <guisubmenu>Hry</guisubmenu> v <guimenu>Hlavním menu</guimenu> nebo zadáním <command>glines</command> v příkazovém řádku.</para>
+
+  <para><application>Pět nebo víc</application> je součástí balíku <filename>GNOME-games</filename>, který patří k pracovnímu prostředí GNOME. Tento dokument popisuje verzi 2.8 aplikace <application>Pět nebo víc</application>.</para>
+
+ </sect1>
+
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="usage">
+    <title>Hraní Pět nebo víc</title>
+    <para>Hraní <application>Pět nebo víc</application> je jednoduché. Začínáte s několika kameny náhodně rozmístěnými na hrací desce. V každém tahu můžete posunout jeden kámen. Můžete jej posunout kamkoliv na desku, kam vede volná cesta. Počítač následně přihodí na náhodná místa další kameny (přesný počet závisí na vybrané velikosti hry).  V horní části okna se můžete podívat, jaké kameny budou přihozené v dalším tahu. Vždy, když se vám podaří dostat do řady pět kamenů stejné barvy a tvaru, tak zmizí a vy dostanete v tomto tahu navíc k dispozici další posun kamenu.</para>
+
+
+  <!-- ========= Basic Usage =========================== -->
+  <sect2 id="mainwin">
+   <title>Základy používání</title>
+   <para>Po spuštění se vám <application>Pět nebo víc</application> představí <interface>hrací deskou</interface>, na které je rozehraná nová hra. Celé to vypadá jako ukazuje <xref linkend="mainwindow-fig"/>.</para>
+
+    <!-- ==== Figure ==== -->
+	<figure id="mainwindow-fig">
+	  <title>Hlavní okno po spuštění hry.</title>
+	  <screenshot>
+	      <mediaobject>
+	      <imageobject>
+	      <imagedata fileref="figures/glines-startgame.png" format="PNG" srccredit="emese"/>
+	      </imageobject>
+	      </mediaobject>
+	  </screenshot>
+	</figure>
+     <!-- ==== End of Figure ==== -->
+
+   <para>Jak hra ubíhá, je hrací deska víc a víc zaplněná (ledaže jste opravdu dobří...) a seřazovaní kamenů se stává víc a víc náročným. Jakmile se deska celá zaplní, tak hra skončila.</para>
+   
+   <!-- ==== Figure ==== -->
+   <figure id="gameover-fig">
+	  <title>Konec hry!</title>
+	  <screenshot>
+    <mediaobject>
+     <imageobject>
+      <imagedata fileref="figures/glines-gameover.png" format="PNG" srccredit="emese kovacs"/>
+     </imageobject>
+    </mediaobject>
+ </screenshot>
+</figure>  
+   <!-- ==== End of Figure ==== -->
+   
+  </sect2>
+
+
+  <!-- ========= Rulez =========================== -->
+
+    <sect2 id="rules"> 
+      <title>Hraní hry</title>
+      <para>Hra <application>Pět nebo víc</application> začíná s několika náhodnými kameny na desce.</para>
+      <para>Posun kamenu začnete kliknutím na něj. Tím se kámen aktivuje a začne se otáčet (nebo dělat něco jiného, záleží na zvoleném motivu, takže nemůže předvídat...). Teď můžete zvolit cíl kliknutím na prázdné políčko. Pokud do cíle vede volná cesta, tak se tam aktivovaný kámen přesune. Pokud v cílovém poli již nějaký kámen leží, nic se přesouvat nebude, jen se aktivace přenese na tento kámen. Pokud do cíle žádná cesta nevede (kameny prostě nemůžete skákat přes překážky), tak se ve stavovém řádku (v dolní části okna) vypíše varování a původní kámen zůstane aktivovaný.</para>
+      <para>Za každé zmizení kamenů získáváte body. Počet bodů záleží na množství kamenů, které jste dostali do řady (viz <xref linkend="glines-table1"/>). Vaše celkové skóre se zobrazuje v pravém horním rohu okna.</para>
+      
+    <!-- ====  Table 1.  ==== -->
+    <table id="glines-table1">
+     <title>Přidělování bodů v Pět nebo víc</title>
+      <tgroup cols="2" align="center">
+       <thead>
+        <row>
+         <entry>Počet kamenů</entry>
+         <entry>Přidělené body</entry>
+        </row>
+       </thead>
+       <tbody>
+       <row>
+        <entry>5</entry>
+        <entry>10</entry>
+       </row>
+       <row>
+        <entry>6</entry>
+        <entry>12</entry>
+       </row>
+       <row>
+        <entry>7</entry>
+        <entry>18</entry>
+       </row>
+       <row>
+        <entry>8</entry>
+        <entry>28</entry>
+       </row>
+       <row>
+        <entry>9</entry>
+        <entry>42</entry>
+       </row>
+       <row>
+        <entry>10</entry>
+        <entry>82</entry>
+       </row>
+       <row>
+        <entry>11</entry>
+        <entry>108</entry>
+       </row>
+       <row>
+        <entry>12</entry>
+        <entry>138</entry>
+       </row>
+      <row>
+        <entry>13</entry>
+        <entry>172</entry>
+      </row>
+      <row>
+        <entry>14</entry>
+        <entry>210</entry>
+       </row>
+      </tbody>
+     </tgroup> 
+    </table>
+
+  <sect3>
+  <title>Používání klávesnice</title>
+  <para>Mimo myši můžete k hraní <application>Pět nebo víc</application> používat i klávesnici. K použití klávesnice stačí zmáčknout kteroukoliv kurzorovou šipku a poblíž středu hrací desky se objeví kurzor. Kurzorovými šipkami jej můžete přesouvat. V okamžiku, kdy stojíte kurzorem na požadovaném kameni, můžete jej mezerníkem aktivovat. Potom posuňte kurzor na cíl a opět zmáčknutím mezerníku kámen přesunete.</para><para>Pokud začnete znovu používat my, tak kurzor zmizí. A naopak, když začnete znovu používat kurzorové klávesy, kurzor se objeví.</para>
+  </sect3>
+
+
+   <!-- ==== End of Table ==== -->
+
+
+    </sect2>
+
+
+  </sect1>
+  <sect1 id="settings">
+  <title>Přizpůsobení hry</title>
+  <para>Hru <application>Pět nebo víc</application> může nastavit kliknutím na <guimenuitem>Volby</guimenuitem> v nabídce aplikace <guimenu>Nastavení</guimenu>. Objeví se následující <interface>dialog</interface>:</para>
+ <!-- ==== Figure ==== -->
+   <figure>
+     <title>Volby</title>   
+    <mediaobject id="preferences-dialogbox">
+     <imageobject>
+      <imagedata fileref="figures/preferences.png" format="PNG" srccredit="emese"/>
+     </imageobject>
+    </mediaobject>
+  </figure>    
+    <!-- ==== End of Figure ==== -->
+
+  <para>Můžete si vybrat různé styly kamenů a barev pozadí v oddíle <guimenu>Motivy</guimenu>. Pokud máte problémy s rozlišováním barev, tak si zvolte motiv tvary.</para>
+  <para>V oddíle <guimenu>Velikost hrací desky</guimenu> můžete zvolit velikost hrací plochy. Každá velikost má své výhody i nevýhody: velká deska vám dává více místa na tahy, ale při každém tahu přibývá více kamenů. Parametry pro každou velikost uvádí <xref linkend="table-sizes"/>.</para>
+    <table id="table-sizes">
+     <title>Přidělování bodů v Pět nebo víc</title>
+      <tgroup cols="5" align="center">
+       <thead>
+        <row>
+         <entry align="left">Velikost</entry>
+         <entry>Šířka</entry>
+         <entry>Výška</entry>
+	 <entry>Počet typů</entry>
+         <entry>Kamenů v tahu</entry>
+        </row>
+       </thead>
+       <tbody>
+       <row>
+        <entry align="left">Malá</entry>
+        <entry>7</entry>
+        <entry>7</entry>
+        <entry>5</entry>
+        <entry>3</entry>
+       </row>
+       <row>
+        <entry align="left">Střední</entry>
+        <entry>9</entry>
+        <entry>9</entry>
+        <entry>7</entry>
+        <entry>3</entry>
+       </row>
+       <row>
+        <entry align="left">Velká</entry>
+        <entry>20</entry>
+        <entry>15</entry>
+        <entry>7</entry>
+        <entry>7</entry>
+       </row>
+      </tbody>
+     </tgroup> 
+    </table>
+
+  <para>Posun kamenu při tazích můžete urychlit výběrem Používat rychlé tahy v oddíle voleb <guimenu>Obecné</guimenu>.</para>
+  <para>Změny v nastavení se okamžitě promítnou do hry a zůstanou zachované i pro další spuštění <application>Pět nebo víc</application>.</para>
+  </sect1>
+  <sect1 id="themes">
+    <title>Jak vytvořit nové motivy</title> 
+    <para>Každý motiv tvoří jeden obrázek ve formátu PNG. Tento obrázek obsahuje pole se sedmi řádky, které odpovídají různým barvám/tvarům kamenu, a čtyř sloupců, z nichž každý je jedním snímkem v animaci kamenu. Velikost obrázků není podstatná, protože se mění, akorát musí obrázky tvořit pravidelnou mřížku čtyři krát sedm. Pokud používáte SVG, pak nezapomeňte, že velikost obrázku je velikostí stránky, takže když mřížka stránku nevyplňuje, zkuste stránku zmenšit. Můžete použít některý ze stávajících motivů jako vzor.</para>
+  </sect1>
+
+ <!-- ============= Bugs ================================== -->
+ <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of 
+
+      Better to omit this section than give false impression of perfection
+      Add back in if there is something worth saying
+
+ <sect1 id="bugs">
+  <title>Known Bugs and Limitations</title>
+  <para>
+   This application has no known bugs.
+  </para>
+ </sect1>
+-->
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Autoři</title>
+  <para><application>Pět nebo víc</application> napsal Róbert Szókovács (<email>szo@appaloosacorp.hu</email>) a Szabolcs Bán (<email>shooby@gnome.hu</email>). Tuto příručku napsal Emese Kovács (<email>emese@gnome.hu</email>). Pokud chcete nahlásit chybu nebo podat návrh týkající se této aplikace nebo této příručky, tak se řiďte instrukcemi v tomto <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentu</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licence</title>
+  <para>Tento program je svobodný software. Můžete jej dále šířit a/nebo upravovat za dodržení podmínek <ulink type="help" url="gnome-help:gpl"><citetitle>GNU General Public License</citetitle></ulink>, tak jak ji vydala Free Software Foundation ve verzi 2 nebo (dle vaší volby) novější.</para>
+  <para>Tento program je šířen s přesvědčením, že může být užitečný, ale BEZ JAKÝCHKOLIV ZÁRUK, bez předpokládané záruky na OBCHODOVATELNOST nebo VHODNOST PRO URČITÝ ÚČEL. Více podrobností najdete v <citetitle>GNU General Public License</citetitle>.</para>
+  <para>Kopie <citetitle>GNU General Public License</citetitle> je zahrnuta v dodatku <citetitle>Uživatelské přiručky GNOME</citetitle>. Kopii <citetitle>GNU General Public License</citetitle> můžete také získat od Free Software Foundation navštívením <ulink type="http" url="http://www.fsf.org">jejich webu</ulink> nebo zasláním žádosti na <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

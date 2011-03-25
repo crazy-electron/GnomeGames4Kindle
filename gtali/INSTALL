@@ -1,0 +1,63 @@
+Compiling without gnome:
+------------------------
+
+Change to the directory NoGnome and do ./configure and make from there.
+
+
+
+Compiling yahtzee within CVS source tree:
+-----------------------------------------
+
+Top level configure now accepts curses options.  Do ./configure --help
+to see what curses options are available.  The most useful will
+probably be --without-ncurses to disable ncurses support or
+--with-ncurses=/usr/somewhere/ncurses to specify an alternate ncurses
+location.
+
+
+
+Compiling yahtzee obtained outside CVS source tree:
+---------------------------------------------------
+
+Build the binaries
+
+   1) Edit ./Build to set paths correctly on your system and to point to a
+      copy of libintl.
+
+   2) ./Build
+
+   make works on my system, but I made some changes to files in gnome-games.
+
+To add entries to the gnome panel for gyahtzee
+
+   cp gnome.desktop GNOMEPREFIX/share/apps/Games/ 
+   cp pix/gnome-gyahtzee.png GNOMEPREFIX/share/pixmaps/
+
+
+
+Changing dice pixmaps:
+----------------------
+
+If you want, you can make your own dice pixmaps, which will be
+loaded at runtime _if_ they are in the directory where you start
+gyahtzee (sorry, haven't figured out what the default path should
+be yet).  If you want to change the compiled in defaults, replace
+the pixmaps in pix/ and rebuild the binary.
+
+The dice pixmaps should all be the same size to minimize
+screen flicker and window resizing.  The default dice
+are 64x64.  Compile time pixmaps are xpm's.  Pixmaps loaded
+at runtime can be in any format imlib recognizes, but
+should have names (ideally I guess they should be xpm's but
+you could save a gif with an xpm extension and imlib might open
+it correctly?):
+
+   gnome-dice-1.xpm    --> one pixmap for each number
+   gnome-dice-2.xpm
+   gnome-dice-3.xpm
+   gnome-dice-4.xpm
+   gnome-dice-5.xpm
+   gnome-dice-6.xpm
+
+   gnome-dice-none.xpm --> This is the X displayed when a die is selected
+

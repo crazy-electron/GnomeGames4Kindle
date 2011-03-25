@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="hint" xml:lang="sr@latin">
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Koristite savete ili rešite igru automatski.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-23" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+  </info>
+  <title>Saveti</title>
+
+  <note style="warning">
+    <p>Ako koristite bilo šta od metoda navedenih ispod, vaš rezultat neće biti uključen među najbolje rezultate.</p>
+  </note>
+
+  <section id="hint-hints">
+  
+    <title>Korišćenje sistema saveta</title>
+    
+    <p>U bilo kom trenutku dok igrate, ako ne znate kako da krenete ili gde da pomerite deo, moguće je iskoristiti ugrađeni sistem saveta.</p>
+    <p>Sistem će premestiti jedan deo iz desne kutije na pravilno mesto u levoj kutiji.</p>
+    <p>Da biste koristili sistem saveta, uradite jednu od sledećih stvari:</p>
+    <list>
+      <item>
+        <p>Pritisnite <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Odaberite <guiseq><gui style="menu">Igra</gui><gui style="menuitem">Savet</gui></guiseq>.</p>
+      </item>
+    </list>
+  </section>
+  <section id="hint-solve">
+    <title>Rešavanje igre</title>
+    <p>Ako se zaglavite sa igrom, ili želite da se igra automatski reši, odaberite <guiseq><gui style="menu">Igra</gui><gui style="menuitem">Reši</gui></guiseq>.</p>
+  </section>
+</page>

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Four-in-a-Row</application>">
+<!ENTITY appname "Four-in-a-Row">
+<!ENTITY version "2.8">
+]>
+<!-- ===== DOCUMENT HEADER ===== -->
+<article id="index" lang="fr">
+<!-- please do not change the id -->
+<!-- translators, change lang to the appropriate code -->
+  <articleinfo>
+    <title>Manuel de Puissance 4</title>
+    <abstract role="description">
+      <para>Le but de Puissance 4 est d'aligner quatre de vos jetons horizontalement, verticalement ou en diagonale pendant que votre adversaire essaye de vous bloquer et de créer sa propre rangée de quatre jetons. Puissance 4 vous permet de jouer à 2 personnes ou contre l'ordinateur.</para>
+    </abstract>
+
+    <copyright>
+      <year>2001-2002</year>
+      <holder>Timothy Musson</holder>
+    </copyright><copyright><year>2007</year><holder>Jonathan Ernst (jonathan@ernstfamily.ch)</holder></copyright><copyright><year>2007</year><holder>Claude Paroz (claude@2xlibre.net)</holder></copyright><copyright><year>2008</year><holder>Bruno Brouard (annoa.b@gmail.com)</holder></copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+     <year>2000</year>
+     <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+    <publisher role="maintainer"> 
+      <publishername>Projet de documentation de GNOME</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+	<para>Permission vous est donnée de copier, distribuer et/ou modifier ce document selon les termes de la Licence GNU Free Documentation License, Version 1.1 ou ultérieure publiée par la Free Software Foundation sans section inaltérable, sans texte de première page de couverture ni texte de dernière page de couverture. Vous trouverez un exemplaire de cette licence en suivant ce <ulink type="help" url="ghelp:fdl">lien</ulink> ou dans le fichier COPYING-DOCS fourni avec le présent manuel.</para>
+         <para>Ce manuel fait partie de la collection de manuels GNOME distribués selon les termes de la licence de documentation libre GNU. Si vous souhaitez distribuer ce manuel indépendamment de la collection, vous devez joindre un exemplaire de la licence au document, comme indiqué dans la section 6 de celle-ci.</para>
+
+	<para>La plupart des noms utilisés par les entreprises pour distinguer leurs produits et services sont des marques déposées. Lorsque ces noms apparaissent dans la documentation GNOME et que les membres du projet de Documentation GNOME sont informés de l'existence de ces marques déposées, soit ces noms entiers, soit leur première lettre est en majuscule.</para>
+
+	<para>LE PRÉSENT DOCUMENT ET SES VERSIONS MODIFIÉES SONT FOURNIS SELON LES TERMES DE LA LICENCE DE DOCUMENTATION LIBRE GNU SACHANT QUE : <orderedlist>
+		<listitem>
+		  <para>LE PRÉSENT DOCUMENT EST FOURNI « TEL QUEL », SANS AUCUNE GARANTIE, EXPRESSE OU IMPLICITE, Y COMPRIS, ET SANS LIMITATION, LES GARANTIES DE BONNE QUALITÉ MARCHANDE OU D'APTITUDE À UN EMPLOI PARTICULIER OU AUTORISÉ DU DOCUMENT OU DE SA VERSION MODIFIÉE. L'UTILISATEUR ASSUME TOUT RISQUE RELATIF À LA QUALITÉ, À LA PERTINENCE ET À LA PERFORMANCE DU DOCUMENT OU DE SA VERSION DE MISE À JOUR. SI LE DOCUMENT OU SA VERSION MODIFIÉE S'AVÉRAIT DÉFECTUEUSE, L'UTILISATEUR (ET NON LE RÉDACTEUR INITIAL, L'AUTEUR, NI TOUT AUTRE PARTICIPANT) ENDOSSERA LES COÛTS DE TOUTE INTERVENTION, RÉPARATION OU CORRECTION NÉCESSAIRE. CETTE DÉNÉGATION DE RESPONSABILITÉ CONSTITUE UNE PARTIE ESSENTIELLE DE CETTE LICENCE. AUCUNE UTILISATION DE CE DOCUMENT OU DE SA VERSION MODIFIÉE N'EST AUTORISÉE AUX TERMES DU PRÉSENT ACCORD, EXCEPTÉ SOUS CETTE DÉNÉGATION DE RESPONSABILITÉ ; </para>
+		</listitem>
+		<listitem>
+		  <para>EN AUCUNE CIRCONSTANCE ET SOUS AUCUNE INTERPRÉTATION DE LA LOI, QU'IL S'AGISSE DE RESPONSABILITÉ CIVILE (Y COMPRIS LA NÉGLIGENCE), CONTRACTUELLE OU AUTRE, L'AUTEUR, LE RÉDACTEUR INITIAL, TOUT PARTICIPANT ET TOUT DISTRIBUTEUR DE CE DOCUMENTOU DE SA VERSION DE MISE À JOUR AINSI QUE TOUT FOURNISSEUR DE QUELQUE PARTIE QUE CE SOIT NE POURRONT ÊTRE TENUS RESPONSABLES À L'ÉGARD DE QUICONQUE POUR TOUT DOMMAGE DIRECT, INDIRECT, PARTICULIER OU ACCIDENTEL DE TOUT TYPE Y COMPRIS, SANS LIMITATION, LES DOMMAGES LIÉS À LA PERTE DE CLIENTÈLE, AUX ARRÊTS DE TRAVAIL, AUX DÉFAILLANCES ET AUX DYSFONCTIONNEMENTS INFORMATIQUES OU TOUT AUTRE DOMMAGE OU PERTE LIÉE À L'UTILISATION DU PRÉSENT DOCUMENT ET DE SES VERSIONS DE MISE À JOUR, ET CE MÊME SI CES PARTIES ONT ÉTÉ INFORMÉES DE LA POSSIBILITÉ DE TELS DOMMAGES.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+
+    <authorgroup>
+      <author>
+        <firstname>Timothy</firstname>
+        <surname>Musson</surname>
+        <affiliation>
+          <!-- <orgname></orgname> -->
+          <address><email>trmusson@ihug.co.nz</email></address>
+        </affiliation>
+      </author>
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+
+      <othercredit role="translator">
+        <firstname>Latin</firstname> 
+        <surname>Translator 1</surname> 
+        <affiliation> 
+          <orgname>Latin Translation Team</orgname> 
+          <address> <email>translator@gnome.org</email> </address> 
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+        <revnumber>Manuel de Puissance 4 v2.8</revnumber>
+        <date>Septembre 2004</date>
+        <revdescription>
+          <para role="author">Timothy Musson <email>trmusson@ihug.co.nz</email></para>
+          <para role="publisher"/>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>Ce manuel documente la version 2.12 de Puissance 4.</releaseinfo>
+
+    <legalnotice>
+      <title>Votre avis</title>
+      <para>Pour rapporter une anomalie ou émettre une suggestion concernant Puissance 4 ou ce manuel, procédez comme indiqué sur la <ulink url="ghelp:user-guide?feedback-bugs" type="help">page de réactions sur GNOME</ulink>.</para>
+    </legalnotice>
+  </articleinfo>
+
+
+  <!-- ============= Document Body ============================= -->
+
+  <!-- ============= Introduction ============================== -->
+
+
+  <sect1 id="intro">
+
+    <title>Introduction</title>
+
+    <para><application>Puissance 4</application> est une déclinaison du jeu Puissance 4 pour le projet GNOME. Le but du jeu est d'aligner quatre jetons de votre couleur tout en empêchant votre adversaire (humain ou machine) d'aligner quatre jetons de sa couleur. Une ligne peut être horizontale, verticale ou en diagonale.</para>
+
+    <para>Pour lancer <application>Puissance 4</application>, sélectionnez <guimenuitem>Puissance 4</guimenuitem> dans le sous-menu <guisubmenu>Jeux</guisubmenu> du <guimenu>Menu principal</guimenu> ou saisissez la commande <command>gnect</command> dans un terminal.</para>
+
+    <para><application>Puissance 4</application> est inclus dans le paquet <filename>GNOME-games</filename> qui fait partie de l'environnement de bureau GNOME. Ce document présente la version 2.8 de <application>Puissance 4</application>.</para>
+
+   <para>Puissance 4 offre également la possibilité de jouer à <link linkend="network-games">plusieurs</link>, soit à deux joueurs sur un même ordinateur, soit en mode réseau.</para>
+
+
+  </sect1>
+
+
+  <!-- ============= Usage ===================================== -->
+
+
+  <sect1 id="usage">
+
+    <title>Utilisation de base</title>
+
+    <!-- ===== How to play ===== -->
+
+    <sect2 id="playing">
+
+      <title>Le jeu Puissance 4</title>
+
+      <para>Pour commencer une nouvelle partie de Puissance 4, choisissez <menuchoice><guimenu>Jeu</guimenu><guimenuitem>Nouveau</guimenuitem></menuchoice>.</para>
+
+      <para>Le <interface>plateau de jeu</interface> est formé de sept colonnes et de six rangées. Dans la partie supérieure, une rangée particulière montre le jeton du joueur dont c'est le tour. Chaque déplacement consiste à faire tomber un jeton dans une des colonnes. Le jeton s'arrête à la première rangée vide de la colonne depuis le bas.</para>
+        
+      <para>Pour effectuer un tour de jeu, cliquez sur une colonne avec la souris. Pour jouer à l'aide du clavier, déplacez le jeton qui se trouve dans la rangée supérieure via les touches flèche gauche et flèche droite. Faites tomber le jeton avec la touche flèche bas. Votre jeton tombe jusqu'à la première rangée vide de cette colonne depuis le bas.</para>
+
+      <!-- Figure -->
+      <mediaobject id="mainwindow-fig">
+        <imageobject>
+          <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="trm"/>
+        </imageobject>
+        <textobject>
+          <phrase>Fenêtre principale de Puissance 4</phrase>
+        </textobject>
+        <caption><para>Fenêtre principale de Puissance 4</para></caption>
+      </mediaobject>
+
+      <para>La partie se termine lorsque l'un des deux joueurs réussit à aligner quatre de ses jetons horizontalement, verticalement ou en diagonale. Si le plateau se remplit sans que personne ne gagne, la partie se termine sur un score nul.</para>
+
+    </sect2>
+    
+    <!-- ===== Commands ===== -->  
+    
+    <sect2 id="commands">
+      <title>Commandes</title>
+      <anchor id="menubar"/><!-- id for removed section -->
+      
+      <para>Pour annuler un déplacement, choisissez <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>Z</keycap></keycombo></shortcut><guimenuitem>Annuler le déplacement</guimenuitem></menuchoice>. Si vous affrontez une autre personne, cela annulera un seul déplacement. Si vous jouez contre l'ordinateur, cela annulera le dernier déplacement effectué par l'ordinateur ainsi que le vôtre. En continuant d'annuler, vous retrouvez finalement l'état initial du plateau.</para>
+      <para>Choisissez <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>H</keycap></keycombo></shortcut><guimenuitem>Astuce</guimenuitem></menuchoice> pour obtenir une suggestion de l'ordinateur pour votre prochain déplacement. La suggestion est visible dans la barre d'état.</para>
+      
+      <para>Choisissez <menuchoice><guimenuitem>Scores</guimenuitem></menuchoice> pour afficher un résumé des victoires et des parties nulles obtenues lors de la session actuelle de jeu. Les scores sont réinitialisés si la sélection des joueurs est modifiée dans les préférences.</para>      
+
+      
+    </sect2>  
+
+    <!-- ===== Preferences ===== -->
+
+    <sect2 id="prefsdialog">
+
+      <title>Préférences</title>
+
+      <para>Pour modifier les réglages du jeu, choisissez <guimenuitem>Préférences</guimenuitem> dans le menu <guimenu>Paramètres</guimenu>. La boîte de dialogue des <interface>Préférences</interface> apparaît.</para>
+
+      <para>Les options de configuration dans l'onglet <guilabel>Jeu</guilabel> sont : <variablelist>
+
+          <varlistentry>
+            <term><guilabel>Joueur 1</guilabel> et <guilabel>Joueur 2</guilabel></term>
+            <listitem>
+              <para>Ces deux colonnes indiquent à <application>Puissance 4</application> qui va jouer et, si l'ordinateur est un joueur, quelle sera sa force. Pour jouer contre une autre personne, sélectionnez « Humain » à la fois pour le joueur 1 et le joueur 2.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Thème</guilabel></term>
+            <listitem>
+              <para>Le menu des thèmes énumère les thèmes disponibles et vous permet de choisir celui que vous préférez.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Activer les animations</guilabel></term>
+            <listitem>
+              <para>Cette option permet d'activer ou de désactiver les animations durant les parties.</para>
+            </listitem>
+          </varlistentry>
+
+        </variablelist></para>
+      <para>Pour terminer, l'onglet <guilabel>Contrôles</guilabel> permet de modifier les touches utilisées au clavier. Pour modifier une commande, double-cliquez sur la commande souhaitée et appuyez sur la nouvelle touche.</para>
+
+    </sect2>
+  </sect1>
+
+
+  <!-- ===== Custom Themes ===================================== -->
+
+
+  <sect1 id="custom">
+
+    <title>Création de thèmes</title>
+
+    <para>Cette section est destinée à ceux qui souhaitent créer leurs propres thèmes pour <application>Puissance 4</application>. Cela suppose une certaine maîtrise de l'édition de texte, de logiciels graphiques et de la ligne de commande.</para>
+
+    <sect2 id="images">
+
+      <title>Images</title>
+
+      <para>Un jeu de pièces pour <application>Puissance 4</application> contient six éléments d'égale grandeur, alignés horizontalement. De gauche à droite :</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Le jeton du joueur 1 tel qu'il apparaît sur le plateau de jeu.</para>
+        </listitem>
+        <listitem>
+          <para>Le jeton du joueur 2 tel qu'il apparaît sur le plateau de jeu.</para>
+        </listitem>
+        <listitem>
+          <para>L'arrière-plan du plateau de jeu.</para>
+        </listitem>
+        <listitem>
+          <para>L'arrière-plan de la rangée supérieure.</para>
+        </listitem>
+        <listitem>
+          <para>Le jeton du joueur 1 tel qu'il apparaît sur la rangée supérieure.</para>
+        </listitem>
+        <listitem>
+          <para>Le jeton du joueur 2 tel qu'il apparaît sur la rangée supérieure.</para>
+        </listitem>
+      </orderedlist>
+
+      <figure id="shot1">
+        <title>Un exemple de jeu de pièces</title>
+        <screenshot>
+          <screeninfo>Cette image montre les six pièces dans un ensemble de pièces</screeninfo>
+          <graphic format="PNG" fileref="figures/tileset.png" srccredit="TRM"/>
+        </screenshot>
+      </figure>
+
+      <para>Les éléments 3 et 4 se répètent sur l'ensemble du plateau de jeu ou de la rangée supérieure, sauf si une image d'arrière-plan couvrant toute la fenêtre est spécifiée dans le fichier du thème.</para>
+
+      <tip>
+        <title>Astuce</title>
+        <para>Le format PNG est recommandé pour les ensembles de pièces. Les pièces 1, 2, 5 et 6 devraient contenir un fond transparent si vous souhaitez que l'arrière-plan soit visible. Les pièces 3 et 4 devraient être opaques, sans transparence, même si vous prévoyez d'utiliser une image d'arrière-plan couvrant toute la fenêtre dans votre thème.</para>
+      </tip>
+
+      <tip>
+        <title>Astuce</title>
+        <para>Les pièces peuvent être de forme carrée ou rectangulaire, à n'importe quelle taille. La plupart des ensembles de pièces qui sont livrés avec <application>Puissance 4</application> utilisent des carrés de 50 pixels sur 50 pixels.</para>
+      </tip>
+
+      <para>Pour créer une image d'arrière-plan couvrant toute la fenêtre, il y a un peu plus de travail. Supposons que vos pièces mesurent chacune 50 pixels sur 50 pixels. Le plateau de jeu présente 7 colonnes et 7 rangées (avec la rangée supérieure), ce qui donne une taille idéale d'image d'arrière-plan de 350 sur 350 pixels.</para>
+
+      <tip>
+        <title>Astuce</title>
+        <para><application>Puissance 4</application> redimensionne automatiquement l'image d'arrière-plan si elle ne correspond pas à l'ensemble des pièces. Cela signifie que vous pouvez créer des versions « grandes » et « petites » de votre thème en utilisant la même image d'arrière-plan, simplement en modifiant la taille de votre ensemble de pièces.</para>
+      </tip>
+
+      <para>Vous disposez maintenant d'un ensemble de pièces, et peut-être d'une image d'arrière-plan correspondante. La prochaine étape consiste à les placer au bon endroit.</para>
+
+    </sect2>
+
+
+    <sect2 id="directories">
+
+      <title>Assemblage final</title>
+
+      <para>La dernière étape consiste à placer les images à l'endroit où <application>Puissance 4</application> peut les trouver. Vous pourriez les placer dans le répertoire d'installation de Puissance 4 (différent selon votre système), mais votre dossier personnel est probablement plus approprié.</para>
+
+      <para>Créez les répertoires <filename class="directory">~/.gnect</filename> et <filename class="directory">~/.gnect/pixmaps</filename>. Ces noms sont importants, car c'est précisément là que <application>Puissance 4</application> va regarder.</para>
+
+      <para>Copier les images dans le répertoire pixmaps.</para>
+
+      <para>Si vous lancez <application>Puissance 4</application> à partir d'une ligne de commande, cela vous donnera des indications sur d'éventuels problèmes en relation avec votre nouveau thème. Si tout se passe bien, votre nouveau thème sera présent dans la liste des thèmes dans les <interface>Préférences</interface>.</para>
+
+      <para>Amusez-vous !</para>
+
+    </sect2>
+
+
+  </sect1>
+
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Parties en réseau</title>
+  <para>Puissance 4 prend en charge le jeu multijoueur en réseau dans le cadre de la <ulink type="http" url="http://www.ggzgamingzone.org">Zone de jeux GGZ</ulink>. En vous connectant sur un serveur Puissance 4 sur Internet, vous pouvez défier d'autres joueurs dans des parties à plusieurs joueurs. Pour obtenir des informations récentes et une liste de serveurs disponibles, consultez le <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">site Web des jeux GNOME</ulink>.</para>
+  <para>Pour commencer une nouvelle partie de Puissance 4 en réseau, choisissez <menuchoice><guimenu>Jeu</guimenu><guimenuitem>Partie en réseau</guimenuitem></menuchoice> dans le menu de Puissance 4.</para> 
+
+<sect2 id="connecting">
+<title>Connexion à un serveur réseau de Puissance 4</title>
+<para>La boîte de dialogue de connexion de Puissance 4 apparaît dès que vous demandez une nouvelle partie en réseau. Cette boîte de dialogue vous permet de vous connecter à un serveur et de définir le nom d'utilisateur que vous utiliserez pour cette connexion.</para>
+
+<para>On peut se connecter à un serveur avec un compte invité ou avec un compte nominatif standard. Les comptes invités vous permettent de vous connecter de manière anonyme, alors qu'un compte nominatif vous permet de réserver votre propre nom d'utilisateur qui sera protégé par un mot de passe de votre choix.</para>
+
+<para>L'option <guimenuitem>Connexion en tant qu'invité</guimenuitem> doit être sélectionnée si vous souhaitez vous connecter de façon anonyme. Si vous souhaitez créer un nouveau compte, choisissez l'option <guimenuitem>Première connexion</guimenuitem>, en indiquant un nom d'utilisateur, un mot de passe et une adresse électronique de votre choix. Si vous disposez déjà d'un compte, vous pouvez vous connecter en utilisant l'option <guimenuitem>Connexion normale</guimenuitem> et en indiquant votre nom d'utilisateur et votre mot de passe.</para>
+<para>Pour vous connecter à un serveur, cliquez sur le bouton <guimenuitem>Se connecter</guimenuitem>.</para>
+<figure id="connect">
+<title>La boîte de dialogue de connexion de Puissance 4.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>La boîte de dialogue de connexion de Puissance 4.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Entrée dans un salon de jeu</title>
+<para>Après une connexion réussie à un serveur, vous pouvez choisir de rejoindre un salon de jeu. Pour jouer en réseau à Puissance 4, sélectionnez le salon « Four-in-a-Row ». Si vous souhaitez héberger vous-même une partie, cliquez sur le bouton Lancer. Cela crée une nouvelle table pouvant accueillir des adversaires pour jouer contre vous. S'il y a d'autres parties déjà lancées, vous pouvez double-cliquer sur une table de salon de jeu pour la rejoindre. La liste des tables de jeu sur la droite vous montre le nombre de sièges disponibles, ce qui correspond au nombre de joueurs pouvant rejoindre la table de jeu.</para>
+<figure id="tables">
+<title>La boîte de dialogue réseau de Puissance 4 vous permet de rejoindre un salon de jeu pour y trouver d'autres joueurs.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>La boîte de dialogue réseau de Puissance 4 vous permet de rejoindre un salon de jeu pour y trouver d'autres joueurs.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>Lorsque vous créez une nouvelle table pour des parties de Puissance 4, une boîte de dialogue de préférences apparaît. Elle vous permet de personnaliser la partie, comme par exemple le nombre minimum de joueurs pour une partie. Dès que le nombre total de sièges est occupé, plus aucun autre joueur ne peut rejoindre la table de jeu.</para>
+<para>Il est possible de converser avec d'autres joueurs lors de parties en réseau. Vous pouvez demander conseil ou de l'aide sur la manière de jouer, mais de grâce, soyez poli envers les autres joueurs.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Attente de l'arrivée d'autres joueurs</title>
+<para>Après avoir rejoint une table de jeu, il s'agit de patienter jusqu'à ce qu'un nombre suffisant de joueurs aient rejoint la table. L'élément de menu <guimenuitem>Liste des joueurs</guimenuitem> permet de voir une liste de joueurs qui ont rejoint la table de jeu. La partie démarre immédiatement dès que le nombre total de joueurs pour cette partie est atteint.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Parties de Puissance 4 en réseau</title>
+<para>Les parties de Puissance 4 en réseau présentent à peu près les mêmes règles que les parties normales, à la différence que vous jouez cette fois contre des adversaires humains. Cela signifie qu'il faut peut-être utiliser d'autres stratégies que lors des parties contre l'ordinateur.</para>
+<para>Dès qu'un joueur a gagné, la partie se termine et vous pouvez retourner à l'écran initial du jeu en réseau. Vous pouvez alors recommencer une autre partie passionante de Puissance 4 en réseau !</para>
+</sect2>
+
+</sect1>
+
+
+
+  <!-- ===== Bugs ============================================== -->
+
+
+  <sect1 id="bugs">
+
+    <title>Problèmes connus et limitations</title>
+
+    <para>Il peut arriver parfois que l'animation d'un jeton qui tombe ne soit pas très fluide.</para>
+
+  </sect1>
+
+
+  <!-- ===== Authors =========================================== -->
+
+
+  <sect1 id="authors">
+
+    <title>Auteurs</title>
+
+    <para><application>Puissance 4</application> a été écrit par Timothy Musson (<email>trmusson@ihug.co.nz</email>) et David Neary (<email>bolsh@gimp.org</email>). Plusieurs autres personnes ont consacré du temps à aider de différentes manières depuis la création de <application>Puissance 4</application>.</para>
+    <para>Le <ulink type="http" url="http://www.ce.unipr.it/~gbe/velena.html">moteur Velena</ulink>, source de la stratégie de calcul de <application>Puissance 4</application>, a été écrit par Giuliano Bertoletti. Nous le remercions de nous avoir permis d'utiliser son travail, sans lequel <application>Puissance 4</application> ne serait de loin pas aussi attractif.</para>
+    <para>Ce manuel a été écrit par Timothy Musson.</para>
+    <para>Pour rapporter une anomalie ou émettre une suggestion concernant cette application ou ce manuel, procédez comme indiqué sur <ulink url="ghelp:user-guide?feedback-bugs" type="help">ce document</ulink>.</para>
+
+
+<!-- For translations: uncomment this:
+
+  <para>
+    Latin translation was done by ME
+    (<email>MYNAME@MYADDRESS</email>). Please send all comments and
+    suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+-->
+
+  </sect1>
+
+
+  <!-- ============= License =================================== -->
+
+
+  <sect1 id="license">
+
+    <title>Licence</title>
+
+    <para>Ce programme est un logiciel libre ; vous pouvez le redistribuer ou le modifier selon les termes de la <citetitle>GNU General Public License</citetitle>, tels que publiés par la Free Software Foundation ; soit la version 2 de cette licence ou (à votre choix) toute version ultérieure.</para>
+
+    <para>Ce programme est distribué dans l’espoir qu’il sera utile, mais SANS AUCUNE GARANTIE, ni explicite ni implicite; sans même les garanties de commercialisation ou d’adaptation dans un but spécifique. Se référer à la <citetitle>GNU General Public License</citetitle> pour plus de détails.</para>
+
+    <para>Une copie de la <citetitle>GNU General Public License</citetitle> est inclue sous forme d'annexe au <citetitle>Guide d'utilisation du bureau GNOME</citetitle>. Vous pouvez également obtenir une copie de la <citetitle>GNU General Public License</citetitle> à la Free Software Foundation en visitant <ulink url="http://www.fsf.org" type="http">leur site Web</ulink> ou en écrivant à <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+
+  </sect1>
+
+</article>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="winning" xml:lang="da">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="hint"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Enkle fif til hvordan spillet vindes.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-26" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  
+  <title>Vind i <app>GNOME Teravex</app></title>
+  
+  <note>
+    <p>De følgende fif vil ikke garantere at du kan gennemføre et spil. De er i steden for ment som en hjælp.</p>
+  </note>
+  
+  <section id="winning-single">
+    <title>Kig efter et tal der kun er et af</title>
+    <p>Når du starter et nyt spil, så kig efter et tal der er alene, eller et tal som ikke har lignende tal som kan placeres ved siden af.</p>
+    <p>Hvis du har et sådant tal, er den brik en gyldig startbrik, da du ved hvor den skal placeres.</p>
+    <p>Bemærk at jo større brættet er, jo sværere er det at finde et sådant tal.</p>
+  </section>
+  <!-- This is just an idea... need to think about it... -->
+  <section id="winning-share">
+    <title>Har du et fif du ønsker at dele?</title>
+    <p>Hvis du har et fif til <app>GNOME Tetravex</app> du ønsker at dele, eller til et andet GNOME-spil så skriv til os på gnome-doc-list@gnome.org. Vi vil tilføje dem her! (Bemærk at fiffet skal indsendes på engelsk).</p>
+  </section>
+</page>

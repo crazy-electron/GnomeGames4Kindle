@@ -1,0 +1,338 @@
+/* config.h.in.  Generated from configure.in by autoheader.  */
+
+/* AF_UNIX is available */
+#undef AF_LOCAL
+
+/* The default card theme */
+#undef AR_CARD_THEME_DEFAULT
+
+/* The default card theme format type string */
+#undef AR_CARD_THEME_DEFAULT_FORMAT_STRING
+
+/* Define for binary relocation support */
+#undef ENABLE_BINRELOC
+
+/* Define to enable prerendered card theme format support */
+#undef ENABLE_CARD_THEME_FORMAT_FIXED
+
+/* Define to enable KDE card theme format support */
+#undef ENABLE_CARD_THEME_FORMAT_KDE
+
+/* Define to enable PySol card theme format support */
+#undef ENABLE_CARD_THEME_FORMAT_PYSOL
+
+/* Define to enable pre-2.19 card theme format support */
+#undef ENABLE_CARD_THEME_FORMAT_SLICED
+
+/* Define to enable SVG card theme format support */
+#undef ENABLE_CARD_THEME_FORMAT_SVG
+
+/* Define extra debugging UI in Aisleriot is enabled */
+#undef ENABLE_DEBUG_UI
+
+/* Enable compilation of included GNU Chess as AI chess engine for glChess */
+#undef ENABLE_GNUCHESS
+
+/* always defined to indicate that i18n is enabled */
+#undef ENABLE_NLS
+
+/* Define if use of setgid binaries is enabled */
+#undef ENABLE_SETGID
+
+/* Define if sound support is enabled */
+#undef ENABLE_SOUND
+
+/* The gettext package name */
+#undef GETTEXT_PACKAGE
+
+/* Enable additional debugging at the expense of performance and size */
+#undef GNOME_ENABLE_DEBUG
+
+/* Define to 1 if you have the `alarm' function. */
+#undef HAVE_ALARM
+
+/* Define to 1 if you have the `bind_textdomain_codeset' function. */
+#undef HAVE_BIND_TEXTDOMAIN_CODESET
+
+/* Define to 1 if you have the `close' function. */
+#undef HAVE_CLOSE
+
+/* Define to 1 if you have the `dcgettext' function. */
+#undef HAVE_DCGETTEXT
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#undef HAVE_DLFCN_H
+
+/* Define to 1 if you don't have `vprintf' but do have `_doprnt.' */
+#undef HAVE_DOPRNT
+
+/* Define to 1 if you have the `dup2' function. */
+#undef HAVE_DUP2
+
+/* Define to 1 if you have the <fcntl.h> header file. */
+#undef HAVE_FCNTL_H
+
+/* Define to 1 if you have the `fork' function. */
+#undef HAVE_FORK
+
+/* Define to 1 if you have the `getenv' function. */
+#undef HAVE_GETENV
+
+/* Define to 1 if you have the `getpwuid' function. */
+#undef HAVE_GETPWUID
+
+/* Define if the GNU gettext() function is already present or preinstalled. */
+#undef HAVE_GETTEXT
+
+/* Define if GLX is available */
+#undef HAVE_GLX
+
+/* Define if GNOME support is enabled */
+#undef HAVE_GNOME
+
+/* Define if guile version is 1.8.0 or above */
+#undef HAVE_GUILE_1_8
+
+/* Define if Hildon support is enabled */
+#undef HAVE_HILDON
+
+/* Define to 1 if you have the `hstrerror' function. */
+#undef HAVE_HSTRERROR
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* Define to 1 if you have the `kill' function. */
+#undef HAVE_KILL
+
+/* Define if your <locale.h> file defines LC_MESSAGES. */
+#undef HAVE_LC_MESSAGES
+
+/* Define to 1 if you have the <limits.h> header file. */
+#undef HAVE_LIMITS_H
+
+/* Define to 1 if you have the <locale.h> header file. */
+#undef HAVE_LOCALE_H
+
+/* Define if Maemo support is enabled */
+#undef HAVE_MAEMO
+
+/* Define if Maemo 3.x support is enabled */
+#undef HAVE_MAEMO_3
+
+/* Define if Maemo 4.x support is enabled */
+#undef HAVE_MAEMO_4
+
+/* Define if Maemo 5.x support is enabled */
+#undef HAVE_MAEMO_5
+
+/* Define to 1 if you have the `malloc' function. */
+#undef HAVE_MALLOC
+
+/* Define to 1 if you have the <memory.h> header file. */
+#undef HAVE_MEMORY_H
+
+/* Define to 1 if you have the <netdb.h> header file. */
+#undef HAVE_NETDB_H
+
+/* Define if OpenGL is available */
+#undef HAVE_OPENGL
+
+/* Define to 1 if your system has a GNU libc compatible `realloc' function,
+   and to 0 otherwise. */
+#undef HAVE_REALLOC
+
+/* Refine if librsvg is available */
+#undef HAVE_RSVG
+
+/* Define if librsvg has gnome-vfs support */
+#undef HAVE_RSVG_GNOMEVFS
+
+/* Define to 1 if you have the `select' function. */
+#undef HAVE_SELECT
+
+/* Define to 1 if you have the `setenv' function. */
+#undef HAVE_SETENV
+
+/* Define to 1 if you have the `socketpair' function. */
+#undef HAVE_SOCKETPAIR
+
+/* Refine if sqlite is available */
+#undef HAVE_SQLITE
+
+/* Define to 1 if stdbool.h conforms to C99. */
+#undef HAVE_STDBOOL_H
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define to 1 if you have the `strcasecmp' function. */
+#undef HAVE_STRCASECMP
+
+/* Define to 1 if you have the `strchr' function. */
+#undef HAVE_STRCHR
+
+/* Define to 1 if you have the `strcoll' function and it is properly defined.
+   */
+#undef HAVE_STRCOLL
+
+/* Define to 1 if you have the `strerror' function. */
+#undef HAVE_STRERROR
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Define to 1 if you have the <sys/select.h> header file. */
+#undef HAVE_SYS_SELECT_H
+
+/* Define to 1 if you have the <sys/socket.h> header file. */
+#undef HAVE_SYS_SOCKET_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/time.h> header file. */
+#undef HAVE_SYS_TIME_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have <sys/wait.h> that is POSIX.1 compatible. */
+#undef HAVE_SYS_WAIT_H
+
+/* Define to 1 if you have the <time.h> header file. */
+#undef HAVE_TIME_H
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* Define to 1 if you have the `vfork' function. */
+#undef HAVE_VFORK
+
+/* Define to 1 if you have the <vfork.h> header file. */
+#undef HAVE_VFORK_H
+
+/* Define to 1 if you have the `vprintf' function. */
+#undef HAVE_VPRINTF
+
+/* Define to 1 if you have the <winsock2.h> header file. */
+#undef HAVE_WINSOCK2_H
+
+/* Define to 1 if `fork' works. */
+#undef HAVE_WORKING_FORK
+
+/* Define to 1 if `vfork' works. */
+#undef HAVE_WORKING_VFORK
+
+/* Define to 1 if the system has the type `_Bool'. */
+#undef HAVE__BOOL
+
+/* The help file format */
+#undef HELP_FILE_FORMAT
+
+/* The base path to the KDE card themes */
+#undef KDE_CARD_THEME_PATH
+
+/* The full distribution description */
+#undef LSB_DISTRIBUTION
+
+/* The distributor ID */
+#undef LSB_DISTRIBUTOR
+
+/* Define to the sub-directory in which libtool stores uninstalled libraries.
+   */
+#undef LT_OBJDIR
+
+/* Define to 1 if your C compiler doesn't accept -c and -o together. */
+#undef NO_MINUS_C_MINUS_O
+
+/* Name of package */
+#undef PACKAGE
+
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* PF_UNIX is available */
+#undef PF_LOCAL
+
+/* The base path to the PySol card themes */
+#undef PYSOL_CARD_THEME_PATH
+
+/* Define as the return type of signal handlers (`int' or `void'). */
+#undef RETSIGTYPE
+
+/* Define to the type of arg 1 for `select'. */
+#undef SELECT_TYPE_ARG1
+
+/* Define to the type of args 2, 3 and 4 for `select'. */
+#undef SELECT_TYPE_ARG234
+
+/* Define to the type of arg 5 for `select'. */
+#undef SELECT_TYPE_ARG5
+
+/* Define to 1 if you have the ANSI C header files. */
+#undef STDC_HEADERS
+
+/* Define to 1 if you can safely include both <sys/time.h> and <time.h>. */
+#undef TIME_WITH_SYS_TIME
+
+/* Version number of package */
+#undef VERSION
+
+/* Define to use help using file */
+#undef WITH_HELP_METHOD_FILE
+
+/* Define to use help using ghelp */
+#undef WITH_HELP_METHOD_GHELP
+
+/* Define to use help using library.gnome.org */
+#undef WITH_HELP_METHOD_LIBRARY
+
+/* Define if smclient is enabled */
+#undef WITH_SMCLIENT
+
+/* Define to empty if `const' does not conform to ANSI C. */
+#undef const
+
+/* Define to `__inline__' or `__inline' if that's what the C compiler
+   calls it, or to nothing if 'inline' is not supported under any name.  */
+#ifndef __cplusplus
+#undef inline
+#endif
+
+/* Define to `int' if <sys/types.h> does not define. */
+#undef pid_t
+
+/* Define to rpl_realloc if the replacement function should be used. */
+#undef realloc
+
+/* Define to `unsigned int' if <sys/types.h> does not define. */
+#undef size_t
+
+/* Define as `fork' if `vfork' does not work. */
+#undef vfork
+
+/* Define to empty if the keyword `volatile' does not work. Warning: valid
+   code using `volatile' can become incorrect without. Disable with care. */
+#undef volatile

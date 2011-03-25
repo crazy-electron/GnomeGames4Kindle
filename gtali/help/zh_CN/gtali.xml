@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Tali</application>">
+<!ENTITY appname "Tali">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="zh_CN">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title><application>Tali 掷骰子</application>小游戏手册</title>
+    <abstract role="description">
+      <para>GNOME 掷骰子游戏跟 Yahtzee 类似，或者像扑克骰子。玩家掷骰子掷出最好的组合，像四个相同、小顺子、满堂红等。玩家每轮可以有掷三次的机会，并且每轮要根据点数选择一项积分。</para>
+    </abstract>
+    <copyright>
+      <year>2001</year>
+      <holder>Scott D. Heavner</holder>
+    </copyright><copyright><year>2010</year><holder>TeliuTe (teliute@163.com)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOME 文档项目</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>对于本文档的复制、分发和/或修改必须遵循自由软件基金会 (Free Software Foundation) 发布的 GNU 自由文档许可证 (GFDL) 版本 1.1 或更高版本，该许可证没有固定的部分、没有封面和背页文本。您可以在此<ulink type="help" url="ghelp:fdl">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副本。</para>
+         <para>本手册是在 GFDL 许可之下分发的 GNOME 手册集合的一部分。如果想要单独分发此手册，可以在手册中添加该许可证的一份副本然后分发，如该许可证的第 6 部分所述。</para>
+
+	<para>各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 GNOME 文档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而表明它们是商标。</para>
+
+	<para>本文档以及文档的修改版本都是在遵循 GNU 自由文档许可证的条款下提供，这表示具有以下含义：<orderedlist>
+		<listitem>
+		  <para>文档按“原样”提供，不提供任何明示或暗示的保证，包括但不限于：文档或文档的修改版本没有适销性方面的缺陷、适合特定目的的适用性，以及没有侵权行为。您将自行承担本文档以及文档修改版本的质量、准确性以及性能方面的风险。如果任何文档或文档修改版本存在缺陷，您(而不是最初的编写者、作者或撰写人)将承担所有必需的服务、维修或更正的费用。此免责声明是本许可证的重要组成部分。如果不接受此免责声明，那么您就没有权利使用任何文档或文档的修改版本；并且</para>
+		</listitem>
+		<listitem>
+		  <para>无论在任何情况以及在任何法律理论下，本文档或文档修改版本的作者、最初的编写者、任何撰写人或任何分发者，或者任意这些方的任何提供者都不对任何人由于使用本文档或文档修改版本引起或带来的任何直接的、间接的、特殊的、偶然的或继发的损失承担任何民事(包括疏忽)、合同或其它方面的责任，这些损失包括但不限于信誉损失、工作停止、计算机失败或故障，或任何以及所有其它损失或由此引发的或与之相关的损失，即使这些方已被告知存在出现此类损失的可能性时也是如此。</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+	
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Scott D</firstname> 
+	<surname>Heavner</surname> 
+	<affiliation> 
+	  <address> <email>sdh@po.cwru.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>掷骰子小游戏手册2.28版</revnumber> 
+	<date>2004年9月</date> 
+	<revdescription> 
+	  <para role="author">Scott D Heavner <email>sdh@po.cwru.edu</email></para>
+	  <para role="publisher">GNOME 文档项目</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>本手册讲述的是掷骰子小游戏2.12版。</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>反馈</title> 
+      <para>要报告关于<application>掷骰子</application>程序或使用手册中的缺陷，或者提出建议，请参照 <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME 反馈页</ulink> 上的指导。</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME 掷骰子</primary> 
+  </indexterm>
+
+ <!-- ============= Document Body ============================= -->
+
+  <sect1 id="intro">
+    <title>介绍</title>
+
+    <para><application>GNOME 掷骰子</application> 是用骰子玩小钱的扑克类游戏。您有三次机会掷5个骰子，然后创造最佳<quote>一手</quote>。两次重掷可以是全部骰子，也可以是其中的几个。</para>
+    <para><application>GNOME 掷骰子</application> 跟 Yahtzee 骰子游戏非常相像，Yahtzee 是 Hasbro 公司的注册商标。</para>
+
+    <para>要运行<application>GNOME 掷骰子</application>小游戏，点菜单 <menuchoice><guisubmenu>游戏</guisubmenu><guimenuitem>GNOME Tali</guimenuitem></menuchoice>，或者在命令行输入 <command>gtali</command>。</para>
+
+    <para><application>GNOME 掷骰子</application>小游戏包含在 <filename>gnome-games</filename> 软件包中，它是 GNOME 桌面环境的一部分。本文档讲述的是 <application>GNOME 掷骰子</application>小游戏2.8版。</para>
+  </sect1>
+
+  <sect1 id="playing">
+    <title>玩 GNOME 掷骰子小游戏</title>
+
+    <figure id="shot1">
+      <title>GNOME 掷骰子操作</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="Trevor Curtis"/>
+	</imageobject>
+    <textobject> 
+      <phrase>GNOME 掷骰子主窗口图。</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>游戏开始后，会直接显示五个骰子第一次掷出的结果。</para>
+
+      <orderedlist>
+        <listitem>
+          <para>点击选中您想重新再掷的骰子。</para>
+        </listitem>
+        <listitem>
+          <para>如果您想掷全部骰子，点击 <guibutton>全部重掷!</guibutton> 按钮。</para>
+        </listitem>
+        <listitem>
+	  <para>当您掷出一手自己喜欢的，或者是三次机会用完了，在积分表中选一项得分最高的。如果您点错了行，很有可能得零分，点完就没法撤消了。(举个例子，您掷出了5个相同的，但是错误地点到了大顺子行上，那么就会得零分，这时是按照大顺子来给分的)。</para>
+      </listitem>
+    </orderedlist>
+
+    <para>得分表上的每项只有一次选择机会，例如，您选了一项并得了分，下次这一项会得更多分时，已经不能再改了。</para>
+
+    <para>这个规则只有一种例外情况，如果您再次掷出了五个相同，可以接着点选五个相同，由此可再得50点积分。当您再掷出五个相同还可以接着点选得分，直到您填充完其他行结束游戏。要注意如果这一行已经得了零分(您之前没有得分而点了此行)，那么就不能再往里面加分了，这一行最终只能得零分。</para>
+
+    <para>如果您上边六行的得分超过63分，还会得到35点的奖励。</para>
+
+    <sect2 id="keyboard">
+    <title>使用键盘</title> 
+
+      <para>作为键盘的辅助，按键1到5是你想点击的五个骰子，按一下扣住再按一下翻开。使用常用的按键来掷骰子和选择行，例如，使用 Tab 键切换计分表和骰子，使用方向键来选择不同行，按空格键选中。</para>
+    
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="options">
+    <title>游戏选项</title>
+
+    <figure id="shot2">
+      <title>GNOME 掷骰子游戏首选项</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences.png" format="PNG" srccredit="Trevor Curtis"/>
+	</imageobject>
+    <textobject> 
+      <phrase>GNOME 掷骰子游戏首选项对话框</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+      <variablelist><title>人类玩家</title>
+	<varlistentry>
+	  <term><guimenuitem>玩家数量</guimenuitem></term>
+	  <listitem>
+            <para>选择人类玩家的数量。依据上面的描述，最多只允许有6个玩家。</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>  
+      
+    <variablelist><title>电脑对手</title>
+      <varlistentry>
+        <term><guimenuitem>两次掷出的时间间隔</guimenuitem></term>
+	<listitem>
+	  <para>让电脑对手在掷出前暂停，这样你就可以看清它们的操作，这会让游戏慢一些。</para>
+        </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guimenuitem>对手数量</guimenuitem></term>
+	  <listitem>
+            <para>选择电脑对手的数量，您最多只能有6个玩家，包括人类和电脑，如果您想增大这个数目，那么人类玩家的数目就会减少。</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>
+      
+    <variablelist><title>游戏类型</title>
+      <varlistentry>
+        <term><guimenuitem>游戏所玩的版本</guimenuitem></term>
+	<listitem>
+	  <para>玩其他规则的版本(类似于 Yahtzee)或者带花色的版本(类似于 Kismet)。如果您更改了游戏类型，必需要退出重新进入游戏才能生效。</para>
+        </listitem>
+	</varlistentry>
+      </variablelist>
+      
+      <variablelist>
+	<varlistentry>
+	    <term><guimenuitem>玩家姓名</guimenuitem></term>
+	    <listitem>
+	      <para>要更改玩家的姓名，只需在文本框中输入新的名称。</para>
+	    </listitem>
+	</varlistentry>
+      </variablelist>
+    </sect1>
+
+    <sect1 id="strategy">
+      <title>游戏攻略</title>
+      <para>在上半部分超过63分才能得到奖励，需要每一行都要获得类型三倍的得分。如果在五和六上能有超过三倍的得分，那么您可以让一或二的行上放置失败的掷出，仍然可以获得奖励。在花色版本种，如果您在上半部分的得分在71到77之间，会得到55分的奖励，如果超过77分可以得到75分的奖励。</para>
+      <para>不要忘了可以多次填写五个相同，如果您再次掷出五个相同，还可以选择它以获得更多积分，这只用于普通规则的游戏。</para>
+    </sect1>	
+ <!-- ============= Bugs ================================== -->
+ <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of. 
+      
+      Better to leave this section out than to say something unhelpful. 
+-->
+
+ <sect1 id="bugs">
+  <title>了解缺陷和限制</title>
+  <para>当您切换游戏类型时，只有在下次启动时才能生效，它应该还可以用“错误”的骰子继续玩。</para>
+ </sect1>
+
+
+ <sect1 id="glossary">
+   <title>术语表</title>
+   <note>
+     <para>记住，骰子的顺序并不重要。</para>
+   </note>
+   <glossary>
+       <glossentry id="threeofakind"><glossterm>3个相同</glossterm>
+         <glossdef><para>有三个骰子的点数相同，得分是所有骰子点数总和。例如，1，2，2，2，5。</para></glossdef>
+       </glossentry>
+       <glossentry id="fourofakind"><glossterm>4个相同</glossterm>
+         <glossdef><para>有四个骰子的点数相同，得分是所有骰子点数总和。例如，2，5，5，5，5。在花色游戏中得分是25加上所有骰子点数之和。</para></glossdef>
+       </glossentry>
+       <glossentry id="yahtzee"><glossterm>5个相同</glossterm>
+         <glossdef><para>五个骰子的点数都相同。例如：5，5，5，5，5，5。在花色游戏中得分是50加上所有骰子点数之和。</para></glossdef>
+       </glossentry>
+       <glossentry id="fullhouse"><glossterm>满堂红</glossterm>
+         <glossdef><para>五个骰子分成两组：一组是三个相同，另一组是两个相同。例如：1，1，4，4，4。在花色游戏中，得分是15加上所有骰子点数之和。</para></glossdef>
+       </glossentry>
+       <glossentry id="fullhousesamecolor"><glossterm>同色满堂红</glossterm>
+         <glossdef><para>这一项仅用于花色游戏，五个骰子分成两组：一组三个是相同点数，另一组两个是相同数字。数字必须都是相同的颜色。例如：3，3，3，4，4。两组骰子都是相同颜色，如果它们点数和是7的骰子：1和6是黑色，2和5是红色，3和4是绿色。得分是20加上点数之和。</para></glossdef>
+       </glossentry>
+       <glossentry id="twopairsamecolor"><glossterm>两对同色</glossterm>
+         <glossdef><para>这一项仅用于花色游戏，五个骰子分成两组：一组两个是相同点数，另一组两个是相同数字。成对的骰子必须都是相同的颜色。例如：3，3，4，4。两组骰子都是相同颜色，如果它们点数和是7的骰子：1和6是黑色，2和5是红色，3和4是绿色。第五个骰子可以是任意数。得分是所有骰子点数之和。</para></glossdef>
+       </glossentry>
+       <glossentry id="flush"><glossterm>同花</glossterm>
+         <glossdef><para>这一项仅用于花色游戏，五个骰子都是相同“颜色”，两个骰子如果它们点数和是7的骰子：1和6是黑色，2和5是红色，3和4是绿色。第五个可以是任意数，得分是35。</para></glossdef>
+       </glossentry>
+       <glossentry id="largestraight"><glossterm>大顺子</glossterm>
+         <glossdef><para>五个骰子的点数依次排列。例如：2，3，4，5，6。得分是40分。</para></glossdef>
+       </glossentry>
+       <glossentry id="smallstraight"><glossterm>小顺子</glossterm>
+         <glossdef><para>四个骰子的点数依次排列，第五个可以是任意数。例如：2，3，4，5，5。这一项仅用于普通规则游戏。得分是30分。</para></glossdef>
+       </glossentry>
+   </glossary>
+ </sect1>
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>作者</title>
+  <para><application>GNOME 掷骰子</application>小游戏由 Scott Heavner (<email>sdh@po.cwru.edu</email>)和 Orest Zborowski 编写，本手册由 Scott D Heavner (<email>sdh@po.cwru.edu</email>) 书写，额外的素材由 Callum McKenzie (<email>callum@physics.otago.ac.nz</email>)添加。要报告缺陷或者提出建议，请参照 <ulink url="ghelp:user-guide?feedback-bugs" type="help">文档</ulink> 上的指导。</para>
+
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>许可协议</title>
+  <para>本程序是自由软件，您可以在遵守自由软件基金会发布的 <ulink type="help" url="gnome-help:gpl"><citetitle>GNU 通用许可证</citetitle></ulink> 第2版或更高(如您所愿)版本下，重新分发和/或修改它。</para>
+  <para>本程序的发布意图是希望它有所用处，但请注意它没有任何担保，甚至不包括商业用途、以及特殊目的保证。更多相关细节，请参阅 <citetitle>GNU 通用公共许可证</citetitle>。</para>
+  <para>在<citetitle>GNOME 用户指南</citetitle> 的附录中包含了一份 <citetitle>GNU 通用许可证</citetitle>的副本，您也可以通过访问自由软件基金会的<ulink type="http" url="http://www.fsf.org">网站</ulink>上获得 <citetitle>GNU 通用许可证</citetitle>的副本，或者写信给 <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address> 来索取。</para>
+ </sect1>
+</article>

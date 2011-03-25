@@ -1,0 +1,611 @@
+# Danish translation manual GNOME Teravex.
+# Copyright (C) 2010 Joe Hansen.
+# This file is distributed under the same license as the gnome-games package.
+# Joe Hansen (joedalton2@yahoo.dk), 2009, 2010.
+#
+#  Bug 595771 er indsendt på den her vedrørende to ting
+#  Gnotravex -> Tretravex og Settings -> Size (de er rettet)
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games master\n"
+"POT-Creation-Date: 2010-03-23 23:27+0000\n"
+"PO-Revision-Date: 2010-03-28 01:42+0000\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: C/winning.page:9(desc)
+msgid "Simple tips on how to possibly win a game."
+msgstr "Enkle fif til hvordan spillet vindes."
+
+#: C/winning.page:12(name) C/usage.page:11(name) C/size.page:10(name)
+#: C/shortcut.page:11(name) C/multiplayer.page:10(name) C/move.page:11(name)
+#: C/index.page:17(name) C/hint.page:10(name) C/gameplay.page:10(name)
+msgid "Milo Casagrande"
+msgstr "Milo Casagrande"
+
+#: C/winning.page:13(email) C/usage.page:12(email) C/size.page:11(email)
+#: C/shortcut.page:12(email) C/multiplayer.page:11(email)
+#: C/move.page:12(email) C/index.page:18(email) C/hint.page:11(email)
+#: C/gameplay.page:11(email)
+msgid "milo@ubuntu.com"
+msgstr "milo@ubuntu.com"
+
+#: C/winning.page:16(p) C/usage.page:19(p) C/size.page:14(p)
+#: C/shortcut.page:15(p) C/multiplayer.page:14(p) C/move.page:15(p)
+#: C/index.page:21(p) C/gameplay.page:14(p)
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons Share Alike 3.0"
+
+#: C/winning.page:20(title)
+msgid "Win <app>GNOME Tetravex</app>"
+msgstr "Vind i <app>GNOME Teravex</app>"
+
+#: C/winning.page:23(p)
+msgid ""
+"The following tips will not assure you to win a game, they are intended as a "
+"simple aid."
+msgstr ""
+"De følgende fif vil ikke garantere at du kan gennemføre et spil. De er i steden "
+"for ment som en hjælp."
+
+#: C/winning.page:30(title)
+msgid "Look for a single number"
+msgstr "Kig efter et tal der kun er et af"
+
+#: C/winning.page:31(p)
+msgid ""
+"When you start a new game, look for a single number, or a number that has no "
+"similar numbers that can be placed next to it."
+msgstr ""
+"Når du starter et nyt spil, så kig efter et tal der er alene, eller et tal "
+"som ikke har lignende tal som kan placeres ved siden af."
+
+#: C/winning.page:35(p)
+msgid ""
+"If you have one such number, that piece is a valid starting piece, since you "
+"know where it has to be placed."
+msgstr ""
+"Hvis du har et sådant tal, er den brik en gyldig startbrik, da du ved hvor "
+"den skal placeres."
+
+#: C/winning.page:39(p)
+msgid ""
+"Note that the bigger the size of the board, the harder is to find such a "
+"number."
+msgstr ""
+"Bemærk at jo større brættet er, jo sværere er det at finde et sådant tal."
+
+#: C/winning.page:46(title)
+msgid "Have a tip to share?"
+msgstr "Har du et fif du ønsker at dele?"
+
+#: C/winning.page:47(p)
+msgid ""
+"If you have a tip to share about <app>GNOME Tetravex</app>, or any other "
+"GNOME games, write us at gnome-doc-list@gnome.org. We will add them here!"
+msgstr ""
+"Hvis du har et fif til <app>GNOME Tetravex</app> du ønsker at dele, eller "
+"til et andet GNOME-spil så skriv til os på gnome-doc-list@gnome.org. Vi vil "
+"tilføje dem her! (Bemærk at fiffet skal indsendes på engelsk)."
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/usage.page:61(None)
+msgid ""
+"@@image: 'figures/gnotravex-video.ogv'; md5=14cface4ec2b0c84aa5a925242694de0"
+msgstr ""
+"@@image: 'figures/gnotravex-video.ogv'; md5=14cface4ec2b0c84aa5a925242694de0"
+
+#: C/usage.page:8(desc)
+msgid "How to play <app>GNOME Tetravex</app>."
+msgstr "Sådan spiller du <app>GNOME Tetravex</app>."
+
+#: C/usage.page:15(name) C/index.page:13(name)
+msgid "Rob Bradford"
+msgstr "Rob Bradford"
+
+#: C/usage.page:16(email) C/index.page:14(email)
+msgid "robster@debian.org"
+msgstr "robster@debian.org"
+
+#: C/usage.page:23(title)
+msgid "Play <app>GNOME Tetravex</app>"
+msgstr "Spil <app>GNOME Tetravex</app>"
+
+#: C/usage.page:26(title)
+msgid "Basic usage"
+msgstr "Grundlæggende brug"
+
+#: C/usage.page:27(p)
+msgid ""
+"The game window is divided into two boxes: the one on the right side of the "
+"window contains the pieces that needs to be arranged; the one on the left "
+"side of the window is where the pieces from the right box will be arranged "
+"and moved. Each piece is divided into four little triangles containing a "
+"number."
+msgstr ""
+"Spilområdet er inddelt i to bokse: Boksen til højre i vinduet består af "
+"de brikker som skal arrangeres korrekt; boksen til venstre i vinduet er "
+"stedet hvor brikkerne fra den højre boks skal placeres og eventuelt "
+"flyttes omkring. Hver brik er opdelt i fire små trekanter, der indeholder "
+"et tal."
+
+#: C/usage.page:34(p)
+msgid ""
+"The scope of the game is to position the pieces so that only two identical "
+"numbers are next to each other."
+msgstr ""
+"Formålet med spillet er at placere brikkerne så kun to identiske tal er "
+"placeret ved siden af hinanden."
+
+#: C/usage.page:38(p)
+msgid ""
+"It is not possible to position the pieces so that different number are next "
+"to each other."
+msgstr ""
+"Det er ikke muligt, at placere brikkerne så at forskellige tal står ved siden "
+"af hinanden."
+
+#: C/usage.page:42(p)
+msgid ""
+"The game is completed when you have positioned all the pieces in their right "
+"positions."
+msgstr ""
+"Spillet er færdigt, når du har placeret alle brikkerne på deres korrekte "
+"placering."
+
+#: C/usage.page:47(p)
+msgid ""
+"When you start <app>GNOME Tetravex</app>, the game will start immediately, "
+"and the time will start counting."
+msgstr ""
+"Når du starter <app>GNOME Tetravex</app>, vil spillet starte automatisk, og "
+"tidsregistreringen vil gå i gang."
+
+#: C/usage.page:56(title)
+msgid "Video demonstration"
+msgstr "Videodemonstration"
+
+#: C/usage.page:57(p)
+msgid ""
+"This short video shows how the game works, and what are the possible "
+"movements."
+msgstr ""
+"Denne korte video viser hvordan spillet virker og de mulige placeringer."
+
+#: C/usage.page:61(media)
+msgid "Simple demonstration of a game"
+msgstr "En enkel demonstration af spillet"
+
+#: C/size.page:7(desc)
+msgid "Change the size of the game board."
+msgstr "Ændr størrelsen på spillebrættet."
+
+#: C/size.page:17(title)
+msgid "Game board size"
+msgstr "Spillebrættes størrelse"
+
+#: C/size.page:19(p)
+msgid ""
+"To change the size of the game board, in order to increase or decrease the "
+"complexity of the game, choose <gui>Size</gui> from the main menu bar, and "
+"then select the dimension of the board."
+msgstr ""
+"For at ændre størrelsen på spillebrættet vælges <gui>Størrelse</gui> fra "
+"hovedmenubjælken og her vælges dimensionerne på brættet. Dette øger eller "
+"formindsker kompleksiteten på spillet."
+
+#: C/size.page:24(p)
+msgid ""
+"You can select from five different dimension, from 2×2 to 6×6. The default "
+"one is 3×3."
+msgstr ""
+"Du kan vælge fem forskellige dimensioner, fra 2×2 til 6×6. Standarden er "
+"3×3."
+
+#: C/size.page:28(p)
+msgid ""
+"If the pieces are too small, resizing the window will change their size."
+msgstr ""
+"Hvis brikkerne er for små, vil en ændring af vinduestørrelsen ændre "
+"størrelsen på brikkerne."
+
+#: C/shortcut.page:8(desc)
+msgid "Use the keyboard to play the game."
+msgstr "Brug tastaturet til spillet."
+
+#: C/shortcut.page:19(title)
+msgid "Keyboard shortcuts"
+msgstr "Tastaturgenveje"
+
+#: C/shortcut.page:22(title)
+msgid "Game shortcuts"
+msgstr "Spilgenveje"
+
+#: C/shortcut.page:23(p)
+msgid ""
+"The following table groups the most useful shortcuts for playing <app>GNOME "
+"Tetravex</app>."
+msgstr ""
+"Den følgende tabel grupperer de mest brugbare genveje til spillet <app>GNOME "
+"Tetravex</app>."
+
+#: C/shortcut.page:28(p)
+msgid "Shortcut"
+msgstr "Genvej"
+
+#: C/shortcut.page:28(p)
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: C/shortcut.page:32(key) C/shortcut.page:49(key) C/shortcut.page:58(key)
+#: C/shortcut.page:66(key) C/shortcut.page:74(key)
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: C/shortcut.page:32(key)
+msgid "N"
+msgstr "N"
+
+#: C/shortcut.page:35(p)
+msgid "Start a new game."
+msgstr "Start et nyt spil."
+
+#: C/shortcut.page:40(key)
+msgid "Pause"
+msgstr "Pause"
+
+#: C/shortcut.page:43(p)
+msgid "Pause or resume the game."
+msgstr "Pause eller genoptag spillet."
+
+#: C/shortcut.page:49(key)
+msgid "Up"
+msgstr "Op"
+
+#: C/shortcut.page:53(p)
+msgid "Move all the pieces in the left box up by one."
+msgstr "Flyt alle brikkerne i den venstre boks et felt op."
+
+#: C/shortcut.page:58(key)
+msgid "Down"
+msgstr "Ned"
+
+#: C/shortcut.page:61(p)
+msgid "Move all the pieces in the left box down by one."
+msgstr "Flyt alle brikkerne i den venstre boks et felt ned."
+
+#: C/shortcut.page:66(key)
+msgid "Left"
+msgstr "Venstre"
+
+#: C/shortcut.page:69(p)
+msgid "Move all the pieces in the left box left by one."
+msgstr "Flyt alle brikkerne i den venstre boks en mod venstre."
+
+#: C/shortcut.page:74(key)
+msgid "Right"
+msgstr "Højre"
+
+#: C/shortcut.page:77(p)
+msgid "Move all the pieces in the left box right by one."
+msgstr "Flyt alle brikkerne i den venstre boks en mod højre."
+
+#: C/multiplayer.page:7(desc)
+msgid "How to play with other people."
+msgstr "Sådan spiller du med andre."
+
+#: C/multiplayer.page:18(title)
+msgid "Play with other people"
+msgstr "Spil med andre"
+
+#: C/multiplayer.page:20(p)
+msgid ""
+"With <app>GNOME Tetravex</app> it is not possible to play with or against "
+"other people over the Internet or a local network."
+msgstr ""
+"Det er ikke muligt i <app>GNOME Tetravex</app> at spille med eller "
+"imod andre over internettet eller på et lokalt netværk."
+
+#: C/move.page:8(desc)
+msgid "How to move the pieces on the game board."
+msgstr "Sådan flytter du brikker på spilbrættet."
+
+#: C/move.page:19(title)
+msgid "Move the pieces"
+msgstr "Flyt brikkerne"
+
+#: C/move.page:22(title)
+msgid "Move a piece"
+msgstr "Flyt en brik"
+
+#: C/move.page:23(p)
+msgid ""
+"To move a piece, you need to click-and-hold on it, drag it from its current "
+"position to its new position, either on the right box or on the left box, "
+"and release the mouse button."
+msgstr ""
+"For at flytte en brik skal du klikke på den og holde museknappen nede. Træk "
+"den så fra sin nuværende placering til sin nye placering, enten i den højre "
+"boks eller den venstre, og slip så museknappen."
+
+#: C/move.page:28(p)
+msgid "These moves are not permanent and can be reversed."
+msgstr "Disse flytninger er ikke permanentet og kan omgøres."
+
+#: C/move.page:32(p)
+msgid ""
+"The pieces in the left box can be moved all at once in one direction. See "
+"<link xref=\"shortcut\"/> for more information."
+msgstr ""
+"Brikkerne i den venstre boks kan flyttes på en gang i en retning. Se "
+"<link xref=\"shortcut\"/> for yderligere information."
+
+#: C/move.page:39(title)
+msgid "Avoid the click-and-hold"
+msgstr "Undgå klik og hold"
+
+#: C/move.page:40(p)
+msgid ""
+"If you do not feel comfortable with the click-and-hold action to move the "
+"pieces, it is possible to change that behavior so that you only have to "
+"click on a piece to move it, and click again to release it in its new "
+"position."
+msgstr ""
+"Hvis du ikke er komfortabel med handlingen klik og hold til at flytte "
+"brikker omkring med, så er det muligt at ændre opførelsen, så du kan nøjes "
+"med at klikke på en brik for at flytte den, og så klikke igen på dens "
+"nye placering."
+
+#: C/move.page:45(p)
+msgid ""
+"To do that, from the main menu bar, choose <gui style=\"menu\">Move</gui>, "
+"and select <gui style=\"checkbox\">Click to Move</gui>."
+msgstr ""
+"For at gøre dette, vælg <gui style=\"menu\">Flyt</gui>, og vælg "
+"<gui style=\"checkbox\">Klik for at flytte</gui> fra hovedmenuen."
+
+#: C/license.page:8(desc)
+msgid "Legal information."
+msgstr "Juridisk information."
+
+#: C/license.page:11(title)
+msgid "License"
+msgstr "Licens"
+
+#: C/license.page:12(p)
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
+msgstr ""
+"Denne manual er distribueret under CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
+
+#: C/license.page:20(p)
+msgid "You are free:"
+msgstr "Du kan frit:"
+
+#: C/license.page:25(em)
+msgid "To share"
+msgstr "Dele"
+
+#: C/license.page:26(p)
+msgid "To copy, distribute and transmit the work."
+msgstr "Kopiere, distribuere og overføre denne manual."
+
+#: C/license.page:29(em)
+msgid "To remix"
+msgstr "Ændre sammensætning"
+
+#: C/license.page:30(p)
+msgid "To adapt the work."
+msgstr "Ændre i manualen."
+
+#: C/license.page:33(p)
+msgid "Under the following conditions:"
+msgstr "Under de følgende betingelser:"
+
+#: C/license.page:38(em)
+msgid "Attribution"
+msgstr "Attribution"
+
+#: C/license.page:39(p)
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+"Du skal attributere manualen, på den måde som er angivet af forfatteren eller "
+"licensindehaveren (men ikke på en måde som antyder at de tilslutter sig dig "
+"eller din brug af deres arbejde)."
+
+#: C/license.page:46(em)
+msgid "Share Alike"
+msgstr "Share Alike"
+
+#: C/license.page:47(p)
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Hvis du ændrer, transformerer eller bygger videre på dette arbejde, må du "
+"kun distribuere resultatet under den samme, lignende eller en kompatibel "
+"licens."
+
+#: C/license.page:53(p)
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"For den fulde licenstekst se <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons hjemmeside</"
+"link>, eller læs <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">the full Commons Deed</link>."
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/index.page:26(None)
+msgid ""
+"@@image: 'figures/gnotravex-logo.png'; md5=daf379ccd659b42a71cd0f2661f651e4"
+msgstr ""
+"@@image: 'figures/gnotravex-logo.png'; md5=daf379ccd659b42a71cd0f2661f651e4"
+
+#: C/index.page:8(title) C/index.page:9(title)
+msgid "GNOME Tetravex"
+msgstr "GNOME Tetravex"
+
+#: C/index.page:10(desc)
+msgid "GNOME Tetravex help."
+msgstr "Hjælp til GNOME Tetravex."
+
+#: C/index.page:25(title)
+msgid ""
+"<media type=\"image\" mime=\"image/png\" src=\"figures/gnotravex-logo.png"
+"\">GNOME Tetravex logo</media> GNOME Tetravex"
+msgstr ""
+"<media type=\"image\" mime=\"image/png\" src=\"figures/gnotravex-logo.png"
+"\">GNOME Tetravex' logo</media> GNOME Tetravex"
+
+#: C/index.page:31(title)
+msgid "Basic Gameplay &amp; Usage"
+msgstr "Grundlæggende spil &amp; brug"
+
+#: C/index.page:35(title)
+msgid "Multiplayer Game"
+msgstr "Flerspiller"
+
+#: C/index.page:39(title)
+msgid "Tips &amp; Tricks"
+msgstr "Fif &amp; ideer"
+
+#: C/hint.page:7(desc)
+msgid "Use hints or solve the game automatically."
+msgstr "Brug fif eller løs spillet automatisk."
+
+#: C/hint.page:14(title)
+msgid "Hints"
+msgstr "Fif"
+
+#: C/hint.page:17(p)
+msgid ""
+"If you use one of the following methods to complete the game, your scores "
+"will not be included among the high scores."
+msgstr ""
+"Hvis du bruger en af de følgende metoder til at færdiggøre spillet, vil "
+"dit resultat ikke blive inkluderet blandt de bedste resultater."
+
+#: C/hint.page:25(title)
+msgid "Use the hints system"
+msgstr "Brug fifsystemet"
+
+#: C/hint.page:27(p)
+msgid ""
+"At any time in the game, if you do not know how to start it, or where to "
+"move a piece, it is possible to use the built-in hints system."
+msgstr ""
+"På ethvert tidspunkt i spillet kan du, hvis du ikke ved hvordan det skal "
+"startes eller hvor en brik skal flyttes til, bruge det indbyggede fifsystem."
+
+#: C/hint.page:31(p)
+msgid ""
+"The system will move one piece from the right box to its correct position "
+"into the left box."
+msgstr ""
+"Systemet vil flytte en brik fra den højre boks til dens korrekte placering "
+"i den venstre boks."
+
+#: C/hint.page:35(p)
+msgid "To use the hints system, perform one of the following:"
+msgstr "For at bruge fifsystemet udføres en af de følgende handlinger:"
+
+#: C/hint.page:40(p)
+msgid "Press <keyseq><key>Ctrl</key><key>H</key></keyseq>."
+msgstr "Tryk på <keyseq><key>Ctrl</key><key>H</key></keyseq>."
+
+#: C/hint.page:45(p)
+msgid ""
+"Choose <guiseq><gui style=\"menu\">Game</gui><gui style=\"menuitem\">Hint</"
+"gui></guiseq>."
+msgstr ""
+"Vælg <guiseq><gui style=\"menu\">Spil</gui><gui style=\"menuitem\">Fif</"
+"gui></guiseq>."
+
+#: C/hint.page:52(title)
+msgid "Solve the game"
+msgstr "Løs spillet"
+
+#: C/hint.page:53(p)
+msgid ""
+"If you get stuck in the game, or you want to solve it automatically, choose "
+"<guiseq><gui style=\"menu\">Game</gui><gui style=\"menuitem\">Solve</gui></"
+"guiseq>."
+msgstr ""
+"Hvis du sidder fast i spillet eller du ønsker at løse det automatisk vælges "
+"<guiseq><gui style=\"menu\">Game</gui><gui style=\"menuitem\">Løs</gui></"
+"guiseq>."
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gameplay.page:32(None)
+msgid ""
+"@@image: 'figures/gnotravex-main-window.png'; "
+"md5=dd9c9be1bb7b724d6be5e76ffa6ee4d8"
+msgstr ""
+"@@image: 'figures/gnotravex-main-window.png'; "
+"md5=dd9c9be1bb7b724d6be5e76ffa6ee4d8"
+
+#: C/gameplay.page:7(desc)
+msgid "Introduction to <app>GNOME Tetravex</app>."
+msgstr "Introduktion til <app>GNOME Tetravex</app>."
+
+#: C/gameplay.page:18(title)
+msgid "Gameplay"
+msgstr "Spillet"
+
+#: C/gameplay.page:20(p)
+msgid ""
+"<app>GNOME Tetravex</app> is a simple puzzle game which scope is to move the "
+"various pieces from one side of the board to the other side, so that the "
+"same numbers depicted on the pieces are touching each other."
+msgstr ""
+"<app>GNOME Tetravex</app> er et simpelt puslespil, hvis formål er at flytte "
+"de forskellige brikker fra en side af brættet til den anden, på en måde så "
+"de samme tal afbilledet på brikkerne støder op imod hinanden."
+
+#: C/gameplay.page:25(p)
+msgid ""
+"The game is timed, and these times are used as the score for the game. You "
+"have to move all the pieces in the least time possible."
+msgstr ""
+"Spillet løses på tid og din tid bruges til resultatgivning. Du skal flytte "
+"alle brikkerne på den kortest mulige tid."
+
+#: C/gameplay.page:30(title)
+msgid "Main game window"
+msgstr "Hovedvindue for spillet"
+
+#: C/gameplay.page:31(desc)
+msgid "<app>Tetravex</app> main window"
+msgstr "Hovedvindue for <app>Tetravex</app>"
+
+#: C/gameplay.page:33(p)
+msgid "<app>Tetravex</app> main window."
+msgstr "Hovedvindue for <app>Tetravex</app>."
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/index.page:0(None)
+msgid "translator-credits"
+msgstr ""
+"Joe Hansen <joedalton2@yahoo.dk>, 2009, 2010.\n"
+"\n"
+"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
+"Mere info: http://www.dansk-gruppen.dk"
+
+

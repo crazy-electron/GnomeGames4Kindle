@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="size" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#play" group="three"/>
+    <desc>Αλλάξτε το μέγεθος του ταμπλώ.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-18" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  <title>Μέγεθος του ταμπλώ</title>
+
+  <p>Για να αλλάξετε το μέγεθος του ταμπλώ ώστε να αυξήσετε ή να μειώσετε την πολυπλοκότητα του παιχνιδιού, επιλέξτε <gui>Μέγεθος</gui> από την κύρια γραμμή μενού, και μετά επιλέξτε το μέγεθος του ταμπλώ.</p>
+  <p>Μπορείτε να επιλέξετε μεταξύ πέντε διαφορετικών διαστάσεων, από 2x2 έως 6x6. Η προεπιλογή είναι 3x3.</p>
+  <note style="tip">
+    <p>Αν τα κομμάτια είναι πολύ μικρά, η αλλαγή μεγέθους στο παράθυρο θα αλλάξει και το μέγεθός τους.</p>
+  </note>
+</page>

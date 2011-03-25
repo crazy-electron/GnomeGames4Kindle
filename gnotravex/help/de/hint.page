@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="hint" xml:lang="de">
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Hinweise benutzen oder das Spiel automatisch lösen.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-23" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+  </info>
+  <title>Tipps</title>
+
+  <note style="warning">
+    <p>Wenn Sie zur Vervollständigung des Spiels eine der folgenden Methoden verwenden, dann erscheinen die erzielten Wertungen nicht in der Bestenliste.</p>
+  </note>
+
+  <section id="hint-hints">
+  
+    <title>Verwendung des Hinweissystems</title>
+    
+    <p>Jederzeit können Sie das eingebaute Hinweissystem verwenden, sei es, dass Sie nicht wissen, wie Sie beginnen sollen, oder um einen möglichen Zug aufzeigen zu lassen.</p>
+    <p>Das System verschiebt einen Spielstein vom rechten Bereich des Spielfelds an seine korrekte Position im linken Bereich.</p>
+    <p>Um das Hinweissystem zu verwenden, gehen Sie wie folgt vor:</p>
+    <list>
+      <item>
+        <p>Drücken Sie <keyseq><key>Strg</key><key>H</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Wählen Sie <guiseq><gui style="menu">Spiel</gui><gui style="menuitem">Tipp</gui></guiseq>.</p>
+      </item>
+    </list>
+  </section>
+  <section id="hint-solve">
+    <title>Das Spiel lösen</title>
+    <p>Falls Ihnen das Spiel zu langweilig wird oder Sie es automatisch lösen lassen wollen, wählen Sie <guiseq><gui style="menu">Spiel</gui><gui style="menuitem">Lösen</gui></guiseq>.</p>
+  </section>
+</page>

@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.21.90">
+<!ENTITY manrevision "3.0">
+<!ENTITY date "February 2008">
+<!ENTITY app "<application>Sudoku</application>">
+<!ENTITY appname "Sudoku">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 06, 2003
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="it">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Manuale di <application>Sudoku</application></title>       
+
+    <abstract role="description">
+      <para>Sudoku è un'applicazione utile per giocare al famoso puzzle logico sudoku, nel quale bisogna riempire un riquadro di 9 per 9 con le cifre corrette.</para>
+    </abstract>
+
+    <copyright> 
+      <year>2008</year> 
+      <holder>Thomas M. Hinkle</holder> 
+    </copyright><copyright><year>2008</year><holder>Alessio Treglia (quadrispro@ubuntu.com)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Progetto di documentazione GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Questo documento può essere copiato, distribuito e/o modificato solo in conformità con i termini della GNU Free Documentation License (GFDL) Versione 1.1 o delle versioni successive pubblicate dalla Free Software Foundation senza sezioni invariabili, frontespizi e testi di copertina. Una copia della GFDL è disponibile a questo <ulink type="help" url="ghelp:fdl">collegamento</ulink> o nel file COPYING-DOCS distribuito con questo manuale.</para>
+         <para>Questo manuale è parte di una collezione di manuali di GNOME distribuita sotto la GFDL. Se si vuole distribuire questo manuale separatamente dalla collezione, lo si può fare aggiungendo una copia della licenza al manuale, come descritto nella sezione 6 della licenza.</para>
+
+	<para>Molti dei nomi utilizzati dalle aziende per distinguere i loro prodotti e servizi sono rivendicati come marchi commerciali. Dove questi nomi appaiono nella documentazione di GNOME, e i membri del progetto di documentazione di GNOME sono informati di questi marchi commerciali, allora i nomi sono in lettere maiuscole o con la lettera iniziale maiuscola.</para>
+
+	<para>QUESTO DOCUMENTO E LE SUE VERSIONI MODIFICATE SONO FORNITI IN BASE AI TERMINI DELLA GNU FREE DOCUMENTATION LICENSE, SOTTO INTESO CHE: <orderedlist>
+		<listitem>
+		  <para>IL DOCUMENTO VIENE FORNITO SENZA GARANZIE DI ALCUN TIPO,ESPLICITE O IMPLICITE, INCLUSE, MA SENZA LIMITAZIONE, LE GARANZIE ATTESTANTI CHE IL DOCUMENTO O LE SUE VERSIONI MODIFICATE SIANO PRIVI DI DIFETTI, COMMERCIALIZZABILI, IDONEI A UN DETERMINATO SCOPO O CHE NON VIOLINO DIRITTI DI TERZI. SI DECLINA QUALUNQUE RESPONSABILITÀ RIGUARDO AI RISCHI INERENTI LA QUALITÀ, L'ACCURATEZZA E LE PRESTAZIONI DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA. QUALORA UN DOCUMENTO O UNA SUA VERSIONE MODIFICATA DOVESSERO PRESENTARE QUALUNQUE TIPO DI DIFETTO,IL COSTO DI EVENTUALI INTERVENTI DI ASSISTENZA, RIPARAZIONE O CORREZIONE SARÀ A CARICO DELL'UTENTE (NON DEL REDATTORE INIZIALE, DELL'AUTORE O DI ALTRI COLLABORATORI). QUESTA LIMITAZIONE DELLA GARANZIA COSTITUISCE PARTE ESSENZIALE DELLA LICENZA. L'USO DEL DOCUMENTO O DELLE SUE VERSIONI MODIFICATE È CONSENTITO SOLO ENTRO I TERMINI DI QUESTA LIMITAZIONE DELLA GARANZIA; E</para>
+		</listitem>
+		<listitem>
+		  <para>IN NESSUNA CIRCOSTANZA E PER NESSUNA RAGIONE LEGALE, INCLUSI I PRINCIPI DI COLPA (INCLUSA LA NEGLIGENZA), ACCORDO CONTRATTUALE O ALTRO, SARÀ POSSIBILE CONSIDERARE L'AUTORE, IL REDATTORE INIZIALE, GLI ALTRI COLLABORATORI, QUALUNQUE DISTRIBUTORE DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA O QUALUNQUE FORNITORE DELLE PERSONE CITATE, RESPONSABILE NEI CONFRONTI DI QUALUNQUE PERSONA PER DANNI DIRETTI, INDIRETTI, SPECIALI, INCIDENTALI O CONSEGUENTI DI QUALUNQUE NATURA, INCLUSI, MA SENZA LIMITAZIONE, I DANNI PER PERDITA DI AVVIAMENTO, INTERRUZIONE DEL LAVORO, GUASTO O MALFUNZIONAMENTO DEL COMPUTER O QUALUNQUE ALTRO DANNO O PERDITA DERIVANTE O CORRELATA ALL'USO DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA, ANCHE QUALORA LE PERSONE CITATE FOSSERO STATE INFORMATE DELLA POSSIBILITÀ DI TALI DANNI.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+		<firstname>Thomas</firstname> 
+		<surname>Hinkle</surname> 
+		<affiliation> 
+	  		<orgname>Progetto di documentazione GNOME</orgname> 
+	  		<!-- The email address of the author is optional and is commented out by default. 
+			<address> <email>doc-writer2@gnome.org</email> </address> 
+			-->
+		</affiliation> 
+      </author> 
+      
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->  
+    <revhistory>
+      <revision> 
+		<revnumber>Manuale di GNOME Sudoku V2.0</revnumber> 
+		<date>Febbraio 2008</date> 
+		<revdescription> 
+	  		<para role="author">Thomas M. Hinkle</para>
+	  		<para role="publisher">Progetto di documentazione GNOME</para>
+		</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Questo manuale si riferisce alla versione 2.21.90 di Sudoku</releaseinfo> 
+    <legalnotice> 
+      <title>Commenti</title> 
+      <para>Per segnalare un problema o inviare suggerimenti sull'applicazione <application>Sudoku</application> o su questo manuale, seguire le istruzioni presenti alla <ulink url="ghelp:user-guide?feedback-bugs" type="help">pagina di commenti su GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>GNOME Sudoku</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+    <primary>sudoku</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="myapp-introduction"> 
+    <title>Introduzione</title> 
+    <para><application>Sudoku</application> è un'applicazione utile per generare e giocare ai puzzle del famoso gioco di logica Sudoku (altrimenti conosciuto come Number Place).</para>
+    <para>Le regole di Sudoku sono abbastanza semplici. Per completare il puzzle è necessario riempire ogni casella con un numero compreso fra 1 e 9 in modo che ogni riga, ogni colonna e ogni riquadro 3x3 della scacchiera contenga i numeri da 1 a 9. Procedendo in un altro modo, è necessario riempire ogni casella in modo che nessun numero compaia due volte nella stessa riga, nella stessa colonna o nello stesso riquadro 3x3.</para>
+
+    <para>Questi due diversi modi di concepire il puzzle rappresentano due delle principali strategie di gioco dei giocatori. Da una parte ci si chiede “In che modo posso riempire questo riquadro?”, dall'altra ci si chiede “Quali numeri posso inserire in questa casella in modo da evitare conflitti con gli altri numeri presenti nella stessa riga, nella stessa colonna e nello stesso riquadro 3x3?”.</para>
+
+    <para>A differenza della semplicità del gioco, i puzzle di Sudoku variano molto in difficoltà e <application>Sudoku</application> consente di selezionare la difficoltà del puzzle che si desidera giocare. In maniera predefinita, il gioco comincerà con dei puzzle facili e la difficoltà aumenterà gradualmente in modo proporzionale alla propria bravura.</para>
+
+  </sect1>
+
+<!-- =========== Getting Started ============================== -->
+<!-- Use the Getting Started section to describe the steps required
+     to start the application and to describe the user interface components
+     of the application. If there is other information that it is important
+     for readers to know before they start using the application, you should
+     also include this information here. 
+     If the information about how to get started is very short, you can 
+     include it in the Introduction and omit this section. -->
+
+  <sect1 id="myapp-getting-started"> 
+    <title>Per iniziare</title> 
+
+    <sect2 id="myapp-start">
+    <title>Per avviare <application>Sudoku</application></title>
+    <para>È possibile avviare <application>Sudoku</application> nei seguenti modi:</para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>Menù <guimenu>Applicazioni</guimenu></term>
+    		<listitem>
+    		<para>Scegliere <menuchoice><guisubmenu>Giochi</guisubmenu><guimenuitem>Sudoku</guimenuitem></menuchoice>.</para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Riga di comando</term>
+    		<listitem>
+    		<para>Per avviare <application>Sudoku</application> dalla riga di comando, digitare il seguente comando e premere <keycap>Invio</keycap>:</para>
+    		<para> 
+			<command>gnome-sudoku</command> 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+    </sect2>
+
+    <sect2 id="myapp-when-start">
+    <title>Quando si avvia <application>Sudoku</application></title>
+    <para>Quando si avvia <application>Sudoku</application> per la prima volta, verrà visualizzata la schermata di selezione del puzzle, dalla quale sarà possibile scegliere la difficoltà del puzzle da giocare. Se si ha già giocato e si sono lasciati dei puzzle in sospeso, da questa schermata sarà possibile selezionare facilmente tali puzzle.</para>
+    <para>Nella schermata di selezione viene mostrata la difficoltà del puzzle e il colore che circonda la relativa immagine corrisponde al grado di difficoltà. Per esempio, un puzzle rosso scuro è più difficile di un puzzle rosso chiaro.</para>
+    <para>Per iniziare a giocare è sufficiente fare clic due volte sul puzzle desiderato.</para>
+
+<figure id="new-game-fig"> 
+	<title>Avviare Sudoku</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/starting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Avviare Sudoku: scegliere un livello di difficoltà.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    
+    <para>In ogni momento, è possibile cambiare puzzle premendo <guibutton>Nuovo</guibutton>. Questo mostrerà nuovamente la schermata di selezione del puzzle, dove sarà nuovamente possibile scegliere il puzzle che si preferisce.</para>
+    
+    </sect2>
+    
+    </sect1>
+    <sect1 id="myapp-basic-play">
+    <title>Strategia di base</title>
+    <para>Per giocare, iniziare a riempire le caselle con i numeri da 1 a 9 in modo tale che nessuna riga, nessuna colonna e nessun riquadro 3x3 contengano lo stesso numero più di una volta.</para>
+    <para>È possibile inserire i numeri nelle caselle con la tastiera o con il mouse.</para>
+    <variablelist>
+    	<varlistentry>
+	<term>Tastiera</term>
+	<listitem><para>Per selezionare la casella da riempire utilizzare i tasti direzionali oppure il mouse, quindi digitare il numero che si desidera inserire nella casella. Premendo <keycap>Backspace</keycap> il numero verrà rimosso.</para></listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Mouse</term>
+	<listitem>
+	  <para>Fare clic su una casella per selezionarla, quindi fare clic nel centro della stessa per far apparire i pulsanti con i numeri da 1 a 9. Fare clic su un numero per selezionarlo, oppure fare clic su <guibutton>Pulisci</guibutton> per reimpostare la casella. Sarà di nuovo possibile fare clic due volte nel centro della casella per far apparire i pulsanti dei numeri.</para>
+	</listitem>
+		</varlistentry>
+	</variablelist>
+    <note>
+    <para>Se viene inserito un numero in conflitto con gli altri già presenti, i numeri in conflitto verranno evidenziati in rosso.</para>
+    <figure id="error-highlight-fig"> 
+	<title>L'errore evidenziato</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/error_highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Una mossa non consentita verrà evidenziata in rosso.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    </note>
+    </sect1>
+    <sect1 id="myapp-saving">
+    <title>Salvare e riprendere le partite</title>
+    <para>I Sudoku vengono salvati automaticamente ogni pochi minuti e ogni volta che viene cambiata la partita o viene chiusa l'applicazione.</para>
+        <figure id="open-game-fig"> 
+	<title>Riprendere le vecchie partite</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/resuming.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Riprendere una vecchia partita dalla schermata di selezione del puzzle.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    <para>Quando si avvia <application>Sudoku</application>, oppure facendo clic su <guibutton>Nuovo</guibutton>, le partite salvate vengono elencate nella schermata di selezione del puzzle. Per ogni puzzle salvato viene mostrata un'immagine, la data dell'ultima volta che ci si ha giocato e il tempo di gioco impiegato. Per aprire il puzzle è sufficiente fare clic due volte su di esso.</para>
+    <para>Se si desidera fermare una partita e iniziarne un'altra, selezionare <guibutton>Nuovo</guibutton> e iniziare la nuova partita.</para>
+    </sect1>
+
+<!-- ================ Usage ================================ -->
+<!-- Use this section to describe how to use the application to perform the tasks for 
+  which the application is designed. -->
+  <sect1 id="myapp-hints"> 
+    <title>Caratteristiche</title> 
+    <!-- ================ Usage Subsection ================================ -->
+
+        <para>GNOME Sudoku dispone di diverse caratteristiche utili nella risoluzione dei puzzle.</para>
+
+      <variablelist>
+    	<varlistentry><term>Note</term>
+	<listitem>
+		<para>Le <firstterm>note</firstterm> (o <firstterm>segni a matita</firstterm>) consentono di impostare delle note in ogni casella. Molti giocatori usano le note per tenere traccia dei possibili valori delle caselle.</para>
+	</listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Suggerimenti e auto-riempimento</term>
+	<listitem>
+	<para>È possibile utilizzare i <firstterm>suggerimenti</firstterm> e il <firstterm>riempimento automatico</firstterm> per far sì che GNOME Sudoku fornisca delle informazioni sui possibili valori per una casella oppure per riempirla automaticamente al posto del giocatore.</para>
+	</listitem>
+	</varlistentry>
+
+		<varlistentry>
+	<term>Evidenziamento</term>
+	<listitem>
+	<para>In modalità evidenziamento, la riga, la colonna e il riquadro correnti vengono evidenziate con colori differenti in modo da rendere più semplice la scansione della scacchiera.</para>
+	</listitem>
+	</varlistentry>
+
+	<varlistentry>
+	<term>Registratore di aggiunte</term>
+	<listitem>
+	  <para>Registrando le aggiunte diventa più facile tenere traccia delle soluzioni provate. Quando si <firstterm>registra</firstterm> una serie di mosse, al fine di distinguerle dalle altre precedenti, i numeri vengono inseriti con un colore speciale.</para>
+	</listitem>
+	</varlistentry>
+        </variablelist>
+	
+	<sect2 id="myapp-notes"> 
+      <title>Prendere delle note</title> 
+      <para>Per scrivere delle note (altrimenti conosciute come “segni a matita”) in una casella, selezionare la stessa con la tastiera o il mouse, dunque seguire una delle seguenti procedure:</para>
+      <itemizedlist>
+      <listitem><para>Fare clic nella regione superiore della casella (tale regione viene evidenziata con un riquadro quando si muove il mouse sopra una casella selezionata).</para></listitem>
+      <listitem><para>Digitare <keycap>N</keycap>.</para></listitem>
+      </itemizedlist>
+      <para>Verrà mostrato un campo nel quale sarà possibile inserire le proprie note. Digitare <keycap>Invio</keycap> una volta che si avrà terminato di inserire le note.</para>
+      
+      <note><para>È inoltre possibile registrare le note nella parte bassa della casella con un clic del mouse oppure digitando <keycap>M</keycap>. Comunque, poiché che questa zona viene utilizzata quando si richiede un <firstterm>suggerimento</firstterm>, è consigliato non occupare tale area per le proprie note se si ha in mente di utilizzare i suggerimenti.</para></note>
+      <note><para>You can clear the notes at the top of the square by typing <keycap>Alt-N</keycap> and at the bottom of the square by typing <keycap>Alt-M</keycap>.</para></note>
+      <note><para>You can add a number to the notes at the top of the square by typing <keycap>Ctrl-1</keycap> through <keycap>Ctrl-9</keycap> and remove a number from the notes by typing <keycap>Alt-1</keycap> through <keycap>Alt-9</keycap>.</para></note>
+</sect2>
+    <!-- ================ Usage Subsection ================================ -->
+	 <sect2 id="myapp-manipulate-view"> 
+      <title>Suggerimenti e auto-riempimento</title>
+
+		             <note>
+
+	      <para>Le opzioni <firstterm>Suggerimento</firstterm> e <firstterm>Riempi</firstterm> si basano sulle possibilità logiche offerte dalla configurazione attuale della scacchiera. Queste funzionalità <emphasis>non</emphasis> procedono ricercando la soluzione. Se è stato commesso un errore in una mossa precedente, queste opzioni potrebbero riempire in modo errato le caselle o fornire dei suggerimenti non corretti.</para>
+
+	    </note>
+      
+      
+      <sect3 id="myapp-hint">
+          <title>Suggerimenti</title>
+	              <para>GNOME Sudoku può fornire suggerimenti sulla base dell'attuale scacchiera. È possibile richiedere un suggerimento per la casella attualmente selezionata facendo clic su <menuchoice><guisubmenu>Strumenti</guisubmenu><guimenuitem>Suggerimento</guimenuitem></menuchoice>, oppure utilizzando la combinazione <keycap>Ctrl+H</keycap>. Questo comporterà l'inserimento di una lista di possibili valori nella parte bassa della casella.</para>
+    <figure id="hint-fig"> 
+	<title>Suggerimenti</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/hints.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Una volta fatto clic su Suggerimento, vengono mostrati i possibili valori nella parte bassa della casella.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+		      
+	    <para>Per rimuovere o modificare il suggerimento, è possibile modificare il testo facendo clic nella parte bassa della casella.</para>
+	    <para>Per i puzzle molto difficili, è possibile scegliere di far mostrare a <application>Sudoku</application> i valori possibili per tutte le caselle. Per abilitare questa modalità andare su <menuchoice><guisubmenu>Strumenti</guisubmenu><guimenuitem>Mostra sempre i suggerimenti</guimenuitem></menuchoice>. Abilitando tale opzione i puzzle facili diventeranno <emphasis>troppo</emphasis> semplici ed è consigliato utilizzarla con parsimonia.</para>
+<figure id="all-hints-fig"> 
+	<title><application>Sudoku</application> in modalità Mostra sempre i suggerimenti</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/always_show_hint.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Un puzzle difficile con la modalità Mostra sempre i suggerimenti abilitata.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+	    
+	    
+	    </sect3>
+	    <sect3 id="myapp-autofill">
+	    <title>Riempire una casella</title>
+
+	    <para>Per riempire automaticamente una casella per la quale è rimasto un solo valore valido possibile, è possibile fare clic su <guibutton>Riempi</guibutton>, selezionare <menuchoice><guisubmenu>Strumenti</guisubmenu><guimenuitem>Riempi</guimenuitem></menuchoice> oppure digitare <keycap>Control+F</keycap>. Ciò risulta utile, per esempio, quando si hanno riempito 8 o 9 caselle sulla stessa riga e si desidera riempire velocemente l'ultima rimasta vuota.</para>
+	    <para>Se non esiste un solo valore valido possibile non accadrà niente.</para>	    
+	    </sect3>
+	    <sect3 id="myapp-fill-all">
+	    <title>Riempire tutte le caselle</title>
+
+	    <para>È possibile riempire automaticamente tutte le caselle per le quali, al momento, vi sia un solo valore valido possibile. Per far ciò selezionare <menuchoice><guisubmenu>Strumenti</guisubmenu><guimenuitem>Riempi tutti i riquadri</guimenuitem></menuchoice> oppure digitare <keycap>Control+A</keycap>.</para>
+	    
+	    <warning>
+
+	    	    <para>Questa opzione dovrebbe essere usata solo se ci si trova in difficoltà durante una partita molto difficile. Utilizzando tale opzione in una partita facile, il puzzle potrebbe venire risolto in un solo clic, rendendo il gioco molto noioso.</para>
+		    </warning>
+	    	    </sect3>
+
+    </sect2> 
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-highlighting"> 
+      <title>Evidenziamento</title> 
+      <para>È possibile abilitare l'evidenziatore in modo da evidenziare automaticamente, con l'uso di colori differenti, le righe, le colonne e i riquadri correnti. Questo può rendere più facile individuare quali valori che non possono essere inseriti nella casella corrente. Per abilitare o disabilitare l'evidenziatore è possibile:</para> 
+      <itemizedlist>
+      <listitem><para>Fare clic su <guibutton>Evidenziatore</guibutton></para></listitem>
+      <listitem><para><menuchoice><guisubmenu>Visualizza</guisubmenu><guimenuitem>Evidenziatore</guimenuitem></menuchoice></para></listitem>
+      </itemizedlist>
+
+<figure id="highlight-fig"> 
+	<title><application>Sudoku</application> con l'evidenziatore</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>L'evidenziatore semplifica la scansione delle righe, delle colonne e dei riquadri.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      </sect2>
+
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-trackers"> 
+      <title>Registratore di aggiunte</title> 
+      <para>Abilitando la registrazione delle aggiunte, è possibile registrare più mosse contemporaneamente. Le mosse registrate verranno inserite con colori diversi, in modo da poterle distinguere. Inoltre, è possibile cancellare tutte le mosse registrate in un solo colpo. Tale funzionalità risulta particolarmente utile durante la risoluzione per tentativi di puzzle difficili.</para>
+      <note><para>Alcuni giocatori di sudoku credono che, nella risoluzione di un puzzle, non si dovrebbe mai procedere per tentativi; solitamente, tali giocatori non utilizzano questa caratteristica.</para></note>
+
+            <para>È possibile abilitare o disabilitare l'interfaccia per la registrazione con uno dei seguenti metodi:</para>
+
+	    <itemizedlist>
+
+	      <listitem>
+	       <para>
+		<menuchoice> 
+			  <guimenu>Strumenti</guimenu> 
+			  <guimenuitem>Registra aggiunte</guimenuitem>
+		</menuchoice>
+	       </para>
+	     </listitem>
+             <listitem><para>Fare clic su <guibutton>Registra aggiunte</guibutton></para></listitem>
+           </itemizedlist>
+      <para>Verrà visualizzato un elenco di registrazioni sulla destra del gioco corrente. Creare una nuova registrazione facendo clic su <guibutton>Aggiungi registrazione</guibutton>. Da questo momento in avanti, ogni numero digitato verrà inserito nella registrazione selezionata.</para>
+      <para>È possibile rimuovere tutti i valori contenuti in una registrazione selezionando la stessa nell'elenco e facendo clic su <guibutton>Pulisci registrazione</guibutton>. È possibile rimuovere tutti i valori che <emphasis>non</emphasis> fanno parte di una registrazione facendo clic su <guibutton>Pulisci gli altri</guibutton>.</para>
+    </sect2> 
+  </sect1>
+  <!-- ============= Customization ============================= -->
+  <!-- Use this section to describe how to customize the application. -->
+  <sect1 id="myapp-printing"> 
+    <title>Stampare un Sudoku</title> 
+    <para>GNOME Sudoku può stampare i puzzle per poterci giocare su carta. Tale funzionalità è molto utile se si deve lasciare il computer ma si desidera terminare una partita già iniziata, oppure se si desidera stampare una serie di puzzle da risolvere più tardi.</para>
+
+    <para>Per stampare il puzzle al quale si sta giocando, fare clic su <guibutton>Stampa</guibutton> oppure selezionare <menuchoice><guimenu>Gioco</guimenu><guimenuitem>Stampa</guimenuitem></menuchoice>. Verranno inclusi anche i numeri che si hanno già inserito.</para>
+    
+    <para>Per stampare dei puzzle vuoti, selezionare <menuchoice><guimenu>Gioco</guimenu><guimenuitem>Stampa Sudoku multipli</guimenuitem></menuchoice>.</para>
+
+      <para>Verrà mostrata una finestra di dialogo che consentirà all'utente di scegliere quanti giochi stampare e quanti puzzle stampare per pagina (più puzzle si stampano per pagina e più risulteranno piccoli).</para>
+
+      <para>È possibile effettuare anche una selezione di difficoltà degli stessi giochi. Le partite verranno stampate in ordine di difficoltà, dal più facile al più difficile.</para>
+
+      <para>Per creare un piccolo libro con 25 pagine di sudoku, selezionare 100 come numero di sudoku da stampare e 4 sudoku per pagina, di difficoltà variabili da facile a difficile.</para>
+
+<figure id="printing-fig"> 
+	<title>Stampare un piccolo libro di sudoku da <application>Sudoku</application></title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/Print_Sudokus.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Verranno stampate 25 pagine con 4 sudoku su ognuna.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      <para>In modo predefinito, <application>Sudoku</application> non stamperà le partite già giocate. Se si desidera stampare delle partite per un amico o se ripetere le partite già giocate non rappresenta un problema, è possibile mettere il segno di spunta su <guibutton>Includere le partite già giocate nell'elenco delle partite da stampare.</guibutton>.</para>
+
+      <para>È possibile selezionare manualmente le partite da stampare espandendo la <guibutton>Lista delle partite</guibutton> e selezionando più puzzle nella lista.</para>
+    
+  </sect1>
+  
+  <sect1 id="mayapp-bugs">
+  <title>Problemi noti e limiti</title>
+  <sect2>
+  <title>Statistiche del puzzle limitate</title>
+
+    <para>GNOME Sudoku classifica i puzzle in base al numero di caselle che possono essere riempite rapidamente. Il riquadro delle statistiche del puzzle mostra il punteggio generale e tre tipi di informazione:</para>
+
+    <itemizedlist>
+    <listitem><para>Il numero di caselle che possono essere riempite per eliminazione, partendo dalla griglia vuota (i.e. solo un 2 può andare bene in questo riquadro, dunque contiene un 2).</para></listitem>
+    <listitem><para>Il numero di caselle che possono essere completate per riempimento, partendo dalla griglia vuota (i.e. una sola casella in questa riga può contenere un 2, dunque questa casella deve contenere un 2).</para></listitem>
+    <listitem><para>Il numero di volte nelle quali, durante la risoluzione, il computer ha proceduto per tentativi, oppure ha dovuto “tirare a indovinare”, per risolvere il puzzle.</para></listitem>
+    </itemizedlist>
+    <para>Dato che alcuni esperti di Sudoku sostengono che, per risolvere un puzzle, non si dovrebbe mai tirare a indovinare, molti utenti rimangono stupiti nel sapere che il risolutore del computer procede per tentativi. Ci sono un buon numero di altri algoritmi che possono essere implementati per aiutare il computer nella risoluzione del sudoku, come swordfish e i pattern X-wings.</para>
+
+    <para>Al momento, <application>Sudoku</application> utilizza i due algoritmi sopra citati proprio come il metodo per tentativi. Quando il riquadro delle statistiche dice che <application>Sudoku</application> necessita di utilizzare il metodo per tentativi un numero X di volte, ciò <emphasis>non</emphasis> significa che un giocatore umano dovrebbe utilizzare lo stesso metodo per risolvere il puzzle.</para>
+  
+  </sect2>
+
+ </sect1>
+
+<!-- ============= About ================================== -->
+<!-- This section contains info about the program (not docs), such as
+      author's name(s), web page, license, feedback address. This
+      section is optional: primary place for this info is "About.." box of
+      the program. However, if you do wish to include this info in the
+      manual, this is the place to put it. Alternatively, you can put this information in the title page.-->
+  <sect1 id="myapp-about"> 
+    <title>Informazioni su <application>Sudoku</application></title> 
+    <para><application>Sudoku</application> è stato scritto da Tom Hinkle (<email>tmhinkle@gmail.com</email>). <application>Sudoku</application> è entrato a far parte dei giochi di GNOME.</para>
+    <para>Per segnalare un problema o inviare suggerimenti su questa applicazione o su questo manuale, consultare la sezione Commenti della <ulink url="ghelp:user-guide?feedback-bugs" type="help">Guida utente di GNOME</ulink>.</para>
+
+    <para>Questo programma è distribuito secondo i termini della GNU General Public License come pubblicata dalla Free Software Foundation;sia la versione 2 di questa licenza, che (secondo la proprio scelta) ogni altre versione successiva. Una copia di questa licenza può essere trovata a questo <ulink url="ghelp:gpl" type="help">collegamento</ulink>, oppure nel file COPYING incluso con il codice sorgente di questo programma.</para>
+
+  </sect1> 
+</article>

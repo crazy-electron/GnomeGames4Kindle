@@ -1,0 +1,115 @@
+<gconfschemafile>
+  <schemalist>
+
+    <schema>
+      <key>/schemas/apps/aisleriot/card_style</key>
+      <applyto>/apps/aisleriot/card_style</applyto>
+      <owner>aisleriot</owner>
+      <type>string</type>
+      <default></default>
+      <locale name="C">
+        <short>Theme file name</short>
+        <long>The name of the file with the graphics for the cards.</long>
+      </locale>
+     </schema>
+
+    <schema>
+      <key>/schemas/apps/aisleriot/show_toolbar</key>
+      <applyto>/apps/aisleriot/show_toolbar</applyto>
+      <owner>aisleriot</owner>
+      <type>bool</type>
+      <default>TRUE</default>
+      <locale name="C">
+        <short>Whether or not to show the toolbar</short>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/aisleriot/show_statusbar</key>
+      <applyto>/apps/aisleriot/show_statusbar</applyto>
+      <owner>aisleriot</owner>
+      <type>bool</type>
+      <default>TRUE</default>
+      <locale name="C">
+        <short>Whether or not to show the status bar</short>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/aisleriot/click_to_move</key>
+      <applyto>/apps/aisleriot/click_to_move</applyto>
+      <owner>aisleriot</owner>
+      <type>bool</type>
+      <default>FALSE</default>
+      <locale name="C">
+        <short>Select the style of control</short>
+        <long>Select whether to drag the cards or to click on the source then the destination.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/aisleriot/sound</key>
+      <applyto>/apps/aisleriot/sound</applyto>
+      <owner>aisleriot</owner>
+      <type>bool</type>
+      <default>FALSE</default>
+      <locale name="C">
+        <short>Sound</short>
+        <long>Whether or not to play event sounds.</long>
+      </locale>
+    </schema>
+
+
+    <schema>
+      <key>/schemas/apps/aisleriot/animations</key>
+      <applyto>/apps/aisleriot/animations</applyto>
+      <owner>aisleriot</owner>
+      <type>bool</type>
+      <default>true</default>
+      <locale name="C">
+        <short>Animations</short>
+        <long>Whether or not to animate card moves.</long>
+      </locale>
+    </schema>
+
+
+    <schema>
+      <key>/schemas/apps/aisleriot/game_file</key>
+      <applyto>/apps/aisleriot/game_file</applyto>
+      <owner>aisleriot</owner>
+      <type>string</type>
+      <default>klondike.scm</default>
+      <locale name="C">
+        <short>The game file to use</short>
+        <long>The name of the scheme file containing the solitaire game to play.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/aisleriot/statistics</key>
+      <applyto>/apps/aisleriot/statistics</applyto>
+      <owner>aisleriot</owner>
+      <type>list</type>
+      <list_type>string</list_type>
+      <default>[]</default>
+      <locale name="C">
+        <short>Statistics of games played</short>
+	<long>A list of strings that come in the form of a quintuple: name, wins, total games played, best time (in seconds) and worst time (also in seconds). Unplayed games do not need to be represented.</long>
+      </locale>
+    </schema>
+	
+    <schema>
+      <key>/schemas/apps/aisleriot/recent_games_list</key>
+      <applyto>/apps/aisleriot/recent_games_list</applyto>
+      <owner>aisleriot</owner>
+      <type>list</type>
+      <list_type>string</list_type>
+      <default>[]</default>
+      <locale name="C">
+        <short>Recently played games</short>
+        <long>A list of recently played games.</long>
+      </locale>
+     </schema>
+
+  </schemalist>
+</gconfschemafile>

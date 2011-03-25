@@ -1,0 +1,77 @@
+<gconfschemafile>
+  <schemalist>
+    <schema>
+      <key>/schemas/apps/gtali/NumberOfComputerOpponents</key>
+      <applyto>/apps/gtali/NumberOfComputerOpponents</applyto>
+      <owner>gtali</owner>
+      <type>int</type>
+      <default>3</default>
+      <locale name="C">
+        <short></short>
+        <long></long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gtali/NumberOfHumanOpponents</key>
+      <applyto>/apps/gtali/NumberOfHumanOpponents</applyto>
+      <owner>gtali</owner>
+      <type>int</type>
+      <default>1</default>
+      <locale name="C">
+        <short></short>
+        <long></long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gtali/DelayBetweenRolls</key>
+      <applyto>/apps/gtali/DelayBetweenRolls</applyto>
+      <owner>gtali</owner>
+      <type>bool</type>
+      <default>FALSE</default>
+      <locale name="C">
+        <short>Delay between rolls</short>
+        <long>Choose whether or not to insert a delay between the computer's dice rolls so the player can follow what it is doing.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gtali/DisplayComputerThoughts</key>
+      <applyto>/apps/gtali/DisplayComputerThoughts</applyto>
+      <owner>gtali</owner>
+      <type>bool</type>
+      <default>FALSE</default>
+      <locale name="C">
+        <short>Display the computer's thoughts</short>
+        <long>If set to true, a dump of the AI's working will be done to standard output.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gtali/PlayerNames</key>
+      <applyto>/apps/gtali/PlayerNames</applyto>
+      <owner>gtali</owner>
+      <type>list</type>
+      <list_type>string</list_type>
+      <locale name="C">
+        <default>[Human,Wilber,Bill,Monica,Kenneth,Janet]</default>
+        <short></short>
+        <long></long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gtali/GameType</key>
+      <applyto>/apps/gtali/GameType</applyto>
+      <owner>gtali</owner>
+      <type>string</type>
+      <locale name="C">
+        <default>Regular</default>
+        <short></short>
+        <long></long>
+      </locale>
+    </schema>
+
+  </schemalist>
+</gconfschemafile>

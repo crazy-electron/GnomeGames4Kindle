@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="size" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="index#play" group="three"/>
+    <desc>Modificare la dimensione della tavola di gioco.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-18" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  <title>Dimensione del gioco</title>
+
+  <p>Per modificare la dimensione della tavola di gioco in modo da incrementare o diminuire la complessità del gioco, dalla barra dei menù scegliere <gui>Dimensione</gui> e quindi selezionare la dimensione del gioco.</p>
+  <p>È possibile scegliere tra cinque dimensioni diverse, da 2×2 a 6×6. Quella predefinita è 3×3.</p>
+  <note style="tip">
+    <p>Se i pezzi sono troppo piccoli, ridimensionando la finestra verrà modificata anche la loro dimensione.</p>
+  </note>
+</page>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.11">
+<!ENTITY date "January 2008">
+<!ENTITY appname "Swell Foop">
+<!ENTITY app "<application>Swell Foop</application>">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://live.gnome.org/DocumentationProject
+  Template version: 3.0 beta
+  Template last modified 2006-11-21
+
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="de">
+  <articleinfo> 
+    <title><application>Swell Foop</application>-Handbuch</title>       
+    
+    <abstract role="description">
+      <para>Swell Foop ist ein Puzzlespiel, dessen Ziel es ist, durch Anklicken von Gruppen von Objekten in einem Spielfeld dieses so weit wie möglich zu leeren. Beim Verschwinden einer solchen Gruppe fallen die übrigen Objekte herunter, bis keine Objekte oder zumindest keine gleichfarbigen Gruppen mehr vorhanden sind.</para>
+    </abstract>
+
+    <copyright> 
+      <year>2005</year> 
+      <holder>Callum McKenzie</holder> 
+    </copyright><copyright><year>2008, 2009, 2010</year><holder>Mario Blättermann (mariobl@gnome.org)</holder></copyright> 
+
+    <publisher role="maintainer"> 
+      <publishername>GNOME-Dokumentationsprojekt</publishername> 
+    </publisher> 
+
+	  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="legal.xml"/>   
+   <!-- This file legal.xml contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+		<firstname>Callum</firstname> 
+		<surname>McKenzie</surname> 
+		<affiliation> 
+	  		<orgname>GNOME-Dokumentationsprojekt</orgname> 
+	  		<address> <email>callum@physics.otago.ac.nz</email> </address> 
+		</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. --> 
+    <revhistory>
+      <revision> 
+		    <revnumber>Swell-Foop-Handbuch V2.11</revnumber>
+		    <date>Januar 2008</date> 
+		    <revdescription> 
+    			<para>Anpassung des Swell-Foop-Handbuchs an eine neue Vorlage.</para>		    
+	  		  <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+	  		  <para role="publisher">GNOME-Dokumentationsprojekt</para>
+    		</revdescription> 
+      </revision> 
+      <revision> 
+		    <revnumber>Swell-Foop-Handbuch V2.10</revnumber>
+		    <date>Februar 2005</date> 
+		    <revdescription> 
+    			<para>Erste Version für das neue Swell Foop.</para>		    
+	  		  <para role="author">Callum McKenzie <email>callum@physics.otago.ac.nz</email></para>
+	  		  <para role="publisher">GNOME-Dokumentationsprojekt</para>
+    		</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Dieses Handbuch beschreibt Version 2.12 von Swell Foop.</releaseinfo> 
+    <legalnotice> 
+      <title>Rückmeldungen</title> 
+      <para>Um Fehler zu melden oder einen Vorschlag zur Anwendung <application>Swell Foop</application> oder zu diesem Handbuch zu machen, folgen Sie den Anweisungen im <ulink url="ghelp:user-guide?feedback-bugs" type="help">Abschnitt Rückmeldungen des Benutzerhandbuchs</ulink>."</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>Swell Foop</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+
+  <sect1 id="introduction"> 
+    <title><application>Swell Foop</application> spielen</title> 
+    <para><application>Swell Foop</application> ist ein Puzzlespiel. Das Ziel ist das Entfernen von so vielen Objekten wie möglich mit so wenigen Zügen wie möglich. Objekte, die einander berühren, werden als Gruppe entfernt. Die übriggebliebenen Objekte fallen zusammen, um die entstandenen Lücken zu schließen, und bilden dadurch neue Gruppen.</para>
+
+    <figure id="start-up">
+      <title><application>Swell Foop</application> zu Beginn eines neuen Spiels.</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/start-up.png" format="PNG"/>
+	        </imageobject>
+	      </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Beim Start ist das Spielfeld vollständig mit Objekten gefüllt. In Abhängigkeit von der Größe des Spielfeldes können Sie wählen, ob es entweder drei oder vier verschiedene Objekttypen gibt.  Eine Gruppe aneinander angrenzender, gleichartiger Objekte lässt sich mit einem einfachen Klick oder durch Drücken der Leertaste enfernen. Wenn Sie mit der Maus über eine solche Gruppe fahren, werden die Objekte animiert. Die Anzahl der Objekte, die Sie entfernen können, sowie die Anzahl der Punkte, die Sie dafür bekommen, werden in der linken unteren Ecke des Fensters angezeigt. Je mehr Objekte eine Gruppe enthält, umso mehr Punkte erzielen Sie durch deren Enfernen. Nach dem Entfernen einer Gruppe fallen die darüberliegenden Objekte in die entstandenen Lücken. Wenn eine ganze Spalte komplett entfernt ist, verschieben sich die übrigen Objekte nach links, um die Lücken zu füllen.</para>
+
+    <table id="play" frame="all"><title><application>Swell Foop</application> spielen</title>
+      <tgroup cols="2" colsep="0">
+      <tbody>
+        <row><entry><para>1. Gruppen aus zwei oder mehr Objekten werden entfernt <screenshot>
+         <mediaobject>
+           <imageobject>
+             <imagedata fileref="figures/play1.png" format="PNG"/>
+           </imageobject>
+         </mediaobject>
+         </screenshot></para></entry>
+       <entry><para>2. Objekte fallen in die Lücken <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/play2.png" format="PNG"/>
+            </imageobject>
+          </mediaobject>
+          </screenshot></para></entry></row>
+        <row><entry><para>3. Objekte werden nach links verschoben, um leere Spalten aufzufüllen <screenshot>
+         <mediaobject>
+           <imageobject>
+             <imagedata fileref="figures/play3.png" format="PNG"/>
+           </imageobject>
+         </mediaobject>
+         </screenshot></para></entry>
+       <entry><para>4. Neue Gruppen werden gebildet und es beginnt von vorn <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/play4.png" format="PNG"/>
+            </imageobject>
+          </mediaobject>
+          </screenshot></para></entry></row>
+      </tbody>
+      </tgroup>
+    </table>
+
+    <para>Die Anzahl der Punkte basiert auf der Anzahl der Objekte, die Sie entfernen:</para>
+    
+    <informaltable frame="topbot">
+    <tgroup cols="2" align="center">
+    <thead><row>
+    <entry>Anzahl der Objekte</entry>
+    <entry>Erzielte Punkte</entry>
+    </row></thead>
+    <tbody>
+    <row><entry>2</entry><entry>0</entry></row>
+    <row><entry>3</entry><entry>1</entry></row>
+    <row><entry>4</entry><entry>4</entry></row>
+    <row><entry>5</entry><entry>9</entry></row>
+    <row><entry>6</entry><entry>16</entry></row>
+    <row><entry>7</entry><entry>25</entry></row>
+    <row><entry>8</entry><entry>36</entry></row>
+    <row><entry>9</entry><entry>49</entry></row>
+    <!-- Translators: this is a vertical continuation character -->
+    <row><entry>⋮</entry><entry>⋮</entry></row>
+    <row><entry>n</entry><entry>(n - 2)<superscript>2</superscript></entry></row>
+    </tbody>
+    </tgroup>
+    </informaltable>
+    <para>Wenn Sie das Spielfeld vollkommen leeren, bekommen Sie einen Bonus von 1000 Punkten.</para>
+  </sect1>
+
+  <sect1 id="swell-foop-customisation">
+    <title>Anpassen</title>
+
+    <sect2 id="changing-the-look">
+      <title>Aussehen anpassen</title>
+      <para>Das Anpassen der Größe der Objekte ist ebenso einfach wie das Anpassen der Fenstergröße. Um den Bildschirm ganz auszunutzen, wählen Sie die <guimenuitem>Vollbild</guimenuitem>-Option aus dem Menü <guimenu>Ansicht</guimenu>.</para>
+
+      <para>Um das Erscheinungsbild der Objekte zu ändern, wählen Sie den Eintrag <guimenuitem>Thema</guimenuitem> im Menü <guimenu>Ansicht</guimenu>. Die Auswählen eines Eintrags in der Liste führt zur unmittelbaren Änderung des Themas.</para>
+
+        <para>Sie können auch eigene Themen erstellen, aber dies ist nicht ganz unkompliziert. Benutzen Sie am besten eine Kopie eines bestehenden Themas und bearbeiten Sie diese mit Ihrem bevorzugten Zeichenprogramm. Speichern Sie das Resultat in <filename>$XDG_DATA_HOME/gnome-games/swell-foop/themes/2.10/</filename>. Beim nächsten Start von <application>Swell Foop</application> wird es automatisch in die Themenliste aufgenommen. <filename>$XDG_DATA_HOME</filename> befindet sich üblicherweise in <filename>~/.local/share/</filename>.</para>
+    </sect2>
+
+    <sect2 id="changing-the-size">
+      <title>Anpassen der Größe</title>
+      <para>Das Menü <guimenu>Größe</guimenu> bietet drei Einstellungen: Klein, Mittel und Groß. Einhergehend mit der Erhöhung der Anzahl der Objekte erhöht die Einstellung "Groß" auch die Zahl der verschiedenen Objekttypen.</para>
+    </sect2>
+
+    <sect2 id="changing-the-speed">
+    <title>Geschwindigkeit anpassen</title>
+    <para>Die standardmäßige Animation ist weich und graziös. Wenn Sie wirklich schnell und rasant spielen wollen, dürfte die Animation wohl etwas zu langsam sein. Im Ankreuzfeld <guimenuitem>Schnelle Animation</guimenuitem> im Menü <guimenu>Ansicht</guimenu> können Sie das Spiel beschleunigen, was sich aber auf die Qualität der Animation auswirkt. </para>
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="swell-foop-strategy">
+    <title>Strategie</title>
+
+    <para>Die bedeutendste Regel zum Erzielen einer hohen Punktzahl ist, dass Sie mit jeder Gruppe, die Sie entfernen, andere Gruppen erzeugen oder zerstören.</para>
+
+<para>Entfernen Sie die oberen Gruppen zuerst, es sei denn, dass diese durch das Enfernen anderer Gruppen vergrößert werden können. Vertikale Anordnungen können dadurch nicht verändert werden, horizontale Anordnungen allerdings schon.</para>
+
+    <para>Weil die Punktzahl nicht linear, sondern quadratisch mit der Anzahl der Objekte wächst, ist das Entfernen großer Objektgruppen immer besser. Beispielsweise beträgt die Differenz zwischen zwei Gruppen von sechs beziehungsweise sieben Objekten immerhin neun Punkte. In einer Situation, in der Sie die Wahl zwischen dem Zusammenfügen von zwei Zweiergruppen zu einer Vierergruppe oder dem Hinzufügen eines einzelnen Objektes zu einer Sechsergruppe haben, sollten Sie sich für das Hinzufügen des einzelnen Objekts entscheiden. Die zwei Zweiergruppen bringen Ihnen keine Punkte, daher ist die größere Gruppe vorteilhafter.</para>
+
+    <para>Denken Sie immer an den 1000-Punkte-Bonus für das Leerräumen des Spielfeldes. Um durch das Entfernen einer Gruppe 1000 Punkte zu erzielen, benötigen Sie 34 Objekte.</para>
+  </sect1>
+
+<!-- ============= About ================================== -->
+  <sect1 id="swell-foop-about"> 
+    <title>Info zu <application>Swell Foop</application></title> 
+    <para><application>Swell Foop</application> wurde von Callum McKenzie geschrieben (<email>callum@physics.otago.ac.nz</email>). Für weitere Informationen über <application>Swell Foop</application>, besuchen Sie bitte die <ulink url="http://live.gnome.org/GnomeGames/" type="http">GNOME-Games-Webseite</ulink>.</para>
+    <para>Um Fehler zu melden oder einen Vorschlag zu dieser Anwendung oder zu diesem Handbuch zu machen, folgen Sie den Anweisungen im <ulink url="ghelp:usr-guide?feedback-bugs" type="help">GNOME-Benutzerhandbuch</ulink>."</para>
+
+    <para>Dieses Programm ist freie Software. Sie können es unter den Bedingungen der <citetitle>GNU General Public License</citetitle>, wie von der Free Software Foundation veröffentlicht, weitergeben und/oder modifizieren, entweder gemäß Version 2 der Lizenz oder (nach Ihrer Option) jeder späteren Version. Eine <ulink url="ghelp:gpl" type="help">Kopie dieser Lizenz</ulink> ist in dieser Dokumentation enthalten, eine weitere in der Datei COPYING, die im Quellcode dieses Programms enthalten ist.</para>
+
+  </sect1> 
+</article>

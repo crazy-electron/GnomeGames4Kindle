@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.10">
+<!ENTITY date "March 2004">
+<!ENTITY app "<application>Klotski</application>">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="el">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Εγχειρίδιο <application>Κλότσκι</application></title>
+
+    <abstract role="description">
+      <para>Το Κλότσκι είναι ένα παιχνίδι παζλ του οποίου ο στόχος είναι να μετακινήσετε το μπλοκ με μοτίβο στον δείκτη, και επιτυγχάνεται με την μετακίνηση των μπλοκ που είναι στον δρόμο του.</para>
+    </abstract>
+
+    <copyright>
+      <year>2002</year> 
+      <holder>Andrew Sobala</holder> 
+    </copyright><copyright><year>επισκεφθείτε την σελίδα http://www.gnome.gr/</year><holder>Για περισσότερες πληροφορίες</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Έργο τεκμηρίωσης GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Χορηγείται άδεια αντιγραφής, διανομής και/ή τροποποίησης του παρόντος εγγράφου υπό τους όρους της έκδοσης 1.1 της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), ή οποιασδήποτε μεταγενέστερης έκδοσής αυτής από το Ίδρυμα Ελεύθερου Λογισμικού (FSF), χωρίς αμετάβλητα τμήματα, κείμενα εξωφύλλου και κείμενα οπισθοφύλλου. Αντίγραφο της άδειας GFDL είναι διαθέσιμο στον ακόλουθο <ulink type="help" url="ghelp:fdl">σύνδεσμο</ulink>, ή στο αρχείο COPYING-DOCS που διανέμεται μαζί με το παρόν εγχειρίδιο.</para>
+         <para>Αυτό το εγχειρίδιο αποτελεί μέρος της συλλογής εγχειριδίων του GNOME που διανέμονται υπό τους όρους της GFDL. Αν επιθυμείτε να διανείμετε το παρόν εγχειρίδιο ξεχωριστά από τη συλλογή, οφείλετε να προσθέσετε στο εγχειρίδιο αντίγραφο της άδειας χρήσης, όπως προβλέπεται στο άρθρο 6 της άδειας.</para>
+
+	<para>Πολλές από τις ονομασίες που χρησιμοποιούνται από εταιρείες για την διαφοροποίηση των προϊόντων και υπηρεσιών τους έχουν καταχωρισθεί ως εμπορικά σήματα. Σε όποιο σημείο της τεκμηρίωσης GNOME τυχόν εμφανίζονται αυτές οι ονομασίες, και εφόσον τα μέλη του Έργου τεκμηρίωσης GNOME έχουν λάβει γνώση αυτών των εμπορικών σημάτων, οι ονομασίες ή τα αρχικά αυτών θα γράφονται με κεφαλαίους χαρακτήρες.</para>
+
+	<para>ΤΟ ΠΑΡΟΝ ΕΓΓΡΑΦΟ ΚΑΙ ΟΙ ΤΡΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ ΕΛΕΥΘΕΡΗΣ ΑΔΕΙΑΣ ΤΕΚΜΗΡΙΩΣΗΣ GNU (GFDL) ΚΑΙ ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: <orderedlist>
+		<listitem>
+		  <para>ΤΟ ΠΑΡΟΝ ΕΓΓΡΑΦΟ ΠΑΡΕΧΕΤΑΙ "ΩΣ ΕΧΕΙ", ΧΩΡΙΣ ΟΠΟΙΑΔΗΠΟΤΕ ΑΛΛΗ ΕΓΓΥΗΣΗ, ΕΙΤΕ ΡΗΤΗ ΕΙΤΕ ΣΙΩΠΗΡΗ, ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΗΣ, ΧΩΡΙΣ ΠΕΡΙΟΡΙΣΜΟ, ΤΗΣ ΕΓΓΥΗΣΗΣ ΟΤΙ ΤΟ ΕΓΓΡΑΦΟ, Ή Η ΤΡΟΠΟΠΟΙΗΜΕΝΗ ΕΚΔΟΣΗ ΑΥΤΟΥ, ΕΙΝΑΙ ΕΜΠΟΡΕΥΣΙΜΟ, ΚΑΤΑΛΛΗΛΟ ΓΙΑ ΕΙΔΙΚΟ ΣΚΟΠΟ ΚΑΙ ΔΕΝ ΠΡΟΣΒΑΛΛΕΙ ΔΙΚΑΙΩΜΑΤΑ ΤΡΙΤΩΝ. Ο ΧΡΗΣΤΗΣ ΑΝΑΛΑΜΒΑΝΕΙ ΕΞ ΟΛΟΚΛΗΡΟΥ ΤΗΝ ΕΘΥΝΗ ΩΣ ΠΡΟΣ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΤΗΝ ΑΚΡΙΒΕΙΑ ΚΑΙ ΤΗΝ ΧΡΗΣΗ ΤΟΥ ΕΓΓΡΑΦΟΥ Ή ΤΗΣ ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ ΑΥΤΟΥ. ΣΕ ΠΕΡΙΠΤΩΣΗ ΠΟΥ ΟΠΟΙΟΔΗΠΟΤΕ ΕΓΓΡΑΦΟ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΗ ΕΚΔΟΣΗ ΑΥΤΟΥ ΑΠΟΔΕΙΧΘΟΥΝ ΕΛΑΤΤΩΜΑΤΙΚΑ ΚΑΘ' ΟΙΟΝΔΗΠΟΤΕ ΤΡΟΠΟ, Ο ΧΡΗΣΤΗΣ (ΚΑΙ ΟΧΙ Ο ΑΡΧΙΚΟΣ ΣΥΓΓΡΑΦΕΑΣ, ΔΗΜΙΟΥΡΓΟΣ Ή ΟΠΟΙΟΣΔΗΠΟΤΕ ΣΥΝΤΕΛΕΣΤΗΣ) ΑΝΑΛΑΜΒΑΝΕΙ ΤΟ ΚΟΣΤΟΣ ΟΠΟΙΑΣΔΗΠΟΤΕ ΑΝΑΓΚΑΙΑΣ ΣΥΝΤΗΡΗΣΗΣ, ΕΠΙΣΚΕΥΗΣ Ή ΔΙΟΡΘΩΣΗΣ. Η ΠΑΡΟΥΣΑ ΑΠΟΠΟΙΗΣΗ ΕΓΓΥΗΣΗΣ ΑΠΟΤΕΛΕΙ ΑΝΑΠΟΣΠΑΣΤΟ ΜΕΡΟΣ ΤΗΣ ΑΔΕΙΑΣ. ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΟΥΔΕΜΙΑ ΧΡΗΣΗ ΤΟΥ ΕΓΓΡΑΦΟΥ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΩΝ ΕΚΔΟΣΕΩΝ ΑΥΤΟΥ ΣΥΜΦΩΝΑ ΜΕ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ ΠΑΡΟΥΣΑΣ,  ΠΑΡΑ ΜΟΝΟ ΕΑΝ ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΟΠΟΙΗΣΗ ΕΓΓΥΗΣΗΣ,  ΚΑΙ</para>
+		</listitem>
+		<listitem>
+		  <para>Ο ΔΗΜΙΟΥΡΓΟΣ, Ο ΑΡΧΙΚΟΣ ΣΥΓΓΡΑΦΕΑΣ, ΟΙ ΣΥΝΤΕΛΕΣΤΕΣ Ή ΟΙ ΔΙΑΝΟΜΕΙΣ ΤΟΥ ΕΓΓΡΑΦΟΥ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ ΑΥΤΟΥ, ΚΑΘΩΣ ΚΑΙ ΟΙ ΠΡΟΜΗΘΕΥΤΕΣ ΟΠΟΙΩΝΔΗΠΟΤΕ ΕΚ ΤΩΝ ΠΡΟΑΝΑΦΕΡΟΜΕΝΩΝ ΜΕΡΩΝ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ ΕΝΑΝΤΙ ΟΙΟΥΔΗΠΟΤΕ, ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΕΡΜΗΝΕΙΑ ΝΟΜΟΥ, ΕΙΤΕ ΕΞ ΑΔΙΚΟΠΡΑΞΙΑΣ (ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΗΣ ΤΗΣ ΑΜΕΛΕΙΑΣ) ΕΙΤΕ ΣΤΟ ΠΛΑΙΣΙΟ ΣΥΜΒΑΤΙΚΗΣ Ή ΑΛΛΗΣ ΥΠΟΧΡΕΩΣΗΣ, ΓΙΑ ΤΥΧΟΝ ΑΜΕΣΕΣ, ΕΜΜΕΣΕΣ, ΕΙΔΙΚΕΣ, ΤΥΧΑΙΕΣ Ή ΣΥΝΕΠΑΚΟΛΟΥΘΕΣ ΖΗΜΙΕΣ ΟΠΟΙΑΣΔΗΠΟΤΕ ΜΟΡΦΗΣ, ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΩΝ, ΧΩΡΙΣ ΠΕΡΙΟΡΙΣΜΟ, ΖΗΜΙΩΝ ΛΟΓΩ ΑΠΩΛΕΙΑΣ ΦΗΜΗΣ ΚΑΙ ΠΕΛΑΤΕΙΑΣ, ΔΙΑΚΟΠΗΣ ΕΡΓΑΣΙΩΝ, ΔΥΣΛΕΙΤΟΥΡΓΙΑΣ Ή ΒΛΑΒΗΣ ΗΛΕΚΤΡΟΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ, Ή ΚΑΘΕ ΑΛΛΗΣ ΖΗΜΙΑΣ Ή ΑΠΩΛΕΙΑΣ ΠΟΥ ΟΦΕΙΛΕΤΑΙ Ή ΣΧΕΤΙΖΕΤΑΙ ΜΕ ΤΗΝ ΧΡΗΣΗ ΤΟΥ ΕΓΓΡΑΦΟΥ ΚΑΙ ΤΩΝ ΤΡΟΠΟΠΟΙΗΜΕΝΩΝ ΕΚΔΟΣΕΩΝ ΑΥΤΟΥ, ΑΚΟΜΑ ΚΑΙ ΑΝ ΤΑ ΩΣ ΑΝΩ ΜΕΡΗ ΕΙΧΑΝ ΛΑΒΕΙ ΓΝΩΣΗ ΤΗΣ ΠΙΘΑΝΟΤΗΤΑΣ ΠΡΟΚΛΗΣΗΣ ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+		<firstname>Andrew</firstname> 
+		<surname>Sobala</surname> 
+		<affiliation> 
+	  		<orgname>Έργο τεκμηρίωσης GNOME</orgname> 
+	  		<address> <email>andrew@sobala.net</email> </address> 
+		</affiliation> 
+      </author> 
+
+	<othercredit role="author">
+		<firstname>Lars</firstname>
+		<surname>Rydlinge</surname>
+		<affiliation>
+			<orgname>Έργο GNOME</orgname>
+			<address> <email>Lars.Rydlinge@HIG.SE</email> </address>
+		</affiliation>
+	</othercredit>
+
+	<othercredit role="maintainer">
+		<firstname>Ross</firstname>
+		<surname>Burton</surname>
+		<affiliation>
+			<orgname>Έργο GNOME</orgname>
+			<address> <email>ross@burtonini.com</email> </address>
+		</affiliation>
+	</othercredit>
+
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->  
+    <revhistory>
+<!--
+      <revision> 
+		<revnumber>Full title of previous manual.</revnumber> 
+		<date>Release date of previous manual.</date> 
+		<revdescription> 
+	  		<para role="author">Documentation Writer 1 
+	    	<email>docwriter1@gnome.org</email>
+	  		</para>
+	  		<para role="publisher">GNOME Documentation Project</para>
+		</revdescription> 
+      </revision> 
+-->
+
+	<revision>
+		<revnumber>V2.0</revnumber>
+		<date>13 Αυγούστου 2002</date>
+		<revdescription>
+	  		<para role="author">Andrew Sobala <email>andrew@sobala.net</email></para>
+	  		<para role="publisher">Έργο τεκμηρίωσης GNOME</para>
+		</revdescription> 
+	</revision>
+
+    </revhistory> 
+
+    <releaseinfo>Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.12 του GNOME Κλότσκι.</releaseinfo> 
+    <legalnotice> 
+      <title>Aνάδραση</title> 
+      <para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με την εφαρμογή <application>Κλότσκι</application>, ή αυτό το εγχειρίδιο, ακολουθήστε τις οδηγίες στη <ulink url="ghelp:user-guide?feedback-bugs" type="help">Σελίδα ανάδρασης GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>GNOME Κλότσκι</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="gnotski-introduction"> 
+	<title>Εισαγωγή</title> 
+	<para>Η εφαρμογή <application>Κλότσκι</application> είναι ένας κλώνος του παιχνιδιού Κλότσκι. Ο στόχος είναι να μετακινήσετε το μπλοκ με μοτίβο στην περιοχή που οριοθετείται από τους πράσινους δείκτες.</para>
+
+	<para>Το <application>Κλότσκι</application> γράφτηκε από τον Lars Rydlinge (<email>Lars.Rydlinge@HIG.SE</email>).</para>
+
+	<para>To <application>Κλότσκι</application> συμπεριλαμβάνεται στο πακέτο gnome-games, το οποίο είναι κομμάτι του περιβάλλοντος επιφάνειας εργασίας GNOME. Αυτό το έγγραφο περιγράφει την έκδοση 2.12 του <application>Κλότσκι</application>.</para>
+
+	<para>Αυτό το πρόγραμμα διανέμεται υπό τους όρους της  Γενικής Άδειας Δημόσιας Χρήσης GNU (GPL), όπως αυτή έχει δημοσιευτεί από το Ίδρυμα Ελεύθερου Λογισμικού (FSS) — είτε της έκδοσης 2 της ‘Αδειας, είτε (κατ' επιλογήν σας) οποιασδήποτε μεταγενέστερης έκδοσης. Αντίγραφο της άδειας είναι διαθέσιμο στον ακόλουθο  <ulink url="ghelp:gpl" type="help">σύνδεσμο</ulink>, ή στο αρχείο COPYING-DOCS που διανέμεται μαζί με τον πηγαίο κώδικα αυτού του προγράμματος.</para>
+
+	<para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με αυτήν την εφαρμογή ή αυτό το εγχειρίδιο, ακολουθήστε τις οδηγίες σε αυτό το <ulink url="ghelp:user-guide?feedback-bugs" type="help">έγγραφο</ulink>.</para>
+  </sect1>
+
+<!-- ===========Objective ============================== -->
+<sect1 id="gnotski-objective">
+	<title>Σκοπός</title>
+	<para>Ο στόχος του <application>Κλότσκι</application> είναι να μετακινηθεί το μπλοκ με μοτίβο στους πράσινους δείκτες σε όσο λιγότερες κινήσεις γίνεται. Μπορείτε να το κάνετε αυτό μετακινώντας τα μπλοκ ένα - ένα με το ποντίκι μέχρι να πάει το μπλοκ με το μοτίβο στους δείκτες. <figure id="gnotski-figure-win"> 
+		<title>Η κίνηση νίκης</title> 
+		<screenshot> 
+			<mediaobject> 
+			<imageobject>
+				<imagedata fileref="figures/gnotski_win.png" format="PNG"/> 
+			</imageobject>
+			<textobject> 
+				<phrase>Το μπλοκ με μοτίβο πρέπει να μετακινηθεί στο χώρο που οριοθετείται από τους πράσινους δείκτες.</phrase> 
+			</textobject> 
+	        	</mediaobject> 
+		</screenshot>
+	</figure></para>
+	<!-- ==== End of Figure ==== -->
+</sect1>
+
+<!-- =========== Getting Started ============================== -->
+
+  <sect1 id="gnotski-playing"> 
+	<title>Παίζοντας <application>Κλότσκι</application></title> 
+	<para>
+	<itemizedlist> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-start"/></para> 
+	</listitem>
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-ui"/></para> 
+	</listitem> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-new-game"/></para> 
+	</listitem> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-moving"/></para> 
+	</listitem>
+	</itemizedlist> </para>
+
+	<!-- =========== To start gnotski ============================== -->
+	<sect2 id="gnotski-start">
+		<title>Εκκίνηση του <application>Κλότσκι</application></title>
+		<para>Μπορείτε να εκκινήσετε το <application>Κλότσκι</application> από το μενού Εφαρμογές επιλέγοντας <menuchoice><guisubmenu>Παιχνίδια</guisubmenu><guimenuitem>Κλότσκι</guimenuitem></menuchoice>.</para>
+	</sect2>
+
+	<!-- =========== The main window ============================== -->
+	<sect2 id="gnotski-ui">
+		<title>Το αρχικό παράθυρο</title>
+		<para>Όταν εκκινείτε το <application>Κλότσκι</application>, το ακόλουθο παράθυρο εμφανίζεται.</para>
+
+		<!-- ==== Figure ==== -->
+		<figure id="gnotski-figure-mainwindow"> 
+			<title>Το παράθυρο εκκίνησης <application>Κλότσκι</application></title> 
+			<screenshot> 
+				<mediaobject> 
+				<imageobject>
+					<imagedata fileref="figures/gnotski_start_window.png" format="PNG"/> 
+				</imageobject>
+				<textobject> 
+					<phrase>Εμφανίζει το <application>Κλότσκι</application> κεντρικό παράθυρο. Περιέχει γραμμή τίτλου, γραμμή μενού, περιοχή παιχνιδιού και γραμμή κατάστασης. Η γραμμή μενού περιέχει τα μενού Παιχνίδι και Βοήθεια</phrase> 
+				</textobject> 
+		        	</mediaobject> 
+			</screenshot>
+		</figure>
+		<!-- ==== End of Figure ==== -->
+
+		<para>Το παράθυρο του <application>Κλότσκι</application> περιέχει τα ακόλουθα στοιχεία: <variablelist>
+		<varlistentry>
+			<term>Γραμμή μενού</term>
+			<listitem>
+			<variablelist>
+			<varlistentry>
+				<term>Μενού παιχνιδιού</term>
+				<listitem>
+				<para>Το μενού Παιχνίδι σας επιτρέπει να ξεκινήσετε νέα παιχνίδια, να δείτε τις υψηλότερες βαθμολογίες και να βγείτε από το πρόγραμμα.</para>
+				</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Μενού βοήθειας</term>
+				<listitem>
+				<para>Το μενού Βοήθεια σας επιτρέπει να προβάλετε την τεκμηρίωση του <application>Κλότσκι</application></para>
+				</listitem>
+			</varlistentry>
+			</variablelist>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term>Περιοχή παιχνιδιού</term>
+			<listitem>
+			<para>Η περιοχή παιχνιδιού εμφανίζει τα μπλοκ στο τρέχον παιχνίδι. Μπορείτε να σύρετε τα μπλοκ με το ποντίκι όπως περιγράφεται στο <xref linkend="gnotski-moving"/>.</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term>Γραμμή κατάστασης</term>
+			<listitem>
+			<para>Η γραμμή κατάστασης εμφανίζει πόσες κινήσεις έχετε κάνει μέχρι τώρα.</para>
+			</listitem>
+		</varlistentry>
+		</variablelist></para>
+
+	</sect2>
+
+	<!-- =========== Starting a new game ============================== -->
+	<sect2 id="gnotski-new-game">
+		<title>Ξεκινώντας ένα νέο παιχνίδι</title>
+		<para>Χρησιμοποιήστε το <guimenu>Μενού παιχνιδιού</guimenu> για να ξεκινήσετε ένα νέο παιχνίδι. Οι επιλογές <guimenuitem>Επόμενο παζλ</guimenuitem> και <guimenuitem>Προηγούμενο παζλ</guimenuitem> σας επιτρέπουν να περιηγηθείτε στα παζλ διαδοχικά. Κάθε παζλ ανήκει σε μια από τις τέσσερις κατηγορίες που βρίσκονται στα μενού με όνομα <guisubmenu>Διαδρομή HuaRong</guisubmenu>, <guisubmenu>Πακέτο προκλήσεων</guisubmenu>, <guisubmenu>Πακέτο δεξιοτήτων</guisubmenu>, και <guisubmenu>Minoru Climb</guisubmenu>. Σε αυτά τα μενού, κάθε όνομα παζλ αναφέρεται σε ένα σενάριο παιχνιδιού.</para>
+		<example>
+		<title>Ξεκινώντας ένα παιχνίδι</title>
+		<para>Για να ξεκινήσετε το δυσκολότερο παιχνίδι που διατίθεται, επιλέξτε <menuchoice><guimenu>Παιχνίδι</guimenu><guisubmenu>Minoru Climb</guisubmenu><guimenuitem>Climb 24 Pro</guimenuitem></menuchoice></para></example>
+	</sect2>
+
+	<!-- ===========Moving blocks ============================== -->
+	<sect2 id="gnotski-moving">
+		<title>Μετακινώντας τα μπλοκ</title>
+		<para>Για να μετακινήσετε ένα μπλοκ, κάντε κλικ πάνω του, κρατήστε το πλήκτρο του ποντικιού και σύρετε το στην νέα του τοποθεσία. Δεν μπορείτε να μετακινήσετε τα πράσινα μπλοκ ή το μπλοκ που οριοθετεί το παιχνίδι. Δεν μπορείτε να μετακινήσετε ένα μπλοκ σε σημείο που υπάρχει ήδη άλλο μπλοκ, με την εξαίρεση πως μπορείτε να μετακινήσετε το μπλοκ με μοτίβο μέσα από τα πράσινα μπλοκ για να νικήσετε.</para>
+	</sect2>
+
+</sect1>
+
+<!-- Known bugs.  Try to manage user expectations and warn them of known bugs
+but it is better to omit this section than give a false sense of perfection
+<sect1 id="gnotski-bugs">
+	<title>Known Bugs and Limitations</title>
+	<para>
+        There are no known bugs in this game.
+	</para>
+</sect1>
+-->
+
+<sect1 id="authors">
+  <title>Δημιουργοί</title>
+  <para>Το <application>Κλότσκι</application> γράφτηκε από τον Lars Rydlinge (<email>lars.rydlinge@hig.se</email>). Αυτό το εγχειρίδιο γράφτηκε από τον Andrew Sobala. Για να αναφέρετε κάποιο πρόβλημα ή να κάνετε μια πρόταση σχετικά με αυτή την εφαρμογή ή αυτό το εγχειρίδιο, ακολουθήστε τις οδηγίες σε αυτό το <ulink url="ghelp:user-guide?feedback-bugs" type="help">έγγραφο</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+</sect1>
+
+ <sect1 id="license">
+  <title>Άδεια χρήσης</title>
+  <para>Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό· επιτρέπεται η αναδιανομή ή/και τροποποίησή του υπό τους όρους της  <citetitle>Γενικής Άδειας Δημόσιας Χρήσης GNU (GPL)</citetitle>, όπως αυτή έχει δημοσιευτεί από το Ίδρυμα Ελεύθερου Λογισμικού (FSS) — είτε της έκδοσης 2 της ‘Αδειας, είτε (κατ' επιλογήν σας) οποιασδήποτε μεταγενέστερης έκδοσης. </para>
+  <para>Το πρόγραμμα αυτό διανέμεται με την ελπίδα ότι θα αποδειχθεί χρήσιμο, παρόλα αυτά ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ — χωρίς ούτε και την σιωπηρή εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΕΙΔΙΚΟ ΣΚΟΠΟ. Για περισσότερες λεπτομέρειες ανατρέξτε στη <citetitle>Γενική ‘Αδεια Δημόσιας Χρήσης GNU (GPL)</citetitle>.</para>
+  <para>Αντίγραφο της <citetitle>Γενικής Άδειας Δημόσιας Χρήσης GNU (GPL)</citetitle> περιλαμβάνεται ως παράρτημα στον <citetitle>Οδηγό χρήστη GNOME</citetitle>. Επίσης, αντίγραφο της <citetitle>Γενικής Άδειας Δημόσιας Χρήσης GNU (GPL)</citetitle> μπορείτε να παραλάβετε από το  Ίδρυμα Ελεύθερου Λογισμικού (FSS), είτε επισκεπτόμενοι τον <ulink type="http" url="http://www.fsf.org">ιστοχώρο</ulink> του, είτε γράφοντας στη διεύθυνση <address> Free Software Foundation, Inc. <street>51 Franklin Street, Fifth Floor</street> <city>Boston</city>, <state>MA</state><postcode>02110-1301</postcode><country>USA</country></address>.</para>
+ </sect1>
+
+</article>

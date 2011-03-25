@@ -1,0 +1,77 @@
+<sect1 id="Gay_Gordons"><!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>Gay Gordons</title>
+
+  <para>Written by Rosanna Yuen</para>
+
+          <sect2><title>Setup</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>Type of Deck</entry>
+	  <entry>Standard Deck</entry>
+	</row>
+	<row>
+	  <entry>Reserve</entry>
+	  <entry>
+	    Top left pile.  Deal two cards face up here.  The top card
+	    is in play.  Cannot be refilled or built on.
+	  </entry>
+	</row>
+	<row>
+	  <entry>Tableau</entry>
+	  <entry>
+	    Ten piles.  Deal five cards face up in each pile.  The top
+	    card in each pile is in play.  Empty piles cannot be filled.
+	  </entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>Goal</title>
+
+  <para>
+    Remove all cards.
+  </para>
+
+          </sect2>
+        <sect2><title>Rules</title>
+
+  <para>
+    Remove cards in pairs that add up to eleven.  Kings are paired off
+    with Queens.  Jacks are paired off with other Jacks.
+  </para>
+
+          </sect2>
+        <sect2><title>Scoring</title>
+
+  <para>
+    Each pair of cards removed scores two points.
+  </para>
+  <para>
+    Maximum possible score:  52
+  </para>
+
+          </sect2>
+        <sect2><title>Strategy</title>
+
+  <para>
+    Try to uncover cards that are buried under their pair-mate.
+  </para>
+        </sect2>
+</sect1>

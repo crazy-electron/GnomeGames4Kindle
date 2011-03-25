@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="move" xml:lang="sr@latin">
+
+  <info>
+    <link type="guide" xref="index#play" group="two"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Kako da pomerate delove na tabli za igru.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  
+  <title>Pomeranje delova</title>
+  
+  <section id="move-piece">
+    <title>Pomeriti deo</title>
+    <p>Da biste pomerili deo, morate prvo da ga kliknete i držite ga tako, a onda ga prevlačite sa trenutnog mesta na novo mesto, bilo na desnu ili levu kutiju, a onda otpustite dugme miša.</p>
+    <p>Ova pomeranja nisu konačna i deo se uvek može vratiti nazad.</p>
+    <note>
+      <p>Svi delovi u levoj kutiji se mogu zajedno pomeriti u nekom pravcu. Pogledajte <link xref="shortcut"/> za detalje.</p>
+    </note>
+  </section>
+  <section id="move-avoid">
+    <title>Izbegnite dugo držanje dugmeta miša</title>
+    <p>Ako vam nije prijatno da kliknete i držite pritisnuto dugme miša da biste pomerali delove, moguće je promeniti to ponašanje tako da je dovoljno samo da jednom kliknete na deo i da počnete da ga pomerate, a da ponovo kliknete da biste ga spustili na novo mesto.</p>
+    <p>Da biste uradili ovo, iz trake glavnog menija otvorite <gui style="menu">Pomeri</gui> i odaberite <gui style="checkbox">Kliknite za potez</gui>.</p>
+  </section>
+</page>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="hint" xml:lang="fr">
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Utiliser des astuces ou résoudre le puzzle automatiquement.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-23" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+  </info>
+  <title>Astuces</title>
+
+  <note style="warning">
+    <p>Si vous utilisez une des méthodes suivantes pour terminer le puzzle, votre score ne sera pas comptabilisés parmi les meilleurs scores.</p>
+  </note>
+
+  <section id="hint-hints">
+  
+    <title>Utilisation du système d'astuces</title>
+    
+    <p>À tout moment dans le jeu, si vous ne savez pas comment démarrer ou bien où déplacer une pièce, il est possible d'utiliser le système d'astuces intégré.</p>
+    <p>Le système déplace une pièce de la boîte de droite à la bonne place dans la boîte de gauche.</p>
+    <p>Pour utiliser le système d'astuces, effectuez l'une des actions suivantes :</p>
+    <list>
+      <item>
+        <p>Appuyez sur <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Choisissez <guiseq><gui style="menu">Jeu</gui><gui style="menuitem">Astuce</gui></guiseq>.</p>
+      </item>
+    </list>
+  </section>
+  <section id="hint-solve">
+    <title>Résolution du puzzle</title>
+    <p>Si vous êtes coincés dans le jeu ou si vous voulez le résoudre automatiquement, choisissez <guiseq><gui style="menu">Jeu</gui><gui style="menuitem">Résoudre</gui></guiseq>.</p>
+  </section>
+</page>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Five or More</application>">
+<!ENTITY appname "Five or More">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- This doc is based on the GDP template from GNOME 1.2
+     Its syntax and DTD has been updated to validate with xmllint.
+     The content needs to be updated (it basically needs to be finished)
+     edited and indexed.
+   -->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ca"> 
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+ <articleinfo>
+  <title>Manual del <application>Cinc o més</application></title>
+  <abstract role="description">
+    <para>Per a jugar al cinc o més s'han d'alinear les fitxes del mateix color mentre el tauler s'omple amb fitxes ubicades aleatòriament. Quan s'alineen cinc o més fitxes del mateix color, aquestes desapareixen. La partida acaba quan el tauler s'omple completament.</para>
+  </abstract>
+
+  <copyright>
+   <year>2000-2002</year>
+   <holder>Emese Kovács</holder>
+  </copyright><copyright><year>2007, 2008</year><holder>Joan Duran (jodufi@gmail.com)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>Projecte de documentació del GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Teniu permís per a copiar, distribuir i/o modificar aquest document, sota els termes de la Llicència de documentació lliure GNU (GFDL), versió 1.1 o qualsevol versió publicada posteriorment per la Free Software Foundation, sense seccions invariants, sense texts de portada i sense texts de contraportada. Podeu trobar una còpia de la GFDL en aquest <ulink type="help" url="ghelp:fdl">enllaç</ulink> o en el fitxer COPYING-DOCS distribuït amb aquest manual.</para>
+         <para>Aquest manual forma part d'una col·lecció de manuals del GNOME distribuïts sota la GFDL. Si voleu distribuir aquest manual independentment de la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal com es descriu a la secció 6 de la llicència.</para>
+
+	<para>Molts dels noms que les empreses utilitzen per a distingir els seus productes i serveis es consideren marques comercials. Quan aquests noms apareguin en qualsevol documentació del GNOME, si els membres del Projecte de documentació del GNOME han estat avisats pel que fa a les marques, els noms apareixeran en majúscules o amb les inicials en majúscules.</para>
+
+	<para>EL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT S'OFEREIXEN SOTA ELS TERMES DE LA LLICÈNCIA DE DOCUMENTACIÓ LLIURE DE GNU, TENINT EN COMPTE QUE: <orderedlist>
+		<listitem>
+		  <para>EL DOCUMENT S'OFEREIX «TAL COM ÉS», SENSE CAP TIPUS DE GARANTIA, NI EXPLÍCITA NI IMPLÍCITA; AIXÒ INCLOU, SENSE LIMITAR-S'HI, LES GARANTIES QUE EL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT NO TINGUI DEFECTES, SIGUI COMERCIALITZABLE, SIGUI ADEQUAT PER A UN ÚS CONCRET O NO INFRINGEIXI CAP LLEI. TOT EL RISC PEL QUE FA A LA QUALITAT, EXACTITUD I RENDIMENT DEL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT ÉS VOSTRE. EN CAS QUE EL DOCUMENT RESULTÉS DEFECTUÓS EN QUALSEVOL ASPECTE, VÓS (NO PAS L'ESCRIPTOR INICIAL, L'AUTOR O CAP ALTRE COL·LABORADOR) ASSUMIU TOT EL COST DE MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA; I </para>
+		</listitem>
+		<listitem>
+		  <para>EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGUI PER AGREUJAMENT (INCLOENT-HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR ORIGINAL, QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA VERSIÓ MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN RESPONSABLES DAVANT DE NINGÚ PER CAP DANY DIRECTE, INDIRECTE, ESPECIAL, ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITAR-S'HI, ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FEINA, FALLADA O MALFUNCIONAMENT DE L'ORDINADOR, O QUALSEVOL ALTRA PÈRDUA O DANY RELACIONAT AMB L'ÚS DEL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT, FINS I TOT SI S'HA INFORMAT AQUESTA PART DE LA POSSIBILITAT D'AQUESTS DANYS.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+	<firstname>Emese</firstname> 
+	<surname>Kovács</surname> 
+	<affiliation> 
+	  <orgname>Projecte de documentació del GNOME</orgname> 
+	  <address> <email>emese@gnome.hu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+    <revhistory>
+      <revision> 
+	<revnumber>Manual del Cinc o més (versió 2.8)</revnumber> 
+	<date>Stembre de 2004</date> 
+	<revdescription> 
+	  <para role="author">Emese Kovács <email>emese@gnome.hu</email></para>
+	  <para role="publisher">Projecte de documentació del GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Aquest manual descriu la versió 2.12 del Cinc o més.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Comentaris</title> 
+      <para>Per a informar d'un error o fer algun suggeriment quant al <application>Cinc o més</application> o aquest manual, seguiu les indicacions a la <ulink url="ghelp:user-guide?feedback-bugs" type="help">pàgina de comentaris del GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Cinc o més</primary> 
+  </indexterm> 
+
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+ <sect1 id="intro">
+  <title>Introducció</title>
+
+  <para>El <application>Cinc o més</application> és el la versió per a GNOME del que va ser un joc popular del Windows anomenat <application>Color Lines</application>. L'objectiu és alinear, el més sovint possible, cinc objectes o més del mateix color i forma fent-los desaparèixer. Jugueu el màxim possible i sigueu el número 1 en les puntuacions màximes.</para>
+
+  <para>Per a executar el <application>Cinc o més</application>, seleccioneu <guimenuitem>Cinc o més</guimenuitem> en el submenú <guimenu>Jocs</guimenu> del <guimenu>Menú principal</guimenu> o introduïu <command>glines</command> en la línia d'ordres.</para>
+
+  <para>El <application>Cinc o més</application> està inclòs en el paquet <filename>gnome-games</filename>, el qual és part de l'entorn d'escriptori GNOME. Aquest document descriu la versió 2.8 del <application>Cinc o més</application>.</para>
+
+ </sect1>
+
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="usage">
+    <title>Jugar al Cinc o més</title>
+    <para>
+      Playing <application>Five or More</application> is easy. At startup, you find
+      yourself with five objects randomly positioned on the board. Each turn,
+      you are allowed to move one object. You can move it anywhere on the board as long as there is a clear path. Afterward, the computer drops more objects
+      at random positions (the exact number depends on the size of the game). You can preview the next objects to be
+      dropped in the upper left corner of the game's window.
+      If you manage to align five objects of the same shape and color, they
+      disappear and you are given an extra move before more objects
+      drop.
+    </para>
+
+
+  <!-- ========= Basic Usage =========================== -->
+  <sect2 id="mainwin">
+   <title>Utilització bàsica</title>
+   <para>En iniciar el <application>Cinc o més</application> us trobareu amb el <interface>tauler de joc</interface> i s'iniciarà una partida nova. Això s'assembla al que es mostra a <xref linkend="mainwindow-fig"/>.</para>
+
+    <!-- ==== Figure ==== -->
+	<figure id="mainwindow-fig">
+	  <title>La finestra principal quan inicieu una partida.</title>
+	  <screenshot>
+	      <mediaobject>
+	      <imageobject>
+	      <imagedata fileref="figures/glines-startgame.png" format="PNG" srccredit="emese"/>
+	      </imageobject>
+	      </mediaobject>
+	  </screenshot>
+	</figure>
+     <!-- ==== End of Figure ==== -->
+
+   <para>A mesura que la partida avança, el tauler s'omple més i més (a no ser que sigueu molt bo...) i fer desaparèixer els objectes és més i més difícil. La partida s'acaba quan el tauler està ple.</para>
+   
+   <!-- ==== Figure ==== -->
+   <figure id="gameover-fig">
+	  <title>Final de la partida.</title>
+	  <screenshot>
+    <mediaobject>
+     <imageobject>
+      <imagedata fileref="figures/glines-gameover.png" format="PNG" srccredit="emese kovacs"/>
+     </imageobject>
+    </mediaobject>
+ </screenshot>
+</figure>  
+   <!-- ==== End of Figure ==== -->
+   
+  </sect2>
+
+
+  <!-- ========= Rulez =========================== -->
+
+    <sect2 id="rules"> 
+      <title>Jugar al joc</title>
+      <para>Una partida del <application>Cinc o més</application> comença amb alguns objectes aleatoris en el tauler.</para>
+      <para>Per a fer un moviment, feu clic en un dels objectes. Quan l'objecte estigui activat començarà a donar voltes (o alguna altra cosa depenent del tema, però no ens avançem…). Llavors podreu seleccionar la seva destinació fent clic a una casella buida. Si la ruta fins al destí està lliure, l'element activat hi viatjarà. Si la casella de destí està ocupada per un altre objecte, no es mourà res i la selecció serà transferida a l'objecte nou. Si la ruta no està lliure (no podeu fer saltar els objectes sobre els obstacles) l'aplicació mostrarà un avís en la barra d'estat (part inferior de la finestra) i l'objecte original es mantindrà actiu.</para>
+      <para>Obtindreu punts en fer desaparèixer objectes. El punts que obteniu depenen del número d'objectes que heu pogut alinear (vegeu <xref linkend="glines-table1"/>). Es mostra la puntuació en la cantonada superior dreta de la finestra.</para>
+      
+    <!-- ====  Table 1.  ==== -->
+    <table id="glines-table1">
+     <title>Puntuació en el Cinc o més</title>
+      <tgroup cols="2" align="center">
+       <thead>
+        <row>
+         <entry>Número d'objectes</entry>
+         <entry>Puntuació obtinguda</entry>
+        </row>
+       </thead>
+       <tbody>
+       <row>
+        <entry>5</entry>
+        <entry>10</entry>
+       </row>
+       <row>
+        <entry>6</entry>
+        <entry>12</entry>
+       </row>
+       <row>
+        <entry>7</entry>
+        <entry>18</entry>
+       </row>
+       <row>
+        <entry>8</entry>
+        <entry>28</entry>
+       </row>
+       <row>
+        <entry>9</entry>
+        <entry>42</entry>
+       </row>
+       <row>
+        <entry>10</entry>
+        <entry>82</entry>
+       </row>
+       <row>
+        <entry>11</entry>
+        <entry>108</entry>
+       </row>
+       <row>
+        <entry>12</entry>
+        <entry>138</entry>
+       </row>
+      <row>
+        <entry>13</entry>
+        <entry>172</entry>
+      </row>
+      <row>
+        <entry>14</entry>
+        <entry>210</entry>
+       </row>
+      </tbody>
+     </tgroup> 
+    </table>
+
+  <sect3>
+  <title>Utilització del teclat</title>
+  <para>Podeu jugar al <application>Cinc o més</application> amb el teclat en comptes del ratolí. Per a utilitzar-lo, premeu una tecla del cursor i apareixerà un cursor prop del centre del tauler. Les tecles de cursor mouran el cursor. Quan el cursor està sobre de l'objecte que voleu moure, utilitzeu la barra espaiadora per a seleccionar-lo. Llavors desplaceu el cursor al destí de l'objecte i premeu la barra espaiadora per a moure'l.</para><para>Si torneu a utilitzar el ratolí, el cursor desapareixerà. El cursor tornarà a aparèixer si torneu a utilitzar les tecles de cursor.</para>
+  </sect3>
+
+
+   <!-- ==== End of Table ==== -->
+
+
+    </sect2>
+
+
+  </sect1>
+  <sect1 id="settings">
+  <title>Personalització el joc</title>
+  <para>Podeu configurar el <application>Cinc o més</application> si feu clic a <guimenuitem>Preferències</guimenuitem> en el menú de l'aplicació <guimenu>Paràmetres</guimenu>. Apareixerà el <interface>diàleg</interface> següent:</para>
+ <!-- ==== Figure ==== -->
+   <figure>
+     <title>Preferències</title>   
+    <mediaobject id="preferences-dialogbox">
+     <imageobject>
+      <imagedata fileref="figures/preferences.png" format="PNG" srccredit="emese"/>
+     </imageobject>
+    </mediaobject>
+  </figure>    
+    <!-- ==== End of Figure ==== -->
+
+  <para>Podeu seleccionar diferents estils d'objectes i de colors de fons en la secció <guimenu>Temes</guimenu>. Si trobeu que és difícil distingir els colors, proveu el tema «shapes».</para>
+  <para>La secció <guimenu>Mida del tauler</guimenu> us permet seleccionar la mida del tauler. Cada mida té un equilibri diferents: les mides grans us donen més espai per a moure-us, però us arribaran més objectes cada torn. El paràmetres de cada mida estan indicats a la <xref linkend="table-sizes"/>.</para>
+    <table id="table-sizes">
+     <title>Puntuació en el Cinc o més</title>
+      <tgroup cols="5" align="center">
+       <thead>
+        <row>
+         <entry align="left">Mida</entry>
+         <entry>Amplada</entry>
+         <entry>Alçada</entry>
+	 <entry>Número de tipus</entry>
+         <entry>Objectes per torn</entry>
+        </row>
+       </thead>
+       <tbody>
+       <row>
+        <entry align="left">Petit</entry>
+        <entry>7</entry>
+        <entry>7</entry>
+        <entry>5</entry>
+        <entry>3</entry>
+       </row>
+       <row>
+        <entry align="left">Mitjà</entry>
+        <entry>9</entry>
+        <entry>9</entry>
+        <entry>7</entry>
+        <entry>3</entry>
+       </row>
+       <row>
+        <entry align="left">Gran</entry>
+        <entry>20</entry>
+        <entry>15</entry>
+        <entry>7</entry>
+        <entry>7</entry>
+       </row>
+      </tbody>
+     </tgroup> 
+    </table>
+
+  <para>Podeu accelerar el moviment dels objectes activant la casella de verificació «Utilitza moviments ràpids» en la secció de preferències <guimenu>General</guimenu>.</para>
+  <para>Qualsevol canvi que realitzeu s'aplicarà instantàniament i es recordarà per a la següent vegada que executeu el <application>Cinc o més</application>.</para>
+  </sect1>
+  <sect1 id="themes">
+    <title>Com crear temes nous</title> 
+    <para>Cada tema consisteix en una fitxer d'imatge PNG. Aquesta imatge consisteix en una matriu de set files, corresponents als diferents objectes de colors/formes, i quatre columnes, cada un de les quals és un fotograma de l'animació de l'objecte. La mida de la imatge és irrellevant, serà redimensionada, però les sub-imatges han de formar una graella de quatre per set per a aconseguir l'efecte correcte. Quan utilitzeu un SVG recordeu que la mida de la imatge és la mida de la pàgina, si la graella no omple la pàgina proveu d'ajustar-ne la mida. Utilitzeu un tema existent com a guia.</para>
+  </sect1>
+
+ <!-- ============= Bugs ================================== -->
+ <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of 
+
+      Better to omit this section than give false impression of perfection
+      Add back in if there is something worth saying
+
+ <sect1 id="bugs">
+  <title>Known Bugs and Limitations</title>
+  <para>
+   This application has no known bugs.
+  </para>
+ </sect1>
+-->
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Autors</title>
+  <para>En Róbert Szókovács (<email>szo@appaloosacorp.hu</email>) i en Szabolcs Bán (<email>shooby@gnome.hu</email>) han escrit el <application>Cinc o més</application>. En Emese Kovács (<email>emese@gnome.hu</email>) ha escrit aquest manual. Per a més informació de com fer algun suggeriment o informar d'un error vegeu el <ulink url="ghelp:user-guide?feedback-bugs" type="help">document de comentaris</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Llicència</title>
+  <para>Aquest programa és programari lliure; podeu redistribuir-lo i/o modificar-lo sota els termes de la <citetitle>Llicència pública general de GNU</citetitle> tal com publica la Free Software Foundation; tant en la versió 2 de la llicència, o (a la vostra opció) una versió posterior.</para>
+  <para>Aquest programa es distribueix amb l'esperança de que sigui útil, però SENSE CAP GARANTIA; fins i tot sense la garantia implícita de COMERCIALITZACIÓ o ADEQUACIÓ A UN ÚS CONCRET. Per a més detalls vegeu la <citetitle>Llicència pública general de GNU</citetitle>.</para>
+  <para>S'inclou una còpia de la <citetitle>Llicència pública general de GNU</citetitle> en l'apèndix de la <citetitle>Guia d'usuaris del GNOME</citetitle>. També podeu obtenir una copia de la <citetitle>Llicència pública general de GNU</citetitle> de la Free Software Foundation visitant el <ulink type="http" url="http://www.fsf.org">seu lloc web</ulink> o escrivint a <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

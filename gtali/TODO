@@ -1,0 +1,7 @@
+Gyahtzee:
+* Should prob. force a reroll after undo, but why? we are already cheating.
+
+Other:
+* -Wall -Wstrict-prototypes -Wmissing-prototypes
+
+* Enforce Joker Rules on Humans,  Teach Computer about them!

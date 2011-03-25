@@ -1,0 +1,720 @@
+# French translation of gtali documentation.
+# Copyright (C) 2007-2008 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gtali documentation package.
+#
+# Claude Paroz <claude@2xlibre.net>, 2007-2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtali doc fr\n"
+"POT-Creation-Date: 2008-02-03 20:59+0100\n"
+"PO-Revision-Date: 2008-02-03 22:12+0100\n"
+"Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
+"Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# Mentions légales
+#: ../C/legal.xml:2(para) ../C/gtali.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Permission vous est donnée de copier, distribuer et/ou modifier ce document "
+"selon les termes de la Licence GNU Free Documentation License, Version 1.1 "
+"ou ultérieure publiée par la Free Software Foundation sans section "
+"inaltérable, sans texte de première page de couverture ni texte de dernière "
+"page de couverture. Vous trouverez un exemplaire de cette licence en suivant "
+"ce <ulink type=\"help\" url=\"ghelp:fdl\">lien</ulink> ou dans le fichier "
+"COPYING-DOCS fourni avec le présent manuel."
+
+#: ../C/legal.xml:12(para) ../C/gtali.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Ce manuel fait partie de la collection de manuels GNOME distribués selon les "
+"termes de la licence de documentation libre GNU. Si vous souhaitez "
+"distribuer ce manuel indépendamment de la collection, vous devez joindre un "
+"exemplaire de la licence au document, comme indiqué dans la section 6 de "
+"celle-ci."
+
+#: ../C/legal.xml:19(para) ../C/gtali.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"La plupart des noms utilisés par les entreprises pour distinguer leurs "
+"produits et services sont des marques déposées. Lorsque ces noms "
+"apparaissent dans la documentation GNOME et que les membres du projet de "
+"Documentation GNOME sont informés de l'existence de ces marques déposées, "
+"soit ces noms entiers, soit leur première lettre est en majuscule."
+
+#: ../C/legal.xml:35(para) ../C/gtali.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"LE PRÉSENT DOCUMENT EST FOURNI « TEL QUEL », SANS AUCUNE GARANTIE, EXPRESSE "
+"OU IMPLICITE, Y COMPRIS, ET SANS LIMITATION, LES GARANTIES DE "
+"MARCHANDABILITÉ, D'ADÉQUATION À UN OBJECTIF PARTICULIER OU DE NON INFRACTION "
+"DU DOCUMENT OU DE SA VERSION MODIFIÉE. L'UTILISATEUR ASSUME TOUT RISQUE "
+"RELATIF À LA QUALITÉ, À LA PERTINENCE ET À LA PERFORMANCE DU DOCUMENT OU DE "
+"SA VERSION DE MISE À JOUR. SI LE DOCUMENT OU SA VERSION MODIFIÉE S'AVÉRAIT "
+"DÉFECTUEUSE, L'UTILISATEUR (ET NON LE RÉDACTEUR INITIAL, L'AUTEUR, NI TOUT "
+"AUTRE PARTICIPANT) ENDOSSERA LES COÛTS DE TOUTE INTERVENTION, RÉPARATION OU "
+"CORRECTION NÉCESSAIRE. CETTE DÉNÉGATION DE RESPONSABILITÉ CONSTITUE UNE "
+"PARTIE ESSENTIELLE DE CETTE LICENCE. AUCUNE UTILISATION DE CE DOCUMENT OU DE "
+"SA VERSION MODIFIÉE N'EST AUTORISÉE AUX TERMES DU PRÉSENT ACCORD, EXCEPTÉ "
+"SOUS CETTE DÉNÉGATION DE RESPONSABILITÉ ; "
+
+#: ../C/legal.xml:55(para) ../C/gtali.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"EN AUCUNE CIRCONSTANCE ET SOUS AUCUNE INTERPRÉTATION DE LA LOI, QU'IL "
+"S'AGISSE D'UN DÉLIT CIVIL (Y COMPRIS LA NÉGLIGENCE), CONTRACTUEL OU AUTRE, "
+"L'AUTEUR, LE RÉDACTEUR INITIAL, TOUT PARTICIPANT OU TOUT DISTRIBUTEUR DE CE "
+"DOCUMENT OU DE SA VERSION MODIFIÉE, OU TOUT FOURNISSEUR DE L'UNE DE CES "
+"PARTIES NE POURRA ÊTRE TENU RESPONSABLE À L'ÉGARD DE QUICONQUE POUR TOUT "
+"DOMMAGE DIRECT, INDIRECT, PARTICULIER, OU ACCIDENTEL DE TOUT TYPE Y COMPRIS, "
+"SANS LIMITATION, LES DOMMAGES LIÉS À LA PERTE DE CLIENTÈLE, À UN ARRÊT DE "
+"TRAVAIL, À UNE DÉFAILLANCE OU UN MAUVAIS FONCTIONNEMENT INFORMATIQUE, OU À "
+"TOUT AUTRE DOMMAGE OU PERTE LIÉE À L'UTILISATION DU DOCUMENT ET DE SES "
+"VERSIONS MODIFIÉES, MÊME SI LADITE PARTIE A ÉTÉ INFORMÉE DE L'ÉVENTUALITÉ DE "
+"TELS DOMMAGES."
+
+#: ../C/legal.xml:28(para) ../C/gtali.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"LE PRÉSENT DOCUMENT ET SES VERSIONS MODIFIÉES SONT FOURNIS SELON LES TERMES "
+"DE LA LICENCE DE DOCUMENTATION LIBRE GNU SACHANT QUE : <placeholder-1/>"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: ../C/gtali.xml:161(None)
+msgid "@@image: 'figures/mainwindow.png'; md5=adbcf6421391e5e51c091e13672d3b7e"
+msgstr ""
+"@@image: 'figures/mainwindow.png'; md5=adbcf6421391e5e51c091e13672d3b7e"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: ../C/gtali.xml:238(None)
+msgid ""
+"@@image: 'figures/preferences.png'; md5=163633a4c9c3d3fe96e7b4a15f2e3eef"
+msgstr ""
+"@@image: 'figures/preferences.png'; md5=163633a4c9c3d3fe96e7b4a15f2e3eef"
+
+#: ../C/gtali.xml:27(title)
+msgid "<application>Tali</application> Manual"
+msgstr "Manuel de <application>Tali</application>"
+
+#: ../C/gtali.xml:29(para)
+msgid ""
+"Tali is like Yahtzee for GNOME or like poker with dice. The player rolls "
+"dice to try to make the best possible combinations, like 4 of a kind, small "
+"straight, and full house. The player is allowed 3 rolls per turn and can "
+"hold certain dice with each roll."
+msgstr ""
+"Tali est une sorte de Yahtzee pour GNOME ou de poker avec des dés. Le joueur "
+"doit lancer des dés et essayer de réaliser les meilleures combinaisons "
+"possibles, comme un carré (4 identiques), une suite ou un « Full house ». "
+"À chaque tour, le joueur peut lancer 3 fois les dés, en décidant à chaque "
+"lancer quels dés il souhaite relancer."
+
+#: ../C/gtali.xml:37(year)
+msgid "2001"
+msgstr "2001"
+
+#: ../C/gtali.xml:38(holder)
+msgid "Scott D. Heavner"
+msgstr "Scott D. Heavner"
+
+#: ../C/gtali.xml:53(publishername) ../C/gtali.xml:91(para)
+msgid "GNOME Documentation Project"
+msgstr "Projet de documentation GNOME"
+
+#: ../C/gtali.xml:63(firstname)
+msgid "Scott D"
+msgstr "Scott D"
+
+#: ../C/gtali.xml:64(surname)
+msgid "Heavner"
+msgstr "Heavner"
+
+#: ../C/gtali.xml:66(email)
+msgid "sdh@po.cwru.edu"
+msgstr "sdh@po.cwru.edu"
+
+#: ../C/gtali.xml:85(revnumber)
+msgid "Tali Manual V2.8"
+msgstr "Manuel de Tali v2.8"
+
+#: ../C/gtali.xml:86(date)
+msgid "September 2004"
+msgstr "Septembre 2004"
+
+#: ../C/gtali.xml:88(para)
+msgid "Scott D Heavner <email>sdh@po.cwru.edu</email>"
+msgstr "Scott D Heavner <email>sdh@po.cwru.edu</email>"
+
+#: ../C/gtali.xml:96(releaseinfo)
+msgid "This manual describes version 2.12 of Tali."
+msgstr "Ce manuel documente la version 2.12 de Tali."
+
+# Autres chaînes
+#: ../C/gtali.xml:103(title)
+msgid "Feedback"
+msgstr "Votre avis"
+
+#: ../C/gtali.xml:104(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Tali</"
+"application> application or this manual, follow the directions in the <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</ulink>."
+msgstr ""
+"Pour rapporter une anomalie ou émettre une suggestion concernant "
+"<application>Tali</application> ou ce manuel, suivez les instructions "
+"de la <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">page de réactions "
+"sur GNOME</ulink>."
+
+#: ../C/gtali.xml:115(primary)
+msgid "GNOME Tali"
+msgstr "GNOME Tali"
+
+#: ../C/gtali.xml:121(title)
+msgid "Introduction"
+msgstr "Introduction"
+
+#: ../C/gtali.xml:123(para)
+msgid ""
+"<application>GNOME Tali</application> is a sort of poker with dice and less "
+"money. You roll five dice three times and try to create the best "
+"<quote>hand</quote>. Your two rerolls may include any or all of your dice."
+msgstr ""
+"<application>GNOME Tali</application> est une sorte de jeu de poker avec des "
+"dés et moins d'argent. Vous lancez cinq dés à trois reprises et essayez de "
+"créer la meilleure <quote>main</quote>. Les deux derniers lancers peuvent "
+"contenir tous les dés ou seulement une partie de ceux-ci."
+
+#: ../C/gtali.xml:129(para)
+msgid ""
+"<application>GNOME Tali</application> is very similar to the dice game "
+"Yahtzee which is a trademark of Hasbro, Inc."
+msgstr ""
+"<application>GNOME Tali</application> est très semblable au jeu de dés "
+"Yahtzee, qui est une marque déposée de Hasbro, Inc."
+
+#: ../C/gtali.xml:134(para)
+msgid ""
+"To run <application>GNOME Tali</application>, select "
+"<menuchoice><guisubmenu>Games</guisubmenu><guimenuitem>GNOME Tali</"
+"guimenuitem></menuchoice> from the <guimenu>Main Menu</guimenu>, or type "
+"<command>gtali</command> on the command line."
+msgstr ""
+"Pour lancer <application>GNOME Tali</application>, choisissez "
+"<menuchoice><guisubmenu>Jeux</guisubmenu><guimenuitem>GNOME Tali</"
+"guimenuitem></menuchoice> dans le <guimenu>Menu principal</guimenu> ou "
+"saisissez <command>gtali</command> dans un terminal."
+
+#: ../C/gtali.xml:144(para)
+msgid ""
+"<application>GNOME Tali</application> is included in the <filename>gnome-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.8 of <application>GNOME Tali</application>."
+msgstr ""
+"<application>GNOME Tali</application> fait partie du paquet de jeux "
+"<filename>gnome-games</filename>, lui-même intégré dans l'environnement de "
+"bureau GNOME. Ce document documente la version 2.8 de <application>GNOME "
+"Tali</application>."
+
+#: ../C/gtali.xml:153(title)
+msgid "Playing GNOME Tali"
+msgstr "Jouer à GNOME Tali"
+
+#: ../C/gtali.xml:156(title)
+msgid "GNOME Tali in action"
+msgstr "GNOME Tali en action"
+
+#: ../C/gtali.xml:164(phrase)
+msgid "GNOME Tali main window screenshot."
+msgstr "Copie d'écran de la fenêtre principale de GNOME Tali."
+
+#: ../C/gtali.xml:170(para)
+msgid "When play starts, you see the results of your first throw of the dice."
+msgstr ""
+"Lorsque le jeu démarre, vous voyez le résultat de votre premier lancer de "
+"dés."
+
+#: ../C/gtali.xml:177(para)
+msgid "Click on the dice you wish to roll again."
+msgstr "Cliquez sur les dés que vous voulez relancer."
+
+#: ../C/gtali.xml:181(para)
+msgid ""
+"When you have selected all the dice you wish to reroll, press the "
+"<guibutton>Roll!</guibutton> button."
+msgstr ""
+"Lorsque vous avez sélectionné tous les dés que vous voulez relancer, cliquez "
+"sur le bouton <guibutton>Lancer !</guibutton>."
+
+#: ../C/gtali.xml:186(para)
+msgid ""
+"When you have a hand you like or have run out of chances to throw the dice, "
+"click on a row corresponding to what you think is your best scoring "
+"combination. It is very possible to have a score of zero and if you click on "
+"the wrong row, you will be scored accordingly. (Say for example, you get "
+"yahtzee -- 5 of a kind -- and click on the large straight row, you will "
+"receive a zero in your large straight score)."
+msgstr ""
+"Lorsque votre main vous convient ou que vous ne pouvez plus lancer les dés, "
+"cliquez sur une ligne correspondant, à votre avis, au score le plus "
+"judicieux. Il est tout à fait possible d'avoir un score de zéro, et si vous "
+"cliquez sur la mauvaise ligne, votre score en pâtira. Par exemple, si vous "
+"avez 5 dés identiques et que vous cliquez sur la ligne de la Grande suite, "
+"vous obtenez un 0 comme score de la grande suite."
+
+#: ../C/gtali.xml:196(para)
+msgid ""
+"You can only use each combination once, i.e. once you've entered something "
+"in a slot, you can't change the score later if you roll a better hand."
+msgstr ""
+"Vous ne pouvez utiliser qu'une seule fois chaque combinaison, c'est-à-dire "
+"qu'une fois que vous avez placé un score dans une ligne, vous ne pouvez plus "
+"modifier ce score, même si vous obtenez un meilleur résultat pour cette "
+"combinaison."
+
+#: ../C/gtali.xml:201(para)
+msgid ""
+"There is one exception to this rule, if you roll a yahtzee a second time you "
+"can put it in the yahtzee row again for an extra fifty points. You can keep "
+"doing this each time you get another yahtzee. At the end of the game you "
+"will be given extra rolls to fill in the other rows. Be warned that if you "
+"score zero in your yahtzee row (i.e. you filled that row with something that "
+"wasn't a yahtzee) then you can't put a yahtzee in afterward, zero is all you "
+"will score."
+msgstr ""
+"Il y a une exception à cette règle. Si vous obtenez une deuxième fois cinq "
+"dés identiques, vous pouvez cliquer une nouvelle fois sur la ligne « 5 "
+"identiques » pour obtenir 50 points supplémentaires. Vous pouvez procéder "
+"ainsi tant que vous obtenez cinq dés identiques. À la fin de la partie, vous "
+"obtenez des lancers supplémentaires pour compléter les lignes manquantes. "
+"Attention : si vous placez un score de 0 dans la ligne « 5 "
+"identiques » (c'est-à-dire que vous avez cliqué sur la ligne alors que vous "
+"n'aviez pas cinq dés identiques), vous ne pouvez ensuite plus utiliser cette "
+"ligne pour obtenir des points supplémentaires, vous êtes condamnés à rester "
+"à 0 pour cette ligne jusqu'à la fin de la partie."
+
+#: ../C/gtali.xml:211(para)
+msgid ""
+"There is also a bonus of 35 points if you score a total of 63 points or more "
+"in the top six rows."
+msgstr ""
+"Vous recevez aussi un bonus de 35 points si vous obtenez un score de 63 "
+"points ou plus dans les six lignes supérieures."
+
+#: ../C/gtali.xml:216(title)
+msgid "Using the keyboard"
+msgstr "Utilisation du clavier"
+
+#: ../C/gtali.xml:218(para)
+msgid ""
+"As an alternative to using the mouse, the keys 1 through 5 toggle the dice "
+"just as if you had clicked them. The key 1 corresponds to the first die and "
+"so on. Use the usual controls to roll the dice and select a row. i.e. use "
+"tab to switch between the roll button and the score area, use the arrow keys "
+"to navigate up and down the rows and use space to select."
+msgstr ""
+"Au lieu d'utiliser la souris, les touches 1 à 5 permettent d'activer les dés "
+"comme si vous aviez cliqué dessus. La touche 1 correspond au premier dé, et "
+"ainsi de suite. Utilisez les touches habituelles pour lancer les dés et pour "
+"sélectionner une ligne : la touche Tabulation permet de basculer entre le "
+"bouton de lancer et la zone de score, les touches flèches permettent de "
+"monter et descendre dans les lignes de score et la barre espace permet de "
+"sélectionner."
+
+#: ../C/gtali.xml:230(title)
+msgid "Game Options"
+msgstr "Options du jeu"
+
+#: ../C/gtali.xml:233(title)
+msgid "GNOME Tali preferences"
+msgstr "Préférences de GNOME Tali"
+
+#: ../C/gtali.xml:241(phrase)
+msgid "GNOME Tali preferences dialog box."
+msgstr "Boîte de dialogue des préférences de GNOME Tali."
+
+#: ../C/gtali.xml:246(title)
+msgid "Human Players"
+msgstr "Joueurs humains"
+
+#: ../C/gtali.xml:248(guimenuitem)
+msgid "Number of players"
+msgstr "Nombre de joueurs"
+
+#: ../C/gtali.xml:250(para)
+msgid ""
+"Selects the number of human players. As described above you are only allowed "
+"six total players."
+msgstr ""
+"Définit le nombre de joueurs humains. Comme indiqué ci-dessus, le jeu est "
+"limité à six joueurs au maximum."
+
+#: ../C/gtali.xml:258(title)
+msgid "Computer Opponents"
+msgstr "Adversaires informatiques"
+
+#: ../C/gtali.xml:260(guimenuitem)
+msgid "Delay between rolls"
+msgstr "Délai entre les lancers"
+
+#: ../C/gtali.xml:262(para)
+msgid ""
+"Make the computer opponents pause between rolls of the dice so you can see "
+"what they are doing. Slows down game play some."
+msgstr ""
+"Occasionne une pause entre les lancers de dés des adversaires informatiques, "
+"afin que vous puissiez mieux voir ce qui se passe. Cela ralentit quelque peu "
+"la partie."
+
+#: ../C/gtali.xml:269(guimenuitem)
+msgid "Number of opponents"
+msgstr "Nombre d'adversaires"
+
+#: ../C/gtali.xml:271(para)
+msgid ""
+"Select the number of computer opponents. You are allowed a total of six "
+"human and computer players. If you attempt to increase this number near the "
+"limit, the number of human players will be decreased to maintain only six "
+"total players."
+msgstr ""
+"Définit le nombre d'adversaires informatiques. Il est possible de jouer "
+"jusqu'à six joueurs, qu'ils soient humains ou informatiques. Si vous tentez "
+"d'augmenter ce nombre au-delà de la limite, le nombre de joueurs humains "
+"diminue afin de garder un total de six joueurs."
+
+#: ../C/gtali.xml:281(title)
+msgid "Game Type"
+msgstr "Type de jeu"
+
+#: ../C/gtali.xml:283(guimenuitem)
+msgid "Version of the game to play"
+msgstr "Version souhaitée du jeu"
+
+#: ../C/gtali.xml:285(para)
+msgid ""
+"Play either the regular version (similar to Yahtzee) or the version with "
+"colors (similar to Kismet). When you change game type, you must restart the "
+"game to see use the new game type."
+msgstr ""
+"Jouez soit à la version traditionnelle (semblable à Yahtzee), soi à la "
+"version en couleurs (semblable à Kismet). Lorsque vous changez de type de "
+"jeu, vous devez redémarrer le jeu pour que le nouveau type soit utilisé."
+
+#: ../C/gtali.xml:295(guimenuitem)
+msgid "Player Names"
+msgstr "Noms des joueurs"
+
+#: ../C/gtali.xml:297(para)
+msgid "To change the names of the players just enter new names in the boxes."
+msgstr ""
+"Pour modifier les noms des joueurs, il suffit de saisir les nouveaux noms "
+"dans les zones de texte."
+
+#: ../C/gtali.xml:306(title)
+msgid "Game Strategy"
+msgstr "Stratégie de jeu"
+
+#: ../C/gtali.xml:307(para)
+msgid ""
+"The 63 points needed for the bonus in the upper half corresponds to getting "
+"three of each die type in each row. If you score more than three dice in the "
+"fives and sixes rows then you can afford to place a bad roll in either the "
+"ones row or the twos row and still get the bonus. In the Colors version, you "
+"get a bonus of 55 if your upper half total is between 71 and 77, and a bonus "
+"of 75 if your upper half total is greater than 77."
+msgstr ""
+"Les 63 points à atteindre pour obtenir le bonus dans la partie supérieure "
+"reviennent à obtenir trois fois chaque type de dé dans chaque ligne. Si vous "
+"obtenez plus de trois dés dans les lignes des cinq ou des six, vous pouvez "
+"alors vous permettre de placer un mauvais lancer dans les lignes des uns ou "
+"des deux, tout en conservant le bonus. Dans la version en couleurs, vous "
+"recevez un bonus de 55 si la partie supérieure totalise entre 71 et 77, et "
+"un bonus de 75 si la partie supérieure totalise plus de 77 points."
+
+#: ../C/gtali.xml:316(para)
+msgid ""
+"Don't forget about multiple yahtzees, if you roll a second yahtzee you can "
+"also put it in the yahtzee row for even more points. This only applies to "
+"the regular game."
+msgstr ""
+"N'oubliez pas que vous pouvez obtenir plusieurs fois cinq dés identiques, et "
+"les placer sur la ligne « 5 identiques » pour obtenir encore plus de points. "
+"Cela ne s'applique qu'au jeu traditionnel."
+
+#: ../C/gtali.xml:330(title)
+msgid "Known Bugs and Limitations"
+msgstr "Anomalies connues et limites"
+
+#: ../C/gtali.xml:331(para)
+msgid ""
+"When you switch game type, the game does not use the new dice images until "
+"you restart gtali. It should play correctly with the \"wrong\" dice."
+msgstr ""
+"Lorsque vous changez de type de jeu, le programme n'utilise pas les "
+"nouvelles images de dés tant que vous ne redémarrez pas gTali. Mais les "
+"règles s'appliquent correctement, même avec les mauvaises images."
+
+#: ../C/gtali.xml:339(title)
+msgid "Glossary"
+msgstr "Glossaire"
+
+#: ../C/gtali.xml:341(para)
+msgid "Remember that the order of the dice is not important."
+msgstr "Rappelez-vous que l'ordre des dés n'est pas important."
+
+#: ../C/gtali.xml:344(glossterm)
+msgid "3 of a Kind"
+msgstr "Brelan (3 id.)"
+
+#: ../C/gtali.xml:345(para)
+msgid ""
+"Three of the dice have the same number. The score is the total of all the "
+"dice. e.g. 1, 2, 2, 2, 5."
+msgstr ""
+"Trois dés du même chiffre. Le score totalise les points de tous les dés "
+"(ex. : 1, 2, 2, 2, 5)."
+
+#: ../C/gtali.xml:350(glossterm)
+msgid "4 of a Kind"
+msgstr "Carré (4 id.)"
+
+#: ../C/gtali.xml:351(para)
+msgid ""
+"Four of the dice have the same number. The score is the total of all the "
+"dice. e.g. 2, 5, 5, 5, 5. In the Colors game, the score is 25 plus the total "
+"of all the dice."
+msgstr ""
+"Quatre dés présentent le même chiffre. Le score est le total de tous les dés "
+"(ex. : 2, 5, 5, 5, 5). Dans le jeu en couleurs, le score est de 25 en plus "
+"du total de tous les dés."
+
+#: ../C/gtali.xml:357(glossterm)
+msgid "5 of a Kind"
+msgstr "5 identiques"
+
+#: ../C/gtali.xml:358(para)
+msgid ""
+"Five identical dice. e.g. 3, 3, 3, 3, 3. In the Colors game, the score is 50 "
+"plus the total of all the dice."
+msgstr ""
+"Cinq dés identiques (ex. : 3, 3, 3, 3, 3). Dans le jeu en couleurs, le score "
+"est de 50 en plus du total de tous les dés."
+
+#: ../C/gtali.xml:363(glossterm)
+msgid "Full House"
+msgstr "Full House"
+
+#: ../C/gtali.xml:364(para)
+msgid ""
+"Five dice consisting of two groups: One group of three with the same numbers "
+"and another group of two with the same numbers. e.g. 1, 1, 1, 4, 4. In the "
+"Colors game, the score is 15 plus the total of all the dice."
+msgstr ""
+"Cinq dés formés de deux groupes : un groupe de trois dés avec le même "
+"chiffre et un autre groupe de deux dés avec le même chiffre (ex. : 1, 1, 1, "
+"4, 4). Dans le jeu en couleurs, le score est de 15 en plus du total de tous "
+"les dés."
+
+#: ../C/gtali.xml:371(glossterm)
+msgid "Full House Same Color"
+msgstr "Full House même couleur"
+
+#: ../C/gtali.xml:372(para)
+msgid ""
+"This category is only used in the Colors game. Five dice consisting of two "
+"groups: One group of three with the same numbers and another group of two "
+"with the same numbers. The numbers must be all the same color. e.g. 3, 3, 3, "
+"4, 4. Two dice are the same color if their numbers total 7: 1 and 6 are "
+"black, 2 and 5 are red, and 3 and 4 are green. The score is 20 plus the "
+"total of all the dice."
+msgstr ""
+"Cette catégorie est uniquement employée dans le jeu en couleurs. Cinq dés "
+"formés de deux groupes : un groupe de trois dés avec le même chiffre et un "
+"autre groupe de deux dés avec le même chiffre (ex. : 3, 3, 3, 4, 4). Deux "
+"dés sont de la même couleur si leur somme fait 7 : 1 et 6 sont noirs, 2 et 5 "
+"sont rouges et 3 et 4 sont verts. Le score est de 20 en plus du total de "
+"tous les dés."
+
+#: ../C/gtali.xml:382(glossterm)
+msgid "Two Pair Same Color"
+msgstr "2 paires de la même couleur"
+
+#: ../C/gtali.xml:383(para)
+msgid ""
+"This category is only used in the Colors game. Five dice consisting of two "
+"groups: One group of two with the same numbers and another group of two with "
+"the same numbers. The pairs must be all the same color. e.g. 3, 3, 4, 4. Two "
+"dice are the same color if their numbers total 7: 1 and 6 are black, 2 and 5 "
+"are red, and 3 and 4 are green. The fifth die can be any value. The score is "
+"the total of all the dice."
+msgstr ""
+"Cette catégorie est uniquement employée dans le jeu en couleurs. Cinq dés "
+"formés de deux groupes : un groupe de deux dés avec le même chiffre et un "
+"autre groupe de deux dés avec le même chiffre. Les paires doivent toutes "
+"être de la même couleur (ex. : 3, 3, 4, 4). Deux dés sont de la même couleur "
+"si leur somme fait 7 : 1 et 6 sont noirs, 2 et 5 sont rouges et 3 et 4 sont "
+"verts. Le cinquième dé peut être de n'importe quelle valeur. Le score est "
+"composé du total de tous les dés."
+
+#: ../C/gtali.xml:393(glossterm)
+msgid "Flush"
+msgstr "Flush"
+
+#: ../C/gtali.xml:394(para)
+msgid ""
+"This category is only used in the Colors game. Five dice that are all the "
+"same \"color\": Two dice are the same color if their numbers total 7: 1 and "
+"6 are black, 2 and 5 are red, and 3 and 4 are green. The fifth die can be "
+"any value. The score is 35 points."
+msgstr ""
+"Cette catégorie est uniquement employée dans le jeu en couleurs. Cinq dés de "
+"la même « couleur » : deux dés sont de la même couleur si leur somme fait "
+"7 : 1 et 6 sont noirs, 2 et 5 sont rouges et 3 et 4 sont verts. Le cinquième "
+"dé peut être de n'importe quelle valeur. Le score est de 35 points."
+
+#: ../C/gtali.xml:402(glossterm)
+msgid "Large Straight"
+msgstr "Grande suite"
+
+#: ../C/gtali.xml:403(para)
+msgid ""
+"Five dice with consecutive numbers. e.g. 2, 3, 4, 5, 6. The score is 40 "
+"points."
+msgstr ""
+"Cinq dés composés de nombres qui se suivent (ex. : 2, 3, 4, 5, 6). Le score "
+"est de 40 points."
+
+#: ../C/gtali.xml:408(glossterm)
+msgid "Small Straight"
+msgstr "Petite suite"
+
+#: ../C/gtali.xml:409(para)
+msgid ""
+"Four dice with consecutive numbers. The fifth die can be any number. e.g. 2, "
+"3, 4, 5, 5. This category is only used in the regular game. The score is 30 "
+"points."
+msgstr ""
+"Quatre dés composés de nombres qui se suivent. Le cinquième dé peut être de "
+"n'importe quelle valeur. Ex. : 2, 3, 4, 5, 5). Cette catégorie est "
+"uniquement employée dans le jeu normal. Le score est de 30 points."
+
+#: ../C/gtali.xml:423(title)
+msgid "Authors"
+msgstr "Auteurs"
+
+#: ../C/gtali.xml:424(para)
+msgid ""
+"<application>GNOME Tali</application> was written by Scott Heavner "
+"(<email>sdh@po.cwru.edu</email>) and Orest Zborowski. This manual was "
+"written by Scott D Heavner (<email>sdh@po.cwru.edu</email>) with extra "
+"material added by Callum McKenzie (<email>callum@physics.otago.ac.nz</"
+"email>). To report a bug or make a suggestion regarding this application or "
+"this manual, follow the directions in this <ulink url=\"ghelp:user-guide?feedback-bugs"
+"\" type=\"help\">document</ulink>."
+msgstr ""
+"<application>GNOME Tali</application> a été écrit par Scott Heavner "
+"(<email>sdh@po.cwru.edu</email>) et Orest Zborowski. Ce manuel a été écrit "
+"par Scott D Heavner (<email>sdh@po.cwru.edu</email>) et complété par Callum "
+"McKenzie (<email>callum@physics.otago.ac.nz</email>). Pour rapporter une "
+"anomalie ou émettre une suggestion concernant cette application ou ce "
+"manuel, suivez les indications de <ulink url=\"ghelp:user-guide?feedback-bugs\" type="
+"\"help\">ce document</ulink>."
+
+#: ../C/gtali.xml:451(title)
+msgid "License"
+msgstr "Licence"
+
+#: ../C/gtali.xml:452(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>GNU General Public License</citetitle></ulink> as published by "
+"the Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version."
+msgstr ""
+"Ce programme est du logiciel libre ; vous pouvez le redistribuer et/ou le "
+"modifier selon les termes de la <ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>GNU General Public License</citetitle></ulink>, tels que "
+"publiés par la Free Software Foundation ; soit la version 2 de cette licence "
+"ou (à votre choix) toute version ultérieure."
+
+#: ../C/gtali.xml:460(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"Ce programme est distribué dans l’espoir qu’il sera utile, mais SANS AUCUNE "
+"GARANTIE, ni explicite ni implicite; sans même les garanties de "
+"commercialisation ou d’adaptation dans un but spécifique. Se référer à la "
+"<citetitle><ulink type=\"help\" url=\"gnome-help:gpl\">GNU General Public "
+"License</ulink></citetitle> pour plus de détails."
+
+#: ../C/gtali.xml:466(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"Une copie de la <citetitle>GNU General Public License</citetitle> est "
+"incluse sous forme d'annexe au <citetitle>Guide d'utilisation du bureau "
+"GNOME</citetitle>. Vous pouvez également obtenir une copie de la "
+"<citetitle>GNU General Public License</citetitle> à la Free Software "
+"Foundation en visitant <ulink type=\"http\" url=\"http://www.fsf.org\">leur "
+"site Web</ulink> ou en écrivant à <address> Free Software Foundation, Inc. "
+"<street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</"
+"state><postcode>02111-1307</postcode><country>USA</country></address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: ../C/gtali.xml:0(None)
+msgid "translator-credits"
+msgstr "Claude Paroz <claude@2xlibre.net>, 2007-2008"

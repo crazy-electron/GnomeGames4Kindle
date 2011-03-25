@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="usage" xml:lang="da">
+
+  <info>
+    <link type="guide" xref="index#play" group="one"/>
+    <link type="seealso" xref="gameplay"/>
+    <desc>Sådan spiller du <app>GNOME Tetravex</app>.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <credit type="author">
+      <name>Rob Bradford</name>
+      <email>robster@debian.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>    
+  </info>
+
+  <title>Spil <app>GNOME Tetravex</app></title>
+
+  <section id="usage-basic">
+    <title>Grundlæggende brug</title>
+    <p>Spilområdet er inddelt i to bokse: Boksen til højre i vinduet består af de brikker som skal arrangeres korrekt; boksen til venstre i vinduet er stedet hvor brikkerne fra den højre boks skal placeres og eventuelt flyttes omkring. Hver brik er opdelt i fire små trekanter, der indeholder et tal.</p>
+    <p>Formålet med spillet er at placere brikkerne så kun to identiske tal er placeret ved siden af hinanden.</p>
+    <p>Det er ikke muligt, at placere brikkerne så at forskellige tal står ved siden af hinanden.</p>
+    <p>Spillet er færdigt, når du har placeret alle brikkerne på deres korrekte placering.</p>
+    <note>
+      <p>Når du starter <app>GNOME Tetravex</app>, vil spillet starte automatisk, og tidsregistreringen vil gå i gang.</p>
+    </note>
+
+  </section>
+  
+  <section id="usage-video">
+    <title>Videodemonstration</title>
+    <p>Denne korte video viser hvordan spillet virker og de mulige placeringer.</p>
+    <p>
+      <media type="video" mime="application/ogg" src="figures/gnotravex-video.ogv">En enkel demonstration af spillet</media>
+    </p>
+  </section>
+</page>

@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.21.90">
+<!ENTITY manrevision "3.0">
+<!ENTITY date "February 2008">
+<!ENTITY app "<application>Sudoku</application>">
+<!ENTITY appname "Sudoku">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 06, 2003
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="cs">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Příručka ke hře <application>Sudoku</application></title>       
+
+    <abstract role="description">
+      <para>Sudoku je aplikace na hraní populárních logických hlavolamů sudoku, ve kterých musíte vyplnit 9 krát 9 políček správnými čísly.</para>
+    </abstract>
+
+    <copyright> 
+      <year>2008</year> 
+      <holder>Thomas M. Hinkle</holder> 
+    </copyright><copyright><year>2009.</year><holder>Marek Černocký (marek@manet.cz)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Dokumentační projekt GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU Free Documentation License, verze 1.1 nebo jakékoli další verze vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů předních desek a bez textů zadních desek. Kopie této licence je zahrnuta v oddílu jménem <ulink type="help" url="ghelp:fdl">GNU Free Documentation License</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou.</para>
+         <para>Tato příručka je součástí kolekce příruček GNOME, distribuovaných pod licencí GNU FDL. Pokud chcete tento dokument šířit odděleně od kolekce, musíte přiložit kopii licence dle popisu v sekci 6 dané licence.</para>
+
+	<para>Mnoho užívaných jmen určených k zviditelnění produktů nebo služeb jsou ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s velkým písmenem na začátku.</para>
+
+	<para>DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <orderedlist>
+		<listitem>
+		  <para>DOKUMENT JE POSKYTOVÁN V PODOBĚ „JAK JE“ BEZ ZÁRUKY V JAKÉKOLIV PODOBĚ, NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ VERZE, JE BEZCHYBNÝ NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL NEBO NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ DOKUMENTU, NEBO JEHO UPRAVENÉ VERZE, LEŽÍ NA VÁS. POKUD KVŮLI TOMUTO DOKUMENTU, NEBO JEHO UPRAVENÉ VERZI, NASTANE PROBLÉM, VY (NIKOLIV PŮVODNÍ AUTOR NEBO JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE JAKÉKOLIV NÁKLADY ZA NUTNÉ ÚPRAVY, OPRAVY ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE ZÁKLADNÍ SOUČÁST TÉTO LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ, PODLE TÉTO DOHODY, POVOLENO UŽÍVÁNÍ ANI ÚPRAVY TOHOTO DOKUMENTU; DÁLE</para>
+		</listitem>
+		<listitem>
+		  <para>ZA ŽÁDNÝCH OKOLNOSTÍ A ŽÁDNÝCH PRÁVNÍCH PŘEDPOKLADŮ, AŤ SE JEDNÁ O PŘEČIN (VČETNĚ NEDBALOSTNÍCH), SMLOUVU NEBO JINÉ, NENÍ AUTOR, PŮVODNÍ PISATEL, KTERÝKOLIV PŘISPĚVATEL NEBO KTERÝKOLIV DISTRIBUTOR TOHOTO DOKUMENTU NEBO UPRAVENÉ VERZE DOKUMENTU NEBO KTERÝKOLIV DODAVATEL NĚKTERÉ Z TĚCHTO STRAN ODPOVĚDNÝ NĚJAKÉ OSOBĚ ZA PŘÍMÉ, NEPŘÍMÉ, SPECIÁLNÍ, NAHODILÉ NEBO NÁSLEDNÉ ŠKODY JAKÉHOKOLIV CHARAKTERU, VČETNĚ, ALE NEJEN, ZA POŠKOZENÍ ZE ZTRÁTY DOBRÉHO JMÉNA, PŘERUŠENÍ PRÁCE, PORUCHY NEBO NESPRÁVNÉ FUNKCE POČÍTAČE NEBO JINÉHO A VŠECH DALŠÍCH ŠKOD NEBO ZTRÁT VYVSTÁVAJÍCÍCH Z NEBO VZTAHUJÍCÍCH SE K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+		<firstname>Thomas</firstname> 
+		<surname>Hinkle</surname> 
+		<affiliation> 
+	  		<orgname>Dokumentační projekt GNOME</orgname> 
+	  		<!-- The email address of the author is optional and is commented out by default. 
+			<address> <email>doc-writer2@gnome.org</email> </address> 
+			-->
+		</affiliation> 
+      </author> 
+      
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->  
+    <revhistory>
+      <revision> 
+		<revnumber>Příručka V3.0 ke hře Sudoku</revnumber> 
+		<date>Únor 2008</date> 
+		<revdescription> 
+	  		<para role="author">Thomas M. Hinkle</para>
+	  		<para role="publisher">Dokumentační projekt GNOME</para>
+		</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Tato příručka popisuje hru Sudoku ve verzi 2.21.90</releaseinfo> 
+    <legalnotice> 
+      <title>Ohlasy</title> 
+      <para>Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k aplikaci <application>Sudoku</application> nebo této příručce, postupujte dle instrukcí na stránce <ulink url="ghelp:user-guide?feedback-bugs" type="help">Stránka s ohlasy na GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>GNOME Sudoku</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+    <primary>sudoku</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="myapp-introduction"> 
+    <title>Úvod</title> 
+    <para><application>Sudoku</application> je aplikace na generování a hraní populárního logického hlavolamu Sudoku.</para>
+    <para>Pravidla Sudoku jsou docela jednoduchá. Pro dokončení hry musíte vyplnit všechna políčka čísly od 1 do 9 tak, aby každý řádek, sloupec a čtverec 3x3 políčka obsahoval všechna čísla od 1 do 9. Nebo řečeno jiným způsobem, musíte vyplnit každé políčko tak, že se žádné číslo nebude vyskytovat dvakrát v řádku, sloupci nebo čtverci 3x3.</para>
+
+    <para>Tyto dva rozdílné pohledy na hlavolam jsou zároveň dva základní způsoby, kterými hráči při hraní uvažují. Na jednu stranu se můžete ptát: „Jak můžu umístit všechna čísla do čtverce?“ A na druhou stranu se můžete ptát: „Které číslo můžu umístit do tohoto políčka, aniž by kolidovalo s ostatními čísly ve stejném řádku, sloupci nebo čtverci 3x3?“.</para>
+
+    <para>Navzdory jednoduchosti hry, mohou hlavolamy Sudoku měnit svoji náročnost ve velkém rozsahu. V <application>Sudoku</application> si můžete vybrat, jak obtížnou hru chcete hrát. Běžné je začít snadnou hrou a postupně, jak se zdokonalujete, zvyšovat náročnost her.</para>
+
+  </sect1>
+
+<!-- =========== Getting Started ============================== -->
+<!-- Use the Getting Started section to describe the steps required
+     to start the application and to describe the user interface components
+     of the application. If there is other information that it is important
+     for readers to know before they start using the application, you should
+     also include this information here. 
+     If the information about how to get started is very short, you can 
+     include it in the Introduction and omit this section. -->
+
+  <sect1 id="myapp-getting-started"> 
+    <title>Začínáme</title> 
+
+    <sect2 id="myapp-start">
+    <title>Spuštění <application>Sudoku</application></title>
+    <para><application>Sudoku</application> můžete spustit následujícími způsoby:</para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>Nabídka <guimenu>Aplikace</guimenu></term>
+    		<listitem>
+    		<para>Zvolte <menuchoice><guisubmenu>Hry</guisubmenu><guimenuitem>Sudoku</guimenuitem></menuchoice>.</para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Příkazový řádek</term>
+    		<listitem>
+    		<para>Pokud chcete spustit <application>Sudoku</application> z příkazového řádku, zadejte následující příkaz a stiskněte <keycap>Return</keycap>:</para>
+    		<para> 
+			<command>gnome-sudoku</command> 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+    </sect2>
+
+    <sect2 id="myapp-when-start">
+    <title>Když spustíte <application>Sudoku</application></title>
+    <para>Když spustíte <application>Sudoku</application> poprvé, tak uvidíte obrazovku na výběr hry, na které si můžete vybrat obtížnost, jakou chcete hrát. Pokud jste již předtím hráli a některou hru jste nedokončili, tak si můžete na této obrazovce zvolit i tuto hru.</para>
+    <para>Na výběrové obrazovce jsou zobrazené různé náročnosti hry. Barva okolo hry odpovídá její náročnosti. Například tmavě modrá hra je těžší než světle modrá.</para>
+    <para>Dvojitým kliknutím na obtížnost, pro kterou jste se rozhodli, začnete hrát.</para>
+
+<figure id="new-game-fig"> 
+	<title>Spouštění Sudoku</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/starting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Spouštění Sudoku: výběr úrovně složitosti.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    
+    <para>Změnit úroveň hry můžete kdykoliv zmáčknutím <guibutton>Nový</guibutton>. Tím se opět dostanete na výběrovou obrazovku, kde si můžete vybrat libovolnou obtížnost.</para>
+    
+    </sect2>
+    
+    </sect1>
+    <sect1 id="myapp-basic-play">
+    <title>Základy hraní</title>
+    <para>Hrajete tím, že vyplňujete čísla 1 až 9 do políček a to tak, že v řádku, sloupci nebo čtverci 3x3 políčka se nesmí žádné z čísel opakovat vícekrát.</para>
+    <para>Čísla můžete vyplňovat jak klávesnicí, tak myší.</para>
+    <variablelist>
+    	<varlistentry>
+	<term>Klávesnice</term>
+	<listitem><para>Kurzorovými šipkami na klávesnici nebo myší vyberete políčko, který chcete vyplnit. Potom zmáčkněte číslici, kterou chcete vyplnit. Zmáčknutím <keycap>Backspace</keycap> číslo vymažete.</para></listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Myš</term>
+	<listitem>
+	  <para>Kliknutím na políčko jej vyberete a když potom kliknete do jeho středu, objeví se tlačítka s čísly 1 až 9. Kliknutím na číslo jej zvolíte, případně kliknutím na <guibutton>Vymazat</guibutton> políčko vymažete. Místo vybírání políčka můžete na jeho střed dvojitě kliknout a rovnou se vám objeví tlačítka s čísly.</para>
+	</listitem>
+		</varlistentry>
+	</variablelist>
+    <note>
+    <para>V případě, že zadáte číslo, které koliduje s jinými čísly v mřížce, kolidující čísla se zvýrazní červeně.</para>
+    <figure id="error-highlight-fig"> 
+	<title>Zvýraznění chyb</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/error_highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Všechny neplatné tahy se zvýrazní červeně.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    </note>
+    </sect1>
+    <sect1 id="myapp-saving">
+    <title>Ukládání a obnovování her</title>
+    <para>Sudoku se ukládají automaticky každých pár minut a také kdykoliv změníte hru nebo ukončíte aplikaci.</para>
+        <figure id="open-game-fig"> 
+	<title>Návrat ke starým rozehraným hrám</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/resuming.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Nabídka starých rozehraných her na výběrové obrazovce.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    <para>Kdykoliv spustíte <application>Sudoku</application> nebo kliknete na <guibutton>Nový</guibutton>, vaše uložené hry se objeví v seznamu na výběrové obrazovce. Uvidíte malé náhledy uložených her, datum, kdy jste je naposledy hráli, a jak dlouho jste je hráli. Hru otevřete dvojitým kliknutím.</para>
+    <para>Pokud si přejete ukončit jednu rozehranou hru a začít jinou, tak zvolte <guibutton>Nový</guibutton> a začněte novou hru.</para>
+    </sect1>
+
+<!-- ================ Usage ================================ -->
+<!-- Use this section to describe how to use the application to perform the tasks for 
+  which the application is designed. -->
+  <sect1 id="myapp-hints"> 
+    <title>Funkce</title> 
+    <!-- ================ Usage Subsection ================================ -->
+
+        <para>GNOME Sudoku poskytuje několik funkcí, které vám pomohou při hraní.</para>
+
+      <variablelist>
+    	<varlistentry><term>Poznámky</term>
+	<listitem>
+		<para><firstterm>Poznámky</firstterm> vám umožňují si značit u každého políčka údaje. Spousta hráčů to využívá ke sledování možných hodnot políčka.</para>
+	</listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Rady a automatické vyplnění</term>
+	<listitem>
+	<para>Můžete použít funkcí <firstterm>Rada</firstterm> a <firstterm>Vyplnit</firstterm>, aby vám GNOME Sudoku sdělilo možné hodnoty pro dané políčko, případně vám jej automaticky vyplnilo.</para>
+	</listitem>
+	</varlistentry>
+
+		<varlistentry>
+	<term>Zvýrazňování</term>
+	<listitem>
+	<para>V režimu zvýrazňování se současný řádek, sloupec a čtverec zvýrazní odlišnými barvami, aby se vám snadněji prozkoumávaly.</para>
+	</listitem>
+	</varlistentry>
+
+	<varlistentry>
+	<term>Sledování tahů</term>
+	<listitem>
+	  <para>Sledování usnadňují hraní metodou pokus-omyl tím, že sledují provedené tahy. Pokud sadu tahů <firstterm>sledujete</firstterm>, tak se zadaná čísla označují speciální barvou, abyste tyto tahy mohli snadno odlišit od tahů provedených dříve.</para>
+	</listitem>
+	</varlistentry>
+        </variablelist>
+	
+	<sect2 id="myapp-notes"> 
+      <title>Dělání poznámek</title> 
+      <para>Pokud chcete do políčka napsat poznámku, nejdříve jej pomocí klávesnice nebo myši vyberte. Následně proveďte jednu z těchto věcí:</para>
+      <itemizedlist>
+      <listitem><para>Klikněte do horní části políčka (když přes vybrané políčko přejíždíte myší, tak se tato část zvýrazňuje obdélníkem).</para></listitem>
+      <listitem><para>Zmáčkněte <keycap>N</keycap></para></listitem>
+      </itemizedlist>
+      <para>Tím se vám vyvolá pole, do kterého můžete zapsat své poznámky. Po skončení zápisu poznámky stiskněte <keycap>Return</keycap>.</para>
+      
+      <note><para>Poznámky můžete zapisovat i do spodní části políčka, tím že kliknete do spodní části nebo zmáčknete <keycap>M</keycap>. Jelikož se však tato oblast používá, když si požádáte o <firstterm>radu</firstterm>, neměli byste ji využívat pro své poznámky v případě, že plánujete rady používat.</para></note>
+      <note><para>Poznámky v horní části políčka můžete zadat zmáčknutím <keycap>Alt-N</keycap> a obdobně v dolní části políčka zmáčknutím <keycap>Alt-M</keycap>.</para></note>
+      <note><para>V horní části políčka můžete do poznámek přidat čísla zmáčknutím <keycap>Ctrl-1</keycap> až <keycap>Ctrl-9</keycap> a nebo je zase z poznámek odebrat zmáčknutím <keycap>Alt-1</keycap> až <keycap>Alt-9</keycap>.</para></note>
+</sect2>
+    <!-- ================ Usage Subsection ================================ -->
+	 <sect2 id="myapp-manipulate-view"> 
+      <title>Rady a automatické vyplnění</title>
+
+		             <note>
+
+	      <para>Funkce <firstterm>Rada</firstterm> a <firstterm>Vyplnit</firstterm> pracují na základě logické dedukce podle aktuálního stavu hry. Rozhodně se <emphasis>nedívají do výsledků</emphasis>. Pokud jste udělali chybu v některém dřívějším tahu, mohou tyto funkce vyplnit nebo předpokládat nesprávné hodnoty.</para>
+
+	    </note>
+      
+      
+      <sect3 id="myapp-hint">
+          <title>Rady</title>
+	              <para>GNOME Sudoku vám může poskytnout radu založenou na současném stavu hry. O radu pro vybrané políčko můžete požádat kliknutím na <guibutton>Rada</guibutton>, volbou <menuchoice><guisubmenu>Nástroje</guisubmenu><guimenuitem>Rada</guimenuitem></menuchoice> nebo zmáčknutím <keycap>Control-H</keycap>. Tím se do spodní části políčka vloží seznam možných hodnot.</para>
+    <figure id="hint-fig"> 
+	<title>Rady</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/hints.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Když kliknete na Radu, ve spodní části políčka se ukážou možné hodnoty.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+		      
+	    <para>Pokud chcete radu odstranit nebo změnit, můžete její text upravit kliknutím do spodní části políčka.</para>
+	    <para>U obzvláště těžkých her můžete chtít, aby vám <application>Sudoku</application> ukazovalo možné hodnoty u všech políček. Takovýto režim zapnete přepínačem <menuchoice><guisubmenu>Nástroje</guisubmenu><guimenuitem>Vždy zobrazovat nápovědu</guimenuitem></menuchoice>. Poznamenejme, že u jednoduchých her je to může udělat až <emphasis>příliš</emphasis> jednoduchými, takže byste tento režim měli používat zřídka.</para>
+<figure id="all-hints-fig"> 
+	<title><application>Sudoku</application> v režimu „Vždy zobrazovat nápovědu“</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/always_show_hint.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Náročná hra se zapnutým režimem „Vždy zobrazovat nápovědu“.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+	    
+	    
+	    </sect3>
+	    <sect3 id="myapp-autofill">
+	    <title>Vyplnit políčko</title>
+
+	    <para>Pokud chcete automaticky vyplnit políčko, pro které je možná pouze jedna hodnota, tak klikněte na <guibutton>Vyplnit</guibutton> nebo zvolte <menuchoice><guisubmenu>Nástroje</guisubmenu><guimenuitem>Vyplnit</guimenuitem></menuchoice> nebo zmáčkněte <keycap>Control-F</keycap>. Tato funkce je použitelná v případě, kdy například máte v řádku vyplněných 8 z 9 políček a chcete rychle vyplnit poslední prázdné políčko.</para>
+	    <para>Pokud je platná více než jedna hodnota, tak se nestane nic.</para>	    
+	    </sect3>
+	    <sect3 id="myapp-fill-all">
+	    <title>Vyplnit všechna políčka</title>
+
+	    <para>Můžete automaticky vyplnit všechna políčka, pro která je v daný okamžik logicky možná pouze jedna hodnota. Uděláte to tak, že kliknete na <menuchoice><guisubmenu>Nástroje</guisubmenu><guimenuitem>Vyplnit všechny čtverce</guimenuitem></menuchoice> nebo zmáčknete <keycap>Control-A</keycap>.</para>
+	    
+	    <warning>
+
+	    	    <para>Tato funkce by se měla používat pouze jako pomoc, když se zaseknete ve složité hře. Když ji použijete v jednoduché hře, tak se může stát, že se celá vyřeší jedním kliknutím, čehož výsledkem je velmi nudná hra!</para>
+		    </warning>
+	    	    </sect3>
+
+    </sect2> 
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-highlighting"> 
+      <title>Zvýrazňování</title> 
+      <para>Můžete si zapnout zvýrazňování, aby se vám zvýraznil současný řádek, sloupec a čtverec v různých barvách. Tím si usnadníte hledání, které hodnoty nemohou být v aktuálním políčku. Když chcete režim  zvýrazňování přepnout, můžete:</para> 
+      <itemizedlist>
+      <listitem><para>Kliknout na <guibutton>Zvýrazňovat</guibutton></para></listitem>
+      <listitem><para><menuchoice><guisubmenu>Zobrazit</guisubmenu><guimenuitem>Zvýrazňovat</guimenuitem></menuchoice></para></listitem>
+      </itemizedlist>
+
+<figure id="highlight-fig"> 
+	<title><application>Sudoku</application> se zvýrazňováním</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Zvýrazňování usnadňuje procházení řádků, sloupců a čtverců.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      </sect2>
+
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-trackers"> 
+      <title>Sledování tahů</title> 
+      <para>Můžete použít sledování k zapamatování více tahů. Sledované tahy se budou vkládat jinou barvou, abyste je mohli snadno vizuálně odlišit. Můžete také všechny sledované tahy naráz odstranit. To je částečně použitelné pro řešení složitých her metodou pokus-omyl.</para>
+      <note><para>Někteří hráči sudoku věří, že by se nikdy k řešení neměl používat postup pokus-omyl. Tito hráči by neměli tuto funkci používat.</para></note>
+
+            <para>Přepínat sledování tahů můžete provedením následujícího:</para>
+
+	    <itemizedlist>
+
+	      <listitem>
+	       <para>
+		<menuchoice> 
+			  <guimenu>Nástroje</guimenu> 
+			  <guimenuitem>Sledovat tahy</guimenuitem>
+		</menuchoice>
+	       </para>
+	     </listitem>
+             <listitem><para>Kliknout na <guibutton>Sledovat tahy</guibutton></para></listitem>
+           </itemizedlist>
+      <para>Tím se po pravé straně současné hry zobrazí seznam sledování. Nové sledování vytvoříte kliknutím na <guibutton>Přidat sledování</guibutton>. Od tohoto okamžiku budou všechna čísla, která vložíte, součástí daného sledování.</para>
+      <para>Všechny hodnoty, které jsou součástí sledování, můžete naráz vymazat a to tak, že vyberete v seznamu odpovídající sledování a kliknete na <guibutton>Vymazat sledování</guibutton>. Můžete také vymazat všechny hodnoty, které naopak <emphasis>nejsou</emphasis> součástí sledování, kliknutím na <guibutton>Vyčistit ostatní</guibutton>.</para>
+    </sect2> 
+  </sect1>
+  <!-- ============= Customization ============================= -->
+  <!-- Use this section to describe how to customize the application. -->
+  <sect1 id="myapp-printing"> 
+    <title>Tisk sudoku</title> 
+    <para>GNOME Sudoku umí hry vytisknout, abyste si je mohli hrát na papíře. To se hodí, pokud musíte odejít od počítače, ale chcete dokončit svoji rozehranou hru a nebo si vytisknout svazek her na později.</para>
+
+    <para>Pokud chcete vytisknout hru, kterou máte právě rozehranou, tak klikněte na <guibutton>Tisk</guibutton> nebo zvolte <menuchoice><guimenu>Hra</guimenu><guimenuitem>Tisk</guimenuitem></menuchoice>. Do tisku se zahrnou i čísla, které jste již vyplnili.</para>
+    
+    <para>Pokud si chcete natisknout nevyplněné hry, zvolte <menuchoice><guimenu>Hra</guimenu><guimenuitem>Vytisknout více sudoku</guimenuitem></menuchoice>.</para>
+
+      <para>Po té uvidíte dialogové okno tisku, kde si můžete zadat, kolik her si přejete vytisknout a kolik her má být na jedné stránce (čím více her na stránku, tím menší budou).</para>
+
+      <para>Můžete si zvolit i rozsah obtížností, do kterého mají hry spadat. Hry se vytisknou v pořadí od nejlehčí po nejtěžší úroveň.</para>
+
+      <para>Když si chcete vytisknou mini knížku s 25 stránkami sudoku, měli byste zvolit tisk 100 sudoku, 4 sudoku na stránku, rozsah her od nejlehčí po nejtěžší.</para>
+
+<figure id="printing-fig"> 
+	<title>Tisk knížky Mini-Sudoku z aplikace <application>Sudoku</application>.</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/Print_Sudokus.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Tímto vytisknete 25 stránek po 4 sudoku na každé stránce.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      <para>Standardně <application>Sudoku</application> netiskne hry, které jste již hráli. Pokud hry tisknete pro přátele nebo je vám jedno, že si hry zopakujete, můžete zaškrtnout <guibutton>Zahrnout do seznamu her k vytištění i hry, které jste již hráli</guibutton>.</para>
+
+      <para>Můžete si také ručně vybrat, které hry byste rádi vytiskli, rozbalením <guibutton>Seznamu her</guibutton> a výběrem několika her v tomto seznamu.</para>
+    
+  </sect1>
+  
+  <sect1 id="mayapp-bugs">
+  <title>Známé chyby a omezení</title>
+  <sect2>
+  <title>Omezené statistiky hry</title>
+
+    <para>GNOME Sudoku hodnotí hry na základě počtu políček, která lze rychle vyplnit. Statistiky hlavolamu vám sdělují celkové hodnocení hry a ukazují tři kusé informace:</para>
+
+    <itemizedlist>
+    <listitem><para>Počet políček, která lze vyplnit díky eliminaci, počínaje nevyplněnou mřžkou (např. v tomto políčku může být pouze 2, proto to musí být 2).</para></listitem>
+    <listitem><para>Počet políček, která lze vyplnit díky vyplňování, počínaje nevyplněnou mřížkou (např. pouze jedno políčko v tomto řádku může být 2, proto to musí být 2).</para></listitem>
+    <listitem><para>Množství času strávené během řešení hry tím, že počítač musel použít k vyřešení metodu pokus-omyl nebo „hádání“.</para></listitem>
+    </itemizedlist>
+    <para>Mnozí uživatelé jsou pohoršení, když zjistí, že počítač při řešení používá metodu pokus-omyl, zvláště když někteří odborníci na Sudoku říkají, že při řešení tohoto hlavolamu nemáte nikdy hádat. Je zde několik dalších algoritmů, které lze implementovat, aby počítač mohl řešit sudoku, např. swordfish a X-wings patterns.</para>
+
+    <para>V současnosti aplikace <application>Sudoku</application> používá pouze dva algoritmy uvedené výše a stejně tak metodu pokus-omyl. To, že je ve Statistikách hlavolamu řečeno, že aplikace <application>Sudoku</application> potřebuje X krát použít metodu pokus-omyl, ještě <emphasis>neznamená</emphasis>, že by člověk musel k vyřešení hry postup pokus-omyl použít.</para>
+  
+  </sect2>
+
+ </sect1>
+
+<!-- ============= About ================================== -->
+<!-- This section contains info about the program (not docs), such as
+      author's name(s), web page, license, feedback address. This
+      section is optional: primary place for this info is "About.." box of
+      the program. However, if you do wish to include this info in the
+      manual, this is the place to put it. Alternatively, you can put this information in the title page.-->
+  <sect1 id="myapp-about"> 
+    <title>O <application>Sudoku</application></title> 
+    <para><application>Sudoku</application> napsal Tom Hinkle (<email>tmhinkle@gmail.com</email>). V současné době je <application>Sudoku</application> součástí her GNOME.</para>
+    <para>Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k této aplikaci nebo této příručce, nahlédněte do kapitoly Ohlasy v <ulink url="ghelp:user-guide?feedback-bugs" type="help">Průvodci uživatele GNOME</ulink>.</para>
+
+    <para>Tento program je šířen podle ustanovení GNU General Public License, vydávané Free Software Foundation; a to buď verze 2 této licence anebo (podle vlastního uvážení) kterékoliv pozdější verze. Kopii této licence naleznete pod tímto <ulink url="ghelp:gpl" type="help">odkazem</ulink> nebo v souboru COPYING přiloženém ke zdrojovým kódům tohoto programu. </para>
+
+  </sect1> 
+</article>

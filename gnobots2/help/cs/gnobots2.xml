@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "August 2007">
+<!ENTITY app "<application>Robots</application>">
+<!ENTITY appname "Robots">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="cs"> 
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Příručka ke hře <application>Roboti</application></title>
+
+    <abstract role="description">
+      <para>Roboti jsou grafickou verzí původně textové hry s roboty, kterou můžete najít v mnoha UNIXových systémech. Hráč musí uniknout robotům, kteří jej pronásledují, a přimět je, aby narazili do sebe navzájem.</para>
+    </abstract>
+
+      <copyright>
+        <year>2001</year>
+        <holder>Patanjali Somayaji, Mark Rae</holder>
+      </copyright><copyright><year>2009.</year><holder>Marek Černocký (marek@manet.cz)</holder></copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+      <year>2000</year>
+      <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Dokumentační projekt GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU Free Documentation License, verze 1.1 nebo jakékoli další verze vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů předních desek a bez textů zadních desek. Kopie této licence je zahrnuta v oddílu jménem <ulink type="help" url="ghelp:fdl">GNU Free Documentation License</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou.</para>
+         <para>Tato příručka je součástí kolekce příruček GNOME, distribuovaných pod licencí GNU FDL. Pokud chcete tento dokument šířit odděleně od kolekce, musíte přiložit kopii licence dle popisu v sekci 6 dané licence.</para>
+
+	<para>Mnoho užívaných jmen určených k zviditelnění produktů nebo služeb jsou ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s velkým písmenem na začátku.</para>
+
+	<para>DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <orderedlist>
+		<listitem>
+		  <para>DOKUMENT JE POSKYTOVÁN V PODOBĚ „JAK JE“ BEZ ZÁRUKY V JAKÉKOLIV PODOBĚ, NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ VERZE, JE BEZCHYBNÝ NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL NEBO NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ DOKUMENTU, NEBO JEHO UPRAVENÉ VERZE, LEŽÍ NA VÁS. POKUD KVŮLI TOMUTO DOKUMENTU, NEBO JEHO UPRAVENÉ VERZI, NASTANE PROBLÉM, VY (NIKOLIV PŮVODNÍ AUTOR NEBO JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE JAKÉKOLIV NÁKLADY ZA NUTNÉ ÚPRAVY, OPRAVY ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE ZÁKLADNÍ SOUČÁST TÉTO LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ, PODLE TÉTO DOHODY, POVOLENO UŽÍVÁNÍ ANI ÚPRAVY TOHOTO DOKUMENTU; DÁLE</para>
+		</listitem>
+		<listitem>
+		  <para>ZA ŽÁDNÝCH OKOLNOSTÍ A ŽÁDNÝCH PRÁVNÍCH PŘEDPOKLADŮ, AŤ SE JEDNÁ O PŘEČIN (VČETNĚ NEDBALOSTNÍCH), SMLOUVU NEBO JINÉ, NENÍ AUTOR, PŮVODNÍ PISATEL, KTERÝKOLIV PŘISPĚVATEL NEBO KTERÝKOLIV DISTRIBUTOR TOHOTO DOKUMENTU NEBO UPRAVENÉ VERZE DOKUMENTU NEBO KTERÝKOLIV DODAVATEL NĚKTERÉ Z TĚCHTO STRAN ODPOVĚDNÝ NĚJAKÉ OSOBĚ ZA PŘÍMÉ, NEPŘÍMÉ, SPECIÁLNÍ, NAHODILÉ NEBO NÁSLEDNÉ ŠKODY JAKÉHOKOLIV CHARAKTERU, VČETNĚ, ALE NEJEN, ZA POŠKOZENÍ ZE ZTRÁTY DOBRÉHO JMÉNA, PŘERUŠENÍ PRÁCE, PORUCHY NEBO NESPRÁVNÉ FUNKCE POČÍTAČE NEBO JINÉHO A VŠECH DALŠÍCH ŠKOD NEBO ZTRÁT VYVSTÁVAJÍCÍCH Z NEBO VZTAHUJÍCÍCH SE K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Patanjali</firstname> 
+	<surname>Somayaji</surname> 
+	<affiliation> 
+	  <address> <email>patanjali@mindless.com</email> </address> 
+	</affiliation> 
+      </author> 
+      <author> 
+	<firstname>Mark</firstname> 
+	<surname>Rae</surname> 
+	<affiliation> 
+	  <address> <email>m.rae@inpharmatica.co.uk</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Příručka V2.8 ke hře Roboti</revnumber> 
+	<date>Září 2004</date> 
+	<revdescription> 
+	  <para role="author">Patanjali Somayaji <email>patanjali@mindless.com</email></para>
+	  <para role="author">Mark Rae <email>m.rae@inpharmatica.co.uk</email></para>
+	  <para role="publisher">Dokumentační projekt GNOME</para>
+	</revdescription> 
+      </revision> 
+      <revision> 
+	<revnumber>Příručka V2.9 ke hře Roboti</revnumber> 
+	<date>Srpen 2007</date> 
+	<revdescription> 
+	  <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+	  <para role="publisher">Dokumentační projekt GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Tato příručka popisuje hru Roboti ve verzi 2.18</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Ohlasy</title> 
+      <para>Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k aplikaci <application>Roboti</application> nebo této příručce, postupujte dle instrukcí na stránce <ulink url="ghelp:user-guide?feedback-bugs" type="help">Stránka s ohlasy na GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME Roboti</primary> 
+  </indexterm>
+
+   <!-- ============= Document Body ============================= -->
+
+   <!-- ============= Introduction ============================== -->
+   <sect1 id="intro">
+     <title>Úvod</title>
+
+     <para><application>GNOME Roboti</application> je hra, ve které zkoušíte uniknout bandě zlotřilých robotů, kteří se vás snaží, bez udání rozumného důvodu, zabít. Hra vychází z textové hry s roboty, kterou můžete najít v mnoha UNIXových systémech.</para>
+     <para>Tato nová verze obsahuje dva typy robotů, přesouvatelné hromady harampádí, výběr z několika her, uživatelem definovatelné ovládání klávesami a zvuky, a vše co obsahovala původní hra GNOME Roboti.</para>
+
+     <para>Jestliže chcete hru <application>GNOME Robots</application> spustit, zvolte <menuchoice><guisubmenu>Hry</guisubmenu><guimenuitem>Roboti</guimenuitem></menuchoice> z <guimenu>hlavní nabídky</guimenu> nebo zadejte <command>gnobots2</command> v příkazovém řádku.</para>
+
+     <para><application>GNOME Roboti</application> je součástí balíku <filename>gnome-games</filename>, který patří k pracovnímu prostředí GNOME. Tento dokument popisuje verzi 2.18 aplikace <application>GNOME Roboti</application>.</para>
+   </sect1>
+ 
+   <sect1 id="objective">
+     <title>Cíl hry GNOME Roboti</title>
+     <para>Cíl hry GNOME Roboti je docela jednoduchý. Jste obklopen několika roboty nebo jinými nepřátelskými protivníky. Jak se pohybujete, oni se při každém tahu, který uděláte, pohnou směrem k vám. Jejich cílem je vás zabít. Vašim cílem je naopak zabít všechny roboty na ploše tak, že s výhodou využijete jejich zranitelnost.</para>
+   
+     <para>Roboti se zničí, když dojde k jejich vzájemnému střetu nebo když narazí do trosek některé z předchozích kolizí. Pokud se ale robot dostane až k vám, tak zemřete.</para>
+
+     <para>V některých typech hry (můžete si vybrat z pěti různých sad pravidel), můžete pokládat hromady harampádí a tak si stavět na svoji ochranu barikády. A také můžete, pokud si na to tedy troufnete, roboty rozmačkat roboty tím, že na ně hromadu harampádí položíte, za což získáte přídavný bonus.</para>
+     <para>Sami sebe můžete zachránit tím, že se teleportujete na náhodné místo. Bohužel, náhodné znamená, že můžete skončit i v těsné blízkosti robota, takže vás může při svém tahu zabít. Naštěstí je zde i bezpečná teleportace, která vás přenese na místo mimo dosah nebezpečí, ale tu můžete používat jen omezeně. Jak postupujete dál, můžete si vysloužit více volné teleportace (jak ji získáváte záleží na zvolené hře), ale typicky dostanete jednu za každého robota, který byl zničen během vašeho čekání, až do maxima 10. Pokud nechcete své našetřené bezpečné teleportace promrhat, můžete v situacích, kdy vám to připadá dostatečně bezpečné, použít náhodnou teleportaci.</para>
+   
+     <para>Pokud zmáčknete tlačítko <guibutton>Čekat</guibutton> (viz dále), nebudete si již nadále moci hýbat, dokud se buď všichni roboti (kteří se stále pohybují směrem k vám) nezničí nebo nebudete zabit. Udělat něco takového je riskantní, ale můžete za to získat navíc bezpečné teleportace.</para>
+   
+     <para>Jestliže se dostanete do bodu, kde více než půlka obrazovky bude obsazená roboty, bude počet robotů vrácen do stavu, jako na začátku hry, abyste vůbec mohli pokračovat.</para>
+  </sect1>
+
+
+  <!-- ================ Usage ================================ -->
+  <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="usage">
+    <title>Používání hry GNOME Roboti</title>
+    <para><application>GNOME Roboti</application> jsou na hraní extrémně jednodušší. Můžete používat myš nebo klávesnici. Tato kapitola popisuje základy používání <application>Robotů</application>.</para>
+
+    <!-- ========= Basic Usage =========================== -->
+    <sect2 id="mainwin">
+      <title>Základy používání</title>
+      <para>Spuštěním <application>GNOME Roboti</application> se otevře <interface>hlavní okno</interface>, tak jak jej ukazuje <xref linkend="mainwindow-fig"/>. <figure id="mainwindow-fig">
+	  <title>Hlavní okno Robotů.</title>
+	  <screenshot>
+	  <mediaobject> 
+ 	   <imageobject>
+ 	 <imagedata fileref="figures/gnobots2-main.png" format="PNG" srccredit="Patanjali"/>
+ 	   </imageobject>
+ 	   <textobject> 
+ 	     <phrase>Hlavní okno hry GNOME Roboti.</phrase> 
+ 	   </textobject> 
+ 	 </mediaobject>
+	  </screenshot>
+	</figure></para> 
+
+      <para>Novou hru začnete volbou <guimenuitem>Nová</guimenuitem> v nabídce <guimenu>Hry</guimenu> nebo kliknutím na tlačítko <guibutton>Nová</guibutton> na panelu nástrojů.</para>
+
+      <para>Když se chcete přesunout, buď příslušným směrem klikněte (kurzor se mění na šipku, která vám směr ukazuje) nebo zmáčkněte příslušnou klávesu (výchozí jsou kurzorové klávesy). Kliknutím na panáčka jej udržíte tam, kde je. Pro teleportaci (bezpečnou nebo náhodnou) a čekání použijte tlačítka na panelu nástrojů nebo položky v nabídce <guimenu>Posunout</guimenu>.</para>
+    </sect2>
+  </sect1>
+    
+
+  
+  <!-- ========= Menus =========================== --> 
+  
+   <sect1 id="menubar">
+    <title>Nabídky</title>
+    <para>Panel nabídek, který se nachází nad <interface>herní deskou</interface>, obsahuje následující nabídky:</para>
+
+
+    <variablelist>
+      <varlistentry>
+        <term><guimenu>Hra</guimenu></term>
+        <listitem>
+        <para>Tato nabídka obsahuje tři položky: <itemizedlist>	
+            <listitem>
+	    <para><menuchoice><shortcut><keysym>Ctrl-N</keysym></shortcut><guimenuitem>Nová</guimenuitem></menuchoice> — začne novou hru Robotů.</para>
+            </listitem>     
+       
+	    <listitem>
+	    <para><menuchoice><guimenuitem>Skóre</guimenuitem></menuchoice> — zobrazí nejlepší výsledky.</para>
+            </listitem>
+
+       	    <listitem>
+            <para>
+              <menuchoice>
+              <shortcut><keysym>Ctrl-Q</keysym></shortcut>
+              <guimenuitem>Ukončit</guimenuitem>
+              </menuchoice>
+            </para>
+            </listitem>
+          </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>Posunout</guimenu></term>
+        <listitem>
+        <para>Tato nabídka obsahuje: <itemizedlist>
+          <listitem>
+            <para><guimenuitem>Teleportovat</guimenuitem> — teleportuje vás na bezpečné místo.</para>
+          </listitem>
+          <listitem>
+          <para><guimenuitem>Náhodně</guimenuitem> — teleportuje vás na náhodné místo.</para>
+          </listitem>
+          <listitem>
+          <para><guimenuitem>Čekat</guimenuitem> — přepne vás do čekacího režimu.</para>
+          </listitem>
+        </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>Nastavení</guimenu></term>
+	<listitem>
+	<para>Nabídka <guimenu>Nastavení</guimenu> obsahuje pouze jednu položku: <itemizedlist>
+	    <listitem>
+	    <para><guimenuitem>Předvolby</guimenuitem> — otevře dialogové okno předvoleb.</para>
+	    </listitem>
+	  </itemizedlist></para>
+	</listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>Nápověda</guimenu></term>
+        <listitem>
+        <para>Tato nabídka obsahuje: <itemizedlist>
+          <listitem>
+            <para><guimenuitem>Obsah</guimenuitem> — zobrazí tuto příručku.</para>
+          </listitem>
+          <listitem>
+          <para><guimenuitem>O aplikaci</guimenuitem> — ukáže základní informace o hře <application>GNOME Roboti</application>, jako je jméno autora a číslo verze aplikace.</para>
+          </listitem>
+        </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect1>
+ 
+ <!-- =========Using the Keyboard============== -->
+ 
+  
+  <sect1 id="keyboard">
+    <title>Používání klávesnice</title>
+    <para>K ovládání panáčka můžete používat klávesnici. Ve výchozím stavu jsou pro ovládání nastavené kurzorové klávesy. Můžete si však mapování kláves přizpůsobit na kartě <guimenuitem>Klávesnice</guimenuitem> v dialogovém okně <guimenuitem>Předvolby Robotů</guimenuitem>. Změnu klávesy na jinou provedete tak, že dvojitě kliknete na řádek s příkazem a po té zmáčknete klávesu, kterou chcete používat.</para>
+
+      <sect2 id="default-keys">     
+      <title>Výchozí mapování kláves</title>
+      <para>Standardně se k ovládání používá numerická klávesnice vpravo (a ne samostatné šipky). <note>
+        <title>Vypnutí numerické klávesnice</title>
+          <para>Aby to fungovalo, je na některých klávesnicích potřeba vypnout numerickou část (pomocí NumLock).</para>
+        </note><orderedlist>
+          <listitem><para>Vlevo nahoru: <keycap>Home</keycap></para></listitem> 
+          <listitem><para>Nahoru: <keycap>šipka nahoru</keycap></para></listitem>
+          <listitem><para>Vpravo nahoru: <keycap>Page Up</keycap></para></listitem>
+          <listitem><para>Vlevo: <keycap>šipka vlevo</keycap></para></listitem>
+          <listitem><para>Stát na místě: <keycap>Begin</keycap> (prostřední klávesa s číslicí 5)</para></listitem>
+          <listitem><para>Vpravo: <keycap>šipka vpravo</keycap></para></listitem>
+          <listitem><para>Vlevo dolů: <keycap>End</keycap></para></listitem>
+          <listitem><para>Dolů: <keycap>šipka dolů</keycap></para></listitem>
+          <listitem><para>Vpravo dolů: <keycap>Page Down</keycap></para></listitem>
+          <listitem><para>Teleportovat: <keycap>+</keycap></para></listitem>
+          <listitem><para>Náhodně teleportovat: <keycap>*</keycap></para></listitem>
+          <listitem><para>Čekat: <keycap>Enter</keycap></para></listitem>
+        </orderedlist></para>	  
+    </sect2>
+
+      
+  </sect1>
+   
+  <!-- ============= Customization ============================= -->
+  
+  <sect1 id="customization">
+    <title>Přizpůsobení hry GNOME Roboti</title>
+    <para>Můžete si upravit chování a vzhled hry pomocí <guimenuitem>Předvolby</guimenuitem> pod nabídkou <guimenu>Nastavení</guimenu>. Tím otevřete dialogové okno se třemi kartami: <itemizedlist>
+        <listitem>
+        <para><guimenuitem>Hra</guimenuitem> — Na této kartě si můžete vybrat typ hry, kterou chcete hrát. V nabídkovém seznamu v horní části karty si můžete vybrat z několika předdefinovaných her. Tuto volbu nemůžete změnit uprostřed hry, proto je v takové chvíli zakázaná. V dolní části karty je několik dalších voleb: <orderedlist>
+          <listitem><para>Volba Používat bezpečné pohyby vám pomůže předejít svému zabití kvůli chybě. Pokud se pokusíte o pohyb, který by vedl k vaší smrti, přestože existuje bezpečný pohyb, tak vám to nebude umožněno. Ale pozor, pokud žádný bezpečný pohyb k dispozici není, mimo teleportace, tak vám bude umožněno provést ten chybný.</para></listitem>
+          <listitem><para>Je tu k dispozici také <quote>super-bezpečný režim</quote>. Když zvolíte ten, tak se ozve pípnutí pokaždé, kdy není k dispozici bezpečný pohyb a jedinou možností úniku je teleportace.</para></listitem>
+          <listitem><para>Pokud zapnete volbu Povolit zvuky, bud hra v různých situacích v průběhu hry vydávat zvuky.</para></listitem>
+          <listitem><para>Volbu Povolit rozmáčknutí zapněte, pokud chcete aby se ozval zvuk a na obrazovce objevilo malé <quote>Splat!</quote>.</para></listitem>
+        </orderedlist></para>
+	</listitem>
+        <listitem>
+        <para><guimenuitem>Vzhled</guimenuitem> — Na této kartě si v nabídkovém seznamu volíte grafiku použitou ve hře. Navíc si na této kartě můžete zvolit barvu pozadí.</para>
+        </listitem>
+
+        <listitem>
+        
+        <para><guimenuitem>Klávesnice</guimenuitem> — Na této kartě definujete své vlastní ovládání z klávesnice. Klávesu pro daný příkaz změníte tak, že na příkaz dvojitě kliknete a následně zmáčknete klávesu, kterou pro něj chcete používat.</para>
+        </listitem>
+      </itemizedlist></para>
+
+    <para>Změny, které provedete, se ihned použijí a automaticky uloží.</para>
+
+    <para>Pokud chcete, můžete si pro hru navrhnout vlastní grafiku. Grafické soubory najdete v <filename class="directory">$PREFIX/share/gnome-games/gnobots2/pixmaps</filename>, kde $PRFIX je cesta použitá pro instalaci GNOME. Obvykle to bývá <filename class="directory">/usr</filename> nebo <filename class="directory">/usr/local</filename>.</para>
+    <para>Každý symbol má 16×16 pixelů a dohromady jich je 14 uspořádaných v souboru PNG o rozměrech 224×16 pixelů. Můžete se podívat na stávající soubory, abyste viděli v jakém pořadí jsou poskládané, aby vytvořily správnou výslednou animovanou sekvenci.</para>
+    <para>Grafické soubory, které umístíte do složky se automaticky detekují, takže nemusíte nikde nic nastavovat. Můžete si také vytvořit svoje vlastní nastavení hry tím, že vytvoříte další soubory <filename>.cfg </filename>, které jsou uložené ve složce <filename class="directory">$PREFIX/share/gnome-games/gnobots2/games</filename>.</para>
+  </sect1> 
+ 
+  <!-- ============= Various Sections ============================= -->
+ 
+ 
+  <!-- ============= Bugs ================================== -->
+  <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of. -->
+<!--  <sect1 id="bugs">
+    <title>Known Bugs and Limitations</title>
+    <para>
+      This application has no known bugs.
+    </para>
+  </sect1>
+-->
+
+<!-- ============= Authors ================================ -->
+
+  <sect1 id="authors">
+    <title>Autoři</title>
+    <para>Hru <application>GNOME Roboti</application> napsal Mark Rae (<email>m.rae@inpharmatica.co.uk</email>). Tuto příručku napsal Patanjali Somayaji (<email>patanjali@mindless.com</email>) podle původní dokumentace v HTML, kterou napsal Mark Rae. Pokud chcete nahlásit chybu nebo podat návrh týkající se této aplikace nebo tohoto návodu, tak se řiďte instrukcemi v tomto <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentu</ulink>.</para>
+
+    <!-- For translations: uncomment this:
+
+    <para>
+      Latin translation was done by ME
+      (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+      suggestions regarding this translation to SOMEWHERE.
+    </para>
+
+    -->
+
+  </sect1>
+
+
+  <!-- ============= Application License ============================= -->
+
+  <sect1 id="license">
+    <title>Licence</title>
+    <para>Tento program je svobodný software. Můžete jej dále šířit a/nebo upravovat za dodržení podmínek <ulink type="help" url="gnome-help:gpl"><citetitle>GNU General Public License</citetitle></ulink>, tak jak ji vydala Free Software Foundation ve verzi 2 nebo (dle vaší volby) novější.</para>
+    <para>Tento program je šířen s přesvědčením, že může být užitečný, ale BEZ JAKÝCHKOLIV ZÁRUK, bez předpokládané záruky na OBCHODOVATELNOST nebo VHODNOST PRO URČITÝ ÚČEL. Více podrobností najdete v <citetitle>GNU General Public License</citetitle>.</para>
+    <para>Kopie <citetitle>GNU General Public License</citetitle> je zahrnuta v dodatku <citetitle>Uživatelské přiručky GNOME</citetitle>. Kopii <citetitle>GNU General Public License</citetitle> můžete také získat od Free Software Foundation navštívením <ulink type="http" url="http://www.fsf.org">jejich webu</ulink> nebo zasláním žádosti na <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+  </sect1>
+
+</article>

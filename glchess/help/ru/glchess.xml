@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.18">
+<!ENTITY date "December">
+<!ENTITY app "<application>Chess</application>">
+<!ENTITY appname "Chess">
+<!ENTITY version "2.22">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ru">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo>
+ <title>Руководство по <application>Шахматам</application></title>
+ 
+ <abstract role="description">
+       <para>glChess — классическая настольная игра в шахматы. Два игрока соперничают друг с другом, захватывая фигуры противника, игра заканчивается захватом короля. Игра может проходить в двумерном или трёхмерном режиме, в окне или в полноэкранном режиме.</para>
+ </abstract>
+ <copyright>
+  <year>2006-2008</year>
+  <holder>Andreas Røsdal</holder>
+ </copyright><copyright><year>2008</year><holder>Юрий Мясоедов (omerta13@yandex.ru)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>Проект документирования GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Разрешается копировать, распространять и/или изменять этот документ на условиях лицензии GNU Free Documentation License (GFDL), версии 1.1 или любой более поздней версии, опубликованной Фондом свободного программного обеспечения (Free Software Foundation), без неизменяемых частей и без текстов на обложках. Вы можете найти копию лицензии GFDL по  <ulink type="help" url="ghelp:fdl">этой ссылке</ulink> или в файле COPYING-DOCS, распространяемом с этим документом.</para>
+         <para>Это руководство — часть документации GNOME, которая распространяется на условиях лицензии GNU FDL. Если вы хотите распространять это руководство отдельно от остальной документации, вам следует приложить к руководству копию лицензии, как описано в разделе 6 лицензии.</para>
+
+	<para>Некоторые имена и марки используются компаниями для обозначения их продуктов и услуг и являются торговыми марками. Там, где эти имена присутствуют в документации и где участники проекта документирования GNOME знают об этом, имена выделяются заглавными буквами или начальной заглавной буквой.</para>
+
+	<para>ДОКУМЕНТ И ИЗМЕНЁННЫЕ ВЕРСИИ ДОКУМЕНТА ПРЕДОСТАВЛЯЮТСЯ ПОЛЬЗОВАТЕЛЮ НА УСЛОВИЯХ ЛИЦЕНЗИИ GNU FREE DOCUMENTATION LICENSE С УВЕДОМЛЕНИЕМ О ТОМ, ЧТО: <orderedlist>
+		<listitem>
+		  <para>ДОКУМЕНТ РАСПРОСТРАНЯЕТСЯ «КАК ЕСТЬ», БЕЗ ВСЯКИХ ГАРАНТИЙ, ЯВНЫХ ИЛИ НЕЯВНЫХ, ВКЛЮЧАЯ, БЕЗ ОГРАНИЧЕНИЙ, ГАРАНТИИ ТОГО, ЧТО ДОКУМЕНТ ИЛИ ИЗМЕНЁННАЯ ВЕРСИЯ ДОКУМЕНТА СВОБОДНА ОТ ДЕФЕКТОВ, ПРИГОДНА К ПРОДАЖЕ, ПРИГОДНА К ИСПОЛЬЗОВАНИЮ В ОПРЕДЕЛЁННЫХ ЦЕЛЯХ ИЛИ НЕ НАРУШАЕТ ЗАКОНЫ. ВЕСЬ РИСК, КАСАЮЩИЙСЯ КАЧЕСТВА, ТОЧНОСТИ ИЛИ ПРАВИЛЬНОСТИ ДОКУМЕНТА ИЛИ ИЗМЕНЁННЫХ ВЕРСИЙ ДОКУМЕНТА, ЛЕЖИТ НА ВАС. ЕСЛИ ДОКУМЕНТ ИЛИ ИЗМЕНЁННАЯ ВЕРСИЯ ДОКУМЕНТА ИМЕЕТ НЕДОСТАТКИ, ВЫ (А НЕ АВТОР ДОКУМЕНТА ИЛИ ЕГО ПОМОЩНИК) БЕРЁТЕ НА СЕБЯ СТОИМОСТЬ ЛЮБОЙ НЕОБХОДИМОЙ ДОРАБОТКИ, КОРРЕКЦИИ ИЛИ ВОССТАНОВЛЕНИЯ. ЭТОТ ОТКАЗ ОТ ГАРАНТИЙ СОСТАВЛЯЕТ ВАЖНУЮ ЧАСТЬ ЛИЦЕНЗИИ. НИКАКОЕ ИСПОЛЬЗОВАНИЕ ДОКУМЕНТА ИЛИ ИЗМЕНЁННОЙ ВЕРСИИ ДОКУМЕНТА НЕ ДОПУСКАЕТСЯ БЕЗ ДАННОГО ПРЕДУПРЕЖДЕНИЯ И</para>
+		</listitem>
+		<listitem>
+		  <para>НИ ПРИ КАКИХ ОБСТОЯТЕЛЬСТВАХ И НИ ПРИ КАКОМ ЗАКОННОМ СПОСОБЕ, НИ ПО КАКОМУ СОГЛАШЕНИЮ ИЛИ ДРУГОЙ ПРИЧИНЕ, АВТОР, СОЗДАТЕЛЬ, ПОМОЩНИКИ ИЛИ РАСПРОСТРАНИТЕЛИ ДОКУМЕНТА НЕ НЕСУТ ОТВЕТСТВЕННОСТЬ ЗА ПРЯМОЙ, КОСВЕННЫЙ, СПЕЦИАЛЬНЫЙ, СЛУЧАЙНЫЙ ИЛИ ПРЕДНАМЕРЕННЫЙ УЩЕРБ ЛЮБОГО СВОЙСТВА, ВКЛЮЧАЯ, БЕЗ ОГРАНИЧЕНИЯ, ПОТЕРЮ РЕПУТАЦИИ, РАБОТОСПОСОБНОСТИ, КОМПЬЮТЕРНЫЕ СБОИ ИЛИ ПОЛОМКИ, ИЛИ ЛЮБОЙ ДРУГОЙ УЩЕРБ ИЛИ ПОТЕРИ, ВОЗНИКАЮЩИЕ ВСЛЕДСТВИЕ ИЛИ СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ДОКУМЕНТА ИЛИ ИЗМЕНЁННЫХ ВЕРСИЙ ДОКУМЕНТА, ДАЖЕ ЕСЛИ СТОРОНА БЫЛА УВЕДОМЛЕНА О ВОЗМОЖНОСТИ ТАКОГО УЩЕРБА.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+	<firstname>Andreas</firstname> 
+	<surname>Røsdal</surname> 
+	<affiliation> 
+	  <address> <email>andrearo@pvv.ntnu.no</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+<revhistory>
+      <revision> 
+	<revnumber>Руководство версии 2.18 по Шахматам</revnumber> 
+	<date>Декабрь</date> 
+	<revdescription> 
+	  <para role="author">Andreas Røsdal <email>andrearo@pvv.ntnu.no</email></para>
+	  <para role="publisher">Проект документирования GNOME</para>
+	</revdescription> 
+      </revision>
+  <revision>
+   <revnumber>1</revnumber>
+   <date>Декабрь, 2006</date>
+   <authorinitials>AR</authorinitials>
+   <revremark>Первый проект завершён.</revremark>
+  </revision>
+ </revhistory>
+
+    <releaseinfo>Это руководство описывает программу Шахматы версии 2.18.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Обратная связь</title> 
+      <para>Чтобы сообщить об ошибке или сделать предложение по программе Шахматы или этому руководству, следуйте указаниям в документе <ulink url="ghelp:gnome-feedback" type="help">Обратная связь с GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>glChess</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="intro">
+ <title>Введение</title>
+ <sect2 id="what">
+  <title>Об игре в шахматы</title>
+  
+  <para>Шахматы — стратегическая настольная игра, в которой участвует два игрока. <application>glChess</application> — шахматная игра, поддерживающая двумерный и трёхмерный режим отображения игровой доски. В <application>glChess</application> игры могут проходить между: человеком и человеком, человеком и компьютером, компьютером и компьютером. <application>glChess</application> обнаруживает известные ему сторонние шахматные программы для компьютерных игроков. Первоначально игра была разработана Robert Ancell, сейчас она включена в gnome-games.</para>
+
+  <para>Игра <application>glChess</application> написана на языке программирования Python и использует GTK+ и Cairo для отрисовки шахматной доски. Доступная дополнительно поддержка трёхмерного режима использует OpenGl, Python OpenGL и библиотеки GtkGLExt. Как и в случае использования большинства современных программ, использующих трёхмерную графику, рекомендуется наличие аппаратного ускорения, хотя для успешного запуска программы это и не обязательно. В glChess в качестве движка по умолчанию используется GNU Chess. В glChess можно играть в сетевом режиме с другими игроками через Интернет.</para>
+  <para>Игра проводится на квадратной доске, состоящей из 64 полей чередующихся цветов. Каждый игрок начинает партию с 16-мя фигурами: одним королём, одним ферзём, двумя конями, двумя ладьями, двумя слонами и восемью пешками. Один игрок играет белыми фигурами, другой — чёрными. Тот, кто играет белыми — ходит первым. Игроки ходят по очереди, передвигая фигуры; определённые ходы приводят к «захвату» фигуры противника, в результате чего она убирается с шахматной доски. Цель игры состоит в том, чтобы поставить мат королю противника. Это происходит тогда, когда король находится под угрозой (шахом) и нет никакой возможности убрать его из-под этой угрозы (шаха) следующим шагом. После появления шахмат как игры, теоретики разработали обширные шахматные стратегии и тактики.</para>
+<para>В современном виде игра появилась на юге Европы во второй половине XV века, а произошла из схожих, но гораздо более старых игр, Азии. Шахматы — одна из самых популярных в мире настольных игр. Традиционные состязания по шахматам начали проводиться ещё в XVI веке. Первый официальный чемпион мира по шахматам — Вильгельм Стейниц — получил свой титул в 1886 году; его сравнивают с Владимиром Крамником, который стал 14-м чемпионом мира. Также, раз в два года проводятся командные шахматные олимпиады. С XX века два международные организации — ФИДЕ и ИКЧФ — организовывали и следили за шахматными соревнованиями высшего уровня и международными титулами.</para>
+<para>Ещё на заре компьютерной эры инженеры пытались создать машину для игры в шахматы, современные шахматы сильно повлияли на возможности нынешних шахматных программ. В 1997 году в матче между чемпионом мира Гарри Каспаровым и шахматной программой IBM Deep Blue было доказано, что компьютеры способны одержать верх даже над сильнейшими игроками мира.</para>
+
+  <para>Чтобы запустить <application>glChess</application>, выберите <guimenuitem>Шахматы</guimenuitem> из подменю <guisubmenu>Игры</guisubmenu> и подменю <guimenu>Приложения</guimenu>, или наберите <command>glchess</command> в командной строке.</para>
+ </sect2>
+
+</sect1>
+
+
+<sect1 id="playing-glchess">
+ <title>Игра в glChess</title>
+ <sect2 id="main-game-window">
+<title>Главное окно игры</title>
+
+     <para>После запуска glChess появляется главное окно, как показано ниже. Во время игры фигуры передвигаются при помощи мыши. Игроки поочерёдно передвигают фигуры соответствующего цвета с одной позиции на шахматной доске на другую позицию. Главное окно игры разбито на три части. В верхней части находится меню и панель инструментов. В средней части окна находится шахматная доска, где непосредственно проходит игра. Наконец, внизу находится панель истории. Здесь показана информация об игровой истории, время, оставшееся для того, чтобы сделать ход и кнопки, с помощью которых можно просматривать предыдущие ходы.</para>
+
+ <figure id="main-game-shot">
+  <title>Главное окно glChess</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Главное окно glChess.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+</sect2>
+
+<sect2>
+<title>Начало новой игры</title>
+<para>Чтобы начать новую игру, нажмите кнопку <guibutton>Новая игра</guibutton> на панели инструментов. В появившемся диалоговом окне можно настроить параметры игры. В разделе <interface>Параметры игры</interface> можно установить название игры и ограничить время, отводимое на ход. В разделе <interface>Игроки</interface> можно выбрать количество компьютерных игроков. Наконец, в разделе <interface>Сложность</interface> можно выбрать сложность игры.</para>
+
+ <figure id="new-game-shot">
+  <title>Диалоговое окно начала новой игры</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/new_game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Диалоговое окно начала новой игры в glChess.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+</sect2>
+
+
+
+
+<sect2 id="menubar">
+   <title>Меню</title>
+   <para>Панель меню, находящаяся в верхней части <interface>главного окна</interface>, содержит следующие меню:</para>
+
+   <variablelist>
+    <varlistentry>
+     <term><guimenu>Игра</guimenu></term>
+     <listitem>
+      <para>Это меню содержит: <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+N</keysym></shortcut><guimenuitem>Создать</guimenuitem></menuchoice> Начать новую игру в <application>Шахматы</application>.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+O</keysym></shortcut><guimenuitem>Открыть</guimenuitem></menuchoice> Открыть предыдущую сохранённую игру.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+S</keysym></shortcut><guimenuitem>Сохранить</guimenuitem></menuchoice> Сохранить текущую игру.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><guimenuitem>Сохранить как</guimenuitem></menuchoice> Сохранить текущую игру в файле с новым именем.</para>
+        </listitem>
+
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+L</keysym></shortcut><guimenuitem>Новая сетевая игра</guimenuitem></menuchoice> Начать сетевую многопользовательскую игру с помощью игровых серверов GGZ Gaming Zone.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Сдаться</guimenuitem></menuchoice> Уступить игру, позволив оппоненту выиграть.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Предложить ничью</guimenuitem></menuchoice> Если предложение принимается, игра заканчивается без победы какого-либо игрока.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+Q</keysym></shortcut><guimenuitem>Выход</guimenuitem></menuchoice> Закончить игру.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+
+    <varlistentry>
+     <term><guimenu>Вид</guimenu></term>
+     <listitem>
+      <para>Это меню содержит: <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>F11</keysym></shortcut><guimenuitem>На весь экран</guimenuitem></menuchoice> Перейти в полноэкранный режим.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><guimenuitem>Трёхмерная доска</guimenuitem></menuchoice> Включить режим трёхмерной доски, используя OpenGL. Это требует наличия Python OpenGL и Python GTKGLExt, в дополнение к корректным настройкам графической карты. Если у вас возникли проблемы, свяжитесь с вашим системным администратором, иначе вы сможете играть только в двумерном режиме.</para>
+        </listitem>
+	 <listitem>
+         <para><menuchoice><guimenuitem>Показать журнал</guimenuitem></menuchoice> Показать журнал с целью отладки glChess и активных шахматных программ.</para>
+        </listitem>
+     </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+   <varlistentry>
+     <term><guimenu>Параметры</guimenu></term>
+     <listitem>
+      <para>Это меню содержит: <itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>Параметры</guimenuitem></menuchoice> Открыть окно, в котором можно изменить <link linkend="prefs"> параметры.</link></para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Справка</guimenu></term>
+     <listitem>
+      <para>Это меню содержит: <itemizedlist>
+        <listitem>
+          <para><menuchoice><shortcut><keysym>F1</keysym></shortcut><guimenuitem>Содержание</guimenuitem></menuchoice> Показать это руководство.</para>
+         <para><guimenuitem>О программе</guimenuitem> Открыть диалоговое окно <interface>О программе</interface>, в котором находится основная информация о <application>glChess</application>: имя автора, номер версии игры.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+
+
+</sect2>
+
+
+</sect1>
+
+
+<sect1 id="chess-rules">
+ <title>Правила игры в шахматы</title>
+ <sect2 id="rules-of-chess">
+  <title>Правила игры в шахматы</title>
+<!--
+The reference for this chapter is http://en.wikipedia.org/wiki/Chess
+-->
+  <para>Игра в шахматы проходит на квадратной доске, состоящей из 8 горизонталей и 8 вертикалей. Доска состоит из 64 полей, чередующихся цветов («белое поле» и «чёрное поле»). В правом нижнем углу каждого игрока находится белое поле, фигуры расставляются так, как показано на диаграмме. Каждый ферзь должен занять поле, цвет которого совпадает с цветом самого ферзя.</para><para>Каждый игрок в начале игры имеет по шестнадцать фигур: одного короля, одного ферзя, две ладьи, два слона, два коня и восемь пешек. Один игрок играет белыми, другой — чёрными. Белые всегда ходят первыми. Цвета выбираются дружеским соглашением, случайным образом или назначаются управляющим турнира. Игроки поочерёдно перемещают фигуры: за один ход можно переместить только одну фигуру (исключением является рокировка, когда две фигуры перемещаются за один ход). Фигуру можно перемещать на незанятый квадрат или на квадрат, занимаемый фигурой противника, что приводит к захвату фигуры, и она убирается с доски.</para>
+ <sect3 id="rules-piece-king">
+  <title>Король</title>
+<para>Когда королю создаётся угроза одной (может быть двумя) из фигур противника, королю объявляется шах. В этом случае необходимо следующим ходом вывести короля из-под шаха. Игрок не может сделать ход, который открывает короля для шаха. Цель игры — поставить противнику мат. Мат — ситуация, когда после хода противника король атакован фигурой противника, и при этом игрок не может своим ходом защититься от шаха.</para><para>Король может ходить только на соседнее поле по горизонтали, вертикали или диагонали. Один раз за игру каждому королю позволяется сделать специальный ход — рокировку. Рокировка совершается перемещением короля на два поля по направлению к ладье, а ладья ставится на поле, которое пересёк король при перемещении. Рокировку можно делать только в том случае, если все из ниже приведённых условий выполняются:</para>
+<itemizedlist spacing="compact">
+  <listitem>
+   <para>Ни король, ни ладья, участвующая в рокировке, не должны делать до рокировки ни одного хода.</para>
+  </listitem>
+  <listitem>
+   <para>Между королём и ладьёй не должно находиться ни одной фигуры.</para>
+  </listitem>
+  <listitem>
+   <para>Король не находится под шахом, не проходит через атакованное поле и не попадает на атакованное поле (под шах).</para>
+ </listitem>
+  <listitem>
+   <para>Король и ладья находятся на одной линии (это исключает возможно рокировки с пешками).</para>
+  </listitem>
+</itemizedlist>
+</sect3>
+ <sect3 id="rules-piece-rook">
+  <title>Ладья</title>
+<para>Ладья может двигаться на любое число полей по горизонтали или по вертикали при условии, что на её пути нет фигур. Она также участвует в рокировке.</para>
+</sect3>
+ <sect3 id="rules-piece-bishop">
+  <title>Слон</title>
+<para>Слон может перемещаться на любое число полей по диагонали, при условии, что на его пути нет фигур. Каждый слон может перемещаться либо только по белым полям, либо только по чёрным, поэтому слонов называют «белопольными» и «чернопольными» соответственно.</para>
+</sect3>
+ <sect3 id="rules-piece-queen">
+  <title>Ферзь</title>
+<para>Ферзь может перемещаться на любое число полей по вертикали, горизонтали и диагонали при условии, что на его пути нет фигур.</para>
+</sect3>
+ <sect3 id="rules-piece-knight">
+  <title>Конь</title>
+<para>Конь может пойти на любое поле доски, не занятое фигурой его цвета, если оно располагается на другом конце буквы «Г» (две клетки в одну сторону и одну в другую). Конь, находящийся по середине доски, имеет восемь вариантов хода. Помните, что после каждого хода конь переходит с поля одного цвета на поле противоположного цвета.</para>
+</sect3>
+ <sect3 id="rules-piece-pawns">
+  <title>Пешка</title>
+<para>У пешек самые сложные правила хода. Пешка может ходить вперёд на свободное поле, расположенное непосредственно перед ней на той же самой вертикали. С исходной позиции пешка может продвинуться на два поля по той же самой вертикали, если оба эти поля не заняты. Пешка не может ходит назад. Пешка, атакующая поле, пересечённое пешкой партнёра, который продвинул ее с исходной позиции сразу на два поля, может взять эту продвинутую пешку, как если бы последний её ход был только на одно поле. Это взятие может быть сделано только очередным ходом и называется взятием «на проходе». Пешка — единственная фигура, которая атакует и ходит по-разному. Она может захватить фигуру противника, расположенную перед ней по диагонали на соседнем поле, но она не может перемещаться на эти поля, если они не заняты. Когда пешка достигает самой дальней горизонтали от своей исходной позиции, она должна быть заменена на ферзя, ладью, слона или коня «своего» цвета, что является частью того же хода. Выбор игрока не ограничивается фигурами, которые были уже сняты с доски. Эта замена пешки на другую фигуру называется «превращением». На практике пешка чаще всего заменяется ферзём.</para>
+</sect3>
+
+<sect3 id="rules-movement-others">
+<title>Остальные правила хода</title>
+<para>За исключением коня ни одна другая фигура не может перепрыгивать через другие фигуры. Через свои фигуры, находящиеся на линии хода, другие фигуры перемещать нельзя. Никаким ходом фигура не может вытеснить фигуру того же цвета с какого-либо поля. Через фигуры противника свои фигуры перемещать нельзя, но фигуры противника могут быть захвачены. Когда захватывается фигура, атакующая её фигура перемещается на поле, которое до этого было занято захваченной фигурой. Захваченная фигура убирается с доски и не может быть возвращена в игру до её завершения. Захватить короля нельзя, ему можно поставить только шах. Если игрок не может вывести короля из-под шаха, королю объявляется мат. Игрок, чьему королю объявляется мат, проигрывает.</para><para>Игра не обязательно заканчивается матом. Игрок может сдаться, если ситуация безнадёжна. Игра может закончиться в ничью. Ничья возникает в нескольких ситуациях, в том числе на основе взаимного согласия: троекратное повторение позиции, правило пятидесяти ходов или ничья по причине невозможности мата (обычно из-за отсутствия материала для мата).</para>
+</sect3>
+</sect2>
+
+
+<sect2 id="timed-games">
+<title>Игры на время</title>
+<para>Во время создания новой игры можно ограничить время, выделяемое на ход. Каждый игрок имеет определённое количество времени для того, чтобы решить, какой ход сделать. Время оставшееся у игрока уменьшается только тогда, когда игрок получает право хода.</para>
+</sect2>
+
+<sect2 id="draw">
+<title>Ничья в игре</title>
+<para>Это игры, которые заканчиваются без победы какого-либо игрока. Большинство игр завершается в ничью согласно правилам. Игра может закончиться в ничью, если возникает пат, троекратное повторение позиции, применимо правило пятидесяти ходов или нехватка материала для мата. Позиция считается ничейной, если любой игрок может с помощью корректной игры, в конечном итоге перевести игру в положение, в котором игра сводится к ничьей, независимо от ходов, сделанных другим игроком.</para>
+
+
+<sect3 id="stalemate">
+<title>Пат</title>
+<para>Пат — положение, при котором игрок, обладающий правом хода, не имеет возможности сделать ход королём, а сам король не находится под шахом. Пат немедленно приводит к ничьей.</para>
+</sect3>
+
+<sect3 id="threefold-repetition">
+<title>Троекратное повторение</title>
+<para>В игре объявляется ничья, если на шахматной доске возникает повторение одной и той же позиции (положение фигур) три или более раз; при этом очередь хода остаётся за одной и той же стороной, а возможности игры не меняются: право на рокировку или на взятие на проходе.</para>
+</sect3>
+
+
+<sect3 id="fifty-move-rule">
+<title>Правило пятидесятого хода</title>
+<para>Правило пятидесяти ходов говорит о том, что партия признаётся ничей, если установлено, что за последние пятьдесят ходов или более ходов на доске не сделано ни одного хода пешками и не взята ни одна фигура.</para>
+</sect3>
+
+<sect3 id="insuff-material">
+<title>Недостаточность материала</title>
+<para>Если у игрока осталась только одна фигура, король, а у другого игрока остался король и слон или конь, то объявляется ничья, поскольку в этом случае для объявления мата у игрока нет необходимого материала. Ситуации, в которых мат возможен только из-за грубых ошибок оппонента, покрываются правилом пятидесяти ходов.</para>
+</sect3>
+
+
+</sect2>
+
+</sect1>
+
+
+
+
+<sect1 id="prefs">
+ <title>Параметры игры</title>
+
+
+<sect2 id="game-prefs">
+  <title>Параметры игры</title>
+  <para>В этом диалоговом окне можно изменить положение доски, выбрать формат ходов и фигуру продвижения.</para>
+
+ <figure id="preferences-game-shot">
+  <title>Диалоговое окно параметров игры glChess</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences_game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Диалоговое окно параметров игры glChess.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+
+</sect2>
+
+
+
+<sect2 id="view-prefs">
+  <title>Параметры вида</title>
+  <para>В этом диалоговом окне можно изменить внешний вид glChess.</para>
+
+ <figure id="preferences-view-shot">
+  <title>Диалоговое окно параметров вида glChess</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences_view.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Диалоговое окно параметров вида glChess.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+
+</sect2>
+
+</sect1>
+
+
+<sect1 id="engines">
+ <title>Шахматные программы</title>
+
+     <para>glChess должен использовать любые шахматные программы совместимые с CECP (Chess Engine Communication Protocol) или UCI (Universal Chess Interface), включая перечисленные ниже программы:</para>
+
+<!-- Please keep AI list synchronized with glchess/data/ai.xml -->
+<itemizedlist spacing="compact">
+  <listitem>
+	<para>GNUChess</para>
+  </listitem>
+  <listitem>
+	<para>Sjeng</para>
+  </listitem>
+  <listitem>
+	<para>Amy</para>
+ </listitem>
+  <listitem>
+	<para>Crafty</para>
+  </listitem>
+  <listitem>
+	<para>Faile</para>
+  </listitem>
+  <listitem>
+	<para>Phalanx</para>
+  </listitem>
+  <listitem>
+	<para>Glaurung</para>
+  </listitem>
+  <listitem>
+	<para>HoiChess</para>
+  </listitem>
+  <listitem>
+	<para>Diablo</para>
+  </listitem>
+  <listitem>
+	<para>BBChess</para>
+  </listitem>
+  <listitem>
+	<para>Fruit</para>
+  </listitem>
+  <listitem>
+	<para>Amundsen</para>
+  </listitem>
+  <listitem>
+	<para>Shredder</para>
+  </listitem>
+  <listitem>
+	<para>Toga II</para>
+  </listitem>
+  <listitem>
+	<para>Boo's Chess Engine</para>
+  </listitem>
+
+
+</itemizedlist>
+
+</sect1>
+
+
+<sect1 id="bugs">
+ <title>Известные ошибки и ограничения</title>
+
+ <itemizedlist mark="opencircle">
+    <listitem>
+     <para>В настоящий момент в glChess отсутствуют какие-либо задокументированные ошибки в программе или ограничения. В файле TODO, поставляемом вместе с игрой, можно найти информацию о том, как можно помочь помочь улучшить glChess.</para>
+    </listitem>
+ </itemizedlist>
+
+</sect1>
+
+<sect1 id="credits">
+ <title>Авторы</title>
+  <para>Игра <application>glChess</application> была написана Robert Ancell, на данный момент она включена в пакет gnome-games. Эта документация первоначально был написана Andreas Røsdal, с включением некоторых источников GPL. Чтобы сообщить об ошибке или сделать предложение по программе Шахматы или этому руководству, следуйте указаниям в документе <ulink url="ghelp:user-guide?feedback-bugs" type="help">Обратная связь с GNOME</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Лицензия</title>
+  <para>Данное программное обеспечение является свободным. Вы можете распространять его и/или изменять его на условиях лицензии <citetitle>GNU General Public License</citetitle>, опубликованной Фондом свободного программного обеспечения, второй версии или (по вашему желанию) любой более поздней версии.</para>
+  <para>Это программа распространяется в надежде на то, что она окажется полезной, но БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, даже без подразумеваемых гарантий КОММЕРЧЕСКОЙ ПРИГОДНОСТИ или СООТВЕТСТВИЯ ОПРЕДЕЛЁННОЙ ЦЕЛИ. Подробнее смотрите <citetitle>GNU General Public License</citetitle>.</para>
+  <para>Копия <citetitle>GNU General Public License</citetitle> включена в качестве дополнения в <citetitle>Руководство пользователя среды GNOME</citetitle>. Вы также можете получить копию <citetitle>GNU General Public License</citetitle> у Фонда свободного программного обеспечения, посетив <ulink type="http" url="http://www.fsf.org">их веб-сайт</ulink> или написав им <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address>.</para>
+ </sect1>
+</article>

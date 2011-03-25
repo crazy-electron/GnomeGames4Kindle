@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.28">
+<!ENTITY manrevision "1.0">
+<!ENTITY date "July 2009">
+<!ENTITY app "<application>Lights Off</application>">
+<!ENTITY appname "Lights Off">
+<!ENTITY version "1.0">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="fr">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Manuel de <application>Lights Off</application></title>
+
+    <abstract role="description">
+      <para>Lights Off est un jeu de casse tête, dont l'objectif est d'éteindre tous les carreaux du plateau. Chaque clic bascule l'état du carreau sur lequel on a cliqué et de ses voisins non diagonaux.</para>
+    </abstract>
+
+    <copyright>
+      <year>2010</year>
+      <holder>Tim Horton</holder>
+    </copyright><copyright><year>2010</year><holder>Laurent Coudeur (laurentc@iol.ie)</holder></copyright><copyright><year>2010</year><holder>Bruno Brouard (annoa.b@gmail.com)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Projet de documentation GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Permission vous est donnée de copier, distribuer et/ou modifier ce document selon les termes de la Licence GNU Free Documentation Licence, Version 1.1 ou ultérieure publiée par la Free Software Foundation sans section inaltérable, sans texte de première page de couverture ni texte de dernière page de couverture. Vous trouverez un exemplaire de cette licence en suivant ce <ulink type="help" url="ghelp:fdl">lien</ulink> ou dans le fichier COPYING-DOCS fourni avec le présent manuel.</para>
+         <para>Ce manuel fait partie de la collection de manuels GNOME distribués selon les termes de la licence de documentation libre GNU. Si vous souhaitez distribuer ce manuel indépendamment de la collection, vous devez joindre un exemplaire de la licence au document, comme indiqué dans la section 6 de celle-ci.</para>
+
+	<para>La plupart des noms utilisés par les entreprises pour distinguer leurs produits et services sont des marques déposées. Lorsque ces noms apparaissent dans la documentation GNOME et que les membres du projet de documentation GNOME sont informés de l'existence de ces marques déposées, soit ces noms entiers, soit leur première lettre est en majuscule.</para>
+
+	<para>LE PRÉSENT DOCUMENT ET SES VERSIONS DE MISE À JOUR SONT FOURNIS SOUS LES CONDITIONS DE L'ACCORD DE LICENCE DE DOCUMENTATION LIBRE GNU, SACHANT QUE : <orderedlist>
+		<listitem>
+		  <para>LE PRÉSENT DOCUMENT EST FOURNI « TEL QUEL », SANS AUCUNE GARANTIE, EXPRESSE OU IMPLICITE, Y COMPRIS, ET SANS LIMITATION, LES GARANTIES DE BONNE QUALITÉ MARCHANDE OU D'APTITUDE À UN EMPLOI PARTICULIER OU AUTORISÉ DU DOCUMENT OU DE SA VERSION MODIFIÉE. L'UTILISATEUR ASSUME TOUT RISQUE RELATIF À LA QUALITÉ, À LA PERTINENCE ET À LA PERFORMANCE DU DOCUMENT OU DE SA VERSION DE MISE À JOUR. SI LE DOCUMENT OU SA VERSION MODIFIÉE S'AVÉRAIT DÉFECTUEUSE, L'UTILISATEUR (ET NON LE RÉDACTEUR INITIAL, L'AUTEUR, NI TOUT AUTRE PARTICIPANT) ENDOSSERA LES COÛTS DE TOUTE INTERVENTION, RÉPARATION OU CORRECTION NÉCESSAIRE. CETTE DÉNÉGATION DE RESPONSABILITÉ CONSTITUE UNE PARTIE ESSENTIELLE DE CETTE LICENCE. AUCUNE UTILISATION DE CE DOCUMENT OU DE SA VERSION MODIFIÉE N'EST AUTORISÉE AUX TERMES DU PRÉSENT ACCORD, EXCEPTÉ SOUS CETTE DÉNÉGATION DE RESPONSABILITÉ ; ET</para>
+		</listitem>
+		<listitem>
+		  <para>EN AUCUNE CIRCONSTANCE ET SOUS AUCUNE INTERPRÉTATION DE LA LOI, QU'IL S'AGISSE D'UN DÉLIT CIVIL (Y COMPRIS LA NÉGLIGENCE), CONTRACTUEL OU AUTRE, L'AUTEUR, LE RÉDACTEUR INITIAL, TOUT PARTICIPANT OU TOUT DISTRIBUTEUR DE CE DOCUMENT OU DE SA VERSION MODIFIÉE, OU TOUT FOURNISSEUR DE L'UNE DE CES PARTIES NE POURRA ÊTRE TENU RESPONSABLE À L'ÉGARD DE QUICONQUE POUR TOUT DOMMAGE DIRECT, INDIRECT, PARTICULIER, OU ACCIDENTEL DE TOUT TYPE Y COMPRIS, SANS LIMITATION, LES DOMMAGES LIÉS À LA PERTE DE CLIENTÈLE, À UN ARRÊT DE TRAVAIL, À UNE DÉFAILLANCE OU UN MAUVAIS FONCTIONNEMENT INFORMATIQUE, OU À TOUT AUTRE DOMMAGE OU PERTE LIÉE À L'UTILISATION DU DOCUMENT ET DE SES VERSIONS MODIFIÉES, MÊME SI LADITE PARTIE A ÉTÉ INFORMÉE DE L'ÉVENTUALITÉ DE TELS DOMMAGES.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL),
+and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+	
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Tim</firstname> 
+	<surname>Horton</surname> 
+	<affiliation> 
+	  <address> <email>hortont@gnome.org</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.29" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Manuel de Lights Off V1.0</revnumber> 
+	<date>Janvier 2010</date> 
+	<revdescription> 
+	  <para role="author">Tim Horton <email>hortont@gnome.org</email></para>
+	  <para role="publisher">Projet de documentation GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Ce manuel documente la version 2.28 de Lights Off.</releaseinfo>
+    <!-- The following feedback information only applies to applications
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove this
+    section altogether -->
+    <legalnotice> 
+      <title>Votre avis</title> 
+      <para>Pour signaler une anomalie ou émettre une suggestion concernant <application>Lights Off</application> ou ce manuel, procédez comme indiqué sur la <ulink url="ghelp:user-guide?feedback-bugs" type="help">page de réactions sur GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Lights Off</primary> 
+  </indexterm>
+
+<!-- ==============================Document Body==================-->
+
+<sect1 id="s1-intro">
+ <title>Introduction</title>
+
+<!--synopsis of game-->
+  <para><application>Lights Off</application> est un jeu de casse tête, dont l'objectif est d'éteindre tous les carreaux du plateau. chaque clic bascule l'état du carreau sur lequel on a cliqué et de ses voisins non diagonaux.</para>
+
+<!--running game-->
+   <para>Pour lancer <application>Lights Off</application>, sélectionnez <menuchoice><guimenu>Applications</guimenu><guisubmenu>Jeux</guisubmenu><guimenuitem>Lights Off</guimenuitem></menuchoice>, ou saisissez<command>lightsoff</command> dans la ligne de commande.</para>
+
+<!--part of gnome-games-->
+   <para><application>Lights Off</application> fait parti du paquet <filename>gnome-games</filename>, lui-même inclus dans l'environnement de bureau GNOME. Ce document décrit la version 1.0 de <application>Lights Off</application>.</para>
+</sect1>
+
+<sect1 id="s1-playing">
+ <title>Le jeu <application>Lights Off</application></title>
+  <para>Vous progressez dans les niveaux soit en éteignant tous les carreaux d'un niveau particulier, soit en utilisant les boutons en forme de flèches près du bas du jeu. Ces boutons vous permettent de sauter des niveaux, ou de retourner aux niveaux précédents, sans limitation.</para>
+   <sect2 id="s2-block-moving">
+     <title>Manipulation du plateau</title>
+      <para>Il n'y a qu'une seule action disponible dans <application>Lights Off</application> : cliquer un carreau sur le plateau. Vous pouvez soit cliquer sur un carreau avec la souris, ou utiliser les touches de direction pour le choisir. La première fois que vous enfoncez une touche flèche pendant une partie de <application>Lights Off</application>, un curseur que vous pouvez déplacer avec le clavier, apparaît ; en appuyant sur Entrée, vous cliquez sur le carreau sous le curseur.</para>
+      <para>Quand un carreau est cliqué, le carreau et tous ses voisins non diagonaux changent d'état. L'objectif est d'éteindre tous les carreaux du plateau.</para>
+   </sect2>
+   <sect2 id="s2-newgame">
+     <title>Démarrage d'un nouveau jeu</title>
+      <para>Pour commencer un nouveau jeu, choisissez <menuchoice><guimenu>Jeu</guimenu><guimenuitem>Nouveau jeu</guimenuitem></menuchoice>. La progression des niveaux est la même pour tous les jeux et les ordinateurs, donc <menuchoice><guimenuitem>Nouveau jeu</guimenuitem></menuchoice> ne doit être choisi que si vous souhaitez vraiment revenir au début de la partie.</para>
+    </sect2>
+</sect1>
+
+ 
+<sect1 id="s1-customizegame">
+ <title>Personnalisation de <application>Lights Off</application></title>
+   <sect2 id="s2-customlook">
+    <title>Personnalisation de l'apparence de <application>Lights Off</application></title>
+    <para>Dans <menuchoice><guimenu>Jeu</guimenu><guimenuitem>Préférences</guimenuitem></menuchoice>, vous pouvez personnaliser l'apparence des carreaux dans <application>Lights Off</application>. Il y a de nombreux styles inclus, certains utilisent les couleurs de votre thème. Cela peut être désactivé avec l'option <guilabel>Utiliser les couleurs du thème GNOME</guilabel> dans la fenêtre des préférences.</para>
+    </sect2>
+   </sect1>
+
+<sect1 id="authors">
+  <title>Auteurs</title>
+  <para>Tim Horton a écrit <application>Lights Off</application> en 2009 et ce jeu est depuis maintenu par l'équipe GNOME Games. Tim Horton a écrit ce manuel. Pour signaler une anomalie ou émettre une suggestion concernant cette application ou ce manuel, procédez comme indiqué dans ce <ulink url="ghelp:user-guide?feedback-bugs" type="help">document</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+</sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="s1-license">
+  <title>Licence</title>
+  <para>Ce programme est un logiciel libre ; vous pouvez le redistribuer ou le modifier selon les termes de la <citetitle><ulink type="help" url="gnome-help:gpl ">GNU General Public License</ulink></citetitle>, tels que  publiés par la Free Software Foundation ; soit la version 2 de cette licence ou (à votre choix) toute version ultérieure.</para>
+  <para>Ce programme est distribué dans l’espoir qu’il sera utile, mais SANS AUCUNE GARANTIE, ni explicite ni implicite; sans même les garanties de commercialisation ou d’adaptation dans un but spécifique. Se référer à la <citetitle>GNU General Public License</citetitle> pour plus de détails.</para>
+  <para>Une copie de la <citetitle>GNU General Public License</citetitle> est inclue sous forme d'annexe au <citetitle>Guide d'utilisation du bureau GNOME</citetitle>. Vous pouvez également obtenir une copie de la <citetitle>GNU General Public License</citetitle> à la Free Software Foundation en visitant <ulink type="http" url="http://www.fsf.org">leur site Web</ulink> ou en écrivant à <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

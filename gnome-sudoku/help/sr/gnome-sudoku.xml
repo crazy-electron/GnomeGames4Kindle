@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.21.90">
+<!ENTITY manrevision "3.0">
+<!ENTITY date "February 2008">
+<!ENTITY app "<application>Sudoku</application>">
+<!ENTITY appname "Sudoku">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 06, 2003
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sr">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Упутство за <application>Гном Судоку</application></title>       
+
+    <abstract role="description">
+      <para>Судоку је програм за играње популарне судоку логичке слагалице, у којој је потребно попунити мрежу од 9x9 квадрата исправним цифрама.</para>
+    </abstract>
+
+    <copyright> 
+      <year>2008</year> 
+      <holder>Thomas M. Hinkle</holder> 
+    </copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Пројекат Гномове документације</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Дозвољено умножавање, ширење, вршење измена овог документа под условима Гну-ове Слободне Документационе Дозволе (ГСДД), верзије 1.1 или било које накнадне верзије без непромењивих одељака, текста на насловној и последњој страни, а коју је објавила Задужбина Слободног Софтвера. Примерак ГСДД-е можете пронаћи на овој <ulink type="help" url="ghelp:fdl">адреси</ulink> или у датотеци COPYING-DOCS која је приложена уз ово упутство.</para>
+         <para>Ово упутство је део скупа Гном докумената објављених под GFDL. Уколико желите да расподељујете ово упутство одвојено од скупа, то можете урадити додавањем примерка лиценце документу, како је описано у одељку 6 саме лиценце.</para>
+
+	<para>Многи називи које компаније користе у циљу препознатљивости својих производа и услуга представљају робне марке. Када (уколико) се такви називи појављују(спомињу) у било којем Гномовом документу, а чланови Гномовог документационог пројекта имају сазнања о томе, тада су називи исписани великим словима или са великим почетним словима.</para>
+
+	<para>ОВАЈ ДОКУМЕНТ И ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СУ ДОСТУПНЕ ПОД УСЛОВИМА ГНУ-ОВЕ СЛОБОДНЕ ДОКУМЕНТАЦИОНЕ ДОЗВОЛЕ УЗ ДОДАТНУ САГЛАСНОСТ ДА: <orderedlist>
+		<listitem>
+		  <para>ДОКУМЕНТ ЈЕ ДОСТУПАН СА СВИМ СВОЈИМ ДОБРИМ И ЛОШИМ СТРАНАМА БЕЗ БИЛО КАКВОГ ЈАМСТВА, БИЛО ОНО ИЗРЕЧЕНО ИЛИ НЕ, УКЉУЧУЈУЋИ БЕЗ ОГРАНИЧЕЊА, ЈАМСТВО ДА ЈЕ ОВАЈ ДОКУМЕНТ ИЛИ ЊЕГОВА ИЗМЕЊЕНА ВЕРЗИЈА БЕЗ НЕДОСТАТАКА, СПРЕМАН ЗА ТРЖИШТЕ, СВРСИСХОДАН И НЕ НАРУШАВА ЗАКОНСКЕ НОРМЕ. ЦЕЛОКУПАН РИЗИК КОЈИ СЕ ОДНОСИ НА КВАЛИТЕТ, ТАЧНОСТ И ДОМЕТ (УЧИНАК) ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СНОСИ КОРИСНИК. УКОЛИКО СЕ У БИЛО КОЈЕМ ДОКУМЕНТУ ИЛИ ЊЕГОВОЈ ИЗМЕЊЕНОЈ ВЕРЗИЈИ ПОЈАВИ НЕДОСТАТАК (ГРЕШКА) БИЛО КОЈЕ ВРСТЕ, КОРИСНИК (А НЕ АУТОР ИЗВОРНЕ ВЕРЗИЈЕ, БИЛО КОЈИ ДРУГИ АУТОР ИЛИ САРАДНИК) СНОСИ СВЕ ТРОШКОВЕ НЕОПХОДНОГ СЕРВИСИРАЊА, ПОПРАВКЕ ИЛИ ИСПРАВКЕ. ОВО ОГРАНИЧЕЊЕ ЈАМСТВА ПРЕДСТАВЉА САСТАВНИ ДЕО ОВЕ ДОЗВОЛЕ. УПОТРЕБА БИЛО КОЈЕГ ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ НИЈЕ ДОЗВОЉЕНА ОСИМ ПОД УСЛОВИМА ОВОГ ОГРАНИЧЕЊА ЈАМСТВА.</para>
+		</listitem>
+		<listitem>
+		  <para>НИ ПОД КАКВИМ ОКОЛНОСТИМА ИЛИ ЗАКОНУ, БИЛО ЗБОГ КРШЕЊА (ИЛИ НЕМАРА) УГОВОРА, ИЛИ НА БИЛО КОЈИ ДРУГИ НАЧИН, АУТОР (ПРВОБИТНЕ ВЕРЗИЈЕ), САРАДНИК ИЛИ ИСПОРУЧИВАЛАЦ ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ, НИТИ ДОБАВЉАЧ БИЛО КОЈЕ ОД НАВЕДЕНИХ СТРАНА НЕЋЕ СНОСИТИ МАТЕРИЈАЛНУ ОДГОВОРНОСТ ЗА НАСТАЛА ДИРЕКТНА, ИНДИРЕКТНА, ПОСЕБНА, СЛУЧАЈНА ИЛИ ТИМЕ НАСТАЛА ОШТЕЋЕЊА БИЛО КОЈЕ ВРСТЕ УКЉУЧУЈУЋИ, БЕЗ ОГРАНИЧЕЊА, ШТЕТУ НАНЕСЕНУ УГЛЕДУ ФИРМЕ, ПРЕСТАНКУ ПРОИЗВОДЊЕ, ОТКАЗИВАЊЕ РАДА РАЧУНАРА ИЛИ КВАРА КАО И ЗА СВЕ ОСТАЛЕ ШТЕТЕ ИЛИ ГУБИТКЕ НАСТАЛЕ УСЛЕД КОРИШЋЕЊА ДОКУМЕНТА И ЊЕГОВИХ ИЗМЕЊЕНИХ ВЕРЗИЈА ЧАК И АКО ЈЕ ОШТЕЋЕНА СТРАНА БИЛА ОБАВЕШТЕНА О МОГУЋНОСТИ НАСТАНКА ТЕ ШТЕТЕ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+		<firstname>Thomas</firstname> 
+		<surname>Hinkle</surname> 
+		<affiliation> 
+	  		<orgname>Пројекат Гномове документације</orgname> 
+	  		<!-- The email address of the author is optional and is commented out by default. 
+			<address> <email>doc-writer2@gnome.org</email> </address> 
+			-->
+		</affiliation> 
+      </author> 
+      
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->  
+    <revhistory>
+      <revision> 
+		<revnumber>Упутство за Судоку v3.0</revnumber> 
+		<date>Фебруар 2008.</date> 
+		<revdescription> 
+	  		<para role="author">Thomas M. Hinkle</para>
+	  		<para role="publisher">Пројекат Гномове документације</para>
+		</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Ово упутство описује издање 2.21.90 Судоку програма</releaseinfo> 
+    <legalnotice> 
+      <title>Примедбе</title> 
+      <para>Да бисте пријавили грешку или дали предлог у вези програма <application>Судоку</application> или његовог упутства, пратите смернице на <ulink url="ghelp:user-guide?feedback-bugs" type="help">Гномовој страни за примедбе</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>Гном Судоку</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+    <primary>sudoku</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="myapp-introduction"> 
+    <title>Увод</title> 
+    <para><application>Судоку</application> је програм за прављење и играње популарних Судоку логичких слагалица (познатих и као Постављање бројева).</para>
+    <para>Правила игре Судоку су веома једноставна. Да бисте решили слагалицу, морате попунити сваки квадрат са бројем између 1 и 9 тако да сваки ред, колона и 3x3 квадрати садрже све бројеве од 1 до 9. Другим речима, морате попунити сваки квадрат тако да се у ниједном реду, колони и 3x3 квадрату не понавља исти број.</para>
+
+    <para>Ова два начина гледања на слагалицу су и два главна принципа како играчи решавају Судоку. У једну руку, треба мислити „Како да поставим све бројеве у 3x3 квадрат?“. У другу руку, треба мислити „Који број да ставим у овај квадрат тако да се он не понавља у овом реду, колони и 3x3 квадрату?“</para>
+
+    <para>Упркос једноставности игре, Судоку слагалице могу много да варијају по тежини. <application>Судоку</application> вам омогућује да одаберете тежину слагалице коју желите да играте. Подразумевано, програм ће почети са лаким слагалицама и постепено повећавати тежину слагалица док ви напредујете.</para>
+
+  </sect1>
+
+<!-- =========== Getting Started ============================== -->
+<!-- Use the Getting Started section to describe the steps required
+     to start the application and to describe the user interface components
+     of the application. If there is other information that it is important
+     for readers to know before they start using the application, you should
+     also include this information here. 
+     If the information about how to get started is very short, you can 
+     include it in the Introduction and omit this section. -->
+
+  <sect1 id="myapp-getting-started"> 
+    <title>Почетак игре</title> 
+
+    <sect2 id="myapp-start">
+    <title>Да покренете <application>Судоку</application></title>
+    <para>Можете покренути <application>Судоку</application> на следеће начине:</para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>Мени <guimenu>Програми</guimenu></term>
+    		<listitem>
+    		<para>Одаберите <menuchoice><guisubmenu>Игре </guisubmenu><guimenuitem>Гном Судоку</guimenuitem></menuchoice>.</para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Командна линија</term>
+    		<listitem>
+    		<para>Да бисте покренули <application>Судоку</application> из командне линије, откуцајте следећу команду и притисните <keycap>Enter</keycap>:</para>
+    		<para> 
+			<command>gnome-sudoku</command> 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+    </sect2>
+
+    <sect2 id="myapp-when-start">
+    <title>Када покренете <application>Судоку</application></title>
+    <para>Када први пут покренете <application>Судоку</application>, видећете екран за одабир слагалице на коме можете одабрати тежину слагалице коју желите да играте. Ако сте већ играли и имате недовршених слагалица, и њих исто можете одабрати са овог екрана.</para>
+    <para>На екрану за одабир слагалице се приказује тежина слагалица. Боја оквира око слагалице одговара њеној тежини. Тамно црвена слагалица је нпр. тежа од светло црвене слагалице.</para>
+    <para>Дуплим кликом на слагалицу започињете да је играте.</para>
+
+<figure id="new-game-fig"> 
+	<title>Почетак Судока</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/starting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Почетак Судока; одабирање нивоа тежине.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    
+    <para>У сваком тренутку можете променити слагалицу на дугме <guibutton>Ново</guibutton>. Овим ћете се вратити на екран за одабир слагалице, где можете одабрати било коју слагалицу коју желите.</para>
+    
+    </sect2>
+    
+    </sect1>
+    <sect1 id="myapp-basic-play">
+    <title>Основе игре</title>
+    <para>Да бисте играли игру, почните да попуњавате бројеве 1-9 у квадрате тако да се у ниједном реду, колони и 3x3 квадрату не појављује два пута исти број.</para>
+    <para>Бројеве можете попуњавати тастатуром или мишем.</para>
+    <variablelist>
+    	<varlistentry>
+	<term>Тастатура</term>
+	<listitem><para>Користите тастере са стрелицама или миша да бисте изабрали квадрат који желите да попуните. Онда откуцајте број који желите да ставите у квадрат. Притискањем тастера <keycap>Backspace</keycap> уклањате уписани број.</para></listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Миш</term>
+	<listitem>
+	  <para>Кликните на квадрат да бисте га изабрали, онда кликните на средину квадрата да бисте добили дугмад са бројевима од 1 до 9. Кликните затим на број да бисте га изабрали, или дугме <guibutton>Очисти</guibutton> да уклоните број из квадрат. Можете такође кликнути дуплим кликом на квадрат да бисте добили дугмад са бројевима.</para>
+	</listitem>
+		</varlistentry>
+	</variablelist>
+    <note>
+    <para>Ако унесете број који већ постоји у истом реду, колони или у истом 3x3 квадрату, сви ти бројеви ће бити истакнути црвеном бојом.</para>
+    <figure id="error-highlight-fig"> 
+	<title>Истицање грешака</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/error_highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Недозвољен потез ће бити истакнут црвеном.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    </note>
+    </sect1>
+    <sect1 id="myapp-saving">
+    <title>Чување и настављање игара</title>
+    <para>Судоку слагалице се аутоматски чувају сваких пет минута и кад год промените игре или затворите програм.</para>
+        <figure id="open-game-fig"> 
+	<title>Настављање старе игре</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/resuming.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Настављање старе игре са екрана за одабир слагалице.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    <para>Кад год покренете <application>Судоку</application> или кликнете дугме <guibutton>Ново</guibutton>, ваше сачуване игре ће бити приказане на екрану за одабир слагалице. Видећете минијатурну слику снимљене слагалице, датум кад сте је последњи пут играли и колико сте је дуго играли. Дуплим кликом је поново отварате.</para>
+    <para>Да бисте престали да играте једну игру и започели другу, само одаберите <guibutton>Ново</guibutton> и почните нову игру.</para>
+    </sect1>
+
+<!-- ================ Usage ================================ -->
+<!-- Use this section to describe how to use the application to perform the tasks for 
+  which the application is designed. -->
+  <sect1 id="myapp-hints"> 
+    <title>Могућности</title> 
+    <!-- ================ Usage Subsection ================================ -->
+
+        <para>Гном Судоку нуди бројне могућности које вам помажу да решавате слагалице.</para>
+
+      <variablelist>
+    	<varlistentry><term>Белешке</term>
+	<listitem>
+		<para><firstterm>Белешке</firstterm> или <firstterm>ознаке оловком</firstterm> вам омогућавају да имате савете за сваки квадрат. Многи играчи користе белешке да прате вредности које се могу уписати у квадрат.</para>
+	</listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Савети и аутоматско попуњавање</term>
+	<listitem>
+	<para>Можете користити <firstterm>савете</firstterm> и <firstterm>аутоматско попуњавање</firstterm> да би вам Гном Судоку рекао могуће вредности за квадрат или да би аутоматски попунио вредност квадрата за вас.</para>
+	</listitem>
+	</varlistentry>
+
+		<varlistentry>
+	<term>Истицање</term>
+	<listitem>
+	<para>У режиму са истицањем, тренутни ред, колона и 3x3  квадрат су истакнути другим бојама да бисте лакше прегледали таблу.</para>
+	</listitem>
+	</varlistentry>
+
+	<varlistentry>
+	<term>Локатори</term>
+	<listitem>
+	  <para>Локатори омогућавају лакше играње методом покушаја и грешке. Када <firstterm>пратите</firstterm> скуп потеза, бројеви које уносите су приказани посебним бојама да би се раздвојили потези одигране пре и после праћења.</para>
+	</listitem>
+	</varlistentry>
+        </variablelist>
+	
+	<sect2 id="myapp-notes"> 
+      <title>Хватање белешки</title> 
+      <para>Да бисте писали белешке (познате и као „ознаке оловком“) у квадрату, прво одаберите квадрат са тастатуром или мишем. Онда, урадите једно од следећег:</para>
+      <itemizedlist>
+      <listitem><para>Кликните на горњу област квадрата (област је истакнута у квадрату када померите миша изнад означеног квадрата).</para></listitem>
+      <listitem><para>Притисните <keycap>N</keycap></para></listitem>
+      </itemizedlist>
+      <para>Овим ће се приказати поље у које можете унети белешке. Притисните <keycap>Return</keycap> када сте завршили са уређивањем белешке.</para>
+      
+      <note><para>Такође можете хватати белешке у доњем делу квадрата тако што кликнете на доњи део квадрата или тако што притиснете <keycap>M</keycap>. Ипак, овај део се користи када затражите <firstterm>савет</firstterm>, тако да не би требало да користите ову област за ваше белешке ако такође намеравате да користите савете.</para></note>
+      <note><para>You can clear the notes at the top of the square by typing <keycap>Alt-N</keycap> and at the bottom of the square by typing <keycap>Alt-M</keycap>.</para></note>
+      <note><para>You can add a number to the notes at the top of the square by typing <keycap>Ctrl-1</keycap> through <keycap>Ctrl-9</keycap> and remove a number from the notes by typing <keycap>Alt-1</keycap> through <keycap>Alt-9</keycap>.</para></note>
+</sect2>
+    <!-- ================ Usage Subsection ================================ -->
+	 <sect2 id="myapp-manipulate-view"> 
+      <title>Савети и аутоматско попуњавање</title>
+
+		             <note>
+
+	      <para>Могућности <firstterm>Савет</firstterm> и <firstterm>Попуна</firstterm> раде тако што испитују логичне могућности гледајући тренутно стање на табли. Они <emphasis>не</emphasis> раде гледајући решење. Ако сте раније направили грешку, ове могућности могу да попуне квадрат са погрешном вредношћу или дају погрешан савет.</para>
+
+	    </note>
+      
+      
+      <sect3 id="myapp-hint">
+          <title>Савети</title>
+	              <para>Гном Судоку ће вам давати савете према тренутном стању на табли. Савет можете затражити за тренутно означени квадрат кликом на дугме <guibutton>Савет</guibutton>, одабирајући <menuchoice><guisubmenu>Алати</guisubmenu><guimenuitem>Савет</guimenuitem></menuchoice> или куцајући <keycap>Control-H</keycap>. Овим ће се доњи део квадрата попунити са могућим вредностима.</para>
+    <figure id="hint-fig"> 
+	<title>Савети</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/hints.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Када кликнете на Савет, могуће вредности су приказане у доњем делу квадрата.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+		      
+	    <para>Ако желите да уклоните или измените савет, можете уредити текст кликом на доњи део квадрата.</para>
+	    <para>За веома тешке слагалице, можете одабрати да вам <application>Судоку</application> приказује могуће вредности за све квадрате. Да бисте укључили овај режим, укључите <menuchoice><guisubmenu>Алати</guisubmenu><guimenuitem>Увек прикажи савет</guimenuitem></menuchoice>. Приметите да ово може од лаких слагалица направити  <emphasis>још</emphasis> лакше слагалице, па користите ово умерено.</para>
+<figure id="all-hints-fig"> 
+	<title><application>Судоку</application> у режиму „Увек прикажи савет“</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/always_show_hint.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Тешка слагалица са укљученим режимом „Увек прикажи савет“.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+	    
+	    
+	    </sect3>
+	    <sect3 id="myapp-autofill">
+	    <title>Попуна квадрата</title>
+
+	    <para>Да бисте аутоматски попунили квадрат који има само једну могућу вредност, можете кликнути на дугме <guibutton>Попуни</guibutton>, одабрати <menuchoice><guisubmenu>Алати</guisubmenu><guimenuitem>Попуни</guimenuitem></menuchoice>, или откуцати <keycap>Control-F</keycap>. Ово је корисно када сте, на пример, попунили 8 или 9 квадрата у реду и желите да брзо попуните преостали квадрат.</para>
+	    <para>Ако у квадрат може да се упише више од једне могуће вредности, ништа се неће десити.</para>	    
+	    </sect3>
+	    <sect3 id="myapp-fill-all">
+	    <title>Попуни све квадрате</title>
+
+	    <para>Можете аутоматски попунити све квадрате који у датом тренутку логички имају само једну могућу вредност. Да бисте то постигли, одаберите <menuchoice><guisubmenu>Алати</guisubmenu><guimenuitem>Попуни све квадрате</guimenuitem></menuchoice>, или откуцајте <keycap>Control-A</keycap>.</para>
+	    
+	    <warning>
+
+	    	    <para>Ову могућност треба да користите само као помоћ када сте се гадно заглавили на тешкој слагалици. Ако ову могућност користите на лакој слагалици, можете је целу решити једним кликом, што доводи до јако досадне игре!</para>
+		    </warning>
+	    	    </sect3>
+
+    </sect2> 
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-highlighting"> 
+      <title>Истицање</title> 
+      <para>Можете укључити истицање да аутоматски боји тренутни ред, колону или 3x3 квадрат у различитим бојама. Овим можете лакше да препознате вредности које не могу да се упишу у тренутни квадрат. Укључивање и искључивање истицања се ради са:</para> 
+      <itemizedlist>
+      <listitem><para>Кликом на дугме <guibutton>Истицање</guibutton></para></listitem>
+      <listitem><para><menuchoice><guisubmenu>Преглед</guisubmenu><guimenuitem>Истицање</guimenuitem></menuchoice></para></listitem>
+      </itemizedlist>
+
+<figure id="highlight-fig"> 
+	<title><application>Судоку</application> са истицањем</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Са истицањем можете лакше да прегледате редове, колоне и 3x3 квадрате.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      </sect2>
+
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-trackers"> 
+      <title>Локатори</title> 
+      <para>Локаторе можете користити да пратите више потеза истовремено. Праћени потези ће бити унесени различитим бојама да би се визуелно разликовали. Такође можете избрисати све праћене потезе одједном. Ово је нарочито корисно за решавање тешких слагалица методом покушаја и грешке.</para>
+      <note><para>Неки судоку играчи верују да никад судоку слагалица не треба да се решава методом покушаја и грешке. Ови играчи не треба да користе ову могућност.</para></note>
+
+            <para>Сучеље локатора можете укључити и искључити на следећи начин:</para>
+
+	    <itemizedlist>
+
+	      <listitem>
+	       <para>
+		<menuchoice> 
+			  <guimenu>Алати</guimenu> 
+			  <guimenuitem>Прати додавање</guimenuitem>
+		</menuchoice>
+	       </para>
+	     </listitem>
+             <listitem><para>Кликните <guibutton>Прати додавање</guibutton></para></listitem>
+           </itemizedlist>
+      <para>Овим ћете добити списак локатора на десној страни тренутне игре. Направите нови локатор кликом на дугме <guibutton>Додај локатор</guibutton>. Од тог времена, сваки број који унесете ће бити део означеног локатора.</para>
+      <para>Можете очистити све вредности које су део локатора тако што одаберете локатор са списка и кликнете на дугме <guibutton>Очисти локатор</guibutton>. Можете очистити и све вредности које <emphasis>нису</emphasis> део локатора кликом на <guibutton>Очисти остале</guibutton>.</para>
+    </sect2> 
+  </sect1>
+  <!-- ============= Customization ============================= -->
+  <!-- Use this section to describe how to customize the application. -->
+  <sect1 id="myapp-printing"> 
+    <title>Штампање Судока</title> 
+    <para>Гном Судоку може за вас да штампа игре тако да можете да их играте на папиру. Ово је корисно када треба да напустите рачунар, а хоћете да довршите започету игру или ако желите да одштампате гомилу слагалица за касније.</para>
+
+    <para>Да бисте одштампали слагалицу коју тренутно играте, кликните на дугме <guibutton>Штампај</guibutton> или одаберите <menuchoice><guimenu>Игра</guimenu><guimenuitem>Штампај</guimenuitem></menuchoice>. И бројеви које сте до тад попунили ће бити одштампани.</para>
+    
+    <para>Да одштампате празну слагалицу, одаберите <menuchoice><guimenu>Игра</guimenu><guimenuitem>Одштампај више слагалица</guimenuitem></menuchoice>.</para>
+
+      <para>Видећете дијалог за штампу који вам омогућује да одаберете колико игри желите да одштампате и колико игара желите да буде одштампано по страни (игре ће бити мање што их више ставите на једној страни).</para>
+
+      <para>Такође можете одабрати и опсег тежина које желите да игре буду. Игре ће бити одштампане по редоследу тежине од најлакших ка најтежим.</para>
+
+      <para>Да бисте направили мини судоку књигу са 25 страна, можете одабрати штампање 100 судока, са 4 судока по страни, са тежином игара у опсегу од лаких до тешких.</para>
+
+<figure id="printing-fig"> 
+	<title>Штампање мини судоку књиге из <application>Судоку</application> програма.</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/Print_Sudokus.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Ово ће одштампати 25 страна са 4 судока по страни.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      <para>Подразумевано, <application>Судоку</application> неће штампати игре које сте већ одиграли. Ако штампате игре за пријатеља или ако вам је свеједно што играте исте игре поново, можете да штиклирате <guibutton>Укључи игре које си већ играо у листи за штампу</guibutton>.</para>
+
+      <para>Такође можете ручно одабрати игре које желите да одштампате проширујући <guibutton>Списак игара</guibutton> и означавајући више слагалица са списка.</para>
+    
+  </sect1>
+  
+  <sect1 id="mayapp-bugs">
+  <title>Познате грешке и ограничења</title>
+  <sect2>
+  <title>Ограничене статистике слагалица</title>
+
+    <para>Гном Судоку рангира слагалице по броју квадрата који се одмах могу попунити. Прозорче са статистикама слагалице приказује укупну оцену и даје вам три податка:</para>
+
+    <itemizedlist>
+    <listitem><para>Број квадрата који се могу попунити елиминацијом, почевши од празне мреже (тј. у овом квадрату може да буде само 2, па мора бити 2 у њему).</para></listitem>
+    <listitem><para>Број квадрата који се могу попунити попуњавањем, почевши од празне мреже (тј. само један квадрат у овом реду може бити 2, па мора бити 2 у њему).</para></listitem>
+    <listitem><para>Број покушаја у решавању слагалице које је рачунар морао да погреши користећи методу покушаја и грешке, или „погађања“ да би се слагалица решила.</para></listitem>
+    </itemizedlist>
+    <para>Многи корисници су узнемирени чињеницом да рачунар користи методу покушаја и грешке, нарочито када се зна да судоку мајстори кажу да то никад не би требало да се користи да би се слагалица решила. Постоје бројни други алгоритми који се могу имплементирати који помажу рачунару да реши судоку, као што су swordfish и X-wings обрасци.</para>
+
+    <para>Тренутно, <application>Судоку</application> користи само два алгоритма описана изнад, као и методу покушаја и грешке. Када прозорче са статистикама каже да <application>Судоку</application> програму треба да користи методу покушаја и грешке X пута, то <emphasis>не</emphasis> значи да и човек мора да користи ове методу да би решио слагалицу.</para>
+  
+  </sect2>
+
+ </sect1>
+
+<!-- ============= About ================================== -->
+<!-- This section contains info about the program (not docs), such as
+      author's name(s), web page, license, feedback address. This
+      section is optional: primary place for this info is "About.." box of
+      the program. However, if you do wish to include this info in the
+      manual, this is the place to put it. Alternatively, you can put this information in the title page.-->
+  <sect1 id="myapp-about"> 
+    <title>О програму <application>Судоку</application></title> 
+    <para><application>Судоку</application> је написао Tom Hinkle (<email>tmhinkle@gmail.com</email>). <application>Судоку</application> је сада део Гном игара.</para>
+    <para>Да бисте пријавили грешке или дали предлог у вези овог програма или његовог упутства, пратите смернице из <ulink url="ghelp:user-guide?feedback-bugs" type="help">документа</ulink>.</para>
+
+    <para>Овај програм је слободан софтвер; можете га расподељивати и/или га мењати под условима <citetitle>ГНУ Опште Јавне Лиценце (GNU GPL)</citetitle> како је објављује Задужбина за Слободни Софтвер (FSF); било верзије 2 те Лиценце, било (по вашем нахођењу) било које новије верзије.</para>
+
+  </sect1> 
+</article>

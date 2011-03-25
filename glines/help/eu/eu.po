@@ -1,0 +1,680 @@
+# translation of glines_help.po to Basque
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: glines_help\n"
+"POT-Creation-Date: 2008-02-12 10:50+0000\n"
+"PO-Revision-Date: 2008-12-19 15:00+0100\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
+"Language-Team: Basque <itzulpena@euskalgnu.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/glines.xml:188(None)
+msgid "@@image: 'figures/glines-startgame.png'; md5=e6e58f72dc4802d89a45a7726f4c7fd7"
+msgstr "@@image: 'figures/glines-startgame.png'; md5=e6e58f72dc4802d89a45a7726f4c7fd7"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/glines.xml:207(None)
+msgid "@@image: 'figures/glines-gameover.png'; md5=949d09a01ee02944bf3f278ce1ebc2ba"
+msgstr "@@image: 'figures/glines-gameover.png'; md5=949d09a01ee02944bf3f278ce1ebc2ba"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/glines.xml:327(None)
+msgid "@@image: 'figures/preferences.png'; md5=745336aefd6ade740f6064bdf4121379"
+msgstr "@@image: 'figures/preferences.png'; md5=745336aefd6ade740f6064bdf4121379"
+
+#: C/glines.xml:32(title)
+msgid "<application>Five or More</application> Manual"
+msgstr "<application>Bost edo gehiago</application> aplikazioaren eskuliburua"
+
+#: C/glines.xml:34(para)
+msgid ""
+"To play Five or More one must align colored pieces as the board gets filled "
+"with randomly placed pieces. When five or more pieces of the same color get "
+"lined up, they disappear. The game ends when the board gets filled up all "
+"the way."
+msgstr ""
+"'Bost edo gehiago'ra jokatzeko kolore bedineko piezak lerrokatu "
+"behar dituzu taula ausazko koloreak dituen piezas betetzen doan "
+"heinean. Kolore berdineko bost edo pieza gehiago lerrokatutakoan "
+"desagertu egingo dira. Taula erabat betetakoan amaitzen da jokoa."
+
+#: C/glines.xml:43(year)
+msgid "2000-2002"
+msgstr "2000-2002"
+
+#: C/glines.xml:44(holder)
+msgid "Emese Kovács"
+msgstr "Emese Kovács"
+
+#: C/glines.xml:59(publishername) C/glines.xml:72(orgname)
+#: C/glines.xml:98(para)
+msgid "GNOME Documentation Project"
+msgstr "GNOMEren dokumentazio-proiektua"
+
+#: C/glines.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Baimena ematen da dokumentu hau kopiatu, banatu eta/edo aldatzeko, Free "
+"Software Foundation-ek argitaratutako GNU Dokumentazio Librearen "
+"Lizentziaren 1.1. bertsioan edo berriago batean ezarritako baldintzetan, "
+"atal aldaezinik gabe, aurreko azaleko testurik gabe eta atzeko azaleko "
+"testurik gabe. GFDL lizentziaren kopia <ulink type=\"help\" url=\"ghelp:fdl"
+"\">esteka honetan</ulink> edo eskuliburu honekin batera ematen den COPYING-"
+"DOCS fitxategian aurkituko duzu."
+
+#: C/glines.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Eskuliburu hau GFDL lizentziarekin banatzen diren GNOME eskuliburuen "
+"bildumakoa da. Eskuliburu hau bildumatik bereizita banatu nahi baduzu, "
+"banatu dezakezu, baina eskuliburuari lizentziaren kopia bat gehitu beharko "
+"diozu lizentzian bertan 6. atalean azaltzen den bezala."
+
+#: C/glines.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Enpresek beren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen "
+"asko marka erregistratu gisa hartu behar dira. Izen horiek GNOMEren edozein "
+"agiritan agertzen direnean, eta GNOMEren Dokumentazio Proiektuko kideak "
+"marka komertzialak direla konturatzen direnean, izen horiek maiuskulaz "
+"idatzita agertuko dira, osorik edo hasierako letra bakarrik."
+
+#: C/glines.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"DOKUMENTUA \"DAGOEN-DAGOENEAN\" EMATEN DA, INOLAKO BERMERIK GABE, EZ "
+"ESPRESUKI ADIERAZITAKORIK ETA EZ INPLIZITURIK ERE; EZ DA BERMATZEN "
+"DOKUMENTUA EDO BERTSIO ALDATUA AKATSIK GABEA DENIK, MERKATURATZEKO EDO XEDE "
+"JAKIN BATERAKO EGOKIA DENIK EDO ARAURIK HAUSTEN EZ DUENIK, HORI GUZTIA "
+"MUGARIK GABE. DOKUMENTUAREN EDO DOKUMENTUAREN BERTSIO ALDATUAREN "
+"KALITATEARI, ZEHAZTASUNARI ETA PERFORMANTZIARI BURUZKO ERANTZUKIZUN OSOA "
+"ZUREA DA. DOKUMENTUREN BATEK EDO BERTSIO ALDATUREN BATEK EDOZEIN MOTATAKO "
+"AKATSIK IZANEZ GERO, ZUK (EZ HASIERAKO IDAZLEAK, EZ EGILEAK ETA EZ INONGO "
+"KOLABORATZAILEK) ZEURE GAIN HARTU BEHARKO DUZU BERRIKUSTEKO, KONPONTZEKO EDO "
+"ZUZENTZEKO BEHAR DIREN ZERBITZU GUZTIEN KOSTUA. BERME-UKATZE HAU LIZENTZIA "
+"HONEN FUNTSEZKO ZATIA DA. EZ DA BAIMENIK EMATEN EZEIN DOKUMENTU EDO BERTSIO "
+"ALDATU ERABILTZEKO, BALDIN ETA EZ BADA BERME-UKATZE HAU ONARTZEN."
+
+#: C/glines.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"EZINGO DA INONGO ZIRKUNSTANTZIA EDO LEGE-TEORIARIK OINARRI HARTU --EZ "
+"ERANTZUKIZUN ZIBILARI BURUZKORIK (ZABARKERIA BARNE HARTUTA) EZ KONTRATUARI "
+"BURUZKORIK, EZ BESTERIK-- DOKUMENTU HONEN EDO BERTSIO ALDATU BATEN EGILEA, "
+"HASIERAKO IDAZLEA, EDOZEIN KOLABORATZAILE EDO BANATZAILE, EDO ALDERDI HORIEN "
+"EDOZEIN HORNITZAILE BESTE PERTSONA BATEN AURREAN ERANTZULE EGITEKO, PERTSONA "
+"HORREK EDOZEIN MOTATAKO KALTE ZUZENEKO, ZEHARKAKO, BEREZI, INTZIDENTAL EDO "
+"ONDORIOZKOAK JASAN DITUELAKO, BESTEAK BESTE (MUGARIK GABE), BEZEROAK "
+"GALTZEAREN, LANA ETEN BEHARRAREN, ORDENAGAILUAK EZ IBILTZEAREN EDO GAIZKI "
+"IBILTZEAREN ONDORIOZKO KALTEAK, EDO DOKUMENTUA NAHIZ HAREN BERTSIO ALDATUAK "
+"ERABILTZETIK ONDORIOZTATZEN DIREN EDO ERABILERA HORREKIN ZERIKUSIA DUEN "
+"EDOZEIN KALTE EDO GALERA, ALDERDIARI KALTE HORIEK GERTA ZITEZKEELA ADITZERA "
+"EMAN BAZAIO ERE."
+
+#: C/glines.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"DOKUMENTUA ETA DOKUMENTUAREN BERTSIO ALDATUAK GNU DOKUMENTAZIO LIBREAREN "
+"LIZENTZIAREN BALDINTZEN ARABERA EMATEN DIRA, ETA ONDOREN ZEHAZTEN DIRENAK "
+"ONARTZERA BEHARTZEN DUTE: <placeholder-1/>"
+
+#: C/glines.xml:69(firstname)
+msgid "Emese"
+msgstr "Emese"
+
+#: C/glines.xml:70(surname)
+msgid "Kovács"
+msgstr "Kovács"
+
+#: C/glines.xml:73(email)
+msgid "emese@gnome.hu"
+msgstr "emese@gnome.hu"
+
+#: C/glines.xml:92(revnumber)
+msgid "Five or More Manual V2.8"
+msgstr "'Bost edo gehiago' aplikazioaren eskuliburuaren 2.8 bertsioa"
+
+#: C/glines.xml:93(date)
+msgid "September 2004"
+msgstr "2004ko iraila"
+
+#: C/glines.xml:95(para)
+msgid "Emese Kovács <email>emese@gnome.hu</email>"
+msgstr "Emese Kovacs <email>emese@gnome.hu </email>"
+
+#: C/glines.xml:103(releaseinfo)
+msgid "This manual describes version 2.12 of Five or More."
+msgstr "Eskuliburu honetan 'Bost edo gehiago' aplikazioaren 2.12 bertsioa azaltzen da"
+
+#: C/glines.xml:110(title)
+msgid "Feedback"
+msgstr "Ohar-bidaltzea"
+
+#: C/glines.xml:111(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Five or "
+"More</application> application or this manual, follow the directions in the "
+"<ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
+"ulink>."
+msgstr ""
+"<application>Bost edo gehiago</application>ri buruzko akatsen berri emateko "
+"edo oharrak bidaltzeko, <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
+"\">GNOMEra oharrak bidaltzeko orria</ulink>n aurkituko dituzu argibideak."
+
+#: C/glines.xml:121(primary)
+msgid "Five or More"
+msgstr "Bost edo gehiago"
+
+#: C/glines.xml:128(title)
+msgid "Introduction"
+msgstr "Sarrera"
+
+#: C/glines.xml:130(para)
+msgid ""
+"<application>Five or More</application>, is the Gnome port of the once "
+"popular Windows game called <application>Color Lines</application> The "
+"game's objective is to align as often as possible five or more objects of "
+"the same color and shape causing them to disappear. Play as long as "
+"possible, and be #1 in the High Scores."
+msgstr ""
+"<application>Bost edo gehiago</application> aplikazioa Windows-en "
+"<application>Color Lines</application> joko ezagunaren Gnome-ren moldaketa "
+"da. Jokoaren helburua da kolore eta forma bereko bost bola edo gehiago "
+"ahalik eta gehienetan lerrokatzea eta desagerraraztea. Jolastu ahalik eta "
+"gehien eta izan lehenengoa onenen zerrendan."
+
+#: C/glines.xml:139(para)
+msgid ""
+"To run <application>Five or More</application>, select <guimenuitem>Five or "
+"More</guimenuitem> from the <guisubmenu>Games</guisubmenu> submenu of the "
+"<guimenu>Main Menu</guimenu>, or type <command>glines</command> on the "
+"command line."
+msgstr ""
+"<application>Bost edo gehiago</application> abiarazteko, hautatu "
+"<guimenu>Menu nagusia</guimenu>n <guisubmenu>Jokoak</guisubmenu> azpimenuko "
+"<guimenuitem>Bost edo gehiago</guimenuitem> edo idatzi <command>glines</"
+"command> komando-lerroan."
+
+#: C/glines.xml:147(para)
+msgid ""
+"<application>Five or More</application> is included in the <filename>GNOME-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.8 of <application>Five or More</"
+"application>."
+msgstr ""
+"<application>Bost edo gehiago</application> <filename>GNOME-games</filename> "
+"paketearen barruan sartzen da, eta hori GNOMEren mahaigaineko ingurunearen "
+"parte da. Dokumentu honek <application>Bost edo gehiago</application> "
+"aplikazioaren 2,8 bertsioa deskribatzen du."
+
+#: C/glines.xml:161(title)
+msgid "Playing Five or More"
+msgstr "'Bost edo gehiago'n jolastea"
+
+#: C/glines.xml:162(para)
+msgid ""
+"Playing <application>Five or More</application> is easy. At startup, you "
+"find yourself with five objects randomly positioned on the board. Each turn, "
+"you are allowed to move one object. You can move it anywhere on the board as "
+"long as there is a clear path. Afterward, the computer drops more objects at "
+"random positions (the exact number depends on the size of the game). You can "
+"preview the next objects to be dropped in the upper right corner of the "
+"game's window. If you manage to align five objects of the same shape and "
+"color, they disappear and you are given an extra move before more objects "
+"drop."
+msgstr ""
+"<application>Bost edo gehiago</application>n jolastea erraza da. Jokoaren "
+"hasieran bost puxtarri izango dituzu taulan han eta hemen ausaz kokatuta. "
+"Txanda bakoitzean bat mugi dezakezu. Taulako edozein tokitara mugi dezakezu, "
+"bidea garbi dagoen artean. Jarraian, ordenagailuak objektu gehiago utziko "
+"ditu erortzen ausazko lekuetara (objektu kopuru zehatza jokoaren tamainaren "
+"araberakoa da). Joko-leihoaren goiko eskuineko izkinan ikus dezakezu eroriko "
+"den hurrengo objektua. Forma eta kolore bereko bost objektu lerrokatzea "
+"lortzen baduzu, desagertu egiten dira eta objektu gehiago erori baino lehen "
+"beste mugimendu bat egiteko aukera irabaziko duzu."
+
+#: C/glines.xml:176(title)
+msgid "Basic usage"
+msgstr "Oinarrizko erabilera"
+
+#: C/glines.xml:177(para)
+msgid ""
+"Starting <application>Five or More</application> presents you with the "
+"<interface>game board</interface> and a new game starts. What it looks like "
+"is shown in <xref linkend=\"mainwindow-fig\"/>."
+msgstr ""
+"<application>Bost edo gehiago</application> abiarazten duzunean, "
+"<interface>jokoaren taula</interface> agertuko da eta joko berri bat hasiko "
+"da. Hemen ikus dezakezu da taula nolakoa den: <xref linkend=\"mainwindow-fig"
+"\"/>"
+
+#: C/glines.xml:184(title)
+msgid "The main window when you start a game."
+msgstr "Joko bat abiarazten duzunean agertzen den leiho nagusia."
+
+#. ==== End of Figure ====
+#: C/glines.xml:195(para)
+msgid ""
+"As the game progresses, the board gets more and more crowded (unless you are "
+"really good...) and making objects disappear gets harder and harder. The "
+"game is over, when the board is full."
+msgstr ""
+"Jokoak aurrera egiten duen heinean, taula geroz eta gehiago beteko da "
+"(baldin eta ikaragarri ona ez bazara...) eta objektuak desagerraraztea gero "
+"eta zailagoa izango da. Taula guztiz betetzen denean, amaitu da jokoa."
+
+#: C/glines.xml:203(title)
+msgid "Game over!"
+msgstr "Jokoa amaitu da!"
+
+#: C/glines.xml:220(title)
+msgid "Playing the Game"
+msgstr "Jokatzea"
+
+#: C/glines.xml:221(para)
+msgid ""
+"A game of <application>Five or More</application> begins with some random "
+"objects on the board."
+msgstr ""
+"<application>Bost edo gehiago</application> jokoa taulan ausaz kokatutako "
+"zenbait objektu daudela hasten da."
+
+#: C/glines.xml:225(para)
+msgid ""
+"To make a move, click on one of the objects. When an object is activated it "
+"starts rotating (or doing something else depending on the theme, but let us "
+"not anticipate&hellip;). You can then select its destination by clicking an "
+"empty square. If the path to the destination is clear the activated item "
+"travels there. If the destination square is occupied by another object "
+"nothing will be moved and the selection will be transferred to the new "
+"object. If the path is not clear (you cannot jump objects over obstacles!) "
+"the application prints a warning in the status bar (bottom of the window) "
+"and the original object remains active."
+msgstr ""
+"Mugimendu bat egiteko, egin klik objektu batean. Objektu bat aktibatzen "
+"denean, biratzen hasten da (edo gaiaren araberako zerbait egiten, baina ez "
+"ditzagun gauzak aurreratu&hellip;). Objektua nora eraman nahi duzun "
+"aukeratzeko, egin klik hutsik dagoen lauki batean. Aukeratu duzun laukia "
+"hutsik baldin badago, hautatu duzun objektua bertara joango da. Aukeratu "
+"duzun laukian beste objektu bat baldin badago, ezer ere ez da mugituko eta "
+"lehengo objektuaren ordez bigarrena aktibatuko da. Bidea garbi ez badago "
+"(objektuek ezin dute traben gainetik salto egin!) aplikazioak abisu bat "
+"agertzen du egoera-barran (leihoaren behealdean) eta jatorrizko objektuak "
+"aktibatuta jarraitzen du."
+
+#: C/glines.xml:237(para)
+msgid ""
+"As objects disappear, you get points. The points you score depends on the "
+"number of objects you managed to align (see <xref linkend=\"glines-table1\"/"
+">). Your score is shown in the upper right corner of the window."
+msgstr ""
+"Objektu bat desagertzen denean, puntuak irabazten dituzu. Lortzen dituzun "
+"puntuak lerrokatzen dituzun objektuen araberakoak dira (ikus: <xref linkend="
+"\"glines-table1\"/>). Zure puntuazioa leihoaren goiko eskuineko izkinan "
+"agertzen da."
+
+#: C/glines.xml:246(title) C/glines.xml:342(title)
+msgid "Scoring in Five or More"
+msgstr "‘Bost edo gehiago’n puntuak lortzea"
+
+#: C/glines.xml:250(entry)
+msgid "Number of objects"
+msgstr "Objektu kopurua"
+
+#: C/glines.xml:251(entry)
+msgid "Score given"
+msgstr "Lortutako puntuazioa"
+
+#: C/glines.xml:256(entry) C/glines.xml:358(entry)
+msgid "5"
+msgstr "5"
+
+#: C/glines.xml:257(entry) C/glines.xml:276(entry)
+msgid "10"
+msgstr "10"
+
+#: C/glines.xml:260(entry)
+msgid "6"
+msgstr "6"
+
+#: C/glines.xml:261(entry) C/glines.xml:284(entry)
+msgid "12"
+msgstr "12"
+
+#: C/glines.xml:264(entry) C/glines.xml:356(entry) C/glines.xml:357(entry)
+#: C/glines.xml:365(entry) C/glines.xml:372(entry) C/glines.xml:373(entry)
+msgid "7"
+msgstr "7"
+
+#: C/glines.xml:265(entry)
+msgid "18"
+msgstr "18"
+
+#: C/glines.xml:268(entry)
+msgid "8"
+msgstr "8"
+
+#: C/glines.xml:269(entry)
+msgid "28"
+msgstr "28"
+
+#: C/glines.xml:272(entry) C/glines.xml:363(entry) C/glines.xml:364(entry)
+msgid "9"
+msgstr "9"
+
+#: C/glines.xml:273(entry)
+msgid "42"
+msgstr "42"
+
+#: C/glines.xml:277(entry)
+msgid "82"
+msgstr "82"
+
+#: C/glines.xml:280(entry)
+msgid "11"
+msgstr "11"
+
+#: C/glines.xml:281(entry)
+msgid "108"
+msgstr "108"
+
+#: C/glines.xml:285(entry)
+msgid "138"
+msgstr "138"
+
+#: C/glines.xml:288(entry)
+msgid "13"
+msgstr "13"
+
+#: C/glines.xml:289(entry)
+msgid "172"
+msgstr "172"
+
+#: C/glines.xml:292(entry)
+msgid "14"
+msgstr "14"
+
+#: C/glines.xml:293(entry)
+msgid "210"
+msgstr "210"
+
+#: C/glines.xml:300(title)
+msgid "Using the Keyboard"
+msgstr "Teklatua erabiltzea"
+
+#: C/glines.xml:301(para)
+msgid ""
+"Instead of using the mouse you can use the keyboard to play "
+"<application>Five or More</application>. To use the keyboard, hit an arrow "
+"key and a cursor will appear near the center of the board. The arrow keys "
+"will move the cursor. When the cursor is over the object you want to move, "
+"use the spacebar to select it. Then shift the cursor to the object's "
+"destination and hit the space bar again to move the object."
+msgstr ""
+"Sagua erabili ordez, teklatua erabil dezakezu <application>Bost edo gehiago</"
+"application>n jolasteko. Teklatua erabiltzeko, sakatu gezi-tekla bat, eta "
+"kurtsorea taularen erdialdean agertuko da. Gezi-teklek kurtsorea mugituko "
+"dute. Kurtsorea mugitu nahi duzun objektuaren gainean dagoenean, erabili "
+"zuriune-barra objektua hautatzeko. Ondoren, mugitu kurtsorea objektua eraman "
+"nahi duzun tokira eta sakatu zuriune-barra objektua mugitzeko."
+
+#: C/glines.xml:302(para)
+msgid ""
+"If you start using the mouse again, the cursor will disappear. The cursor "
+"will reappear if you use the arrow keys again."
+msgstr ""
+"Berriro ere sagua erabiltzen hasten baldin bazara, kurtsorea desagertu "
+"egingo da. Berriro ere geziak erabiltzen baldin badituzu, kurtsorea agertu "
+"egingo da."
+
+#: C/glines.xml:315(title)
+msgid "Customizing the Game"
+msgstr "Jokoa pertsonalizatzea"
+
+#: C/glines.xml:316(para)
+msgid ""
+"You can configure <application>Five or More</application> by clicking on "
+"<guimenuitem>Preferences</guimenuitem> in the applications "
+"<guimenu>Settings</guimenu> menu. The following <interface>dialog</"
+"interface> will appear:"
+msgstr ""
+"<application>Bost edo gehiago</application> aplikazioa konfiguratu egin "
+"dezakezu. Horretarako, egin klik <guimenu>Ezarpenak</guimenu> aplikazioen "
+"menuko <guimenuitem>Hobespenak</guimenuitem> botoian. "
+"<interface>Elkarrizketa-koadro</interface> hau agertuko da:"
+
+#: C/glines.xml:324(title)
+msgid "Preferences"
+msgstr "Hobespenak"
+
+#. ==== End of Figure ====
+#: C/glines.xml:333(para)
+msgid ""
+"You can select different object styles and background colors in the "
+"<guimenu>Themes</guimenu> section. If you find it difficult distinguishing "
+"the colours, try the shapes theme."
+msgstr ""
+"Nahi duzun objektu-estiloa eta atzeko planoaren kolorea hauta ditzakezu "
+"<guimenu>Gaiak</guimenu> atalean. Zaila egiten bazaizu koloreak "
+"desberdintzea, erabili formak."
+
+#: C/glines.xml:338(para)
+msgid ""
+"The <guimenu>Board Size</guimenu> section lets you select the size of the "
+"board. Each size has a slightly different balance: larger sizes give you "
+"more space to move, but more objects arrive each turn. The parameters for "
+"each size are given in <xref linkend=\"table-sizes\"/>."
+msgstr ""
+"<guimenu>Taularen tamaina</guimenu> atalak taularen tamaina hautatzeko "
+"aukera ematen dizu. Tamaina bakoitzak nahiko ezaugarri desberdinak ditu: "
+"tamaina handienek mugitzeko leku gehiago dute, baina txanda bakoitzean "
+"objektu gehiago erortzen dira. Tamaina bakoitzaren parametroak hemen daude: "
+"<xref linkend=\"table-sizes\"/>."
+
+#: C/glines.xml:346(entry)
+msgid "Size"
+msgstr "Tamaina"
+
+#: C/glines.xml:347(entry)
+msgid "Width"
+msgstr "Zabalera"
+
+#: C/glines.xml:348(entry)
+msgid "Height"
+msgstr "Altuera"
+
+#: C/glines.xml:349(entry)
+msgid "Number of Types"
+msgstr "Mota kopurua"
+
+#: C/glines.xml:350(entry)
+msgid "Objects per Turn"
+msgstr "Txanda bakoitzeko objektuak"
+
+#: C/glines.xml:355(entry)
+msgid "Small"
+msgstr "Txikia"
+
+#: C/glines.xml:359(entry) C/glines.xml:366(entry)
+msgid "3"
+msgstr "3"
+
+#: C/glines.xml:362(entry)
+msgid "Medium"
+msgstr "Tartekoa"
+
+#: C/glines.xml:369(entry)
+msgid "Large"
+msgstr "Handia"
+
+#: C/glines.xml:370(entry)
+msgid "20"
+msgstr "20"
+
+#: C/glines.xml:371(entry)
+msgid "15"
+msgstr "15"
+
+#: C/glines.xml:379(para)
+msgid ""
+"You can speed up the movement of the objects by checking the Use fast moves "
+"box in the <guimenu>General</guimenu> preferences section."
+msgstr ""
+"Objektuen mugimendua bizkortu egin dezakezu. Horretarako, hobespenen "
+"<guimenu>Orokorra</guimenu> atalean hautatu ‘erabili mugimendu azkarrak’ "
+"koadroa."
+
+#: C/glines.xml:383(para)
+msgid ""
+"Any changes you make are instantly applied and remembered for the next time "
+"you run <application>Five or More</application>."
+msgstr ""
+"Egiten duzun edozein aldaketa mementoan aplikatuko da, eta, "
+"<application>Bost edo gehiago</application> aplikazioa abiarazten duzun "
+"hurrengo aldian, kontuan hartuko da."
+
+#: C/glines.xml:389(title)
+msgid "How to create new themes"
+msgstr "Gai berriak nola sortu"
+
+#: C/glines.xml:390(para)
+msgid ""
+"Each theme consists of a single PNG image file. This image consists of an "
+"array of seven rows, corresponding to the different object colors/shapes, "
+"and four columns, each of which is a frame in the animation of the object. "
+"The actual size of the image is irrelevant, it will be rescaled, but the sub-"
+"images must form a four by seven grid to get the correct effect. When using "
+"SVG remember that the image size is the page size, if your grid does not "
+"fill the page try shrinking the page size. Use an existing theme as a guide."
+msgstr ""
+"Gai bakoitza PNG irudi-fitxategi batez osaturik dago. Irudi hori zazpi "
+"errenkada eta lau zutabeko matrizea da. Errenkadak objektuen koloreei eta "
+"formei dagozkie eta zutabe bakoitza objektuaren animaziozko markoa da. "
+"Irudiaren benetako tamainak garrantzia gutxi du, eskala aldatu egingo "
+"baitzaio, baina azpiirudiek lau bider zazpiko sareta sortu behar dute efektu "
+"egokia izan dezaten. SVG erabiltzen duzunean, gogoan izan irudiaren tamaina "
+"orri batekoa dela. Saretak ez badu orria betetzen, gutxitu orriaren tamaina. "
+"Lehendik dagoen gai bat erabili gida gisa."
+
+#: C/glines.xml:420(title)
+msgid "Authors"
+msgstr "Egileak"
+
+#: C/glines.xml:421(para)
+msgid ""
+"<application>Five or More</application> was written by Róbert Szókovács "
+"(<email>szo@appaloosacorp.hu</email>) and Szabolcs Bán (<email>shooby@gnome."
+"hu</email>). This manual was written by Emese Kovács (<email>emese@gnome.hu</"
+"email>). For information on how to make comments, suggestions and to report "
+"bugs please see the <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
+"\">feedback document</ulink>."
+msgstr ""
+"<application>Bost edo gehiago</application> Robert Szókovács-ek "
+"(<email>szo@appaloosacorp.hu</email>) eta Szabolcs Bán-ek "
+"(<email>shooby@gnome.hu</email>) idatzi zuten. Eskuliburu hau Emese Kovács-"
+"ek idatzi zuen (<email>emese@gnome.hu</email>). Komentarioak egiteko "
+"informazioa eta proposamenak lortzeko eta akatsen berri emateko, ikus <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">oharrak bidaltzeko dokumentua</"
+"ulink>."
+
+#: C/glines.xml:446(title)
+msgid "License"
+msgstr "Lizentzia"
+
+#: C/glines.xml:447(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <citetitle>GNU General Public License</citetitle> as "
+"published by the Free Software Foundation; either version 2 of the License, "
+"or (at your option) any later version."
+msgstr ""
+"Programa hau software librea da; birbana eta/edo alda dezakezu Free Software "
+"Foundation-ek argitaratutako <citetitle>GNU Lizentzia Publiko Orokorra</"
+"citetitle>ren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, "
+"jasotako baldintzak betez gero."
+
+#: C/glines.xml:454(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO "
+"BERMERIK GABE; era berean, ez da bermatzen beraren EGOKITASUNA "
+"MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO. Argibide gehiago "
+"nahi izanez gero, ikus <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>."
+
+#: C/glines.xml:460(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink url=\"http://www.fsf.org\" "
+"type=\"http\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"<citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia "
+"<citetitle>GNOMEren erabiltzaile</citetitle>aren gidaren eranskinean "
+"daukazu. <citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle>ren "
+"kopia bat lor dezakezu Free Software Foundation-en bidez. Bisitatu <ulink "
+"url=\"http://www.fsf.org\" type=\"http\">haien webgunea</ulink>, edo idatzi "
+"hona: <address> Free Software Foundation, Inc. <street>59 Temple Place</"
+"street> - 330. Suitea <city>Boston</city>, <state>MA</state><postcode>02111-"
+"1307</postcode><country>AEB</country></address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/glines.xml:0(None)
+msgid "translator-credits"
+msgstr "Hizkuntza Politikarako Sailburuordetza <hizpol@ej.gv.es>, 2008."
+

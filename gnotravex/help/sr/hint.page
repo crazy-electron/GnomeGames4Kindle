@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="hint" xml:lang="sr">
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Користите савете или решите игру аутоматски.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-23" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+  </info>
+  <title>Савети</title>
+
+  <note style="warning">
+    <p>Ако користите било шта од метода наведених испод, ваш резултат неће бити укључен међу најбоље резултате.</p>
+  </note>
+
+  <section id="hint-hints">
+  
+    <title>Коришћење система савета</title>
+    
+    <p>У било ком тренутку док играте, ако не знате како да кренете или где да померите део, могуће је искористити уграђени систем савета.</p>
+    <p>Систем ће преместити један део из десне кутије на правилно место у левој кутији.</p>
+    <p>Да бисте користили систем савета, урадите једну од следећих ствари:</p>
+    <list>
+      <item>
+        <p>Притисните <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Одаберите <guiseq><gui style="menu">Игра</gui><gui style="menuitem">Савет</gui></guiseq>.</p>
+      </item>
+    </list>
+  </section>
+  <section id="hint-solve">
+    <title>Решавање игре</title>
+    <p>Ако се заглавите са игром, или желите да се игра аутоматски реши, одаберите <guiseq><gui style="menu">Игра</gui><gui style="menuitem">Реши</gui></guiseq>.</p>
+  </section>
+</page>

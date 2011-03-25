@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+        "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd"
+[
+  <!ENTITY legal SYSTEM "legal.xml">
+  <!ENTITY NETWORKGAMES SYSTEM "network-games.xml"> 
+  <!ENTITY appversion "2.12">
+  <!ENTITY manrevision "2.8">
+  <!ENTITY date "September 2004">
+  <!ENTITY app "<application>Four-in-a-Row</application>">
+  <!ENTITY appname "Four-in-a-Row">
+  <!ENTITY version "2.8">
+]>
+
+
+<!-- ===== DOCUMENT HEADER ===== -->
+
+<article id="index" lang="en">
+<!-- please do not change the id -->
+<!-- translators, change lang to the appropriate code -->
+  <articleinfo>
+    <title>&appname; Manual</title>
+    <abstract role="description">
+      <para>
+	The object of Four-in-a-Row is to place four pieces in a vertical, 
+	horizontal, or diagonal row while the opponent tries to block and
+	make his/her own row of four. Four-in-a-Row can be played against 
+	another human or the computer.
+      </para>
+    </abstract>
+
+    <copyright>
+      <year>2001-2002</year>
+      <holder>Timothy Musson</holder>
+    </copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+     <year>2000</year>
+     <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+    <publisher role="maintainer"> 
+      <publishername> GNOME Documentation Project </publishername> 
+    </publisher> 
+
+    &legal;
+
+    <authorgroup>
+      <author>
+        <firstname>Timothy</firstname>
+        <surname>Musson</surname>
+        <affiliation>
+          <!-- <orgname></orgname> -->
+          <address><email>trmusson@ihug.co.nz</email></address>
+        </affiliation>
+      </author>
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+
+      <othercredit role="translator">
+        <firstname>Latin</firstname> 
+        <surname>Translator 1</surname> 
+        <affiliation> 
+          <orgname>Latin Translation Team</orgname> 
+          <address> <email>translator@gnome.org</email> </address> 
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+        <revnumber>&appname; Manual V&manrevision;</revnumber>
+        <date>&date;</date>
+        <revdescription>
+          <para role="author">Timothy Musson
+            <email>trmusson@ihug.co.nz</email>
+          </para>
+          <para role="publisher"></para>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>This manual describes version &appversion; of &appname;.
+    </releaseinfo>
+
+    <legalnotice>
+      <title>Feedback</title>
+      <para>To report a bug or make a suggestion regarding the &appname;
+        application or this manual, follow the directions in the
+        <ulink url="ghelp:user-guide?feedback-bugs"
+               type="help">GNOME Feedback Page</ulink>.
+      </para>
+    </legalnotice>
+  </articleinfo>
+
+
+  <!-- ============= Document Body ============================= -->
+
+  <!-- ============= Introduction ============================== -->
+
+
+  <sect1 id="intro">
+
+    <title>Introduction</title>
+
+    <para>
+      &app; is a four-in-a-row game for the GNOME Project.
+      The object of the game is to build a line of four of your marbles
+      while trying to stop your opponent (human or computer) building a
+      line of his or her own. A line can be horizontal, vertical or
+      diagonal.
+    </para>
+
+    <para>
+      To run &app;, select
+      <guimenuitem>&appname;</guimenuitem> from the
+      <guisubmenu>Games</guisubmenu> submenu of the
+      <guimenu>Main Menu</guimenu>, or type
+      <command>gnect</command> on the command line.
+    </para>
+
+    <para>
+      &app; is included in the <filename>GNOME-games</filename> package,
+      which is part of the GNOME desktop environment. This document describes
+      version &version; of &app;.
+    </para>
+
+   <para>
+     &appname; also features <link linkend="network-games">multiplayer</link> support with two 
+     human players in hotseat or network mode.
+   </para>
+
+
+  </sect1>
+
+
+  <!-- ============= Usage ===================================== -->
+
+
+  <sect1 id="usage">
+
+    <title>Basic Usage</title>
+
+    <!-- ===== How to play ===== -->
+
+    <sect2 id="playing">
+
+      <title>Playing &appname;</title>
+
+      <para>
+        To start a new game of &appname; choose <menuchoice><guimenu>Game</guimenu><guimenuitem>New Game</guimenuitem></menuchoice>.
+      </para>
+
+      <para>
+        The <interface>game board</interface> consists of seven columns and
+        six rows. Above it, a special row indicates the current player and the marble about to be played. Each move consists of dropping a marble in one of the columns. The marble lands on the topmost empty row of the chosen column.
+      </para>
+        
+      <para>To make a move, click on a column with the mouse. To play with the keyboard, move the marble in the top row with the left and right arrow keys, and drop it in place with the  down arrow key. Your marble will drop into the topmost empty row of that column.
+      </para>
+
+      <!-- Figure -->
+      <mediaobject id="mainwindow-fig">
+        <imageobject>
+          <imagedata fileref="figures/mainwindow.png"
+                     format="PNG"
+                     srccredit="trm"/>
+        </imageobject>
+        <textobject>
+          <phrase>&appname;'s Main Window</phrase>
+        </textobject>
+        <caption><para>&appname;'s Main Window</para></caption>
+      </mediaobject>
+
+      <para>
+        The game is won when one of the two players manages to line up four
+        of his or her marbles horizontally, vertically or diagonally. If the
+        board fills up without a win, the game ends in a draw.
+      </para>
+
+    </sect2>
+    
+    <!-- ===== Commands ===== -->  
+    
+    <sect2 id="commands">
+      <title>Commands</title>
+      <anchor id="menubar"/><!-- id for removed section -->
+      
+      <para>To take back a move, choose <menuchoice>
+                      <shortcut><keycombo>
+                      <keysym>Ctrl</keysym><keycap>Z</keycap>
+                      </keycombo></shortcut>
+                      <guimenuitem>Undo move</guimenuitem>
+                    </menuchoice>.
+            If you're playing against a friend, this will undo one
+            move. If you're playing against the computer, this will
+            undo the computer's last move and then yours.
+            Repeating this will return the board to its initial
+            state.
+      </para>
+      <para>Choose <menuchoice>
+                      <shortcut><keycombo>
+                      <keysym>Ctrl</keysym><keycap>H</keycap>
+                      </keycombo></shortcut>
+        <guimenuitem>Hint</guimenuitem>
+      </menuchoice> to get a suggestion from the computer for your next move.
+      This is shown in the status bar.</para>
+      
+      <para>
+        Choose <menuchoice>
+          <guimenuitem>Scores</guimenuitem>
+        </menuchoice> to show a tally of wins and draws
+        for the current playing session. The scores will be reset to
+        zero if Player Selection is changed in Preferences.
+      </para>      
+
+      
+    </sect2>  
+
+    <!-- ===== Preferences ===== -->
+
+    <sect2 id="prefsdialog">
+
+      <title>Preferences</title>
+
+      <para>
+        To change the game's settings, select
+        <guimenuitem>Preferences</guimenuitem> from the
+        <guimenu>Settings</guimenu> menu. This opens the
+        <interface>Preferences Dialog</interface>.
+      </para>
+
+      <para>
+        Configuration options in the <guilabel>Game</guilabel>
+        tab are:
+
+        <variablelist>
+
+          <varlistentry>
+            <term>
+              <guilabel>Player One</guilabel> and
+              <guilabel>Player Two</guilabel>
+            </term>
+            <listitem>
+              <para>
+
+                These two columns tell &app; who's playing and, if it is the computer, how hard they play. To play against a friend, select
+                Human for both Player One and Player Two.
+
+              </para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Theme</guilabel></term>
+            <listitem>
+              <para>
+                The theme menu lists available themes and lets
+                you choose your favourite.
+              </para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Enable Animation</guilabel></term>
+            <listitem>
+              <para>
+                Here you can toggle the game's animation on or off.
+              </para>
+            </listitem>
+          </varlistentry>
+
+        </variablelist>
+      </para>
+      <para>
+          Finally there is a <guilabel>Controls</guilabel> tab to
+          change the keyboard controls. To change a control, double click the
+          appropriate entry and then press the new key.
+      </para>
+
+    </sect2>
+  </sect1>
+
+
+  <!-- ===== Custom Themes ===================================== -->
+
+
+  <sect1 id="custom">
+
+    <title>Creating New Themes</title>
+
+    <para>
+      This section's included in case you'd like to make your own themes for
+      &app;. It assumes you're familiar with basic text editing, graphics
+      software and the command line.
+    </para>
+
+    <sect2 id="images">
+
+      <title>Images</title>
+
+      <para>
+        &app;'s tile sets contain six tiles of equal size, lined up
+        horizontally. From left to right:
+      </para>
+
+      <orderedlist>
+        <listitem>
+          <para>Player One's marble as it appears on the game board</para>
+        </listitem>
+        <listitem>
+          <para>Player Two's marble as it appears on the game board</para>
+        </listitem>
+        <listitem>
+          <para>The game board's background</para>
+        </listitem>
+        <listitem>
+          <para>The top row's background</para>
+        </listitem>
+        <listitem>
+          <para>Player One's marble as it appears on the top row</para>
+        </listitem>
+        <listitem>
+          <para>Player Two's marble as it appears on the top row</para>
+        </listitem>
+      </orderedlist>
+
+      <figure id="shot1">
+        <title>An example tile set</title>
+        <screenshot>
+          <screeninfo>This image shows the six tiles in a tile set</screeninfo>
+          <graphic format="PNG" fileref="figures/tileset.png" srccredit="TRM"></graphic>
+        </screenshot>
+      </figure>
+
+      <para>
+        Tiles three and four will be repeated over the game board and
+        top row unless a full window background image is specified in the
+        theme file.
+      </para>
+
+      <tip>
+        <title>TIP</title>
+        <para>
+          PNG format is recommended for tile sets. The first, second, fifth
+          and sixth tiles should contain some transparency if you want the
+          background to show through. The third and fourth tiles should be
+          solid, with no transparency, even if you'll be using a full
+          window background image with your theme.
+        </para>
+      </tip>
+
+      <tip>
+        <title>TIP</title>
+        <para>
+          Tiles can be square or rectangular, and any size you like. Most
+          of the tile sets that come with &app; use square tiles measuring
+          50 pixels by 50 pixels.
+        </para>
+      </tip>
+
+      <para>
+        For a full window background image, there's a bit more work to do.
+        Let's say your tiles measure 50 by 50 pixels each. The game's display
+        measures 7 by 7 tiles, including the top row, so the ideal background
+        image for your tile set measures 350 by 350 pixels.
+      </para>
+
+      <tip>
+        <title>TIP</title>
+        <para>
+          &app; will automatically scale the background image if it doesn't
+          match the tile set. This means you can make "large" and "small"
+          versions of your theme, both using the same background image,
+          just by having a large and a small version of your tile set.
+        </para>
+      </tip>
+
+      <para>
+        So, you now have a tile set and perhaps a background image to
+        go with it. The next step is to put them in the right place.
+      </para>
+
+    </sect2>
+
+
+    <sect2 id="directories">
+
+      <title>Putting It Together</title>
+
+      <para>
+        The last step is to put your image(s) where &app; can
+        find them. You could put them in Four-in-a-row's install directory (which will
+        depend on your particular system), but your home directory's probably
+        a better idea.
+      </para>
+
+      <para>
+        Make a <filename class="directory">~/.gnect</filename> directory,
+        and a <filename class="directory">~/.gnect/pixmaps</filename>
+        directory. Those names are important, as &app; won't look
+        anywhere else.
+      </para>
+
+      <para>
+        Copy your image(s) into the pixmaps directory.
+      </para>
+
+      <para>
+        If you start &app; from the command line, it'll give you clues about
+        any problems it has with your new theme. If it has none, you'll
+        find your new theme listed the
+        <interface>Preferences Dialog</interface>.
+      </para>
+
+      <para>Have fun!</para>
+
+    </sect2>
+
+
+  </sect1>
+
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+ &NETWORKGAMES;
+
+
+  <!-- ===== Bugs ============================================== -->
+
+
+  <sect1 id="bugs">
+
+    <title>Known Bugs and Limitations</title>
+
+    <para>
+      Occasionally a marble-dropping animation doesn't look as smooth
+      as it should.
+    </para>
+
+  </sect1>
+
+
+  <!-- ===== Authors =========================================== -->
+
+
+  <sect1 id="authors">
+
+    <title>Authors</title>
+
+    <para>
+      &app; was written by Timothy Musson (<email>trmusson@ihug.co.nz</email>)
+      and David Neary (<email>bolsh@gimp.org</email>). Various others
+      have taken the time to help in many ways since work on &app; began.
+    </para>
+    <para>
+      The <ulink type="http"
+        url="http://www.ce.unipr.it/~gbe/velena.html">Velena Engine</ulink>,
+      &app;'s main computer player, was written by Giuliano Bertoletti.
+      We're grateful to him for allowing us to include his work, without
+      which &app; wouldn't be nearly as worthwhile.
+    </para>
+    <para>
+      This manual was written by Timothy Musson.
+    </para>
+    <para>
+   To report a bug or make a suggestion regarding this application or
+   this manual, follow the directions in this 
+   <ulink url="ghelp:user-guide?feedback-bugs" type="help">document</ulink>.
+    </para>
+
+
+<!-- For translations: uncomment this:
+
+  <para>
+    Latin translation was done by ME
+    (<email>MYNAME@MYADDRESS</email>). Please send all comments and
+    suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+-->
+
+  </sect1>
+
+
+  <!-- ============= License =================================== -->
+
+
+  <sect1 id="license">
+
+    <title>License</title>
+
+    <para>
+      This program is free software; you can redistribute it and/or
+      modify it under the terms of the <citetitle>GNU General Public
+      License</citetitle> as published by the Free Software Foundation;
+      either version 2 of the License, or (at your option) any later
+      version.
+    </para>
+
+    <para>
+      This program is distributed in the hope that it will be useful, but
+      WITHOUT ANY WARRANTY; without even the implied warranty of
+      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+      <citetitle>GNU General Public License</citetitle> for more details.
+    </para>
+
+    <para>
+      A copy of the <citetitle>GNU General Public License</citetitle> is
+      included as an appendix to the <citetitle>GNOME Users
+      Guide</citetitle>.  You may also obtain a copy of the
+      <citetitle>GNU General Public License</citetitle> from the Free
+      Software Foundation by visiting
+      <ulink url="http://www.fsf.org" type="http">their Web site</ulink> or
+      by writing to
+      <address>
+        Free Software Foundation, Inc.
+        <street>59 Temple Place</street> - Suite 330
+        <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode>
+        <country>USA</country>
+      </address>
+    </para>
+
+  </sect1>
+
+</article>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="gameplay" xml:lang="fr">
+      
+  <info>
+    <link type="guide" xref="index"/>
+    <desc>Introduction à <app>GNOME Tetravex</app>.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+   <credit type="author">
+    <name>Milo Casagrande</name>
+    <email>milo@ubuntu.com</email>
+   </credit>
+   <license>
+     <p>Creative Commons Share Alike 3.0</p>
+   </license>
+  </info>
+
+  <title>Jeu</title>
+
+  <p><app>GNOME Tetravex</app> est un jeu de puzzle simple dont le but est de déplacer les diverses pièces d'un coté du plateau vers l'autre de façon à ce que les nombres identiques marqués sur les pièces se touchent.</p>
+  <p>Le jeu est chronométré, les durées sont utilisées comme scores pour le jeu. Vous devez déplacer toutes les pièces en un minimum de temps.</p>
+  <figure>
+    <title>Fenêtre principale du jeu</title>
+    <desc>Fenêtre principale de <app>Tetravex</app></desc>
+    <media type="image" src="figures/gnotravex-main-window.png" mime="image/png" style="center">
+      <p>Fenêtre principale de <app>Tetravex</app>.</p>
+    </media>
+  </figure>
+
+</page>

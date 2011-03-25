@@ -1,0 +1,552 @@
+# Serbian translation of gnome-games
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2009.
+#
+# This file is distributed under the same license as the gnome-games package.
+#
+# Translated on 2009-10-19 by Бранко Кокановић <branko.kokanovic@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games master\n"
+"POT-Creation-Date: 2009-10-19 12:09+0000\n"
+"PO-Revision-Date: 2009-10-19 22:39+0200\n"
+"Last-Translator: Бранко Кокановић <branko.kokanovic@gmail.com>\n"
+"Language-Team: Serbian <gnom@prevod.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n%"
+"10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnotski.xml:204(None)
+msgid ""
+"@@image: 'figures/gnotski_win.png'; md5=5ed32942a09f8becfc784d804f70ea3e"
+msgstr ""
+"@@image: 'figures/gnotski_win.png'; md5=5ed32942a09f8becfc784d804f70ea3e"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnotski.xml:261(None)
+msgid ""
+"@@image: 'figures/gnotski_start_window.png'; "
+"md5=23e584de3f58e5baf5c9ca5098a7961e"
+msgstr ""
+"@@image: 'figures/gnotski_start_window.png'; "
+"md5=23e584de3f58e5baf5c9ca5098a7961e"
+
+#: C/gnotski.xml:28(title)
+msgid "<application>Klotski</application> Manual"
+msgstr "Упутство за <application>Клотски</application>"
+
+#: C/gnotski.xml:31(para)
+msgid ""
+"Klotski is a puzzle game of which the objective is to get the patterned "
+"block to the marker, which is done by moving the blocks in its way."
+msgstr ""
+"Клотски је слагалица у којој је циљ преместити означени блок на означено "
+"место, што се постиже померањем блокова који су му препрека на путу."
+
+#: C/gnotski.xml:39(year)
+msgid "2002"
+msgstr "2002"
+
+#: C/gnotski.xml:40(holder)
+msgid "Andrew Sobala"
+msgstr "Andrew Sobala"
+
+#: C/gnotski.xml:54(publishername) C/gnotski.xml:67(orgname)
+#: C/gnotski.xml:142(para)
+msgid "GNOME Documentation Project"
+msgstr "Пројекат Гномове документације"
+
+#: C/gnotski.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Дозвољено умножавање, ширење, вршење измена овог документа под условима Гну-"
+"ове Слободне Документационе Дозволе (ГСДД), верзије 1.1 или било које "
+"накнадне верзије без непромењивих одељака, текста на насловној и последњој "
+"страни, а коју је објавила Задужбина Слободног Софтвера. Примерак ГСДД-е "
+"можете пронаћи на овој <ulink type=\"help\" url=\"ghelp:fdl\">адреси</ulink> "
+"или у датотеци COPYING-DOCS која је приложена уз ово упутство."
+
+#: C/gnotski.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Ово упутство је део скупа Гном докумената објављених под GFDL. Уколико "
+"желите да расподељујете ово упутство одвојено од скупа, то можете урадити "
+"додавањем примерка лиценце документу, како је описано у одељку 6 саме "
+"лиценце."
+
+#: C/gnotski.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Многи називи које компаније користе у циљу препознатљивости својих производа "
+"и услуга представљају робне марке. Када (уколико) се такви називи појављују"
+"(спомињу) у било којем Гномовом документу, а чланови Гномовог "
+"документационог пројекта имају сазнања о томе, тада су називи исписани "
+"великим словима или са великим почетним словима."
+
+#: C/gnotski.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"ДОКУМЕНТ ЈЕ ДОСТУПАН СА СВИМ СВОЈИМ ДОБРИМ И ЛОШИМ СТРАНАМА БЕЗ БИЛО КАКВОГ "
+"ЈАМСТВА, БИЛО ОНО ИЗРЕЧЕНО ИЛИ НЕ, УКЉУЧУЈУЋИ БЕЗ ОГРАНИЧЕЊА, ЈАМСТВО ДА ЈЕ "
+"ОВАЈ ДОКУМЕНТ ИЛИ ЊЕГОВА ИЗМЕЊЕНА ВЕРЗИЈА БЕЗ НЕДОСТАТАКА, СПРЕМАН ЗА "
+"ТРЖИШТЕ, СВРСИСХОДАН И НЕ НАРУШАВА ЗАКОНСКЕ НОРМЕ. ЦЕЛОКУПАН РИЗИК КОЈИ СЕ "
+"ОДНОСИ НА КВАЛИТЕТ, ТАЧНОСТ И ДОМЕТ (УЧИНАК) ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ "
+"ВЕРЗИЈЕ СНОСИ КОРИСНИК. УКОЛИКО СЕ У БИЛО КОЈЕМ ДОКУМЕНТУ ИЛИ ЊЕГОВОЈ "
+"ИЗМЕЊЕНОЈ ВЕРЗИЈИ ПОЈАВИ НЕДОСТАТАК (ГРЕШКА) БИЛО КОЈЕ ВРСТЕ, КОРИСНИК (А НЕ "
+"АУТОР ИЗВОРНЕ ВЕРЗИЈЕ, БИЛО КОЈИ ДРУГИ АУТОР ИЛИ САРАДНИК) СНОСИ СВЕ "
+"ТРОШКОВЕ НЕОПХОДНОГ СЕРВИСИРАЊА, ПОПРАВКЕ ИЛИ ИСПРАВКЕ. ОВО ОГРАНИЧЕЊЕ "
+"ЈАМСТВА ПРЕДСТАВЉА САСТАВНИ ДЕО ОВЕ ДОЗВОЛЕ. УПОТРЕБА БИЛО КОЈЕГ ДОКУМЕНТА "
+"ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ НИЈЕ ДОЗВОЉЕНА ОСИМ ПОД УСЛОВИМА ОВОГ ОГРАНИЧЕЊА "
+"ЈАМСТВА."
+
+#: C/gnotski.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"НИ ПОД КАКВИМ ОКОЛНОСТИМА ИЛИ ЗАКОНУ, БИЛО ЗБОГ КРШЕЊА (ИЛИ НЕМАРА) УГОВОРА, "
+"ИЛИ НА БИЛО КОЈИ ДРУГИ НАЧИН, АУТОР (ПРВОБИТНЕ ВЕРЗИЈЕ), САРАДНИК ИЛИ "
+"ИСПОРУЧИВАЛАЦ ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ, НИТИ ДОБАВЉАЧ БИЛО КОЈЕ "
+"ОД НАВЕДЕНИХ СТРАНА НЕЋЕ СНОСИТИ МАТЕРИЈАЛНУ ОДГОВОРНОСТ ЗА НАСТАЛА "
+"ДИРЕКТНА, ИНДИРЕКТНА, ПОСЕБНА, СЛУЧАЈНА ИЛИ ТИМЕ НАСТАЛА ОШТЕЋЕЊА БИЛО КОЈЕ "
+"ВРСТЕ УКЉУЧУЈУЋИ, БЕЗ ОГРАНИЧЕЊА, ШТЕТУ НАНЕСЕНУ УГЛЕДУ ФИРМЕ, ПРЕСТАНКУ "
+"ПРОИЗВОДЊЕ, ОТКАЗИВАЊЕ РАДА РАЧУНАРА ИЛИ КВАРА КАО И ЗА СВЕ ОСТАЛЕ ШТЕТЕ ИЛИ "
+"ГУБИТКЕ НАСТАЛЕ УСЛЕД КОРИШЋЕЊА ДОКУМЕНТА И ЊЕГОВИХ ИЗМЕЊЕНИХ ВЕРЗИЈА ЧАК И "
+"АКО ЈЕ ОШТЕЋЕНА СТРАНА БИЛА ОБАВЕШТЕНА О МОГУЋНОСТИ НАСТАНКА ТЕ ШТЕТЕ."
+
+#: C/gnotski.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"ОВАЈ ДОКУМЕНТ И ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СУ ДОСТУПНЕ ПОД УСЛОВИМА ГНУ-ОВЕ "
+"СЛОБОДНЕ ДОКУМЕНТАЦИОНЕ ДОЗВОЛЕ УЗ ДОДАТНУ САГЛАСНОСТ ДА: <placeholder-1/>"
+
+#: C/gnotski.xml:64(firstname)
+msgid "Andrew"
+msgstr "Andrew"
+
+#: C/gnotski.xml:65(surname)
+msgid "Sobala"
+msgstr "Sobala"
+
+#: C/gnotski.xml:68(email)
+msgid "andrew@sobala.net"
+msgstr "andrew@sobala.net"
+
+#: C/gnotski.xml:73(firstname)
+msgid "Lars"
+msgstr "Lars"
+
+#: C/gnotski.xml:74(surname)
+msgid "Rydlinge"
+msgstr "Rydlinge"
+
+#: C/gnotski.xml:76(orgname) C/gnotski.xml:85(orgname)
+msgid "GNOME Project"
+msgstr "Гном пројекат"
+
+#: C/gnotski.xml:77(email)
+msgid "Lars.Rydlinge@HIG.SE"
+msgstr "Lars.Rydlinge@HIG.SE"
+
+#: C/gnotski.xml:82(firstname)
+msgid "Ross"
+msgstr "Ross"
+
+#: C/gnotski.xml:83(surname)
+msgid "Burton"
+msgstr "Burton"
+
+#: C/gnotski.xml:86(email)
+msgid "ross@burtonini.com"
+msgstr "ross@burtonini.com"
+
+#: C/gnotski.xml:136(revnumber)
+msgid "V2.0"
+msgstr "V2.0"
+
+#: C/gnotski.xml:137(date)
+msgid "13 August 2002"
+msgstr "13. август 2002"
+
+#: C/gnotski.xml:139(para)
+msgid "Andrew Sobala <email>andrew@sobala.net</email>"
+msgstr "Andrew Sobala <email>andrew@sobala.net</email>"
+
+#: C/gnotski.xml:148(releaseinfo)
+msgid "This manual describes version 2.12 of GNOME Klotski."
+msgstr "Ово упуство је написано за Гном Клотски 2.12."
+
+#: C/gnotski.xml:151(title)
+msgid "Feedback"
+msgstr "Примедбе"
+
+#: C/gnotski.xml:152(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Klotski</"
+"application> application or this manual, follow the directions in the <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
+"ulink>."
+msgstr ""
+"Да бисте пријавили грешку или дали предлог у вези програма "
+"<application>Клотски</application> или његовог упутства, пратите смернице на "
+"<ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">Гномовој страни "
+"за примедбе</ulink>."
+
+#: C/gnotski.xml:161(primary)
+msgid "GNOME Klotski"
+msgstr "Гном Клотски"
+
+#: C/gnotski.xml:167(title)
+msgid "Introduction"
+msgstr "Увод"
+
+#: C/gnotski.xml:168(para)
+msgid ""
+"The <application>Klotski</application> application is a clone of the Klotski "
+"game. The objective is to move the patterned block to the area bordered by "
+"green markers."
+msgstr ""
+"<application>Клотски</application> је клон игре Клотски. Циљ игре је да се "
+"означени блок изведе на простор обележен зеленим маркерима."
+
+#: C/gnotski.xml:171(para)
+msgid ""
+"<application>Klotski</application> was written by Lars Rydlinge (<email>Lars."
+"Rydlinge@HIG.SE</email>)."
+msgstr ""
+"<application>Клотски</application> је написао Lars Rydlinge (<email>Lars."
+"Rydlinge@HIG.SE</email>)."
+
+#: C/gnotski.xml:174(para)
+msgid ""
+"<application>Klotski</application> is included in the gnome-games package, "
+"which is part of the GNOME desktop environment. This document describes "
+"version 2.12 of <application>Klotski</application>."
+msgstr ""
+"<application>Клотски</application> је укључен у <filename>gnome-games</"
+"filename> пакет, који је део Гномовог радног окружења. Овај документ је "
+"написан за издање 2.12 програма <application>Клотски</application>."
+
+#: C/gnotski.xml:177(para)
+msgid ""
+"This program is distributed under the terms of the GNU General Public "
+"license as published by the Free Software Foundation; either version 2 of "
+"the License, or (at your option) any later version. A copy of this license "
+"can be found at this <ulink url=\"ghelp:gpl\" type=\"help\">link</ulink>, or "
+"in the file COPYING included with the source code of this program."
+msgstr ""
+"Овај програм се расподељује под условима ГНУ Опште Јавне Лиценце (GNU GPL); "
+"било верзије 2 те Лиценце, било (по вашем нахођењу) било које новије "
+"верзије. Примерак ове лиценце можете пронаћи на овој <ulink type=\"help\" "
+"url=\"ghelp:fdl\">адреси</ulink> или у датотеци COPYING која је приложена уз "
+"ово упутство."
+
+#: C/gnotski.xml:184(para)
+msgid ""
+"To report a bug or make a suggestion regarding this application or this "
+"manual, follow the directions in this <ulink url=\"ghelp:user-guide?feedback-"
+"bugs\" type=\"help\">document</ulink>."
+msgstr ""
+"Да бисте пријавили грешку или дали предлог у вези овог програма или овог "
+"упутства, пратите смернице на <ulink url=\"ghelp:user-guide?feedback-bugs\" "
+"type=\"help\">Гномовој страни за примедбе</ulink>."
+
+#: C/gnotski.xml:193(title)
+msgid "Objective"
+msgstr "Циљ"
+
+#: C/gnotski.xml:200(title)
+msgid "The winning move"
+msgstr "Победнички потез"
+
+#: C/gnotski.xml:207(phrase)
+msgid ""
+"The patterned block should be moved to the space bordered by the green "
+"markers."
+msgstr "Означени блок треба померити на простор који окружују зелени маркери."
+
+#: C/gnotski.xml:194(para)
+msgid ""
+"The objective of <application>Klotski</application> is to move the patterned "
+"block to the green markers in as few moves as possible. You do this by "
+"moving the blocks one at a time with the mouse until you can get the "
+"patterned block to the markers. <placeholder-1/>"
+msgstr ""
+"Циљ игре <application>Клотски</application> је померити означени блок на "
+"зелене маркере у што мање потеза. Ово радите тако што мишем померате блокове "
+"један по један док не успете да изведете означени блок до маркера. "
+"<placeholder-1/>"
+
+#: C/gnotski.xml:219(title)
+msgid "Playing <application>Klotski</application>"
+msgstr "Играње игре <application>Клотски</application>"
+
+#: C/gnotski.xml:242(title)
+msgid "To Start <application>Klotski</application>"
+msgstr "Да покренете <application>Клотски</application>"
+
+#: C/gnotski.xml:243(para)
+msgid ""
+"You can start <application>Klotski</application> from the Applications menu "
+"by choosing <menuchoice><guisubmenu>Games</guisubmenu><guimenuitem>Gnotski</"
+"guimenuitem></menuchoice>."
+msgstr ""
+"<application>Клотски</application> можете покренути из менија програма "
+"одабирањем <menuchoice><guisubmenu>Игре</guisubmenu><guimenuitem>Клотски</"
+"guimenuitem></menuchoice>."
+
+#: C/gnotski.xml:252(title)
+msgid "The main window"
+msgstr "Главни прозор"
+
+#: C/gnotski.xml:253(para)
+msgid ""
+"When you start <application><application>Klotski</application></"
+"application>, the following window is displayed."
+msgstr ""
+"Када покренете <application><application>Клотски</application></application> "
+"приказује се следећи прозор."
+
+#: C/gnotski.xml:257(title)
+msgid "<application>Klotski</application> Start Up Window"
+msgstr "Почетни прозор игре <application>Клотски</application>"
+
+#: C/gnotski.xml:0(application)
+msgid "Klotski"
+msgstr "Клотски"
+
+#: C/gnotski.xml:264(phrase)
+msgid ""
+"Shows <placeholder-1/> main window. Contains titlebar, menubar, game area "
+"and statusbar. Menubar contains Game and Help menus."
+msgstr ""
+"Приказује <placeholder-1/> главни прозор. Садржи наслов прозора, траку "
+"менија, област за игру и траку са стањем. Трака менија садржи меније „Игра“, "
+"„Преглед“ и „Помоћ“."
+
+#: C/gnotski.xml:275(term)
+msgid "Menubar"
+msgstr "Трака менија"
+
+#: C/gnotski.xml:279(term)
+msgid "Game menu"
+msgstr "Мени „Игра“"
+
+#: C/gnotski.xml:281(para)
+msgid ""
+"The game menu allows you to start new games, view the highest scores and "
+"quit the program."
+msgstr ""
+"Мени „Игра“ омогућава покретање нових игара, преглед најбољих резултата и "
+"излазак из игре."
+
+#: C/gnotski.xml:286(term)
+msgid "Help menu"
+msgstr "Мени „Помоћ“"
+
+#: C/gnotski.xml:288(para)
+msgid ""
+"The help menu allows you to view the documentation for <application>Klotski</"
+"application>"
+msgstr ""
+"Мени „Помоћ“ омогућава преглед документације за игру <application>Klotski</"
+"application>"
+
+#: C/gnotski.xml:295(term)
+msgid "Game area"
+msgstr "Област за игру"
+
+#: C/gnotski.xml:297(para)
+msgid ""
+"The game area shows the blocks in the current game. You can drag the blocks "
+"around with the mouse as described in <xref linkend=\"gnotski-moving\"/>."
+msgstr ""
+"Област за игру приказује блокове у тренутној игри. Блокове можете померати "
+"мишем као што је описано у <xref linkend=\"gnotski-moving\"/>."
+
+#: C/gnotski.xml:303(term)
+msgid "Statusbar"
+msgstr "Трака стања"
+
+#: C/gnotski.xml:305(para)
+msgid "The statusbar shows how many moves you have taken so far."
+msgstr "Трака стања приказује колико сте потеза до сада одиграли."
+
+#. ==== End of Figure ====
+#: C/gnotski.xml:272(para)
+msgid ""
+"The <application>Klotski</application> window contains the following "
+"elements: <placeholder-1/>"
+msgstr ""
+"<application>Клотски</application> прозор садржи следеће елементе: "
+"<placeholder-1/>"
+
+#: C/gnotski.xml:314(title)
+msgid "Starting a new game"
+msgstr "Покретање нове игре"
+
+#: C/gnotski.xml:315(para)
+msgid ""
+"Use the <guimenu>Game menu</guimenu> to start a new game. The items "
+"<guimenuitem>Next Puzzle</guimenuitem>and <guimenuitem>Previous Puzzle</"
+"guimenuitem> allows you to navigate the puzzles sequentially. Each puzzle "
+"belongs to one of the four categories found in the submenus named "
+"<guisubmenu>HuaRong Trail</guisubmenu>, <guisubmenu>Challenge Pack</"
+"guisubmenu>, <guisubmenu>Skill Pack</guisubmenu>, and <guisubmenu>Minoru "
+"Climb</guisubmenu>. In these submenus, each puzzle name refers to a game "
+"scenario."
+msgstr ""
+"Користите <guimenu>мени „Игра“</guimenu> да покренете нову игру. Ставке "
+"<guimenuitem>Следећа слагалица</guimenuitem> и <guimenuitem>Претходна "
+"слагалица</guimenuitem> вам омогућују да се крећете редом кроз слагалице. "
+"Свака слагалица припада једној од три категорије које можете наћи у "
+"подменијима. Ове категорије се зову <guisubmenu>Хуа-Ронг траг</guisubmenu>, "
+"<guisubmenu>Вишезов</guisubmenu> и <guisubmenu>Умеће</guisubmenu>. У овим "
+"подменијима, име сваке слагалице указује на сценарио те игре."
+
+#: C/gnotski.xml:323(title)
+msgid "Starting a game"
+msgstr "Покретање игре"
+
+#: C/gnotski.xml:324(para)
+msgid ""
+"To start the hardest game provided, choose <menuchoice><guimenu>Game</"
+"guimenu><guisubmenu>Minoru Climb</guisubmenu><guimenuitem>Climb 24 Pro</"
+"guimenuitem></menuchoice>"
+msgstr ""
+"Да бисте покренули најтежу понуђену игру, одаберите "
+"<menuchoice><guimenu>Игра</guimenu><guisubmenu>Умеће</"
+"guisubmenu><guimenuitem>Сунчев сјај</guimenuitem></menuchoice>"
+
+#: C/gnotski.xml:335(title)
+msgid "Moving blocks"
+msgstr "Померање блокова"
+
+#: C/gnotski.xml:336(para)
+msgid ""
+"To move a block, click on it, hold down the mouse button and drag it to its "
+"new location. You cannot move the green blocks or the block that borders the "
+"game. You cannot move a block to a space already occupied by another block, "
+"with the exception that you may move the patterned block through the green "
+"blocks to win."
+msgstr ""
+"Да бисте померили блок кликните на њега, држите дугме миша и повуците миша "
+"на ново место. Не можете померати зелене блокове нити блокове који чине "
+"оквир игре. Не можете померити ни блок на простор који заузима други блок. "
+"Изузетак је победа померањем означеног блока на зелене маркере."
+
+#: C/gnotski.xml:356(title)
+msgid "Authors"
+msgstr "Аутори"
+
+#: C/gnotski.xml:357(para)
+msgid ""
+"<application>Klotski</application> was written by Lars Rydlinge (<email>lars."
+"rydlinge@hig.se</email>). This manual was written by Andrew Sobala. To "
+"report a bug or make a suggestion regarding this application or this manual, "
+"follow the directions in this <ulink url=\"ghelp:user-guide?feedback-bugs\" "
+"type=\"help\">document</ulink>."
+msgstr ""
+"<application>Клотски</application> је написао Lars Rydlinge (<email>lars."
+"rydlinge@hig.se</email>). Ово упутство је написао Andrew Sobala. Да бисте "
+"пријавили грешке или дали предлог у вези овог програма или његовог упутства, "
+"пратите смернице из <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
+"\">документа</ulink>."
+
+#: C/gnotski.xml:377(title)
+msgid "License"
+msgstr "Лиценца"
+
+#: C/gnotski.xml:378(para)
+msgid ""
+"This program and tile artwork is free software; you can redistribute it and/"
+"or modify it under the terms of the <citetitle>GNU General Public License</"
+"citetitle> as published by the Free Software Foundation; either version 2 of "
+"the License, or (at your option) any later version."
+msgstr ""
+"Овај програм и графика на плочицама су слободан софтвер; можете их расподељивати "
+"и/или мењати под условима <citetitle>ГНУ Опште Јавне Лиценце (GNU GPL)</"
+"citetitle> како је објављује Задужбина за Слободни Софтвер (FSF); било "
+"верзије 2 те Лиценце, било (по вашем нахођењу) било које новије верзије."
+
+#: C/gnotski.xml:385(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"Овај програм се расподељује у нади да ће бити од користи, али БЕЗ ИКАКВИХ "
+"ГАРАНЦИЈА; чак и без подразумеване гаранције КОРИСНОСТИ или ПРИЛАГОЂЕНОСТИ "
+"ОДРЕЂЕНОЈ НАМЕНИ. Видите <citetitle>ГНУ Општу Јавну Лиценцу</citetitle> за "
+"више детаља."
+
+#: C/gnotski.xml:391(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"Примерак <citetitle>ГНУ Опште Јавне Лиценце</citetitle> је укључен у додатку "
+"<citetitle>Гномовог корисничког водича</citetitle>. Такође можете набавити "
+"примерак <citetitle>ГНУ Опште Јавне Лиценце</citetitle> од Задужбине за "
+"Слободни Софтвер са <ulink url=\"http://www.fsf.org\" type=\"http"
+"\">њихове веб адресе</ulink> или слањем писма на <address> Free Software "
+"Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</"
+"city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</"
+"country></address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/gnotski.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+"Бранко Кокановић <branko.kokanovic@gmail.com>\n"
+"\n"
+"Prevod.org — превод на српски језик"

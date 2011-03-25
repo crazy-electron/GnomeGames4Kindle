@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.20">
+<!ENTITY manrevision "2.20">
+<!ENTITY date "May 2007">
+<!ENTITY app "<application>Nibbles</application>">
+<!ENTITY appname "Nibbles">
+<!ENTITY VERSION "2.20">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="es">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+ <articleinfo>
+  <title>Manual de <application>Nibbles</application></title>
+
+    <abstract role="description">
+      <para>Nibbles es un juego de gusanos para GNOME. El jugador controla un gusano 2D mientras trata de conseguir comida. Obtener comida da puntos, pero chocar contra cualquier cosa causa pérdida de puntos. El jugador pierde cuando se pierden todos los puntos.</para>
+    </abstract>
+
+  <copyright>
+   <year>2000</year>
+   <holder>Kevin Breit</holder>
+  </copyright><copyright><year>2007-2008.</year><holder>Jorge González (jorgegonz@svn.gnome.org)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Proyecto de documentación de GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Se otorga permiso para copiar, distribuir y/o modificar este documento bajo los términos de la Licencia de Documentación Libre de GNU, Versión 1.1 o cualquier otra versión posterior publicada por la Free Software Foundation; sin Secciones Invariantes ni Textos de Cubierta Delantera ni Textos de Cubierta Trasera. Puede encontrar una copia de la licencia GFDL en este <ulink type="help" url="ghelp:fdl">enlace</ulink> o en el archivo COPYING-DOCS distribuido con este manual.</para>
+         <para>Este manual es parte de una colección de manuales de GNOME distribuido bajo la GFDL. Si quiere distribuir este manual por separado de la colección, puede hacerlo añadiendo una copia de la licencia al manual, tal como se describe en la sección 6 de la licencia.</para>
+
+	<para>Muchos de los nombres utilizados por las empresas para distinguir sus productos y servicios se consideran marcas comerciales. Cuando estos nombres aparezcan en la documentación de GNOME, y siempre que se haya informado a los miembros del Proyecto de documentación de GNOME de dichas marcas comerciales, los nombres aparecerán en mayúsculas o con las iniciales en mayúsculas.</para>
+
+	<para>ESTE DOCUMENTO Y LAS VERSIONES MODIFICADAS DEL MISMO SE PROPORCIONAN SEGÚN LAS CONDICIONES ESTABLECIDAS EN LA LICENCIA DE DOCUMENTACIÓN LIBRE DE GNU (GFDL) Y TENIENDO EN CUENTA QUE: <orderedlist>
+		<listitem>
+		  <para>EL DOCUMENTO SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, NI EXPLÍCITA NI IMPLÍCITA INCLUYENDO, SIN LIMITACIÓN, GARANTÍA DE QUE EL DOCUMENTO O VERSIÓN MODIFICADA DE ÉSTE CAREZCA DE DEFECTOS COMERCIALES, SEA ADECUADO A UN FIN CONCRETO O INCUMPLA ALGUNA NORMATIVA. TODO EL RIESGO RELATIVO A LA CALIDAD, PRECISIÓN Y UTILIDAD DEL DOCUMENTO O SU VERSIÓN MODIFICADA RECAE EN USTED. SI CUALQUIER DOCUMENTO O VERSIÓN MODIFICADA DE AQUÉL RESULTARA DEFECTUOSO EN CUALQUIER ASPECTO, USTED (Y NO EL REDACTOR INICIAL, AUTOR O CONTRIBUYENTE) ASUMIRÁ LOS COSTES DE TODA REPARACIÓN, MANTENIMIENTO O CORRECCIÓN NECESARIOS. ESTA RENUNCIA DE GARANTÍA ES UNA PARTE ESENCIAL DE ESTA LICENCIA. NO SE AUTORIZA EL USO DE NINGÚN DOCUMENTO NI VERSIÓN MODIFICADA DE ÉSTE POR EL PRESENTE, SALVO DENTRO DEL CUMPLIMIENTO DE LA RENUNCIA;Y</para>
+		</listitem>
+		<listitem>
+		  <para>EN NINGUNA CIRCUNSTANCIA NI SEGÚN NINGÚN ARGUMENTO LEGAL, SEA POR MOTIVOS CULPOSOS (INCLUIDA LA NEGLIGENCIA), CONTRACTUALES O DE OTRO TIPO, NI EL AUTOR, NI EL REDACTOR INICIAL, NI CUALQUIER COLABORADOR, NI CUALQUIER DISTRIBUIDOR DEL DOCUMENTO O VERSIÓN MODIFICADA DEL MISMO, NI CUALQUIER PROVEEDOR DE CUALQUIERA DE DICHAS PARTES, SERÁN RESPONSABLES, ANTE NINGÚN TERCERO, DE NINGÚN DAÑO O PERJUICIO DIRECTO, INDIRECTO, ESPECIAL, INCIDENTAL O CONSIGUIENTE DE NINGÚN TIPO, INCLUIDOS, SIN LIMITACIÓN, LOS DAÑOS POR PÉRDIDA DE FONDO DE COMERCIO, INTERRUPCIÓN DEL TRABAJO, FALLO O MAL FUNCIONAMIENTO INFORMÁTICO, NI CUALQUIER OTRO DAÑO O PÉRDIDA DERIVADOS DEL USO DEL DOCUMENTO Y LAS VERSIONES MODIFICADAS DEL MISMO, O RELACIONADO CON ELLO, INCLUSO SI SE HABÍA COMUNICADO A AQUELLA PARTE LA POSIBILIDAD DE TALES DAÑOS.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Kevin</firstname> 
+	<surname>Breit</surname> 
+	<affiliation> 
+	  <orgname>Proyecto de documentación de GNOME</orgname> 
+	  <address> <email>battery841@mypad.com</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+    <revhistory>
+      <revision> 
+	<revnumber>Manual de Nibbles V2.20</revnumber> 
+	<date>Mayo de 2007</date> 
+	<revdescription> 
+	  <para role="author">Kevin Breit <email>battery841@mypad.com</email></para>
+	  <para role="publisher">Proyecto de documentación de GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Este manual describe la versión 2.20 de Nibbles.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Comentarios</title> 
+      <para>Para informar de un fallo, o hacer alguna sugerencia concerniente a <application>Nibbles</application> o este manual, siga las indicaciones en la <ulink url="ghelp:user-guide?feedback-bugs" type="help">Página de comentarios de GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+ </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Nibbles</primary> 
+  </indexterm> 
+
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+ <sect1 id="intro">
+  <title>Introducción</title>
+
+  <para><application>Nibbles</application> es un juego donde el usuario controla un gusano. El gusano se mueve alrededor del tablero, comiendo diamantes mientras evita las paredes ubicadas alrededor de ella.</para>
+
+  <para>Para ejecutar <application>Nibbles</application>, seleccione <menuchoice><guisubmenu>Juegos</guisubmenu><guimenuitem>Nibbles</guimenuitem></menuchoice> del menú <guimenu>Aplicaciones</guimenu>, o escriba <command>gnibbles</command> en la línea de comandos.</para>
+
+  <para><application>Nibbles</application> está incluido en el paquete <filename>gnome-games</filename>, que es parte del entorno de escritorio GNOME. Este documento describe la versión 2.20 de <application>Nibbles</application>.</para>
+ </sect1>
+
+ <sect1 id="objective">
+ <title>Objetivo de Nibbles</title>
+  <para>El objetivo de Nibbles es bastante simple. Controle el gusano y si se choca con una pared o contra si mismo, muere. Tiene diez vidas antes de que se acabe su partida. Ganará cuando bata su propio récord (o el de algún amigo) o complete todos los niveles. También es posible jugar contra gusanos con inteligencia artificial.</para>
+  <para>Nibbles también soporta modo <link linkend="network-games">multijugador</link> con hasta seis jugadores humanos en un equipo o en modo red.</para>
+ </sect1>
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+ <sect1 id="usage">
+  <title>Usar Nibbles</title>
+  <para><application>Nibbles</application> es un juego muy fácil de jugar. Las únicas teclas que se necesitan son las teclas de flechas.</para>
+
+  <!-- ========= Basic Usage =========================== -->
+<sect2 id="mainwin">
+<title>Uso básico</title>
+<para>Al iniciar <application>Nibbles</application> se abrirá la <interface>ventana principal</interface> mostrada debajo. <figure id="intro-fig">
+<title>Ventana de introducción de Nibbles</title>
+<screenshot>
+ <mediaobject> 
+    <imageobject>
+<imagedata fileref="figures/intro.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Ventana de introducción de Nibbles.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure></para>
+<para>Para iniciar el juego, seleccione <menuchoice><guimenu>Juego</guimenu><guimenuitem>Nuevo</guimenuitem></menuchoice>.</para>
+<para>Cuando comienza la partida, el gusano saldrá de un lado de la pantalla. Use la flecha arriba para hacer que el gusano vaya hacia arriba. Use la flecha derecha para girar a el gusano a la derecha, flecha izquierda para girar al gusano a la izquierda y flecha abajo para hacer que el gusano vaya hacia abajo. <figure id="gameplay">
+<title>Nibbles durante una partida</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/playing.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Nibbles durante una partida.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure></para>
+</sect2>
+
+<!-- This section should also describe main elements of graphic user
+interface, such as menus and buttons, unless this description
+is too long - in that case, it should be moved to a separate
+section. For example -->
+
+
+<!-- ========= Menus =========================== -->
+<sect2 id="menubar">
+   <title>Menús</title>
+   <para>La barra de menú, ubicada en la parte superior de la <interface>ventana principal</interface>, contiene los siguientes menús:</para>
+
+   <variablelist>
+    <varlistentry>
+     <term><guimenu>Juego</guimenu></term>
+     <listitem>
+      <para>Este menú contiene: <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+N</keysym></shortcut><guimenuitem>Nuevo</guimenuitem></menuchoice> esto inicia un juego nuevo de <application>Nibbles</application>.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+N</keysym></shortcut><guimenuitem>Nuevo</guimenuitem></menuchoice> esto inicia un juego nuevo de <application>Nibbles</application>.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Puntuación</guimenuitem></menuchoice> esto muestra las puntuaciones más altas.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Pausa</guimenuitem></menuchoice> esto pausará su partida. Pulse en la opción de menú <quote>Pausa</quote> para resumir la partida.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Finalizar el juego</guimenuitem></menuchoice> finaliza la partida actual y vuelve a la pantalla de título.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl-Q</keysym></shortcut><guimenuitem>Salir</guimenuitem></menuchoice> esto sale de la aplicación.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+   <varlistentry>
+     <term><guimenu>Ver</guimenu></term>
+     <listitem>
+      <para>Este menú contiene: <itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>Puntuación</guimenuitem></menuchoice> esto muestra las puntuaciones más altas.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Configuración</guimenu></term>
+     <listitem>
+      <para>Este menú contiene: <itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>Preferencias</guimenuitem></menuchoice> esto abre su ventana para editar las <link linkend="prefs">preferencias</link>.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Ayuda</guimenu></term>
+     <listitem>
+      <para>Este menú contiene: <itemizedlist>
+        <listitem>
+          <para><menuchoice><shortcut><keysym>F1</keysym></shortcut><guimenuitem>Contenido</guimenuitem></menuchoice> muestra este manual.</para>
+         <para><guimenuitem>Acerca de</guimenuitem> esto abre el diálogo <interface>Acerca de</interface> el cuál muestra información básica acerca de <application>Nibbles</application>, tal como el nombre del autor y el número de versión del juego.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+  </sect2>
+  <sect2 id="diamonds">
+  <title>Diamantes</title>
+   <para>En <application>Nibbles</application> numerosos y diferentes diamantes para comer. Cada uno es de un color diferente y sirve para una función diferente. Solamente se garantiza que el diamante púrpura pálido es suficientemente largo para comerlo (de hecho, tiene que comerlos para finalizar el nivel). Los otros diamantes son premios, pero sólo aparecen por un periodo de tiempo corto. Le dejaremos que descubra qué tipo de premio proporciona cada color, pero todos afectan a la puntuación, a la longitud del gusano o a ambos. Tenga cuidado cuando vaya a por estos diamantes de premio, no se vaya a olvidar de los diamantes ordinarios que necesita para finalizar el nivel.</para>
+  </sect2>   
+ </sect1>
+
+
+ <!-- ============= Customization ============================= -->
+ <sect1 id="prefs">
+  <title>Personalizar</title>
+  <para>Para cambiar los ajustes de la aplicación, seleccione <menuchoice><guimenu>Ajustes</guimenu><guimenuitem>Preferencias</guimenuitem></menuchoice>. Esto abrirá el diálogo de <interface>Preferencias</interface>. Todas las preferencias se guardan automáticamente y se aplican cuando las cambie.</para>
+
+  <figure id="game-prefs">
+    <title>Pestaña de preferencias del juego</title>
+    <screenshot>
+       <mediaobject> 
+    <imageobject>
+      <imagedata fileref="figures/game.png" format="PNG" srccredit="Kevin Breit"/>
+          </imageobject>
+    <textobject> 
+      <phrase>Pestaña de preferencias del juego.</phrase> 
+    </textobject> 
+  </mediaobject>
+    </screenshot>
+  </figure>
+
+  <para>Las propiedades en la pestaña <guilabel>Juego</guilabel> son: <variablelist>
+    <varlistentry>
+    <term>Velocidad</term>
+    <listitem>
+     <para>Esto controla la velocidad del gusano.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Jugar niveles en orden aleatorio</term>
+    <listitem>
+     <para>Seleccionar esto hará que el avance del nivel ocurra en orden aleatorio.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Activar bonificaciones falsas</term>
+    <listitem>
+     <para>Cuando está activado permite que haya dos diamantes azules en la pantalla a la vez. Al ser comido, un diamante le hace encogerse en lugar de crecer.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Activar los sonidos</term>
+     <listitem>
+      <para>Controla el uso de los sonidos durante el juego.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Nivel inicial</term>
+     <listitem>
+      <para>En qué nivel comenzar. Use esto si quiere saltar inmediatamente a un nivel de competición.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Número de jugadores humanos</term>
+     <listitem>
+      <para>Hay sitio hasta para seis jugadores.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Número de jugadores IA</term>
+     <listitem>
+      <para>Hay sitio para hasta seis jugadores IA. Nótese que el número total de jugadores humanos e IA debe ser igual o menor que seis.</para>
+     </listitem>
+    </varlistentry>
+   </variablelist></para>
+  <para><figure id="worm-prefs">
+    <title>Pestaña de preferencias del gusano</title>
+    <screenshot>
+       <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/worm_op.png" format="PNG" srccredit="Kevin Breit"/>
+         </imageobject>
+    <textobject> 
+      <phrase>Pestaña de preferencias del gusano.</phrase> 
+    </textobject> 
+  </mediaobject>
+    </screenshot>
+  </figure> Las propiedades en las pestañas desde <guilabel>Gusano 1</guilabel> hasta <guilabel>Gusano 4</guilabel> le permiten establecer preferencias individuales para los diferentes gusanos. <variablelist>
+    <varlistentry>
+    <term>Control de teclado</term>
+    <listitem>
+     <para>Esta lista le permite cambiar los controles de teclado para el gusano dado. Para cambiar un control, pulse dos veces sobre la entrada apropiada y después pulse la techa que quiere usar para ese control.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Usar movimiento relativo</term>
+    <listitem>
+     <para>Más que dejar que la flecha izquierda envíe a su gusano a la parte izquierda de la pantalla, la flecha derecha hacia la parte derecha y demás, las teclas de flecha izquierda y derecha hacen que el gusano realice un giro a la derecha o izquierda, si el gusano se está moviendo a la izquierda y pulsa la flecha izquierda, éste gira hacia la parte inferior de la pantalla.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Color del gusano</term>
+    <listitem>
+     <para>Personalice el color de su gusano para poder diferenciarlo del de su oponente en el modo multi jugador.</para>
+    </listitem>
+    </varlistentry>
+   </variablelist></para>
+
+ </sect1>
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Juegos en red</title>
+  <para>Nibbles soporta juegos en red multijugador, proporcionados por <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink>. Al conectar Nibbles a un servidor en internet, puede desafiar otros jugadores en juegos multijugador. Para obtener noticias, actualizaciones y una lista de los servidores a los que conectar, vea la <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">página web de juegos GNOME</ulink>.</para>
+  <para>Para iniciar el juego multijugador de Nibbles, seleccione <menuchoice><guimenu>Juego</guimenu><guimenuitem>Juego en red</guimenuitem></menuchoice> del menú de Nibbles.</para> 
+
+<sect2 id="connecting">
+<title>Conectar Nibbles con un servidor de red</title>
+<para>El diálogo de conexión de Nibbles se muestra inicialmente al comenzar un nuevo juego en red. Éste diálogo le permite seleccionar un servidor al que conectarse y el nombre de usuario que tendrá mientras esté conectado a ese servidor.</para>
+
+<para>Es posible conectarse a un servidor tanto con una cuenta de invitado como con una cuenta normal registrada. Las cuentas de invitado le permiten registrarse anónimamente, mientras que una cuenta normal le permite reservar su propio nombre de usuario que está protegido por la contraseña que elija.</para>
+
+<para>Debería seleccionar la opción <guimenuitem>Inicio de sesión como invitado</guimenuitem> si quiere iniciar una sesión anónima. Si quiere crear una nueva cuenta, entonces seleccione la opción <guimenuitem>Inicio de sesión por primera vez</guimenuitem>, con el nombre de usuario, contraseña y correo electrónico que quiera. Si ya ha creado una cuenta, puede conectarse con ella seleccionando la opción <guimenuitem>Inicio de sesión normal</guimenuitem> e introduciendo el nombre de usuario y contraseña que eligió.</para>
+<para>Para conectar a un servidor, pulse en el botón <guimenuitem>Conectar</guimenuitem>.</para>
+<figure id="connect">
+<title>Diálogo de conexión en red de Nibbles.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Diálogo de conexión en red de Nibbles.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Unirse a una sala de juego</title>
+<para>Una vez que se haya conectado a un servidor, elija a qué sala de juego quiere unirse. Para jugar una partida multijugador de Nibbles, seleccione la sala Nibbles. Si quiere hospedar su propia partida, entonces pulse el botón Lanzar. Esto creará un nuevo tablero donde otros jugadores pueden participar en la partida contra usted. Si ya hay algún otro juego iniciado, puede pulsar con el ratón dos veces sobre un tablero para unirse a él. La lista de tableros de juegos a la derecha le muestra el número de asientos disponibles, que significa el número de jugadores que pueden unirse al tablero.</para>
+<figure id="tables">
+<title>El diálogo de Nibbles le permite unirse a una sala de juego y encontrar otros jugadores.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>El diálogo de Nibbles le permite unirse a una sala de juego y encontrar otros jugadores.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>Cuando cree una nueva tablero para partidas de Nibbles, se mostrará un diálogo de preferencias que le permite personalizar el juego, tales como el mínimo número de jugadores para la partida. Una vez que todos los asientos se han ocupado, entonces no se permitirá a más jugadores que se unan a ese tablero.</para>
+<para>Es posible chatear con otros jugadores en los juegos en red. Pregunte por un consejo o ayuda mientras juega las partidas, pero sea educado con los otros jugadores.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Esperar a que otros jugadores se unan al juego</title>
+<para>Una vez que se ha unido satisfactoriamente a una partida, tiene que esperar hasta que se unan suficientes jugadores. El elemento del menú <guimenuitem>Lista de jugadores</guimenuitem> le permite ver la lista de los jugadores que se han unido a la partida. El juego comenzará inmediatamente cuando se alcance el número de jugadores necesario.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Jugar a Nibbles en modo multijugador</title>
+<para>Las partidas multijugador en Nibbles tienen más o menos las mimas reglas que una partida normal de Nibbles, salvo que ahora juega contra jugadores humanos. Esto significa que posiblemente otras estrategias sean mejores que las usadas contra los jugadores IA.</para>
+<para>Una vez que un jugador ha ganado, el juego termina y puede volver a la pantalla iniciar de juego en red. Entonces puede jugar otra adictiva partida de Nibbles.</para>
+</sect2>
+
+</sect1>
+
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Autores</title>
+  <para>Sean MacIsaac <email>sjm@acm.org</email> e Ian Peters <email>itp@gnu.org</email> escribieron <application>Nibbles</application>. Kevin Breit <email>battery841@mypad.com</email> escribió este manual. Andreas Røsdal <email>andreasr@gnome.org</email> actualizó el soporte en red de Nibbles. Para informar de un fallo, o hacer alguna sugerencia concerniente a esta aplicación o este manual, siga las indicaciones en este <ulink url="ghelp:user-guide?feedback-bugs" type="help">documento</ulink>.</para> 
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licencia</title>
+  <para>Este programa es software libre; puede redistribuirlo y/o modificarlo bajo los términos de la <ulink type="help" url="gnome-help:gpl"><citetitle>Licencia Pública General GNU</citetitle></ulink> tal como se publica por la Free Software Foundation; ya sea la versión 2 de la Licencia, o (a su elección) cualquier versión posterior.</para>
+  <para>Este programa se distribuye con la esperanza de que le sea útil, pero SIN NINGUNA GARANTÍA; sin incluso la garantía implícita de MERCANTILIDAD o IDONEIDAD PARA UN PROPÓSITO PARTICULAR. Vea la <citetitle>Licencia Pública General GNU</citetitle> para más detalles.</para>
+  <para>Una copia de la <citetitle>Licencia Pública General GNU</citetitle> está incluida en el apéndice de la <citetitle>Guía de Usuario de GNOME</citetitle>. También puede obtener una copia de la <citetitle>Licencia Pública General GNU</citetitle> de la Free Software Foundation visitando <ulink url="http://www.fsf.org" type="http">su página web</ulink> o escribiendo a la <address>Free Software Foundation, Inc. 59 Temple Place - Suite 330 Boston, MA 02111-1307 USA</address></para>
+ </sect1>
+</article>

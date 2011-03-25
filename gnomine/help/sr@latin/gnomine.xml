@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.14">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "January 2006">
+<!ENTITY app "<application>Mines</application>">
+<!ENTITY appname "Mines">
+<!ENTITY version "2.14">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sr@latin">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Uputstvo za <application>Mine</application></title>
+    <abstract role="description">
+      <para>Mine su Gnomov pokušaj pravljenja popularne logičke slagalice koja se sastoji od izbegavanja mina i dobijanja putokaza za položaje mina.</para>
+    </abstract>
+    <copyright>
+      <year>2006</year>
+      <holder>Callum McKenzie</holder>
+<!--   Based on an earlier manual by   <holder>Tim Riehle</holder> -->
+    </copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Projekat Gnomove dokumentacije</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+        <para>Ovaj dokument ima dvojno licenciranje. Možete ga širiti i/ili vršiti izmene pod uslovima <ulink type="help" url="gnome-help:gpl">GNU-ove Opšte Javne Licence (GNU GPL)</ulink> pod kojom je <link linkend="license">program licenciran</link>, ili ga možete širiti pod uslovima Gnu-ove Slobodne Dokumentacione Dozvole (GSDD). Umnožak sledi ispod.</para>
+
+	<para>Dozvoljeno umnožavanje, širenje, vršenje izmena ovog dokumenta pod uslovima Gnu-ove Slobodne Dokumentacione Dozvole (GSDD), verzije 1.1 ili bilo koje naknadne verzije bez nepromenjivih odeljaka, teksta na naslovnoj i poslednjoj strani, a koju je objavila Zadužbina Slobodnog Softvera. Primerak GSDD-e možete pronaći na ovoj <ulink type="help" url="ghelp:fdl">adresi</ulink> ili u datoteci COPYING-DOCS koja je priložena uz ovo uputstvo.</para>
+         <para>Ovo uputstvo je deo skupa Gnomovih dokumenata objavljenih pod GFDL. Ukoliko želite da raspodeljujete ovo uputstvo odvojeno od skupa, to možete uraditi dodavanjem primerka licence dokumentu, kako je opisano u odeljku 6 same licence.</para>
+
+	<para>Mnogi nazivi koje kompanije koriste u cilju prepoznatljivosti svojih proizvoda i usluga predstavljaju robne marke. Kada (ukoliko) se takvi nazivi pojavljuju(spominju) u bilo kojem Gnomovom dokumentu, a članovi Gnomovog dokumentacionog projekta imaju saznanja o tome, tada su nazivi ispisani velikim slovima ili sa velikim početnim slovima.</para>
+
+	<para>OVAJ DOKUMENT I NJEGOVE IZMENJENE VERZIJE SU DOSTUPNE POD USLOVIMA GNU-OVE SLOBODNE DOKUMENTACIONE DOZVOLE UZ DODATNU SAGLASNOST DA: <orderedlist>
+		<listitem>
+		  <para>DOKUMENT JE DOSTUPAN SA SVIM SVOJIM DOBRIM I LOŠIM STRANAMA BEZ BILO KAKVOG JAMSTVA, BILO ONO IZREČENO ILI NE, UKLJUČUJUĆI BEZ OGRANIČENJA, JAMSTVO DA JE OVAJ DOKUMENT ILI NJEGOVA IZMENJENA VERZIJA BEZ NEDOSTATAKA, SPREMAN ZA TRŽIŠTE, SVRSISHODAN I NE NARUŠAVA ZAKONSKE NORME. CELOKUPAN RIZIK KOJI SE ODNOSI NA KVALITET, TAČNOST I DOMET (UČINAK) DOKUMENTA ILI NJEGOVE IZMENJENE VERZIJE SNOSI KORISNIK. UKOLIKO SE U BILO KOJEM DOKUMENTU ILI NJEGOVOJ IZMENJENOJ VERZIJI POJAVI NEDOSTATAK (GREŠKA) BILO KOJE VRSTE, KORISNIK (A NE AUTOR IZVORNE VERZIJE, BILO KOJI DRUGI AUTOR ILI SARADNIK) SNOSI SVE TROŠKOVE NEOPHODNOG SERVISIRANJA, POPRAVKE ILI ISPRAVKE. OVO OGRANIČENJE JAMSTVA PREDSTAVLJA SASTAVNI DEO OVE DOZVOLE. UPOTREBA BILO KOJEG DOKUMENTA ILI NJEGOVE IZMENJENE VERZIJE NIJE DOZVOLJENA OSIM POD USLOVIMA OVOG OGRANIČENJA JAMSTVA.</para>
+		</listitem>
+		<listitem>
+		  <para>NI POD KAKVIM OKOLNOSTIMA ILI ZAKONU, BILO ZBOG KRŠENJA (ILI NEMARA) UGOVORA, ILI NA BILO KOJI DRUGI NAČIN, AUTOR (PRVOBITNE VERZIJE), SARADNIK ILI ISPORUČIVALAC DOKUMENTA ILI NJEGOVE IZMENJENE VERZIJE, NITI DOBAVLJAČ BILO KOJE OD NAVEDENIH STRANA NEĆE SNOSITI MATERIJALNU ODGOVORNOST ZA NASTALA DIREKTNA, INDIREKTNA, POSEBNA, SLUČAJNA ILI TIME NASTALA OŠTEĆENJA BILO KOJE VRSTE UKLJUČUJUĆI, BEZ OGRANIČENJA, ŠTETU NANESENU UGLEDU FIRME, PRESTANKU PROIZVODNJE, OTKAZIVANJE RADA RAČUNARA ILI KVARA KAO I ZA SVE OSTALE ŠTETE ILI GUBITKE NASTALE USLED KORIŠĆENJA DOKUMENTA I NJEGOVIH IZMENJENIH VERZIJA ČAK I AKO JE OŠTEĆENA STRANA BILA OBAVEŠTENA O MOGUĆNOSTI NASTANKA TE ŠTETE.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Callum</firstname> 
+	<surname>McKenzie</surname> 
+	<affiliation> 
+	  <address> <email>callum@spooky-possum.org</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+	
+    <revhistory>
+      <revision> 
+	<revnumber>Uputstvo za Mine v2.9</revnumber> 
+	<date>Januar 2006.</date> 
+	<revdescription> 
+	  <para role="author">Callum McKenzie <email>callum@spooky-possum.org</email></para>
+	  <para role="publisher">Projekat Gnomove dokumentacije</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Ovo uputstvo je napisano za Mine 2.14.</releaseinfo>
+    <!-- The following feedback information only applies to applications
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Primedbe</title> 
+      <para>Da biste prijavili grešku ili dali predlog u vezi programa <application>Mine</application> ili njegovog uputstva, pratite smernice na <ulink url="ghelp:user-guide?feedback-bugs" type="help">Gnomovoj strani za primedbe</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Mine</primary> 
+  </indexterm>
+  
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+  <sect1 id="intro">
+    <title>Uvod</title>
+
+    <para><application><application>Mine</application></application> je slagalica u kojoj pronalazite mine koje plutaju po moru koristeći samo pamet i malo sreće.</para>
+
+    <para>Igru počinjete na tabli pokrivenoj kvadratima iza kojih ne znate šta se nalazi. Klikom na kvadrat se otkriva šta je ispod njega: ili čisto more ili mina. Ako naiđete na minu, loše vam se piše i igra je gotova. Ako otkrijete prazan kvadrat, preživeli ste i pokušavate dalje. Mi vam dajemo malu pomoć; ako nađete prazno parče mora, prikazuje se broj koji vam govori koliko mina ima u susednim kvadratima (ako nema broja, znači da nema mina u okolini). Onda kada nađete nekoliko praznih kvadrata, možete da počnete i sami da zaključujete koji kvadrati imaju mine, a koji ne. Pobedili ste onda kada otkrijete sve kvadrate bez mina i označite sve kvadrate sa minama.</para>
+
+    <figure id="main-window">
+      <title>Delovi igre: početak, igra, gubitak i pobeda.</title>
+    	    <mediaobject><imageobject>
+    	      <imagedata fileref="figures/main-window.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <para>Kvadrat označavate da ima minu tako što kliknete desnim klikom na njega i onda se na njega postavlja zastavica. Ako kliknete na kvadrat koji ima upisan broj, a okolo ste označili isti taj broj kvadrata za koje mislite da imaju mine, ostali kvadrati se otkrivaju. Ako niste ispravno označili mine, sve eksplodira i igra je gotova. Klik na kvadrate koji nemaju mine u blizini (tj. prazni kvadrati) će automatski otvarati ostale okolne kvadrate.</para>
+
+    <figure id="status-bar">
+      <title>Važan podatak.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/statusbar.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <para>Vreme vam se meri. Da biste bili dobri u ovoj igri, morati biti i brzi i precizni. Tek kada nađete sve mine i otkrijete sva polja bez mina, vreme staje. Vaš rezultat je vreme koje ste potrošili; što kraće, to bolje.</para>
+
+    <para>Vreme koje ste potrošili se prikazuje u donjem desnom uglu prozora. Pored njega, sa leve strane, je broj mina koje ste otkrili i ukupan broj mina sakrivenih na tabli.</para>
+
+    <figure id="faces">
+      <title>Žuto lice vam pokazuje kako vam ide.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/faces.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <!-- Face graphics image. -->
+
+  </sect1>
+
+
+  <sect1 id="details">
+    <title>Detalji</title>
+
+    <para>Ova odeljak pruža podatke o kontrolama i važnim stavkama menija. Ako vam treba pomoć o pronalaženju mina, pogledajte <link linkend="strategy">odeljak za strategiju</link>.</para>
+
+    <sect2>
+      <title>Cilj</title>
+
+      <para>Polazeći od mora prekrivenog kvadrata sa nepoznatim sadržajem ispod njih, morate da označite sve kvadrate sa minama i otkrijete čiste kvadrate. Zapravo, ne morate da označite svaki kvadrat koji ima minu, ali je tako mnogo lakše. Kada otkrijete sve kvadrate koji nemaju mina, igra će sama označiti ostale minirane kvadrate.</para>
+
+      <para>Ako kliknete na minu, ili pokušate da automatski očistite kvadrat sa minom, gubite. Da bi se izbegle slučajne greške, nije vam dozvoljeno da automatski očistite kvadrat osim ako se broj okolnih označenih mina ne slaže sa brojem u kvadratu koji klikćete.</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Korišćenje miša</title>
+      
+      <informaltable>
+        <tgroup cols="2">
+	<!-- FIXME: proper headers. -->
+	  <thead>
+	    <row>
+	      <entry>Akcija</entry><entry>Rezultat</entry>
+	    </row>
+	  </thead>
+	  <tbody>
+	    <row>
+	      <entry>Levi klik na neotkriveno polje.</entry>
+	      <entry>Otkriva sadržaj polja. Pukovnik ili pokojnik.</entry>
+	    </row>
+	    <row>
+	      <entry>Levi klik na otkriveno polje.</entry>
+	      <entry>Automatsko čišćenje. Otkriva neobeležena polja oko kliknutog polja, ali samo ako se broj obeleženih okolnih polja slaže sa brojem na kliknutom polju.</entry>
+	    </row>
+	    <row>
+	      <entry>Desni klik na neotkriveno polje.</entry>
+	      <entry>Obeležava polje kao minu. Ako je polje već označeno, oznaka će biti uklonjena.</entry>
+	    </row>
+	  </tbody>
+	</tgroup>
+      </informaltable>
+
+      <tip><para>Ako ste navikli na tradicionalnije kontrole mišem, ne brinite, i one rade.</para></tip>
+    </sect2>
+
+    <sect2>
+      <title>Veličina table i težina</title>
+
+      <para>Odabiranjem <menuchoice><guimenu>Podešavanja</guimenu><guimenuitem>Postavke</guimenuitem></menuchoice> iz menija možete da promenite veličinu table. Veće igre očito traju duže i zahtevaju bolju koncentraciju. Manje igre su mnogo brže. U ponudi su mala, srednja, velika i proizvoljna veličina table.</para> 
+
+    <figure id="preferences-img">
+      <title>Dijalog postavki.</title>
+    	    <mediaobject><imageobject>
+	      <imagedata fileref="figures/preferences.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+      <para>Na desnoj strani prozorčeta su tri parametra za podešavanje proizvoljne veličine. „Vodoravno“ i „Uspravno„ su širina i visina željene veličine table u kvadratima. Broj mina je - očigledno - broj mina koje treba da nađete. Ako je ovaj broj prevelik ili premali, igra postaje veoma laka. Broj mina je ograničen na vrednost malo manju od ukupnog broja kvadrata.</para>
+
+    </sect2>
+    
+    <sect2>
+      <title>„Nisam siguran“ oznake</title>
+
+      <informalfigure id="imnotsureflagsimg">
+    	    <mediaobject><imageobject>
+  	      <imagedata fileref="figures/imnotsureflagscheckbox.png" format="PNG"/>
+	    </imageobject></mediaobject>
+      </informalfigure>
+
+      <para>Postoji dugme za štikliranje na prozorčetu postavku na kome piše „Koristi „Nisam siguran“ oznake“. Ako ga štiklirate, desnim klikom dobijate i obične zastavice za označavanje da kvadrat ima minu i zastavicu sa znakom pitanja. Zastavice se menjaju u krug kliktanjem desnog klika uzastopno. Ova nova zastavica vam pomaže u odlučivanju kada mislite da je ispod kvadrata mina, ali niste baš sigurni. Ove zastavice nemaju nikakav uticaj na igru; i dalje morate da imate tačan broj crvenih zastavica da biste čistili polja oko kvadrata sa brojem.</para>
+
+      <figure id="flags-img">
+	<title>Poredak zastavica kada su uključene „Nisam siguran“ zastavice.</title>
+    	    <mediaobject><imageobject>
+  	      <imagedata fileref="figures/flags.png" format="PNG"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+    </sect2>
+
+    <sect2>
+      <title>Upozorenje za previše zastavica</title>
+
+      <para>Drugo dugme za štikliranje se zove „Upozorenje za previše zastavica“. Ova mogućnost će vam prikazati upozorenje kada stavite previše zastavica. Podrazumevano je isključeno, jer pruža previše pomoći da bi moglo da se okarakteriše kao „varanje“.</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Saveti</title>
+    
+      <para>Ako se zaglavite - moguće je da se desi da ostanete sa dve opcije koje se ne mogu logički rešiti - onda ili možete da pogađate, ili da pitate za savet. Kada odaberete <guimenuitem>Savet</guimenuitem> iz menija <guimenu>Igra</guimenu> otkriva se jedno polje.(plus dodatna polja ako je polje prazno). Odabir polja za otkrivanje je slučajan, ali bi trebalo da bude od pomoći. Postoji i kazna od 10 dodatih sekundi svaki put kada iskoristite savet.</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Najbolji rezultati</title>
+
+      <para>Ako vam je rezultat među deset najboljih, bićete prikazani na spisku najboljih rezultata i moći ćete da izmenite ime koje se beleži u tabeli rezultata. Takođe možete pregledati rezultate kasnije odabirajući <guimenuitem>Rezultati</guimenuitem> iz menija <guimenu>Igra</guimenu>. Padajuća lista na vrhu dijaloga vam omogućava da pogledate rezultate i za ostale veličine table.</para>
+
+    <figure id="high-score-img">
+      <title>Dijalog najboljih rezultata.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/highscores.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+      <tip>
+        <para>Najbolji rezultati za proizvoljnu veličine tabli su obično bez smisla. Svaki igrač može da smanji tablu i postigne bolje vreme. Ako ipak igrate samo jednu proizvoljnu veličinu, onda će vam ovi rezultati reći kako napredujete. To je jedini razlog što se ona beleži.</para>
+      </tip>
+    </sect2>
+
+    <sect2>
+      <title>Veličina prozora</title>
+      
+      <para>Proširivanjem ili smanjivanjem prozora i polja postaju veća ili manja. Ako želite što bolje iskoristiti ekran, postoji i opcija <guimenuitem>Ceo ekran</guimenuitem> u meniju <guimenu>Podešavanja</guimenu>. Takođe možete koristiti i taster <keycap>F11</keycap> da uključite i isključite režim celog ekrana.</para>
+    </sect2>
+
+    <sect2>
+      <title>Pauziranje igre</title>
+
+      <para>Igra se automatski pauzira kada pokrenete neki drugi prozor, a vi je možete pauzirati ako odaberete <guimenuitem>Pauza</guimenuitem> iz menija <guimenu>Igra</guimenu>. Tabla sa igru postaje nevidljiva da ne biste mogli da razmišljate dok je vreme zaustavljeno. Da biste ponovo počeli da igrate, pritisnete dugme sa oznakom „Pritisnite za nastavak“.</para>
+    </sect2>
+
+  </sect1>
+
+ <!-- ================ Usage ================================ -->
+
+  <sect1 id="strategy">
+    <title>Strategija</title>
+
+    <para>Prva polovina ovog odeljka objašnjava osnove zaključivanja gde su mine. Ako vam je poznato kako da igrate igru, preskočite do pododeljka <link linkend="advanced">Napredne pozicije</link>.</para>
+
+    <sect2>
+      <title>Osnove</title>
+      <para>Postoji nekoliko osnovnih pozicija koje bi trebalo da su skroz očigledne, ali ako vam igranje igre nije jasno, mogu da budu korisne. Prvi slučaj je kada imate pojedinačni neotkriveni kvadrat, a na okolnim kvadratima je 1. Taj neotkriveni kvadrat je mina.</para>
+
+      <figure>
+        <title>Najprostiji slučaj.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-1.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Drugi najprostiji slučaj je kada imate dva neotkrivena kvadrata jedan do drugog, a oba susedna kvadrata sa iste strane su označena sa 2. Ako nema drugih neotkrivenih susednih kvadrata, onda su oba ova kvadrata mine.</para>
+
+      <figure>
+        <title>Slučaj sa dve mine.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-2.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Konačno, kada imate tri neotkrivena kvadrata za redom i kvadrat do njih u sredini je označen sa 3 (i ovaj put, ovaj kvadrat ne treba da ima ostalih neotkrivenih suseda), onda su sva tri neotkrivena kvadrata mine.</para>
+
+      <figure>
+        <title>Slučaj sa tri mine.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-3.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Ovo su najprostiji slučajevi. Ostale permutacije ove tri situacije su isto moguće, na primer, tri kvadrata u prethodnom primeru su mogla da budu u obliku latiničnog slova L.</para>
+      <para>Prostom analizom ćete rešiti većinu slagalica, ali ne i sve. Pre nego što odete na sledeći odeljak, gde vam dajemo naprednije savete, trebalo bi da malo igrate i vidite da li možete sami da dođete do njih.</para>
+    </sect2>
+
+    <sect2 id="advanced">
+      <title>Napredne situacije</title>
+      
+      <para>Ovo su malo komplikovanije pozicije. Prilično su nego one u prethodnom odeljku, tako da se nadamo da ste nas poslušali i prvo malo igrali.</para>
+
+      <para>Na sledećem primeru, mine su levo od jedinica. Ovo zaključujemo metodom eliminacije. Da je kvadrat levo od dvojke mina, onda bi oba kvadrata sa jedinicama imala istu minu i ne bi bilo mesta za drugu minu kvadrata sa dvojkom (jer bi onda jedan od kvadrata sa jedinicama imao dve mine do njega). Ako eliminišemo kvadrat u sredini da može da bude mina, onda su jedine mogućnosti za minu preostala dva kvadrata.</para>
+
+      <figure>
+        <title>Ne baš očigledan obrazac</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-1.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Ova pozicija može biti prikrivena. Na primer, pogledajte sliku ispod. To je ista ta pozicija, ali je dodatni kvadrat sa minom sa desne strane povećao sve brojeve za jedan.</para>
+
+      <figure>
+        <title>Dodatna mina prikriva prethodni primer.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-2.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+<para>Sada ćemo da probamo komplikovaniji primer. On pokazuje dve stvari. Prva je da, čak iako niste sigurni koji kvadrati imaju mine, značiće i da ograničite izbor. Druga je da je poznavanje koji kvadrati nemaju mine jednako dobro kao poznavanje onih koji ih imaju.</para>
+
+<para>Pretpostavimo da, na slici ispod, počinjemo tako što znamo da gornji levi kvadrat ima minu, tako da dva leva kvadrata koji su označeni sa 2 imaju još jednu minu. Sada primetite da, zbog skroz levog kvadrata sa dvojkom, jedan od dva neotkrivena kvadrata ispod njega mora imati minu, ali još ne znamo koji. Pošto bar jedan od ova dva kvadrata mora imati minu, a oba su susedi drugom kvadratu sa dvojkom, to znači da je uslov za broj mina oko drugog kvadrata ispunjen (iako ne znamo tačno gde). Ovo takođe znači i da je kvadrat ispod kvadrata sa četvorkom takođe bez mine jer je sused kvadrata sa dvojkom, ali ne i sa prethodna dva kvadrata. Ako eliminišemo ovaj kvadrat bez mine, oko kvadrata sa četvorkom ostaje samo 4 kvadrata, od kojih svi moraju da imaju mine. Ne samo da nam to govori gde su mine oko kvadrata sa četvorkom, nego nam govori i koji kvadrat ispod kvadrata sa dvojkom ima minu!</para>
+
+      <figure>
+        <title>Ne može teže od ovog.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-3.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+
+<para>Ovakve pozicije su prepredene. U svim ostalim primerima možete učiti pamteći obrasce i dobro razmišljajući. Pozicije kao ova na slici se ne pojavljuju često i nije ih lako prepoznati. Često je lakše ne osvrtati se na njih i igrati na drugim delovima table nadajući se da ćete očistiti te kvadrate sa druge strane.</para>
+
+</sect2>
+<sect2>
+
+    <title>Saveti</title>
+
+    <para>Zapamtite, ivica table je isto što i velika čista površina (ali bez brojeva). Često je kretanje sa kraja table najlakši put napred.</para>
+
+    <para>Nekad se može desiti da ste u poziciji kada ne postoji način da zaključite gde su mine. U ovakvim slučajevima možete ili da pogađate ili da koristite savet (<menuchoice><guimenu>Igra</guimenu><guimenuitem>Savet</guimenuitem></menuchoice>). Nekad pozicija nije 50%/50% i umesto da iskoristite savet, možete ići na sreću pogađajući povoljniji ishod.</para>
+
+    <para>Jedan poslednji savet: jel se sećate brojača u donjem desnom uglu prozora koji vam govori koliko vam je mina ostalo? Često, pred kraj igre, ovaj broj vam može značiti da zaključite koja su moguća mesta gde mine mogu da budu. Kako vam tačno ovo može značiti se ostavlja vama da smislite.</para>
+
+    </sect2>
+ </sect1>
+
+ <sect1 id="authors">
+  <title>Autori</title>
+  <para><application>Mine</application> je napisao Pista (<email>szekeres@cyberspace.mht.bme.hu</email>). Ovo uputstvo je napisao Callum McKenzie (<email>callum@spooky-possum.org</email>) uz pomoć Vincent Povirk-a i korišćenja prethodnog uputstva koje je napisao Tim Riehle (<email>tkriehle@citilink.com</email>). Da biste prijavili greške ili dali predlog u vezi ovog programa ili njegovog uputstva, pratite smernice iz <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumenta</ulink>.</para>
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licenca</title>
+  <para>Ovaj program je slobodan softver; možete ga raspodeljivati i/ili ga menjati pod uslovima <citetitle><ulink type="help" url="gnome-help:gpl">GNU Opšte Javne Licence (GNU GPL)</ulink></citetitle> kako je objavljuje Zadužbina za Slobodni Softver (FSF); bilo verzije 2 te Licence, bilo (po vašem nahođenju) bilo koje novije verzije.</para>
+  <para>Ovaj program se raspodeljuje u nadi da će biti od koristi, ali BEZ IKAKVIH GARANCIJA; čak i bez podrazumevane garancije KORISNOSTI ili PRILAGOĐENOSTI ODREĐENOJ NAMENI.  Vidite <citetitle>GNU Opštu Javnu Licencu</citetitle> za više detalja.</para>
+  <para>Primerak <citetitle>GNU Opšte Javne Licence</citetitle> je uključen u dodatku <citetitle>Gnomovog korisničkog vodiča</citetitle>. Takođe možete nabaviti primerak <citetitle>GNU Opšte Javne Licence</citetitle> od Zadužbine za Slobodni Softver odlazeći na <ulink url="http://www.fsf.org" type="http">njihovu veb adresu</ulink> ili pišući na <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

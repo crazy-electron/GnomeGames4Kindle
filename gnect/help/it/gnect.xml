@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Four-in-a-Row</application>">
+<!ENTITY appname "Four-in-a-Row">
+<!ENTITY version "2.8">
+]>
+<!-- ===== DOCUMENT HEADER ===== -->
+<article id="index" lang="it">
+<!-- please do not change the id -->
+<!-- translators, change lang to the appropriate code -->
+  <articleinfo>
+    <title>Manuale di Forza 4</title>
+    <abstract role="description">
+      <para>Lo scopo di Forza 4 è allineare quattro pezzi in modo orizzontale, verticale o diagonale mentre l'avversario cerca di bloccare le proprie mosse e allineare i suoi pezzi. È possibile giocare a Forza 4 contro un altro giocatore umano oppure contro il computer.</para>
+    </abstract>
+
+    <copyright>
+      <year>2001-2002</year>
+      <holder>Timothy Musson</holder>
+    </copyright><copyright><year>2008</year><holder>Alessio Treglia (quadrispro@ubuntu-it.org)</holder></copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+     <year>2000</year>
+     <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+    <publisher role="maintainer"> 
+      <publishername>Progetto di documentazione GNOME</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+	<para>Questo documento può essere copiato, distribuito e/o modificato solo in conformità con i termini della GNU Free Documentation License (GFDL) Versione 1.1 o delle versioni successive pubblicate dalla Free Software Foundation senza sezioni invariabili, frontespizi e testi di copertina. Una copia della GFDL è disponibile a questo <ulink type="help" url="ghelp:fdl">collegamento</ulink> o nel file COPYING-DOCS distribuito con questo manuale.</para>
+         <para>Questo manuale è parte di una collezione di manuali di GNOME distribuita sotto la GFDL. Se si vuole distribuire questo manuale separatamente dalla collezione, lo si può fare aggiungendo una copia della licenza al manuale, come descritto nella sezione 6 della licenza.</para>
+
+	<para>Molti dei nomi utilizzati dalle aziende per distinguere i loro prodotti e servizi sono rivendicati come marchi commerciali. Dove questi nomi appaiono nella documentazione di GNOME, e i membri del progetto di documentazione di GNOME sono informati di questi marchi commerciali, allora i nomi sono in lettere maiuscole o con la lettera iniziale maiuscola.</para>
+
+	<para>QUESTO DOCUMENTO E LE SUE VERSIONI MODIFICATE SONO FORNITI IN BASE AI TERMINI DELLA GNU FREE DOCUMENTATION LICENSE, SOTTO INTESO CHE: <orderedlist>
+		<listitem>
+		  <para>IL DOCUMENTO VIENE FORNITO SENZA GARANZIE DI ALCUN TIPO,ESPLICITE O IMPLICITE, INCLUSE, MA SENZA LIMITAZIONE, LE GARANZIE ATTESTANTI CHE IL DOCUMENTO O LE SUE VERSIONI MODIFICATE SIANO PRIVI DI DIFETTI, COMMERCIALIZZABILI, IDONEI A UN DETERMINATO SCOPO O CHE NON VIOLINO DIRITTI DI TERZI. SI DECLINA QUALUNQUE RESPONSABILITÀ RIGUARDO AI RISCHI INERENTI LA QUALITÀ, L'ACCURATEZZA E LE PRESTAZIONI DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA. QUALORA UN DOCUMENTO O UNA SUA VERSIONE MODIFICATA DOVESSERO PRESENTARE QUALUNQUE TIPO DI DIFETTO,IL COSTO DI EVENTUALI INTERVENTI DI ASSISTENZA, RIPARAZIONE O CORREZIONE SARÀ A CARICO DELL'UTENTE (NON DEL REDATTORE INIZIALE, DELL'AUTORE O DI ALTRI COLLABORATORI). QUESTA LIMITAZIONE DELLA GARANZIA COSTITUISCE PARTE ESSENZIALE DELLA LICENZA. L'USO DEL DOCUMENTO O DELLE SUE VERSIONI MODIFICATE È CONSENTITO SOLO ENTRO I TERMINI DI QUESTA LIMITAZIONE DELLA GARANZIA; E</para>
+		</listitem>
+		<listitem>
+		  <para>IN NESSUNA CIRCOSTANZA E PER NESSUNA RAGIONE LEGALE, INCLUSI I PRINCIPI DI COLPA (INCLUSA LA NEGLIGENZA), ACCORDO CONTRATTUALE O ALTRO, SARÀ POSSIBILE CONSIDERARE L'AUTORE, IL REDATTORE INIZIALE, GLI ALTRI COLLABORATORI, QUALUNQUE DISTRIBUTORE DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA O QUALUNQUE FORNITORE DELLE PERSONE CITATE, RESPONSABILE NEI CONFRONTI DI QUALUNQUE PERSONA PER DANNI DIRETTI, INDIRETTI, SPECIALI, INCIDENTALI O CONSEGUENTI DI QUALUNQUE NATURA, INCLUSI, MA SENZA LIMITAZIONE, I DANNI PER PERDITA DI AVVIAMENTO, INTERRUZIONE DEL LAVORO, GUASTO O MALFUNZIONAMENTO DEL COMPUTER O QUALUNQUE ALTRO DANNO O PERDITA DERIVANTE O CORRELATA ALL'USO DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA, ANCHE QUALORA LE PERSONE CITATE FOSSERO STATE INFORMATE DELLA POSSIBILITÀ DI TALI DANNI.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+
+    <authorgroup>
+      <author>
+        <firstname>Timothy</firstname>
+        <surname>Musson</surname>
+        <affiliation>
+          <!-- <orgname></orgname> -->
+          <address><email>trmusson@ihug.co.nz</email></address>
+        </affiliation>
+      </author>
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+
+      <othercredit role="translator">
+        <firstname>Latin</firstname> 
+        <surname>Translator 1</surname> 
+        <affiliation> 
+          <orgname>Latin Translation Team</orgname> 
+          <address> <email>translator@gnome.org</email> </address> 
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+        <revnumber>Manuale di Forza 4 V2.8</revnumber>
+        <date>Settembre 2004</date>
+        <revdescription>
+          <para role="author">Timothy Musson <email>trmusson@ihug.co.nz</email></para>
+          <para role="publisher"/>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>Questo manuale si riferisce alla versione 2.12 di Forza 4.</releaseinfo>
+
+    <legalnotice>
+      <title>Commenti</title>
+      <para>Per segnalare un problema o inviare suggerimenti sull'applicazione <application>Forza 4</application> o su questo manuale, seguire le istruzioni presenti alla <ulink url="ghelp:user-guide?feedback-bugs" type="help">pagina di commenti su GNOME</ulink>.</para>
+    </legalnotice>
+  </articleinfo>
+
+
+  <!-- ============= Document Body ============================= -->
+
+  <!-- ============= Introduction ============================== -->
+
+
+  <sect1 id="intro">
+
+    <title>Introduzione</title>
+
+    <para><application>Forza 4</application> è una versione dell'omonimo gioco per il Progetto GNOME. Lo scopo del gioco è costruire una linea di quattro dei propri oggetti mentre si cerca di fermare la costruzione da parte dell'avversario (può essere umano oppure il computer) di una propria linea. Una linea può essere orizzontale, verticale o diagonale.</para>
+
+    <para>Per avviare <application>Forza 4</application>, selezionare <guimenuitem>Forza 4</guimenuitem> dal sottomenù <guisubmenu>Giochi</guisubmenu> del menù <guimenu>Applicazioni</guimenu>, oppure digitare <command>gnect</command> in una finestra di terminale.</para>
+
+    <para><application>Forza 4</application> è incluso nel pacchetto <filename>GNOME-games</filename>, il quale fa parte dell'ambiente grafico GNOME. Questo documento si riferisce alla versione 2.8 di <application>Forza 4</application>.</para>
+
+   <para>Fra le caratteristiche di Forza 4 è presente anche il supporto <link linkend="network-games">multigiocatore</link> per due giocatori, anche in rete.</para>
+
+
+  </sect1>
+
+
+  <!-- ============= Usage ===================================== -->
+
+
+  <sect1 id="usage">
+
+    <title>Utilizzo di base</title>
+
+    <!-- ===== How to play ===== -->
+
+    <sect2 id="playing">
+
+      <title>Giocare a Forza 4</title>
+
+      <para>Per iniziare una nuova partita di Forza 4 scegliere <menuchoice><guimenu>Gioco</guimenu><guimenuitem>Nuovo</guimenuitem></menuchoice>.</para>
+
+      <para>Il <interface>tavolo di gioco</interface> consiste in sette colonne e sei righe. Sopra di esso è presente una riga speciale che mostra il giocatore corrente e il prossimo pezzo da giocare. Ogni mossa consiste nello spostamento di un pezzo in una delle colonne. Il pezzo verrà posizionato nella riga libera più alta della colonna scelta.</para>
+        
+      <para>Per fare una mossa fare clic con il mouse su una colonna. Per giocare con la tastiera, spostare il pezzo nella riga superiore con i tasti freccia sinistra e freccia destra e lasciarlo cadere nella posizione desiderata con il tasto freccia giù. Il proprio pezzo verrà fatto cadere nella riga libera più alta della colonna scelta.</para>
+
+      <!-- Figure -->
+      <mediaobject id="mainwindow-fig">
+        <imageobject>
+          <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="trm"/>
+        </imageobject>
+        <textobject>
+          <phrase>Finestra principale di Forza 4</phrase>
+        </textobject>
+        <caption><para>Finestra principale di Forza 4</para></caption>
+      </mediaobject>
+
+      <para>La partita viene vinta dal giocatore che riesce ad allineare quattro dei suoi pezzi in modo orizzontale, verticale o diagonale. Se il tavolo di gioco viene riempito senza che nessuno dei due giocatori risulti il vincitore, la partita finirà con un pareggio.</para>
+
+    </sect2>
+    
+    <!-- ===== Commands ===== -->  
+    
+    <sect2 id="commands">
+      <title>Comandi</title>
+      <anchor id="menubar"/><!-- id for removed section -->
+      
+      <para>Per ripetere una mossa, scegliere <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>Z</keycap></keycombo></shortcut><guimenuitem>Annulla mossa</guimenuitem></menuchoice>. Se si sta giocando contro un amico, verrà annullata una sola mossa, se invece si sta giocando contro il computer, verrà annullata l'ultima mossa del computer e poi la propria. Ripetere tale azione comporterà il ritorno del tavolo di gioco allo stato iniziale.</para>
+      <para>Scegliere <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>H</keycap></keycombo></shortcut><guimenuitem>Suggerimento</guimenuitem></menuchoice> per avere un suggerimento dal computer per la prossima mossa. Tale suggerimento viene mostrato nella barra di stato.</para>
+      
+      <para>Scegliere <menuchoice><guimenuitem>Punteggi</guimenuitem></menuchoice> per mostrare una lista delle sconfitte e dei pareggi per la sessione corrente. I punteggi verranno reimpostati a 0 se in Preferenze viene modificata la selezione dei giocatori.</para>      
+
+      
+    </sect2>  
+
+    <!-- ===== Preferences ===== -->
+
+    <sect2 id="prefsdialog">
+
+      <title>Preferenze</title>
+
+      <para>Per modificare le preferenze del gioco, selezionare <guimenuitem>Preferenze</guimenuitem> dal menù <guimenu>Impostazioni</guimenu>. Questo aprirà la finestra <interface>Preferenze</interface>.</para>
+
+      <para>Le opzioni di configurazioni nella scheda <guilabel>Gioco</guilabel> sono le seguenti: <variablelist>
+
+          <varlistentry>
+            <term><guilabel>Giocatore uno</guilabel> e <guilabel>Giocatore due</guilabel></term>
+            <listitem>
+              <para>Queste due colonne indicano indicano a <application>Forza 4</application> chi sta giocando e, se uno di questi è il computer, quanto difficile dovrà essere la partita. Per giocare contro un amico, selezionare Umano per entrambi i giocatori (Giocatore uno e Giocatore due).</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Tema</guilabel></term>
+            <listitem>
+              <para>Il menu del tema elenca i temi disponibili e lascia scegliere all'utente quello preferito.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Abilitare animazione</guilabel></term>
+            <listitem>
+              <para>Qui è possibile abilitare o disabilitare l'animazione del gioco.</para>
+            </listitem>
+          </varlistentry>
+
+        </variablelist></para>
+      <para>Infine è presente anche una scheda <guilabel>Controlli</guilabel> per modificare i controlli da tastiera. Per modificare un controllo, fare clic due volte sulla voce corrispondente e premere il nuovo tasto.</para>
+
+    </sect2>
+  </sect1>
+
+
+  <!-- ===== Custom Themes ===================================== -->
+
+
+  <sect1 id="custom">
+
+    <title>Creare nuovi temi</title>
+
+    <para>Questa sezione è inclusa nel caso si desideri creare il proprio tema per <application>Forza 4</application>. Si presuppone che si abbia una certa familiarità con l'editing di testo di base, i software grafici e la riga di comando.</para>
+
+    <sect2 id="images">
+
+      <title>Immagini</title>
+
+      <para>Una collezione di pezzi di <application>Forza 4</application> contiene sei immagini di eguale dimensione, allineate orizzontalmente. Da sinistra a destra:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>un pezzo del giocatore uno come appare sul tavolo di gioco;</para>
+        </listitem>
+        <listitem>
+          <para>un pezzo del giocatore due come appare sul tavolo di gioco;</para>
+        </listitem>
+        <listitem>
+          <para>lo sfondo del tavolo di gioco;</para>
+        </listitem>
+        <listitem>
+          <para>lo sfondo della riga superiore;</para>
+        </listitem>
+        <listitem>
+          <para>un pezzo del giocatore uno come appare sulla riga superiore;</para>
+        </listitem>
+        <listitem>
+          <para>un pezzo del giocatore due come appare sulla riga superiore.</para>
+        </listitem>
+      </orderedlist>
+
+      <figure id="shot1">
+        <title>Una collezione di pezzi di esempio</title>
+        <screenshot>
+          <screeninfo>Questa immagine mostra i sei pezzi di una collezione</screeninfo>
+          <graphic format="PNG" fileref="figures/tileset.png" srccredit="TRM"/>
+        </screenshot>
+      </figure>
+
+      <para>I pezzi tre e quattro vengono ripetuti sulla tavola di gioco e sulla riga superiore a meno che nel tema non sia stata specificata un'immagine di sfondo completa per la finestra.</para>
+
+      <tip>
+        <title>Consiglio</title>
+        <para>Per le collezioni dei pezzi è raccomandato il formato PNG. Se si desidera visualizzare lo sfondo attraverso i pezzi, il primo, il secondo, il quinto e il sesto pezzo possono contenere alcune trasparenze. Il terzo e il quarto pezzo invece devono essere solidi, senza alcuna trasparenza, anche se con il proprio tema si usa un'immagine completa per lo sfondo della finestra.</para>
+      </tip>
+
+      <tip>
+        <title>Consiglio</title>
+        <para>I pezzi possono essere quadrati o rettangolari e di qualsiasi dimensione si desideri. La maggior parte delle collezioni fornite con <application>Forza 4</application> utilizzano pezzi di dimensioni 50 pixel per 50 pixel.</para>
+      </tip>
+
+      <para>Per un'immagine di sfondo della finestra c'è un po' più di lavoro da fare. Si supponga che le dimensioni dei pezzi siano 50 per 50 pixel. La tavola di gioco, compresa la riga superiore, ha dimensioni pari a 7 per 7 pezzi, l'immagine di sfondo ideale per la propria collezione dovrebbe essere di dimensioni pari a 350 per 350 pixel.</para>
+
+      <tip>
+        <title>Consiglio</title>
+        <para><application>Forza 4</application> scala automaticamente l'immagine di sfondo nel caso non dovesse corrispondere alla collezione di pezzi. Ciò significa che, utilizzando la stessa immagine di sfondo, si possono creare delle versioni "grandi" e "piccole" del proprio tema così da avere una grande e una piccola versione della propria collezione di pezzi.</para>
+      </tip>
+
+      <para>Dunque, ora si possiede una collezione di pezzi e forse anche un'immagine di sfondo da utilizzare con essa; il passo successivo consiste nel metterli nel posto giusto.</para>
+
+    </sect2>
+
+
+    <sect2 id="directories">
+
+      <title>Mettere insieme i pezzi</title>
+
+      <para>L'ultimo passo consiste nel posizionare le proprie immagini dove <application>Forza 4</application> può trovarle. È possibile inserire nella cartella di installazione di Forza 4 (che varia a seconda del proprio sistema), ma la propria cartella home rappresenta probabilmente un'idea migliore.</para>
+
+      <para>Creare una cartella <filename class="directory">~/.gnect</filename> e una cartella <filename class="directory">~/.gnect/pixmaps</filename>. La scelta di questi nomi è importante poichè <application>Forza 4</application> non cercherà i file in altri posti diversi.</para>
+
+      <para>Copiare le proprie immagini nella cartella pixmaps.</para>
+
+      <para>Se si avvia <application>Forza 4</application> dalla riga di comando, verranno forniti indizi su qualsiasi eventuale problema con il nuovo tema. Se non vi sono problemi, il nuovo tema verrà elencato nella finestra di dialogo <interface>Preferenze</interface>.</para>
+
+      <para>Divertitevi!</para>
+
+    </sect2>
+
+
+  </sect1>
+
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Partite di rete</title>
+  <para><application>Forza 4</application> ha il supporto per le partite in rete multigiocatore fornite da <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink>. Collegandosi a un server su Internet di <application>Forza 4</application> è possibile sfidare altri giocatori in partite multigiocatore. Per avere notizie, aggiornamenti e una lista di server ai quali connettersi, consultare il <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">sito web di gnome-games</ulink>.</para>
+  <para>Per iniziare una partita multigiocatore di <application>Forza 4</application>, selezionare <menuchoice><guimenu>Gioco</guimenu><guimenuitem>Partita in rete</guimenuitem></menuchoice> dal menù dell'applicazione.</para> 
+
+<sect2 id="connecting">
+<title>Collegarsi a un server di rete di Forza 4</title>
+<para>Avviando una nuova partita di rete viene mostrata la finestra di dialogo di connessione di Forza 4. In questa finestra è possibile scegliere un server al quale connettersi e il nome utente da utilizzare per la connessione.</para>
+
+<para>È possibile collegarsi a un server utilizzando un accesso anonimo oppure un normale account già registrato. Gli account anonimi consentono di accedere in anonimato, mentre un accesso normale consente di riservare il proprio nome utente, protetto da una password a scelta dell'utente.</para>
+
+<para>L'opzione <guimenuitem>Accesso anonimo</guimenuitem> va selezionata se si desidera utilizzare un account anonimo. Se si desidera creare un nuovo account normale, selezionare l'opzione <guimenuitem>Primo accesso</guimenuitem>, con un nome utente, una password e un indirizzo email a scelta. Se si ha già creato un account, è possibile collegarsi selezionando l'opzione <guimenuitem>Accesso normale</guimenuitem>, inserendo il proprio nome utente e la propria password.</para>
+<para>Per collegarsi a un server è sufficiente fare clic sul pulsante <guimenuitem>Connetti</guimenuitem>.</para>
+<figure id="connect">
+<title>La finestra di dialogo della connessione di <application>Forza 4</application>.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>La finestra di dialogo della connessione di <application>Forza 4</application>.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Entrare in una stanza da gioco</title>
+<para>Una volta connessi al server è possibile scegliere la stanza nella quale entrare. Per partecipare a una partita multigiocatore di Forza 4, selezionare la stanza Four-in-a-Row. Se invece si desidera ospitare una partita è sufficiente fare clic sul pulsante Avvia. Verrà creato un nuovo tavolo al quale altri giocatori potranno partecipare per iniziare delle nuove sfide. Se sono presenti altre partite già iniziate è possibile fare clic sopra un tavolo di gioco già avviato per parteciparvi. L'elenco dei tavoli di gioco sulla destra mostra il numero di posti disponibili, che rappresentano il numero di giocatori che possono prendere parte al tavolo di gioco.</para>
+<figure id="tables">
+<title>Questo dialogo di rete di Forza 4 consente di partecipare a una partita per cercare altri giocatori.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Questo dialogo di rete di Forza 4 consente di partecipare a una partita per cercare altri giocatori.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>Quando si crea un nuovo tavolo per partite di Forza 4 viene mostrato un dialogo di preferenze che consente di personalizzare alcuni aspetti del gioco, come il numero minimo di giocatori per la partita. Una volta occupati tutti i posti liberi, nessun giocatore potrà più partecipare al tavolo di gioco.</para>
+<para>È possibile chiacchierare con gli altri giocatori durante le partite di rete. Si possono chiedere aiuti e consigli, ma bisogna essere sempre gentili nei confronti degli altri giocatori.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Aspettare che altri giocatori partecipino alla partita</title>
+<para>Dopo aver preso parte a un tavolo di gioco sarà necessario attendere che un numero sufficiente di giocatori entri nel gioco. La voce di menù <guimenuitem>Elenco giocatori</guimenuitem> consente di vedere un elenco di giocatori che partecipano al gioco. Una volta raggiunto il numero totale di giocatori per il gioco, la partita inizierà immediatamente.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Giocare partite multigiocatore di Forza 4</title>
+<para>Le partite multigiocatore di Forza 4 hanno praticamente le stesse regole delle partite normali, fatta eccezione per il fatto che si sta giocando contro altri giocatori umani. Ciò significa che probabilmente le strategie altrui saranno migliori rispetto a quando si gioca contro l'intelligenza artificiale.</para>
+<para>Quando un giocatore vince, la partita termina e sarà possibile tornare alla schermata iniziale della partita di rete. Sarà possibile giocare un'altra entusiasmante partita multigiocatore di <application>Forza 4</application>!</para>
+</sect2>
+
+</sect1>
+
+
+
+  <!-- ===== Bugs ============================================== -->
+
+
+  <sect1 id="bugs">
+
+    <title>Problemi noti e limiti</title>
+
+    <para>Occasionalmente, l'animazione delle caduta di un oggetto può non apparire fluida come dovrebbe.</para>
+
+  </sect1>
+
+
+  <!-- ===== Authors =========================================== -->
+
+
+  <sect1 id="authors">
+
+    <title>Autori</title>
+
+    <para><application>Forza 4</application> è stato scritto da Timothy Musson (<email>trmusson@ihug.co.nz</email>) e David Neary (<email>bolsh@gimp.org</email>). Molte altre persone hanno speso il loro tempo nel contribuire in diversi modi dall'inizio dei lavori di <application>Four-in-a-Row</application>.</para>
+    <para>Il <ulink type="http" url="http://www.ce.unipr.it/~gbe/velena.html">motore Velena</ulink>, il principale giocatore computerizzato di <application>Forza 4</application>, è stato scritto da Giuliano Bertoletti; gli sviluppatori gli sono molto grati per aver consentito loro di includere il suo lavoro, senza il quale il valore di <application>Forza 4</application> sarebbe quasi nullo.</para>
+    <para>Questo manuale è stato scritto da Timothy Musson.</para>
+    <para>Per segnalare un problema o inviare suggerimenti su questa applicazione o su questo manuale, seguire le istruzioni contenute in questo <ulink url="ghelp:user-guide?feedback-bugs" type="help">documento</ulink>.</para>
+
+
+<!-- For translations: uncomment this:
+
+  <para>
+    Latin translation was done by ME
+    (<email>MYNAME@MYADDRESS</email>). Please send all comments and
+    suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+-->
+
+  </sect1>
+
+
+  <!-- ============= License =================================== -->
+
+
+  <sect1 id="license">
+
+    <title>Licenza</title>
+
+    <para>Questo programma e le opere artistiche sono software libero; è lecito redistribuirli e/o modificarli secondo i termini della <citetitle>GNU General Public License</citetitle> come è pubblicata dalla Free Software Foundation; o la versione 2 della licenza o (a propria scelta) una versione successiva.</para>
+
+    <para>Questo programma è distribuito nella speranza che sia utile, ma SENZA ALCUNA GARANZIA; senza neppure la garanzia implicita di NEGOZIABILITÀ o di APPLICABILITÀ PER UN PARTICOLARE SCOPO. Si veda la <citetitle>GNU General Public License</citetitle> per avere maggiori dettagli.</para>
+
+    <para>Una copia della <citetitle>GNU General Public License</citetitle> è inclusa nell'appendice del <citetitle>Manuale dell'utente GNOME</citetitle>. Inoltre è possibile ottenere una copia della <citetitle>GNU General Public License</citetitle> dalla Free Software Foundation visitando <ulink url="http://www.fsf.org" type="http">il sito web</ulink> oppure scrivendo a <address> Free Software Foundation, Inc. <street>51 Franklin Street, Fifth Floor</street><city>Boston</city>, <state>MA</state><postcode>02110-1301</postcode><country>USA</country></address></para>
+
+  </sect1>
+
+</article>

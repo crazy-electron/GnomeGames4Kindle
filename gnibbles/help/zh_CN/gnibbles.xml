@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.20">
+<!ENTITY manrevision "2.20">
+<!ENTITY date "May 2007">
+<!ENTITY app "<application>Nibbles</application>">
+<!ENTITY appname "Nibbles">
+<!ENTITY VERSION "2.20">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="zh_CN">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+ <articleinfo>
+  <title><application>贪吃蛇</application> 手册</title>
+
+    <abstract role="description">
+      <para>Nibbles 是一个 GNOME 下的贪吃蛇游戏。玩家控制一条试图获取食物的 2D 蛇。获取食物得到点数，但是碰到任何物体会损失点数。当所有点数损失掉时，玩家便输掉游戏。</para>
+    </abstract>
+
+  <copyright>
+   <year>2000</year>
+   <holder>Kevin Breit</holder>
+  </copyright><copyright><year>2009</year><holder>Zhang Miao (mymzhang@gmail.com)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOME 文档项目</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>对于本文档的复制、分发和／或修改必须遵循自由软件基金会 (Free Software Foundation) 发布的 GNU 自由文档许可证 (GFDL) 版本 1.1 或更高版本，该许可证没有固定的部分、没有封面和背页文本。您可以在此<ulink type="help" url="ghelp:fdl">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副本。</para>
+         <para>本手册是以 GFDL 许可协议发布的 GNOME 手册集合的一部分。如果您要单独分发本手册，您可以将许可协议的副本添加到手册后再这样做，如许可协议的第 6 部分所述。</para>
+
+	<para>各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 GNOME 文档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而表明它们是商标。</para>
+
+	<para>本文档以及文档的修改版本都是在遵循 GNU 自由文档许可证的条款下提供，这表示具有以下含义：<orderedlist>
+		<listitem>
+		  <para>文档按“原样”提供，不提供任何明示或暗示的保证，包括但不限于：文档或文档的修改版本没有适销性方面的缺陷、适合特定目的的适用性，以及没有侵权行为。您将自行承担本文档以及文档修改版本的质量、准确性以及性能方面的风险。如果任何文档或文档修改版本存在缺陷，您(而不是最初的编写者、作者或撰写人)将承担所有必需的服务、维修或更正的费用。此免责声明是本许可证的重要组成部分。如果不接受此免责声明，那么您就没有权利使用任何文档或文档的修改版本；并且</para>
+		</listitem>
+		<listitem>
+		  <para>无论在任何情况以及在任何法律理论下，本文档或文档修改版本的作者、最初的编写者、任何撰写人或任何分发者，或者任意这些方的任何提供者都不对任何人由于使用本文档或文档修改版本引起或带来的任何直接的、间接的、特殊的、偶然的或继发的损失承担任何民事(包括疏忽)、合同或其它方面的责任，这些损失包括但不限于信誉损失、工作停止、计算机失败或故障，或任何以及所有其它损失或由此引发的或与之相关的损失，即使这些方已被告知存在出现此类损失的可能性时也是如此。</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Kevin</firstname> 
+	<surname>Breit</surname> 
+	<affiliation> 
+	  <orgname>GNOME 文档项目</orgname> 
+	  <address> <email>battery841@mypad.com</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+    <revhistory>
+      <revision> 
+	<revnumber>贪吃蛇手册 2.20 版</revnumber> 
+	<date>2007年5月</date> 
+	<revdescription> 
+	  <para role="author">Kevin Breit <email>battery841@mypad.com</email></para>
+	  <para role="publisher">GNOME 文档项目</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>本手册描述的是 2.20 版的贪吃蛇。</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>反馈</title> 
+      <para>对<application>贪吃蛇</application>应用程序或本手册报告错误或提供建议，请遵从 <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME 反馈页面</ulink>中的指导。</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+ </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>贪吃蛇</primary> 
+  </indexterm> 
+
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+ <sect1 id="intro">
+  <title>简介</title>
+
+  <para><application>贪吃蛇</application>是由玩家来控制一条蛇的一个游戏。蛇在面板上到处移动，吃掉钻石，同时避免碰到置于周围的墙壁。</para>
+
+  <para>要运行<application>贪吃蛇</application>，请从<guimenu>应用程序</guimenu>菜单中选择<menuchoice><guisubmenu>游戏</guisubmenu><guimenuitem>贪吃蛇</guimenuitem></menuchoice>，或在命令行中键入<command>gnibbles</command>。</para>
+
+  <para><application>贪吃蛇</application>包含于<filename>gnome-games</filename>软件包，为 GNOME 桌面环境的一部分。本文档描述的是 2.20 版的<application>贪吃蛇</application>。</para>
+ </sect1>
+
+ <sect1 id="objective">
+ <title>贪吃蛇目标</title>
+  <para>贪吃蛇的目标十分简单。由您来控制蛇，如果蛇碰到墙壁，或碰到自己，蛇会死掉。在游戏完成前，您可以得到10条命。您可以通过超过自己(或朋友的)最高分数，或完成所有级别来获得胜利。也可以同智能的蛇来游戏。</para>
+  <para>在热座模式或网络模式下，贪吃蛇也提供<link linkend="network-games">多人游戏</link>支持，最多可以有6个玩家。</para>
+ </sect1>
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+ <sect1 id="usage">
+  <title>使用贪吃蛇</title>
+  <para><application>贪吃蛇</application> 为一个玩法简单的游戏。游戏所需的键只有方向键。</para>
+
+  <!-- ========= Basic Usage =========================== -->
+<sect2 id="mainwin">
+<title>基本使用</title>
+<para>启动<application>贪吃蛇</application>，会打开如下所示的<interface>主窗口</interface>。 <figure id="intro-fig">
+<title>贪吃蛇简介窗口</title>
+<screenshot>
+ <mediaobject> 
+    <imageobject>
+<imagedata fileref="figures/intro.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>贪吃蛇简介窗口。</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure></para>
+<para>要开始游戏，请选择 <menuchoice><guimenu>游戏</guimenu><guimenuitem>新建</guimenuitem></menuchoice>。</para>
+<para>当游戏启动后，蛇会从屏幕左侧出来。您可以使用上方向键让蛇的方向为向上。使用右方向键让蛇转向右方，左方向键转向左方向，下方向键使蛇转向下方向。<figure id="gameplay">
+<title>游戏进行时的贪吃蛇</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/playing.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>游戏进行时的贪吃蛇。</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure></para>
+</sect2>
+
+<!-- This section should also describe main elements of graphic user
+interface, such as menus and buttons, unless this description
+is too long - in that case, it should be moved to a separate
+section. For example -->
+
+
+<!-- ========= Menus =========================== -->
+<sect2 id="menubar">
+   <title>菜单</title>
+   <para>菜单栏，位于<interface>主窗口</interface>的顶端，包含如下菜单项：</para>
+
+   <variablelist>
+    <varlistentry>
+     <term><guimenu>游戏</guimenu></term>
+     <listitem>
+      <para>此菜单包含：<itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+N</keysym></shortcut><guimenuitem>新建</guimenuitem></menuchoice> 启动新的<application>贪吃蛇</application>游戏。</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+G</keysym></shortcut><guimenuitem>网络游戏</guimenuitem></menuchoice> 启动使用 GGZ 游戏空间的网络多人游戏。</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>分数</guimenuitem></menuchoice> 显示最高得分。</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>暂停游戏</guimenuitem></menuchoice> 暂停您的游戏。点击 <quote>暂停游戏 </quote> 菜单选项可以恢复游戏。</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>结束游戏</guimenuitem></menuchoice> 结束当前游戏，返回标题屏幕。</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl-Q</keysym></shortcut><guimenuitem>退出</guimenuitem></menuchoice> 退出程序。</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+   <varlistentry>
+     <term><guimenu>查看</guimenu></term>
+     <listitem>
+      <para>此菜单包含：<itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>全屏</guimenuitem></menuchoice> 将您的游戏窗口切换到全屏。</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>设置</guimenu></term>
+     <listitem>
+      <para>此菜单包含：<itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>首选项</guimenuitem></menuchoice> 打开窗口编辑 <link linkend="prefs"> 首选项。</link></para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>帮助</guimenu></term>
+     <listitem>
+      <para>此菜单包含：<itemizedlist>
+        <listitem>
+          <para><menuchoice><shortcut><keysym>F1</keysym></shortcut><guimenuitem>目录</guimenuitem></menuchoice>  显示本手册。</para>
+         <para><guimenuitem>关于</guimenuitem> 打开<interface>关于</interface>对话框，显示<application>贪吃蛇</application>的基本信息，如作者姓名，游戏版本号。</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+  </sect2>
+  <sect2 id="diamonds">
+  <title>钻石</title>
+   <para><application>贪吃蛇</application>可以吃掉许多不同的钻石。它们颜色各不相同，具有不同的功能。只有浅紫色的钻石在足够长的时候才能吃掉它(实际上，您的蛇必须吃掉它们以完成这一关)。其他的钻石全部是奖励，但是它们仅存在很短的时间。我们会留给您来发现每种颜色获得什么奖励，但是它们全部影响分数，蛇的长度，或者两个都影响。当走向这些奖励钻石时要小心，不要切断你走向结束这一关的普通钻石的路。</para>
+  </sect2>   
+ </sect1>
+
+
+ <!-- ============= Customization ============================= -->
+ <sect1 id="prefs">
+  <title>自定义</title>
+  <para>要改变程序设置，请选择<menuchoice><guimenu>设置</guimenu><guimenuitem>首选项</guimenuitem></menuchoice>。这会打开<interface>首选项</interface>对话框。当您改变设置时，所有设置会自动保存及应用。</para>
+
+  <figure id="game-prefs">
+    <title>游戏首选项标签页</title>
+    <screenshot>
+       <mediaobject> 
+    <imageobject>
+      <imagedata fileref="figures/game.png" format="PNG" srccredit="Kevin Breit"/>
+          </imageobject>
+    <textobject> 
+      <phrase>游戏首选项标签页。</phrase> 
+    </textobject> 
+  </mediaobject>
+    </screenshot>
+  </figure>
+
+  <para><guilabel>游戏</guilabel> 标签页中的属性为：<variablelist>
+    <varlistentry>
+    <term>速度</term>
+    <listitem>
+     <para>控制蛇的速度。</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>以随机顺序排列关卡</term>
+    <listitem>
+     <para>选择该项会实现以随机顺序升级。</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>启用虚假奖品</term>
+    <listitem>
+     <para>当启用该选项时，屏幕上会允许同时有两个蓝色钻石。其中的一个钻石会让蛇在吃东西时长度变短而不是变长。</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>启用声音</term>
+     <listitem>
+      <para>控制游戏中声音的使用。</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>初始级别</term>
+     <listitem>
+      <para>启动时的级别。如果您要立即切换到挑战级别，使用该项。</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>人类玩家数目</term>
+     <listitem>
+      <para>最多允许有 6 名玩家。</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>AI 游戏者数目</term>
+     <listitem>
+      <para>最多允许 6 个 AI 玩家。注意人类玩家与 AI 玩家的总数必须小于或等于 6。</para>
+     </listitem>
+    </varlistentry>
+   </variablelist></para>
+  <para><figure id="worm-prefs">
+    <title>贪吃蛇属性标签页</title>
+    <screenshot>
+       <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/worm_op.png" format="PNG" srccredit="Kevin Breit"/>
+         </imageobject>
+    <textobject> 
+      <phrase>贪吃蛇属性标签页。</phrase> 
+    </textobject> 
+  </mediaobject>
+    </screenshot>
+  </figure> <guilabel>蛇 1 </guilabel> 到 <guilabel> 蛇 6</guilabel> 标签页中的属性选项允许您为不同的蛇设置单独的属性。 <variablelist>
+    <varlistentry>
+    <term>键盘控制</term>
+    <listitem>
+     <para>本列表允许您改变给定蛇的键盘控制按键。要改变控制，双击合适的项，然后按下您想要用作控制的按键。</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>使用相对移动</term>
+    <listitem>
+     <para>这项，不是让左方向键让蛇向屏幕的左方走，右方向键让蛇向右走等，而是左右方向键让蛇向左或向右转。例如，蛇正在向左走，而您按下了左键，将控制它转向屏幕的底部。</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>贪吃蛇颜色</term>
+    <listitem>
+     <para>自定义蛇的颜色，在多人模式下您可以将对手的蛇区分开来。</para>
+    </listitem>
+    </varlistentry>
+   </variablelist></para>
+
+ </sect1>
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>网络游戏</title>
+  <para>贪吃蛇支持网络多人游戏，由<ulink type="http" url="http://www.ggzgamingzone.org">GGZ 游戏空间</ulink>提供支持。通过连接因特网上的贪吃蛇服务器，您可以在多人游戏中挑战其他玩家。了解新闻、更新以及可连接服务器的列表，参见<ulink type="http" url="http://www.gnome.org/projects/gnome-games/">gnome-games 网站</ulink>。</para>
+  <para>要启动多人贪吃蛇游戏，请在贪吃蛇菜单栏中选择<menuchoice><guimenu>游戏</guimenu><guimenuitem>网络游戏</guimenuitem></menuchoice> 。</para> 
+
+<sect2 id="connecting">
+<title>连接到贪吃蛇网络服务器</title>
+<para>在启动新的网络游戏时，会首先显示连接对话框。对话框允许您选择要连接的服务器，连接到服务器时将要拥有的用户名。</para>
+
+<para>可以以游客帐号或正常注册的帐号连接到服务器。游客帐号允许您匿名登录，而正常登录帐号允许您保留您的用户名，并由您指定的密码来保护。</para>
+
+<para>如果您需要一个匿名的游客帐号，应当选定<guimenuitem>游客登录</guimenuitem> 选项。如果您要创建新的登录账号，选择<guimenuitem>第一次登录</guimenuitem>选项，提供您选择的用户名、密码、以及电子邮件地址。如果您已创建帐号，您可以通过选择<guimenuitem>正常登录</guimenuitem>选项来连接，并键入您选择的用户名及密码。</para>
+<para>要连接到服务器，请点击<guimenuitem>连接</guimenuitem>按钮。</para>
+<figure id="connect">
+<title>贪吃蛇网络连接对话框。</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>贪吃蛇网络连接对话框。</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>加入游戏房间</title>
+<para>一旦您成功连接到服务器，您可以选择要加入的游戏房间。要进行贪吃蛇的多人游戏，请选择贪吃蛇房间。如果您要主持游戏，点击“发起”按钮。这会创建一个新的游戏桌面，其他人可以加入游戏当中与您比赛。如果已经有其他已开始的游戏，您可以双击已存在的游戏桌面以加入他们。右侧的游戏桌面列表显示可用座位的数目，也就是可以加入游戏桌面的游戏者数目。</para>
+<figure id="tables">
+<title>贪吃蛇对话框允许您加入游戏房间寻找其他玩家。</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>贪吃蛇对话框允许您加入游戏房间寻找其他玩家。</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>当创建新的贪吃蛇游戏桌面时，会显示一个首选项对话框，允许您自定义游戏，如设定参加游戏玩家的最小数目。一旦全部座位都已占据，那么不会允许更多的玩家加入游戏桌面。</para>
+<para>在网络游戏时可以同其他游戏者进行聊天。可询问建议或提供游戏帮助，但请对其他玩家保持礼貌。</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>等待其他玩家加入游戏</title>
+<para>一旦您成功加入一个游戏桌面，您必须等到足够的玩家加入游戏桌面。 <guimenuitem>玩家列表</guimenuitem>菜单项许您查看已加入游戏玩家的列表。当游戏玩家总数达到足够数目时，游戏会立即开始。</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>进行多人贪吃蛇游戏</title>
+<para>多人贪吃蛇游戏同普通贪吃蛇游戏一样，有相当多相同的规则，仅有的例外是您在同人类玩家进行游戏。这意味着其他人的策略可能会好于 AI 玩家游戏时的策略。</para>
+<para>一旦玩家得胜，游戏会结束，您会回到初始网络游戏界面。然后您可以同贪吃蛇多人游戏者进行其他游戏。</para>
+</sect2>
+
+</sect1>
+
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>作者</title>
+  <para><application>贪吃蛇</application>由 Sean MacIsaac <email>sjm@acm.org</email> 与 Ian Peters <email>itp@gnu.org</email>编写。本手册由 Kevin Breit <email>battery841@mypad.com</email>编写。贪吃蛇的网络支持更新由 Andreas Røsdal <email>andreasr@gnome.org</email>添加。对本应用程序或本手册报告错误或提供建议，请遵循<ulink url="ghelp:user-guide?feedback-bugs" type="help">文档</ulink>中的指导。</para> 
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>许可协议</title>
+  <para>本程序为自由软件；您可以在自由软件基金会出版的<ulink type="help" url="gnome-help:gpl"><citetitle>通用公共许可证</citetitle></ulink>条款下，重新分发和/或更改它；可以选择许可证的版本 2 或更高的版本(自行选择)。</para>
+  <para>此程序发布的目的是希望它对您有用，但没有任何担保；即使是对商业应用或其它任何目的。参见 <citetitle> GNU 通用公共许可证</citetitle>以获得更多细节。</para>
+  <para>一份<citetitle>GNU 通用公共许可证 </citetitle>副本以附录的形式包含于<citetitle>GNOME 用户指南</citetitle>。您也可通过访问<ulink type="http" url="http://www.fsf.org"> 自由软件基金会网站 </ulink>或写信给<address>Free Software Foundation, Inc. 59 Temple Place - Suite 330 Boston，MA 02111-1307 USA </address>从自由软件基金会获取<citetitle>GNU 通用公共许可证</citetitle>的副本。</para>
+ </sect1>
+</article>

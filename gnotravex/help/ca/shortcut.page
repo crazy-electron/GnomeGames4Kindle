@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="shortcut" xml:lang="ca">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Use the keyboard to play the game.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-21" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Keyboard shortcuts</title>
+
+  <section id="shortcuts-game">
+    <title>Game shortcuts</title>
+    <p>
+      The following table groups the most useful shortcuts for playing <app>GNOME Tetravex</app>.
+    </p>
+    <table frame="all" rules="rows cols">
+      <tr>
+        <td><p>Shortcut</p></td><td><p>Description</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>N</key></keyseq></p>
+        </td>
+        <td>
+          <p>Start a new game.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><key>Pause</key></p>
+        </td>
+        <td>
+          <p>Pause or resume the game.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            <keyseq><key>Ctrl</key><key>Up</key></keyseq>
+          </p>
+        </td>
+        <td>
+          <p>Move all the pieces in the left box up by one.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Down</key></keyseq></p>
+        </td>
+        <td>
+          <p>Move all the pieces in the left box down by one.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Left</key></keyseq></p>
+        </td>
+        <td>
+          <p>Move all the pieces in the left box left by one.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Right</key></keyseq></p>
+        </td>
+        <td>
+          <p>Move all the pieces in the left box right by one.</p>
+        </td>
+      </tr>
+    </table>
+  </section>
+</page>

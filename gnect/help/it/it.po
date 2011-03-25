@@ -1,0 +1,445 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: manuale forza 4\n"
+"POT-Creation-Date: 2008-02-22 06:16+0000\n"
+"PO-Revision-Date: 2008-03-22 01:01+0100\n"
+"Last-Translator: Alessio Treglia <quadrispro@ubuntu-it.org>\n"
+"Language-Team: Italian <tp@lists.linux.it>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Italian\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnect.xml:174(None)
+msgid "@@image: 'figures/mainwindow.png'; md5=372e2515d12d07635a88bff671cc1a14"
+msgstr "fatto"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnect.xml:54(None)
+msgid "@@image: 'figures/connect.png'; md5=9a03bf23f04eacfd6feb9de823d6e321"
+msgstr "fatto"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnect.xml:77(None)
+msgid "@@image: 'figures/tables.png'; md5=96e520cee7fdbee56636794251a52b0d"
+msgstr "fatto"
+
+#: C/gnect.xml:22(title)
+msgid "Four-in-a-Row Manual"
+msgstr "Manuale di Forza 4"
+
+#: C/gnect.xml:24(para)
+msgid "The object of Four-in-a-Row is to place four pieces in a vertical, horizontal, or diagonal row while the opponent tries to block and make his/her own row of four. Four-in-a-Row can be played against another human or the computer."
+msgstr "Lo scopo di Forza 4 è allineare quattro pezzi in modo orizzontale, verticale o diagonale mentre l'avversario cerca di bloccare le proprie mosse e allineare i suoi pezzi. È possibile giocare a Forza 4 contro un altro giocatore umano oppure contro il computer."
+
+#: C/gnect.xml:33(year)
+msgid "2001-2002"
+msgstr "2001-2002"
+
+#: C/gnect.xml:34(holder)
+msgid "Timothy Musson"
+msgstr "Timothy Musson"
+
+#: C/gnect.xml:47(publishername)
+msgid "GNOME Documentation Project"
+msgstr "Progetto di documentazione GNOME"
+
+#: C/gnect.xml:2(para)
+msgid "Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any later version published by the Free Software Foundation with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
+msgstr "Questo documento può essere copiato, distribuito e/o modificato solo in conformità con i termini della GNU Free Documentation License (GFDL) Versione 1.1 o delle versioni successive pubblicate dalla Free Software Foundation senza sezioni invariabili, frontespizi e testi di copertina. Una copia della GFDL è disponibile a questo <ulink type=\"help\" url=\"ghelp:fdl\">collegamento</ulink> o nel file COPYING-DOCS distribuito con questo manuale."
+
+#: C/gnect.xml:12(para)
+msgid "This manual is part of a collection of GNOME manuals distributed under the GFDL. If you want to distribute this manual separately from the collection, you can do so by adding a copy of the license to the manual, as described in section 6 of the license."
+msgstr "Questo manuale è parte di una collezione di manuali di GNOME distribuita sotto la GFDL. Se si vuole distribuire questo manuale separatamente dalla collezione, lo si può fare aggiungendo una copia della licenza al manuale, come descritto nella sezione 6 della licenza."
+
+#: C/gnect.xml:19(para)
+msgid "Many of the names used by companies to distinguish their products and services are claimed as trademarks. Where those names appear in any GNOME documentation, and the members of the GNOME Documentation Project are made aware of those trademarks, then the names are in capital letters or initial capital letters."
+msgstr "Molti dei nomi utilizzati dalle aziende per distinguere i loro prodotti e servizi sono rivendicati come marchi commerciali. Dove questi nomi appaiono nella documentazione di GNOME, e i membri del progetto di documentazione di GNOME sono informati di questi marchi commerciali, allora i nomi sono in lettere maiuscole o con la lettera iniziale maiuscola."
+
+#: C/gnect.xml:35(para)
+msgid "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr "IL DOCUMENTO VIENE FORNITO SENZA GARANZIE DI ALCUN TIPO,ESPLICITE O IMPLICITE, INCLUSE, MA SENZA LIMITAZIONE, LE GARANZIE ATTESTANTI CHE IL DOCUMENTO O LE SUE VERSIONI MODIFICATE SIANO PRIVI DI DIFETTI, COMMERCIALIZZABILI, IDONEI A UN DETERMINATO SCOPO O CHE NON VIOLINO DIRITTI DI TERZI. SI DECLINA QUALUNQUE RESPONSABILITÀ RIGUARDO AI RISCHI INERENTI LA QUALITÀ, L'ACCURATEZZA E LE PRESTAZIONI DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA. QUALORA UN DOCUMENTO O UNA SUA VERSIONE MODIFICATA DOVESSERO PRESENTARE QUALUNQUE TIPO DI DIFETTO,IL COSTO DI EVENTUALI INTERVENTI DI ASSISTENZA, RIPARAZIONE O CORREZIONE SARÀ A CARICO DELL'UTENTE (NON DEL REDATTORE INIZIALE, DELL'AUTORE O DI ALTRI COLLABORATORI). QUESTA LIMITAZIONE DELLA GARANZIA COSTITUISCE PARTE ESSENZIALE DELLA LICENZA. L'USO DEL DOCUMENTO O DELLE SUE VERSIONI MODIFICATE È CONSENTITO SOLO ENTRO I TERMINI DI QUESTA LIMITAZIONE DELLA GARANZIA; E"
+
+#: C/gnect.xml:55(para)
+msgid "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES."
+msgstr "IN NESSUNA CIRCOSTANZA E PER NESSUNA RAGIONE LEGALE, INCLUSI I PRINCIPI DI COLPA (INCLUSA LA NEGLIGENZA), ACCORDO CONTRATTUALE O ALTRO, SARÀ POSSIBILE CONSIDERARE L'AUTORE, IL REDATTORE INIZIALE, GLI ALTRI COLLABORATORI, QUALUNQUE DISTRIBUTORE DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA O QUALUNQUE FORNITORE DELLE PERSONE CITATE, RESPONSABILE NEI CONFRONTI DI QUALUNQUE PERSONA PER DANNI DIRETTI, INDIRETTI, SPECIALI, INCIDENTALI O CONSEGUENTI DI QUALUNQUE NATURA, INCLUSI, MA SENZA LIMITAZIONE, I DANNI PER PERDITA DI AVVIAMENTO, INTERRUZIONE DEL LAVORO, GUASTO O MALFUNZIONAMENTO DEL COMPUTER O QUALUNQUE ALTRO DANNO O PERDITA DERIVANTE O CORRELATA ALL'USO DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA, ANCHE QUALORA LE PERSONE CITATE FOSSERO STATE INFORMATE DELLA POSSIBILITÀ DI TALI DANNI."
+
+#: C/gnect.xml:28(para)
+msgid "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: <placeholder-1/>"
+msgstr "QUESTO DOCUMENTO E LE SUE VERSIONI MODIFICATE SONO FORNITI IN BASE AI TERMINI DELLA GNU FREE DOCUMENTATION LICENSE, SOTTO INTESO CHE: <placeholder-1/>"
+
+#: C/gnect.xml:54(firstname)
+msgid "Timothy"
+msgstr "Timothy"
+
+#: C/gnect.xml:55(surname)
+msgid "Musson"
+msgstr "Musson"
+
+#: C/gnect.xml:58(email)
+msgid "trmusson@ihug.co.nz"
+msgstr "trmusson@ihug.co.nz"
+
+#: C/gnect.xml:79(revnumber)
+msgid "Four-in-a-Row Manual V2.8"
+msgstr "Manuale di Forza 4 V2.8"
+
+#: C/gnect.xml:80(date)
+msgid "September 2004"
+msgstr "Settembre 2004"
+
+#: C/gnect.xml:82(para)
+msgid "Timothy Musson <email>trmusson@ihug.co.nz</email>"
+msgstr "Timothy Musson <email>trmusson@ihug.co.nz</email>"
+
+#: C/gnect.xml:90(releaseinfo)
+msgid "This manual describes version 2.12 of Four-in-a-Row."
+msgstr "Questo manuale si riferisce alla versione 2.12 di Forza 4."
+
+#: C/gnect.xml:94(title)
+msgid "Feedback"
+msgstr "Commenti"
+
+#: C/gnect.xml:95(para)
+msgid "To report a bug or make a suggestion regarding the Four-in-a-Row application or this manual, follow the directions in the <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</ulink>."
+msgstr "Per segnalare un problema o inviare suggerimenti sull'applicazione <application>Forza 4</application> o su questo manuale, seguire le istruzioni presenti alla <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">pagina di commenti su GNOME</ulink>."
+
+#: C/gnect.xml:111(title)
+msgid "Introduction"
+msgstr "Introduzione"
+
+#: C/gnect.xml:113(para)
+msgid "<application>Four-in-a-Row</application> is a four-in-a-row game for the GNOME Project. The object of the game is to build a line of four of your marbles while trying to stop your opponent (human or computer) building a line of his or her own. A line can be horizontal, vertical or diagonal."
+msgstr "<application>Forza 4</application> è una versione dell'omonimo gioco per il Progetto GNOME. Lo scopo del gioco è costruire una linea di quattro dei propri oggetti mentre si cerca di fermare la costruzione da parte dell'avversario (può essere umano oppure il computer) di una propria linea. Una linea può essere orizzontale, verticale o diagonale."
+
+#: C/gnect.xml:121(para)
+msgid "To run <application>Four-in-a-Row</application>, select <guimenuitem>Four-in-a-Row</guimenuitem> from the <guisubmenu>Games</guisubmenu> submenu of the <guimenu>Main Menu</guimenu>, or type <command>gnect</command> on the command line."
+msgstr "Per avviare <application>Forza 4</application>, selezionare <guimenuitem>Forza 4</guimenuitem> dal sottomenù <guisubmenu>Giochi</guisubmenu> del menù <guimenu>Applicazioni</guimenu>, oppure digitare <command>gnect</command> in una finestra di terminale."
+
+#: C/gnect.xml:129(para)
+msgid "<application>Four-in-a-Row</application> is included in the <filename>GNOME-games</filename> package, which is part of the GNOME desktop environment. This document describes version 2.8 of <application>Four-in-a-Row</application>."
+msgstr "<application>Forza 4</application> è incluso nel pacchetto <filename>GNOME-games</filename>, il quale fa parte dell'ambiente grafico GNOME. Questo documento si riferisce alla versione 2.8 di <application>Forza 4</application>."
+
+#: C/gnect.xml:135(para)
+msgid "Four-in-a-Row also features <link linkend=\"network-games\">multiplayer</link> support with two human players in hotseat or network mode."
+msgstr "Fra le caratteristiche di Forza 4 è presente anche il supporto <link linkend=\"network-games\">multigiocatore</link> per due giocatori, anche in rete."
+
+#: C/gnect.xml:149(title)
+msgid "Basic Usage"
+msgstr "Utilizzo di base"
+
+#: C/gnect.xml:155(title)
+msgid "Playing Four-in-a-Row"
+msgstr "Giocare a Forza 4"
+
+#: C/gnect.xml:157(para)
+msgid "To start a new game of Four-in-a-Row choose <menuchoice><guimenu>Game</guimenu><guimenuitem>New Game</guimenuitem></menuchoice>."
+msgstr "Per iniziare una nuova partita di Forza 4 scegliere <menuchoice><guimenu>Gioco</guimenu><guimenuitem>Nuovo</guimenuitem></menuchoice>."
+
+#: C/gnect.xml:161(para)
+msgid "The <interface>game board</interface> consists of seven columns and six rows. Above it, a special row indicates the current player and the marble about to be played. Each move consists of dropping a marble in one of the columns. The marble lands on the topmost empty row of the chosen column."
+msgstr "Il <interface>tavolo di gioco</interface> consiste in sette colonne e sei righe. Sopra di esso è presente una riga speciale che mostra il giocatore corrente e il prossimo pezzo da giocare. Ogni mossa consiste nello spostamento di un pezzo in una delle colonne. Il pezzo verrà posizionato nella riga libera più alta della colonna scelta."
+
+#: C/gnect.xml:166(para)
+msgid "To make a move, click on a column with the mouse. To play with the keyboard, move the marble in the top row with the left and right arrow keys, and drop it in place with the down arrow key. Your marble will drop into the topmost empty row of that column."
+msgstr "Per fare una mossa fare clic con il mouse su una colonna. Per giocare con la tastiera, spostare il pezzo nella riga superiore con i tasti freccia sinistra e freccia destra e lasciarlo cadere nella posizione desiderata con il tasto freccia giù. Il proprio pezzo verrà fatto cadere nella riga libera più alta della colonna scelta."
+
+#: C/gnect.xml:177(phrase)
+#: C/gnect.xml:179(para)
+msgid "Four-in-a-Row's Main Window"
+msgstr "Finestra principale di Forza 4"
+
+#: C/gnect.xml:182(para)
+msgid "The game is won when one of the two players manages to line up four of his or her marbles horizontally, vertically or diagonally. If the board fills up without a win, the game ends in a draw."
+msgstr "La partita viene vinta dal giocatore che riesce ad allineare quattro dei suoi pezzi in modo orizzontale, verticale o diagonale. Se il tavolo di gioco viene riempito senza che nessuno dei due giocatori risulti il vincitore, la partita finirà con un pareggio."
+
+#: C/gnect.xml:193(title)
+msgid "Commands"
+msgstr "Comandi"
+
+#. id for removed section
+#: C/gnect.xml:196(para)
+msgid "To take back a move, choose <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>Z</keycap></keycombo></shortcut><guimenuitem>Undo move</guimenuitem></menuchoice>. If you're playing against a friend, this will undo one move. If you're playing against the computer, this will undo the computer's last move and then yours. Repeating this will return the board to its initial state."
+msgstr "Per ripetere una mossa, scegliere <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>Z</keycap></keycombo></shortcut><guimenuitem>Annulla mossa</guimenuitem></menuchoice>. Se si sta giocando contro un amico, verrà annullata una sola mossa, se invece si sta giocando contro il computer, verrà annullata l'ultima mossa del computer e poi la propria. Ripetere tale azione comporterà il ritorno del tavolo di gioco allo stato iniziale."
+
+#: C/gnect.xml:208(para)
+msgid "Choose <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>H</keycap></keycombo></shortcut><guimenuitem>Hint</guimenuitem></menuchoice> to get a suggestion from the computer for your next move. This is shown in the status bar."
+msgstr "Scegliere <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>H</keycap></keycombo></shortcut><guimenuitem>Suggerimento</guimenuitem></menuchoice> per avere un suggerimento dal computer per la prossima mossa. Tale suggerimento viene mostrato nella barra di stato."
+
+#: C/gnect.xml:216(para)
+msgid "Choose <menuchoice><guimenuitem>Scores</guimenuitem></menuchoice> to show a tally of wins and draws for the current playing session. The scores will be reset to zero if Player Selection is changed in Preferences."
+msgstr "Scegliere <menuchoice><guimenuitem>Punteggi</guimenuitem></menuchoice> per mostrare una lista delle sconfitte e dei pareggi per la sessione corrente. I punteggi verranno reimpostati a 0 se in Preferenze viene modificata la selezione dei giocatori."
+
+#: C/gnect.xml:231(title)
+msgid "Preferences"
+msgstr "Preferenze"
+
+#: C/gnect.xml:233(para)
+msgid "To change the game's settings, select <guimenuitem>Preferences</guimenuitem> from the <guimenu>Settings</guimenu> menu. This opens the <interface>Preferences Dialog</interface>."
+msgstr "Per modificare le preferenze del gioco, selezionare <guimenuitem>Preferenze</guimenuitem> dal menù <guimenu>Impostazioni</guimenu>. Questo aprirà la finestra <interface>Preferenze</interface>."
+
+#: C/gnect.xml:247(term)
+msgid "<guilabel>Player One</guilabel> and <guilabel>Player Two</guilabel>"
+msgstr "<guilabel>Giocatore uno</guilabel> e <guilabel>Giocatore due</guilabel>"
+
+#: C/gnect.xml:252(para)
+msgid "These two columns tell <application>Four-in-a-Row</application> who's playing and, if it is the computer, how hard they play. To play against a friend, select Human for both Player One and Player Two."
+msgstr "Queste due colonne indicano indicano a <application>Forza 4</application> chi sta giocando e, se uno di questi è il computer, quanto difficile dovrà essere la partita. Per giocare contro un amico, selezionare Umano per entrambi i giocatori (Giocatore uno e Giocatore due)."
+
+#: C/gnect.xml:262(guilabel)
+msgid "Theme"
+msgstr "Tema"
+
+#: C/gnect.xml:264(para)
+msgid "The theme menu lists available themes and lets you choose your favourite."
+msgstr "Il menu del tema elenca i temi disponibili e lascia scegliere all'utente quello preferito."
+
+#: C/gnect.xml:272(guilabel)
+msgid "Enable Animation"
+msgstr "Abilitare animazione"
+
+#: C/gnect.xml:274(para)
+msgid "Here you can toggle the game's animation on or off."
+msgstr "Qui è possibile abilitare o disabilitare l'animazione del gioco."
+
+#: C/gnect.xml:240(para)
+msgid "Configuration options in the <guilabel>Game</guilabel> tab are: <placeholder-1/>"
+msgstr "Le opzioni di configurazioni nella scheda <guilabel>Gioco</guilabel> sono le seguenti: <placeholder-1/>"
+
+#: C/gnect.xml:282(para)
+msgid "Finally there is a <guilabel>Controls</guilabel> tab to change the keyboard controls. To change a control, double click the appropriate entry and then press the new key."
+msgstr "Infine è presente anche una scheda <guilabel>Controlli</guilabel> per modificare i controlli da tastiera. Per modificare un controllo, fare clic due volte sulla voce corrispondente e premere il nuovo tasto."
+
+#: C/gnect.xml:297(title)
+msgid "Creating New Themes"
+msgstr "Creare nuovi temi"
+
+#: C/gnect.xml:299(para)
+msgid "This section's included in case you'd like to make your own themes for <application>Four-in-a-Row</application>. It assumes you're familiar with basic text editing, graphics software and the command line."
+msgstr "Questa sezione è inclusa nel caso si desideri creare il proprio tema per <application>Forza 4</application>. Si presuppone che si abbia una certa familiarità con l'editing di testo di base, i software grafici e la riga di comando."
+
+#: C/gnect.xml:307(title)
+msgid "Images"
+msgstr "Immagini"
+
+#: C/gnect.xml:309(para)
+msgid "<application>Four-in-a-Row</application>'s tile sets contain six tiles of equal size, lined up horizontally. From left to right:"
+msgstr "Una collezione di pezzi di <application>Forza 4</application> contiene sei immagini di eguale dimensione, allineate orizzontalmente. Da sinistra a destra:"
+
+#: C/gnect.xml:316(para)
+msgid "Player One's marble as it appears on the game board"
+msgstr "un pezzo del giocatore uno come appare sul tavolo di gioco;"
+
+#: C/gnect.xml:319(para)
+msgid "Player Two's marble as it appears on the game board"
+msgstr "un pezzo del giocatore due come appare sul tavolo di gioco;"
+
+#: C/gnect.xml:322(para)
+msgid "The game board's background"
+msgstr "lo sfondo del tavolo di gioco;"
+
+#: C/gnect.xml:325(para)
+msgid "The top row's background"
+msgstr "lo sfondo della riga superiore;"
+
+#: C/gnect.xml:328(para)
+msgid "Player One's marble as it appears on the top row"
+msgstr "un pezzo del giocatore uno come appare sulla riga superiore;"
+
+#: C/gnect.xml:331(para)
+msgid "Player Two's marble as it appears on the top row"
+msgstr "un pezzo del giocatore due come appare sulla riga superiore."
+
+#: C/gnect.xml:336(title)
+msgid "An example tile set"
+msgstr "Una collezione di pezzi di esempio"
+
+#: C/gnect.xml:338(screeninfo)
+msgid "This image shows the six tiles in a tile set"
+msgstr "Questa immagine mostra i sei pezzi di una collezione"
+
+#: C/gnect.xml:343(para)
+msgid "Tiles three and four will be repeated over the game board and top row unless a full window background image is specified in the theme file."
+msgstr "I pezzi tre e quattro vengono ripetuti sulla tavola di gioco e sulla riga superiore a meno che nel tema non sia stata specificata un'immagine di sfondo completa per la finestra."
+
+#: C/gnect.xml:350(title)
+#: C/gnect.xml:361(title)
+#: C/gnect.xml:377(title)
+msgid "TIP"
+msgstr "Consiglio"
+
+#: C/gnect.xml:351(para)
+msgid "PNG format is recommended for tile sets. The first, second, fifth and sixth tiles should contain some transparency if you want the background to show through. The third and fourth tiles should be solid, with no transparency, even if you'll be using a full window background image with your theme."
+msgstr "Per le collezioni dei pezzi è raccomandato il formato PNG. Se si desidera visualizzare lo sfondo attraverso i pezzi, il primo, il secondo, il quinto e il sesto pezzo possono contenere alcune trasparenze. Il terzo e il quarto pezzo invece devono essere solidi, senza alcuna trasparenza, anche se con il proprio tema si usa un'immagine completa per lo sfondo della finestra."
+
+#: C/gnect.xml:362(para)
+msgid "Tiles can be square or rectangular, and any size you like. Most of the tile sets that come with <application>Four-in-a-Row</application> use square tiles measuring 50 pixels by 50 pixels."
+msgstr "I pezzi possono essere quadrati o rettangolari e di qualsiasi dimensione si desideri. La maggior parte delle collezioni fornite con <application>Forza 4</application> utilizzano pezzi di dimensioni 50 pixel per 50 pixel."
+
+#: C/gnect.xml:369(para)
+msgid "For a full window background image, there's a bit more work to do. Let's say your tiles measure 50 by 50 pixels each. The game's display measures 7 by 7 tiles, including the top row, so the ideal background image for your tile set measures 350 by 350 pixels."
+msgstr "Per un'immagine di sfondo della finestra c'è un po' più di lavoro da fare. Si supponga che le dimensioni dei pezzi siano 50 per 50 pixel. La tavola di gioco, compresa la riga superiore, ha dimensioni pari a 7 per 7 pezzi, l'immagine di sfondo ideale per la propria collezione dovrebbe essere di dimensioni pari a 350 per 350 pixel."
+
+#: C/gnect.xml:378(para)
+msgid "<application>Four-in-a-Row</application> will automatically scale the background image if it doesn't match the tile set. This means you can make \"large\" and \"small\" versions of your theme, both using the same background image, just by having a large and a small version of your tile set."
+msgstr "<application>Forza 4</application> scala automaticamente l'immagine di sfondo nel caso non dovesse corrispondere alla collezione di pezzi. Ciò significa che, utilizzando la stessa immagine di sfondo, si possono creare delle versioni \"grandi\" e \"piccole\" del proprio tema così da avere una grande e una piccola versione della propria collezione di pezzi."
+
+#: C/gnect.xml:386(para)
+msgid "So, you now have a tile set and perhaps a background image to go with it. The next step is to put them in the right place."
+msgstr "Dunque, ora si possiede una collezione di pezzi e forse anche un'immagine di sfondo da utilizzare con essa; il passo successivo consiste nel metterli nel posto giusto."
+
+#: C/gnect.xml:396(title)
+msgid "Putting It Together"
+msgstr "Mettere insieme i pezzi"
+
+#: C/gnect.xml:398(para)
+msgid "The last step is to put your image(s) where <application>Four-in-a-Row</application> can find them. You could put them in Four-in-a-row's install directory (which will depend on your particular system), but your home directory's probably a better idea."
+msgstr "L'ultimo passo consiste nel posizionare le proprie immagini dove <application>Forza 4</application> può trovarle. È possibile inserire nella cartella di installazione di Forza 4 (che varia a seconda del proprio sistema), ma la propria cartella home rappresenta probabilmente un'idea migliore."
+
+#: C/gnect.xml:405(para)
+msgid "Make a <filename class=\"directory\">~/.gnect</filename> directory, and a <filename class=\"directory\">~/.gnect/pixmaps</filename> directory. Those names are important, as <application>Four-in-a-Row</application> won't look anywhere else."
+msgstr "Creare una cartella <filename class=\"directory\">~/.gnect</filename> e una cartella <filename class=\"directory\">~/.gnect/pixmaps</filename>. La scelta di questi nomi è importante poichè <application>Forza 4</application> non cercherà i file in altri posti diversi."
+
+#: C/gnect.xml:412(para)
+msgid "Copy your image(s) into the pixmaps directory."
+msgstr "Copiare le proprie immagini nella cartella pixmaps."
+
+#: C/gnect.xml:416(para)
+msgid "If you start <application>Four-in-a-Row</application> from the command line, it'll give you clues about any problems it has with your new theme. If it has none, you'll find your new theme listed the <interface>Preferences Dialog</interface>."
+msgstr "Se si avvia <application>Forza 4</application> dalla riga di comando, verranno forniti indizi su qualsiasi eventuale problema con il nuovo tema. Se non vi sono problemi, il nuovo tema verrà elencato nella finestra di dialogo <interface>Preferenze</interface>."
+
+#: C/gnect.xml:423(para)
+msgid "Have fun!"
+msgstr "Divertitevi!"
+
+#: C/gnect.xml:10(title)
+msgid "Network Games"
+msgstr "Partite di rete"
+
+#: C/gnect.xml:11(para)
+msgid "Four-in-a-Row support networked multiplayer games which is provided by <ulink type=\"http\" url=\"http://www.ggzgamingzone.org\">GGZ Gaming Zone</ulink>. By connecting to a Four-in-a-Row server on the Internet, you can challenge other players in multiplayer games. For news, updates and a list of servers to connect to, see the <ulink type=\"http\" url=\"http://www.gnome.org/projects/gnome-games/\">gnome-games website</ulink>."
+msgstr "<application>Forza 4</application> ha il supporto per le partite in rete multigiocatore fornite da <ulink type=\"http\" url=\"http://www.ggzgamingzone.org\">GGZ Gaming Zone</ulink>. Collegandosi a un server su Internet di <application>Forza 4</application> è possibile sfidare altri giocatori in partite multigiocatore. Per avere notizie, aggiornamenti e una lista di server ai quali connettersi, consultare il <ulink type=\"http\" url=\"http://www.gnome.org/projects/gnome-games/\">sito web di gnome-games</ulink>."
+
+#: C/gnect.xml:18(para)
+msgid "To start the multiplayer game of Four-in-a-Row, select <menuchoice><guimenu>Game</guimenu><guimenuitem>Network Game</guimenuitem></menuchoice> on the Four-in-a-Row menu."
+msgstr "Per iniziare una partita multigiocatore di <application>Forza 4</application>, selezionare <menuchoice><guimenu>Gioco</guimenu><guimenuitem>Partita in rete</guimenuitem></menuchoice> dal menù dell'applicazione."
+
+#: C/gnect.xml:24(title)
+msgid "Connecting to a Four-in-a-Row network server"
+msgstr "Collegarsi a un server di rete di Forza 4"
+
+#: C/gnect.xml:25(para)
+msgid "The Four-in-a-Row connection dialog is shown initially when starting a new network game. This dialog allows you to select a server to connect to, and the username that you will have while connected to that server."
+msgstr "Avviando una nuova partita di rete viene mostrata la finestra di dialogo di connessione di Forza 4. In questa finestra è possibile scegliere un server al quale connettersi e il nome utente da utilizzare per la connessione."
+
+#: C/gnect.xml:31(para)
+msgid "It is possible to connect to a server with either a guest account or a normal registered account. Guest accounts allows you to anonymously login, while a normal login account allows you to reserve your own username which is protected by the password that you choose."
+msgstr "È possibile collegarsi a un server utilizzando un accesso anonimo oppure un normale account già registrato. Gli account anonimi consentono di accedere in anonimato, mentre un accesso normale consente di riservare il proprio nome utente, protetto da una password a scelta dell'utente."
+
+#: C/gnect.xml:38(para)
+msgid "The <guimenuitem>Guest Login</guimenuitem> option should be selected if you want an anonymous guest account. If you want to create a new login account, then select the <guimenuitem>First-time Login</guimenuitem> option, with the username, password and email of your choice. If you have already created your account, you can connect by selecting the <guimenuitem>Normal Login</guimenuitem> option, and enter the username and password that you have chosen."
+msgstr "L'opzione <guimenuitem>Accesso anonimo</guimenuitem> va selezionata se si desidera utilizzare un account anonimo. Se si desidera creare un nuovo account normale, selezionare l'opzione <guimenuitem>Primo accesso</guimenuitem>, con un nome utente, una password e un indirizzo email a scelta. Se si ha già creato un account, è possibile collegarsi selezionando l'opzione <guimenuitem>Accesso normale</guimenuitem>, inserendo il proprio nome utente e la propria password."
+
+#: C/gnect.xml:46(para)
+msgid "To connect to a server, click on the <guimenuitem>Connect</guimenuitem> button."
+msgstr "Per collegarsi a un server è sufficiente fare clic sul pulsante <guimenuitem>Connetti</guimenuitem>."
+
+#: C/gnect.xml:50(title)
+#: C/gnect.xml:57(phrase)
+msgid "The Four-in-a-Row network connection dialog."
+msgstr "La finestra di dialogo della connessione di <application>Forza 4</application>."
+
+#: C/gnect.xml:65(title)
+msgid "Joining a game room"
+msgstr "Entrare in una stanza da gioco"
+
+#: C/gnect.xml:66(para)
+msgid "Once you have successfully connected to a server, you can choose which game room to join. To play a multiplayer game of Four-in-a-Row, select the Four-in-a-Row room. If you want to host your own game, then click on the Launch button. This creates a new table where other players can participate in a game against you. If there are any other games already started, then you can double-click on an existing game table to join it. The list of game tables on the right shows you the number of available seats, which means the number of players that can join the game table."
+msgstr "Una volta connessi al server è possibile scegliere la stanza nella quale entrare. Per partecipare a una partita multigiocatore di Forza 4, selezionare la stanza Four-in-a-Row. Se invece si desidera ospitare una partita è sufficiente fare clic sul pulsante Avvia. Verrà creato un nuovo tavolo al quale altri giocatori potranno partecipare per iniziare delle nuove sfide. Se sono presenti altre partite già iniziate è possibile fare clic sopra un tavolo di gioco già avviato per parteciparvi. L'elenco dei tavoli di gioco sulla destra mostra il numero di posti disponibili, che rappresentano il numero di giocatori che possono prendere parte al tavolo di gioco."
+
+#: C/gnect.xml:73(title)
+#: C/gnect.xml:80(phrase)
+msgid "This Four-in-a-Row network dialog allows you to join a game room to find other players."
+msgstr "Questo dialogo di rete di Forza 4 consente di partecipare a una partita per cercare altri giocatori."
+
+#: C/gnect.xml:85(para)
+msgid "When creating a new table for Four-in-a-Row games, a preference dialog is displayed which allows you to customize the game, such as set the minimum number of players for the game. Once the total number of seats have been taken, then no more players are allowed to join that game table."
+msgstr "Quando si crea un nuovo tavolo per partite di Forza 4 viene mostrato un dialogo di preferenze che consente di personalizzare alcuni aspetti del gioco, come il numero minimo di giocatori per la partita. Una volta occupati tutti i posti liberi, nessun giocatore potrà più partecipare al tavolo di gioco."
+
+#: C/gnect.xml:90(para)
+msgid "It is possible to chat with other players in network games. Ask for advice or help playing the games, but please be polite against other players."
+msgstr "È possibile chiacchierare con gli altri giocatori durante le partite di rete. Si possono chiedere aiuti e consigli, ma bisogna essere sempre gentili nei confronti degli altri giocatori."
+
+#: C/gnect.xml:97(title)
+msgid "Waiting for other players to join the game"
+msgstr "Aspettare che altri giocatori partecipino alla partita"
+
+#: C/gnect.xml:98(para)
+msgid "Once you have successfully joined a game table, then you have to wait until enough players have joined the table. The <guimenuitem>Players List</guimenuitem> menu item allows you to see a list of the players who have joined the game. The game will begin immediately when the total number of players in the the game have been reached."
+msgstr "Dopo aver preso parte a un tavolo di gioco sarà necessario attendere che un numero sufficiente di giocatori entri nel gioco. La voce di menù <guimenuitem>Elenco giocatori</guimenuitem> consente di vedere un elenco di giocatori che partecipano al gioco. Una volta raggiunto il numero totale di giocatori per il gioco, la partita inizierà immediatamente."
+
+#: C/gnect.xml:107(title)
+msgid "Playing multiplayer Four-in-a-Row games"
+msgstr "Giocare partite multigiocatore di Forza 4"
+
+#: C/gnect.xml:108(para)
+msgid "Multiplayer Four-in-a-Row games have pretty much the same rules as normal Four-in-a-Row games, except that you are now playing against human players. This means that other strategies might possibly be better than when playing against AI players."
+msgstr "Le partite multigiocatore di Forza 4 hanno praticamente le stesse regole delle partite normali, fatta eccezione per il fatto che si sta giocando contro altri giocatori umani. Ciò significa che probabilmente le strategie altrui saranno migliori rispetto a quando si gioca contro l'intelligenza artificiale."
+
+#: C/gnect.xml:113(para)
+msgid "Once a player has won, the game ends and you can return to the initial network game screen. Then you can play yet another game of addictive Four-in-a-Row multiplayer!"
+msgstr "Quando un giocatore vince, la partita termina e sarà possibile tornare alla schermata iniziale della partita di rete. Sarà possibile giocare un'altra entusiasmante partita multigiocatore di <application>Forza 4</application>!"
+
+#: C/gnect.xml:445(title)
+msgid "Known Bugs and Limitations"
+msgstr "Problemi noti e limiti"
+
+#: C/gnect.xml:447(para)
+msgid "Occasionally a marble-dropping animation doesn't look as smooth as it should."
+msgstr "Occasionalmente, l'animazione delle caduta di un oggetto può non apparire fluida come dovrebbe."
+
+#: C/gnect.xml:460(title)
+msgid "Authors"
+msgstr "Autori"
+
+#: C/gnect.xml:462(para)
+msgid "<application>Four-in-a-Row</application> was written by Timothy Musson (<email>trmusson@ihug.co.nz</email>) and David Neary (<email>bolsh@gimp.org</email>). Various others have taken the time to help in many ways since work on <application>Four-in-a-Row</application> began."
+msgstr "<application>Forza 4</application> è stato scritto da Timothy Musson (<email>trmusson@ihug.co.nz</email>) e David Neary (<email>bolsh@gimp.org</email>). Molte altre persone hanno speso il loro tempo nel contribuire in diversi modi dall'inizio dei lavori di <application>Four-in-a-Row</application>."
+
+#: C/gnect.xml:467(para)
+msgid "The <ulink type=\"http\" url=\"http://www.ce.unipr.it/~gbe/velena.html\">Velena Engine</ulink>, <application>Four-in-a-Row</application>'s main computer player, was written by Giuliano Bertoletti. We're grateful to him for allowing us to include his work, without which <application>Four-in-a-Row</application> wouldn't be nearly as worthwhile."
+msgstr "Il <ulink type=\"http\" url=\"http://www.ce.unipr.it/~gbe/velena.html\">motore Velena</ulink>, il principale giocatore computerizzato di <application>Forza 4</application>, è stato scritto da Giuliano Bertoletti; gli sviluppatori gli sono molto grati per aver consentito loro di includere il suo lavoro, senza il quale il valore di <application>Forza 4</application> sarebbe quasi nullo."
+
+#: C/gnect.xml:474(para)
+msgid "This manual was written by Timothy Musson."
+msgstr "Questo manuale è stato scritto da Timothy Musson."
+
+#: C/gnect.xml:477(para)
+msgid "To report a bug or make a suggestion regarding this application or this manual, follow the directions in this <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">document</ulink>."
+msgstr "Per segnalare un problema o inviare suggerimenti su questa applicazione o su questo manuale, seguire le istruzioni contenute in questo <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">documento</ulink>."
+
+#: C/gnect.xml:502(title)
+msgid "License"
+msgstr "Licenza"
+
+#: C/gnect.xml:504(para)
+msgid "This program is free software; you can redistribute it and/or modify it under the terms of the <citetitle>GNU General Public License</citetitle> as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
+msgstr "Questo programma e le opere artistiche sono software libero; è lecito redistribuirli e/o modificarli secondo i termini della <citetitle>GNU General Public License</citetitle> come è pubblicata dalla Free Software Foundation; o la versione 2 della licenza o (a propria scelta) una versione successiva."
+
+#: C/gnect.xml:512(para)
+msgid "This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public License</citetitle> for more details."
+msgstr "Questo programma è distribuito nella speranza che sia utile, ma SENZA ALCUNA GARANZIA; senza neppure la garanzia implicita di NEGOZIABILITÀ o di APPLICABILITÀ PER UN PARTICOLARE SCOPO. Si veda la <citetitle>GNU General Public License</citetitle> per avere maggiori dettagli."
+
+#: C/gnect.xml:519(para)
+msgid "A copy of the <citetitle>GNU General Public License</citetitle> is included as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also obtain a copy of the <citetitle>GNU General Public License</citetitle> from the Free Software Foundation by visiting <ulink url=\"http://www.fsf.org\" type=\"http\">their Web site</ulink> or by writing to <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address>"
+msgstr "Una copia della <citetitle>GNU General Public License</citetitle> è inclusa nell'appendice del <citetitle>Manuale dell'utente GNOME</citetitle>. Inoltre è possibile ottenere una copia della <citetitle>GNU General Public License</citetitle> dalla Free Software Foundation visitando <ulink url=\"http://www.fsf.org\" type=\"http\">il sito web</ulink> oppure scrivendo a <address> Free Software Foundation, Inc. <street>51 Franklin Street, Fifth Floor</street><city>Boston</city>, <state>MA</state><postcode>02110-1301</postcode><country>USA</country></address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/gnect.xml:0(None)
+msgid "translator-credits"
+msgstr "Alessio Treglia <quadrispro@ubuntu-it.org>, 2008"
+

@@ -1,0 +1,89 @@
+<sect1 id="Neighbor"><!--<sect1info>
+		<copyright>
+			<year>1998</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>rwsy@mit.edu</email></address>
+	</sect1info>-->
+
+	<title>Neighbor</title>
+
+	<para>Written by Rosanna Yuen</para>
+
+	        <sect2><title>Setup</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>Type of Deck</entry>
+		<entry>Standard Deck</entry>
+	</row>
+	<row>
+		<entry>Stock</entry>
+		<entry>
+		  Top left pile.
+			Dealt to the Tableau in the manner described below.
+		</entry>
+	</row>
+	<row>
+		<entry>Tableau</entry>
+		<entry>
+			Five by five grid, each capable of holding one card.  One card dealt to
+			each space at the beginning of game.  Empty spaces automatically filled
+			by moving cards from the right to the left, from the leftmost card of
+			the row below to the rightmost space, and from the Stock to all
+			otherwise empty spaces.
+		</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>Goal</title>
+
+	<para>
+		Remove all cards.
+	</para>
+
+	        </sect2>
+        <sect2><title>Rules</title>
+
+	<para>
+		Click on Kings to remove them.  All other cards can be removed in pairs
+		that add up to thirteen as long as the two cards are touching
+		horizontally, vertically, or diagonally.
+	</para>
+
+	        </sect2>
+        <sect2><title>Options</title>
+
+	<para>
+		None
+	</para>
+
+	        </sect2>
+        <sect2><title>Scoring</title>
+
+	<para>
+		Each card removed scores one point.
+	</para>
+	<para>
+		Maximum possible score:  52
+	</para>
+
+	        </sect2>
+        <sect2><title>Strategy</title>
+
+	<para>
+		Remove cards higher up on the table first as this creates more
+		movement within the grid.
+	</para>
+        </sect2>
+</sect1>

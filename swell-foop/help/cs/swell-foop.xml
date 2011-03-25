@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.11">
+<!ENTITY date "January 2008">
+<!ENTITY appname "Swell Foop">
+<!ENTITY app "<application>Swell Foop</application>">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://live.gnome.org/DocumentationProject
+  Template version: 3.0 beta
+  Template last modified 2006-11-21
+
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="cs">
+  <articleinfo> 
+    <title>Příručka ke hře <application>Swell Foop</application></title>       
+    
+    <abstract role="description">
+      <para>Swell Foop je logická hra, jejíž podstatou je vyčistit okno od co nejvíce kamenů je možné, tím že klikáte na skupiny kamenů stejné barvy. Skupina zmizí a kameny z vrchu popadají. Hraje se dokud nejsou všechny kameny pryč nebo neexistuje žádná skupina.</para>
+    </abstract>
+
+    <copyright> 
+      <year>2005</year> 
+      <holder>Callum McKenzie</holder> 
+    </copyright><copyright><year>2009, 2010.</year><holder>Marek Černocký (marek@manet.cz)</holder></copyright> 
+
+    <publisher role="maintainer"> 
+      <publishername>Dokumentační projekt GNOME</publishername> 
+    </publisher> 
+
+	  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="legal.xml"/>   
+   <!-- This file legal.xml contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+		<firstname>Callum</firstname> 
+		<surname>McKenzie</surname> 
+		<affiliation> 
+	  		<orgname>Dokumentační projekt GNOME</orgname> 
+	  		<address> <email>callum@physics.otago.ac.nz</email> </address> 
+		</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. --> 
+    <revhistory>
+      <revision> 
+		    <revnumber>Příručka V2.11 ke hře Swell Foop</revnumber>
+		    <date>Leden 2008</date> 
+		    <revdescription> 
+    			<para>Přizpůsobení příručky Swell Foop nové šabloně.</para>		    
+	  		  <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+	  		  <para role="publisher">Dokumentační projekt GNOME</para>
+    		</revdescription> 
+      </revision> 
+      <revision> 
+		    <revnumber>Příručka V2.10 ke hře Swell Foop</revnumber>
+		    <date>Únor 2005</date> 
+		    <revdescription> 
+    			<para>Počáteční verze pro novou hru Swell Foop.</para>		    
+	  		  <para role="author">Callum McKenzie <email>callum@physics.otago.ac.nz</email></para>
+	  		  <para role="publisher">Dokumentační projekt GNOME</para>
+    		</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Tato příručka popisuje hru Swell Foop ve verzi 2.12.</releaseinfo> 
+    <legalnotice> 
+      <title>Ohlasy</title> 
+      <para>Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k aplikaci <application>Swell Foop</application> nebo této příručce, postupujte dle instrukcí v <ulink url="ghelp:user-guide?feedback-bugs" type="help">Kapitole Ohlasy Uživatelské příručky GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>Swell Foop</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+
+  <sect1 id="introduction"> 
+    <title>Jak hrát <application>Swell Foop</application></title> 
+    <para><application>Swell Foop</application> je logická hra. Cílem je odstranit co nejvíce objektů je možné v co nejméně tazích je možné. Objekty, které spolu sousedí, se odstraní jako celá skupina. Zbývající objekty se sesunou tak, aby zaplnily vzniklou mezeru a tak se vytvoří nové skupiny. Samostatný objekt odstranit nelze.</para>
+
+    <figure id="start-up">
+      <title><application>Swell Foop</application> na začátku nové hry.</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/start-up.png" format="PNG"/>
+	        </imageobject>
+	      </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Na začátku představuje herní deska mřížku plnou objektů. V závislosti na velikosti herní desky, kterou jste si vybrali, se na ní nachází buď tři nebo čtyři typy objektů. Objekty, jenž k sobě přiléhají a jsou stejného typu, tvoří skupinu, kterou můžete odstranit jednoduše kliknutím myší (nebo stiskem mezerníku). Když přejíždíte myší nad skupinou, kterou lze odstranit, objekty se začnou pohybovat. Počet objektů ve skupině a počet bodů, které obdržíte za odstranění skupiny, se zobrazují v levém dolním rohu okna. Více objektů ve skupině znamená více přidělených bodů. Jakmile skupinu odstraníte, objekty nad ní popadají dolů a zaplní vzniklý prostor. Pokud se vymazal celý sloupec, objekty nalevo od něj s posunou, aby zaplnily vzniklou mezeru.</para>
+
+    <table id="play" frame="all"><title>Jak hrát <application>Swell Foop</application></title>
+      <tgroup cols="2" colsep="0">
+      <tbody>
+        <row><entry><para>1. Odstraňte skupinu dvou nebo více objektů <screenshot>
+         <mediaobject>
+           <imageobject>
+             <imagedata fileref="figures/play1.png" format="PNG"/>
+           </imageobject>
+         </mediaobject>
+         </screenshot></para></entry>
+       <entry><para>2. Objekty spadnou dolů a zaplní mezery <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/play2.png" format="PNG"/>
+            </imageobject>
+          </mediaobject>
+          </screenshot></para></entry></row>
+        <row><entry><para>3. Objekty se posunou vlevo aby zaplnili prázdné sloupce <screenshot>
+         <mediaobject>
+           <imageobject>
+             <imagedata fileref="figures/play3.png" format="PNG"/>
+           </imageobject>
+         </mediaobject>
+         </screenshot></para></entry>
+       <entry><para>4. Vytvořily se nové skupiny a cyklus se opakuje <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/play4.png" format="PNG"/>
+            </imageobject>
+          </mediaobject>
+          </screenshot></para></entry></row>
+      </tbody>
+      </tgroup>
+    </table>
+
+    <para>Přidělování bodů je závislé na tom, kolik objektů odmažete:</para>
+    
+    <informaltable frame="topbot">
+    <tgroup cols="2" align="center">
+    <thead><row>
+    <entry>Počet objektů</entry>
+    <entry>Přidělených bodů</entry>
+    </row></thead>
+    <tbody>
+    <row><entry>2</entry><entry>0</entry></row>
+    <row><entry>3</entry><entry>1</entry></row>
+    <row><entry>4</entry><entry>4</entry></row>
+    <row><entry>5</entry><entry>9</entry></row>
+    <row><entry>6</entry><entry>16</entry></row>
+    <row><entry>7</entry><entry>25</entry></row>
+    <row><entry>8</entry><entry>36</entry></row>
+    <row><entry>9</entry><entry>49</entry></row>
+    <!-- Translators: this is a vertical continuation character -->
+    <row><entry>⋮</entry><entry>⋮</entry></row>
+    <row><entry>n</entry><entry>(n - 2)<superscript>2</superscript></entry></row>
+    </tbody>
+    </tgroup>
+    </informaltable>
+    <para>Pokud vyčistíte celou herní desku, dostáváte bonus 1000 bodů.</para>
+  </sect1>
+
+  <sect1 id="swell-foop-customisation">
+    <title>Přizpůsobení</title>
+
+    <sect2 id="changing-the-look">
+      <title>Změna vzhledu</title>
+      <para>Změna velikosti objektů se dělá jednoduše změnou velikosti okna. Pokud chcete maximálně využít velikost obrazovky, tak použijte volbu <guimenuitem>Celá obrazovka</guimenuitem> z nabídky <guimenu>Zobrazit</guimenu>.</para>
+
+      <para>Na změnu vzhledu objektů použijte položku <guimenuitem>Motiv</guimenuitem> v nabídce <guimenu>Zobrazit</guimenu>. Výběrem položky v seznamu se motiv okamžitě změní.</para>
+
+        <para>Můžete si vytvořit také svůj vlastní motiv, ačkoliv postup není zatím úplně přímočarý. Použijte kopii stávajícího motivu jako šablonu a ve svém oblíbeném kreslícím programu si jej upravte. Výsledek vložte do <filename>$XDG_DATA_HOME/gnome-games/swell-foop/themes/2.10/</filename>. Až znovu spustíte <application>Swell Foop</application>, bude zahrnutý v seznamu motivů. <filename>$XDG_DATA_HOME</filename> je obvykle <filename>~/.local/share/</filename>.</para>
+    </sect2>
+
+    <sect2 id="changing-the-size">
+      <title>Změna velikosti</title>
+      <para>Nabídka <guimenu>Velikost</guimenu> obsahuje tři nastavení: malá, střední, velká. Mimo zvýšení počtu objektů, přináší nastavení velké velikosti větší počet různých typů objektů.</para>
+    </sect2>
+
+    <sect2 id="changing-the-speed">
+    <title>Změna rychlosti</title>
+    <para>Výchozí animace je navržená tak, aby byla plynulá a elegantní. Pokud chcete hrát rychle a divoce, může vám připadat příliš pomalá. Volbou <guimenuitem>Rychlé animace</guimenuitem> z nabídky <guimenu>Zobrazit</guimenu> můžete zrychlit hraní hry na úkor kvality animací.</para>
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="swell-foop-strategy">
+    <title>Strategie</title>
+
+    <para>Nejdůležitější pravidlo na získání nejvyššího skóre je myslet dopředu: každá skupina, kterou odstraníte, vytvoří a naopak rozboří další skupiny.</para>
+
+<para>Jako první odstraňte větší skupiny, ledaže odstranění jiné skupiny způsobí jejich zvětšení. Svisle uspořádané objekty zůstanou srovnané, ale vodorovně uspořádané se mohou zpřeházet.</para>
+
+    <para>Vzhledem k tomu, že přidělené body narůstají s druhou mocninou, je větší skupina vždy lepší. Například rozdíl mezi skupinou šesti a sedmi objektů je devět bodů. V situaci, kdy se máte rozhodnout mezi spojením dvou skupin po dvou na čtyři nebo přidáním jednoho objektu ke skupině se šesti, byste měli volit přidání onoho jednoho objektu. I přesto, že za skupinu dvou objektů nedostanete žádné body, body za větší skupinu převáží.</para>
+
+    <para>Nezapomeňte na tisícibodový bonus za vymazání všech objektů. Na to, abyste dostali 1000 bodů za jednu skupinu, musela by mít 34 objektů. Je velmi nepravděpodobné, že byste byli v situaci, kdy byste se museli vzdát větší skupiny, kvůli tomu abyste vyčistili celou herní desku.</para>
+  </sect1>
+
+<!-- ============= About ================================== -->
+  <sect1 id="swell-foop-about"> 
+    <title>O hře <application>Swell Foop</application></title> 
+    <para>Hru <application>Swell Foop</application> napsal McKenzie (<email>callum@physics.otago.ac.nz</email>). Pokud chcete více informací o hře <application>Stejný GNOME</application>, navštivte prosím <ulink url="http://live.gnome.org/GnomeGames/" type="http">webovou stránku Hry GNOME</ulink>.</para>
+    <para>Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k této aplikaci nebo této příručce, postupujte dle instrukcí v <ulink url="ghelp:user-guide?feedback-bugs" type="help">Kapitole Ohlasy v Uživatelské příručce GNOME</ulink>.</para>
+
+    <para>Tento program je šířen podle ustanovení GNU General Public License, vydávané Free Software Foundation; a to buď verze 2 této licence anebo (podle vlastního uvážení) kterékoliv pozdější verze. Kopii této licence naleznete na <ulink url="http://www.gnu.org/licenses/gpl.html" type="http">stránce projektu GNU</ulink> nebo v souboru COPYING přiloženém ke zdrojovým kódům tohoto programu. </para>
+
+  </sect1> 
+</article>

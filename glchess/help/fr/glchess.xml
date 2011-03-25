@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.18">
+<!ENTITY date "December">
+<!ENTITY app "<application>Chess</application>">
+<!ENTITY appname "Chess">
+<!ENTITY version "2.22">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="fr">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo>
+ <title>Manuel de <application>Chess</application></title>
+ 
+ <abstract role="description">
+       <para>Chess est un classique jeu d'échecs où deux joueurs s'affrontent en capturant les pièces de l'adversaire, dans le but de lui prendre le roi. Il peut être joué en mode 2D ou 3D, en plein écran ou dans une fenêtre.</para>
+ </abstract>
+ <copyright>
+  <year>2006-2008</year>
+  <holder>Andreas Røsdal</holder>
+ </copyright><copyright><year>2007-2008</year><holder>Claude Paroz (claude@2xlibre.net)</holder></copyright><copyright><year>2008</year><holder>Bruno Brouard (annoa.b@gmail.com)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>Projet de documentation GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Permission vous est donnée de copier, distribuer et/ou modifier ce document selon les termes de la Licence GNU Free Documentation License, Version 1.1 ou ultérieure publiée par la Free Software Foundation sans section inaltérable, sans texte de première page de couverture ni texte de dernière page de couverture. Vous trouverez un exemplaire de cette licence en suivant ce <ulink type="help" url="ghelp:fdl">lien</ulink> ou dans le fichier COPYING-DOCS fourni avec le présent manuel.</para>
+         <para>Ce manuel fait partie de la collection de manuels GNOME distribués selon les termes de la licence de documentation libre GNU. Si vous souhaitez distribuer ce manuel indépendamment de la collection, vous devez joindre un exemplaire de la licence au document, comme indiqué dans la section 6 de celle-ci.</para>
+
+	<para>La plupart des noms utilisés par les entreprises pour distinguer leurs produits et services sont des marques déposées. Lorsque ces noms apparaissent dans la documentation GNOME et que les membres du projet de Documentation GNOME sont informés de l'existence de ces marques déposées, soit ces noms entiers, soit leur première lettre est en majuscule.</para>
+
+	<para>LE PRÉSENT DOCUMENT ET SES VERSIONS MODIFIÉES SONT FOURNIS SELON LES TERMES DE LA LICENCE DE DOCUMENTATION LIBRE GNU SACHANT QUE : <orderedlist>
+		<listitem>
+		  <para>LE PRÉSENT DOCUMENT EST FOURNI « TEL QUEL », SANS AUCUNE GARANTIE, EXPRESSE OU IMPLICITE, Y COMPRIS, ET SANS LIMITATION, LES GARANTIES DE MARCHANDABILITÉ, D'ADÉQUATION À UN OBJECTIF PARTICULIER OU DE NON INFRACTION DU DOCUMENT OU DE SA VERSION MODIFIÉE. L'UTILISATEUR ASSUME TOUT RISQUE RELATIF À LA QUALITÉ, À LA PERTINENCE ET À LA PERFORMANCE DU DOCUMENT OU DE SA VERSION DE MISE À JOUR. SI LE DOCUMENT OU SA VERSION MODIFIÉE S'AVÉRAIT DÉFECTUEUSE, L'UTILISATEUR (ET NON LE RÉDACTEUR INITIAL, L'AUTEUR, NI TOUT AUTRE PARTICIPANT) ENDOSSERA LES COÛTS DE TOUTE INTERVENTION, RÉPARATION OU CORRECTION NÉCESSAIRE. CETTE DÉNÉGATION DE RESPONSABILITÉ CONSTITUE UNE PARTIE ESSENTIELLE DE CETTE LICENCE. AUCUNE UTILISATION DE CE DOCUMENT OU DE SA VERSION MODIFIÉE N'EST AUTORISÉE AUX TERMES DU PRÉSENT ACCORD, EXCEPTÉ SOUS CETTE DÉNÉGATION DE RESPONSABILITÉ ; </para>
+		</listitem>
+		<listitem>
+		  <para>EN AUCUNE CIRCONSTANCE ET SOUS AUCUNE INTERPRÉTATION DE LA LOI, QU'IL S'AGISSE D'UN DÉLIT CIVIL (Y COMPRIS LA NÉGLIGENCE), CONTRACTUEL OU AUTRE, L'AUTEUR, LE RÉDACTEUR INITIAL, TOUT PARTICIPANT OU TOUT DISTRIBUTEUR DE CE DOCUMENT OU DE SA VERSION MODIFIÉE, OU TOUT FOURNISSEUR DE L'UNE DE CES PARTIES NE POURRA ÊTRE TENU RESPONSABLE À L'ÉGARD DE QUICONQUE POUR TOUT DOMMAGE DIRECT, INDIRECT, PARTICULIER, OU ACCIDENTEL DE TOUT TYPE Y COMPRIS, SANS LIMITATION, LES DOMMAGES LIÉS À LA PERTE DE CLIENTÈLE, À UN ARRÊT DE TRAVAIL, À UNE DÉFAILLANCE OU UN MAUVAIS FONCTIONNEMENT INFORMATIQUE, OU À TOUT AUTRE DOMMAGE OU PERTE LIÉE À L'UTILISATION DU DOCUMENT ET DE SES VERSIONS MODIFIÉES, MÊME SI LADITE PARTIE A ÉTÉ INFORMÉE DE L'ÉVENTUALITÉ DE TELS DOMMAGES.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+	<firstname>Andreas</firstname> 
+	<surname>Røsdal</surname> 
+	<affiliation> 
+	  <address> <email>andrearo@pvv.ntnu.no</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+<revhistory>
+      <revision> 
+	<revnumber>Manuel de Chess v2.18</revnumber> 
+	<date>Décembre</date> 
+	<revdescription> 
+	  <para role="author">Andreas Røsdal <email>andrearo@pvv.ntnu.no</email></para>
+	  <para role="publisher">Projet de documentation GNOME</para>
+	</revdescription> 
+      </revision>
+  <revision>
+   <revnumber>1</revnumber>
+   <date>Décembre 2006</date>
+   <authorinitials>AR</authorinitials>
+   <revremark>Premier brouillon terminé.</revremark>
+  </revision>
+ </revhistory>
+
+    <releaseinfo>Ce manuel documente la version 2.18 de Chess.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Votre avis</title> 
+      <para>Pour rapporter une anomalie ou émettre une suggestion concernant <application>Chess</application> ou ce manuel, procédez comme indiqué sur la <ulink url="ghelp:user-guide?feedback-bugs" type="help">page de réactions sur GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>glChess</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="intro">
+ <title>Introduction</title>
+ <sect2 id="what">
+  <title>Aperçu du jeu d'échecs</title>
+  
+  <para>Le jeu d'échecs est un jeu de plateau stratégique pour deux joueurs. <application>glChess</application> est un jeu d'échecs 2D/3D permettant de faire des parties d'échecs entre des joueurs humains et/ou l'ordinateur. glChess détecte la présence de moteurs externes de jeu d'échecs pour générer les coups du joueur « ordinateur ». Ce programme a été développé à l'origine par Robert Ancell ; actuellement, ce jeu fait partie des jeux GNOME (gnome-games).</para>
+
+  <para><application>glChess</application> est écrit en Python et exploite GTK+ et Cairo pour générer le plateau de jeu. La prise en charge 3D est facultative, et utilise OpenGL par l'intermédiaire des bibliothèques Python OpenGL et GtkGLExt. Comme pour la plupart des programmes 3D modernes, l'accélération matérielle est recommandée, bien qu'un fonctionnement purement logiciel est aussi possible. Par défaut, glChess est fourni avec GNU Chess comme moteur d'intelligence artificielle. glChess peut être joué en mode réseau contre d'autres joueurs sur Internet.</para>
+  <para>Le jeu d'échecs se joue sur un plateau carré, formé de 64 cases de couleur alternée. Chaque joueur commence une partie avec 16 pièces : un roi, une reine, deux tours, deux chevaliers, deux fous et huit pions. Un joueur possède les pièces blanches et l'autre joueur les pièces noires. Celui qui possède les blancs commence la partie. Les joueurs déplacent leurs pièces à tour de rôle. Certains déplacements aboutissent à la capture d'une pièce adverse, la supprimant du plateau de jeu. Le but du jeu est de mater le roi adverse. Cela se produit lorsque le roi est directement attaqué (échec) et qu'il n'existe aucune possibilité d'éviter la prise au prochain tour. Des théoriciens ont développé des stratégies et des tactiques très complexes pour le jeu d'échecs, dès la création du jeu. </para>
+<para>La forme actuelle du jeu s'est développée en Europe du sud dans la seconde moitié du 15ème siècle, après avoir évolué à partir d'un jeu semblable, mais beaucoup plus ancien, d'origine asiatique. Le jeu d'échecs est l'un des jeux de plateau les plus populaires au monde. La tradition des compétitions d'échecs remonte au 16ème siècle. Le premier champion du monde officiel d'échecs, Wilhelm Steinitz, a obtenu son titre en 1886 ; son équivalent moderne, Vladimir Kramnik, est le 14ème champion dans cette lignée. Il existe aussi un événement mondial bisannuel par équipe appelé les Olympiades d'échecs. Depuis le 20ème siècle, deux organisations internationales, la Fédération internationale des échecs et la Fédération internationale des joueurs d'échecs par correspondance ont supervisé les principales compétitions et titres d'échecs.</para>
+<para>L'un des premiers objectifs des informaticiens a été de créer une machine jouant aux échecs, et le jeu actuel est fortement influencé par les capacités déconcertantes des programmes d'échecs actuels. En 1997, un match entre Garry Kasparov, alors champion du monde, et le programme d'échecs d'IBM Deep Blue a démontré que les ordinateurs étaient capables de battre même les plus forts joueurs humains.</para>
+
+  <para>Pour lancer <application>glChess</application>, choisissez <guimenuitem>Jeu d'échecs</guimenuitem> dans le sous-menu <guisubmenu>Jeux</guisubmenu> du menu principal ou saisissez <command>glchess</command> sur une ligne de commande.</para>
+ </sect2>
+
+</sect1>
+
+
+<sect1 id="playing-glchess">
+ <title>Jouer à glChess</title>
+ <sect2 id="main-game-window">
+<title>Fenêtre principale du jeu</title>
+
+     <para>Au démarrage de glChess s'affiche la fenêtre principale du jeu ci-dessous. Les pièces du jeu sont déplacées à l'aide de la souris. Chaque joueur à tour de rôle déplace une pièce de sa couleur, d'une position du plateau à une autre position autorisée. La fenêtre principale du jeu est divisée en trois zones importantes : le menu et la barre d'outils supérieure permet de réaliser la plupart des actions du jeu ; l'échiquier au centre de la fenêtre est l'emplacement où les pièces du jeu sont déplacées avec la souris ; enfin, le panneau d'historique du jeu, qui est affiché en bas, permet d'accéder à des informations sur l'historique du jeu, au temps restant pour faire un déplacement et à des boutons qui affichent les mouvements précédents ou suivants.</para>
+
+ <figure id="main-game-shot">
+  <title>Fenêtre principale de glChess</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Fenêtre principale de glChess.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+</sect2>
+
+<sect2>
+<title>Démarrage d'une nouvelle partie</title>
+<para>Pour démarrer une nouvelle partie, cliquez sur le bouton <guibutton>Nouvelle partie</guibutton> de la barre d'outils. La boîte de dialogue Nouvelle partie apparaît. Elle vous permet de configurer comme vous le souhaitez une nouvelle partie. Dans la section <interface>Propriétés de la partie</interface>, le nom de la partie et la durée limite pour chacun des joueurs est configurée. Dans la section <interface>Joueurs</interface>, il est possible de configurer le nombre de joueurs humains et à intelligence artificielle. Si vous avez installé tous les moteurs d'échecs pris en charge comme joueurs à intelligence artificielle, ils apparaissent dans la liste des joueurs disponibles. Enfin, le réglage de la difficulté des joueurs à intelligence artificielle est effectué dans la section <interface>Difficulté</interface>.</para>
+
+ <figure id="new-game-shot">
+  <title>Boîte de dialogue pour le démarrage d'une nouvelle partie</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/new_game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Boîte de dialogue pour le démarrage d'une nouvelle partie de glChess.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+</sect2>
+
+
+
+
+<sect2 id="menubar">
+   <title>Les menus</title>
+   <para>La barre de menus, située en haut de la <interface>Fenêtre principale</interface> contient les menus suivants :</para>
+
+   <variablelist>
+    <varlistentry>
+     <term><guimenu>Jeu</guimenu></term>
+     <listitem>
+      <para>Ce menu contient : <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+N</keysym></shortcut><guimenuitem>Nouveau</guimenuitem></menuchoice> démarre une nouvelle partie de <application>Chess</application>.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+O</keysym></shortcut><guimenuitem>Ouvrir</guimenuitem></menuchoice> charge une partie précédemment enregistrée.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+S</keysym></shortcut><guimenuitem>Enregistrer</guimenuitem></menuchoice> enregistre la partie d'échecs actuelle.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><guimenuitem>Enregistrer sous</guimenuitem></menuchoice> enregistre la partie d'échecs actuelle sous un autre nom de fichier.</para>
+        </listitem>
+
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+L</keysym></shortcut><guimenuitem>Partie en réseau</guimenuitem></menuchoice> démarre une partie multi-joueur en réseau en utilisant GGZ Gaming Zone.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Abandonner</guimenuitem></menuchoice> permet d'admettre sa défaite afin que l'adversaire gagne la partie.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Proposer le nul</guimenuitem></menuchoice> termine la partie sans victoire d'aucun joueur, pour autant que la proposition de nul soit acceptée.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+Q</keysym></shortcut><guimenuitem>Quitter</guimenuitem></menuchoice> quitte le jeu.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+
+    <varlistentry>
+     <term><guimenu>Affichage</guimenu></term>
+     <listitem>
+      <para>Ce menu contient : <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>F11</keysym></shortcut><guimenuitem>Plein écran</guimenuitem></menuchoice> affiche la fenêtre du jeu en mode plein écran.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><guimenuitem>Affichage 3D</guimenuitem></menuchoice> permet l'affichage 3D de l'échiquier en utilisant OpenGL. Python OpenGL et Python GTKGLExt doivent être installés, et une carte graphique 3D doit être correctement configurée. Contactez votre administrateur système si vous rencontrez des problèmes, sinon il vous sera toujours possible de jouer en mode 2D.</para>
+        </listitem>
+	 <listitem>
+         <para><menuchoice><guimenuitem>Journal</guimenuitem></menuchoice> affiche les journaux contenant les informations de débogage de glChess et des moteurs d'intelligence artificielle actifs.</para>
+        </listitem>
+     </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+   <varlistentry>
+     <term><guimenu>Paramètres</guimenu></term>
+     <listitem>
+      <para>Ce menu contient : <itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>Préférences</guimenuitem></menuchoice> ouvre la fenêtre de paramétrage de vos <link linkend="prefs">préférences.</link></para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Aide</guimenu></term>
+     <listitem>
+      <para>Ce menu contient : <itemizedlist>
+        <listitem>
+          <para><menuchoice><shortcut><keysym>F1</keysym></shortcut><guimenuitem>Sommaire</guimenuitem></menuchoice> affiche ce manuel.</para>
+         <para><guimenuitem>À propos</guimenuitem> ouvre la boîte de dialogue <interface>À propos</interface> qui affiche des informations basiques sur <application>glChess</application> telles que les noms des auteurs ou le numéro de version du jeu.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+
+
+</sect2>
+
+
+</sect1>
+
+
+<sect1 id="chess-rules">
+ <title>Régles du jeu d'échecs</title>
+ <sect2 id="rules-of-chess">
+  <title>Règles du jeu d'échecs</title>
+<!--
+The reference for this chapter is http://en.wikipedia.org/wiki/Chess
+-->
+  <para>Les échecs se jouent sur un damier de huit rangées de cases numérotées de 1 à 8 et de huit colonnes de cases identifiées par les lettres a à h. Les couleurs des 64 cases sont claires et foncées en alternance, les cases blanches et les cases noires. Le plateau d'échecs est placé de telle sorte que chaque joueur dispose d'une case blanche dans le coin droit de son côté. Les pièces sont placées selon le plan défini, la reine se trouvant toujours sur une case de sa couleur.</para><para>Chaque joueur commence la partie avec 16 pièces comprenant un roi, une reine, deux tours, deux fous, deux cavaliers et huit pions. L'un des joueurs, les Blancs, dispose des pièces blanches et l'autre joueur, les Noirs, disposent des pièces noires. Ce sont toujours les Blancs qui commencent. Les couleurs sont attribuées soit par accord réciproque, soit par un procédé de hasard ou encore par un directeur de tournoi. Les joueurs jouent tour à tour une pièce à la fois (excepté pour le roque où deux pièces sont déplacées en même temps). Les pièces peuvent être déplacées sur une case libre ou sur une case occupée par une pièce de l'adversaire, auquel cas la pièce est capturée et retirée du jeu. Toutes les pièces capturent des pièces de l'adversaire en se plaçant sur la case qu'elles occupaient, à une exception près (la prise « en passant »).</para>
+ <sect3 id="rules-piece-king">
+  <title>Roi</title>
+<para>Lorsque le roi est attaqué directement par une (ou deux) pièce(s) de l'adversaire, on dit que le joueur est échec. Dans cette situation, seuls des mouvements qui soustraient le roi à cette attaque sont autorisés. Un joueur ne peut jamais effectuer un mouvement qui place son roi en situation d'échec. Le but du jeu est de mater son adversaire. Cela se produit lorsque le roi de son adversaire est échec et qu'il n'existe aucun mouvement pour soustraire le roi à cette attaque.</para><para>Le roi ne peut se déplacer que d'une seule case à la fois, horizontalement, verticalement ou en diagonale. Une fois par partie, chaque roi est autorisé à effectuer un déplacement spécial double, le roque. Le roque consiste à déplacer le roi de deux cases vers la tour, puis de déplacer la tour sur la case que le roi a traversée. Le roque est uniquement autorisé si toutes les conditions suivantes sont respectées :</para>
+<itemizedlist spacing="compact">
+  <listitem>
+   <para>Le joueur ne doit pas encore avoir déplacé le roi ni la tour impliquée dans le roque.</para>
+  </listitem>
+  <listitem>
+   <para>Aucune pièce ne doit se trouver entre le roi et la tour.</para>
+  </listitem>
+  <listitem>
+   <para>Le roi ne doit pas être actuellement échec, et il ne peut pas non plus passer par une case attaquée par une pièce de l'adversaire. Comme pour tout autre mouvement, le roque ne peut pas placer le roi en situation d'échec.</para>
+ </listitem>
+  <listitem>
+   <para>Le roi et la tour doivent se trouver sur la même rangée (pour exclure un roque avec un pion promu).</para>
+  </listitem>
+</itemizedlist>
+</sect3>
+ <sect3 id="rules-piece-rook">
+  <title>Tour</title>
+<para>La tour peut se déplacer horizontalement ou verticalement, d'autant de cases libres que possible (en plus du mouvement particulier du roque avec le roi).</para>
+</sect3>
+ <sect3 id="rules-piece-bishop">
+  <title>Fou</title>
+<para>Le fou peut se déplacer en diagonale dans toutes les directions, d'autant de cases libres que possible. Vous pouvez constater qu'un fou ne peut jamais changer de couleur de case, d'où l'appellation de fou noir et de fou blanc.</para>
+</sect3>
+ <sect3 id="rules-piece-queen">
+  <title>Reine</title>
+<para>La reine peut se déplacer horizontalement, verticalement ou en diagonale, d'autant de cases libres que possible.</para>
+</sect3>
+ <sect3 id="rules-piece-knight">
+  <title>Cavalier</title>
+<para>Le cavalier peut sauter par-dessus des cases occupées et se déplace horizontalement de deux cases et verticalement d'une case ou inversement, formant un déplacement en « L ». Un cavalier au centre du plateau dispose de huit possibilités de déplacements différents. Remarquez qu'à chaque déplacement, le cavalier change de couleur de case.</para>
+</sect3>
+ <sect3 id="rules-piece-pawns">
+  <title>Pions</title>
+<para>Ce sont les pions qui se déplacent de la manière la plus complexe. Un pion peut avancer d'une case si celle-ci est inoccupée. S'il n'a pas encore bougé, le pion a le droit d'avancer de deux cases, pour autant que les deux cases soient libres. Un pion ne peut jamais reculer. Lorsqu'un pion effectue un mouvement initial de deux cases qui le place à côté d'un pion de l'adversaire sur le plan horizontal, ce dernier peut capturer le pion « en passant », comme si le pion n'avait avancé que d'une case, mais seulement lors du coup suivant immédiatement le déplacement du pion. Les pions sont les seules pièces qui capturent de manière différente qu'ils n'avancent. Ils peuvent capturer une pièce de l'adversaire sur les deux cases adjacentes en diagonale devant eux, mais ils ne peuvent pas se déplacer sur ces cases, même si elles sont libres. Si un pion avance jusqu'au bout de sa colonne, à la huitième rangée, il est promu (converti) en reine, tour, fou ou cavalier de la même couleur. En pratique, le pion est presque toujours promu en reine.</para>
+</sect3>
+
+<sect3 id="rules-movement-others">
+<title>Autres règles de déplacement</title>
+<para>À l'exception du cavalier, les pièces ne peuvent pas sauter les unes par-dessus les autres. Même ses propres pièces ne peuvent pas être traversées si elles font obstacle à un mouvement, et une pièce ne peut jamais remplacer une autre pièce de la même couleur. On ne peut passer par-dessus les pièces de l'adversaire, mais celles-ci peuvent être capturées. Lorsqu'une pièce est capturée (ou prise), la pièce d'attaque remplace la pièce de l'adversaire sur la case (à l'exception de la prise « en passant »). La pièce capturée est donc retirée du jeu et elle est exclue jusqu'à la fin de la partie. Le roi ne peut être capturé, mais seulement mis en échec. Si un joueur est incapable de sortir son roi d'une situation d'échec, il est « échec et mat » et la partie est perdue pour lui.</para><para>Les parties d'échecs ne se terminent pas toujours par le mat, car chaque joueur peut abandonner si la situation paraît sans espoir. Les parties peuvent aussi se terminer par un match nul. Ceci peut se produire dans plusieurs cas : nul par accord, pat, triple répétition d'une même position, la règle des cinquante mouvements ou encore le nul par impossibilité de mater (en principe en raison de matériel insuffisant pour le mat).</para>
+</sect3>
+</sect2>
+
+
+<sect2 id="timed-games">
+<title>Jeux chronométrés</title>
+<para>Les parties peuvent être jouées en temps limité en réglant une durée de jeu au moment de la création d'une nouvelle partie. Chaque joueur dispose alors d'un temps limité pour préparer ses coups. Le temps attribué à un joueur ne diminue que lorsque c'est son tour de jouer.</para>
+</sect2>
+
+<sect2 id="draw">
+<title>Match nul</title>
+<para>C'est une partie qui se termine sans victoire pour aucun des joueurs. La plupart des parties nulles sont déclarées nulles d'un commun accord sur certaines règles. Les autres possibilités de parties nulles sont le pat, la répétition trois fois, la règle des cinquante mouvements et le matériel insuffisant. Une position est dite nulle (position nulle) si l'un ou l'autre des joueurs peut, en jouant correctement, obliger finalement le jeu à se terminer sur une partie nulle, quels que soient les mouvements de l'autre joueur.</para>
+
+
+<sect3 id="stalemate">
+<title>Le pat</title>
+<para>Le pat est une situation dans laquelle le joueur dont c'est le tour de jouer ne dispose d'aucune possibilité de mouvement et son roi n'est pas en échec. Le pat se traduit par un match nul.</para>
+</sect3>
+
+<sect3 id="threefold-repetition">
+<title>Répétition trois fois</title>
+<para>La partie est nulle si la même position se produit trois fois à l'identique avec le même joueur qui doit jouer et avec, à chaque fois, le même ensemble de mouvements autorisés pour chaque joueur (incluant le droit de prendre « en passant » et le droit de roquer).</para>
+</sect3>
+
+
+<sect3 id="fifty-move-rule">
+<title>Règle des cinquante mouvements</title>
+<para>La règle des cinquante mouvements déclare que la partie est nulle si cinquante mouvements sont joués de chaque côté sans mouvement de pion et sans prise.</para>
+</sect3>
+
+<sect3 id="insuff-material">
+<title>Matériel insuffisant</title>
+<para>Il s'agit d'un scénario de jeu dans lequel tous les pions ont été pris et où l'un des joueurs ne possède plus que son roi et l'autre joueur ne possède plus que son roi ou son roi avec un cavalier ou un fou. La position est nulle parce qu'il est impossible pour le camp dominant de mettre en échec et mat, indépendamment du jeu. Les situations où la mise en échec et mat est possible grâce aux gaffes que ferait le camp le plus faible, sont protégées par la règle des cinquante mouvements.</para>
+</sect3>
+
+
+</sect2>
+
+</sect1>
+
+
+
+
+<sect1 id="prefs">
+ <title>Paramétrage du jeu</title>
+
+
+<sect2 id="game-prefs">
+  <title>Préférences du jeu</title>
+  <para>Cette fenêtre des préférences permet de modifier l'orientation de l'échiquier, la notation des coups et le type de promotion.</para>
+
+ <figure id="preferences-game-shot">
+  <title>Boîte de dialogue Préférences de jeu pour glChess</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences_game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Boîte de dialogue Préférences de jeu pour glChess.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+
+</sect2>
+
+
+
+<sect2 id="view-prefs">
+  <title>Préférences d'affichage</title>
+  <para>Cette fenêtre des préférences permet de modifier l'apparence de glChess.</para>
+
+ <figure id="preferences-view-shot">
+  <title>Préférences d'affichage pour glChess</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences_view.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Préférences d'affichage pour glChess.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+
+</sect2>
+
+</sect1>
+
+
+<sect1 id="engines">
+ <title>Moteurs d'échecs</title>
+
+     <para>glChess devrait être capable d'utiliser n'importe quel moteur de jeu d'échecs compatible avec le protocole de communication de moteur d'échecs ou avec l'interface universelle d'échecs, y compris les moteurs d'échecs suivants :</para>
+
+<!-- Please keep AI list synchronized with glchess/data/ai.xml -->
+<itemizedlist spacing="compact">
+  <listitem>
+	<para>GNUChess</para>
+  </listitem>
+  <listitem>
+	<para>Sjeng</para>
+  </listitem>
+  <listitem>
+	<para>Amy</para>
+ </listitem>
+  <listitem>
+	<para>Crafty</para>
+  </listitem>
+  <listitem>
+	<para>Faile</para>
+  </listitem>
+  <listitem>
+	<para>Phalanx</para>
+  </listitem>
+  <listitem>
+	<para>Glaurung</para>
+  </listitem>
+  <listitem>
+	<para>HoiChess</para>
+  </listitem>
+  <listitem>
+	<para>Diablo</para>
+  </listitem>
+  <listitem>
+	<para>BBChess</para>
+  </listitem>
+  <listitem>
+	<para>Fruit</para>
+  </listitem>
+  <listitem>
+	<para>Amundsen</para>
+  </listitem>
+  <listitem>
+	<para>Shredder</para>
+  </listitem>
+  <listitem>
+	<para>Toga II</para>
+  </listitem>
+  <listitem>
+	<para>Moteur d'échecs Boo</para>
+  </listitem>
+
+
+</itemizedlist>
+
+</sect1>
+
+
+<sect1 id="bugs">
+ <title>Anomalies connues et limites</title>
+
+ <itemizedlist mark="opencircle">
+    <listitem>
+     <para>Il n'existe pas d'anomalie connue ni de limite dans glChess. Pour savoir comment améliorer glChess, lisez le fichier TODO qui est distribué avec le jeu.</para>
+    </listitem>
+ </itemizedlist>
+
+</sect1>
+
+<sect1 id="credits">
+ <title>Auteurs</title>
+  <para><application>glChess</application> a été écrit par Robert Ancell et est actuellement maintenu dans les jeux GNOME (gnome-games). Cette documentation a été écrite initialement par Andreas Røsdal en utilisant de nombreuses sources GPL. Pour rapporter une anomalie ou émettre une suggestion concernant cette application ou ce manuel, procédez comme indiqué dans ce <ulink url="ghelp:user-guide?feedback-bugs" type="help">document</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licence</title>
+  <para>Ce programme est un logiciel libre ; vous pouvez le redistribuer ou le modifier selon les termes de la <citetitle>GNU General Public License</citetitle>, tels que publiés par la Free Software Foundation ; soit la version 2 de cette licence ou (à votre choix) toute version ultérieure.</para>
+  <para>Ce programme est distribué dans l’espoir qu’il sera utile, mais SANS AUCUNE GARANTIE, ni explicite ni implicite ; sans même les garanties de commercialisation ou d’adaptation dans un but spécifique. Se référer à la <citetitle>GNU General Public License</citetitle> pour plus de détails.</para>
+  <para>Une copie de la <citetitle>GNU General Public License</citetitle> est inclue sous forme d'annexe au <citetitle>Guide d'utilisation du bureau GNOME</citetitle>. Vous pouvez également obtenir une copie de la <citetitle>GNU General Public License</citetitle> à la Free Software Foundation en visitant <ulink url="http://www.fsf.org" type="http">leur site Web</ulink> ou en écrivant à <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.18">
+<!ENTITY date "December">
+<!ENTITY app "<application>Chess</application>">
+<!ENTITY appname "Chess">
+<!ENTITY version "2.22">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sr">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo>
+ <title>Упутство за <application>Шах</application></title>
+ 
+ <abstract role="description">
+       <para>глШах је класична игра шаха на табли, у којој два играча симулирају битку тако што једу противничке фигуре, a на крају и краља. Игра се може играти у 2Д или 3Д режиму, преко целог екрана или у прозору.</para>
+ </abstract>
+ <copyright>
+  <year>2006-2008</year>
+  <holder>Andreas Røsdal</holder>
+ </copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>Пројекат Гномове документације</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Дозвољено умножавање, ширење, вршење измена овог документа под условима Гну-ове Слободне Документационе Дозволе (ГСДД), верзије 1.1 или било које накнадне верзије без непромењивих одељака, текста на насловној и последњој страни, а коју је објавила Задужбина Слободног Софтвера. Примерак ГСДД-е можете пронаћи на овој <ulink type="help" url="ghelp:fdl">адреси</ulink> или у датотеци COPYING-DOCS која је приложена уз ово упутство.</para>
+         <para>Ово упутство је део скупа Гном докумената објављених под GFDL. Уколико желите да расподељујете ово упутство одвојено од скупа, то можете урадити додавањем примерка лиценце документу, како је описано у одељку 6 саме лиценце.</para>
+
+	<para>Многи називи које компаније користе у циљу препознатљивости својих производа и услуга представљају робне марке. Када (уколико) се такви називи појављују(спомињу) у било којем Гномовом документу, а чланови Гномовог документационог пројекта имају сазнања о томе, тада су називи исписани великим словима или са великим почетним словима.</para>
+
+	<para>ОВАЈ ДОКУМЕНТ И ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СУ ДОСТУПНЕ ПОД УСЛОВИМА ГНУ-ОВЕ СЛОБОДНЕ ДОКУМЕНТАЦИОНЕ ДОЗВОЛЕ УЗ ДОДАТНУ САГЛАСНОСТ ДА: <orderedlist>
+		<listitem>
+		  <para>ДОКУМЕНТ ЈЕ ДОСТУПАН СА СВИМ СВОЈИМ ДОБРИМ И ЛОШИМ СТРАНАМА БЕЗ БИЛО КАКВОГ ЈАМСТВА, БИЛО ОНО ИЗРЕЧЕНО ИЛИ НЕ, УКЉУЧУЈУЋИ БЕЗ ОГРАНИЧЕЊА, ЈАМСТВО ДА ЈЕ ОВАЈ ДОКУМЕНТ ИЛИ ЊЕГОВА ИЗМЕЊЕНА ВЕРЗИЈА БЕЗ НЕДОСТАТАКА, СПРЕМАН ЗА ТРЖИШТЕ, СВРСИСХОДАН И НЕ НАРУШАВА ЗАКОНСКЕ НОРМЕ. ЦЕЛОКУПАН РИЗИК КОЈИ СЕ ОДНОСИ НА КВАЛИТЕТ, ТАЧНОСТ И ДОМЕТ (УЧИНАК) ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СНОСИ КОРИСНИК. УКОЛИКО СЕ У БИЛО КОЈЕМ ДОКУМЕНТУ ИЛИ ЊЕГОВОЈ ИЗМЕЊЕНОЈ ВЕРЗИЈИ ПОЈАВИ НЕДОСТАТАК (ГРЕШКА) БИЛО КОЈЕ ВРСТЕ, КОРИСНИК (А НЕ АУТОР ИЗВОРНЕ ВЕРЗИЈЕ, БИЛО КОЈИ ДРУГИ АУТОР ИЛИ САРАДНИК) СНОСИ СВЕ ТРОШКОВЕ НЕОПХОДНОГ СЕРВИСИРАЊА, ПОПРАВКЕ ИЛИ ИСПРАВКЕ. ОВО ОГРАНИЧЕЊЕ ЈАМСТВА ПРЕДСТАВЉА САСТАВНИ ДЕО ОВЕ ДОЗВОЛЕ. УПОТРЕБА БИЛО КОЈЕГ ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ НИЈЕ ДОЗВОЉЕНА ОСИМ ПОД УСЛОВИМА ОВОГ ОГРАНИЧЕЊА ЈАМСТВА.</para>
+		</listitem>
+		<listitem>
+		  <para>НИ ПОД КАКВИМ ОКОЛНОСТИМА ИЛИ ЗАКОНУ, БИЛО ЗБОГ КРШЕЊА (ИЛИ НЕМАРА) УГОВОРА, ИЛИ НА БИЛО КОЈИ ДРУГИ НАЧИН, АУТОР (ПРВОБИТНЕ ВЕРЗИЈЕ), САРАДНИК ИЛИ ИСПОРУЧИВАЛАЦ ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ, НИТИ ДОБАВЉАЧ БИЛО КОЈЕ ОД НАВЕДЕНИХ СТРАНА НЕЋЕ СНОСИТИ МАТЕРИЈАЛНУ ОДГОВОРНОСТ ЗА НАСТАЛА ДИРЕКТНА, ИНДИРЕКТНА, ПОСЕБНА, СЛУЧАЈНА ИЛИ ТИМЕ НАСТАЛА ОШТЕЋЕЊА БИЛО КОЈЕ ВРСТЕ УКЉУЧУЈУЋИ, БЕЗ ОГРАНИЧЕЊА, ШТЕТУ НАНЕСЕНУ УГЛЕДУ ФИРМЕ, ПРЕСТАНКУ ПРОИЗВОДЊЕ, ОТКАЗИВАЊЕ РАДА РАЧУНАРА ИЛИ КВАРА КАО И ЗА СВЕ ОСТАЛЕ ШТЕТЕ ИЛИ ГУБИТКЕ НАСТАЛЕ УСЛЕД КОРИШЋЕЊА ДОКУМЕНТА И ЊЕГОВИХ ИЗМЕЊЕНИХ ВЕРЗИЈА ЧАК И АКО ЈЕ ОШТЕЋЕНА СТРАНА БИЛА ОБАВЕШТЕНА О МОГУЋНОСТИ НАСТАНКА ТЕ ШТЕТЕ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+	<firstname>Andreas</firstname> 
+	<surname>Røsdal</surname> 
+	<affiliation> 
+	  <address> <email>andrearo@pvv.ntnu.no</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+<revhistory>
+      <revision> 
+	<revnumber>Упутство за Шах v2.18</revnumber> 
+	<date>Децембар</date> 
+	<revdescription> 
+	  <para role="author">Andreas Røsdal <email>andrearo@pvv.ntnu.no</email></para>
+	  <para role="publisher">Пројекат Гномове документације</para>
+	</revdescription> 
+      </revision>
+  <revision>
+   <revnumber>1</revnumber>
+   <date>Децембар 2006.</date>
+   <authorinitials>AR</authorinitials>
+   <revremark>Завршен први нацрт.</revremark>
+  </revision>
+ </revhistory>
+
+    <releaseinfo>Ово упутство је написано за Шах 2.18.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Примедбе</title> 
+      <para>Да бисте пријавили грешку или дали предлог у вези програма <application>Шах</application> или његовог упутства, пратите смернице на <ulink url="ghelp:user-guide?feedback-bugs" type="help">Гномовој страни за примедбе</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>глШах</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="intro">
+ <title>Увод</title>
+ <sect2 id="what">
+  <title>Преглед Шаха</title>
+  
+  <para>Шах је стратегијска игра на табли за два играча. <application>глШах</application> је 2Д/3Д шаховска игра, при чему играчи могу бити било комбинација људи и/или рачунарских програма. глШах препознаје спољне шаховске програме (моторе) и користи их за рачунарске играче. Игру је оригинално развио Robert Ancell, а сада је део Гномових игара.</para>
+
+  <para><application>глШах</application> је написан у језику Питон, а користи ГТК+ и Каиро као позадину за исцртавање шаховске табле. 3Д подршка је опционо доступна користећи OpenGL преко Питоновиг OpenGL i GtkGLExt библиотека. Као и у осталим 3Д програмима, препоручује се хардверска акцелерација, али ће игра радити солидно и са софтверском акцелерацијом. Уз глШах се испоручује и Гнуов шах, подразумеван алгоритам за вештачку интелигенцију. глШах се може играти и преко мреже, са другим играчима преко интернета.</para>
+  <para>Шах се игра на квадратној табли која има 64 поља са наизменичним бојама поља. Оба играча започињу игру са шеснаест фигура: једним краљем, једном краљицом, два топа, два коња, два ловца и осам пиона. Један играч управља белим фигурама, а други црним; играч који управља белим фигурама игра први. Потези играча се наизменично смењују; неки потези укључују „једење“ противничке фигуре и она се онда уклања са табле. Циљ игре је матирати противничког краља. Ово се дешава када је краљ под директним нападом (у шаху), а не постоји начин да се он помери да не буде опет нападнут. Теоретичари су развили опсежне шаховске стратегије и тактике од када је игра настала.</para>
+<para>Садашња облик игре је настао у Јужној Европи у другој половини 15. века пошто је изведен од сличних, много старијих игара азијског порекла. Шах је једна од најпопуларнијих игара на табли. Традиција такмичарског шаха почиње у 16. веку. Први званични светски шаховски шампион, Вилхелм Штајниц је освојио титулу 1886. године; његов модерни еквивалент, Владимир Крамник, је 14. шампион у низу. Постоје и Шаховске олимпијаде које се одигравају на сваке две године. Од 20. века, две међународне организације, Светска шаховска федерација и International Correspondence Chess Federation су организовале и надгледале најбоља светска такмичења и доделу  међународних титула.</para>
+<para>Један од циљева првих рачунарских научника је био направити шаховску машину, као позадину самог сучеља, а и на данашњи шах дубоко утиче утицај огромних способности тренутних шаховских програма. 1997. године, у мечу између Гарија Каспарова, тадашњег светског шампиона и Deep Blue шаховског програма фирме IBM, је доказано да рачунар може да победи и најјачег људског играча.</para>
+
+  <para>Да бисте покренули <application>глШах</application>, изаберите <guimenuitem>Шах</guimenuitem> из подменија <guisubmenu>Игре</guisubmenu> менија <guimenu>Програми</guimenu>, или откуцајте <command>glchess</command> у командној линији.</para>
+ </sect2>
+
+</sect1>
+
+
+<sect1 id="playing-glchess">
+ <title>Играње глШаха</title>
+ <sect2 id="main-game-window">
+<title>Главни прозор игре</title>
+
+     <para>Покретањем глШаха се приказује главни прозор као што је приказано на слици испод. Игра се игра померањем фигура користећи миша. Играчи се смењују померајући фигуру одговарајуће боје, из једне позиције у другу, исправну позицију. Главни прозор је подељен на три главна дела: У менију на врху и области траке алата се могу извршити најчешће акције. Шаховска табла је на средини прозора, где се фигуре померају коришћењем миша. Коначно, на дну је приказан панел историјата игре, где се налазе подаци о историји игре, преосталом времену за игру и дугмад за приказ претходних или следећих потеза.</para>
+
+ <figure id="main-game-shot">
+  <title>Главни прозор глШаха</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Главни прозор глШаха.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+</sect2>
+
+<sect2>
+<title>Покретање нове игре</title>
+<para>Да бисте покренули нову игру, притисните дугме <guibutton>Нова игра</guibutton> из траке алата. Приказаће се прозорче за нову игру на коме се нова игра може подесити жељеним опцијама. У одељку за <interface>поставке игре</interface> се одређује име игре и време за потез сваког играча. У одељку <interface>играчи</interface> је могуће поставити број људских и рачунарских играча. Ако сте инсталирали било који подржани шаховски мотор, он ће бити приказан у списку доступних играча. Коначно, подешавања тежине рачунарских играча је могуће поставити у одељку <interface>тежина</interface>.</para>
+
+ <figure id="new-game-shot">
+  <title>Прозорче за покретање нове игре</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/new_game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Прозорче за покретање нове игре глШаха.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+</sect2>
+
+
+
+
+<sect2 id="menubar">
+   <title>Менији</title>
+   <para>Трака менија, која се налази на врху <interface>Главног прозора</interface>, садржи следеће меније:</para>
+
+   <variablelist>
+    <varlistentry>
+     <term><guimenu>Игра</guimenu></term>
+     <listitem>
+      <para>Овај мени садржи: <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+N</keysym></shortcut><guimenuitem>Ново</guimenuitem></menuchoice> Покреће нову игру <application>Шаха</application>.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+O</keysym></shortcut><guimenuitem>Отвори</guimenuitem></menuchoice> Учитава претходно сачувану игру.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+S</keysym></shortcut><guimenuitem>Сачувај</guimenuitem></menuchoice> Чува тренутну игру шаха.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><guimenuitem>Сачувај као</guimenuitem></menuchoice> Чува тренутну игру шаха под новим именом датотеке.</para>
+        </listitem>
+
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+L</keysym></shortcut><guimenuitem>Мрежна игра</guimenuitem></menuchoice> Започиње нову мрежну игру коришћењем ГГЗ Зоне игре.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Предај се</guimenuitem></menuchoice> Одобравање прекида игре тако да противник побеђује.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Захтевај реми</guimenuitem></menuchoice> Ако је захтевани реми прихваћен, игра се завршава без победника.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+Q</keysym></shortcut><guimenuitem>Изађи</guimenuitem></menuchoice> Завршава игру.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+
+    <varlistentry>
+     <term><guimenu>Преглед</guimenu></term>
+     <listitem>
+      <para>Овај мени садржи: <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>F11</keysym></shortcut><guimenuitem>Цео екран</guimenuitem></menuchoice> Приказује прозор игре у режиму преко целог екрана.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><guimenuitem>3Д шаховски поглед</guimenuitem></menuchoice> Омогућава 3Д режим погледа користећи OpenGL. Ово захтева да имате инсталиране библиотеке Python OpenGL и Python GTKGLExt, као и добро подешену 3Д графичку карту. Контактирајте администратора система ако имате проблема. У сваком случају, игру увек можете играти у 2Д режиму.</para>
+        </listitem>
+	 <listitem>
+         <para><menuchoice><guimenuitem>Прикажи дневник игре</guimenuitem></menuchoice> Приказује дневнике ради отклањања грешака у програму глШах и активним шаховским моторима.</para>
+        </listitem>
+     </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+   <varlistentry>
+     <term><guimenu>Подешавања</guimenu></term>
+     <listitem>
+      <para>Овај мени садржи: <itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>Подешавања</guimenuitem></menuchoice> Отвара прозор за уређивање <link linkend="prefs"> подешавања.</link></para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Помоћ</guimenu></term>
+     <listitem>
+      <para>Овај мени садржи: <itemizedlist>
+        <listitem>
+          <para><menuchoice><shortcut><keysym>F1</keysym></shortcut><guimenuitem>Садржај</guimenuitem></menuchoice> Приказује ово упутство.</para>
+         <para><guimenuitem>О програму</guimenuitem> Отвара прозорче <interface>„О програму“</interface> које приказује основне податке о <application>глШаху</application>, као што су име аутора и издање програма.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+
+
+</sect2>
+
+
+</sect1>
+
+
+<sect1 id="chess-rules">
+ <title>Шаховска правила</title>
+ <sect2 id="rules-of-chess">
+  <title>Правила игре шах</title>
+<!--
+The reference for this chapter is http://en.wikipedia.org/wiki/Chess
+-->
+  <para>Шах се игра на квадратној табли са осам редова (означених са бројевима од 1 до 8) и осам колона (означених латиничним словима a до h). Бела и црна боја шездесет и четири поља се наизменично мењају, а зову се још и „светла“ и „тамна“ поља. Шаховска табла се тако поставља да је сваком играчу бело поље у доњем десном углу, а фигуре се постављају као што је приказано на слици, тако да је свака краљица на пољу исте боје као и она.</para><para>Сваки играч почиње игру са 16 фигура: фигуре сваког од играча се састоје од једног краља, једне краљице, два топа, два ловца, два коња и осам пиона. Један играч, који се зове још и „бели“ управља белим фигурама, а други играч, „црни“, управља црним фигурама; бели увек игра први. Боје се одабирају или пријатељским договором, на срећу или их одабира режисер турнира. Играчи наизменично играју померајући по једну фигуру (са изузетком рокаде, када се две фигуре померају одједном). Фигуре се или померају на слободно поље, или на поље које заузима противничка фигура и тад је та фигура узета и уклања се из игре. Са изузетком ан пасана, све фигуре једу противничке фигуре померајући се на поље које заузима противничка фигура.</para>
+ <sect3 id="rules-piece-king">
+  <title>Краљ</title>
+<para>Када се краља налази под директним нападом једне (или може и две) противничке фигуре, каже се да је играч у шаху. Када је у шаху, играчу су дозвољени само они потези који извлаче краља из шаха. Играч такође не сме да направи ниједан потез да свог краља доведе у шах. Циљ игре је шах-матирати противника; ово се дешава када је краљ у шаху, а не постоји ниједан потез који краља извлачи из противничког напада.</para><para>Краљ се може померати једно поље водоравно, усправно или дијагонално. Једном за време игре, сваки краљ има право да изврши специјални дупли потез, рокаду. Рокада се састоји од померања краља два поља према топу, а затим померање топа на поље које је краљ прескочио. Рокада је могућа само ако су задовољени следећи услови:</para>
+<itemizedlist spacing="compact">
+  <listitem>
+   <para>Играч није пре рокаде померао ни краља ни топа са којим се врши рокада.</para>
+  </listitem>
+  <listitem>
+   <para>Између краља и топа не постоји ниједна фигура.</para>
+  </listitem>
+  <listitem>
+   <para>Краљ не сме бити под шахом, нити сме да прође кроз поља која су под нападом противника. Као и са осталим потезима, рокада не може да се обави ако би тиме краљ ушао у шах.</para>
+ </listitem>
+  <listitem>
+   <para>Краљ и топ морају бити на истом реду (да се искључи могућност рокаде изведеним пионом).</para>
+  </listitem>
+</itemizedlist>
+</sect3>
+ <sect3 id="rules-piece-rook">
+  <title>Топ</title>
+<para>Топ се може померати било који број слободних поља водоравно или усправно (такође је укључен и краљев специјални потез рокаде).</para>
+</sect3>
+ <sect3 id="rules-piece-bishop">
+  <title>Ловац</title>
+<para>Ловац се може померати било који број слободних поља дијагонално. Приметите да ловац никад не мења боју поља на коме стоји, па играчи говоре често о „белом“ и „црном“ ловцу.</para>
+</sect3>
+ <sect3 id="rules-piece-queen">
+  <title>Краљица</title>
+<para>Краљица се може померати било који број слободних поља водоравно, усправно или дијагонално.</para>
+</sect3>
+ <sect3 id="rules-piece-knight">
+  <title>Коњ</title>
+<para>Коњ може да прескаче заузета поља и помера се два поља водоравно и једно поље усправно или обрнуто, правећи тако „L“ облик. Коњ на средини табле има осам поља на која може да се помери. Приметите да сваки пут када се коњ помери, мења боју поља на коме стоји.</para>
+</sect3>
+ <sect3 id="rules-piece-pawns">
+  <title>Пиони</title>
+<para>Пиони имају најсложенија правила кретања: Пион се може покретати само једно поље напред ако то поље није заузето. Ако се пион до тад није померао, могуће је и да се помери два поља напред ако су оба поља испред њега слободна. Пион се не може кретати уназад. Ако се пион први пут помери два поља и после одиграног потеза се налази поред противничког пиона, противник може да једе „ан пасан“ тог пиона, као да се први пешак кретао само једно поље напред. Пиони су једине фигуре које једу другачије од кретања. Пиони могу да поједу противничку фигуру само на два дијалогнална поља испред њих, али се не могу померити на ова поља уколико на њима нема противничке фигуре. Ако пион дође до последњег реда, онда се претвара (промовише) у краљицу, топа, ловца или коња исте боје. У пракси се пешаци готово увек претварају у краљицу.</para>
+</sect3>
+
+<sect3 id="rules-movement-others">
+<title>Преостала правила кретања</title>
+<para>Са изузетком коња, фигуре не могу прескакати једне преко других. Фигуре исте боје („пријатељске фигуре“) се не могу прескочити ако су у линији кретања, и пријатељска фигура не може да замени другу пријатељску фигуру. Противничке фигуре исто не могу да се прескоче, али могу да се „поједу“. Када се фигура поједе (или узме), нападачка фигура стаје на поље које је заузимала поједена фигура (ан пасан је једини изузетак). Поједена фигура се уклања из игре и не може се више вратити у игру. Краљ се не може појести, може се само довести у шах. Ако играч не може да извуче краља из шаха, долази до мата, и игра је изгубљена.</para><para>Шаховске игре не морају да се заврше матом — било који од играча може предати партију ако позиција делује изгубљено. Игре се такође могу завршити и ремијем (нерешено). Реми може настати из више ситуација, укључујући и споразумни реми, пат, правилом три понављања, правилом педесет потеза или реми немогућношћу да било који играч матира (обично јер нема довољно материјала да се направи мат).</para>
+</sect3>
+</sect2>
+
+
+<sect2 id="timed-games">
+<title>Временски ограничене игре</title>
+<para>Игре се могу играти и са временским ограничењем постављањем времена за игру при прављењу нове игре. У временски ограниченим играма сваки играч има одређено време за потез, а време се смањује само док је играч на потезу.</para>
+</sect2>
+
+<sect2 id="draw">
+<title>Ремизирање</title>
+<para>Ово је игра која се завршава без победе за иједног играча. Већина нерешених игара настаје споразумним ремијем. Други начини да се игра заврши ремијем су пат, правило три понављања, правило педесет потеза и недовољан материјал за мат. За позицију се каже да је реми (или реми позиција) ако било који играч може, правилно играјући, кад-тад натерати игру у позицију када се игра мора завршити ремијем, без обзира на потезе другог играча.</para>
+
+
+<sect3 id="stalemate">
+<title>Пат</title>
+<para>Пат је позиција у којој играч који је на потезу не може да одигра ниједан исправан потез, а краљ му није у шаху. Пат проузрокује тренутни реми.</para>
+</sect3>
+
+<sect3 id="threefold-repetition">
+<title>Правило три понављања</title>
+<para>Игра је ремизирана ако се иста позиција појави три пута, а на потезу је исти играч, а сваки играч има исти скуп могућих потеза сваки пут (ово друго укључује и право да се узме ан пасан и право на рокаду).</para>
+</sect3>
+
+
+<sect3 id="fifty-move-rule">
+<title>Правило педесет потеза</title>
+<para>Правило педесет потеза каже да се игра завршава ремијем ако после педесет потеза није померен ниједан пион или није поједена ниједна фигура.</para>
+</sect3>
+
+<sect3 id="insuff-material">
+<title>Недовољно материјала за победу</title>
+<para>Ово је сценарио у коме су поједени сви пиони, при чему једна страна има само краља, а друга страна има једног краља плус једног коња или једног ловца. Оваква позиција је реми јер је немогуће да доминантна страна матира без обзира на потезе које игра. Ситуације у којима је мат могућ само ако лошија страна греши су покривене правилом педесет потеза.</para>
+</sect3>
+
+
+</sect2>
+
+</sect1>
+
+
+
+
+<sect1 id="prefs">
+ <title>Подешавања игре</title>
+
+
+<sect2 id="game-prefs">
+  <title>Поставке игре</title>
+  <para>Ово прозорче поставки вам омогућава да измените оријентацију табле, нотацију која се приказује, као и у коју фигуру ће се заменити пион ако изађе.</para>
+
+ <figure id="preferences-game-shot">
+  <title>Прозорче поставки глШах игре</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences_game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Прозорче поставки глШах игре.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+
+</sect2>
+
+
+
+<sect2 id="view-prefs">
+  <title>Поставке прегледа</title>
+  <para>Ово прозорче поставки вама омогућава да измените изглед и осећај игре глШах.</para>
+
+ <figure id="preferences-view-shot">
+  <title>Прозорче поставки прегледа игре глШах</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences_view.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Прозорче поставки прегледа игре глШах.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+
+</sect2>
+
+</sect1>
+
+
+<sect1 id="engines">
+ <title>Шаховске машине</title>
+
+     <para>глШах би требало да је у могућности да користи било који протокол за шаховску комуникацију или Универзални Шаховски Интерфејс компатибилних шаховских машина, укључујући следеће шаховске машине:</para>
+
+<!-- Please keep AI list synchronized with glchess/data/ai.xml -->
+<itemizedlist spacing="compact">
+  <listitem>
+	<para>GNUChess</para>
+  </listitem>
+  <listitem>
+	<para>Sjeng</para>
+  </listitem>
+  <listitem>
+	<para>Amy</para>
+ </listitem>
+  <listitem>
+	<para>Crafty</para>
+  </listitem>
+  <listitem>
+	<para>Faile</para>
+  </listitem>
+  <listitem>
+	<para>Phalanx</para>
+  </listitem>
+  <listitem>
+	<para>Glaurung</para>
+  </listitem>
+  <listitem>
+	<para>HoiChess</para>
+  </listitem>
+  <listitem>
+	<para>Diablo</para>
+  </listitem>
+  <listitem>
+	<para>BBChess</para>
+  </listitem>
+  <listitem>
+	<para>Fruit</para>
+  </listitem>
+  <listitem>
+	<para>Amundsen</para>
+  </listitem>
+  <listitem>
+	<para>Shredder</para>
+  </listitem>
+  <listitem>
+	<para>Toga II</para>
+  </listitem>
+  <listitem>
+	<para>Boo's Chess Engine</para>
+  </listitem>
+
+
+</itemizedlist>
+
+</sect1>
+
+
+<sect1 id="bugs">
+ <title>Познате грешке и ограничења</title>
+
+ <itemizedlist mark="opencircle">
+    <listitem>
+     <para>Не постоји ниједна документована грешка или ограничење глШаха. Да бисте пронашли области у којима можете побољшати глШах, погледате датотеку TODO која се испоручује уз игру.</para>
+    </listitem>
+ </itemizedlist>
+
+</sect1>
+
+<sect1 id="credits">
+ <title>Аутори</title>
+  <para><application>глШах</application> је написао Robert Ancell, и сада се одржава уз Гномове игре. Ово упутство је изворно написао Andreas Røsdal користећи неколико извора под ГНУ Општом Јавном Лиценцом. Да бисте пријавили грешке или дали предлог у вези овог програма или његовог упутства, пратите смернице из <ulink url="ghelp:user-guide?feedback-bugs" type="help">документа</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Лиценца</title>
+  <para>Овај програм је слободан софтвер; можете га расподељивати и/или га мењати под условима <citetitle>ГНУ Опште Јавне Лиценце (GNU GPL)</citetitle> како је објављује Задужбина за Слободни Софтвер (FSF); било верзије 2 те Лиценце, било (по вашем нахођењу) било које новије верзије.</para>
+  <para>Овај програм се расподељује у нади да ће бити од користи, али БЕЗ ИКАКВИХ ГАРАНЦИЈА; чак и без подразумеване гаранције КОРИСНОСТИ или ПРИЛАГОЂЕНОСТИ ОДРЕЂЕНОЈ НАМЕНИ.  Видите <citetitle>ГНУ Општу Јавну Лиценцу</citetitle> за више детаља.</para>
+  <para>Примерак <citetitle>ГНУ Опште Јавне Лиценце</citetitle> је укључен у додатку <citetitle>Гномовог корисничког водича</citetitle>. Такође можете набавити примерак <citetitle>ГНУ Опште Јавне Лиценце</citetitle> од Задужбине за Слободни Софтвер одлазећи на <ulink url="http://www.fsf.org" type="http">њихову веб адресу</ulink> или пишући на <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

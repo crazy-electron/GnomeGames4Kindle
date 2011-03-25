@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.21.90">
+<!ENTITY manrevision "3.0">
+<!ENTITY date "February 2008">
+<!ENTITY app "<application>Sudoku</application>">
+<!ENTITY appname "Sudoku">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 06, 2003
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ca">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Manual del <application>Sudoku</application></title>       
+
+    <abstract role="description">
+      <para>El Sudoku és una aplicació per a jugar al popular joc de trencaclosques sudoku, en el que heu d'omplir una casella de 9 per 9 amb els dígits correctes.</para>
+    </abstract>
+
+    <copyright> 
+      <year>2008</year> 
+      <holder>Thomas M. Hinkle</holder> 
+    </copyright><copyright><year>2007, 2008</year><holder>Joan Duran (jodufi@gmail.com)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Projecte de documentació del GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Teniu permís per a copiar, distribuir i/o modificar aquest document, sota els termes de la Llicència de documentació lliure GNU (GFDL), versió 1.1 o qualsevol versió publicada posteriorment per la Free Software Foundation, sense seccions invariants, sense texts de portada i sense texts de contraportada. Podeu trobar una còpia de la GFDL en aquest <ulink type="help" url="ghelp:fdl">enllaç</ulink> o en el fitxer COPYING-DOCS distribuït amb aquest manual.</para>
+         <para>Aquest manual forma part d'una col·lecció de manuals del GNOME distribuïts sota la GFDL. Si voleu distribuir aquest manual independentment de la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal com es descriu a la secció 6 de la llicència.</para>
+
+	<para>Molts dels noms que les empreses utilitzen per a distingir els seus productes i serveis es consideren marques comercials. Quan aquests noms apareguin en qualsevol documentació del GNOME, si els membres del Projecte de documentació del GNOME han estat avisats pel que fa a les marques, els noms apareixeran en majúscules o amb les inicials en majúscules.</para>
+
+	<para>EL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT S'OFEREIXEN SOTA ELS TERMES DE LA LLICÈNCIA DE DOCUMENTACIÓ LLIURE DE GNU, TENINT EN COMPTE QUE: <orderedlist>
+		<listitem>
+		  <para>EL DOCUMENT S'OFEREIX «TAL COM ÉS», SENSE CAP TIPUS DE GARANTIA, NI EXPLÍCITA NI IMPLÍCITA; AIXÒ INCLOU, SENSE LIMITAR-S'HI, LES GARANTIES QUE EL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT NO TINGUI DEFECTES, SIGUI COMERCIALITZABLE, SIGUI ADEQUAT PER A UN ÚS CONCRET O NO INFRINGEIXI CAP LLEI. TOT EL RISC PEL QUE FA A LA QUALITAT, EXACTITUD I RENDIMENT DEL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT ÉS VOSTRE. EN CAS QUE EL DOCUMENT RESULTÉS DEFECTUÓS EN QUALSEVOL ASPECTE, VÓS (NO PAS L'ESCRIPTOR INICIAL, L'AUTOR O CAP ALTRE COL·LABORADOR) ASSUMIU TOT EL COST DE MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA; I </para>
+		</listitem>
+		<listitem>
+		  <para>EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGUI PER AGREUJAMENT (INCLOENT-HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR ORIGINAL, QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA VERSIÓ MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN RESPONSABLES DAVANT DE NINGÚ PER CAP DANY DIRECTE, INDIRECTE, ESPECIAL, ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITAR-S'HI, ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FEINA, FALLADA O MALFUNCIONAMENT DE L'ORDINADOR, O QUALSEVOL ALTRA PÈRDUA O DANY RELACIONAT AMB L'ÚS DEL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT, FINS I TOT SI S'HA INFORMAT AQUESTA PART DE LA POSSIBILITAT D'AQUESTS DANYS.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+		<firstname>Thomas</firstname> 
+		<surname>Hinkle</surname> 
+		<affiliation> 
+	  		<orgname>Projecte de documentació del GNOME</orgname> 
+	  		<!-- The email address of the author is optional and is commented out by default. 
+			<address> <email>doc-writer2@gnome.org</email> </address> 
+			-->
+		</affiliation> 
+      </author> 
+      
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->  
+    <revhistory>
+      <revision> 
+		<revnumber>Manual del Sudoku (versió 3.0)</revnumber> 
+		<date>Febrer de 2008</date> 
+		<revdescription> 
+	  		<para role="author">Thomas M. Hinkle</para>
+	  		<para role="publisher">Projecte de documentació del GNOME</para>
+		</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Aquest manual descriu la versió 2.21.90 del Sudoku</releaseinfo> 
+    <legalnotice> 
+      <title>Comentaris</title> 
+      <para>Per a informar d'un error o fer algun suggeriment sobre el <application>Sudoku</application> o aquest manual, seguiu les indicacions a la <ulink url="ghelp:user-guide?feedback-bugs" type="help">pàgina de comentaris del GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>Sudoku</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+    <primary>sudoku</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="myapp-introduction"> 
+    <title>Introducció</title> 
+    <para>El <application>Sudoku</application> és una aplicació per a generar i jugar al popular trencaclosques Sudoku (també conegut com a «Number Place»).</para>
+    <para>Les regles del Sudoku són bastant simples. Per a completar el trencaclosques, heu d'omplir cada casella amb un número entre l'1 i el 9 de manera que cada fila, columna i quadrat 3x3 en el tauler contingui els números de l'1 al 9. Dit d'altra manera, heu d'omplir cada casella de manera que cap número aparegui dos cops en la mateixa fila, columna i quadrat 3x3.</para>
+
+    <para>Aquestes dues maneres diferents de mirar el trencaclosques són dues de les principals maneres de pensar dels jugadors quan juguen. Per una banda, us pregunteu, «Com puc omplir totes les caselles d'aquest quadrat?». Per altra banda, us pregunteu, «Quins números poden encaixar en aquesta casella sense entrar en conflicte amb els altres números en la mateixa fila, columna o quadrat 3x3?»</para>
+
+    <para>Tot i la simplicitat del joc, la dificultat dels trencaclosques del Sudoku poden variar enormement. El <application>Sudoku</application> us permet seleccionar la dificultat del trencaclosques que voleu jugar. Per defecte, començarà amb trencaclosques fàcils i incrementarà gradualment la dificultat dels trencaclosques a mesura que milloreu.</para>
+
+  </sect1>
+
+<!-- =========== Getting Started ============================== -->
+<!-- Use the Getting Started section to describe the steps required
+     to start the application and to describe the user interface components
+     of the application. If there is other information that it is important
+     for readers to know before they start using the application, you should
+     also include this information here. 
+     If the information about how to get started is very short, you can 
+     include it in the Introduction and omit this section. -->
+
+  <sect1 id="myapp-getting-started"> 
+    <title>Inici</title> 
+
+    <sect2 id="myapp-start">
+    <title>Per a iniciar el <application>Sudoku</application></title>
+    <para>Podeu iniciar el <application>Sudoku</application> de les maneres següents:</para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>Menú <guimenu>Aplicacions</guimenu></term>
+    		<listitem>
+    		<para>Seleccioneu <menuchoice><guisubmenu>Jocs</guisubmenu><guimenuitem>Sudoku</guimenuitem></menuchoice>.</para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Línia d'ordres</term>
+    		<listitem>
+    		<para>Per a iniciar el <application>Sudoku</application> des de la línia d'ordres, introduïu l'ordre següent i premeu <keycap>Retorn</keycap>:</para>
+    		<para> 
+			<command>gnome-sudoku</command> 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+    </sect2>
+
+    <sect2 id="myapp-when-start">
+    <title>Quan inicieu el <application>Sudoku</application></title>
+    <para>Quan inicieu el <application>Sudoku</application> per primer cop, veureu la pantalla de selecció del trencaclosques, on podeu seleccionar la dificultat del trencaclosques al qual voleu jugar. Si heu jugat abans i teniu trencaclosques inacabats, podreu seleccionar-los des d'aquesta pantalla.</para>
+    <para>En la pantalla de selecció del trencaclosques es mostra la dificultat del trencaclosques. El color al voltant de la imatge del trencaclosques es correspon amb la dificultat. Per exemple, un trencaclosques vermell fosc és més difícil que un trencaclosques vermell clar.</para>
+    <para>Feu doble clic en el trencaclosques que desitgeu per a començar a jugar.</para>
+
+<figure id="new-game-fig"> 
+	<title>Com iniciar el Sudoku</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/starting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Com iniciar el Sudoku: seleccionar un nivell de dificultat.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    
+    <para>En qualsevol moment podeu canviar el trencaclosques fent clic a <guibutton>Nou</guibutton>. Això mostrarà la pantalla de selecció del trencaclosques, on podreu seleccionar qualsevol trencaclosques que desitgeu.</para>
+    
+    </sect2>
+    
+    </sect1>
+    <sect1 id="myapp-basic-play">
+    <title>Joc bàsic</title>
+    <para>Per a jugar al joc, comenceu omplint els números de l'1 al 9 en les caselles en què cap fila, columna o quadrat 3x3 es repeteixi el número més d'un cop.</para>
+    <para>Podeu omplir un número en una casella amb el teclat o el ratolí.</para>
+    <variablelist>
+    	<varlistentry>
+	<term>Teclat</term>
+	<listitem><para>Utilitzeu les tecles de cursor o el ratolí per a seleccionar la casella que voleu omplir. Després introduïu el número que voleu posar a la casella. Prement <keycap>Retrocés</keycap> eliminareu el número.</para></listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Ratolí</term>
+	<listitem>
+	  <para>Feu clic en una casella per a seleccionar-la, després feu clic en el centre de la casella per a mostrar uns botons amb els números de l'1 al 9. Feu clic en un número per a seleccionar-lo o feu clic a <guibutton>Neteja</guibutton> per a netejar la casella. També podeu fer doble clic al centre d'una casella per a mostrar els botons amb els números.</para>
+	</listitem>
+		</varlistentry>
+	</variablelist>
+    <note>
+    <para>Si introduïu un número que està en conflicte amb altres números de la graella, els números conflictius es realçaran en vermell.</para>
+    <figure id="error-highlight-fig"> 
+	<title>Realçat d'errors</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/error_highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Un moviment il·legal es realçarà en vermell.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    </note>
+    </sect1>
+    <sect1 id="myapp-saving">
+    <title>Desar i continuar les partides</title>
+    <para>Els Sudokus es desen automàticament cada pocs minuts i quan canvieu de partida o tanqueu l'aplicació.</para>
+        <figure id="open-game-fig"> 
+	<title>Com continuar les partides antigues</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/resuming.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Com continuar una partida antiga des de la pantalla de selecció del trencaclosques.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    <para>Quan inicieu el <application>Sudoku</application> o feu clic a <guibutton>Nou</guibutton>, les partides desades es llistaran en la pantalla de selecció del trencaclosques. Veureu una imatge en miniatura del trencaclosques desat, la data de quan hi vau jugar per últim cop i quant de temps hi heu jugat. Per a obrir el trencaclosques, feu-hi doble clic.</para>
+    <para>Si voleu deixar una partida i començar-ne una altra, només heu de seleccionar <guibutton>Nova</guibutton> i començareu la partida nova.</para>
+    </sect1>
+
+<!-- ================ Usage ================================ -->
+<!-- Use this section to describe how to use the application to perform the tasks for 
+  which the application is designed. -->
+  <sect1 id="myapp-hints"> 
+    <title>Característiques</title> 
+    <!-- ================ Usage Subsection ================================ -->
+
+        <para>El Sudoku proporciona un número de característiques que us ajudaran a resoldre el trencaclosques.</para>
+
+      <variablelist>
+    	<varlistentry><term>Notes</term>
+	<listitem>
+		<para>Les <firstterm>notes</firstterm> o <firstterm>notes de llapis</firstterm> us permeten prendre notes en cada casella. Molts jugadors utilitzen notes per a rastrejar possibles valors de les caselles.</para>
+	</listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Pistes i emplenat automàtic</term>
+	<listitem>
+	<para>Podeu utilitzar les <firstterm>pistes</firstterm> i l'<firstterm>emplenat automàtic</firstterm> per a fer que el Sudoku us proporcioni possibles valors per a una casella o empleni automàticament una casella.</para>
+	</listitem>
+	</varlistentry>
+
+		<varlistentry>
+	<term>Realçar</term>
+	<listitem>
+	<para>En mode realçat, es realcen la fila, columna i quadrat actuals en diferents colors per a fer més fàcil la visió del tauler.</para>
+	</listitem>
+	</varlistentry>
+
+	<varlistentry>
+	<term>Rastrejadors</term>
+	<listitem>
+	  <para>Els rastrejadors fan més fàcil rastrejar les solucions de prova i error. Quan <firstterm>rastregeu</firstterm> un joc de moviments, els números s'introdueixen amb un color especial per a ajudar-vos a distingir aquells moviments dels realitzats prèviament en la partida.</para>
+	</listitem>
+	</varlistentry>
+        </variablelist>
+	
+	<sect2 id="myapp-notes"> 
+      <title>Prendre notes</title> 
+      <para>Per a escriure notes (també conegut com a «notes de llapis») en una casella, primer seleccioneu la casella amb el teclat o el ratolí. Després, feu una de les accions següents:</para>
+      <itemizedlist>
+      <listitem><para>Feu clic en la regió superior de la casella (la regió es realçarà amb una casella quan mogueu el ratolí sobre la casella seleccionada).</para></listitem>
+      <listitem><para>Premeu <keycap>N</keycap></para></listitem>
+      </itemizedlist>
+      <para>Es mostrarà un camp en el qual podreu introduir les notes. Premeu <keycap>Retorn</keycap> quan acabeu d'editar la nota.</para>
+      
+      <note><para>També podeu prendre notes en la part inferior de la casella fent clic en la part inferior de la casella o prement <keycap>M</keycap>. Tot i això, aquesta àrea s'utilitza quan demaneu una <firstterm>pista</firstterm>, de manera que no hauríeu d'utilitzar aquesta àrea per a les notes si també penseu utilitzar les pistes.</para></note>
+      <note><para>You can clear the notes at the top of the square by typing <keycap>Alt-N</keycap> and at the bottom of the square by typing <keycap>Alt-M</keycap>.</para></note>
+      <note><para>You can add a number to the notes at the top of the square by typing <keycap>Ctrl-1</keycap> through <keycap>Ctrl-9</keycap> and remove a number from the notes by typing <keycap>Alt-1</keycap> through <keycap>Alt-9</keycap>.</para></note>
+</sect2>
+    <!-- ================ Usage Subsection ================================ -->
+	 <sect2 id="myapp-manipulate-view"> 
+      <title>Pistes i emplenat automàtic</title>
+
+		             <note>
+
+	      <para>Les característiques de <firstterm>Pista</firstterm> i <firstterm>Emplena</firstterm> funcionen basant-se en les possibilitats lògiques proporcionades pel tauler actual. <emphasis>No</emphasis> funcionen basant-se en la solució. Si heu fet un error en un moviment anterior, aquestes característiques us poden emplenar o suggerir valors incorrectes.</para>
+
+	    </note>
+      
+      
+      <sect3 id="myapp-hint">
+          <title>Pistes</title>
+	              <para>El Sudoku us pot donar pistes basant-se en el tauler actual. Podeu demanar una pista per a la casella actual seleccionada fent clic a <guibutton>Pista</guibutton>, en seleccionar <menuchoice><guisubmenu>Eines</guisubmenu><guimenuitem>Pista</guimenuitem></menuchoice> o en prémer <keycap>Control-H</keycap>. Es mostrarà una llista dels valors possibles en la part inferior de la casella.</para>
+    <figure id="hint-fig"> 
+	<title>Pistes</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/hints.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Quan feu clic a Pista, els valors possibles es mostraran en la part inferior de la casella.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+		      
+	    <para>Si voleu eliminar o modificar la pista, podeu editar el text fent clic a la part inferior de la casella.</para>
+	    <para>Per als trencaclosques molt difícils, podeu seleccionar l'opció de mostrar els valors possibles de totes les caselles del <application>Sudoku</application>. Per a activar aquest mode, commuteu <menuchoice><guisubmenu>Eines</guisubmenu><guimenuitem>Mostra sempre una pista</guimenuitem></menuchoice>. Tingueu en compte que pot fer els trencaclosques fàcils <emphasis>massa</emphasis> fàcils, de manera que hauríeu d'utilitzar aquest mode poques vegades.</para>
+<figure id="all-hints-fig"> 
+	<title>El <application>Sudoku</application> en mode Mostra sempre una pista</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/always_show_hint.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Un trencaclosques difícil amb el mode Mostra sempre una pista activat.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+	    
+	    
+	    </sect3>
+	    <sect3 id="myapp-autofill">
+	    <title>Emplenar la casella</title>
+
+	    <para>Per a emplenar automàticament una casella a la que hi ha només un valor possible, podeu fer clic a <guibutton>Emplena</guibutton>, seleccionar <menuchoice><guisubmenu>Eines</guisubmenu><guimenuitem>Emplena</guimenuitem></menuchoice> o prémer <keycap>Control-F</keycap>. Això és útil, per exemple, quan hàgiu emplenat 8 o 9 caselles en una fila i voleu emplenar ràpidament les últimes caselles buides.</para>
+	    <para>Si hi ha més d'un valor vàlid per a l'entrada, llavors no passarà res.</para>	    
+	    </sect3>
+	    <sect3 id="myapp-fill-all">
+	    <title>Emplena totes les caselles</title>
+
+	    <para>Podeu emplenar automàticament totes les caselles en les quals lògicament només hi pugui haver un valor en aquell moment. Per a fer-ho, seleccioneu <menuchoice><guisubmenu>Eines</guisubmenu><guimenuitem>Emplena totes les caselles</guimenuitem></menuchoice> o premeu <keycap>Control-A</keycap>.</para>
+	    
+	    <warning>
+
+	    	    <para>Aquesta característica només s'hauria d'utilitzar per a ajudar-vos quan estigueu molt encallat en una partida difícil. Utilitzar aquesta característica en una partida fàcil pot solucionar tot el trencaclosques amb un sol clic, fent que la partida sigui molt avorrida.</para>
+		    </warning>
+	    	    </sect3>
+
+    </sect2> 
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-highlighting"> 
+      <title>Realçar</title> 
+      <para>Podeu activar el realçat per a realçar automàticament la fila, columna i quadrat actuals amb colors diferents. Això pot fer mes fàcil veure quins valors no poden anar en la casella actual. Per a commutar el realçat podeu:</para> 
+      <itemizedlist>
+      <listitem><para>Fer clic a <guibutton>Marcador</guibutton></para></listitem>
+      <listitem><para><menuchoice><guisubmenu>Visualitza</guisubmenu><guimenuitem>Marcador</guimenuitem></menuchoice></para></listitem>
+      </itemizedlist>
+
+<figure id="highlight-fig"> 
+	<title>El <application>Sudoku</application> amb realçat</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>El realçat fa més fàcil la visió de files, columnes i quadrats.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      </sect2>
+
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-trackers"> 
+      <title>Rastrejadors</title> 
+      <para>Podeu utilitzar rastrejadors per a mantenir el rastre de múltiples moviments a la vegada. El moviments sota rastrejador s'introduiran amb un color diferent per a fer-los diferents de forma visual. També podeu eliminar tots els moviments rastrejats de cop. Això és particularment útil per a resoldre trencaclosques difícils mitjançant prova i error.</para>
+      <note><para>Alguns jugadors de Sudoku creuen que mai s'hauria d'utilitzar el prova i error per a resoldre un trencaclosques. Aquests jugadors no haurien d'utilitzar aquesta característica.</para></note>
+
+            <para>Podeu commutar la interfície del rastrejador fent una de les accions següents:</para>
+
+	    <itemizedlist>
+
+	      <listitem>
+	       <para>
+		<menuchoice> 
+			  <guimenu>Eines</guimenu> 
+			  <guimenuitem>Rastreja addicions</guimenuitem>
+		</menuchoice>
+	       </para>
+	     </listitem>
+             <listitem><para>Fer clic a <guibutton>Rastreja addicions</guibutton></para></listitem>
+           </itemizedlist>
+      <para>Aquesta acció us mostrarà una llista dels rastres a la part dreta de la partida actual. Creeu un rastre nou fent clic a <guibutton>Afegeix un rastre</guibutton>. Des d'aquest punt en endavant, qualsevol número que introduïu serà part del rastre seleccionat.</para>
+      <para>Podeu netejar tots els valors que són part d'un rastre seleccionant el rastre de la llista i fent clic a <guibutton>Neteja el rastre</guibutton>. Podeu netejar tots els valors que <emphasis>no</emphasis> són part d'un rastre fent clic a <guibutton>Neteja'n d'altres</guibutton>.</para>
+    </sect2> 
+  </sect1>
+  <!-- ============= Customization ============================= -->
+  <!-- Use this section to describe how to customize the application. -->
+  <sect1 id="myapp-printing"> 
+    <title>Impressió de Sudokus</title> 
+    <para>El Sudoku pot imprimir partides per a poder jugar en un paper. Això és útil si heu de deixar l'ordinador però voleu finalitzar una partida que heu començat, o si voleu imprimir un grapat de trencaclosques per a fer-los més tard.</para>
+
+    <para>Per a imprimir el trencaclosques que esteu jugant, feu clic a <guibutton>Imprimeix</guibutton> o seleccioneu <menuchoice><guimenu>Partida</guimenu><guimenuitem>Imprimeix</guimenuitem></menuchoice>. Això inclourà els números que ja heu emplenat.</para>
+    
+    <para>Per a imprimir trencaclosques en blanc, seleccioneu <menuchoice><guimenu>Partida</guimenu><guimenuitem>Imprimeix múltiples sudokus</guimenuitem></menuchoice>.</para>
+
+      <para>Llavors veureu un diàleg d'impressió que us permetrà seleccionar quantes partides voleu imprimir i quantes partides voleu imprimir en cada pàgina (com més partides imprimiu per pàgina, més petites seran les partides).</para>
+
+      <para>També podeu seleccionar el rang de dificultat que voleu que tinguin les partides. Les partides s'imprimiran en ordre de dificultat, del més fàcil al més difícil.</para>
+
+      <para>Per a crear un llibre de 25 pàgines de mini sudokus, podeu seleccionar d'imprimir 100 sudokus, a 4 sudokus per pàgina, amb les partides de fàcil a difícil.</para>
+
+<figure id="printing-fig"> 
+	<title>Impressió d'un llibre de mini sudokus amb el <application>Sudoku</application></title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/Print_Sudokus.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Això imprimirà 25 pàgines amb 4 sudokus en cada pàgina.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      <para>Per defecte, el <application>Sudoku</application> no imprimirà partides que ja heu jugat. Si esteu imprimint partides per a un amic o si no us preocupa repetir partides, podeu activar <guibutton>Inclou partides jugades anteriorment a la llista de partides per imprimir</guibutton>.</para>
+
+      <para>També podeu seleccionar manualment les partides que voleu imprimir si desplegueu la <guibutton>Llista de partides</guibutton> i seleccioneu múltiples trencaclosques de la llista.</para>
+    
+  </sect1>
+  
+  <sect1 id="mayapp-bugs">
+  <title>Errors i limitacions conegudes</title>
+  <sect2>
+  <title>Estadístiques limitades dels trencaclosques</title>
+
+    <para>El Sudoku puntua els trencaclosques basant-se en el número de caselles que poden ser ràpidament emplenades. El quadre d'estadístiques dels trencaclosques us mostra la puntuació global i mostra tres informacions addicionals:</para>
+
+    <itemizedlist>
+    <listitem><para>El número de caselles emplenables per eliminació, començant per la graella en blanc (ex. només un 2 pot anar en aquella casella, de manera que ha de ser un 2).</para></listitem>
+    <listitem><para>El número de caselles emplenables per emplenat, començant per la graella en blanc (ex. només una casella en aquella fila pot ser un 2, de manera que ha de ser un 2).</para></listitem>
+    <listitem><para>El número de cops que l'ordinador ha hagut d'utilitzar el prova i error o «endevinalla» per a solucionar el trencaclosques.</para></listitem>
+    </itemizedlist>
+    <para>Molts usuaris es senten decebuts en saber que el solucionador de l'ordinador utilitza el prova i error, especialment des de que alguns gurus van dir que mai s'hauria d'endevinar per a solucionar un trencaclosques. Hi ha alguns algorismes que poden ser implementats per a ajudar l'ordinador a solucionar un sudoku, com ara els patrons «swordfish» i «X-wings».</para>
+
+    <para>Actualment, el <application>Sudoku</application> només utilitza els dos algorismes descrits anteriorment i el prova i error. Quan el quadre d'estadístiques diu que el <application>Sudoku</application> necessita utilitzar el prova i error X cops, <emphasis>no</emphasis> significa que un humà hauria d'utilitzar el prova i error per a solucionar el trencaclosques.</para>
+  
+  </sect2>
+
+ </sect1>
+
+<!-- ============= About ================================== -->
+<!-- This section contains info about the program (not docs), such as
+      author's name(s), web page, license, feedback address. This
+      section is optional: primary place for this info is "About.." box of
+      the program. However, if you do wish to include this info in the
+      manual, this is the place to put it. Alternatively, you can put this information in the title page.-->
+  <sect1 id="myapp-about"> 
+    <title>Quant al <application>Sudoku</application></title> 
+    <para>En Tom Hinkle (<email>thomas_hinkle@sf.net</email>) ha escrit el <application>Sudoku</application>. El <application>Sudoku</application> és part dels jocs del GNOME.</para>
+    <para>Per a informar d'un error o fer algun suggeriment quant a aquesta aplicació o aquest manual, vegeu la secció de comentaris de la <ulink url="ghelp:user-guide?feedback-bugs" type="help">guia d'usuari del GNOME</ulink>.</para>
+
+    <para>Aquest programa es distribueix sota els termes de la Llicència pública general de GNU tal com publica la Free Software Foundation; tant en la versió 2 de la llicència, o (a la vostra opció) una versió posterior. Es pot trobar una copia d'aquesta llicència en aquest <ulink url="ghelp:gpl" type="help">enllaç</ulink>, o en el fitxer COPYING inclòs amb el codi font d'aquest programa.</para>
+
+  </sect1> 
+</article>

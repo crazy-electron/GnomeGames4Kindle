@@ -1,0 +1,697 @@
+# Czech translation of gtali help.
+# Copyright (C) 2009 the author(s) of gnome-games.
+# This file is distributed under the same license as the gtali help.
+# Marek Černocký <marek@manet.cz>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games gnome-2-26\n"
+"POT-Creation-Date: 2009-07-07 21:32+0000\n"
+"PO-Revision-Date: 2009-07-08 22:17+0100\n"
+"Last-Translator: Marek Černocký <marek@manet.cz>\n"
+"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-Language: Czech\n"
+"X-Poedit-Country: CZECH REPUBLIC\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gtali.xml:163(None)
+msgid "@@image: 'figures/mainwindow.png'; md5=adbcf6421391e5e51c091e13672d3b7e"
+msgstr ""
+"@@image: 'figures/mainwindow.png'; md5=6646b72eb4476a4629eb1307bdd05a1b"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gtali.xml:240(None)
+msgid ""
+"@@image: 'figures/preferences.png'; md5=163633a4c9c3d3fe96e7b4a15f2e3eef"
+msgstr ""
+"@@image: 'figures/preferences.png'; md5=41e48229529fa8843f725474aee787d24"
+
+#: C/gtali.xml:27(title)
+msgid "<application>Tali</application> Manual"
+msgstr "Příručka ke hře <application>Tali</application>"
+
+#: C/gtali.xml:29(para)
+msgid ""
+"Tali is like Yahtzee for GNOME or like poker with dice. The player rolls "
+"dice to try to make the best possible combinations, like 4 of a kind, small "
+"straight, and full house. The player is allowed 3 rolls per turn and can "
+"hold certain dice with each roll."
+msgstr ""
+"Hra tali je podobná Yahtzee pro GNOME nebo pokeru s kostkami. Hráč hází "
+"kostkami a zkouší vytvořit nejlepší možné kombinace, jako čtveřice, malou "
+"postupku nebo full house. Hráč má k dispozici tři hody v každém kole a při "
+"každém hodu může některé kostky podržet."
+
+#: C/gtali.xml:37(year)
+msgid "2001"
+msgstr "2001"
+
+#: C/gtali.xml:38(holder)
+msgid "Scott D. Heavner"
+msgstr "Scott D. Heavner"
+
+#: C/gtali.xml:53(publishername) C/gtali.xml:93(para)
+msgid "GNOME Documentation Project"
+msgstr "Dokumentační projekt GNOME"
+
+#: C/gtali.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU "
+"Free Documentation License, verze 1.1 nebo jakékoli další verze vydané "
+"nadací Free Software Foundation; bez neměnných oddílů, bez textů předních "
+"desek a bez textů zadních desek. Kopie této licence je zahrnuta v oddílu "
+"jménem <ulink type=\"help\" url=\"ghelp:fdl\">GNU Free Documentation "
+"License</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou."
+
+#: C/gtali.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Tato příručka je součástí kolekce příruček GNOME, distribuovaných pod "
+"licencí GNU FDL. Pokud chcete tento dokument šířit odděleně od kolekce, "
+"musíte přiložit kopii licence dle popisu v sekci 6 dané licence."
+
+#: C/gtali.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Mnoho užívaných jmen určených k zviditelnění produktů nebo služeb jsou "
+"ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a "
+"členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se "
+"jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s "
+"velkým písmenem na začátku."
+
+#: C/gtali.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"DOKUMENT JE POSKYTOVÁN V PODOBĚ „JAK JE“ BEZ ZÁRUKY V JAKÉKOLIV PODOBĚ, "
+"NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ "
+"VERZE, JE BEZCHYBNÝ NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL NEBO "
+"NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ DOKUMENTU, "
+"NEBO JEHO UPRAVENÉ VERZE, LEŽÍ NA VÁS. POKUD KVŮLI TOMUTO DOKUMENTU, NEBO "
+"JEHO UPRAVENÉ VERZI, NASTANE PROBLÉM, VY (NIKOLIV PŮVODNÍ AUTOR NEBO "
+"JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE JAKÉKOLIV NÁKLADY ZA NUTNÉ ÚPRAVY, OPRAVY "
+"ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE ZÁKLADNÍ SOUČÁST TÉTO "
+"LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ, PODLE TÉTO DOHODY, POVOLENO UŽÍVÁNÍ ANI "
+"ÚPRAVY TOHOTO DOKUMENTU; DÁLE"
+
+#: C/gtali.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"ZA ŽÁDNÝCH OKOLNOSTÍ A ŽÁDNÝCH PRÁVNÍCH PŘEDPOKLADŮ, AŤ SE JEDNÁ O PŘEČIN "
+"(VČETNĚ NEDBALOSTNÍCH), SMLOUVU NEBO JINÉ, NENÍ AUTOR, PŮVODNÍ PISATEL, "
+"KTERÝKOLIV PŘISPĚVATEL NEBO KTERÝKOLIV DISTRIBUTOR TOHOTO DOKUMENTU NEBO "
+"UPRAVENÉ VERZE DOKUMENTU NEBO KTERÝKOLIV DODAVATEL NĚKTERÉ Z TĚCHTO STRAN "
+"ODPOVĚDNÝ NĚJAKÉ OSOBĚ ZA PŘÍMÉ, NEPŘÍMÉ, SPECIÁLNÍ, NAHODILÉ NEBO NÁSLEDNÉ "
+"ŠKODY JAKÉHOKOLIV CHARAKTERU, VČETNĚ, ALE NEJEN, ZA POŠKOZENÍ ZE ZTRÁTY "
+"DOBRÉHO JMÉNA, PŘERUŠENÍ PRÁCE, PORUCHY NEBO NESPRÁVNÉ FUNKCE POČÍTAČE NEBO "
+"JINÉHO A VŠECH DALŠÍCH ŠKOD NEBO ZTRÁT VYVSTÁVAJÍCÍCH Z NEBO VZTAHUJÍCÍCH SE "
+"K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY "
+"TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ."
+
+#: C/gtali.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU "
+"FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <placeholder-1/>"
+
+#: C/gtali.xml:63(firstname)
+msgid "Scott D"
+msgstr "Scott D"
+
+#: C/gtali.xml:64(surname)
+msgid "Heavner"
+msgstr "Heavner"
+
+#: C/gtali.xml:66(email)
+msgid "sdh@po.cwru.edu"
+msgstr "sdh@po.cwru.edu"
+
+#: C/gtali.xml:87(revnumber)
+msgid "Tali Manual V2.8"
+msgstr "Příručka V2.8 Tali"
+
+#: C/gtali.xml:88(date)
+msgid "September 2004"
+msgstr "Září 2004"
+
+#: C/gtali.xml:90(para)
+msgid "Scott D Heavner <email>sdh@po.cwru.edu</email>"
+msgstr "Scott D Heavner <email>sdh@po.cwru.edu</email>"
+
+#: C/gtali.xml:98(releaseinfo)
+msgid "This manual describes version 2.12 of Tali."
+msgstr "Tato příručka popisuje Tali ve verzi 2.12"
+
+#: C/gtali.xml:105(title)
+msgid "Feedback"
+msgstr "Ohlasy"
+
+#: C/gtali.xml:106(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Tali</"
+"application> application or this manual, follow the directions in the <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
+"ulink>."
+msgstr ""
+"Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k aplikaci "
+"<application>Tali</application> nebo této příručce, postupujte dle instrukcí "
+"na stránce <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
+"\">Stránka s ohlasy na GNOME</ulink>."
+
+#: C/gtali.xml:117(primary)
+msgid "GNOME Tali"
+msgstr "GNOME Tali"
+
+#: C/gtali.xml:123(title)
+msgid "Introduction"
+msgstr "Úvod"
+
+#: C/gtali.xml:125(para)
+msgid ""
+"<application>GNOME Tali</application> is a sort of poker with dice and less "
+"money. You roll five dice three times and try to create the best "
+"<quote>hand</quote>. Your two rerolls may include any or all of your dice."
+msgstr ""
+"<application>GNOME Tali</application> je forma pokeru, akorát s kostkami a "
+"bez peněz. Házíte třikrát po sobě s pěti kostkami a zkoušíte dostat nejlepší "
+"<quote>karty</quote>. Vaše dva opakované hody mohou zahrnovat všechny nebo "
+"jen některé kostky."
+
+#: C/gtali.xml:131(para)
+msgid ""
+"<application>GNOME Tali</application> is very similar to the dice game "
+"Yahtzee which is a trademark of Hasbro, Inc."
+msgstr ""
+"<application>GNOME Tali</application> je velmi podobná hře s kostkami "
+"Yahtzee, což je ochranná známka firmy Hasbro, Inc."
+
+#: C/gtali.xml:136(para)
+msgid ""
+"To run <application>GNOME Tali</application>, select "
+"<menuchoice><guisubmenu>Games</guisubmenu><guimenuitem>GNOME Tali</"
+"guimenuitem></menuchoice> from the <guimenu>Main Menu</guimenu>, or type "
+"<command>gtali</command> on the command line."
+msgstr ""
+"<application>GNOME Tali</application> spustíte buď volbou "
+"<menuchoice><guisubmenu>Hry</guisubmenu><guimenuitem>Tali</guimenuitem></"
+"menuchoice> v <guimenu>hlavní nabídce</guimenu> nebo zadáním <command>gtali</"
+"command> v příkazové řádce."
+
+#: C/gtali.xml:146(para)
+msgid ""
+"<application>GNOME Tali</application> is included in the <filename>gnome-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.8 of <application>GNOME Tali</application>."
+msgstr ""
+"<application>GNOME Tali</application> je součástí balíku <filename>gnome-"
+"games</filename>, který patří k pracovnímu prostředí GNOME. Tento dokument "
+"popisuje verzi 2.8 aplikace <application>GNOME Tali</application>."
+
+#: C/gtali.xml:155(title)
+msgid "Playing GNOME Tali"
+msgstr "Jak hrát GNOME Tali"
+
+#: C/gtali.xml:158(title)
+msgid "GNOME Tali in action"
+msgstr "GNOME Tali v akci"
+
+#: C/gtali.xml:166(phrase)
+msgid "GNOME Tali main window screenshot."
+msgstr "Ukázka hlavního okna GNOME Tali."
+
+#: C/gtali.xml:172(para)
+msgid "When play starts, you see the results of your first throw of the dice."
+msgstr "Po započetí hry uvidíte výsledky svého prvního vrhu kostkami."
+
+#: C/gtali.xml:179(para)
+msgid "Click on the dice you wish to roll again."
+msgstr "Klikněte na kostky, kterými chcete házet znovu."
+
+#: C/gtali.xml:183(para)
+msgid ""
+"When you have selected all the dice you wish to reroll, press the "
+"<guibutton>Roll!</guibutton> button."
+msgstr ""
+"Až vyberete všechny kostky, se kterými chcete znovu házet, stiskněte "
+"tlačítko <guibutton>Házet!</guibutton>"
+
+#: C/gtali.xml:188(para)
+msgid ""
+"When you have a hand you like or have run out of chances to throw the dice, "
+"click on a row corresponding to what you think is your best scoring "
+"combination. It is very possible to have a score of zero and if you click on "
+"the wrong row, you will be scored accordingly. (Say for example, you get "
+"yahtzee -- 5 of a kind -- and click on the large straight row, you will "
+"receive a zero in your large straight score)."
+msgstr ""
+"Pokud jste měli šťastnou ruku nebo jste vypotřebovali všechny své hody, "
+"klikněte na řádek, o kterém si myslíte, že je pro vás nejlepší kombinací na "
+"bodové hodnocení. Je docela možné, že dostanete nula bodů a nebo, pokud "
+"kliknete na nesprávný řádek, budete hodnoceni patřičně hůře. (Vezměme "
+"příklad, kdy jste dostali pětici a kliknete na řádek s velkou postupkou, tak "
+"obdržíte k svému výslednému hodnocení nulu)."
+
+#: C/gtali.xml:198(para)
+msgid ""
+"You can only use each combination once, i.e. once you've entered something "
+"in a slot, you can't change the score later if you roll a better hand."
+msgstr ""
+"Každou kombinaci v hodnocení můžete použít jen jednou, tzn. že jakmile "
+"jednou zadáte něco do kolonky s hodnocením, nemůžete to později změnit, i "
+"když vám padne něco lepšího."
+
+#: C/gtali.xml:203(para)
+msgid ""
+"There is one exception to this rule, if you roll a yahtzee a second time you "
+"can put it in the yahtzee row again for an extra fifty points. You can keep "
+"doing this each time you get another yahtzee. At the end of the game you "
+"will be given extra rolls to fill in the other rows. Be warned that if you "
+"score zero in your yahtzee row (i.e. you filled that row with something that "
+"wasn't a yahtzee) then you can't put a yahtzee in afterward, zero is all you "
+"will score."
+msgstr ""
+"Z tohoto pravidla ale existuje jedna výjimka, a to když hodíte yahtzee "
+"(pětici) podruhé, můžete ji zadat do řádku pětice znovu a dostanete dalších "
+"padesát bodů. Tak to můžete dělat pokaždé, když se vám podaří pětice. Na "
+"konci hry dostanete dodatečné hody na doplnění dalších řádků. Ale pozor, "
+"pokud je vaše hodnocení v řádku pětice nulové (t.j. zadali jste do tohoto "
+"řádku něco, co nebyla pětice), nemůžete již později do tohoto řádku pětice "
+"přidávat, a hodnocení už zůstane nula."
+
+#: C/gtali.xml:213(para)
+msgid ""
+"There is also a bonus of 35 points if you score a total of 63 points or more "
+"in the top six rows."
+msgstr ""
+"Je zde také bonus 35 bodů v případě, že celkový součet bodů v horních šesti "
+"řádcích je 63 bodů a více."
+
+#: C/gtali.xml:218(title)
+msgid "Using the keyboard"
+msgstr "Používání klávesnice"
+
+#: C/gtali.xml:220(para)
+msgid ""
+"As an alternative to using the mouse, the keys 1 through 5 toggle the dice "
+"just as if you had clicked them. The key 1 corresponds to the first die and "
+"so on. Use the usual controls to roll the dice and select a row. i.e. use "
+"tab to switch between the roll button and the score area, use the arrow keys "
+"to navigate up and down the rows and use space to select."
+msgstr ""
+"Alternativou k ovládání myší je použít klávesnici. Klávesy 1 až 5 přepínají "
+"kostky, stejně jako když na ně klikáte myší, přičemž 1 odpovídá první kostce "
+"atd. K házení a výběru řádku použijte běžné ovládání, t.j. tabelátorem se "
+"přepínáte mezi tlačítkem házení a tabulkou hodnocení, šipkami se pohybujete "
+"v tabulce hodnocení a mezerníkem provádíte volbu."
+
+#: C/gtali.xml:232(title)
+msgid "Game Options"
+msgstr "Předvolby hry"
+
+#: C/gtali.xml:235(title)
+msgid "GNOME Tali preferences"
+msgstr "Předvolby GNOME Tali"
+
+#: C/gtali.xml:243(phrase)
+msgid "GNOME Tali preferences dialog box."
+msgstr "Dialogové okno Předvolby GNOME Tali."
+
+#: C/gtali.xml:248(title)
+msgid "Human Players"
+msgstr "Lidští hráči"
+
+#: C/gtali.xml:250(guimenuitem)
+msgid "Number of players"
+msgstr "Počet hráčů"
+
+#: C/gtali.xml:252(para)
+msgid ""
+"Selects the number of human players. As described above you are only allowed "
+"six total players."
+msgstr ""
+"Zvolte počet lidských hráčů. Jak bylo uvedeno dříve, dovolený celkový počet "
+"hráčů je maximálně šest."
+
+#: C/gtali.xml:260(title)
+msgid "Computer Opponents"
+msgstr "Počítačoví protivníci"
+
+#: C/gtali.xml:262(guimenuitem)
+msgid "Delay between rolls"
+msgstr "Prodleva mezi hody"
+
+#: C/gtali.xml:264(para)
+msgid ""
+"Make the computer opponents pause between rolls of the dice so you can see "
+"what they are doing. Slows down game play some."
+msgstr ""
+"Vytváří mezi vrhy kostek počítačových protivníků prodlevy, abyste mohli "
+"sledovat co se děje. Tím se ale hra celkově zpomaluje."
+
+#: C/gtali.xml:271(guimenuitem)
+msgid "Number of opponents"
+msgstr "Počet protivníků"
+
+#: C/gtali.xml:273(para)
+msgid ""
+"Select the number of computer opponents. You are allowed a total of six "
+"human and computer players. If you attempt to increase this number near the "
+"limit, the number of human players will be decreased to maintain only six "
+"total players."
+msgstr ""
+"Zvolte počet počítačových protivníků. Dovolený celkový počet lidských a "
+"počítačových hráčů je dohromady šest. Pokud budete počet protivníků zvyšovat "
+"a celkový počet překročí limit, automaticky se bude snižovat počet lidských "
+"hráčů tak, aby byl součet šest."
+
+#: C/gtali.xml:283(title)
+msgid "Game Type"
+msgstr "Typ hry"
+
+#: C/gtali.xml:285(guimenuitem)
+msgid "Version of the game to play"
+msgstr "Verze hry, kterou chcete hrát"
+
+#: C/gtali.xml:287(para)
+msgid ""
+"Play either the regular version (similar to Yahtzee) or the version with "
+"colors (similar to Kismet). When you change game type, you must restart the "
+"game to see use the new game type."
+msgstr ""
+"Hrajete buď normální verzi (podobnou Yahtzee) nebo barevnou verzi (podobnou "
+"Kismet). Pokud typ hry změníte, tak musíte stávající hru restartovat, abyste "
+"nově zvolený typ viděli."
+
+#: C/gtali.xml:297(guimenuitem)
+msgid "Player Names"
+msgstr "Jména hráčů"
+
+#: C/gtali.xml:299(para)
+msgid "To change the names of the players just enter new names in the boxes."
+msgstr "Jména hráčů změníte zadáním nových jmen do příslušných textových polí."
+
+#: C/gtali.xml:308(title)
+msgid "Game Strategy"
+msgstr "Strategie hry"
+
+#: C/gtali.xml:309(para)
+msgid ""
+"The 63 points needed for the bonus in the upper half corresponds to getting "
+"three of each die type in each row. If you score more than three dice in the "
+"fives and sixes rows then you can afford to place a bad roll in either the "
+"ones row or the twos row and still get the bonus. In the Colors version, you "
+"get a bonus of 55 if your upper half total is between 71 and 77, and a bonus "
+"of 75 if your upper half total is greater than 77."
+msgstr ""
+"63 bodů potřebných na bonus v horní polovině odpovídá získání tří od každého "
+"typu kostky v každém řádku. Pokud je vaše hodnocení vyšší než tři kostky v "
+"řádcích s pětkami a šestkami, můžete si dovolit mít špatné hody buď v řádku "
+"s jedničkami nebo dvojkami a stále získáte bonus. V barevné verzi dostanete "
+"bonus 55 bodů, pokud je celkový součet v horní polovině mezi 71 a 77 a bonus "
+"75 pokud je celkový součet v horní polovině větší než 77."
+
+#: C/gtali.xml:318(para)
+msgid ""
+"Don't forget about multiple yahtzees, if you roll a second yahtzee you can "
+"also put it in the yahtzee row for even more points. This only applies to "
+"the regular game."
+msgstr ""
+"Nezapomeňte na vícenásobné yahtzee (pětice). Pokud hodíte druhou pětici, "
+"můžete ji také přidat do řádku pětice, abyste dostali více bodů. Funguje to "
+"ale jen v běžné hře."
+
+#: C/gtali.xml:332(title)
+msgid "Known Bugs and Limitations"
+msgstr "Známé chyby a omezení"
+
+#: C/gtali.xml:333(para)
+msgid ""
+"When you switch game type, the game does not use the new dice images until "
+"you restart gtali. It should play correctly with the \"wrong\" dice."
+msgstr ""
+"I když změníte typ hry, nebude stávající hra používat nové kostky, dokud ji "
+"nerestartujete. Měla by ale správně hrát zadaný typ hry, jen se „špatnými“ "
+"kostkami."
+
+#: C/gtali.xml:341(title)
+msgid "Glossary"
+msgstr "Rejstřík"
+
+#: C/gtali.xml:343(para)
+msgid "Remember that the order of the dice is not important."
+msgstr "Pamatujte, že pořadí kostek nemá význam."
+
+#: C/gtali.xml:346(glossterm)
+msgid "3 of a Kind"
+msgstr "Trojice"
+
+#: C/gtali.xml:347(para)
+msgid ""
+"Three of the dice have the same number. The score is the total of all the "
+"dice. e.g. 1, 2, 2, 2, 5."
+msgstr ""
+"Tři kostky se stejnými čísly. Bodovým hodnocením je součet všech kostek, "
+"např. 1, 2, 2, 2, 5."
+
+#: C/gtali.xml:352(glossterm)
+msgid "4 of a Kind"
+msgstr "Čtveřice"
+
+#: C/gtali.xml:353(para)
+msgid ""
+"Four of the dice have the same number. The score is the total of all the "
+"dice. e.g. 2, 5, 5, 5, 5. In the Colors game, the score is 25 plus the total "
+"of all the dice."
+msgstr ""
+"Čtyři kostky se stejnými čísly. Bodovým hodnocením je součet všech kostek, "
+"např. 2, 5, 5, 5, 5. V barevné hře je bodové hodnocení 25 plus součet všech "
+"kostek."
+
+#: C/gtali.xml:359(glossterm)
+msgid "5 of a Kind"
+msgstr "Pětice"
+
+#: C/gtali.xml:360(para)
+msgid ""
+"Five identical dice. e.g. 3, 3, 3, 3, 3. In the Colors game, the score is 50 "
+"plus the total of all the dice."
+msgstr ""
+"Pět stejných kostek, např. 3, 3, 3, 3, 3. V barevné hře je bodové hodnocení "
+"50 plus součet všech kostek."
+
+#: C/gtali.xml:365(glossterm)
+msgid "Full House"
+msgstr "Full house"
+
+#: C/gtali.xml:366(para)
+msgid ""
+"Five dice consisting of two groups: One group of three with the same numbers "
+"and another group of two with the same numbers. e.g. 1, 1, 1, 4, 4. In the "
+"Colors game, the score is 15 plus the total of all the dice."
+msgstr ""
+"Pět kostek je rozdělených do dvou skupin: Jedna skupina tří stejných čísel a "
+"druhá skupina dvou stejných čísel, např. 1, 1, 1, 4, 4. V barevné hře je "
+"bodové hodnocení 15 plus celkový součet všech kostek."
+
+#: C/gtali.xml:373(glossterm)
+msgid "Full House Same Color"
+msgstr "Full house stejné barvy"
+
+#: C/gtali.xml:374(para)
+msgid ""
+"This category is only used in the Colors game. Five dice consisting of two "
+"groups: One group of three with the same numbers and another group of two "
+"with the same numbers. The numbers must be all the same color. e.g. 3, 3, 3, "
+"4, 4. Two dice are the same color if their numbers total 7: 1 and 6 are "
+"black, 2 and 5 are red, and 3 and 4 are green. The score is 20 plus the "
+"total of all the dice."
+msgstr ""
+"Tato kategorie se používá pouze v barevné hře. Pět kostek je rozdělených do "
+"dvou skupin: Jedna skupina se třemi stejnými čísly a druhá skupina se dvěma "
+"stejnými čísly. Všechna čísla musí být stejné barvy, např. 3, 3, 3, 4, 4. "
+"Dvě kostky jsou stejné barvy, pokud je jejich součet 7, např. 1 a 6 jsou "
+"černé, 2 a 5 jsou červené, 3 a 4 jsou zelené. Bodové hodnocení je 20 plus "
+"celkový součet kostek."
+
+#: C/gtali.xml:384(glossterm)
+msgid "Two Pair Same Color"
+msgstr "Dva páry stejné barvy"
+
+#: C/gtali.xml:385(para)
+msgid ""
+"This category is only used in the Colors game. Five dice consisting of two "
+"groups: One group of two with the same numbers and another group of two with "
+"the same numbers. The pairs must be all the same color. e.g. 3, 3, 4, 4. Two "
+"dice are the same color if their numbers total 7: 1 and 6 are black, 2 and 5 "
+"are red, and 3 and 4 are green. The fifth die can be any value. The score is "
+"the total of all the dice."
+msgstr ""
+"Tato kategorie se používá pouze v barevné hře. Pět kostek je rozděleno do "
+"dvou skupin. Jedna skupina dvou stejných čísel a druhá skupina dvou stejných "
+"čísel. Páry musí být stejné barvy, např. 3, 3, 4, 4. Dvě kostky jsou stejné "
+"barvy, pokud je jejich součet 7, např. 1 a 6 jsou černé, 2 a 5 jsou červené, "
+"3 a 4 jsou zelené. Pátá kostka může mít libovolnou hodnotu. Bodové hodnocení "
+"je celkový součet všech kostek."
+
+#: C/gtali.xml:395(glossterm)
+msgid "Flush"
+msgstr "Flush"
+
+#: C/gtali.xml:396(para)
+msgid ""
+"This category is only used in the Colors game. Five dice that are all the "
+"same \"color\": Two dice are the same color if their numbers total 7: 1 and "
+"6 are black, 2 and 5 are red, and 3 and 4 are green. The fifth die can be "
+"any value. The score is 35 points."
+msgstr ""
+"Tato kategorie se používá pouze v barevné hře. Pět kostek, které mají "
+"stejnou „barvu“. Dvě kostky jsou stejné barvy, pokud je jejich součet 7, "
+"např. 1 a 6 jsou černé, 2 a 5 jsou červené, 3 a 4 jsou zelené. Zbylé kostky "
+"mohou mít libovolné hodnoty. Hodnoceno 35 body."
+
+#: C/gtali.xml:404(glossterm)
+msgid "Large Straight"
+msgstr "Velká postupka"
+
+#: C/gtali.xml:405(para)
+msgid ""
+"Five dice with consecutive numbers. e.g. 2, 3, 4, 5, 6. The score is 40 "
+"points."
+msgstr ""
+"Pět kostek s po sobě jdoucími čísly, např. 2, 3, 4, 5, 6. Hodnoceno 40 body."
+
+#: C/gtali.xml:410(glossterm)
+msgid "Small Straight"
+msgstr "Malá postupka"
+
+#: C/gtali.xml:411(para)
+msgid ""
+"Four dice with consecutive numbers. The fifth die can be any number. e.g. 2, "
+"3, 4, 5, 5. This category is only used in the regular game. The score is 30 "
+"points."
+msgstr ""
+"Čtyři kostky s po sobě jdoucími čísly. Na páté kostce může být libovolné "
+"číslo, např. 2, 3, 4, 5, 5. Tato kategorie je pouze v normální hře. "
+"Hodnoceno 30 body."
+
+#: C/gtali.xml:425(title)
+msgid "Authors"
+msgstr "Autoři"
+
+#: C/gtali.xml:426(para)
+msgid ""
+"<application>GNOME Tali</application> was written by Scott Heavner "
+"(<email>sdh@po.cwru.edu</email>) and Orest Zborowski. This manual was "
+"written by Scott D Heavner (<email>sdh@po.cwru.edu</email>) with extra "
+"material added by Callum McKenzie (<email>callum@physics.otago.ac.nz</"
+"email>). To report a bug or make a suggestion regarding this application or "
+"this manual, follow the directions in this <ulink url=\"ghelp:user-guide?"
+"feedback-bugs\" type=\"help\">document</ulink>."
+msgstr ""
+"<application>GNOME Tali</application> napsal Scott Heavner (<email>sdh@po."
+"cwru.edu</email>) a Orest Zborowski. Tento příručku napsal Scott D Heavner "
+"(<email>sdh@po.cwru.edu</email>), dalšími materiály dodal Callum McKenzie "
+"(<email>callum@physics.otago.ac.nz</email>). Pokud chcete nahlásit chybu "
+"nebo podat návrh týkající se této aplikace nebo tohoto návodu, tak se řiďte "
+"instrukcemi v tomto <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
+"\">dokumentu</ulink>."
+
+#: C/gtali.xml:453(title)
+msgid "License"
+msgstr "Licence"
+
+#: C/gtali.xml:454(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>GNU General Public License</citetitle></ulink> as published by "
+"the Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version."
+msgstr ""
+"Tento program je svobodný software. Můžete jej dále šířit a/nebo upravovat "
+"za dodržení podmínek <ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>GNU General Public License</citetitle></ulink>, tak jak ji "
+"vydala Free Software Foundation ve verzi 2 nebo (dle vaší volby) novější."
+
+#: C/gtali.xml:462(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"Tento program je šířen s přesvědčením, že může být užitečný, ale BEZ "
+"JAKÝCHKOLIV ZÁRUK, bez předpokládané záruky na OBCHODOVATELNOST nebo "
+"VHODNOST PRO URČITÝ ÚČEL. Více podrobností najdete v <citetitle>GNU General "
+"Public License</citetitle>."
+
+#: C/gtali.xml:468(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"Kopie <citetitle>GNU General Public License</citetitle> je zahrnuta v "
+"dodatku <citetitle>Uživatelské přiručky GNOME</citetitle>. Kopii "
+"<citetitle>GNU General Public License</citetitle> můžete také získat od Free "
+"Software Foundation navštívením <ulink type=\"http\" url=\"http://www.fsf.org"
+"\">jejich webu</ulink> nebo zasláním žádosti na <address> Free Software "
+"Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</"
+"city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</"
+"country></address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/gtali.xml:0(None)
+msgid "translator-credits"
+msgstr "Marek Černocký <marek@manet.cz>, 2009."

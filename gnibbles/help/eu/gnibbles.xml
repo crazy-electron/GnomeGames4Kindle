@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.20">
+<!ENTITY manrevision "2.20">
+<!ENTITY date "May 2007">
+<!ENTITY app "<application>Nibbles</application>">
+<!ENTITY appname "Nibbles">
+<!ENTITY VERSION "2.20">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="eu">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+ <articleinfo>
+  <title><application>Nibbles</application>en eskuliburua</title>
+
+    <abstract role="description">
+      <para>Nibbles GNOMEren harren jokoa da bat. Erabiltzaileak 2D moduko har bat kontrolatzen du janaria lortzen saiatzen den bitartean. Janaria jateak puntuak ematen ditu, baina zerbaiten aurka talka egitean puntuak galtzen dira. Puntu guztiak galdutakoan jokalariak galtzen du.</para>
+    </abstract>
+
+  <copyright>
+   <year>2000</year>
+   <holder>Kevin Breit</holder>
+  </copyright><copyright><year>2008.</year><holder>Hizkuntza Politikarako Sailburuordetza (hizpol@ej.gv.es)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOMEren dokumentazio-proiektua</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Baimena ematen da dokumentu hau kopiatu, banatu eta/edo aldatzeko Free Software Foundation-ek argitaratutako GNU Dokumentazio Librearen Lizentziaren 1.1. bertsioan edo berriago batean ezarritako baldintzetan, atal aldaezinik gabe, aurreko azaleko testurik gabe eta atzeko azaleko testurik gabe. GFDL lizentziaren kopia <ulink type="help" url="ghelp:fdl">esteka honetan</ulink> edo eskuliburu honekin batera ematen den COPYING-DOCS fitxategian aurkituko duzu.</para>
+         <para>Eskuliburu hau GFDL lizentziarekin banatzen diren GNOME eskuliburuen bildumakoa da. Eskuliburu hau bildumatik bereizita banatu nahi baduzu, banatu dezakezu, baina eskuliburuari lizentziaren kopia bat gehitu beharko diozu, lizentzian bertan 6. atalean azaltzen den bezala.</para>
+
+	<para>Enpresek beren produktuak eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu gisa hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, eta GNOMEren Dokumentazio Proiektuko kideak marka komertzialak direla konturatzen direnean, izen horiek osorik maiuskulaz edo hasierako letra maiuskulaz idatzi dituzte.</para>
+
+	<para>DOKUMENTUA ETA DOKUMENTUAREN BERTSIO ALDATUAK GNU DOKUMENTAZIO LIBREAREN LIZENTZIAREN BALDINTZEN ARABERA EMATEN DIRA, ETA ONDOREN ZEHAZTEN DIRENAK ONARTZERA BEHARTZEN DUTE: <orderedlist>
+		<listitem>
+		  <para>DOKUMENTUA "DAGOEN-DAGOENEAN" EMATEN DA, INOLAKO BERMERIK GABE, EZ ESPRESUKI ADIERAZITAKORIK ETA EZ INPLIZITURIK ERE; BESTEAK BESTE, EZ DA BERMATZEN DOKUMENTUA EDO BERTSIO ALDATUA AKATSIK GABEA DENIK, MERKATURATZEKO EDO XEDE JAKIN BATERAKO EGOKIA DENIK EDO ARAURIK HAUSTEN EZ DUENIK, HORI GUZTIA MUGARIK GABE. DOKUMENTUAREN EDO DOKUMENTUAREN BERTSIO ALDATUAREN KALITATEARI, ZEHAZTASUNARI ETA PERFORMANTZIARI BURUZKO ERANTZUKIZUN OSOA ZUREA DA. DOKUMENTUREN BATEK EDO BERTSIO ALDATUREN BATEK EDOZEIN MOTATAKO AKATSIK IZANEZ GERO, ZUK (EZ HASIERAKO IDAZLEAK, EZ EGILEAK ETA EZ INONGO KOLABORATZAILEK) ZEURE GAIN HARTU BEHARKO DUZU BERRIKUSTEKO, KONPONTZEKO EDO ZUZENTZEKO BEHAR DIREN ZERBITZU GUZTIEN KOSTUA. BERME-UKATZE HAU LIZENTZIA HONEN FUNTSEZKO ZATIA DA. EZ DA BAIMENIK EMATEN EZEIN DOKUMENTU EDO BERTSIO ALDATU ERABILTZEKO, BALDIN ETA EZ BADA BERME-UKATZE HAU ONARTZEN.</para>
+		</listitem>
+		<listitem>
+		  <para>EZIN IZANGO DA INONGO ZIRKUNSTANTZIARIK EDO LEGE-TEORIARIK OINARRI HARTU --EZ ERANTZUKIZUN ZIBILARI BURUZKORIK (ZABARKERIA BARNE HARTUTA), EZ KONTRATUARI BURUZKORIK, EZ BESTERIK-- DOKUMENTU HONEN EDO BERTSIO ALDATU BATEN EGILEA, HASIERAKO IDAZLEA, EDOZEIN KOLABORATZAILE EDO BANATZAILE, EDO ALDERDI HORIEN EDOZEIN HORNITZAILE BESTE PERTSONA BATEN AURREAN ERANTZULE EGITEKO, PERTSONA HORREK EDOZEIN MOTATAKO KALTEA JASAN DUELAKO (ZUZENEKOA, ZEHARKAKOA, BEREZIA, INTZIDENTALA EDO ONDORIOZKOA), HALA NOLA (ETA MUGARIK GABE) BEZEROAK GALTZEA, LANA ETEN BEHARRA, ORDENAGAILUAK EZ IBILTZEA EDO GAIZKI IBILTZEA, EDO DOKUMENTUA NAHIZ HAREN BERTSIO ALDATUAK ERABILTZETIK ONDORIOZTATZEN DIREN EDO ERABILERA HORREKIN ZERIKUSIA DUTEN KALTEAK EDO GALERAK, ALDERDIARI KALTE HORIEK GERTA ZITEZKEELA ADITZERA EMAN BAZAIO ERE.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Kevin</firstname> 
+	<surname>Breit</surname> 
+	<affiliation> 
+	  <orgname>GNOMEren dokumentazio-proiektua</orgname> 
+	  <address> <email>battery841@mypad.com</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+    <revhistory>
+      <revision> 
+	<revnumber>Nibbles-en eskuliburuaren 2.20 bertsioa</revnumber> 
+	<date>2007ko maiatza</date> 
+	<revdescription> 
+	  <para role="author">Kevin Breit <email>battery841@mypad.com</email></para>
+	  <para role="publisher">GNOMEren dokumentazio-proiektua</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Eskuliburu honetan, Nibbles-en 2.20 bertsioa azaltzen da.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Ohar-bidaltzea</title> 
+      <para><application>Nibbles</application>i buruzko akatsen berri emateko edo oharrak bidaltzeko, <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOMEra oharrak bidaltzeko orria</ulink>n aurkituko dituzu argibideak.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+ </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Nibbles</primary> 
+  </indexterm> 
+
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+ <sect1 id="intro">
+  <title>Sarrera</title>
+
+  <para><application>Nibbles</application> jokoan, erabiltzaileak har bat kontrolatzen du. Harra taulan zehar mugitzen da, eta, inguruko hormak saihesten dituen bitartean, diamanteak jaten ditu.</para>
+
+  <para><application>Nibbles</application> abiarazteko, hautatu <menuchoice><guisubmenu>Jokoak</guisubmenu><guimenuitem>Nibbles</guimenuitem></menuchoice> <guimenu>Aplikazioak</guimenu> menuan, edo idatzi <command>gnibbles</command> komando-lerroan.</para>
+
+  <para><application>Nibbles</application> <filename>gnome-games</filename> paketearen barruan sartzen da, eta hori GNOMEren mahaigaineko ingurunearen parte da. Dokumentu honek <application>Nibbles</application>en 2.20 bertsioa deskribatzen du.</para>
+ </sect1>
+
+ <sect1 id="objective">
+ <title>Nibbles-en helburua</title>
+  <para>Nibbles-en helburua oso xinplea da. Harra zuk kontrolatzen duzu, eta, harrak pareta bat edo bere burua jotzen badu, hil egiten zara. Jokoa amaitu aurretik, hamar bizitza lortu ahal izango dituzu. Irabazteko, zure puntuaziorik onena (edo lagun batena) gainditu edo maila guztiak osatu behar dituzu. Adimen artifiziala duten harren aurka jolasteko aukera ere badago.</para>
+  <para>Nibbles-ek <link linkend="network-games">jokalari askorentzako</link> aukera eskaintzen du: sei jokalarik jolastu dezakete, bai ordenagailu berean, bai sare moduan ere.</para>
+ </sect1>
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+ <sect1 id="usage">
+  <title>Nibbles erabiltzea</title>
+  <para><application>Nibbles</application> joko erraza da. Behar diren tekla bakarrak gezi-teklak dira.</para>
+
+  <!-- ========= Basic Usage =========================== -->
+<sect2 id="mainwin">
+<title>Oinarrizko erabilera</title>
+<para><application>Nibbles</application> abiaraztean, hemen azpian ageri den <interface>leiho nagusia</interface> irekitzen da. <figure id="intro-fig">
+<title>Nibbles-en sarrerako leihoa</title>
+<screenshot>
+ <mediaobject> 
+    <imageobject>
+<imagedata fileref="figures/intro.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Nibbles-en sarrerako leihoa</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure></para>
+<para>Jokoa abiarazteko, hautatu <menuchoice><guimenu>Jokoa</guimenu><guimenuitem>Joko berria</guimenuitem></menuchoice>.</para>
+<para>Jokoa abiarazten denean, harra pantailaren ezkerraldetik aterako da. Erabili Gora gezia harra gora mugitzeko. Erabili Eskuinera gezia harra eskuinera jiratzeko, Ezkerrera gezia harra ezkerretara jiratzeko eta Behera gezia harra behera eramateko. <figure id="gameplay">
+<title>Nibbles jokoan zehar</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/playing.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Nibbles jokoan zehar</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure></para>
+</sect2>
+
+<!-- This section should also describe main elements of graphic user
+interface, such as menus and buttons, unless this description
+is too long - in that case, it should be moved to a separate
+section. For example -->
+
+
+<!-- ========= Menus =========================== -->
+<sect2 id="menubar">
+   <title>Menuak</title>
+   <para>Menu-barra <interface>Leiho nagusia</interface>ren gainean kokatuta dago, eta menu hauek ditu:</para>
+
+   <variablelist>
+    <varlistentry>
+     <term><guimenu>Jokoa</guimenu></term>
+     <listitem>
+      <para>Menu honek elementu hauek ditu: <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ktrl+N</keysym></shortcut><guimenuitem>Joko berria</guimenuitem></menuchoice>: <application>Nibbles</application>en partida berri bat hasten du.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ktrl+ G</keysym></shortcut><guimenuitem>Sareko jokoa</guimenuitem></menuchoice>:GGZ Gaming Zone erabiliz hasten du jokalari askorentzako sare-jokoa.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Puntuazioa</guimenuitem></menuchoice>: puntuaziorik onenak erakusten ditu.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Gelditu jokoa</guimenuitem></menuchoice>: partida geldituko du. Egin klik <quote>Gelditu jokoa</quote> menu-aukeran, partida berriz hasteko.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Amaitu jokoa</guimenuitem></menuchoice>: uneko partida amaitzen du, eta izenburu-pantailara itzultzen da.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ktrl-Q</keysym></shortcut><guimenuitem>Irten</guimenuitem></menuchoice>: aplikaziotik irtengo da.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+   <varlistentry>
+     <term><guimenu>Ikuspegia</guimenu></term>
+     <listitem>
+      <para>Menu honek elementu hauek ditu: <itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>Pantaila osoa</guimenuitem></menuchoice>: jokoaren leihoa pantaila osora egokitzen du (eta alderantziz).</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Ezarpenak</guimenu></term>
+     <listitem>
+      <para>Menu honek elementu hauek ditu: <itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>Hobespenak</guimenuitem></menuchoice>: <link linkend="prefs"> hobespenak</link> editatzeko leihoa irekitzen du.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Laguntza</guimenu></term>
+     <listitem>
+      <para>Menu honek elementu hauek ditu: <itemizedlist>
+        <listitem>
+          <para><menuchoice><shortcut><keysym>F1</keysym></shortcut><guimenuitem>Edukiak</guimenuitem></menuchoice>: eskuliburu hau bistaratzen du.</para>
+         <para><guimenuitem>Honi buruz</guimenuitem>: <interface>Honi buruz</interface> elkarrizketa-koadroa irekitzen du, eta horrek <application>Nibbles</application>i buruzko oinarrizko informazioa erakusten du, hala nola egilearen izena eta jokoaren bertsio-zenbakia.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+  </sect2>
+  <sect2 id="diamonds">
+  <title>Diamanteak</title>
+   <para><application>Nibbles</application> aplikazioak hainbat diamante ditu jateko. Bakoitzak kolore bat eta funtzio bat ditu. Diamante more argia luze egongo da pantailan, eta, horregatik, jateko aukera izango duzu (gainera, kolore horretako guztiak jan behar dituzu maila amaitzeko). Gainerako diamante guztiak gainordainak dira, baina denbora gutxi egoten dira. Zure esku utziko dugu kolore bakoitzak zer gainordain ematen duen aurkitzea. Gainordain guztiek puntuazioari, harraren luzerari edo bi horiei eragiten diete. Kontuz ibili gainordaina duten diamanteak hartzerakoan, ez ahaztu maila amaitzeko behar dituzun diamante arruntak.</para>
+  </sect2>   
+ </sect1>
+
+
+ <!-- ============= Customization ============================= -->
+ <sect1 id="prefs">
+  <title>Pertsonalizazioa</title>
+  <para>Aplikazioaren ezarpenak aldatzeko, hautatu <menuchoice><guimenu>Ezarpenak</guimenu><guimenuitem>Hobespenak</guimenuitem></menuchoice>. Horrek <interface>Hobespenak</interface> elkarrizketa-koadroa irekitzen du. Hobespen guztiak automatikoki gordetzen eta aplikatzen dira, aldatzen dituzun heinean.</para>
+
+  <figure id="game-prefs">
+    <title>Jokoaren hobespenen fitxa</title>
+    <screenshot>
+       <mediaobject> 
+    <imageobject>
+      <imagedata fileref="figures/game.png" format="PNG" srccredit="Kevin Breit"/>
+          </imageobject>
+    <textobject> 
+      <phrase>Jokoaren hobespenen fitxa.</phrase> 
+    </textobject> 
+  </mediaobject>
+    </screenshot>
+  </figure>
+
+  <para>Hauek dira <guilabel>Jokoa</guilabel> fitxan dauden propietateak: <variablelist>
+    <varlistentry>
+    <term>Abiadura</term>
+    <listitem>
+     <para>Elementu honek harraren abiadura kontrolatzen du.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Jokoaren mailak ausazko hurrenkeran</term>
+    <listitem>
+     <para>Aukera hau hautatzen baduzu, zailtasun-maila ausazko hurrenkeran aldatuko da.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Gaitu gainordain faltsuak</term>
+    <listitem>
+     <para>Gaitzen direnean, pantailan bi diamante urdin egon daitezke aldi berean. Bietako batek, jaten duzunean, txikiagotu egingo zaitu handitu egin beharrean.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Gaitu soinuak</term>
+     <listitem>
+      <para>Jokoaren soinua kontrolatzen du.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Hasierako maila</term>
+     <listitem>
+      <para>Zein mailarekin hasi. Erabili hau maila zailago batera zuzenean joateko.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Giza jokalarien kopurua</term>
+     <listitem>
+      <para>Sei jokalarirentzako lekua dago.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>AAko jokalari kopurua</term>
+     <listitem>
+      <para>AAko sei jokalarirentzako lekua dago. Kontuan izan giza jokalarien eta AA jokalarien kopuruak sei edo gutxiago izan behar duela.</para>
+     </listitem>
+    </varlistentry>
+   </variablelist></para>
+  <para><figure id="worm-prefs">
+    <title>Harraren hobespenen fitxa</title>
+    <screenshot>
+       <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/worm_op.png" format="PNG" srccredit="Kevin Breit"/>
+         </imageobject>
+    <textobject> 
+      <phrase>Harraren hobespenen fitxa.</phrase> 
+    </textobject> 
+  </mediaobject>
+    </screenshot>
+  </figure> <guilabel>1. harra</guilabel> eta <guilabel>6. harra</guilabel>ren bitarteko fitxetan, har guztientzat hobespen indibidualak ezartzeko aukera dugu. <variablelist>
+    <varlistentry>
+    <term>Teklatuaren kontrola</term>
+    <listitem>
+     <para>Zerrenda honek harraren teklatu-kontrolak aldatzeko aukera ematen dizu. Kontrol bat aldatzeko, egin klik bikoitza dagokion botoian eta sakatu kontrol horretarako erabili nahi duzun tekla.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Erabili mugimendu erlatiboa</term>
+    <listitem>
+     <para>Ezkerrera geziak ez du harra pantailaren ezkerrera bidaltzen, ezta Eskuinera geziak eskuinera ere; Ezkerrera eta Eskuinera geziek harra ezkerrera edo eskuinera birarazten dute. Esaterako, harra ezkerretara mugitzen ari bada eta Ezkerrera gezia sakatzen baduzu, harrak ezkerrera biratuko du eta pantailaren behealdera zuzenduko da.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Harraren kolorea</term>
+    <listitem>
+     <para>Honen bidez harraren kolorea pertsonaliza dezakezu, eta, horrela, hainbat jokalari jolasten ari direnean, zure harra bereizi ahal izango duzu.</para>
+    </listitem>
+    </varlistentry>
+   </variablelist></para>
+
+ </sect1>
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Sareko partidak</title>
+  <para>Nibbles-ek jokalari askorentzako partidak onartzen ditu, <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink>ren eskutik. Interneteko Nibbles jokoaren zerbitzari batera konektatuz gero, erronka jo diezaiekezu beste jokalari batzuei jokalari askorentzako partidetan. Albisteak, eguneratzeak eta konekta zaitezkeen zerbitzarien zerrendak jasotzeko, ikus <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">gnome jokoen web-orria</ulink>.</para>
+  <para>Jokalari askorentzako jokoa abiarazteko, hautatu <menuchoice><guimenu>Jokoa</guimenu><guimenuitem>Sareko partida</guimenuitem></menuchoice>.</para> 
+
+<sect2 id="connecting">
+<title>Nibbles-en sareko zerbitzari batera konektatzea</title>
+<para>Nibbles jokora konektatzeko elkarrizketa-koadroa sareko partida berri bat abiarazten denean agertzen da. Konektatu nahi duzun zerbitzaria hautatzeko aukera ematen dizu elkarrizketa-koadroak, baita zerbitzari horretara konektatuta zauden bitartean izango duzun erabiltzaile-izena hautatzeko aukera ere.</para>
+
+<para>Gonbidatu moduan edo erregistratutako kontu normal batekin konekta zaitezke zerbitzarira. Gonbidatu moduan konektatzeak anonimoki sartzeko aukera ematen dizu; kontu normal batek, aldiz, zure erabiltzaile-izena gordetzeko aukera ematen dizu, eta aukeratzen duzun pasahitzarekin babesten du.</para>
+
+<para><guimenuitem>Saioa gonbidatu gisa hasi</guimenuitem> aukera hautatu beharko duzu, gonbidatu-kontu anonimo bat nahi baduzu. Kontu berri bat sortu nahi baduzu, hautatu <guimenuitem>Lehenengoz saioa hasi</guimenuitem> aukera, nahi duzun erabiltzaile-izena, pasahitza eta helbide elektronikoa erabiliz. Zure kontua sortua duzunean, <guimenuitem>Saio-hasiera normala</guimenuitem> aukera hautatuz konekta zaitezke, eta, jarraian, aukeratu dituzun erabiltzaile-izena eta pasahitza idatzi beharko dituzu.</para>
+<para>Zerbitzari batera konektatzeko, egin klik <guimenuitem>Konektatu</guimenuitem> botoian.</para>
+<figure id="connect">
+<title>Nibbles-en sare-konexioaren elkarrizketa-koadroa.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Nibbles-en sare-konexioaren elkarrizketa-koadroa.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Joko-gela batean sartzea</title>
+<para>Zerbitzari batera ongi konektatu zarenean, zein joko-gelatan sartu nahi duzun aukeratu dezakezu. Nibbles-en partida bat jokalari askorekin jolasteko, hautatu Nibbles gela. Zuk zeuk partida bat aurkeztu nahi baduzu, egin klik Abiarazi botoian. Horrek taula berri bat sortzen du eta gainerako jokalariek zure aurkako partidan parte har dezakete. Abiarazitako partidarik baldin badago, taulan bi aldiz klik egin dezakezu partidara sartzeko. Eskuinaldean dagoen partida-zerrendak erabilgarri dagoen eserleku kopurua erakusten dizu, hau da, jokoaren taulara sar daitezkeen jokalarien kopurua.</para>
+<figure id="tables">
+<title>Nibbles-en sareko elkarrizketa-koadroak aukera ematen dizu joko-gela batean sartu eta beste jokalari batzuk bilatzeko.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Nibbles-en sareko elkarrizketa-koadroak aukera ematen dizu joko-gela batean sartu eta beste jokalari batzuk bilatzeko.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>Nibbles-en taula berri bat sortzerakoan, hobespenen elkarrizketa-koadroa bistaratzen da, eta partida pertsonalizatzeko aukera izango duzu; partida joka dezaketen gutxieneko jokalarien kopurua, esaterako. Eserleku kopurua beteta dagoenean, ezin izango da jokalari gehiago sartu partida horretan.</para>
+<para>Sareko partidetan, gainerako jokalariekin berriketan egiteko aukera dago. Eskatu jokoaren inguruko aholkuak edo laguntza, baina mesedez izan zaitez adeitsua gainerako jokalariekin.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Beste jokalariak partidan sartu zain</title>
+<para>Partidan sartu zarenean, jokalari nahikoa elkartu arte itxoin beharko duzu. <guimenuitem>Jokalarien zerrenda</guimenuitem> menu-elementuak partidara sartu diren jokalarien zerrenda ikusteko aukera ematen dizu. Partidako jokalari kopuru osoa lortzen denean hasiko da partida.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Nibbles-en partida bat jokalari askorekin jolastea</title>
+<para>Nibbles-en jokalari askorekin jolastean, joko arrunteko antzeko arauak ezartzen dira; alde bakarra da orain giza aurkarien aurka ari zarela. Horren arabera, estrategiek AA jokalarien aurka jolastean baino hobeak izan behar dute.</para>
+<para>Jokalari batek irabazten duenean, partida amaitu egiten da eta hasierako sareko jokoen pantailara itzul zaitezke. Gero, beste partida bat jolastu dezakezu halako mendekotasuna sortzen duen Nibbles jokalari anitzekoan.</para>
+</sect2>
+
+</sect1>
+
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Egileak</title>
+  <para><application>Nibbles</application> Sean Maclsaac-ek <email>sjm@acm.org</email> eta Ian Peters-ek <email>itp@gnu.org</email> idatzi zuten. Eskuliburu hau Kevin Breit-ek <email>battery841@mypad.com</email> idatzi zuen. Nibles-en sareko euskarria Andreas Rosdal-ek eguneratu zuen <email>andreasr@gnome.org</email>. Aplikazio honi buruzko akatsen berri emateko edo oharrak bidaltzeko, <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentua</ulink>n aurkituko dituzu argibideak.</para> 
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Lizentzia</title>
+  <para>Programa hau software librea da; birbana eta/edo alda dezakezu Free Software Foundation-ek argitaratutako <ulink type="help" url="gnome-help:gpl"><citetitle>Lizentzia Publiko Orokorra</citetitle></ulink>ren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako baldintzak betez gero.</para>
+  <para>Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO BERMERIK GABE; era berean, ez da bermatzen beraren EGOKITASUNA MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO. Argibide gehiago nahi izanez gero, ikus <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>.</para>
+  <para><citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia <citetitle>GNOMEren erabiltzaile</citetitle>aren gidaren eranskinean daukazu. <citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle>ren kopia bat lor dezakezu Free Software Foundation-en bidez, <ulink type="http" url="http://www.fsf.org">hairen webgunea</ulink> bisitatuz edo hona idatziz: <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - 330. Suitea <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>AEB</country></address></para>
+ </sect1>
+</article>

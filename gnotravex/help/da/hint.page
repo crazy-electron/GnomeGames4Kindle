@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="hint" xml:lang="da">
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Brug fif eller løs spillet automatisk.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-23" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+  </info>
+  <title>Fif</title>
+
+  <note style="warning">
+    <p>Hvis du bruger en af de følgende metoder til at færdiggøre spillet, vil dit resultat ikke blive inkluderet blandt de bedste resultater.</p>
+  </note>
+
+  <section id="hint-hints">
+  
+    <title>Brug fifsystemet</title>
+    
+    <p>På ethvert tidspunkt i spillet kan du, hvis du ikke ved hvordan det skal startes eller hvor en brik skal flyttes til, bruge det indbyggede fifsystem.</p>
+    <p>Systemet vil flytte en brik fra den højre boks til dens korrekte placering i den venstre boks.</p>
+    <p>For at bruge fifsystemet udføres en af de følgende handlinger:</p>
+    <list>
+      <item>
+        <p>Tryk på <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Vælg <guiseq><gui style="menu">Spil</gui><gui style="menuitem">Fif</gui></guiseq>.</p>
+      </item>
+    </list>
+  </section>
+  <section id="hint-solve">
+    <title>Løs spillet</title>
+    <p>Hvis du sidder fast i spillet eller du ønsker at løse det automatisk vælges <guiseq><gui style="menu">Game</gui><gui style="menuitem">Løs</gui></guiseq>.</p>
+  </section>
+</page>

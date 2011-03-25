@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.14">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "January 2006">
+<!ENTITY app "<application>Mines</application>">
+<!ENTITY appname "Mines">
+<!ENTITY version "2.14">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="es">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Manual de <application>Minas</application></title>
+    <abstract role="description">
+      <para>Minas es la apuesta de GNOME para el popular juego de lógica Buscaminas, que implica evitar las minas mientras se reciben pistas sobre la ubicación de las minas.</para>
+    </abstract>
+    <copyright>
+      <year>2006</year>
+      <holder>Callum McKenzie</holder>
+<!--   Based on an earlier manual by   <holder>Tim Riehle</holder> -->
+    </copyright><copyright><year>2007-2008.</year><holder>Jorge González (jorgegonz@svn.gnome.org)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Proyecto de documentación de GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+        <para>Este documento tiene una licencia doble. Puede distribuirlo y/o modificarlo bajo los términos de la <ulink type="help" url="gnome-help:gpl">Licencia Pública General GNU</ulink>, con la que el <link linkend="license">programa está licenciado</link>, o puede distribuirlo bajo los términos de la Licencia de Documentación Libre de GNU. Sigue una copia de la siguiente.</para>
+
+	<para>Se otorga permiso para copiar, distribuir y/o modificar este documento bajo los términos de la Licencia de Documentación Libre de GNU, Versión 1.1 o cualquier otra versión posterior publicada por la Free Software Foundation; sin Secciones Invariantes ni Textos de Cubierta Delantera ni Textos de Cubierta Trasera. Puede encontrar una copia de la licencia GFDL en este <ulink type="help" url="ghelp:fdl">enlace</ulink> o en el archivo COPYING-DOCS distribuido con este manual.</para>
+         <para>Este manual es parte de una colección de manuales de GNOME distribuido bajo la GFDL. Si quiere distribuir este manual por separado de la colección, puede hacerlo añadiendo una copia de la licencia al manual, tal como se describe en la sección 6 de la licencia.</para>
+
+	<para>Muchos de los nombres utilizados por las empresas para distinguir sus productos y servicios se consideran marcas comerciales. Cuando estos nombres aparezcan en la documentación de GNOME, y siempre que se haya informado a los miembros del Proyecto de documentación de GNOME de dichas marcas comerciales, los nombres aparecerán en mayúsculas o con las iniciales en mayúsculas.</para>
+
+	<para>ESTE DOCUMENTO Y LAS VERSIONES MODIFICADAS DEL MISMO SE PROPORCIONAN SEGÚN LAS CONDICIONES ESTABLECIDAS EN LA LICENCIA DE DOCUMENTACIÓN LIBRE DE GNU (GFDL) Y TENIENDO EN CUENTA QUE: <orderedlist>
+		<listitem>
+		  <para>EL DOCUMENTO SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, NI EXPLÍCITA NI IMPLÍCITA INCLUYENDO, SIN LIMITACIÓN, GARANTÍA DE QUE EL DOCUMENTO O VERSIÓN MODIFICADA DE ÉSTE CAREZCA DE DEFECTOS COMERCIALES, SEA ADECUADO A UN FIN CONCRETO O INCUMPLA ALGUNA NORMATIVA. TODO EL RIESGO RELATIVO A LA CALIDAD, PRECISIÓN Y UTILIDAD DEL DOCUMENTO O SU VERSIÓN MODIFICADA RECAE EN USTED. SI CUALQUIER DOCUMENTO O VERSIÓN MODIFICADA DE AQUÉL RESULTARA DEFECTUOSO EN CUALQUIER ASPECTO, USTED (Y NO EL REDACTOR INICIAL, AUTOR O CONTRIBUYENTE) ASUMIRÁ LOS COSTES DE TODA REPARACIÓN, MANTENIMIENTO O CORRECCIÓN NECESARIOS. ESTA RENUNCIA DE GARANTÍA ES UNA PARTE ESENCIAL DE ESTA LICENCIA. NO SE AUTORIZA EL USO DE NINGÚN DOCUMENTO NI VERSIÓN MODIFICADA DE ÉSTE POR EL PRESENTE, SALVO DENTRO DEL CUMPLIMIENTO DE LA RENUNCIA;Y</para>
+		</listitem>
+		<listitem>
+		  <para>EN NINGUNA CIRCUNSTANCIA NI SEGÚN NINGÚN ARGUMENTO LEGAL, SEA POR MOTIVOS CULPOSOS (INCLUIDA LA NEGLIGENCIA), CONTRACTUALES O DE OTRO TIPO, NI EL AUTOR, NI EL REDACTOR INICIAL, NI CUALQUIER COLABORADOR, NI CUALQUIER DISTRIBUIDOR DEL DOCUMENTO O VERSIÓN MODIFICADA DEL MISMO, NI CUALQUIER PROVEEDOR DE CUALQUIERA DE DICHAS PARTES, SERÁN RESPONSABLES, ANTE NINGÚN TERCERO, DE NINGÚN DAÑO O PERJUICIO DIRECTO, INDIRECTO, ESPECIAL, INCIDENTAL O CONSIGUIENTE DE NINGÚN TIPO, INCLUIDOS, SIN LIMITACIÓN, LOS DAÑOS POR PÉRDIDA DE FONDO DE COMERCIO, INTERRUPCIÓN DEL TRABAJO, FALLO O MAL FUNCIONAMIENTO INFORMÁTICO, NI CUALQUIER OTRO DAÑO O PÉRDIDA DERIVADOS DEL USO DEL DOCUMENTO Y LAS VERSIONES MODIFICADAS DEL MISMO, O RELACIONADO CON ELLO, INCLUSO SI SE HABÍA COMUNICADO A AQUELLA PARTE LA POSIBILIDAD DE TALES DAÑOS.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Callum</firstname> 
+	<surname>McKenzie</surname> 
+	<affiliation> 
+	  <address> <email>callum@spooky-possum.org</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+	
+    <revhistory>
+      <revision> 
+	<revnumber>Manual de Minas V2.9</revnumber> 
+	<date>Enero de 2006</date> 
+	<revdescription> 
+	  <para role="author">Callum McKenzie <email>callum@spooky-possum.org</email></para>
+	  <para role="publisher">Proyecto de documentación de GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Este manual describe la versión 2.14 de Minas.</releaseinfo>
+    <!-- The following feedback information only applies to applications
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Comentarios</title> 
+      <para>Para informar de un fallo, o hacer alguna sugerencia concerniente la aplicación <application>Minas</application> o este manual, siga las indicaciones en la <ulink url="http://bugzilla.gnome.org">base de datos de errores de GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Minas</primary> 
+  </indexterm>
+  
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+  <sect1 id="intro">
+    <title>Introducción</title>
+
+    <para><application><application>Minas</application></application> es un juego tipo puzle donde localiza minas flotando en un océano usando sólo su cerebro y un poquito de suerte.</para>
+
+    <para>El juego comienza con una rejilla de casillas cubiertas sin idea de lo que hay en ellas. Al pulsar sobre una casilla se descubre lo que hay: océano vacío o una mina. Si encuentra una mina ocurren cosas malas y se acaba la partida. Si descubre una casilla vacía, sobrevive y puede probar otra vez. Se le da un poco de ayuda; si encuentra una porción de océano habrá un número que le indica cuántas minas hay en las casillas adyacentes (o no habrá número si no hay minas alrededor). Una vez que encuentre unas pocas casillas vacías podrá empezar a deducir qué casillas tienen minas y cuáles no. Ganará la partida cuando haya descubierto todas las casillas no minadas y marcado todas las casillas con minas.</para>
+
+    <figure id="main-window">
+      <title>Las fases de la partida: el comienzo, el juego, perder y ganar.</title>
+    	    <mediaobject><imageobject>
+    	      <imagedata fileref="figures/main-window.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <para>Para marcar una casilla como que tiene una mina pulse con el botón derecho del ratón y se añadirá una bandera en la casilla. Si pulsa en una casilla con un número y ha puesto ese mismo número de banderas en las casillas adyacentes, entonces se descubrirán las casillas restantes. Si no marcó correctamente las minas entonces habrá una explosión y se acabará la partida. Las casillas junto a casillas sin minas adyacentes (ej. casillas vacías) se descubrirán automáticamente.</para>
+
+    <figure id="status-bar">
+      <title>Información importante.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/statusbar.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <para>La partida está siendo controlada por reloj. Para ser bueno en este juego tiene que ser rápido y correcto a la vez. El reloj se para una vez que haya encontrado todas las minas y descubierto todas las casillas no minadas. Su puntuación es el tiempo que le llevó; cuanto antes mejor.</para>
+
+    <para>El tiempo que le ha llevado se muestra en la parte inferior derecha de la ventana. Junto a ello, a la izquierda, hay un conteo del número de minas que ha limpiado y el número total de minas ocultas en el tablero.</para>
+
+    <figure id="faces">
+      <title>La cara amarilla le muestra cómo de bien lo está haciendo.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/faces.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <!-- Face graphics image. -->
+
+  </sect1>
+
+
+  <sect1 id="details">
+    <title>Los detalles</title>
+
+    <para>Esta sección proporciona información sobre los controles y los elementos importantes del menú. Si necesita ayuda para figurarse dónde están las minas, vea la <link linkend="strategy">sección de estrategia</link>.</para>
+
+    <sect2>
+      <title>El objetivo</title>
+
+      <para>Comienza con un océano de casillas cuyo contenido es desconocido, debe marcar todas las casillas con minas y descubrir las casillas vacías. Realmente no tiene que marcar las casillas con minas, pero es muchísimo más fácil si lo hace. Una vez que ha limpiado todas las casillas no minadas, cualquier casilla con una mina se marcará automáticamente.</para>
+
+      <para>Si pulsa con el botón izquierdo sobre una mina, o autodescubre una casilla con una mina pierde la partida. Para ayudar a prevenir accidentes, no se le permite autodescubrir alrededor de una casilla a menos que el número de minas marcadas sea igual al número proporcionado por la casilla.</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Uso del ratón</title>
+      
+      <informaltable>
+        <tgroup cols="2">
+	<!-- FIXME: proper headers. -->
+	  <thead>
+	    <row>
+	      <entry>Acción</entry><entry>Resultado</entry>
+	    </row>
+	  </thead>
+	  <tbody>
+	    <row>
+	      <entry>Pulsar con el botón izquierdo sobre una casilla no descubierta.</entry>
+	      <entry>Descubre el contenido de esa casilla. Para bien o para mal.</entry>
+	    </row>
+	    <row>
+	      <entry>Pulsar con el botón izquierdo sobre una casilla descubierta.</entry>
+	      <entry>Autolimpiar. Descubre las casillas sin marcar alrededor de la casilla pulsada, pero sólo si se han marcado suficientes casillas para coincidir con el número de esa casilla.</entry>
+	    </row>
+	    <row>
+	      <entry>Pulsar con el botón derecho sobre una casilla no descubierta.</entry>
+	      <entry>Marca la casilla como una mina. Si ya está marcada se quitará el marcador.</entry>
+	    </row>
+	  </tbody>
+	</tgroup>
+      </informaltable>
+
+      <tip><para>Si está acostumbrado a los controles más tradicionales del ratón, no se preocupe, todavía funcionan.</para></tip>
+    </sect2>
+
+    <sect2>
+      <title>Tamaño del juego y dificultad</title>
+
+      <para>Al elegir <menuchoice><guimenu>Preferencias</guimenu><guimenuitem>Preferencias</guimenuitem></menuchoice> del menú, puede cambiar el tamaño de las partidas. Tamaños grandes llevan más tiempo y concentración obviamente. Los juegos pequeños son más frenéticos. Se proporcionan tamaños pequeño, medio, grande y personalizado.</para> 
+
+    <figure id="preferences-img">
+      <title>El diálogo de preferencias.</title>
+    	    <mediaobject><imageobject>
+	      <imagedata fileref="figures/preferences.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+      <para>En la parte derecha del diálogo hay tres parámetros para controlar el tamaño personalizado. Horizontal y Vertical son la altura y anchura de la rejilla de casillas deseada. El número de minas es —obviamente— el número de minas que debe encontrar. Si el número establecido es muy alto o muy pequeño entonces la partida resulta ser muy difícil o muy fácil. El número de minas está limitado a un poco menos que el número total de casillas.</para>
+
+    </sect2>
+    
+    <sect2>
+      <title>Banderas «No estoy seguro»</title>
+
+      <informalfigure id="imnotsureflagsimg">
+    	    <mediaobject><imageobject>
+  	      <imagedata fileref="figures/imnotsureflagscheckbox.png" format="PNG"/>
+	    </imageobject></mediaobject>
+      </informalfigure>
+
+      <para>Hay una casilla de verificación en el diálogo de preferencias llamada Usar banderas «No estoy seguro». Si activa esto, entonces cuando pulse con el botón derecho sobre una casilla, rotará entre las banderas normales usadas para marcar una casilla como minada, una bandera con n signo de interrogación en ella y una ausencia de bandera. Esta nueva bandera es para ayudarle con sus razonamientos, para marcar casillas que cree que pueden ser minas pero no está seguro. Estas banderas no tienen efecto en el juego; aún debe usar el número apropiado de marcadores rojos de bandera para poder limpiar alrededor de la casilla numerada.</para>
+
+      <figure id="flags-img">
+	<title>La secuencia de las banderas cuando las banderas «No estoy seguro» están activadas.</title>
+    	    <mediaobject><imageobject>
+  	      <imagedata fileref="figures/flags.png" format="PNG"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+    </sect2>
+
+    <sect2>
+      <title>Usar la advertencia «Demasiadas banderas»</title>
+
+      <para>La otra casilla de verificación en el diálogo de propiedades es la llamada Usar la advertencia «demasiadas banderas». Esta característica le mostrará una advertencia cuando haya establecido demasiadas banderas. Esto está desactivado de forma predeterminada, ya que proporciona una sugerencia que podría ser considerada como «hacer trampas».</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Pistas</title>
+    
+      <para>Si se queda atascado, es razonablemente común acabar con dos opciones que no puede resolver lógicamente; entonces puede o adivinar o pedir una sugerencia. Cuando elija <guimenuitem>Sugerencia</guimenuitem> del menú <guimenu>Juego</guimenu> sólo se revelará una casilla (más las de alrededor si está vacía). La elección de la casilla es aleatoria pero puede ser de ayuda. Hay una penalización de 10 segundos que se añaden a su tiempo siempre que pida una sugerencia.</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Puntuaciones más altas</title>
+
+      <para>Si su puntuación está entre las diez mejores, se mostrará en la lista de mejores puntuaciones y tendrá una oportunidad de cambiar el nombre grabado en la tabla de mejores puntuaciones. También puede revisar las puntaciones más tarde eligiendo <guimenuitem>Puntuación</guimenuitem> del menú <guimenu>Juego</guimenu>. El menú desplegable en la parte superior del diálogo le permite ver las puntuaciones de otros tamaños de tablero.</para>
+
+    <figure id="high-score-img">
+      <title>El diálogo de puntuaciones.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/highscores.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+      <tip>
+        <para>Las máximas puntuaciones para el tablero personalizado no tiene interés. Cualquier otro jugador puede hacer el tablero de juego más pequeño y obtener un mejor tiempo. Si siempre juega al mismo tablero personalizado entonces le dirá cómo de bien lo está haciendo. Es la única razón por la que se graban estos resultados.</para>
+      </tip>
+    </sect2>
+
+    <sect2>
+      <title>Tamaño de la ventana</title>
+      
+      <para>Redimensionar el tamaño de la ventana aumenta o disminuye las casillas para ajustarlas. Si quiere hacer el mayor uso posible de la pantalla entonces existe la opción <guimenuitem>Pantalla completa</guimenuitem> bajo el menú <guimenu>Ajustes</guimenu>. También puede usar la tecla <keycap>F11</keycap> para conmutar el modo a pantalla completa.</para>
+    </sect2>
+
+    <sect2>
+      <title>Pausar el juego</title>
+
+      <para>Se puede pausar automáticamente cuando comienza a usar cualquier otra ventana, o bien eligiendo <guimenuitem>Pausa</guimenuitem> del menú <guimenu>Juego</guimenu>. El área de juego desaparece para que no pueda pensar movimientos mientras el reloj está parado. Para comenzar a jugar de nuevo pulse el botón etiquetado «Pulse para continuar».</para>
+    </sect2>
+
+  </sect1>
+
+ <!-- ================ Usage ================================ -->
+
+  <sect1 id="strategy">
+    <title>Estrategia</title>
+
+    <para>La primera mitad de esta sección explica las bases para deducir dónde están las minas. Si ya está familiarizado con cómo se juega, salte a la subsección <link linkend="advanced">Situaciones avanzadas</link>.</para>
+
+    <sect2>
+      <title>Las bases</title>
+      <para>Estas son unas pocas situaciones básicas que pueden parecer increíblemente obvias, pero si está descubriendo cómo jugar al juego deberían ser útiles. El primer caso es cuando tiene una casilla cubierta aislada y puede leer un 1 en las casillas de alrededor. Esa casilla cubierta es una mina.</para>
+
+      <figure>
+        <title>El caso más simple.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-1.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>El siguiente caso más sencillo es cuando tiene dos casillas cubiertas adyacentes entre ellas y ambas casillas al lado están marcadas con un 2. Si no tienen otras casillas vecinas cubiertas, entonces ambas casillas son minas.</para>
+
+      <figure>
+        <title>El caso de las dos minas.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-2.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Finalmente, cuando hay tres casillas cubiertas en una fila y la casilla descubierta junto a la casilla del medio es un 3 (una vez más esta casilla no debería tener otras casillas vecinas) entonces las tres son minas.</para>
+
+      <figure>
+        <title>El caso de las tres minas.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-3.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Estos son los casos más simples. Pueden darse otras permutaciones de estas situaciones simples, por ejemplo las tres casillas del ejemplo anterior pueden aparecer en la forma de una L.</para>
+      <para>Un análisis simple resolverá la mayor parte del puzle, pero no todo. Antes de seguir adelante con las siguientes secciones, donde le damos consejos más avanzados, debería jugar durante un rato y ver qué puede hacer por si mismo.</para>
+    </sect2>
+
+    <sect2 id="advanced">
+      <title>Situaciones avanzadas</title>
+      
+      <para>Ésas son unas situaciones algo más complicadas. Son algo más que un paso adelante de la situación anterior, así que esperamos que siguiera el consejo y jugara un rato antes.</para>
+
+      <para>En el siguiente ejemplo, las minas están a la izquierda de los unos. Deducimos esto por un proceso de eliminación. Si la casilla a la izquierda del 2 fuese una mina entonces los unos tendrían su máximo número de minas, sin dejar casillas libres para la segunda mina adyacente al 2 (ya que también estarían adyacentes a los unos). Habiendo eliminado la casilla del medio, ésto deja dos casillas que requiere el 2 así que ambas están minadas.</para>
+
+      <figure>
+        <title>Un patrón no muy obvio.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-1.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Esta situación se puede disfrazar, considere, por ejemplo, la siguiente figura. Es la misma situación pero la casilla minada extra a la derecha ha incrementado todos los números en 1.</para>
+
+      <figure>
+        <title>La mina extra disfraza una copia del ejemplo anterior.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-2.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+<para>Ahora vamos a probar un ejemplo complicado. Ilustra dos puntos. En el primero, aunque no esté seguro de qué casillas están minadas, restringir las posibilidades resulta útil. En el segundo, sabiendo qué casillas no están minadas es incluso igual de bueno que saber cuáles sí lo están.</para>
+
+<para>Asuma que, en la figura de debajo, comenzamos sabiendo que la casilla superior izquierda está minada y que las dos casillas marcadas con un 2 en la parte superior izquierda sólo requieren una mina más. A continuación observe que el 2 que está a la izquierda del todo implica que una de las casillas cubiertas está minada, pero todavía no sabemos cuál. Ya que, al menos, una de las casillas está minada y ambas son vecinas del segundo 2, entonces sabemos que el 2 también se satisface con una de estas dos casillas (todavía no sabemos cuál). Esto significa que la casilla debajo del 4 está limpia porque también es vecina del segundo 2 y no es una de las casillas que identificamos previamente. Esta casilla limpia ahora deja el 4 con sólo cuatro vecinas; todas ellas deben ser minas. No sólo dice qué minas rodean al 4, ahora proporciona qué casilla junto al 2 está minada.</para>
+
+      <figure>
+        <title>Tan difícil como parece.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-3.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+
+<para>Este tipo de situación es difícil. En el resto de ejemplos podía aprender a mirar los patrones y evitar pensar mucho. Situaciones como la de la figura no acaban fácilmente en un patrón reconocible. A menudo es más fácil ignorarlas y seguir jugando en cualquier otra parte con la esperanza de que podrá comenzar a limpiar las casillas desde el otro sitio.</para>
+
+</sect2>
+<sect2>
+
+    <title>Consejos</title>
+
+    <para>Recuerde, el borde del tablero es igual que un área limpio (pero sin los números). Generalmente trabajar en el borde de la pantalla es la forma más fácil de avanzar.</para>
+
+    <para>A veces acaba en una situación donde no hay forma de deducir cuál es la configuración. En estos casos tiene que adivinar o pedir una sugerencia (<menuchoice><guimenu>Juego</guimenu><guimenuitem>Sugerencia</guimenuitem></menuchoice>). A veces no es una situación al 50% y en lugar de pedir una sugerencia puede correr el riesgo sobre el resultado más probable.</para>
+
+    <para>Un último consejo: ¿recuerda que el contador en la parte inferior izquierda de la ventana le dice cuántas minas le faltan? A menudo, al final de la partida, este número puede ayudarle a adivinar cuáles son los posibles lugares donde pueden estar las minas. Cómo hacerlo es cosa suya.</para>
+
+    </sect2>
+ </sect1>
+
+ <sect1 id="authors">
+  <title>Autores</title>
+  <para>Pista (<email>szekeres@cyberspace.mht.bme.hu</email>) escribió <application>Minas</application>. Callum McKenzie (<email>callum@spooky-possum.org</email>) con la ayuda de Vincent Povirk escribió este manual basándose en uno anterior de Tim Riehle (<email>tkriehle@citilink.com</email>). Para informar de un fallo, o hacer alguna sugerencia concerniente esta aplicación o este manual, siga las indicaciones en este <ulink url="http://bugzilla.gnome.org">documento</ulink>.</para>
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licencia</title>
+  <para>Este programa es software libre; puede redistribuirlo y/o modificarlo bajo los términos de la <citetitle><ulink type="help" url="gnome-help:gpl">Licencia Pública General GNU</ulink></citetitle> tal como se publica por la <ulink type="http" url="http://www.fsf.org">Free Software Foundation</ulink>; ya sea la versión 2 de la Licencia, o (a su elección) cualquier versión posterior.</para>
+  <para>Este programa se distribuye con la esperanza de que le sea útil, pero SIN NINGUNA GARANTÍA; sin incluso la garantía implícita de MERCANTILIDAD o IDONEIDAD PARA UN PROPÓSITO PARTICULAR. Vea la <citetitle><ulink type="help" url="gnome-help:gpl">Licencia Pública General GNU</ulink></citetitle> para más detalles.</para>
+  <para>Una copia de la <citetitle><ulink type="help" url="gnome-help:gpl">Licencia Pública General GNU</ulink></citetitle> está incluida en el apéndice de la <citetitle>Guía de Usuario de GNOME</citetitle>. También puede obtener una copia de la <citetitle><ulink type="help" url="gnome-help:gpl">Licencia Pública General GNU</ulink></citetitle> de la Free Software Foundation visitando <ulink url="http://www.fsf.org" type="http">su página web</ulink> o escribiendo a la <address>Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

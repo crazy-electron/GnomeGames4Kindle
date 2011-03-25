@@ -1,0 +1,147 @@
+<sect1 id="Klondike"><!--<sect1info>
+    <copyright>
+      <year>2001</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname>
+    </author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>Klondike</title>
+
+  <para>Written by Jonathan Blandford</para>
+
+          <sect2><title>Setup</title>
+
+
+  <informaltable>
+    <tgroup cols="2"><tbody>
+	<row>
+	  <entry>Type of Deck</entry>
+	  <entry>Standard Deck</entry>
+	</row>
+	<row>
+	  <entry>Stock</entry>
+	  <entry>
+	    Top left pile.  The rest of the deck is placed here after
+	    dealing on to the Tableau.  Cards are turned over one at a
+	    time to Waste.  Two redeals.
+	  </entry>
+	</row>
+	<row>
+	  <entry>Waste</entry>
+	  <entry>
+	    To be taken from Stock.  Top card available for
+	    play.
+	  </entry>
+	</row>
+	<row>
+	  <entry>Foundation</entry>
+	  <entry>
+	    Four piles top right.  To be built up in suit from Ace to
+	    King.  Topmost card in each Foundation can be played back on
+	    to the Tableau.
+	  </entry>
+	</row>
+	<row>
+	  <entry>Tableau</entry>
+	  <entry>
+	    Seven piles.  Deal card face up in first pile.  Place one
+	    card face down on all other piles.  Place one card face up
+	    on next pile followed by one card face down on all covered
+	    piles.  Repeat until there are seven cards in last pile.
+	    Tableau can be built down in alternating colors.  Groups of
+	    cards can be moved.  Empty piles can only be filled by Kings
+	    or group of cards starting with a King.
+	  </entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>Goal</title>
+
+  <para>
+    Move all cards to the Foundation piles.
+  </para>
+
+          </sect2>
+        <sect2><title>Rules</title>
+
+  <para>
+    Cards in the Tableau are built down by alternating color.  Groups of
+    cards can be moved.  An empty pile in the Tableau can be filled with
+    a King or a group of cards with a King on the bottom.
+  </para>
+  <para>
+    Cards are flipped from the Stock to the Waste individually.  Top
+    card in Waste is in play.  When Stock is empty, move all cards in
+    Waste back to the Stock, maintaining order. You can go through the
+    deck three times.
+  </para>
+  <para>
+    Foundations are built up in suit from Ace to King.  Cards in
+    Foundations are still in play.  Double clicking on a card will move
+    it to the appropriate Foundation pile if such a move is
+    possible. 
+  </para>
+  <para>
+    Double clicking on a foundation card will move all the cards that
+    can be moved to the foundation to the foundation. This
+    is useful for cleaning up at the end of the game.
+  </para>
+
+          </sect2>
+        <sect2><title>Options</title>
+
+  <para>
+    There are three possible ways to play. The difference between them
+    is in how the cards are dealt from the stock.
+  </para>
+  <variablelist>
+    <varlistentry><term>Three card deals</term>
+      <listitem>
+        <para>Cards are dealt from the stock three at a time. There is no limit to how many times you can redeal the stock.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry><term>Single card deals</term>
+      <listitem>
+        <para>Cards are dealt from the stock one at a time. However you can only turn the stock over and redeal twice.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry><term>No redeals</term>
+      <listitem>
+        <para>Cards are dealt one at a time from the stock. There is no redeal. Play this way if you want a challenge (and some frustration).</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  
+  <para>Most likely you will consider one of the first two methods
+  traditional - depending on where you live and who taught you. The no
+  redeals option is the one normally found in older sets of rules, but
+  the game is rarely played that way.</para>
+
+          </sect2>
+        <sect2><title>Scoring</title>
+
+  <para>
+    Each card in the Foundation piles scores one point.
+  </para>
+  <para>
+    Maximum possible score:  52
+  </para>
+
+          </sect2>
+        <sect2><title>Strategy</title>
+
+  <para>
+    Don't give up the ship!  Try brute force methods when the game seems
+    over.  Sometimes a combination of using cards already in the
+    Foundation and rearranging sequences will free up some needed cards.
+  </para>
+        </sect2>
+</sect1>

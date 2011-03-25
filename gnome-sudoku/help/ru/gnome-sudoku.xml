@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.21.90">
+<!ENTITY manrevision "3.0">
+<!ENTITY date "February 2008">
+<!ENTITY app "<application>Sudoku</application>">
+<!ENTITY appname "Sudoku">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 06, 2003
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ru">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Руководство по игре <application>Судоку</application></title>       
+
+    <abstract role="description">
+      <para>Судоку - это приложение для игры в популярную логическую игру, в которой нужно заполнить правильными цифрами 9 по 9 клеток.</para>
+    </abstract>
+
+    <copyright> 
+      <year>2008</year> 
+      <holder>Томас М. Хинкль (Thomas M. Hinkle)</holder> 
+    </copyright><copyright><year>2008</year><holder>Александр Буробин (sa-bu@mail.ru)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Проект документации GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Следующим разрешается копировать и/или модифицировать этот документ при условии соблюдения GNU Free Documentation License (GFDL), версии 1.1 или любой более поздней опубликованной Фондом свободного программного обеспечения версией без неизменяемых частей, без текстов на обложках. Вы можете найти копию лицензии по этой <ulink type="help" url="ghelp:fdl">ссылке</ulink> или в файле COPYING-DOCS, распространяемом с этим документом.</para>
+         <para>Этот документ является частью документации GNOME, распространяемой по лицензии GFDL. Если вы хотите распространять этот документ отдельно от общей документации, вы должны приложить копию лицензии к документу, как написано в части 6 лицензии.</para>
+
+	<para>Многие имена и марки используются компаниями для различения их продуктов и услуг и являются торговыми марками. Эти марки присутствуют в документации GNOME, и члены проекта документирования GNOME знают об этом. Имена выделяются заглавными буквами или начальной заглавной буквой.</para>
+
+	<para>ДОКУМЕНТ И ИЗМЕНЁННЫЕ ВЕРСИИ ДОКУМЕНТА ПРЕДСТАВЛЯЮТСЯ ПОЛЬЗОВАТЕЛЮ ПОД ЛИЦЕНЗИЕЙ GNU FREE DOCUMENTATION LICENSE С УВЕДОМЛЕНИЕМ О ТОМ, ЧТО: <orderedlist>
+		<listitem>
+		  <para>ДОКУМЕНТ РАСПРОСТРАНЯЕТСЯ "КАК ЕСТЬ", БЕЗ ВСЯКИХ ГАРАНТИЙ, ПРИДУМАННЫХ ИЛИ УНАСЛЕДОВАННЫХ, БЕЗ ОГРАНИЧЕНИЙ, ГАРАНТИЙ ТОГО ЧТО ДОКУМЕНТ ИЛИ МОДИФИЦИРОВАННАЯ ВЕРСИЯ ДОКУМЕНТА СВОБОДНА ОТ ДЕФЕКТОВ, ТОЛЬКО ДЛЯ СПЕЦИАЛЬНОГО ИСПОЛЬЗОВАНИЯ НЕ ЗАКЛЮЧАЮЩЕГО В СЕБЕ РИСКИ КАЧЕСТВА, АККУРАТНОСТИ ИЛИ СООТВЕТСТВИЯ ДОКУМЕНТА ИЛИ ИЗМЕНЁННЫХ ВЕРСИЙ ДОКУМЕНТА ВАШИМ ТРЕБОВАНИЯМ. ЕСЛИ ДОКУМЕНТ ИЛИ МОДИФИЦИРОВАННАЯ ВЕРСИЯ ДОКУМЕНТА ИМЕЕТ НЕДОСТАТКИ, ВЫ (А НЕ АВТОР ДОКУМЕНТА ИЛИ ЕГО ПОМОЩНИК) ДОЛЖНЫ САМИ ПРИЛОЖИТЬ УСИЛИЯ К ЕГО ДОРАБОТКЕ, КОРРЕКЦИИ ИЛИ ВОССТАНОВЛЕНИЮ. ЭТО ПРЕДУПРЕЖДЕНИЕ СОСТАВЛЯЕТ СУЩЕСТВЕННУЮ ЧАСТЬ ЛИЦЕНЗИИ. ДОКУМЕНТ НЕ ДОЛЖЕН ИСПОЛЬЗОВАТЬСЯ БЕЗ ДАННОГО ПРЕДУПРЕЖДЕНИЯ И</para>
+		</listitem>
+		<listitem>
+		  <para>НИ ПРИ КАКИХ ОБСТОЯТЕЛЬСТВАХ И НИ ПРИ КАКОМ ЗАКОННОМ СПОСОБЕ, НИ ПО КАКОМУ СОГЛАШЕНИЮ ИЛИ ДРУГОЙ ПРИЧИНЕ, АВТОР, СОЗДАТЕЛЬ ИЛИ ПОМОЩНИКИ НЕ НЕСУТ ОТВЕТСТВЕННОСТЬ ЗА ПРЯМОЕ, КОСВЕННОЕ, СПЕЦИАЛЬНОЕ, СЛУЧАЙНОЕ ИЛИ ПРЕДНАМЕРЕННОЕ ПОВРЕЖДЕНИЕ ЛЮБОГО СВОЙСТВА, ВКЛЮЧАЯ БЕЗ ОГРАНИЧЕНИЯ ПОТЕРЮ ЖЕЛАНИЯ, РАБОТОСПОСОБНОСТИ, КОМПЬЮТЕРНЫЕ СБОИ ИЛИ НЕПРАВИЛЬНОЕ ВЗАИМОДЕЙСТВИЕ, ВМЕСТЕ ИЛИ ПО-ОТДЕЛЬНОСТИ. НИКАКИЕ ПОВРЕЖДЕНИЯ И ПОТЕРИ НЕ МОГУТ БЫТЬ ВОЗЛОЖЕНЫ НА АВТОРА ДОКУМЕНТА ИЛИ МОДИФИЦИРОВАННОЙ ВЕРСИИ ДОКУМЕНТА, ДАЖЕ ЕСЛИ СТОРОНА БЫЛА ПРОИНФОРМИРОВАНА О ВОЗМОЖНОСТИ ТАКИХ ПОВРЕЖДЕНИЙ</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+		<firstname>Томас</firstname> 
+		<surname>Хинкль</surname> 
+		<affiliation> 
+	  		<orgname>Проект документации GNOME</orgname> 
+	  		<!-- The email address of the author is optional and is commented out by default. 
+			<address> <email>doc-writer2@gnome.org</email> </address> 
+			-->
+		</affiliation> 
+      </author> 
+      
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->  
+    <revhistory>
+      <revision> 
+		<revnumber>Руководство по игре Судоку v3.0</revnumber> 
+		<date>Февраль 2008</date> 
+		<revdescription> 
+	  		<para role="author">Томас М. Хинкль (Thomas M. Hinkle)</para>
+	  		<para role="publisher">Проект документации GNOME</para>
+		</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Это руководство описывает версию 2.21.90 игры Судоку</releaseinfo> 
+    <legalnotice> 
+      <title>Обратная связь</title> 
+      <para>Чтобы сообщить об ошибке или внести предложение относительно игры <application>Судоку</application> или данного руководства, следуйте ссылке <ulink url="ghelp:user-guide?feedback-bugs" type="help">Страница обратной связи GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>Судоку для среды GNOME</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+    <primary>судоку</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="myapp-introduction"> 
+    <title>Введение</title> 
+    <para><application>Судоку</application> это приложение для генерации и игры в популярную логическую головоломку Судоку (также известную как "Number Place").</para>
+    <para>Правила игры в Судоку предельно просты. Для решения головоломки, вы должны заполнить каждый квадрат числами от 1 до 9 таким образом, чтобы каждый ряд, колонка или квадрат 3x3 содержал цифры от 1 до 9. Иначе говоря вам необходимо заполнить каждую клетку так, чтобы цифры не повторялись в одном и том же ряду, колонке или квадрате 3х3.</para>
+
+    <para>Поначалу могут возникнуть два вопроса. С одной стороны: “Как же я заполню все числа в этом квадрате?”. С другой: “Как можно заполнить всё числами без конфликтов по строке, колонке или квадрату 3х3?”</para>
+
+    <para>Несмотря на простоту игры, головоломки в Судоку могут существенно различаться по своей сложности. Вы можете выбрать сложность в которой хотите играть. Обычно, игроки выбирают лёгкую игру, постепенно увеличивая сложность.</para>
+
+  </sect1>
+
+<!-- =========== Getting Started ============================== -->
+<!-- Use the Getting Started section to describe the steps required
+     to start the application and to describe the user interface components
+     of the application. If there is other information that it is important
+     for readers to know before they start using the application, you should
+     also include this information here. 
+     If the information about how to get started is very short, you can 
+     include it in the Introduction and omit this section. -->
+
+  <sect1 id="myapp-getting-started"> 
+    <title>Начало</title> 
+
+    <sect2 id="myapp-start">
+    <title>Запуск игры <application>Судоку</application></title>
+    <para>Вы можете запустить <application>Судоку</application> одним из следующих способов:</para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>Меню <guimenu>Приложения</guimenu></term>
+    		<listitem>
+    		<para>Выберите <menuchoice><guisubmenu>Игры </guisubmenu><guimenuitem>Судоку</guimenuitem></menuchoice>.</para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Командная строка</term>
+    		<listitem>
+    		<para>Для запуска <application>Судоку</application> из командной строки, наберите следующую команду и нажмите клавишу <keycap>Return</keycap>:</para>
+    		<para> 
+			<command>gnome-sudoku</command> 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+    </sect2>
+
+    <sect2 id="myapp-when-start">
+    <title>Когда вы запустите <application>Судоку</application></title>
+    <para>Когда вы запустите <application>Судоку</application> в первый раз, вы увидите экран выбора, где сможете выбрать сложность головоломки в которую хотите сыграть. Если вы играли до этого и оставили какие-либо головоломки не решёнными, то сможете выбрать их в этом экране для продолжения.</para>
+    <para>В экране выбора показаны головоломки различной сложности. Окружающий их цвет соответствует трудности. Например, тёмно-красная головоломка значительно сложнее, чем красная.</para>
+    <para>Дважды щёлкните по той головоломке, в которую хотите сыграть.</para>
+
+<figure id="new-game-fig"> 
+	<title>Судоку при запуске</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/starting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Судоку: выбор уровня сложности.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    
+    <para>Вы можете в любое время начать игру заново нажав кнопку <guibutton>Создать</guibutton>. Это вызовет диалог выбора головоломок, где вы можете выбрать любую понравившуюся.</para>
+    
+    </sect2>
+    
+    </sect1>
+    <sect1 id="myapp-basic-play">
+    <title>Основы игры</title>
+    <para>Чтобы играть в игру, начинайте заполнять клетки цифрами от 1 до 9.</para>
+    <para>Вы можете ввести число в клетку с помощью клавиатуры или мыши.</para>
+    <variablelist>
+    	<varlistentry>
+	<term>Клавиатура</term>
+	<listitem><para>Используйте стрелки или мышь для выбора клетки, в которую вы хотите поставить число, и нажмите на клавиатуре нужное число. Нажмите <keycap>Backspace</keycap> для удаления числа.</para></listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Мышь</term>
+	<listitem>
+	  <para>Щёлкните по клетке, чтобы выбрать её, затем щёлкните по её центру для вызова кнопок с цифрами 1-9. Выберите число или щёлкните по кнопке <guibutton>Очистить</guibutton>, чтобы удалить число из клетки. Вы также можете сделать двойной щелчок по центру клетки, чтобы вызвать кнопки с цифрами.</para>
+	</listitem>
+		</varlistentry>
+	</variablelist>
+    <note>
+    <para>Если вы вводите число, которое конфликтует с другим числом, то они будут подсвечены красным.</para>
+    <figure id="error-highlight-fig"> 
+	<title>Подсветка ошибки</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/error_highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Неправильный ход подсвечивается красным</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    </note>
+    </sect1>
+    <sect1 id="myapp-saving">
+    <title>Сохранение и продолжение игр</title>
+    <para>Игра автоматически сохраняет ваш результат каждые несколько минут, и всякий раз, когда вы меняете игру или выходите из неё.</para>
+        <figure id="open-game-fig"> 
+	<title>Продолжение прошлых игр</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/resuming.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Продолжение незаконченной игры из окна выбора.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    <para>Всякий раз, когда вы запускаете <application>Судоку</application> или нажимаете кнопку <guibutton>Создать</guibutton>, ваши сохранённые игры будут перечислены в экране выбора головоломок. Вы увидите, миниатюрные изображения сохранённых головоломок, последний день, когда вы играли и как долго вы играли в неё. Чтобы открыть головоломку, просто дважды щёлкните по ней.</para>
+    <para>Если вы хотите перестать играть в одну игру и начать другую, то нажмите <guibutton>Создать</guibutton> и начинайте новую.</para>
+    </sect1>
+
+<!-- ================ Usage ================================ -->
+<!-- Use this section to describe how to use the application to perform the tasks for 
+  which the application is designed. -->
+  <sect1 id="myapp-hints"> 
+    <title>Возможности</title> 
+    <!-- ================ Usage Subsection ================================ -->
+
+        <para>В Судоку имеется несколько возможностей, которые помогут вам разгадывать головоломки.</para>
+
+      <variablelist>
+    	<varlistentry><term>Заметки</term>
+	<listitem>
+		<para><firstterm>Примечания</firstterm> или <firstterm>Пометки</firstterm> позволяют вам делать записи в каждой клетке. Многие игроки используют их для записи возможных значений клетке.</para>
+	</listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Подсказки и авто-заполнение</term>
+	<listitem>
+	<para>Вы можете использовать <firstterm>подсказки</firstterm>, чтобы игра показала доступные значения для выделенной клетки, и <firstterm>авто-заполнение</firstterm> клетки числом.</para>
+	</listitem>
+	</varlistentry>
+
+		<varlistentry>
+	<term>Подсветка</term>
+	<listitem>
+	<para>В режиме подсветки, текущая строка, колонка и квадрат раскрашиваются в различные цвета, делая поиск по полю более простым.</para>
+	</listitem>
+	</varlistentry>
+
+	<varlistentry>
+	<term>Трассировщики</term>
+	<listitem>
+	  <para>Трассировщики делают метод проб и ошибок более простым, отслеживая сделанные вами ходы. Когда вы делаете ход, то цифра окрашивается в соответствующий выбранной <firstterm>дорожке</firstterm> цвет, тем самым вы легко отличите эти ходы от более поздних.</para>
+	</listitem>
+	</varlistentry>
+        </variablelist>
+	
+	<sect2 id="myapp-notes"> 
+      <title>Заметки</title> 
+      <para>Чтобы написать примечание (или “пометку”) в клетку, сперва выделите её с помощью мыши или клавиатуры, а затем сделайте одно из следующих действий:</para>
+      <itemizedlist>
+      <listitem><para>Щёлкните по верхней части клетки (область подсветится, когда вы будете двигать мышью над выделенной клеткой).</para></listitem>
+      <listitem><para>Нажмите клавишу <keycap>N</keycap></para></listitem>
+      </itemizedlist>
+      <para>Это действие вызовет поле, в которое вы можете ввести свои заметки. Нажмите клавишу <keycap>Return</keycap>, когда вы закончите её редактировать.</para>
+      
+      <note><para>Вы также можете делать заметки в нижней части клетки, щёлкнув по нижней части мышью или нажав клавишу <keycap>M</keycap>. Следует учесть, что эта область используется когда вы просите <firstterm>подсказку</firstterm>, так что следует избегать её использования для своих собственных записей, если вы планируете пользоваться подсказками.</para></note>
+      <note><para>You can clear the notes at the top of the square by typing <keycap>Alt-N</keycap> and at the bottom of the square by typing <keycap>Alt-M</keycap>.</para></note>
+      <note><para>You can add a number to the notes at the top of the square by typing <keycap>Ctrl-1</keycap> through <keycap>Ctrl-9</keycap> and remove a number from the notes by typing <keycap>Alt-1</keycap> through <keycap>Alt-9</keycap>.</para></note>
+</sect2>
+    <!-- ================ Usage Subsection ================================ -->
+	 <sect2 id="myapp-manipulate-view"> 
+      <title>Подсказки и авто-заполнение</title>
+
+		             <note>
+
+	      <para><firstterm>Подсказка</firstterm> и <firstterm>Заполнение</firstterm> работают основываясь на текущем расположении цифр, а не подглядывая в правильные ответы. Если вы сделали неправильный ход, то подсказки могут предложить неправильные числа.</para>
+
+	    </note>
+      
+      
+      <sect3 id="myapp-hint">
+          <title>Подсказки</title>
+	              <para>Судоку может дать вам подсказку, основанную на текущем расположении цифр на доске. Вызвать подсказку можно нажав кнопку <guibutton>Подсказка</guibutton>, выбрав в меню <menuchoice><guisubmenu>Инструменты</guisubmenu><guimenuitem>Подсказка</guimenuitem></menuchoice> или нажатием комбинации клавиш <keycap>Control-H</keycap>, предварительно выделив нужную клетку. В нижней части клетки появятся возможные для неё значения.</para>
+    <figure id="hint-fig"> 
+	<title>Подсказки</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/hints.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>При вызове подсказки, все возможные значения помещаются в нижнюю часть клетки.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+		      
+	    <para>Если вы хотите удалить или изменить подсказку, то можете отредактировать её текст, щёлкнув в нижнюю часть клетки.</para>
+	    <para>Для очень сложных головоломок, вы можете указать <application>Судоку</application> показывать вам доступные значения для всех клеток. Для включения этого режима, установите флажок в меню <menuchoice><guisubmenu>Инструменты</guisubmenu><guimenuitem>Всегда показывать подсказки</guimenuitem></menuchoice></para>
+<figure id="all-hints-fig"> 
+	<title><application>Судоку</application> в режиме постоянных подсказок</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/always_show_hint.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Головоломка в режиме постоянных подсказок</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+	    
+	    
+	    </sect3>
+	    <sect3 id="myapp-autofill">
+	    <title>Заполнение клетки</title>
+
+	    <para>Для автоматического заполнения клетки для которой истинно лишь одно значение, нажмите <guibutton>Заполнить</guibutton>, выберите <menuchoice><guisubmenu>Инструменты</guisubmenu><guimenuitem>Заполнить</guimenuitem></menuchoice> или нажмите сочетания клавиш <keycap>Control-F</keycap>. Это полезно, например, если заполнили 8 или 9 квадратов в ряд и хотите, чтобы быстро заполнить последний пустой квадрат.</para>
+	    <para>Если есть более одного подходящего значения, то ничего не произойдёт.</para>	    
+	    </sect3>
+	    <sect3 id="myapp-fill-all">
+	    <title>Заполнить все квадраты</title>
+
+	    <para>Вы можете автоматически заполнить числами все квадраты, к которым на данный момент может подходит только одно число.</para>
+	    
+	    <warning>
+
+	    	    <para>Эта возможность должна быть использована только, чтобы помочь себе, когда вы застрянете на очень сложной игре. Используя эту функцию в игре можно легко решить головоломку всего в один клик, в результате чего игра будет очень скучной!</para>
+		    </warning>
+	    	    </sect3>
+
+    </sect2> 
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-highlighting"> 
+      <title>Подсветка</title> 
+      <para>Вы можете включить подсветку, чтобы строка, колонка и квадрат 3х3 автоматически окрашивались в различные цвета. Это упростит просмотр значений в них. Включить подсветку можно, выполнив одно из следующих действий:</para> 
+      <itemizedlist>
+      <listitem><para>Щёлкните <guibutton>Подсветить</guibutton></para></listitem>
+      <listitem><para><menuchoice><guisubmenu>Вид</guisubmenu><guimenuitem>Подсветить</guimenuitem></menuchoice></para></listitem>
+      </itemizedlist>
+
+<figure id="highlight-fig"> 
+	<title><application>Судоку</application> с подсветкой</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Подсветка делает поиск по строкам, колонкам и квадратам более удобным.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      </sect2>
+
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-trackers"> 
+      <title>Трассировщики</title> 
+      <para>Трассировщики можно использовать для отслеживания ваших ходов. Цифры введённые в различных трассировщиков будут отличаться по цвету. Вы можете удалить все отслеживаемые ходы. Это особенно полезно при решении сложных головоломок методом проб и ошибок.</para>
+      <note><para>Некоторые игроки в Судоку считают, что метод проб и ошибок нельзя использовать при разгадывании головоломок. Такие игроки могут не пользоваться данной возможностью.</para></note>
+
+            <para>Для включения панели трассировщика, выполните одно из следующих действий:</para>
+
+	    <itemizedlist>
+
+	      <listitem>
+	       <para>
+		<menuchoice> 
+			  <guimenu>Инструменты</guimenu> 
+			  <guimenuitem>Отслеживать добавления</guimenuitem>
+		</menuchoice>
+	       </para>
+	     </listitem>
+             <listitem><para>Щёлкните <guibutton>Отслеживать добавления</guibutton></para></listitem>
+           </itemizedlist>
+      <para>Это откроет список трассировщиков справа от поля игры. Для создания нового трассировщика щёлкните <guibutton>Добавить трассировщик</guibutton>. С этого момента, любые числа введённые вами будут частью выбранного вами трассировщика.</para>
+      <para>Очистить все значения относящиеся к трассировщику щёлкните <guibutton>Очистить трассировщик</guibutton>. Если вы хотите очистить все значения, <emphasis>кроме</emphasis> значений текущего трассировщика щёлкните <guibutton>Очистить остальные</guibutton>.</para>
+    </sect2> 
+  </sect1>
+  <!-- ============= Customization ============================= -->
+  <!-- Use this section to describe how to customize the application. -->
+  <sect1 id="myapp-printing"> 
+    <title>Печать головоломок Судоку</title> 
+    <para>Судоку может напечатать головоломки на бумаге. Это полезно в том случае, если вам придется покинуть компьютер, но вы хотите закончить игру, которую начали, или если вы хотите распечатать кучу головоломок, в которые будете играть позже.</para>
+
+    <para>Чтобы напечатать головоломку в которую вы сейчас играете, щёлкните на кнопку <guibutton>Печать</guibutton> или выберите в меню <menuchoice><guimenu>Игра</guimenu><guimenuitem>Печать</guimenuitem></menuchoice>. При печати также напечатаются поставленные вами цифры.</para>
+    
+    <para>Чтобы напечатать заготовки с головоломками, выберите <menuchoice><guimenu>Игра</guimenu><guimenuitem>Напечатать несколько судоку</guimenuitem></menuchoice>.</para>
+
+      <para>Вы увидите диалог печати, в котором вы должны указать сколько игр вы хотели бы напечатать и сколько игр вы хотите печатать на каждой странице (чем больше будет головоломок на странице, тем меньше они будут по размеру).</para>
+
+      <para>Вы также можете указать диапазон сложности головоломок, в которые хотите играть. Игра напечатает их в порядке повышения сложности.</para>
+
+      <para>Для того, чтобы напечатать 25 страниц с судоку для себя, вы должны указать 100 судоку по 4 на каждой странице. Также укажите сложность создаваемых головоломок.</para>
+
+<figure id="printing-fig"> 
+	<title>Печать мини-книги с Судоку из программы.</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/Print_Sudokus.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>При данных параметрах напечатается 25 страниц по 4 судоку на каждой.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      <para>По умолчанию, <application>Судоку</application> не печатает игры в которые вы уже играли. Если вы хотите напечатать игр для друга или если вас не беспокоит повтор заданий, то можете поставить флажок на <guibutton>Включать уже решённые головоломки в задание печати</guibutton>.</para>
+
+      <para>Кроме того, можно вручную выбрать игры, которые вы хотели бы напечатать. Раскройте секцию <guibutton>Список игр</guibutton> и выделите несколько головоломок в списке.</para>
+    
+  </sect1>
+  
+  <sect1 id="mayapp-bugs">
+  <title>Известные ошибки и ограничения</title>
+  <sect2>
+  <title>Статистика головоломки</title>
+
+    <para>Вычислительная сложность в Судоку основывается на числе клеток которые могут быть быстро заполнены. Окно статистики головоломок показывает общий рейтинг и предоставляет следующую информацию:</para>
+
+    <itemizedlist>
+    <listitem><para>Количество клеток, заполняемых методом исключения (например, только 2 может быть в этом квадрате, поэтому должно быть 2).</para></listitem>
+    <listitem><para>Количество явно заполняемых клеток, начиная с пустой сетки (например, только одна клетка в этом ряду может быть 2, поэтому её значение 2).</para></listitem>
+    <listitem><para>Сколько попыток потребовалось компьютеру для решения головоломки.</para></listitem>
+    </itemizedlist>
+    <para>Многие игроки могут подумать, что компьютер использует только метод проб и ошибок, но есть ряд других алгоритмов, таких как “swordfish” и “X-wings”, которые помогают компьютеру в разгадывании головоломки.</para>
+
+    <para>В настоящее время, <application>Судоку</application> использует только два описанных выше алгоритма, а также метод проб и ошибок. Когда статистика говорит о том, что  <application>Судоку</application> необходимо N попыток проб и ошибок для решения головоломки, это <emphasis>не</emphasis> означает, что человеку пришлось бы использовать столько же проб и ошибок, чтобы решить головоломку.</para>
+  
+  </sect2>
+
+ </sect1>
+
+<!-- ============= About ================================== -->
+<!-- This section contains info about the program (not docs), such as
+      author's name(s), web page, license, feedback address. This
+      section is optional: primary place for this info is "About.." box of
+      the program. However, if you do wish to include this info in the
+      manual, this is the place to put it. Alternatively, you can put this information in the title page.-->
+  <sect1 id="myapp-about"> 
+    <title>Об <application>Судоку</application></title> 
+    <para><application>Судоку</application> написана Томом Хинклем (Tom Hinkle) (<email>tmhinkle@gmail.com</email>). <application>Судоку</application> является частью игр среды GNOME.</para>
+    <para>Чтобы сообщить об ошибке или внести предложение относительно игры или данного руководства,  следуйте ссылке в <ulink url="ghelp:user-guide?feedback-bugs" type="help">Руководство пользователя GNOME</ulink>.</para>
+
+    <para>Эта программа распространяется под условиями <citetitle>GNU General Public License</citetitle> которые опубликованы Free Software Foundation; версии 2 или более поздней её версий. Копию этой лицензии вы можете найти по этой <ulink url="ghelp:gpl" type="help">ссылке</ulink> или в файле COPYING, который поставляется вместе с исходным кодом этой программы.</para>
+
+  </sect1> 
+</article>

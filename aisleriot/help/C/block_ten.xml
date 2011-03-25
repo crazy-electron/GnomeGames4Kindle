@@ -1,0 +1,79 @@
+<sect1 id="Block_Ten"><!--<sect1info>
+	  <copyright>
+	   <year>2001</year>
+	   <holder>Rosanna Yuen</holder>
+	  </copyright>
+	  <author>
+	   <firstname>Rosanna</firstname>
+	   <surname>Yuen</surname>
+	  </author>
+	  <address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>Block Ten</title>
+
+  <para>Written by Rosanna Yuen</para>
+
+          <sect2><title>Setup</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>Type of Deck</entry>
+	  <entry>Standard Deck</entry>
+	</row>
+	<row>
+	  <entry>Stock</entry>
+	  <entry>
+	    Top left pile.  All cards are placed here at beginning of
+	    play.
+	  </entry>
+	</row>
+	<row>
+	  <entry>Tableau</entry>
+	  <entry>
+	    Nine piles in a 3x3 formation.  Each Tableau pile is dealt
+	    one card face up.
+	  </entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>Goal</title>
+
+  <para>
+    Remove all cards.
+  </para>
+
+          </sect2>
+        <sect2><title>Rules</title>
+
+  <para>
+    Remove cards in pairs that add up to ten.  Jacks, Queens and Kings
+    are removed in pairs.  Tens cannot be removed.  All empty slots are
+    automatically filled by the Stock.
+  </para>
+
+          </sect2>
+        <sect2><title>Scoring</title>
+
+  <para>
+    Removing each pair of cards scores two points.
+  </para>
+  <para>
+    Maximum possible score:  48
+  </para>
+
+          </sect2>
+        <sect2><title>Strategy</title>
+
+  <para>
+    This is a pure luck game.  Therefore, any strategy involved would
+    have to do with increasing your luck.
+  </para>
+        </sect2>
+</sect1>

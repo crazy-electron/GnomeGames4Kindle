@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Tali</application>">
+<!ENTITY appname "Tali">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="eu">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title><application>Tali</application>ren eskuliburua</title>
+    <abstract role="description">
+      <para>Yahtzee bezalako GNOMErako jokoa da Tali, edo pokerraren antzekoa da, baina dadoekin. Jokalariak dadoak jaurtitzen ditu konpinazio hoberena lortzeko, adibidez 4 berdinak, eskailera txikia, eta full. Jokalariak txandako hiru aldiz jaurti ditzake eta dado batzuk manten ditzake jaurtitze bakoitzean.</para>
+    </abstract>
+    <copyright>
+      <year>2001</year>
+      <holder>Scott D. Heavner</holder>
+    </copyright><copyright><year>2008.</year><holder>Hizkuntza Politikarako Sailburuordetza (hizpol@ej.gv.es)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOMEren dokumentazio-proiektua</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Baimena ematen da dokumentu hau kopiatu, banatu eta/edo aldatzeko Free Software Foundation-ek argitaratutako GNU Dokumentazio Librearen Lizentziaren 1.1. bertsioan edo berriago batean ezarritako baldintzetan, atal aldaezinik gabe, aurreko azaleko testurik gabe eta atzeko azaleko testurik gabe. GFDL lizentziaren kopia <ulink type="help" url="ghelp:fdl">esteka honetan</ulink> edo eskuliburu honekin batera ematen den COPYING-DOCS fitxategian aurkituko duzu.</para>
+         <para>Eskuliburu hau GFDL lizentziarekin banatzen diren GNOME eskuliburuen bildumakoa da. Eskuliburu hau bildumatik bereizita banatu nahi baduzu, banatu dezakezu, baina eskuliburuari lizentziaren kopia bat gehitu beharko diozu, lizentzian bertan 6. atalean azaltzen den bezala.</para>
+
+	<para>Enpresek beren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu gisa hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, eta GNOMEren Dokumentazio Proiektuko kideak marka komertzialak direla konturatzen direnean, izen horiek osorik maiuskulaz edo hasierako letra maiuskulaz idatzi dituzte.</para>
+
+	<para>DOKUMENTUA ETA DOKUMENTUAREN BERTSIO ALDATUAK GNU DOKUMENTAZIO LIBREAREN LIZENTZIAREN BALDINTZEN ARABERA EMATEN DIRA, ETA ONDOREN ZEHAZTEN DIRENAK ONARTZERA BEHARTZEN DUTE: <orderedlist>
+		<listitem>
+		  <para>DOKUMENTUA "DAGOEN-DAGOENEAN" EMATEN DA, INOLAKO BERMERIK GABE, EZ ESPRESUKI ADIERAZITAKORIK ETA EZ INPLIZITURIK ERE; BESTEAK BESTE, EZ DA BERMATZEN DOKUMENTUA EDO BERTSIO ALDATUA AKATSIK GABEA DENIK, MERKATURATZEKO EDO XEDE JAKIN BATERAKO EGOKIA DENIK EDO ARAURIK HAUSTEN EZ DUENIK, HORI GUZTIA MUGARIK GABE. DOKUMENTUAREN EDO DOKUMENTUAREN BERTSIO ALDATUAREN KALITATEARI, ZEHAZTASUNARI ETA PERFORMANTZIARI BURUZKO ERANTZUKIZUN OSOA ZUREA DA. DOKUMENTUREN BATEK EDO BERTSIO ALDATUREN BATEK EDOZEIN MOTATAKO AKATSIK IZANEZ GERO, ZUK (EZ HASIERAKO IDAZLEAK, EZ EGILEAK ETA EZ INONGO KOLABORATZAILEK) ZEURE GAIN HARTU BEHARKO DUZU BERRIKUSTEKO, KONPONTZEKO EDO ZUZENTZEKO BEHAR DIREN ZERBITZU GUZTIEN KOSTUA. BERME-UKATZE HAU LIZENTZIA HONEN FUNTSEZKO ZATIA DA. EZ DA BAIMENIK EMATEN EZEIN DOKUMENTU EDO BERTSIO ALDATU ERABILTZEKO, BALDIN ETA EZ BADA BERME-UKATZE HAU ONARTZEN.</para>
+		</listitem>
+		<listitem>
+		  <para>EZIN IZANGO DA INONGO ZIRKUNSTANTZIARIK EDO LEGE-TEORIARIK OINARRI HARTU --EZ ERANTZUKIZUN ZIBILARI BURUZKORIK (ZABARKERIA BARNE HARTUTA), EZ KONTRATUARI BURUZKORIK, EZ BESTERIK-- DOKUMENTU HONEN EDO BERTSIO ALDATU BATEN EGILEA, HASIERAKO IDAZLEA, EDOZEIN KOLABORATZAILE EDO BANATZAILE, EDO ALDERDI HORIEN EDOZEIN HORNITZAILE BESTE PERTSONA BATEN AURREAN ERANTZULE EGITEKO, PERTSONA HORREK EDOZEIN MOTATAKO KALTEA JASAN DUELAKO (ZUZENEKOA, ZEHARKAKOA, BEREZIA, INTZIDENTALA EDO ONDORIOZKOA), HALA NOLA (ETA MUGARIK GABE) BEZEROAK GALTZEA, LANA ETEN BEHARRA, ORDENAGAILUAK EZ IBILTZEA EDO GAIZKI IBILTZEA, EDO DOKUMENTUA NAHIZ HAREN BERTSIO ALDATUAK ERABILTZETIK ONDORIOZTATZEN DIREN EDO ERABILERA HORREKIN ZERIKUSIA DUTEN KALTEAK EDO GALERAK, ALDERDIARI KALTE HORIEK GERTA ZITEZKEELA ADITZERA EMAN BAZAIO ERE.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+	
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Scott D</firstname> 
+	<surname>Heavner</surname> 
+	<affiliation> 
+	  <address> <email>sdh@po.cwru.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Tali-ren eskuliburuaren 2.8 bertsioa</revnumber> 
+	<date>2004ko iraila</date> 
+	<revdescription> 
+	  <para role="author">Scott D Heavner <email>sdh@po.cwru.edu</email></para>
+	  <para role="publisher">GNOMEren dokumentazio-proiektua</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Tali-ren 2.12 bertsioa azaltzen da eskuliburu honetan.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Ohar-bidaltzea</title> 
+      <para><application>Tali</application>ri buruzko akatsen berri emateko edo oharrak bidaltzeko, <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOMEra oharrak bidaltzeko orria</ulink>n aurkituko dituzu argibideak.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME Tali</primary> 
+  </indexterm>
+
+ <!-- ============= Document Body ============================= -->
+
+  <sect1 id="intro">
+    <title>Sarrera</title>
+
+    <para><application>GNOME Tali</application> pokerraren antzekoa da, baina dadoekin eta diru gutxiagorekin. Jaurti bost dado hiru aldiz eta saiatu <quote>eskualdi</quote> onena lortzen. Bi jaurtialditan dado bat edo guztiak erabil ditzakezu.</para>
+    <para><application>GNOME Tali</application> Hasbro, Inc.-en marka erregistratua den Yahtzee dado-jokoaren oso antzekoa da.</para>
+
+    <para><application>GNOME Tali</application> abiarazteko, hautatu <menuchoice><guisubmenu>Jokoak</guisubmenu><guimenuitem>GNOME Tali</guimenuitem></menuchoice> <guimenu>Menu nagusia</guimenu> menuan, edo idatzi <command>gtali</command> komando-lerroan.</para>
+
+    <para><application>GNOME Tali</application> <filename>gnome-games</filename> paketearen barruan sartzen da, eta hori GNOMEren mahaigaineko ingurunearen parte da. Dokumentu honek <application>GNOME Tali</application>ren 2.8 bertsioa deskribatzen du.</para>
+  </sect1>
+
+  <sect1 id="playing">
+    <title>GNOME Tali-n jolastea</title>
+
+    <figure id="shot1">
+      <title>GNOME Tali-n jolasten</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="Trevor Curtis"/>
+	</imageobject>
+    <textobject> 
+      <phrase>GNOME Tali-ren leiho nagusiaren pantaila-argazkia.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Jokoa hasitakoan, zure lehen jaurtialdiaren emaitza ikusiko duzu.</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Egin klik berriro jaurti nahi duzun dadoan.</para>
+        </listitem>
+        <listitem>
+          <para>Berriro jaurti nahi dituzun dadoak hautatu dituzunean, sakatu <guibutton>Jaurti!</guibutton> botoia.</para>
+        </listitem>
+        <listitem>
+	  <para>Gustuko duzun eskualdia lortu duzunean edo dadoa botatzeko aukera gehiagorik ez duzunean, zure ustez puntu-konbinazio onena zein den aukeratu beharko duzu dagokion errenkadan klik eginez. Baliteke punturik ez lortzea, eta, okerreko errenkadan klik eginez gero, puntuazio hori lortuko duzu. (Demagun, esaterako, yahtzee lortu duzula –5 berdin– eta eskailera handiaren errenkadan klik egin duzula. Orduan, zero puntu jasoko dituzu eskailera handiaren errenkadan).</para>
+      </listitem>
+    </orderedlist>
+
+    <para>Konbinazio bakoitza behin bakarrik erabil dezakezu, hau da, behin toki batean zerbait sartutakoan, gero ezingo duzu puntuazioa aldatu esku hobea lortu arren.</para>
+
+    <para>Arau honek salbuespen bat du: bigarren aldiz jaurti eta yahtzee lortzen baduzu, yahtzee errenkadan jar dezakezu eta beste berrogeita hamar puntu lortu. Berriro yahtzee lortzen duzun aldi guztietan egin dezakezu hori. Jokoaren amaieran jaurtialdi estrak emango zaizkizu gainerako errenkadak betetzeko. Kontuan izan yahtzee errenkadan zero puntu lortuz gero (hau da, errenkada horretan yahtzee ez zen zerbait jarriz gero) ezin izango duzula yahtzee jarri, eta zure puntuazioa zero izango da.</para>
+
+    <para>35 puntuko gainordaina ere badago, 63 puntu edo gehiago lortzen badituzu guztira goiko sei errenkadetan.</para>
+
+    <sect2 id="keyboard">
+    <title>Teklatua erabiltzea</title> 
+
+      <para>Sagua erabili ordez, 1etik 5erako teklek dadoa mugitzen dute haren gainean klik egin izan bazenu bezala. 1 tekla lehenengo dadoari dagokio, eta horrela jarraitzen du. Erabili ohiko kontrolak dadoa jaurtitzeko eta errenkada bat hautatzeko; hau da, erabili tabuladorea jaurtitzeko botoiaren eta puntuazio-eremuaren artean aldatzeko, erabili gezi-teklak errenkadetan gora eta behera ibiltzeko eta erabili zuriune-barra hautatzeko.</para>
+    
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="options">
+    <title>Jokoaren aukerak</title>
+
+    <figure id="shot2">
+      <title>GNOME Tali-ren hobespenak</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences.png" format="PNG" srccredit="Trevor Curtis"/>
+	</imageobject>
+    <textobject> 
+      <phrase>GNOME Tali-ren elkarrizketa-koadroa.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+      <variablelist><title>Giza jokalariak</title>
+	<varlistentry>
+	  <term><guimenuitem>Jokalari-kopurua</guimenuitem></term>
+	  <listitem>
+            <para>Giza jokalarien kopurua hautatzen du. Goian zehazten den bezala, sei jokalari soilik onartzen dira.</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>  
+      
+    <variablelist><title>Ordenagailu-aurkariak</title>
+      <varlistentry>
+        <term><guimenuitem>Jaurtialdien arteko atzerapena</guimenuitem></term>
+	<listitem>
+	  <para>Ordenagailu-aurkariei atsedena harrarazten die dado-jaurtialdien artean, zertan ari diren ikus dezazun. Jokoa moteldu egiten du.</para>
+        </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guimenuitem>Aurkari kopurua</guimenuitem></term>
+	  <listitem>
+            <para>Hautatu ordenagailu-aurkarien kopurua. Sei giza jokalari eta ordenagailu-jokalari egon daitezke guztira. Kopuru hori mugaraino handitzen saiatzen bazara, giza jokalarien kopurua gutxitu egingo da, guztira sei jokalari egon daitezen.</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>
+      
+    <variablelist><title>Joko mota</title>
+      <varlistentry>
+        <term><guimenuitem>Jolastuko dugun jokoaren bertsioa</guimenuitem></term>
+	<listitem>
+	  <para>Jolastu bertsio arruntean (Yahtzee jokoaren antzekoa) edo kolorezko bertsioan (Kismet jokoaren antzekoa). Joko mota aldatzen duzunean, jokoa berrabiarazi behar duzu joko mota berria erabiltzeko.</para>
+        </listitem>
+	</varlistentry>
+      </variablelist>
+      
+      <variablelist>
+	<varlistentry>
+	    <term><guimenuitem>Jokalarien izenak</guimenuitem></term>
+	    <listitem>
+	      <para>Jokalarien izenak aldatzeko, idatzi izen berriak koadroetan.</para>
+	    </listitem>
+	</varlistentry>
+      </variablelist>
+    </sect1>
+
+    <sect1 id="strategy">
+      <title>Jokoaren estrategia</title>
+      <para>Goiko erdialdean gainordaina lortzeko behar diren 63 puntuak eskuratzeko, dado mota bakoitzeko hiru lortu behar da errenkada bakoitzean. Bosten eta seien errenkadetan hiru dado baino gehiago lortzen badituzu, aukera izango duzu baten edo bien errenkadetan jaurtialdi txar bat izan eta hala ere gainordaina lortzeko. Kolorezko bertsioan, 55 puntuko gainordaina lortzen duzu goiko erdialdea 71 eta 77 artean baldin badago eta 75 puntuko gainordaina goiko erdialdea 77tik gorakoa baldin bada.</para>
+      <para>Ez ahaztu yahtzee-taz; yahtzee bigarren aldiz lortzen baduzu, yahtzee errenkadan jar dezakezu eta puntu gehiago lortu. Ohiko jokoan soilik aplikatzen da.</para>
+    </sect1>	
+ <!-- ============= Bugs ================================== -->
+ <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of. 
+      
+      Better to leave this section out than to say something unhelpful. 
+-->
+
+ <sect1 id="bugs">
+  <title>Ezagutzen diren akatsak eta mugak</title>
+  <para>Joko mota aldatzen duzunean, jokoak ez ditu dado-irudi berriak erabiltzen gtali berrabiarazten duzun arte. Ondo jokatu beharko luke "okerreko" dadoarekin.</para>
+ </sect1>
+
+
+ <sect1 id="glossary">
+   <title>Glosarioa</title>
+   <note>
+     <para>Gogoan izan dadoaren ordena ez dela garrantzitsua.</para>
+   </note>
+   <glossary>
+       <glossentry id="threeofakind"><glossterm>3 berdinak</glossterm>
+         <glossdef><para>Hiru dadok zenbaki bera dute. Puntuazioa dado guztien batura da. Adibidez: 1, 2, 2, 2, 5.</para></glossdef>
+       </glossentry>
+       <glossentry id="fourofakind"><glossterm>4 berdinak</glossterm>
+         <glossdef><para>Lau dadok zenbaki bera dute. Puntuazioa dado guztien batura da. Adibidez: 2, 5, 5, 5, 5. Kolorezko jokoan, puntuazioa hau da: 25 gehi dado guztien batura.</para></glossdef>
+       </glossentry>
+       <glossentry id="yahtzee"><glossterm>5 berdinak</glossterm>
+         <glossdef><para>Bost dado berdin-berdinak. Adibidez: 3, 3, 3, 3, 3. Kolorezko jokoan, puntuazioa hau da: 50 gehi dado guztien batura.</para></glossdef>
+       </glossentry>
+       <glossentry id="fullhouse"><glossterm>Full</glossterm>
+         <glossdef><para>Bost dado bi taldetan banatuta: Talde batean zenbaki bereko hiru dado eta beste taldean zenbaki bereko bi. Adibidez: 1, 1, 1, 4, 4. Kolorezko jokoan, puntuazioa hau da: 15 gehi dado guztien batura.</para></glossdef>
+       </glossentry>
+       <glossentry id="fullhousesamecolor"><glossterm>Kolore bereko Full</glossterm>
+         <glossdef><para>Kategoria hau kolorezko jokoan soilik erabiltzen da. Bost dado bi taldetan banatuta: Talde batean zenbaki bereko hiru dado, eta beste taldean, zenbaki bereko bi. Zenbakiek kolore bera izan behar dute. Adibidez: 3, 3, 3, 4, 4. Bi dado kolore berekoak dira bien arteko batura 7 bada: 1 eta 6 beltzak dira, 2 eta 5 gorriak dira, eta 3 eta 4 berdeak. Puntuazioa hau da: 20 gehi dado guztien batura.</para></glossdef>
+       </glossentry>
+       <glossentry id="twopairsamecolor"><glossterm>Kolore bereko bi bikote</glossterm>
+         <glossdef><para>Kategoria hau kolorezko jokoan soilik erabiltzen da. Bost dado bi taldetan banatuta: Talde batean zenbaki bereko bi dado, eta beste taldean, zenbaki bereko beste bi. Bikoteek kolore bera izan behar dute. Adibidez: 3, 3, 4, 4. Bi dado kolore berekoak dira bien arteko batura 7 bada: 1 eta 6 beltzak dira, 2 eta 5 gorriak dira, eta 3 eta 4 berdeak. Bosgarren dadoak edozein balio izan dezake. Puntuazioa dado guztien batura da.</para></glossdef>
+       </glossentry>
+       <glossentry id="flush"><glossterm>Eskailera</glossterm>
+         <glossdef><para>Kategoria hau kolorezko jokoan soilik erabiltzen da. "Kolore" bereko bost dado: Bi dado kolore berekoak dira bien arteko batura 7 bada: 1 eta 6 beltzak dira, 2 eta 5 gorriak, eta 3 eta 4 berdeak. Bosgarren dadoak edozein balio izan dezake. Puntuazioa 35 puntu da.</para></glossdef>
+       </glossentry>
+       <glossentry id="largestraight"><glossterm>Eskailera handia</glossterm>
+         <glossdef><para>Ondoz ondoko zenbakiak dituzten bost dado. Adibidez: 2, 3, 4, 5, 6. Puntuazioa 40 puntu da.</para></glossdef>
+       </glossentry>
+       <glossentry id="smallstraight"><glossterm>Eskailera txikia</glossterm>
+         <glossdef><para>Ondoz ondoko zenbakiak dituzten lau dado. Bosgarren dadoak edozein zenbaki izan dezake. Adibidez: 2, 3, 4, 5, 5. Kategoria hau ohiko jokoan soilik erabiltzen da. Puntuazioa 30 puntu da.</para></glossdef>
+       </glossentry>
+   </glossary>
+ </sect1>
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Egileak</title>
+  <para><application>GNOME Tali</application> Scott Heavner-ek (<email>sdh@po.cwru.edu</email>) eta Orest Zborowski-k idatzi zuten. Eskuliburu hau Scott D Heavner-ek (<email>sdh@po.cwru.edu</email>) idatzi zuen Callum McKenzie-k (<email>callum@physics.otago.ac.nz</email>)gehitutako materialarekin. Aplikazio honi buruzko akatsen berri emateko edo oharrak bidaltzeko, <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentua</ulink>n aurkituko dituzu argibideak.</para>
+
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Lizentzia</title>
+  <para>Programa hau software librea da; birbana eta/edo alda dezakezu Free Software Foundation-ek argitaratutako <ulink type="help" url="gnome-help:gpl"><citetitle>Lizentzia Publiko Orokorra</citetitle></ulink>ren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako baldintzak betez gero.</para>
+  <para>Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO BERMERIK GABE; era berean, ez da bermatzen beraren EGOKITASUNA MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO. Argibide gehiago nahi izanez gero, ikus <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>.</para>
+  <para><citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia <citetitle>GNOMEren erabiltzaile</citetitle>aren gidaren eranskinean daukazu. <citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle>ren kopia bat lor dezakezu Free Software Foundation-en bidez. Bisitatu <ulink type="http" url="http://www.fsf.org">haien webgunea</ulink>, edo idatzi hona: <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - 330. Suitea <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>AEB</country></address></para>
+ </sect1>
+</article>

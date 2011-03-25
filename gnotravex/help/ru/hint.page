@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="hint" xml:lang="ru">
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Use hints or solve the game automatically.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-23" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+  </info>
+  <title>Hints</title>
+
+  <note style="warning">
+    <p>
+      If you use one of the following methods to complete the game, your scores
+      will not be included among the high scores.
+    </p>
+  </note>
+
+  <section id="hint-hints">
+  
+    <title>Use the hints system</title>
+    
+    <p>
+      At any time in the game, if you do not know how to start it, or where to move
+      a piece, it is possible to use the built-in hints system.
+    </p>
+    <p>
+      The system will move one piece from the right box to its correct position
+      into the left box.
+    </p>
+    <p>
+      To use the hints system, perform one of the following:
+    </p>
+    <list>
+      <item>
+        <p>
+          Press <keyseq><key>Ctrl</key><key>H</key></keyseq>.
+        </p>
+      </item>
+      <item>
+        <p>
+          Choose <guiseq><gui style="menu">Game</gui><gui style="menuitem">Hint</gui></guiseq>.
+        </p>
+      </item>
+    </list>
+  </section>
+  <section id="hint-solve">
+    <title>Solve the game</title>
+    <p>
+      If you get stuck in the game, or you want to solve it automatically, 
+      choose <guiseq><gui style="menu">Game</gui><gui style="menuitem">Solve</gui></guiseq>.
+    </p>
+  </section>
+</page>

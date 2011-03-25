@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Five or More</application>">
+<!ENTITY appname "Five or More">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- This doc is based on the GDP template from GNOME 1.2
+     Its syntax and DTD has been updated to validate with xmllint.
+     The content needs to be updated (it basically needs to be finished)
+     edited and indexed.
+   -->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sr"> 
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+ <articleinfo>
+  <title>Упутство за <application>Пет или више</application></title>
+  <abstract role="description">
+    <para>Циљ игре Пет или више је да поравнате делове исте боје. За то време се табла пуни новим, случајно постављеним деловима. Када се пет или више делова исте боје поравнају, они нестају. Игра се завршава када се табла попуни до краја.</para>
+  </abstract>
+
+  <copyright>
+   <year>2000-2002</year>
+   <holder>Emese Kovács</holder>
+  </copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>Пројекат Гномове документације</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Дозвољено умножавање, ширење, вршење измена овог документа под условима Гну-ове Слободне Документационе Дозволе (ГСДД), верзије 1.1 или било које накнадне верзије без непромењивих одељака, текста на насловној и последњој страни, а коју је објавила Задужбина Слободног Софтвера. Примерак ГСДД-е можете пронаћи на овој <ulink type="help" url="ghelp:fdl">адреси</ulink> или у датотеци COPYING-DOCS која је приложена уз ово упутство.</para>
+         <para>Ово упутство је део скупа Гномових докумената објављених под GFDL. Уколико желите да расподељујете ово упутство одвојено од скупа, то можете урадити додавањем примерка лиценце документу, како је описано у одељку 6 саме лиценце.</para>
+
+	<para>Многи називи које компаније користе у циљу препознатљивости својих производа и услуга представљају робне марке. Када (уколико) се такви називи појављују(спомињу) у било којем Гномовом документу, а чланови Гномовог документационог пројекта имају сазнања о томе, тада су називи исписани великим словима или са великим почетним словима.</para>
+
+	<para>ОВАЈ ДОКУМЕНТ И ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СУ ДОСТУПНЕ ПОД УСЛОВИМА ГНУ-ОВЕ СЛОБОДНЕ ДОКУМЕНТАЦИОНЕ ДОЗВОЛЕ УЗ ДОДАТНУ САГЛАСНОСТ ДА: <orderedlist>
+		<listitem>
+		  <para>ДОКУМЕНТ ЈЕ ДОСТУПАН СА СВИМ СВОЈИМ ДОБРИМ И ЛОШИМ СТРАНАМА БЕЗ БИЛО КАКВОГ ЈАМСТВА, БИЛО ОНО ИЗРЕЧЕНО ИЛИ НЕ, УКЉУЧУЈУЋИ БЕЗ ОГРАНИЧЕЊА, ЈАМСТВО ДА ЈЕ ОВАЈ ДОКУМЕНТ ИЛИ ЊЕГОВА ИЗМЕЊЕНА ВЕРЗИЈА БЕЗ НЕДОСТАТАКА, СПРЕМАН ЗА ТРЖИШТЕ, СВРСИСХОДАН И НЕ НАРУШАВА ЗАКОНСКЕ НОРМЕ. ЦЕЛОКУПАН РИЗИК КОЈИ СЕ ОДНОСИ НА КВАЛИТЕТ, ТАЧНОСТ И ДОМЕТ (УЧИНАК) ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СНОСИ КОРИСНИК. УКОЛИКО СЕ У БИЛО КОЈЕМ ДОКУМЕНТУ ИЛИ ЊЕГОВОЈ ИЗМЕЊЕНОЈ ВЕРЗИЈИ ПОЈАВИ НЕДОСТАТАК (ГРЕШКА) БИЛО КОЈЕ ВРСТЕ, КОРИСНИК (А НЕ АУТОР ИЗВОРНЕ ВЕРЗИЈЕ, БИЛО КОЈИ ДРУГИ АУТОР ИЛИ САРАДНИК) СНОСИ СВЕ ТРОШКОВЕ НЕОПХОДНОГ СЕРВИСИРАЊА, ПОПРАВКЕ ИЛИ ИСПРАВКЕ. ОВО ОГРАНИЧЕЊЕ ЈАМСТВА ПРЕДСТАВЉА САСТАВНИ ДЕО ОВЕ ДОЗВОЛЕ. УПОТРЕБА БИЛО КОЈЕГ ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ НИЈЕ ДОЗВОЉЕНА ОСИМ ПОД УСЛОВИМА ОВОГ ОГРАНИЧЕЊА ЈАМСТВА.</para>
+		</listitem>
+		<listitem>
+		  <para>НИ ПОД КАКВИМ ОКОЛНОСТИМА ИЛИ ЗАКОНУ, БИЛО ЗБОГ КРШЕЊА (ИЛИ НЕМАРА) УГОВОРА, ИЛИ НА БИЛО КОЈИ ДРУГИ НАЧИН, АУТОР (ПРВОБИТНЕ ВЕРЗИЈЕ), САРАДНИК ИЛИ ИСПОРУЧИВАЛАЦ ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ, НИТИ ДОБАВЉАЧ БИЛО КОЈЕ ОД НАВЕДЕНИХ СТРАНА НЕЋЕ СНОСИТИ МАТЕРИЈАЛНУ ОДГОВОРНОСТ ЗА НАСТАЛА ДИРЕКТНА, ИНДИРЕКТНА, ПОСЕБНА, СЛУЧАЈНА ИЛИ ТИМЕ НАСТАЛА ОШТЕЋЕЊА БИЛО КОЈЕ ВРСТЕ УКЉУЧУЈУЋИ, БЕЗ ОГРАНИЧЕЊА, ШТЕТУ НАНЕСЕНУ УГЛЕДУ ФИРМЕ, ПРЕСТАНКУ ПРОИЗВОДЊЕ, ОТКАЗИВАЊЕ РАДА РАЧУНАРА ИЛИ КВАРА КАО И ЗА СВЕ ОСТАЛЕ ШТЕТЕ ИЛИ ГУБИТКЕ НАСТАЛЕ УСЛЕД КОРИШЋЕЊА ДОКУМЕНТА И ЊЕГОВИХ ИЗМЕЊЕНИХ ВЕРЗИЈА ЧАК И АКО ЈЕ ОШТЕЋЕНА СТРАНА БИЛА ОБАВЕШТЕНА О МОГУЋНОСТИ НАСТАНКА ТЕ ШТЕТЕ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+	<firstname>Emese</firstname> 
+	<surname>Kovács</surname> 
+	<affiliation> 
+	  <orgname>Пројекат Гномове документације</orgname> 
+	  <address> <email>emese@gnome.hu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+    <revhistory>
+      <revision> 
+	<revnumber>Упутство за Пет или више v2.8</revnumber> 
+	<date>Септембар 2004.</date> 
+	<revdescription> 
+	  <para role="author">Emese Kovács <email>emese@gnome.hu</email></para>
+	  <para role="publisher">Пројекат Гномове документације</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Ово упуство је написано за Пет или више 2.12.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Примедбе</title> 
+      <para>Да бисте пријавили грешку или дали предлог у вези програма <application>Пет или више</application> или његовог упутства, пратите смернице на <ulink url="ghelp:user-guide?feedback-bugs" type="help">Гномовој страни за примедбе</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Пет или више</primary> 
+  </indexterm> 
+
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+ <sect1 id="intro">
+  <title>Увод</title>
+
+  <para><application>Пет или више</application> је Гномова верзија некад популарне игре за Windows зване <application>Color Lines</application>. Циљ игре је поравњавати, што је чешће могуће, пет или више објеката исте боје и облика. Поравнати објекти тиме нестају. Игра се игра док год има расположивих потеза да бисте били број 1 на листи најбољих резултата.</para>
+
+  <para>Да бисте покренули <application>Пет или више</application>, одаберите <guisubmenu>Игре</guisubmenu><guimenuitem>Пет или више</guimenuitem> из <guimenu>Главног менија</guimenu>, или откуцајте <command>glines</command> у командној линији.</para>
+
+  <para><application>Пет или више</application> је укључена у <filename>gnome-games</filename> пакет, који је део Гномовог радног окружења. Овај документ је написан за издање 2.8 програма <application>Пет или више</application>.</para>
+
+ </sect1>
+
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="usage">
+    <title>Играње Пет или више</title>
+    <para>Играње игре <application>Пет или више</application> је лако. На почетку имате пет случајно постављених објеката на табли. У сваком кругу, дозвољено вам је да померите један објекат. Можете га померити било где на табли, али морате да имате слободан пут до места на које желите да га померите. После тога, рачунар убацује још објеката на случајне позиције (тачан број нових објеката зависи од величине табле). У горњем левом углу прозора игре можете видети објекте који ће наредни бити убачени. Ако успете да поравнате пет објеката исте боје и облика, они нестају, а вама се даје шанса за додатни потез пре него што се објекти поново убаце.</para>
+
+
+  <!-- ========= Basic Usage =========================== -->
+  <sect2 id="mainwin">
+   <title>Основно коришћење</title>
+   <para>Покретањем игре <application>Пет или више</application> се приказује <interface>табла за игру</interface> и нова игра почиње. <xref linkend="mainwindow-fig"/> приказује како то изгледа.</para>
+
+    <!-- ==== Figure ==== -->
+	<figure id="mainwindow-fig">
+	  <title>Главни прозор када покренете игру.</title>
+	  <screenshot>
+	      <mediaobject>
+	      <imageobject>
+	      <imagedata fileref="figures/glines-startgame.png" format="PNG" srccredit="emese"/>
+	      </imageobject>
+	      </mediaobject>
+	  </screenshot>
+	</figure>
+     <!-- ==== End of Figure ==== -->
+
+   <para>Како игра напредује, табла се све више и више пуни (осим ако нисте баш добри...) и постаје све теже и теже да поравњате објекате. Када се табла напуни до краја, игра је готова.</para>
+   
+   <!-- ==== Figure ==== -->
+   <figure id="gameover-fig">
+	  <title>Игра је готова!</title>
+	  <screenshot>
+    <mediaobject>
+     <imageobject>
+      <imagedata fileref="figures/glines-gameover.png" format="PNG" srccredit="emese kovacs"/>
+     </imageobject>
+    </mediaobject>
+ </screenshot>
+</figure>  
+   <!-- ==== End of Figure ==== -->
+   
+  </sect2>
+
+
+  <!-- ========= Rulez =========================== -->
+
+    <sect2 id="rules"> 
+      <title>Играње игре</title>
+      <para>Игра <application>Пет или више</application> започиње са неколико случајних објеката на табли.</para>
+      <para>Да бисте одиграли потез, кликните на неки од објеката. Када изаберете објекат, он почиње да се окреће (или крене да ради нешто друго у зависности од теме, али хајде да не нагађамо...). Након тога можете изабрати одредиште кликом на празан квадрат. Ако је путања до одредишта чиста, одабрани објекат путује до њега. Ако је одредиште заузето неким другим објектом, нема померања и уместо првог се одабира тај други објекат. Ако путања до одредишта није чиста (не можете прескакати друге објекте као да су препреке!), програм исписује упозорење у траци стања (на дну прозора), а првобитни објекат остаје изабран.</para>
+      <para>Кад објекти нестану, добијате поене. Број поена које добијате зависи од броја објеката које сте успели да поравнате (<xref linkend="glines-table1"/>). Ваш резултат је приказан у горњем десном углу прозора.</para>
+      
+    <!-- ====  Table 1.  ==== -->
+    <table id="glines-table1">
+     <title>Поени у Пет или више</title>
+      <tgroup cols="2" align="center">
+       <thead>
+        <row>
+         <entry>Број објеката</entry>
+         <entry>Добијених поена</entry>
+        </row>
+       </thead>
+       <tbody>
+       <row>
+        <entry>5</entry>
+        <entry>10</entry>
+       </row>
+       <row>
+        <entry>6</entry>
+        <entry>12</entry>
+       </row>
+       <row>
+        <entry>7</entry>
+        <entry>18</entry>
+       </row>
+       <row>
+        <entry>8</entry>
+        <entry>28</entry>
+       </row>
+       <row>
+        <entry>9</entry>
+        <entry>42</entry>
+       </row>
+       <row>
+        <entry>10</entry>
+        <entry>82</entry>
+       </row>
+       <row>
+        <entry>11</entry>
+        <entry>108</entry>
+       </row>
+       <row>
+        <entry>12</entry>
+        <entry>138</entry>
+       </row>
+      <row>
+        <entry>13</entry>
+        <entry>172</entry>
+      </row>
+      <row>
+        <entry>14</entry>
+        <entry>210</entry>
+       </row>
+      </tbody>
+     </tgroup> 
+    </table>
+
+  <sect3>
+  <title>Коришћење тастатуре</title>
+  <para>Уместо миша, можете да користите тастатуру за играње <application>Пет или више</application>. Да бисте користили тастатуру, притисните било који тастер са стрелицом и показивач ће се појавити око центра табле. Тастери са стрелицама ће померати показивач, а када је показивач изнад неког објекта, искористите тастер Space да га означите. Онда померите показивач до одредишта и поново притисните тастер Space да померите објекат.</para><para>Ако почнете опет да користите миша, показивач ће нестати. Ако поново притиснете неки тастер са стрелицама, опет ће бити приказан.</para>
+  </sect3>
+
+
+   <!-- ==== End of Table ==== -->
+
+
+    </sect2>
+
+
+  </sect1>
+  <sect1 id="settings">
+  <title>Прилагођавање игре</title>
+  <para>Можете подесити <application>Пет или више</application> преко ставке <guimenuitem>Опције</guimenuitem> из менија <guimenu>Подешавања</guimenu>. Приказаће се следећи <interface>прозорчић</interface>:</para>
+ <!-- ==== Figure ==== -->
+   <figure>
+     <title>Поставке</title>   
+    <mediaobject id="preferences-dialogbox">
+     <imageobject>
+      <imagedata fileref="figures/preferences.png" format="PNG" srccredit="emese"/>
+     </imageobject>
+    </mediaobject>
+  </figure>    
+    <!-- ==== End of Figure ==== -->
+
+  <para>Можете одабрати другачије стилове објеката и боје позадине у одељку <guimenu>Теме</guimenu>. Ако приметите да вам је тешко да распознајете боје, пробајте тему са облицима.</para>
+  <para>Одељак <guimenu>Величина табле</guimenu> вам дозвољава да одаберете жељену величину табле. Свака од величина има другачији нагласак: велике табле вам дају више простора за померање, али и више објеката долази у сваком кругу. <xref linkend="table-sizes"/> приказује параметре за све величине табли.</para>
+    <table id="table-sizes">
+     <title>Поени у Пет или више</title>
+      <tgroup cols="5" align="center">
+       <thead>
+        <row>
+         <entry align="left">Величина</entry>
+         <entry>Ширина</entry>
+         <entry>Висина</entry>
+	 <entry>Број различитих типова</entry>
+         <entry>Објеката по кругу</entry>
+        </row>
+       </thead>
+       <tbody>
+       <row>
+        <entry align="left">Мало</entry>
+        <entry>7</entry>
+        <entry>7</entry>
+        <entry>5</entry>
+        <entry>3</entry>
+       </row>
+       <row>
+        <entry align="left">Средње</entry>
+        <entry>9</entry>
+        <entry>9</entry>
+        <entry>7</entry>
+        <entry>3</entry>
+       </row>
+       <row>
+        <entry align="left">Велико</entry>
+        <entry>20</entry>
+        <entry>15</entry>
+        <entry>7</entry>
+        <entry>7</entry>
+       </row>
+      </tbody>
+     </tgroup> 
+    </table>
+
+  <para>Можете убрзати померања објеката опцијом „Користи брзе потезе“ у одељку <guimenu>Основно</guimenu> из поставки.</para>
+  <para>Свака промена коју начините се одмах примењује и памти за следећи пут када покренете <application>Пет или више</application>.</para>
+  </sect1>
+  <sect1 id="themes">
+    <title>Како да направите нове теме</title> 
+    <para>Свака тема се састоји од једне PNG слике. Ова слика садржи низ од седам редова, који одговарају различитим објектима/облицима, и четири колоне, где је свака по један кадар код анимације објекта. Конкретна величина слике није битна јер ће бити смањена и проширена по потреби, али унутрашње слике морају да формирају мрежу четири са седам да би се постигао правилан ефекат. Запамтите да је код коришћења SVG формата величина слика једнака величини стране. Ако вам мрежа не попуњава целу страну, пробајте да смањите величину стране. Искористите постојеће теме као водич.</para>
+  </sect1>
+
+ <!-- ============= Bugs ================================== -->
+ <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of 
+
+      Better to omit this section than give false impression of perfection
+      Add back in if there is something worth saying
+
+ <sect1 id="bugs">
+  <title>Known Bugs and Limitations</title>
+  <para>
+   This application has no known bugs.
+  </para>
+ </sect1>
+-->
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Аутори</title>
+  <para><application>Пет или више</application> су написали Róbert Szókovács (<email>szo@appaloosacorp.hu</email>) и Szabolcs Bán (<email>shooby@gnome.hu</email>). Ово упутство је написао Emese Kovács (<email>emese@gnome.hu</email>). Да бисте пријавили грешке или дали предлог у вези овог програма или његовог упутства, пратите смернице из <ulink url="ghelp:user-guide?feedback-bugs" type="help">документа</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Лиценца</title>
+  <para>Овај програм је слободан софтвер; можете га расподељивати и/или га мењати под условима <citetitle>ГНУ Опште Јавне Лиценце (GNU GPL)</citetitle> како је објављује Задужбина за Слободни Софтвер (FSF); било верзије 2 те Лиценце, било (по вашем нахођењу) било које новије верзије.</para>
+  <para>Овај програм се расподељује у нади да ће бити од користи, али БЕЗ ИКАКВИХ ГАРАНЦИЈА; чак и без подразумеване гаранције КОРИСНОСТИ или ПРИЛАГОЂЕНОСТИ ОДРЕЂЕНОЈ НАМЕНИ.  Видите <citetitle>ГНУ Општу Јавну Лиценцу</citetitle> за више детаља.</para>
+  <para>Примерак <citetitle>ГНУ Опште Јавне Лиценце</citetitle> је укључен у додатку <citetitle>Гномовог корисничког водича</citetitle>. Такође можете набавити примерак <citetitle>ГНУ Опште Јавне Лиценце</citetitle> од Задужбине за Слободни Софтвер одлазећи на <ulink url="http://www.fsf.org" type="http">њихову веб адресу</ulink> или пишући на <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

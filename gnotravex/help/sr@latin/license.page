@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="license" xml:lang="sr@latin">
+  
+  <info>
+    <link type="seealso" xref="index"/>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-28" status="draft"/>
+    <desc>Pravne informacije.</desc>
+  </info>
+
+  <title>Licenca</title>
+  <p>Ovaj rad se distribuira pod Autorstvo-Deliti pod istim uslovima 3.0 licencom.</p>
+  <p>Dozvoljeno je:</p>
+  <terms>
+    <item>
+      <title><em>Deliti</em></title>
+      <p>Umnožavati, distribuirati i javno saopštavati delo.</p>
+    </item>
+    <item>
+      <title><em>Remiksovati</em></title>
+      <p>Preraditi delo.</p> 
+    </item>
+  </terms>
+  <p>Pod sledećim uslovima:</p>
+  <terms>
+    <item>
+      <title><em>Autorstvo</em></title>
+      <p>Morate da navedete ime izvornog autora na način koji je određen od strane izvornog autora ili davaoca licence (ali ne tako što ćete sugerisati da vas podržava ili odobrava vaše korišćenje dela).</p>
+    </item>
+    <item>
+      <title><em>Deliti pod istim uslovima</em></title>
+      <p>Ako menjate, preoblikujete ili upotrebite delo u svom delu, preradu morate da distribuirate pod istom ili sličnom licencom.</p>
+    </item>
+  </terms>
+  <p>Za ceo tekst licence, pogledajte <link href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">CreativeCommons veb sajt</link> ili pročitajte ceo <link href="http://creativecommons.org/licenses/by-sa/3.0/">Commons ugovor</link>.</p>
+</page>

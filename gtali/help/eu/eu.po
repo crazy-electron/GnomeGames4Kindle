@@ -1,0 +1,699 @@
+# translation of gtali_help.po to Basque
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: gtali_help\n"
+"POT-Creation-Date: 2008-02-12 10:56+0000\n"
+"PO-Revision-Date: 2008-12-19 19:49+0100\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
+"Language-Team: Basque <itzulpena@euskalgnu.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gtali.xml:161(None)
+msgid "@@image: 'figures/mainwindow.png'; md5=adbcf6421391e5e51c091e13672d3b7e"
+msgstr "@@image: 'figures/mainwindow.png'; md5=adbcf6421391e5e51c091e13672d3b7e"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gtali.xml:238(None)
+msgid "@@image: 'figures/preferences.png'; md5=163633a4c9c3d3fe96e7b4a15f2e3eef"
+msgstr "@@image: 'figures/preferences.png'; md5=163633a4c9c3d3fe96e7b4a15f2e3eef"
+
+#: C/gtali.xml:27(title)
+msgid "<application>Tali</application> Manual"
+msgstr "<application>Tali</application>ren eskuliburua"
+
+#: C/gtali.xml:29(para)
+msgid ""
+"Tali is like Yahtzee for GNOME or like poker with dice. The player rolls "
+"dice to try to make the best possible combinations, like 4 of a kind, small "
+"straight, and full house. The player is allowed 3 rolls per turn and can "
+"hold certain dice with each roll."
+msgstr ""
+"Yahtzee bezalako GNOMErako jokoa da Tali, edo pokerraren antzekoa da, baina dadoekin. "
+"Jokalariak dadoak jaurtitzen ditu konpinazio hoberena lortzeko, adibidez 4 berdinak, "
+"eskailera txikia, eta full. Jokalariak txandako hiru aldiz jaurti ditzake eta dado batzuk "
+"manten ditzake jaurtitze bakoitzean."
+
+#: C/gtali.xml:37(year)
+msgid "2001"
+msgstr "2001"
+
+#: C/gtali.xml:38(holder)
+msgid "Scott D. Heavner"
+msgstr "Scott D. Heavner"
+
+#: C/gtali.xml:53(publishername) C/gtali.xml:91(para)
+msgid "GNOME Documentation Project"
+msgstr "GNOMEren dokumentazio-proiektua"
+
+#: C/gtali.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Baimena ematen da dokumentu hau kopiatu, banatu eta/edo aldatzeko Free "
+"Software Foundation-ek argitaratutako GNU Dokumentazio Librearen "
+"Lizentziaren 1.1. bertsioan edo berriago batean ezarritako baldintzetan, "
+"atal aldaezinik gabe, aurreko azaleko testurik gabe eta atzeko azaleko "
+"testurik gabe. GFDL lizentziaren kopia <ulink type=\"help\" url=\"ghelp:fdl"
+"\">esteka honetan</ulink> edo eskuliburu honekin batera ematen den COPYING-"
+"DOCS fitxategian aurkituko duzu."
+
+#: C/gtali.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Eskuliburu hau GFDL lizentziarekin banatzen diren GNOME eskuliburuen "
+"bildumakoa da. Eskuliburu hau bildumatik bereizita banatu nahi baduzu, "
+"banatu dezakezu, baina eskuliburuari lizentziaren kopia bat gehitu beharko "
+"diozu, lizentzian bertan 6. atalean azaltzen den bezala."
+
+#: C/gtali.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Enpresek beren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen "
+"asko marka erregistratu gisa hartu behar dira. Izen horiek GNOMEren edozein "
+"agiritan agertzen direnean, eta GNOMEren Dokumentazio Proiektuko kideak "
+"marka komertzialak direla konturatzen direnean, izen horiek osorik "
+"maiuskulaz edo hasierako letra maiuskulaz idatzi dituzte."
+
+#: C/gtali.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"DOKUMENTUA \"DAGOEN-DAGOENEAN\" EMATEN DA, INOLAKO BERMERIK GABE, EZ "
+"ESPRESUKI ADIERAZITAKORIK ETA EZ INPLIZITURIK ERE; BESTEAK BESTE, EZ DA "
+"BERMATZEN DOKUMENTUA EDO BERTSIO ALDATUA AKATSIK GABEA DENIK, MERKATURATZEKO "
+"EDO XEDE JAKIN BATERAKO EGOKIA DENIK EDO ARAURIK HAUSTEN EZ DUENIK, HORI "
+"GUZTIA MUGARIK GABE. DOKUMENTUAREN EDO DOKUMENTUAREN BERTSIO ALDATUAREN "
+"KALITATEARI, ZEHAZTASUNARI ETA PERFORMANTZIARI BURUZKO ERANTZUKIZUN OSOA "
+"ZUREA DA. DOKUMENTUREN BATEK EDO BERTSIO ALDATUREN BATEK EDOZEIN MOTATAKO "
+"AKATSIK IZANEZ GERO, ZUK (EZ HASIERAKO IDAZLEAK, EZ EGILEAK ETA EZ INONGO "
+"KOLABORATZAILEK) ZEURE GAIN HARTU BEHARKO DUZU BERRIKUSTEKO, KONPONTZEKO EDO "
+"ZUZENTZEKO BEHAR DIREN ZERBITZU GUZTIEN KOSTUA. BERME-UKATZE HAU LIZENTZIA "
+"HONEN FUNTSEZKO ZATIA DA. EZ DA BAIMENIK EMATEN EZEIN DOKUMENTU EDO BERTSIO "
+"ALDATU ERABILTZEKO, BALDIN ETA EZ BADA BERME-UKATZE HAU ONARTZEN."
+
+#: C/gtali.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"EZIN IZANGO DA INONGO ZIRKUNSTANTZIARIK EDO LEGE-TEORIARIK OINARRI HARTU --"
+"EZ ERANTZUKIZUN ZIBILARI BURUZKORIK (ZABARKERIA BARNE HARTUTA), EZ "
+"KONTRATUARI BURUZKORIK, EZ BESTERIK-- DOKUMENTU HONEN EDO BERTSIO ALDATU "
+"BATEN EGILEA, HASIERAKO IDAZLEA, EDOZEIN KOLABORATZAILE EDO BANATZAILE, EDO "
+"ALDERDI HORIEN EDOZEIN HORNITZAILE BESTE PERTSONA BATEN AURREAN ERANTZULE "
+"EGITEKO, PERTSONA HORREK EDOZEIN MOTATAKO KALTEA JASAN DUELAKO (ZUZENEKOA, "
+"ZEHARKAKOA, BEREZIA, INTZIDENTALA EDO ONDORIOZKOA), HALA NOLA (ETA MUGARIK "
+"GABE) BEZEROAK GALTZEA, LANA ETEN BEHARRA, ORDENAGAILUAK EZ IBILTZEA EDO "
+"GAIZKI IBILTZEA, EDO DOKUMENTUA NAHIZ HAREN BERTSIO ALDATUAK ERABILTZETIK "
+"ONDORIOZTATZEN DIREN EDO ERABILERA HORREKIN ZERIKUSIA DUTEN KALTEAK EDO "
+"GALERAK, ALDERDIARI KALTE HORIEK GERTA ZITEZKEELA ADITZERA EMAN BAZAIO ERE."
+
+#: C/gtali.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"DOKUMENTUA ETA DOKUMENTUAREN BERTSIO ALDATUAK GNU DOKUMENTAZIO LIBREAREN "
+"LIZENTZIAREN BALDINTZEN ARABERA EMATEN DIRA, ETA ONDOREN ZEHAZTEN DIRENAK "
+"ONARTZERA BEHARTZEN DUTE: <placeholder-1/>"
+
+#: C/gtali.xml:63(firstname)
+msgid "Scott D"
+msgstr "Scott D"
+
+#: C/gtali.xml:64(surname)
+msgid "Heavner"
+msgstr "Heavner"
+
+#: C/gtali.xml:66(email)
+msgid "sdh@po.cwru.edu"
+msgstr "sdh@po.cwru.edu"
+
+#: C/gtali.xml:85(revnumber)
+msgid "Tali Manual V2.8"
+msgstr "Tali-ren eskuliburuaren 2.8 bertsioa"
+
+#: C/gtali.xml:86(date)
+msgid "September 2004"
+msgstr "2004ko iraila"
+
+#: C/gtali.xml:88(para)
+msgid "Scott D Heavner <email>sdh@po.cwru.edu</email>"
+msgstr "Scott D Heavner <email>sdh@po.cwru.edu</email>"
+
+#: C/gtali.xml:96(releaseinfo)
+msgid "This manual describes version 2.12 of Tali."
+msgstr "Tali-ren 2.12 bertsioa azaltzen da eskuliburu honetan."
+
+#: C/gtali.xml:103(title)
+msgid "Feedback"
+msgstr "Ohar-bidaltzea"
+
+#: C/gtali.xml:104(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Tali</"
+"application> application or this manual, follow the directions in the <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</ulink>."
+msgstr ""
+"<application>Tali</application>ri buruzko akatsen berri emateko edo "
+"oharrak bidaltzeko, <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
+"\">GNOMEra oharrak bidaltzeko orria</ulink>n aurkituko dituzu argibideak."
+
+#: C/gtali.xml:115(primary)
+msgid "GNOME Tali"
+msgstr "GNOME Tali"
+
+#: C/gtali.xml:121(title)
+msgid "Introduction"
+msgstr "Sarrera"
+
+#: C/gtali.xml:123(para)
+msgid ""
+"<application>GNOME Tali</application> is a sort of poker with dice and less "
+"money. You roll five dice three times and try to create the best "
+"<quote>hand</quote>. Your two rerolls may include any or all of your dice."
+msgstr ""
+"<application>GNOME Tali</application> pokerraren antzekoa da, baina dadoekin "
+"eta diru gutxiagorekin. Jaurti bost dado hiru aldiz eta saiatu "
+"<quote>eskualdi</quote> onena lortzen. Bi jaurtialditan dado bat edo guztiak "
+"erabil ditzakezu."
+
+#: C/gtali.xml:129(para)
+msgid ""
+"<application>GNOME Tali</application> is very similar to the dice game "
+"Yahtzee which is a trademark of Hasbro, Inc."
+msgstr ""
+"<application>GNOME Tali</application> Hasbro, Inc.-en marka erregistratua "
+"den Yahtzee dado-jokoaren oso antzekoa da."
+
+#: C/gtali.xml:134(para)
+msgid ""
+"To run <application>GNOME Tali</application>, select "
+"<menuchoice><guisubmenu>Games</guisubmenu><guimenuitem>GNOME Tali</"
+"guimenuitem></menuchoice> from the <guimenu>Main Menu</guimenu>, or type "
+"<command>gtali</command> on the command line."
+msgstr ""
+"<application>GNOME Tali</application> abiarazteko, hautatu "
+"<menuchoice><guisubmenu>Jokoak</guisubmenu><guimenuitem>GNOME Tali</"
+"guimenuitem></menuchoice> <guimenu>Menu nagusia</guimenu> menuan, edo idatzi "
+"<command>gtali</command> komando-lerroan."
+
+#: C/gtali.xml:144(para)
+msgid ""
+"<application>GNOME Tali</application> is included in the <filename>gnome-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.8 of <application>GNOME Tali</application>."
+msgstr ""
+"<application>GNOME Tali</application> <filename>gnome-games</filename> "
+"paketearen barruan sartzen da, eta hori GNOMEren mahaigaineko ingurunearen "
+"parte da. Dokumentu honek <application>GNOME Tali</application>ren 2.8 "
+"bertsioa deskribatzen du."
+
+#: C/gtali.xml:153(title)
+msgid "Playing GNOME Tali"
+msgstr "GNOME Tali-n jolastea"
+
+#: C/gtali.xml:156(title)
+msgid "GNOME Tali in action"
+msgstr "GNOME Tali-n jolasten"
+
+#: C/gtali.xml:164(phrase)
+msgid "GNOME Tali main window screenshot."
+msgstr "GNOME Tali-ren leiho nagusiaren pantaila-argazkia."
+
+#: C/gtali.xml:170(para)
+msgid "When play starts, you see the results of your first throw of the dice."
+msgstr "Jokoa hasitakoan, zure lehen jaurtialdiaren emaitza ikusiko duzu."
+
+#: C/gtali.xml:177(para)
+msgid "Click on the dice you wish to roll again."
+msgstr "Egin klik berriro jaurti nahi duzun dadoan."
+
+#: C/gtali.xml:181(para)
+msgid ""
+"When you have selected all the dice you wish to reroll, press the "
+"<guibutton>Roll!</guibutton> button."
+msgstr ""
+"Berriro jaurti nahi dituzun dadoak hautatu dituzunean, sakatu "
+"<guibutton>Jaurti!</guibutton> botoia."
+
+#: C/gtali.xml:186(para)
+msgid ""
+"When you have a hand you like or have run out of chances to throw the dice, "
+"click on a row corresponding to what you think is your best scoring "
+"combination. It is very possible to have a score of zero and if you click on "
+"the wrong row, you will be scored accordingly. (Say for example, you get "
+"yahtzee -- 5 of a kind -- and click on the large straight row, you will "
+"receive a zero in your large straight score)."
+msgstr ""
+"Gustuko duzun eskualdia lortu duzunean edo dadoa botatzeko aukera gehiagorik "
+"ez duzunean, zure ustez puntu-konbinazio onena zein den aukeratu beharko "
+"duzu dagokion errenkadan klik eginez. Baliteke punturik ez lortzea, eta, "
+"okerreko errenkadan klik eginez gero, puntuazio hori lortuko duzu. (Demagun, "
+"esaterako, yahtzee lortu duzula –5 berdin– eta eskailera handiaren "
+"errenkadan klik egin duzula. Orduan, zero puntu jasoko dituzu eskailera "
+"handiaren errenkadan)."
+
+#: C/gtali.xml:196(para)
+msgid ""
+"You can only use each combination once, i.e. once you've entered something "
+"in a slot, you can't change the score later if you roll a better hand."
+msgstr ""
+"Konbinazio bakoitza behin bakarrik erabil dezakezu, hau da, behin toki "
+"batean zerbait sartutakoan, gero ezingo duzu puntuazioa aldatu esku hobea "
+"lortu arren."
+
+#: C/gtali.xml:201(para)
+msgid ""
+"There is one exception to this rule, if you roll a yahtzee a second time you "
+"can put it in the yahtzee row again for an extra fifty points. You can keep "
+"doing this each time you get another yahtzee. At the end of the game you "
+"will be given extra rolls to fill in the other rows. Be warned that if you "
+"score zero in your yahtzee row (i.e. you filled that row with something that "
+"wasn't a yahtzee) then you can't put a yahtzee in afterward, zero is all you "
+"will score."
+msgstr ""
+"Arau honek salbuespen bat du: bigarren aldiz jaurti eta yahtzee lortzen "
+"baduzu, yahtzee errenkadan jar dezakezu eta beste berrogeita hamar puntu "
+"lortu. Berriro yahtzee lortzen duzun aldi guztietan egin dezakezu hori. "
+"Jokoaren amaieran jaurtialdi estrak emango zaizkizu gainerako errenkadak "
+"betetzeko. Kontuan izan yahtzee errenkadan zero puntu lortuz gero (hau da, "
+"errenkada horretan yahtzee ez zen zerbait jarriz gero) ezin izango duzula "
+"yahtzee jarri, eta zure puntuazioa zero izango da."
+
+#: C/gtali.xml:211(para)
+msgid ""
+"There is also a bonus of 35 points if you score a total of 63 points or more "
+"in the top six rows."
+msgstr ""
+"35 puntuko gainordaina ere badago, 63 puntu edo gehiago lortzen badituzu "
+"guztira goiko sei errenkadetan."
+
+#: C/gtali.xml:216(title)
+msgid "Using the keyboard"
+msgstr "Teklatua erabiltzea"
+
+#: C/gtali.xml:218(para)
+msgid ""
+"As an alternative to using the mouse, the keys 1 through 5 toggle the dice "
+"just as if you had clicked them. The key 1 corresponds to the first die and "
+"so on. Use the usual controls to roll the dice and select a row. i.e. use "
+"tab to switch between the roll button and the score area, use the arrow keys "
+"to navigate up and down the rows and use space to select."
+msgstr ""
+"Sagua erabili ordez, 1etik 5erako teklek dadoa mugitzen dute haren gainean "
+"klik egin izan bazenu bezala. 1 tekla lehenengo dadoari dagokio, eta horrela "
+"jarraitzen du. Erabili ohiko kontrolak dadoa jaurtitzeko eta errenkada bat "
+"hautatzeko; hau da, erabili tabuladorea jaurtitzeko botoiaren eta puntuazio-"
+"eremuaren artean aldatzeko, erabili gezi-teklak errenkadetan gora eta behera "
+"ibiltzeko eta erabili zuriune-barra hautatzeko."
+
+#: C/gtali.xml:230(title)
+msgid "Game Options"
+msgstr "Jokoaren aukerak"
+
+#: C/gtali.xml:233(title)
+msgid "GNOME Tali preferences"
+msgstr "GNOME Tali-ren hobespenak"
+
+#: C/gtali.xml:241(phrase)
+msgid "GNOME Tali preferences dialog box."
+msgstr "GNOME Tali-ren elkarrizketa-koadroa."
+
+#: C/gtali.xml:246(title)
+msgid "Human Players"
+msgstr "Giza jokalariak"
+
+#: C/gtali.xml:248(guimenuitem)
+msgid "Number of players"
+msgstr "Jokalari-kopurua"
+
+#: C/gtali.xml:250(para)
+msgid ""
+"Selects the number of human players. As described above you are only allowed "
+"six total players."
+msgstr ""
+"Giza jokalarien kopurua hautatzen du. Goian zehazten den bezala, sei "
+"jokalari soilik onartzen dira."
+
+#: C/gtali.xml:258(title)
+msgid "Computer Opponents"
+msgstr "Ordenagailu-aurkariak"
+
+#: C/gtali.xml:260(guimenuitem)
+msgid "Delay between rolls"
+msgstr "Jaurtialdien arteko atzerapena"
+
+#: C/gtali.xml:262(para)
+msgid ""
+"Make the computer opponents pause between rolls of the dice so you can see "
+"what they are doing. Slows down game play some."
+msgstr ""
+"Ordenagailu-aurkariei atsedena harrarazten die dado-jaurtialdien artean, "
+"zertan ari diren ikus dezazun. Jokoa moteldu egiten du."
+
+#: C/gtali.xml:269(guimenuitem)
+msgid "Number of opponents"
+msgstr "Aurkari kopurua"
+
+#: C/gtali.xml:271(para)
+msgid ""
+"Select the number of computer opponents. You are allowed a total of six "
+"human and computer players. If you attempt to increase this number near the "
+"limit, the number of human players will be decreased to maintain only six "
+"total players."
+msgstr ""
+"Hautatu ordenagailu-aurkarien kopurua. Sei giza jokalari eta ordenagailu-"
+"jokalari egon daitezke guztira. Kopuru hori mugaraino handitzen saiatzen "
+"bazara, giza jokalarien kopurua gutxitu egingo da, guztira sei jokalari egon "
+"daitezen."
+
+#: C/gtali.xml:281(title)
+msgid "Game Type"
+msgstr "Joko mota"
+
+#: C/gtali.xml:283(guimenuitem)
+msgid "Version of the game to play"
+msgstr "Jolastuko dugun jokoaren bertsioa"
+
+#: C/gtali.xml:285(para)
+msgid ""
+"Play either the regular version (similar to Yahtzee) or the version with "
+"colors (similar to Kismet). When you change game type, you must restart the "
+"game to see use the new game type."
+msgstr ""
+"Jolastu bertsio arruntean (Yahtzee jokoaren antzekoa) edo kolorezko "
+"bertsioan (Kismet jokoaren antzekoa). Joko mota aldatzen duzunean, jokoa "
+"berrabiarazi behar duzu joko mota berria erabiltzeko."
+
+#: C/gtali.xml:295(guimenuitem)
+msgid "Player Names"
+msgstr "Jokalarien izenak"
+
+#: C/gtali.xml:297(para)
+msgid "To change the names of the players just enter new names in the boxes."
+msgstr "Jokalarien izenak aldatzeko, idatzi izen berriak koadroetan."
+
+#: C/gtali.xml:306(title)
+msgid "Game Strategy"
+msgstr "Jokoaren estrategia"
+
+#: C/gtali.xml:307(para)
+msgid ""
+"The 63 points needed for the bonus in the upper half corresponds to getting "
+"three of each die type in each row. If you score more than three dice in the "
+"fives and sixes rows then you can afford to place a bad roll in either the "
+"ones row or the twos row and still get the bonus. In the Colors version, you "
+"get a bonus of 55 if your upper half total is between 71 and 77, and a bonus "
+"of 75 if your upper half total is greater than 77."
+msgstr ""
+"Goiko erdialdean gainordaina lortzeko behar diren 63 puntuak eskuratzeko, "
+"dado mota bakoitzeko hiru lortu behar da errenkada bakoitzean. Bosten eta "
+"seien errenkadetan hiru dado baino gehiago lortzen badituzu, aukera izango "
+"duzu baten edo bien errenkadetan jaurtialdi txar bat izan eta hala ere "
+"gainordaina lortzeko. Kolorezko bertsioan, 55 puntuko gainordaina lortzen "
+"duzu goiko erdialdea 71 eta 77 artean baldin badago eta 75 puntuko "
+"gainordaina goiko erdialdea 77tik gorakoa baldin bada."
+
+#: C/gtali.xml:316(para)
+msgid ""
+"Don't forget about multiple yahtzees, if you roll a second yahtzee you can "
+"also put it in the yahtzee row for even more points. This only applies to "
+"the regular game."
+msgstr ""
+"Ez ahaztu yahtzee-taz; yahtzee bigarren aldiz lortzen baduzu, yahtzee "
+"errenkadan jar dezakezu eta puntu gehiago lortu. Ohiko jokoan soilik "
+"aplikatzen da."
+
+#: C/gtali.xml:330(title)
+msgid "Known Bugs and Limitations"
+msgstr "Ezagutzen diren akatsak eta mugak"
+
+#: C/gtali.xml:331(para)
+msgid ""
+"When you switch game type, the game does not use the new dice images until "
+"you restart gtali. It should play correctly with the \"wrong\" dice."
+msgstr ""
+"Joko mota aldatzen duzunean, jokoak ez ditu dado-irudi berriak erabiltzen "
+"gtali berrabiarazten duzun arte. Ondo jokatu beharko luke \"okerreko\" "
+"dadoarekin."
+
+#: C/gtali.xml:339(title)
+msgid "Glossary"
+msgstr "Glosarioa"
+
+#: C/gtali.xml:341(para)
+msgid "Remember that the order of the dice is not important."
+msgstr "Gogoan izan dadoaren ordena ez dela garrantzitsua."
+
+#: C/gtali.xml:344(glossterm)
+msgid "3 of a Kind"
+msgstr "3 berdinak"
+
+#: C/gtali.xml:345(para)
+msgid ""
+"Three of the dice have the same number. The score is the total of all the "
+"dice. e.g. 1, 2, 2, 2, 5."
+msgstr ""
+"Hiru dadok zenbaki bera dute. Puntuazioa dado guztien batura da. Adibidez: "
+"1, 2, 2, 2, 5."
+
+#: C/gtali.xml:350(glossterm)
+msgid "4 of a Kind"
+msgstr "4 berdinak"
+
+#: C/gtali.xml:351(para)
+msgid ""
+"Four of the dice have the same number. The score is the total of all the "
+"dice. e.g. 2, 5, 5, 5, 5. In the Colors game, the score is 25 plus the total "
+"of all the dice."
+msgstr ""
+"Lau dadok zenbaki bera dute. Puntuazioa dado guztien batura da. Adibidez: 2, "
+"5, 5, 5, 5. Kolorezko jokoan, puntuazioa hau da: 25 gehi dado guztien batura."
+
+#: C/gtali.xml:357(glossterm)
+msgid "5 of a Kind"
+msgstr "5 berdinak"
+
+#: C/gtali.xml:358(para)
+msgid ""
+"Five identical dice. e.g. 3, 3, 3, 3, 3. In the Colors game, the score is 50 "
+"plus the total of all the dice."
+msgstr ""
+"Bost dado berdin-berdinak. Adibidez: 3, 3, 3, 3, 3. Kolorezko jokoan, "
+"puntuazioa hau da: 50 gehi dado guztien batura."
+
+#: C/gtali.xml:363(glossterm)
+msgid "Full House"
+msgstr "Full"
+
+#: C/gtali.xml:364(para)
+msgid ""
+"Five dice consisting of two groups: One group of three with the same numbers "
+"and another group of two with the same numbers. e.g. 1, 1, 1, 4, 4. In the "
+"Colors game, the score is 15 plus the total of all the dice."
+msgstr ""
+"Bost dado bi taldetan banatuta: Talde batean zenbaki bereko hiru dado eta "
+"beste taldean zenbaki bereko bi. Adibidez: 1, 1, 1, 4, 4. Kolorezko jokoan, "
+"puntuazioa hau da: 15 gehi dado guztien batura."
+
+#: C/gtali.xml:371(glossterm)
+msgid "Full House Same Color"
+msgstr "Kolore bereko Full"
+
+#: C/gtali.xml:372(para)
+msgid ""
+"This category is only used in the Colors game. Five dice consisting of two "
+"groups: One group of three with the same numbers and another group of two "
+"with the same numbers. The numbers must be all the same color. e.g. 3, 3, 3, "
+"4, 4. Two dice are the same color if their numbers total 7: 1 and 6 are "
+"black, 2 and 5 are red, and 3 and 4 are green. The score is 20 plus the "
+"total of all the dice."
+msgstr ""
+"Kategoria hau kolorezko jokoan soilik erabiltzen da. Bost dado bi taldetan "
+"banatuta: Talde batean zenbaki bereko hiru dado, eta beste taldean, zenbaki "
+"bereko bi. Zenbakiek kolore bera izan behar dute. Adibidez: 3, 3, 3, 4, 4. "
+"Bi dado kolore berekoak dira bien arteko batura 7 bada: 1 eta 6 beltzak "
+"dira, 2 eta 5 gorriak dira, eta 3 eta 4 berdeak. Puntuazioa hau da: 20 gehi "
+"dado guztien batura."
+
+#: C/gtali.xml:382(glossterm)
+msgid "Two Pair Same Color"
+msgstr "Kolore bereko bi bikote"
+
+#: C/gtali.xml:383(para)
+msgid ""
+"This category is only used in the Colors game. Five dice consisting of two "
+"groups: One group of two with the same numbers and another group of two with "
+"the same numbers. The pairs must be all the same color. e.g. 3, 3, 4, 4. Two "
+"dice are the same color if their numbers total 7: 1 and 6 are black, 2 and 5 "
+"are red, and 3 and 4 are green. The fifth die can be any value. The score is "
+"the total of all the dice."
+msgstr ""
+"Kategoria hau kolorezko jokoan soilik erabiltzen da. Bost dado bi taldetan "
+"banatuta: Talde batean zenbaki bereko bi dado, eta beste taldean, zenbaki "
+"bereko beste bi. Bikoteek kolore bera izan behar dute. Adibidez: 3, 3, 4, 4. "
+"Bi dado kolore berekoak dira bien arteko batura 7 bada: 1 eta 6 beltzak "
+"dira, 2 eta 5 gorriak dira, eta 3 eta 4 berdeak. Bosgarren dadoak edozein "
+"balio izan dezake. Puntuazioa dado guztien batura da."
+
+#: C/gtali.xml:393(glossterm)
+msgid "Flush"
+msgstr "Eskailera"
+
+#: C/gtali.xml:394(para)
+msgid ""
+"This category is only used in the Colors game. Five dice that are all the "
+"same \"color\": Two dice are the same color if their numbers total 7: 1 and "
+"6 are black, 2 and 5 are red, and 3 and 4 are green. The fifth die can be "
+"any value. The score is 35 points."
+msgstr ""
+"Kategoria hau kolorezko jokoan soilik erabiltzen da. \"Kolore\" bereko bost "
+"dado: Bi dado kolore berekoak dira bien arteko batura 7 bada: 1 eta 6 "
+"beltzak dira, 2 eta 5 gorriak, eta 3 eta 4 berdeak. Bosgarren dadoak edozein "
+"balio izan dezake. Puntuazioa 35 puntu da."
+
+#: C/gtali.xml:402(glossterm)
+msgid "Large Straight"
+msgstr "Eskailera handia"
+
+#: C/gtali.xml:403(para)
+msgid ""
+"Five dice with consecutive numbers. e.g. 2, 3, 4, 5, 6. The score is 40 "
+"points."
+msgstr ""
+"Ondoz ondoko zenbakiak dituzten bost dado. Adibidez: 2, 3, 4, 5, 6. "
+"Puntuazioa 40 puntu da."
+
+#: C/gtali.xml:408(glossterm)
+msgid "Small Straight"
+msgstr "Eskailera txikia"
+
+#: C/gtali.xml:409(para)
+msgid ""
+"Four dice with consecutive numbers. The fifth die can be any number. e.g. 2, "
+"3, 4, 5, 5. This category is only used in the regular game. The score is 30 "
+"points."
+msgstr ""
+"Ondoz ondoko zenbakiak dituzten lau dado. Bosgarren dadoak edozein zenbaki "
+"izan dezake. Adibidez: 2, 3, 4, 5, 5. Kategoria hau ohiko jokoan soilik "
+"erabiltzen da. Puntuazioa 30 puntu da."
+
+#: C/gtali.xml:423(title)
+msgid "Authors"
+msgstr "Egileak"
+
+#: C/gtali.xml:424(para)
+msgid ""
+"<application>GNOME Tali</application> was written by Scott Heavner "
+"(<email>sdh@po.cwru.edu</email>) and Orest Zborowski. This manual was "
+"written by Scott D Heavner (<email>sdh@po.cwru.edu</email>) with extra "
+"material added by Callum McKenzie (<email>callum@physics.otago.ac.nz</"
+"email>). To report a bug or make a suggestion regarding this application or "
+"this manual, follow the directions in this <ulink url=\"ghelp:user-guide?feedback-bugs"
+"\" type=\"help\">document</ulink>."
+msgstr ""
+"<application>GNOME Tali</application> Scott Heavner-ek (<email>sdh@po.cwru."
+"edu</email>) eta Orest Zborowski-k idatzi zuten. Eskuliburu hau Scott D "
+"Heavner-ek (<email>sdh@po.cwru.edu</email>) idatzi zuen Callum McKenzie-k "
+"(<email>callum@physics.otago.ac.nz</email>)gehitutako materialarekin. "
+"Aplikazio honi buruzko akatsen berri emateko edo oharrak bidaltzeko, <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">dokumentua</ulink>n aurkituko "
+"dituzu argibideak."
+
+#: C/gtali.xml:451(title)
+msgid "License"
+msgstr "Lizentzia"
+
+#: C/gtali.xml:452(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>GNU General Public License</citetitle></ulink> as published by "
+"the Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version."
+msgstr ""
+"Programa hau software librea da; birbana eta/edo alda dezakezu Free Software "
+"Foundation-ek argitaratutako <ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>Lizentzia Publiko Orokorra</citetitle></ulink>ren 2. "
+"bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako baldintzak "
+"betez gero."
+
+#: C/gtali.xml:460(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO "
+"BERMERIK GABE; era berean, ez da bermatzen beraren EGOKITASUNA "
+"MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO. Argibide gehiago "
+"nahi izanez gero, ikus <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>."
+
+#: C/gtali.xml:466(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"<citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia "
+"<citetitle>GNOMEren erabiltzaile</citetitle>aren gidaren eranskinean "
+"daukazu. <citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle>ren "
+"kopia bat lor dezakezu Free Software Foundation-en bidez. Bisitatu <ulink "
+"type=\"http\" url=\"http://www.fsf.org\">haien webgunea</ulink>, edo idatzi "
+"hona: <address> Free Software Foundation, Inc. <street>59 Temple Place</"
+"street> - 330. Suitea <city>Boston</city>, <state>MA</state><postcode>02111-"
+"1307</postcode><country>AEB</country></address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/gtali.xml:0(None)
+msgid "translator-credits"
+msgstr "Hizkuntza Politikarako Sailburuordetza <hizpol@ej.gv.es>, 2008."
+

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.28">
+<!ENTITY manrevision "1.0">
+<!ENTITY date "July 2009">
+<!ENTITY app "<application>Lights Off</application>">
+<!ENTITY appname "Lights Off">
+<!ENTITY version "1.0">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ro">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title><application>Închide luminile</application> - Manualul utilizatorului</title>
+
+    <abstract role="description">
+      <para>„Închide luminile” este un joc puzzle, unde obiectivul este de a stinge toate căsuțele de pe tablă. Fiecare apăsare comută starea căsuței apăsate și a vecinilor ei non-diagonali.</para>
+    </abstract>
+
+    <copyright>
+      <year>2010</year>
+      <holder>Tim Horton</holder>
+    </copyright><copyright><year>2010</year><holder>Nichita Uțiu (nikita.utiu@gmail.com)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Proiectul de documentație GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Copierea, distribuirea și/sau modificarea acestui document este permisă în conformitate cu termenii GNU Free Documentation License (GFDL), versiunea 1.1 sau orice versiune ulterioară publicată de Free Software Foundation fără Invariant Sections, fără Front-Cover Texts și fără Back-Cover Texts. Puteți găsi o copie a GFDL la acestă <ulink type="help" url="ghelp:fdl">legătură</ulink> sau în fișierul COPYING-DOCS distribuit împreună cu acest manual.</para>
+         <para>Acest manual este parte dintr-o colecție de manuale GNOME distribuit sub GFDL. Dacă doriți să distribuiți acest manual separat de colecție, puteți face acest lucru adăugând manualului o copie a licenței, conform descrierii din secțiunea 6 a licenței.</para>
+
+	<para>Multe dintre numele utilizate de companii pentru a distinge produsele și serviciile lor sunt revendicate ca mărci comerciale. Atunci când aceste nume apar în orice documentație GNOME, și membrii proiectului de documentare GNOME sunt informați despre aceste mărci comerciale, ele sunt scrise cu majuscule sau cu majusculă inițială.</para>
+
+	<para>ACEST DOCUMENT ȘI VERSIUNILE MODIFICATE ALE ACESTUI DOCUMENT SUNT FURNIZATE ÎN CONFORMITATE CU TERMENII GNU FREE DOCUMENTATION LICENSE CU ÎNȚELEGEREA CĂ: <orderedlist>
+		<listitem>
+		  <para>DOCUMENTUL ESTE OFERIT "CA ATARE", FĂRĂ NICIUN FEL DE GARANȚIE, FIE EXPLICITĂ SAU IMPLICITĂ, INCLUSIVĂ, FĂRĂ LIMITARE, GARANȚIILE CĂ DOCUMENTUL SAU O VERSIUNE MODIFICATĂ A LUI ESTE FĂRĂ DEFECTE VANDABILE, PENTRU UN ANUMIT SCOP ANUME SAU NEÎNCĂLCABILĂ. RISCUL PENTRU CALITATEA, PRECIZIA, ȘI PERFORMANȚA DOCUMENTULUI SAU A VERSIUNILOR MODIFICATE VA FI AL DUMNEAVOASTRĂ. AR TREBUI CA ORICE DOCUMENT SAU VERSIUNE MODIFICATĂ A LUI SĂ SE DOVEDEASCĂ A FI INCOMPLET ÎN ORICE PRIVINȚĂ, TU (NU AUTORUL INIȚIAL SAU ORICE ALT CONTRIBUITOR) ASUMĂ-ȚI COSTUL ORICĂRUI SERVICIU NECESAR, REPARAȚII SAU CORECTĂRI. ACEASTĂ RESPONSABILITATE DE GARANȚIE CONSTITUIE O PARTE ESENȚIALĂ A ACESTEI LICENȚE. NU ESTE AUTORIZAT NICI UN FOLOS AL ORICĂRUI ALT DOCUMENT SAU VERSIUNE MODIFICATĂ A LUI ÎN ACEST SCOP CU EXCEPȚIA RESPECTĂRII ACESTOR TERMENI; ȘI</para>
+		</listitem>
+		<listitem>
+		  <para>ÎN NICIO CIRCUMSTANȚĂ ȘI ÎN NICI O TEORIE LEGALĂ, DACĂ ÎN PREJUDICIUL (INCLUSIV NEGLIJENȚA), CONTRACTUL, SAU ÎN CAZ CONTRAR, ESTE AUTORUL, SCRIITORUL INIȚIAL, ORICE CONTRIBUITOR SAU ORICE DISTRIBUITOR AL DOCUMENTULUI SAU VERSIUNEA MODIFICATĂ A ACESTUIA SAU ORICE FURNIZOR AL UNEIA DINTRE PĂRȚI, RĂSPUNZĂTOR PENTRU ORICE PERSOANĂ PENTRU ORICE DIRECTE, INDIRECTE, SPECIALE, INCIDENTALE SAU PAGUBE SUBSECVENȚE DE ORICE CARACTER INCLUSIV, FĂRĂ LIMITARE, DESPĂGUBIRI PENTRU PIERDERILE DE BUNĂVOINȚĂ, ÎNTRERUPERE A ACTIVITĂȚII, DEFECȚIUNE DE CALCULATOR, SAU ORICE ALTCEVA ȘI TOATE CELELALTE DAUNE SAU PIERDERI REZULTATE DIN SAU LEGATE DE UTILIZAREA DOCUMENTULUI ȘI VERSIUNILOR MODIFICATE ALE ACESTUIA, CHIAR DACĂ ACESTE PĂRȚI AU FOST INFORMATE DE POSIBILITATEA UNOR ASTFEL DE DAUNE.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL),
+and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+	
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Tim</firstname> 
+	<surname>Horton</surname> 
+	<affiliation> 
+	  <address> <email>hortont@gnome.org</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.29" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Închide luminile - Manualul utilizatorului V1.0</revnumber> 
+	<date>Ianuarie 2010</date> 
+	<revdescription> 
+	  <para role="author">Tim Horton <email>hortont@gnome.org</email></para>
+	  <para role="publisher">Proiectul de documentație GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Acest manual descrie versiunea 2.28 a lui Închide luminile.</releaseinfo>
+    <!-- The following feedback information only applies to applications
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove this
+    section altogether -->
+    <legalnotice> 
+      <title>Sugestii</title> 
+      <para>Pentru a raporta o eroare sau pentru a face o sugestie cu privire la aplicația <application>Închide luminile</application> sau la acest manual, urmați instrucțiunile de pe <ulink url="ghelp:user-guide?feedback-bugs" type="help">pagina de sugestii GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Închide luminile</primary> 
+  </indexterm>
+
+<!-- ==============================Document Body==================-->
+
+<sect1 id="s1-intro">
+ <title>Introducere</title>
+
+<!--synopsis of game-->
+  <para><application>Închide luminile</application> este un joc puzzle, unde obiectivul este de a stinge toate căsuțele de pe tablă. Fiecare apăsare comută starea căsuței apăsate și a vecinilor ei non-diagonali.</para>
+
+<!--running game-->
+   <para>Pentru a rula <application>Închide luminile</application>, selectați <menuchoice><guimenu>Aplicații</guimenu><guisubmenu>Jocuri</guisubmenu><guimenuitem>Închide luminile</guimenuitem></menuchoice>, sau tastați <command>lightsoff</command> în linia de comandă.</para>
+
+<!--part of gnome-games-->
+   <para><application>Închide luminile</application> este inclus în pachetul <filename>gnome-games</filename>, care aparține mediului desktop GNOME. Acest document descrie versiunea 1.0 a lui <application>Închide luminile</application>.</para>
+</sect1>
+
+<sect1 id="s1-playing">
+ <title>Cum se joacă <application>Închide luminile</application></title>
+  <para>Progresați prin nivele fie stingând toate căsuțele dintr-un nivel anume, fie folosind butoanele în formă de săgeată din de parte de jos a jocului. Aceste butoane vă permit să săriți nivele, sau să vă întoarceți la nivele anterioare, fără restricție.</para>
+   <sect2 id="s2-block-moving">
+     <title>Manipularea tablei</title>
+      <para>Există doar o acțiune disponibilă în <application>Închide luminile</application>: apăsarea unei căsuțe de pe tablă. Puteți fie să apăsați căsuța cu mausul, fie să folosiți tastele săgeți pentru a o alege. Prima dată când apăsați o tastă săgeată în timpul unui joc de <application>Închide luminile</application>, va apărea un cursor pe care puteți să îl mutați cu tastatura; apăsarea tastei Enter va apăsa lumina de sub cursor.</para>
+      <para>Când o căsuță este apăsată, ea și toți vecinii ei non-diagonali își vor comuta starea. Obiectivul este de a stinge toate căsuțele de pe tablă.</para>
+   </sect2>
+   <sect2 id="s2-newgame">
+     <title>Începerea unui nou joc</title>
+      <para>Pentru a începe un nou joc, navigați la <menuchoice><guimenu>Joc</guimenu><guimenuitem>Joc nou</guimenuitem></menuchoice>. Progresia nivelelor va fi aceeași și între jocuri și între calculatoare, deci <menuchoice><guimenuitem>Joc nou</guimenuitem></menuchoice> ar trebuie ales doar dacă doriți să vă întoarceți la începutul jocului.</para>
+    </sect2>
+</sect1>
+
+ 
+<sect1 id="s1-customizegame">
+ <title>Personalizarea lui <application>Închide luminile</application></title>
+   <sect2 id="s2-customlook">
+    <title>Personalizarea aspectului lui <application>Închide luminile</application></title>
+    <para>În <menuchoice><guimenu>Joc</guimenu><guimenuitem>Preferințe</guimenuitem></menuchoice>, puteți personaliza aspectul căsuțelor din <application>Închide luminile</application>. Există o varietate de stiluri incluse, unele dintre ele folosind culoarea temei. Aceasta poate fi dezactivată cu opțiunea <guilabel>Folosește culori din tema GNOME</guilabel> din fereastra de preferințe.</para>
+    </sect2>
+   </sect1>
+
+<sect1 id="authors">
+  <title>Autori</title>
+  <para><application>Închide luminile</application> a fost scris de Tim Horton în 2009 și întreținut de atunci de echipa Jocuri Gnome. Acest manual a fost scris de Tim Horton. Pentru a raporta un defect sau pentru a face o sugestie cu privire la acestă aplicație sau la acest manual, urmați instrucțiunile din acest <ulink url="ghelp:user-guide?feedback-bugs" type="help">document</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+</sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="s1-license">
+  <title>Licență</title>
+  <para>Acest program este liber; îl puteți redistribui și/sau modifica în conformitate cu termenii <citetitle><ulink type="help" url="gnome-help:gpl">licenței Publice Generale GNU</ulink></citetitle> așa cum este publicată de Free Software Foundation; fie versiunea 2 a Licenței, fie (la latitudinea dumneavoastră) orice versiune ulterioară.</para>
+  <para>Acest program este distribuit cu speranța că va fi util, dar FĂRĂ NICI O GARANȚIE, fără garanție implicită de vandabilitate și  conformitate unui anumit scop. Pentru mai multe detalii citiți <citetitle>Licența Publică Generală GNU</citetitle>.</para>
+  <para>O copie a <citetitle>GNU General Public License</citetitle> este inclusă ca anexă la <citetitle>Ghidul de utilizare GNOME</citetitle>. Puteți obține, de asemenea, o copie a <citetitle>GNU General Public License</citetitle> de la Free Software Foundation, vizitând <ulink type="http" url="http://www.fsf.org">site-ul lor</ulink> sau scriind la <address> Free Software Foundation, Inc <street> 59 Temple Place </street> - Suite 330 <city> Boston </city>, <state> MA </state><postcode> 02111-1307 </postcode><country> Statele Unite ale Americii </country></address></para>
+ </sect1>
+</article>

@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.26">
+<!ENTITY manrevision "2.26">
+<!ENTITY date "June 2009">
+<!ENTITY app "<application>Mahjongg</application>">
+<!ENTITY appname "Mahjongg">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ca">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+  
+    <title>Manual del <application>Mahjongg</application></title>
+    <abstract role="description">
+      <para>El Mahjongg és una versió solitària del clàssic joc de fitxes orientals. Aquest implica netejar el màxim possible del tauler fent coincidir les fitxes corresponents i traient-les del joc.</para>
+    </abstract>
+    <copyright>
+      <year>1998</year>
+      <holder>Free Software Foundation</holder>
+    </copyright>
+    <copyright>
+      <year>2000</year>
+      <holder>Eric Baudais (Autor de la documentació)</holder>
+    </copyright>  
+	    <copyright>
+      <year>2009</year>
+      <holder>Paul Cutler (Documentation Author)</holder>
+    </copyright><copyright><year>2008, 2009</year><holder>Joan Duran (jodufi@gmail.com)</holder></copyright> 
+    
+    <!-- translators: uncomment this:
+    
+  <copyright>
+  <year>2000</year>
+  <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+    -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Projecte de documentació del GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Teniu permís per a copiar, distribuir i/o modificar aquest document, sota els termes de la Llicència de documentació lliure GNU (GFDL), versió 1.1 o qualsevol versió publicada posteriorment per la Free Software Foundation, sense seccions invariants, sense texts de portada i sense texts de contraportada. Podeu trobar una còpia de la GFDL en aquest <ulink type="help" url="ghelp:fdl">enllaç</ulink> o en el fitxer COPYING-DOCS distribuït amb aquest manual.</para>
+         <para>Aquest manual forma part d'una col·lecció de manuals del GNOME distribuïts sota la GFDL. Si voleu distribuir aquest manual independentment de la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal com es descriu a la secció 6 de la llicència.</para>
+
+	<para>Molts dels noms que les empreses utilitzen per a distingir els seus productes i serveis es consideren marques comercials. Quan aquests noms apareguin en qualsevol documentació del GNOME, si els membres del Projecte de documentació del GNOME han estat avisats pel que fa a les marques, els noms apareixeran en majúscules o amb les inicials en majúscules.</para>
+
+	<para>EL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT S'OFEREIXEN SOTA ELS TERMES DE LA LLICÈNCIA DE DOCUMENTACIÓ LLIURE DE GNU, TENINT EN COMPTE QUE: <orderedlist>
+		<listitem>
+		  <para>EL DOCUMENT S'OFEREIX «TAL COM ÉS», SENSE CAP TIPUS DE GARANTIA, NI EXPLÍCITA NI IMPLÍCITA; AIXÒ INCLOU, SENSE LIMITAR-S'HI, LES GARANTIES QUE EL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT NO TINGUI DEFECTES, SIGUI COMERCIALITZABLE, SIGUI ADEQUAT PER A UN ÚS CONCRET O NO INFRINGEIXI CAP LLEI. TOT EL RISC PEL QUE FA A LA QUALITAT, EXACTITUD I RENDIMENT DEL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT ÉS VOSTRE. EN CAS QUE EL DOCUMENT RESULTÉS DEFECTUÓS EN QUALSEVOL ASPECTE, VÓS (NO PAS L'ESCRIPTOR INICIAL, L'AUTOR O CAP ALTRE COL·LABORADOR) ASSUMIU TOT EL COST DE MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA; I </para>
+		</listitem>
+		<listitem>
+		  <para>EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGUI PER AGREUJAMENT (INCLOENT-HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR ORIGINAL, QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA VERSIÓ MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN RESPONSABLES DAVANT DE NINGÚ PER CAP DANY DIRECTE, INDIRECTE, ESPECIAL, ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITAR-S'HI, ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FEINA, FALLADA O MALFUNCIONAMENT DE L'ORDINADOR, O QUALSEVOL ALTRA PÈRDUA O DANY RELACIONAT AMB L'ÚS DEL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT, FINS I TOT SI S'HA INFORMAT AQUESTA PART DE LA POSSIBILITAT D'AQUESTS DANYS.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer">
+	<firstname>Eric</firstname> 
+	<surname>Baudais</surname> 
+	<affiliation> 
+	  <address> <email>baudais@okstate.edu</email> </address> 
+	</affiliation> 
+      </author> 
+	        <author role="maintainer">
+	<firstname>Artur</firstname> 
+	<surname>Szymanski</surname> 
+	<affiliation> 
+	</affiliation> 
+      </author>
+	        <author role="maintainer">
+	<firstname>Paul</firstname> 
+	<surname>Cutler</surname> 
+	<affiliation> 
+		<orgname>Projecte de documentació del GNOME</orgname>
+	  <address> <email>pcutler@gnome.org</email> </address> 
+	</affiliation> 
+      </author> 
+
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="candidate"/>
+	
+	    <revhistory>
+      <!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+
+      <revision>
+        <revnumber>Mahjongg Manual V 2.26</revnumber>
+        <date>2009-06-16</date>
+        <revdescription>
+          <para role="author">Paul Cutler</para>
+          <para role="publisher">Projecte de documentació del GNOME</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>Mahjongg Manual V 2.26</revnumber>
+        <date>2009-06-16</date>
+        <revdescription>
+          <para role="author">Artur Szymanski</para>
+        </revdescription>
+      </revision>	  
+      <revision> 
+	<revnumber>Mahjongg Manual V2.10;</revnumber> 
+	<date>Juny de 2005</date> 
+	<revdescription> 
+	  <para role="author">Eric Baudais <email>baudais@okstate.edu</email></para>
+	  <para role="publisher">Projecte de documentació del GNOME</para>
+	</revdescription> 
+	</revision>
+	</revhistory>
+
+    <releaseinfo>This manual describes version 2.26 of Mahjongg.
+    </releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Comentaris</title> 
+      <para>Per a informar d'un error o fer algun suggeriment sobre el <application>Mahjongg</application> o aquest manual, seguiu les indicacions a la <ulink url="ghelp:user-guide?feedback-bugs" type="help">pàgina de comentaris del GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Mahjongg</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="intro">
+    <title>Introducció</title>
+
+    <para>
+      <application>Mahjongg</application> is a solitaire (one player) version of the classic Eastern tile game, 
+      Mahjongg.  It has all the functionality you expect from a tile or 
+      card game.  You can change the type of tiles, the background, and 
+      the difficulty level, among other things, in the 
+      <link linkend="prefs">Preferences</link> dialog.  
+      Other features, like the <link linkend="pause"><guibutton>Pause
+      </guibutton> button</link>, make the game more 
+      competitive when you play against the clock. 
+    </para>
+
+    <sect2 id="history">
+      <title>Breu història del Mahjongg</title>
+
+      <!-- FIXME: Explain more about solitaire version.-->
+      <para>Els jocs de fitxes del Mahjongg s'utilitzen per a jugar moltes variacions del joc original. La versió del Mahjongg que jugareu és el solitari. Cada fitxa també té un <ulink type="http" url="http://www.xs4all.nl/~korntner/mahjong/fortune/index.html">significat</ulink> associat a ella.</para>
+
+      <para>
+	Mahjongg's origins are not fully known, but many theories have been put 
+	forth.  One such theory says that Noah played Mahjongg on the ark because 
+	the East hand is dominant, presumably the direction the rains came, in the 
+	flood.  Another theory says that the Chinese philosopher, Confucius, made 
+	the game.  The three <quote>Cardinal</quote> tiles have the same names as 
+	his three Cardinal virtues, Chung (middle) the Red, Fa (prosperity) the 
+	Green, and Po (white) the White, corresponding with Benevolence, Sincerity, 
+	and Filial Piety.  Still another theory says that Mahjongg is derived from 
+	other Chinese games.  <quote>Ya Pei</quote> is played with 32 cards made of 
+	wood or ivory and have the same oblong shape as present day Mahjongg tiles.  
+	<quote>Ma Tiae</quote> is played with 40 paper cards, similar in appearance, 
+	numbering 1 to 9 in four different suits along with the flower cards.  It has 
+	been suggested that two brothers made the game, around 1850 A.D., from a 
+	combination of these two games.
+      </para>
+
+      <para>A principis de 1900, el Mahjongg es va introduir els clubs anglesos de Xangai. El senyor Babcock va començar a importar fitxes del Mahjongg al món occidental. Va simplificar les regles a les més bàsiques i fins i tot va afegir-hi números aràbics a les fitxes. El 1923 va ser l'any de màxima esplendor per al Mahjongg, amb les companyies més importants de jocs, com la Parker Bros., la Milton Bradley i la United States Playing Card, que importaven jocs de fitxes del Mahjongg a milers.</para>
+
+      <para>Van aparèixer moltes regles diferents i el 1924 es va formar el Comitè d'estandardització de les regles americanes oficials del Mah-Jongg per a escriure un llibre de regles. Encara avui molts clubs juguen amb regles diferents i a vegades afegeixen fitxes amb flors o comodins. Els jugadors de la versió per a ordinador comencen a intrigar-se amb la bellesa i els detalls dels jocs creats a mà de les dècades de 1920 i 1930 i cerquen fitxes en botiges d'antiguitats i mercats petits. Molts jugadors nous s'estan introduint al joc a través de la versió solitària i lentament s'adonen de la intriga i desafiament que el joc tradicional ofereix. <footnote>
+	  <para>Parts d'aquest text són una adaptació del <ulink type="http" url="http://www.mahjongmuseum.com/">Museu del Mah Jong.</ulink></para>
+	</footnote></para>
+    </sect2>
+  </sect1>
+  
+   <!-- ============= Playing Mahjongg ============================= -->
+
+  <sect1 id="usage">
+    <title>Jugar al Mahjongg</title>
+
+    <para>
+      You start with five levels of tiles which are stacked so some are 
+      covered up by the tiles on top.  The harder the level you set in the 
+      <link linkend="prefs"><interface>Preferences</interface> dialog</link>, 
+      the more tiles are covered when the game starts.  The object of 
+      <application>Mahjongg</application> is to remove all the tiles 
+      from the game.  To remove tiles you have to find matching pairs which 
+      look alike.  A matching tile will usually have the same number of buttons 
+      or markings on it or will look similar to each other.
+    </para>
+
+    <para>
+      As an example, the highlighted tile, in the <link linkend="mahjongg-fig">
+      figure below</link>, has six buttons.  The matching tile is the one which 
+      also has six buttons.  The tile is on the right-hand end of the third row from the bottom and there is another near the top of the fourth row from the bottom.
+      If you want to match the tile on the top level, you need to look for the 
+      tile with the same green bamboo symbols.  Do you see a matching tile yet?  
+      There are three tiles, which are visible, that match the tile on the top 
+      level.  Two are to the left and the lower right. The third one is on the top row, but you can't
+      remove that tile yet because the tile isn't 
+      on the outside of the stack of tiles.  Later you will learn which 
+      tiles can be removed and which tiles can't be removed even though they match.
+      Find the other two matching tiles, which are visible, on your own.
+    </para>
+
+    <figure id="mahjongg-fig">
+      <title>Finestra principal del Mahjongg</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/mahjongg.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Finestra principal.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>
+      <application>Mahjongg</application> is played by 
+      clicking on two matching tiles that are then removed. Play
+      continues until all the tiles are removed or there are no
+      available pairs.
+    </para>
+
+    <para>Només es poden seleccionar les fitxes a l'extrem esquerra i dret de cada nivell. Això és perquè no podeu treure qualsevol fitxa que no estigui als extrems esquerra i dret. Si les fitxes estan en un nivell diferent i a les cantonades esquerra i dreta, aquestes es poden treure quan trobeu una altra fitxa coincident.</para>
+
+    <para>
+      If you can't match any more tiles, a 
+      dialog will appear telling you no more tiles can be matched and giving 
+      you the option of shuffling the tiles (adding an additional 60 seconds 
+      penalty to the game clock), starting a new game or undoing your
+      last move (although you may have to undo many more moves to find your mistake).
+    </para>
+
+    <figure id="info-fig1">
+      <title>Diàleg d'informació</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/no-move.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Diàleg d'informació.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+    
+    <sect2 id="toolbar">
+      <title>Barra d'eines</title>
+
+      <para>
+	The <interface>toolbar</interface>, located below the
+	<interface>Menu Bar</interface>, contains the following buttons:
+      </para>
+      
+      <variablelist>
+	<varlistentry>
+	  <term><guibutton>Nou</guibutton></term>
+	  <listitem>
+	    <para>Aquest botó inicia una partida nova amb els paràmetres actuals.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Reinicia</guibutton></term>
+	  <listitem>
+	    <para>Aquest botó reinicia la partida actual al començament sense barrejar les fitxes.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry id="pause">
+	  <term><guibutton>Fes una pausa</guibutton></term>
+	  <listitem>
+	    <para>Aquest botó fa una pausa a la partida. Quan la partida està en pausa, el rellotge, a la cantonada inferior dreta de la <interface>finestra principal</interface>, s'atura i no podeu veure les cares de les fitxes.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Undo Move</guibutton></term>
+	  <listitem>
+	    <para>Aquest botó reemplaça dues fitxes que heu tret, fins que arribeu al començament de la partida.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Redo Move</guibutton></term>
+	  <listitem>
+	    <para>
+	      This button replays your previous move, the <guibutton>Undo Move</guibutton> 
+	      button took back.
+	    </para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Pista</guibutton></term>
+	  <listitem>
+	    <para>
+	      This button gives you a pair of matching tiles to remove. Each time you use it,
+	      30 seconds penalty will be added to the game clock. 
+	    </para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+      <para>La barra d'estat a la part inferior de la finestra us proporciona informació de l'estat actual de la partida:</para>
+      <variablelist>
+	<varlistentry>
+	  <term><guilabel>Fitxes que queden:</guilabel></term>
+	  <listitem>
+	    <para>Mostra el número de fitxes que queden per a coincidir.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guilabel>Moviments que queden:</guilabel></term>
+	  <listitem>
+	    <para>
+	      This shows the number 
+	      of possible matches you can make.
+	    </para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guilabel>Time:</guilabel></term>
+	  <listitem>
+	    <para>
+	      This shows the elapsed time from game start.
+	    </para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+      
+      <figure id="toolbar-fig">
+	<title>Barra d'eines del Mahjongg</title>
+	<screenshot>
+	   <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/toolbar.png" format="PNG" srccredit="Eric Baudais"/>
+	  </imageobject>
+    <textobject> 
+      <phrase>Barra d'eines.</phrase> 
+    </textobject> 
+  </mediaobject>
+	</screenshot>
+      </figure>
+      
+    </sect2>
+    
+    <sect2 id="menubar">
+      <title>Menús</title>
+      <para>La barra de menú, situada a la part superior de la <interface>finestra principal</interface>, conté els menús següents:</para>
+
+      <variablelist>
+	<varlistentry>
+	  <term><guimenu>Partida</guimenu></term>
+	  <listitem>
+	    <para>El menú conté: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para>
+		    <menuchoice>
+		      <shortcut>
+			<keycap>Ctrl-N</keycap>
+		      </shortcut>
+		      <guimenuitem>New</guimenuitem>
+		    </menuchoice> — 
+		    This item starts a new game.
+		  </para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Reinicia</guimenuitem></menuchoice> — Aquest element reinicia la partida actual a l'inici.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Fes una pausa</guimenuitem></menuchoice> — Fa una pausa a la partida, atura el rellotge i oculta les fitxes.</para>
+		</listitem>
+		<listitem>
+		  <para>
+		    <menuchoice>
+		      <shortcut>
+			<keycap>Ctrl-Z</keycap>
+		      </shortcut>
+		      <guimenuitem>Undo move</guimenuitem>
+		    </menuchoice> — 
+		    This item takes back two tiles you removed until 
+		    you reach the beginning of the game.
+		  </para>
+		</listitem>
+		<listitem>
+		  <para>
+		    <menuchoice>
+		      <shortcut>
+			<keycap>Ctrl-R</keycap>
+		      </shortcut>
+		      <guimenuitem>Redo move</guimenuitem>
+		    </menuchoice> — 
+		    This item replays your previous move the <guibutton>Undo</guibutton> 
+		    button took back.  When you reach the state you started undoing the 
+		    message <quote>No more redo!</quote> appears at the bottom left corner 
+		    of the <interface>Main Window</interface>.
+		  </para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Pista</guimenuitem></menuchoice> — Aquest element us indica una parella de fitxes coincidents a treure.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Puntuacions</guimenuitem></menuchoice> — Aquest element fa aparèixer un diàleg on es mostren les deu millors puntuacions. El diàleg té les puntuacions identificades pel nom de l'usuari i el temps requerit per a completar la partida.</para>
+		</listitem>
+		<listitem>
+		  <para id="quit">
+		    <menuchoice>
+		      <shortcut>
+			<keycap>Ctrl-Q</keycap>
+		      </shortcut>
+		      <guimenuitem>Quit</guimenuitem>
+		    </menuchoice> — 
+		    This item allows you to quit the game.
+		  </para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term><guimenu>Paràmetres</guimenu></term>
+	  <listitem>
+	    <para>El menú conté: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para>
+		    <menuchoice>
+		      <shortcut>
+			<keycap>F11</keycap>
+		      </shortcut>
+		      <guimenuitem>Fullscreen</guimenuitem>
+		    </menuchoice> — 
+		    This item allows to play the game in fullscreen mode. 
+		    To leave fullscreen press <keycap>F11</keycap> or 
+		    click <guibutton>Leave Fullscreen</guibutton> button on
+		    <interface>toolbar</interface>.    
+		  </para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Barra d'eines</guimenuitem></menuchoice> — Aquest element determina si es mostra la <link linkend="toolbar"><interface>barra d'eines</interface></link>. Si l'element està activat, es mostrarà la <link linkend="toolbar"><interface>barra d'eines</interface></link> a l'últim lloc on la vau posar. Si l'element està desactivat, no es mostrarà la <link linkend="toolbar"><interface>barra d'eines</interface></link>.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Preferències</guimenuitem></menuchoice> — Aquest element us mostra el diàleg de <link linkend="prefs">Preferències</link>.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guimenu>Ajuda</guimenu></term>
+	  <listitem>
+	    <para>El menú conté: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para>
+		    <menuchoice>
+                      <shortcut>
+			<keycap>F1</keycap>
+		      </shortcut>
+		      <guimenuitem>Contents</guimenuitem>
+		    </menuchoice> — 
+		    This item shows this manual.
+		  </para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Quant a</guimenuitem></menuchoice> — Aquest element us proporciona informació bàsica sobre el <application>Mahjongg</application>, com els noms dels autors i el número de versió de l'aplicació.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+
+    </sect2>
+  </sect1>
+  
+   <!-- ============= Customization ============================= -->
+
+  <sect1 id="prefs">
+    <title>Personalització</title>
+    <para>Per a canviar els paràmetres de l'aplicació, seleccioneu <guimenuitem>Preferències</guimenuitem> en el menú <guimenu>Paràmetres</guimenu>. Això obre el <link linkend="preferences-fig">diàleg de <interface>Preferències</interface></link>.</para>
+    
+    <figure id="preferences-fig">
+<!-- FIXME: This dialog is the old one. -->
+<!-- ALAN: looks correct like version 2.10 to me -->
+      <title>Diàleg de preferències</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Diàleg de preferències.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Totes les opcions s'apliquen i es desen immediatament.</para>
+    
+    <para>Les propietats del diàleg de <interface>Preferències </interface> són:</para>
+      
+      <itemizedlist mark="opencircle">
+	<listitem>
+	  <para><guilabel>Fitxes:</guilabel> — Seleccioneu l'aparença de les fitxes mitjançant aquesta llista.</para>
+	</listitem>
+	<listitem>
+	  <para><guilabel>Seleccioneu el mapa:</guilabel> — Canvieu la dificultat de la partida canviant la manera d'apilar les fitxes. La versió més dispersa (fàcil) us permet veure més fitxes mentre que la versió més compacte (difícil) no us permet veure gaires fitxes.</para>
+	</listitem>
+	<listitem>
+	  <para><guilabel>Color de fons:</guilabel> — Canvieu el color de fons mostrant un <interface>seleccionador de color</interface> que us permet seleccionar un color nou.</para>
+	</listitem>
+      </itemizedlist>
+
+    <para>Per a modificar la mida de les fitxes, simplement canvieu la mida de la finestra de forma normal. Les fitxes s'expandiran per a omplir-la.</para>
+
+  </sect1>
+  
+<!-- ALAN: Better to leave this section out than to say something unhelpful 
+and risk annoying the user.  
+ <sect1 id="bugs">
+  <title>Known Bugs and Limitations</title>
+  <para>
+   This application has no known bugs.
+  </para>
+ </sect1>
+-->
+
+ <!-- ============= Authors ============================= -->
+
+ <sect1 id="authors">
+  <title>Autors</title>
+  <para>
+   <application>Mahjongg</application> was written by Francisco 
+   Bustamante (<email>pancho@nuclecu.unam.mx</email>), Michael Meeks 
+   (<email>mmeeks@gnu.org</email>), Max Watson, Heinz Hempe, and 
+   Philippe Chavin.  Tiles for <application>Mahjongg</application>
+   were made by Jonathan Buzzard and Max Watson.    This manual was written by Eric Baudais
+   (<email>baudais@okstate.edu</email>).
+   To report a bug or make a suggestion regarding this application or
+   this manual, follow the directions in this 
+   <ulink url="ghelp:user-guide?feedback-bugs" type="help">document</ulink>.
+  </para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Llicència</title>
+  <para>Aquest programa és programari lliure; podeu redistribuir-lo i/o modificar-lo sota els termes de la <citetitle>Llicència pública general de GNU</citetitle> tal com publica la Free Software Foundation; tant en la versió 2 de la llicència, o (a la vostra opció) una versió posterior.</para>
+  <para>Aquest programa es distribueix amb l'esperança de que sigui útil, però SENSE CAP GARANTIA; fins i tot sense la garantia implícita de COMERCIALITZACIÓ o ADEQUACIÓ A UN ÚS CONCRET. Per a més detalls vegeu la <citetitle>Llicència pública general de GNU</citetitle>.</para>
+  <para>S'inclou una còpia de la <citetitle>Llicència pública general de GNU</citetitle> en l'apèndix de la <citetitle>Guia d'usuaris del GNOME</citetitle>. També podeu obtenir una copia de la <citetitle>Llicència pública general de GNU</citetitle> de la Free Software Foundation visitant el <ulink type="http" url="http://www.fsf.org">seu lloc web</ulink> o escrivint a <address> Free Software Foundation, Inc. <street>51 Franklin Street, Fifth Floor</street><city>Boston</city>, <state>MA</state><postcode>02110-1301</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

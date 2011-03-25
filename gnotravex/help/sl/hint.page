@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="hint" xml:lang="sl">
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Uporabite namige ali samodejno rešite igro.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-23" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+  </info>
+  <title>Namigi</title>
+
+  <note style="warning">
+    <p>Če uporabite enega od naslednjih načinov za dokončanje igre, vaši rezultati ne bodo vključenimi med najboljše rezultate.</p>
+  </note>
+
+  <section id="hint-hints">
+  
+    <title>Uporabi sistem namigov</title>
+    
+    <p>Kadarkoli med igro lahko uporabite vgrajen sistem namigov, če ne veste kako začeti ali kam premakniti kos.</p>
+    <p>Sistem bo premaknil en kos iz desnega polja na njegovo pravilno mesto na levem polju.</p>
+    <p>Za uporabo sistema namigov izvedite nekaj od naslednjega:</p>
+    <list>
+      <item>
+        <p>Pritisnite <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Izberite <guiseq><gui style="menu">Igra</gui><gui style="menuitem">Namig</gui></guiseq>.</p>
+      </item>
+    </list>
+  </section>
+  <section id="hint-solve">
+    <title>Reši igro</title>
+    <p>V primeru da v igri obtičite ali pa jo želite samodejno rešiti, izberite <guiseq><gui style="menu">Igra</gui><gui style="menuitem">Reši</gui></guiseq>.</p>
+  </section>
+</page>

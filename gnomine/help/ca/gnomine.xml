@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.14">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "January 2006">
+<!ENTITY app "<application>Mines</application>">
+<!ENTITY appname "Mines">
+<!ENTITY version "2.14">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ca">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Manual del <application>Mines</application></title>
+    <abstract role="description">
+      <para>El Mines és l'aposta del GNOME per al popular trencaclosques pescamines, que implica evitar les mines mentre es reben pistes sobre la ubicació d'aquestes.</para>
+    </abstract>
+    <copyright>
+      <year>2006</year>
+      <holder>Callum McKenzie</holder>
+<!--   Based on an earlier manual by   <holder>Tim Riehle</holder> -->
+    </copyright><copyright><year>2007, 2008</year><holder>Joan Duran (jodufi@gmail.com)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Projecte de documentació del GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+        <para>Aquest document té una llicència doble. Podeu distribuir-lo i/o modificar-lo sota els termes de la <ulink type="help" url="gnome-help:gpl">Llicència pública general de GNU</ulink>, sota la qual <link linkend="license">està llicenciat el programa</link>, o podeu distribuir-lo sota els termes de la Llicència de documentació lliure GNU. Teniu una copia d'aquesta llicència a continuació.</para>
+
+	<para>Teniu permís per a copiar, distribuir i/o modificar aquest document, sota els termes de la Llicència de documentació lliure GNU (GFDL), versió 1.1 o qualsevol versió publicada posteriorment per la Free Software Foundation, sense seccions invariants, sense texts de portada i sense texts de contraportada. Podeu trobar una còpia de la GFDL en aquest <ulink type="help" url="ghelp:fdl">enllaç</ulink> o en el fitxer COPYING-DOCS distribuït amb aquest manual.</para>
+         <para>Aquest manual forma part d'una col·lecció de manuals del GNOME distribuïts sota la GFDL. Si voleu distribuir aquest manual independentment de la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal com es descriu a la secció 6 de la llicència.</para>
+
+	<para>Molts dels noms que les empreses utilitzen per a distingir els seus productes i serveis es consideren marques comercials. Quan aquests noms apareguin en qualsevol documentació del GNOME, si els membres del Projecte de documentació del GNOME han estat avisats pel que fa a les marques, els noms apareixeran en majúscules o amb les inicials en majúscules.</para>
+
+	<para>EL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT S'OFEREIXEN SOTA ELS TERMES DE LA LLICÈNCIA DE DOCUMENTACIÓ LLIURE DE GNU, TENINT EN COMPTE QUE: <orderedlist>
+		<listitem>
+		  <para>EL DOCUMENT S'OFEREIX «TAL COM ÉS», SENSE CAP TIPUS DE GARANTIA, NI EXPLÍCITA NI IMPLÍCITA; AIXÒ INCLOU, SENSE LIMITAR-S'HI, LES GARANTIES QUE EL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT NO TINGUI DEFECTES, SIGUI COMERCIALITZABLE, SIGUI ADEQUAT PER A UN ÚS CONCRET O NO INFRINGEIXI CAP LLEI. TOT EL RISC PEL QUE FA A LA QUALITAT, EXACTITUD I RENDIMENT DEL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT ÉS VOSTRE. EN CAS QUE EL DOCUMENT RESULTÉS DEFECTUÓS EN QUALSEVOL ASPECTE, VÓS (NO PAS L'ESCRIPTOR INICIAL, L'AUTOR O CAP ALTRE COL·LABORADOR) ASSUMIU TOT EL COST DE MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA; I </para>
+		</listitem>
+		<listitem>
+		  <para>EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGUI PER AGREUJAMENT (INCLOENT-HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR ORIGINAL, QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA VERSIÓ MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN RESPONSABLES DAVANT DE NINGÚ PER CAP DANY DIRECTE, INDIRECTE, ESPECIAL, ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITAR-S'HI, ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FEINA, FALLADA O MALFUNCIONAMENT DE L'ORDINADOR, O QUALSEVOL ALTRA PÈRDUA O DANY RELACIONAT AMB L'ÚS DEL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT, FINS I TOT SI S'HA INFORMAT AQUESTA PART DE LA POSSIBILITAT D'AQUESTS DANYS.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Callum</firstname> 
+	<surname>McKenzie</surname> 
+	<affiliation> 
+	  <address> <email>callum@spooky-possum.org</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+	
+    <revhistory>
+      <revision> 
+	<revnumber>Manual del Mines (versió 2.9)</revnumber> 
+	<date>Gener de 2006</date> 
+	<revdescription> 
+	  <para role="author">Callum McKenzie <email>callum@spooky-possum.org</email></para>
+	  <para role="publisher">Projecte de documentació del GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Aquest manual descriu la versió 2.14 del Mines.</releaseinfo>
+    <!-- The following feedback information only applies to applications
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Comentaris</title> 
+      <para>Per a informar d'un error o fer algun suggeriment quant al <application>Mines</application> o aquest manual, seguiu les indicacions a la <ulink url="http://bugzilla.gnome.org">base de dades d'errors del GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Mines</primary> 
+  </indexterm>
+  
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+  <sect1 id="intro">
+    <title>Introducció</title>
+
+    <para>El <application>Mines</application> és un trencaclosques on heu de localitzar mines flotant en un oceà utilitzant només el cervell i una xic de sort.</para>
+
+    <para>La partida comença amb una graella plena de caselles i sense saber què hi ha en elles. En fer clic en una casella descobrireu què hi ha en ella: pot ser l'oceà buit o una mina. Si trobeu una mina succeeixen coses dolentes i s'acaba la partida. Si trobeu una casella buida, sobreviviu i podeu tornar-ho a intentar. Us donem una mica d'ajuda; si trobeu una casella buida d'oceà apareixerà un número que indica les mines que hi ha en les caselles adjacents (o cap número si no hi ha mines al voltant). Quan tingueu algunes caselles buides podreu començar a deduir quines caselles tenen mines i quines no. Guanyareu la partida quan hàgiu descobert totes les caselles sense mines i marcat totes les caselles amb mines.</para>
+
+    <figure id="main-window">
+      <title>Les etapes de la partida: inici, en joc, perdre i guanyar.</title>
+    	    <mediaobject><imageobject>
+    	      <imagedata fileref="figures/main-window.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <para>Per a marcar una casella com que té una mina feu-hi clic amb el botó secundari i s'hi afegirà una bandera. Si feu clic en una casella amb un número i heu marcat aquest número de banderes en les caselles adjacents, llavors es descobriran la resta de caselles. Si no heu marcat correctament les mines es produirà una explosió i s'acabarà la partida. Les caselles sense mines adjacents (les caselles buides) descobriran automàticament les seves caselles adjacents.</para>
+
+    <figure id="status-bar">
+      <title>Informació important.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/statusbar.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <para>El temps és important. Per a ser bo en aquest joc heu de treballar tant ràpidament com correctament. El rellotge s'aturarà quan trobeu totes les mines i hàgiu descobert totes les caselles sense mines. La puntuació és el temps que tardeu; quant menys millor.</para>
+
+    <para>A la part inferior dreta de la finestra es mostra el temps que tardeu. Al seu costat, a l'esquerra, hi ha un comptador amb el número de mines que heu marcat i el número total de mines ocultes en el tauler.</para>
+
+    <figure id="faces">
+      <title>La cara groga mostra com ho esteu fent de bé.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/faces.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+    <!-- Face graphics image. -->
+
+  </sect1>
+
+
+  <sect1 id="details">
+    <title>Els detalls</title>
+
+    <para>Aquesta secció us proporciona informació sobre els controls i els elements del menú importants. Si necessiteu ajuda per a saber on estan les mines, vegeu la <link linkend="strategy">secció d'estratègia</link>.</para>
+
+    <sect2>
+      <title>L'objectiu</title>
+
+      <para>Comenceu en un oceà de caselles sense saber el seu contingut, heu de marcar totes les caselles amb mines i descobrir totes les caselles buides. Realment no heu de marcar les caselles amb mines, però si ho feu facilita molt més la partida. Un cop hàgiu descobert totes les caselles sense mines, es marcaran automàticament les caselles restants amb mines.</para>
+
+      <para>Si feu clic amb el botó principal a una mina o auto descobriu una casella amb una mina perdreu la partida. Per a evitar accidents, no podeu auto descobrir al voltant d'una casella fins que el número de mines marcades sigui igual al número indicat en la casella.</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Utilització del ratolí</title>
+      
+      <informaltable>
+        <tgroup cols="2">
+	<!-- FIXME: proper headers. -->
+	  <thead>
+	    <row>
+	      <entry>Acció</entry><entry>Resultat</entry>
+	    </row>
+	  </thead>
+	  <tbody>
+	    <row>
+	      <entry>Fer clic amb el botó principal a una casella no descoberta.</entry>
+	      <entry>Descobreix el contingut de la casella. Per a bé o per a mal.</entry>
+	    </row>
+	    <row>
+	      <entry>Fer clic amb el botó principal a una casella descoberta.</entry>
+	      <entry>Auto descobreix. Descobreix les caselles sense marcar al voltant de la casella on s'ha fet clic, però només si hi ha les mateixes caselles marcades que indica la casella.</entry>
+	    </row>
+	    <row>
+	      <entry>Fer clic amb el botó secundari a una casella no descoberta.</entry>
+	      <entry>Marca la casella com una mina. Si ja està marcada, la marca desapareixerà.</entry>
+	    </row>
+	  </tbody>
+	</tgroup>
+      </informaltable>
+
+      <tip><para>Si esteu acostumat als controls tradicionals del ratolí, no us preocupeu, encara funcionen.</para></tip>
+    </sect2>
+
+    <sect2>
+      <title>Mida i dificultat de la partida</title>
+
+      <para>Podeu canviar la mida del tauler si seleccioneu l'opció <menuchoice><guimenu>Paràmetres</guimenu><guimenuitem>Preferències</guimenuitem></menuchoice>. Les mides més grans, òbviament, requereixen més temps i més concentració. Els taulers petits són més frenètics. Es pot escollir entre les mides Petit, Mitjà, Gran i Personalitzat.</para> 
+
+    <figure id="preferences-img">
+      <title>El diàleg de preferències.</title>
+    	    <mediaobject><imageobject>
+	      <imagedata fileref="figures/preferences.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+      <para>En la part dreta del diàleg hi ha tres paràmetres per a controlar la mida personalitzada. Horitzontal i Vertical són l'amplada i l'alçada, en caselles, de la graella desitjada. El número de mines és - òbviament - el número de mines que heu de trobar. Si establiu aquest número massa alt o massa baix llavors la partida serà molt fàcil. El número de mines està limitat a una mica menys del número total de caselles.</para>
+
+    </sect2>
+    
+    <sect2>
+      <title>Banderes «no n'estic segur»</title>
+
+      <informalfigure id="imnotsureflagsimg">
+    	    <mediaobject><imageobject>
+  	      <imagedata fileref="figures/imnotsureflagscheckbox.png" format="PNG"/>
+	    </imageobject></mediaobject>
+      </informalfigure>
+
+      <para>Hi ha un quadre de verificació en el diàleg de preferències anomenada Utilitza banderes «no n'estic segur». Si l'habiliteu, quan feu clic amb el botó secundari a una casella, aquesta canviarà entre les banderes normals utilitzats per a marcar una casella amb mina, una bandera amb signe d'interrogació i sense bandera. Aquesta bandera nova us ajuda a raonar, per a marcar caselles que penseu que poden ser una mina però que no n'esteu segur. Aquestes banderes no tenen cap efecte en la partida; encara heu d'utilitzar el número adequat de banderes vermelles per a poder netejar al voltant d'una casella numerada.</para>
+
+      <figure id="flags-img">
+	<title>La seqüència de banderes quan s'habilita l'opció banderes «no n'estic segur».</title>
+    	    <mediaobject><imageobject>
+  	      <imagedata fileref="figures/flags.png" format="PNG"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+    </sect2>
+
+    <sect2>
+      <title>Utilització de l'avís de «massa banderes»</title>
+
+      <para>L'altre quadre de verificació en el diàleg de preferències s'anomena Fes servir l'avís de «massa banderes». Aquesta característica us mostrarà un avís quan hàgiu marcat masses banderes. Aquest està inhabilitat per defecte, ja que proporciona massa ajuda i pot ser considerat com «fer trampa».</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Pistes</title>
+    
+      <para>Si us quedeu encallat - és comú acabar amb dues opcions que no es poden resoldre lògicament - podeu provar d'endevinar-ho o demanar una pista. Quan seleccioneu <guimenuitem>Pista</guimenuitem> en el menú <guimenu>Partida</guimenu> es mostrarà una casella (i les adjacents si està buida). La selecció de la casella és aleatòria, però pot ser d'ajuda. S'afegeix una penalització de 10 segons al temps quan utilitzeu una pista.</para>
+
+    </sect2>
+
+    <sect2>
+      <title>Puntuacions màximes</title>
+
+      <para>Si la vostra puntuació està entre les deu millors apareixereu en la llista de les millors puntuacions i tindreu l'oportunitat de canviar el nom enregistrat en la taula de puntuacions màximes. Més tard també podeu consultar les puntuacions si seleccioneu <guimenuitem>Puntuacions</guimenuitem> en el menú <guimenu>Partida</guimenu>. Un menú desplegable en la part superior del diàleg us permet visualitzar les puntuacions d'altres mides de tauler.</para>
+
+    <figure id="high-score-img">
+      <title>El diàleg de puntuacions màximes.</title>
+    	    <mediaobject><imageobject>
+	    <imagedata fileref="figures/highscores.png" format="PNG"/>
+	    </imageobject></mediaobject>
+    </figure>
+
+      <tip>
+        <para>Les puntuacions màximes de la mida personalitzada no tenen interès. Qualsevol jugador pot fer la mida del tauler més petita i aconseguir un millor temps. Si sempre jugueu a una mida personalitzada en concret llavors us dirà els vostres millors temps. Aquesta és l'única raó perquè s'enregistren aquestes puntuacions.</para>
+      </tip>
+    </sect2>
+
+    <sect2>
+      <title>Mida de la finestra</title>
+      
+      <para>Si canvieu la mida de la finestra augmentarà o disminuirà la mida de les caselles per a ajustar-s'hi. Si voleu fer el màxim ús de la pantalla podeu utilitzar l'opció <guimenuitem>Pantalla completa</guimenuitem> en el menú <guimenu>Paràmetres</guimenu>. També podeu utilitzar la tecla <keycap>F11</keycap> per a commutar el mode de pantalla completa.</para>
+    </sect2>
+
+    <sect2>
+      <title>Fer una pausa durant la partida</title>
+
+      <para>La partida farà una pausa automàticament quan comenceu a utilitzar una altra finestra, o si seleccioneu <guimenuitem>Fes una pausa</guimenuitem> en el menú <guimenu>Partida</guimenu>. L'àrea de la partida desapareixerà de manera que no podreu pensar moviments mentre el rellotge està en pausa. Per a continuar la partida premeu el botó «Premeu per a continuar».</para>
+    </sect2>
+
+  </sect1>
+
+ <!-- ================ Usage ================================ -->
+
+  <sect1 id="strategy">
+    <title>Estratègia</title>
+
+    <para>La primera meitat d'aquesta secció explica les bases per a deduir on hi ha mines. Si ja esteu acostumat a com jugar al joc, salteu a la subsecció de <link linkend="advanced">Situacions avançades</link>.</para>
+
+    <sect2>
+      <title>Les bases</title>
+      <para>Aquestes són algunes situacions que poden ser increïblement òbvies, però si esteu descobrint com jugar al joc us podrien ser útils. El primer cas és quan teniu una casella coberta aïllada i la majora de les caselles al voltant tenen un 1. Aquesta casella coberta és una mina.</para>
+
+      <figure>
+        <title>El cas més simple.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-1.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>El següent cas és quan teniu dues caselles adjacents cobertes i les dues caselles d'un costat estan marcades amb un 2. Si no tenen més veïns coberts, llavors les dues caselles són mines.</para>
+
+      <figure>
+        <title>El cas de les dues mines.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-2.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Finalment, quan hi ha tres caselles cobertes en una fila i la casella descoberta al costat i enmig és un 3 (un altre cop, aquesta casella no hauria de tenir veïns) llavors les tres són mines.</para>
+
+      <figure>
+        <title>El cas de les tres mines.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/easy-hints-3.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Aquests són els casos més simples. Hi poden haver permutacions d'aquestes situacions simples, per exemple les tres caselles de l'exemple anterior poden tenir forma d'una L.</para>
+      <para>Un anàlisi simple resoldrà la major part del trencaclosques, però no tots. Abans d'anar a les seccions següents, on es donaran suggeriments avançats, hauríeu de jugar una mica per a veure com ho feu tot sol.</para>
+    </sect2>
+
+    <sect2 id="advanced">
+      <title>Situacions avançades</title>
+      
+      <para>Aquestes són situacions més complicades. Són una mica més que un pas endavant des de la secció anterior, així que esperem que hàgiu seguit l'avís i primer hàgiu jugat una mica.</para>
+
+      <para>En l'exemple de sota les mines estan a l'esquerra dels uns. Ens imaginem això per un procés d'eliminació. Si la casella a l'esquerra del 2 fos una mina llavors els dos uns tindrien el màxim número de mines sense deixar caselles lliures per a la segona mina adjacent al 2 (ja que també estarien adjacents als uns). Un cop eliminada la casella del mig ens quedem amb dues caselles que necessitem pel 2, així que les dues estan minades.</para>
+
+      <figure>
+        <title>Un patró no gaire obvi.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-1.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+      <para>Aquesta situació pot estar camuflada, per exemple considereu la figura de sota. Aquesta no és la mateixa situació, però la casella minada extra a la dreta ha incrementat tots els números en 1.</para>
+
+      <figure>
+        <title>La mina extra camufla una còpia de l'exemple anterior.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-2.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+<para>Ara anem a provar un exemple complicat. Aquest ens ensenya dues coses. La primera és que tot i no estar segur de quines caselles estan minades, restringir les possibilitat pot ajudar. La segona és que si se sap quines caselles no estan minades es quasi tant bo com saber quines estan minades.</para>
+
+<para>Assumiu que, en la figura de sota, comencem sabent que la casella superior esquerra està minada i que les dues caselles marcades amb un 2 en la part superior només necessiten una mina més. Després observem que el 2 que està a l'esquerra del tot implica que una de les caselles cobertes està minada, però encara no sabem quina. Com que almenys una d'aquestes caselles està minada i les dues són veïnes del segon 2, llavors sabem que aquest 2 també és satisfet amb una d'aquestes dues caselles (encara no sabem quina és). Això significa que la casella sota del 4 està buida perquè també és veïna del segon 2 i no és una de les caselles que hem identificat anteriorment. Aquesta casella buida ara ens deixa el 4 amb només quatre veïnes - totes elles han de ser mines. No només ens diu quines mines rodegen el 4, ara ens diu quina de les caselles al costat del 2 està minada.</para>
+
+      <figure>
+        <title>Tant difícil com sembla.</title>
+    	    <mediaobject><imageobject>
+            <imagedata format="PNG" fileref="figures/hard-hints-3.png"/>
+	    </imageobject></mediaobject>
+      </figure>
+
+
+<para>Aquest tipus de situació és difícil. En la resta d'exemples podeu aprendre a cercar patrons i evitar haver de pensar gaire. Les situacions com la de la figura no apareixen o no es reconeixen fàcilment. Sovint és més fàcil ignorar-les i continuar jugant per una altra banda amb l'esperança que podreu començar a netejar les caselles des d'una altra banda.</para>
+
+</sect2>
+<sect2>
+
+    <title>Consells</title>
+
+    <para>Recordeu, la vora del tauler és el mateix que una llarga àrea neta (però sense números). Sovint treballar en la vora del tauler és la manera més fàcil d'avançar.</para>
+
+    <para>A vegades acabareu en una situació on no hi ha cap manera de deduir quina és la configuració. En aquests casos podeu provar sort o utilitzar la funció de pista (<menuchoice><guimenu>Partida</guimenu><guimenuitem>Pista</guimenuitem></menuchoice>). A vegades no és una situació al 50% i en lloc d'agafar una pista podeu provar el resultat més probable.</para>
+
+    <para>Un últim consell: recordeu el comptador de la part inferior esquerra de la finestra que indica quantes mines queden? Sovint, al final de la partida, aquest número us pot ajudar a endevinar on poden estar les mines. Com fer-ho ja es cosa vostra.</para>
+
+    </sect2>
+ </sect1>
+
+ <sect1 id="authors">
+  <title>Autors</title>
+  <para>En Pista (<email>szekeres@cyberspace.mht.bme.hu</email>) ha escrit el <application>Mines</application>. En Callum McKenzie (<email>callum@spooky-possum.org</email>) ha escrit aquest manual amb l'ajuda de'n Vincent Povirk i basant-se en una manual anterior de'n Tim Riehle (<email>tkriehle@citilink.com</email>). Per a informar d'un error o fer algun suggeriment d'aquesta aplicació o aquest manual, seguiu les indicacions d'aquest <ulink url="ghelp:user-guide?feedback-bugs" type="help">document</ulink>.</para>
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Llicència</title>
+  <para>Aquest programa és programari lliure; podeu redistribuir-lo i/o modificar-lo sota els termes de la <citetitle><ulink type="help" url="gnome-help:gpl">Llicència pública general de GNU</ulink></citetitle> tal com publica la Free Software Foundation; tant en la versió 2 de la llicència, o (a la vostra opció) una versió posterior.</para>
+  <para>Aquest programa es distribueix amb l'esperança de que sigui útil, però SENSE CAP GARANTIA; fins i tot sense la garantia implícita de COMERCIALITZACIÓ o ADEQUACIÓ A UN ÚS CONCRET. Per a més detalls vegeu la <citetitle>Llicència pública general de GNU</citetitle>.</para>
+  <para>S'inclou una còpia de la <citetitle>Llicència pública general de GNU</citetitle> en l'apèndix de la <citetitle>Guia d'usuaris del GNOME</citetitle>. També podeu obtenir una copia de la <citetitle>Llicència pública general de GNU</citetitle> de la Free Software Foundation visitant el <ulink type="http" url="http://www.fsf.org">seu lloc web</ulink> o escrivint a <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

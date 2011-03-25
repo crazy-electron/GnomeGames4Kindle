@@ -1,0 +1,940 @@
+# Greek translation of Nibbles Manual
+# Copyright (C) 2009, Free Software Foundation, Inc.
+msgid ""
+msgstr ""
+"Project-Id-Version: el\n"
+"POT-Creation-Date: 2009-03-25 10:51+0000\n"
+"PO-Revision-Date: 2009-03-27 11:15+0200\n"
+"Last-Translator: Μάριος Ζηντίλης <m.zindilis@dmajor.org>\n"
+"Language-Team: Greek <team@gnome.gr>\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnibbles.xml:186(None)
+msgid "@@image: 'figures/intro.png'; md5=fba0b0fc807a1eed13d9b5bba6a8d9fa"
+msgstr "@@image: 'figures/intro.png'; md5=fba0b0fc807a1eed13d9b5bba6a8d9fa"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnibbles.xml:209(None)
+msgid "@@image: 'figures/playing.png'; md5=68c63b494278113a82ac864a277891c4"
+msgstr "@@image: 'figures/playing.png'; md5=68c63b494278113a82ac864a277891c4"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnibbles.xml:409(None)
+msgid "@@image: 'figures/game.png'; md5=3103fe2ce969c658bf74cbf66fb2ec64"
+msgstr "@@image: 'figures/game.png'; md5=3103fe2ce969c658bf74cbf66fb2ec64"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnibbles.xml:491(None)
+msgid "@@image: 'figures/worm_op.png'; md5=b6ccbcdd5d11fe28a75fd23c0d96483a"
+msgstr "@@image: 'figures/worm_op.png'; md5=b6ccbcdd5d11fe28a75fd23c0d96483a"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnibbles.xml:54(None)
+msgid "@@image: 'figures/connect.png'; md5=9a03bf23f04eacfd6feb9de823d6e321"
+msgstr "@@image: 'figures/connect.png'; md5=9a03bf23f04eacfd6feb9de823d6e321"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnibbles.xml:77(None)
+msgid "@@image: 'figures/tables.png'; md5=96e520cee7fdbee56636794251a52b0d"
+msgstr "@@image: 'figures/tables.png'; md5=96e520cee7fdbee56636794251a52b0d"
+
+#: C/gnibbles.xml:28(title)
+msgid "<application>Nibbles</application> Manual"
+msgstr "Εγχειρίδιο του <application>Νίμπουλς</application>"
+
+#: C/gnibbles.xml:31(para)
+msgid ""
+"Nibbles is a worm game for GNOME. The player controls a 2D worm while trying "
+"to get food. Getting food gives points, but hitting anything causes a loss "
+"of points. When all points are lost, the player loses."
+msgstr ""
+"Το Νίμπουλς είναι ένα παιχνίδι με σκουλήκι για το GNOME. Ο παίκτης ελέγχει "
+"ένα δισδιάστατο σκουλήκι καθώς προσπαθεί να βρει τροφή. Η απόκτηση τροφής "
+"δίνει βαθμούς, αλλά οποιαδήποτε σύγκρουση αφαιρεί βαθμούς. Αν χαθούν όλοι οι "
+"βαθμοί, ο παίκτης χάνει."
+
+#: C/gnibbles.xml:40(year)
+msgid "2000"
+msgstr "2000"
+
+#: C/gnibbles.xml:41(holder)
+msgid "Kevin Breit"
+msgstr "Kevin Breit"
+
+#: C/gnibbles.xml:57(publishername) C/gnibbles.xml:70(orgname)
+#: C/gnibbles.xml:96(para)
+msgid "GNOME Documentation Project"
+msgstr "Έργο τεκμηρίωσης του GNOME"
+
+#: C/gnibbles.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Επιτρέπεται η αντιγραφή, αναδιανομή και/η τροποποίηση αυτού του εγγράφου υπό "
+"τους όρους της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), Έκδοση 1.1 ή νεότερη "
+"που εκδόθηκε από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Αμετάβλητα Τμήματα, "
+"χωρίς Κείμενο Εξωφύλλου, και χωρίς Κείμενο Οπισθοφύλλου. Μπορείτε να βρείτε "
+"ένα αντίγραφο της GFDL σε αυτό το <ulink type=\"help\" url=\"ghelp:fdl"
+"\">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανέμεται με αυτό το "
+"εγχειρίδιο."
+
+#: C/gnibbles.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Το εγχειρίδιο αυτό είναι τμήμα της συλλογής εγχειριδίων GNOME που διανέμεται "
+"υπό την άδεια GFDL. Αν επιθυμείτε να διανήμετε το παρόν εγχειρίδιο χωριστά "
+"από την συλλογή, μπορείτε να το κάνετε προσθέτοντας ένα αντίγραφο της άδειας "
+"στο εγχειρίδιο, όπως περιγράφεται στο τμήμα 6 της άδειας."
+
+#: C/gnibbles.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Πολλά από τα ονόματα που χρησιμοποιούνται από επιχειρήσεις για να διακρίνουν "
+"τα προϊόντα τους και τις υπηρεσίες ζητούνται σαν εμπορικά σήματα. Όπου "
+"εμφανίζονται αυτά τα ονόματα σε κάποια τεκμηρίωση του GNOME, και τα μέλη του "
+"GNOME Documentation Project γνωρίουν για αυτά τα εμπορικά σήματα, τότε τα "
+"ονόματα είναι με κεφαλαία γράμματα ή με αρχικά κεφαλαία γράμματα."
+
+#: C/gnibbles.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"ΤΟ ΠΑΡΟΝ ΕΓΓΡΑΦΟ ΠΑΡΕΧΕΤΑΙ \"ΩΣ ΕΧΕΙ\", ΧΩΡΙΣ ΟΠΟΙΑΔΗΠΟΤΕ ΕΓΓΥΗΣΗ, "
+"ΕΚΠΕΦΡΑΣΜΕΝΗ Ή ΥΠΑΙΝΙΣΣΟΜΕΝΗ, ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΩΝ, ΧΩΡΙΣ ΠΕΡΙΟΡΙΣΜΟΥΣ, "
+"ΕΓΓΥΗΣΕΩΝ ΟΤΙ ΤΟ ΕΓΓΡΑΦΟ Ή Η ΤΡΟΠΟΠΟΙΗΜΕΝΗ ΕΚΔΟΣΗ ΤΟΥ ΕΙΝΑΙ ΑΠΑΛΑΓΜΕΝΟ "
+"ΑΤΕΛΕΙΩΝ, ΕΜΠΟΡΕΥΣΙΜΟ, ΚΑΤΑΛΛΗΛΟ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΗ ΧΡΗΣΗ Ή ΑΠΑΡΑΒΙΑΣΤΟ. Ο "
+"ΧΡΗΣΤΗΣ ΑΝΑΛΑΜΒΑΝΕΙ ΚΑΘΕ ΚΙΝΔΥΝΟ ΠΟΥ ΜΠΟΡΕΙ ΝΑ ΠΡΟΚΥΨΕΙ ΩΣ ΠΡΟΣ ΤΗΝ "
+"ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ ΚΑΙ ΛΕΙΤΟΥΡΓΙΑ ΤΟΥ ΕΓΓΡΑΦΟΥ Ή ΤΩΝ ΤΡΟΠΟΠΟΙΗΜΕΝΩΝ ΕΚΔΟΣΕΩΝ "
+"ΤΟΥ. ΑΝ ΟΠΟΙΟΔΗΠΟΤΕ ΕΓΓΡΑΦΟ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΗ ΕΚΔΟΣΗ ΤΟΥ ΑΠΟΔΕΙΧΘΟΥΝ "
+"ΕΛΛΑΤΩΜΑΤΙΚΑ ΜΕ ΟΠΟΙΟΝΔΗΠΟΤΕ ΤΡΟΠΟ, Ο ΤΕΛΙΚΟΣ ΧΡΗΣΤΗΣ (ΚΑΙ ΟΧΙ Ο ΑΡΧΙΚΟΣ "
+"ΣΥΓΓΡΑΦΕΑΣ, ΣΥΝΤΑΚΤΗΣ Ή ΟΠΟΙΟΣΔΗΠΟΤΕ ΤΟ ΔΙΕΝΗΜΕ) ΑΝΑΛΑΜΒΑΝΕΙ ΤΟ ΚΟΣΤΟΣ "
+"ΟΠΟΙΑΣΔΗΠΟΤΕ ΕΠΙΣΚΕΥΗΣ Ή ΔΙΟΡΘΩΣΗΣ. ΑΥΤΗ Η ΠΑΡΑΙΤΗΣΗ ΑΠΟ ΕΓΓΥΗΤΙΚΕΣ ΕΥΘΥΝΕΣ "
+"ΣΥΝΙΣΤΑ ΟΥΣΙΑΣΤΙΚΟ ΜΕΡΟΣ ΤΗΣ ΑΔΕΙΑΣ. ΟΥΔΕΜΙΑ ΧΡΗΣΗ ΟΙΟΥΔΗΠΟΤΕ ΕΓΓΡΑΦΟΥ Ή "
+"ΤΡΟΠΟΠΟΙΗΜΕΝΟΥ ΕΓΓΡΑΦΟΥ ΕΞΟΥΣΙΟΔΟΤΕΙΤΑΙ ΕΦΕΞΗΣ, ΠΑΡΑ ΥΠΟ ΤΟΝ ΟΡΟ ΤΗΣ ΩΣ ΑΝΩ "
+"ΠΑΡΑΙΤΗΣΗΣ ΚΑΙ"
+
+#: C/gnibbles.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΣΕ ΚΑΜΙΑ ΝΟΜΟΛΟΓΙΑ ΑΣΤΙΚΟΥ ΑΔΙΚΗΜΑΤΟΣ "
+"(ΠΕΡΙΛΑΜΒΑΝΟΜΕΝΗΣ ΕΚΕΙΝΟΥ ΤΗΣ ΑΜΕΛΕΙΑΣ), ΣΥΜΒΟΛΑΙΟΥ Ή ΑΛΛΟΥ, Ο ΣΥΝΤΑΚΤΗΣ, Ο "
+"ΑΡΧΙΚΟΣ ΣΥΓΓΡΑΦΕΑΣ, ΟΠΟΙΟΣΔΗΠΟΤΕ ΣΥΝΕΡΓΑΤΗΣ Ή ΟΠΟΙΟΣΔΗΠΟΤΕ ΔΙΑΝΟΜΕΑΣ ΤΟΥ "
+"ΕΓΓΡΑΦΟΥ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ ΤΟΥ ΕΓΓΡΑΦΟΥ, Ή ΟΠΟΙΣΔΗΠΟΤΕ ΠΡΟΜΗΘΕΥΤΗΣ "
+"ΟΠΟΙΟΥΔΗΠΟΤΕ ΕΚ ΤΩΝ ΑΝΩΤΕΡΩ ΠΡΟΣΩΠΩΝ ΕΙΝΑΙ ΥΠΕΥΘΥΝΟΣ ΕΝΑΝΤΙ ΟΙΟΥΔΗΠΟΤΕ "
+"ΠΡΟΣΩΠΟΥ ΓΙΑ ΟΠΟΙΑΔΗΠΟΤΕ ΑΜΕΣΗ, ΕΜΜΕΣΗ, ΙΔΙΑΙΤΗΕΡΗ, ΑΤΥΧΗ Ή ΣΥΝΕΠΑΓΟΜΕΝΗ "
+"ΒΛΑΒΗ ΟΙΟΥΔΗΠΟΤΕ ΧΑΡΑΚΤΗΡΑ ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΩΝ, ΧΩΡΙΣ ΠΕΡΙΟΡΙΣΜΟΥΣ, ΒΛΑΒΕΣ "
+"ΕΞΑΙΤΙΑΣ ΑΠΩΛΕΙΑΣ ΠΕΛΑΤΕΙΑΣ, ΣΤΑΣΗ ΕΡΓΑΣΙΑΣ, ΑΣΤΟΧΙΑ Ή ΚΑΚΗ ΛΕΙΤΟΥΡΓΙΑ "
+"ΥΠΟΛΟΓΙΣΤΗ, Ή ΟΠΟΙΑΔΗΠΟΤΕ ΚΑΙ ΚΑΘΕ ΑΛΛΗ ΒΛΑΒΗ Ή ΑΠΩΛΕΙΑ ΠΟΥ ΘΑ ΕΓΕΙΡΕΙ Ή "
+"ΣΧΕΤΙΖΕΤΑΙ ΜΕ ΤΗΝ ΧΡΗΣΗ ΤΟΥ ΕΓΓΡΑΦΟΥ ΚΑΙ ΟΠΟΙΑΣΔΗΠΟΤΕ ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ "
+"ΤΟΥ ΕΓΓΡΑΦΟΥ, ΑΚΟΜΗ ΚΑΙ ΑΝ ΚΑΠΟΙΟ ΑΠΟ ΑΥΤΑ ΤΑ ΠΡΟΣΩΠΑ ΕΙΝΑΙ ΕΝΗΜΕΡΟ ΓΙΑ ΤΗΝ "
+"ΠΙΘΑΝΟΤΗΤΑ ΠΡΟΚΛΗΣΗΣ ΤΕΤΟΙΩΝ ΒΛΑΒΩΝ."
+
+#: C/gnibbles.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"ΤΟ ΈΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ "
+"ΑΔΕΙΑΣ GNU FREE DOCUMENTATION ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: <placeholder-"
+"1/>"
+
+#: C/gnibbles.xml:67(firstname)
+msgid "Kevin"
+msgstr "Kevin"
+
+#: C/gnibbles.xml:68(surname)
+msgid "Breit"
+msgstr "Breit"
+
+#: C/gnibbles.xml:71(email)
+msgid "battery841@mypad.com"
+msgstr "battery841@mypad.com"
+
+#: C/gnibbles.xml:90(revnumber)
+msgid "Nibbles Manual V2.20"
+msgstr "Εγχειρίδιο του Νίμπουλς, έκδοση 2.20"
+
+#: C/gnibbles.xml:91(date)
+msgid "May 2007"
+msgstr "Μάιος 2007"
+
+#: C/gnibbles.xml:93(para)
+msgid "Kevin Breit <email>battery841@mypad.com</email>"
+msgstr "Kevin Breit <email>battery841@mypad.com</email>"
+
+#: C/gnibbles.xml:101(releaseinfo)
+msgid "This manual describes version 2.20 of Nibbles."
+msgstr "Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.20 του Νίμπουλς."
+
+#: C/gnibbles.xml:108(title)
+msgid "Feedback"
+msgstr "Aνάδραση"
+
+#: C/gnibbles.xml:109(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Nibbles</"
+"application> application or this manual, follow the directions in the <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</ulink>."
+msgstr ""
+"Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με την εφαρμογή "
+"<application>Νίμπουλς</application> ή αυτή την τεκμηρίωση, ακολουθήστε τις "
+"οδηγίες στη <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">Σελίδα "
+"ανάδρασης του GNOME</ulink>."
+
+#: C/gnibbles.xml:119(primary)
+msgid "Nibbles"
+msgstr "Νίμπουλς"
+
+#: C/gnibbles.xml:126(title)
+msgid "Introduction"
+msgstr "Εισαγωγή"
+
+#: C/gnibbles.xml:128(para)
+msgid ""
+"<application>Nibbles</application> is a game where the user controls a worm. "
+"The worm moves around the board, eating diamonds while avoiding the walls "
+"placed around it."
+msgstr ""
+"Το <application>Νίμπουλς</application> είναι ένα παιχνίδι στο οποίο ο "
+"χρήστης ελέγχει ένα σκουλήκι. Το σκουλήκι περιφέρεται στο ταμπλώ, τρώγοντας "
+"διαμάντια ενώ αποφεύγει τους τοίχους που βρίσκονται γύρω του."
+
+#: C/gnibbles.xml:132(para)
+msgid ""
+"To run <application>Nibbles</application>, select "
+"<menuchoice><guisubmenu>Games</guisubmenu><guimenuitem>Nibbles</"
+"guimenuitem></menuchoice> from the <guimenu>Applications</guimenu> menu, or "
+"type <command>gnibbles</command> on the command line."
+msgstr ""
+"Για να τρέξετε το <application>Νίμπουλς</application>, επιλέξτε "
+"<menuchoice><guisubmenu>Παιχνίδια</guisubmenu><guimenuitem>Νίμπουλς</"
+"guimenuitem></menuchoice> από το μενού <guimenu>Εφαρμογές</guimenu>, η "
+"πληκτρολογήστε <command>gnibbles</command> στη γραμμή εντολών."
+
+#: C/gnibbles.xml:142(para)
+msgid ""
+"<application>Nibbles</application> is included in the <filename>gnome-games</"
+"filename> package, which is part of the GNOME desktop environment. This "
+"document describes version 2.20 of <application>Nibbles</application>."
+msgstr ""
+"Το <application>Νίμπουλς</application> περιλαμβάνεται στο πακέτο "
+"<filename>gnome-games</filename>, το οποίο είναι μέρος της επιφάνειας "
+"εργασίας του GNOME. Αυτό το έγγραφο περιγράφει την έκδοση 2.20 του "
+"<application>Νίμπουλς</application>."
+
+#: C/gnibbles.xml:151(title)
+msgid "Nibbles Objective"
+msgstr "Αντικειμενικός σκοπός του Νίμπουλς"
+
+#: C/gnibbles.xml:152(para)
+msgid ""
+"The objective of Nibbles is quite simple. You control the worm and if the "
+"worm runs into a wall or runs into itself, you die. You get ten lives before "
+"your game is over. You win by either beating your own high score (or a "
+"friend's) or by completing all the levels. It is also possible to play "
+"against worms with artificial intelligence."
+msgstr ""
+"Ο σκοπός του Νίμπουλς είναι απλός. Ελέγχετε το σκουλήκι και αν το σκουλήκι "
+"συγκρουστεί με τοίχο ή με τον εαυτό του, πεθαίνετε. Έχετε δέκα ζωές προτού "
+"τελειώσει το παιχνίδι. Κερδίζετε είτε ξεπερνώντας το δικό σας υψηλότερο σκορ "
+"(είτε κάποιου φίλου), είτε τελειώνοντας όλα τα επίπεδα. Μπορείτε επίσης να "
+"παίξετε εναντίον σκουληκιών με τεχνητή νοημοσύνη."
+
+#: C/gnibbles.xml:159(para)
+msgid ""
+"Nibbles also features <link linkend=\"network-games\">multiplayer</link> "
+"support with up to six competing human players in hotseat or network mode."
+msgstr ""
+"Το Νίμπουλς επίσης υποστηρίζει <link linkend=\"network-games\">πολλούς "
+"παίκτες</link>, μέχρι έξι παίκτες μπορούν να ανταγωνίζονται είτε παίζοντας "
+"στον ίδιο υπολογιστή με σειρά, είτε μέσω δικτύου."
+
+#: C/gnibbles.xml:169(title)
+msgid "Using Nibbles"
+msgstr "Χρήση του Νίμπουλς"
+
+#: C/gnibbles.xml:170(para)
+msgid ""
+"<application>Nibbles</application> is a simple game to play. The only keys "
+"that are needed are the arrow keys."
+msgstr ""
+"Το <application>Νίμπουλς</application> παίζεται απλά. Τα μόνα πλήκτρα που "
+"χρειάζονται είναι τα βελάκια."
+
+#: C/gnibbles.xml:177(title)
+msgid "Basic usage"
+msgstr "Βασική χρήση"
+
+#: C/gnibbles.xml:182(title)
+msgid "Nibbles Introduction Window"
+msgstr "Παράθυρο καλωσορίσματος στο Νίμπουλς"
+
+#: C/gnibbles.xml:189(phrase)
+msgid "Nibbles Introduction Window."
+msgstr "Παράθυρο καλωσορίσματος στο Νίμπουλς"
+
+#: C/gnibbles.xml:178(para)
+msgid ""
+"Starting <application>Nibbles</application> opens the <interface>main "
+"window</interface> shown below. <placeholder-1/>"
+msgstr ""
+"Κατά την εκκίνηση του <application>Νίμπουλς</application> ανοίγει το "
+"<interface>κύριο παράθυρο</interface> το οποίο εμφανίζεται πιο κάτω. "
+"<placeholder-1/>"
+
+#: C/gnibbles.xml:195(para)
+msgid ""
+"To start the game, select <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>New Game</guimenuitem></menuchoice>."
+msgstr ""
+"Για να ξεκινήσετε το παιχνίδι, επιλέξτε <menuchoice><guimenu>Παιχνίδι</"
+"guimenu><guimenuitem>Νέο</guimenuitem></menuchoice>."
+
+#: C/gnibbles.xml:205(title)
+msgid "Nibbles During Gameplay"
+msgstr "Παιχνίδι Νίμπουλς σε εξέλιξη"
+
+#: C/gnibbles.xml:212(phrase)
+msgid "Nibbles During Gameplay."
+msgstr "Παιχνίδι Νίμπουλς σε εξέλιξη."
+
+#: C/gnibbles.xml:199(para)
+msgid ""
+"When the game starts, the worm will come out of the left side of the screen. "
+"You use the up arrow to make the direction of the worm go up. Use the right "
+"arrow to turn the worm right, left arrow to turn the worm left, and down "
+"arrow to turn the worm down. <placeholder-1/>"
+msgstr ""
+"Όταν ξεκινά το παιχνίδι, το σκουλήκι θα βγει από την αριστερή πλευρά της "
+"οθόνης. Χρησιμοποιήστε το βελάκι προς τα πάνω για να κάνετε το σκουλήκι να "
+"πάει πάνω. Χρησιμοποιήστε το βελάκι δεξιά για να στρίψετε το σκουλήκι δεξιά, "
+"το βελάκι αριστερά για να στρίψετε το σκουλήκι αριστερά, και το βελάκι κάτω "
+"για να στρίψετε το σκουλήκι προς τα κάτω. <placeholder-1/>"
+
+#: C/gnibbles.xml:228(title)
+msgid "Menus"
+msgstr "Μενού"
+
+#: C/gnibbles.xml:229(para)
+msgid ""
+"The menu bar, located at the top of the <interface>Main Window</interface>, "
+"contains the following menus:"
+msgstr ""
+"Η μπάρα με τα μενού, η οποία βρίσκεται στην κορυφή του <interface>Βασικού "
+"παραθύρου</interface>, περιέχει τα ακόλουθα μενού:"
+
+#: C/gnibbles.xml:236(guimenu)
+msgid "Game"
+msgstr "Παιχνίδι"
+
+#: C/gnibbles.xml:242(para)
+msgid ""
+"<menuchoice><shortcut><keysym>Ctrl+N</keysym></shortcut><guimenuitem>New "
+"Game</guimenuitem></menuchoice> This starts a new game of "
+"<application>Nibbles</application>."
+msgstr ""
+"<menuchoice><shortcut><keysym>Ctrl+N</keysym></shortcut><guimenuitem>Νέο</"
+"guimenuitem></menuchoice> Αυτό ξεκινά ένα νέο παιχνίδι "
+"<application>Νίμπουλς</application>."
+
+#: C/gnibbles.xml:253(para)
+msgid ""
+"<menuchoice><shortcut><keysym>Ctrl+G</keysym></shortcut><guimenuitem>Network "
+"Game</guimenuitem></menuchoice> This starts a network multiplayer game using "
+"GGZ Gaming Zone."
+msgstr ""
+"<menuchoice><shortcut><keysym>Ctrl+G</keysym></"
+"shortcut><guimenuitem>Δικτυακό παιχνίδι</guimenuitem></menuchoice> Αυτό "
+"ξεκινά ένα παιχνίδι με πολλούς παίκτες χρησιμοποιώντας το GGZ Gaming Zone."
+
+#: C/gnibbles.xml:264(para)
+msgid ""
+"<menuchoice><guimenuitem>Scores</guimenuitem></menuchoice> This shows the "
+"high scores."
+msgstr ""
+"<menuchoice><guimenuitem>Βαθμολογίες</guimenuitem></menuchoice> Αυτό "
+"εμφανίζει τις ψηλότερες βαθμολογίες."
+
+#: C/gnibbles.xml:272(para)
+msgid ""
+"<menuchoice><guimenuitem>Pause game</guimenuitem></menuchoice> This will "
+"pause your game. Click on the <quote>Pause Game </quote> menu option to "
+"resume game."
+msgstr ""
+"<menuchoice><guimenuitem>Παύση</guimenuitem></menuchoice> Αυτό θα παύσει το "
+"παιχνίδι σας. Πατήστε την επιλογή <quote>Παύση</quote> στο μενού για να "
+"συνεχίσετε το παιχνίδι."
+
+#: C/gnibbles.xml:281(para)
+msgid ""
+"<menuchoice><guimenuitem>End Game</guimenuitem></menuchoice> End the current "
+"game and return to the title screen."
+msgstr ""
+"<menuchoice><guimenuitem>Τέλος παιχνιδιού</guimenuitem></menuchoice> "
+"Σταματήστε το τρέχον παιχνίδι και επιστρέψτε στην αρχική οθόνη."
+
+#: C/gnibbles.xml:289(para)
+msgid ""
+"<menuchoice><shortcut><keysym>Ctrl-Q</keysym></shortcut><guimenuitem>Exit</"
+"guimenuitem></menuchoice> This quits the application."
+msgstr ""
+"<menuchoice><shortcut><keysym>Ctrl-Q</keysym></shortcut><guimenuitem>Έξοδος</"
+"guimenuitem></menuchoice> Αυτό κλείνει την εφαρμογή."
+
+#: C/gnibbles.xml:238(para) C/gnibbles.xml:307(para) C/gnibbles.xml:326(para)
+#: C/gnibbles.xml:346(para)
+msgid "This menu contains: <placeholder-1/>"
+msgstr "Αυτό το μενού περιέχει: <placeholder-1/> "
+
+#: C/gnibbles.xml:305(guimenu)
+msgid "View"
+msgstr "Προβολή"
+
+#: C/gnibbles.xml:311(para)
+msgid ""
+"<menuchoice><guimenuitem>Fullscreen</guimenuitem></menuchoice> This toggles "
+"your game window to be fullscreen."
+msgstr ""
+"<menuchoice><guimenuitem>Πλήρης οθόνη</guimenuitem></menuchoice> Αυτό "
+"ρυθμίζει αν το παιχνίδι σας θα εμφανίζεται σε πλήρη οθόνη."
+
+#: C/gnibbles.xml:324(guimenu)
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#: C/gnibbles.xml:330(para)
+msgid ""
+"<menuchoice><guimenuitem>Preferences</guimenuitem></menuchoice> This opens "
+"your window to edit <link linkend=\"prefs\"> preferences.</link>"
+msgstr ""
+"<menuchoice><guimenuitem>Προτιμήσεις</guimenuitem></menuchoice> Ανοίγει το "
+"παράθυρο ώστε να επιλέξετε τις <link linkend=\"prefs\"> προτιμήσεις</link> "
+"σας."
+
+#: C/gnibbles.xml:344(guimenu)
+msgid "Help"
+msgstr "Βοήθεια"
+
+#: C/gnibbles.xml:350(para)
+msgid ""
+"<menuchoice><shortcut><keysym>F1</keysym></shortcut><guimenuitem>Contents</"
+"guimenuitem></menuchoice> Display this manual."
+msgstr ""
+"<menuchoice><shortcut><keysym>F1</keysym></"
+"shortcut><guimenuitem>Περιεχόμενα</guimenuitem></menuchoice> Εμφάνιση αυτού "
+"του εγχειριδίου."
+
+#: C/gnibbles.xml:359(para)
+msgid ""
+"<guimenuitem>About</guimenuitem> This opens the <interface>About</interface> "
+"dialog which shows basic information about <application>Nibbles</"
+"application>, such as the author's name, the version number of the game."
+msgstr ""
+"<guimenuitem>Περί</guimenuitem> Εμφάνιση παραθύρου <interface>Περί</"
+"interface> το οποίο παρέχει βασικές πληροφορίες σχετικά με το "
+"<application>Νίμπουλς</application>, όπως το όνομα του δημιουργού, και τον "
+"αριθμό έκδοσης του παιχνιδιού. "
+
+#: C/gnibbles.xml:374(title)
+msgid "Diamonds"
+msgstr "Διαμάντια"
+
+#: C/gnibbles.xml:375(para)
+msgid ""
+"<application>Nibbles</application> has numerous different diamonds to eat. "
+"They are each a different color and serve a different function. Only the "
+"pale purple diamond is guaranteed to be around long enough for you to eat it "
+"(in fact, you have to eat them to finish the level). The other diamonds are "
+"all bonuses, but they only stick around for a short time. We'll leave it up "
+"to you to discover just what the bonus each colour gives, but they all "
+"affect either the score, the length of the worm, or both. Be careful when "
+"going for these bonus diamonds, don't cut yourself off from the ordinary "
+"diamonds that you need to finish the level."
+msgstr ""
+"Το <application>Νίμπουλς</application> έχει διάφορα διαμάντια που τρώγονται. "
+"Έχουν διαφορετικά χρώματα και κάνουν διαφορετικές λειτουργίες. Μόνο το "
+"ανοικτό μώβ διαμάντι είναι σίγουρο ότι θα μείνει για αρκετό χρόνο μέχρι να "
+"το φάτε (για την ακρίβεια θα πρέπει να τα φάτε για να ολοκληρώσετε το "
+"επίπεδο). Τα υπόλοιπα διαμάντια είναι όλα βραβεία, αλλά μένουν στο ταμπλώ "
+"μόνο για λίγο χρόνο. Θα σας αφήσουμε να ανακαλύψετε τι είδους βραβείο δίνει "
+"το κάθε χρώμα, αλλά όλα επηρεάζουν είτε το σκορ, το μήκος του σκουληκιού, ή "
+"και τα δύο. Προσέχετε όταν πηγαίνετε προς αυτά τα διαμάντια - βραβεία, να "
+"μην αποκοπείτε από τα κανονικά διαμάντια που χρειάζεστε για να ολοκληρώσετε "
+"το επίπεδο."
+
+#: C/gnibbles.xml:393(title)
+msgid "Customization"
+msgstr "Προσαρμογή"
+
+#: C/gnibbles.xml:394(para)
+msgid ""
+"To change the application settings, select <menuchoice><guimenu>Settings</"
+"guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>. This opens the "
+"<interface>Preferences</interface> dialog. All preferences are automatically "
+"saved and applied as you change them."
+msgstr ""
+"Για να αλλάξετε τις ρυθμίσεις της εφαρμογής, επιλέξτε "
+"<menuchoice><guimenu>Ρυθμίσεις</guimenu><guimenuitem>Προτιμήσεις</"
+"guimenuitem></menuchoice>. Αυτό ανοίγει το διάλογο <interface>Προτιμήσεις "
+"Νίμπουλς</interface>. Όλες οι προτιμήσεις αποθηκεύονται αυτόματα και "
+"εφαρμόζονται μόλις τις αλλάξετε."
+
+#: C/gnibbles.xml:405(title)
+msgid "Game Preferences Tab"
+msgstr "Καρτέλα προτιμήσεων παιχνιδιού"
+
+#: C/gnibbles.xml:412(phrase)
+msgid "Game Preferences Tab."
+msgstr "Καρτέλα προτιμήσεων παιχνιδιού."
+
+#: C/gnibbles.xml:422(term)
+msgid "Speed"
+msgstr "Ταχύτητα"
+
+#: C/gnibbles.xml:424(para)
+msgid "This controls the speed of the worm."
+msgstr "Αυτό ελέγχει την ταχύτητα του σκουληκιού."
+
+#: C/gnibbles.xml:430(term)
+msgid "Play levels in random order"
+msgstr "Παίξτε τα επίπεδα με τυχαία σειρά"
+
+#: C/gnibbles.xml:432(para)
+msgid "Selecting this causes the level advancement to happen in random order."
+msgstr ""
+"Αυτή η επιλογή έχει ως αποτέλεσμα η πρόοδος των επιπέδων να γίνεται με "
+"τυχαία σειρά."
+
+#: C/gnibbles.xml:439(term)
+msgid "Enable fake bonuses"
+msgstr "Ενεργοποίηση εικονικών μπόνους"
+
+#: C/gnibbles.xml:441(para)
+msgid ""
+"When enabled, this allows for two blue diamonds on the screen at a time. One "
+"diamond makes you shrink instead of grow when eaten."
+msgstr ""
+"Όταν ενεργοποιηθεί, αυτό επιτρέπει δύο μπλε διαμάντια ταυτόχρονα στην οθόνη. "
+"Το ένα από τα δύο σας κάνει να σμικρύνεστε αντί να μεγαλώνετε όταν το φάτε."
+
+#: C/gnibbles.xml:449(term)
+msgid "Enable sounds"
+msgstr "Ενεργοποίηση ήχων"
+
+#: C/gnibbles.xml:451(para)
+msgid "Controls the use of sound in the game."
+msgstr "Ελέγχει τη χρήση ήχου στο παιχνίδι."
+
+#: C/gnibbles.xml:457(term)
+msgid "Starting level"
+msgstr "Επίπεδο εκκίνησης"
+
+#: C/gnibbles.xml:459(para)
+msgid ""
+"Which level to start with. Use this if you want to jump immediately to a "
+"challenging level."
+msgstr ""
+"Από ποιό επίπεδο να ξεκινήσετε. Χρησιμοποιήστε το για να μεταβείτε απ' "
+"ευθείας σε ένα πιο δύσκολο επίπεδο."
+
+#: C/gnibbles.xml:466(term)
+msgid "Number of human players"
+msgstr "Αριθμός ανθρώπων"
+
+#: C/gnibbles.xml:468(para)
+msgid "There is room for up to six players."
+msgstr "Υπάρχει χώρος για μέχρι έξι παίκτες."
+
+#: C/gnibbles.xml:474(term)
+msgid "Number of AI players"
+msgstr "Αριθμός παικτών με τεχνητή νοημοσύνη"
+
+#: C/gnibbles.xml:476(para)
+msgid ""
+"There is room for up to six AI players. Note that the total number of human "
+"and AI players must be less than or equal to six."
+msgstr ""
+"Υπάρχει χώρος για έξι παίκτες με τεχνητή νοημοσύνη. Σημειώστε ότι ο "
+"συνολικός αριθμός ανθρώπων και παικτών με τεχνητή νοημοσύνη πρέπει να είναι "
+"ίσος ή μικρότερος από έξι."
+
+#: C/gnibbles.xml:418(para)
+msgid ""
+"The properties in the <guilabel>Game</guilabel> tab are: <placeholder-1/>"
+msgstr "Οι προτιμήσεις στην καρτέλα  <guilabel>Παιχνίδι</guilabel> είναι:"
+
+#: C/gnibbles.xml:487(title)
+msgid "Worm Preferences Tab"
+msgstr "Καρτέλα προτιμήσεων σκουληκιού"
+
+#: C/gnibbles.xml:494(phrase)
+msgid "Worm Preferences Tab."
+msgstr "Καρτέλα προτιμήσεων σκουληκιού."
+
+#: C/gnibbles.xml:505(term)
+msgid "Keyboard controls"
+msgstr "Έλεγχοι πληκτρολογίου"
+
+#: C/gnibbles.xml:507(para)
+msgid ""
+"This list let you change the keyboard controls for the given worm. To change "
+"a control, double click on the appropriate entry and then press the key you "
+"want to use for that control."
+msgstr ""
+"Αυτή η λίστα σας επιτρέπει να αλλάξετε τους έλεγχους πληκτρολογίου για το "
+"κάθε σκουλήκι. Για να αλλάξετε ένα πλήκτρο ελέγχου, κάντε διπλό κλικ στην "
+"κατάλληλη καταχώρηση στη λίστα και μετά πατήστε το πλήκτρο που θέλετε να "
+"χρησιμοποιείτε για εκείνο τον έλεγχο."
+
+#: C/gnibbles.xml:515(term)
+msgid "Use relative motion"
+msgstr "Χρήση σχετικής κίνησης"
+
+#: C/gnibbles.xml:517(para)
+msgid ""
+"Rather than left sending your worm toward the left of the screen, right "
+"toward the right and so on, the left and right keys make the worm perform a "
+"left or right turn. For example, if the worm is moving to the left and you "
+"press the left control it turns to head toward the bottom of the screen."
+msgstr ""
+"Αντί το αριστερό βελάκι να στέλνει το σκουλήκι προς τα αριστερά της οθόνης, "
+"το δεξί προς τα δεξιά και ούτω καθ' εξής, τα βελάκια αριστερά και δεξιά "
+"κάνουν το σκουλήκι να στρίβει αριστερά ή δεξιά. Για παράδειγμα, αν το "
+"σκουλήκι κινείται προς τα αριστερά και πατήσετε το βελάκι που ελέγχει την "
+"κίνηση προς τα αριστερά, τότε το σκουλήκι γυρνάει προς το κάτω μέρος της "
+"οθόνης."
+
+#: C/gnibbles.xml:527(term)
+msgid "Worm color"
+msgstr "Χρώμα σκουληκιού"
+
+#: C/gnibbles.xml:529(para)
+msgid ""
+"Customize the color of your worm so you can tell it from your opponent's "
+"worm in multi-player mode."
+msgstr ""
+"Τροποποιήστε το χρώμα του σκουληκιού σας ώστε να το ξεχωρίζετε από εκείνο "
+"του αντιπάλου σας σε παιχνίδια με πολλούς παίκτες."
+
+#: C/gnibbles.xml:484(para)
+msgid ""
+"<placeholder-1/> The properties in the <guilabel>Worm 1 </guilabel>through "
+"<guilabel> Worm 6</guilabel> tabs let you set individual preferences for the "
+"different worms. <placeholder-2/>"
+msgstr ""
+"<placeholder-1/> Οι προτιμήσεις στις καρτέλες <guilabel>Σκουλήκι 1</"
+"guilabel> εώς <guilabel> Σκουλήκι 6</guilabel> σας επιτρέπουν να κάνετε "
+"ξεχωριστές ρυθμίσεις για κάθε διαφορετικό σκουλήκι. <placeholder-2/>"
+
+#: C/gnibbles.xml:10(title)
+msgid "Network Games"
+msgstr "Δικτυακά παιχνίδια"
+
+#: C/gnibbles.xml:11(para)
+msgid ""
+"Nibbles support networked multiplayer games which is provided by <ulink type="
+"\"http\" url=\"http://www.ggzgamingzone.org\">GGZ Gaming Zone</ulink>. By "
+"connecting to a Nibbles server on the Internet, you can challenge other "
+"players in multiplayer games. For news, updates and a list of servers to "
+"connect to, see the <ulink type=\"http\" url=\"http://www.gnome.org/projects/"
+"gnome-games/\">gnome-games website</ulink>."
+msgstr ""
+"Το Νίμπουλς υποστηρίζει δικτυακά παιχνίδια με πολλούς παίκτες που παρέχονται "
+"από το <ulink type=\"http\" url=\"http://www.ggzgamingzone.org\">GGZ Gaming "
+"Zone</ulink>. Με τη σύνδεση σε έναν εξυπηρετητή Νίμπουλς στο διαδίκτυο, "
+"μπορείτε να προκαλέσετε άλλους παίκτες σε παιχνίδια με πολλούς παίκτες. Για "
+"νέα, ενημερώσεις και μια λίστα με εξυπηρετητές που μπορείτε να συνδεθείτε, "
+"δείτε τον ιστότοπο  <ulink type=\"http\" url=\"http://www.gnome.org/projects/"
+"gnome-games/\">gnome-games</ulink>."
+
+#: C/gnibbles.xml:18(para)
+msgid ""
+"To start the multiplayer game of Nibbles, select <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>Network Game</guimenuitem></menuchoice> on the Nibbles "
+"menu."
+msgstr ""
+"Για να ξεκινήσετε ένα παιχνίδι Νίμπουλς με πολλούς παίκτες, επιλέξτε "
+"<menuchoice><guimenu>Παιχνίδι</guimenu><guimenuitem>Δικτυακό παιχνίδι</"
+"guimenuitem></menuchoice> από το μενού του Νίμπουλς."
+
+#: C/gnibbles.xml:24(title)
+msgid "Connecting to a Nibbles network server"
+msgstr "Σύνδεση σε έναν εξυπηρετητή Νίμπουλς"
+
+#: C/gnibbles.xml:25(para)
+msgid ""
+"The Nibbles connection dialog is shown initially when starting a new network "
+"game. This dialog allows you to select a server to connect to, and the "
+"username that you will have while connected to that server."
+msgstr ""
+"Ο διάλογος σύνδεσης του Νίμπουλς εμφανίζεται αρχικά όταν ξεκινάει ένα "
+"καινούριο δικτυακό παιχνίδι. Αυτός ο διάλογος σας επιτρέπει να επιλέξετε "
+"έναν εξυπηρετητή για να συνδεθείτε, και το όνομα χρήστη που θα έχετε ενόσω "
+"θα είστε εκεί συνδεδεμένοι."
+
+#: C/gnibbles.xml:31(para)
+msgid ""
+"It is possible to connect to a server with either a guest account or a "
+"normal registered account. Guest accounts allows you to anonymously login, "
+"while a normal login account allows you to reserve your own username which "
+"is protected by the password that you choose."
+msgstr ""
+"Μπορείτε να συνδεθείτε σε ένα εξυπηρετητή είτε με απλό λογαριασμό επισκέπτη "
+"(guest) είτε με λογαριασμό εγγεγραμμένου χρήστη. Οι λογαριασμοί επισκέπτη "
+"σας επιτρέπουν να συνδέεστε ανώνυμα, ενώ ένας κανονικός λογαριασμός σας "
+"επιτρέπει να διατηρείτε το όνομα χρήστη το οποίο προστατεύεται από τον "
+"κωδικό πρόσβασης που θα δώσετε."
+
+#: C/gnibbles.xml:38(para)
+msgid ""
+"The <guimenuitem>Guest Login</guimenuitem> option should be selected if you "
+"want an anonymous guest account. If you want to create a new login account, "
+"then select the <guimenuitem>First-time Login</guimenuitem> option, with the "
+"username, password and email of your choice. If you have already created "
+"your account, you can connect by selecting the <guimenuitem>Normal Login</"
+"guimenuitem> option, and enter the username and password that you have "
+"chosen."
+msgstr ""
+"Η επιλογή <guimenuitem>Σύνδεση επισκέπτη</guimenuitem> επιλέγεται όταν "
+"θέλετε έναν ανώνυμο λογαριασμό επισκέπτη. Αν θέλετε να δημιουργήσετε ένα "
+"καινούριο λογαριασμό εισόδου, επιλέξτε το <guimenuitem>Σύνδεση για πρώτη "
+"φορά</guimenuitem>, με το όνομα χρήστη, τον κωδικό πρόσβασης και το Email "
+"της επιλογής σας. Αν έχετε ήδη δημιουργήσει λογαριασμό, μπορείτε να "
+"συνδεθείτε επιλέγοντας την <guimenuitem>Κανονική σύνδεση</guimenuitem>, και "
+"να βάλετε το όνομα χρήστη και τον κωδικό πρόσβασης που ήδη επιλέξατε."
+
+#: C/gnibbles.xml:46(para)
+msgid ""
+"To connect to a server, click on the <guimenuitem>Connect</guimenuitem> "
+"button."
+msgstr ""
+"Για να συνδεθείτε σε ένα εξυπηρετητή πατήστε στο κουμπί "
+"<guimenuitem>Σύνδεση</guimenuitem>."
+
+#: C/gnibbles.xml:50(title) C/gnibbles.xml:57(phrase)
+msgid "The Nibbles network connection dialog."
+msgstr "Διάλογος δικτυακής σύνδεσης του Νίμπουλς."
+
+#: C/gnibbles.xml:65(title)
+msgid "Joining a game room"
+msgstr "Είσοδος σε δωμάτιο παιχνιδιών"
+
+#: C/gnibbles.xml:66(para)
+msgid ""
+"Once you have successfully connected to a server, you can choose which game "
+"room to join. To play a multiplayer game of Nibbles, select the Nibbles "
+"room. If you want to host your own game, then click on the Launch button. "
+"This creates a new table where other players can participate in a game "
+"against you. If there are any other games already started, then you can "
+"double-click on an existing game table to join it. The list of game tables "
+"on the right shows you the number of available seats, which means the number "
+"of players that can join the game table."
+msgstr ""
+"Όταν συνδεθείτε επιτυχώς σε έναν εξυπηρετητή, μπορείτε να επιλέξετε σε ποιό "
+"δωμάτιο θα εισέλθετε. Για να παίξετε ένα δικτυακό παιχνίδι Νίμπουλς, "
+"επιλέξτε το δωμάτιο Gnibbles. Αν θέλετε να φιλοξενήσετε το δικό σας παιχνίδι "
+"τότε πατήστε στο Εκκίνηση. Αυτό δημιουργεί ένα νέο ταμπλώ στο οποίο άλλοι "
+"παίκτες μπορούν να συμμετάσχουν σε ένα παιχνίδι εναντίον σας. Αν υπάρχουν "
+"άλλα παιχνίδια που έχουν ήδη αρχίσει, τότε μπορείτε με διπλό κλικ σε "
+"υφιστάμενο παιχνίδι να συνδεθείτε σε αυτό. Η λίστα με τα ταμπλώ παιχνιδιού "
+"στα δεξιά δείχνει έναν αριθμό διαθέσιμων θέσεων, που σημαίνει τον αριθμό των "
+"παικτών που μπορούν να συνδεθούν σε ένα παιχνίδι."
+
+#: C/gnibbles.xml:73(title) C/gnibbles.xml:80(phrase)
+msgid ""
+"This Nibbles network dialog allows you to join a game room to find other "
+"players."
+msgstr ""
+"Ο διάλογος δικτύου του Νίμπουλς σας επιτρέπει να εισέρχεστε σε ένα δωμάτιο "
+"για να βρίσκετε άλλους παίκτες."
+
+#: C/gnibbles.xml:85(para)
+msgid ""
+"When creating a new table for Nibbles games, a preference dialog is "
+"displayed which allows you to customize the game, such as set the minimum "
+"number of players for the game. Once the total number of seats have been "
+"taken, then no more players are allowed to join that game table."
+msgstr ""
+"Όταν δημιουργείτε ένα νέο ταμπλώ για παιχνίδι Νίμπουλς, ένας διάλογος "
+"προτιμήσεων εμφανίζεται ο οποίος σας επιτρέπει να κάνετε ρυθμίσεις στο "
+"παιχνίδι, όπως τον ελάχιστο αριθμό παικτών του παιχνιδιού. Όταν ο συνολικός "
+"αριθμός θέσεων έχει γεμίσει, τότε δε μπορούν άλλοι παίκτες να συνδεθούν στο "
+"συγκεκριμένο ταμπλώ."
+
+#: C/gnibbles.xml:90(para)
+msgid ""
+"It is possible to chat with other players in network games. Ask for advice "
+"or help playing the games, but please be polite against other players."
+msgstr ""
+"Μπορείτε να συνομιλήσετε με άλλους παίκτες στο δικτυακό παιχνίδι. Ρωτήστε "
+"για οδηγίες ή βοήθεια για τα παιχνίδια, αλλά σας παρακαλούμε να είστε "
+"ευγενικοί προς τους άλλους."
+
+#: C/gnibbles.xml:97(title)
+msgid "Waiting for other players to join the game"
+msgstr "Αναμονή για άλλους παίκτες να συδεθούν στον παιχνίδι"
+
+#: C/gnibbles.xml:98(para)
+msgid ""
+"Once you have successfully joined a game table, then you have to wait until "
+"enough players have joined the table. The <guimenuitem>Players List</"
+"guimenuitem> menu item allows you to see a list of the players who have "
+"joined the game. The game will begin immediately when the total number of "
+"players in the the game have been reached."
+msgstr ""
+"Όταν θα έχετε επιτυχώς συνδεθεί σε ένα ταμπλώ παιχνιδιού, τότε πρέπει να "
+"περιμένετε μέχρι να συνδεθούν επαρκείς παίκτες. Το μενού <guimenuitem>Λίστα "
+"παικτών</guimenuitem> σας επιτρέπει να δείτε μια λίστα με τους παίκτες που "
+"έχουν συνδεθεί το παιχνίδι. Το παιχνίδι θα ξεκινήσει όταν ο συνολικός "
+"αριθμός των παικτών έχει συμπληρωθεί."
+
+#: C/gnibbles.xml:107(title)
+msgid "Playing multiplayer Nibbles games"
+msgstr "Δικτυακό παιχνίδι Νίμπουλς"
+
+#: C/gnibbles.xml:108(para)
+msgid ""
+"Multiplayer Nibbles games have pretty much the same rules as normal Nibbles "
+"games, except that you are now playing against human players. This means "
+"that other strategies might possibly be better than when playing against AI "
+"players."
+msgstr ""
+"Τα παιχνίδια Νίμπουλς στο δίκτυο έχουν τους ίδιους κανόνες με τα κανονικά "
+"παιχνίδια, μόνο που τώρα παίζετε εναντίον άλλων ανθρώπων. Αυτό σημαίνει ότι "
+"ίσως είναι προτιμότερες άλλες στρατηγικές από αυτές που χρησιμοποιείτε όταν "
+"παίζετε εναντίον του υπολογιστή."
+
+#: C/gnibbles.xml:113(para)
+msgid ""
+"Once a player has won, the game ends and you can return to the initial "
+"network game screen. Then you can play yet another game of addictive Nibbles "
+"multiplayer!"
+msgstr ""
+"Όταν ένας από τους παίκτες έχει κερδίσει το παιχνίδι τελειώνει και "
+"επιστρέφετε στην πρώτη οθόνη του δικτυακού παιχνιδιού. Τότε μπορείτε να "
+"παίξετε ένα ακόμα εθιστικό δικτυακό παιχνίδι Νίμπουλς!"
+
+#: C/gnibbles.xml:553(title)
+msgid "Authors"
+msgstr "Δημιουργοί"
+
+#: C/gnibbles.xml:554(para)
+msgid ""
+"<application>Nibbles</application> was written by Sean MacIsaac "
+"<email>sjm@acm.org</email> and Ian Peters <email>itp@gnu.org</email>. This "
+"manual was written by Kevin Breit <email>battery841@mypad.com</email>. "
+"Nibbles was updated with network support by Andreas Røsdal "
+"<email>andreasr@gnome.org</email>. To report a bug or make a suggestion "
+"regarding this application or this manual, follow the directions in this "
+"<ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">document</ulink>."
+msgstr ""
+"Το <application>Νίμπουλς</application> γράφτηκε από τους Sean MacIsaac "
+"<email>sjm@acm.org</email> και Ian Peters <email>itp@gnu.org</email>. Αυτό "
+"το εγχειρίδιο γράφτηκε από τον Kevin Breit <email>battery841@mypad.com</"
+"email>. Το Νίμπουλς αναβαθμίστηκε με υποστήριξη δικτύο από τον Andreas "
+"Røsdal <email>andreasr@gnome.org</email>. Για να αναφέρετε ένα σφάλμα ή να "
+"κάνετε μια πρόταση σχετικά με την εφαρμογή ή αυτό το εγχειρίδιο, ακολουθήστε "
+"τις οδηγίες σ' αυτό το <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
+"\">έγγραφο</ulink>."
+
+#: C/gnibbles.xml:580(title)
+msgid "License"
+msgstr "Άδεια χρήσης"
+
+#: C/gnibbles.xml:581(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>GNU General Public License</citetitle></ulink> as published by "
+"the Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version."
+msgstr ""
+"Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό: μπορείτε να το αναδιανείμετε ή/"
+"και να το τροποποιείτε υπό τους όρους της <ulink type=\"help\" url=\"gnome-"
+"help:gpl\"><citetitle>Γενικής Δημόσιας Άδειας GNU</citetitle></ulink> όπως "
+"εκδίδεται από το Ίδρυμα Ελεύθερου Λογισμικού, είτε στην έκδοση 2 της άδειας, "
+"είτε (κατά την άποψή σας) οποιαδήποτε μεταγενέστερη έκδοση."
+
+#: C/gnibbles.xml:589(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"Αυτό το πρόγραμμα διανέμεται με την ελπίδα οτι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ "
+"ΚΑΜΙΑ ΑΠΟΛΥΤΩΣ ΕΓΓΥΗΣΗ - χωρίς ακόμη και την έμμεση εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ "
+"ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Για περισσότερες λεπτομέρειες δείτε "
+"τη <citetitle>Γενική Δημόσια Άδεια GNU</citetitle>."
+
+#: C/gnibbles.xml:595(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. 59 Temple Place - Suite 330 Boston, MA 02111-1307 "
+"USA </address>"
+msgstr ""
+"Ένα αντίγραφο της <citetitle>Γενικής Δημόσιας Άδειας GNU</citetitle> "
+"περιλαμβάνεται ως παράρτημα στον <citetitle>Οδηγό χρήσης του GNOME</"
+"citetitle>. Μπορείτε επίσης να λάβετε ένα αντίγραφο της <citetitle>Γενικής "
+"Δημόσιας Άδειας GNU</citetitle> από το Ίδρυμα Ελεύθερου Λογισμικού αν "
+"επισκεφθείτε τον <ulink type=\"http\" url=\"http://www.fsf.org\">ιστότοπό "
+"τους</ulink>, ή γράφοντας στη διεύθυνση <address> Free Software Foundation, "
+"Inc. 59 Temple Place - Suite 330 Boston, MA 02111-1307 USA </address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/gnibbles.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+"Ελληνική μεταφραστική ομάδα GNOME\n"
+"Μάριος Ζηντίλης <m.zindilis@dmajor.org>, 2009\n"
+"\n"
+"Για περισσότερα δείτε http://www.gnome.gr/"

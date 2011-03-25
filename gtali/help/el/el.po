@@ -1,0 +1,710 @@
+# Greek translation of gtali documentation
+# Jennie Petoumenou <epetoumenou@gmail.com>, 2009.
+#  <>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: gtali.HEAD\n"
+"POT-Creation-Date: 2009-03-30 13:32+0000\n"
+"PO-Revision-Date: 2009-03-30 12:31+0200\n"
+"Last-Translator: Jennie Petoumenou <epetoumenou@gmail.com>\n"
+"Language-Team: Greek <team@gnome.gr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 0.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gtali.xml:161(None)
+msgid "@@image: 'figures/mainwindow.png'; md5=adbcf6421391e5e51c091e13672d3b7e"
+msgstr ""
+"@@image: 'figures/mainwindow.png'; md5=adbcf6421391e5e51c091e13672d3b7e"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gtali.xml:238(None)
+msgid ""
+"@@image: 'figures/preferences.png'; md5=163633a4c9c3d3fe96e7b4a15f2e3eef"
+msgstr ""
+"@@image: 'figures/preferences.png'; md5=163633a4c9c3d3fe96e7b4a15f2e3eef"
+
+#: C/gtali.xml:27(title)
+msgid "<application>Tali</application> Manual"
+msgstr "Εγχειρίδιο του <application>Τάλι</application>"
+
+#: C/gtali.xml:29(para)
+msgid ""
+"Tali is like Yahtzee for GNOME or like poker with dice. The player rolls "
+"dice to try to make the best possible combinations, like 4 of a kind, small "
+"straight, and full house. The player is allowed 3 rolls per turn and can "
+"hold certain dice with each roll."
+msgstr ""
+"Το Τάλι μοιάζει με το Yahtzee ή με πόκερ για ζάρια. Ο παίχτης ρίχνει τα "
+"ζάρια με στόχο να επιτύχει τον καλύτερο δυνατό συνδυασμό, π.χ. καρέ, μικρή "
+"κέντα, φουλ. Ο παίκτης δικαιούται τρεις ζαριές τη φορά. Για κάθε ζαριά "
+"μπορεί να αποφασίσει αν θα κρατήσει κάποια από τα ζάρια που έχει ή αν θα "
+"ξαναρίξει όλα τα ζάρια."
+
+#: C/gtali.xml:37(year)
+msgid "2001"
+msgstr "2001"
+
+#: C/gtali.xml:38(holder)
+msgid "Scott D. Heavner"
+msgstr "Scott D. Heavner"
+
+#: C/gtali.xml:53(publishername) C/gtali.xml:91(para)
+msgid "GNOME Documentation Project"
+msgstr "Έργο Τεκμηρίωσης GNOME"
+
+#: C/gtali.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Δίνεται άδεια για αντιγραφή, διανομή και/ή τροποποίηση του εγγράφου υπό τους "
+"όρους της GNU Free Documentation License (GFDL), Έκδοση 1.1 ή μεταγενέστερη "
+"εκδιδόμενη από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Σταθερά Εδάφια, χωρίς "
+"Εξώφυλλα Κειμένου, και χωρίς Οπισθόφυλλα Κειμένου. Μπορείτε να βρείτε ένα "
+"αντίγραφο της GFDL σε αυτόν τον <ulink type=\"help\" url=\"ghelp:fdl"
+"\">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανεμήθηκε με αυτόν τον "
+"οδηγό."
+
+#: C/gtali.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του GNOME όπως "
+"διανέμεται υπό τους όρους της GFDL. Εάν επιθυμείτε να διανείμετε αυτή την "
+"τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση "
+"συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 "
+"της άδειας."
+
+#: C/gtali.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Πολλά από τα ονόματα που χρησιμοποιούνται από εταιρίες για να ξεχωρίσουν τα "
+"προϊόντα και τις υπηρεσίες είναι σήματα κατατεθέν. Όπου αυτά τα ονόματα "
+"εμφανίζονται στην τεκμηρίωση GNOME, και τα μέλη της ομάδας τεκμηρίωσης GNOME "
+"έχουν γνώση αυτών, τότε αυτά αναγράφονται με κεφαλαίους χαρακτήρες ή με "
+"αρχικούς κεφαλαίους χαρακτήρες."
+
+#: C/gtali.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ ΠΑΡΕΧΕΤΑΙ \"ΩΣ ΕΧΕΙ\", ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ ΟΤΙ ΜΠΟΡΕΙ ΝΑ "
+"ΕΞΥΠΗΡΕΤΗΣΕΙ ΚΑΠΟΙΟ ΣΚΟΠΟ Η ΟΤΙ ΕΙΝΑΙ ΧΩΡΙΣ ΣΦΑΛΜΑ. ΟΛΟΚΛΗΡΗ Η ΕΥΘΥΝΗ ΓΙΑ "
+"ΤΗΝ ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ ΚΑΙ ΛΕΙΤΟΥΡΓΙΚΟΤΗΤΑ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ "
+"ΑΥΤΗΣ ΑΝΗΚΕΙ ΣΕ ΕΣΑΣ. ΕΑΝ Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ Ή ΠΑΡΑΛΛΑΓΗ ΑΥΤΗΣ ΕΙΝΑΙ ΛΑΘΟΣ "
+"ΚΑΤΑ ΚΑΠΟΙΟ ΤΡΟΠΟ ΕΣΕΙΣ ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΗΝ ΕΥΘΥΝΗ ΤΗΣ ΔΙΟΡΘΩΣΗΣ. Η ΑΠΑΛΛΑΓΗ "
+"ΕΥΘΥΝΗΣ ΠΟΥ ΣΥΝΟΔΕΥΕΙ ΑΥΤΗ ΤΗΝ ΤΕΚΜΗΡΙΩΣΗ ΕΙΝΑΙ ΑΝΑΠΟΣΠΑΣΤΟ ΚΟΜΜΑΤΙ ΑΥΤΗΣ. "
+"ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ "
+"ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ."
+
+#: C/gtali.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΝΟΜΙΚΗ ΣΥΝΘΗΚΗ, ΕΙΤΕ ΜΕΣΩ ΣΥΜΒΟΛΑΙΩΝ Ή "
+"ΑΛΛΙΩΣ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ Ο ΣΥΓΓΡΑΦΕΑΣ, Ο ΔΙΑΝΟΜΕΑΣ, Η ΑΛΛΟΣ ΣΥΝΥΠΕΥΘΥΝΟΣ ΓΙΑ "
+"ΤΗΝ ΣΥΓΓΡΑΦΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ, ΓΙΑ ΕΜΜΕΣΕΣ Η ΑΜΕΣΕΣ, ΤΥΧΑΙΕΣ Ή ΜΗ ΖΗΜΙΕΣ "
+"ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ "
+"ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ "
+"ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ."
+
+#: C/gtali.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"ΤΟ ΈΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ "
+"GNU FREE DOCUMENTATION LICENSE ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: "
+"<placeholder-1/>"
+
+#: C/gtali.xml:63(firstname)
+msgid "Scott D"
+msgstr "Scott D"
+
+#: C/gtali.xml:64(surname)
+msgid "Heavner"
+msgstr "Heavner"
+
+#: C/gtali.xml:66(email)
+msgid "sdh@po.cwru.edu"
+msgstr "sdh@po.cwru.edu"
+
+#: C/gtali.xml:85(revnumber)
+msgid "Tali Manual V2.8"
+msgstr "Τεκμηρίωση του Τάλι V2.8"
+
+#: C/gtali.xml:86(date)
+msgid "September 2004"
+msgstr "Σεπτέμβριος 2004"
+
+#: C/gtali.xml:88(para)
+msgid "Scott D Heavner <email>sdh@po.cwru.edu</email>"
+msgstr "Scott D Heavner <email>sdh@po.cwru.edu</email>"
+
+#: C/gtali.xml:96(releaseinfo)
+msgid "This manual describes version 2.12 of Tali."
+msgstr "Αυτή η τεκμηρίωση καλύπτει την έκδοση 2.12 του Τάλι."
+
+#: C/gtali.xml:103(title)
+msgid "Feedback"
+msgstr "Ανάδραση"
+
+#: C/gtali.xml:104(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Tali</"
+"application> application or this manual, follow the directions in the <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</ulink>."
+msgstr ""
+"Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με το "
+"<application>Τάλι</application> ή την τεκμηρίωση του, ακολουθήστε τις "
+"οδηγίες στη <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">σελίδα "
+"ανάδρασης GNOME</ulink>."
+
+#: C/gtali.xml:115(primary)
+msgid "GNOME Tali"
+msgstr "GNOME Tali"
+
+#: C/gtali.xml:121(title)
+msgid "Introduction"
+msgstr "Εισαγωγή"
+
+#: C/gtali.xml:123(para)
+msgid ""
+"<application>GNOME Tali</application> is a sort of poker with dice and less "
+"money. You roll five dice three times and try to create the best "
+"<quote>hand</quote>. Your two rerolls may include any or all of your dice."
+msgstr ""
+"Το <application>Τάλι</application> είναι ένα είδος πόκερ για ζάρια και με "
+"λιγότερα λεφτά. Ρίχνετε τα ζάρια τρεις φορές προσπαθώντας να αποκτήσετε το "
+"καλύτερο δυνατό <quote>φύλλο</quote>. Σε κάθε νέα ζαριά μπορείτε να "
+"ξαναρίξετε όσα ζάρια θέλετε."
+
+#: C/gtali.xml:129(para)
+msgid ""
+"<application>GNOME Tali</application> is very similar to the dice game "
+"Yahtzee which is a trademark of Hasbro, Inc."
+msgstr ""
+"Το <application>Τάλι</application> μοιάζει πολύ με το παιχνίδι για ζάρια "
+"Yahtzee που αποτελεί σήμα κατατεθέν της Hasbro, Inc."
+
+#: C/gtali.xml:134(para)
+msgid ""
+"To run <application>GNOME Tali</application>, select "
+"<menuchoice><guisubmenu>Games</guisubmenu><guimenuitem>GNOME Tali</"
+"guimenuitem></menuchoice> from the <guimenu>Main Menu</guimenu>, or type "
+"<command>gtali</command> on the command line."
+msgstr ""
+"Για να παίξετε <application>Τάλι</application>, επιλέξτε "
+"<menuchoice><guisubmenu>Παιχνίδια</guisubmenu><guimenuitem>Τάλι</"
+"guimenuitem></menuchoice> από το <guimenu>Κύριο μενού</guimenu>, ή "
+"πληκτρολογήστε <command>gtali</command> στη γραμμή εντολών."
+
+#: C/gtali.xml:144(para)
+msgid ""
+"<application>GNOME Tali</application> is included in the <filename>gnome-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.8 of <application>GNOME Tali</application>."
+msgstr ""
+"Το <application>Τάλι</application> συμπεριλαμβάνεται στο πακέτο "
+"<filename>gnome-games</filename>, που αποτελεί τμήμα της επιφάνειας εργασίας "
+"του GNOME. Αυτή η τεκμηρίωση καλύπτει την έκδοση 2.12 του <application>Τάλι</"
+"application>/."
+
+#: C/gtali.xml:153(title)
+msgid "Playing GNOME Tali"
+msgstr "Παίζοντας Τάλι"
+
+#: C/gtali.xml:156(title)
+msgid "GNOME Tali in action"
+msgstr "Το Τάλι εν δράσει"
+
+#: C/gtali.xml:164(phrase)
+msgid "GNOME Tali main window screenshot."
+msgstr "Στιγμιότυπο του κύριου παραθύρου του Τάλι."
+
+#: C/gtali.xml:170(para)
+msgid "When play starts, you see the results of your first throw of the dice."
+msgstr ""
+"Στο ξεκίνημα του παιχνιδιού βλέπετε τα αποτελέσματα της πρώτης σας ζαριάς."
+
+#: C/gtali.xml:177(para)
+msgid "Click on the dice you wish to roll again."
+msgstr "Κάντε κλικ πάνω στα ζάρια που θέλετε να ξαναρίξετε."
+
+#: C/gtali.xml:181(para)
+msgid ""
+"When you have selected all the dice you wish to reroll, press the "
+"<guibutton>Roll!</guibutton> button."
+msgstr ""
+"Αφού επιλέξετε τα ζάρια που επιθυμείτε να ξαναρίξετε, πατήστε το κουμπί "
+"<guibutton>Ρίξτε τα ζάρια!</guibutton>."
+
+#: C/gtali.xml:186(para)
+msgid ""
+"When you have a hand you like or have run out of chances to throw the dice, "
+"click on a row corresponding to what you think is your best scoring "
+"combination. It is very possible to have a score of zero and if you click on "
+"the wrong row, you will be scored accordingly. (Say for example, you get "
+"yahtzee -- 5 of a kind -- and click on the large straight row, you will "
+"receive a zero in your large straight score)."
+msgstr ""
+"Αν αποκτήσετε έναν καλό συνδυασμό ή αν δε δικαιούστε άλλες ζαριές, κάντε "
+"κλικ στη γραμμή που θεωρείτε ότι αντιστοιχεί στο συνδυασμό που θα σας δώσει "
+"την καλύτερη βαθμολογία. Είναι δυνατό να λάβετε μηδενική βαθμολογία. Αν "
+"λοιπόν επιλέξετε κατά λάθος άλλη γραμμή, η βαθμολογία σας θα είναι μηδενική. "
+"(Αν για παράδειγμα έχετε yahtzee (πέντε όμοια) και κάνετε κλικ στη γραμμή "
+"της μεγάλης κέντας, θα λάβετε μηδέν βαθμούς στη γραμμή της μεγάλης κέντας)."
+
+#: C/gtali.xml:196(para)
+msgid ""
+"You can only use each combination once, i.e. once you've entered something "
+"in a slot, you can't change the score later if you roll a better hand."
+msgstr ""
+"Κάθε συνδυασμός μπορεί να χρησιμοποιηθεί μόνο μία φορά. Άρα, αν έχετε ήδη "
+"βαθμολογία σε κάποια γραμμή, δεν μπορείτε να την αλλάξετε αργότερα, αν "
+"φέρετε καλύτερη ζαριά."
+
+#: C/gtali.xml:201(para)
+msgid ""
+"There is one exception to this rule, if you roll a yahtzee a second time you "
+"can put it in the yahtzee row again for an extra fifty points. You can keep "
+"doing this each time you get another yahtzee. At the end of the game you "
+"will be given extra rolls to fill in the other rows. Be warned that if you "
+"score zero in your yahtzee row (i.e. you filled that row with something that "
+"wasn't a yahtzee) then you can't put a yahtzee in afterward, zero is all you "
+"will score."
+msgstr ""
+"Υπάρχει μόνο μία εξαίρεση στον κανόνα: Όσες φορές και να φέρετε πέντε όμοια, "
+"μπορείτε να χρησιμοποιείτε τη γραμμή \"Πέντε όμοια\" και να παίρνετε άλλους "
+"πενήντα βαθμούς. Στο τέλος του παιχνιδιού θα δικαιούστε επιπλέον ζαριές "
+"μέχρι να γεμίσετε όλες τις γραμμές. Σας προειδοποιούμε όμως ότι αν εισάγετε "
+"μηδέν βαθμούς στη γραμμή \"Πέντε όμοια\" (γιατί την επιλέξατε παρόλο που δεν "
+"είχατε τον κατάλληλο συνδυασμό), τότε δεν θα μπορείτε να τη χρησιμοποιήσετε "
+"στη συνέχεια, ακόμη κι αν φέρετε πέντε όμοια. Άρα, η τελική σας βαθμολογία "
+"για τη γραμμή αυτή θα είναι μηδέν."
+
+#: C/gtali.xml:211(para)
+msgid ""
+"There is also a bonus of 35 points if you score a total of 63 points or more "
+"in the top six rows."
+msgstr ""
+"Επίσης, παίρνετε μπόνους 35 βαθμούς επιπλέον, αν η συνολική σας βαθμολογία "
+"για τις έξι πάνω γραμμές είναι 63 ή παραπάνω."
+
+#: C/gtali.xml:216(title)
+msgid "Using the keyboard"
+msgstr "Συντομεύσεις πληκτρολογίου"
+
+#: C/gtali.xml:218(para)
+msgid ""
+"As an alternative to using the mouse, the keys 1 through 5 toggle the dice "
+"just as if you had clicked them. The key 1 corresponds to the first die and "
+"so on. Use the usual controls to roll the dice and select a row. i.e. use "
+"tab to switch between the roll button and the score area, use the arrow keys "
+"to navigate up and down the rows and use space to select."
+msgstr ""
+"Αντί να κάνετε κλικ με το ποντίκι μπορείτε να χρησιμοποιείτε τα πλήκτρα 1 "
+"έως 5 για να εναλλάσσετε την κατάσταση των ζαριών. Το πλήκτρο 1 αντιστοιχεί "
+"στο πρώτο ζάρι κ.ο.κ. Για να ρίξετε τα ζάρια και να επιλέξετε γραμμή "
+"μπορείτε να χρησιμοποιήσετε τις συνήθεις συντομεύσεις: το Tab για να "
+"μετακινείστε από το κουμπί \"Ρίξτε τα ζάρια!\" στον πίνακα με τις "
+"βαθμολογίες, τα βέλη για να μετακινείστε από τη μια γραμμή στην άλλη, και το "
+"διάστημα για να επιλέγετε."
+
+#: C/gtali.xml:230(title)
+msgid "Game Options"
+msgstr "Επιλογές παιχνιδιού"
+
+#: C/gtali.xml:233(title)
+msgid "GNOME Tali preferences"
+msgstr "Προτιμήσεις του Τάλι"
+
+#: C/gtali.xml:241(phrase)
+msgid "GNOME Tali preferences dialog box."
+msgstr "Διάλογος προτιμήσεων του Τάλι."
+
+#: C/gtali.xml:246(title)
+msgid "Human Players"
+msgstr "Άνθρωποι παίκτες"
+
+#: C/gtali.xml:248(guimenuitem)
+msgid "Number of players"
+msgstr "Αριθμός παικτών"
+
+#: C/gtali.xml:250(para)
+msgid ""
+"Selects the number of human players. As described above you are only allowed "
+"six total players."
+msgstr ""
+"Επιλογή του αριθμού ανθρώπων παικτών. Συνολικά επιτρέπονται μέχρι και έξι "
+"παίκτες."
+
+#: C/gtali.xml:258(title)
+msgid "Computer Opponents"
+msgstr "Παίκτες υπολογιστή"
+
+#: C/gtali.xml:260(guimenuitem)
+msgid "Delay between rolls"
+msgstr "Καθυστέρηση μεταξύ ζαριών"
+
+#: C/gtali.xml:262(para)
+msgid ""
+"Make the computer opponents pause between rolls of the dice so you can see "
+"what they are doing. Slows down game play some."
+msgstr ""
+"Αναγκάζει τους παίκτες του υπολογιστή να κάνουν μια μικρή παύση από ζαριά σε "
+"ζαριά, ώστε να μπορείτε να παρακολουθείτε τις κινήσεις τους. Επιβραδύνει "
+"λίγο το ρυθμό του παιχνιδιού."
+
+#: C/gtali.xml:269(guimenuitem)
+msgid "Number of opponents"
+msgstr "Αριθμός αντιπάλων"
+
+#: C/gtali.xml:271(para)
+msgid ""
+"Select the number of computer opponents. You are allowed a total of six "
+"human and computer players. If you attempt to increase this number near the "
+"limit, the number of human players will be decreased to maintain only six "
+"total players."
+msgstr ""
+"Επιλογή του αριθμού των παικτών του υπολογιστή. Συνολικά επιτρέπονται έξι "
+"παίκτες (άνθρωποι ή παίκτες υπολογιστή). Αν αυξήσετε υπερβολικά τον αριθμό "
+"των παικτών του υπολογιστή, ο αριθμός των ανθρώπων θα μειωθεί, προκειμένου "
+"οι συνολικοί παίκτες να μην υπερβούν τους έξι."
+
+#: C/gtali.xml:281(title)
+msgid "Game Type"
+msgstr "Είδος παιχνιδιού"
+
+#: C/gtali.xml:283(guimenuitem)
+msgid "Version of the game to play"
+msgstr "Χρησιμοποιούμενη εκδοχή του παιχνιδιού"
+
+#: C/gtali.xml:285(para)
+msgid ""
+"Play either the regular version (similar to Yahtzee) or the version with "
+"colors (similar to Kismet). When you change game type, you must restart the "
+"game to see use the new game type."
+msgstr ""
+"Μπορείτε να παίξετε είτε την κλασική εκδοχή (που μοιάζει με το Yahtzee) ή "
+"την εκδοχή με τα χρώματα (που μοιάζει με το Kismet). Αν αλλάξετε είδος "
+"παιχνιδιού, θα πρέπει να ξεκινήσετε νέο παιχνίδι για να χρησιμοποιήσετε το "
+"νέο είδος."
+
+#: C/gtali.xml:295(guimenuitem)
+msgid "Player Names"
+msgstr "Ονόματα παικτών"
+
+#: C/gtali.xml:297(para)
+msgid "To change the names of the players just enter new names in the boxes."
+msgstr ""
+"Για να αλλάξετε τα ονόματα των παικτών, απλά εισάγετε νέα ονόματα στα "
+"κατάλληλα πεδία."
+
+#: C/gtali.xml:306(title)
+msgid "Game Strategy"
+msgstr "Στρατηγική του παιχνιδιού"
+
+#: C/gtali.xml:307(para)
+msgid ""
+"The 63 points needed for the bonus in the upper half corresponds to getting "
+"three of each die type in each row. If you score more than three dice in the "
+"fives and sixes rows then you can afford to place a bad roll in either the "
+"ones row or the twos row and still get the bonus. In the Colors version, you "
+"get a bonus of 55 if your upper half total is between 71 and 77, and a bonus "
+"of 75 if your upper half total is greater than 77."
+msgstr ""
+"Για να αποκτήσετε τους 63 βαθμούς που χρειάζονται για το μπόνους στον πάνω "
+"πίνακα θα πρέπει να έχετε τρία όμοια σε κάθε μία από τις πρώτες έξι γραμμές. "
+"Αν έχετε παραπάνω από τρία πεντάρια ή εξάρια, τότε μπορείτε να πάρετε το "
+"μπόνους ακόμη και αν φέρετε χαμηλότερη βαθμολογία στους άσσους και τα "
+"δυάρια. Όταν παίζετε \"Χρώματα\", το μπόνους είναι 55 βαθμοί αν η βαθμολογία "
+"στον πάνω πίνακα είναι μεταξύ 71 και 77, και 75 βαθμοί για βαθμολογίες πάνω "
+"από 77."
+
+#: C/gtali.xml:316(para)
+msgid ""
+"Don't forget about multiple yahtzees, if you roll a second yahtzee you can "
+"also put it in the yahtzee row for even more points. This only applies to "
+"the regular game."
+msgstr ""
+"Μην ξεχνάτε ότι δικαιούστε περισσότερα από ένα \"Πέντε όμοια\". Αν λοιπόν "
+"ξαναφέρετε πέντε όμοια, μπορείτε να επιλέξετε και πάλι την αντίστοιχη γραμμή "
+"και να αυξήσετε τη βαθμολογία σας. Αυτό ισχύει μόνο για το κλασικό παιχνίδι."
+
+#: C/gtali.xml:330(title)
+msgid "Known Bugs and Limitations"
+msgstr "Γνωστά σφάλματα και περιορισμοί"
+
+#: C/gtali.xml:331(para)
+msgid ""
+"When you switch game type, the game does not use the new dice images until "
+"you restart gtali. It should play correctly with the \"wrong\" dice."
+msgstr ""
+"Όταν αλλάζετε είδος παιχνιδιου, το παιχνίδι συνεχίζει να χρησιμοποιεί τα "
+"παλαιά εικονίδια για τα ζάρια μέχρι να επανεκκινήσετε το gtali. Θα παίζετε "
+"το νέο είδος παιχνιδιού, αλλά με τα \"λάθος\" ζάρια."
+
+#: C/gtali.xml:339(title)
+msgid "Glossary"
+msgstr "Γλωσσάρι"
+
+#: C/gtali.xml:341(para)
+msgid "Remember that the order of the dice is not important."
+msgstr "Θυμηθείτε ότι η σειρά των ζαριών δεν παίζει ρόλο."
+
+#: C/gtali.xml:344(glossterm)
+msgid "3 of a Kind"
+msgstr "Τρία όμοια"
+
+#: C/gtali.xml:345(para)
+msgid ""
+"Three of the dice have the same number. The score is the total of all the "
+"dice. e.g. 1, 2, 2, 2, 5."
+msgstr ""
+"Τρία ζάρια έχουν τον ίδιο αριθμό. Η βαθμολογία προκύπτει από το σύνολο όλων "
+"των ζαριών. Π.χ. 1+2+2+2+5=12"
+
+#: C/gtali.xml:350(glossterm)
+msgid "4 of a Kind"
+msgstr "Καρέ"
+
+#: C/gtali.xml:351(para)
+msgid ""
+"Four of the dice have the same number. The score is the total of all the "
+"dice. e.g. 2, 5, 5, 5, 5. In the Colors game, the score is 25 plus the total "
+"of all the dice."
+msgstr ""
+"Τέσσερα ζάρια έχουν τον ίδιο αριθμό. Η βαθμολογία προκύπτει από το σύνολο "
+"όλων των ζαριών. Π.χ. 2+5+5+5+5=22. Όταν παίζετε \"Χρώματα\", η βαθμολογία "
+"είναι 25 συν το  σύνολο όλων των ζαριών."
+
+#: C/gtali.xml:357(glossterm)
+msgid "5 of a Kind"
+msgstr "Πέντε όμοια"
+
+#: C/gtali.xml:358(para)
+msgid ""
+"Five identical dice. e.g. 3, 3, 3, 3, 3. In the Colors game, the score is 50 "
+"plus the total of all the dice."
+msgstr ""
+"Πέντε όμοια ζάρια. Π.χ. 3,3,3,3,3. Στα \"Χρώματα\", η βαθμολογία είναι 50 "
+"συν το σύνολο όλων των ζαριών."
+
+#: C/gtali.xml:363(glossterm)
+msgid "Full House"
+msgstr "Φουλ"
+
+#: C/gtali.xml:364(para)
+msgid ""
+"Five dice consisting of two groups: One group of three with the same numbers "
+"and another group of two with the same numbers. e.g. 1, 1, 1, 4, 4. In the "
+"Colors game, the score is 15 plus the total of all the dice."
+msgstr ""
+"Πέντε ζάρια σε δύο ομάδες: Μία ομάδα τριών ζαριών με τον ίδιο αριθμό και μία "
+"ομάδα δύο ζαριών με τον ίδιο αριθμό. Π.χ. 1,1,1,4,4. Στα \"Χρώματα\", η "
+"βαθμολογία είναι 15 συν το σύνολο όλων των ζαριών."
+
+#: C/gtali.xml:371(glossterm)
+msgid "Full House Same Color"
+msgstr "Φουλ με Χρώμα"
+
+#: C/gtali.xml:372(para)
+msgid ""
+"This category is only used in the Colors game. Five dice consisting of two "
+"groups: One group of three with the same numbers and another group of two "
+"with the same numbers. The numbers must be all the same color. e.g. 3, 3, 3, "
+"4, 4. Two dice are the same color if their numbers total 7: 1 and 6 are "
+"black, 2 and 5 are red, and 3 and 4 are green. The score is 20 plus the "
+"total of all the dice."
+msgstr ""
+"Αυτή η κατηγορία χρησιμοποιείται μόνο στα \"Χρώματα\". Περιλαμβάνει πέντε "
+"ζάρια σε δύο ομάδες: Μία ομάδα τριών ζαριών με τον ίδιο αριθμό και μία ομάδα "
+"δύο ζαριών με τον ίδιο αριθμό. Όλοι οι αριθμοί πρέπει να έχουν το ίδιο "
+"χρώμα. Π.χ. 3,3,3,4,4. Δύο ζάρια έχουν τον ίδιο αριθμό αν το άθροισμά τους "
+"είναι 7: το 1 και το 6 είναι μαύρα, το 2 και το 5 κόκκινα, το 3 και το 4 "
+"πράσινα. Η βαθμολογία αυτού του συνδυασμού είναι 20 συν  σύνολο όλων των "
+"ζαριών."
+
+#: C/gtali.xml:382(glossterm)
+msgid "Two Pair Same Color"
+msgstr "Δύο ζευγάρια ίδιου χρώματος"
+
+#: C/gtali.xml:383(para)
+msgid ""
+"This category is only used in the Colors game. Five dice consisting of two "
+"groups: One group of two with the same numbers and another group of two with "
+"the same numbers. The pairs must be all the same color. e.g. 3, 3, 4, 4. Two "
+"dice are the same color if their numbers total 7: 1 and 6 are black, 2 and 5 "
+"are red, and 3 and 4 are green. The fifth die can be any value. The score is "
+"the total of all the dice."
+msgstr ""
+"Αυτή η κατηγορία χρησιμοποιείται μόνο στα \"Χρώματα\". Περιλαμβάνει δύο "
+"ομάδες ζαριών: Μία ομάδα δύο ζαριών με τον ίδιο αριθμό και μία δεύτερη ομάδα "
+"δύο ζαριών με τον ίδιο αριθμό. Και τα τέσσερα ζάρια των ζευγαριών πρέπει να "
+"έχουν το ίδιο χρώμα. Π.χ. 3,3,4,4. Δύο ζάρια έχουν τον ίδιο αριθμό αν το "
+"άθροισμά τους είναι 7: το 1 και το 6 είναι μαύρα, το 2 και το 5 κόκκινα, το "
+"3 και το 4 πράσινα. Το πέμπτο ζάρι μπορεί να είναι οτιδήποτε. Η βαθμολογία "
+"προκύπτει από το σύνολο όλων των ζαριών."
+
+#: C/gtali.xml:393(glossterm)
+msgid "Flush"
+msgstr "Χρώμα"
+
+#: C/gtali.xml:394(para)
+msgid ""
+"This category is only used in the Colors game. Five dice that are all the "
+"same \"color\": Two dice are the same color if their numbers total 7: 1 and "
+"6 are black, 2 and 5 are red, and 3 and 4 are green. The fifth die can be "
+"any value. The score is 35 points."
+msgstr ""
+"Αυτή η κατηγορία χρησιμοποιείται μόνο στα \"Χρώματα\". Περιλαμβάνει πέντε "
+"ζάρια του ίδιου χρώματος: Δύο ζάρια έχουν το ίδιο χρώμα αν το άθροισμά τους "
+"είναι 7: το 1 και το 6 είναι μαύρα, το 2 και το 5 κόκκινα, το 3 και το 4 "
+"πράσινα. Αυτός ο συνδυασμός δίνει 35 βαθμούς."
+
+#: C/gtali.xml:402(glossterm)
+msgid "Large Straight"
+msgstr "Μεγάλη κέντα"
+
+#: C/gtali.xml:403(para)
+msgid ""
+"Five dice with consecutive numbers. e.g. 2, 3, 4, 5, 6. The score is 40 "
+"points."
+msgstr ""
+"Πέντε ζάρια με διαδοχικούς αριθμούς. Π.χ. 2,3,4,5,6. Αυτός ο συνδυασμός "
+"δίνει 40 βαθμούς."
+
+#: C/gtali.xml:408(glossterm)
+msgid "Small Straight"
+msgstr "Μικρή κέντα"
+
+#: C/gtali.xml:409(para)
+msgid ""
+"Four dice with consecutive numbers. The fifth die can be any number. e.g. 2, "
+"3, 4, 5, 5. This category is only used in the regular game. The score is 30 "
+"points."
+msgstr ""
+"Τέσσερα ζάρια με διαδοχικούς αριθμούς. Το πέμπτο ζάρι μπορεί να είναι "
+"οτιδήποτε. Π.χ. 2,3,4,5,5. Αυτή η κατηγορία χρησιμοποιείται μόνο στο κλασικό "
+"παιχνίδι. Βαθμολογείται με 30 βαθμούς."
+
+#: C/gtali.xml:423(title)
+msgid "Authors"
+msgstr "Συγγραφείς"
+
+#: C/gtali.xml:424(para)
+msgid ""
+"<application>GNOME Tali</application> was written by Scott Heavner "
+"(<email>sdh@po.cwru.edu</email>) and Orest Zborowski. This manual was "
+"written by Scott D Heavner (<email>sdh@po.cwru.edu</email>) with extra "
+"material added by Callum McKenzie (<email>callum@physics.otago.ac.nz</"
+"email>). To report a bug or make a suggestion regarding this application or "
+"this manual, follow the directions in this <ulink url=\"ghelp:user-guide?feedback-bugs"
+"\" type=\"help\">document</ulink>."
+msgstr ""
+"Το <application>Τάλι</application> γράφτηκε από το Scott Heavner "
+"(<email>sdh@po.cwru.edu</email>) και τον Orest Zborowski. Η τεκμηρίωση "
+"γράφτηκε από το Scott D Heavner (<email>sdh@po.cwru.edu</email>), με "
+"πρόσθετο υλικό από τον Callum McKenzie (<email>callum@physics.otago.ac.nz</"
+"email>). Για να αναφέρετε σφάλματα ή να κάνετε υποδείξεις για την εφαρμογή ή "
+"την τεκμηρίωσή της, ακολουθείστε τις οδηγίες σε αυτό το <ulink url=\"ghelp:"
+"user-guide?feedback-bugs\" type=\"help\">έγγραφο</ulink>."
+
+#: C/gtali.xml:451(title)
+msgid "License"
+msgstr "Άδεια χρήσης"
+
+#: C/gtali.xml:452(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>GNU General Public License</citetitle></ulink> as published by "
+"the Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version."
+msgstr ""
+"Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό. Επιτρέπεται η αναδιανομή ή/και "
+"τροποποίησή του υπό τους όρους της <ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>GNU General Public License</citetitle></ulink> όπως αυτή "
+"δημοσιεύεται από το Ίδρυμα Ελεύθερου Λογισμικού (Free Software Foundation) - "
+"είτε της έκδοσης 2 της άδειας, είτε (κατ' επιλογή σας) οποιασδήποτε "
+"μεταγενέστερης έκδοσης."
+
+#: C/gtali.xml:460(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"Αυτό το πρόγραμμα διανέμεται με την ελπίδα οτι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ "
+"ΚΑΜΙΑ ΑΠΟΛΥΤΩΣ ΕΓΓΥΗΣΗ - χωρίς ακόμη και την έμμεση εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ "
+"ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε για περισσότερες λεπτομέρειες "
+"τη <citetitle>GNU General Public License</citetitle>."
+
+#: C/gtali.xml:466(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"Αντίγραφο της <citetitle>GNU General Public License</citetitle> "
+"συμπεριλαμβάνεται ως παράρτημα στο <citetitle>Εγχειρίδιο χρήσης του GNOME</"
+"citetitle>. Μπορείτε επίσης να αποκτήσετε ένα αντίγραφό της από το Ίδρυμα "
+"Ελεύθερου Λογισμικού (Free Software Foundation) επισκεπτόμενοι την <ulink "
+"type=\"http\" url=\"http://www.fsf.org\">ιστοσελίδα τους</ulink> ή γράφοντας "
+"στη διεύθυνση <address> Free Software Foundation, Inc. <street>59 Temple "
+"Place</street> - Suite 330 <city>Boston</city>, <state>MA</"
+"state><postcode>02111-1307</postcode><country>USA</country></address>."
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/gtali.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+"Ελληνική μεταφραστική ομάδα GNOME\n"
+"  Τζένη Πετούμενου <epetoumenou@gmail.com>\n"
+"\n"
+"Για περισσότερα δείτε http://www.gnome.gr/"

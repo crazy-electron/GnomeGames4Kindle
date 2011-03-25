@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+    "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+  <!ENTITY legal SYSTEM "legal.xml">
+  <!ENTITY appversion "2.28">
+  <!ENTITY manrevision "1.0">
+  <!ENTITY date "July 2009">
+  <!ENTITY app "<application>Lights Off</application>">
+  <!ENTITY appname "Lights Off">
+  <!ENTITY version "1.0"> 
+]>
+
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+
+<!-- =============Document Header ============================= -->
+
+<article id="index" lang="en">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>&app; Manual</title>
+
+    <abstract role="description">
+      <para>
+	Lights Off is a puzzle game, where the objective is to turn off all
+	of the tiles on the board. Each click toggles the state of the
+	clicked tile and its non-diagonal neighbors.
+      </para>
+    </abstract>
+
+    <copyright>
+      <year>2010</year>
+      <holder>Tim Horton</holder>
+    </copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername> GNOME Documentation Project </publishername> 
+    </publisher> 
+
+   &legal;
+   <!-- This file  contains link to license for the documentation (GNU FDL),
+and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+	
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Tim</firstname> 
+	<surname>Horton</surname> 
+	<affiliation> 
+	  <address> <email>hortont@gnome.org</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.29" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>&appname; Manual V&manrevision;</revnumber> 
+	<date>January 2010</date> 
+	<revdescription> 
+	  <para role="author">Tim Horton
+	    <email>hortont@gnome.org</email>
+	  </para>
+	  <para role="publisher">GNOME Documentation Project</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>This manual describes version &appversion; of &appname;.
+    </releaseinfo>
+    <!-- The following feedback information only applies to applications
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove this
+    section altogether -->
+    <legalnotice> 
+      <title>Feedback</title> 
+      <para>To report a bug or make a suggestion regarding the &app;
+application or
+	this manual, follow the directions in the 
+	<ulink url="ghelp:user-guide?feedback-bugs"
+	  type="help">GNOME Feedback Page</ulink>. 
+      </para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Lights Off</primary> 
+  </indexterm>
+
+<!-- ==============================Document Body==================-->
+
+<sect1 id="s1-intro">
+ <title>Introduction</title>
+
+<!--synopsis of game-->
+  <para><application>Lights Off</application> is a puzzle game, where the objective is to turn off all of the tiles on the board. Each click toggles the state of the clicked tile and its non-diagonal neighbors.</para>
+
+<!--running game-->
+   <para>To run <application>Lights Off</application>, select <menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</guisubmenu><guimenuitem>Lights Off</guimenuitem></menuchoice>, or type <command>lightsoff</command> in the command line.</para>
+
+<!--part of gnome-games-->
+   <para><application>Lights Off</application> is included in the <filename>gnome-games</filename> package, which is part of the GNOME desktop environment. This document describes version &version; of <application>Lights Off</application>.</para>
+</sect1>
+
+<sect1 id="s1-playing">
+ <title>Playing <application>Lights Off</application></title>
+  <para>You progress through the levels either by turning off all of the tiles in a particular level, or using the arrow-shaped buttons near the bottom of the game. These buttons allow you to skip levels, or return to previous levels, without restriction.</para>
+   <sect2 id="s2-block-moving">
+     <title> Manipulating the Board</title>
+      <para>There is only one action available in <application>Lights Off</application>: clicking a tile on the board. You can either click on the tile with the mouse, or use the arrow keys to choose it. The first time you press an arrow key during a game of <application>Lights Off</application>, a cursor will appear, which you can move with the keyboard; pressing enter will click the light below the cursor.</para>
+      <para>When a tile is clicked, both it and all of its non-diagonal neighbors will toggle their state. The objective is to turn all of the tiles on the board off.</para>
+   </sect2>
+   <sect2 id="s2-newgame">
+     <title>Starting a New Game</title>
+      <para>To begin a new game, go to <menuchoice><guimenu>Game</guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The progression of levels will be the same between games and between computers, so <menuchoice><guimenuitem>New Game</guimenuitem></menuchoice> should only be chosen if you actually want to return to the beginning of the game.</para>
+    </sect2>
+</sect1>
+
+ 
+<sect1 id="s1-customizegame">
+ <title>Customizing <application>Lights Off</application></title>
+   <sect2 id="s2-customlook">
+    <title>Customizing the Look of <application>Lights Off</application></title>
+    <para>Under <menuchoice><guimenu>Game</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>, you can customize the look of the tiles in <application>Lights Off</application>. There are a variety of styles included, some of which make use of the color of your theme. This can be disabled with the <guilabel>Use colors from GNOME Theme</guilabel> option in the Preferences window.</para>
+    </sect2>
+   </sect1>
+
+<sect1 id="authors">
+  <title>Authors</title>
+  <para>
+   <application>Lights Off</application> was written by Tim Horton
+   in 2009 and maintained by the Gnome Games Team since then. This manual was
+   written by Tim Horton.
+   To report a bug or make a suggestion regarding this application or
+   this manual, follow the directions in this
+   <ulink url="ghelp:user-guide?feedback-bugs" type="help">document</ulink>.
+  </para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+</sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="s1-license">
+  <title>License</title>
+  <para>This program is free software; you can redistribute it and/or modify it under the terms of the  <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> as published by the Free Software Foundation;  either version 2 of the License, or (at your option) any later version.
+  </para>
+  <para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the <citetitle>GNU General Public License</citetitle> for more details.
+  </para>
+  <para>A copy of the <citetitle>GNU General Public License</citetitle> is included as an appendix to the <citetitle>GNOME Users Guide</citetitle>.  You may also obtain a copy of the <citetitle>GNU General Public License</citetitle> from the Free Software Foundation by visiting <ulink type="http" url="http://www.fsf.org">their Web site</ulink> or by writing to
+   <address>
+    Free Software Foundation, Inc.
+    <street>59 Temple Place</street> - Suite 330
+    <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode>
+    <country>USA</country>
+   </address>
+  </para>
+ </sect1>
+</article>

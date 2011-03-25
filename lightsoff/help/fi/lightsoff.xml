@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.28">
+<!ENTITY manrevision "1.0">
+<!ENTITY date "July 2009">
+<!ENTITY app "<application>Lights Off</application>">
+<!ENTITY appname "Lights Off">
+<!ENTITY version "1.0">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="fi">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title><application>Valot pois</application> -pelin käyttöohje</title>
+
+    <abstract role="description">
+      <para>Valot pois on pulmapeli, jossa tavoitteena on sammuttaa kaikki pelikentän laatat. Jokainen napsautus vaihtaa napsautetun laatan ja sen sivuilla olevat viereiset laatat.</para>
+    </abstract>
+
+    <copyright>
+      <year>2010</year>
+      <holder>Tim Horton</holder>
+    </copyright><copyright><year>2010</year><holder>Valto Wirkola (valto.wirkola@yahoo.com)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Gnomen dokumentointiprojekti</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Tätä asiakirjaa saa kopioida, jakaa edelleen ja/tai muokata Free Software Foundationin julkaiseman GNU Free Documentation License -lisenssin (GFDL) version 1.1 tai valinnaisesti myöhemmän version mukaisesti, ilman vaatimuksia muuttamattomista osioista ja etu- tai takakansiteksteistä. Kopion GFDL:stä voi nähdä napsauttamalla <ulink type="help" url="ghelp:fdl">tätä linkkiä</ulink>, tai lukemalla ohjeen mukana toimitetun COPYING-DOCS-nimisen tiedoston.</para>
+         <para>Tämä käyttöopas on osa Gnomen GFDL-lisenssin alla julkaisemaa käyttöopaskokoelmaa. Jos haluat jakaa tätä käyttöohjetta erillään kokoelmasta, voit tehdä niin lisäämällä kopion lisenssistä käyttöoppaaseen, kuten lisenssin luvussa 6 kerrotaan.</para>
+
+	<para>Monet yritysten käyttämät tuotteiden ja palveluiden nimet ovat omistettuja tavaramerkkejä. Kun näitä nimiä näkyy Gnomen dokumentaatiossa ja Gnomen dokumentointiprojektin jäsenet ovat korostaneet näitä tavaramerkkejä, nimet on kirjoitettu isolla alkukirjaimella tai kokonaan isoilla kirjaimilla.</para>
+
+	<para>ASIAKIRJA SEKÄ MUOKATUT VERSIOT ASIAKIRJASTA TARJOTAAN GNU FREE DOCUMENTATION LICENSEN EHDOIN SEKÄ YMMÄRTÄEN ETTÄ: <orderedlist>
+		<listitem>
+		  <para>ASIAKIRJA TARJOTAAN SELLAISENAAN, ILMAN MINKÄÄNLAISTA KIRJATTUA TAI KONKLUDENTTISTA RAJATONTA TAKUUTA ASIAKIRJAN TAI SEN MUOKATUN VERSION VIRHEETTÖMYYDESTÄ, SOPIVUUDESTA KAUPALLISEEN KÄYTTÖÖN TAI TIETTYYN KÄYTTÖTARKOITUKSEEN TAI LOUKKAAMATTOMUUDESTA. TÄYSI VASTUU ASIAKIRJAN TAI SEN MUOKATUN VERSION LAADUSTA, TARKKUUDESTA JA TOIMIVUUDESTA ON KÄYTTÄJÄLLÄ. JOS ASIAKIRJA TAI SEN MUOKATTU VERSIO OSOITTAUTUU JOLLAKIN TAVALLA VIRHEELLISEKSI, KÄYTTÄJÄ (EI ALKUPERÄINEN KIRJOITTAJA TAI MUU TEKIJÄ) VASTAA PALVELUJEN, KORJAUSTEN TAI OIKAISUJEN KUSTANNUKSISTA. TÄMÄ VASTUUVAPAUSLAUSEKE ON EROTTAMATON OSA LISENSSIÄ. ASIAKIRJAN TAI SEN MUOKATTUJEN VERSIOIDEN KÄYTTÖ ON SALLITTUA VAIN TÄMÄN VASTUUVAPAUSLAUSEKKEEN NOJALLA; SEKÄ</para>
+		</listitem>
+		<listitem>
+		  <para>MISSÄÄN OLOSUHTEISSA TAI MINKÄÄN OIKEUSLAITOKSEN ALAISUUDESSA, NIIN OIKEUSLOUKKAUKSISSA (MUKAAN LUKIEN HUOLIMATTOMUUS), SOPIMUS TAI MUUTOIN, ASIAKIRJAN TAI SEN MUOKATUN VERSION TEKIJÄ, ALKUPERÄINEN KIRJOITTAJA, KUKAAN AVUSTAJISTA, KUKAAN LEVITTÄJÄ TAIKKA KUKAAN TARJOAJA EI OLE VASTUUSSA KENELLEKÄÄN SUORASTA, EPÄSUORASTA, ERITYISESTÄ, TAPATURMAISESTA TAI VÄLILLISESTÄ VAHINGOSTA SISÄLTÄEN RAJOITUKSETTA VAHINGOT LIIKEARVON MENETYKSESTÄ, TYÖN KESKEYTYMISESTÄ, TIETOKONEVIRHEESTÄ TAI -HÄIRIÖSTÄ TAIKKA MISTÄÄN MUUSTA VAHINGOSTA TAI MENETYKSESTÄ, JOKA ILMENEE TAI LIITTYY ASIAKIRJAN TAI SEN MUOKATUN VERSION KÄYTTÖÖN EDES SILLOIN KUN OSAPUOLTA ON OLLUT TIETOINEN TÄLLAISEN VAHINGON MAHDOLLISUUDESTA.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL),
+and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+	
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Tim</firstname> 
+	<surname>Horton</surname> 
+	<affiliation> 
+	  <address> <email>hortont@gnome.org</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.29" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Valot Pois -pelin käyttöohje V1.0</revnumber> 
+	<date>Tammikuu 2010</date> 
+	<revdescription> 
+	  <para role="author">Tim Horton <email>hortont@gnome.org</email></para>
+	  <para role="publisher">Gnomen dokumentointiprojekti</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Tämä käyttöohje käsittelee Valot Pois -pelin versiota 2.28.</releaseinfo>
+    <!-- The following feedback information only applies to applications
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove this
+    section altogether -->
+    <legalnotice> 
+      <title>Palaute</title> 
+      <para>Voit raportoida vikoja ja tehdä ehdotuksia <application>Valot pois</application> -sovellukseen ja tähän käyttöohjeeseen liittyen <ulink url="ghelp:user-guide?feedback-bugs" type="help">Gnomen palautesivulla</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Valot pois</primary> 
+  </indexterm>
+
+<!-- ==============================Document Body==================-->
+
+<sect1 id="s1-intro">
+ <title>Johdanto</title>
+
+<!--synopsis of game-->
+  <para><application>Valot pois</application> on pulmapeli, jossa tavoitteena on sammuttaa kaikki pelikentän laatat. Jokainen napsautus vaihtaa napsautetun laatan ja sen sivuilla olevat viereiset laatat.</para>
+
+<!--running game-->
+   <para>Voit käynnistää <application>Valot pois<application> -pelin, valitsemalla <menuchoice><guimenu>Sovellukset</guimenu><guisubmenu>Pelit</guisubmenu><guimenuitem>Valot pois</guimenuitem></menuchoice>, tai kirjoittamalla komentoriville <command>lightsoff</command>.</application></application></para>
+
+<!--part of gnome-games-->
+   <para><application>Valot pois</application> on osa <filename>gnome-games</filename> -pakettia, joka on osa GNOME-työpöytäympäristöä. Tämä ohje käsittelee <application>Valot pois</application> -pelin versiota 1.0.</para>
+</sect1>
+
+<sect1 id="s1-playing">
+ <title><application>Valot pois</application> -pelin pelaaminen.</title>
+  <para>Voit käydä tasoja läpi joko sammuttamalla kaikki kentän laatat, tai käyttämällä peli-ikkunan alareunassa olevia nuolipainikkeita. Näillä painikkeilla voit rajattomasti ohittaa kenttiä tai palata aikaisempiin kenttiin.</para>
+   <sect2 id="s2-block-moving">
+     <title>Kentän muuttaminen</title>
+      <para><application>Valot pois</application> -pelissä on vain yksi toiminto: pelikentällä olevan laatan napsauttaminen. Voit joko napsauttaa laattaa hiirellä tai käyttää nuolinäppäimiä sen valitsemiseen. Jos painat jotakin nuolinäppäintä <application>Valot pois</application> -pelin aikana, pelikentälle ilmestyy osoitin, jota voit siirrellä nuolinäppäimillä, ja napsauttaa sen osoittamaa laattaa enter-näppäimellä.</para>
+      <para>Laatan napsauttaminen vaihtaa napsautetun laatan ja sen sivuilla olevien laattojen tilan. Tavoitteena on sammuttaa kaikki kentän laatat.</para>
+   </sect2>
+   <sect2 id="s2-newgame">
+     <title>Uuden pelin aloittaminen</title>
+      <para>Voit aloittaa uuden pelin menemällä <menuchoice><guimenu>Peli</guimenu><guimenuitem>Uusi</guimenuitem></menuchoice>. Kentät pysyvät samanlaisina pelauskerrasta ja tietokoneesta riippumatta, joten <menuchoice><guimenuitem>Uusi</guimenuitem></menuchoice> tulisi valita vain jos haluat aloittaa pelin alusta.</para>
+    </sect2>
+</sect1>
+
+ 
+<sect1 id="s1-customizegame">
+ <title><application>Valot pois</application> -pelin mukauttaminen</title>
+   <sect2 id="s2-customlook">
+    <title><application>Valot pois</application> -pelin ulkonäön mukauttaminen</title>
+    <para><menuchoice><guimenu>Peli</guimenu><guimenuitem>Asetukset</guimenuitem></menuchoice> alla voit mukauttaa <application>Valot pois</application> -pelin laattojen ulkonäköä. Pelin mukana tulee kokoelma teemoja, joista osa käyttää teemasi värejä. Toiminnon voi kytkeä pois päältä kytkemällä <guilabel>Käytä Gnomen teeman värejä</guilabel> -asetuksen Asetukset-ikkunasta.</para>
+    </sect2>
+   </sect1>
+
+<sect1 id="authors">
+  <title>Tekijät</title>
+  <para><application>Valot pois</application> -pelin kirjoitti Tim Horton vuonna 2009 ja sen jälkeen sitä on ylläpitänyt Gnomen pelitiimi. Tämän käyttöohjeen kirjoitti Tim Horton. Voit raportoida peliä tai käyttöohjetta koskevat virheet ja ehdotukset seuraamalla <ulink url="ghelp:user-guide?feedback-bugs" type="help">näitä ohjeita</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+</sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="s1-license">
+  <title>Käyttöoikeussopimus</title>
+  <para>This program is free software; you can redistribute it and/or modify it under the terms of the  <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> as published by the Free Software Foundation;  either version 2 of the License, or (at your option) any later version.
+  </para>
+  <para>Tämä ohjelma julkaistaan, koska siitä toivotaan olevan hyötyä, mutta ILMAN MINKÄÄNLAISTA TAKUUTA, edes epäsuoraa MYYNTITAKUUTA tai TAKUUTA SEN SOPIVUUDESTA JOHONKIN KÄYTTÖTARKOITUKSEEN. Lisätietoa <citetitle>GNU General Public License</citetitle> -käyttöoikeussopimuksessa.</para>
+  <para><citetitle>Gnome Users Guide</citetitle>ssa on liitteenä kopio <citetitle>GNU General Public License</citetitle> -käyttöoikeussopimuksesta. Voit myös hankkia kopion <citetitle>GNU General Public License</citetitle>sta Free Software Foundationilta käymällä <ulink url="http://www.fsf.org" type="http">heidän web-sivustollaan</ulink> tai lähettämällä kirjeen osoitteeseen <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode> <country>USA</country></address></para>
+ </sect1>
+</article>

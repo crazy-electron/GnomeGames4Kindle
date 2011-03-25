@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.10">
+<!ENTITY date "March 2004">
+<!ENTITY app "<application>Klotski</application>">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="zh_CN">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title><application>华容道</application> 小游戏手册</title>
+
+    <abstract role="description">
+      <para>华容道是一个智力游戏，目标是通过不断地移动，让一个带有图案的大方块通过出口到达标记位置。</para>
+    </abstract>
+
+    <copyright>
+      <year>2002</year> 
+      <holder>Andrew Sobala</holder> 
+    </copyright><copyright><year>2010</year><holder>TeliuTe (teliute@163.com)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOME 文档项目</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>对于本文档的复制、分发和/或修改必须遵循自由软件基金会 (Free Software Foundation) 发布的 GNU 自由文档许可证 (GFDL) 版本 1.1 或更高版本，该许可证没有固定的部分、没有封面和背页文本。您可以在此<ulink type="help" url="ghelp:fdl">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副本。</para>
+         <para>本手册是在 GFDL 许可之下分发的 GNOME 手册集合的一部分。如果想要单独分发此手册，可以在手册中添加该许可证的一份副本然后分发，如该许可证的第 6 部分所述。</para>
+
+	<para>各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 GNOME 文档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而表明它们是商标。</para>
+
+	<para>本文档以及文档的修改版本都是在遵循 GNU 自由文档许可证的条款下提供，这表示具有以下含义：<orderedlist>
+		<listitem>
+		  <para>文档按“原样”提供，不提供任何明示或暗示的保证，包括但不限于：文档或文档的修改版本没有适销性方面的缺陷、适合特定目的的适用性，以及没有侵权行为。您将自行承担本文档以及文档修改版本的质量、准确性以及性能方面的风险。如果任何文档或文档修改版本存在缺陷，您(而不是最初的编写者、作者或撰写人)将承担所有必需的服务、维修或更正的费用。此免责声明是本许可证的重要组成部分。如果不接受此免责声明，那么您就没有权利使用任何文档或文档的修改版本；并且</para>
+		</listitem>
+		<listitem>
+		  <para>无论在任何情况以及在任何法律理论下，本文档或文档修改版本的作者、最初的编写者、任何撰写人或任何分发者，或者任意这些方的任何提供者都不对任何人由于使用本文档或文档修改版本引起或带来的任何直接的、间接的、特殊的、偶然的或继发的损失承担任何民事(包括疏忽)、合同或其它方面的责任，这些损失包括但不限于信誉损失、工作停止、计算机失败或故障，或任何以及所有其它损失或由此引发的或与之相关的损失，即使这些方已被告知存在出现此类损失的可能性时也是如此。</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+		<firstname>Andrew</firstname> 
+		<surname>Sobala</surname> 
+		<affiliation> 
+	  		<orgname>GNOME 文档项目</orgname> 
+	  		<address> <email>andrew@sobala.net</email> </address> 
+		</affiliation> 
+      </author> 
+
+	<othercredit role="author">
+		<firstname>Lars</firstname>
+		<surname>Rydlinge</surname>
+		<affiliation>
+			<orgname>GNOME 项目</orgname>
+			<address> <email>Lars.Rydlinge@HIG.SE</email> </address>
+		</affiliation>
+	</othercredit>
+
+	<othercredit role="maintainer">
+		<firstname>Ross</firstname>
+		<surname>Burton</surname>
+		<affiliation>
+			<orgname>GNOME 项目</orgname>
+			<address> <email>ross@burtonini.com</email> </address>
+		</affiliation>
+	</othercredit>
+
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->  
+    <revhistory>
+<!--
+      <revision> 
+		<revnumber>Full title of previous manual.</revnumber> 
+		<date>Release date of previous manual.</date> 
+		<revdescription> 
+	  		<para role="author">Documentation Writer 1 
+	    	<email>docwriter1@gnome.org</email>
+	  		</para>
+	  		<para role="publisher">GNOME Documentation Project</para>
+		</revdescription> 
+      </revision> 
+-->
+
+	<revision>
+		<revnumber>V2.0</revnumber>
+		<date>2002年8月13日</date>
+		<revdescription>
+	  		<para role="author">Andrew Sobala <email>andrew@sobala.net</email></para>
+	  		<para role="publisher">GNOME 文档项目</para>
+		</revdescription> 
+	</revision>
+
+    </revhistory> 
+
+    <releaseinfo>本手册讲述的是 GNOME 华容道2.12版。</releaseinfo> 
+    <legalnotice> 
+      <title>反馈</title> 
+      <para>要报告关于<application>华容道</application>程序或使用手册中的缺陷，或者提出建议，请参照 <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME 反馈页</ulink> 上的指导。</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>GNOME 华容道小游戏</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="gnotski-introduction"> 
+	<title>介绍</title> 
+	<para><application>华容道</application>小游戏是 Klotski 滑块游戏的克隆版本。游戏目标是移动带图案的大方块到达绿色标记处。</para>
+
+	<para><application>华容道</application>小游戏由 Lars Rydlinge (<email>Lars.Rydlinge@HIG.SE</email>)编写。</para>
+
+	<para><application>华容道</application>小游戏包含在 GNOME 游戏软件包内，它是 GNOME 桌面环境的一部分。本手册讲述的是<application>华容道</application>小游戏2.12版。</para>
+
+	<para>本程序依照自由软件基金会发布的 GNU 通用许可证第2版或更高(如您所愿)版本下发布，您可以在此 <ulink url="ghelp:gpl" type="help">链接</ulink>，或者在程序的源文件中找到许可协议的副本。</para>
+
+	<para>要报告本程序或本手册的缺陷或者提出建议，请参照 <ulink url="ghelp:user-guide?feedback-bugs" type="help">文档</ulink> 上的指导。</para>
+  </sect1>
+
+<!-- ===========Objective ============================== -->
+<sect1 id="gnotski-objective">
+	<title>目标</title>
+	<para><application>华容道</application>小游戏的任务是，把带图案的大方块移动到绿色标记处，用尽可能少的移动次数。您可以在各个方块上点击鼠标拖动它，直到带图案的大方块移到标记处。<figure id="gnotski-figure-win"> 
+		<title>移动成功</title> 
+		<screenshot> 
+			<mediaobject> 
+			<imageobject>
+				<imagedata fileref="figures/gnotski_win.png" format="PNG"/> 
+			</imageobject>
+			<textobject> 
+				<phrase>把带图案大方块移动到绿色标记的空地上。</phrase> 
+			</textobject> 
+	        	</mediaobject> 
+		</screenshot>
+	</figure></para>
+	<!-- ==== End of Figure ==== -->
+</sect1>
+
+<!-- =========== Getting Started ============================== -->
+
+  <sect1 id="gnotski-playing"> 
+	<title>开始<application>华容道</application>小游戏</title> 
+	<para>
+	<itemizedlist> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-start"/></para> 
+	</listitem>
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-ui"/></para> 
+	</listitem> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-new-game"/></para> 
+	</listitem> 
+	<listitem> 
+		<para> 
+		<xref linkend="gnotski-moving"/></para> 
+	</listitem>
+	</itemizedlist> </para>
+
+	<!-- =========== To start gnotski ============================== -->
+	<sect2 id="gnotski-start">
+		<title>运行<application>华容道</application>小游戏</title>
+		<para>您可以点菜单 <menuchoice><guisubmenu>游戏</guisubmenu><guimenuitem>华容道</guimenuitem></menuchoice> 来启动<application>华容道</application>小游戏。</para>
+	</sect2>
+
+	<!-- =========== The main window ============================== -->
+	<sect2 id="gnotski-ui">
+		<title>主窗口</title>
+		<para><application><application>华容道</application></application>启动成功后，将会显示下面的窗口。</para>
+
+		<!-- ==== Figure ==== -->
+		<figure id="gnotski-figure-mainwindow"> 
+			<title><application>华容道</application> 启动窗口</title> 
+			<screenshot> 
+				<mediaobject> 
+				<imageobject>
+					<imagedata fileref="figures/gnotski_start_window.png" format="PNG"/> 
+				</imageobject>
+				<textobject> 
+					<phrase>显示 <application>华容道</application> 主窗口，包含标题栏、菜单栏、游戏区域和状态栏，菜单栏包括游戏菜单和帮助菜单。</phrase> 
+				</textobject> 
+		        	</mediaobject> 
+			</screenshot>
+		</figure>
+		<!-- ==== End of Figure ==== -->
+
+		<para><application>华容道</application>小游戏窗口包含下面的组件：<variablelist>
+		<varlistentry>
+			<term>菜单栏</term>
+			<listitem>
+			<variablelist>
+			<varlistentry>
+				<term>游戏菜单</term>
+				<listitem>
+				<para>在游戏菜单中，您可以开始一个新游戏，查看排行榜以及退出程序。</para>
+				</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>帮助菜单</term>
+				<listitem>
+				<para>在帮助菜单中，您可以查看<application>华容道</application>游戏的文档说明。</para>
+				</listitem>
+			</varlistentry>
+			</variablelist>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term>游戏区域</term>
+			<listitem>
+			<para>游戏区域显示许多方块，您可以用鼠标拖动方块移动，参考： <xref linkend="gnotski-moving"/>。</para>
+			</listitem>
+		</varlistentry>
+		<varlistentry>
+			<term>状态栏</term>
+			<listitem>
+			<para>状态栏显示了您已经移动了多少步。</para>
+			</listitem>
+		</varlistentry>
+		</variablelist></para>
+
+	</sect2>
+
+	<!-- =========== Starting a new game ============================== -->
+	<sect2 id="gnotski-new-game">
+		<title>开始新游戏</title>
+		<para>点<guimenu>游戏</guimenu>菜单开始一个新游戏，<guimenuitem>下一布局</guimenuitem> 和 <guimenuitem>上一布局</guimenuitem> 菜单项可以访问各个布局。每个布局都有四个菜单项的分类项：<guisubmenu>华容道</guisubmenu>、<guisubmenu>挑战关</guisubmenu>, <guisubmenu>技巧关</guisubmenu>，和 <guisubmenu>Minoru 攀登</guisubmenu>。</para>
+		<example>
+		<title>开始游戏</title>
+		<para>要开始一个最难的游戏，点菜单 <menuchoice><guimenu>游戏</guimenu><guisubmenu>Minoru 攀登</guisubmenu><guimenuitem>攀登 24 级</guimenuitem></menuchoice>。</para></example>
+	</sect2>
+
+	<!-- ===========Moving blocks ============================== -->
+	<sect2 id="gnotski-moving">
+		<title>移动方块</title>
+		<para>要移动一个方块，点击后按住鼠标不松，拖动它到新位置。绿方块和边框不能移动，被其他方块挡住的也不能移动，只有带图案的大方块可以穿过绿方块到达目的地。</para>
+	</sect2>
+
+</sect1>
+
+<!-- Known bugs.  Try to manage user expectations and warn them of known bugs
+but it is better to omit this section than give a false sense of perfection
+<sect1 id="gnotski-bugs">
+	<title>Known Bugs and Limitations</title>
+	<para>
+        There are no known bugs in this game.
+	</para>
+</sect1>
+-->
+
+<sect1 id="authors">
+  <title>作者</title>
+  <para><application>华容道</application>小游戏由 Lars Rydlinge (<email>lars.rydlinge@hig.se</email>) 编写，本手册是由 Andrew Sobala 编写。要报告本程序或本手册的缺陷或者提出建议，请参照 <ulink url="ghelp:user-guide?feedback-bugs" type="help">文档</ulink> 上的指导。</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+</sect1>
+
+ <sect1 id="license">
+  <title>许可协议</title>
+  <para>本程序和界面设计属于自由软件，您可以在遵守自由软件基金会发布的 <citetitle><ulink type="help" url="gnome-help:gpl">GNU 通用公共许可证</ulink></citetitle> 第2版或更高(如您所愿)版本下，重新分发和/或修改它。</para>
+  <para>本程序的发布意图是希望它有所用处，但请注意它没有任何担保，甚至不包括商业用途、以及特殊目的保证。更多相关细节，请参阅 <citetitle>GNU 通用许可证</citetitle>。</para>
+  <para>在<citetitle>GNOME 用户指南</citetitle> 的附录中包含了一份<citetitle>GNU 通用许可证</citetitle>的副本，您也可以通过访问自由软件基金会的<ulink type="http" url="http://www.fsf.org">网站</ulink>上获得，或者写信给 <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address> 来索取。</para>
+ </sect1>
+
+</article>

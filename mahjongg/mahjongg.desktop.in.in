@@ -1,0 +1,13 @@
+[Desktop Entry]
+_Name=Mahjongg
+_Comment=Disassemble a pile of tiles by removing matching pairs
+Exec=mahjongg
+Icon=gnome-mahjongg
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Game;BoardGame;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-games
+X-GNOME-Bugzilla-Component=BugBuddyBugs
+X-GNOME-Bugzilla-Version=@VERSION@
+StartupNotify=true

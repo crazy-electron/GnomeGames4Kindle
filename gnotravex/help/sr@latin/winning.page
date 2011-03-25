@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="winning" xml:lang="sr@latin">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="hint"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Prosti saveti kako da potencijalno pobedite u igri.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-26" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  
+  <title>Pobediti <app>Gnomovu slagalicu</app></title>
+  
+  <note>
+    <p>Sledeći saveti vam neće osigurati pobedu u igri, oni su ovde samo kao mala pomoć.</p>
+  </note>
+  
+  <section id="winning-single">
+    <title>Potražite usamljen broj</title>
+    <p>Kada nova igra započne, potražite usamljen broj ili broj pored koga ne može da se stavi deo sa istim brojem.</p>
+    <p>Ako imate takav broj, taj deo je ispravan početni deo, pošto znate gde da ga stavite.</p>
+    <p>Primetite da što je tabla za igru veća teže je naći takav broj.</p>
+  </section>
+  <!-- This is just an idea... need to think about it... -->
+  <section id="winning-share">
+    <title>Imate savet da podelite?</title>
+    <p>Ako imate neki savet da podelite sa svima u vezi <app>Gnomove slagalice</app>, ili bilo koje druge Gnom igre, pišite nam na gnome-doc-list@gnome.org. Dodaćemo ih ovde!</p>
+  </section>
+</page>

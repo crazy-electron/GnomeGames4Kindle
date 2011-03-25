@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.26">
+<!ENTITY manrevision "2.26">
+<!ENTITY date "June 2009">
+<!ENTITY app "<application>Mahjongg</application>">
+<!ENTITY appname "Mahjongg">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sr@latin">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+  
+    <title>Uputstvo za <application>Mahjong</application></title>
+    <abstract role="description">
+      <para>Mahjong je verzija klasične istočnjačke igre sa figurama za jednog igrača. Cilj je ukloniti što više parova figura sa table.</para>
+    </abstract>
+    <copyright>
+      <year>1998</year>
+      <holder>Zadužbina za Slobodni Softver</holder>
+    </copyright>
+    <copyright>
+      <year>2000</year>
+      <holder>Eric Baudais (autor dokumentacije)</holder>
+    </copyright>  
+	    <copyright>
+      <year>2009</year>
+      <holder>Paul Cutler (autor dokumentacije)</holder>
+    </copyright> 
+    
+    <!-- translators: uncomment this:
+    
+  <copyright>
+  <year>2000</year>
+  <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+    -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Projekat Gnomove dokumentacije</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Dozvoljeno umnožavanje, širenje, vršenje izmena ovog dokumenta pod uslovima Gnu-ove Slobodne Dokumentacione Dozvole (GSDD), verzije 1.1 ili bilo koje naknadne verzije bez nepromenjivih odeljaka, teksta na naslovnoj i poslednjoj strani, a koju je objavila Zadužbina Slobodnog Softvera. Primerak GSDD-e možete pronaći na ovoj <ulink type="help" url="ghelp:fdl">adresi</ulink> ili u datoteci COPYING-DOCS koja je priložena uz ovo uputstvo.</para>
+         <para>Ovo uputstvo je deo skupa Gnomovih dokumenata objavljenih pod GFDL. Ukoliko želite da raspodeljujete ovo uputstvo odvojeno od skupa, to možete uraditi dodavanjem primerka licence dokumentu, kako je opisano u odeljku 6 same licence.</para>
+
+	<para>Mnogi nazivi koje kompanije koriste u cilju prepoznatljivosti svojih proizvoda i usluga predstavljaju robne marke. Kada (ukoliko) se takvi nazivi pojavljuju(spominju) u bilo kojem Gnomovom dokumentu, a članovi Gnomovog dokumentacionog projekta imaju saznanja o tome, tada su nazivi ispisani velikim slovima ili sa velikim početnim slovima.</para>
+
+	<para>OVAJ DOKUMENT I NJEGOVE IZMENJENE VERZIJE SU DOSTUPNE POD USLOVIMA GNU-OVE SLOBODNE DOKUMENTACIONE DOZVOLE UZ DODATNU SAGLASNOST DA: <orderedlist>
+		<listitem>
+		  <para>DOKUMENT JE DOSTUPAN SA SVIM SVOJIM DOBRIM I LOŠIM STRANAMA BEZ BILO KAKVOG JAMSTVA, BILO ONO IZREČENO ILI NE, UKLJUČUJUĆI BEZ OGRANIČENJA, JAMSTVO DA JE OVAJ DOKUMENT ILI NJEGOVA IZMENJENA VERZIJA BEZ NEDOSTATAKA, SPREMAN ZA TRŽIŠTE, SVRSISHODAN I NE NARUŠAVA ZAKONSKE NORME. CELOKUPAN RIZIK KOJI SE ODNOSI NA KVALITET, TAČNOST I DOMET (UČINAK) DOKUMENTA ILI NJEGOVE IZMENJENE VERZIJE SNOSI KORISNIK. UKOLIKO SE U BILO KOJEM DOKUMENTU ILI NJEGOVOJ IZMENJENOJ VERZIJI POJAVI NEDOSTATAK (GREŠKA) BILO KOJE VRSTE, KORISNIK (A NE AUTOR IZVORNE VERZIJE, BILO KOJI DRUGI AUTOR ILI SARADNIK) SNOSI SVE TROŠKOVE NEOPHODNOG SERVISIRANJA, POPRAVKE ILI ISPRAVKE. OVO OGRANIČENJE JAMSTVA PREDSTAVLJA SASTAVNI DEO OVE DOZVOLE. UPOTREBA BILO KOJEG DOKUMENTA ILI NJEGOVE IZMENJENE VERZIJE NIJE DOZVOLJENA OSIM POD USLOVIMA OVOG OGRANIČENJA JAMSTVA.</para>
+		</listitem>
+		<listitem>
+		  <para>NI POD KAKVIM OKOLNOSTIMA ILI ZAKONU, BILO ZBOG KRŠENJA (ILI NEMARA) UGOVORA, ILI NA BILO KOJI DRUGI NAČIN, AUTOR (PRVOBITNE VERZIJE), SARADNIK ILI ISPORUČIVALAC DOKUMENTA ILI NJEGOVE IZMENJENE VERZIJE, NITI DOBAVLJAČ BILO KOJE OD NAVEDENIH STRANA NEĆE SNOSITI MATERIJALNU ODGOVORNOST ZA NASTALA DIREKTNA, INDIREKTNA, POSEBNA, SLUČAJNA ILI TIME NASTALA OŠTEĆENJA BILO KOJE VRSTE UKLJUČUJUĆI, BEZ OGRANIČENJA, ŠTETU NANESENU UGLEDU FIRME, PRESTANKU PROIZVODNJE, OTKAZIVANJE RADA RAČUNARA ILI KVARA KAO I ZA SVE OSTALE ŠTETE ILI GUBITKE NASTALE USLED KORIŠĆENJA DOKUMENTA I NJEGOVIH IZMENJENIH VERZIJA ČAK I AKO JE OŠTEĆENA STRANA BILA OBAVEŠTENA O MOGUĆNOSTI NASTANKA TE ŠTETE.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer">
+	<firstname>Eric</firstname> 
+	<surname>Baudais</surname> 
+	<affiliation> 
+	  <address> <email>baudais@okstate.edu</email> </address> 
+	</affiliation> 
+      </author> 
+	        <author role="maintainer">
+	<firstname>Artur</firstname> 
+	<surname>Szymanski</surname> 
+	<affiliation> 
+	</affiliation> 
+      </author>
+	        <author role="maintainer">
+	<firstname>Paul</firstname> 
+	<surname>Cutler</surname> 
+	<affiliation> 
+		<orgname>Projekat Gnomove dokumentacije</orgname>
+	  <address> <email>pcutler@gnome.org</email> </address> 
+	</affiliation> 
+      </author> 
+
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="candidate"/>
+	
+	    <revhistory>
+      <!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+
+      <revision>
+        <revnumber>Uputstvo za Mahjong v 2.26</revnumber>
+        <date>16.06.2009.</date>
+        <revdescription>
+          <para role="author">Paul Cutler</para>
+          <para role="publisher">Projekat Gnomove dokumentacije</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>Uputstvo za Mahjong v 2.26</revnumber>
+        <date>16.06.2009.</date>
+        <revdescription>
+          <para role="author">Artur Szymanski</para>
+        </revdescription>
+      </revision>	  
+      <revision> 
+	<revnumber>Uputstvo za Mahjong v2.10;</revnumber> 
+	<date>Jun 2005.</date> 
+	<revdescription> 
+	  <para role="author">Eric Baudais <email>baudais@okstate.edu</email></para>
+	  <para role="publisher">Projekat Gnomove dokumentacije</para>
+	</revdescription> 
+	</revision>
+	</revhistory>
+
+    <releaseinfo>Ovo uputstvo je napisano za Mahjong 2.26.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Primedbe</title> 
+      <para>Da biste prijavili grešku ili dali predlog u vezi programa <application>Mahjong</application> ili njegovog uputstva, pratite smernice na <ulink url="ghelp:user-guide?feedback-bugs" type="help">Gnomovoj strani za primedbe</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Gnomov mahjong</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="intro">
+    <title>Uvod</title>
+
+    <para><application>Mahjong</application> je verzija klasične istočnjačke igre za jednog igrača, Mahjonga. Ima sve funkcionalnosti koje ima i klasična igra na tabli. Možete promeniti tip figura, pozadinu i nivo težine igre u prozorčetu sa <link linkend="prefs">postavkama</link>. Ostale mogućnosti, kao <link linkend="pause">dugme za <guibutton>Pauzu</guibutton></link> čine da igra bude pravo takmičenje kada igrate na vreme.</para>
+
+    <sect2 id="history">
+      <title>Kratak istorijat mahjonga</title>
+
+      <!-- FIXME: Explain more about solitaire version.-->
+      <para>Mahjongov skup figura se koristi u raznim varijacijama originalne igre. Izdanje Mahjonga koje vi igrate je za jednog igrača. Svaka figura ima <ulink type="http" url="http://www.xs4all.nl/~korntner/mahjong/fortune/index.html">značenje</ulink> vezano za nju.</para>
+
+      <para>Iako postoje mnoge teorije, poreklo Mahjonga ono ipak nije potpuno poznato. Jedna od tih teorija kaže da je Noje igrao Mahjong na svojoj barci jer je istočna strana bila dominantna, verovatno zbog strane sa koje je došla kiša koja je donela poplavu. Druga teorija kaže da je kineski filozof, Konfučije, smislio igru. Tri <quote>Glavne</quote> figure imaju ista imena kao tri glavne vrline, Čung (umerenost) Crveni, Fa (prosperitet) Zeleni i Po (belina) Beli odgovaraju Milosrdnosti, Iskrenosti i Cenjenju predaka. Još jedna teorija kaže da je Mahjong nastao od druge kineske igre. <quote>Ja Pei</quote> se igra sa 32 karte napravljene od drveta ili slonovače koje imaju isti oblik kao današnje Mahjong figure. <quote>Ma Tiae</quote> se igra sa 40 papirnih karata, sličnih po izgledu, obeleženih brojevima od 1 do 9 u četiri različite boje sa još dodatim cvetnim kartama. Pretpostavlja se da su dva brata igru napravila oko 1850. godine n.e. kombinujući ove dve igre sa kartama.</para>
+
+      <para>Ranih 1900.-ih, Mahjong je uveden u engleske klubove u Šangaju. Gosn. Babkok je započeo uvoz Mahjong figura u zapadnjački deo sveta. Ogolio je pravila na ona najosnovnija i čak stavio arapske brojeve na figure. 1923. godine je bio vrhunac pomame za Mahjongom među kompanijama koje su pravile igre, kao što su Parker Bros., Milton Bradley i United States Playing Card, koje su uvozile skupove Mahjong figura na hiljade i hiljade.</para>
+
+      <para>Ubrzo su se pojavila mnoga pravila za igranje i 1924. godine je oformljen komitet za standardizaciju za zvanična Mahjong pravila da napiše knjigu pravila. I danas neki klubovi igraju po drugačijim pravilima, čak dodajući cvetne figure ili džoker figure. Igrači računarske verzije postaju sve zainteresovaniji lepotom i detaljnošću ručno rađenih skupova figura 1920-ih i 1930-ih i pretražuju antikvarnice i buvlje pijace za sopstvene skupove. Mnogi igrači su igru upoznali kroz verziju za jednog igrača i polako shvataju privlačenje i izazov koji nosi tradicionalna verzija igre. <footnote>
+	  <para>Delovi ovog teksta su uzeti i prilagođeni sa <ulink type="http" url="http://www.mahjongmuseum.com/">sajta Mahjong muzeja</ulink>.</para>
+	</footnote></para>
+    </sect2>
+  </sect1>
+  
+   <!-- ============= Playing Mahjongg ============================= -->
+
+  <sect1 id="usage">
+    <title>Igranje Mahjonga</title>
+
+    <para>Igru počinjete sa pet nivoa figura od kojih su neke postavljene jedne preko drugih tako da ih ove iznad njih prekrivaju. Što teži nivo postavite u <link linkend="prefs">prozorčetu sa <interface>postavkama</interface></link>, više figura su prekrivene kada igra počne. Cilj <application>Mahjonga</application> je da uklonite sve figure iz igre. Da biste uklonili figure, morate naći par figura koje se slažu. Parovi koji se slažu obično imaju iste brojeve dugmića na njima, iste oznake ili izgledaju slično.</para>
+
+    <para>Kao primer, obeležena figura na <link linkend="mahjongg-fig">slici ispod</link> ima šest dugmića. Par koji se slaže takođe ima šest dugmića. Ta figura se nalazi na desnom delu trećeg reda (brojeći odozdo), a postoji još jedan blizu vrha četvrtog reda (isto brojeći odozdo). Da biste uparili figuru na vrhu, morate naći drugu figuru sa istim simbolima zelenog bambusa. Da li vidite njenog parnjaka? Postoje tri vidljive figure koje odgovaraju figuri sa vrha. Jedna je levo, a druga dole desno. Treća je u gornjem redu, ali tu figuru ne možete još ukloniti jer nije izvan gomile figura. Kasnije ćete naučiti koje figure se mogu ukloniti, a koje ne, iako su parovi. Sami pronađite preostala dva vidljive figure koje se mogu upariti.</para>
+
+    <figure id="mahjongg-fig">
+      <title>Glavni prozor Mahjonga</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/mahjongg.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Glavni prozor.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para><application>Mahjong</application> se igra tako što se figure uparuju kada kliknete na njih. Te figure se onda uklanjaju. Igra se nastavlja dok ne nestane figura koje se mogu upariti.</para>
+
+    <para>Samo figure skroz levo i sa desnih ivica se mogu odabrati. Ovo je zato što ne možete ukloniti figure koje nisu na krajnjih levim ili desnim stranama. Ako su figure na različitim nivoima na levim ili desnim stranama, one se mogu ukloniti ako nađete njihove parove.</para>
+
+    <para>Ako više ne možete upariti nijednu figuru, prozorče će se pojaviti i dati vam opcije da promešate figure (dodajući 60 sekundi kazne na vreme), da pokrenete novu igru ili da opozovete poslednji potez (iako ćete možda morati da opozovete još poteza da biste našli grešku).</para>
+
+    <figure id="info-fig1">
+      <title>Prozorče sa podacima</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/no-move.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Prozorče sa podacima.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+    
+    <sect2 id="toolbar">
+      <title>Traka alata</title>
+
+      <para><interface>Traka alata</interface>, koja se nalazi ispod <interface>trake menija</interface>, sadrži sledeće dugmiće:</para>
+      
+      <variablelist>
+	<varlistentry>
+	  <term><guibutton>Nova</guibutton></term>
+	  <listitem>
+	    <para>Ovo dugme započinje novu igru sa trenutnim postavkama.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Ponovo pokreni</guibutton></term>
+	  <listitem>
+	    <para>Ovo dugme ponovo pokreće trenutnu igru iz početka bez mešanja figura.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry id="pause">
+	  <term><guibutton>Pauza</guibutton></term>
+	  <listitem>
+	    <para>Ovo dugme pauzira igru. Kada je igra pauzirana, sat u donjem desnom uglu <interface>glavnog prozora</interface> staje i za to vreme su figure sakrivene.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Opozovi potez</guibutton></term>
+	  <listitem>
+	    <para>Ovim dugmetom se vraća par figura koje su poslednje uklonjene (uzastopnim klikom se vraćate na početak igre).</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Ponovi potez</guibutton></term>
+	  <listitem>
+	    <para>Ovo dugme ponovo odigrava prethodni potez koji je vraćen dugmetom <guibutton>Opozovi potez</guibutton>.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Savet</guibutton></term>
+	  <listitem>
+	    <para>Ovo dugme vam ukazuje na par figura koje možete ukloniti. Svaki put kada ga iskoristite, kazna u vidu 30 sekundi se dodaje na vaše vreme.</para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+      <para>Traka stanja na dnu prozora vam daje podatke o trenutnom stanju igre:</para>
+      <variablelist>
+	<varlistentry>
+	  <term><guilabel>Preostalih figura:</guilabel></term>
+	  <listitem>
+	    <para>Ovde se prikazuje broj figura koji još nisu spojene.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guilabel>Preostalih poteza:</guilabel></term>
+	  <listitem>
+	    <para>Ovde se prikazuje broj mogućih parova koje možete spojiti.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guilabel>Vreme:</guilabel></term>
+	  <listitem>
+	    <para>Ovde se prikazuje koliko je vremena proteklo od početka igre.</para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+      
+      <figure id="toolbar-fig">
+	<title>Mahjongova traka alata</title>
+	<screenshot>
+	   <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/toolbar.png" format="PNG" srccredit="Eric Baudais"/>
+	  </imageobject>
+    <textobject> 
+      <phrase>Traka alata.</phrase> 
+    </textobject> 
+  </mediaobject>
+	</screenshot>
+      </figure>
+      
+    </sect2>
+    
+    <sect2 id="menubar">
+      <title>Meniji</title>
+      <para>Traka menija, koja se nalazi na vrhu <interface>glavnog prozora</interface>, sadrži sledeće menije:</para>
+
+      <variablelist>
+	<varlistentry>
+	  <term><guimenu>Igra</guimenu></term>
+	  <listitem>
+	    <para>Ovaj meni sadrži: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>Ctrl-N</keycap></shortcut><guimenuitem>Nova</guimenuitem></menuchoice> — Ova stavka pokreće novu igru.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Ponovo pokreni</guimenuitem></menuchoice> — Ova stavka resetuje trenutnu igru i pokreće je ponovo.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Pauza</guimenuitem></menuchoice> — Ovim se igra pauzira, sat se zaustavlja, a figure se sakrivaju.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>Ctrl-Z</keycap></shortcut><guimenuitem>Opozovi potez</guimenuitem></menuchoice> — Ova stavka vraća nazad poslednji par uklonjenih figura. Ovim je moguće vratiti se na početak igre.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>Ctrl-R</keycap></shortcut><guimenuitem>Ponovi potez</guimenuitem></menuchoice> — Ovim se ponovo odigrava potez vraćen dugmetom <guibutton>Opozovi potez</guibutton>. Kada ponovite sve opozvane poteze, poruka <quote>Nema više za ponavljanje!</quote> se pojavljuje u donjem levom uglu <interface>Glavnog prozora</interface>.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Savet</guimenuitem></menuchoice> — Ova stavka vam nudi par figura koje možete ukloniti.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Rezultati</guimenuitem></menuchoice> — Ova stavka prikazuje prozorče sa deset najboljih rezultata. Prozorče prikazuje rezultate za određeno korisničko ime sa vremenom koje je bilo potrebno za rešavanje.</para>
+		</listitem>
+		<listitem>
+		  <para id="quit"><menuchoice><shortcut><keycap>Ctrl-Q</keycap></shortcut><guimenuitem>Izađi</guimenuitem></menuchoice> — Ova stavka vam omogućava da izađete iz igre.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term><guimenu>Podešavanja</guimenu></term>
+	  <listitem>
+	    <para>Ovaj meni sadrži: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>F11</keycap></shortcut><guimenuitem>Ceo ekran</guimenuitem></menuchoice> — Ova stavka vam omogućava da igrate igru u režimu preko celog ekrana. Da biste napustili režim celog ekrana, pritisnite <keycap>F11</keycap> ili kliknite na dugme <guibutton>Napusti ceo ekran</guibutton> u <interface>traci alata</interface>.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Paleta alata</guimenuitem></menuchoice> — Ova stavka određuje da li će <link linkend="toolbar"><interface>traka alata</interface></link> biti prikazana. Ako je stavka uključena, <interface>traka alata</interface> će biti prikazana na poslednjem mestu na kome ste je stavili. Ako stavka nije uključena, <interface>traka alata</interface> se ne prikazuje.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Opcije</guimenuitem></menuchoice> — Ovom stavkom se otvara prozorče sa <link linkend="prefs">postavkama</link>.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guimenu>Pomoć</guimenu></term>
+	  <listitem>
+	    <para>Ovaj meni sadrži: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>F1</keycap></shortcut><guimenuitem>Sadržaj</guimenuitem></menuchoice> — Ova stavka prikazuje ovo uputstvo.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>O programu</guimenuitem></menuchoice> — Ova stavka vam daje neke osnovne podatke o <application>Mahjongu</application>, kao što su imena autora i broj izdanja.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+
+    </sect2>
+  </sect1>
+  
+   <!-- ============= Customization ============================= -->
+
+  <sect1 id="prefs">
+    <title>Prilagođavanje</title>
+    <para>Da biste izmenili postavke programa, odaberite <guimenuitem>Opcije</guimenuitem> iz menija <guimenu>Podešavanja</guimenu>. Ovim se otvara <link linkend="preferences-fig">prozorče sa <interface>postavkama</interface></link>.</para>
+    
+    <figure id="preferences-fig">
+<!-- FIXME: This dialog is the old one. -->
+<!-- ALAN: looks correct like version 2.10 to me -->
+      <title>Prozorče sa postavkama</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Prozorče sa postavkama.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Sve opcije se odmah i primenjuju i čuvaju.</para>
+    
+    <para>Svojstva u prozorčetu sa <interface>postavkama</interface> su:</para>
+      
+      <itemizedlist mark="opencircle">
+	<listitem>
+	  <para><guilabel>Skup figura:</guilabel> — Odabira željeni izgled figura iz spiska.</para>
+	</listitem>
+	<listitem>
+	  <para><guilabel>Izaberi mapu:</guilabel> — Menja težinu igre tako što postavlja različite rasporede figura na tabli. Mapa sa što raspoređenijim figurama na tabli („Lako“) vam omogućava da vidite više figura, dok što su figure zbijenije („Teško“) ne možete ih toliko mnogo videti i igra je teža za igranje.</para>
+	</listitem>
+	<listitem>
+	  <para><guilabel>Boja pozadine:</guilabel> — Omogućava da promenite boju pozadine iz prozorčeta za <interface>izbor boje</interface>.</para>
+	</listitem>
+      </itemizedlist>
+
+    <para>Da biste promenili veličinu figura jednostavno smanjite ili raširite prozor igre. Figure će se smanjivati ili povećavati da popune ceo prozor.</para>
+
+  </sect1>
+  
+<!-- ALAN: Better to leave this section out than to say something unhelpful 
+and risk annoying the user.  
+ <sect1 id="bugs">
+  <title>Known Bugs and Limitations</title>
+  <para>
+   This application has no known bugs.
+  </para>
+ </sect1>
+-->
+
+ <!-- ============= Authors ============================= -->
+
+ <sect1 id="authors">
+  <title>Autori</title>
+  <para><application>Mahjong</application> su napisali Francisco Bustamante (<email>pancho@nuclecu.unam.mx</email>), Michael Meeks (<email>mmeeks@gnu.org</email>), Max Watson, Heinz Hempe i Philippe Chavin. Figure za <application>Mahjong</application> su napravili Jonathan Buzzard i Max Watson. Ovo uputstvo je napisao Eric Baudais (<email>baudais@okstate.edu</email>). Da biste prijavili greške ili dali predlog u vezi programa ili njegovog uputstva, pratite smernice iz <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumenta</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licenca</title>
+  <para>Ovaj program i prateća grafika je slobodan softver; možete ga raspodeljivati i/ili ga menjati pod uslovima <citetitle>GNU Opšte Javne Licence (GNU GPL)</citetitle> kako je objavljuje Zadužbina za Slobodni Softver (FSF); bilo verzije 2 te Licence, bilo (po vašem nahođenju) bilo koje novije verzije.</para>
+  <para>Ovaj program se raspodeljuje u nadi da će biti od koristi, ali BEZ IKAKVIH GARANCIJA; čak i bez podrazumevane garancije KORISNOSTI ili PRILAGOĐENOSTI ODREĐENOJ NAMENI.  Vidite <citetitle>GNU Opštu Javnu Licencu</citetitle> za više detalja.</para>
+  <para>Primerak <citetitle>GNU Opšte Javne Licence</citetitle> je uključen u dodatku <citetitle>Gnomovog korisničkog vodiča</citetitle>. Takođe možete nabaviti primerak <citetitle>GNU Opšte Javne Licence</citetitle> od Zadužbine za Slobodni Softver odlazeći na <ulink url="http://www.fsf.org" type="http">njihovu veb adresu</ulink> ili pišući na <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

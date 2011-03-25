@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.18">
+<!ENTITY date "December">
+<!ENTITY app "<application>Chess</application>">
+<!ENTITY appname "Chess">
+<!ENTITY version "2.22">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="zh_CN">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo>
+ <title><application>国际象棋</application>手册</title>
+ 
+ <abstract role="description">
+       <para>国际象棋是一个经典的棋类游戏，双方模拟战场上的交战，互相吃掉对方的棋子并将死主帅。可以玩2D平面模式和3D立体模式，全屏幕的或者窗口模式的游戏。</para>
+ </abstract>
+ <copyright>
+  <year>2006-2008</year>
+  <holder>Andreas Røsdal</holder>
+ </copyright><copyright><year>2011</year><holder>TeliuTe (teliute@163.com)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>GNOME 文档项目</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>对于本文档的复制、分发和/或修改必须遵循自由软件基金会 (Free Software Foundation) 发布的 GNU 自由文档许可证 (GFDL) 版本 1.1 或更高版本，该许可证没有固定的部分、没有封面和背页文本。您可以在此<ulink type="help" url="ghelp:fdl">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副本</para>
+         <para>本手册是在 GFDL 许可之下分发的 GNOME 手册集合的一部分。如果想要单独分发此手册，可以在手册中添加该许可证的一份副本然后分发，如该许可证的第 6 部分所述。</para>
+
+	<para>各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 GNOME 文档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而表明它们是商标。</para>
+
+	<para>本文档以及文档的修改版本都是在遵循 GNU 自由文档许可证的条款下提供，这表示具有以下含义：<orderedlist>
+		<listitem>
+		  <para>文档按“原样”提供，不提供任何明示或暗示的保证，包括但不限于：文档或文档的修改版本没有适销性方面的缺陷、适合特定目的的适用性，以及没有侵权行为。您将自行承担本文档以及文档修改版本的质量、准确性以及性能方面的风险。如果任何文档或文档修改版本存在缺陷，您(而不是最初的编写者、作者或撰写人)将承担所有必需的服务、维修或更正的费用。此免责声明是本许可证的重要组成部分。如果不接受此免责声明，那么您就没有权利使用任何文档或文档的修改版本；并且</para>
+		</listitem>
+		<listitem>
+		  <para>无论在任何情况以及在任何法律理论下，本文档或文档修改版本的作者、最初的编写者、任何撰写人或任何分发者，或者任意这些方的任何提供者都不对任何人由于使用本文档或文档修改版本引起或带来的任何直接的、间接的、特殊的、偶然的或继发的损失承担任何民事(包括疏忽)、合同或其它方面的责任，这些损失包括但不限于信誉损失、工作停止、计算机失败或故障，或任何以及所有其它损失或由此引发的或与之相关的损失，即使这些方已被告知存在出现此类损失的可能性时也是如此。</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+	<firstname>Andreas</firstname> 
+	<surname>Røsdal</surname> 
+	<affiliation> 
+	  <address> <email>andrearo@pvv.ntnu.no</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+<revhistory>
+      <revision> 
+	<revnumber>国际象棋手册2.18版</revnumber> 
+	<date>12月</date> 
+	<revdescription> 
+	  <para role="author">Andreas Røsdal <email>andrearo@pvv.ntnu.no</email></para>
+	  <para role="publisher">GNOME 文档项目</para>
+	</revdescription> 
+      </revision>
+  <revision>
+   <revnumber>1</revnumber>
+   <date>2006年12月</date>
+   <authorinitials>AR</authorinitials>
+   <revremark>完成初稿。</revremark>
+  </revision>
+ </revhistory>
+
+    <releaseinfo>本手册讲述的是国际象棋2.18版。</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>反馈</title> 
+      <para>要报告关于<application>国际象棋</application>程序或使用手册中的缺陷，或者提出建议，请参照 <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME 反馈页</ulink> 上的指导。</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>国际象棋</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="intro">
+ <title>介绍</title>
+ <sect2 id="what">
+  <title>概述</title>
+  
+  <para>国际象棋是一个双人战略棋类游戏。<application>国际象棋</application>有2D/3D模式，游戏可以是双人之间和电脑之间，它可以为玩家检测已知的第三方引擎。游戏最初由 Robert Ancell 开发，现在包含在 GNOME 游戏软件包内。</para>
+
+  <para><application>国际象棋</application>使用 Python 语言编写，采用 GTK+ 和 Cairo 绘制棋盘。可选择 OpenGL 3D 支持模式，使用 Python OpenGL 和 GtkGLExt 库。作为一个现代3D程序，推荐使用硬件加速，但软件模式应该也是好的。国际象棋作为默认的人工智能棋类游戏捆绑在 GNU 游戏包中。它还有网络对战模式，可以在互联网上与其他人进行游戏。</para>
+  <para>国际象棋的棋盘是正方形的，有64个格子颜色相互交替。每一方有16个棋子：一个王、一个后、两个车、两个马、两个象和8个兵。一方控制白棋另一方控制黑棋，白棋一方先走，双方轮流走棋，当移动时“吃掉”了对方的棋子，就要把它从棋盘上拿走。获胜的条件是把对方的王将死，这时候的王正在被攻击且无处可逃。这个游戏一发明，就形成了广泛的战术策略。</para>
+<para>现代游戏从十五世纪后半叶欧洲南部类似游戏发展而来，更古老的游戏起源于亚洲。国际象棋是一个世界范围内最流行的棋类之一。传统的竞技比赛开始于十六世纪，第一个世界冠军，维尔赫姆.斯坦尼茨在1886年获得冠军头衔，弗拉基米尔·鲍里索维奇·克拉姆尼克获得第14届世界冠军。还有一个每两年一次的世界性比赛称作国际象棋奥林匹克。自从20世纪以来，两个国际组织，世界国际象棋联合会和国际象棋国际通信赛协会组织和举办了顶级比赛和通信赛。</para>
+<para>早期的电脑专家想创建一个国际象棋游戏机，现在国际象棋在电脑程序中已经深入开发。1997年，一场人机大战在加里·卡斯帕罗夫和 IBM 超级电脑“深蓝”对弈，证明电脑甚至可以击败最强大的人类棋手。</para>
+
+  <para>要运行<application>国际象棋</application>，点 <guimenu>主菜单</guimenu>，再在 <guisubmenu>游戏</guisubmenu> 菜单中，选择 <guimenuitem>国际象棋</guimenuitem>。或者在命令行输入：<command>glchess</command></para>
+ </sect2>
+
+</sect1>
+
+
+<sect1 id="playing-glchess">
+ <title>玩国际象棋小游戏</title>
+ <sect2 id="main-game-window">
+<title>游戏主窗口</title>
+
+     <para>启动国际象棋，显示下图所示的主窗口。游戏中使用鼠标移动棋子，每一方轮流移动自己的棋子，从棋盘的一个位置移动到另一个位置。主窗口分为三个区域：顶部是菜单和工具栏，进行最常用的游戏操作。中间是棋盘，这里可以用鼠标移动棋子。最下面是游戏历史记录区域，提供走棋的记录，点击下拉按钮可以查看前面走的每一步棋。</para>
+
+ <figure id="main-game-shot">
+  <title>国际象棋的主窗口</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>国际象棋的主窗口。</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+</sect2>
+
+<sect2>
+<title>开始一个新的游戏</title>
+<para>要开始一个新的游戏，点工具栏上的<guibutton>新游戏</guibutton>按钮，出来一个新游戏对话框，您可以设置新游戏的各项设置。在<interface>游戏属性</interface>区域，设置游戏名称、每一步的时间限制等选项。在<interface>玩家</interface>区域，可以设置人类或电脑玩家，如果您安装了其他国际象棋机器人 AI 程序，也会显示在这个列表中。最后的<interface>难度</interface>区域，是设置机器人的难度级别。</para>
+
+ <figure id="new-game-shot">
+  <title>新游戏对话框</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/new_game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>国际象棋的新游戏对话框。</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+</sect2>
+
+
+
+
+<sect2 id="menubar">
+   <title>菜单</title>
+   <para>菜单栏位于<interface>主窗口</interface>的顶部，包含下列菜单项：</para>
+
+   <variablelist>
+    <varlistentry>
+     <term><guimenu>游戏</guimenu></term>
+     <listitem>
+      <para>这个菜单包括：<itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+N</keysym></shortcut><guimenuitem>新建</guimenuitem></menuchoice> 点击开始新一局的<application>国际象棋</application>游戏。</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+O</keysym></shortcut><guimenuitem>打开</guimenuitem></menuchoice> 加载之前保存的游戏。</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+S</keysym></shortcut><guimenuitem>保存</guimenuitem></menuchoice> 保存当前游戏进度。</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><guimenuitem>另存为</guimenuitem></menuchoice> 用新文件名保存当前游戏进度。</para>
+        </listitem>
+
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+L</keysym></shortcut><guimenuitem>网络游戏</guimenuitem></menuchoice> 进入 GGZ Gaming Zone 网络多人模式。</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>认输</guimenuitem></menuchoice> 向对手认输。</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>声明和棋</guimenuitem></menuchoice> 要求判定为和棋(平局)，如果得到确认，那么这一局双方都没有赢。</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+Q</keysym></shortcut><guimenuitem>退出</guimenuitem></menuchoice> 退出游戏。</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+
+    <varlistentry>
+     <term><guimenu>查看</guimenu></term>
+     <listitem>
+      <para>这个菜单包括：<itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>F11</keysym></shortcut><guimenuitem>全屏</guimenuitem></menuchoice> 全屏模式显示游戏窗口。</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><guimenuitem>3D 象棋视图</guimenuitem></menuchoice> 使用立体的 3D 棋子。使用 OpenGL，这需要安装 Python OpenGL 和 Python GTKGLExt，另外最好有一个 3D 图形卡。如果出现问题，请联系您的系统管理员，或者您可以一直使用 2D 平面棋子模式。</para>
+        </listitem>
+	 <listitem>
+         <para><menuchoice><guimenuitem>显示日志</guimenuitem></menuchoice> 显示程序和电脑 AI 玩家的调试信息。</para>
+        </listitem>
+     </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+   <varlistentry>
+     <term><guimenu>设置</guimenu></term>
+     <listitem>
+      <para>这个菜单包括：<itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>首选项</guimenuitem></menuchoice> 打开<link linkend="prefs">首选项</link>对话框。</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>帮助</guimenu></term>
+     <listitem>
+      <para>这个菜单包括：<itemizedlist>
+        <listitem>
+          <para><menuchoice><shortcut><keysym>F1</keysym></shortcut><guimenuitem>目录</guimenuitem></menuchoice> 显示本手册。</para>
+         <para><guimenuitem>关于</guimenuitem> 打开<interface>关于</interface>对话框，显示<application>国际象棋</application>的基本信息，比如作者、版本信息等。</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+
+
+</sect2>
+
+
+</sect1>
+
+
+<sect1 id="chess-rules">
+ <title>行棋规则</title>
+ <sect2 id="rules-of-chess">
+  <title>国际象棋的走棋规则</title>
+<!--
+The reference for this chapter is http://en.wikipedia.org/wiki/Chess
+-->
+  <para>国际象棋是在一个正方形的棋盘中走棋，由八条横格线(称作“横线”，用数字1到8表示)和八条竖格线组成(称作“纵线”，用字母 a 到 h 表示)。六十四个格子的颜色由浅色和深色交替排列，称作“白格”和“黑格”。棋盘摆放时，玩家的右下角应当是白格，棋子摆放见示意图，双方的后放在跟自己颜色相同的格子里。</para><para>开始时双方各有十六个棋子：一个王、一个后，两个车、两个象、两个马和八个兵。一方，比如白方，控制白子，另一方，黑方控制黑子，白方总是先走。颜色的选择可以双方协商，或者抽签，或者由联赛决定。双方在轮流走棋每次走一个子(有一个例外是车，同时可以移动两个子)。棋子可以移动到其他空着的格子里，或位置上有对方的子，但是可以吃掉它，把它从棋盘上拿掉。除了一个例外(吃过路兵)，其他棋子吃掉对方的子后，放到对方子的位置上。</para>
+ <sect3 id="rules-piece-king">
+  <title>王</title>
+<para>当王受到对方一个子(也可能两个子)的攻击时，称作是“将军”，此时只允许解除王被“将”的移动，而不允许其他移动。游戏的目标就是将死对方的王，使得对方再没有招法可以解救王。</para><para>王每次只能移动一格，横着、竖着、斜着都可以。在游戏中，王只允许有一次特殊的双移动，王车易位，王朝车的方向移动两格，然后车越过王放在王旁边的格子里。王车易位必须满足下面的条件：</para>
+<itemizedlist spacing="compact">
+  <listitem>
+   <para>要易位的王和车之前都没有移动过。</para>
+  </listitem>
+  <listitem>
+   <para>王和车之间没有其他的棋子。</para>
+  </listitem>
+  <listitem>
+   <para>王没有处于被将状态，王车易位中间的路途也不会被将。任何使王受到攻击的易位，都是不合法的。</para>
+ </listitem>
+  <listitem>
+   <para>王和车必须在同一横线上(排除用兵升变的车来易位)。</para>
+  </listitem>
+</itemizedlist>
+</sect3>
+ <sect3 id="rules-piece-rook">
+  <title>车</title>
+<para>车可以移动多个方格，只要没有子挡着，可以横着也可以竖着(还可以跟王进行特殊的王车易位)。</para>
+</sect3>
+ <sect3 id="rules-piece-bishop">
+  <title>象</title>
+<para>象也可以移动多个方格，只能走斜线，方向没有限制。注意，象只能在一种颜色的格子里移动，因此，玩家常说“白象”或“黑象”。</para>
+</sect3>
+ <sect3 id="rules-piece-queen">
+  <title>后</title>
+<para>后可以移动多个空格，横着、竖着、斜着都可以。</para>
+</sect3>
+ <sect3 id="rules-piece-knight">
+  <title>马</title>
+<para>马可以跳过一个阻挡的格子，两个横格一个竖格，反过来也一样，大概走出一个“L”形。在棋盘中间的马，可以朝八个方向移动。注意，每次马移动后，都会走到另外一种颜色的格子里。</para>
+</sect3>
+ <sect3 id="rules-piece-pawns">
+  <title>兵</title>
+<para>兵的移动规则最复杂：兵只能往前移动一个空格，但如果这个兵还没走过，那么它第一次移动可以走两格，兵不能后退。当一个兵初次走两格时，恰好落在敌方兵的旁边，(这时轮敌方走棋)敌方兵可以斜着向前走到己方这个兵的后面吃掉这个兵，称为吃“过路兵”，就好像己方这个兵只走了一格被斜吃掉，这种吃子必须在对方行棋后立即进行。兵是唯一吃不在自己走棋路线上的子(例如，它们的两个格子是对角的)，但是如果这个对角位置是空的，则不能移动过去(直走斜吃)。如果兵走完所有格子到达第八个横线，就可以提升(升变)为一个后、车、马，或者同格颜色的象。在实际行棋中，几乎总是变为后。</para>
+</sect3>
+
+<sect3 id="rules-movement-others">
+<title>空余移动规则</title>
+<para>除了马例外，棋子不能越过其他子。一个自己的棋子(“己方”)如果恰好挡在路上，则不能被跳过，也不能被替换。敌方的子也不能跳过，但可以“吃掉”它。当一个棋子被吃掉(或提掉)，要立即从棋盘上拿走，不能再放回来。王不能被吃掉，只能被将军，如果王不能摆脱将军，则被将死，失去这一局棋。</para><para>游戏结束不一定非得到将死 — 玩家可以在行棋无望时认输。游戏也可以平局(和棋)结束，平局发生在多种情况，包括双方同意和棋、三次重复同样局面、五十回合移动规则，或者不可能将死(通常是棋子不够)情况。</para>
+</sect3>
+</sect2>
+
+
+<sect2 id="timed-games">
+<title>限时游戏</title>
+<para>在开始新游戏对话框中，可以选择走棋时间限制模式，玩家双方必须在规定时间内走棋，每次走棋时会开始倒数计时。</para>
+</sect2>
+
+<sect2 id="draw">
+<title>平局</title>
+<para>游戏结束时双方都没有赢，大多数平局是基于协商的。能造成平局的有王被僵死、三次重复棋局、五十回合规则、棋子不足。不论是己方还是对方，正常走棋还是被迫形成平局条件，就可以提出和棋要求。</para>
+
+
+<sect3 id="stalemate">
+<title>僵局</title>
+<para>僵局是指这样一种情形，轮到一方走棋时，没有合法的走棋步骤，而这时王也没有被将军。出现僵局时总是立即判和棋。</para>
+</sect3>
+
+<sect3 id="threefold-repetition">
+<title>三次重复局面</title>
+<para>如果发生同一个棋手走出三次相同的盘面，双方走棋都符合规定(包括吃过路兵和王车易位)，这时候可以判定平局。</para>
+</sect3>
+
+
+<sect3 id="fifty-move-rule">
+<title>五十回合规则</title>
+<para>如果双方五十回合内没有移动过兵，也没有吃子，就可以判和棋。</para>
+</sect3>
+
+<sect3 id="insuff-material">
+<title>棋子不足</title>
+<para>游戏结尾时，双方所有的兵都被吃掉，一方只剩下王，另一方也只剩下王或者王和一个马/象。这种情况下也是和棋，因为任何一方都不能够将死对方，只能是一方走错会被将死。这种情况也符合五十回合规则。</para>
+</sect3>
+
+
+</sect2>
+
+</sect1>
+
+
+
+
+<sect1 id="prefs">
+ <title>游戏设置</title>
+
+
+<sect2 id="game-prefs">
+  <title>游戏首选项</title>
+  <para>首选项对话框允许您设置棋盘模式、移动方法和兵升级类型。</para>
+
+ <figure id="preferences-game-shot">
+  <title>国际象棋的首选项对话框</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences_game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>国际象棋的首选项对话框。</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+
+</sect2>
+
+
+
+<sect2 id="view-prefs">
+  <title>查看首选项</title>
+  <para>这个选项允许您设置国际象棋的外观感觉。</para>
+
+ <figure id="preferences-view-shot">
+  <title>国际象棋的查看首选项</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences_view.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>国际象棋的查看首选项。</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+
+</sect2>
+
+</sect1>
+
+
+<sect1 id="engines">
+ <title>国际象棋机器人引擎</title>
+
+     <para>国际象棋可以使用其他的 Chess Engine Communication Protocol 和 Universal Chess Interface 兼容的国际象棋机器人引擎，包括下列引擎：</para>
+
+<!-- Please keep AI list synchronized with glchess/data/ai.xml -->
+<itemizedlist spacing="compact">
+  <listitem>
+	<para>GNUChess</para>
+  </listitem>
+  <listitem>
+	<para>Sjeng</para>
+  </listitem>
+  <listitem>
+	<para>Amy</para>
+ </listitem>
+  <listitem>
+	<para>Crafty</para>
+  </listitem>
+  <listitem>
+	<para>Faile</para>
+  </listitem>
+  <listitem>
+	<para>Phalanx</para>
+  </listitem>
+  <listitem>
+	<para>Glaurung</para>
+  </listitem>
+  <listitem>
+	<para>HoiChess</para>
+  </listitem>
+  <listitem>
+	<para>Diablo</para>
+  </listitem>
+  <listitem>
+	<para>BBChess</para>
+  </listitem>
+  <listitem>
+	<para>Fruit</para>
+  </listitem>
+  <listitem>
+	<para>Amundsen</para>
+  </listitem>
+  <listitem>
+	<para>Shredder</para>
+  </listitem>
+  <listitem>
+	<para>Toga II</para>
+  </listitem>
+  <listitem>
+	<para>Boo's Chess Engine</para>
+  </listitem>
+
+
+</itemizedlist>
+
+</sect1>
+
+
+<sect1 id="bugs">
+ <title>已知缺陷和限制</title>
+
+ <itemizedlist mark="opencircle">
+    <listitem>
+     <para>国际象棋中还没有缺陷文档和限制条件。您可以帮助国际象棋来改进这个领域，请参照游戏发行版 TODO 文件中的指导。</para>
+    </listitem>
+ </itemizedlist>
+
+</sect1>
+
+<sect1 id="credits">
+ <title>作者</title>
+  <para><application>国际象棋</application>小游戏由 Robert Ancell 编写，包含在 GNOME 游戏软件包内。本手册最初由 Andreas Røsdal 编写，从多个 GPL 源代码中导入。要报告本程序或本手册的缺陷或者提出建议，请参照 <ulink url="ghelp:user-guide?feedback-bugs" type="help">文档</ulink> 上的指导。</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>许可协议</title>
+  <para>本程序是自由软件，您可以在遵守自由软件基金会发布的 <citetitle>GNU 通用许可证</citetitle> 第2版或更高(如您所愿)版本下，重新分发和/或修改它。</para>
+  <para>本程序的发布意图是希望它有所用处，但请注意它没有任何担保，甚至不包括商业用途、以及特殊目的保证。更多相关细节，请参阅 <citetitle>GNU 通用公共许可证</citetitle>。</para>
+  <para>在<citetitle>GNOME 用户指南</citetitle> 的附录中包含了一份 <citetitle>GNU 通用许可证</citetitle>的副本，您也可以通过访问自由软件基金会的<ulink type="http" url="http://www.fsf.org">网站</ulink>上获得 <citetitle>GNU 通用许可证</citetitle>的副本，或者写信给 <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address> 来索取。</para>
+ </sect1>
+</article>

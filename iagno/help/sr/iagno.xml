@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.20">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "February 2008">
+<!ENTITY app "<application>Iagno</application>">
+<!ENTITY appname "Iagno">
+<!ENTITY version "2.9">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sr">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo>
+ <title>Упутство за <application>Јагно</application></title>
+
+    <abstract role="description">
+      <para>Јагно је Отело игра стратегије за два играча, такође позната и као Реверси и слична је игри Го. Фигуре су са једне стране црне, а са друге стране беле. Циљ игре је да обрнете противничке фигуре на своју боју, док се трудите да противник не уради то исто. Када се табла напуни фигурама, победник је играч са више фигура у његовој боји.</para>
+    </abstract>
+
+ <copyright>
+  <year>2000.</year>
+  <holder>Eric Baudais</holder>
+ </copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Пројекат Гномове документације</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Дозвољено је умножавање, ширење, вршење измена овог документа под условима Гну-ове Слободне Документационе Дозволе (ГСДД), верзије 1.1 или било које накнадне верзије без непромењивих одељака, текста на насловној и последњој страни, а коју је објавила Задужбина Слободног Софтвера. Примерак ГСДД-е можете пронаћи на овој <ulink type="help" url="ghelp:fdl">адреси</ulink> или у датотеци COPYING-DOCS која је приложена уз ово упутство.</para>
+         <para>Ово упутство је део скупа Гном докумената објављених под GFDL. Уколико желите да расподељујете ово упутство одвојено од скупа, то можете урадити додавањем примерка лиценце документу, како је описано у одељку 6 саме лиценце.</para>
+
+	<para>Многи називи које компаније користе у циљу препознатљивости својих производа и услуга представљају робне марке. Када (уколико) се такви називи појављују(спомињу) у било којем Гномовом документу, а чланови Гномовог документационог пројекта имају сазнања о томе, тада су називи исписани великим словима или са великим почетним словима.</para>
+
+	<para>ОВАЈ ДОКУМЕНТ И ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СУ ДОСТУПНЕ ПОД УСЛОВИМА ГНУ-ОВЕ СЛОБОДНЕ ДОКУМЕНТАЦИОНЕ ДОЗВОЛЕ УЗ ДОДАТНУ САГЛАСНОСТ ДА: <orderedlist>
+		<listitem>
+		  <para>ДОКУМЕНТ ЈЕ ДОСТУПАН СА СВИМ СВОЈИМ ДОБРИМ И ЛОШИМ СТРАНАМА БЕЗ БИЛО КАКВОГ ЈАМСТВА, БИЛО ОНО ИЗРЕЧЕНО ИЛИ НЕ, УКЉУЧУЈУЋИ БЕЗ ОГРАНИЧЕЊА, ЈАМСТВО ДА ЈЕ ОВАЈ ДОКУМЕНТ ИЛИ ЊЕГОВА ИЗМЕЊЕНА ВЕРЗИЈА БЕЗ НЕДОСТАТАКА, СПРЕМАН ЗА ТРЖИШТЕ, СВРСИСХОДАН И НЕ НАРУШАВА ЗАКОНСКЕ НОРМЕ. ЦЕЛОКУПАН РИЗИК КОЈИ СЕ ОДНОСИ НА КВАЛИТЕТ, ТАЧНОСТ И ДОМЕТ (УЧИНАК) ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СНОСИ КОРИСНИК. УКОЛИКО СЕ У БИЛО КОЈЕМ ДОКУМЕНТУ ИЛИ ЊЕГОВОЈ ИЗМЕЊЕНОЈ ВЕРЗИЈИ ПОЈАВИ НЕДОСТАТАК (ГРЕШКА) БИЛО КОЈЕ ВРСТЕ, КОРИСНИК (А НЕ АУТОР ИЗВОРНЕ ВЕРЗИЈЕ, БИЛО КОЈИ ДРУГИ АУТОР ИЛИ САРАДНИК) СНОСИ СВЕ ТРОШКОВЕ НЕОПХОДНОГ СЕРВИСИРАЊА, ПОПРАВКЕ ИЛИ ИСПРАВКЕ. ОВО ОГРАНИЧЕЊЕ ЈАМСТВА ПРЕДСТАВЉА САСТАВНИ ДЕО ОВЕ ДОЗВОЛЕ. УПОТРЕБА БИЛО КОЈЕГ ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ НИЈЕ ДОЗВОЉЕНА ОСИМ ПОД УСЛОВИМА ОВОГ ОГРАНИЧЕЊА ЈАМСТВА.</para>
+		</listitem>
+		<listitem>
+		  <para>НИ ПОД КАКВИМ ОКОЛНОСТИМА ИЛИ ЗАКОНУ, БИЛО ЗБОГ КРШЕЊА (ИЛИ НЕМАРА) УГОВОРА, ИЛИ НА БИЛО КОЈИ ДРУГИ НАЧИН, АУТОР (ПРВОБИТНЕ ВЕРЗИЈЕ), САРАДНИК ИЛИ ИСПОРУЧИВАЛАЦ ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ, НИТИ ДОБАВЉАЧ БИЛО КОЈЕ ОД НАВЕДЕНИХ СТРАНА НЕЋЕ СНОСИТИ МАТЕРИЈАЛНУ ОДГОВОРНОСТ ЗА НАСТАЛА ДИРЕКТНА, ИНДИРЕКТНА, ПОСЕБНА, СЛУЧАЈНА ИЛИ ТИМЕ НАСТАЛА ОШТЕЋЕЊА БИЛО КОЈЕ ВРСТЕ УКЉУЧУЈУЋИ, БЕЗ ОГРАНИЧЕЊА, ШТЕТУ НАНЕСЕНУ УГЛЕДУ ФИРМЕ, ПРЕСТАНКУ ПРОИЗВОДЊЕ, ОТКАЗИВАЊЕ РАДА РАЧУНАРА ИЛИ КВАРА КАО И ЗА СВЕ ОСТАЛЕ ШТЕТЕ ИЛИ ГУБИТКЕ НАСТАЛЕ УСЛЕД КОРИШЋЕЊА ДОКУМЕНТА И ЊЕГОВИХ ИЗМЕЊЕНИХ ВЕРЗИЈА ЧАК И АКО ЈЕ ОШТЕЋЕНА СТРАНА БИЛА ОБАВЕШТЕНА О МОГУЋНОСТИ НАСТАНКА ТЕ ШТЕТЕ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Eric</firstname> 
+	<surname>Baudais</surname> 
+	<affiliation> 
+	  <address> <email>baudais@okstate.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+<revhistory>
+  <revision> 
+    <revnumber>Упутство за Јагно v2.9</revnumber> 
+    <date>Фебруар 2008.</date> 
+    <revdescription> 
+      <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+      <para role="publisher">Пројекат Гномове документације</para>
+    </revdescription> 
+  </revision>
+  <revision> 
+    <revnumber>Упутство за Јагно v2.8</revnumber> 
+    <date>Септембар 2004.</date> 
+    <revdescription> 
+      <para role="author">Eric Baudais <email>baudais@okstate.edu</email></para>
+      <para role="publisher">Пројекат Гномове документације</para>
+	</revdescription> 
+  </revision>
+  <revision>
+   <revnumber>0.1в</revnumber>
+   <date>4. фебруар 2000.</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Завршен први нацрт.</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>0.2</revnumber>
+   <date>5. фебруар 2000.</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Додао фусноту у секцији „зашто“. Исправио пар грешака.</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>0.3</revnumber>
+   <date>7. фебруар 2000.</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Усагласио документацију са ГДП шаблоном. Појаснио секцију о игрању.</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>1.0</revnumber>
+   <date>7. април 2000.</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>упутство за Јагно лиценцирано под СДД лиценцом. Ажурирани снимци екрана да одговарају ГДП теми, MicroGUI.</revremark>
+  </revision>
+ </revhistory>
+
+    <releaseinfo>Ово упуство је написано за Јагно 2.20.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Примедбе</title> 
+      <para>Да бисте пријавили грешку или дали предлог у вези програма <application>Јагно</application> или његовог упутства, пратите смернице на <ulink url="ghelp:user-guide?feedback-bugs" type="help">Гномовој страни за примедбе</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Јагно</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="intro">
+ <title>Увод</title>
+ <sect2 id="what">
+  <title>Шта је Јагно?</title>
+  
+  <para><application>Јагно</application> је рачунарска верзија игре Реверси, популарније назване Отело. <application>Јагно</application> је игра стратегије за два играча, слично као и Го. Табла је величине 8 са 8 на коју се постављају црне фигуре са једне стране и беле са друге. Циљ игре <application>Јагно</application> је да окренете што више противничких фигура на вашу боју. Ово се ради тако што се противничке фигуре заробљавају око две фигуре ваше боје.</para>
+
+  <para>Јагно подржава и играње више играча <link linkend="network-games">преко мреже</link> или на истом рачунару где наизменично игра један, па други.</para>
+
+  <para>Да бисте покренули <application>Јагно</application>, одаберите ставку <guimenuitem>Јагно</guimenuitem> из подменија <guisubmenu>Игре</guisubmenu> са <guimenu>Главног менија</guimenu>, или откуцајте <command>iagno</command> у командној линији.</para>
+ </sect2>
+
+ <sect2 id="why">
+  <title>Зашто се Отело зове Јагно?</title>
+  <para>Вероватно се питате зашто се ова игра зове <application>Јагно</application> уместо Отело или Гнотело. Одговор је компликован и укључује жигове, адвокате и шта све не. Уместо да вас оставим са овим одговором, испричаћу вам дугу и компликовану лаж о пореклу имена <application>Јагно</application>.</para>
+  <para>Једне олујне ноћи у Енглеској, налик на оне какве се срећу у бајкама, усамљени програмер је седео испред екрана свог рачунара. Јан је завршавао своју ремек дело игрицу. То је била потпуно интерактивна игра Отела  и одлучио је да направи игру речима и да је назове Гнотело, јер је писана за Гном.</para>
+  <para>Касније су му дошли пријатељи, и као сви програмери, хвалио се својим ремек делом. Сви су му се смејали у лице и рекли су му да је игра бескорисна и да је то бедан покушај да буде прави хакер. Пошто их је Јан избацио напоље, решио је да назове свој програм Јаго <footnote>
+   <para>Јаго је Отелов непријатељ у Шекспировом комаду <citetitle>Отело</citetitle>.</para>
+  </footnote> због зла које се појавило због показивања ове игре. Али, и даље нешто није штимало. Сви Гномови програми имају неки део Гнома у називу, па се Јан и даље премишљао. На крају се одлучио за име под којим данас знамо и волимо овај програм, <application>Јагно</application>.</para>
+ </sect2>
+</sect1>
+
+<sect1 id="playing">
+ <title>Играње Јагна</title>
+ <para>На табли се у почетку налазе четири фигуре у квадрату на средини. Фигуре имају исту боју на крајевима, као што приказује <xref linkend="start-shot"/>.</para>
+ 
+ <figure id="start-shot">
+  <title>Почетна позиција</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/START.png" format="PNG" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Снимак екрана почетне позиције.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+ <para>Црни игра први и тако ставља фигуру на таблу да заробљава белу фигуру између две црне фигуре. Када црни постави своју фигуру, све беле фигуре на табли које се налазе између новопостављене црне фигуре и других црних фигура, водоравно, усправно или дијагонално се окрећу и постају црне (<xref linkend="first-shot"/>).</para>
+
+ <figure id="first-shot">
+  <title>Први потез</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/FIRST.png" format="PNG" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Снимак екрана првог потеза.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+ <para>Када је фигура заробљена између две друге фигуре истих боја у истом реду, играч осваја фигуре све док се не наиђе на другу фигуру у боји тог играча, као што приказује <xref linkend="block-shot"/>. Играч, дакле, може узети само фигуре које се окрећу као директна последица стављања фигуре на таблу. Једном када је фигура постављена на таблу, играч је не може уклонити или преместити. Ако играч нема потез, губи свој ред. Игра се завршава када ниједан играч не може да одигра потез. <figure id="block-shot">
+  <title>Бели не може да освоји црну фигуру у центру средишњег ступца јер беле фигуре блокирају крајеве тог ступца. Да је, којим случајем, на потезу црни, могао би да стави фигуру на врх те колоне, али би тако само окренуо прву фигуру белога.</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/BLOCK.png" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Снимак екрана блокирања црног.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure></para>
+
+</sect1>
+
+<sect1 id="settings">
+ <title>Подешавања игре</title>
+
+ <sect2 id="player">
+  <title>Боје играча и ниво тежине</title>
+ 
+  <para>Када се Јагно покрене, људски играч игра црног, а рачунарски играч игра белог са првим нивоом тежине. Коришћењем језичка <guimenuitem>Игра</guimenuitem> у прозорчету са <guisubmenu>подешавањима</guisubmenu>, можете подесити типове играча за обе боје. Људски играч сте наравно ви, први ниво је најлакши ниво рачунарског играча, док је трећи ниво најтежи. Можете подесити да играју два људска играча да бисте играли са пријатељем, или два рачунарска играча да бисте само посматрали дуел рачунара.</para>
+ </sect2>
+
+ <sect2 id="quick-moves">
+  <title>Опција брзог потеза</title>
+
+  <para>Ова опција се налази у менију <guimenu>Подешавања</guimenu>. Идите на подмени <guisubmenu>Опције</guisubmenu> и језичак <guimenuitem>Игра </guimenuitem>. Опција је првобитно искључена, а ако се укључи, омогућиће да рачунарски играч брже ставља своје фигуре.</para>
+
+  <note>
+   <title>Напомена:</title>
+   <para>Укључивањем ове опције рачунар се не тера на потез и не смањује му се ниво тежине.</para>
+  </note>
+ </sect2>
+ 
+ <sect2 id="enable-sound">
+  <title>Укључи/искључи звукове</title>
+
+  <para>Последња опција на језичку <guimenuitem>Игра</guimenuitem> у прозорчету <guilabel>Подешавања</guilabel> дозвољава вам да укључујете или искључујете звукове док играте <application>Јагно</application>.</para>
+
+  <figure id="player-shot">
+   <title>Мени „Подешавања“ са истакнутим језичком „Игра“.</title>
+   <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/PLAYER.png" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Снимак екрана подешавања игре.</phrase> 
+    </textobject> 
+  </mediaobject>
+   </screenshot>
+  </figure>
+
+ </sect2>
+
+</sect1>
+
+<sect1 id="animations">
+ <title>Изглед</title>
+
+ <para>Све опције анимације се налазе у менију <menuchoice><guimenu>Подешавања</guimenu><guisubmenu>Опције </guisubmenu></menuchoice>, када кликнте на језичак <guimenuitem>Изглед</guimenuitem>.</para>
+
+ <sect2 id="animation-amount">
+  <title>Анимација</title>
+
+  <para>Овом опцијом се, уз помоћ радио дугмади, управља количином анимације када се фигуре окрећу. Одабирањем опције <guibutton>Никаква</guibutton>, фигуре ће се окретати тренутно. Одабирањем опције <guibutton>Делимична</guibutton>, фигуре ће се окретати полако. Одабирањем опције <guibutton>Комплетна</guibutton>, фигуре ће се окретати полако и глатко.</para>
+
+ </sect2>
+
+ <sect2 id="stagger-flips">
+  <title>Разбацај фигуре</title>
+  
+  <para>Овом опцијом се заробљене фигуре по реду, ступцу или дијагонали окрећу једна за другом, као домине, уместо да се све окрену одједном. Не утиче на игру, али изгледа кул.</para>
+
+ </sect2>
+
+ <sect2 id="grid">
+  <title>Прикажи мрежу</title>
+
+  <para>Овом опцијом се приказује мрежа преко подлоге за игру. Приказивање мреже је корисно јер на тај начин играч тачно зна где ће фигура бити постављена.</para>
+
+  <tip>
+   <title>Савет:</title>
+   <para>Ова опција треба бити укључена за почетнике да би имали бољи преглед игре.</para>
+  </tip>
+
+ </sect2>
+
+ <sect2 id="flip-final">
+  <title>Обрни коначни резултат</title>
+
+  <para>Овом опцијом се на крају игре све црне фигуре померају на врх табле, а све беле на њено дно. Овим се омогућава да се визуелно прикаже исход партије.</para>
+
+  <note>
+   <title>Напомена:</title>
+   <para>Ова опција ни на који начин не утиче на исход игре.</para>
+  </note>
+
+ </sect2>
+
+ <sect2 id="tile-set">
+  <title>Скуп фигура</title>
+  <para>Ова опција вам омогућава да одаберете тип табле и фигура које се приказују, Ако желите да направите ваш скуп фигура, узмите classic скуп фигура као основу и промените текстуру и боје за различите ефекте. Када направите нови скуп фигура, пошаљите га Јану Питерсу <email>itp@gnu.org</email> и он ће га укључити у наредно издање.</para>
+
+  <important>
+   <title>Важно:</title>
+   <para>Постоје два скупа фигура који изгледају исто, али имају другачије анимације -- woodtrim и classic.</para>
+  </important>
+
+  <figure id="animation-shot">
+   <title>Мени „Подешавања“ са истакнутим језичком „Изглед“.</title>
+   <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/ANIMATION.png" srccredit="Eric Baudais"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Снимак екрана подешавања анимације.</phrase> 
+    </textobject> 
+  </mediaobject>
+   </screenshot>
+  </figure>
+
+ </sect2>
+
+</sect1>
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Мрежне игре</title>
+  <para>Јагно подржава и мрежне игре за више играча коју обезбеђује <ulink type="http" url="http://www.ggzgamingzone.org">ГГЗ Зона игре</ulink>. Повезивањем на сервер Четири у низу на интернету, можете изазвати друге играче у играма са више играча. За вести, ажурирања и списак сервера за повезивање, погледајте <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">веб страну Гномових игара</ulink>.</para>
+  <para>Да покренете Јагно игру за више играча, одаберите <menuchoice><guimenu>Игра</guimenu><guimenuitem>Мрежна игра</guimenuitem></menuchoice> из главног менија.</para> 
+
+<sect2 id="connecting">
+<title>Повезивање на Јагно мрежни сервер</title>
+<para>При покретању нове мрежне игре, прво се показује прозорче за повезивање. Одавде можете изабрати сервер за повезивање и корисничко име које ћете имати када се повежете.</para>
+
+<para>Могуће је повезати се на сервер са било гостинског налога или као нормални регистровани налог. Гостински налози вам омогућују анонимну пријаву, док вам нормални налози дозвољавају да резервишете ваше корисничко име заштићено лозинком коју одаберете.</para>
+
+<para>Опција <guimenuitem>Пријава као гост</guimenuitem> треба да буде одабрана ако желите анонимну пријаву. Ако желите да направите нови налог за пријављивање, одаберите <guimenuitem>Прва пријава</guimenuitem>, са жељеним корисничким именом, лозинком и е-адресом. Ако већ имате налог, можете се повезати опцијом <guimenuitem>Нормална пријава</guimenuitem>, при чему уносите постојеће корисничко име и лозинку.</para>
+<para>Да бисте се повезали на сервер, кликните на дугме <guimenuitem>Повежи се</guimenuitem>.</para>
+<figure id="connect">
+<title>Јагно прозорче за мрежно повезивање.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Јагно прозорче за мрежно повезивање.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Придруживање соби за игру</title>
+<para>Кад сте се успешно повезали на сервер, можете изабрати собу којој желите да се придружите. Да бисте играли Јагно, одаберите собу Iagno. Ако желите да направите игру, кликните на дугме „Покрени“. Овим се прави нова табла где други могу да играју против вас. Ако има већ покренутих игара, можете кликнути дуплим кликом на постојећу игру да бисте јој се придружили. Списак табли за игру са десне стране вам показује број слободних места, што означава број играча који се могу придружити.</para>
+<figure id="tables">
+<title>Јагно мрежно прозорче вам омогућава да се придружите соби за игру и нађете друге играче.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Јагно мрежно прозорче вам омогућава да се придружите соби за игру и нађете друге играче.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>При прављењу нове Јагно табле за игру, приказује се прозорче са поставкама које вам омогућавају да прилагодите игру. На пример, најмањи број играча за игру. Када је укупни број места заузет, играчи се више не могу придружити табли за игру.</para>
+<para>Могуће је ћаскати са осталим играчима у мрежним играма. Питајте за савет или помоћ при игрању игре, али молимо, будите љубазни према осталим играчима.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Чекање да се остали играчи придруже игри</title>
+<para>Када сте се успешно придружили табли за игру, морате сачекати да се потребан број играча придружи. Ставка менија <guimenuitem>Списак играча</guimenuitem> вам омогућава да видите играче који су се придружили игри. Игра ће почети одмах пошто се достигне потребан број играча.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Играње Јагна са више играча</title>
+<para>Играње Јагна са више играча има иста правила као обичан Јагно, осим што сада играте против другог човека. То значи да неке друге стратегије игре могу бити бити боље у односу на то кад играте против рачунара.</para>
+<para>Када неки играч победи, игра се завршава и можете се вратити на почетни екран мрежне игре. Онда можете играти још једну занимљиву Јагно игру са више играча!</para>
+</sect2>
+
+</sect1>
+
+
+
+
+<sect1 id="bugs">
+ <title>Познате грешке и ограничења</title>
+
+ <itemizedlist mark="opencircle">
+    <listitem>
+     <para>Рачунарског играча за Јагно је лако победити.</para>
+    </listitem>
+ </itemizedlist>
+
+</sect1>
+
+<sect1 id="credits">
+ <title>Аутори</title>
+  <para><application>Јагно</application> је написао Ian Peters (<email>itp@gnu.org</email>). Ово упутство је написао Eric Baudais (<email>baudais@okstate.edu</email>). Да бисте пријавили грешке или дали предлог у вези овог програма или његовог упутства, пратите смернице из <ulink url="ghelp:user-guide?feedback-bugs" type="help">документа</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Лиценца</title>
+  <para>Овај програм је слободан софтвер; можете га расподељивати и/или га мењати под условима <citetitle>ГНУ Опште Јавне Лиценце (GNU GPL)</citetitle> како је објављује Задужбина за Слободни Софтвер (FSF); било верзије 2 те Лиценце, било (по вашем нахођењу) било које новије верзије.</para>
+  <para>Овај програм се расподељује у нади да ће бити од користи, али БЕЗ ИКАКВИХ ГАРАНЦИЈА; чак и без подразумеване гаранције КОРИСНОСТИ или ПРИЛАГОЂЕНОСТИ ОДРЕЂЕНОЈ НАМЕНИ.  Видите <citetitle>ГНУ Општу Јавну Лиценцу</citetitle> за више детаља.</para>
+  <para>Примерак <citetitle>ГНУ Опште Јавне Лиценце</citetitle> је укључен у додатку <citetitle>Гномовог корисничког водича</citetitle>. Такође можете набавити примерак <citetitle>ГНУ Опште Јавне Лиценце</citetitle> од Задужбине за Слободни Софтвер одлазећи на <ulink url="http://www.fsf.org" type="http">њихову веб адресу</ulink> или пишући на <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

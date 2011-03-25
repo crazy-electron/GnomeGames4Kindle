@@ -1,0 +1,102 @@
+<sect1 id="Carpet"><!--<sect1info>
+    <copyright>
+      <year>2001</year>
+      <holder>Vincent Povirk</holder>
+    </copyright>
+    <author>
+      <firstname>Vincent</firstname>
+      <surname>Povirk</surname>
+    </author>
+    <address><email>madewokherd@gmail.com</email></address>
+  </sect1info>-->
+
+  <title>Carpet</title>
+
+  <para>Written by Vincent Povirk</para>
+
+          <sect2><title>Setup</title>
+
+
+  <informaltable>
+    <tgroup cols="2"><tbody>
+	<row>
+	  <entry>Type of Deck</entry>
+	  <entry>Standard Deck</entry>
+	</row>
+	<row>
+	  <entry>Stock</entry>
+	  <entry>
+	    Top left pile.  The rest of the deck is placed here after
+	    dealing.  Cards are turned over one at a time to Waste.  
+	    No redeals.
+	  </entry>
+	</row>
+	<row>
+	  <entry>Waste</entry>
+	  <entry>
+	    To be taken from Stock.  Top card available for play.
+	  </entry>
+	</row>
+	<row>
+	  <entry>Foundation</entry>
+	  <entry>
+	    Four piles top right.  To be built up in suit from Ace to
+	    King.  Aces are removed before dealing and placed on the 
+	    foundations.
+	  </entry>
+	</row>
+	<row>
+	  <entry>Tableau</entry>
+	  <entry>
+	    The "Carpet". Four rows of five cards dealt face up. Cards on 
+	    the tableau are available for play. There is no building. Empty 
+	    spaces are automatically filled from the waste if possible or 
+	    the stock.
+	  </entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>Goal</title>
+
+  <para>
+    Move all cards to the Foundation piles.
+  </para>
+
+          </sect2>
+        <sect2><title>Rules</title>
+
+  <para>
+    Cards on the tableau are in play.
+  </para>
+  <para>
+    Cards are flipped from the Stock to the Waste individually.  Top
+    card in Waste is in play.  There are no redeals.
+  </para>
+  <para>
+    Foundations are built up in suit from Ace to King.  Cards in
+    Foundations are still in play.  Double clicking on a card will move
+    it to the appropriate Foundation pile if such a move is
+    possible. 
+  </para>
+
+          </sect2>
+        <sect2><title>Scoring</title>
+
+  <para>
+    Each card places in the Foundation piles scores one point.
+  </para>
+  <para>
+    Maximum possible score:  48
+  </para>
+
+          </sect2>
+        <sect2><title>Strategy</title>
+
+  <para>
+    Just put anything you can on the foundation.
+  </para>
+        </sect2>
+</sect1>

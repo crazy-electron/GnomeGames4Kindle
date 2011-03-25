@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+	"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="300" height="50">
+  <defs stroke-width="0.1">
+    <linearGradient id="sun2" x1="100%" y1="100%" x2="0%" y2="0%"
+      spreadMethod="pad" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="yellow" stop-opacity="1"/>
+      <stop offset="100%" stop-color="orange" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="sun1" x1="0%" y1="0%" x2="100%" y2="100%"
+      spreadMethod="pad" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="yellow" stop-opacity="1"/>
+      <stop offset="100%" stop-color="orange" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="red2" x1="100%" y1="100%" x2="0%" y2="0%"
+      spreadMethod="pad" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="red" stop-opacity="1"/>
+      <stop offset="100%" stop-color="maroon" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="red1" x1="0%" y1="0%" x2="100%" y2="100%"
+      spreadMethod="pad" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="red" stop-opacity="1"/>
+      <stop offset="100%" stop-color="maroon" stop-opacity="1"/>
+    </linearGradient>
+    <radialGradient id="blue_radial_fade_out" cx="50%" cy="50%" r="50%" fx="50%"
+      fy="50%" spreadMethod="pad" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="navy" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0000c0" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="blue_radial_fade_in" cx="50%" cy="50%" r="50%" fx="50%"
+      fy="50%" spreadMethod="pad" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#0000c0" stop-opacity="1"/>
+      <stop offset="100%" stop-color="navy" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="blue" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad"
+      gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="blue" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#000040" stop-opacity="1"/>
+    </linearGradient>
+    <ellipse id="button_20" cx="25" cy="25" rx="10" ry="10"/>
+    <ellipse id="button_30" cx="25" cy="25" rx="15" ry="15"/>
+    <ellipse id="button_40" cx="25" cy="25" rx="20" ry="20"/>
+    <ellipse id="button_base" stroke="black" stroke-width="0.1" cx="25" cy="25"
+      rx="25" ry="25"/>
+  </defs>
+  <g id="button_outer">
+    <use x="0" y="0" fill="url(#red1)" xlink:href="#button_base"/>
+    <use x="50" y="0" fill="url(#sun1)" xlink:href="#button_base"/>
+    <use x="200" y="0" fill="url(#red2)" xlink:href="#button_base"/>
+    <use x="250" y="0" fill="url(#sun2)" xlink:href="#button_base"/>
+  </g>
+  <rect fill="#0000c0" stroke-width="0.1" x="100" y="0" width="50" height="50" />
+  <rect fill="url(#blue)" stroke-width="0.1" x="150" y="0" width="50" height="50"/>
+  <ellipse id="ellipse_flat" fill="navy" cx="125" cy="25" rx="25" ry="25"
+    visibility="hidden" />
+  <ellipse id="ellipse_fade_in" fill="url(#blue_radial_fade_in)" cx="125" cy="25"
+    rx="25" ry="25" visibility="hidden" />
+  <ellipse id="ellipse_fade_out" fill="url(#blue_radial_fade_out)" cx="125"
+    cy="25" rx="25" ry="25" visibility="hidden" />
+  <g id="button_ring">
+    <use x="0" y="0" fill="url(#red2)" xlink:href="#button_40"/>
+    <use x="50" y="0" fill="url(#sun2)" xlink:href="#button_40"/>
+    <use x="200" y="0" fill="url(#red1)" xlink:href="#button_40"/>
+    <use x="250" y="0" fill="url(#sun1)" xlink:href="#button_40"/>
+  </g>
+  <g id="button_inner">
+    <use x="0" y="0" fill="url(#red1)" xlink:href="#button_30"/>
+    <use x="50" y="0" fill="url(#sun1)" xlink:href="#button_30"/>
+    <use x="200" y="0" fill="url(#red2)" xlink:href="#button_30"/>
+    <use x="250" y="0" fill="url(#sun2)" xlink:href="#button_30"/>
+  </g>
+  <metadata>
+    <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <Work rdf:about="">
+        <dc:title>Sunspot theme game pieces</dc:title>
+        <dc:description>Game pieces for Gnect, Four in a Row a Connect 4 style Game for Gnome</dc:description>
+        <dc:publisher>
+          <Agent rdf:about="http://www.openclipart.org">
+            <dc:title>Alan Horkan</dc:title>
+          </Agent>
+        </dc:publisher>
+        <dc:creator>
+          <Agent rdf:about="">
+            <dc:title>Alan Horkan</dc:title>
+          </Agent>
+        </dc:creator>
+        <dc:rights>
+          <Agent rdf:about="">
+            <dc:title>Alan Horkan</dc:title>
+          </Agent>
+        </dc:rights>
+        <dc:date></dc:date>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <license rdf:resource="Public Domain">
+          <dc:date></dc:date>
+        </license>
+        <dc:language>en</dc:language>
+      </Work>
+      <License rdf:about="Public Domain">
+        <permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+        <permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+        <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+      </License>
+    </rdf:RDF>
+  </metadata>
+  <a xlink:href="http://www.openclipart.org">
+    <text x="0" y="75">http://openclipart.org</text>
+  </a>
+</svg>

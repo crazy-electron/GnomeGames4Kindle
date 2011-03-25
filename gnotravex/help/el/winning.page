@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="winning" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="hint"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Απλές συμβουλές για να κερδίσετε στο παιχνίδι.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-26" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  
+  <title>Κερδίστε στο <app>GNOME Τετραβέξ</app></title>
+  
+  <note>
+    <p>Δε θα κερδίσετε στα σίγουρα ακολουθώντας τις παρακάτω συμβουλές, αλλά οπωσδήποτε θα σας βοηθήσουν.</p>
+  </note>
+  
+  <section id="winning-single">
+    <title>Ψάξτε για ένα μοναδικό αριθμό</title>
+    <p>Όταν αρχίζετε ένα νέο παιχνίδι, ψάξτε για ένα μοναδικό αριθμό, ή έναν αριθμό που δεν έχει όμοιό του που να μπορεί να τοποθετηθεί δίπλα του.</p>
+    <p>Αν έχετε έναν τέτοιο αριθμό, τότε βολεύει να ξεκινήσετε με εκείνο το κομμάτι, αφού θα ξέρετε πού να το τοποθετήσετε.</p>
+    <p>Σημειώστε ότι όσο μεγαλύτερο είναι το ταμπλώ τόσο πιο δύσκολο είναι να βρείτε έναν τέτοιο αριθμό.</p>
+  </section>
+  <!-- This is just an idea... need to think about it... -->
+  <section id="winning-share">
+    <title>Έχετε μια συμβουλή να μοιραστείτε;</title>
+    <p>Αν έχετε να μοιραστείτε μια συμβουλή για το <app>GNOME Τετραβέξ</app> ή για οποιοδήποτε άλλο παιχνίδι του GNOME, γράψτε μας στο gnome-doc-list@gnome.org. Θα την προσθέσουμε εδώ!</p>
+  </section>
+</page>

@@ -1,0 +1,13 @@
+[Desktop Entry]
+_Name=Nibbles
+_Comment=Guide a worm around a maze
+Exec=gnibbles
+Icon=gnome-gnibbles
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Game;ArcadeGame;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-games
+X-GNOME-Bugzilla-Component=BugBuddyBugs
+X-GNOME-Bugzilla-Version=@VERSION@
+StartupNotify=true

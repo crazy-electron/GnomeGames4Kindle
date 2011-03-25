@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="hint" xml:lang="el">
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Χρησιμοποιήστε τις υποδείξεις, ή λύστε το παιχνίδι αυτόματα.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-23" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+  </info>
+  <title>Υποδείξεις</title>
+
+  <note style="warning">
+    <p>Αν χρησιμοποιήσετε μία από τις ακόλουθες μεθόδους για να ολοκληρώσετε το παιχνίδι, τα σκορ σας δε θα συμπεριληφθούν στα υψηλότερα σκορ.</p>
+  </note>
+
+  <section id="hint-hints">
+  
+    <title>Χρήση του συστήματος υποδείξεων</title>
+    
+    <p>Σε οποιαδήποτε στιγμή στο παιχνίδι, αν δε ξέρετε από πού να ξεκινήσετε ή πού να μετακινήσετε ένα κομμάτι, μπορείτε να χρησιμοποιήσετε το ενσωματωμένο σύστημα υποδείξεων.</p>
+    <p>Το σύστημα θα μετακινήσει ένα κομμάτι από το δεξιό μέρος στη σωστή του θέση στο αριστερό μέρος.</p>
+    <p>Για να χρησιμοποιήσετε αυτό το σύστημα υποδείξεων, κάντε ένα από τα ακόλουθα:</p>
+    <list>
+      <item>
+        <p>Πιέστε <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Επιλέξτε <guiseq><gui style="menu">Παιχνίδι</gui><gui style="menuitem">Υπόδειξη</gui></guiseq>.</p>
+      </item>
+    </list>
+  </section>
+  <section id="hint-solve">
+    <title>Λύστε το παιγνίδι</title>
+    <p>Αν κολλήσετε στο παιχνίδι, ή αν θέλετε να το επιλύσετε αυτόματα, επιλέξτε <guiseq><gui style="menu">Παιχνίδι</gui><gui style="menuitem">Επίλυση</gui></guiseq>.</p>
+  </section>
+</page>

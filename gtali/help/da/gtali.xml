@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Tali</application>">
+<!ENTITY appname "Tali">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="da">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Manual for <application>Yatzy</application></title>
+    <abstract role="description">
+      <para>Yatzy er som Yahtzee til GNOME eller som poker med terninger. Spilleren ruller terninger i et forsøg på at skabe de bedst mulige kombinationer, som 4 ens, lille og fuldt hus. Spilleren har ret til 3 kast per runde og kan fastholde visse terninger ved hvert kast.</para>
+    </abstract>
+    <copyright>
+      <year>2001</year>
+      <holder>Scott D. Heavner</holder>
+    </copyright><copyright><year>2009.</year><holder>Joe Hansen (joedalton2@yahoo.dk)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOME-dokumentationsprojekt</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Tilladelse er givet til at kopiere, distribuere og/eller ændre dette dokument under betingelserne i GNU Free Documentation License (GFDL), version 1.1 eller enhver senere version udgivet af Free Software Foundation; uden invariante afsnit, forsidetekster, samt bagsidetekster. Du kan se en kopi af GFDL her <ulink type="help" url="ghelp:fdl">link</ulink> eller i filen COPYING-DOCS som distribueres sammen med denne manual.</para>
+         <para>Denne manual er en del af den samling af GNOME-manualer som udgives under GFDL. Hvis du ønsker at distribuere denne manuel adskilt fra samlingen, kan du gøre dette ved at tilføje en kopi af licensen til manualen, som beskrevet i afsnit 6 af licensen.</para>
+
+	<para>En stor del af de navne som anvendes af firmaer til at identificere deres produkter og tjenester hævdes som værende varemærker. Hvor disse navne fremgår i en hvilken som helst GNOME-dokumentation, og medlemmerne af GNOME-dokumentationsprojeket er gjort opmærksom på disse varemærker, så er disse navne vist med store bogstaver eller stort begyndelsesbogstav.</para>
+
+	<para>DOKUMENTET OG ÆNDREDE VERSIONER AF DOKUMENTET STILLES TIL RÅDIGHED UNDER GNU FREE DOCOMENTATION LICENSE MED FØLGENDE BETINGELSER: <orderedlist>
+		<listitem>
+		  <para>DETTE DOKUMENT GØRES TILGÆNGELIGT SÅDAN SOM DET ER, UDEN NOGEN FORM FOR GARANTI, HVERKEN UDTALT ELLER ANTYDET, DERIBLANDT, UDEN BEGRÆNSNINGER, GARANTIER OM AT DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET ER FRIT FOR DEFEKTER, PASSENDE TIL ET BESTEMT FORMÅL ELLER IKKE-KRÆNKENDE. DU HÆFTER SELV FOR HELE RISIKOEN VEDRØRENDE KVALITET, KORREKTHED OG YDELSE FOR DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET. SKULLE ET DOKUMENT, ELLER EN ÆNDRET VERSION AF ET DOKUMENT VISE SIG AT VÆRE DEFEKT PÅ EN HVILKEN SOM HELST MÅDE, HÆFTER DU FOR BETALING FOR EVENTUEL NØDVENDIG SERVICE, REPARATION ELLER KORREKTION (OG IKKE HVERKEN DEN OPRINDELIGE FORFATTER, SKRIBENT ELLER NOGEN ANDEN BIDRAGYDER). DENNE ERKLÆRING OM GARANTIFORBEHOLD ER EN ESSENTIEL DEL AF DENNE LICENS. INGEN BRUG AF NOGET DOKUMENT ELLER ÆNDRET VERSION AF DOKUMENTET ER AUTORISERET HERUNDER BORTSET FRA DENNE ANSVARSFRASKRIVELSE OG</para>
+		</listitem>
+		<listitem>
+		  <para>UNDER INGEN OMSTÆNDIGHEDER OG UNDER INGEN JURIDISK TEORI, UANSET OM DET ER EN BEVIDST SKADENDE HANDLING (INKLUSIVE UFORSVARLIGHED) ELLER PÅ HVILKEN SOM HELST ANDEN MÅDE, KAN FORFATTEREN, SKRIBENT, BIDRAGYDERE, DISTRIBUTØRER ELLER FORSYNER AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER GØRES ANSVARLIG OVERFOR NOGEN PERSON FOR NOGEN DIREKTE, INDIREKTE, SPECIEL, TILFÆLDIG ELLER FØLGENDE SKADE PÅFØRT NOGEN INKLUSIVE, UDEN BEGRÆNSNING, SKADE SOM FØLGE AF TAB AF RYGTE, ARBEJDSSTOP, COMPUTERFEJL ELLER -SVIGT, ELLER ENHVER ANDEN FORM FOR SKADE ELLER TAB SOM ER OPSTÅET I FORBINDELSE MED BRUG AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER HERAF, SELV HVIS EN SÅDAN PART HAR VÆRET INFORMERET OM MULIGHEDEN FOR SÅDANNE SKADER.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+	
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Scott D</firstname> 
+	<surname>Heavner</surname> 
+	<affiliation> 
+	  <address> <email>sdh@po.cwru.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Yatzymanual version 2.8</revnumber> 
+	<date>September 2004</date> 
+	<revdescription> 
+	  <para role="author">Scott D Heavner <email>sdh@po.cwru.edu</email></para>
+	  <para role="publisher">GNOME-dokumentationsprojekt</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Denne manual beskriver version 2.12 af Yatzy.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Tilbagemeldinger</title> 
+      <para>Hvis du ønsker at indrapportere en fejl eller komme med et forslag vedrørende <application>Yatzy</application> eller denne manual så følg vejledningen på siden <ulink url="ghelp:user-guide?feedback-bugs" type="help">tilbagemeldinger omkring GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME Yatzy</primary> 
+  </indexterm>
+
+ <!-- ============= Document Body ============================= -->
+
+  <sect1 id="intro">
+    <title>Indledning</title>
+
+    <para><application>GNOME Yatzy</application> er en slags poker med terninger og færre penge. Du kaster fem terninger tre gange og forsøger at skabe den bedste <quote>hånd</quote>. Dit 2. og 3. kast kan inkludere alle eller udvalgte terninger.</para>
+    <para><application>GNOME Yatzy</application> er meget lig terningspillet Yahtzee som er et varemærke ejet af Hasbro, Inc.</para>
+
+    <para>For at køre <application>GNOME Yatzy</application> vælges <menuchoice><guisubmenu>Spil</guisubmenu><guimenuitem>Yatzy</guimenuitem></menuchoice> fra <guimenu>Hovedmenuen</guimenu>, eller tast <command>gtali</command> fra kommandolinjen.</para>
+
+    <para><application>GNOME Yatzy</application> er inkluderet i pakken <filename>gnome-games</filename>, som er en del af skrivebordsmiljøet GNOME. Dette dokument beskriver version 2.8 af <application>GNOME Yatzy</application>.</para>
+  </sect1>
+
+  <sect1 id="playing">
+    <title>Sådan spiller du GNOME Yatzy</title>
+
+    <figure id="shot1">
+      <title>GNOME Yatzy i aktion</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="Trevor Curtis"/>
+	</imageobject>
+    <textobject> 
+      <phrase>GNOME Yatzy - skærmbillede af hovedvinduet.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Når spillet starter, ser du resultatet af dit første kast med terningerne.</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Klik på de terninger, du ønsker at kaste igen.</para>
+        </listitem>
+        <listitem>
+          <para>Når du har valgt alle terningerne, du ønsker at kaste igen, så tryk på knappen <guibutton>Kast!</guibutton>.</para>
+        </listitem>
+        <listitem>
+	  <para>Når du har en hånd du er glad for, eller er løbet tør for muligheden for at kaste igen, så klik på en række som svarer til, hvad du forventer er den bedste kombination. Det er muligt at have et resultat på nul og hvis du klikker på den forkerte række, så vil du få point der svarer dertil. (Lad os for eksempel sige at du får yatzy - 5 ens - og klikker på Stor, så vil du få nul point for rækken stor).</para>
+      </listitem>
+    </orderedlist>
+
+    <para>Du kan kun bruge hver kombination en gang, det vil sige, at når du først har indtastet noget på en plads, så kan du ikke ændre den pointgivning senere, hvis du kaster en bedre hånd.</para>
+
+    <para>Der er en undtagelse til denne regel, hvis du kaster en yatzy endnu en gang, så kan du placere den i rækken yatzy en ekstra gang og opnå 50 ekstra point. Du kan fortsætte med at gøre dette, hver gang du kaster en yatzy. Til slut i spillet vil du få ekstra kast til at fylde de resterende rækker ud. Vær opmærksom på, at hvis du får nul point i din yatzyrække (det vil sige, at du fyldte noget i den række, som ikke var en yahtzee) så kan du ikke efterfølgende placere en yatzy der, du vil kun få nul point for denne række.</para>
+
+    <para>Der er også en bonus på 35 point hvis du opnår 63 point eller mere for de øverste seks rækker.</para>
+
+    <sect2 id="keyboard">
+    <title>Brug af tastaturet</title> 
+
+      <para>Som et alternativ til at bruge musen, så skifter tast 1 til 5 mellem terningerne, på samme måde som hvis du havde klikket på dem. Tasten 1 svarer til den første terning og så fremdeles. Brug de sædvanlige styretaster til at kaste terningen og vælg en række. Det vil sige brug tab til at skifte mellem kastknappen og pointområdet, brug piletasterne til at navigere op og ned mellem rækkerne og brug mellemrum for at vælge.</para>
+    
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="options">
+    <title>Spilindstillinger</title>
+
+    <figure id="shot2">
+      <title>GNOME Yatzy-indstillinger</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences.png" format="PNG" srccredit="Trevor Curtis"/>
+	</imageobject>
+    <textobject> 
+      <phrase>GNOME Yatzy-indstillingsvinduesboks.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+      <variablelist><title>Fysiske spillere</title>
+	<varlistentry>
+	  <term><guimenuitem>Antal spillere</guimenuitem></term>
+	  <listitem>
+            <para>Vælg antallet af fysiske spillere. Som beskrevet ovenfor kan der kun være 6 spillere i alt.</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>  
+      
+    <variablelist><title>Computermodstandere</title>
+      <varlistentry>
+        <term><guimenuitem>Forsinkelse mellem kast</guimenuitem></term>
+	<listitem>
+	  <para>Gør at computermodstanderne holder pause mellem hvert kast af terningerne, så du kan se, hvad de foretager sig. Gør spillet lidt langsommere.</para>
+        </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guimenuitem>Antal modstandere</guimenuitem></term>
+	  <listitem>
+            <para>Vælg antallet af computermodstandere. Du kan have et samlet antal på seks enten fysiske eller computerspillere. Hvis du forsøger at øge antallet nær grænsen, vil antallet af fysiske spillere blive mindsket for at bevare det samlede antal på kun seks spillere.</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>
+      
+    <variablelist><title>Spiltype</title>
+      <varlistentry>
+        <term><guimenuitem>Versioner af spillet</guimenuitem></term>
+	<listitem>
+	  <para>Spil enten den klassiske version (der ligner Yahtzee) eller versionen med farver (der ligner Kismet). Når du ændrer spiltypen, skal du genstarte spillet for at bruge den nye spiltype.</para>
+        </listitem>
+	</varlistentry>
+      </variablelist>
+      
+      <variablelist>
+	<varlistentry>
+	    <term><guimenuitem>Spillernavne</guimenuitem></term>
+	    <listitem>
+	      <para>For at ændre navnene på spillerne taster du bare nye navne i boksene.</para>
+	    </listitem>
+	</varlistentry>
+      </variablelist>
+    </sect1>
+
+    <sect1 id="strategy">
+      <title>Spilstrategi</title>
+      <para>De 63 point der skal opnås for at få bonus i den øverste halvdel svarer til at få tre af hver terningtype i hver række. Hvis du opnår mere end tre terninger i fem- og seksrækkerne så kan du tåle at placere et dårligt kast i enten rækken 1'ere eller 2'ere og stadig få bonus. I farveversionen får du bonus på 55 hvis din øverste halvdel er mellem 71 og 77, og en bonus på 75 hvis den øverste halvdel er større end 77.</para>
+      <para>Glem ikke flerdobbelte yatzyer, hvis du slå mere end en yatzy, kan du også placere dem i yatzyrækken for endnu flere point. Dette gælder kun i det klassiske spil.</para>
+    </sect1>	
+ <!-- ============= Bugs ================================== -->
+ <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of. 
+      
+      Better to leave this section out than to say something unhelpful. 
+-->
+
+ <sect1 id="bugs">
+  <title>Kendte fejl og begrænsninger</title>
+  <para>Når du skifter spiltype, kender spillet ikke de nye terningebilleder før har genstartet Yatzy. Det bør fungere korrekt med de "forkerte" terninger.</para>
+ </sect1>
+
+
+ <sect1 id="glossary">
+   <title>Ordliste</title>
+   <note>
+     <para>Husk at rækkefølgen på terningerne ikke er vigtig.</para>
+   </note>
+   <glossary>
+       <glossentry id="threeofakind"><glossterm>3 ens</glossterm>
+         <glossdef><para>Tre af terningerne har det samme nummer. Pointene er summen af alle terningerne. For eksempel 1, 2, 2, 2, 5.</para></glossdef>
+       </glossentry>
+       <glossentry id="fourofakind"><glossterm>4 ens</glossterm>
+         <glossdef><para>Fire af terningerne har det samme nummer. Pointene er summen af alle terningerne. For eksempel 2, 5, 5, 5, 5. I farvespillet er pointsummen 25 plus summen af alle terningerne.</para></glossdef>
+       </glossentry>
+       <glossentry id="yahtzee"><glossterm>5 ens</glossterm>
+         <glossdef><para>Fem identiske terninger. For eksempel 3, 3, 3, 3, 3. I farvespillet er pointsummen 50 plus summen af alle terningerne.</para></glossdef>
+       </glossentry>
+       <glossentry id="fullhouse"><glossterm>Fuldt hus</glossterm>
+         <glossdef><para>Fem terninger bestående af to grupper: En gruppe på tre med det samme nummer og en anden gruppe på to med det samme nummer. For eksempel 1, 1, 1, 4, 4. I farvespillet, er pointsummen 15 plus summen af alle terningerne.</para></glossdef>
+       </glossentry>
+       <glossentry id="fullhousesamecolor"><glossterm>Fuldt hus - samme farve</glossterm>
+         <glossdef><para>Denne kategori bruges kun i farvespillet. Fem terninger bestående af to grupper: En gruppe på tre med de samme tal og en anden gruppe på to med de samme tal. Tallene skal alle være af samme farve. For eksempel 3, 3, 3, 4, 4. To terninger er den samme farve hvis deres sum er 7: 1 og 6 er sort, 2 og 5 er rød, og 3 og 4 er grøn. Pointsummen er 20 plus summen af alle terningerne.</para></glossdef>
+       </glossentry>
+       <glossentry id="twopairsamecolor"><glossterm>To par - samme farve</glossterm>
+         <glossdef><para>Denne kategori bruges kun i farvespillet. Fem terninger bestående af to grupper: En gruppe på to med de samme tal og en anden gruppe på to med de samme tal. Parrene skal være af samme farve. For eksempel 3, 3, 4, 4. To terninger er den samme farve hvis deres sum er 7: 1 og 6 er sort, 2 og 5 er rød, og 3 og 4 er grøn. Den femte terning kan være enhver værdi. Pointsummen er summen af alle terninger.</para></glossdef>
+       </glossentry>
+       <glossentry id="flush"><glossterm>Flush</glossterm>
+         <glossdef><para>Denne kategori er kun brugt i farvespillet. Fem terninger som alle er af samme "farve": To terninger er den samme farve hvis deres sum er 7: 1 og 6 er sort, 2 og 5 er rød, og 3 og 4 er grøn. Den femte terning kan være enhver værdi. Pointsummen er 35 point.</para></glossdef>
+       </glossentry>
+       <glossentry id="largestraight"><glossterm>Stor</glossterm>
+         <glossdef><para>Fem terninger med fortløbende tal. For eksempel 2, 3, 4, 5, 6. Pointsummen er 40 point.</para></glossdef>
+       </glossentry>
+       <glossentry id="smallstraight"><glossterm>Lille</glossterm>
+         <glossdef><para>Fire terninger med fortløbende tal. Den femte terning kan være ethvert tal. For eksempel 2, 3, 4, 5, 5. Denne kategori bruges kun i det regulære spil. Pointsummen er 30 point.</para></glossdef>
+       </glossentry>
+   </glossary>
+ </sect1>
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Forfattere</title>
+  <para><application>GNOME Yatzy</application> blev skrevet af Scott Heavner (<email>sdh@po.cwru.edu</email>) og Orest Zborowski. Denne manual blev skrevet af Scott D Heavner (<email>sdh@po.cwru.edu</email>) med ekstra materiale tilføjet af Callum McKenzie (<email>callum@physics.otago.ac.nz</email>). For at indrapportere en fejl, eller komme med et forslag vedrørende dette program eller denne manual, så følg vejledningen i dette <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokument</ulink>.</para>
+
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licens</title>
+  <para>Dette program er frit software: du kan distribuere den og/eller ændre den under betingelserne i <citetitle>GNU General Public License</citetitle> der udgives af Free Software Foundation; enten version 2 eller (ved dit valg) enhver senere version.</para>
+  <para>Dette program distribueres i håb om, at det vil vise sig nyttigt, men
+UDEN NOGEN FORM FOR GARANTI, uden selv de underforståede garantier
+omkring SALGBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Yderligere
+detaljer kan læses i <citetitle>GNU General Public License</citetitle>.</para>
+  <para>En kopi af <citetitle>GNU General Public License</citetitle> er inkluderet som et tillæg til <citetitle>GNOME-brugervejledningen</citetitle>. Du kan også få en kopi af <citetitle>GNU General Public License</citetitle> fra Free Software Foundtation ved at besøge <ulink url="http://www.fsf.org" type="http">deres internetside</ulink> eller skrive til <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

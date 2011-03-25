@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.26">
+<!ENTITY manrevision "2.26">
+<!ENTITY date "June 2009">
+<!ENTITY app "<application>Mahjongg</application>">
+<!ENTITY appname "Mahjongg">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="cs">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+  
+    <title>Příručka ke hře <application>Mahjongg</application></title>
+    <abstract role="description">
+      <para>Mahjongg je verze pro jednoho hráče klasické východní hry s kameny. Podstatou je co nejvíce vyprázdnit hrací plochu tím, že hledáte do páru stejné kameny, které se pak ze hry odstraní.</para>
+    </abstract>
+    <copyright>
+      <year>1998</year>
+      <holder>Free Software Foundation</holder>
+    </copyright>
+    <copyright>
+      <year>2000</year>
+      <holder>Eric Baudais (Autor dokumentace)</holder>
+    </copyright>  
+	    <copyright>
+      <year>2009</year>
+      <holder>Paul Cutler (Autor dokumentace)</holder>
+    </copyright><copyright><year>2009.</year><holder>Marek Černocký (marek@manet.cz)</holder></copyright> 
+    
+    <!-- translators: uncomment this:
+    
+  <copyright>
+  <year>2000</year>
+  <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+    -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Dokumentační projekt GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU Free Documentation License, verze 1.1 nebo jakékoli další verze vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů předních desek a bez textů zadních desek. Kopie této licence je zahrnuta v oddílu jménem <ulink type="help" url="ghelp:fdl">GNU Free Documentation License</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou.</para>
+         <para>Tato příručka je součástí kolekce příruček GNOME, distribuovaných pod licencí GNU FDL. Pokud chcete tento dokument šířit odděleně od kolekce, musíte přiložit kopii licence dle popisu v sekci 6 dané licence.</para>
+
+	<para>Mnoho užívaných jmen určených k zviditelnění produktů nebo služeb jsou ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s velkým písmenem na začátku.</para>
+
+	<para>DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <orderedlist>
+		<listitem>
+		  <para>DOKUMENT JE POSKYTOVÁN V PODOBĚ „JAK JE“ BEZ ZÁRUKY V JAKÉKOLIV PODOBĚ, NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ VERZE, JE BEZCHYBNÝ NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL NEBO NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ DOKUMENTU, NEBO JEHO UPRAVENÉ VERZE, LEŽÍ NA VÁS. POKUD KVŮLI TOMUTO DOKUMENTU, NEBO JEHO UPRAVENÉ VERZI, NASTANE PROBLÉM, VY (NIKOLIV PŮVODNÍ AUTOR NEBO JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE JAKÉKOLIV NÁKLADY ZA NUTNÉ ÚPRAVY, OPRAVY ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE ZÁKLADNÍ SOUČÁST TÉTO LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ, PODLE TÉTO DOHODY, POVOLENO UŽÍVÁNÍ ANI ÚPRAVY TOHOTO DOKUMENTU; DÁLE</para>
+		</listitem>
+		<listitem>
+		  <para>ZA ŽÁDNÝCH OKOLNOSTÍ A ŽÁDNÝCH PRÁVNÍCH PŘEDPOKLADŮ, AŤ SE JEDNÁ O PŘEČIN (VČETNĚ NEDBALOSTNÍCH), SMLOUVU NEBO JINÉ, NENÍ AUTOR, PŮVODNÍ PISATEL, KTERÝKOLIV PŘISPĚVATEL NEBO KTERÝKOLIV DISTRIBUTOR TOHOTO DOKUMENTU NEBO UPRAVENÉ VERZE DOKUMENTU NEBO KTERÝKOLIV DODAVATEL NĚKTERÉ Z TĚCHTO STRAN ODPOVĚDNÝ NĚJAKÉ OSOBĚ ZA PŘÍMÉ, NEPŘÍMÉ, SPECIÁLNÍ, NAHODILÉ NEBO NÁSLEDNÉ ŠKODY JAKÉHOKOLIV CHARAKTERU, VČETNĚ, ALE NEJEN, ZA POŠKOZENÍ ZE ZTRÁTY DOBRÉHO JMÉNA, PŘERUŠENÍ PRÁCE, PORUCHY NEBO NESPRÁVNÉ FUNKCE POČÍTAČE NEBO JINÉHO A VŠECH DALŠÍCH ŠKOD NEBO ZTRÁT VYVSTÁVAJÍCÍCH Z NEBO VZTAHUJÍCÍCH SE K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer">
+	<firstname>Eric</firstname> 
+	<surname>Baudais</surname> 
+	<affiliation> 
+	  <address> <email>baudais@okstate.edu</email> </address> 
+	</affiliation> 
+      </author> 
+	        <author role="maintainer">
+	<firstname>Artur</firstname> 
+	<surname>Szymanski</surname> 
+	<affiliation> 
+	</affiliation> 
+      </author>
+	        <author role="maintainer">
+	<firstname>Paul</firstname> 
+	<surname>Cutler</surname> 
+	<affiliation> 
+		<orgname>Dokumentační projekt GNOME</orgname>
+	  <address> <email>pcutler@gnome.org</email> </address> 
+	</affiliation> 
+      </author> 
+
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="candidate"/>
+	
+	    <revhistory>
+      <!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+
+      <revision>
+        <revnumber>Příručka V2.26 ke hře Mahjongg</revnumber>
+        <date>16.6.2009</date>
+        <revdescription>
+          <para role="author">Paul Cutler</para>
+          <para role="publisher">Dokumentační projekt GNOME</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>Příručka V2.26 ke hře Mahjongg</revnumber>
+        <date>16.6.2009</date>
+        <revdescription>
+          <para role="author">Artur Szymanski</para>
+        </revdescription>
+      </revision>	  
+      <revision> 
+	<revnumber>Příručka V2.10 ke hře Mahjongg</revnumber> 
+	<date>Červen 2005</date> 
+	<revdescription> 
+	  <para role="author">Eric Baudais <email>baudais@okstate.edu</email></para>
+	  <para role="publisher">Dokumentační projekt GNOME</para>
+	</revdescription> 
+	</revision>
+	</revhistory>
+
+    <releaseinfo>Tato příručka popisuje Mahjongg ve verzi 2.26.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Ohlasy </title> 
+      <para>Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k aplikaci <application>Mahjongg</application> nebo této příručce, postupujte dle instrukcí na stránce <ulink url="ghelp:user-guide?feedback-bugs" type="help">Stránka s ohlasy na GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME Mahjongg</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="intro">
+    <title>Úvod</title>
+
+    <para><application>Mahjongg</application> je solitérová (hra pro jednoho hráče) verze klasické východní hry s kameny, Mahjongg. Má vše, co očekáváte od hry s kameny nebo kartami. Můžete měnit typ kamenů, pozadí, úroveň složitosti, společně s dalšími věcmi v dialogovém okně <link linkend="prefs">Předvolby Mahjongg</link>. Další funkce, jako např. <link linkend="pause">tlačítko <guibutton>Pozastavit</guibutton></link>, dělají hru použitelnou v soutěžích, kdy hrajete na čas.</para>
+
+    <sect2 id="history">
+      <title>Stručná historie hry Mahjongg</title>
+
+      <!-- FIXME: Explain more about solitaire version.-->
+      <para>Sada kamenů Mahjongg se používá k hraní mnoha variant originální hry. Verze Mahjongg, kterou hrajete je pro jednoho hráče. Každý kámen má také určitý <ulink type="http" url="http://www.xs4all.nl/~korntner/mahjong/fortune/index.html">význam</ulink>, který je s ním spojován.</para>
+
+      <para>Původ hry Mahjongg není zcela znám, ale je o tom spousta teorií. Jedna taková teorií říká, že Noe hrál Mahjongg na arše, protože východ je pro hru dominantní stranou, a déšť při potopě přicházel z tohoto směru. Jiná teorie říká, že hru vytvořil čínský filozof Konfucius. Tři <quote>hlavní</quote> kameny mají stejné názvy jako jeho tři hlavní ctnosti, červený Chung (střed), zelený Fa (úspěch) bílý Po (bílý) dopovídají laskavosti, upřimnosti a úctě k rodičům. Jiná teorie zase říká, že Mahjongg vznikl z jiné čínské hry. <quote>Ya Pei</quote> se hraje s 32 kartami, které jsou vyrobené ze dřeva nebo slonoviny a mají stejný obdélníkový tvar jako nynější kameny v Mahjongg. <quote>Ma Tiae</quote> se hraje se 40 kartami podobného vzhledu očíslovanými od 1 do 9 ve čtyřech různých barvách spolu s květinovými kartami. Předpokládá se, že dva bratři hru Mahjongg vytvořili okolo roku 1850 n. l. kombinací těchto dvou her.</para>
+
+      <para>Počátkem 20. století byl Mahjongg uveden v anglickém klubu v Šanghaji. Pan Babcock začal dovážet kameny pro Mahjongg do západního světa. Upravil pravidla, aby byla velmi jednoduchá, a také na kameny přidal arabské číslice. V roce 1923 dosáhlo šílenství okolo hry Mahjongg vrcholu a herní společnosti jak Parker Bros., Milton Bradley a United States Playing Card dovážely sady kamenů pro Mahjongg po tisících.</para>
+
+      <para>Objevovalo se plno různých verzí pravidel a tak v roce 1924 Standardization Committee of the American Official Laws of Mah-Jongg dospěla k rozhodnutí pravidla sepsat. Dodnes se v mnoha klubech hraje podle odlišných pravidel a někde dokonce přidávají květinové nebo žolíkové kameny. Hráče počítačové verze zaujaly krásné a detailně propracované ručně dělané sady z dvacátých a třicátých let devatenáctého století a začali je shánět ve starožitnictví a na bleších trzích, aby mohli vlastnit originály. Mnoho nových hráčů se nejprve seznámilo pouze se solitérovou verzí a teprve poté pomalu pronikali do nástrah a složitostí, kterými oplývá tradiční hra. <footnote>
+	  <para>Úryvky tohoto textu byly převzaty z <ulink type="http" url="http://www.mahjongmuseum.com/">Mah Jong Museum.</ulink></para>
+	</footnote></para>
+    </sect2>
+  </sect1>
+  
+   <!-- ============= Playing Mahjongg ============================= -->
+
+  <sect1 id="usage">
+    <title>Jak hrát <application>Mahjongg</application></title>
+
+    <para>Začínáte s pěti vrstvami kamenů, které jsou naskládané tak, že kameny nahoře zakrývají některé kameny pod sebou. Čím máte nastavenou vyšší obtížnost v <link linkend="prefs">dialogovém okně <interface>Předvolby</interface></link>, tím více kamenů je na začátku hry zakrytých. Podstatou hry <application>Mahjongg</application> je všechny kameny odebrat. Abyste ale mohli kameny odebrat musíte najít dva stejně vypadající do páru. Shodné kameny mají stejný počet teček nebo značek nebo prostě vypadají stejně.</para>
+
+    <para>Například zvýrazněný kámen v <link linkend="mahjongg-fig">následujícím obrázku</link> má šest teček. Shodný kámen je ten, který má také šest teček. Takový kámen je po pravé straně na konci třetí řady odspodu a nebo je další blízko vrcholu ve čtvrté řadě odspodu. Pokud chcete kameny shodné s tím v nejhořejší vrstvě, musíte hledat kameny se stejnými symboly bambusů. Už takové vidíte? Jsou tam tři viditelné, které se s tím nejvrchnějším shodují. Dva z nich jsou na pravém konci, jeden uprostřed a druhý o něco níže. Třetí z nich je v horní řadě, ale ten nemůžete v tuto chvíli odstranit, protože neleží na kraji hromady. Později vám přesněji vysvětlíme, které kameny lze odebírat a které ne, přestože se shodují. Hledání dalších shodných dvojic viditelných kamenů už je na vás.</para>
+
+    <figure id="mahjongg-fig">
+      <title>Hlavní okno hry Mahjongg</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/mahjongg.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Hlavní okno.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para><application>Mahongg</application> se hraje klikáním na dva shodné kameny, které se následně odeberou. Hra pokračuje dokud neodstraníte všechny kameny nebo už nemáte žádný další dostupný pár.</para>
+
+    <para>Vybírat lze pouze kameny na levém a pravém okraji kterékoliv vrstvy. To je proto, že nelze odebírat kameny, které nejsou na levém nebo pravém okraji. Kameny, které se nacházejí v různých úrovních na levé nebo pravé straně, lze odebrat v případě, že mezi nimi najdete dva shodné.</para>
+
+    <para>Ve chvíli, kdy už nemůžete spárovat žádné kameny, se objeví dialogové okno oznamující, že už nejsou možné žádné další tahy a nabídne vám promíchání kamenů (za což dostanete k hodnocení penalizaci 60 sekund), započetí nové hry a nebo vrácení posledního tahu zpět (i když možná budete muset vrátit zpět daleko více tahů, než najdete, kde jste udělali chybu).</para>
+
+    <figure id="info-fig1">
+      <title>Informační dialog</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/no-move.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Informační dialog.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+    
+    <sect2 id="toolbar">
+      <title>Panel nástrojů</title>
+
+      <para><interface>Panel nástrojů</interface>, který je umístěný pod <interface>panelem nabídek</interface>, obsahuje následující tlačítka:</para>
+      
+      <variablelist>
+	<varlistentry>
+	  <term><guibutton>Nová</guibutton></term>
+	  <listitem>
+	    <para>Toto tlačítko začne novou hru se současným nastavením.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Restartovat</guibutton></term>
+	  <listitem>
+	    <para>Toto tlačítko restartuje současnou hru do počátečního stavu bez zamíchání kamenů.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry id="pause">
+	  <term><guibutton>Pozastavit</guibutton></term>
+	  <listitem>
+	    <para>Toto tlačítko pozastaví hru. Zatímco je hra pozastavená, hodiny v levém dolním rohu <interface>hlavního okna</interface> neběží a znaky na kamenech jsou pro vás skryté.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Tah zpět</guibutton></term>
+	  <listitem>
+	    <para>Toto tlačítko vrátí zpět dva kameny, které jste odstranili, pokud nejste na úplném začátku hry.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Tah znovu</guibutton></term>
+	  <listitem>
+	    <para>Toto tlačítko zahraje znovu předchozí tah, který jste tlačítkem <guibutton>Tah zpět</guibutton> vzali zpátky.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Rada</guibutton></term>
+	  <listitem>
+	    <para>Toto tlačítko vám doporučí pár stejných kamenů, které lze odstranit. Pokaždé, když tuto funkci použijete, obdržíte k času hry penalizaci 30 sekund.</para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+      <para>Stavový řádek v dolní části okna vám podává informace o současném stavu hry:</para>
+      <variablelist>
+	<varlistentry>
+	  <term><guilabel>Zbývá kamenů:</guilabel></term>
+	  <listitem>
+	    <para>Zobrazuje počet kamenů, které je potřeba vypárovat.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guilabel>Zbývá tahů:</guilabel></term>
+	  <listitem>
+	    <para>Zobrazuje počet možných tahů, které můžete provést.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guilabel>Čas:</guilabel></term>
+	  <listitem>
+	    <para>Zobrazuje čas strávený od započetí hry.</para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+      
+      <figure id="toolbar-fig">
+	<title>Panel nástrojů hry Mahjongg</title>
+	<screenshot>
+	   <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/toolbar.png" format="PNG" srccredit="Eric Baudais"/>
+	  </imageobject>
+    <textobject> 
+      <phrase>Panel nástrojů.</phrase> 
+    </textobject> 
+  </mediaobject>
+	</screenshot>
+      </figure>
+      
+    </sect2>
+    
+    <sect2 id="menubar">
+      <title>Nabídky</title>
+      <para>Panel s nabídkami, umístění v horní části <interface>hlavního okna</interface>, obsahuje následující nabídky:</para>
+
+      <variablelist>
+	<varlistentry>
+	  <term><guimenu>Hra</guimenu></term>
+	  <listitem>
+	    <para>Nabídka obsahuje: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keysym>Ctrl-N</keysym></shortcut><guimenuitem>Nová</guimenuitem></menuchoice> — Tato položka začne novou hru.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Restartovat</guimenuitem></menuchoice> — Tato položka restartuje současnou hru do počátečního stavu.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Pozastavit</guimenuitem></menuchoice> — Tímto se hra pozastaví, přestane běžet čas a skryjí se kameny.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><shortcut><keysym>Ctrl-Z</keysym></shortcut><guimenuitem>Tah zpět</guimenuitem></menuchoice> — Tímto se vrátí zpět dva kameny, které jste odstranily, pokud tedy nejste na úplném začátku hry.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><shortcut><keysym>Ctrl-R</keysym></shortcut><guimenuitem>Tah znovu</guimenuitem></menuchoice> — Tato položka znovu zahraje předchozí tah, který jste volbou <guibutton>Tah zpět</guibutton> vzali zpátky. Jakmile dosáhnete stavu, kdy jste začali vracet tahy zpět, objeví se v levém dolním rohu <interface>hlavního okna</interface> zpráva <quote>Nejsou žádné další tahy na vrácení!</quote>.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Rada</guimenuitem></menuchoice> — Tato položka vám ukáže pár shodných kamenů, které lze odstranit.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Skóre</guimenuitem></menuchoice> — Tato položka zobrazí dialogové okno s nejlepšími skóre. U každého výsledku je uvedené jméno hráče a čas, ve kterém hru dokončil. </para>
+		</listitem>
+		<listitem>
+		  <para id="quit"><menuchoice><shortcut><keysym>Ctrl-Q</keysym></shortcut><guimenuitem>Ukončit</guimenuitem></menuchoice> — Touto položkou můžete ukončit aplikaci.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term><guimenu>Nastavení</guimenu></term>
+	  <listitem>
+	    <para>Nabídka obsahuje: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>F11</keycap></shortcut><guimenuitem>Fullscreen</guimenuitem></menuchoice> — Díky této položce můžete hru hrát v režimu přes celou obrazovku. Pokud chcete celoobrazovkový režim opustit, tak zmáčkněte <keycap>F11</keycap> nebo klikněte na tlačítko <guibutton>Opustit celou obrazovku</guibutton> na <interface>panelu nástrojů</interface>.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Panel nástrojů</guimenuitem></menuchoice> — Tato položka určuje, zda se má <link linkend="toolbar"><interface>panel nástrojů</interface></link> zobrazovat nebo ne. Pokud je položka zaškrtnutá, je <interface>panel nástrojů</interface> zobrazený na pozici, kde jste jej naposledy umístili. Pokud položka není zaškrtnutá, <interface>toolbar</interface> se nezobrazuje.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Předvolby</guimenuitem></menuchoice> — Tato položka otevře dialogové okno <link linkend="prefs">Předvolby Mahjongg</link>.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guimenu>Nápověda</guimenu></term>
+	  <listitem>
+	    <para>Nabídka obsahuje: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keysym>F1</keysym></shortcut><guimenuitem>Obsah</guimenuitem></menuchoice> — Tato položka zobrazí tuto příručku.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>O aplikaci</guimenuitem></menuchoice> — Tato položka vám podá některé základní informace o <application>GNOME Mahjongg</application>, jako jsou jména autorů a číslo verze aplikace.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+
+    </sect2>
+  </sect1>
+  
+   <!-- ============= Customization ============================= -->
+
+  <sect1 id="prefs">
+    <title>Přizpůsobení</title>
+    <para>Pokud chcete změnit nastavení aplikace, vyberte <guimenuitem>Předvolby</guimenuitem> z nabídky <guimenu>Natavení</guimenu>. Tím se otevře <link linkend="preferences-fig">dialogové okno <interface>Předvolby Mahjongg</interface></link>.</para>
+    
+    <figure id="preferences-fig">
+<!-- FIXME: This dialog is the old one. -->
+<!-- ALAN: looks correct like version 2.10 to me -->
+      <title>Dialogové okno Předvolby</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Dialogové okno předvoleb.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Všechny volby se ihned použijí a uloží.</para>
+    
+    <para>V <link linkend="preferences-fig">dialogovém okně <interface>Předvolby</interface></link> jsou:</para>
+      
+      <itemizedlist mark="opencircle">
+	<listitem>
+	  <para><guilabel>Sada kamenů</guilabel> — Vyberte si ze seznamu vzhled kamenů.</para>
+	</listitem>
+	<listitem>
+	  <para><guilabel>Select Map</guilabel> — Změňte si obtížnost hry díky změně uspořádání kamenů. Ve více rozházených (jednodušších) verzích vidíte více kamenů, zatímco ve více kompaktních (těžších) verzích moc kamenů naráz neuvidíte.</para>
+	</listitem>
+	<listitem>
+	  <para><guilabel>Barva pozadí</guilabel> — Kliknutím na tlačítko se objeví dialogové okno <interface>výběr barvy</interface>, ve kterém si můžete vybrat novou barvu pozadí.</para>
+	</listitem>
+      </itemizedlist>
+
+    <para>Pokud chcete změnit velikost kamenů, jednoduše změňte běžným způsobem velikost okna. Kameny se roztáhnou tak, aby jej zaplnily.</para>
+
+  </sect1>
+  
+<!-- ALAN: Better to leave this section out than to say something unhelpful 
+and risk annoying the user.  
+ <sect1 id="bugs">
+  <title>Known Bugs and Limitations</title>
+  <para>
+   This application has no known bugs.
+  </para>
+ </sect1>
+-->
+
+ <!-- ============= Authors ============================= -->
+
+ <sect1 id="authors">
+  <title>Autoři</title>
+  <para><application>Mahjongg</application> napsali Francisco Bustamante (<email>pancho@nuclecu.unam.mx</email>), Michael Meeks (<email>mmeeks@gnu.org</email>), Max Watson, Heinz Hempe a Philippe Chavin. Kameny pro <application>GNOME Mahjongg</application> navrhli Jonathan Buzzard a Max Watson. Tuto příručku napsal Eric Baudais (<email>baudais@okstate.edu</email>). Pokud chcete nahlásit chybu nebo podat návrh týkající se této aplikace nebo tohoto návodu, tak se řiďte instrukcemi v tomto <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentu</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licence</title>
+  <para>Tento program, včetně grafického návrhu kamenů, je svobodný software. Můžete jej dále šířit a/nebo upravovat za dodržení podmínek <ulink type="help" url="gnome-help:gpl"><citetitle>GNU General Public License</citetitle></ulink>, tak jak ji vydala Free Software Foundation ve verzi 2 nebo (dle vaší volby) novější.</para>
+  <para>Tento program je šířen s přesvědčením, že může být užitečný, ale BEZ JAKÝCHKOLIV ZÁRUK, bez předpokládané záruky na OBCHODOVATELNOST nebo VHODNOST PRO URČITÝ ÚČEL. Více podrobností najdete v <citetitle>GNU General Public License</citetitle>.</para>
+  <para>Kopie <citetitle>GNU General Public License</citetitle> je zahrnuta v dodatku <citetitle>Uživatelské přiručky GNOME</citetitle>. Kopii <citetitle>GNU General Public License</citetitle> můžete také získat od Free Software Foundation navštívením <ulink type="http" url="http://www.fsf.org">jejich webu</ulink> nebo zasláním žádosti na <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

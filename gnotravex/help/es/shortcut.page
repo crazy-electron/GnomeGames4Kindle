@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="shortcut" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Use el teclado para jugar al juego.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-21" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Atajos de teclado</title>
+
+  <section id="shortcuts-game">
+    <title>Atajos del juego</title>
+    <p>La siguiente tabla agrupa la mayoría de atajos para jugar a <app>Tetravex</app>.</p>
+    <table frame="all" rules="rows cols">
+      <tr>
+        <td><p>Combinación de teclas</p></td><td><p>Descripción</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>N</key></keyseq></p>
+        </td>
+        <td>
+          <p>Iniciar una partida nueva.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><key>Pausar</key></p>
+        </td>
+        <td>
+          <p>Pausar o resumir el juego.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            <keyseq><key>Ctrl</key><key>Arriba</key></keyseq>
+          </p>
+        </td>
+        <td>
+          <p>Mover arriba una posición todas las piezas en la caja de la izquierda.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Abajo</key></keyseq></p>
+        </td>
+        <td>
+          <p>Mover abajo una posición todas piezas en la caja de la izquierda.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Izquierda</key></keyseq></p>
+        </td>
+        <td>
+          <p>Movera la izquierda todas las piezas en la caja de la izquierda.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Derecha</key></keyseq></p>
+        </td>
+        <td>
+          <p>Movera la derecha todas las piezas en la caja de la izquierda.</p>
+        </td>
+      </tr>
+    </table>
+  </section>
+</page>

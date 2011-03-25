@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.11">
+<!ENTITY date "January 2008">
+<!ENTITY appname "Swell Foop">
+<!ENTITY app "<application>Swell Foop</application>">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://live.gnome.org/DocumentationProject
+  Template version: 3.0 beta
+  Template last modified 2006-11-21
+
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sr">
+  <articleinfo> 
+    <title>Упутство за <application>Ланчану реакцију</application></title>       
+    
+    <abstract role="description">
+      <para>Ланчана реакција је слагалица у којој је циљ што више очистити таблу кликћући на групе објеката исте боје. Кликом на групу, она нестаје, а објекти који су били изнад ње падају. Игра се наставља док се табла не испразни или када више нема група објеката исте боје на које се може кликнути.</para>
+    </abstract>
+
+    <copyright> 
+      <year>2005</year> 
+      <holder>Callum McKenzie</holder> 
+    </copyright> 
+
+    <publisher role="maintainer"> 
+      <publishername>Пројекат Гномове документације</publishername> 
+    </publisher> 
+
+	  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="legal.xml"/>   
+   <!-- This file legal.xml contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+		<firstname>Callum</firstname> 
+		<surname>McKenzie</surname> 
+		<affiliation> 
+	  		<orgname>Пројекат Гномове документације</orgname> 
+	  		<address> <email>callum@physics.otago.ac.nz</email> </address> 
+		</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. --> 
+    <revhistory>
+      <revision> 
+		    <revnumber>Упутство за Ланчану реакцију v2.11</revnumber>
+		    <date>Јануар 2008.</date> 
+		    <revdescription> 
+    			<para>Адаптација упутства програма Ланчана реакција на нови шаблон.</para>		    
+	  		  <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+	  		  <para role="publisher">Пројекат Гномове документације</para>
+    		</revdescription> 
+      </revision> 
+      <revision> 
+		    <revnumber>Упутство за Ланчану реакцију v2.10</revnumber>
+		    <date>Фебруар 2005.</date> 
+		    <revdescription> 
+    			<para>Почетна верзија новог упутства за Ланчану реакцију.</para>		    
+	  		  <para role="author">Callum McKenzie <email>callum@physics.otago.ac.nz</email></para>
+	  		  <para role="publisher">Пројекат Гномове документације</para>
+    		</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Ово упуство је написано за 2.12 издање програма Ланчана реакција.</releaseinfo> 
+    <legalnotice> 
+      <title>Примедбе</title> 
+      <para>Да бисте пријавили грешку или дали предлог у вези програма <application>Ланчана реакција</application> или његовог упутства, пратите смернице на <ulink url="ghelp:user-guide?feedback-bugs" type="help">Гномовој страни за примедбе</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>Ланчана реакција</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+
+  <sect1 id="introduction"> 
+    <title>Играње игре <application>Ланчана реакција</application></title> 
+    <para><application>Ланчана реакција</application> је слагалица. Циљ игре је да се уклони што је могуће више објеката у што је мање могуће потеза. Суседни објекти се уклањају као једна група. Преостали објекти се онда скупљају да попуне настале празнине и тиме се стварају нове групе објеката. Усамљени објекат без групе се не може уклонити.</para>
+
+    <figure id="start-up">
+      <title><application>Ланчана реакција</application> по покретању.</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/start-up.png" format="PNG"/>
+	        </imageobject>
+	      </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Табла је на почетку до врха попуњена објектима. У зависности од величине табле коју сте одабрали, на њој се налазе три или четири различите врсте објеката. Ако је група објеката исте врсте једна до друге, она се једноставно може уклонити кликом на њу (или притиском тастера за размак). Када пређете мишем преко групе која може да се уклони, објекти у њој почињу да се крећу. Број објеката у групи и број поена које добијате за уклањање ове групе се приказују у доњем левом углу прозора. Што је више објеката у групи, више се поена добија. Када се група уклони, објекти изнад ње падају да попуне њихово место. Ако нестане цео стубац, онда објекти клизе са десна на лево да попуне празнину.</para>
+
+    <table id="play" frame="all"><title>Играње игре <application>Ланчана реакција</application></title>
+      <tgroup cols="2" colsep="0">
+      <tbody>
+        <row><entry><para>1. Уклања се група са два или више објеката <screenshot>
+         <mediaobject>
+           <imageobject>
+             <imagedata fileref="figures/play1.png" format="PNG"/>
+           </imageobject>
+         </mediaobject>
+         </screenshot></para></entry>
+       <entry><para>2. Објекти падају да попуне празнине <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/play2.png" format="PNG"/>
+            </imageobject>
+          </mediaobject>
+          </screenshot></para></entry></row>
+        <row><entry><para>3. Објекти се померају налево да попуне празне ступце <screenshot>
+         <mediaobject>
+           <imageobject>
+             <imagedata fileref="figures/play3.png" format="PNG"/>
+           </imageobject>
+         </mediaobject>
+         </screenshot></para></entry>
+       <entry><para>4. Нове групе се формирају и циклус се понавља <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/play4.png" format="PNG"/>
+            </imageobject>
+          </mediaobject>
+          </screenshot></para></entry></row>
+      </tbody>
+      </tgroup>
+    </table>
+
+    <para>Бодовање се рачуна на основу броја уклоњених објеката:</para>
+    
+    <informaltable frame="topbot">
+    <tgroup cols="2" align="center">
+    <thead><row>
+    <entry>Број објеката</entry>
+    <entry>Добијених поена</entry>
+    </row></thead>
+    <tbody>
+    <row><entry>2</entry><entry>0</entry></row>
+    <row><entry>3</entry><entry>1</entry></row>
+    <row><entry>4</entry><entry>4</entry></row>
+    <row><entry>5</entry><entry>9</entry></row>
+    <row><entry>6</entry><entry>16</entry></row>
+    <row><entry>7</entry><entry>25</entry></row>
+    <row><entry>8</entry><entry>36</entry></row>
+    <row><entry>9</entry><entry>49</entry></row>
+    <!-- Translators: this is a vertical continuation character -->
+    <row><entry>⋮</entry><entry>⋮</entry></row>
+    <row><entry>n</entry><entry>(n - 2)<superscript>2</superscript></entry></row>
+    </tbody>
+    </tgroup>
+    </informaltable>
+    <para>Ако очистите таблу, добијате бонус од 1000 поена.</para>
+  </sect1>
+
+  <sect1 id="swell-foop-customisation">
+    <title>Прилагођавање</title>
+
+    <sect2 id="changing-the-look">
+      <title>Промена изгледа</title>
+      <para>Промена величине је једноставна и своди се на промену величине прозора. Да најбоље искористите екран, одаберите опцију <guimenuitem>Цео екран</guimenuitem> из менија <guimenu>Преглед</guimenu>.</para>
+
+      <para>Да промените изглед објеката, одаберите ставку <guimenuitem>Тема...</guimenuitem> из менија <guimenu>Преглед</guimenu>.</para>
+
+        <para>Такође можете направити и ваше теме, али процес није баш једноставан. Узмите неку постојећу тему као шаблон и измените је са у програму за цртање. Резултат ставите у <filename>$XDG_DATA_HOME/gnome-games/swell-foop/themes/2.10/</filename>. Тема ће аутоматски бити препозната следећи пут када покренете <application>Ланчану реакцију</application>. <filename>$XDG_DATA_HOME</filename> је углавном <filename>~/.local/share/</filename>.</para>
+    </sect2>
+
+    <sect2 id="changing-the-size">
+      <title>Промена величине</title>
+      <para>Мени <guimenu>Величина</guimenu> садржи три подешавања: „мало“, „средње“ и „велико“. Поред повећавања броја објеката, велика величина такође повећава и број различитих објеката.</para>
+    </sect2>
+
+    <sect2 id="changing-the-speed">
+    <title>Промена брзине</title>
+    <para>Подразумевана анимација је направљена да буде глатка и лепа. Ако играте брзо и лудо, онда вам ово може бити споро. Избором опције <guimenuitem>Брза анимација</guimenuitem> из менија <guimenu>Преглед</guimenu>, убрзаћете игру на рачун квалитета анимације.</para>
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="swell-foop-strategy">
+    <title>Стратегија</title>
+
+    <para>Најважније правило када се иде на добар резултат је да мислите унапред: свака група коју уништите ће правити и уништавати друге групе.</para>
+
+<para>Прво уклањајте вишље групе, осим ако би уклањање неке друге групе направило ту вишљу групу још већом. Усправно поравнати објекти не могу да се разбију, али водоравни могу.</para>
+
+    <para>Пошто резултат расте са квадратом уклоњених објеката, уклањање већих група је увек боље. На пример, разлика поена  за уклањање група од шест и седам објеката је девет поена. У ситуацији када имате избор да ли спојити две групе од по два објекта у једну групу са четири објекта, или додати један објекат групи од шест објеката, онда је боље додати тај један. Иако те групе са по два објекат неће донети ниједан поен, ова већа група ће, на дуже стазе, донети више поена.</para>
+
+    <para>Не заборавите ни бонус од хиљаду поена који се добија за уклањање свих лоптица. Да бисте добили 1000 поена од једне групе, у њој треба да је 34 објекта. Јако је мало вероватно да ћете бити у позицији да жртвујете тако велику групу да не бисте очистили таблу.</para>
+  </sect1>
+
+<!-- ============= About ================================== -->
+  <sect1 id="swell-foop-about"> 
+    <title>О програму <application>Ланчана реакција</application></title> 
+    <para><application>Ланчану реакцију</application> је написао Callum McKenzie (<email>callum@physics.otago.ac.nz</email>). Да бисте сазнали више о игри <application>Ланчана реакција</application>, посетите <ulink url="http://live.gnome.org/GnomeGames/" type="http">веб страну Гномових игара</ulink>.</para>
+    <para>Да бисте пријавили грешку или дали предлог у вези овог програма или његовог упутства, пратите смернице на <ulink url="ghelp:user-guide?feedback-bugs" type="help">Гномовој страни за примедбе</ulink>.</para>
+
+    <para>Овај програм се расподељује под условима ГНУ Опште Јавне Лиценце (GNU GPL); било верзије 2 те Лиценце, било (по вашем нахођењу) било које новије верзије. Примерак ове лиценце можете пронаћи на овој <ulink type="help" url="ghelp:fdl">адреси</ulink> или у датотеци COPYING која је приложена уз упутство.</para>
+
+  </sect1> 
+</article>

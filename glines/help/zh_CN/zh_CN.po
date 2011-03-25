@@ -1,0 +1,629 @@
+# Chinese (China) translation for gnome-games.
+# Copyright (C) 2010 gnome-games's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-games package.
+# 真 方 <fangzhensky@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games master\n"
+"POT-Creation-Date: 2010-10-22 06:11+0000\n"
+"PO-Revision-Date: 2011-01-13 20:25+0800\n"
+"Last-Translator: 方真 <fangzhenzyou@gmail.com>\n"
+"Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/glines.xml:190(None)
+msgid ""
+"@@image: 'figures/glines-startgame.png'; md5=e6e58f72dc4802d89a45a7726f4c7fd7"
+msgstr ""
+"@@image: 'figures/glines-startgame.png'; md5=e6e58f72dc4802d89a45a7726f4c7fd7"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/glines.xml:209(None)
+msgid ""
+"@@image: 'figures/glines-gameover.png'; md5=949d09a01ee02944bf3f278ce1ebc2ba"
+msgstr ""
+"@@image: 'figures/glines-gameover.png'; md5=949d09a01ee02944bf3f278ce1ebc2ba"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/glines.xml:329(None)
+msgid ""
+"@@image: 'figures/preferences.png'; md5=745336aefd6ade740f6064bdf4121379"
+msgstr ""
+"@@image: 'figures/preferences.png'; md5=745336aefd6ade740f6064bdf4121379"
+
+#: C/glines.xml:32(title)
+msgid "<application>Five or More</application> Manual"
+msgstr "<application>连珠消球</application> 手册"
+
+#: C/glines.xml:34(para)
+msgid ""
+"To play Five or More one must align colored pieces as the board gets filled "
+"with randomly placed pieces. When five or more pieces of the same color get "
+"lined up, they disappear. The game ends when the board gets filled up all "
+"the way."
+msgstr ""
+"要玩连珠消球，您必须把各种颜色的物体排成直线，而盘面上的物体会随机增加。当五"
+"个或更多相同颜色的物体排成一条直线时就会消失。当整个盘面都被填满时游戏会结"
+"束。"
+
+#: C/glines.xml:43(year)
+msgid "2000-2002"
+msgstr "2000-2002"
+
+#: C/glines.xml:44(holder)
+msgid "Emese Kovács"
+msgstr "Emese Kovács"
+
+#: C/glines.xml:59(publishername) C/glines.xml:72(orgname)
+#: C/glines.xml:100(para)
+msgid "GNOME Documentation Project"
+msgstr "GNOME 文档项目"
+
+#: C/glines.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"对于本文档的复制、分发和/或修改必须遵循自由软件基金会发布的 GNU 自由文档许可"
+"证(GFDL) 1.1 版或更高版本，该许可证没有固定的部分、没有封面和背页文本。您可"
+"以在此<ulink type=\"help\" url=\"ghelp:fdl\">链接</ulink>上或在随本手册一起分"
+"发的 COPYING-DOCS 文件中找到 GFDL 的副本。"
+
+#: C/glines.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"这个手册是在GFDL下发行的GNOME手册的的一部分。如果您想将这个手册分离开整个手册"
+"集合来重新发布，您可以这么做，但是要按照该许可证第六段所描述的，向这个手册添"
+"加这个许可证的副本。"
+
+#: C/glines.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"各个公司使用的许多用于区分它们产品和服务的名称都声明为商标。在所有的 GNOME 文"
+"档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而"
+"表明它们是商标。"
+
+#: C/glines.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"文档按“原样”提供，不提供任何明示或暗示的保证，包括但不限于：文档或文档的修改"
+"版本没有适销性方面的缺陷、适合特定目的的适用性，以及没有侵权行为。您将自行承"
+"担本文档以及文档修改版本的质量、准确性以及性能方面的风险。如果任何文档或文档"
+"修改版本存在缺陷，您(而不是最初的编写者、作者或撰写人)将承担所有必需的服务、"
+"维修或更正的费用。此免责声明是本许可证的重要组成部分。如果不接受此免责声明，"
+"那么您就没有权利使用任何文档或文档的修改版本；并且"
+
+#: C/glines.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"无论在任何情况以及在任何法律理论下，本文档或文档修改版本的作者、最初的编写"
+"者、任何撰写人或任何分发者，或者任意这些方的任何提供者都不对任何人由于使用本"
+"文档或文档修改版本引起或带来的任何直接的、间接的、特殊的、偶然的或继发的损失"
+"承担任何民事(包括疏忽)、合同或其它方面的责任，这些损失包括但不限于信誉损失、"
+"工作停止、计算机失败或故障，或任何以及所有其它损失或由此引发的或与之相关的损"
+"失，即使这些方已被告知存在出现此类损失的可能性时也是如此。"
+
+#: C/glines.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"本文档以及文档的修改版本都是在遵循 GNU 自由文档许可证的条款下提供，这表示具有"
+"以下含义：<placeholder-1/>"
+
+#: C/glines.xml:69(firstname)
+msgid "Emese"
+msgstr "Emese"
+
+#: C/glines.xml:70(surname)
+msgid "Kovács"
+msgstr "Kovács"
+
+#: C/glines.xml:73(email)
+msgid "emese@gnome.hu"
+msgstr "emese@gnome.hu"
+
+#: C/glines.xml:94(revnumber)
+msgid "Five or More Manual V2.8"
+msgstr "连珠消球手册 V2.8"
+
+#: C/glines.xml:95(date)
+msgid "September 2004"
+msgstr "2004年9月"
+
+#: C/glines.xml:97(para)
+msgid "Emese Kovács <email>emese@gnome.hu</email>"
+msgstr "Emese Kovács <email>emese@gnome.hu</email>"
+
+#: C/glines.xml:105(releaseinfo)
+msgid "This manual describes version 2.12 of Five or More."
+msgstr "这个手册描述了 2.12 版本的连珠消球游戏"
+
+#: C/glines.xml:112(title)
+msgid "Feedback"
+msgstr "反馈"
+
+#: C/glines.xml:113(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Five or "
+"More</application> application or this manual, follow the directions in the "
+"<ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback "
+"Page</ulink>."
+msgstr ""
+"要报告关于<application>连珠消球</application>程序或其手册的错误或者提供建议，"
+"请参照 <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME 反馈"
+"页</ulink>的说明。"
+
+#: C/glines.xml:123(primary)
+msgid "Five or More"
+msgstr "连珠消球"
+
+#: C/glines.xml:130(title)
+msgid "Introduction"
+msgstr "介绍"
+
+#: C/glines.xml:132(para)
+msgid ""
+"<application>Five or More</application>, is the Gnome port of the once "
+"popular Windows game called <application>Color Lines</application> The "
+"game's objective is to align as often as possible five or more objects of "
+"the same color and shape causing them to disappear. Play as long as "
+"possible, and be #1 in the High Scores."
+msgstr ""
+"<application>连珠消球</application>是一款移植到 Gnome 的曾经很流行的叫做"
+"<application>彩色连珠</application>的 Windows 游戏。该游戏的目标是尽可能多的"
+"把五个或更多相同颜色或形状的物体排成直线以使它们消失。尽可能多的消去物体，您"
+"就可能成为高分榜第一名。"
+
+#: C/glines.xml:141(para)
+msgid ""
+"To run <application>Five or More</application>, select <guimenuitem>Five or "
+"More</guimenuitem> from the <guisubmenu>Games</guisubmenu> submenu of the "
+"<guimenu>Main Menu</guimenu>, or type <command>glines</command> on the "
+"command line."
+msgstr ""
+"要运行<application>连珠消球</application>，从<guimenu>主菜单</guimenu>的"
+"<guisubmenu>游戏</guisubmenu>子菜单中选择<guimenuitem>连珠消球</"
+"guimenuitem>，或者在命令行键入<command>glines</command>命令。"
+
+#: C/glines.xml:149(para)
+msgid ""
+"<application>Five or More</application> is included in the <filename>GNOME-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.8 of <application>Five or More</"
+"application>."
+msgstr ""
+"<application>连珠消球</application>包含在<filename>GNOME-games</filename>软件"
+"包中，它是 GNOME 桌面环境的一部分。这个文档描述了<application>连珠消球</"
+"application>的 2.8 版本。"
+
+#: C/glines.xml:163(title)
+msgid "Playing Five or More"
+msgstr "进行游戏"
+
+#: C/glines.xml:164(para)
+msgid ""
+"Playing <application>Five or More</application> is easy. At startup, you "
+"find yourself with five objects randomly positioned on the board. Each turn, "
+"you are allowed to move one object. You can move it anywhere on the board as "
+"long as there is a clear path. Afterward, the computer drops more objects at "
+"random positions (the exact number depends on the size of the game). You can "
+"preview the next objects to be dropped in the upper left corner of the "
+"game's window. If you manage to align five objects of the same shape and "
+"color, they disappear and you are given an extra move before more objects "
+"drop."
+msgstr ""
+"玩<application>连珠消球</application>很容易。开始时，您会发现盘面上有五个随机"
+"放置的物体。每轮您可以移动一个物体。您可以把它移动到盘面上任何一个可达的位"
+"置。然后，电脑会随机放置更多的物体(准确的数字与游戏规模有关)。您可以在游戏窗"
+"口的左上角看到下一步要出现的物体。如果您成功的把五个相同形状或颜色的物体排成"
+"直线，它们就会消失，您会在更多物体出现之前再获得一次移动机会。"
+
+#: C/glines.xml:178(title)
+msgid "Basic usage"
+msgstr "基本用法"
+
+#: C/glines.xml:179(para)
+msgid ""
+"Starting <application>Five or More</application> presents you with the "
+"<interface>game board</interface> and a new game starts. What it looks like "
+"is shown in <xref linkend=\"mainwindow-fig\"/>."
+msgstr ""
+"启动<application>连珠消球</application>后会显示一个<interface>游戏盘面</"
+"interface>，然后一个新游戏就开始了。参看<xref linkend=\"mainwindow-fig\"/>."
+
+#: C/glines.xml:186(title)
+msgid "The main window when you start a game."
+msgstr "游戏的主窗口"
+
+#. ==== End of Figure ====
+#: C/glines.xml:197(para)
+msgid ""
+"As the game progresses, the board gets more and more crowded (unless you are "
+"really good...) and making objects disappear gets harder and harder. The "
+"game is over, when the board is full."
+msgstr ""
+"当游戏进行时，盘面会变的越来越拥挤(除非您特别棒)，使物体消失会变得越来越困"
+"难。当盘面填满后，游戏就结束了。"
+
+#: C/glines.xml:205(title)
+msgid "Game over!"
+msgstr "游戏结束！"
+
+#: C/glines.xml:222(title)
+msgid "Playing the Game"
+msgstr "游戏中"
+
+#: C/glines.xml:223(para)
+msgid ""
+"A game of <application>Five or More</application> begins with some random "
+"objects on the board."
+msgstr ""
+"游戏<application>连珠消球</application>开始时盘面上随机摆放若干个物体。"
+
+#: C/glines.xml:227(para)
+msgid ""
+"To make a move, click on one of the objects. When an object is activated it "
+"starts rotating (or doing something else depending on the theme, but let us "
+"not anticipate…). You can then select its destination by clicking an empty "
+"square. If the path to the destination is clear the activated item travels "
+"there. If the destination square is occupied by another object nothing will "
+"be moved and the selection will be transferred to the new object. If the "
+"path is not clear (you cannot jump objects over obstacles!) the application "
+"prints a warning in the status bar (bottom of the window) and the original "
+"object remains active."
+msgstr ""
+"点击某个物体使它移动。当某个物体激活后，它就开始旋转(或其他动作，这取决于主"
+"题。但是让我们不要有所预期…)。然后您可以通过点击某个空的方格选择它的终点。如"
+"果终点可以到达，这个激活的物体就会移到那儿。如果目标方格被另一个物体占用，选"
+"定的物体不会移动，而目标方格的物体将会被选中。如果没有路径(物体不能从障碍物上"
+"跳过去)，程序会在状态栏(窗口底部)打印一条警告，原物体会保持激活状态。"
+
+#: C/glines.xml:239(para)
+msgid ""
+"As objects disappear, you get points. The points you score depends on the "
+"number of objects you managed to align (see <xref linkend=\"glines-table1\"/"
+">). Your score is shown in the upper right corner of the window."
+msgstr ""
+"当物体消失的时候，您将获得分数。您获得的分数取决于您成功排成直线的物体个数(参"
+"看<xref linkend=\"glines-table1\"/>)。您的得分会显示在窗口的右上角。"
+
+#: C/glines.xml:248(title) C/glines.xml:344(title)
+msgid "Scoring in Five or More"
+msgstr "游戏得分"
+
+#: C/glines.xml:252(entry)
+msgid "Number of objects"
+msgstr "物体数量"
+
+#: C/glines.xml:253(entry)
+msgid "Score given"
+msgstr "得分"
+
+#: C/glines.xml:258(entry) C/glines.xml:360(entry)
+msgid "5"
+msgstr "5"
+
+#: C/glines.xml:259(entry) C/glines.xml:278(entry)
+msgid "10"
+msgstr "10"
+
+#: C/glines.xml:262(entry)
+msgid "6"
+msgstr "6"
+
+#: C/glines.xml:263(entry) C/glines.xml:286(entry)
+msgid "12"
+msgstr "12"
+
+#: C/glines.xml:266(entry) C/glines.xml:358(entry) C/glines.xml:359(entry)
+#: C/glines.xml:367(entry) C/glines.xml:374(entry) C/glines.xml:375(entry)
+msgid "7"
+msgstr "7"
+
+#: C/glines.xml:267(entry)
+msgid "18"
+msgstr "18"
+
+#: C/glines.xml:270(entry)
+msgid "8"
+msgstr "8"
+
+#: C/glines.xml:271(entry)
+msgid "28"
+msgstr "28"
+
+#: C/glines.xml:274(entry) C/glines.xml:365(entry) C/glines.xml:366(entry)
+msgid "9"
+msgstr "9"
+
+#: C/glines.xml:275(entry)
+msgid "42"
+msgstr "42"
+
+#: C/glines.xml:279(entry)
+msgid "82"
+msgstr "82"
+
+#: C/glines.xml:282(entry)
+msgid "11"
+msgstr "11"
+
+#: C/glines.xml:283(entry)
+msgid "108"
+msgstr "108"
+
+#: C/glines.xml:287(entry)
+msgid "138"
+msgstr "138"
+
+#: C/glines.xml:290(entry)
+msgid "13"
+msgstr "13"
+
+#: C/glines.xml:291(entry)
+msgid "172"
+msgstr "172"
+
+#: C/glines.xml:294(entry)
+msgid "14"
+msgstr "14"
+
+#: C/glines.xml:295(entry)
+msgid "210"
+msgstr "210"
+
+#: C/glines.xml:302(title)
+msgid "Using the Keyboard"
+msgstr "使用键盘"
+
+#: C/glines.xml:303(para)
+msgid ""
+"Instead of using the mouse you can use the keyboard to play "
+"<application>Five or More</application>. To use the keyboard, hit an arrow "
+"key and a cursor will appear near the center of the board. The arrow keys "
+"will move the cursor. When the cursor is over the object you want to move, "
+"use the spacebar to select it. Then shift the cursor to the object's "
+"destination and hit the space bar again to move the object."
+msgstr ""
+"您可以用键盘代替鼠标来玩<application>连珠消球</application>。要使用键盘，单击"
+"箭头键，然后光标就会出现在盘面中心。这些箭头键可以移动光标。当光标处于您想要"
+"您想要移动的物体位置时，使用空格键选中它。然后移动光标到物体的终点，单击空格"
+"键来移动它。"
+
+#: C/glines.xml:304(para)
+msgid ""
+"If you start using the mouse again, the cursor will disappear. The cursor "
+"will reappear if you use the arrow keys again."
+msgstr "如果您又开始用鼠标，光标会消失。当您使用箭头键是光标会再出现。"
+
+#: C/glines.xml:317(title)
+msgid "Customizing the Game"
+msgstr "自定义游戏"
+
+#: C/glines.xml:318(para)
+msgid ""
+"You can configure <application>Five or More</application> by clicking on "
+"<guimenuitem>Preferences</guimenuitem> in the applications "
+"<guimenu>Settings</guimenu> menu. The following <interface>dialog</"
+"interface> will appear:"
+msgstr ""
+"您可以通过点击<guimenu>设置</guimenu>菜单下<guimenuitem>首选项</guimenuitem>"
+"来配置<application>连珠消球</application>。下面的<interface>对话框</"
+"interface>会出现。"
+
+#: C/glines.xml:326(title)
+msgid "Preferences"
+msgstr "首选项"
+
+#. ==== End of Figure ====
+#: C/glines.xml:335(para)
+msgid ""
+"You can select different object styles and background colors in the "
+"<guimenu>Themes</guimenu> section. If you find it difficult distinguishing "
+"the colours, try the shapes theme."
+msgstr ""
+"您可以在<guimenu>主题</guimenu>模块选择不同的物体样式和背景颜色。如果您觉得分"
+"辨不同的颜色很困难，试试形状主题"
+
+#: C/glines.xml:340(para)
+msgid ""
+"The <guimenu>Board Size</guimenu> section lets you select the size of the "
+"board. Each size has a slightly different balance: larger sizes give you "
+"more space to move, but more objects arrive each turn. The parameters for "
+"each size are given in <xref linkend=\"table-sizes\"/>."
+msgstr ""
+"您可以在<guimenu>盘面大小</guimenu>部分选择盘面大小。每种大小都保持了一种微妙"
+"的平衡：盘面大的会有更多空间移动，但是每轮的物体个数更多。每种尺寸的参数在"
+"<xref linkend=\"table-sizes\"/>中给出。"
+
+#: C/glines.xml:348(entry)
+msgid "Size"
+msgstr "大小"
+
+#: C/glines.xml:349(entry)
+msgid "Width"
+msgstr "宽"
+
+#: C/glines.xml:350(entry)
+msgid "Height"
+msgstr "高"
+
+#: C/glines.xml:351(entry)
+msgid "Number of Types"
+msgstr "物体种类数"
+
+#: C/glines.xml:352(entry)
+msgid "Objects per Turn"
+msgstr "每轮物体数"
+
+#: C/glines.xml:357(entry)
+msgid "Small"
+msgstr "小"
+
+#: C/glines.xml:361(entry) C/glines.xml:368(entry)
+msgid "3"
+msgstr "3"
+
+#: C/glines.xml:364(entry)
+msgid "Medium"
+msgstr "中"
+
+#: C/glines.xml:371(entry)
+msgid "Large"
+msgstr "大"
+
+#: C/glines.xml:372(entry)
+msgid "20"
+msgstr "20"
+
+#: C/glines.xml:373(entry)
+msgid "15"
+msgstr "15"
+
+#: C/glines.xml:381(para)
+msgid ""
+"You can speed up the movement of the objects by checking the Use fast moves "
+"box in the <guimenu>General</guimenu> preferences section."
+msgstr ""
+"您可以通过在首选项的<guimenu>常规</guimenu>部分选中使用快速移动复选框加快物体"
+"移动速度。"
+
+#: C/glines.xml:385(para)
+msgid ""
+"Any changes you make are instantly applied and remembered for the next time "
+"you run <application>Five or More</application>."
+msgstr ""
+"您做的所有改变会立即应用，而且会在您下次玩<application>连珠消球</application>"
+"时保持。"
+
+#: C/glines.xml:391(title)
+msgid "How to create new themes"
+msgstr "如何创建新主题"
+
+#: C/glines.xml:392(para)
+#, fuzzy
+msgid ""
+"Each theme consists of a single PNG image file. This image consists of an "
+"array of seven rows, corresponding to the different object colors/shapes, "
+"and four columns, each of which is a frame in the animation of the object. "
+"The actual size of the image is irrelevant, it will be rescaled, but the sub-"
+"images must form a four by seven grid to get the correct effect. When using "
+"SVG remember that the image size is the page size, if your grid does not "
+"fill the page try shrinking the page size. Use an existing theme as a guide."
+msgstr ""
+"每个主题由一个 PNG 图像文件组成。图像由七行四列组成。七行代表物体不同的颜色或"
+"形状，每列是物体的动画框架。图像的实际大小没有关系，会自动调整。但是子图像必"
+"须形成一个4乘7的网格才能有正确的结果。当使用 SVG 图像时注意图像大小就是页面大"
+"小，如果您的网格不能填充整个页面，试着缩小页面大小。可以参照一个原有的主题。"
+
+#: C/glines.xml:422(title)
+msgid "Authors"
+msgstr "作者"
+
+#: C/glines.xml:423(para)
+msgid ""
+"<application>Five or More</application> was written by Róbert Szókovács "
+"(<email>szo@appaloosacorp.hu</email>) and Szabolcs Bán (<email>shooby@gnome."
+"hu</email>). This manual was written by Emese Kovács (<email>emese@gnome.hu</"
+"email>). For information on how to make comments, suggestions and to report "
+"bugs please see the <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
+"\">feedback document</ulink>."
+msgstr ""
+"<application>连珠消球</application> 由 Róbert Szókovács "
+"(<email>szo@appaloosacorp.hu</email>) 和 Szabolcs Bán (<email>shooby@gnome."
+"hu</email>)编写。该手册由 Emese Kovács (<email>emese@gnome.hu</email>)编写。"
+"关于如何发表评论，建议和报告错误的信息请参看<ulink url=\"ghelp:user-guide?"
+"feedback-bugs\" type=\"help\">反馈文档</ulink>."
+
+#: C/glines.xml:448(title)
+msgid "License"
+msgstr "许可"
+
+#: C/glines.xml:449(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <citetitle>GNU General Public License</citetitle> as "
+"published by the Free Software Foundation; either version 2 of the License, "
+"or (at your option) any later version."
+msgstr ""
+"该程序是自由软件，您可以在由自由软件基金会发布的<citetitle>GNU 通用公共许可证"
+"协议</citetitle>下分发和修改。可以是许可证第二版或(由您选择)的更新版本。"
+
+#: C/glines.xml:456(para)
+#, fuzzy
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"该程序的发行是希望但并不保证是有用的，甚至没有针对特定目的的适销性和合理性的"
+"隐含的担保。更多细节清参看 <citetitle>GNU 通用公共许可证协议 </citetitle>。"
+
+#: C/glines.xml:462(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink url=\"http://www.fsf.org\" "
+"type=\"http\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"<citetitle>GNU 通用公共许可证</citetitle>的一个副本包含在<citetitle>GNOME 用"
+"户手册</citetitle>的附录中。您还可以通过访问<ulink url=\"http://www.fsf.org"
+"\" type=\"http\">他们的网站</ulink>或者写信从自由软件基金会获得"
+"<citetitle>GNU 通用公共许可证</citetitle>的一个副本。 写信地址是<address> "
+"Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>。"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/glines.xml:0(None)
+msgid "translator-credits"
+msgstr "方真(Fang Zhen) <fangzhenzyou@gmail.com>, 2010"

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<!-- (C) Copyright 2004 Theo van Klaveren -->
+<!--
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THEO VAN KLAVEREN ``AS IS'' AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THEO VAN KLAVEREN OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1"
+   sodipodi:version="0.32"
+   inkscape:version="0.41"
+   width="5.0000001cm"
+   height="5.0000001cm"
+   sodipodi:docbase="/home/rozane/Desktop/gnibbles"
+   sodipodi:docname="wall-empty.svg">
+  <metadata
+     id="metadata6">
+    <rdf:RDF
+       id="RDF8">
+      <cc:Work
+         rdf:about=""
+         id="Work10">
+        <dc:format
+           id="format12">image/svg+xml</dc:format>
+        <dc:type
+           id="type14"
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3">
+    <linearGradient
+       id="linearGradient2057">
+      <stop
+         style="stop-color:#506040;stop-opacity:1.0000000;"
+         offset="0.0000000"
+         id="stop2059" />
+      <stop
+         style="stop-color:#405030;stop-opacity:1.0000000;"
+         offset="0.25000000"
+         id="stop2067" />
+      <stop
+         style="stop-color:#304020;stop-opacity:1.0000000;"
+         offset="0.37500000"
+         id="stop2077" />
+      <stop
+         style="stop-color:#405030;stop-opacity:1.0000000;"
+         offset="0.50000000"
+         id="stop2069" />
+      <stop
+         style="stop-color:#506040;stop-opacity:1.0000000;"
+         offset="0.62500000"
+         id="stop2075" />
+      <stop
+         style="stop-color:#405030;stop-opacity:1.0000000;"
+         offset="0.75000000"
+         id="stop2071" />
+      <stop
+         style="stop-color:#304020;stop-opacity:1.0000000;"
+         offset="1.0000000"
+         id="stop2061" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4619111"
+     inkscape:cx="177.16536"
+     inkscape:cy="177.16536"
+     inkscape:window-width="1022"
+     inkscape:window-height="694"
+     showgrid="true"
+     snaptogrid="true"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:current-layer="svg1" />
+  <rect
+     style="fill:#405030;fill-opacity:1.0000000;fill-rule:evenodd;stroke:none;stroke-width:1.1155039pt"
+     id="rect841"
+     width="177.09200"
+     height="177.16536"
+     x="0.0000000"
+     y="-2.8421709e-14" />
+  <rect
+     style="fill:#304020;fill-opacity:0.62745100"
+     id="rect2843"
+     width="27.500008"
+     height="256.82111"
+     x="93.097198"
+     y="-128.38464"
+     transform="matrix(0.707107,0.707107,-0.707107,0.707107,0.000000,0.000000)" />
+  <rect
+     style="fill:#506040;fill-opacity:0.81568629"
+     id="rect2845"
+     width="27.500008"
+     height="256.82111"
+     x="129.90062"
+     y="-128.38464"
+     transform="matrix(0.707107,0.707107,-0.707107,0.707107,0.000000,0.000000)" />
+  <rect
+     style="fill:#304020;fill-opacity:0.62745100"
+     id="rect3611"
+     width="27.500107"
+     height="256.82230"
+     x="218.13184"
+     y="-114.24298"
+     transform="matrix(0.707107,0.707107,-0.707107,0.707107,0.000000,0.000000)" />
+  <rect
+     style="fill:#506040;fill-opacity:0.81568629"
+     id="rect3613"
+     width="27.500107"
+     height="256.82230"
+     x="4.8668756"
+     y="-114.24306"
+     transform="matrix(0.707107,0.707107,-0.707107,0.707107,0.000000,0.000000)" />
+</svg>

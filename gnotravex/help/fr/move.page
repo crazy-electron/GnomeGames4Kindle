@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="move" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#play" group="two"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Comment déplacer les pièces sur le plateau de jeu.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  
+  <title>Déplacement des pièces</title>
+  
+  <section id="move-piece">
+    <title>Déplacement d'une pièce</title>
+    <p>Pour déplacer une pièce, vous devez cliquer et maintenir appuyé, faire glisser depuis la position actuelle vers la nouvelle position, soit dans la boîte de droite ou celle de gauche, et relâcher le bouton de la souris.</p>
+    <p>Ces déplacements ne sont pas définitifs et peuvent être inversés.</p>
+    <note>
+      <p>Les pièces dans la boîte de gauche peuvent être déplacées toutes ensemble dans une direction. Consultez <link xref="shortcut"/> pour plus d'informations.</p>
+    </note>
+  </section>
+  <section id="move-avoid">
+    <title>Comment éviter le clic maintenu</title>
+    <p>Si vous n'êtes pas à l'aise avec l'action de cliquer et de maintenir appuyé pour déplacer les pièces, il est possible de changer ce comportement pour que vous n'ayez qu'à cliquer sur une pièce pour la déplacer et cliquer de nouveau pour la déposer dans sa nouvelle position.</p>
+    <p>Pour cela, dans la barre de menu, choisissez <gui style="menu">Déplacer</gui> et sélectionnez <gui style="checkbox">Cliquer pour déplacer</gui>.</p>
+  </section>
+</page>

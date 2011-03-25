@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.20">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "February 2008">
+<!ENTITY app "<application>Iagno</application>">
+<!ENTITY appname "Iagno">
+<!ENTITY version "2.9">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="zh_CN">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo>
+ <title><application>Iagno 黑白棋</application>小游戏手册</title>
+
+    <abstract role="description">
+      <para>黑白棋(Iagno)是一类双人游戏，也被称为翻转棋，有些像围棋。两名棋手各执黑子和白子，依次在棋盘上落子，一旦棋盘被填满，则棋盘上棋子多的一方获胜。</para>
+    </abstract>
+
+ <copyright>
+  <year>2000</year>
+  <holder>Eric Baudais</holder>
+ </copyright><copyright><year>2011</year><holder>TeliuTe (teliute@163.com)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOME 文档项目</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>对于本文档的复制、分发和/或修改必须遵循自由软件基金会 (Free Software Foundation) 发布的 GNU 自由文档许可证 (GFDL) 版本 1.1 或更高版本，该许可证没有固定的部分、没有封面和背页文本。您可以在此<ulink type="help" url="ghelp:fdl">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副本。</para>
+         <para>本手册是在 GFDL 许可之下分发的 GNOME 手册集合的一部分。如果想要单独分发此手册，可以在手册中添加该许可证的一份副本然后分发，如该许可证的第 6 部分所述。</para>
+
+	<para>各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 GNOME 文档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而表明它们是商标。</para>
+
+	<para>本文档以及文档的修改版本都是在遵循 GNU 自由文档许可证的条款下提供，这表示具有以下含义：<orderedlist>
+		<listitem>
+		  <para>文档按“原样”提供，不提供任何明示或暗示的保证，包括但不限于：文档或文档的修改版本没有适销性方面的缺陷、适合特定目的的适用性，以及没有侵权行为。您将自行承担本文档以及文档修改版本的质量、准确性以及性能方面的风险。如果任何文档或文档修改版本存在缺陷，您(而不是最初的编写者、作者或撰写人)将承担所有必需的服务、维修或更正的费用。此免责声明是本许可证的重要组成部分。如果不接受此免责声明，那么您就没有权利使用任何文档或文档的修改版本；并且</para>
+		</listitem>
+		<listitem>
+		  <para>无论在任何情况以及在任何法律理论下，本文档或文档修改版本的作者、最初的编写者、任何撰写人或任何分发者，或者任意这些方的任何提供者都不对任何人由于使用本文档或文档修改版本引起或带来的任何直接的、间接的、特殊的、偶然的或继发的损失承担任何民事(包括疏忽)、合同或其它方面的责任，这些损失包括但不限于信誉损失、工作停止、计算机失败或故障，或任何以及所有其它损失或由此引发的或与之相关的损失，即使这些方已被告知存在出现此类损失的可能性时也是如此。</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Eric</firstname> 
+	<surname>Baudais</surname> 
+	<affiliation> 
+	  <address> <email>baudais@okstate.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+<revhistory>
+  <revision> 
+    <revnumber>黑白棋手册2.9版</revnumber> 
+    <date>2008年2月</date> 
+    <revdescription> 
+      <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+      <para role="publisher">GNOME 文档项目</para>
+    </revdescription> 
+  </revision>
+  <revision> 
+    <revnumber>黑白棋手册2.8版</revnumber> 
+    <date>2004年9月</date> 
+    <revdescription> 
+      <para role="author">Eric Baudais <email>baudais@okstate.edu</email></para>
+      <para role="publisher">GNOME 文档项目</para>
+	</revdescription> 
+  </revision>
+  <revision>
+   <revnumber>0.1</revnumber>
+   <date>2000年2月4日</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>完成初稿。</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>0.2</revnumber>
+   <date>2000年2月5日</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>添加小节注释，修正一些排版错误。</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>0.3</revnumber>
+   <date>2000年2月7日</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>用 GDP 模板编译文档，阐述玩法一节。</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>1.0</revnumber>
+   <date>2000年4月7日</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>手册采用 FDL 许可协议，更新抓图为 GDP 标准主题、MicroGUI。</revremark>
+  </revision>
+ </revhistory>
+
+    <releaseinfo>本手册讲述的是黑白棋2.20版。</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>反馈</title> 
+      <para>要报告关于<application>黑白棋</application>程序或使用手册中的缺陷，或者提出建议，请参照 <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME 反馈页</ulink> 上的指导。</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>黑白棋(Iagno)</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="intro">
+ <title>介绍</title>
+ <sect2 id="what">
+  <title>什么是黑白棋？</title>
+  
+  <para><application>Iagno 黑白棋</application>是电脑版的翻转棋游戏，通常称作 Othello 黑白棋。<application>Iagno 黑白棋</application>是双人游戏，类似于围棋。棋盘是由8×8个格子组成，一方是黑棋另一方是白棋。游戏中要尽可能地提取对方的棋子，而设法保留自己的棋子。两头是自己的棋子就可以吃掉中间对方的子。</para>
+
+  <para>黑白棋还支持 <link linkend="network-games">多人模式</link>，双方可以通过网络进行游戏。</para>
+
+  <para>要运行<application>黑白棋</application>小游戏，在 <guimenu>主菜单</guimenu> 中点<guisubmenu>游戏</guisubmenu>，然后选择 <guimenuitem>黑白棋</guimenuitem>，或者在命令行输入：<command>iagno</command></para>
+ </sect2>
+
+ <sect2 id="why">
+  <title>为什么把 Othello 称作 Iagno？</title>
+  <para>您可能想知道为什么这个游戏叫<application>Iagno</application> 黑白棋，而不是叫 Othello 黑白棋或者 gnothello？答案是比较复杂的，这涉及到像商标、版权法等。抛开这些方面，让我来告诉您一个漫长而又复杂，关于 <application>Iagno</application> 黑白棋名称的来历。</para>
+  <para>在一个风雪夜里，就像那些书中描绘的英格兰，一个孤独的程序员坐在电脑屏幕前，Ian 完成了他的游戏杰作，那是一个 Othello 交互式黑白棋游戏，他决定为它起个用于 GNOME 的游戏名，叫做 gnothello 黑白棋。</para>
+  <para>过一阵他的的朋友们来访，像所有程序员那样，他向他们展示了自己的杰作。然而，他们当面就嘲笑他，说这个游戏毫无价值，是个想成为黑客的可怜小玩意。Ian 把他们轰出去后，决定把名称改为 Iago <footnote>
+   <para>在莎士比亚的戏剧<citetitle>奥赛罗</citetitle>中，Iago 是 Othello 的祸害。</para>
+  </footnote>，作为对他们说游戏坏话的回敬。但 Ian 觉得这个名字还是不怎么好，因为所有的 GNOME 程序名称都有一些 GNOME 元素在里面。经过深思熟虑，他决定把名称改为我们现在所熟知的 <application>Iagno</application>。</para>
+ </sect2>
+</sect1>
+
+<sect1 id="playing">
+ <title>玩黑白棋游戏</title>
+ <para>窗口启动后，在面板中央放有四个棋子，交叉摆放对角颜色相同，如图所示：<xref linkend="start-shot"/>。</para>
+ 
+ <figure id="start-shot">
+  <title>初始布局</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/START.png" format="PNG" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>初始布局的示意图。</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+ <para>黑子先走，棋子要放在能吃白子的位置，也就是能把白子夹在中间的位置。当黑子走完后，两颗黑子之间的位置，比如水平、垂直或者斜线上都会变成黑子，如图所示：<xref linkend="first-shot"/>。</para>
+
+ <figure id="first-shot">
+  <title>第一步走棋</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/FIRST.png" format="PNG" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>黑子走第一步后。</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+ <para>当一行棋被对方的两个棋子夹住后，就可以吃掉这些被夹住的子，把它们变成自己的棋子，如图所示：<xref linkend="block-shot"/>。玩家只能把棋子放在能吃子的位置上，一旦棋子落下就不能再移动它。如果一方无子可走就轮空一手。当双方都无子可走时游戏结束。<figure id="block-shot">
+  <title>轮白子走棋，白子不能吃中间一列里的那个黑子，因为有一个白子挡在一头。而如果是黑子走可以在这一列头上落子，但也只能吃掉这一列中的一个白子。</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/BLOCK.png" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>黑子吃子示意图</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure></para>
+
+</sect1>
+
+<sect1 id="settings">
+ <title>游戏设置</title>
+
+ <sect2 id="player">
+  <title>选择棋子颜色和难度</title>
+ 
+  <para>在游戏开始时，人类玩家用黑子，电脑等级是一级用白子，在<guisubmenu>首选项</guisubmenu>对话框的<guimenuitem>游戏</guimenuitem>标签中可以设置双方使用的棋子颜色。人类就是您了，一级是最容易的电脑级别，三级是最难的。您可以都设成人类，这样就可以跟朋友一起玩，也可以都设成电脑，观看它们比赛。</para>
+ </sect2>
+
+ <sect2 id="quick-moves">
+  <title>快速移动选项</title>
+
+  <para>这个选项在<guimenu>设置</guimenu>菜单里，点击菜单后选<guisubmenu>首选项</guisubmenu>，然后在<guimenuitem>游戏</guimenuitem>标签中可以找到，默认它是没有选中，当您勾选上此选项后，电脑走棋会快一些。</para>
+
+  <note>
+   <title>注意：</title>
+   <para>启用此选项并不能强制电脑玩家走棋，或者降低级别难度。</para>
+  </note>
+ </sect2>
+ 
+ <sect2 id="enable-sound">
+  <title>启用/禁用声音</title>
+
+  <para>这是<guilabel>首选项</guilabel>的<guimenuitem>游戏</guimenuitem>标签中，最后一个选项，您可以选择玩<application>黑白棋</application>时是否发出声音。</para>
+
+  <figure id="player-shot">
+   <title>首选项对话框，当前是游戏标签。</title>
+   <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/PLAYER.png" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>游戏设置示意图。</phrase> 
+    </textobject> 
+  </mediaobject>
+   </screenshot>
+  </figure>
+
+ </sect2>
+
+</sect1>
+
+<sect1 id="animations">
+ <title>外观</title>
+
+ <para>所有的动画选项，都 在 <menuchoice><guimenu>设置</guimenu><guisubmenu>首选项</guisubmenu></menuchoice> 对话框的 <guimenuitem>外观</guimenuitem> 标签中。</para>
+
+ <sect2 id="animation-amount">
+  <title>动画</title>
+
+  <para>这个选项控制走棋时呈现动画的数量，使用单选按钮。选择 <guibutton>无</guibutton> 棋子只是闪一下颜色；选择 <guibutton>局部</guibutton> 缓慢显示动画；选择 <guibutton>完全</guibutton> 动画显示完整而又平滑的动画效果。</para>
+
+ </sect2>
+
+ <sect2 id="stagger-flips">
+  <title>晃动翻转</title>
+  
+  <para>选中此项在吃一行子时，不是一下吃掉，而是一个接一个，类似于多米诺骨牌效果。它不影响游戏进展，只是看起来更酷。</para>
+
+ </sect2>
+
+ <sect2 id="grid">
+  <title>显示网格</title>
+
+  <para>选中此项会在盘面上显示风格线，这对于走棋是很有用处的，因为玩家可以更确切地看清棋子的位置。</para>
+
+  <tip>
+   <title>小提示：</title>
+   <para>这个选项对新手应该开启，以便让走棋更加清楚。</para>
+  </tip>
+
+ </sect2>
+
+ <sect2 id="flip-final">
+  <title>翻出最终结果</title>
+
+  <para>选中此项，在一局结束时，所有的黑子都挪到棋盘上方，所有的白子放在下方。这可以让您对比赛结果有个更直观的印象。</para>
+
+  <note>
+   <title>注意：</title>
+   <para>不论怎样，这个选项都不会影响比赛结果。</para>
+  </note>
+
+ </sect2>
+
+ <sect2 id="tile-set">
+  <title>棋子设置</title>
+  <para>这个选项允许您选择棋盘和棋子的类型。如果您想制作自己的主题，可以使用经典主题为模板，设定文本和颜色的效果。如果您制作好了一个主题，可以发送给 Ian Peters <email>itp@gnu.org</email>，他会把它包含到下一个发行版中。</para>
+
+  <important>
+   <title>注意：</title>
+   <para>有两个主题看起来比较相像，但是动画效果不同——木纹和经典主题。</para>
+  </important>
+
+  <figure id="animation-shot">
+   <title>首选项对话框，当前选中外观标签。</title>
+   <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/ANIMATION.png" srccredit="Eric Baudais"/>
+    </imageobject>
+    <textobject> 
+      <phrase>动画设置示意图。</phrase> 
+    </textobject> 
+  </mediaobject>
+   </screenshot>
+  </figure>
+
+ </sect2>
+
+</sect1>
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>网络游戏</title>
+  <para>黑白棋支持网络游戏模式，这项功能由 <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink> 提供。通过连接到黑白棋网络服务器，您可以在多人模式中进行游戏。最新的游戏服务器列表，请参阅：<ulink type="http" url="http://www.gnome.org/projects/gnome-games/">GNOME 游戏项目</ulink>。</para>
+  <para>要开始网络黑白棋游戏，点菜单 <menuchoice><guimenu>游戏</guimenu><guimenuitem>网络游戏</guimenuitem></menuchoice>。</para> 
+
+<sect2 id="connecting">
+<title>连接到黑白棋网络服务器</title>
+<para>当启动一个新的网络游戏时，首先出来连接对话框，您可以选择连接服务器、连接到服务器的用户名。</para>
+
+<para>可以用访客(guest)帐户或者普通的注册帐户连接，访客帐户允许您匿名登录，而用普通帐号使用您自己的用户名和密码登录。</para>
+
+<para>如果您想以访客身份匿名登录，请选中 <guimenuitem>访客登录</guimenuitem> 选项，如果您想创建一个新的帐户，选中 <guimenuitem>首次登录</guimenuitem> 选项，输入自己的用户名、密码和电子邮箱。如果您已经有帐户，则选中 <guimenuitem>普通登录</guimenuitem> 选项，然后输入自己的用户名和密码登录。</para>
+<para>要连接到服务器，点击 <guimenuitem>连接</guimenuitem> 按钮。</para>
+<figure id="connect">
+<title>黑白棋网络连接对话框。</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>黑白棋网络连接对话框。</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>加入一个游戏房间</title>
+<para>一旦您连接成功，就可以选择加入到哪一个游戏房间，要玩黑白棋游戏，选择黑白棋房间。如果您想自己做主机，点击上面的运行按钮，创建一个新的桌子，别人可以和你对战。如果别人已经建好了，那么您可以双击一个桌子加入。右边列出了游戏桌可用的座位号，您可以选择加入其中一个，这也显示了多少人可以加入到这个桌子的对战中来。</para>
+<figure id="tables">
+<title>黑白棋网络对话框允许您加入一个游戏房间，查找其他用户。</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>黑白棋网络对话框允许您加入一个游戏房间，查找其他用户。</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>当创建一个新的游戏桌时，会显示一个选项对话框，您可以设置游戏的玩家数。一旦数目确定，多的用户就不让加进来了。</para>
+<para>游戏中还可以与其他用户聊天，寻求游戏的帮助提示等，注意请保持礼貌交谈。</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>等待其他用户加入游戏</title>
+<para>一旦您成功加入游戏桌，这时就得等待其他用户加入到这张桌子。在<guimenuitem>玩家列表</guimenuitem>菜单项中，您可以查看哪些玩家加入到游戏中。当玩家数达到足够时将立即开始游戏。</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>玩网络黑白棋游戏</title>
+<para>网络黑白棋跟通常的玩法一样，只是现在您是跟其他人对战，这意味着有些策略比对付电脑会更有用。</para>
+<para>一旦一个玩家羸了，游戏就会结束，您可以回到初始的屏幕，跟其他人继续玩网络黑白棋游戏！</para>
+</sect2>
+
+</sect1>
+
+
+
+
+<sect1 id="bugs">
+ <title>已知缺陷和限制</title>
+
+ <itemizedlist mark="opencircle">
+    <listitem>
+     <para>电脑玩家容易被打败。</para>
+    </listitem>
+ </itemizedlist>
+
+</sect1>
+
+<sect1 id="credits">
+ <title>作者</title>
+  <para><application>黑白棋</application>小游戏由 Ian Peters (<email>itp@gnu.org</email>)编写，本手册由 Eric Baudais (<email>baudais@okstate.edu</email>)编写，要报告本程序或本手册的缺陷或者提出建议，请参照 <ulink url="ghelp:user-guide?feedback-bugs" type="help">文档</ulink> 上的指导。</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>许可协议</title>
+  <para>本程序是自由软件，您可以在遵守自由软件基金会发布的 <citetitle>GNU 通用许可证</citetitle> 第2版或更高(如您所愿)版本下，重新分发和/或修改它。</para>
+  <para>本程序的发布意图是希望它有所用处，但请注意它没有任何担保，甚至不包括商业用途、以及特殊目的保证。更多相关细节，请参阅 <citetitle>GNU 通用公共许可证</citetitle>。</para>
+  <para>在<citetitle>GNOME 用户指南</citetitle> 的附录中包含了一份 <citetitle>GNU 通用许可证</citetitle>的副本，您也可以通过访问自由软件基金会的<ulink type="http" url="http://www.fsf.org">网站</ulink>上获得 <citetitle>GNU 通用许可证</citetitle>的副本，或者写信给 <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address> 来索取。</para>
+ </sect1>
+</article>

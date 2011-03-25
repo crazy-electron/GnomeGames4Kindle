@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="usage" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#play" group="one"/>
+    <link type="seealso" xref="gameplay"/>
+    <desc><app>GNOME-Tetravex</app> spielen.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <credit type="author">
+      <name>Rob Bradford</name>
+      <email>robster@debian.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>    
+  </info>
+
+  <title><app>GNOME-Tetravex</app> spielen</title>
+
+  <section id="usage-basic">
+    <title>Grundlegende Bedienung</title>
+    <p>Das Fenster des Spiels ist in zwei Bereiche untergliedert: Rechts befinden sich die Spielsteine, die als Ausgangspunkt zum Anordnen und Verschieben auf der linken Seite zur Verfügung stehen. Jeder Spielstein wiederum ist in vier Dreiecke untergliedert, die jeweils eine Zahl enthalten.</p>
+    <p>Ziel des Spiels ist es, die Steine so anzuordnen, dass zwei gleiche Zahlen jeweils einander berühren.</p>
+    <p>Es ist nicht möglich, die Spielsteine so abzulegen, dass zwei verschiedene Zahlen einander berühren.</p>
+    <p>Das Spiel ist beendet, sobald Sie alle Spielsteine an deren richtigen Positionen abgelegt haben.</p>
+    <note>
+      <p>Wenn Sie <app>GNOME Tetravex</app> starten, beginnt das Spiel unmittelbar und die Zeit wird sofort erfasst.</p>
+    </note>
+
+  </section>
+  
+  <section id="usage-video">
+    <title>Video-Demonstration</title>
+    <p>Das kurze Video demonstriert, wie das Spiel funktioniert und welche Züge möglich sind.</p>
+    <p>
+      <media type="video" mime="application/ogg" src="figures/gnotravex-video.ogv">Einfache Demonstration eines Spiels</media>
+    </p>
+  </section>
+</page>

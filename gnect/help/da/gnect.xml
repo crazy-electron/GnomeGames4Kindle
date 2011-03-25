@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Four-in-a-Row</application>">
+<!ENTITY appname "Four-in-a-Row">
+<!ENTITY version "2.8">
+]>
+<!-- ===== DOCUMENT HEADER ===== -->
+<article id="index" lang="da">
+<!-- please do not change the id -->
+<!-- translators, change lang to the appropriate code -->
+  <articleinfo>
+    <title>Manual til Fire på stribe</title>
+    <abstract role="description">
+      <para>Formålet med Fire på stribe er at placere fire spillebrikker efter hinanden vandret, lodret eller diagonalt, mens modstanderen forsøger at blokere og placere sin egen række med fire spillebrikker. Fire på stribe kan spilles mod en anden person eller mod computeren.</para>
+    </abstract>
+
+    <copyright>
+      <year>2001-2002</year>
+      <holder>Timothy Musson</holder>
+    </copyright><copyright><year>2009, 2010.</year><holder>Joe Hansen</holder></copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+     <year>2000</year>
+     <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+    <publisher role="maintainer"> 
+      <publishername>GNOME's dokumentationsprojekt</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+	<para>Tilladelse er givet til at kopiere, distribuere og/eller ændre dette dokument under betingelserne i GNU Free Documentation License (GFDL), Version 1.1 eller enhver senere version udgivet af Free Software Foundation; uden invariante afsnit, forsidetekster, samt bagsidetekster. Du kan se en kopi af GFDL her <ulink type="help" url="ghelp:fdl">link</ulink> eller i filen COPYING-DOCS som distribueres sammen med denne manual.</para>
+         <para>Denne manual er en del af den samling af GNOME-manualer som udgives under GFDL. Hvis du ønsker at distribuere denne manuel adskilt fra samlingen, kan du gøre dette ved at tilføje en kopi af licensen til manualen, som beskrevet i afsnit 6 af licensen.</para>
+
+	<para>Mange af navnene brugt af firmaer til at skelne deres produkter og tjenester er registrerede varemærker. Der hvor disse navne optræder i GNOME-dokumentationen, og medlemmerne af GNOME-dokumentationsprojektet er blevet gjort opmærksomme på disse varemærker, er navnene skrevet med store bogstaver eller store forbogstaver.</para>
+
+	<para>DOKUMENTET OG ÆNDREDE VERSIONER AF DOKUMENTET STILLES TIL RÅDIGHED UNDER GNU FREE DOCOMENTATION LICENSE MED FØLGENDE BETINGELSER: <orderedlist>
+		<listitem>
+		  <para>DETTE DOKUMENT GØRES TILGÆNGELIGT SÅDAN SOM DET ER, UDEN NOGEN FORM FOR GARANTI, HVERKEN UDTALT ELLER ANTYDET, DERIBLANDT, UDEN BEGRÆNSNINGER, GARANTIER OM AT DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET ER FRIT FOR DEFEKTER, PASSENDE TIL ET BESTEMT FORMÅL ELLER IKKE-KRÆNKENDE. DU HÆFTER SELV FOR HELE RISIKOEN VEDRØRENDE KVALITET, KORREKTHED OG YDELSE FOR DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET. SKULLE ET DOKUMENT, ELLER EN ÆNDRET VERSION AF ET DOKUMENT VISE SIG AT VÆRE DEFEKT PÅ EN HVILKEN SOM HELST MÅDE, HÆFTER DU FOR BETALING FOR EVENTUEL NØDVENDIG SERVICE, REPARATION ELLER KORREKTION (OG IKKE HVERKEN DEN OPRINDELIGE FORFATTER, SKRIBENT ELLER NOGEN ANDEN BIDRAGYDER). DENNE ERKLÆRING OM GARANTIFORBEHOLD ER EN ESSENTIEL DEL AF DENNE LICENS. INGEN BRUG AF NOGET DOKUMENT ELLER ÆNDRET VERSION AF DOKUMENTET ER AUTORISERET HERUNDER BORTSET FRA DENNE ANSVARSFRASKRIVELSE OG</para>
+		</listitem>
+		<listitem>
+		  <para>UNDER INGEN OMSTÆNDIGHEDER OG UNDER INGEN JURIDISK TEORI, UANSET OM DET ER EN BEVIDST SKADENDE HANDLING (INKLUSIVE UFORSVARLIGHED) ELLER PÅ HVILKEN SOM HELST ANDEN MÅDE, KAN FORFATTEREN, SKRIBENT, BIDRAGYDERE, DISTRIBUTØRER ELLER FORSYNER AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER GØRES ANSVARLIG OVERFOR NOGEN PERSON FOR NOGEN DIREKTE, INDIREKTE, SPECIEL, TILFÆLDIG ELLER FØLGENDE SKADE PÅFØRT NOGEN INKLUSIVE, UDEN BEGRÆNSNING, SKADE SOM FØLGE AF TAB AF RYGTE, ARBEJDSSTOP, COMPUTERFEJL ELLER -SVIGT, ELLER ENHVER ANDEN FORM FOR SKADE ELLER TAB SOM ER OPSTÅET I FORBINDELSE MED BRUG AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER HERAF, SELV HVIS EN SÅDAN PART HAR VÆRET INFORMERET OM MULIGHEDEN FOR SÅDANNE SKADER.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+
+    <authorgroup>
+      <author>
+        <firstname>Timothy</firstname>
+        <surname>Musson</surname>
+        <affiliation>
+          <!-- <orgname></orgname> -->
+          <address><email>trmusson@ihug.co.nz</email></address>
+        </affiliation>
+      </author>
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+
+      <othercredit role="translator">
+        <firstname>Latin</firstname> 
+        <surname>Translator 1</surname> 
+        <affiliation> 
+          <orgname>Latin Translation Team</orgname> 
+          <address> <email>translator@gnome.org</email> </address> 
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+        <revnumber>Manual til Fire på stribe version 2.8</revnumber>
+        <date>September 2004</date>
+        <revdescription>
+          <para role="author">Timothy Musson <email>trmusson@ihug.co.nz</email></para>
+          <para role="publisher"/>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>Denne manual beskriver version 2.12 af Fire på stribe.</releaseinfo>
+
+    <legalnotice>
+      <title>Tilbagemeldinger</title>
+      <para>Hvis du ønsker at indrapportere en fejl eller komme med et forslag vedrørende programmet Fire på stribe eller denne manual så følg vejledningen på siden <ulink url="ghelp:user-guide?feedback-bugs" type="help">tilbagemeldinger omkring GNOME</ulink>.</para>
+    </legalnotice>
+  </articleinfo>
+
+
+  <!-- ============= Document Body ============================= -->
+
+  <!-- ============= Introduction ============================== -->
+
+
+  <sect1 id="intro">
+
+    <title>Introduktion</title>
+
+    <para><application>Fire på stribe</application> er et spil af typen Fire på stribe til GNOME-projektet. Formålet med spillet er at bygge en linje af fire af dine marmorkugler, mens du forsøger at forhindre din modstander (person eller computer) i at bygge sin linje. En linje kan være lodret, vandret eller skrå (diagonal).</para>
+
+    <para>For at køre <application>Fire på stribe</application> vælges <guimenuitem>Fire på stribe</guimenuitem> fra undermenuen <guisubmenu>Spil</guisubmenu> i <guimenu>Hovedmenuen</guimenu>, eller der tastes <command>gnect</command> fra kommandolinjen.</para>
+
+    <para><application>Fire på stribe</application> er inkluderet i pakken <filename>GNOME-games</filename>, som er en del af skrivebordsmiljøet GNOME. Dette dokument beskriver version 2.8 af <application>Fire på stribe</application>.</para>
+
+   <para>Fire på stribe understøtter også <link linkend="network-games">flere spillere</link> i form af to spillere der udfordrer hinanden eller via netværket.</para>
+
+
+  </sect1>
+
+
+  <!-- ============= Usage ===================================== -->
+
+
+  <sect1 id="usage">
+
+    <title>Grundlæggende brug</title>
+
+    <!-- ===== How to play ===== -->
+
+    <sect2 id="playing">
+
+      <title>Sådan spiller du Fire på stribe</title>
+
+      <para>For at begynde et spil Fire på stribe vælges <menuchoice><guimenu>Spil</guimenu><guimenuitem>Nyt spil</guimenuitem></menuchoice>.</para>
+
+      <para><interface>Brættet</interface> består af syv kolonner og seks rækker. Ovenfor viser en speciel række den aktuelle spiller og den marmorkugle som skal placeres. Hvert træk består i at sænke en marmorkugle i en af kolonnerne. Marmorkuglen lander på den øverste tomme række i den valgte kolonne.</para>
+        
+      <para>For at udføre et træk klikkes på en kolonne med musen. For at spille med tastaturet flyttes marmorkuglen i den øverste række med venstre og højre piletast, og sænkes med piletasten der peger nedad. Din marmorkugle vil lande i den øverste tomme række i den kolonne.</para>
+
+      <!-- Figure -->
+      <mediaobject id="mainwindow-fig">
+        <imageobject>
+          <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="trm"/>
+        </imageobject>
+        <textobject>
+          <phrase>Fire på stribes hovedvindue</phrase>
+        </textobject>
+        <caption><para>Fire på stribes hovedvindue</para></caption>
+      </mediaobject>
+
+      <para>Spillet er vundet, når det lykkes en af de to spillere at placere en linje af fire marmorkugler enten vandret, lodret eller diagonalt. Hvis brættet bliver fyldt op uden fire på stribe, så ender spillet uafgjort.</para>
+
+    </sect2>
+    
+    <!-- ===== Commands ===== -->  
+    
+    <sect2 id="commands">
+      <title>Kommandoer</title>
+      <anchor id="menubar"/><!-- id for removed section -->
+      
+      <para>For at fortryde et træk vælges <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>Z</keycap></keycombo></shortcut><guimenuitem>Fortryd træk</guimenuitem></menuchoice>. Hvis du spiller mod en ven, vil dette fortryde et træk. Hvis du spiller mod computeren vil computerens sidste træk blive omgjort og så dit. Gentagelse af dette vil føre brættet tilbage til sin udgangsposition.</para>
+      <para>Vælg <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>H</keycap></keycombo></shortcut><guimenuitem>Fif</guimenuitem></menuchoice> for at få et forslag fra computeren til dit næste træk. Forslaget vises i statusbjælken.</para>
+      
+      <para>Vælg <menuchoice><guimenuitem>Point</guimenuitem></menuchoice> for at vise det totale antal sejre og uafgjorte for den aktuelle spilsession. Pointene vil blive nulstillet hvis spillervalget ændres under indstillinger.</para>      
+
+      
+    </sect2>  
+
+    <!-- ===== Preferences ===== -->
+
+    <sect2 id="prefsdialog">
+
+      <title>Indstillinger</title>
+
+      <para>For at ændre spillets opsætning vælges <guimenuitem>Indstillinger</guimenuitem> fra menuen <guimenu>Opsætning</guimenu>. Dette åbner dialogvinduet <interface>Indstillinger</interface>.</para>
+
+      <para>Konfigurationsindstillingerne i fanebladet <guilabel>Spil</guilabel> er: <variablelist>
+
+          <varlistentry>
+            <term><guilabel>Første spiller</guilabel> og <guilabel>Anden spiller</guilabel></term>
+            <listitem>
+              <para>Disse to kolonner fortæller <application>Fire på stribe</application> hvem som spiller, og hvis det er computeren, hvilken sværhedsgrad den har. For at spille mod en ven vælges Menneske for både Første spiller og Anden spiller.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Tema</guilabel></term>
+            <listitem>
+              <para>Temamenuen viser tilgængelige temaer og lader dig vælge din favorit.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Aktiver animering</guilabel></term>
+            <listitem>
+              <para>Her kan du aktivere spillets animering.</para>
+            </listitem>
+          </varlistentry>
+
+        </variablelist></para>
+      <para>Endelig er der fanebladet <guilabel>Tastaturstyreenheder</guilabel> der kan ændre på styringen via tastaturet. For at ændre en tastefunktion dobbeltklikkes der på en post, og så trykkes der på en ny tast.</para>
+
+    </sect2>
+  </sect1>
+
+
+  <!-- ===== Custom Themes ===================================== -->
+
+
+  <sect1 id="custom">
+
+    <title>Oprettelse af nye temaer</title>
+
+    <para>Dette afsnit er skrevet i det tilfælde, du ønsker at lave dine egne temaer for <application>Fire på stribe</application>. Afsnittet forudsætter at du er velkendt med grundlæggende tekstredigering, grafiske programmer og kommandolinjen.</para>
+
+    <sect2 id="images">
+
+      <title>Billeder</title>
+
+      <para><application>Fire på stribes</application> feltsæt indeholder seks felter af ens størrelse, opsat vandret. Fra venstre mod højre:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Første spillers marmorkugle som den fremgår af spilbrættet</para>
+        </listitem>
+        <listitem>
+          <para>Anden spillers marmorkugle som den fremgår af spilbrættet</para>
+        </listitem>
+        <listitem>
+          <para>Spilbrættets baggrund</para>
+        </listitem>
+        <listitem>
+          <para>Den øverste rækkes baggrund</para>
+        </listitem>
+        <listitem>
+          <para>Første spillers marmorkugle som den fremstår på den øverste række</para>
+        </listitem>
+        <listitem>
+          <para>Anden spillers marmorkugle som den fremstår på den øverste række</para>
+        </listitem>
+      </orderedlist>
+
+      <figure id="shot1">
+        <title>Et eksempel på et feltsæt</title>
+        <screenshot>
+          <screeninfo>Dette billede viser de seks felter i et feltsæt</screeninfo>
+          <graphic format="PNG" fileref="figures/tileset.png" srccredit="TRM"/>
+        </screenshot>
+      </figure>
+
+      <para>Felterne tre og fire vil blive gentaget hen over spilbrættet og øverste række medmindre et fuldt vinduebaggrundsbillede er angivet i temafilen.</para>
+
+      <tip>
+        <title>FIF</title>
+        <para>PNG-format anbefales for feltsæt. Det første, anden, femte og sjette felt bør indeholde en vis grad af gennemsigtighed, hvis du ønsker, at baggrunden skal skinne igennem. Det tredje og fjerde felt bør være et dækkende billede uden gennemsigtighed, også selvom du bruger et fuldt vinduebaggrundsbillede med dit tema.</para>
+      </tip>
+
+      <tip>
+        <title>FIF</title>
+        <para>Felter kan være kvadratiske eller rektangulære og i enhver størrelse du måtte ønske. De fleste af de medfølgende feltsæt i <application>Fire på stribe</application> bruger kvadrater der måler 50 x 50 billedpunkter.</para>
+      </tip>
+
+      <para>For et fuldt dækkende vinduebaggrundsbillede skal der lidt mere til. For eksempel hvis dine felter måler 50 x 50 billedpunkter hver. Spillets visningsmål er 7 x 7 felter iberegnet den øverste række, så det ideelle baggrundsbillede til dit feltsæt måler 350 x 350 billedpunkter.</para>
+
+      <tip>
+        <title>FIF</title>
+        <para><application>Fire på stribe</application> vil automatisk skalere baggrundsbilledet, hvis det ikke passer til feltsættet. Dette betyder, at du kan lave "store" og "små" versioner af dit tema, der begge bruger det samme baggrundsbillede, bare ved at have en stor og en lille version af dit feltsæt.</para>
+      </tip>
+
+      <para>Nu har du så et feltsæt og måske et passende baggrundsbillede. Det næste trin er at placere dem det korrekte sted.</para>
+
+    </sect2>
+
+
+    <sect2 id="directories">
+
+      <title>Nu skal det hele samles</title>
+
+      <para>Det sidste trin består i at placere dine billeder hvor <application>Fire på stribe</application> kan finde dem. Du kan placere dem i installationsmappen for Fire på stribe (som vil afhænge af dit system), men din hjemmemappe er sikkert en bedre ide.</para>
+
+      <para>Opret mappen <filename class="directory">~/.gnect</filename>, og mappen <filename class="directory">~/.gnect/pixmaps</filename>. Disse navne er vigtige, da <application>Fire på stribe</application> ikke kigger andre steder.</para>
+
+      <para>Kopier dine billeder ind i mappen pixmaps.</para>
+
+      <para>Hvis du starter <application>Fire på stribe</application> fra kommandolinjen, vil den give dig lidt hjælp til eventuelle problemer med dit nye tema. Hvis der ikke er nogen problemer, vil du se dit nye tema på listen under <interface>Indstillinger</interface>.</para>
+
+      <para>God fornøjelse!</para>
+
+    </sect2>
+
+
+  </sect1>
+
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Netværksspil</title>
+  <para>
+    Four-in-a-Row support networked multiplayer games which is provided by <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink>. By connecting to a Four-in-a-Row server
+    on the Internet, you can challenge other players in multiplayer games.
+    For news, updates and a list of servers to connect to, see the <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">gnome-games website</ulink>.
+  </para>
+  <para>
+    To start the multiplayer game of Four-in-a-Row, select <menuchoice><guimenu>Game</guimenu> 
+    <guimenuitem>Network Game</guimenuitem></menuchoice> on the Four-in-a-Row menu.
+  </para> 
+
+<sect2 id="connecting">
+<title>Connecting to a Four-in-a-Row network server</title>
+<para>
+The Four-in-a-Row connection dialog is shown initially when starting a new
+network game. This dialog allows you to select a server to connect to,
+and the username that you will have while connected to that server.  
+</para>
+
+<para>
+It is possible to connect to a server with either a guest account or a normal
+registered account. Guest accounts allows you to anonymously login, while
+a normal login account allows you to reserve your own username which
+is protected by the password that you choose.
+</para>
+
+<para> The <guimenuitem>Guest Login</guimenuitem> option should be selected
+if you want an anonymous guest account. If you want to create a new 
+login account, then select the <guimenuitem>First-time Login</guimenuitem> 
+option, with the username, password and email of your choice.
+If you have already created your account, you can connect by selecting
+the <guimenuitem>Normal Login</guimenuitem> option, and enter the
+username and password that you have chosen.
+</para>
+<para>
+To connect to a server, click on the <guimenuitem>Connect</guimenuitem> button.
+</para>
+<figure id="connect">
+<title>The Four-in-a-Row network connection dialog.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>The Four-in-a-Row network connection dialog.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Joining a game room</title>
+<para>
+Once you have successfully connected to a server, you can choose which game room to join. To play a multiplayer game of Four-in-a-Row, select the Four-in-a-Row room. If you want to host your own game, then click on the Launch button. This creates a new table where other players can participate in a game against you. 
+If there are any other games already started, then you can double-click on an existing game table to join it.
+The list of game tables on the right shows you the number of available seats, which means the
+number of players that can join the game table.
+</para>
+<figure id="tables">
+<title>This Four-in-a-Row network dialog allows you to join a game room to find other players.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>This Four-in-a-Row network dialog allows you to join a game room to find other players.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>
+When creating a new table for Four-in-a-Row games, a preference dialog is displayed which allows you to
+customize the game, such as set the minimum number of players for the game. Once the total
+number of seats have been taken, then no more players are allowed to join that game table.
+</para>
+<para>
+It is possible to chat with other players in network games. Ask for advice or help playing the games,
+but please be polite against other players.
+</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Waiting for other players to join the game</title>
+<para>
+Once you have successfully joined a game table, then you have to wait until enough
+players have joined the table. The <guimenuitem>Players List</guimenuitem> menu item
+allows you to see a list of the players who have joined the game.
+The game will begin immediately when the total number of players in the the game have been reached.
+</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Playing multiplayer Four-in-a-Row games</title>
+<para>
+Multiplayer Four-in-a-Row games have pretty much the same rules as normal Four-in-a-Row games,
+except that you are now playing against human players. This means that other
+strategies might possibly be better than when playing against AI players.
+</para>
+<para>
+Once a player has won, the game ends and you can return to the initial network game screen.
+Then you can play yet another game of addictive Four-in-a-Row multiplayer!
+</para>
+</sect2>
+
+</sect1>
+
+
+
+  <!-- ===== Bugs ============================================== -->
+
+
+  <sect1 id="bugs">
+
+    <title>Kendte fejl og begrænsninger</title>
+
+    <para>Undertiden ser animationen for en marmorkugle ikke så glidende ud, som den burde, når kuglen falder.</para>
+
+  </sect1>
+
+
+  <!-- ===== Authors =========================================== -->
+
+
+  <sect1 id="authors">
+
+    <title>Forfattere</title>
+
+    <para><application>Fire på stribe</application> blev skrevet af Timothy Musson (<email>trmusson@ihug.co.nz</email>) og David Neary (<email>bolsh@gimp.org</email>). Forskellige andre har brugt tid og kræfter på at hjælpe på mange måder siden arbejdet med <application>Fire på stribe</application> begyndte.</para>
+    <para><ulink type="http" url="http://www.ce.unipr.it/~gbe/velena.html">Motoren Velena</ulink>, <application>Fire på stribe</application>s computerspiller, blev skrevet af Giuliano Bertoletti. Vi er taknemmelige for, at han har ladet os bruge sit arbejde. Et arbejde som har givet os et bedre spil <application>Fire på stribe</application>.</para>
+    <para>Denne manual blev skrevet af Timothy Musson.</para>
+    <para>Hvis du ønsker at indrapportere en fejl eller komme med et forslag vedrørende denne manual så følg vejledningen i dette <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokument</ulink>.</para>
+
+
+<!-- For translations: uncomment this:
+
+  <para>
+    Latin translation was done by ME
+    (<email>MYNAME@MYADDRESS</email>). Please send all comments and
+    suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+-->
+
+  </sect1>
+
+
+  <!-- ============= License =================================== -->
+
+
+  <sect1 id="license">
+
+    <title>Licens</title>
+
+    <para>Dette program er frit software; du kan distribuere det og/eller ændre det under betingelserne i <citetitle>GNU General Public License</citetitle> der udgives af Free Software Foundation; enten version 2 eller (ved dit valg) enhver senere version.</para>
+
+    <para>Dette program distribueres i håb om at det vil vise sig nyttigt, men UDEN NOGEN FORM FOR GARANTI, uden selv de underforståede garantier omkring SALGBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Yderligere detaljer kan læses i <citetitle>GNU General Public License</citetitle>.</para>
+
+    <para>En kopi af <citetitle>GNU General Public License</citetitle> er inkluderet som et tillæg til <citetitle>GNOME's brugervejledning</citetitle>. Du kan også indhente en kopi af <citetitle>GNU General Public License</citetitle> fra the Free Software Foundtation ved at besøge <ulink url="http://www.fsf.org" type="http">deres hjemmeside</ulink> eller ved at skrive til <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+
+  </sect1>
+
+</article>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="shortcut" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Usare la tastiera per giocare.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-21" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Scorciatoie da tastiera</title>
+
+  <section id="shortcuts-game">
+    <title>Scorciatoie del gioco</title>
+    <p>La seguente tabella raggruppa le più utili scorciatoie da tastiera per giocare a <app>GNOME Tetravex</app>.</p>
+    <table frame="all" rules="rows cols">
+      <tr>
+        <td><p>Scorciatoia</p></td><td><p>Descrizione</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>N</key></keyseq></p>
+        </td>
+        <td>
+          <p>Avvia una nuova partita.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><key>Pausa</key></p>
+        </td>
+        <td>
+          <p>Mette in pausa o riprende la partita.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            <keyseq><key>Ctrl</key><key>Su</key></keyseq>
+          </p>
+        </td>
+        <td>
+          <p>Sposta tutti i pezzi nel riquadro di sinistra in su di uno.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Giù</key></keyseq></p>
+        </td>
+        <td>
+          <p>Sposta tutti i pezzi nel riquadro di sinistra in giù di uno.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Sinistra</key></keyseq></p>
+        </td>
+        <td>
+          <p>Sposta tutti i pezzi nel riquadro di sinistra a sinistra di uno.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Destra</key></keyseq></p>
+        </td>
+        <td>
+          <p>Sposta tutti i pezzi nel riquadro di sinistra a destra di uno.</p>
+        </td>
+      </tr>
+    </table>
+  </section>
+</page>

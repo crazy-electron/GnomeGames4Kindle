@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="shortcut" xml:lang="zh_CN">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="usage"/>
+    <desc>使用键盘进行游戏。</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-21" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>键盘快捷键</title>
+
+  <section id="shortcuts-game">
+    <title>游戏快捷键</title>
+    <p>下面的表格显示了玩 <app>GNOME 四邻</app> 时可以用到的一些快捷键。</p>
+    <table frame="all" rules="rows cols">
+      <tr>
+        <td><p>快捷键</p></td><td><p>介绍</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>N</key></keyseq></p>
+        </td>
+        <td>
+          <p>新建一盘游戏。</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><key>Pause</key></p>
+        </td>
+        <td>
+          <p>暂停/继续游戏。</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            <keyseq><key>Ctrl</key><key>上方向键</key></keyseq>
+          </p>
+        </td>
+        <td>
+          <p>将左侧盒子里的所有方块上移一格。</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>下方向键</key></keyseq></p>
+        </td>
+        <td>
+          <p>将左侧盒子里的所有方块下移一格。</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>左方向键</key></keyseq></p>
+        </td>
+        <td>
+          <p>将左侧盒子里的所有方块左移一格。</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>右方向键</key></keyseq></p>
+        </td>
+        <td>
+          <p>将左侧盒子里的所有方块右移一格。</p>
+        </td>
+      </tr>
+    </table>
+  </section>
+</page>

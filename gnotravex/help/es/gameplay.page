@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="gameplay" xml:lang="es">
+      
+  <info>
+    <link type="guide" xref="index"/>
+    <desc>Introducción a <app>Tetravex</app>.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+   <credit type="author">
+    <name>Milo Casagrande</name>
+    <email>milo@ubuntu.com</email>
+   </credit>
+   <license>
+     <p>Creative Commons Share Alike 3.0</p>
+   </license>
+  </info>
+
+  <title>Juego</title>
+
+  <p><app>Tetravex</app> es un juego simple tipo puzle cuya finalidad es mover las piezas de una parte del tablero a otra, de tal forma que los números representados en las piezas se toquen unos a otros.</p>
+  <p>La partida está cronometrada y esos tiempos se usan como la puntuación para la partida. Debe mover todas las piezas en el menor tiempo posible.</p>
+  <figure>
+    <title>Ventana principal del juego</title>
+    <desc>Ventana principal de <app>Tetravex</app></desc>
+    <media type="image" src="figures/gnotravex-main-window.png" mime="image/png" style="center">
+      <p>Ventana principal de <app>Tetravex</app>.</p>
+    </media>
+  </figure>
+
+</page>

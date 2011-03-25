@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "June 2004">
+<!ENTITY app "<application>Quadrapassel</application>">
+<!ENTITY appname "Quadrapassel">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="zh_CN">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title><application>俄罗斯方块</application>游戏手册</title>
+
+    <abstract role="description">
+      <para>Gnome 方块是GNOME 版的俄罗斯方块， 四联锁方块的经典游戏。当它们从顶端落下，游戏者必须调整它们以适合底端的其他方块，然后它们形成一个完整的横线，该情况下该线上的方块消失，游戏者获得分数。 </para>
+    </abstract>
+
+    <copyright>
+      <year>2004</year>
+      <holder>Angela Boyle</holder>
+    </copyright><copyright><year>2009</year><holder>Zhang Miao (mymzhang@gmail.com)</holder></copyright><copyright><year>2011</year><holder>TeliuTe (teliute@163.com)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOME 文档项目</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>对于本文档的复制、分发和／或修改必须遵循自由软件基金会 (Free Software Foundation) 发布的 GNU 自由文档许可证 (GFDL) 版本 1.1 或更高版本，该许可证没有固定的部分、没有封面和背页文本。您可以在此<ulink type="help" url="ghelp:fdl">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副本。</para>
+         <para>本手册是在 GFDL 许可之下分发的 GNOME 手册集合的一部分。如果想要单独分发此手册，可以在手册中添加该许可证的一份副本然后分发，如该许可证的第 6 部分所述。</para>
+
+	<para>各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 GNOME 文档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而表明它们是商标。</para>
+
+	<para>本文档以及文档的修改版本都是在遵循 GNU 自由文档许可证的条款下提供，这表示具有以下含义：<orderedlist>
+		<listitem>
+		  <para>文档按“原样”提供，不提供任何明示或暗示的保证，包括但不限于：文档或文档的修改版本没有适销性方面的缺陷、适合特定目的的适用性，以及没有侵权行为。您将自行承担本文档以及文档修改版本的质量、准确性以及性能方面的风险。如果任何文档或文档修改版本存在缺陷，您(而不是最初的编写者、作者或撰写人)将承担所有必需的服务、维修或更正的费用。此免责声明是本许可证的重要组成部分。如果不接受此免责声明，那么您就没有权利使用任何文档或文档的修改版本；并且</para>
+		</listitem>
+		<listitem>
+		  <para>无论在任何情况以及在任何法律理论下，本文档或文档修改版本的作者、最初的编写者、任何撰写人或任何分发者，或者任意这些方的任何提供者都不对任何人由于使用本"文档或文档修改版本引起或带来的任何直接的、间接的、特殊的、偶然的或继发的损失承担任何民事(包括疏忽)、合同或其它方面的责任，这些损失包括但不限于信誉损失、工作停止、计算机失败或故障，或任何以及所有其它损失或由此引发的或与之相关的损失，即使这些方已被告知存在出现此类损失的可能性时也是如此。</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL),
+and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+	
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Angela</firstname> 
+	<surname>Boyle</surname> 
+	<affiliation> 
+	  <address> <email>anjela@u.washington.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>俄罗斯方块手册2.8版</revnumber> 
+	<date>2004 年 6 月</date> 
+	<revdescription> 
+	  <para role="author">Angela Boyle <email>anjela@u.washington.edu</email></para>
+	  <para role="publisher">GNOME 文档项目</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>本手册描述的是 2.12 版的俄罗斯方块。</releaseinfo>
+    <!-- The following feedback information only applies to applications
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove this
+    section altogether -->
+    <legalnotice> 
+      <title>反馈</title> 
+      <para>对 <application>俄罗斯方块</application>程序或本手册报告错误或提供建议，按照以下指导<ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME 反馈页面</ulink>。</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>俄罗斯方块</primary> 
+  </indexterm>
+
+<!-- ==============================Document Body==================-->
+
+<sect1 id="s1-intro">
+ <title>简介</title>
+
+<!--synopsis of game-->
+  <para><application>俄罗斯方块</application> 来源于经典的方块下落游戏，<application>俄罗斯方块</application>。该游戏的目标是组成一条完整的横线，此时方块消失。由四块方块组成的方块组合有 7 种形状：1 种直线状，两种 L 形，一种是方块，还有两种 S 形。方块依照随机的顺序从顶端下落。您可以旋转和移动方块以使它们组成一条完整的横线。您将通过加速方块下落和排成横线获得分数。当您的分数变高，您的等级会提高，方块下降速度变快。</para>
+
+<!--running game-->
+   <para>要运行<application>俄罗斯方块</application>，点菜单 <menuchoice><guimenu>应用程序</guimenu><guisubmenu>游戏</guisubmenu><guimenuitem>俄罗斯方块</guimenuitem></menuchoice>，或在命令行中输入 <command>quadrapassel</command>。</para>
+
+<!--part of gnome-games-->
+   <para><application>俄罗斯方块</application> 包含在 <filename>gnome-games</filename> 包中, 是 GNOME 桌面环境的一部分。本文档描述的是 2.8 版的 <application>俄罗斯方块</application>。</para>
+</sect1>
+
+<sect1 id="s1-playing">
+ <title>进行<application>俄罗斯方块</application>游戏</title>
+  <para>您可以通过两个动作获取分数：排成一线和快速下降方块。</para>
+   <sect2 id="s2-block-moving">
+     <title>移动方块</title>
+      <para>要进行游戏，您只需要四个方向键。</para>
+       <itemizedlist>
+        <listitem>
+         <para><keycap>左方向键</keycap> 和 <keycap>右方向键 </keycap> 可在游戏面板上横向移动方块。</para>
+        </listitem>
+        <listitem>
+         <para><keycap>上方向键</keycap> 旋转方块。默认的旋转是逆时针方向。您可以改变旋转方块，通过  <menuchoice><guimenu>设置</guimenu><guimenuitem>首选项</guimenuitem></menuchoice> ，并反选<guilabel>逆时针旋转方块</guilabel>。</para>
+        </listitem>
+        <listitem>
+         <para><keycap>下方向键</keycap> 和 <keycap>空格键</keycap> 使方块更快的下落。<keycap>下方向键</keycap>使方块加速下落。<keycap>空格键</keycap>可使方块直接下落到底部。</para>
+        </listitem>
+       </itemizedlist> 
+   </sect2>
+   <sect2 id="s2-newgame">
+     <title>开始新游戏</title>
+      <para>开始新游戏，执行<menuchoice><guimenu>游戏</guimenu><guimenuitem>新游戏</guimenuitem></menuchoice>。游戏将会开始，方块从窗口顶端中部下落。默认状态下游戏窗口中无方块，并在右上角显示要下落的下一个方块。<guilabel>分数</guilabel>显示您获得的分数。<guilabel>行数</guilabel>显示完成的行数。<guilabel>等级</guilabel> 显示游戏的难度等级。</para>
+    </sect2>
+    <sect2 id="s2-pausegame">
+     <title>暂停游戏</title>
+      <para>要暂停游戏，执行 <menuchoice><guimenu>游戏</guimenu><guimenuitem>暂停游戏</guimenuitem></menuchoice>。当您在游戏时，只能暂停一个游戏。游戏暂停无限制。要继续游戏，再次执行<menuchoice><guimenu>游戏</guimenu><guimenuitem>暂停游戏</guimenuitem></menuchoice>。</para>
+    </sect2>
+    <sect2 id="s2-endgame">
+     <title>结束游戏</title>
+      <para>点菜单<menuchoice><guimenu>游戏</guimenu><guimenuitem>结束游戏</guimenuitem></menuchoice> 可不退出程序的情况下结束当前游戏。</para>
+    </sect2>
+    <sect2 id="s2-quitgame">
+     <title>退出 <application>俄罗斯方块</application></title>
+      <para>要完全退出<application>俄罗斯方块</application> ，执行<menuchoice><guimenu>游戏</guimenu><guimenuitem>退出</guimenuitem></menuchoice>。如果您在游戏中退出，游戏会退出，分数不会被保存。</para>
+    </sect2>
+    <sect2 id="s2-scoring">
+     <title>游戏分数</title>
+     <para>获取分数通过两个途径：加速方块下落和删除已成直线的方块。当除去成直线的方块时，您将会获得更多的分数，但加速方块下落将会更快的增加分数。当你等级提高时，方块将会快速下落。最高等级是 10 ，此时您将只有 1 秒的时间安排每个方块。</para>
+    </sect2> 
+    <sect2 id="s2-pastscores">
+     <title>查看过去的分数</title>
+      <para>您可以查看电脑上最高的十个分数，通过  <menuchoice><guimenu>游戏</guimenu><guimenuitem>分数</guimenuitem></menuchoice>。用户的名字显示在分数和游戏时刻后。</para>
+    </sect2> 
+</sect1>
+
+ 
+<sect1 id="s1-customizegame">
+ <title>自定义<application>俄罗斯方块</application></title>
+  <sect2 id="s2-customstartup">
+   <title>自定义游戏初始状态</title>
+    <para>占菜单<menuchoice><guimenu>设置</guimenu><guimenuitem>首选项</guimenuitem></menuchoice>，您可以自定义每次游戏开始时的状态特性：预填充的行数和密度，游戏等级。“预填充行数”指每次开始新游戏时已有方块的行数。</para>
+    <sect3 id="s3-numberpfr">
+     <title>预填充的行数</title>
+      <para>您可以通过微调按钮调整每次新游戏开始时已有方块的行数。开始游戏时预填充行数允许最大值为 19 。默认预填充的行数是 0 。</para>
+     </sect3>
+     <sect3 id="s3-densitypfr">
+      <title>预填充行中的密度</title>
+       <para>您可以改变每次游戏开始时在预填充行中的方块密度。您可以选择最大 10 块的密度。您必须首先在 <guilabel>预填充行数</guilabel> 中选择你要预备填充的行数。默认的方块密度是 3 。</para>
+     </sect3>
+     <sect3 id="s3-startlevel">
+      <title>启动的等级</title>
+       <para>您可以调整游戏开始时的难度等级。您可以设置的最高级别是 10 级，也是您进行游戏所能达到的最高级别。默认的启动等级是 1 。</para>
+     </sect3>
+   </sect2>
+   <sect2 id="s3-customblocks">
+    <title>自定义键盘控制</title>
+    <para>在<menuchoice><guimenu>设置</guimenu><guimenuitem>首选项</guimenuitem></menuchoice>，您可以自定义许多方块的特性：预览下一个方块，方块的颜色，方块的旋转。</para>
+      <sect3 id="s3-sound">
+	<title>启用声音</title>
+	<para>开启和关闭音效使用该选项。如果在有其他人的场合进行本游戏，您可能要选择关闭。</para>
+      </sect3>
+     <sect3 id="s3-nextblock">
+      <title>预览下一个方块</title>
+        <para>如果您想要查看将要下落的下一个方块请选择该选项。该特性能够帮助您安排方块的放置位置。</para>
+     </sect3>
+     <sect3 id="s3-blockcolors">
+      <title>使用随机方块颜色</title>
+       <para>选定它以使将各式方块配置成预定颜色或随机颜色。如果使用颜色将帮助您识别方块，随机颜色将使游戏难度增加。</para>
+     </sect3>
+     <sect3 id="s3-difficult-block-mode">
+      <title>选择困难的方块</title>
+       <para>选中此项，您可以尝试让玩家头疼的模式。开启此项特性，您将从不会得到想要的方块，很难消去一行，预览的方块也不是实际落下的，都不是您所期待的。</para>
+     </sect3>
+     <sect3 id="s3-block-rotation">
+      <title>逆时钟方向旋转方块</title>
+       <para>选择此选项以指定逆时针旋转或者相反。</para>
+     </sect3>
+     <sect3 id="s3-show-target">
+      <title>显示方块要下落的位置</title>
+        <para>此特性使用一个方块的灰色图像并将显示方块下落位置。该特性对初级用户非常有用，但熟练的游戏者会感到干扰。</para>
+     </sect3>
+   </sect2>
+   <sect2 id="s2-customlook">
+    <title>自定义<application>俄罗斯方块</application>的外观</title>
+    <para>点菜单 <menuchoice><guimenu>设置</guimenu><guimenuitem>首选项</guimenuitem></menuchoice>，您可以自定义<application>俄罗斯方块</application>的外观：方块图像。</para>
+     <sect3 id="s3-blockimage">
+      <title>方块图像</title>
+       <para>您可以改变方块的类型，包括图像和大小。本游戏已有许多预设类型。</para>
+     </sect3>
+     <sect3 id="s3-background">
+       <title>背景</title> <para>如果拖动你喜欢的图像到<application>Gnometris</application>窗口中，它将会被作为背景。如果您想要一个颜色作为背景，从颜色选择器中拖入，或从<application>文件浏览器的</application><guimenuitem>背景和徽标</guimenuitem> 对话框中选择(该对话框的重设项目也可使用)。</para>
+     </sect3>
+    </sect2>
+   </sect1>
+
+<sect1 id="authors">
+  <title>作者</title>
+  <para><application>俄罗斯方块</application> 由 J. Marcin Gorycki 写于 1999 年，之后由 Gnome游戏团队维护。本手册由 Angela Boyle 编写。对本程序和手册报告错误或提供建议，按照以下链接的指导<ulink url="ghelp:user-guide?feedback-bugs" type="help">文档</ulink>。</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+</sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="s1-license">
+  <title>许可</title>
+  <para>程序是自由软件；您可以按照自由软件基金会所发表的<ulink type="help" url="gnome-help:gpl"><citetitle>GNU GPL协议</citetitle></ulink>自由发放和/或修改它；GPL 协议应该采用第二版或以后的任何版本。</para>
+  <para>本程序发表的目的是希望它能够对您有用，但我们没有任何保证；对于以任何用途使用它所造成的任何直接或间接后果都不承担任何责任。请参看<citetitle>GNU General Public License</citetitle>获取更多的信息。</para>
+  <para>一份 <citetitle>GNU General Public License</citetitle>的副本包含在 <citetitle>GNOME 用户指导</citetitle>中作为附录。您也可以通过访问 <ulink type="http" url="http://www.fsf.org"> 自由软件基金会的网站</ulink>或者写信给 <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address> 以从自由软件基金会获取 <citetitle>GNU General Public License</citetitle>的副本。</para>
+ </sect1>
+</article>

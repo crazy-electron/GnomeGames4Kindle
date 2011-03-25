@@ -1,0 +1,13 @@
+[Desktop Entry]
+Icon=gnome-iagno
+_Name=Iagno
+_Comment=Dominate the board in a classic version of Reversi
+Exec=iagno
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Game;BoardGame;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-games
+X-GNOME-Bugzilla-Component=BugBuddyBugs
+X-GNOME-Bugzilla-Version=@VERSION@
+StartupNotify=true

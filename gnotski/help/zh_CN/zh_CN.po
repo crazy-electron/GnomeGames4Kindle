@@ -1,0 +1,511 @@
+# Chinese (China) translation for gnome-games.
+# Copyright (C) 2010 gnome-games's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-games package.
+# TeliuTe <teliute@163.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games.gnotski.master\n"
+"POT-Creation-Date: 2010-12-15 21:06+0000\n"
+"PO-Revision-Date: 2010-12-30 22:22+0800\n"
+"Last-Translator: TeliuTe <teliute@163.com>\n"
+"Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnotski.xml:204(None)
+msgid ""
+"@@image: 'figures/gnotski_win.png'; md5=5ed32942a09f8becfc784d804f70ea3e"
+msgstr ""
+"@@image: 'figures/gnotski_win.png'; md5=5ed32942a09f8becfc784d804f70ea3e"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnotski.xml:261(None)
+msgid ""
+"@@image: 'figures/gnotski_start_window.png'; "
+"md5=23e584de3f58e5baf5c9ca5098a7961e"
+msgstr ""
+"@@image: 'figures/gnotski_start_window.png'; "
+"md5=23e584de3f58e5baf5c9ca5098a7961e"
+
+#: C/gnotski.xml:28(title)
+msgid "<application>Klotski</application> Manual"
+msgstr "<application>华容道</application> 小游戏手册"
+
+#: C/gnotski.xml:31(para)
+msgid ""
+"Klotski is a puzzle game of which the objective is to get the patterned "
+"block to the marker, which is done by moving the blocks in its way."
+msgstr ""
+"华容道是一个智力游戏，目标是通过不断地移动，让一个带有图案的大方块通过出口到"
+"达标记位置。"
+
+#: C/gnotski.xml:39(year)
+msgid "2002"
+msgstr "2002"
+
+#: C/gnotski.xml:40(holder)
+msgid "Andrew Sobala"
+msgstr "Andrew Sobala"
+
+#: C/gnotski.xml:54(publishername) C/gnotski.xml:67(orgname)
+#: C/gnotski.xml:142(para)
+msgid "GNOME Documentation Project"
+msgstr "GNOME 文档项目"
+
+#: C/gnotski.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"对于本文档的复制、分发和/或修改必须遵循自由软件基金会 (Free Software "
+"Foundation) 发布的 GNU 自由文档许可证 (GFDL) 版本 1.1 或更高版本，该许可证没"
+"有固定的部分、没有封面和背页文本。您可以在此<ulink type=\"help\" url=\"ghelp:"
+"fdl\">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副"
+"本。"
+
+#: C/gnotski.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"本手册是在 GFDL 许可之下分发的 GNOME 手册集合的一部分。如果想要单独分发此手"
+"册，可以在手册中添加该许可证的一份副本然后分发，如该许可证的第 6 部分所述。"
+
+#: C/gnotski.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 GNOME 文"
+"档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而"
+"表明它们是商标。"
+
+#: C/gnotski.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"文档按“原样”提供，不提供任何明示或暗示的保证，包括但不限于：文档或文档的修改"
+"版本没有适销性方面的缺陷、适合特定目的的适用性，以及没有侵权行为。您将自行承"
+"担本文档以及文档修改版本的质量、准确性以及性能方面的风险。如果任何文档或文档"
+"修改版本存在缺陷，您(而不是最初的编写者、作者或撰写人)将承担所有必需的服务、"
+"维修或更正的费用。此免责声明是本许可证的重要组成部分。如果不接受此免责声明，"
+"那么您就没有权利使用任何文档或文档的修改版本；并且"
+
+#: C/gnotski.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"无论在任何情况以及在任何法律理论下，本文档或文档修改版本的作者、最初的编写"
+"者、任何撰写人或任何分发者，或者任意这些方的任何提供者都不对任何人由于使用本"
+"文档或文档修改版本引起或带来的任何直接的、间接的、特殊的、偶然的或继发的损失"
+"承担任何民事(包括疏忽)、合同或其它方面的责任，这些损失包括但不限于信誉损失、"
+"工作停止、计算机失败或故障，或任何以及所有其它损失或由此引发的或与之相关的损"
+"失，即使这些方已被告知存在出现此类损失的可能性时也是如此。"
+
+#: C/gnotski.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"本文档以及文档的修改版本都是在遵循 GNU 自由文档许可证的条款下提供，这表示具有"
+"以下含义：<placeholder-1/>"
+
+#: C/gnotski.xml:64(firstname)
+msgid "Andrew"
+msgstr "Andrew"
+
+#: C/gnotski.xml:65(surname)
+msgid "Sobala"
+msgstr "Sobala"
+
+#: C/gnotski.xml:68(email)
+msgid "andrew@sobala.net"
+msgstr "andrew@sobala.net"
+
+#: C/gnotski.xml:73(firstname)
+msgid "Lars"
+msgstr "Lars"
+
+#: C/gnotski.xml:74(surname)
+msgid "Rydlinge"
+msgstr "Rydlinge"
+
+#: C/gnotski.xml:76(orgname) C/gnotski.xml:85(orgname)
+msgid "GNOME Project"
+msgstr "GNOME 项目"
+
+#: C/gnotski.xml:77(email)
+msgid "Lars.Rydlinge@HIG.SE"
+msgstr "Lars.Rydlinge@HIG.SE"
+
+#: C/gnotski.xml:82(firstname)
+msgid "Ross"
+msgstr "Ross"
+
+#: C/gnotski.xml:83(surname)
+msgid "Burton"
+msgstr "Burton"
+
+#: C/gnotski.xml:86(email)
+msgid "ross@burtonini.com"
+msgstr "ross@burtonini.com"
+
+#: C/gnotski.xml:136(revnumber)
+msgid "V2.0"
+msgstr "V2.0"
+
+#: C/gnotski.xml:137(date)
+msgid "13 August 2002"
+msgstr "2002年8月13日"
+
+#: C/gnotski.xml:139(para)
+msgid "Andrew Sobala <email>andrew@sobala.net</email>"
+msgstr "Andrew Sobala <email>andrew@sobala.net</email>"
+
+#: C/gnotski.xml:148(releaseinfo)
+msgid "This manual describes version 2.12 of GNOME Klotski."
+msgstr "本手册讲述的是 GNOME 华容道2.12版。"
+
+#: C/gnotski.xml:151(title)
+msgid "Feedback"
+msgstr "反馈"
+
+#: C/gnotski.xml:152(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Klotski</"
+"application> application or this manual, follow the directions in the <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
+"ulink>."
+msgstr ""
+"要报告关于<application>华容道</application>程序或使用手册中的缺陷，或者提出建"
+"议，请参照 <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME "
+"反馈页</ulink> 上的指导。"
+
+#: C/gnotski.xml:161(primary)
+msgid "GNOME Klotski"
+msgstr "GNOME 华容道小游戏"
+
+#: C/gnotski.xml:167(title)
+msgid "Introduction"
+msgstr "介绍"
+
+#: C/gnotski.xml:168(para)
+msgid ""
+"The <application>Klotski</application> application is a clone of the Klotski "
+"game. The objective is to move the patterned block to the area bordered by "
+"green markers."
+msgstr ""
+"<application>华容道</application>小游戏是 Klotski 滑块游戏的克隆版本。游戏目"
+"标是移动带图案的大方块到达绿色标记处。"
+
+#: C/gnotski.xml:171(para)
+msgid ""
+"<application>Klotski</application> was written by Lars Rydlinge (<email>Lars."
+"Rydlinge@HIG.SE</email>)."
+msgstr ""
+"<application>华容道</application>小游戏由 Lars Rydlinge (<email>Lars."
+"Rydlinge@HIG.SE</email>)编写。"
+
+#: C/gnotski.xml:174(para)
+msgid ""
+"<application>Klotski</application> is included in the gnome-games package, "
+"which is part of the GNOME desktop environment. This document describes "
+"version 2.12 of <application>Klotski</application>."
+msgstr ""
+"<application>华容道</application>小游戏包含在 GNOME 游戏软件包内，它是 GNOME "
+"桌面环境的一部分。本手册讲述的是<application>华容道</application>小游戏2.12"
+"版。"
+
+#: C/gnotski.xml:177(para)
+msgid ""
+"This program is distributed under the terms of the GNU General Public "
+"license as published by the Free Software Foundation; either version 2 of "
+"the License, or (at your option) any later version. A copy of this license "
+"can be found at this <ulink url=\"ghelp:gpl\" type=\"help\">link</ulink>, or "
+"in the file COPYING included with the source code of this program."
+msgstr ""
+"本程序依照自由软件基金会发布的 GNU 通用许可证第2版或更高(如您所愿)版本下发"
+"布，您可以在此 <ulink url=\"ghelp:gpl\" type=\"help\">链接</ulink>，或者在程"
+"序的源文件中找到许可协议的副本。"
+
+#: C/gnotski.xml:184(para)
+msgid ""
+"To report a bug or make a suggestion regarding this application or this "
+"manual, follow the directions in this <ulink url=\"ghelp:user-guide?feedback-"
+"bugs\" type=\"help\">document</ulink>."
+msgstr ""
+"要报告本程序或本手册的缺陷或者提出建议，请参照 <ulink url=\"ghelp:user-guide?"
+"feedback-bugs\" type=\"help\">文档</ulink> 上的指导。"
+
+#: C/gnotski.xml:193(title)
+msgid "Objective"
+msgstr "目标"
+
+#: C/gnotski.xml:200(title)
+msgid "The winning move"
+msgstr "移动成功"
+
+#: C/gnotski.xml:207(phrase)
+msgid ""
+"The patterned block should be moved to the space bordered by the green "
+"markers."
+msgstr "把带图案大方块移动到绿色标记的空地上。"
+
+#: C/gnotski.xml:194(para)
+msgid ""
+"The objective of <application>Klotski</application> is to move the patterned "
+"block to the green markers in as few moves as possible. You do this by "
+"moving the blocks one at a time with the mouse until you can get the "
+"patterned block to the markers. <placeholder-1/>"
+msgstr ""
+"<application>华容道</application>小游戏的任务是，把带图案的大方块移动到绿色标"
+"记处，用尽可能少的移动次数。您可以在各个方块上点击鼠标拖动它，直到带图案的大"
+"方块移到标记处。<placeholder-1/>"
+
+#: C/gnotski.xml:219(title)
+msgid "Playing <application>Klotski</application>"
+msgstr "开始<application>华容道</application>小游戏"
+
+#: C/gnotski.xml:242(title)
+msgid "To Start <application>Klotski</application>"
+msgstr "运行<application>华容道</application>小游戏"
+
+#: C/gnotski.xml:243(para)
+msgid ""
+"You can start <application>Klotski</application> from the Applications menu "
+"by choosing <menuchoice><guisubmenu>Games</guisubmenu><guimenuitem>Gnotski</"
+"guimenuitem></menuchoice>."
+msgstr ""
+"您可以点菜单 <menuchoice><guisubmenu>游戏</guisubmenu><guimenuitem>华容道</"
+"guimenuitem></menuchoice> 来启动<application>华容道</application>小游戏。"
+
+#: C/gnotski.xml:252(title)
+msgid "The main window"
+msgstr "主窗口"
+
+#: C/gnotski.xml:253(para)
+msgid ""
+"When you start <application><application>Klotski</application></"
+"application>, the following window is displayed."
+msgstr ""
+"<application><application>华容道</application></application>启动成功后，将会"
+"显示下面的窗口。"
+
+#: C/gnotski.xml:257(title)
+msgid "<application>Klotski</application> Start Up Window"
+msgstr "<application>华容道</application> 启动窗口"
+
+#: C/gnotski.xml:0(application)
+msgid "Klotski"
+msgstr "华容道"
+
+#: C/gnotski.xml:264(phrase)
+msgid ""
+"Shows <placeholder-1/> main window. Contains titlebar, menubar, game area "
+"and statusbar. Menubar contains Game and Help menus."
+msgstr ""
+"显示 <placeholder-1/> 主窗口，包含标题栏、菜单栏、游戏区域和状态栏，菜单栏包"
+"括游戏菜单和帮助菜单。"
+
+#: C/gnotski.xml:275(term)
+msgid "Menubar"
+msgstr "菜单栏"
+
+#: C/gnotski.xml:279(term)
+msgid "Game menu"
+msgstr "游戏菜单"
+
+#: C/gnotski.xml:281(para)
+msgid ""
+"The game menu allows you to start new games, view the highest scores and "
+"quit the program."
+msgstr "在游戏菜单中，您可以开始一个新游戏，查看排行榜以及退出程序。"
+
+#: C/gnotski.xml:286(term)
+msgid "Help menu"
+msgstr "帮助菜单"
+
+#: C/gnotski.xml:288(para)
+msgid ""
+"The help menu allows you to view the documentation for <application>Klotski</"
+"application>"
+msgstr ""
+"在帮助菜单中，您可以查看<application>华容道</application>游戏的文档说明。"
+
+#: C/gnotski.xml:295(term)
+msgid "Game area"
+msgstr "游戏区域"
+
+#: C/gnotski.xml:297(para)
+msgid ""
+"The game area shows the blocks in the current game. You can drag the blocks "
+"around with the mouse as described in <xref linkend=\"gnotski-moving\"/>."
+msgstr ""
+"游戏区域显示许多方块，您可以用鼠标拖动方块移动，参考： <xref linkend="
+"\"gnotski-moving\"/>。"
+
+#: C/gnotski.xml:303(term)
+msgid "Statusbar"
+msgstr "状态栏"
+
+#: C/gnotski.xml:305(para)
+msgid "The statusbar shows how many moves you have taken so far."
+msgstr "状态栏显示了您已经移动了多少步。"
+
+#. ==== End of Figure ====
+#: C/gnotski.xml:272(para)
+msgid ""
+"The <application>Klotski</application> window contains the following "
+"elements: <placeholder-1/>"
+msgstr ""
+"<application>华容道</application>小游戏窗口包含下面的组件：<placeholder-1/>"
+
+#: C/gnotski.xml:314(title)
+msgid "Starting a new game"
+msgstr "开始新游戏"
+
+#: C/gnotski.xml:315(para)
+msgid ""
+"Use the <guimenu>Game menu</guimenu> to start a new game. The items "
+"<guimenuitem>Next Puzzle</guimenuitem>and <guimenuitem>Previous Puzzle</"
+"guimenuitem> allows you to navigate the puzzles sequentially. Each puzzle "
+"belongs to one of the four categories found in the submenus named "
+"<guisubmenu>HuaRong Trail</guisubmenu>, <guisubmenu>Challenge Pack</"
+"guisubmenu>, <guisubmenu>Skill Pack</guisubmenu>, and <guisubmenu>Minoru "
+"Climb</guisubmenu>. In these submenus, each puzzle name refers to a game "
+"scenario."
+msgstr ""
+"点<guimenu>游戏</guimenu>菜单开始一个新游戏，<guimenuitem>下一布局</"
+"guimenuitem> 和 <guimenuitem>上一布局</guimenuitem> 菜单项可以访问各个布局。"
+"每个布局都有四个菜单项的分类项：<guisubmenu>华容道</guisubmenu>、<guisubmenu>"
+"挑战关</guisubmenu>, <guisubmenu>技巧关</guisubmenu>，和 <guisubmenu>Minoru "
+"攀登</guisubmenu>。"
+
+#: C/gnotski.xml:323(title)
+msgid "Starting a game"
+msgstr "开始游戏"
+
+#: C/gnotski.xml:324(para)
+msgid ""
+"To start the hardest game provided, choose <menuchoice><guimenu>Game</"
+"guimenu><guisubmenu>Minoru Climb</guisubmenu><guimenuitem>Climb 24 Pro</"
+"guimenuitem></menuchoice>"
+msgstr ""
+"要开始一个最难的游戏，点菜单 <menuchoice><guimenu>游戏</"
+"guimenu><guisubmenu>Minoru 攀登</guisubmenu><guimenuitem>攀登 24 级</"
+"guimenuitem></menuchoice>。"
+
+#: C/gnotski.xml:335(title)
+msgid "Moving blocks"
+msgstr "移动方块"
+
+#: C/gnotski.xml:336(para)
+msgid ""
+"To move a block, click on it, hold down the mouse button and drag it to its "
+"new location. You cannot move the green blocks or the block that borders the "
+"game. You cannot move a block to a space already occupied by another block, "
+"with the exception that you may move the patterned block through the green "
+"blocks to win."
+msgstr ""
+"要移动一个方块，点击后按住鼠标不松，拖动它到新位置。绿方块和边框不能移动，被"
+"其他方块挡住的也不能移动，只有带图案的大方块可以穿过绿方块到达目的地。"
+
+#: C/gnotski.xml:356(title)
+msgid "Authors"
+msgstr "作者"
+
+#: C/gnotski.xml:357(para)
+msgid ""
+"<application>Klotski</application> was written by Lars Rydlinge (<email>lars."
+"rydlinge@hig.se</email>). This manual was written by Andrew Sobala. To "
+"report a bug or make a suggestion regarding this application or this manual, "
+"follow the directions in this <ulink url=\"ghelp:user-guide?feedback-bugs\" "
+"type=\"help\">document</ulink>."
+msgstr ""
+"<application>华容道</application>小游戏由 Lars Rydlinge (<email>lars."
+"rydlinge@hig.se</email>) 编写，本手册是由 Andrew Sobala 编写。要报告本程序或"
+"本手册的缺陷或者提出建议，请参照 <ulink url=\"ghelp:user-guide?feedback-bugs"
+"\" type=\"help\">文档</ulink> 上的指导。"
+
+#: C/gnotski.xml:377(title)
+msgid "License"
+msgstr "许可协议"
+
+#: C/gnotski.xml:378(para)
+msgid ""
+"This program and tile artwork is free software; you can redistribute it and/"
+"or modify it under the terms of the <citetitle>GNU General Public License</"
+"citetitle> as published by the Free Software Foundation; either version 2 of "
+"the License, or (at your option) any later version."
+msgstr ""
+"本程序和界面设计属于自由软件，您可以在遵守自由软件基金会发布的 "
+"<citetitle><ulink type=\"help\" url=\"gnome-help:gpl\">GNU 通用公共许可证</"
+"ulink></citetitle> 第2版或更高(如您所愿)版本下，重新分发和/或修改它。"
+
+#: C/gnotski.xml:385(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"本程序的发布意图是希望它有所用处，但请注意它没有任何担保，甚至不包括商业用"
+"途、以及特殊目的保证。更多相关细节，请参阅 <citetitle>GNU 通用许可证</"
+"citetitle>。"
+
+#: C/gnotski.xml:391(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"在<citetitle>GNOME 用户指南</citetitle> 的附录中包含了一份<citetitle>GNU 通用"
+"许可证</citetitle>的副本，您也可以通过访问自由软件基金会的<ulink type=\"http"
+"\" url=\"http://www.fsf.org\">网站</ulink>上获得，或者写信给 <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address> 来索取。"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/gnotski.xml:0(None)
+msgid "translator-credits"
+msgstr "TeliuTe <teliute@163.com>, 2010"

@@ -1,0 +1,119 @@
+ <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Network Games</title>
+  <para>
+    &appname; support networked multiplayer games which is provided by <ulink type="http"
+    url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink>. By connecting to a &appname; server
+    on the Internet, you can challenge other players in multiplayer games.
+    For news, updates and a list of servers to connect to, see the <ulink type="http"
+    url="http://www.gnome.org/projects/gnome-games/">gnome-games website</ulink>.
+  </para>
+  <para>
+    To start the multiplayer game of &appname;, select <menuchoice><guimenu>Game</guimenu> 
+    <guimenuitem>Network Game</guimenuitem></menuchoice> on the &appname; menu.
+  </para> 
+
+<sect2 id="connecting">
+<title>Connecting to a &appname; network server</title>
+<para>
+The &appname; connection dialog is shown initially when starting a new
+network game. This dialog allows you to select a server to connect to,
+and the username that you will have while connected to that server.  
+</para>
+
+<para>
+It is possible to connect to a server with either a guest account or a normal
+registered account. Guest accounts allows you to anonymously login, while
+a normal login account allows you to reserve your own username which
+is protected by the password that you choose.
+</para>
+
+<para> The <guimenuitem>Guest Login</guimenuitem> option should be selected
+if you want an anonymous guest account. If you want to create a new 
+login account, then select the <guimenuitem>First-time Login</guimenuitem> 
+option, with the username, password and email of your choice.
+If you have already created your account, you can connect by selecting
+the <guimenuitem>Normal Login</guimenuitem> option, and enter the
+username and password that you have chosen.
+</para>
+<para>
+To connect to a server, click on the <guimenuitem>Connect</guimenuitem> button.
+</para>
+<figure id="connect">
+<title>The &appname; network connection dialog.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>The &appname; network connection dialog.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Joining a game room</title>
+<para>
+Once you have successfully connected to a server, you can choose which game room to join. To play a multiplayer game of &appname;, select the &appname; room. If you want to host your own game, then click on the Launch button. This creates a new table where other players can participate in a game against you. 
+If there are any other games already started, then you can double-click on an existing game table to join it.
+The list of game tables on the right shows you the number of available seats, which means the
+number of players that can join the game table.
+</para>
+<figure id="tables">
+<title>This &appname; network dialog allows you to join a game room to find other players.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>This &appname; network dialog allows you to join a game room to find other players.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>
+When creating a new table for &appname; games, a preference dialog is displayed which allows you to
+customize the game, such as set the minimum number of players for the game. Once the total
+number of seats have been taken, then no more players are allowed to join that game table.
+</para>
+<para>
+It is possible to chat with other players in network games. Ask for advice or help playing the games,
+but please be polite against other players.
+</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Waiting for other players to join the game</title>
+<para>
+Once you have successfully joined a game table, then you have to wait until enough
+players have joined the table. The <guimenuitem>Players List</guimenuitem> menu item
+allows you to see a list of the players who have joined the game.
+The game will begin immediately when the total number of players in the the game have been reached.
+</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Playing multiplayer &appname; games</title>
+<para>
+Multiplayer &appname; games have pretty much the same rules as normal &appname; games,
+except that you are now playing against human players. This means that other
+strategies might possibly be better than when playing against AI players.
+</para>
+<para>
+Once a player has won, the game ends and you can return to the initial network game screen.
+Then you can play yet another game of addictive &appname; multiplayer!
+</para>
+</sect2>
+
+</sect1>

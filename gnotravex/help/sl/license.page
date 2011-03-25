@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="license" xml:lang="sl">
+  
+  <info>
+    <link type="seealso" xref="index"/>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-28" status="draft"/>
+    <desc>Pravne podrobnosti.</desc>
+  </info>
+
+  <title>Dovoljenje</title>
+  <p>To delo je distribuirano pod licenco CreativeCommons Attribution-Share Alike 3.0 Unported</p>
+  <p>Lahko:</p>
+  <terms>
+    <item>
+      <title><em>Delite</em></title>
+      <p>Kopiranje, distribucijo in priobčevanje dela javnosti.</p>
+    </item>
+    <item>
+      <title><em>Predelate</em></title>
+      <p>Prilagodite delo.</p> 
+    </item>
+  </terms>
+  <p>Pod naslednjimi pogoji:</p>
+  <terms>
+    <item>
+      <title><em>Priznanje avtorstva</em></title>
+      <p>Priznati morate avtorstvo na način kot sta ga navedla avtor ali dajalec linece (toda ne na način, ki namiguje na podpirajo vas ali vašo uporabo dela). </p>
+    </item>
+    <item>
+      <title><em>Deljenje pod enakimi pogoji</em></title>
+      <p>V primeru da spremenite, preoblikujete ali gradite na tem delu, lahko nastalo delo distribuirate le pod enako, podobno ali združljivo licenco.</p>
+    </item>
+  </terms>
+  <p>Za polno besedilo licence si oglejte <link href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">spletišče CreativeCommons </link> ali preberite polno <link href="http://creativecommons.org/licenses/by-sa/3.0/">listino Commons</link>.</p>
+</page>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Four-in-a-Row</application>">
+<!ENTITY appname "Four-in-a-Row">
+<!ENTITY version "2.8">
+]>
+<!-- ===== DOCUMENT HEADER ===== -->
+<article id="index" lang="en_GB">
+<!-- please do not change the id -->
+<!-- translators, change lang to the appropriate code -->
+  <articleinfo>
+    <title>Four-in-a-Row Manual</title>
+    <abstract role="description">
+      <para>The object of Four-in-a-Row is to place four pieces in a vertical, horizontal, or diagonal row while the opponent tries to block and make his orher own row of four. Four-in-a-Row can be played against another human or the computer.</para>
+    </abstract>
+
+    <copyright>
+      <year>2001–2002</year>
+      <holder>Timothy Musson</holder>
+    </copyright><copyright><year>2007</year><holder>David Lodge (dave@cirt.net)</holder></copyright><copyright><year>2009</year><holder>Philip Withnall (philip@tecnocode.co.uk)</holder></copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+     <year>2000</year>
+     <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+    <publisher role="maintainer"> 
+      <publishername>GNOME Documentation Project</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+	<para>Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation Licence (GFDL), Version 1.1 or any later version published by the Free Software Foundation with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy of the GFDL at this <ulink type="help" url="ghelp:fdl">link</ulink> or in the file COPYING-DOCS distributed with this manual.</para>
+         <para>This manual is part of a collection of GNOME manuals distributed under the GFDL. If you want to distribute this manual separately from the collection, you can do so by adding a copy of the licence to the manual, as described in section 6 of the licence.</para>
+
+	<para>Many of the names used by companies to distinguish their products and services are claimed as trademarks. Where those names appear in any GNOME documentation, and the members of the GNOME Documentation Project are made aware of those trademarks, then the names are in capital letters or initial capital letters.</para>
+
+	<para>DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS OF THE GNU FREE DOCUMENTATION LICENCE WITH THE FURTHER UNDERSTANDING THAT: <orderedlist>
+		<listitem>
+		  <para>DOCUMENT IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE RISK AS TO THE QUALITY, ACCURACY AND PERFORMANCE OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENCE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS AUTHORISED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND</para>
+		</listitem>
+		<listitem>
+		  <para>UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE), CONTRACT OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY CONTRIBUTOR OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+
+    <authorgroup>
+      <author>
+        <firstname>Timothy</firstname>
+        <surname>Musson</surname>
+        <affiliation>
+          <!-- <orgname></orgname> -->
+          <address><email>trmusson@ihug.co.nz</email></address>
+        </affiliation>
+      </author>
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+
+      <othercredit role="translator">
+        <firstname>Latin</firstname> 
+        <surname>Translator 1</surname> 
+        <affiliation> 
+          <orgname>Latin Translation Team</orgname> 
+          <address> <email>translator@gnome.org</email> </address> 
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+        <revnumber>Four-in-a-Row Manual V2.8</revnumber>
+        <date>September 2004</date>
+        <revdescription>
+          <para role="author">Timothy Musson <email>trmusson@ihug.co.nz</email></para>
+          <para role="publisher"/>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>This manual describes version 2.12 of Four-in-a-Row.</releaseinfo>
+
+    <legalnotice>
+      <title>Feedback</title>
+      <para>To report a bug or make a suggestion regarding the Four-in-a-Row
+        application or this manual, follow the directions in the
+        <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME Feedback Page</ulink>.
+      </para>
+    </legalnotice>
+  </articleinfo>
+
+
+  <!-- ============= Document Body ============================= -->
+
+  <!-- ============= Introduction ============================== -->
+
+
+  <sect1 id="intro">
+
+    <title>Introduction</title>
+
+    <para><application>Four-in-a-Row</application> is a four-in-a-row game for the GNOME Project. The object of the game is to build a line of four of your marbles while trying to stop your opponent (human or computer) building a line of his or her own. A line can be horizontal, vertical or diagonal.</para>
+
+    <para>To run <application>Four-in-a-Row</application>, select <guimenuitem>Four-in-a-Row</guimenuitem> from the <guisubmenu>Games</guisubmenu> submenu of the <guimenu>Main Menu</guimenu>, or type <command>gnect</command> on the command line.</para>
+
+    <para><application>Four-in-a-Row</application> is included in the gnome-games package, which is part of the GNOME desktop environment. This document describes version 2.8 of <application>Four-in-a-Row</application>.</para>
+
+   <para>Four-in-a-Row also features <link linkend="network-games">multiplayer</link> support with two human players in hotseat or network mode.</para>
+
+
+  </sect1>
+
+
+  <!-- ============= Usage ===================================== -->
+
+
+  <sect1 id="usage">
+
+    <title>Basic Usage</title>
+
+    <!-- ===== How to play ===== -->
+
+    <sect2 id="playing">
+
+      <title>Playing Four-in-a-Row</title>
+
+      <para>To start a new game of Four-in-a-Row choose <menuchoice><guimenu>Game</guimenu><guimenuitem>New Game</guimenuitem></menuchoice>.</para>
+
+      <para>The <interface>game board</interface> consists of seven columns and six rows. Above it, a special row indicates the current player and the marble about to be played. Each move consists of dropping a marble in one of the columns. The marble lands on the topmost empty row of the chosen column.</para>
+        
+      <para>To make a move, click on a column with the mouse. To play with the keyboard, move the marble in the top row with the left and right arrow keys, and drop it in place with the down arrow key. Your marble will drop into the topmost empty row of that column.</para>
+
+      <!-- Figure -->
+      <mediaobject id="mainwindow-fig">
+        <imageobject>
+          <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="trm"/>
+        </imageobject>
+        <textobject>
+          <phrase>Four-in-a-Row's Main Window</phrase>
+        </textobject>
+        <caption><para>Four-in-a-Row's Main Window</para></caption>
+      </mediaobject>
+
+      <para>The game is won when one of the two players manages to line up four of his or her marbles horizontally, vertically or diagonally. If the board fills up without a win, the game ends in a draw.</para>
+
+    </sect2>
+    
+    <!-- ===== Commands ===== -->  
+    
+    <sect2 id="commands">
+      <title>Commands</title>
+      <anchor id="menubar"/><!-- id for removed section -->
+      
+      <para>To take back a move, choose <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>Z</keycap></keycombo></shortcut><guimenuitem>Undo move</guimenuitem></menuchoice>. If you're playing against a friend, this will undo one move. If you're playing against the computer, this will undo the computer's last move and then yours. Repeating this will return the board to its initial state.</para>
+      <para>Choose <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>H</keycap></keycombo></shortcut><guimenuitem>Hint</guimenuitem></menuchoice> to get a suggestion from the computer for your next move. This is shown in the status bar.</para>
+      
+      <para>Choose <menuchoice><guimenuitem>Scores</guimenuitem></menuchoice> to show a tally of wins and draws for the current playing session. The scores will be reset to zero if Player Selection is changed in Preferences.</para>      
+
+      
+    </sect2>  
+
+    <!-- ===== Preferences ===== -->
+
+    <sect2 id="prefsdialog">
+
+      <title>Preferences</title>
+
+      <para>To change the game's settings, select <guimenuitem>Preferences</guimenuitem> from the <guimenu>Settings</guimenu> menu. This opens the <interface>Preferences Dialogue</interface>.</para>
+
+      <para>Configuration options in the <guilabel>Game</guilabel> tab are: <variablelist>
+
+          <varlistentry>
+            <term><guilabel>Player One</guilabel> and <guilabel>Player Two</guilabel></term>
+            <listitem>
+              <para>These two columns tell <application>Four-in-a-Row</application> who's playing and, if it is the computer, how well they play. To play against a friend, select <guilabel>Human</guilabel> for both <guilabel>Player One</guilabel> and <guilabel>Player Two</guilabel>.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Theme</guilabel></term>
+            <listitem>
+              <para>The theme menu lists available themes and lets you choose your favourite.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Enable Animation</guilabel></term>
+            <listitem>
+              <para>Here you can toggle the game's animation on or off.</para>
+            </listitem>
+          </varlistentry>
+
+        </variablelist></para>
+      <para>Finally there is a <guilabel>Controls</guilabel> tab to change the keyboard controls. To change a control, double click the appropriate entry and then press the new key.</para>
+
+    </sect2>
+  </sect1>
+
+
+  <!-- ===== Custom Themes ===================================== -->
+
+
+  <sect1 id="custom">
+
+    <title>Creating New Themes</title>
+
+    <para>This section is included in case you'd like to make your own themes for <application>Four-in-a-Row</application>. It assumes you're familiar with basic text editing, graphics software and the command line.</para>
+
+    <sect2 id="images">
+
+      <title>Images</title>
+
+      <para><application>Four-in-a-Row</application>'s tile sets contain six tiles of equal size, lined up horizontally. From left to right:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Player One's marble as it appears on the game board</para>
+        </listitem>
+        <listitem>
+          <para>Player Two's marble as it appears on the game board</para>
+        </listitem>
+        <listitem>
+          <para>The game board's background</para>
+        </listitem>
+        <listitem>
+          <para>The top row's background</para>
+        </listitem>
+        <listitem>
+          <para>Player One's marble as it appears on the top row</para>
+        </listitem>
+        <listitem>
+          <para>Player Two's marble as it appears on the top row</para>
+        </listitem>
+      </orderedlist>
+
+      <figure id="shot1">
+        <title>An example tile set</title>
+        <screenshot>
+          <screeninfo>This image shows the six tiles in a tile set</screeninfo>
+          <graphic format="PNG" fileref="figures/tileset.png" srccredit="TRM"/>
+        </screenshot>
+      </figure>
+
+      <para>Tiles three and four will be repeated over the game board and top row unless a full window background image is specified in the theme file.</para>
+
+      <tip>
+        <title>TIP</title>
+        <para>PNG format is recommended for tile sets. The first, second, fifth and sixth tiles should contain some transparency if you want the background to show through. The third and fourth tiles should be solid, with no transparency, even if you'll be using a full window background image with your theme.</para>
+      </tip>
+
+      <tip>
+        <title>TIP</title>
+        <para>Tiles can be square or rectangular, and any size you like. Most of the tile sets that come with <application>Four-in-a-Row</application> use square tiles measuring 50 pixels by 50 pixels.</para>
+      </tip>
+
+      <para>For a full window background image, there's a bit more work to do. Let's say your tiles measure 50 by 50 pixels each. The game's display measures 7 by 7 tiles, including the top row, so the ideal background image for your tile set measures 350 by 350 pixels.</para>
+
+      <tip>
+        <title>TIP</title>
+        <para><application>Four-in-a-Row</application> will automatically scale the background image if it doesn't match the tile set. This means you can make "large" and "small" versions of your theme, both using the same background image, just by having a large and a small version of your tile set.</para>
+      </tip>
+
+      <para>So, you now have a tile set and perhaps a background image to go with it. The next step is to put them in the right place.</para>
+
+    </sect2>
+
+
+    <sect2 id="directories">
+
+      <title>Putting It Together</title>
+
+      <para>The last step is to put your image or images where <application>Four-in-a-Row</application> can find them. You could put them in <application>Four-in-a-Row</application>'s install directory (which will depend on your particular system), but your home directory is probably a better idea.</para>
+
+      <para>Make a <filename class="directory">~/.gnect</filename> directory, and a <filename class="directory">~/.gnect/pixmaps</filename> directory. Those names are important, as <application>Four-in-a-Row</application> won't look anywhere else.</para>
+
+      <para>Copy your image(s) into the pixmaps directory.</para>
+
+      <para>If you start <application>Four-in-a-Row</application> from the command line, it'll give you clues about any problems it has with your new theme. If it has none, you'll find your new theme listed the <interface>Preferences Dialogue</interface>.</para>
+
+      <para>Have fun!</para>
+
+    </sect2>
+
+
+  </sect1>
+
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Network Games</title>
+  <para><application>Four-in-a-Row</application> supports networked multiplayer games which are provided by <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink>. By connecting to a <application>Four-in-a-Row</application> server on the Internet, you can challenge other players in multiplayer games. For news, updates and a list of servers to connect to, see the <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">gnome-games website</ulink>.</para>
+  <para>To start the multiplayer game of <application>Four-in-a-Row</application>, select <menuchoice><guimenu>Game</guimenu><guimenuitem>Network Game</guimenuitem></menuchoice> on the <application>Four-in-a-Row</application> menu.</para> 
+
+<sect2 id="connecting">
+<title>Connecting to a <application>Four-in-a-Row</application> network server</title>
+<para>The <application>Four-in-a-Row</application> connection dialogue is shown initially when starting a new network game. This dialogue allows you to select a server to which to connect, and the username that you will have while connected to that server.</para>
+
+<para>It is possible to connect to a server with either a guest account or a normal registered account. Guest accounts allows you to anonymously login, while a normal login account allows you to reserve your own username which is protected by the password that you choose.</para>
+
+<para>The <guilabel>Guest Login</guilabel> option should be selected if you want an anonymous guest account. If you want to create a new login account, then select the <guilabel>First-time Login</guilabel> option, with the username, password and e-mail address of your choice. If you have already created your account, you can connect by selecting the <guilabel>Normal Login</guilabel> option, and enter the username and password that you have chosen.</para>
+<para>To connect to a server, click on the <guibutton>Connect</guibutton> button.</para>
+<figure id="connect">
+<title>The <application>Four-in-a-Row</application> network connection dialogue.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>The <application>Four-in-a-Row</application> network connection dialogue.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Joining a game room</title>
+<para>Once you have successfully connected to a server, you can choose which game room to join. To play a multiplayer game of <application>Four-in-a-Row</application>, select the <application>Four-in-a-Row</application> room. If you want to host your own game, then click on the <guibutton>Launch</guibutton> button. This creates a new table where other players can participate in a game against you. If there are any other games already started, then you can double-click on an existing game table to join it. The list of game tables on the right shows you the number of available seats, which means the number of players that can join the game table.</para>
+<figure id="tables">
+<title>This <application>Four-in-a-Row</application> network dialogue allows you to join a game room to find other players.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>This <application>Four-in-a-Row</application> network dialogue allows you to join a game room to find other players.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>When creating a new table for <application>Four-in-a-Row</application> games, a preference dialogue is displayed which allows you to customise the game, such as set the minimum number of players for the game. Once the total number of seats have been taken, then no more players are allowed to join that game table.</para>
+<para>It is possible to chat with other players in network games. Ask for advice or help playing the games, but please be polite to other players.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Waiting for other players to join the game</title>
+<para>Once you have successfully joined a game table, you have to wait until enough players have joined the table. The <guimenuitem>Players List</guimenuitem> menu item allows you to see a list of the players who have joined the game. The game will begin immediately when the total number of players in the the game have been reached.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Playing multiplayer <application>Four-in-a-Row</application> games</title>
+<para>Multiplayer <application>Four-in-a-Row</application> games have pretty much the same rules as normal <application>Four-in-a-Row</application> games, except that you are now playing against human players. This means that other strategies might possibly be better than when playing against AI players.</para>
+<para>Once a player has won, the game ends and you can return to the initial network game screen. Then you can play yet another game of addictive <application>Four-in-a-Row</application> multiplayer!</para>
+</sect2>
+
+</sect1>
+
+
+
+  <!-- ===== Bugs ============================================== -->
+
+
+  <sect1 id="bugs">
+
+    <title>Known Bugs and Limitations</title>
+
+    <para>Occasionally a marble-dropping animation doesn't look as smooth as it should.</para>
+
+  </sect1>
+
+
+  <!-- ===== Authors =========================================== -->
+
+
+  <sect1 id="authors">
+
+    <title>Authors</title>
+
+    <para><application>Four-in-a-Row</application> was written by Timothy Musson (<email>trmusson@ihug.co.nz</email>) and David Neary (<email>bolsh@gimp.org</email>). Various others have taken the time to help in many ways since work on <application>Four-in-a-Row</application> began.</para>
+    <para>The <ulink type="http" url="http://www.ce.unipr.it/~gbe/velena.html">Velena Engine</ulink>, <application>Four-in-a-Row</application>'s main computer player, was written by Giuliano Bertoletti. We're grateful to him for allowing us to include his work, without which <application>Four-in-a-Row</application> wouldn't be nearly as worthwhile.</para>
+    <para>This manual was written by Timothy Musson.</para>
+    <para>To report a bug or make a suggestion regarding this application or this manual, follow the directions in this <ulink url="ghelp:user-guide?feedback-bugs" type="help">document</ulink>.</para>
+
+
+<!-- For translations: uncomment this:
+
+  <para>
+    Latin translation was done by ME
+    (<email>MYNAME@MYADDRESS</email>). Please send all comments and
+    suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+-->
+
+  </sect1>
+
+
+  <!-- ============= License =================================== -->
+
+
+  <sect1 id="license">
+
+    <title>Licence</title>
+
+    <para>This program is free software; you can redistribute it and/or modify it under the terms of the <citetitle>GNU General Public Licence</citetitle> as published by the Free Software Foundation; either version 2 of the Licence, or (at your option) any later version.</para>
+
+    <para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public License</citetitle> for more details.</para>
+
+    <para>A copy of the <citetitle>GNU General Public Licence</citetitle> is included as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also obtain a copy of the <citetitle>GNU General Public Licence</citetitle> from the Free Software Foundation by visiting <ulink url="http://www.fsf.org" type="http">their Web site</ulink> or by writing to <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+
+  </sect1>
+
+</article>

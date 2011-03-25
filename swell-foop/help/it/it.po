@@ -1,0 +1,569 @@
+# Italian translation of same-gnome manual
+# Copyright (C) 2008, 2009 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-games license.
+# Alessio Treglia <quadrispro@ubuntu.com>, 2008
+# Milo Casagrande <milo@ubuntu.com>, 2009
+msgid ""
+msgstr ""
+"Project-Id-Version: manuale same-gnome\n"
+"POT-Creation-Date: 2009-03-11 20:08+0000\n"
+"PO-Revision-Date: 2009-03-11 21:16+0100\n"
+"Last-Translator: Milo Casagrande <milo@ubuntu.com>\n"
+"Language-Team: Italian <tp@lists.linux.it>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: C/legal.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr "Questo documento può essere copiato, distribuito o modificato solo in conformità con i termini della GNU Free Documentation License (GFDL) Versione 1.1 o delle versioni successive pubblicate dalla Free Software Foundation senza sezioni invariabili, frontespizi e testi di copertina. Una copia della GFDL è disponibile a questo <ulink type=\"help\" url=\"ghelp:fdl\">collegamento</ulink> o nel file COPYING-DOCS distribuito con questo manuale."
+
+#: C/legal.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Questo manuale è parte di una collezione di manuali di GNOME distribuita "
+"sotto la GFDL. Se si vuole distribuire questo manuale separatamente dalla "
+"collezione, lo si può fare aggiungendo una copia della licenza al manuale, "
+"come descritto nella sezione 6 della licenza."
+
+#: C/legal.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Molti dei nomi utilizzati dalle aziende per distinguere i loro prodotti e "
+"servizi sono rivendicati come marchi commerciali. Dove questi nomi appaiono "
+"nella documentazione di GNOME, e i membri del progetto di documentazione di "
+"GNOME sono informati di questi marchi commerciali, allora i nomi sono in "
+"lettere maiuscole o con la lettera iniziale maiuscola."
+
+#: C/legal.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"IL DOCUMENTO VIENE FORNITO SENZA GARANZIE DI ALCUN TIPO,ESPLICITE O "
+"IMPLICITE, INCLUSE, MA SENZA LIMITAZIONE, LE GARANZIE ATTESTANTI CHE IL "
+"DOCUMENTO O LE SUE VERSIONI MODIFICATE SIANO PRIVI DI DIFETTI, "
+"COMMERCIALIZZABILI, IDONEI A UN DETERMINATO SCOPO O CHE NON VIOLINO DIRITTI "
+"DI TERZI. SI DECLINA QUALUNQUE RESPONSABILITÀ RIGUARDO AI RISCHI INERENTI LA "
+"QUALITÀ, L'ACCURATEZZA E LE PRESTAZIONI DEL DOCUMENTO O DI UNA SUA VERSIONE "
+"MODIFICATA. QUALORA UN DOCUMENTO O UNA SUA VERSIONE MODIFICATA DOVESSERO "
+"PRESENTARE QUALUNQUE TIPO DI DIFETTO,IL COSTO DI EVENTUALI INTERVENTI DI "
+"ASSISTENZA, RIPARAZIONE O CORREZIONE SARÀ A CARICO DELL'UTENTE (NON DEL "
+"REDATTORE INIZIALE, DELL'AUTORE O DI ALTRI COLLABORATORI). QUESTA "
+"LIMITAZIONE DELLA GARANZIA COSTITUISCE PARTE ESSENZIALE DELLA LICENZA. L'USO "
+"DEL DOCUMENTO O DELLE SUE VERSIONI MODIFICATE È CONSENTITO SOLO ENTRO I "
+"TERMINI DI QUESTA LIMITAZIONE DELLA GARANZIA; E"
+
+#: C/legal.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"IN NESSUNA CIRCOSTANZA E PER NESSUNA RAGIONE LEGALE, INCLUSI I PRINCIPI DI "
+"COLPA (INCLUSA LA NEGLIGENZA), ACCORDO CONTRATTUALE O ALTRO, SARÀ POSSIBILE "
+"CONSIDERARE L'AUTORE, IL REDATTORE INIZIALE, GLI ALTRI COLLABORATORI, "
+"QUALUNQUE DISTRIBUTORE DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA O "
+"QUALUNQUE FORNITORE DELLE PERSONE CITATE, RESPONSABILE NEI CONFRONTI DI "
+"QUALUNQUE PERSONA PER DANNI DIRETTI, INDIRETTI, SPECIALI, INCIDENTALI O "
+"CONSEGUENTI DI QUALUNQUE NATURA, INCLUSI, MA SENZA LIMITAZIONE, I DANNI PER "
+"PERDITA DI AVVIAMENTO, INTERRUZIONE DEL LAVORO, GUASTO O MALFUNZIONAMENTO "
+"DEL COMPUTER O QUALUNQUE ALTRO DANNO O PERDITA DERIVANTE O CORRELATA ALL'USO "
+"DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA, ANCHE QUALORA LE PERSONE "
+"CITATE FOSSERO STATE INFORMATE DELLA POSSIBILITÀ DI TALI DANNI."
+
+#: C/legal.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"QUESTO DOCUMENTO E LE SUE VERSIONI MODIFICATE SONO FORNITI IN BASE AI "
+"TERMINI DELLA GNU FREE DOCUMENTATION LICENSE, SOTTO INTESO CHE: <placeholder-"
+"1/>"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/swell-foop.xml:131(None)
+msgid "@@image: 'figures/start-up.png'; md5=e1ae130ce601d40e62b9ea8794ccdf87"
+msgstr "fatto"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/swell-foop.xml:146(None)
+msgid "@@image: 'figures/play1.png'; md5=c9fbbe88671363fc860acca6d9a8b32e"
+msgstr "fatto"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/swell-foop.xml:154(None)
+msgid "@@image: 'figures/play2.png'; md5=7c1f2328f61fcb17268e18d222c6a05a"
+msgstr "fatto"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/swell-foop.xml:162(None)
+msgid "@@image: 'figures/play3.png'; md5=40739ddda81595d4aa8df47305895ef5"
+msgstr "fatto"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/swell-foop.xml:170(None)
+msgid "@@image: 'figures/play4.png'; md5=0f79aacbfacbf291fcfa7956c18be3ba"
+msgstr "fatto"
+
+#: C/swell-foop.xml:20(title)
+msgid "<application>Same GNOME</application> Manual"
+msgstr "Manuale di <application>Same GNOME</application>"
+
+#: C/swell-foop.xml:23(para)
+msgid ""
+"Same GNOME is a puzzle game, of which the objective is to clear the window "
+"of as many pieces as possible by clicking on groups of the same colored "
+"pieces. That group will vanish and the pieces on top will fall until there "
+"are none left or no more color groups."
+msgstr ""
+"Same GNOME è un gioco di puzzle, il cui scopo è rimuovere dalla finestra il "
+"maggior numero di pezzi possibile, facendo clic su un gruppo di oggetti "
+"dello stesso colore. Quel gruppo svanirà e i pezzi soprastanti verranno "
+"fatti scivolare in basso fino a quando non ce ne saranno più altri oppure "
+"fino a quando non ci saranno più gruppi di colori."
+
+#: C/swell-foop.xml:33(year)
+msgid "2005"
+msgstr "2005"
+
+#: C/swell-foop.xml:34(holder)
+msgid "Callum McKenzie"
+msgstr "Callum McKenzie"
+
+#: C/swell-foop.xml:38(publishername) C/swell-foop.xml:51(orgname)
+#: C/swell-foop.xml:91(para) C/swell-foop.xml:100(para)
+msgid "GNOME Documentation Project"
+msgstr "Progetto documentazione di GNOME"
+
+#: C/swell-foop.xml:48(firstname)
+msgid "Callum"
+msgstr "Callum"
+
+#: C/swell-foop.xml:49(surname)
+msgid "McKenzie"
+msgstr "McKenzie"
+
+#: C/swell-foop.xml:52(email)
+msgid "callum@physics.otago.ac.nz"
+msgstr "callum@physics.otago.ac.nz"
+
+#: C/swell-foop.xml:86(revnumber)
+msgid "Same GNOME Manual V2.11"
+msgstr "Manuale di Same GNOME V2.11"
+
+#: C/swell-foop.xml:87(date)
+msgid "January 2008"
+msgstr "Gennaio 2008"
+
+#: C/swell-foop.xml:89(para)
+msgid "Adaptation of the Same GNOME manual to new template."
+msgstr "Adattamento del manuale di Same GNOME al nuovo modello."
+
+#: C/swell-foop.xml:90(para)
+msgid "Claude Paroz <email>claude@2xlibre.net</email>"
+msgstr "Claude Paroz <email>claude@2xlibre.net</email>"
+
+#: C/swell-foop.xml:95(revnumber)
+msgid "Same GNOME Manual V2.10"
+msgstr "Manuale di Same GNOME V2.10"
+
+#: C/swell-foop.xml:96(date)
+msgid "February 2005"
+msgstr "Febbraio 2005"
+
+#: C/swell-foop.xml:98(para)
+msgid "Initial version for the new Same GNOME."
+msgstr "Versione iniziale per il nuovo Same GNOME."
+
+#: C/swell-foop.xml:99(para)
+msgid "Callum McKenzie <email>callum@physics.otago.ac.nz</email>"
+msgstr "Callum McKenzie <email>callum@physics.otago.ac.nz</email>"
+
+#: C/swell-foop.xml:105(releaseinfo)
+msgid "This manual describes version 2.12 of Same GNOME."
+msgstr "Questo manuale descrive la versione 2.12 di Same GNOME."
+
+#: C/swell-foop.xml:108(title)
+msgid "Feedback"
+msgstr "Commenti"
+
+#: C/swell-foop.xml:109(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Same GNOME</"
+"application> game or this manual, follow the directions in the <ulink url="
+"\"ghelp:user-guide?feedback-bugs\" type=\"help\">Feedback section of the "
+"GNOME User Guide</ulink>."
+msgstr ""
+"Per segnalare un problema o inviare suggerimenti sul gioco <application>Same "
+"GNOME</application> o su questo manuale, seguire le istruzioni presenti alla "
+"<ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">pagina di commenti su "
+"GNOME</ulink>."
+
+#: C/swell-foop.xml:117(primary)
+msgid "Same GNOME"
+msgstr "Same GNOME"
+
+#: C/swell-foop.xml:123(title) C/swell-foop.xml:139(title)
+msgid "Playing <application>Same GNOME</application>"
+msgstr "Giocare a <application>Same GNOME</application>"
+
+#: C/swell-foop.xml:124(para)
+msgid ""
+"<application>Same GNOME</application> is a puzzle game. The goal is to "
+"remove as many objects as possible in as few moves as possible. Objects that "
+"are adjacent to each other get removed as a group. The remaining objects "
+"then collapse to fill in the gaps and new groups are formed. You cannot "
+"remove single objects."
+msgstr ""
+"<application>Same GNOME</application> è un gioco di puzzle. Lo scopo del "
+"gioco è rimuovere più oggetti possibili con il minor numero di mosse. Gli "
+"oggetti adiacenti fra di loro vengono rimossi come un gruppo, quelli "
+"rimanenti vengono riorganizzati in modo da riempire i vuoti lasciati da "
+"quelli appena eliminati e formano nuovi gruppi. Non è consentito rimuovere "
+"singoli oggetti."
+
+#: C/swell-foop.xml:127(title)
+msgid "<application>Same GNOME</application> at the beginning of a new game."
+msgstr "<application>Same GNOME</application> all'inizio di una nuova partita."
+
+#: C/swell-foop.xml:137(para)
+msgid ""
+"The board starts as a full grid of objects. Depending on the size of board "
+"you select, there are either three or four types of object. If a group of "
+"objects are adjacent and all the same type, then they can be removed simply "
+"by clicking them with the mouse (or by pressing the space bar). When you "
+"move the mouse over a group you can remove, the objects will start moving. "
+"The number of objects in the group, and the points you will score for "
+"removing that group, is shown in the lower left corner of the window. The "
+"more objects in the group, the more points you will score. Once the group "
+"has been removed the objects above them fall down to fill the space. If an "
+"entire column is cleared then the objects slide leftward to fill the gap."
+msgstr ""
+"La schermata iniziale è una griglia piena di oggetti. A seconda della "
+"dimensione scelta per la griglia, ci sono tre o quattro tipi di oggetti. Un "
+"gruppo di oggetti dello stesso tipo adiacenti può essere facilmente rimosso "
+"con un clic del mouse (oppure premendo la barra spaziatrice). Quando si "
+"sposta il mouse su un gruppo rimovibile, gli oggetti cominceranno a muoversi "
+"e nell'angolo in basso della finestra verrà mostrato il numero di oggetti "
+"nel gruppo, con il relativo punteggio che verrebbe assegnato nel caso di "
+"rimozione. Più oggetti ci sono nel gruppo e più punti si totalizzano. Una "
+"volta rimosso il gruppo, gli oggetti soprastanti vengono lasciati cadere "
+"verso il basso in modo da riempire lo spazio. Nel caso in cui venisse "
+"rimossa un'intera colonna gli oggetti rimanenti verrebbero fatti slittare "
+"verso sinistra in modo da riempire il vuoto."
+
+#: C/swell-foop.xml:142(para)
+msgid "1. Eliminate groups of two or more <placeholder-1/>"
+msgstr "1. Eliminare gruppi di due o più <placeholder-1/>"
+
+#: C/swell-foop.xml:150(para)
+msgid "2. Objects fall down to fill the gaps <placeholder-1/>"
+msgstr "2. Gli oggetti cadono per riempire gli spazi vuoti <placeholder-1/>"
+
+#: C/swell-foop.xml:158(para)
+msgid "3. Objects move left to fill empty columns <placeholder-1/>"
+msgstr "3. Gli oggetti si spostano a sinistra per riempire le colonne vuote <placeholder-1/>"
+
+#: C/swell-foop.xml:166(para)
+msgid "4. New groups are formed and the cycle repeats <placeholder-1/>"
+msgstr "4. Vengono formati nuovi gruppi e il ciclo si ripete <placeholder-1/>"
+
+#: C/swell-foop.xml:178(para)
+msgid "Scoring is based on the number of objects you delete:"
+msgstr "Il punteggio viene calcolato in base al numero di oggetti eliminati:"
+
+#: C/swell-foop.xml:183(entry)
+msgid "Number of Objects"
+msgstr "Numero degli oggetti"
+
+#: C/swell-foop.xml:184(entry)
+msgid "Points Scored"
+msgstr "Punteggio"
+
+#: C/swell-foop.xml:187(entry) C/swell-foop.xml:196(superscript)
+msgid "2"
+msgstr "2"
+
+#: C/swell-foop.xml:187(entry)
+msgid "0"
+msgstr "0"
+
+#: C/swell-foop.xml:188(entry)
+msgid "3"
+msgstr "3"
+
+#: C/swell-foop.xml:188(entry)
+msgid "1"
+msgstr "1"
+
+#: C/swell-foop.xml:189(entry)
+msgid "4"
+msgstr "4"
+
+#: C/swell-foop.xml:190(entry)
+msgid "5"
+msgstr "5"
+
+#: C/swell-foop.xml:190(entry) C/swell-foop.xml:194(entry)
+msgid "9"
+msgstr "9"
+
+#: C/swell-foop.xml:191(entry)
+msgid "6"
+msgstr "6"
+
+#: C/swell-foop.xml:191(entry)
+msgid "16"
+msgstr "16"
+
+#: C/swell-foop.xml:192(entry)
+msgid "7"
+msgstr "7"
+
+#: C/swell-foop.xml:192(entry)
+msgid "25"
+msgstr "25"
+
+#: C/swell-foop.xml:193(entry)
+msgid "8"
+msgstr "8"
+
+#: C/swell-foop.xml:193(entry)
+msgid "36"
+msgstr "36"
+
+#: C/swell-foop.xml:194(entry)
+msgid "49"
+msgstr "49"
+
+#: C/swell-foop.xml:195(entry)
+msgid "⋮"
+msgstr "⋮"
+
+#: C/swell-foop.xml:196(entry)
+msgid "n"
+msgstr "n"
+
+#: C/swell-foop.xml:196(entry)
+msgid "(n - 2)<placeholder-1/>"
+msgstr "(n - 2)<placeholder-1/>"
+
+#: C/swell-foop.xml:200(para)
+msgid "If you clear the board there is a 1000 point bonus."
+msgstr ""
+"Se si ripulisce la schermata da tutti gli oggetti viene assegnato un bonus "
+"di 1000 punti."
+
+#: C/swell-foop.xml:204(title)
+msgid "Customization"
+msgstr "Personalizzazione"
+
+#: C/swell-foop.xml:207(title)
+msgid "Changing the Look"
+msgstr "Modificare l'aspetto"
+
+#: C/swell-foop.xml:208(para)
+msgid ""
+"Changing the size of the objects is as simple as resizing the window. To "
+"make the maximum use of the screen choose the <guimenuitem>Fullscreen</"
+"guimenuitem> option from the <guimenu>View</guimenu> menu."
+msgstr ""
+"Cambiare la dimensione degli oggetti è semplice come ridimensionare la "
+"finestra. Per utilizzare tutto lo schermo scegliere l'opzione "
+"<guimenuitem>Schermo intero</guimenuitem> dal menù <guimenu>Visualizza</"
+"guimenu>."
+
+#: C/swell-foop.xml:210(para)
+msgid ""
+"To change the appearance of the objects use the <guimenuitem>Theme</"
+"guimenuitem> item in the <guimenu>View</guimenu> menu. Selecting an item "
+"from the list changes the theme immediately."
+msgstr ""
+"Per cambiare l'aspetto degli oggetti è possibile utilizzare la voce "
+"<guimenuitem>Tema...</guimenuitem> presente nel menù <guimenu>Visualizza</"
+"guimenu>. Selezionando una voce dall'elenco il tema verrà cambiato "
+"immediatamente."
+
+#: C/swell-foop.xml:212(para)
+msgid ""
+"You can also create your own themes, although the process is not very "
+"straight-forward yet. Use a copy of an existing theme as a template and "
+"alter it with your favorite paint program. Put the result in <filename>"
+"$XDG_DATA_HOME/gnome-games/same-gnome/themes/2.10/</filename>. It will be "
+"automatically included on the themes list next time you run "
+"<application>Same GNOME</application>. <filename>$XDG_DATA_HOME</filename> "
+"is usually <filename>~/.local/share/</filename>."
+msgstr ""
+"Inoltre è possibile creare dei temi personalizzati, benché il processo non "
+"sia ancora immediato. Utilizzare una copia di un tema già esistente come "
+"modello e modificarla con il proprio programma di disegno preferito. Salvare "
+"il risultato in <filename>$XDG_DATA_HOME/gnome-games/same-gnome/themes/2.10/"
+"</filename>. Al prossimo avvio di <application>Same GNOME</application> il "
+"nuovo tema verrà automaticamente incluso nell'elenco dei temi. Solitamente, "
+"<filename>$XDG_DATA_HOME</filename> è la cartella <filename>~/.local/share/</"
+"filename>."
+
+#: C/swell-foop.xml:216(title)
+msgid "Changing the Size"
+msgstr "Modificare la dimensione"
+
+#: C/swell-foop.xml:217(para)
+msgid ""
+"The <guimenu>Size</guimenu> menu contains three settings: small, medium and "
+"large. Aside from increasing the number of objects, the large setting also "
+"increases the number of different objects."
+msgstr ""
+"Il menù <guimenu>Dimensione</guimenu> contiene tre impostazioni: piccola, "
+"media e grande. Oltre ad aumentare il numero di oggetti, l'impostazione "
+"grande aumenta anche il numero dei differenti tipi di oggetti."
+
+#: C/swell-foop.xml:221(title)
+msgid "Changing the Speed"
+msgstr "Modificare la velocità"
+
+#: C/swell-foop.xml:222(para)
+msgid ""
+"The default animation is designed to be smooth and graceful. If you like "
+"playing fast and furious then this may be too slow for you. By selecting the "
+"<guimenuitem>Fast Animation</guimenuitem> option from the <guimenu>View</"
+"guimenu> menu you can speed up game-play at the expense of animation quality."
+msgstr ""
+"L'animazione predefinita è carina e graziosa ma se il proprio stile di gioco "
+"è «veloce e furioso» quest'ultima potrebbe risultare troppo lenta. "
+"Selezionando l'opzione <guimenuitem>Animazione veloce</guimenuitem> dal menù "
+"<guimenu>Visualizza</guimenu> è possibile aumentare la velocità di gioco, "
+"rinunciando alla qualità dell'animazione."
+
+#: C/swell-foop.xml:228(title)
+msgid "Strategy"
+msgstr "Strategia"
+
+#: C/swell-foop.xml:230(para)
+msgid ""
+"The most important rule when aiming for a high score is to think ahead: each "
+"group you remove will form and destroy other groups."
+msgstr ""
+"La regola più importante quando si cerca di realizzare un punteggio alto è "
+"pensare, prima di tutto, che ogni gruppo rimosso formerà e distruggerà altri "
+"gruppi."
+
+#: C/swell-foop.xml:232(para)
+msgid ""
+"Remove higher groups first, unless removing another group will make it "
+"larger. Vertically aligned objects can't be misaligned, but horizontal "
+"arrangements can."
+msgstr ""
+"Rimuovere prima il gruppo più in alto, a meno che la rimozione di un altro "
+"gruppo non lo renda più grande. Gli oggetti allineati in modo verticale non "
+"posso essere disallineati, ma se allineati in modo orizzontale ciò diventa "
+"possibile."
+
+#: C/swell-foop.xml:234(para)
+msgid ""
+"Since the score increases quadratically, big groups of objects are always "
+"better. For example, the points difference between a six object group and a "
+"seven object group is nine points. In a situation where you have a choice "
+"between merging two groups of two into four or just adding one more to the "
+"group of six then you should add the single object. Even though the groups "
+"of two you are left with score no points, the bigger group scores more "
+"overall."
+msgstr ""
+"Dato che il punteggio aumenta in modo esponenziale quadratico, rimuovere "
+"grandi gruppi di oggetti è sempre la scelta migliore. Per esempio, la "
+"differenza fra un gruppo di sei oggetti e un altro di sette oggetti è di 9 "
+"punti. In una situazione dove si può scegliere fra la fusione di due gruppi "
+"da due in uno da quattro e una semplice addizione di un elemento a un gruppo "
+"da sei, si dovrebbe preferire quest'ultima soluzione. Anche se entrambi i "
+"gruppi tralasciati non otterranno alcun punteggio, quello più grande ne avrà "
+"ottenuto uno ancora più alto."
+
+#: C/swell-foop.xml:236(para)
+msgid ""
+"Don't forget the thousand point bonus for clearing all the balls. To get "
+"1000 points from a single group you need 34 objects. You are very unlikely "
+"to be in a position where you have to sacrifice a group that large to clear "
+"the board."
+msgstr ""
+"Non bisogna dimenticarsi del bonus da mille punti per la rimozione di tutte "
+"le palle. Per ottenere 1000 punti da un singolo gruppo sono necessari 34 "
+"oggetti ed è molto improbabile trovarsi in una situazione dove è necessario "
+"sacrificare un gruppo così grande per ripulire la schermata."
+
+#: C/swell-foop.xml:241(title)
+msgid "About <application>Same GNOME</application>"
+msgstr "Informazioni su <application>Same GNOME</application>"
+
+#: C/swell-foop.xml:242(para)
+msgid ""
+"<application>Same GNOME</application> was written by Callum McKenzie "
+"(<email>callum@physics.otago.ac.nz</email>). To find more information about "
+"<application>Same GNOME</application>, please visit the <ulink url=\"http://"
+"live.gnome.org/GnomeGames/\" type=\"http\">GNOME Games web page</ulink>."
+msgstr ""
+"<application>Same GNOME</application> è stato scritto da Callum McKenzie "
+"(<email>callum@physics.otago.ac.nz</email>). Per maggiori informazioni su "
+"<application>Same GNOME</application>, visitare la <ulink url=\"http://www."
+"gnome.org/projects/gnome-games/\" type=\"http\">pagina web dei giochi di "
+"GNOME</ulink>."
+
+#: C/swell-foop.xml:246(para)
+msgid ""
+"To report a bug or make a suggestion regarding this application or this "
+"manual, follow the directions in the <ulink url=\"ghelp:user-guide?feedback-"
+"bugs\" type=\"help\">Feedback section of the GNOME User Guide</ulink>."
+msgstr "Per segnalare un errore o inviare un suggerimento riguardo questa applicazione o questo manuale, seguire le indicazioni nella <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">Pagina dei commenti GNOME</ulink>."
+
+#: C/swell-foop.xml:252(para)
+msgid ""
+"This program is distributed under the terms of the GNU General Public "
+"license as published by the Free Software Foundation; either version 2 of "
+"the License, or (at your option) any later version. A <ulink url=\"ghelp:gpl"
+"\" type=\"help\">copy of this license</ulink> is included with this "
+"documentation; another can be found in the file COPYING included with the "
+"source code of this program."
+msgstr "Questo programma è distribuito secondo i termini della GNU General Public License come pubblicata dalla Free Software Foundation; sia la versione 2 di questa licenza, che (a propria scelta) ogni altra versione successiva. Una copia di questa licenza può essere trovata a questo <ulink url=\"ghelp:gpl\" type=\"help\">collegamento</ulink>, oppure nel file COPYING incluso con il codice sorgente di questo programma."
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/swell-foop.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+"Milo Casagrande <milo@ubuntu.com>, 2009\n"
+"Alessio Treglia <quadrispro@gmail.com>, 2008"

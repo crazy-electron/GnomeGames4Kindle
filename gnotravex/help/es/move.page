@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="move" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#play" group="two"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Cómo mover las piezas en el tablero de juego.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  
+  <title>Mover las piezas</title>
+  
+  <section id="move-piece">
+    <title>Mover una pieza</title>
+    <p>Para mover una pieza necesita pulsarla y mantenerla pulsada, arrástrela desde su posición actual a su nueva posición, tanto en la caja de la derecha como en la caja de la izquierda, y suelte el botón del ratón.</p>
+    <p>Estos movimientos no son permanentes y se pueden deshacer.</p>
+    <note>
+      <p>Las piezas en la caja de la izquierda se pueden mover a la ven en una dirección. Para obtener más información consulte la <link xref="shortcut"/>.</p>
+    </note>
+  </section>
+  <section id="move-avoid">
+    <title>Evitar la pulsación mantenida</title>
+    <p>Si no se siente a gusto con la acción de pulsar y mantener para mover las piezas, es posible cambiar el comportamiento para que sólo tenga que pulsar en una pieza para moverla y volver a pulsar para dejarla en su nueva posición.</p>
+    <p>Para ello, desde la barra de menú, elija <gui style="menu">Mover</gui> y seleccione <gui style="checkbox">Pulsar para mover</gui>.</p>
+  </section>
+</page>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="gameplay" xml:lang="sr@latin">
+      
+  <info>
+    <link type="guide" xref="index"/>
+    <desc>Uvod u <app>Gnomovu slagalicu</app>.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+   <credit type="author">
+    <name>Milo Casagrande</name>
+    <email>milo@ubuntu.com</email>
+   </credit>
+   <license>
+     <p>Creative Commons Share Alike 3.0</p>
+   </license>
+  </info>
+
+  <title>Igranje</title>
+
+  <p><app>Gnomova slagalica</app> je jednostavna slagalica u kojoj je cilj premestiti razne delove sa brojevima sa desne strane na levu stranu table, ali tako da se samo isti brojevi na delovima međusobno dodiruju.</p>
+  <p>U igri se meri vreme, i ovo vreme se koristi kao rezultat igre. Morate pomeriti sve delove u što kraćem vremenu.</p>
+  <figure>
+    <title>Glavni prozor igre</title>
+    <desc>Glavni prozor <app>Gnomove slagalice</app></desc>
+    <media type="image" src="figures/gnotravex-main-window.png" mime="image/png" style="center">
+      <p>Glavni prozor <app>Gnomove slagalice</app>.</p>
+    </media>
+  </figure>
+
+</page>

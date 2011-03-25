@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.20">
+<!ENTITY manrevision "2.20">
+<!ENTITY date "May 2007">
+<!ENTITY app "<application>Nibbles</application>">
+<!ENTITY appname "Nibbles">
+<!ENTITY VERSION "2.20">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="oc">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+ <articleinfo>
+  <title><application>Nibbles</application> Manual</title>
+
+    <abstract role="description">
+      <para>
+	Nibbles is a worm game for GNOME. The player controls a 2D 
+	worm while trying to get food. Getting food gives points, 
+	but hitting anything causes a loss of points. When all points 
+	are lost, the player loses.
+      </para>
+    </abstract>
+
+  <copyright>
+   <year>2000</year>
+   <holder>Kevin Breit</holder>
+  </copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Projècte de documentacion de GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>
+	  Permission is granted to copy, distribute and/or modify this
+	  document under the terms of the GNU Free Documentation
+	  License (GFDL), Version 1.1 or any later version published
+	  by the Free Software Foundation with no Invariant Sections,
+	  no Front-Cover Texts, and no Back-Cover Texts.  You can find
+	  a copy of the GFDL at this <ulink type="help" url="ghelp:fdl">link</ulink> or in the file COPYING-DOCS
+	  distributed with this manual.
+         </para>
+         <para> This manual is part of a collection of GNOME manuals
+          distributed under the GFDL.  If you want to distribute this
+          manual separately from the collection, you can do so by
+          adding a copy of the license to the manual, as described in
+          section 6 of the license.
+	</para>
+
+	<para>
+	  Many of the names used by companies to distinguish their
+	  products and services are claimed as trademarks. Where those
+	  names appear in any GNOME documentation, and the members of
+	  the GNOME Documentation Project are made aware of those
+	  trademarks, then the names are in capital letters or initial
+	  capital letters.
+	</para>
+
+	<para>
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para>DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para>UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Kevin</firstname> 
+	<surname>Breit</surname> 
+	<affiliation> 
+	  <orgname>Projècte de documentacion de GNOME</orgname> 
+	  <address> <email>battery841@mypad.com</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+    <revhistory>
+      <revision> 
+	<revnumber>Nibbles Manual V2.20</revnumber> 
+	<date>Mai de 2007</date> 
+	<revdescription> 
+	  <para role="author">Kevin Breit <email>battery841@mypad.com</email></para>
+	  <para role="publisher">Projècte de documentacion de GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>This manual describes version 2.20 of Nibbles.
+    </releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Feedback</title> 
+      <para>To report a bug or make a suggestion regarding the <application>Nibbles</application> application or
+	this manual, follow the directions in the 
+	<ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME Feedback Page</ulink>. 
+      </para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+ </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Nibbles</primary> 
+  </indexterm> 
+
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+ <sect1 id="intro">
+  <title>Introduccion</title>
+
+  <para>
+   <application>Nibbles</application> is a game where the user controls a worm.  The worm moves around the board, eating diamonds while avoiding the walls   placed around it. 
+  </para>
+
+  <para>
+   To run <application>Nibbles</application>, select
+   <menuchoice>
+    <guisubmenu>Games</guisubmenu>
+    <guimenuitem>Nibbles</guimenuitem>
+   </menuchoice>
+   from the <guimenu>Applications</guimenu> menu, or type
+   <command>gnibbles</command> on the command line. 
+  </para>
+
+  <para>
+   <application>Nibbles</application> is included in the
+   <filename>gnome-games</filename> package, which is part of the
+   GNOME desktop environment. This document describes version
+   2.20 of <application>Nibbles</application>.
+  </para>
+ </sect1>
+
+ <sect1 id="objective">
+ <title>Nibbles Objective</title>
+  <para>
+    The objective of Nibbles is quite simple.  You control the worm and
+    if the worm runs into a wall or runs into itself, you die.  You get ten
+    lives before your game is over.  You win by either beating your own high
+    score (or a friend's) or by completing all the levels. It is also 
+    possible to play against worms with artificial intelligence.
+  </para>
+  <para>
+    Nibbles also features <link linkend="network-games">multiplayer</link> support with up to six competing
+    human players in hotseat or network mode.
+  </para>
+ </sect1>
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+ <sect1 id="usage">
+  <title>Using Nibbles</title>
+  <para>
+   <application>Nibbles</application> is a simple game to play.  The only keys
+   that are needed are the arrow keys.
+  </para>
+
+  <!-- ========= Basic Usage =========================== -->
+<sect2 id="mainwin">
+<title>Basic usage</title>
+<para>
+Starting <application>Nibbles</application> opens 
+the <interface>main window</interface> shown below.
+<figure id="intro-fig">
+<title>Nibbles Introduction Window</title>
+<screenshot>
+ <mediaobject> 
+    <imageobject>
+<imagedata fileref="figures/intro.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Nibbles Introduction Window.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</para>
+<para>
+To start the game, select <menuchoice><guimenu>Game</guimenu>
+<guimenuitem>New Game</guimenuitem></menuchoice>.
+</para>
+<para>
+When the game starts, the worm will come out of the left side of the
+screen.  You use the up arrow to make the direction of the worm go up.
+Use the right arrow to turn the worm right, left arrow to turn the worm
+left, and down arrow to turn the worm down.
+<figure id="gameplay">
+<title>Nibbles During Gameplay</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/playing.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Nibbles During Gameplay.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</para>
+</sect2>
+
+<!-- This section should also describe main elements of graphic user
+interface, such as menus and buttons, unless this description
+is too long - in that case, it should be moved to a separate
+section. For example -->
+
+
+<!-- ========= Menus =========================== -->
+<sect2 id="menubar">
+   <title>Menuts</title>
+   <para>
+    The menu bar, located at the top of the <interface>Main
+    Window</interface>, contains the following menus:
+   </para>
+
+   <variablelist>
+    <varlistentry>
+     <term><guimenu>Jòc</guimenu></term>
+     <listitem>
+      <para>
+       This menu contains:
+       <itemizedlist>
+        <listitem>
+         <para>
+          <menuchoice>
+           <shortcut>
+            <keysym>Ctrl+N</keysym>
+           </shortcut>
+           <guimenuitem>New Game</guimenuitem>
+          </menuchoice>
+           This starts a new game of <application>Nibbles</application>.
+         </para>
+        </listitem>
+        <listitem>
+         <para>
+          <menuchoice>
+           <shortcut>
+            <keysym>Ctrl+G</keysym>
+           </shortcut>
+           <guimenuitem>Network Game</guimenuitem>
+          </menuchoice>
+           This starts a network multiplayer game using GGZ Gaming Zone.
+         </para>
+        </listitem>
+        <listitem>
+         <para>
+          <menuchoice>
+           <guimenuitem>Scores</guimenuitem>
+          </menuchoice>
+           This shows the high scores.
+         </para>
+        </listitem>
+        <listitem>
+         <para>
+          <menuchoice>
+           <guimenuitem>Pause game</guimenuitem>
+          </menuchoice>
+           This will pause your game.  Click on the <quote>Pause Game
+          </quote> menu option to resume game.
+         </para>
+        </listitem>
+        <listitem>
+         <para>
+          <menuchoice>
+           <guimenuitem>End Game</guimenuitem>
+          </menuchoice>
+           End the current game and return to the title screen.
+         </para>
+        </listitem>
+        <listitem>
+         <para>
+          <menuchoice>
+           <shortcut>
+            <keysym>Ctrl-Q</keysym>
+           </shortcut>
+           <guimenuitem>Exit</guimenuitem>
+          </menuchoice>
+           This quits the application.
+         </para>
+        </listitem>
+       </itemizedlist>
+      </para>
+     </listitem>
+    </varlistentry>
+
+   <varlistentry>
+     <term><guimenu>Visualizacion</guimenu></term>
+     <listitem>
+      <para>
+       This menu contains:
+       <itemizedlist>
+        <listitem>
+         <para>
+          <menuchoice>
+           <guimenuitem>Fullscreen</guimenuitem>
+          </menuchoice>
+            This toggles your game window to be fullscreen. 
+         </para>
+        </listitem>
+       </itemizedlist>
+      </para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Paramètres</guimenu></term>
+     <listitem>
+      <para>
+       This menu contains:
+       <itemizedlist>
+        <listitem>
+         <para>
+          <menuchoice>
+           <guimenuitem>Preferences</guimenuitem>
+          </menuchoice>
+            This opens your window to edit <link linkend="prefs">
+           preferences.</link>
+         </para>
+        </listitem>
+       </itemizedlist>
+      </para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Ajuda</guimenu></term>
+     <listitem>
+      <para>
+       This menu contains:
+       <itemizedlist>
+        <listitem>
+          <para>
+          <menuchoice>
+           <shortcut>
+            <keysym>F1</keysym>
+           </shortcut>
+           <guimenuitem>Contents</guimenuitem>
+          </menuchoice>
+           Display this manual.
+         </para>
+         <para>
+          <guimenuitem>About</guimenuitem>  This opens the
+          <interface>About</interface> dialog which shows
+          basic information about
+          <application>Nibbles</application>, such as
+          the author's name, the version number of the game.
+         </para>
+        </listitem>
+       </itemizedlist>
+      </para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+  </sect2>
+  <sect2 id="diamonds">
+  <title>Diamonds</title>
+   <para>
+    <application>Nibbles</application> has numerous different
+    diamonds to eat.  They are each a different color and serve
+    a different function. Only the pale purple diamond is guaranteed
+    to be around long enough for you to eat it (in fact, you have to
+    eat them to finish the level). The other diamonds are all bonuses,
+    but they only stick around for a short time. We'll leave it up to
+    you to discover just what the bonus each colour gives, but they
+    all affect either the score, the length of the worm, or both. Be careful
+    when going for these bonus diamonds, don't cut yourself off from
+    the ordinary diamonds that you need to finish the level.
+  </para>
+  </sect2>   
+ </sect1>
+
+
+ <!-- ============= Customization ============================= -->
+ <sect1 id="prefs">
+  <title>Personalisacion</title>
+  <para>
+   To change the application settings, select
+   <menuchoice>
+    <guimenu>Settings</guimenu>
+    <guimenuitem>Preferences</guimenuitem>
+   </menuchoice>.  This opens the
+   <interface>Preferences</interface> dialog. All preferences are
+    automatically saved and applied as you change them.
+  </para>
+
+  <figure id="game-prefs">
+    <title>Onglet de preferéncias del jòc</title>
+    <screenshot>
+       <mediaobject> 
+    <imageobject>
+      <imagedata fileref="figures/game.png" format="PNG" srccredit="Kevin Breit"/>
+          </imageobject>
+    <textobject> 
+      <phrase>Onglet de preferéncias del jòc.</phrase> 
+    </textobject> 
+  </mediaobject>
+    </screenshot>
+  </figure>
+
+  <para>
+   The properties in the <guilabel>Game</guilabel> tab are:
+   <variablelist>
+    <varlistentry>
+    <term>Velocitat</term>
+    <listitem>
+     <para>
+      This controls the speed of the worm.
+     </para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Play levels in random order</term>
+    <listitem>
+     <para>
+      Selecting this causes the level
+      advancement to happen in random order.
+     </para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Enable fake bonuses</term>
+    <listitem>
+     <para>
+      When enabled, this allows for two blue diamonds on
+      the screen at a time.  One diamond makes you shrink instead of grow when
+      eaten.
+     </para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Activar los sons</term>
+     <listitem>
+      <para>
+       Controls the use of sound in the game. 
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Starting level</term>
+     <listitem>
+      <para>
+       Which level to start with. Use this if you want to jump
+       immediately to a challenging level.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Number of human players</term>
+     <listitem>
+      <para>
+       There is room for up to six players.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Number of AI players</term>
+     <listitem>
+      <para>
+       There is room for up to six AI players. Note that the total
+       number of human and AI players must be less than or equal to six.
+      </para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+  </para>
+  <para>
+
+  <figure id="worm-prefs">
+    <title>Worm Preferences Tab</title>
+    <screenshot>
+       <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/worm_op.png" format="PNG" srccredit="Kevin Breit"/>
+         </imageobject>
+    <textobject> 
+      <phrase>Worm Preferences Tab.</phrase> 
+    </textobject> 
+  </mediaobject>
+    </screenshot>
+  </figure>
+
+   The properties in the <guilabel>Worm 1 </guilabel>through <guilabel> Worm 
+6</guilabel> tabs let you set individual preferences for the different worms. 
+
+   <variablelist>
+    <varlistentry>
+    <term>Keyboard controls</term>
+    <listitem>
+     <para>
+      This list let you change the keyboard controls for the given
+      worm. To change a control, double click on the appropriate entry and
+      then press the key you want to use for that control.
+     </para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Use relative motion</term>
+    <listitem>
+     <para>
+      Rather than left sending your worm toward the left of the screen,
+      right toward the right and so on, the left and right keys make
+      the worm perform a left or right turn. For example, if the worm
+      is moving to the left and you press the left control it turns to
+      head toward the bottom of the screen.
+     </para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Worm color</term>
+    <listitem>
+     <para>
+      Customize the color of your worm so you can tell it from your
+      opponent's worm in multi-player mode.
+     </para>
+    </listitem>
+    </varlistentry>
+   </variablelist>
+
+  </para>
+
+ </sect1>
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Network Games</title>
+  <para>
+    Nibbles support networked multiplayer games which is provided by <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink>. By connecting to a Nibbles server
+    on the Internet, you can challenge other players in multiplayer games.
+    For news, updates and a list of servers to connect to, see the <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">gnome-games website</ulink>.
+  </para>
+  <para>
+    To start the multiplayer game of Nibbles, select <menuchoice><guimenu>Game</guimenu> 
+    <guimenuitem>Network Game</guimenuitem></menuchoice> on the Nibbles menu.
+  </para> 
+
+<sect2 id="connecting">
+<title>Connecting to a Nibbles network server</title>
+<para>
+The Nibbles connection dialog is shown initially when starting a new
+network game. This dialog allows you to select a server to connect to,
+and the username that you will have while connected to that server.  
+</para>
+
+<para>
+It is possible to connect to a server with either a guest account or a normal
+registered account. Guest accounts allows you to anonymously login, while
+a normal login account allows you to reserve your own username which
+is protected by the password that you choose.
+</para>
+
+<para> The <guimenuitem>Guest Login</guimenuitem> option should be selected
+if you want an anonymous guest account. If you want to create a new 
+login account, then select the <guimenuitem>First-time Login</guimenuitem> 
+option, with the username, password and email of your choice.
+If you have already created your account, you can connect by selecting
+the <guimenuitem>Normal Login</guimenuitem> option, and enter the
+username and password that you have chosen.
+</para>
+<para>
+To connect to a server, click on the <guimenuitem>Connect</guimenuitem> button.
+</para>
+<figure id="connect">
+<title>The Nibbles network connection dialog.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>The Nibbles network connection dialog.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Joining a game room</title>
+<para>
+Once you have successfully connected to a server, you can choose which game room to join. To play a multiplayer game of Nibbles, select the Nibbles room. If you want to host your own game, then click on the Launch button. This creates a new table where other players can participate in a game against you. 
+If there are any other games already started, then you can double-click on an existing game table to join it.
+The list of game tables on the right shows you the number of available seats, which means the
+number of players that can join the game table.
+</para>
+<figure id="tables">
+<title>This Nibbles network dialog allows you to join a game room to find other players.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>This Nibbles network dialog allows you to join a game room to find other players.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>
+When creating a new table for Nibbles games, a preference dialog is displayed which allows you to
+customize the game, such as set the minimum number of players for the game. Once the total
+number of seats have been taken, then no more players are allowed to join that game table.
+</para>
+<para>
+It is possible to chat with other players in network games. Ask for advice or help playing the games,
+but please be polite against other players.
+</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Waiting for other players to join the game</title>
+<para>
+Once you have successfully joined a game table, then you have to wait until enough
+players have joined the table. The <guimenuitem>Players List</guimenuitem> menu item
+allows you to see a list of the players who have joined the game.
+The game will begin immediately when the total number of players in the the game have been reached.
+</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Playing multiplayer Nibbles games</title>
+<para>
+Multiplayer Nibbles games have pretty much the same rules as normal Nibbles games,
+except that you are now playing against human players. This means that other
+strategies might possibly be better than when playing against AI players.
+</para>
+<para>
+Once a player has won, the game ends and you can return to the initial network game screen.
+Then you can play yet another game of addictive Nibbles multiplayer!
+</para>
+</sect2>
+
+</sect1>
+
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Autors</title>
+  <para>
+   <application>Nibbles</application> was written by Sean MacIsaac 
+   <email>sjm@acm.org</email> and Ian Peters <email>itp@gnu.org</email>. 
+   This manual was written by Kevin Breit <email>battery841@mypad.com</email>.
+   Nibbles was updated with network support by Andreas Røsdal <email>andreasr@gnome.org</email>.
+   To report a bug or make a suggestion regarding this application or
+   this manual, follow the directions in this 
+   <ulink url="ghelp:user-guide?feedback-bugs" type="help">document</ulink>.
+  </para> 
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licéncia</title>
+  <para>
+   This program is free software; you can redistribute it and/or
+   modify it under the terms of the <ulink type="help" url="gnome-help:gpl">
+   <citetitle>GNU General Public
+   License</citetitle></ulink> as published by the Free Software Foundation;
+   either version 2 of the License, or (at your option) any later
+   version.
+  </para>
+  <para>
+   This program is distributed in the hope that it will be useful, but
+   WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   <citetitle>GNU General Public License</citetitle> for more details.
+  </para>
+  <para>
+   A copy of the <citetitle>GNU General Public License</citetitle> is
+   included as an appendix to the <citetitle>GNOME Users
+   Guide</citetitle>.  You may also obtain a copy of the
+   <citetitle>GNU General Public License</citetitle> from the Free
+   Software Foundation by visiting <ulink type="http" url="http://www.fsf.org">their Web site</ulink> or by writing to
+   <address>
+    Free Software Foundation, Inc.
+    59 Temple Place - Suite 330
+    Boston, MA 02111-1307
+    USA
+   </address>
+  </para>
+ </sect1>
+</article>

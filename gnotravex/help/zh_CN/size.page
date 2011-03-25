@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="size" xml:lang="zh_CN">
+
+  <info>
+    <link type="guide" xref="index#play" group="three"/>
+    <desc>改变游戏盘面尺寸。</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-18" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  <title>游戏盘面尺寸</title>
+
+  <p>要改变游戏盘面尺寸，也就是调整游戏的难度，从菜单栏选择 <gui>大小</gui>，并选取合适的盘面尺寸。</p>
+  <p>您可以从五种盘面尺寸中进行选择，从 2×2 到 6×6。默认尺寸是 3×3。</p>
+  <note style="tip">
+    <p>如果觉得方块太小的，调整窗口的大小可以调整它们的尺寸。</p>
+  </note>
+</page>

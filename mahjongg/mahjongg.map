@@ -1,0 +1,359 @@
+<!-- Coordinates are for the top left corner of the tile.
+     All axes count from 0.
+     x/width is horizontally across the screen.
+     y/height is vertically down the screen.
+     z/depth is vertically out of the screen. 
+     top, bottom, left and right refer to the screen, not a physical board. -->
+
+<!-- Layer is optional, it is there to save repeating z= attributes
+     everywhere -->
+
+<!-- You can have any number of maps under a mahjongg element (you can 
+     also have any number of mahjongg elements between other XML, but
+     that isn't elegant. -->
+
+<!-- This isn't really XML, it is what g_markup will parse. -->
+
+<mahjongg>
+  <map name="The Ziggurat" scorename="ziggurat">
+    <layer z="0">
+      <column x="0" top="0" bottom="7"/>
+      <block left="1" right="3" top="3" bottom="4"/>
+      <column x="2.5" top="0" bottom="2"/>
+      <column x="2.5" top="5" bottom="7"/>
+      <row y="0" left="3.5" right="10.5"/>
+      <row y="7" left="3.5" right="10.5"/>
+      <block left="6.5" right="7.5" top="1" bottom="2"/>
+      <block left="6.5" right="7.5" top="5" bottom="6"/>
+      <column x="11.5" top="0" bottom="2"/>
+      <column x="11.5" top="5" bottom="7"/>
+      <block left="11" right="13" top="3" bottom="4"/>
+      <column x="14" top="0" bottom="7"/>
+    </layer>
+    <layer z="1">
+      <tile x="3" y="0.5"/>
+      <tile x="11" y="0.5"/>
+      <row y="1" left="6.5" right="7.5"/>
+      <block left="1" right="3" top="3" bottom="4"/>
+      <block left="11" right="13" top="3" bottom="4"/>
+      <row y="6" left="6.5" right="7.5"/>
+      <tile x="3" y="6.5"/>
+      <tile x="11" y="6.5"/>
+    </layer>
+    <layer z="2">
+      <tile x="3" y="0.5"/>
+      <tile x="11" y="0.5"/>
+      <tile y="1" x="7"/>
+      <block left="2" right="4" top="3" bottom="4"/>
+      <block left="10" right="12" top="3" bottom="4"/>
+      <tile y="6" x="7"/>
+      <tile x="3" y="6.5"/>
+      <tile x="11" y="6.5"/>      
+    </layer>
+    <block z="3" left="3" right="11" top="3" bottom="4"/>
+    <block z="4" left="4" right="10" top="3" bottom="4"/>
+    <block z="5" left="5" right="9" top="3" bottom="4"/>
+  </map>
+  <map name="Four Bridges" scorename="bridges">
+    <layer z="0">
+      <row y="0" left="1" right="11"/>
+      <row y="1" left="2" right="5"/>
+      <row y="1" left="7" right="10"/>
+      <row y="2" left="2" right="10"/>
+      <row y="3" left="0" right="12"/>
+      <row y="4" left="1.5" right="3.5"/>
+      <row y="4" left="8.5" right="10.5"/>
+      <row y="5" left="0" right="12"/>
+      <row y="6" left="2" right="10"/>
+      <row y="7" left="2" right="5"/>
+      <row y="7" left="7" right="10"/>
+      <row y="8" left="1" right="11"/>
+    </layer>
+    <layer z="1">
+      <block left="2.5" right="4.5" top="0.5" bottom="2.5"/>
+      <block left="7.5" right="9.5" top="0.5" bottom="2.5"/>
+      <block left="2.5" right="4.5" top="5.5" bottom="7.5"/>
+      <block left="7.5" right="9.5" top="5.5" bottom="7.5"/>
+    </layer>
+    <layer z="2">
+      <block left="3" right="4" top="1" bottom="2"/>
+      <block left="8" right="9" top="1" bottom="2"/>
+      <block left="3" right="4" top="6" bottom="7"/>
+      <block left="8" right="9" top="6" bottom="7"/>
+    </layer>
+    <layer z="3">
+      <tile x="3.5" y="1.5"/>
+      <tile x="8.5" y="1.5"/>
+      <tile x="3.5" y="6.5"/>
+      <tile x="8.5" y="6.5"/>
+    </layer>
+  </map>
+  <map name="Cloud" scorename="cloud">
+    <layer z="0">
+      <block left="0" right="13" top="0" bottom="4"/>
+      <row y="5.5" left="2.5" right="10.5"/>
+    </layer>
+    <layer z="1">
+      <row y="5.5" left="3" right="10"/>
+      <column x="0" top="0" bottom="3"/>
+      <column x="2" top="0" bottom="3"/>
+      <column x="4" top="0" bottom="3"/>
+      <column x="6" top="0" bottom="3"/>
+      <column x="8" top="0" bottom="3"/>
+      <column x="10" top="0" bottom="3"/>
+      <column x="12" top="0" bottom="3"/>
+    </layer>
+    <layer z="2">
+      <column x="0" top="0" bottom="3"/>
+      <column x="2" top="0" bottom="3"/>
+      <column x="4" top="0" bottom="3"/>
+      <column x="6" top="0" bottom="3"/>
+      <column x="8" top="0" bottom="3"/>
+      <column x="10" top="0" bottom="3"/>
+      <column x="12" top="0" bottom="3"/>
+      <tile x="6" y="5.5"/> 
+    </layer>
+  </map>
+  <map name="Tic-Tac-Toe" scorename="tictactoe">
+    <layer z="0">
+      <column x="3" top="0" bottom="8"/>
+      <column x="9" top="0" bottom="8"/>
+      <row y="2" left="0" right="2"/>
+      <row y="6" left="0" right="2"/>
+      <row y="2" left="4" right="8"/>
+      <row y="6" left="4" right="8"/>
+      <row y="2" left="10" right="12"/>
+      <row y="6" left="10" right="12"/>
+    </layer>
+    <layer z="1">
+      <column x="3" top="0" bottom="8"/>
+      <column x="9" top="0" bottom="8"/>
+      <row y="2" left="1" right="2"/>
+      <row y="6" left="1" right="2"/>
+      <row y="2" left="4" right="8"/>
+      <row y="6" left="4" right="8"/>
+      <row y="2" left="10" right="11"/>
+      <row y="6" left="10" right="11"/>
+    </layer>
+    <layer z="2">
+      <column x="3" top="1" bottom="7"/>
+      <column x="9" top="1" bottom="7"/>
+      <tile y="2" x="2"/>
+      <tile y="6" x="2"/>
+      <row y="2" left="4" right="8"/>
+      <row y="6" left="4" right="8"/>
+      <tile y="2" x="10"/>
+      <tile y="6" x="10"/>
+    </layer>
+    <layer z="3">
+      <column x="3" top="2" bottom="6"/>
+      <column x="9" top="2" bottom="6"/>
+      <row y="2" left="4" right="8"/>
+      <row y="6" left="4" right="8"/>
+    </layer>
+    <layer z="4">
+      <column x="3" top="2" bottom="6"/>
+      <column x="9" top="2" bottom="6"/>
+      <row y="2" left="4" right="8"/>
+      <row y="6" left="4" right="8"/>
+    </layer>
+  </map>
+  <map name="Red Dragon" scorename="dragon">
+    <layer z="0">
+      <block left="2" top="0" right="12" bottom="5"/>
+      <tile x="0" y="0"/>
+      <tile x="0" y="1.5"/>
+      <tile x="0" y="3"/>
+      <tile x="0" y="4.5"/>
+      <tile x="0" y="6"/>
+      <tile x="14" y="0"/>
+      <tile x="14" y="1.5"/>
+      <tile x="14" y="3"/>
+      <tile x="14" y="4.5"/>
+      <tile x="14" y="6"/>
+      <tile x="2" y="6.5"/>
+      <tile x="4" y="6.5"/>
+      <tile x="6" y="6.5"/>
+      <tile x="8" y="6.5"/>
+      <tile x="10" y="6.5"/>
+      <tile x="12" y="6.5"/>
+    </layer>
+    <layer z="1">
+      <block left="3.5" top="0.5" right="10.5" bottom="4.5"/>
+      <column x="11.5" top="1.5" bottom="3.5"/>
+      <tile x="2.5"  y="1.5"/>
+      <tile x="2.5"  y="4.5"/>
+    </layer>
+    <layer z="2">
+      <block left="5" top="1" right="8" bottom="4"/>
+      <tile x="11" y="4"/>
+    </layer>
+  </map>
+  <map name="Pyramid's Walls" scorename="pyramid">
+    <layer z="0">
+      <row y="1" left="0" right="11"/>
+      <row y="7" left="0" right="11"/>
+      <column x="0" top="2" bottom="6"/>
+      <column x="11" top="2" bottom="6"/>
+      <row y="4" left="2.5" right="8.5"/>
+    </layer>
+    <layer z="1">
+      <row y="1" left="1" right="10"/>
+      <row y="7" left="1" right="10"/>
+      <column x="0" top="2.5" bottom="5.5"/>
+      <column x="11" top="2.5" bottom="5.5"/>
+      <row y="4" left="3" right="8"/>
+    </layer>
+    <layer z="2">
+      <row y="1" left="2" right="9"/>
+      <row y="7" left="2" right="9"/>
+      <column x="0" top="3" bottom="5"/>
+      <column x="11" top="3" bottom="5"/>
+      <row y="4" left="3.5" right="7.5"/>
+    </layer>
+    <layer z="3">
+      <row y="1" left="3" right="8"/>
+      <row y="7" left="3" right="8"/>
+      <column x="0" top="3.5" bottom="4.5"/>
+      <column x="11" top="3.5" bottom="4.5"/>
+      <row y="4" left="4" right="7"/>
+    </layer>
+    <layer z="4">
+      <row y="1" left="4" right="7"/>
+      <row y="7" left="4" right="7"/>
+      <tile x="0" y="4"/>
+      <tile x="11" y="4"/>
+      <row y="4" left="4.5" right="6.5"/>
+    </layer>
+    <layer z="5">
+      <row y="1" left="5" right="6"/>
+      <row y="7" left="5" right="6"/>
+      <row y="4" left="5" right="6"/>
+    </layer>
+    <tile z="6" x="5.5" y="1"/>
+    <tile z="6" x="5.5" y="7"/>
+    <tile z="6" x="5.5" y="4"/>
+  </map>
+  <map name="Confounding Cross" scorename="confounding">
+    <layer z="0">
+      <row y="1" left="1" right="9"/>
+      <row y="7" left="1" right="9"/>
+      <column x="1" top="2" bottom="6"/>
+      <column x="9" top="2" bottom="6"/>
+      <tile y="0" x="5"/>
+      <tile y="8" x="5"/>
+      <tile y="4" x="0"/>
+      <tile y="4" x="10"/>
+      <tile x="2" y="2"/>
+      <tile x="2" y="6"/>
+      <tile x="8" y="2"/>
+      <tile x="8" y="6"/>
+      <row y="4" left="2" right="8"/>
+      <tile x="5" y="2"/>
+      <tile x="5" y="3"/>
+      <tile x="5" y="5"/>
+      <tile x="5" y="6"/>
+    </layer>
+    <layer z="1">
+      <row y="4" left="0.5" right="3.5"/>
+      <row y="4" left="6.5" right="9.5"/>
+      <block left="4.5" right="5.5" top="3.5" bottom="4.5"/>
+      <block left="1" right="2" top="1" bottom="2"/>
+      <block left="8" right="9" top="1" bottom="2"/>
+      <block left="1" right="2" top="6" bottom="7"/>
+      <block left="8" right="9" top="6" bottom="7"/>
+      <column x="5" top="0.5" bottom="2.5"/>
+      <column x="5" top="5.5" bottom="7.5"/>
+      <tile x="1" y="3"/>
+      <tile x="1" y="5"/>
+      <tile x="9" y="3"/>
+      <tile x="9" y="5"/>
+      <tile x="3" y="1"/>
+      <tile x="3" y="7"/>
+      <tile x="7" y="1"/>
+      <tile x="7" y="7"/>
+    </layer>
+    <layer z="2">
+      <row y="4" left="1" right="9"/>
+      <column x="5" top="1" bottom="3"/>
+      <column x="5" top="5" bottom="7"/>
+      <tile x="1" y="1"/>
+      <tile x="1" y="2"/>
+      <tile x="2" y="1"/>
+      <tile x="9" y="7"/>
+      <tile x="9" y="6"/>
+      <tile x="8" y="7"/>
+      <tile x="9" y="1"/>
+      <tile x="9" y="2"/>
+      <tile x="8" y="1"/>
+      <tile x="1" y="7"/>
+      <tile x="1" y="6"/>
+      <tile x="2" y="7"/>
+    </layer>
+    <layer z="3">
+      <block left="4.5" right="5.5" top="3.5" bottom="4.5"/>
+      <row y="4" left="1.5" right="3.5"/>
+      <row y="4" left="6.5" right="8.5"/>
+      <column x="5" top="1.5" bottom="2.5"/>
+      <column x="5" top="5.5" bottom="6.5"/>
+      <tile x="1" y="1"/>
+      <tile x="9" y="7"/>
+      <tile x="1" y="7"/>
+      <tile x="9" y="1"/>
+    </layer>
+    <layer z="4">
+      <row y="4" left="3" right="7"/>
+      <column x="5" top="2" bottom="3"/>
+      <column x="5" top="5" bottom="6"/>
+    </layer>
+    <tile z="5" x="5" y="4"/>
+  </map>
+  <map name="Difficult" scorename="difficult">
+    <layer z="0">
+      <tile x="0" y="3"/>
+      <tile x="10" y="3"/>
+      <block left="0.5" top="0.5" bottom="1.5" right="1.5"/>
+      <block left="8.5" top="0.5" bottom="1.5" right="9.5"/>
+      <block left="0.5" top="4.5" bottom="5.5" right="1.5"/>
+      <block left="8.5" top="4.5" bottom="5.5" right="9.5"/>
+      <block top="2.5" left="1" bottom="3.5" right="2"/>
+      <block top="2.5" left="8" bottom="3.5" right="9"/>
+      <block top="2" left="3" right="7" bottom="4"/>
+      <row y="0" left="3" right="7"/>
+      <row y="6" left="3" right="7"/>
+      <row y="1" left="2.5" right="7.5"/>
+      <row y="5" left="2.5" right="7.5"/>
+    </layer>
+    <layer z="1">
+      <tile x="3.5" y="0"/>
+      <tile x="6.5" y="0"/>
+      <tile x="3.5" y="6"/>
+      <tile x="6.5" y="6"/>
+      <row  left="1" right="3" y="1"/>
+      <block left="1.5" top="2" right="2.5" bottom="4"/>
+      <row left="1" right="3" y="5"/>
+      <row  left="7" right="9" y="1"/>
+      <block left="7.5" top="2" right="8.5" bottom="4"/>
+      <row left="7" right="9" y="5"/>
+      <row y="0.5" left="4.5" right="5.5"/>
+      <row y="1.5" left="4" right="6"/>
+      <block top="2.5" left="3.5" bottom="3.5" right="6.5"/>
+      <row y="4.5" left="4" right="6"/>
+      <row y="5.5" left="4.5" right="5.5"/>
+    </layer>
+    <layer z="2">
+      <row y="2" left="2.5" right="7.5"/>
+      <row y="3" left="2" right="8"/>
+      <row y="4" left="2.5" right="7.5"/>
+    </layer>
+    <layer z="3">
+      <tile x="2.5" y="3"/>
+      <tile x="7.5" y="3"/>
+      <block left="3.5" top="2.5" right="6.5" bottom="3.5"/>
+    </layer>
+    <row z="4" left="4" right="6" y="3"/>
+    <row z="5" left="4.5" right="5.5" y="3"/>
+    <tile z="6" x="5" y="3"/>
+  </map>
+</mahjongg>
+

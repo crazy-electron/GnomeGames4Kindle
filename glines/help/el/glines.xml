@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Five or More</application>">
+<!ENTITY appname "Five or More">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- This doc is based on the GDP template from GNOME 1.2
+     Its syntax and DTD has been updated to validate with xmllint.
+     The content needs to be updated (it basically needs to be finished)
+     edited and indexed.
+   -->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="el"> 
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+ <articleinfo>
+  <title>Εγχειρίδιο <application>Πέντε ή περισσότερα</application></title>
+  <abstract role="description">
+    <para>Για να παίξει κάποιος το Πέντε ή περισσότερα πρέπει να ευθυγραμμίσει τα χρωματιστά κομμάτια καθώς το ταμπλό γεμίζει από κομμάτια που τοποθετούνται σε τυχαίες θέσεις. Όταν πέντε ή περισσότερα κομμάτια του ίδιου χρώματος ευθυγραμμιστούν, εξαφανίζονται. Το παιχνίδι τελειώνει μόλις το ταμπλό γεμίσει τελείως.</para>
+  </abstract>
+
+  <copyright>
+   <year>2000-2002</year>
+   <holder>Emese Kovács</holder>
+  </copyright><copyright><year>επισκεφθείτε την σελίδα http://www.gnome.gr/</year><holder>Για περισσότερες πληροφορίες</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>Έργο τεκμηρίωσης GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Χορηγείται άδεια αντιγραφής, διανομής και/ή τροποποίησης του παρόντος εγγράφου υπό τους όρους της έκδοσης 1.1 της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), ή οποιασδήποτε μεταγενέστερης έκδοσής αυτής από το Ίδρυμα Ελεύθερου Λογισμικού (FSF), χωρίς αμετάβλητα τμήματα, κείμενα εξωφύλλου και κείμενα οπισθοφύλλου. Αντίγραφο της άδειας GFDL είναι διαθέσιμο στον ακόλουθο <ulink type="help" url="ghelp:fdl">σύνδεσμο</ulink>, ή στο αρχείο COPYING-DOCS που διανέμεται μαζί με το παρόν εγχειρίδιο.</para>
+         <para>Αυτό το εγχειρίδιο αποτελεί μέρος της συλλογής εγχειριδίων του GNOME που διανέμονται υπό τους όρους της GFDL. Αν επιθυμείτε να διανείμετε το παρόν εγχειρίδιο ξεχωριστά από τη συλλογή, οφείλετε να προσθέσετε στο εγχειρίδιο αντίγραφο της άδειας χρήσης, όπως προβλέπεται στο άρθρο 6 της άδειας.</para>
+
+	<para>Πολλές από τις ονομασίες που χρησιμοποιούνται από εταιρείες για την διαφοροποίηση των προϊόντων και υπηρεσιών τους έχουν καταχωρισθεί ως εμπορικά σήματα. Σε όποιο σημείο της τεκμηρίωσης GNOME τυχόν εμφανίζονται αυτές οι ονομασίες, και εφόσον τα μέλη του Έργου τεκμηρίωσης GNOME έχουν λάβει γνώση αυτών των εμπορικών σημάτων, οι ονομασίες ή τα αρχικά αυτών θα γράφονται με κεφαλαίους χαρακτήρες.</para>
+
+	<para>ΤΟ ΠΑΡΟΝ ΕΓΓΡΑΦΟ ΚΑΙ ΟΙ ΤΡΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ ΕΛΕΥΘΕΡΗΣ ΑΔΕΙΑΣ ΤΕΚΜΗΡΙΩΣΗΣ GNU (GFDL) ΚΑΙ ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: <orderedlist>
+		<listitem>
+		  <para>ΤΟ ΠΑΡΟΝ ΕΓΓΡΑΦΟ ΠΑΡΕΧΕΤΑΙ "ΩΣ ΕΧΕΙ", ΧΩΡΙΣ ΟΠΟΙΑΔΗΠΟΤΕ ΑΛΛΗ ΕΓΓΥΗΣΗ, ΕΙΤΕ ΡΗΤΗ ΕΙΤΕ ΣΙΩΠΗΡΗ, ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΗΣ, ΧΩΡΙΣ ΠΕΡΙΟΡΙΣΜΟ, ΤΗΣ ΕΓΓΥΗΣΗΣ ΟΤΙ ΤΟ ΕΓΓΡΑΦΟ, Ή Η ΤΡΟΠΟΠΟΙΗΜΕΝΗ ΕΚΔΟΣΗ ΑΥΤΟΥ, ΕΙΝΑΙ ΕΜΠΟΡΕΥΣΙΜΟ, ΚΑΤΑΛΛΗΛΟ ΓΙΑ ΕΙΔΙΚΟ ΣΚΟΠΟ ΚΑΙ ΔΕΝ ΠΡΟΣΒΑΛΛΕΙ ΔΙΚΑΙΩΜΑΤΑ ΤΡΙΤΩΝ. Ο ΧΡΗΣΤΗΣ ΑΝΑΛΑΜΒΑΝΕΙ ΕΞ ΟΛΟΚΛΗΡΟΥ ΤΗΝ ΕΘΥΝΗ ΩΣ ΠΡΟΣ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΤΗΝ ΑΚΡΙΒΕΙΑ ΚΑΙ ΤΗΝ ΧΡΗΣΗ ΤΟΥ ΕΓΓΡΑΦΟΥ Ή ΤΗΣ ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ ΑΥΤΟΥ. ΣΕ ΠΕΡΙΠΤΩΣΗ ΠΟΥ ΟΠΟΙΟΔΗΠΟΤΕ ΕΓΓΡΑΦΟ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΗ ΕΚΔΟΣΗ ΑΥΤΟΥ ΑΠΟΔΕΙΧΘΟΥΝ ΕΛΑΤΤΩΜΑΤΙΚΑ ΚΑΘ' ΟΙΟΝΔΗΠΟΤΕ ΤΡΟΠΟ, Ο ΧΡΗΣΤΗΣ (ΚΑΙ ΟΧΙ Ο ΑΡΧΙΚΟΣ ΣΥΓΓΡΑΦΕΑΣ, ΔΗΜΙΟΥΡΓΟΣ Ή ΟΠΟΙΟΣΔΗΠΟΤΕ ΣΥΝΤΕΛΕΣΤΗΣ) ΑΝΑΛΑΜΒΑΝΕΙ ΤΟ ΚΟΣΤΟΣ ΟΠΟΙΑΣΔΗΠΟΤΕ ΑΝΑΓΚΑΙΑΣ ΣΥΝΤΗΡΗΣΗΣ, ΕΠΙΣΚΕΥΗΣ Ή ΔΙΟΡΘΩΣΗΣ. Η ΠΑΡΟΥΣΑ ΑΠΟΠΟΙΗΣΗ ΕΓΓΥΗΣΗΣ ΑΠΟΤΕΛΕΙ ΑΝΑΠΟΣΠΑΣΤΟ ΜΕΡΟΣ ΤΗΣ ΑΔΕΙΑΣ. ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΟΥΔΕΜΙΑ ΧΡΗΣΗ ΤΟΥ ΕΓΓΡΑΦΟΥ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΩΝ ΕΚΔΟΣΕΩΝ ΑΥΤΟΥ ΣΥΜΦΩΝΑ ΜΕ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ ΠΑΡΟΥΣΑΣ,  ΠΑΡΑ ΜΟΝΟ ΕΑΝ ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΟΠΟΙΗΣΗ ΕΓΓΥΗΣΗΣ,  ΚΑΙ</para>
+		</listitem>
+		<listitem>
+		  <para>Ο ΔΗΜΙΟΥΡΓΟΣ, Ο ΑΡΧΙΚΟΣ ΣΥΓΓΡΑΦΕΑΣ, ΟΙ ΣΥΝΤΕΛΕΣΤΕΣ Ή ΟΙ ΔΙΑΝΟΜΕΙΣ ΤΟΥ ΕΓΓΡΑΦΟΥ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ ΑΥΤΟΥ, ΚΑΘΩΣ ΚΑΙ ΟΙ ΠΡΟΜΗΘΕΥΤΕΣ ΟΠΟΙΩΝΔΗΠΟΤΕ ΕΚ ΤΩΝ ΠΡΟΑΝΑΦΕΡΟΜΕΝΩΝ ΜΕΡΩΝ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ ΕΝΑΝΤΙ ΟΙΟΥΔΗΠΟΤΕ, ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΕΡΜΗΝΕΙΑ ΝΟΜΟΥ, ΕΙΤΕ ΕΞ ΑΔΙΚΟΠΡΑΞΙΑΣ (ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΗΣ ΤΗΣ ΑΜΕΛΕΙΑΣ) ΕΙΤΕ ΣΤΟ ΠΛΑΙΣΙΟ ΣΥΜΒΑΤΙΚΗΣ Ή ΑΛΛΗΣ ΥΠΟΧΡΕΩΣΗΣ, ΓΙΑ ΤΥΧΟΝ ΑΜΕΣΕΣ, ΕΜΜΕΣΕΣ, ΕΙΔΙΚΕΣ, ΤΥΧΑΙΕΣ Ή ΣΥΝΕΠΑΚΟΛΟΥΘΕΣ ΖΗΜΙΕΣ ΟΠΟΙΑΣΔΗΠΟΤΕ ΜΟΡΦΗΣ, ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΩΝ, ΧΩΡΙΣ ΠΕΡΙΟΡΙΣΜΟ, ΖΗΜΙΩΝ ΛΟΓΩ ΑΠΩΛΕΙΑΣ ΦΗΜΗΣ ΚΑΙ ΠΕΛΑΤΕΙΑΣ, ΔΙΑΚΟΠΗΣ ΕΡΓΑΣΙΩΝ, ΔΥΣΛΕΙΤΟΥΡΓΙΑΣ Ή ΒΛΑΒΗΣ ΗΛΕΚΤΡΟΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ, Ή ΚΑΘΕ ΑΛΛΗΣ ΖΗΜΙΑΣ Ή ΑΠΩΛΕΙΑΣ ΠΟΥ ΟΦΕΙΛΕΤΑΙ Ή ΣΧΕΤΙΖΕΤΑΙ ΜΕ ΤΗΝ ΧΡΗΣΗ ΤΟΥ ΕΓΓΡΑΦΟΥ ΚΑΙ ΤΩΝ ΤΡΟΠΟΠΟΙΗΜΕΝΩΝ ΕΚΔΟΣΕΩΝ ΑΥΤΟΥ, ΑΚΟΜΑ ΚΑΙ ΑΝ ΤΑ ΩΣ ΑΝΩ ΜΕΡΗ ΕΙΧΑΝ ΛΑΒΕΙ ΓΝΩΣΗ ΤΗΣ ΠΙΘΑΝΟΤΗΤΑΣ ΠΡΟΚΛΗΣΗΣ ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+	<firstname>Emese</firstname> 
+	<surname>Kovács</surname> 
+	<affiliation> 
+	  <orgname>Έργο τεκμηρίωσης GNOME</orgname> 
+	  <address> <email>emese@gnome.hu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+    <revhistory>
+      <revision> 
+	<revnumber>Εγχειρίδιο Πέντε ή περισσότερα V2.8</revnumber> 
+	<date>Σεπτέμβριος 2004</date> 
+	<revdescription> 
+	  <para role="author">Emese Kovács <email>emese@gnome.hu</email></para>
+	  <para role="publisher">Έργο τεκμηρίωσης GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.12 του Πέντε ή περισσότερα.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Aνάδραση</title> 
+      <para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με την εφαρμογή <application>Πέντε ή περισσότερα</application> ή και για αυτό το εγχειρίδιο, ακολουθήστε τις οδηγίες στη <ulink url="ghelp:user-guide?feedback-bugs" type="help">Σελίδα ανατροφοδότηση του GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Πέντε ή περισσότερα</primary> 
+  </indexterm> 
+
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+ <sect1 id="intro">
+  <title>Εισαγωγή</title>
+
+  <para>Το <application>Πέντε ή περισσότερα</application>, είναι η μεταφορά για το Gnome ενός από τα πιο γνωστά παιχνίδια στα Windows που ονομάζεται <application>Χρωματιστές γραμμές</application>. Ο σκοπός του παιχνιδιού είναι να γίνει τόσο συχνή  στοίχιση όσο είναι δυνατό πέντε ή περισοτέρων αντικειμένων του ίδιου χρώματος και σχήματος προκαλώντας την εξαφανίσητους. Παίξτε όσο πιο πολύ μπορείτε και παρτε την πρώτη θέση στο βαθμολογικό πίνακα.</para>
+
+  <para>Για να εκκινήσετε το <application>Πέντε ή περισσότερα</application>, επιλέξτε <guimenuitem>Πέντε ή περισσότερα</guimenuitem> από το μενού <guisubmenu>Παιχνίδια</guisubmenu> του <guimenu>Κύριου μενού</guimenu>, ή να πληκτρολογήσετε <command>glines</command> στην γραμμή εντολών.</para>
+
+  <para>Το <application>Πέντε ή περισσότερα</application> συμπεριλαμβάνεται στο πακέτο <filename>GNOME-games</filename>, που είναι μέρος της επιφάνειας εργασίας GNOME. Αυτό το έγγραφο περιγράφει την έκδοση 2.8 του <application>Πέντε ή περισσότερα</application>.</para>
+
+ </sect1>
+
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="usage">
+    <title>Παίζοντας το Πέντε ή περισσότερα</title>
+    <para>Το παίξιμο του <application>Πέντε ή περισσότερα</application> είναι εύκολο. Στην αρχή, θα δείτε πέντε αντικείμενα σε τυχαίες θέσεις στο ταμπλό. Σε κάθε γύρο, σας επιτρέπεται να μετακινήσετε ένα αντικείμενο. Μπορείτε να το μετακινήσετε οπουδήποτε στο ταμπλό αρκεί να υπάρχει ελεύθερη διαδρομή. Έπειτα, ο υπολογιστής εμφανίζει περισσότερα αντικείμενα σε τυχαίες θέσεις (το ακριβές νούμερο εξαρτάται από το μέγεθος του παιχνιδιού). Μπορείτε να δείτε τα επόμενα αντικείμενα που θα κατέβουν στην πάνω αριστερή γωνία του παραθύρου του παιχνιδιού. Αν καταφέρετε να ευθυγραμμίσετε πέντε αντικείμενα του ίδιου σχήματος και χρώματος, εξαφανίζονται και σας δίνεται μια επιπλέον κίνηση πριν εμφανιστούν περισσότερα αντικείμενα.</para>
+
+
+  <!-- ========= Basic Usage =========================== -->
+  <sect2 id="mainwin">
+   <title>Βασική χρήση</title>
+   <para>Με την εκκίνηση του <application>Πέντε ή περισσότερα</application> σας παρουσιάζεται το <interface>ταμπλό παιχνιδιού</interface> και ένα νέο παιχνίδι ξεκινά. Δείτε πώς μοιάζει στο <xref linkend="mainwindow-fig"/>.</para>
+
+    <!-- ==== Figure ==== -->
+	<figure id="mainwindow-fig">
+	  <title>Το κεντρικό παράθυρο όταν ξεκινάτε ένα νέο παιχνίδι.</title>
+	  <screenshot>
+	      <mediaobject>
+	      <imageobject>
+	      <imagedata fileref="figures/glines-startgame.png" format="PNG" srccredit="emese"/>
+	      </imageobject>
+	      </mediaobject>
+	  </screenshot>
+	</figure>
+     <!-- ==== End of Figure ==== -->
+
+   <para>Καθώς το παιχνίδι προχωράει, το ταμπλό γεμίζει όλο και περισσότερο (εκτός αν είστε πραγματικά καλός...) και η εξαφάνιση των αντικειμένων γίνεται όλο και πιο δύσκολη. Το παιχνίδι τελειώνει, μόλις το ταμπλό γεμίσει.</para>
+   
+   <!-- ==== Figure ==== -->
+   <figure id="gameover-fig">
+	  <title>Τέλος παιχνιδιού!</title>
+	  <screenshot>
+    <mediaobject>
+     <imageobject>
+      <imagedata fileref="figures/glines-gameover.png" format="PNG" srccredit="emese kovacs"/>
+     </imageobject>
+    </mediaobject>
+ </screenshot>
+</figure>  
+   <!-- ==== End of Figure ==== -->
+   
+  </sect2>
+
+
+  <!-- ========= Rulez =========================== -->
+
+    <sect2 id="rules"> 
+      <title>Παίζοντας το παιχνίδι</title>
+      <para>Ένα παιχνίδι του <application>Πέντε ή περισσότερα</application> ξεκινά με κάποια τυχαία αντικείμενα στο ταμπλό.</para>
+      <para>Για να κάνετε μια κίνηση, κάντε κλικ σε ένα από τα αντικείμενα. Όταν ένα αντικείμενο ενεργοποιείται αρχίζει να περιστρέφεται (ή να κάνει κάτι άλλο αναλόγως το θέμα, αλλά ας μην το υποθέσουμε...) . Τότε, μπορείτε να επιλέξετε τον προορισμό του κάνοντας κλικ σε ένα κενό τετράγωνο. Αν το τετράγωνο προορισμού είναι κατειλημμένο από ένα άλλο αντικείμενο δεν θα μετακινηθεί τίποτα και η επιλογή θα μεταφερθεί στο νέο αντικείμενο. Αν η διαδρομή δεν είναι κενή (δεν μπορείτε να μετακινήσετε τα αντικείμενα πάνω από εμπόδια) η εφαρμογή εμφανίζει μια προειδοποίηση στην γραμμή κατάστασης (τέλος του παραθύρου) και το αρχικό αντικείμενο παραμένει ενεργό.</para>
+      <para>Καθώς εξαφανίζονται αντικείμενα, παίρνετε πόντους. Οι πόντοι που παίρνετε εξαρτώνται από τον αριθμό των αντικειμένων που καταφέρατε να ευθυγραμμίσετε (δείτε <xref linkend="glines-table1"/>). Η βαθμολογία σας φαίνεται στην πάνω δεξιά γωνία του παραθύρου.</para>
+      
+    <!-- ====  Table 1.  ==== -->
+    <table id="glines-table1">
+     <title>Βαθμολογία στο Πέντε ή περισσότερα</title>
+      <tgroup cols="2" align="center">
+       <thead>
+        <row>
+         <entry>Αριθμός των αντικειμένων</entry>
+         <entry>Βαθμολογία</entry>
+        </row>
+       </thead>
+       <tbody>
+       <row>
+        <entry>5</entry>
+        <entry>10</entry>
+       </row>
+       <row>
+        <entry>6</entry>
+        <entry>12</entry>
+       </row>
+       <row>
+        <entry>7</entry>
+        <entry>18</entry>
+       </row>
+       <row>
+        <entry>8</entry>
+        <entry>28</entry>
+       </row>
+       <row>
+        <entry>9</entry>
+        <entry>42</entry>
+       </row>
+       <row>
+        <entry>10</entry>
+        <entry>82</entry>
+       </row>
+       <row>
+        <entry>11</entry>
+        <entry>108</entry>
+       </row>
+       <row>
+        <entry>12</entry>
+        <entry>138</entry>
+       </row>
+      <row>
+        <entry>13</entry>
+        <entry>172</entry>
+      </row>
+      <row>
+        <entry>14</entry>
+        <entry>210</entry>
+       </row>
+      </tbody>
+     </tgroup> 
+    </table>
+
+  <sect3>
+  <title>Χρησιμοποιώντας το πληκτρολόγιο</title>
+  <para>Αντί να χρησιμοποιείτε το ποντίκι μπορείτε να χρησιμοποιείτε το πληκτρολόγιο για να παίξετε το <application>Πέντε ή περισσότερα</application>. Για να χρησιμοποιήσετε το πληκτρολόγιο, πατήστε ένα βέλος και ένας κέρσορας θα εμφανιστεί κοντά στο κέντρο του ταμπλό. Τα βέλη μετακινούν τον κέρσορα. Όταν ο κέρσορας είναι πάνω στο αντικείμενο που θέλετε να μετακινήσετε, χρησιμοποιήστε το κενό (spacebar) για να το επιλέξετε. Μετά μετακινήστε τον κέρσορα στον προορισμό του αντικειμένου και πατήστε το κενό ξανά για να μετακινήσετε το αντικείμενο.</para><para>Αν αρχίσετε να χρησιμοποιείτε το ποντίκι ξανά, ο κέρσορας θα εξαφανιστεί. Ο κέρσορας θα εμφανιστεί ξανά όταν ξανά-χρησιμοποιήσετε τα βέλη.</para>
+  </sect3>
+
+
+   <!-- ==== End of Table ==== -->
+
+
+    </sect2>
+
+
+  </sect1>
+  <sect1 id="settings">
+  <title>Παραμετροποίηση του παιχνιδιού</title>
+  <para>Μπορείτε να ρυθμίσετε το <application>Πέντε ή περισσότερα</application> κάνοντας κλικ στο <guimenuitem>Προτιμήσεις</guimenuitem> στο μενού  <guimenu>Ρυθμίσεις</guimenu> της εφαρμογής. Ο ακόλουθος <interface>διάλογος</interface> θα εμφανιστεί:</para>
+ <!-- ==== Figure ==== -->
+   <figure>
+     <title>Προτιμήσεις</title>   
+    <mediaobject id="preferences-dialogbox">
+     <imageobject>
+      <imagedata fileref="figures/preferences.png" format="PNG" srccredit="emese"/>
+     </imageobject>
+    </mediaobject>
+  </figure>    
+    <!-- ==== End of Figure ==== -->
+
+  <para>Μπορείτε να επιλέξετε διάφορα πρότυπα αντικειμένων και χρώματα παρασκηνίου στην ενότητα <guimenu>Θέματα</guimenu>. Αν δυσκολεύεστε να διακρίνετε τα χρώματα, δοκιμάστε το θέμα shapes.</para>
+  <para>Η ενότητα <guimenu>Μέγεθος ταμπλό</guimenu> σας επιτρέπει να επιλέξετε το μέγεθος του ταμπλό. Κάθε μέγεθος έχει μια ελαφρώς διαφορετική ισορροπία: τα μεγαλύτερα μεγέθη σας δίνουν περισσότερο χώρο να κινηθείτε, αλλά σε κάθε γύρο έρχονται περισσότερα αντικείμενα. Οι παράμετροι για κάθε μέγεθος δίνονται στο <xref linkend="table-sizes"/>.</para>
+    <table id="table-sizes">
+     <title>Βαθμολογία στο Πέντε ή περισσότερα</title>
+      <tgroup cols="5" align="center">
+       <thead>
+        <row>
+         <entry align="left">μέγεθος</entry>
+         <entry>Πλάτος</entry>
+         <entry>Ύψος</entry>
+	 <entry>Αριθμός ειδών</entry>
+         <entry>Αντικείμενα ανά γύρο</entry>
+        </row>
+       </thead>
+       <tbody>
+       <row>
+        <entry align="left">Μικρό</entry>
+        <entry>7</entry>
+        <entry>7</entry>
+        <entry>5</entry>
+        <entry>3</entry>
+       </row>
+       <row>
+        <entry align="left">Μεσαίο</entry>
+        <entry>9</entry>
+        <entry>9</entry>
+        <entry>7</entry>
+        <entry>3</entry>
+       </row>
+       <row>
+        <entry align="left">Μεγάλο</entry>
+        <entry>20</entry>
+        <entry>15</entry>
+        <entry>7</entry>
+        <entry>7</entry>
+       </row>
+      </tbody>
+     </tgroup> 
+    </table>
+
+  <para>Μπορείτε να επιταχύνετε την κίνηση των αντικειμένων ενεργοποιώντας την Χρήση γρήγορων κινήσεων στην ενότητα <guimenu>Γενικά</guimenu> των προτιμήσεων.</para>
+  <para>Όλες οι αλλαγές που πραγματοποιείτε εφαρμόζονται άμεσα και αποθηκεύονται για την επόμενη φορά που θα εκτελέσετε το <application>Πέντε ή περισσότερα</application>.</para>
+  </sect1>
+  <sect1 id="themes">
+    <title>Πώς να δημιουργήσετε νέα θέματα</title> 
+    <para>Κάθε θέμα αποτελείται από ένα αρχείο εικόνας PNG. Αυτή η εικόνα αποτελείται από ένα πίνακα εφτά σειρών, που αντιστοιχούν στα διαφορετικά χρώματα/σχήματα αντικειμένων και από τέσσερις στήλες, καθεμία από τις οποίες είναι ένα πλαίσιο στη σχεδιοκίνηση του αντικειμένου. Το πραγματικό μέγεθος της εικόνας δεν είναι άσχετο, θα επανακλιμακωθεί, αλλά οι δευτερεύουσες εικόνες πρέπει να σχηματίσουν ένα πλέγμα τέσσερα επί επτά για να πάρουμε το σωστό αισθητικό φαινόμενο. Όταν χρησιμοποιείται το SVG να θυμάστε ότι το μέγεθος της εικόνας είναι το μέγεθος της σελίδας, αν το πλέγμα σας δεν γεμίζει την σελίδα προσπαθήστε να συρρικνώσετε το μέγεθος της σελίδας. Χρησιμοποιήστε ένα υπάρχων θέμα σαν οδηγό.</para>
+  </sect1>
+
+ <!-- ============= Bugs ================================== -->
+ <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of 
+
+      Better to omit this section than give false impression of perfection
+      Add back in if there is something worth saying
+
+ <sect1 id="bugs">
+  <title>Known Bugs and Limitations</title>
+  <para>
+   This application has no known bugs.
+  </para>
+ </sect1>
+-->
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Δημιουργοί</title>
+  <para>Το <application>Πέντε ή περισσότερα</application> γράφτηκε από τον Róbert Szókovács (<email>szo@appaloosacorp.hu</email>) και τον Szabolcs Bán (<email>shooby@gnome.hu</email>). Αυτό το εγχειρίδιο γράφτηκε από την Emese Kovács (<email>emese@gnome.hu</email>). Για πληροφορίες στο πώς να κάνετε σχόλια, προτάσεις και για να αναφέρετε σφάλματα, παρακαλούμε δείτε το <ulink url="ghelp:gnome-feedback" type="help">έγγραφο ανατροφοδότησης</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Άδεια χρήσης</title>
+  <para>Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό. Μπορείτε να το αναδιανέμετε ή/και να το τροποποιείτε μέσω των όρων της<citetitle> GNU General Public License</citetitle> όπως αυτή δημοσιεύτηκε από το  Free Software Foundation, έκδοση 2, ή (προαιρετικά) οποιαδήποτε νεότερη έκδοση.</para>
+  <para>Το πρόγραμμα αυτό διανέμεται με την ελπίδα ότι θα αποδειχθεί χρήσιμο, παρόλα αυτά ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ — χωρίς ούτε και την σιωπηρή εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΕΙΔΙΚΟ ΣΚΟΠΟ. Για περισσότερες λεπτομέρειες ανατρέξτε στη <citetitle>Γενική ‘Αδεια Δημόσιας Χρήσης GNU (GPL)</citetitle>.</para>
+  <para>Ένα αντίγραφο της Γενικής Δημόσιας Άδειας Χρήσης (<citetitle>GNU General Public License</citetitle>) συμπεριλαμβάνεται ως παράρτημα στον  <citetitle>Οδηγό Χρηστών GNOME </citetitle>. Μπορείτε επίσης να αποκτήσετε ένα αντίγραφο της Γενικής Δημόσιας Άδειας Χρήσης (<citetitle>GNU General Public License</citetitle>) από το Free Software Foundation επισκεπτόμενοι <ulink url="http://www.fsf.org" type="http"> την ιστοσελίδα τους</ulink> ή γράφωντας τους στο<address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

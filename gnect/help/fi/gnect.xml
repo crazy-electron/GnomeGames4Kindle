@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Four-in-a-Row</application>">
+<!ENTITY appname "Four-in-a-Row">
+<!ENTITY version "2.8">
+]>
+<!-- ===== DOCUMENT HEADER ===== -->
+<article id="index" lang="fi">
+<!-- please do not change the id -->
+<!-- translators, change lang to the appropriate code -->
+  <articleinfo>
+    <title>Neljä rivissä - Käyttöohje</title>
+    <abstract role="description">
+      <para>Neljä rivissä -pelin tarkoituksena on saada neljä nappulaa vaaka-, pysty- tai vinoriviin vastustajan yrittäessä estellä rivin valmistumista rakentaen samalla omaa neljän nappulan riviään. Neljä rivissä -peliä voi pelata joko tietokonetta tai toista ihmistä vastaan.</para>
+    </abstract>
+
+    <copyright>
+      <year>2001-2002</year>
+      <holder>Timothy Musson</holder>
+    </copyright><copyright><year>2009</year><holder>Valto Wirkola (valto [dot] wirkola [at] yahoo [dot] com)</holder></copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+     <year>2000</year>
+     <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+    <publisher role="maintainer"> 
+      <publishername>Gnomen dokumentaatioprojekti</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+	<para>Tätä asiakirjaa saa kopioida, jakaa edelleen ja/tai muokata Free Software Foundationin julkaiseman GNU Free Documentation Licensen (GFDL) version 1.1 tai valinnaisesti myöhemmän version mukaisesti, ilman vaatimuksia muuttamattomista osioista ja etu- tai takakansiteksteistä. Kopion GFDL:stä voi nähdä napsauttamalla <ulink type="help" url="ghelp:fdl">tätä linkkiä</ulink>, tai lukemalla ohjeen mukana toimitetun COPYING-DOCS-nimisen tiedoston.</para>
+         <para>Tämä käyttöohje on osa Gnomen käyttöohjekokoelmaa ja levitetään GFDL-lisenssin alaisena. Jos haluat levittää tätä käyttöohjetta erillään kokoelmasta, voit tehdä sen liittämällä lisenssin kopion ohjeen mukaan, kuten lisenssin luku 6 sanelee.</para>
+
+	<para>Monet tuotteiden ja palveluiden nimet ovat tuotemerkkejä. Gnomen dokumentointiprojektissa nämä nimet pyritään kirjoittamaan suuraakkosin tai isolla alkukirjaimella, sikäli kun projektin jäsenet tietävät kyseisistä tuotemerkeistä.</para>
+
+	<para>ASIAKIRJA SEKÄ MUOKATUT VERSIOT ASIAKIRJASTA TARJOTAAN GNU FREE DOCUMENTATION LICENSEN EHDOIN SEKÄ YMMÄRTÄEN ETTÄ:<orderedlist>
+		<listitem>
+		  <para>ASIAKIRJA TARJOTAAN SELLAISENAAN, ILMAN MINKÄÄNLAISTA KIRJATTUA TAI KONKLUDENTTISTA RAJATONTA TAKUUTA ASIAKIRJAN TAI SEN MUOKATUN VERSION VIRHEETTÖMYYDESTÄ, SOPIVUUDESTA KAUPALLISEEN KÄYTTÖÖN TAI TIETTYYN KÄYTTÖTARKOITUKSEEN TAI LOUKKAAMATTOMUUDESTA. TÄYSI VASTUU ASIAKIRJAN TAI SEN MUOKATUN VERSION LAADUSTA, TARKKUUDESTA JA TOIMIVUUDESTA ON KÄYTTÄJÄLLÄ. JOS ASIAKIRJA TAI SEN MUOKATTU VERSIO OSOITTAUTUU JOLLAKIN TAVALLA VIRHEELLISEKSI, KÄYTTÄJÄ (EI ALKUPERÄINEN KIRJOITTAJA TAI MUU TEKIJÄ) VASTAA PALVELUJEN, KORJAUSTEN TAI OIKAISUJEN KUSTANNUKSISTA. TÄMÄ VASTUUVAPAUSLAUSEKE ON EROTTAMATON OSA LISENSSIÄ. ASIAKIRJAN TAI SEN MUOKATTUJEN VERSIOIDEN KÄYTTÖ ON SALLITTUA VAIN TÄMÄN VASTUUVAPAUSLAUSEKKEEN NOJALLA; SEKÄ</para>
+		</listitem>
+		<listitem>
+		  <para>MISSÄÄN OLOSUHTEISSA TAI MINKÄÄN OIKEUSLAITOKSEN ALAISUUDESSA, NIIN OIKEUSLOUKKAUKSISSA (MUKAAN LUKIEN HUOLIMATTOMUUS), SOPIMUS TAI MUUTOIN, ASIAKIRJAN TAI SEN MUOKATUN VERSION TEKIJÄ, ALKUPERÄINEN KIRJOITTAJA, KUKAAN AVUSTAJISTA, KUKAAN LEVITTÄJÄ TAIKKA KUKAAN TARJOAJA EI OLE VASTUUSSA KENELLEKÄÄN SUORASTA, EPÄSUORASTA, ERITYISESTÄ, TAPATURMAISESTA TAI VÄLILLISESTÄ VAHINGOSTA SISÄLTÄEN RAJOITUKSETTA VAHINGOT LIIKEARVON MENETYKSESTÄ, TYÖN KESKEYTYMISESTÄ, TIETOKONEVIRHEESTÄ TAI -HÄIRIÖSTÄ TAIKKA MISTÄÄN MUUSTA VAHINGOSTA TAI MENETYKSESTÄ, JOKA ILMENEE TAI LIITTYY ASIAKIRJAN TAI SEN MUOKATUN VERSION KÄYTTÖÖN EDES SILLOIN KUN OSAPUOLTA ON OLLUT TIETOINEN TÄLLAISEN VAHINGON MAHDOLLISUUDESTA.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+
+    <authorgroup>
+      <author>
+        <firstname>Timothy</firstname>
+        <surname>Musson</surname>
+        <affiliation>
+          <!-- <orgname></orgname> -->
+          <address><email>trmusson@ihug.co.nz</email></address>
+        </affiliation>
+      </author>
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+
+      <othercredit role="translator">
+        <firstname>Latin</firstname> 
+        <surname>Translator 1</surname> 
+        <affiliation> 
+          <orgname>Latin Translation Team</orgname> 
+          <address> <email>translator@gnome.org</email> </address> 
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+        <revnumber>Neljä rivissä - käyttöohje V2.8</revnumber>
+        <date>Syyskuu 2004</date>
+        <revdescription>
+          <para role="author">Timothy Musson <email>trmusson@ihug.co.nz</email></para>
+          <para role="publisher"/>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>Tämä käyttöohje käsittelee Neljä rivissä -pelin versiota 2.12</releaseinfo>
+
+    <legalnotice>
+      <title>Palaute</title>
+      <para>Halutessasi voit raportoida ohjelmavirheen tai tehdä ehdotuksen Neljä rivissä -peliin tai tähän käyttöoppaaseen liittyen seuraamalla ohjeita <ulink url="ghelp:user-guide?feedback-bugs" type="help">Gnomen palautesivulla</ulink>.</para>
+    </legalnotice>
+  </articleinfo>
+
+
+  <!-- ============= Document Body ============================= -->
+
+  <!-- ============= Introduction ============================== -->
+
+
+  <sect1 id="intro">
+
+    <title>Johdanto</title>
+
+    <para><application>Neljä rivissä</application> on Gnomen versio pelistä, jossa yritetään rakentaa omista pelinappuloista neljän rivi, ja estää vastustajaa (ihminen tai tietokone) rakentamasta omaa riviään. Rivi voi olla vaaka-, pysty- tai vinorivi.</para>
+
+    <para>Voit käynnistää <application>Neljä rivissä</application> -pelin valitsemalla <guimenu>Sovellukset</guimenu>-valikon <guisubmenu>Pelit</guisubmenu>-alavalikon kohdan <guimenuitem>Neljä rivissä, tai komentoriviltgnect.</guimenuitem></para>
+
+    <para><application>Neljä rivissä</application> on osa <filename>GNOME-games</filename>-pakettia, joka on osa GNOME-työpöytäympäristöä. Tämä ohje käsittelee <application>Neljä rivissä</application> -pelin versiota 2.8 .</para>
+
+   <para>Neljä rivissä tukee <link linkend="network-games">kaksinpeliä</link> joko samalla koneella vuorotellen tai verkossa.</para>
+
+
+  </sect1>
+
+
+  <!-- ============= Usage ===================================== -->
+
+
+  <sect1 id="usage">
+
+    <title>Perusteet</title>
+
+    <!-- ===== How to play ===== -->
+
+    <sect2 id="playing">
+
+      <title>Neljä rivissä -pelin pelaaminen</title>
+
+      <para>Voit aloittaa uuden Neljä rivissä -pelin valitsemalla valikosta <menuchoice><guimenu>Pelit</guimenu><guimenuitem>Uusi peli</guimenuitem></menuchoice>.</para>
+
+      <para><interface>Pelilauta</interface> koostuu seitsemästä pystyrivistä ja kuudesta vaakarivistä. Pelilaudan yläpuolella oleva vaakarivi kertoo vuorossa olevan pelaajan ja pelattavan nappulan. Jokainen siirto koostuu nappulan pudottamisesta johonkin pystyriveistä. Nappula putoaa pystyrivin alimpaan tyhjään paikkaan.</para>
+        
+      <para>Voit tehdä siirron napsauttamalla pystyriviä hiirellä. Pelatessasi näppäimistöllä, siirrä ylärivillä olevaa nappulaa vasemalla ja oikealla nuolinäppäimellä, ja pudota se paikalleen alanuolinäppäimellä. Nappulasi putoaa pystyrivin alimpaan tyhjään paikkaan.</para>
+
+      <!-- Figure -->
+      <mediaobject id="mainwindow-fig">
+        <imageobject>
+          <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="trm"/>
+        </imageobject>
+        <textobject>
+          <phrase>Neljä rivissä -pelin pääikkuna</phrase>
+        </textobject>
+        <caption><para>Neljä rivissä -pelin pääikkuna</para></caption>
+      </mediaobject>
+
+      <para>Pelin voittaja on se pelaaja, joka onnistuu saamaan ensimmäisenä neljän oman nappulan pysty-, vaaka- tai vinorivin. Jos pelilauta täyttyy ilman, että kumpikaan saa rakennettua täyttä riviä, peli päättyy tasapeliin.</para>
+
+    </sect2>
+    
+    <!-- ===== Commands ===== -->  
+    
+    <sect2 id="commands">
+      <title>Komennot</title>
+      <anchor id="menubar"/><!-- id for removed section -->
+      
+      <para>Voit perua siirron <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>Z</keycap></keycombo></shortcut><guimenuitem>Peru siirto</guimenuitem></menuchoice> -toiminnolla. Jos pelaat ystävääsi vastaan, yksi siirto peruntuu, jos taas pelaat tietokonevastustajaa vastaan, molempien viimeiset siirrot peruuntuvat. Toiminnon toistaminen palauttaa laudan alkutilanteeseen.</para>
+      <para>Voit pyytää tietokoneelta vinkin seuraavaan siirtoon <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>H</keycap></keycombo></shortcut><guimenuitem>Vinkki</guimenuitem></menuchoice>-toiminnolla</para>
+      
+      <para><menuchoice><guimenuitem>Pisteet</guimenuitem></menuchoice> -ikkunasta voit tarkistaa voittojen ja tasapelien lukumäärän. Pisteet palaavat nollaan, jos pelaaja-asetuksia muutetaan Asetukset-kohdassa.</para>      
+
+      
+    </sect2>  
+
+    <!-- ===== Preferences ===== -->
+
+    <sect2 id="prefsdialog">
+
+      <title>Asetukset</title>
+
+      <para>Voit muuttaa peliasetuksia valitsemalla <guimenu>Asetukset</guimenu> <guimenu>Asetukset</guimenu>-valikosta. <interface>Neljä rivissä -pelin asetukset</interface> -valintaikkuna aukeaa.</para>
+
+      <para>Asetusvalitsimet <guilabel>Peli</guilabel>-välilehdellä ovat:</para>
+      <para><guilabel>Näppäimistöohjaus</guilabel>-välilehdellä voit vaihtaa ohjausnäppäimiä. Vaihtaaksesi ohjausnäppäintä, kaksoisnapsauta sitä vastaavaa kenttää ja paina ohjausnäppäimen korvaavaa näppäintä.</para>
+
+    </sect2>
+  </sect1>
+
+
+  <!-- ===== Custom Themes ===================================== -->
+
+
+  <sect1 id="custom">
+
+    <title>Teemojen luonti</title>
+
+    <para>Tämä osio käsittelee omien teemojen luomista <application>Neljä rivissä</application> -peliin. Lähtöoletuksia ovat tekstinkäsittelyn, grafiikkaohjelmien ja komentorivin käytön perustaidot.</para>
+
+    <sect2 id="images">
+
+      <title>Kuvat</title>
+
+      <para><application>Neljä rivissä</application> -pelin nappulasarjoihin kuuluu aina kuusi samankokoista nappulaa vaakarivissä. Vasemmalta oikealle:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Pelaaja 1:n nappula pelilaudalla</para>
+        </listitem>
+        <listitem>
+          <para>Pelaaja 2:n nappula pelilaudalla</para>
+        </listitem>
+        <listitem>
+          <para>Pelilaudan taustaväri</para>
+        </listitem>
+        <listitem>
+          <para>Ylimmän rivin taustaväri</para>
+        </listitem>
+        <listitem>
+          <para>Pelaaja 1:n nappula ylimmäisellä rivillä</para>
+        </listitem>
+        <listitem>
+          <para>Pelaaja 2:n nappula ylimmäisellä rivillä</para>
+        </listitem>
+      </orderedlist>
+
+      <figure id="shot1">
+        <title>Esimerkkinappulasarja</title>
+        <screenshot>
+          <screeninfo>Kuvasssa kuusi nappulaa nappulasarjassa</screeninfo>
+          <graphic format="PNG" fileref="figures/tileset.png" srccredit="TRM"/>
+        </screenshot>
+      </figure>
+
+      <para>Nappulat kolme ja neljä toistuvat koko pelilaudan alueella ja ylimmäisellä rivillä, ellei koko ruudun kokoista taustakuvaa ole määritetty teematiedostossa.</para>
+
+      <tip>
+        <title>VIHJE</title>
+        <para>Nappulasarjat kannattaa tehdä PNG-muotoon. Ensimmäisen, toisen, viidennen ja kuudennen nappulan reunoissa pitäisi olla hiukan läpinäkyvyyttä, jos taustakuvan halutaan näkyvän läpi. Kolmannen ja neljännen nappulan tulisi olla umpinaisia ilman minkäänlaista läpinäkyvyyttä myös silloin, jos käytät koko ikkunan kokoista taustakuvaa teemassasi.</para>
+      </tip>
+
+      <tip>
+        <title>VIHJE</title>
+        <para>Nappulat voivat olla kulmikkaita tai pyöreitä ja minkä tahansa kokoisia. Suurin osa <application>Neljä rivissä</application> -pelin mukana tulevista nappulasarjoista koostuvat neliönmuotoisista nappuloista, joiden mitat ovat 50×50 pikseliä.</para>
+      </tip>
+
+      <para>Koko ikkunan kokoinen taustakuva vaatii hiukan enemmän työtä. Oletetaan, että nappulasi ovat 50×50 pikselin kokoisia. Pelinäyttö on kooltaan 7×7 nappulaa mukaanlukien ylimmäinen rivi, joten sopiva koko nappulasarjasi taustakuvalle olisi 350×350 pikseliä.</para>
+
+      <tip>
+        <title>VIHJE</title>
+        <para><application>Neljä rivissä</application> -peli venyttää taustakuvan, jos se ei vastaa nappulasarjan kokoa. Tämä tarkoittaa sitä, että voit tehdä ison ja pienen version teemastasi, jotka käyttävät samaa taustakuvaa, mutta erikokoisia palikkasarjoja.</para>
+      </tip>
+
+      <para>Kun palikkasarja ja mahdollinen taustakuva ovat valmiita, ne on seuraavaksi laitettava oikeaan paikkaan.</para>
+
+    </sect2>
+
+
+    <sect2 id="directories">
+
+      <title>Teeman asentaminen</title>
+
+      <para>Lopuksi kuvat täytyy laittaa paikkaan, josta <application>Neljä rivissä</application> -peli ne löytää. Voit laittaa ne pelin asennushakemistoon (jonka sijainti riippuu järjestelmästäsi), mutta kotihakemistosi on luultasti parempi vaihtoehto.</para>
+
+      <para>Luo <filename class="directory">~/.gnect</filename>-hakemisto ja <filename class="directory">~/.gnect/pixmaps</filename>-hakemisto. Hakemistojen nimet ovat tärkeitä, koska <application>Neljä rivissä</application> ei etsi tiedostoja muualta.</para>
+
+      <para>Kopioi kuvat pixmaps-hakemistoon</para>
+
+      <para>Jos käynnistät <application>Neljä rivissä</application> -pelin komentoriviltä, se antaa tietoa mahdollisista ongelmista teemojen kanssa. Jos niitä ei ole, löydät uuden teemasi <interface>Asetukset</interface>-valintaikkunasta.</para>
+
+      <para>Pidä hauskaa!</para>
+
+    </sect2>
+
+
+  </sect1>
+
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Verkkopelaaminen</title>
+  <para>Neljä rivissä tukee <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink>:n tarjoamia verkkomoninpelejä. Ottamalla yhteyden Internetissä olevaan Neljä rivissä -palvelimeen, voit haastaa toisia pelaajia kaksinpeliin. Uutisia, päivityksiä ja listan palvelimista löydät <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">gnome-games:n WWW-sivustolta</ulink>.</para>
+  <para>
+    To start the multiplayer game of Four-in-a-Row, select <menuchoice><guimenu>Game</guimenu> 
+    <guimenuitem>Network Game</guimenuitem></menuchoice> on the Four-in-a-Row menu.
+  </para> 
+
+<sect2 id="connecting">
+<title>Connecting to a Four-in-a-Row network server</title>
+<para>
+The Four-in-a-Row connection dialog is shown initially when starting a new
+network game. This dialog allows you to select a server to connect to,
+and the username that you will have while connected to that server.  
+</para>
+
+<para>
+It is possible to connect to a server with either a guest account or a normal
+registered account. Guest accounts allows you to anonymously login, while
+a normal login account allows you to reserve your own username which
+is protected by the password that you choose.
+</para>
+
+<para> The <guimenuitem>Guest Login</guimenuitem> option should be selected
+if you want an anonymous guest account. If you want to create a new 
+login account, then select the <guimenuitem>First-time Login</guimenuitem> 
+option, with the username, password and email of your choice.
+If you have already created your account, you can connect by selecting
+the <guimenuitem>Normal Login</guimenuitem> option, and enter the
+username and password that you have chosen.
+</para>
+<para>
+To connect to a server, click on the <guimenuitem>Connect</guimenuitem> button.
+</para>
+<figure id="connect">
+<title>The Four-in-a-Row network connection dialog.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>The Four-in-a-Row network connection dialog.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Joining a game room</title>
+<para>
+Once you have successfully connected to a server, you can choose which game room to join. To play a multiplayer game of Four-in-a-Row, select the Four-in-a-Row room. If you want to host your own game, then click on the Launch button. This creates a new table where other players can participate in a game against you. 
+If there are any other games already started, then you can double-click on an existing game table to join it.
+The list of game tables on the right shows you the number of available seats, which means the
+number of players that can join the game table.
+</para>
+<figure id="tables">
+<title>This Four-in-a-Row network dialog allows you to join a game room to find other players.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>This Four-in-a-Row network dialog allows you to join a game room to find other players.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>
+When creating a new table for Four-in-a-Row games, a preference dialog is displayed which allows you to
+customize the game, such as set the minimum number of players for the game. Once the total
+number of seats have been taken, then no more players are allowed to join that game table.
+</para>
+<para>
+It is possible to chat with other players in network games. Ask for advice or help playing the games,
+but please be polite against other players.
+</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Waiting for other players to join the game</title>
+<para>
+Once you have successfully joined a game table, then you have to wait until enough
+players have joined the table. The <guimenuitem>Players List</guimenuitem> menu item
+allows you to see a list of the players who have joined the game.
+The game will begin immediately when the total number of players in the the game have been reached.
+</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Playing multiplayer Four-in-a-Row games</title>
+<para>
+Multiplayer Four-in-a-Row games have pretty much the same rules as normal Four-in-a-Row games,
+except that you are now playing against human players. This means that other
+strategies might possibly be better than when playing against AI players.
+</para>
+<para>
+Once a player has won, the game ends and you can return to the initial network game screen.
+Then you can play yet another game of addictive Four-in-a-Row multiplayer!
+</para>
+</sect2>
+
+</sect1>
+
+
+
+  <!-- ===== Bugs ============================================== -->
+
+
+  <sect1 id="bugs">
+
+    <title>Tunnettuja bugeja ja rajoitteita</title>
+
+    <para>Toisinaan nappulanputoamisanimaatio ei näytä niin sulavalta kuin sen pitäisi.</para>
+
+  </sect1>
+
+
+  <!-- ===== Authors =========================================== -->
+
+
+  <sect1 id="authors">
+
+    <title>Tekijät</title>
+
+    <para><application>Neljä rivissä</application> -pelin on kirjoittanut Timothy Musson (<email>trmusson@ihug.co.nz</email>) ja David Neary (<email>bolsh@gimp.org</email>). Monet muut ovat auttaneet monin tavoin siitä asti kun <application>Neljä rivissä</application> -pelin kehitys alkoi.</para>
+    <para><ulink type="http" url="http://www.ce.unipr.it/~gbe/velena.html">Velena Enginen</ulink>, <application>Neljä rivissä</application> -pelin tekoälyn on kirjoittanut Giuliano Bertoletti. Olemme kiitollisia siitä, että hän antoi meidän liittää hänen työnsä projektiimme, jota ilman <application>Neljä rivissä</application> ei olisi niin hyvä.</para>
+    <para>Tämän käyttöohjeen on kirjoittanut Timothy Musson.</para>
+    <para>Voit raportoida ohjelmaa tai käyttöohjetta koskevat virheet ja kehitysehdotukset seuraamalla ohjeita tästä <ulink url="ghelp:user-guide?feedback-bugs" type="help">asiakirjasta</ulink>.</para>
+
+
+<!-- For translations: uncomment this:
+
+  <para>
+    Latin translation was done by ME
+    (<email>MYNAME@MYADDRESS</email>). Please send all comments and
+    suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+-->
+
+  </sect1>
+
+
+  <!-- ============= License =================================== -->
+
+
+  <sect1 id="license">
+
+    <title>Käyttöoikeussopimus</title>
+
+    <para>Tämä ohjelma on vapaa ohjelmisto. Voit jakaa sitä ja/tai muunnella sitä Free Software Foundation:in julkaiseman <citetitle>GNU General Public License</citetitle>:n, joko käyttöoikeussopimuksen version 2 tai halutessasi uudemman, alla.</para>
+
+    <para>Tämä ohjelma julkaistaan, koska siitä toivotaan olevan hyötyä, mutta ILMAN MINKÄÄNLAISTA TAKUUTA, edes epäsuoraa MYYNTITAKUUTA tai TAKUUTA SEN SOPIVUUDESTA JOHONKIN KÄYTTÖTARKOITUKSEEN. Lisätietoa <citetitle>GNU General Public License</citetitle> -käyttöoikeussopimuksessa.</para>
+
+    <para><citetitle>GNOME Users Guide</citetitle>:ssa on liitteenä kopio <citetitle>GNU General Public License</citetitle> -käyttöoikeussopimuksesta. Voit myös hankkia kopion <citetitle>GNU General Public License</citetitle>:stä Free Software Foundationilta käymällä <ulink url="http://www.fsf.org" type="http">heidän web-sivustollaan</ulink> tai lähettämällä kirjeen osoitteeseen <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode> <country>USA</country></address></para>
+
+  </sect1>
+
+</article>

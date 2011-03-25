@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.11">
+<!ENTITY date "January 2008">
+<!ENTITY appname "Swell Foop">
+<!ENTITY app "<application>Swell Foop</application>">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://live.gnome.org/DocumentationProject
+  Template version: 3.0 beta
+  Template last modified 2006-11-21
+
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="zh_CN">
+  <articleinfo> 
+    <title><application>消色块</application> 小游戏手册</title>       
+    
+    <abstract role="description">
+      <para>消色块是一个智力游戏，目标是点击相同方块组，尽可能多地消除它们，没有消除的方块会落下来继续组合，一直到没有可消除时结束。</para>
+    </abstract>
+
+    <copyright> 
+      <year>2005</year> 
+      <holder>Callum McKenzie</holder> 
+    </copyright><copyright><year>2010</year><holder>TeliuTe (teliute@163.com)</holder></copyright> 
+
+    <publisher role="maintainer"> 
+      <publishername>GNOME 文档项目</publishername> 
+    </publisher> 
+
+	  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="legal.xml"/>   
+   <!-- This file legal.xml contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+		<firstname>Callum</firstname> 
+		<surname>McKenzie</surname> 
+		<affiliation> 
+	  		<orgname>GNOME 文档项目</orgname> 
+	  		<address> <email>callum@physics.otago.ac.nz</email> </address> 
+		</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. --> 
+    <revhistory>
+      <revision> 
+		    <revnumber>消色块小游戏手册2.11版</revnumber>
+		    <date>2008年1月</date> 
+		    <revdescription> 
+    			<para>更新消色块小游戏手册适应新模板。</para>		    
+	  		  <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+	  		  <para role="publisher">GNOME 文档项目</para>
+    		</revdescription> 
+      </revision> 
+      <revision> 
+		    <revnumber>消色块小游戏手册2.10版</revnumber>
+		    <date>2005年2月</date> 
+		    <revdescription> 
+    			<para>用于新版消色块小游戏。</para>		    
+	  		  <para role="author">Callum McKenzie <email>callum@physics.otago.ac.nz</email></para>
+	  		  <para role="publisher">GNOME 文档项目</para>
+    		</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>本手册讲述的是2.12版的消色块小游戏。</releaseinfo> 
+    <legalnotice> 
+      <title>反馈</title> 
+      <para>要报告关于<application>消色块</application>程序或使用手册中的缺陷，或者提出建议，请参照 <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME 反馈页</ulink> 上的指导。</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>消色块</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+
+  <sect1 id="introduction"> 
+    <title>开始<application>消色块</application>小游戏</title> 
+    <para><application>消色块</application>小游戏是一个智力游戏，目标是用最少的次数来消除尽可能多的方块。相邻的色块会一同消去，留下的色块会重新连成一块，单个色块不能消除。</para>
+
+    <figure id="start-up">
+      <title>开始<application>消色块</application>新游戏。</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/start-up.png" format="PNG"/>
+	        </imageobject>
+	      </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>开始棋盘中充满了方块，数量多少取决于您选择棋盘大小，里面有三种或四种颜色的方块，如果有一组相邻的方块，都是同一色的，只要简单点击(或者按空格键)就可以消去。当您消去一组方块后，其他方块会移动重新组合在一起。消去的方块数和获得的积分，显示在窗口的左下角，一次消去的方块越多，获得的积分也越多。当一组方块被消去后，它上面的方块会落下来填充空白，如果竖着一列被消去，那么右侧的方块会左移填充。</para>
+
+    <table id="play" frame="all"><title>开始<application>消色块</application>小游戏</title>
+      <tgroup cols="2" colsep="0">
+      <tbody>
+        <row><entry><para>1. 消去两个或多个一组的 <screenshot>
+         <mediaobject>
+           <imageobject>
+             <imagedata fileref="figures/play1.png" format="PNG"/>
+           </imageobject>
+         </mediaobject>
+         </screenshot></para></entry>
+       <entry><para>2. 方块落下来填充空白 <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/play2.png" format="PNG"/>
+            </imageobject>
+          </mediaobject>
+          </screenshot></para></entry></row>
+        <row><entry><para>3. 方块左移填充空列 <screenshot>
+         <mediaobject>
+           <imageobject>
+             <imagedata fileref="figures/play3.png" format="PNG"/>
+           </imageobject>
+         </mediaobject>
+         </screenshot></para></entry>
+       <entry><para>4. 构成新的一组，如此不断重复 <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/play4.png" format="PNG"/>
+            </imageobject>
+          </mediaobject>
+          </screenshot></para></entry></row>
+      </tbody>
+      </tgroup>
+    </table>
+
+    <para>得分的多少取决于您消除的方块数：</para>
+    
+    <informaltable frame="topbot">
+    <tgroup cols="2" align="center">
+    <thead><row>
+    <entry>方块数量：</entry>
+    <entry>得分</entry>
+    </row></thead>
+    <tbody>
+    <row><entry>2</entry><entry>0</entry></row>
+    <row><entry>3</entry><entry>1</entry></row>
+    <row><entry>4</entry><entry>4</entry></row>
+    <row><entry>5</entry><entry>9</entry></row>
+    <row><entry>6</entry><entry>16</entry></row>
+    <row><entry>7</entry><entry>25</entry></row>
+    <row><entry>8</entry><entry>36</entry></row>
+    <row><entry>9</entry><entry>49</entry></row>
+    <!-- Translators: this is a vertical continuation character -->
+    <row><entry>⋮</entry><entry>⋮</entry></row>
+    <row><entry>n</entry><entry>(n - 2)<superscript>2</superscript></entry></row>
+    </tbody>
+    </tgroup>
+    </informaltable>
+    <para>如果您消去了所有方块，会得到1000点。</para>
+  </sect1>
+
+  <sect1 id="swell-foop-customisation">
+    <title>自定义</title>
+
+    <sect2 id="changing-the-look">
+      <title>更改外观</title>
+      <para>改变方块大小，只需简单地改变窗口的大小。要使用最大化屏幕，点 <guimenu>查看</guimenu> 菜单，选择 <guimenuitem>全屏</guimenuitem> 选项。</para>
+
+      <para>要改变方块的外观，在 <guimenu>查看</guimenu> 菜单，点 <guimenuitem>主题</guimenuitem> 选项，在下拉列表中选择一个主题后立即生效。</para>
+
+        <para>您还可以创建自己的主题，只是操作还不是很方便：复制一个现有的主题，把它当作模板，然后用自己喜欢的图片程序修改它，完成后再把它复制到 <filename>$XDG_DATA_HOME/gnome-games/swell-foop/themes/2.10/</filename> 中，下次运行 <application>消色块</application>小游戏时，会自动加载这个主题。<filename>$XDG_DATA_HOME</filename> 通常是<filename>~/.local/share/</filename> 文件夹。</para>
+    </sect2>
+
+    <sect2 id="changing-the-size">
+      <title>改变大小</title>
+      <para><guimenu>棋盘大小</guimenu> 菜单项，包括三个设置：小、中和大。旁边是增加方块的数量，大的棋盘设置也会增加不同的方块颜色数。</para>
+    </sect2>
+
+    <sect2 id="changing-the-speed">
+    <title>更改速度</title>
+    <para>默认动画是比较平滑和柔和的，如果您比较喜欢丰富多彩的效果，可以在 <guimenu>查看</guimenu> 菜单中勾选 <guimenuitem>快速动画</guimenuitem> 选项，这样就可以看到华丽的动画效果。</para>
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="swell-foop-strategy">
+    <title>攻略</title>
+
+    <para>重点是要想办法得到高分：您消去的一组方块后，将还能够接着消去另外一组。</para>
+
+<para>首先消去高分的一组，除非消去后能得到下一组更高的得分。垂直排列的方块只能落下，而水平的可以重新排列。</para>
+
+    <para>因为得分是按乘方增长的，大的组得分总是要多一些。例如，消去7个一组的得分，会比6个一组的多9分。在这种情况下，您应该合并两个成为一组，或者合并到6个一组的里面去，甚至消去两个一组不能得分，而最后得到一个大组的得分也会很高。</para>
+
+    <para>记住，如果能消去所有方块，会得到1000分的奖励，而只有消去一组34个的才能得到这么多。有时您不得不为了清盘而放弃消去一个大组的机会。</para>
+  </sect1>
+
+<!-- ============= About ================================== -->
+  <sect1 id="swell-foop-about"> 
+    <title>关于<application>消色块</application>小游戏</title> 
+    <para><application>消色块</application>小游戏由 Callum McKenzie (<email>callum@physics.otago.ac.nz</email>)编写，更多详细信息，请访问 <ulink url="http://live.gnome.org/GnomeGames/" type="http">GNOME 游戏页面</ulink>。</para>
+    <para>要报告本程序或本手册的缺陷或者提出建议，请参照 <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME 用户指南反馈</ulink> 上的指导。</para>
+
+    <para>本程序的分发和/或修改遵守自由软件基金会发布的 GNU 通用许可证第2版或更高(如您所愿)版本，本文档包含一份<ulink url="ghelp:gpl" type="help">此许可协议</ulink>，您也可以在本程序源文件的 COPYING 文件中找到它。</para>
+
+  </sect1> 
+</article>

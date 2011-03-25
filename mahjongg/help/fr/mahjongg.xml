@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.26">
+<!ENTITY manrevision "2.26">
+<!ENTITY date "June 2009">
+<!ENTITY app "<application>Mahjongg</application>">
+<!ENTITY appname "Mahjongg">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="fr">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+  
+    <title>Manuel de <application>Mahjongg</application></title>
+    <abstract role="description">
+      <para>Mahjongg est une version solitaire du classique jeu de tuiles oriental. Il consiste à éliminer autant de tuiles que possible, en associant les tuiles comparables et en les retirant du jeu.</para>
+    </abstract>
+    <copyright>
+      <year>1998</year>
+      <holder>Free Software Foundation</holder>
+    </copyright>
+    <copyright>
+      <year>2000</year>
+      <holder>Eric Baudais (auteur de la documentation)</holder>
+    </copyright>  
+	    <copyright>
+      <year>2009</year>
+      <holder>Paul Cutler (auteur de la documentation)</holder>
+    </copyright><copyright><year>2007-2009</year><holder>Claude Paroz (claude@2xlibre.net)</holder></copyright><copyright><year>2008-2009</year><holder>Bruno Brouard (annoa.b@gmail.com)</holder></copyright> 
+    
+    <!-- translators: uncomment this:
+    
+  <copyright>
+  <year>2000</year>
+  <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+    -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Projet de documentation GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Permission vous est donnée de copier, distribuer et/ou modifier ce document selon les termes de la Licence GNU Free Documentation License, Version 1.1 ou ultérieure publiée par la Free Software Foundation sans section inaltérable, sans texte de première page de couverture ni texte de dernière page de couverture. Vous trouverez un exemplaire de cette licence en suivant ce <ulink type="help" url="ghelp:fdl">lien</ulink> ou dans le fichier COPYING-DOCS fourni avec le présent manuel.</para>
+         <para>Ce manuel fait partie de la collection de manuels GNOME distribués selon les termes de la licence de documentation libre GNU. Si vous souhaitez distribuer ce manuel indépendamment de la collection, vous devez joindre un exemplaire de la licence au document, comme indiqué dans la section 6 de celle-ci.</para>
+
+	<para>La plupart des noms utilisés par les entreprises pour distinguer leurs produits et services sont des marques déposées. Lorsque ces noms apparaissent dans la documentation GNOME et que les membres du projet de Documentation GNOME sont informés de l'existence de ces marques déposées, soit ces noms entiers, soit leur première lettre est en majuscule.</para>
+
+	<para>LE PRÉSENT DOCUMENT ET SES VERSIONS MODIFIÉES SONT FOURNIS SELON LES TERMES DE LA LICENCE DE DOCUMENTATION LIBRE GNU SACHANT QUE : <orderedlist>
+		<listitem>
+		  <para>LE PRÉSENT DOCUMENT EST FOURNI « TEL QUEL », SANS AUCUNE GARANTIE, EXPRESSE OU IMPLICITE, Y COMPRIS, ET SANS LIMITATION, LES GARANTIES DE MARCHANDABILITÉ, D'ADÉQUATION À UN OBJECTIF PARTICULIER OU DE NON INFRACTION DU DOCUMENT OU DE SA VERSION MODIFIÉE. L'UTILISATEUR ASSUME TOUT RISQUE RELATIF À LA QUALITÉ, À LA PERTINENCE ET À LA PERFORMANCE DU DOCUMENT OU DE SA VERSION DE MISE À JOUR. SI LE DOCUMENT OU SA VERSION MODIFIÉE S'AVÉRAIT DÉFECTUEUSE, L'UTILISATEUR (ET NON LE RÉDACTEUR INITIAL, L'AUTEUR, NI TOUT AUTRE PARTICIPANT) ENDOSSERA LES COÛTS DE TOUTE INTERVENTION, RÉPARATION OU CORRECTION NÉCESSAIRE. CETTE DÉNÉGATION DE RESPONSABILITÉ CONSTITUE UNE PARTIE ESSENTIELLE DE CETTE LICENCE. AUCUNE UTILISATION DE CE DOCUMENT OU DE SA VERSION MODIFIÉE N'EST AUTORISÉE AUX TERMES DU PRÉSENT ACCORD, EXCEPTÉ SOUS CETTE DÉNÉGATION DE RESPONSABILITÉ ; </para>
+		</listitem>
+		<listitem>
+		  <para>EN AUCUNE CIRCONSTANCE ET SOUS AUCUNE INTERPRÉTATION DE LA LOI, QU'IL S'AGISSE D'UN DÉLIT CIVIL (Y COMPRIS LA NÉGLIGENCE), CONTRACTUEL OU AUTRE, L'AUTEUR, LE RÉDACTEUR INITIAL, TOUT PARTICIPANT OU TOUT DISTRIBUTEUR DE CE DOCUMENT OU DE SA VERSION MODIFIÉE, OU TOUT FOURNISSEUR DE L'UNE DE CES PARTIES NE POURRA ÊTRE TENU RESPONSABLE À L'ÉGARD DE QUICONQUE POUR TOUT DOMMAGE DIRECT, INDIRECT, PARTICULIER, OU ACCIDENTEL DE TOUT TYPE Y COMPRIS, SANS LIMITATION, LES DOMMAGES LIÉS À LA PERTE DE CLIENTÈLE, À UN ARRÊT DE TRAVAIL, À UNE DÉFAILLANCE OU UN MAUVAIS FONCTIONNEMENT INFORMATIQUE, OU À TOUT AUTRE DOMMAGE OU PERTE LIÉE À L'UTILISATION DU DOCUMENT ET DE SES VERSIONS MODIFIÉES, MÊME SI LADITE PARTIE A ÉTÉ INFORMÉE DE L'ÉVENTUALITÉ DE TELS DOMMAGES.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer">
+	<firstname>Eric</firstname> 
+	<surname>Baudais</surname> 
+	<affiliation> 
+	  <address> <email>baudais@okstate.edu</email> </address> 
+	</affiliation> 
+      </author> 
+	        <author role="maintainer">
+	<firstname>Artur</firstname> 
+	<surname>Szymanski</surname> 
+	<affiliation> 
+	</affiliation> 
+      </author>
+	        <author role="maintainer">
+	<firstname>Paul</firstname> 
+	<surname>Cutler</surname> 
+	<affiliation> 
+		<orgname>Projet de documentation GNOME</orgname>
+	  <address> <email>pcutler@gnome.org</email> </address> 
+	</affiliation> 
+      </author> 
+
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="candidate"/>
+	
+	    <revhistory>
+      <!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+
+      <revision>
+        <revnumber>Manuel de Mahjongg v2.26</revnumber>
+        <date>16/6/2009</date>
+        <revdescription>
+          <para role="author">Paul Cutler</para>
+          <para role="publisher">Projet de documentation GNOME</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>Manuel de Mahjongg v2.26</revnumber>
+        <date>16/6/2009</date>
+        <revdescription>
+          <para role="author">Artur Szymanski</para>
+        </revdescription>
+      </revision>	  
+      <revision> 
+	<revnumber>Manuel de Mahjongg v2.10</revnumber> 
+	<date>Juin 2005</date> 
+	<revdescription> 
+	  <para role="author">Eric Baudais <email>baudais@okstate.edu</email></para>
+	  <para role="publisher">Projet de documentation GNOME</para>
+	</revdescription> 
+	</revision>
+	</revhistory>
+
+    <releaseinfo>Ce manuel documente la version 2.26 de Mahjongg.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Votre avis</title> 
+      <para>Pour rapporter une anomalie ou émettre une suggestion concernant <application>Mahjongg</application> ou ce manuel, procédez comme indiqué sur la <ulink url="ghelp:user-guide?feedback-bugs" type="help">page des réactions sur GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME Mahjongg</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="intro">
+    <title>Introduction</title>
+
+    <para><application>Mahjongg</application> est une version solitaire (à 1 joueur) du classique jeu de tuiles oriental Mahjongg. Il comporte toutes les fonctions attendues d'un jeu de tuiles ou de cartes. Dans la boîte de dialogue des <link linkend="prefs">Préférences</link>, vous pouvez changer entre autres le type des tuiles, l'arrière-plan ou le niveau de difficulté. D'autres focntionnalités, telles que le <link linkend="pause">bouton <guibutton>Pause</guibutton></link>, rendent le jeu plus compétitif lorsque vous jouez contre la montre.</para>
+
+    <sect2 id="history">
+      <title>Bref historique de Mahjongg</title>
+
+      <!-- FIXME: Explain more about solitaire version.-->
+      <para>Des jeux de tuiles Mahjongg sont utilisés pour jouer à de nombreuses variantes du jeu original. La présente version de Mahjongg est une version solitaire. Chaque tuile possède aussi une <ulink type="http" url="http://www.xs4all.nl/~korntner/mahjong/fortune/index.html">signification</ulink> correspondante.</para>
+
+      <para>L'origine de Mahjongg n'est pas entièrement connue, mais beaucoup de théories ont été avancées. L'un de ces théories prétend que Noé a joué à Mahjongg dans l'arche, parce que la main orientale, provenance probable de la pluie, est dominante dans le déluge. Une autre théorie pense que le philosophe chinois Confucius a créé le jeu. Les trois tuiles <quote>cardinales</quote> ont le même nom que ses trois vertus cardinales, Chunk la rouge (milieu), Fa la verte (prospérité) et Po la blanche (blanc), ce qui correspond à la bienveillance, la sincérité et la piété filiale. Une autre théorie encore affirme que Mahjongg est dérivé d'autres jeux chinois. <quote>Ya Pei</quote> se joue avec 32 cartes en bois ou en ivoire et présente les mêmes formes allongées que les tuiles actuelles de Mahjongg. <quote>Ma Tiae</quote> se joue avec 40 cartes de papier, semblable en apparence, numérotées de 1 à 9 dans quatre couleurs différentes avec des cartes de fleurs. On a aussi prétendu que le jeu a été créé par deux frères, aux alentours de 1850 av. J-C., en combinant ces deux jeux.</para>
+
+      <para>Au début des années 1900, Mahjongg a été introduit dans les clubs anglais de Shangaï. M. Babcock débuta l'importation des tuiles Mahjongg dans le monde occidental. Il réduisit les règles à un sous-ensemble très simplifié et inscrivit les chiffres arabes sur les tuiles. 1923 constitue le sommet du succès de Mahjongg, avec des companies importantes dans le commerce du jeu, comme Parker Bros., Milton Bradley et United States Playing Card, qui importèrent des jeux de tuiles Mahjongg par milliers.</para>
+
+      <para>De nombreuses règles différentes sont apparues, et en 1924, le comité de standardisation des règles américaines officielles du Mah-jongg a été constitué pour rédiger un cahier de règles. Encore aujourd'hui, beaucoup de clubs jouent selon des règles différentes, et ajoutent même parfois des tuiles de fleurs ou des jokers. Les joueurs de la version informatique s'intéressent progressivement à la beauté et aux détails des jeux artisanaux créés dans les années 1920 et 1930, et recherchent chez les antiquaires ou dans les marchés aux puces des jeux à acquérir. Beaucoup de nouveaux joueurs sont initiés à ce jeu uniquement par le moyen de la version solitaire et réalisent petit à petit les mystères et les défis offerts par ce jeu traditionnel. <footnote>
+	  <para>Des parties de ce texte sont des adaptations provenant du <ulink type="http" url="http://www.mahjongmuseum.com/">Musée Mah Jong</ulink>.</para>
+	</footnote></para>
+    </sect2>
+  </sect1>
+  
+   <!-- ============= Playing Mahjongg ============================= -->
+
+  <sect1 id="usage">
+    <title>Jouer à Mahjongg</title>
+
+    <para>Au départ, cinq niveaux de tuiles sont empilées, masquant ainsi certaines tuiles en-dessous. Plus le niveau défini dans les <link linkend="prefs"><interface>Préférences</interface></link> est élevé, plus le nombre de tuiles recouvertes au début du jeu est important. Le but de <application>Mahjongg</application> est d'enlever toutes les tuiles du jeu. Pour enlever des tuiles, vous devez repérer des paires semblables. Une paire de tuiles correspondantes présentent normalement le même nombre de boutons ou de signes, ou se ressemblent beaucoup.</para>
+
+    <para>Pour illustrer cela, la tuile mise en évidence dans la <link linkend="mahjongg-fig">figure ci-dessous</link> possède 6 boutons. La tuile correspondante est celle qui possède aussi 6 boutons. Celle-ci se situe tout à droite de la troisième rangée depuis le bas, et il y en a une autre près du sommet de la quatrième rangée depuis le bas. Si vous voulez associer une tuile à celle qui se trouve au premier niveau, vous devez chercher la tuile présentant le même symbole de bambou vert. En voyez-vous une ? Il y a trois tuiles visibles qui correspondent à la tuile du premier niveau. Deux se trouvent en bas à gauche et à droite. La troisième est dans la rangée supérieure, mais ne pouvez pas encore l'enlever parce qu'elle ne se trouve pas à l'extérieur de la pile de tuiles. Nous expliquerons plus loin en détails les conditions à remplir pour qu'une tuile puisse être retirée. Nous vous laissons le soin de découvrir les deux autres tuiles correspondantes et visibles.</para>
+
+    <figure id="mahjongg-fig">
+      <title>La fenêtre principale de Mahjongg</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/mahjongg.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Fenêtre principale.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para><application>Mahjongg</application> se joue en cliquant sur deux tuiles correspondantes qui sont alors enlevées du jeu. Ainsi de suite jusqu'à ce qu'il n'y ait plus de tuile ou qu'il n'existe plus de possibilité de faire correspondre deux tuiles.</para>
+
+    <para>Seules les tuiles aux extrémités gauche et droite de chaque niveau peuvent être sélectionnées. La raison est qu'il n'est pas possible de retirer une tuile qui n'est pas située aux extrémités gauche et droite. Si des tuiles se situent à des niveaux différents mais sur le côté gauche ou droit d'une rangée, elles peuvent être enlevées si vous trouvez une autre tuile correspondante disponible.</para>
+
+    <para>Si plus aucune correspondance n'est possible, une boîte de dialogue apparaît et vous signale qu'il n'est plus possible de continuer. Vous avez la possibilité de mélanger aléatoirement les tuiles (avec une pénalité de 60 secondes à l'horloge du jeu) ou d'annuler le dernier mouvement (même si vous devrez probablement annuler plus de mouvements pour découvrir votre erreur).</para>
+
+    <figure id="info-fig1">
+      <title>Boîte de dialogue d'information</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/no-move.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Boîte de dialogue d'information.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+    
+    <sect2 id="toolbar">
+      <title>Barre d'outils</title>
+
+      <para>La <interface>barre d'outils</interface>, située au-dessous de la <interface>barre de menus</interface>, contient les boutons suivants :</para>
+      
+      <variablelist>
+	<varlistentry>
+	  <term><guibutton>Nouveau</guibutton></term>
+	  <listitem>
+	    <para>Ce bouton démarre une nouvelle partie avec les réglages actuels.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Recommencer</guibutton></term>
+	  <listitem>
+	    <para>Ce bouton recommence la partie actuelle à son début sans remélanger les tuiles.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry id="pause">
+	  <term><guibutton>Pause</guibutton></term>
+	  <listitem>
+	    <para>Ce bouton met le jeu en pause. Dès cet instant, l'horloge située dans le coin inférieur droit de la <interface>fenêtre principale</interface> s'arrête et vous ne pouvez plus voir l'aspect des tuiles.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Annuler le déplacement</guibutton></term>
+	  <listitem>
+	    <para>Ce bouton remet en place les deux dernières tuiles enlevées. En cliquant suffisamment de fois, vous pouvez revenir ainsi au début du jeu.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Rétablir le déplacement</guibutton></term>
+	  <listitem>
+	    <para>Ce bouton effectue à nouveau le dernier mouvement annulé.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Astuce</guibutton></term>
+	  <listitem>
+	    <para>Ce bouton vous montre une paire de tuiles correspondantes qui peuvent être enlevées. À chaque utilisation, une pénalité de 30 secondes est ajoutée à l'horloge de la partie.</para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+      <para>La barre d'état au bas de la fenêtre vous donne des informations sur l'état actuel du jeu :</para>
+      <variablelist>
+	<varlistentry>
+	  <term><guilabel>Tuiles restantes :</guilabel></term>
+	  <listitem>
+	    <para>Cela vous indique le nombre de tuiles restantes que vous devez encore faire correspondre pour terminer la partie.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guilabel>Mouvements restants :</guilabel></term>
+	  <listitem>
+	    <para>Ce nombre vous indique combien de tuiles il est possible de faire correspondre dans la situation de jeu actuelle.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guilabel>Durée :</guilabel></term>
+	  <listitem>
+	    <para>Cette zone indique le temps écoulé depuis le début de la partie.</para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+      
+      <figure id="toolbar-fig">
+	<title>Barre d'outils de Mahjongg</title>
+	<screenshot>
+	   <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/toolbar.png" format="PNG" srccredit="Eric Baudais"/>
+	  </imageobject>
+    <textobject> 
+      <phrase>Barre d'outils.</phrase> 
+    </textobject> 
+  </mediaobject>
+	</screenshot>
+      </figure>
+      
+    </sect2>
+    
+    <sect2 id="menubar">
+      <title>Menus</title>
+      <para>La barre de menus située au sommet de la <interface>fenêtre principale</interface> contient les menus suivants :</para>
+
+      <variablelist>
+	<varlistentry>
+	  <term><guimenu>Jeu</guimenu></term>
+	  <listitem>
+	    <para>Le menu contient : <itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>Ctrl-N</keycap></shortcut><guimenuitem>Nouveau</guimenuitem></menuchoice> — Cet élément débute une nouvelle partie.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Recommencer</guimenuitem></menuchoice> — Cet élément recommence la partie actuelle.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Pause</guimenuitem></menuchoice> — Ceci met la partie en pause, arrête l'horloge et masque les tuiles.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>Ctrl-Z</keycap></shortcut><guimenuitem>Annuler le déplacement</guimenuitem></menuchoice> — Ceci replace sur le jeu les deux dernières tuiles enlevées jusqu'à ce que le début de la partie soit atteint.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>Ctrl-R</keycap></shortcut><guimenuitem>Rétablir le déplacement</guimenuitem></menuchoice> — Cet élément effectue à nouveau le mouvement précédemment annulé. Lorsque vous retrouvez l'état de situation du début de ou des annulations, le message <quote>Plus de mouvement à refaire</quote> apparaît au coin inférieur droit de la <interface>fenêtre principale</interface>.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Astuce</guimenuitem></menuchoice> — Cet élément vous indique une paire de tuiles correspondantes que vous pouvez enlever.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Scores</guimenuitem></menuchoice> — Cet élément affiche une fenêtre qui présente les dix meilleurs scores. Cette fenêtre affiche les scores avec le nom d'utilisateur et le temps utilisé pour finir la partie.</para>
+		</listitem>
+		<listitem>
+		  <para id="quit"><menuchoice><shortcut><keycap>Ctrl-Q</keycap></shortcut><guimenuitem>Quitter</guimenuitem></menuchoice> — Cet élément vous permet de quitter le jeu.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term><guimenu>Préférences</guimenu></term>
+	  <listitem>
+	    <para>Le menu contient : <itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>F11</keycap></shortcut><guimenuitem>Plein écran</guimenuitem></menuchoice> — Cet élément permet de jouer en mode plein écran. Pour quitter ce mode, appuyez sur <keycap>F11</keycap> ou cliquez sur <guibutton>Quitter le plein écran</guibutton> sur la <interface>barre d'outils</interface>.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Barre d'outils</guimenuitem></menuchoice> — Cet élément détermine si la <link linkend="toolbar"><interface>barre d'outils</interface></link> est affichée ou non. Si vous cochez cet élément, la <interface>barre d'outils</interface> se place au dernier endroit où vous l'avez mise. Si vous le décochez, la <interface>barre d'outils</interface> est masquée.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Préférences</guimenuitem></menuchoice> — Cet élément affiche la fenêtre des <link linkend="prefs">Préférences</link>.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guimenu>Aide</guimenu></term>
+	  <listitem>
+	    <para>Le menu contient : <itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>F1</keycap></shortcut><guimenuitem>Sommaire</guimenuitem></menuchoice> — Cet élément affiche ce manuel.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>À propos</guimenuitem></menuchoice> — Cet élément vous apporte quelques informations de base sur <application>GNOME Mahjongg</application>, telles que les noms des auteurs et le numéro de version de l'application.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+
+    </sect2>
+  </sect1>
+  
+   <!-- ============= Customization ============================= -->
+
+  <sect1 id="prefs">
+    <title>Personnalisation</title>
+    <para>Pour modifier les paramètres de l'application, choisissez <guimenuitem>Préférences</guimenuitem> dans le menu <guimenu>Préférences</guimenu>. La <link linkend="preferences-fig">fenêtre des <interface>Préférences</interface></link> apparaît.</para>
+    
+    <figure id="preferences-fig">
+<!-- FIXME: This dialog is the old one. -->
+<!-- ALAN: looks correct like version 2.10 to me -->
+      <title>Fenêtre des préférences</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Fenêtre des préférences.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Toutes les options sont immédiatement appliquées et enregistrées.</para>
+    
+    <para>Les réglages possibles de la fenêtre des <interface>Préférences</interface> sont les suivants :</para>
+      
+      <itemizedlist mark="opencircle">
+	<listitem>
+	  <para><guilabel>Jeu de pièces :</guilabel> — Choisissez l'apparence des tuiles dans cette liste.</para>
+	</listitem>
+	<listitem>
+	  <para><guilabel>Sélectionner la carte :</guilabel> — Modifie la difficulté du jeu en changeant la manière d'empiler les tuiles. La disposition la plus étendue (Facile) vous permet de voir un maximum de tuiles alors que la disposition plus compacte (Difficile) ne permet pas d'en voir beaucoup.</para>
+	</listitem>
+	<listitem>
+	  <para><guilabel>Couleur d'arrière-plan :</guilabel> — Modifie la couleur de l'arrière-plan en affichant un <interface>sélecteur de couleur</interface> permettant de sélectionner une nouvelle couleur.</para>
+	</listitem>
+      </itemizedlist>
+
+    <para>Pour modifier la taille des tuiles, il suffit de redimensionner la fenêtre de la façon habituelle. Les tuiles s'adaptent automatiquement à la nouvelle taille de la fenêtre.</para>
+
+  </sect1>
+  
+<!-- ALAN: Better to leave this section out than to say something unhelpful 
+and risk annoying the user.  
+ <sect1 id="bugs">
+  <title>Known Bugs and Limitations</title>
+  <para>
+   This application has no known bugs.
+  </para>
+ </sect1>
+-->
+
+ <!-- ============= Authors ============================= -->
+
+ <sect1 id="authors">
+  <title>Auteurs</title>
+  <para><application>Mahjongg</application> a été écrit par Francisco Bustamante (<email>pancho@nuclecu.unam.mx</email>), Michael Meeks (<email>mmeeks@gnu.org</email>), Max Watson, Heinz Hempe et Philippe Chavin. Les tuiles de <application>Mahjongg</application> ont été réalisées par Jonathan Buzzard et Max Watson. Ce manuel a été écrit par Eric Baudais (<email>baudais@okstate.edu</email>). Pour rapporter une anomalie ou effectuer une suggestion concernant cette application ou ce manuel, suivez les instructions de ce <ulink url="ghelp:user-guide?feedback-bugs" type="help">document</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licence</title>
+  <para>Ce programme et la confection des tuiles est du logiciel libre ; vous pouvez le redistribuer et/ou le modifier selon les termes de la <citetitle>GNU General Public License</citetitle>, tels que publiés par la Free Software Foundation ; soit la version 2 de cette licence ou (à votre choix) toute version ultérieure.</para>
+  <para>Ce programme est distribué dans l’espoir qu’il sera utile, mais SANS AUCUNE GARANTIE, ni explicite ni implicite; sans même les garanties de commercialisation ou d’adaptation dans un but spécifique. Se référer à la <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> pour plus de détails.</para>
+  <para>Une copie de la <citetitle>GNU General Public License</citetitle> est incluse sous forme d'annexe au <citetitle>Guide d'utilisation du bureau GNOME</citetitle>. Vous pouvez également obtenir une copie de la <citetitle>GNU General Public License</citetitle> à la Free Software Foundation en visitant <ulink type="http" url="http://www.fsf.org">leur site Web</ulink> ou en écrivant à <address> Free Software Foundation, Inc. <street>51 Franklin Street, Fifth Floor</street><city>Boston</city>, <state>MA</state><postcode>02110-1301</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

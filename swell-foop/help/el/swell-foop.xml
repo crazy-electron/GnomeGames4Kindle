@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.11">
+<!ENTITY date "January 2008">
+<!ENTITY appname "Swell Foop">
+<!ENTITY app "<application>Swell Foop</application>">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://live.gnome.org/DocumentationProject
+  Template version: 3.0 beta
+  Template last modified 2006-11-21
+
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="el">
+  <articleinfo> 
+    <title>Τεκμηρίωση <application>Swell Foop</application></title>       
+    
+    <abstract role="description">
+      <para>Το Swell Foop είναι ένα παιχνίδι πάζλ, του οποίου ο στόχος είναι να καθαρίσετε το παράθυρο από όσα περισσότερα κομμάτια γίνεται κάνοντας κλικ σε ομάδες κομματιών ίδιου χρώματος. Αυτή η ομάδα θα εξαφανιστεί και τα κομμάτια στην κορυφή θα πέσουν μέχρι να μην μείνει κανένα κομμάτι ή καμία ομάδα χρώματος.</para>
+    </abstract>
+
+    <copyright> 
+      <year>2005</year> 
+      <holder>Callum McKenzie</holder> 
+    </copyright><copyright><year>2009</year><holder>Φώτης Τσάμης (ftsamis@gmail.com)</holder></copyright> 
+
+    <publisher role="maintainer"> 
+      <publishername>Έργο Τεκμηρίωσης GNOME</publishername> 
+    </publisher> 
+
+	  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="legal.xml"/>   
+   <!-- This file legal.xml contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+		<firstname>Callum</firstname> 
+		<surname>McKenzie</surname> 
+		<affiliation> 
+	  		<orgname>Έργο Τεκμηρίωσης GNOME</orgname> 
+	  		<address> <email>callum@physics.otago.ac.nz</email> </address> 
+		</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. --> 
+    <revhistory>
+      <revision> 
+		    <revnumber>Τεκμηρίωση για τo Swell Foop έκδοση 2.11</revnumber>
+		    <date>Ιανουάριος 2008</date> 
+		    <revdescription> 
+    			<para>Προσαρμογή του εγχειριδίου Swell Foop σε νέο πρότυπο.</para>		    
+	  		  <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+	  		  <para role="publisher">Έργο Τεκμηρίωσης GNOME</para>
+    		</revdescription> 
+      </revision> 
+      <revision> 
+		    <revnumber>Τεκμηρίωση για τo Swell Foop έκδοση 2.10</revnumber>
+		    <date>Φεβρουάριος 2005</date> 
+		    <revdescription> 
+    			<para>Αρχική έκδοση για το νέο Swell Foop.</para>		    
+	  		  <para role="author">Callum McKenzie <email>callum@physics.otago.ac.nz</email></para>
+	  		  <para role="publisher">Έργο Τεκμηρίωσης GNOME</para>
+    		</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.12 του Swell Foop.</releaseinfo> 
+    <legalnotice> 
+      <title>Aνάδραση</title> 
+      <para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με το <application>Swell Foop</application> ή αυτό το εγχειρίδιο, ακολουθήστε τις οδηγίες στην <ulink url="ghelp:user-guide?feedback-bugs" type="help"> Ενότητα ανατροφοδότησης του οδηγού χρήστη GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>Swell Foop</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+
+  <sect1 id="introduction"> 
+    <title>Παίζοντας <application>Swell Foop</application></title> 
+    <para>Το <application>Swell Foop</application> είναι ένα παιχνίδι πάζλ. Ο στόχος είναι να αφαιρέσετε όσο το δυνατό περισσότερα αντικείμενα με όσες το δυνατό λιγότερες κινήσεις. Τα αντικείμενα που είναι το ένα δίπλα στο άλλο αφαιρούνται ως ομάδα. Τα υπόλοιπα αντικείμενα τότε καταρρέουν για να συμπληρώσουν τα κενά και νέες ομάδες σχηματίζονται. Δεν μπορείτε να αφαιρέσετε τα μονά αντικείμενα.</para>
+
+    <figure id="start-up">
+      <title>Το <application>Swell Foop</application> στην έναρξη νέου παιχνιδιού.</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/start-up.png" format="PNG"/>
+	        </imageobject>
+	      </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Το αβάκιο ξεκινάει σαν ένα πλήρες πλέγμα αντικειμένων. Ανάλογα με το μέγεθος του αβακίου που επιλέγετε, υπάρχουν τρεις ή τέσσερις τύποι αντικειμένων. Αν μια ομάδα αντικειμένων είναι γειτονικές και όλες του ίδιου τύπου, τότε μπορούν να αφαιρεθούν απλά κάνοντας κλικ απάνω τους (ή πατώντας το πλήκτρο διαστήματος). Όταν μετακινήσετε το ποντίκι πάνω από μία ομάδα που μπορείτε να την αφαιρέσετε, τα αντικείμενα θα ξεκινήσουν να κινούνται. Ο αριθμός των αντικειμένων στην ομάδα, και οι πόντοι που θα βαθμολογηθείτε για την αφαίρεση της ομάδας, φαίνεται στην κάτω αριστερή γωνία του παραθύρου. Όσο περισσότερα αντικείμενα στην ομάδα, τόσο για περισσότερους πόντους βαθμολογήστε. Εφόσον έχει αφαιρεθεί η ομάδα τα αντικείμενα από πάνω τους πέφτουν για να γεμίσουν τα κενά. Αν μία ολόκληρη στήλη έχει απαλειφθεί  τότε τα αντικείμενα ολισθαίνουν προς τα αριστερά για να γεμίσουν το κενό.</para>
+
+    <table id="play" frame="all"><title>Παίζοντας <application>Swell Foop</application></title>
+      <tgroup cols="2" colsep="0">
+      <tbody>
+        <row><entry><para>1. Αφαιρέστε ομάδες των δύο ή περισσότερων <screenshot>
+         <mediaobject>
+           <imageobject>
+             <imagedata fileref="figures/play1.png" format="PNG"/>
+           </imageobject>
+         </mediaobject>
+         </screenshot></para></entry>
+       <entry><para>2. Τα αντικείμενα καταρρέουν για να συμπληρώσουν τα κενά <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/play2.png" format="PNG"/>
+            </imageobject>
+          </mediaobject>
+          </screenshot></para></entry></row>
+        <row><entry><para>3. Τα αντικείμενα μετακινούνται αριστερά για να συμπληρώσουν τις κενές στήλες <screenshot>
+         <mediaobject>
+           <imageobject>
+             <imagedata fileref="figures/play3.png" format="PNG"/>
+           </imageobject>
+         </mediaobject>
+         </screenshot></para></entry>
+       <entry><para>4. Νέες ομάδες σχηματίζονται και ο κύκλος επαναλαμβάνεται <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/play4.png" format="PNG"/>
+            </imageobject>
+          </mediaobject>
+          </screenshot></para></entry></row>
+      </tbody>
+      </tgroup>
+    </table>
+
+    <para>Η βαθμολογία βασίζεται στον αριθμό των αντικειμένων που διαγράφετε:</para>
+    
+    <informaltable frame="topbot">
+    <tgroup cols="2" align="center">
+    <thead><row>
+    <entry>Αριθμός αντικειμένων</entry>
+    <entry>Πόντοι που σημειώνονται</entry>
+    </row></thead>
+    <tbody>
+    <row><entry>2</entry><entry>0</entry></row>
+    <row><entry>3</entry><entry>1</entry></row>
+    <row><entry>4</entry><entry>4</entry></row>
+    <row><entry>5</entry><entry>9</entry></row>
+    <row><entry>6</entry><entry>16</entry></row>
+    <row><entry>7</entry><entry>25</entry></row>
+    <row><entry>8</entry><entry>36</entry></row>
+    <row><entry>9</entry><entry>49</entry></row>
+    <!-- Translators: this is a vertical continuation character -->
+    <row><entry>⋮</entry><entry>⋮</entry></row>
+    <row><entry>n</entry><entry>(n - 2)<superscript>2</superscript></entry></row>
+    </tbody>
+    </tgroup>
+    </informaltable>
+    <para>Αν αδειάσετε το αβάκιο επιβραβεύεστε με 1000 πόντους.</para>
+  </sect1>
+
+  <sect1 id="swell-foop-customisation">
+    <title>Προσαρμογή</title>
+
+    <sect2 id="changing-the-look">
+      <title>Αλλαγή της εμφάνισης</title>
+      <para>Η αλλαγή του μεγέθους των αντικειμένων γίνεται με την αλλαγή του μεγέθους του παραθύρου. Για να χρησιμοποιήσετε όλη την οθόνη επιλέξτε την επιλογή <guimenuitem>Πλήρης οθόνη</guimenuitem> από το μενού <guimenu>Προβολή</guimenu>.</para>
+
+      <para>Για να αλλάξετε την εμφάνιση των αντικειμένων χρησιμοποιήστε την επιλογή <guimenuitem>Θέμα</guimenuitem> στο μενού <guimenu>Προβολή</guimenu>. Η επιλογή ενός αντικειμένου από την λίστα, αλλάζει το θέμα αμέσως.</para>
+
+        <para>Μπορείτε επίσης να δημιουργήσετε τα δικά σας θέματα, παρόλο που η διαδικασία δεν είναι τόσο απλή ακόμη. Χρησιμοποιήστε ένα αντίγραφο ενός υπάρχοντος θέματος σαν πρότυπο και αλλάξτε το με το αγαπημένο σας πρόγραμμα ζωγραφικής. Τοποθετήστε το αποτέλεσμα στο <filename>$XDG_DATA_HOME/gnome-games/same-gnome/themes/2.10/</filename>. Θα συμπεριληφθεί αυτόματα στην λίστα θεμάτων την επόμενη φορά που θα εκκινήσετε το <application>Swell Foop</application>.<filename>$XDG_DATA_HOME</filename> είναι συνήθως <filename>~/.local/share/</filename>.</para>
+    </sect2>
+
+    <sect2 id="changing-the-size">
+      <title>Αλλαγή του μεγέθους</title>
+      <para>Το μενού <guimenu>Μέγεθος</guimenu> περιέχει τρεις ρυθμίσεις: μικρό, μεσαίο και μεγάλο. Εκτός από την αύξηση του αριθμού των αντικειμένων, η ρύθμιση μεγάλο αυξάνει επίσης και τον αριθμό των διαφορετικών αντικειμένων.</para>
+    </sect2>
+
+    <sect2 id="changing-the-speed">
+    <title>Αλλαγή της ταχύτητας</title>
+    <para>Το προεπιλεγμένο εφέ στη κίνηση στο παιχνίδι είναι ομαλές κινήσεις. Αν θέλετε να παίξετε γρήγορα, τότε αυτό μπορεί να είναι πολύ αργό για εσάς. Επιλέγοντας <guimenuitem>Γρήγορη κίνηση</guimenuitem> από το μενού <guimenu>Προβολή</guimenu>, μπορείτε να επιταχύνετε το παίξιμο επιβαρύνοντας την ομαλότητα κίνησης.</para>
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="swell-foop-strategy">
+    <title>Στρατηγική</title>
+
+    <para>Ο πιο σημαντικός κανόνας όταν στοχεύετε για υψηλά αποτελέσματα είναι να έχετε στο μυαλό σας πως κάθε ομάδα που αφαιρείτε θα σχηματίσει και θα καταστρέψει άλλες ομάδες.</para>
+
+<para>Αφαιρέστε τις ψηλότερες ομάδες πρώτα, αν δεν αφαιρεθεί και άλλη ομάδα θα γίνει μεγαλύτερη. Τα καθέτως ευθυγραμμισμένα αντικείμενα δεν μπορούν να χάσουν την ευθυγράμμιση, αλλά τα οριζοντίως ευθυγραμμισμένα μπορούν.</para>
+
+    <para>Επειδή το σκορ αυξάνετε τετραγωνικά, είναι καλύτερο να έχετε μεγάλες ομάδες αντικειμένων. Για παράδειγμα, η διαφορά σε βαθμούς μεταξύ μιας ομάδας έξη αντικειμένων και μιας ομάδας επτά αντικειμένων είναι εννιά βαθμοί. Αν έχετε να επιλέξετε μεταξύ της συνένωσης δύο ομάδων των δύο σε δύο ομάδες των τέσσερα, ή να προσθέσετε ένα σε μια ομάδα των έξη, τότε είναι καλύτερο να επιλέξετε μια ομάδα των επτά αντικειμένων. Ακόμα και αν οι ομάδες των δύο που απομένουν δεν προσφέρουν βαθμούς, η μεγαλύτερη ομάδα παράγει περισσότερους βαθμούς συνολικά.</para>
+
+    <para>Μην ξεχνάτε την επιβράβευση των χιλίων πόντων που παίρνετε για την απαλοιφή όλων των σφαιρών. Για να πάρετε 1000 πόντους από μία μοναδική ομάδα χρειάζεστε 34 αντικείμενα. Είνια πολύ ασυνήθιστο να είστε σε θέση όπου να χρειάζεται να θυσιάσετε μία μεγάλη ομάδα για να καθαρίσετε το αβάκιο.</para>
+  </sect1>
+
+<!-- ============= About ================================== -->
+  <sect1 id="swell-foop-about"> 
+    <title>Περί του <application>Swell Foop</application></title> 
+    <para>Το <application>Swell Foop</application> γράφτηκε από τον Callum McKenzie (<email>callum@physics.otago.ac.nz</email>). Για να βρείτε περισσότερες πληροφορίες σχετικά με το <application>Swell Foop</application>, παρακαλούμε επισκευθείτε την <ulink url="http://live.gnome.org/GnomeGames/" type="http">Ιστοσελίδα παιχνιδιών GNOME</ulink>.</para>
+    <para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με αυτή την εφαρμογή ή αυτό το εγχειρίδιο, ακολουθήστε τις οδηγίες στη <ulink url="ghelp:user-guide?feedback-bugs" type="help">σελίδα ανάδρασης GNOME </ulink>.</para>
+
+    <para>Αυτό το πρόγραμμα διανέμεται υπό τους όρους της Γενικής Δημόσιας Άδειας GNU όπως δημοσιεύεται από το Ίδρυμα Ελεύθερου Λογισμικού, είτε με την έκδοση 2 της Άδειας, είτε (σαν επιλογή σας) με κάθε μεταγενέστερη έκδοση. Με αυτήν την τεκμηρίωση συμπεριλαμβάνεται ένα <ulink url="ghelp:gpl" type="help">αντίγραφο της άδειας</ulink>, ένα άλλο μπορεί να βρεθεί στο αρχείο COPYING, με τον πηγαίο κώδικα του προγράμματος.</para>
+
+  </sect1> 
+</article>

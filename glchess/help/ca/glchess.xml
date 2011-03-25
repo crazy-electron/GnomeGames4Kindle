@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.18">
+<!ENTITY date "December">
+<!ENTITY app "<application>Chess</application>">
+<!ENTITY appname "Chess">
+<!ENTITY version "2.22">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ca">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo>
+ <title>Manual dels <application>escacs</application></title>
+ 
+ <abstract role="description">
+       <para>El glChess és un joc per a jugar al clàssic joc de tauler dels escacs, en el que dos jugadors simulen una batalla tot capturant les fitxes de l'adversari i finalment el rei. Es pot jugar en mode 2D o 3D, en pantalla completa o en una finestra.</para>
+ </abstract>
+ <copyright>
+  <year>2006-2008</year>
+  <holder>Andreas Røsdal</holder>
+ </copyright><copyright><year>2007, 2008</year><holder>Joan Duran (jodufi@gmail.com)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>Projecte de documentació del GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Teniu permís per a copiar, distribuir i/o modificar aquest document, sota els termes de la Llicència de documentació lliure GNU (GFDL), versió 1.1 o qualsevol versió publicada posteriorment per la Free Software Foundation, sense seccions invariants, sense texts de portada i sense texts de contraportada. Podeu trobar una còpia de la GFDL en aquest <ulink type="help" url="ghelp:fdl">enllaç</ulink> o en el fitxer COPYING-DOCS distribuït amb aquest manual.</para>
+         <para>Aquest manual forma part d'una col·lecció de manuals del GNOME distribuïts sota la GFDL. Si voleu distribuir aquest manual independentment de la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal com es descriu a la secció 6 de la llicència.</para>
+
+	<para>Molts dels noms que les empreses utilitzen per a distingir els seus productes i serveis es consideren marques comercials. Quan aquests noms apareguin en qualsevol documentació del GNOME, si els membres del Projecte de documentació del GNOME han estat avisats pel que fa a les marques, els noms apareixeran en majúscules o amb les inicials en majúscules.</para>
+
+	<para>EL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT S'OFEREIXEN SOTA ELS TERMES DE LA LLICÈNCIA DE DOCUMENTACIÓ LLIURE DE GNU, TENINT EN COMPTE QUE: <orderedlist>
+		<listitem>
+		  <para>EL DOCUMENT S'OFEREIX «TAL COM ÉS», SENSE CAP TIPUS DE GARANTIA, NI EXPLÍCITA NI IMPLÍCITA; AIXÒ INCLOU, SENSE LIMITAR-S'HI, LES GARANTIES QUE EL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT NO TINGUI DEFECTES, SIGUI COMERCIALITZABLE, SIGUI ADEQUAT PER A UN ÚS CONCRET O NO INFRINGEIXI CAP LLEI. TOT EL RISC PEL QUE FA A LA QUALITAT, EXACTITUD I RENDIMENT DEL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT ÉS VOSTRE. EN CAS QUE EL DOCUMENT RESULTÉS DEFECTUÓS EN QUALSEVOL ASPECTE, VÓS (NO PAS L'ESCRIPTOR INICIAL, L'AUTOR O CAP ALTRE COL·LABORADOR) ASSUMIU TOT EL COST DE MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA; I </para>
+		</listitem>
+		<listitem>
+		  <para>EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGUI PER AGREUJAMENT (INCLOENT-HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR ORIGINAL, QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA VERSIÓ MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN RESPONSABLES DAVANT DE NINGÚ PER CAP DANY DIRECTE, INDIRECTE, ESPECIAL, ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITAR-S'HI, ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FEINA, FALLADA O MALFUNCIONAMENT DE L'ORDINADOR, O QUALSEVOL ALTRA PÈRDUA O DANY RELACIONAT AMB L'ÚS DEL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT, FINS I TOT SI S'HA INFORMAT AQUESTA PART DE LA POSSIBILITAT D'AQUESTS DANYS.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+	<firstname>Andreas</firstname> 
+	<surname>Røsdal</surname> 
+	<affiliation> 
+	  <address> <email>andrearo@pvv.ntnu.no</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+<revhistory>
+      <revision> 
+	<revnumber>Manual dels escacs (versió 2.18)</revnumber> 
+	<date>Desembre</date> 
+	<revdescription> 
+	  <para role="author">Andreas Røsdal <email>andrearo@pvv.ntnu.no</email></para>
+	  <para role="publisher">Projecte de documentació del GNOME</para>
+	</revdescription> 
+      </revision>
+  <revision>
+   <revnumber>1</revnumber>
+   <date>Desembre de 2006</date>
+   <authorinitials>AR</authorinitials>
+   <revremark>Primer esborrany completat.</revremark>
+  </revision>
+ </revhistory>
+
+    <releaseinfo>Aquest manual descriu la versió 2.18 dels escacs.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Comentaris</title> 
+      <para>Per a informar d'un error o fer algun suggeriment sobre els <application>escacs</application> o aquest manual, seguiu les indicacions a la <ulink url="ghelp:user-guide?feedback-bugs" type="help">pàgina de comentaris del GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>glChess</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="intro">
+ <title>Introducció</title>
+ <sect2 id="what">
+  <title>Visió general dels escacs</title>
+  
+  <para>Els escacs és un joc d'estratègia amb tauler per a dues persones. El <application>glChess</application> és un joc 2D/3D, on les partides es poden jugar en diferents combinacions entre jugadors humans i ordinadors. El glChess detecta motors d'escacs de terceres parts per als jugadors d'ordinador. El joc el va desenvolupar originalment en Robert Ancell, ara el joc està inclòs en el gnome-games.</para>
+
+  <para>El <application>glChess</application> està escrit en Python i utilitza GTK+ i Cairo per a renderitzar el tauler d'escacs. La visualització en 3D està disponible de manera opcional a través d'OpenGL si s'utilitzen les biblioteques Python OpenGL i GtkGLExt. Com la majoria del programari 3D modern, es recomana disposar d'acceleració gràfica per maquinari però hauria de funcionar correctament sense. El glChess ve amb el GNU Chess com a jugador predeterminat d'intel·ligència artificial. El glChess es pot jugar en mode de xarxa contra altres jugadors d'Internet.</para>
+  <para>Els escacs es juguen en un tauler d'escacs quadrat, que consisteix en 64 caselles de color alternant. Cada jugador comença la partida amb setze peces: un rei, una reina, dues torres, dos cavalls, dos alfils i vuit peons. Un jugador controla les peces blanques i l'altre les negres; el jugador que controla les blanques és el primer en moure. El jugadors juguen per torns per a moure les peces, alguns moviments comporten la «captura» d'una peça de l'adversari, eliminant-la del tauler. L'objectiu del joc és fer escac i mat al rei de l'adversari. Això succeeix quan el rei està sota d'un atac immediat (en escac) i no hi ha cap manera d'esquivar l'atac en el moviment següent. Els teòrics han desenvolupat unes estratègies i tàctiques extenses pels escacs des de l'invenció del joc.</para>
+<para>La forma actual del joc va sorgir al sud d'Europa en la segona meitat del segle XV, després d'evolucionar de jocs similars i molt més antics d'origen asiàtic. Els escacs és un dels jocs de tauler més populars del món. La tradició de la competició en els escacs va començar en el segle XVI. El primer campió mundial oficial d'escacs, Wilhelm Steinitz, va aconseguir el seu títol el 1886; el seu equivalent modern, Vladimir Kramnik, és el 14è campió. Hi ha un esdeveniment mundial bianual per equips anomenat Olimpíades dels escacs. Des del segle XX dues organitzacions internacionals, la Federació mundial d'escacs i la Federació internacional d'escacs per correspondència, han organitzat i supervisat les competicions i els títols internacionals d'escacs més importants.</para>
+<para>Un dels primers objectius dels informàtics va ser crear un ordinador que jugués a escacs, i els escacs d'avui estan profundament influenciats per les increïbles habilitats dels programes d'escacs actuals. El 1997 una partida entre Garry Kasparov, llavors el campió mundial, i el programa d'escacs Deep Blue d'IBM, va provar que els ordinadors podien guanyar fins i tot els millors jugadors humans.</para>
+
+  <para>Per a executar el <application>glChess</application>, seleccioneu <guimenuitem>Escacs</guimenuitem> en el submenú <guimenu>Jocs</guimenu> del <guimenu>Menú principal</guimenu> o introduïu <command>glchess</command> en la línia d'ordres.</para>
+ </sect2>
+
+</sect1>
+
+
+<sect1 id="playing-glchess">
+ <title>Com jugar al glChess</title>
+ <sect2 id="main-game-window">
+<title>Finestra principal del joc</title>
+
+     <para>En començar el glChess es mostrarà la finestra principal del joc com es mostra a sota. El joc es juga movent les fitxes utilitzant el ratolí. Els jugadors s'alternen per a moure una fitxa del color apropiat, des d'una posició del tauler a una altra posició vàlida. La finestra principal del joc està organitzada en tres àrees principals: En la part superior l'àrea del menú i de la barra d'eines, on es poden realitzar les accions del joc més comuns. El tauler d'escacs està al mig de la finestra, on es juga movent les fitxes d'escacs utilitzant el ratolí. Finalment, el quadre de l'historial de la partida es mostra en la part inferior, on hi ha informació sobre l'historial de la partida, el temps restant de moviment i botons per a mostrar els moviments disponibles anteriors i següents.</para>
+
+ <figure id="main-game-shot">
+  <title>Finestra principal del glChess</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Finestra principal del glChess.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+</sect2>
+
+<sect2>
+<title>Com iniciar una partida nova</title>
+<para>Per a iniciar una partida nova, premeu el botó <guibutton>Partida nova</guibutton> a la barra d'eines. Es mostrarà el diàleg de partida nova, que us permet configurar una partida nova amb els paràmetres que seleccioneu. En la secció <interface>Propietats de la partida</interface> s'estableix el nom de la partida i el límit de temps per a cada moviment de cada jugador. En la secció <interface>Jugadors</interface> es pot configurar el número de jugadors humans i d'intel·ligència artificial. Si heu instal·lat algun motor d'escacs compatible com a jugador d'intel·ligència artificial, aquest es mostrarà en la llista de jugadors disponibles. Finalment, el paràmetre de la dificultat dels jugadors d'intel·ligència artificial s'estableix en la secció <interface>Dificultat</interface>.</para>
+
+ <figure id="new-game-shot">
+  <title>Diàleg d'iniciar una partida nova</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/new_game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Diàleg d'iniciar una partida nova del glChess.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+</sect2>
+
+
+
+
+<sect2 id="menubar">
+   <title>Menús</title>
+   <para>La barra de menú, ubicada a la part superior de la <interface>Finestra principal</interface>, conté els menús següents:</para>
+
+   <variablelist>
+    <varlistentry>
+     <term><guimenu>Partida</guimenu></term>
+     <listitem>
+      <para>Aquest menú conté: <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+N</keysym></shortcut><guimenuitem>Nou</guimenuitem></menuchoice> Inicia una partida nova dels <application>Escacs</application>.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+O</keysym></shortcut><guimenuitem>Obre</guimenuitem></menuchoice> Carrega una partida desada anteriorment.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+S</keysym></shortcut><guimenuitem>Desa</guimenuitem></menuchoice> Desa la partida d'escacs actual.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><guimenuitem>Anomena i desa</guimenuitem></menuchoice> Desa la partida d'escacs actual amb un nom de fitxer nou.</para>
+        </listitem>
+
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+L</keysym></shortcut><guimenuitem>Partida en xarxa</guimenuitem></menuchoice> Inicia una partida multijugador en xarxa utilitzant GGZ Gaming Zone.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Rendir-se</guimenuitem></menuchoice> Per a concedir la pèrdua de la partida, de manera que l'adversari guanya la partida.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Reclama l'empat</guimenuitem></menuchoice> Si s'accepta un empat reclamant, la partida s'acaba sense la victòria de cap jugador.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+Q</keysym></shortcut><guimenuitem>Surt</guimenuitem></menuchoice> Finalitza la partida.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+
+    <varlistentry>
+     <term><guimenu>Visualitza</guimenu></term>
+     <listitem>
+      <para>Aquest menú conté: <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>F11</keysym></shortcut><guimenuitem>Pantalla completa</guimenuitem></menuchoice> Mostra la finestra de la partida en mode de pantalla completa.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><guimenuitem>Visualització dels escacs en 3D</guimenuitem></menuchoice> Habilita la visualització dels escacs en 3D utilitzant l'OpenGL. Es necessita tenir instal·lat el Python OpenGL i el Python GTKGLExt, a més d'una targeta gràfica 3D configurada correctament. Contacteu amb l'administrador del sistema si teniu problemes, de qualsevol manera sempre podreu jugar a escacs en mode 2D.</para>
+        </listitem>
+	 <listitem>
+         <para><menuchoice><guimenuitem>Mostra els registres</guimenuitem></menuchoice> Mostra els registres per a depurar el glChess i els motors d'intel·ligència artificial actius.</para>
+        </listitem>
+     </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+   <varlistentry>
+     <term><guimenu>Paràmetres</guimenu></term>
+     <listitem>
+      <para>Aquest menú conté: <itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>Preferències</guimenuitem></menuchoice> Obre una finestra per a editar les <link linkend="prefs">preferències.</link></para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Ajuda</guimenu></term>
+     <listitem>
+      <para>Aquest menú conté: <itemizedlist>
+        <listitem>
+          <para><menuchoice><shortcut><keysym>F1</keysym></shortcut><guimenuitem>Continguts</guimenuitem></menuchoice> Mostra aquest manual.</para>
+         <para><guimenuitem>Quant a</guimenuitem> Obre el diàleg <interface>Quant a</interface> que mostra informació bàsica sobre el <application>glChess</application>, com ara el nom de l'autor i el número de versió del joc.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+
+
+</sect2>
+
+
+</sect1>
+
+
+<sect1 id="chess-rules">
+ <title>Regles dels escacs</title>
+ <sect2 id="rules-of-chess">
+  <title>Les regles dels escacs</title>
+<!--
+The reference for this chapter is http://en.wikipedia.org/wiki/Chess
+-->
+  <para>Els escacs es juguen en un tauler quadrat de vuit files (indicades amb números de l'1 al 8) i vuit columnes (indicades amb lletres de l'a a la h) de caselles. Els colors de les seixanta quatre caselles s'alternen entre blanc i negre, i se les anomena «caselles blanques» i «caselles negres». El tauler d'escacs està ubicat de manera que cada jugador té una casella blanca en la cantonada a la seva mà dreta, i les peces s'ubiquen com es mostra en el diagrama, amb cada reina en una casella que coincideix amb el seu color.</para><para>Cada jugador comença la partida amb setze peces: les peces de cada jugador es componen d'un rei, una reina, dues torres, dos cavalls, dos alfils i vuit peons. Un jugador, anomenat Blanc, controla les peces blanques i l'altre jugador, Negre, controla les peces negres; el Blanc és el primer en moure. Els colors es trien per un acord amistós, per un joc d'atzar o per un àrbitre del joc. El jugadors juguen per torns per a moure les peces (amb l'excepció de l'enroc, quan dues peces es mouen al mateix temps). Les peces es poden moure en una casella desocupada o en una casella ocupada per una peça de l'adversari, capturant-la i eliminant-la de la partida. Amb una excepció (en passant), totes les peces capturen les peces de l'adversari movent-les a la casella que ocupa la peça de l'adversari.</para>
+ <sect3 id="rules-piece-king">
+  <title>Rei</title>
+<para>Quan el rei està sota un atac directe per una peça (o potser dues) de l'adversari, el jugador està en escac. Quan s'està en escac, només es permetran els moviments que treguin el rei de l'escac. El jugador no pot fer cap moviment que posi el seu rei en escac. L'objectiu del joc és fer escac i mat a l'adversari; això succeeix quan el rei de l'adversari està en escac i no hi ha cap moviment que tregui el rei de l'atac.</para><para>El rei només es pot moure una casella en horitzontal, en vertical o en diagonal. Un cop en la partida, cada rei pot fer un moviment doble especial, per a enrocar. Enrocar consisteix en moure el rei dues caselles cap a una torre, i després moure la torre a la casella que acaba de creuar el rei. Només es pot enrocar si es compleixen les condicions següents:</para>
+<itemizedlist spacing="compact">
+  <listitem>
+   <para>El jugador no pot haver mogut ni el rei ni la torre involucrada en l'enroc.</para>
+  </listitem>
+  <listitem>
+   <para>No hi poden haver peces entre el rei i la torre.</para>
+  </listitem>
+  <listitem>
+   <para>El rei no pot estar en escac, ni tampoc pot passar a través de caselles que estan sota atac de peces enemigues. Com qualsevol altre moviment, l'enroc és il·legal si posa el rei en escac.</para>
+ </listitem>
+  <listitem>
+   <para>El rei i la torre han d'estar en la mateixa fila (per a excloure l'enroc amb un peó promocionat).</para>
+  </listitem>
+</itemizedlist>
+</sect3>
+ <sect3 id="rules-piece-rook">
+  <title>Torre</title>
+<para>La torre es mou qualsevol número de caselles buides en vertical o en horitzontal (també està involucrada en el moviment especial de l'enroc).</para>
+</sect3>
+ <sect3 id="rules-piece-bishop">
+  <title>Alfil</title>
+<para>L'alfil es mou qualsevol número de caselles buides en qualsevol direcció diagonal. Noteu que l'alfil mai canvia el color de la casella, de manera que els jugadors parlen d'alfils «negres» o «blancs».</para>
+</sect3>
+ <sect3 id="rules-piece-queen">
+  <title>Reina</title>
+<para>La reina es pot moure qualsevol número de caselles buides en diagonal, en horitzontal o en vertical.</para>
+</sect3>
+ <sect3 id="rules-piece-knight">
+  <title>Cavall</title>
+<para>El cavall pot saltar per sobre de caselles ocupades i es mou dos espais en horitzontal i un en vertical o viceversa, fent la forma d'una «L». Un cavall al mig del tauler té vuit caselles on es pot moure. Noteu que cada cop que el cavall es mou, canvia el color de la casella.</para>
+</sect3>
+ <sect3 id="rules-piece-pawns">
+  <title>Peons</title>
+<para>Els peons tenen les regles de moviment més complexes: un peó es pot moure una casella endavant, si la casella està desocupada. Si encara no s'ha mogut, el peó té l'opció de moure's dues caselles endavant, si les dues caselles davant del peó estan desocupades. Un peó no es pot moure enrere. Quan el moviment inicial d'avançar dues caselles situa el peó horitzontalment adjacent a un peó de l'adversari, el peó de l'adversari pot capturar aquest peó «en passant» com si s'hagués mogut endavant una casella enlloc de dues, però només en el moviment immediatament següent. Els peons són les úniques peces que capturen de forma diferent a com es mouen. Poden capturar una peça enemiga en qualsevol del dos espais adjacents a l'espai davant seu (o sigui, les dues caselles en diagonal davant seu), però no es poden moure a aquests espais si estan buits. Si un peó avança fins a l'última fila, llavors es promocionarà (convertirà) a una reina, torre, alfil o cavall del mateix color. En la pràctica, el peó quasi sempre es promociona a una reina.</para>
+</sect3>
+
+<sect3 id="rules-movement-others">
+<title>Resta de regles de moviment</title>
+<para>Amb l'excepció del cavall, les peces no poden saltar unes sobre les altres. Les peces pròpies («peces amigues») no es poden passar si estan en la línia de moviment, i una peça amiga mai pot reemplaçar una altra peça amiga. Les peces enemigues tampoc es poden passar, però es poden «capturar». Quan una peça és capturada (o agafada), la peça atacant reemplaça la peça enemiga a la seva casella («en passant» és l'única excepció). La peça capturada s'elimina de la partida i no pot tornar a jugar per la resta de la partida. El rei no pot ser capturat, només posat en escac. Si un jugador no pot treure el rei d'escac, acaba en escac i mat, amb la pèrdua de la partida.</para><para>El joc d'escacs no té perquè acabar en escac i mat, qualsevol jugador es pot rendir si la situació no té esperança. Les partides també poden acabar en empat. Un empat succeeix en diverses situacions, incloent l'empat per acord, rei ofegat, repetició de posicions, la regla dels cinquanta moviments, o per un empat per impossibilitat d'escac i mat (generalment per la falta de material per a fer un escac i mat).</para>
+</sect3>
+</sect2>
+
+
+<sect2 id="timed-games">
+<title>Partides amb control de temps</title>
+<para>Les partides es poden jugar amb limit de temps en establir un temps per jugada en crear una partida nova. En les partides amb temps cada jugador té disponible una quantitat de temps per a decidir quin moviment realitzar, i el temps restant de cada jugador només decreix quan és el seu torn de moure.</para>
+</sect2>
+
+<sect2 id="draw">
+<title>Partida empatada</title>
+<para>Una partida acaba sense victòria de cap jugador. La majoria de partides que acaben empatades és per acord basat en les regles. Les altres maneres en què una partida pot acabar en empat és per ofegat, repetició triple, la regla dels cinquanta moviments i material insuficient. Es diu que una posició està en taules si qualsevol jugador pot, jugant correctament, forçar la partida a una posició on la partida hauria d'acabar en empat, independentment dels moviments que realitzi l'altre jugador.</para>
+
+
+<sect3 id="stalemate">
+<title>Ofegat</title>
+<para>Ofegat és una posició en què el jugador que ha de moure no té moviments legals i els seu rei no està en escac. Els resultat d'ofegat és un empat immediat.</para>
+</sect3>
+
+<sect3 id="threefold-repetition">
+<title>Repetició triple</title>
+<para>La partida s'empata si la mateixa posició succeeix tres cops en el mateix jugador i cada jugador té el mateix joc de moviments legals cada cop (això últim inclou el dret d'«en passant» i els dret d'enrocar).</para>
+</sect3>
+
+
+<sect3 id="fifty-move-rule">
+<title>Regla dels cinquanta moviments</title>
+<para>La rega dels cinquanta moviments estableix que la partida s'empata després de cinquanta moviments de cada costat sense cap moviment de peó o captura.</para>
+</sect3>
+
+<sect3 id="insuff-material">
+<title>Material insuficient</title>
+<para>En l'escenari en què tots els peons s'han capturat, i en un cantó només hi queda el rei mentre que en l'altre només queda el rei o el rei i un cavall o alfil. La posició s'acaba en empat perquè és impossible per al cantó dominant aconseguir un escac i mat independentment de com jugui. Les situacions on l'escac i mat és possible només si el cantó inferior fa una gran errada són cobertes amb la regla dels cinquanta moviments.</para>
+</sect3>
+
+
+</sect2>
+
+</sect1>
+
+
+
+
+<sect1 id="prefs">
+ <title>Preferències del joc</title>
+
+
+<sect2 id="game-prefs">
+  <title>Preferències del joc</title>
+  <para>Aquest diàleg de preferències us permet modificar l'orientació del tauler, el format del moviment i el tipus de promoció.</para>
+
+ <figure id="preferences-game-shot">
+  <title>Diàleg de preferències del joc del glChess</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences_game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Diàleg de preferències del joc del glChess.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+
+</sect2>
+
+
+
+<sect2 id="view-prefs">
+  <title>Preferències de la visualització</title>
+  <para>Aquest diàleg de preferències us permet modificar l'aparença del glChess.</para>
+
+ <figure id="preferences-view-shot">
+  <title>Diàleg de preferències de la visualització del glChess</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences_view.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Diàleg de preferències de la visualització del glChess.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+
+</sect2>
+
+</sect1>
+
+
+<sect1 id="engines">
+ <title>Motors d'escacs</title>
+
+     <para>El glCHess hauria de poder utilitzar qualsevol motor d'escacs compatible amb el «Chess Engine Communication Protocol» o el «Universal Chess Interface», incloent aquests motors d'escacs:</para>
+
+<!-- Please keep AI list synchronized with glchess/data/ai.xml -->
+<itemizedlist spacing="compact">
+  <listitem>
+	<para>GNUChess</para>
+  </listitem>
+  <listitem>
+	<para>Sjeng</para>
+  </listitem>
+  <listitem>
+	<para>Amy</para>
+ </listitem>
+  <listitem>
+	<para>Crafty</para>
+  </listitem>
+  <listitem>
+	<para>Faile</para>
+  </listitem>
+  <listitem>
+	<para>Phalanx</para>
+  </listitem>
+  <listitem>
+	<para>Glaurung</para>
+  </listitem>
+  <listitem>
+	<para>HoiChess</para>
+  </listitem>
+  <listitem>
+	<para>Diablo</para>
+  </listitem>
+  <listitem>
+	<para>BBChess</para>
+  </listitem>
+  <listitem>
+	<para>Fruit</para>
+  </listitem>
+  <listitem>
+	<para>Amundsen</para>
+  </listitem>
+  <listitem>
+	<para>Shredder</para>
+  </listitem>
+  <listitem>
+	<para>Toga II</para>
+  </listitem>
+  <listitem>
+	<para>Motor d'escacs Boo</para>
+  </listitem>
+
+
+</itemizedlist>
+
+</sect1>
+
+
+<sect1 id="bugs">
+ <title>Errors i limitacions conegudes</title>
+
+ <itemizedlist mark="opencircle">
+    <listitem>
+     <para>No hi ha errors o limitacions documentades del glChess. Per a trobar àrees on podeu ajudar per a millorar el glChess, consulteu el fitxer TODO que es distribueix amb el joc.</para>
+    </listitem>
+ </itemizedlist>
+
+</sect1>
+
+<sect1 id="credits">
+ <title>Autors</title>
+  <para>En Robert Ancell ha escrit el <application>glChess</application>, i ara es manté en el gnome-games. Originalment en Andreas Røsdal ha escrit aquesta documentació, utilitzant diverses fonts GPL. Per a informar d'un error o fer algun suggeriment d'aquesta aplicació o aquest manual, seguiu les indicacions d'aquest <ulink url="ghelp:user-guide?feedback-bugs" type="help">document</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Llicència</title>
+  <para>Aquest programa és programari lliure; podeu redistribuir-lo i/o modificar-lo sota els termes de la <citetitle>Llicència pública general de GNU</citetitle> tal com publica la Free Software Foundation; tant en la versió 2 de la llicència, o (a la vostra opció) una versió posterior.</para>
+  <para>Aquest programa es distribueix amb l'esperança de que sigui útil, però SENSE CAP GARANTIA; fins i tot sense la garantia implícita de COMERCIALITZACIÓ o ADEQUACIÓ A UN ÚS CONCRET. Per a més detalls vegeu la <citetitle>Llicència pública general de GNU</citetitle>.</para>
+  <para>S'inclou una còpia de la <citetitle>Llicència pública general de GNU</citetitle> en l'apèndix de la <citetitle>Guia d'usuaris del GNOME</citetitle>. També podeu obtenir una copia de la <citetitle>Llicència pública general de GNU</citetitle> de la Free Software Foundation visitant el <ulink type="http" url="http://www.fsf.org">seu lloc web</ulink> o escrivint a <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

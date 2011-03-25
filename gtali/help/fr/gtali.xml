@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Tali</application>">
+<!ENTITY appname "Tali">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="fr">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Manuel de <application>Tali</application></title>
+    <abstract role="description">
+      <para>Tali est une sorte de Yahtzee pour GNOME ou de poker avec des dés. Le joueur doit lancer des dés et essayer de réaliser les meilleures combinaisons possibles, comme un carré (4 identiques), une suite ou un « Full house ». À chaque tour, le joueur peut lancer 3 fois les dés, en décidant à chaque lancer quels dés il souhaite relancer.</para>
+    </abstract>
+    <copyright>
+      <year>2001</year>
+      <holder>Scott D. Heavner</holder>
+    </copyright><copyright><year>2007-2008</year><holder>Claude Paroz (claude@2xlibre.net)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Projet de documentation GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Permission vous est donnée de copier, distribuer et/ou modifier ce document selon les termes de la Licence GNU Free Documentation License, Version 1.1 ou ultérieure publiée par la Free Software Foundation sans section inaltérable, sans texte de première page de couverture ni texte de dernière page de couverture. Vous trouverez un exemplaire de cette licence en suivant ce <ulink type="help" url="ghelp:fdl">lien</ulink> ou dans le fichier COPYING-DOCS fourni avec le présent manuel.</para>
+         <para>Ce manuel fait partie de la collection de manuels GNOME distribués selon les termes de la licence de documentation libre GNU. Si vous souhaitez distribuer ce manuel indépendamment de la collection, vous devez joindre un exemplaire de la licence au document, comme indiqué dans la section 6 de celle-ci.</para>
+
+	<para>La plupart des noms utilisés par les entreprises pour distinguer leurs produits et services sont des marques déposées. Lorsque ces noms apparaissent dans la documentation GNOME et que les membres du projet de Documentation GNOME sont informés de l'existence de ces marques déposées, soit ces noms entiers, soit leur première lettre est en majuscule.</para>
+
+	<para>LE PRÉSENT DOCUMENT ET SES VERSIONS MODIFIÉES SONT FOURNIS SELON LES TERMES DE LA LICENCE DE DOCUMENTATION LIBRE GNU SACHANT QUE : <orderedlist>
+		<listitem>
+		  <para>LE PRÉSENT DOCUMENT EST FOURNI « TEL QUEL », SANS AUCUNE GARANTIE, EXPRESSE OU IMPLICITE, Y COMPRIS, ET SANS LIMITATION, LES GARANTIES DE MARCHANDABILITÉ, D'ADÉQUATION À UN OBJECTIF PARTICULIER OU DE NON INFRACTION DU DOCUMENT OU DE SA VERSION MODIFIÉE. L'UTILISATEUR ASSUME TOUT RISQUE RELATIF À LA QUALITÉ, À LA PERTINENCE ET À LA PERFORMANCE DU DOCUMENT OU DE SA VERSION DE MISE À JOUR. SI LE DOCUMENT OU SA VERSION MODIFIÉE S'AVÉRAIT DÉFECTUEUSE, L'UTILISATEUR (ET NON LE RÉDACTEUR INITIAL, L'AUTEUR, NI TOUT AUTRE PARTICIPANT) ENDOSSERA LES COÛTS DE TOUTE INTERVENTION, RÉPARATION OU CORRECTION NÉCESSAIRE. CETTE DÉNÉGATION DE RESPONSABILITÉ CONSTITUE UNE PARTIE ESSENTIELLE DE CETTE LICENCE. AUCUNE UTILISATION DE CE DOCUMENT OU DE SA VERSION MODIFIÉE N'EST AUTORISÉE AUX TERMES DU PRÉSENT ACCORD, EXCEPTÉ SOUS CETTE DÉNÉGATION DE RESPONSABILITÉ ; </para>
+		</listitem>
+		<listitem>
+		  <para>EN AUCUNE CIRCONSTANCE ET SOUS AUCUNE INTERPRÉTATION DE LA LOI, QU'IL S'AGISSE D'UN DÉLIT CIVIL (Y COMPRIS LA NÉGLIGENCE), CONTRACTUEL OU AUTRE, L'AUTEUR, LE RÉDACTEUR INITIAL, TOUT PARTICIPANT OU TOUT DISTRIBUTEUR DE CE DOCUMENT OU DE SA VERSION MODIFIÉE, OU TOUT FOURNISSEUR DE L'UNE DE CES PARTIES NE POURRA ÊTRE TENU RESPONSABLE À L'ÉGARD DE QUICONQUE POUR TOUT DOMMAGE DIRECT, INDIRECT, PARTICULIER, OU ACCIDENTEL DE TOUT TYPE Y COMPRIS, SANS LIMITATION, LES DOMMAGES LIÉS À LA PERTE DE CLIENTÈLE, À UN ARRÊT DE TRAVAIL, À UNE DÉFAILLANCE OU UN MAUVAIS FONCTIONNEMENT INFORMATIQUE, OU À TOUT AUTRE DOMMAGE OU PERTE LIÉE À L'UTILISATION DU DOCUMENT ET DE SES VERSIONS MODIFIÉES, MÊME SI LADITE PARTIE A ÉTÉ INFORMÉE DE L'ÉVENTUALITÉ DE TELS DOMMAGES.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+	
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Scott D</firstname> 
+	<surname>Heavner</surname> 
+	<affiliation> 
+	  <address> <email>sdh@po.cwru.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Manuel de Tali v2.8</revnumber> 
+	<date>Septembre 2004</date> 
+	<revdescription> 
+	  <para role="author">Scott D Heavner <email>sdh@po.cwru.edu</email></para>
+	  <para role="publisher">Projet de documentation GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Ce manuel documente la version 2.12 de Tali.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Votre avis</title> 
+      <para>Pour rapporter une anomalie ou émettre une suggestion concernant <application>Tali</application> ou ce manuel, suivez les instructions de la <ulink url="ghelp:user-guide?feedback-bugs" type="help">page de réactions sur GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME Tali</primary> 
+  </indexterm>
+
+ <!-- ============= Document Body ============================= -->
+
+  <sect1 id="intro">
+    <title>Introduction</title>
+
+    <para><application>GNOME Tali</application> est une sorte de jeu de poker avec des dés et moins d'argent. Vous lancez cinq dés à trois reprises et essayez de créer la meilleure <quote>main</quote>. Les deux derniers lancers peuvent contenir tous les dés ou seulement une partie de ceux-ci.</para>
+    <para><application>GNOME Tali</application> est très semblable au jeu de dés Yahtzee, qui est une marque déposée de Hasbro, Inc.</para>
+
+    <para>Pour lancer <application>GNOME Tali</application>, choisissez <menuchoice><guisubmenu>Jeux</guisubmenu><guimenuitem>GNOME Tali</guimenuitem></menuchoice> dans le <guimenu>Menu principal</guimenu> ou saisissez <command>gtali</command> dans un terminal.</para>
+
+    <para><application>GNOME Tali</application> fait partie du paquet de jeux <filename>gnome-games</filename>, lui-même intégré dans l'environnement de bureau GNOME. Ce document documente la version 2.8 de <application>GNOME Tali</application>.</para>
+  </sect1>
+
+  <sect1 id="playing">
+    <title>Jouer à GNOME Tali</title>
+
+    <figure id="shot1">
+      <title>GNOME Tali en action</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="Trevor Curtis"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Copie d'écran de la fenêtre principale de GNOME Tali.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Lorsque le jeu démarre, vous voyez le résultat de votre premier lancer de dés.</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Cliquez sur les dés que vous voulez relancer.</para>
+        </listitem>
+        <listitem>
+          <para>Lorsque vous avez sélectionné tous les dés que vous voulez relancer, cliquez sur le bouton <guibutton>Lancer !</guibutton>.</para>
+        </listitem>
+        <listitem>
+	  <para>Lorsque votre main vous convient ou que vous ne pouvez plus lancer les dés, cliquez sur une ligne correspondant, à votre avis, au score le plus judicieux. Il est tout à fait possible d'avoir un score de zéro, et si vous cliquez sur la mauvaise ligne, votre score en pâtira. Par exemple, si vous avez 5 dés identiques et que vous cliquez sur la ligne de la Grande suite, vous obtenez un 0 comme score de la grande suite.</para>
+      </listitem>
+    </orderedlist>
+
+    <para>Vous ne pouvez utiliser qu'une seule fois chaque combinaison, c'est-à-dire qu'une fois que vous avez placé un score dans une ligne, vous ne pouvez plus modifier ce score, même si vous obtenez un meilleur résultat pour cette combinaison.</para>
+
+    <para>Il y a une exception à cette règle. Si vous obtenez une deuxième fois cinq dés identiques, vous pouvez cliquer une nouvelle fois sur la ligne « 5 identiques » pour obtenir 50 points supplémentaires. Vous pouvez procéder ainsi tant que vous obtenez cinq dés identiques. À la fin de la partie, vous obtenez des lancers supplémentaires pour compléter les lignes manquantes. Attention : si vous placez un score de 0 dans la ligne « 5 identiques » (c'est-à-dire que vous avez cliqué sur la ligne alors que vous n'aviez pas cinq dés identiques), vous ne pouvez ensuite plus utiliser cette ligne pour obtenir des points supplémentaires, vous êtes condamnés à rester à 0 pour cette ligne jusqu'à la fin de la partie.</para>
+
+    <para>Vous recevez aussi un bonus de 35 points si vous obtenez un score de 63 points ou plus dans les six lignes supérieures.</para>
+
+    <sect2 id="keyboard">
+    <title>Utilisation du clavier</title> 
+
+      <para>Au lieu d'utiliser la souris, les touches 1 à 5 permettent d'activer les dés comme si vous aviez cliqué dessus. La touche 1 correspond au premier dé, et ainsi de suite. Utilisez les touches habituelles pour lancer les dés et pour sélectionner une ligne : la touche Tabulation permet de basculer entre le bouton de lancer et la zone de score, les touches flèches permettent de monter et descendre dans les lignes de score et la barre espace permet de sélectionner.</para>
+    
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="options">
+    <title>Options du jeu</title>
+
+    <figure id="shot2">
+      <title>Préférences de GNOME Tali</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences.png" format="PNG" srccredit="Trevor Curtis"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Boîte de dialogue des préférences de GNOME Tali.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+      <variablelist><title>Joueurs humains</title>
+	<varlistentry>
+	  <term><guimenuitem>Nombre de joueurs</guimenuitem></term>
+	  <listitem>
+            <para>Définit le nombre de joueurs humains. Comme indiqué ci-dessus, le jeu est limité à six joueurs au maximum.</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>  
+      
+    <variablelist><title>Adversaires informatiques</title>
+      <varlistentry>
+        <term><guimenuitem>Délai entre les lancers</guimenuitem></term>
+	<listitem>
+	  <para>Occasionne une pause entre les lancers de dés des adversaires informatiques, afin que vous puissiez mieux voir ce qui se passe. Cela ralentit quelque peu la partie.</para>
+        </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guimenuitem>Nombre d'adversaires</guimenuitem></term>
+	  <listitem>
+            <para>Définit le nombre d'adversaires informatiques. Il est possible de jouer jusqu'à six joueurs, qu'ils soient humains ou informatiques. Si vous tentez d'augmenter ce nombre au-delà de la limite, le nombre de joueurs humains diminue afin de garder un total de six joueurs.</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>
+      
+    <variablelist><title>Type de jeu</title>
+      <varlistentry>
+        <term><guimenuitem>Version souhaitée du jeu</guimenuitem></term>
+	<listitem>
+	  <para>Jouez soit à la version traditionnelle (semblable à Yahtzee), soi à la version en couleurs (semblable à Kismet). Lorsque vous changez de type de jeu, vous devez redémarrer le jeu pour que le nouveau type soit utilisé.</para>
+        </listitem>
+	</varlistentry>
+      </variablelist>
+      
+      <variablelist>
+	<varlistentry>
+	    <term><guimenuitem>Noms des joueurs</guimenuitem></term>
+	    <listitem>
+	      <para>Pour modifier les noms des joueurs, il suffit de saisir les nouveaux noms dans les zones de texte.</para>
+	    </listitem>
+	</varlistentry>
+      </variablelist>
+    </sect1>
+
+    <sect1 id="strategy">
+      <title>Stratégie de jeu</title>
+      <para>Les 63 points à atteindre pour obtenir le bonus dans la partie supérieure reviennent à obtenir trois fois chaque type de dé dans chaque ligne. Si vous obtenez plus de trois dés dans les lignes des cinq ou des six, vous pouvez alors vous permettre de placer un mauvais lancer dans les lignes des uns ou des deux, tout en conservant le bonus. Dans la version en couleurs, vous recevez un bonus de 55 si la partie supérieure totalise entre 71 et 77, et un bonus de 75 si la partie supérieure totalise plus de 77 points.</para>
+      <para>N'oubliez pas que vous pouvez obtenir plusieurs fois cinq dés identiques, et les placer sur la ligne « 5 identiques » pour obtenir encore plus de points. Cela ne s'applique qu'au jeu traditionnel.</para>
+    </sect1>	
+ <!-- ============= Bugs ================================== -->
+ <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of. 
+      
+      Better to leave this section out than to say something unhelpful. 
+-->
+
+ <sect1 id="bugs">
+  <title>Anomalies connues et limites</title>
+  <para>Lorsque vous changez de type de jeu, le programme n'utilise pas les nouvelles images de dés tant que vous ne redémarrez pas gTali. Mais les règles s'appliquent correctement, même avec les mauvaises images.</para>
+ </sect1>
+
+
+ <sect1 id="glossary">
+   <title>Glossaire</title>
+   <note>
+     <para>Rappelez-vous que l'ordre des dés n'est pas important.</para>
+   </note>
+   <glossary>
+       <glossentry id="threeofakind"><glossterm>Brelan (3 id.)</glossterm>
+         <glossdef><para>Trois dés du même chiffre. Le score totalise les points de tous les dés (ex. : 1, 2, 2, 2, 5).</para></glossdef>
+       </glossentry>
+       <glossentry id="fourofakind"><glossterm>Carré (4 id.)</glossterm>
+         <glossdef><para>Quatre dés présentent le même chiffre. Le score est le total de tous les dés (ex. : 2, 5, 5, 5, 5). Dans le jeu en couleurs, le score est de 25 en plus du total de tous les dés.</para></glossdef>
+       </glossentry>
+       <glossentry id="yahtzee"><glossterm>5 identiques</glossterm>
+         <glossdef><para>Cinq dés identiques (ex. : 3, 3, 3, 3, 3). Dans le jeu en couleurs, le score est de 50 en plus du total de tous les dés.</para></glossdef>
+       </glossentry>
+       <glossentry id="fullhouse"><glossterm>Full House</glossterm>
+         <glossdef><para>Cinq dés formés de deux groupes : un groupe de trois dés avec le même chiffre et un autre groupe de deux dés avec le même chiffre (ex. : 1, 1, 1, 4, 4). Dans le jeu en couleurs, le score est de 15 en plus du total de tous les dés.</para></glossdef>
+       </glossentry>
+       <glossentry id="fullhousesamecolor"><glossterm>Full House même couleur</glossterm>
+         <glossdef><para>Cette catégorie est uniquement employée dans le jeu en couleurs. Cinq dés formés de deux groupes : un groupe de trois dés avec le même chiffre et un autre groupe de deux dés avec le même chiffre (ex. : 3, 3, 3, 4, 4). Deux dés sont de la même couleur si leur somme fait 7 : 1 et 6 sont noirs, 2 et 5 sont rouges et 3 et 4 sont verts. Le score est de 20 en plus du total de tous les dés.</para></glossdef>
+       </glossentry>
+       <glossentry id="twopairsamecolor"><glossterm>2 paires de la même couleur</glossterm>
+         <glossdef><para>Cette catégorie est uniquement employée dans le jeu en couleurs. Cinq dés formés de deux groupes : un groupe de deux dés avec le même chiffre et un autre groupe de deux dés avec le même chiffre. Les paires doivent toutes être de la même couleur (ex. : 3, 3, 4, 4). Deux dés sont de la même couleur si leur somme fait 7 : 1 et 6 sont noirs, 2 et 5 sont rouges et 3 et 4 sont verts. Le cinquième dé peut être de n'importe quelle valeur. Le score est composé du total de tous les dés.</para></glossdef>
+       </glossentry>
+       <glossentry id="flush"><glossterm>Flush</glossterm>
+         <glossdef><para>Cette catégorie est uniquement employée dans le jeu en couleurs. Cinq dés de la même « couleur » : deux dés sont de la même couleur si leur somme fait 7 : 1 et 6 sont noirs, 2 et 5 sont rouges et 3 et 4 sont verts. Le cinquième dé peut être de n'importe quelle valeur. Le score est de 35 points.</para></glossdef>
+       </glossentry>
+       <glossentry id="largestraight"><glossterm>Grande suite</glossterm>
+         <glossdef><para>Cinq dés composés de nombres qui se suivent (ex. : 2, 3, 4, 5, 6). Le score est de 40 points.</para></glossdef>
+       </glossentry>
+       <glossentry id="smallstraight"><glossterm>Petite suite</glossterm>
+         <glossdef><para>Quatre dés composés de nombres qui se suivent. Le cinquième dé peut être de n'importe quelle valeur. Ex. : 2, 3, 4, 5, 5). Cette catégorie est uniquement employée dans le jeu normal. Le score est de 30 points.</para></glossdef>
+       </glossentry>
+   </glossary>
+ </sect1>
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Auteurs</title>
+  <para><application>GNOME Tali</application> a été écrit par Scott Heavner (<email>sdh@po.cwru.edu</email>) et Orest Zborowski. Ce manuel a été écrit par Scott D Heavner (<email>sdh@po.cwru.edu</email>) et complété par Callum McKenzie (<email>callum@physics.otago.ac.nz</email>). Pour rapporter une anomalie ou émettre une suggestion concernant cette application ou ce manuel, suivez les indications de <ulink url="ghelp:user-guide?feedback-bugs" type="help">ce document</ulink>.</para>
+
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licence</title>
+  <para>Ce programme est du logiciel libre ; vous pouvez le redistribuer et/ou le modifier selon les termes de la <ulink type="help" url="gnome-help:gpl"><citetitle>GNU General Public License</citetitle></ulink>, tels que publiés par la Free Software Foundation ; soit la version 2 de cette licence ou (à votre choix) toute version ultérieure.</para>
+  <para>Ce programme est distribué dans l’espoir qu’il sera utile, mais SANS AUCUNE GARANTIE, ni explicite ni implicite; sans même les garanties de commercialisation ou d’adaptation dans un but spécifique. Se référer à la <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> pour plus de détails.</para>
+  <para>Une copie de la <citetitle>GNU General Public License</citetitle> est incluse sous forme d'annexe au <citetitle>Guide d'utilisation du bureau GNOME</citetitle>. Vous pouvez également obtenir une copie de la <citetitle>GNU General Public License</citetitle> à la Free Software Foundation en visitant <ulink type="http" url="http://www.fsf.org">leur site Web</ulink> ou en écrivant à <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

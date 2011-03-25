@@ -1,0 +1,438 @@
+# translation of gnotravex_help.po to Basque
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnotravex_help\n"
+"POT-Creation-Date: 2008-01-03 18:50+0000\n"
+"PO-Revision-Date: 2008-12-19 19:21+0100\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
+"Language-Team: Basque <itzulpena@euskalgnu.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnotravex.xml:170(None)
+msgid ""
+"@@image: 'figures/gnotravex_mainwindow.png'; "
+"md5=e49d762a2dd5d6ba466e0c7cef7703ce"
+msgstr ""
+"@@image: 'figures/gnotravex_mainwindow.png'; "
+"md5=e49d762a2dd5d6ba466e0c7cef7703ce"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnotravex.xml:193(None)
+msgid "@@image: 'figures/gnotravex_game.png'; md5=4d0a4512ee72329134fa0f5a1a3205e9"
+msgstr "@@image: 'figures/gnotravex_game.png'; md5=4d0a4512ee72329134fa0f5a1a3205e9"
+
+#: C/gnotravex.xml:25(title)
+msgid "<application>Tetravex</application> Manual"
+msgstr "<application>Tetravex</application>en eskuliburua"
+
+#: C/gnotravex.xml:28(para)
+msgid ""
+"Tetravex is a simple puzzle game in which pieces have numbers on each side. "
+"The pieces must be positioned so that the same numbers touch each other, "
+"during which you are being timed. The times are then stored in a system-wide "
+"scoreboard."
+msgstr ""
+"Tetravex buru-hausgarri bat da. Fitxak kokatu behar dira eta elkar "
+"ukitzen duten zenbakiek berdinak izan behar dute. Jokoa bukatzeko behar "
+"duzun denbora hartzen da kontuan eta lortutako denborak puntuazio-taula "
+"batean jasotzen dira."
+
+#: C/gnotravex.xml:37(year)
+msgid "2001"
+msgstr "2001"
+
+#: C/gnotravex.xml:38(holder)
+msgid "Rob Bradford"
+msgstr "Rob Bradford"
+
+#: C/gnotravex.xml:52(publishername) C/gnotravex.xml:90(para)
+msgid "GNOME Documentation Project"
+msgstr "GNOMEren dokumentazio-proiektua"
+
+#: C/gnotravex.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Baimena ematen da dokumentu hau kopiatu, banatu eta/edo aldatzeko Free "
+"Software Foundation-ek argitaratutako GNU Dokumentazio Librearen "
+"Lizentziaren 1.1. bertsioan edo berriago batean ezarritako baldintzetan, "
+"atal aldaezinik gabe, aurreko azaleko testurik gabe eta atzeko azaleko "
+"testurik gabe. GFDL lizentziaren kopia <ulink type=\"help\" url=\"ghelp:fdl"
+"\">esteka honetan</ulink> edo eskuliburu honekin batera ematen den COPYING-"
+"DOCS fitxategian aurkituko duzu."
+
+#: C/gnotravex.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Eskuliburu hau GFDL lizentziarekin banatzen diren GNOME eskuliburuen "
+"bildumakoa da. Eskuliburu hau bildumatik bereizita banatu nahi baduzu, "
+"banatu dezakezu, baina eskuliburuari lizentziaren kopia bat gehitu beharko "
+"diozu, lizentzian bertan 6. atalean azaltzen den bezala."
+
+#: C/gnotravex.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Enpresek beren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen "
+"asko marka erregistratu gisa hartu behar dira. Izen horiek GNOMEren edozein "
+"agiritan agertzen direnean, eta GNOMEren Dokumentazio Proiektuko kideak "
+"marka komertzialak direla konturatzen direnean, izen horiek osorik "
+"maiuskulaz edo hasierako letra maiuskulaz idatzi dituzte."
+
+#: C/gnotravex.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"DOKUMENTUA \"DAGOEN-DAGOENEAN\" EMATEN DA, INOLAKO BERMERIK GABE, EZ "
+"ESPRESUKI ADIERAZITAKORIK ETA EZ INPLIZITURIK ERE; BESTEAK BESTE, EZ DA "
+"BERMATZEN DOKUMENTUA EDO BERTSIO ALDATUA AKATSIK GABEA DENIK, MERKATURATZEKO "
+"EDO XEDE JAKIN BATERAKO EGOKIA DENIK EDO ARAURIK HAUSTEN EZ DUENIK, HORI "
+"GUZTIA MUGARIK GABE. DOKUMENTUAREN EDO DOKUMENTUAREN BERTSIO ALDATUAREN "
+"KALITATEARI, ZEHAZTASUNARI ETA PERFORMANTZIARI BURUZKO ERANTZUKIZUN OSOA "
+"ZUREA DA. DOKUMENTUREN BATEK EDO BERTSIO ALDATUREN BATEK EDOZEIN MOTATAKO "
+"AKATSIK IZANEZ GERO, ZUK (EZ HASIERAKO IDAZLEAK, EZ EGILEAK ETA EZ INONGO "
+"KOLABORATZAILEK) ZEURE GAIN HARTU BEHARKO DUZU BERRIKUSTEKO, KONPONTZEKO EDO "
+"ZUZENTZEKO BEHAR DIREN ZERBITZU GUZTIEN KOSTUA. BERME-UKATZE HAU LIZENTZIA "
+"HONEN FUNTSEZKO ZATIA DA. EZ DA BAIMENIK EMATEN EZEIN DOKUMENTU EDO BERTSIO "
+"ALDATU ERABILTZEKO, BALDIN ETA EZ BADA BERME-UKATZE HAU ONARTZEN."
+
+#: C/gnotravex.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"EZIN IZANGO DA INONGO ZIRKUNSTANTZIARIK EDO LEGE-TEORIARIK OINARRI HARTU --"
+"EZ ERANTZUKIZUN ZIBILARI BURUZKORIK (ZABARKERIA BARNE HARTUTA), EZ "
+"KONTRATUARI BURUZKORIK, EZ BESTERIK-- DOKUMENTU HONEN EDO BERTSIO ALDATU "
+"BATEN EGILEA, HASIERAKO IDAZLEA, EDOZEIN KOLABORATZAILE EDO BANATZAILE, EDO "
+"ALDERDI HORIEN EDOZEIN HORNITZAILE BESTE PERTSONA BATEN AURREAN ERANTZULE "
+"EGITEKO, PERTSONA HORREK EDOZEIN MOTATAKO KALTEA JASAN DUELAKO (ZUZENEKOA, "
+"ZEHARKAKOA, BEREZIA, INTZIDENTALA EDO ONDORIOZKOA), HALA NOLA (ETA MUGARIK "
+"GABE) BEZEROAK GALTZEA, LANA ETEN BEHARRA, ORDENAGAILUAK EZ IBILTZEA EDO "
+"GAIZKI IBILTZEA, EDO DOKUMENTUA NAHIZ HAREN BERTSIO ALDATUAK ERABILTZETIK "
+"ONDORIOZTATZEN DIREN EDO ERABILERA HORREKIN ZERIKUSIA DUTEN KALTEAK EDO "
+"GALERAK, ALDERDIARI KALTE HORIEK GERTA ZITEZKEELA ADITZERA EMAN BAZAIO ERE."
+
+#: C/gnotravex.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"DOKUMENTUA ETA DOKUMENTUAREN BERTSIO ALDATUAK GNU DOKUMENTAZIO LIBREAREN "
+"LIZENTZIAREN BALDINTZEN ARABERA EMATEN DIRA, ETA ONDOREN ZEHAZTEN DIRENAK "
+"ONARTZERA BEHARTZEN DUTE: <placeholder-1/>"
+
+#: C/gnotravex.xml:62(firstname)
+msgid "Rob"
+msgstr "Rob"
+
+#: C/gnotravex.xml:63(surname)
+msgid "Bradford"
+msgstr "Bradford"
+
+#: C/gnotravex.xml:65(email)
+msgid "robster@debian.org"
+msgstr "robster@debian.org"
+
+#: C/gnotravex.xml:84(revnumber)
+msgid "Tetravex Manual V2.10"
+msgstr "Tetravex-en eskuliburuaren 2.10 bertsioa"
+
+#: C/gnotravex.xml:85(date)
+msgid "June 2005"
+msgstr "2005eko ekaina"
+
+#: C/gnotravex.xml:87(para)
+msgid "Rob Bradford <email>rob@funky-penguin.co.uk</email>"
+msgstr "Rob Bradford <email>rob@funky-penguin.co.uk</email>"
+
+#: C/gnotravex.xml:95(releaseinfo)
+msgid "This manual describes version 2.12 of Tetravex."
+msgstr "Tetravex-en 2.12 bertsioa azaltzen da eskuliburu honetan."
+
+#: C/gnotravex.xml:102(title)
+msgid "Feedback"
+msgstr "Ohar-bidaltzea"
+
+#: C/gnotravex.xml:103(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Tetravex</"
+"application> application or this manual, follow the directions in the <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</ulink>."
+msgstr ""
+"<application>Tetravex</application>i buruzko akatsen berri emateko edo "
+"oharrak bidaltzeko, <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
+"\">GNOMEra oharrak bidaltzeko orria</ulink>n aurkituko dituzu argibideak."
+
+#: C/gnotravex.xml:113(primary)
+msgid "GNOME Tetravex"
+msgstr "GNOME Tetravex"
+
+#: C/gnotravex.xml:119(title)
+msgid "Introduction"
+msgstr "Sarrera"
+
+#: C/gnotravex.xml:121(para)
+msgid ""
+"<application>GNOME Tetravex</application> is a simple puzzle where pieces "
+"must be positioned so that the same numbers are touching each other. Your "
+"game is timed, these times are stored in a system-wide scoreboard."
+msgstr ""
+"<application>GNOME Tetravex</application> buru-hausgarri bat da. Fitxak "
+"kokatu egin behar dira eta elkar ukitzen duten zenbakiek berdinak izan behar "
+"dute. Jokoa bukatzeko behar duzun denbora hartzen da kontuan eta lortutako "
+"denborak puntuazio-taula batean jasotzen dira."
+
+#: C/gnotravex.xml:127(para)
+msgid ""
+"To run <application>GNOME Tetravex</application>, select "
+"<menuchoice><guisubmenu>Games</guisubmenu><guimenuitem>Gnotravex</"
+"guimenuitem></menuchoice> from the <guimenu>Main Menu</guimenu>, or type "
+"<command>gnotravex</command> on the command line."
+msgstr ""
+"<application>GNOME Tetravex</application> abiarazteko, hautatu "
+"<menuchoice><guisubmenu>Jokoak</guisubmenu><guimenuitem>Gnotravex</"
+"guimenuitem></menuchoice> <guimenu>Menu nagusia</guimenu> menuan, edo idatzi "
+"<command>gnotravex</command> komando-lerroan."
+
+#: C/gnotravex.xml:137(para)
+msgid ""
+"<application>GNOME Tetravex</application> is included in the <filename>gnome-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.10 of <application>GNOME Tetravex</"
+"application>."
+msgstr ""
+"<application>GNOME Tetravex</application> <filename>gnome-games</filename> "
+"paketearen barruan sartzen da, eta hori GNOMEren mahaigaineko ingurunearen "
+"parte da. Dokumentu honek <application>GNOME Tetravex</application>en 2.10 "
+"bertsioa deskribatzen du."
+
+#: C/gnotravex.xml:146(title)
+msgid "Playing GNOME Tetravex"
+msgstr "GNOME Tetravex-en jokatzea"
+
+#: C/gnotravex.xml:148(para)
+msgid ""
+"<application>GNOME Tetravex</application> is a simple puzzle game, this "
+"section covers how to play the game."
+msgstr ""
+"<application>GNOME Tetravex</application> buru-hausgarri bat da. Atal "
+"honetan nola jokatu azaltzen da."
+
+#: C/gnotravex.xml:154(title)
+msgid "Basic usage"
+msgstr "Oinarrizko erabilera"
+
+#: C/gnotravex.xml:156(title)
+msgid "Playing the game"
+msgstr "Jokatzea"
+
+#: C/gnotravex.xml:157(para)
+msgid ""
+"Starting <application>GNOME Tetravex</application> opens the <interface>Main "
+"window</interface>, shown in <xref linkend=\"mainwindow-fig\"/>. The window "
+"is divided into two boxes. The right hand side contains a box containing the "
+"pieces you have yet to place and the left hand box is where you arrange the "
+"pieces."
+msgstr ""
+"<application>GNOME Tetravex</application> abiaraztean, <interface>Leiho "
+"nagusia</interface> irekitzen da; ikus <xref linkend=\"mainwindow-fig\"/>. "
+"Leihoa bi laukitan banatzen da. Eskuineko koadroan, kokatu behar dituzun "
+"piezak daude, eta ezkerreko koadroan kokatu behar dituzu."
+
+#: C/gnotravex.xml:166(title)
+msgid "GNOME Tetravex Main Window"
+msgstr "GNOME Tetravex-en leiho nagusia"
+
+#: C/gnotravex.xml:173(phrase)
+msgid "GNOME Tetravex Main Window."
+msgstr "GNOME Tetravex-en leiho nagusia"
+
+#: C/gnotravex.xml:179(para)
+msgid ""
+"You can start playing the game immediately. You may restart the game by "
+"selecting <menuchoice><guisubmenu>File</guisubmenu><guimenuitem>New game</"
+"guimenuitem></menuchoice><xref linkend=\"playing-fig\"/>"
+msgstr ""
+"Nahi duzunean has zaitezke jolasten. Jokoa berriro hasteko, hautatu "
+"<menuchoice><guisubmenu>Fitxategia</guisubmenu><guimenuitem>Joko berria</"
+"guimenuitem></menuchoice><xref linkend=\"playing-fig\"/>"
+
+#: C/gnotravex.xml:189(title)
+msgid "A GNOME Tetravex Game"
+msgstr "GNOME Tetravex-en joko bat."
+
+#: C/gnotravex.xml:196(phrase)
+msgid "A GNOME Tetravex Game."
+msgstr "GNOME Tetravex-en joko bat."
+
+#: C/gnotravex.xml:201(para)
+msgid ""
+"The tiles are divided into four, you must position them so that only two "
+"numbers that are the same are next to each other. The game wil not let you "
+"position the tiles so that different numbers are next to each other. You "
+"position the pieces by dragging them from their current position either in "
+"the right hand box or the main box to their new position. These moves are "
+"not permanent and can be readily reversed. You may also move all the pieces "
+"in the left hand box at once by using the commands: "
+"<menuchoice><guisubmenu>Move</guisubmenu><guimenuitem>Left/Right/Up/Down</"
+"guimenuitem></menuchoice>"
+msgstr ""
+"Fitxak lau zatitan banatuta daude (zenbaki bat zati bakoitzean). Piezak "
+"kokatzerakoan, elkar ukituko duten zenbakiak berdinak direla ziurtatu behar "
+"duzu. Jokoak ez dizu utziko berdinak ez diren zenbakiak elkarren ondoan "
+"jartzen. Piezak kokatzeko, dauden lekutik kokaleku berrira arrastatu behar "
+"dituzu. Mugimendu horiek ez dira behin betikoak, eta aldatu egin daitezke. "
+"Ezkerreko koadroko pieza guztiak aldi berean mugi ditzakezu komando hauek "
+"erabiliz: <menuchoice><guisubmenu>Mugitu</guisubmenu><guimenuitem>Ezkerrera/"
+"Eskuinera/Gora/Behera</guimenuitem></menuchoice>"
+
+#: C/gnotravex.xml:216(title)
+msgid "Winning the game"
+msgstr "Jokoa irabaztea"
+
+#: C/gnotravex.xml:217(para)
+msgid ""
+"The game is completed when you have positioned all the squares in the right "
+"positions. When you have completed the game you are shown your ranking in "
+"the high scores table, if you get a high enough score. If you have used "
+"either Hint or Solve your score will not be included in the high scores "
+"table."
+msgstr ""
+"Fitxa guztiak toki egokian kokatzen dituzunean amaitzen da jokoa. Jokoa "
+"bukatzen duzunean, zein postutan zauden ikusiko duzu puntuaziorik onenen "
+"taulan (behar adina puntu lortu baduzu). Iradokizuna edo Ebatzi erabili "
+"badituzu, zure puntuazioa ez da puntuaziorik onenen taulan egongo."
+
+#: C/gnotravex.xml:230(title)
+msgid "Customization"
+msgstr "Pertsonalizazioa"
+
+#: C/gnotravex.xml:231(para)
+msgid ""
+"Under the <guimenuitem>Settings</guimenuitem> menu you can change the size "
+"of the grid from two by two up to six by six. The default is three by three."
+msgstr ""
+"<guimenuitem>Ezarpenak</guimenuitem> menuan saretaren tamaina alda dezakezu: "
+"bi bider bi tamainatik, sei bider seira. Lehenespenez, hiru bider hirukoa "
+"agertuko da."
+
+#: C/gnotravex.xml:235(para)
+msgid ""
+"If the tiles are too small, resizing the window will change the size of the "
+"tiles."
+msgstr ""
+"Fitxak txikiegiak baldin badira, leihoaren tamaina aldatzen duzunean fitxen "
+"tamaina ere aldatu egingo da."
+
+#: C/gnotravex.xml:256(title)
+msgid "Authors"
+msgstr "Egileak"
+
+#: C/gnotravex.xml:257(para)
+msgid ""
+"<application>GNOME Tetravex</application> was written by Lars Rydlinge "
+"(<email>lars.rydlinge@hig.se</email>). This manual was written by Rob "
+"Bradford (<email>rob@funky-penguin.co.uk</email>). To report a bug or make a "
+"suggestion regarding this application or this manual, follow the directions "
+"in this <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">document</ulink>."
+msgstr ""
+"<application>GNOME Tetravex</application> Lars Rydlinge-k (<email>lars."
+"rydlinge@hig.se</email>) idatzi zuen. Eskuliburu hau Rob Bradford-ek idatzi "
+"zuen (<email>rob@funky-penguin.co.uk</email>). Aplikazio honi buruzko "
+"akatsen berri emateko edo oharrak bidaltzeko, <ulink url=\"ghelp:gnome-"
+"feedback\" type=\"help\">dokumentua</ulink>n aurkituko dituzu argibideak."
+
+#: C/gnotravex.xml:277(title)
+msgid "License"
+msgstr "Lizentzia"
+
+#: C/gnotravex.xml:278(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <citetitle>GNU General Public License</citetitle> as "
+"published by the Free Software Foundation; either version 2 of the License, "
+"or (at your option) any later version."
+msgstr ""
+"Programa hau software librea da; birbana eta/edo alda dezakezu Free Software "
+"Foundation-ek argitaratutako <citetitle>GNU Lizentzia Publiko Orokorra</"
+"citetitle>ren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, "
+"jasotako baldintzak betez gero."
+
+#: C/gnotravex.xml:284(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO "
+"BERMERIK GABE; era berean, ez da bermatzen beraren EGOKITASUNA "
+"MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO. Argibide gehiago "
+"nahi izanez gero, ikus <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>."
+
+#: C/gnotravex.xml:290(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink url=\"http://www.fsf.org\" "
+"type=\"http\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"<citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia "
+"<citetitle>GNOMEren erabiltzaile</citetitle>aren gidaren eranskinean "
+"daukazu. <citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle>ren "
+"kopia bat Free Software Foundation-en bidez ere lor dezakezu, <ulink url="
+"\"http://www.fsf.org\" type=\"http\">haren webgunea</ulink> bisitatuz, edo "
+"hona idatziz: <address> Free Software Foundation, Inc. <street>59 Temple "
+"Place</street> - 330. Suitea <city>Boston</city>, <state>MA</"
+"state><postcode>02111-1307</postcode><country>AEB</country></address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/gnotravex.xml:0(None)
+msgid "translator-credits"
+msgstr "Hizkuntza Politikarako Sailburuordetza <hizpol@ej.gv.es>, 2008."
+

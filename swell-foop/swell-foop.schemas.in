@@ -1,0 +1,54 @@
+<gconfschemafile>
+    <schemalist>    
+
+      <schema>
+        <key>/schemas/apps/swell-foop/theme</key>
+        <applyto>/apps/swell-foop/theme</applyto>
+        <owner>swell-foop</owner>
+        <type>string</type>
+        <default>Tango</default>
+        <locale name="C">
+          <short>The theme to use</short>
+          <long>The title of the tile theme to use.</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/apps/swell-foop/size</key>
+        <applyto>/apps/swell-foop/size</applyto>
+        <owner>swell-foop</owner>
+        <type>int</type>
+        <default>1</default>
+        <locale name="C">
+          <short>Board size</short>
+          <long>The size of the game board.</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/apps/swell-foop/colors</key>
+        <applyto>/apps/swell-foop/colors</applyto>
+        <owner>swell-foop</owner>
+        <type>int</type>
+        <default>3</default>
+        <locale name="C">
+          <short>Board color count</short>
+          <long>The number of colors of tiles to use in the game.</long>
+        </locale>
+      </schema>
+      
+      <schema>
+        <key>/schemas/apps/swell-foop/zealous</key>
+        <applyto>/apps/swell-foop/columns</applyto>
+        <owner>swell-foop</owner>
+        <type>bool</type>
+        <default>true</default>
+        <locale name="C">
+          <short>Zealous animation</short>
+          <long>Use more flashy, but slower, animations.</long>
+        </locale>
+      </schema>
+
+  </schemalist>
+  
+</gconfschemafile>

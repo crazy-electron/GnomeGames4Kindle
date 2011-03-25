@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="700" version="1.1">
+  <defs>
+    <path id="wave" stroke="#000000" stroke-width="2.5" d="M50,37.5C50,50,68.75,50,68.75,62.5S62.5,81.25,50,81.25S50,75,50,62.5S31.25,50,31.25,37.5C31.25,25,37.5,18.75,50,18.75S50,25,50,37.5zM237.5,50c12.5,0,12.5-18.75,25-18.75S281.25,37.5,281.25,50s-6.25,0-18.75,0s-12.5,18.75-25,18.75c-12.5,0-18.75-6.25-18.75-18.75S225,50,237.5,50zM141.16,41.16c8.84,8.84,22.1-4.42,30.94,4.42c8.84,8.84,8.84,17.68,0,26.52s-4.42-4.42-13.26-13.26s-22.1,4.42-30.94-4.42c-8.84-8.84-8.84-17.68,0-26.52S132.32,32.32,141.16,41.16zM341.16,58.84c8.84-8.84-4.42-22.1,4.42-30.94s17.68-8.84,26.52,0s-4.42,4.42-13.26,13.26s4.42,22.1-4.42,30.94c-8.84,8.84-17.68,8.84-26.52,0S332.32,67.68,341.16,58.84z"/>
+  </defs>
+  <g stroke="#000000" stroke-width="5">
+    <circle cx="50" cy="50" r="37.5" fill="#FFFF00"/>
+    <circle cx="150" cy="50" r="37.5" fill="#FFFF00"/>
+    <circle cx="250" cy="50" r="37.5" fill="#FFFF00"/>
+    <circle cx="350" cy="50" r="37.5" fill="#FFFF00"/>
+    <circle cx="50" cy="150" r="37.5" fill="#FF00FF"/>
+    <circle cx="150" cy="150" r="37.5" fill="#FF00FF"/>
+    <circle cx="250" cy="150" r="37.5" fill="#FF00FF"/>
+    <circle cx="350" cy="150" r="37.5" fill="#FF00FF"/>
+    <circle cx="50" cy="250" r="37.5" fill="#00FF00"/>
+    <circle cx="150" cy="250" r="37.5" fill="#00FF00"/>
+    <circle cx="250" cy="250" r="37.5" fill="#00FF00"/>
+    <circle cx="350" cy="250" r="37.5" fill="#00FF00"/>
+    <circle cx="50" cy="350" r="37.5" fill="#FF0000"/>
+    <circle cx="150" cy="350" r="37.5" fill="#FF0000"/>
+    <circle cx="250" cy="350" r="37.5" fill="#FF0000"/>
+    <circle cx="350" cy="350" r="37.5" fill="#FF0000"/>
+    <circle cx="50" cy="450" r="37.5" fill="#0000FF"/>
+    <circle cx="150" cy="450" r="37.5" fill="#0000FF"/>
+    <circle cx="250" cy="450" r="37.5" fill="#0000FF"/>
+    <circle cx="350" cy="450" r="37.5" fill="#0000FF"/>
+    <circle cx="50" cy="550" r="37.5" fill="#00FFFF"/>
+    <circle cx="150" cy="550" r="37.5" fill="#00FFFF"/>
+    <circle cx="250" cy="550" r="37.5" fill="#00FFFF"/>
+    <circle cx="350" cy="550" r="37.5" fill="#00FFFF"/>
+    <circle cx="50" cy="650" r="37.5" fill="#FF8000"/>
+    <circle cx="150" cy="650" r="37.5" fill="#FF8000"/>
+    <circle cx="250" cy="650" r="37.5" fill="#FF8000"/>
+    <circle cx="350" cy="650" r="37.5" fill="#FF8000"/>
+  </g>
+  <use x="0" y="0" fill="#FFFF9B" xlink:href="#wave"/>
+  <use x="0" y="100" fill="#FF9BFF" xlink:href="#wave"/>
+  <use x="0" y="200" fill="#9BFF9B" xlink:href="#wave"/>
+  <use x="0" y="300" fill="#FF9B9B" xlink:href="#wave"/>
+  <use x="0" y="400" fill="#9B9BFF" xlink:href="#wave"/>
+  <use x="0" y="500" fill="#9BFFFF" xlink:href="#wave"/>
+  <use x="0" y="600" fill="#FFCD9B" xlink:href="#wave"/>
+  <g fill="#FFFFFF" stroke="none">
+    <circle cx="62.5" cy="37.5" r="12.5" opacity=".8"/>
+    <circle cx="162.5" cy="37.5" r="12.5" opacity=".8"/>
+    <circle cx="262.5" cy="37.5" r="12.5" opacity=".8"/>
+    <circle cx="362.5" cy="37.5" r="12.5" opacity=".8"/>
+    <circle cx="62.5" cy="137.5" r="12.5" opacity=".65"/>
+    <circle cx="162.5" cy="137.5" r="12.5" opacity=".65"/>
+    <circle cx="262.5" cy="137.5" r="12.5" opacity=".65"/>
+    <circle cx="362.5" cy="137.5" r="12.5" opacity=".65"/>
+    <circle cx="62.5" cy="237.5" r="12.5" opacity=".8"/>
+    <circle cx="162.5" cy="237.5" r="12.5" opacity=".8"/>
+    <circle cx="262.5" cy="237.5" r="12.5" opacity=".8"/>
+    <circle cx="362.5" cy="237.5" r="12.5" opacity=".8"/>
+    <circle cx="62.5" cy="337.5" r="12.5" opacity=".65"/>
+    <circle cx="162.5" cy="337.5" r="12.5" opacity=".65"/>
+    <circle cx="262.5" cy="337.5" r="12.5" opacity=".65"/>
+    <circle cx="362.5" cy="337.5" r="12.5" opacity=".65"/>
+    <circle cx="62.5" cy="437.5" r="12.5" opacity=".5"/>
+    <circle cx="162.5" cy="437.5" r="12.5" opacity=".5"/>
+    <circle cx="262.5" cy="437.5" r="12.5" opacity=".5"/>
+    <circle cx="362.5" cy="437.5" r="12.5" opacity=".5"/>
+    <circle cx="62.5" cy="537.5" r="12.5" opacity=".8"/>
+    <circle cx="162.5" cy="537.5" r="12.5" opacity=".8"/>
+    <circle cx="262.5" cy="537.5" r="12.5" opacity=".8"/>
+    <circle cx="362.5" cy="537.5" r="12.5" opacity=".8"/>
+    <circle cx="62.5" cy="637.5" r="12.5" opacity=".5"/>
+    <circle cx="162.5" cy="637.5" r="12.5" opacity=".5"/>
+    <circle cx="262.5" cy="637.5" r="12.5" opacity=".5"/>
+    <circle cx="362.5" cy="637.5" r="12.5" opacity=".5"/>
+  </g>
+</svg>

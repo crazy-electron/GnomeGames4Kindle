@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.20">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "February 2008">
+<!ENTITY app "<application>Iagno</application>">
+<!ENTITY appname "Iagno">
+<!ENTITY version "2.9">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="el">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo>
+ <title>Τεκμηρίωση του <application>Ιάγνος</application></title>
+
+    <abstract role="description">
+      <para>Τα Ιάγνος είναι το παιχνίδι στρατηγικής δύο παικτών του Othello, το οποίο είναι επίσης γνωστό και ως Reversi και είναι παρόμοιο με το Go. Τα κομμάτια είναι πλακίδια με τη μία πλευρά τους μαύρη και την άλλη λευκή και ο στόχος του παίκτη είναι να γυρίζει τα πλακίδια του αντιπάλου στο δικό του χρώμα, ενώ εμποδίζει τον αντίπαλο να κάνει το ίδιο σ' αυτόν. Όταν το ταμπλώ γεμίσει με πλακίδια, κερδίζει ο παίκτης με τα περισσότερα πλακίδια του δικού του χρώματος.</para>
+    </abstract>
+
+ <copyright>
+  <year>2000</year>
+  <holder>Eric Baudais</holder>
+ </copyright><copyright><year>δείτε http://gnome.gr/</year><holder>Για περισσότερα</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Έργο τεκμηρίωσης του GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Δίνεται άδεια για αντιγραφή, διανομή και/ή τροποποίηση του εγγράφου υπό τους όρους της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), Έκδοση 1.1 ή μεταγενέστερη εκδιδόμενη από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Σταθερά Εδάφια, χωρίς Εξώφυλλα Κειμένου, και χωρίς Οπισθόφυλλα Κειμένου. Μπορείτε να βρείτε ένα αντίγραφο της GFDL σε αυτόν τον <ulink type="help" url="ghelp:fdl">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανεμήθηκε με αυτόν τον οδηγό.</para>
+         <para>Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του GNOME όπως διανέμεται υπό τους όρους της GFDL. Εάν επιθυμείτε να διανείμετε αυτή την τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 της άδειας.</para>
+
+	<para>Πολλά από τα ονόματα που χρησιμοποιούνται από εταιρίες για να ξεχωρίσουν τα προϊόντα και τις υπηρεσίες τους είναι σήματα κατατεθέντα. Όπου αυτά τα ονόματα εμφανίζονται στην τεκμηρίωση GNOME, και τα μέλη της ομάδας τεκμηρίωσης GNOME έχουν γνώση αυτών, τότε αυτά αναγράφονται με κεφαλαίους χαρακτήρες ή με αρχικούς κεφαλαίους χαρακτήρες.</para>
+
+	<para>ΤΟ ΈΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ ΑΔΕΙΑΣ GNU FREE DOCUMENTATION ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: <orderedlist>
+		<listitem>
+		  <para>Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ ΠΑΡΕΧΕΤΑΙ "ΩΣ ΕΧΕΙ", ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ ΚΑΝΕΝΟΣ ΕΙΔΟΥΣ, ΕΚΦΡΑΣΜΕΝΗ 'Η ΝΟΟΥΜΕΝΗ, ΠΕΡΙΛΑΜΒΑΝΟΜΕΝΩΝ, ΧΩΡΙΣ ΠΕΡΙΟΡΙΣΜΟ, ΕΓΓΥΗΣΕΩΝ ΟΤΙ ΤΟ ΕΓΓΡΑΦΟ 'Η ΠΑΡΑΛΛΑΓΕΣ ΤΟΥ ΕΓΓΡΑΦΟΥ ΕΙΝΑΙ ΕΛΕΥΘΕΡΑ ΚΑΘΕ ΕΛΑΤΤΩΜΑΤΟΣ, ΕΜΠΟΡΕΥΣΙΜΑ, ΚΑΤΑΛΛΗΛΑ ΓΙΑ ΕΝΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ, Η ΜΗ-ΠΑΡΑΒΑΙΝΟΝΤΑ. Η ΕΥΘΥΝΗ ΓΙΑ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ, ΚΑΙ ΑΠΟΔΟΣΗ ΤΟΥ ΕΓΓΡΑΦΟΥ ΕΙΝΑΙ ΑΠΟΚΛΕΙΣΤΙΚΑ ΔΙΚΗ ΣΑΣ. ΑΝ ΟΠΟΙΟΔΗΠΟΤΕ ΕΓΓΡΑΦΟ Η ΠΑΡΑΛΛΑΓΗ ΤΟΥΑΠΟΔΕΙΚΤΟΥΝ ΕΛΑΤΤΩΜΑΤΙΚΑ ΜΕ ΟΠΟΙΟΔΗΠΟΤΕ ΤΡΟΠΟ, ΕΣΕΙΣ (ΚΑΙ ΟΧΙ Ο ΑΡΧΙΚΟΣ ΣΥΓΓΡΑΦΕΑΣ 'Η ΟΠΟΙΟΣΔΗΠΟΤΕ ΣΥΜΒΑΛΛΟΝΤΑΣ) ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΟ ΚΟΣΤΟΣ ΟΠΟΙΑΣΔΗΠΟΤΕ ΑΝΑΓΚΑΙΑΣ ΥΠΗΡΕΣΙΑΣ, ΕΠΙΣΚΕΥΗΣ 'Η ΔΙΟΡΘΩΣΗΣ. Η ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ ΠΟΥ ΣΥΝΟΔΕΥΕΙ ΑΥΤΗ ΤΗΝ ΤΕΚΜΗΡΙΩΣΗ ΕΙΝΑΙ ΑΝΑΠΟΣΠΑΣΤΟ ΚΟΜΜΑΤΙ ΑΥΤΗΣ. ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ. ΚΑΙ</para>
+		</listitem>
+		<listitem>
+		  <para>ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΝΟΜΙΚΗ ΣΥΝΘΗΚΗ, ΕΙΤΕ ΜΕΣΩ ΣΥΜΒΟΛΑΙΩΝ Ή ΑΛΛΙΩΣ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ Ο ΣΥΓΓΡΑΦΕΑΣ, Ο ΔΙΑΝΟΜΕΑΣ, Η ΑΛΛΟΣ ΣΥΝΥΠΕΥΘΥΝΟΣ ΓΙΑ ΤΗΝ ΣΥΓΓΡΑΦΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ, ΓΙΑ ΕΜΜΕΣΕΣ Η ΑΜΕΣΕΣ, ΤΥΧΑΙΕΣ Ή ΜΗ ΖΗΜΙΕΣ ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Eric</firstname> 
+	<surname>Baudais</surname> 
+	<affiliation> 
+	  <address> <email>baudais@okstate.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+<revhistory>
+  <revision> 
+    <revnumber>Τεκμηρίωση του Ιάγνος, έκδοση 2.9</revnumber> 
+    <date>Φεβρουάριος 2008</date> 
+    <revdescription> 
+      <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+      <para role="publisher">Έργο τεκμηρίωσης του GNOME</para>
+    </revdescription> 
+  </revision>
+  <revision> 
+    <revnumber>Τεκμηρίωση του Ιάγνος, έκδοση 2.8</revnumber> 
+    <date>Σεπτέμβριος 2004</date> 
+    <revdescription> 
+      <para role="author">Eric Baudais <email>baudais@okstate.edu</email></para>
+      <para role="publisher">Έργο τεκμηρίωσης του GNOME</para>
+	</revdescription> 
+  </revision>
+  <revision>
+   <revnumber>0.1</revnumber>
+   <date>4 Φεβρουαρίου 2000</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Ολοκλήρωση πρώτου προσχεδίου.</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>0.2</revnumber>
+   <date>5 Φεβρουρίου 2000</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Προσθήκη υποσημείωσης στην ενότητα Γιατί. Διόρθωση μερικών ορθογραφικών λαθών.</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>0.3</revnumber>
+   <date>7 Φεβρουαρίου 2000</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Μετατροπή του εγγράφου για σύμβαση με το πρότυπο GDP. Ξεκαθάρισμα της ενότητα Παιχνιδιού.</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>1.0</revnumber>
+   <date>7 Απριλίου 2000</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Αδειοδότηση της τεκμηρίωσης του Ιάγνος υπό την FDL. Ανανέωση των στιγμιοτύπων οθόνης στο πρότυπο GDP, MicroGUI.</revremark>
+  </revision>
+ </revhistory>
+
+    <releaseinfo>Αυτή η τεκμηρίωση περιγράφει την έκδοση 2.20 του Ιάγνος.από Ιάγνος.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Ανάδραση</title> 
+      <para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με την εφαρμογή <application>Ιάγνος</application> ή αυτή την τεκμηρίωση, ακολουθήστε τις οδηγίες στη <ulink url="ghelp:user-guide?feedback-bugs" type="help">Σελίδα ανάδρασης του GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Ιάγνος</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="intro">
+ <title>Εισαγωγή</title>
+ <sect2 id="what">
+  <title>Τι είναι ο Ιάγνος;</title>
+  
+  <para>Ο <application>Ιάγνος</application> είναι μια εκδοχή στον υπολογιστή του παιχνιδιού Reversi, που πιο συχνά ονομάζεται Othello. Ο <application>Ιάγνος</application> είναι ένα παιχνίδι στρατηγικής δύο παικτών, όμοιο με το Go. Το ταμπλώ έχει διαστάσεις 8 επί 8 πλακίδια, τα οποία είναι μαύρα στη μία πλευρά και λευκά στην άλλη. Ο σκοπός του <application>Ιάγνος</application> είναι να γυρίσετε όσο το δυνατόν περισσότερα πλακίδια του αντιπάλου στο δικό σας χρώμα, χωρίς να γυρίσει ο αντίπαλος τα δικά σας. Αυτό συμβαίνει με την παγίδευση των πλακιδίων του αντιπάλου ανάμεσα σε δύο του δικού σας χρώματος.</para>
+
+  <para>Ο <application>Ιάγνος</application> επίσης υποστηρίζει <link linkend="network-games">πολλαπλούς παίκτες</link> με δύο ανθρώπους στον ίδιο υπολογιστή ή σε δίκτυο.</para>
+
+  <para>Για να παίξετε το <application>Ιάγνος</application>, επιλέξτε <guimenuitem>Ιάγνος</guimenuitem> από το υπομενού <guisubmenu>Παιχνίδια</guisubmenu> του μενού <guimenu>Εφαρμογές</guimenu>, ή πληκτρολογήστε την εντολή <command>iagno</command> στη γραμμή εντολής.</para>
+ </sect2>
+
+ <sect2 id="why">
+  <title>Γιατί το Othello ονομάζεται Ιάγνος;</title>
+  <para>Πιθανώς θα αναρωτιέστε γιατί το παιχνίδι αυτό ονομάζεται <application>Ιάγνος</application> αντί για Othello ή gnothello. Η απάντηση σ' αυτό είναι πολύπλοκη, και περιλαμβάνει πράγματα όπως σήματα κατατεθέντα και δικηγόρους και τέτοια. Αντί να το αφήσουμε εκεί, θα σας πω μια μεγάλο και μπερδεμένο ψέμα για την προέλευση του ονόματος <application>Ιάγνος</application>.</para>
+  <para>Ένα βράδυ που 'βρεχε, σαν τα συνηθισμένα Λονδρέζικα βράδια, ένας μοναχικός προγραμματιστής καθόνταν μπροστά στη οθόνη του υπολογιστή του. Ο Ίαν είχε μόλις ολοκληρώσει ένα αριστουργηματικό παιχνίδι. Ήταν ένα πλήρως διαδραστικό παιχνίδι Othello και αποφάσισε να παίξει με το όνομα και να το ονομάσει gnothello, μια που το παιχνίδι γράφτηκε χρησιμοποιώντας το GNOME.</para>
+  <para>Αργότερα όταν ήρθαν τα φιλαράκια του, όπως κάθε προγραμματιστής έτσι και ο Ίαν τους έδειξε το αριστούργημά του. Εκείνοι τον κορόιδεψαν και του είπαν ότι το παιχνιδάκι του δεν αξίζει δεκάρα και ότι ήταν μια γελοία προσπάθεια για να γίνει πραγματικός χάκερ. Μετά που τους έδιωξε με τις κλωτσιές ο Ίαν αποφάσισε να μετονομάσει το πρόγραμμά του σε Ιάγο <footnote>
+   <para>Ο Ιάγος είναι η νέμεση του Οθέλλου στο θεατρικό έργο <citetitle>Οθέλλος</citetitle> του Ουίλιαμ Σέξπιρ.</para>
+  </footnote> για το κακό που επέφερε στον εαυτό του λόγω αυτού του παιχνιδιού. Όλα τα προγράμματα του GNOME έχουν ένα μέρος του GNOME μέσα τους, σκέφτηκε ο Ίαν, και μετά από μακρά περίσκεψη αποφάσισε το όνομα που αργότερα λάτρεψε, <application>Ιάγνος</application>.</para>
+ </sect2>
+</sect1>
+
+<sect1 id="playing">
+ <title>Παίξιμο του Ιάγνος</title>
+ <para>Το παιχνίδι αρχίζει με τέσσερα πλακίδια τοποθετημένα σε ένα κουτί στο μέσο του ταμπλώ. Τα πλακίδια έχουν το ίδιο χρώμα σε κάθε γωνιά όπως φαίνεται στο <xref linkend="start-shot"/>.</para>
+ 
+ <figure id="start-shot">
+  <title>Θέση εκκίνησης</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/START.png" format="PNG" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Στιγμιότυπο οθόνης από τη θέση εκκίνησης.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+ <para>Τα μαύρα παίζουν πρώτα και τοποθετούν ένα πλακίδιο στο ταμπλώ έτσι που να παγιδεύει λευκά πλακίδια ανάμεσα σε δύο μαύρα. Όταν τα μαύρα τοποθετούν ένα πλακίδιο στο ταμπλώ όλα τα λευκά πλακίδια ανάμεσα στο μόλις τοποθετημένο μαύρο και οποιοδήποτε άλλο μαύρο πλακίδιο, σε οιζόντια, κάθετη ή διαγώνια γραμμή, γυρίζουν και γίνονται μαύρα, όπως φαίνεται στο <xref linkend="first-shot"/>.</para>
+
+ <figure id="first-shot">
+  <title>Πρώτη κίνηση</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/FIRST.png" format="PNG" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Στιγμιότυπο οθόνης από την πρώτη κίνηση.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+ <para>Όταν υπάρχει ένα πλακίδιο παγιδευμένο ανάμεσα σε δύο άλλα πλακίδια, το ίδιου χρώματος στην ίδια γραμμή, ο παίκτης παγιδεύει πλακίδια μέχρι ένα ακόμα πλακίδιο του χρώματος του παίκτη να συναντηθεί, όπως φαίνεται στο <xref linkend="block-shot"/>. Ο παίκτης μπορεί να παγιδεύσει μόνο πλακίδια ως άμεσο αποτέλεσμα της τελευταίας τοποθέτησης δικού του πλακιδίου στο ταμπλώ. Εφόσον ένα πλακίδιο έχει τοποθετηθεί στο ταμπλώ ο παίκτης δε μπορεί να το αφαιρέσει ή να το μετακινείσει. Αν ένας παίκτης δε μπορεί να κάνει καμμιά κίνηση τότε παραδίδει τη σειρά του. Το παιχνίδι τελειώνει όταν είναι πια αδύνατο για τους παίκτες να τοποθετήσουν πλακίδιο. <figure id="block-shot">
+  <title>Τα λευκά δε μπορούν να παγιδεύσουν το μαύρο πλακίδιο στο κέντρο της μεσαίας στήλης επειδή υπάρχουν λευκά πλακίδια που μπλοκάρουν τα άκρα εκείνης της στήλης. Αν ήταν η σειρά των μαύρων, τα μαύρα θα τοποθετούσαν ένα πλακίδιο στο πάνω μέρος της στήλης, αλλά θα γύριζαν μόνο το πρώτο από τα δύο λευκά πλακίδια.</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/BLOCK.png" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Στιγμιότυπο οθόνης από μπλοκάρισμα μαύρων.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure></para>
+
+</sect1>
+
+<sect1 id="settings">
+ <title>Ρυθμίσεις παιχνιδιού</title>
+
+ <sect2 id="player">
+  <title>Χρώμα παιχνιδιού και δυσκολία</title>
+ 
+  <para>Όταν ξεκινάτε το Ιάγνος ο χρήστης παίζει τα μαύρα και ο υπολογιστής τα λευκά, στο πρώτο επίπεδο δυσκολίας. Χρησιμοποιώντας την καρτέλα <guimenuitem>Παιχνίδι</guimenuitem> στο διάλογο <guisubmenu>Προτιμήσεις</guisubmenu> μπορείτε να ορίσετε τον τύπο παίκτη για κάθε χρώμα. Ο Άνθρωπος είστε φυσικά εσείς, το Πρώτο επίπεδο είναι το ευκολότερο επίπεδο του υπολογιστή και το Τρίτο επίπεδο το δυσκολότερο. Μπορείτε να ορίσετε και τους δύο ως Άνθρωπος για να παίξετε εναντίον ενός φίλου ή και τους δύο ως υπολογιστές για να δείτε τον υπολογιστή να παίζει τον εαυτό του.</para>
+ </sect2>
+
+ <sect2 id="quick-moves">
+  <title>Επιλογή χρήσης γρήγορων κινήσεων</title>
+
+  <para>Αυτή η επιλογή βρίσκεται στο μενού <guimenu>Ρυθμίσεις</guimenu>, στο υπομενού <guisubmenu>Προτιμήσεις</guisubmenu>, στην καρτέλα <guimenuitem>Παιχνίδι</guimenuitem>. Αρχικά είναι απενεργοποιημένη. Όταν ενεργοποιηθεί κάνει τον υπολογιστή να τοποθετεί τα δικά του πλακίδια πιο γρήγορα. </para>
+
+  <note>
+   <title>Σημείωση:</title>
+   <para>Η ενεργοποίηση αυτής της επιλογής δεν υποχρεώνει τον υπολογιστή να κινηθεί και δε μειώνει το επίπεδο δυσκολίας.</para>
+  </note>
+ </sect2>
+ 
+ <sect2 id="enable-sound">
+  <title>Ενεργοποίηση/Απενεργοποίηση ήχου</title>
+
+  <para>Η τελευταία επιλογή στην καρτέλα <guimenuitem>Παιχνίδι</guimenuitem> στο διάλογο <guilabel>Προτιμήσεις</guilabel> σας επιτρέπει να ενεργοποιείτε ή να απενεργοποιείτε όλους τους ήχους όταν παίζετε στο <application>Ιάγνος</application>.</para>
+
+  <figure id="player-shot">
+   <title>Το μενού Προτιμήσεις Iagno με την επιλεγμένη την καρτέλα Παιχνίδι.</title>
+   <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/PLAYER.png" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Στιγμιότυπο οθόνης από τις προτιμήσεις του παιχνιδιού.</phrase> 
+    </textobject> 
+  </mediaobject>
+   </screenshot>
+  </figure>
+
+ </sect2>
+
+</sect1>
+
+<sect1 id="animations">
+ <title>Εμφάνιση</title>
+
+ <para>Όλες οι επιλογές για τις κινούμενες εικόνες βρίσκονται στο <menuchoice><guimenu>Ρυθμίσεις</guimenu><guisubmenu>Προτιμήσεις</guisubmenu></menuchoice> στην καρτέλα Εμφάνιση.</para>
+
+ <sect2 id="animation-amount">
+  <title>Κινούμενες εικόνες</title>
+
+  <para>Αυτή η επιλογή ελέγχει τη χρήση κινούμενων εικόνων όταν ένα πλακίδιο γυρίζει. Ενεργοποιώντας την επιλογή <guibutton>Καμία</guibutton> οι εικόνες θα αλλάζουν χρώμα στιγμιαία. Ενεργοποιώντας το <guibutton>Μερική κίνηση</guibutton> θα αλλάζουν αργά. Ενεργοποιώντας το <guibutton>Πλήρης κίνηση</guibutton> θα αλλάζουν αργά και ομαλά.</para>
+
+ </sect2>
+
+ <sect2 id="stagger-flips">
+  <title>Αλλεπάλληλες αντιστροφές</title>
+  
+  <para>Αυτή η επιλογή κάνει τα παγιδευμένα πλακίδια σε μια σειρά, στήλη ή διαγώνια να γυρίζουν το ένα μετά το άλλο, σαν ντόμινο, αντί να γυρίζουν όλα ταυτόχρονα. Δεν έχει καμιά επίδραση στο παιχνίδι, απλά φαίνεται όμορφο.</para>
+
+ </sect2>
+
+ <sect2 id="grid">
+  <title>Εμφάνιση πλέγματος</title>
+
+  <para>Αυτή η επιλογή θα εμφανίζει ένα πλέγμα πάνω από την επιφάνεια του παιχνιδιού. Η εμφάνιση του πλέγματος είναι χρήσιμη γιατί δείχνει στον παίκτη ακριβώς πού να βάζει τα πλακίδια.</para>
+
+  <tip>
+   <title>Υπόδειξη:</title>
+   <para>Αυτή η επιλογή είναι καλό να είναι ενεργοποιημένη στους νέους παίκτες για να παρακολουθούν το παίξιμο καθαρότερα.</para>
+  </tip>
+
+ </sect2>
+
+ <sect2 id="flip-final">
+  <title>Αντιστροφή τελικών αποτελεσμάτων</title>
+
+  <para>Αυτή η επιλογή μεταφέρει όλα τα μαύρα πλακίδια στο πάνω μέρος του ταμπλώ και όλα τα λευκά στο κάτω μέρος όταν τελειώσει το παιχνίδι. Αυτό σας επιτρέπει να δείτε πιο καθαρά το αποτέλεσμα του παιχνιδιού.</para>
+
+  <note>
+   <title>Σημείωση:</title>
+   <para>Η επιλογή αυτή δεν επηρεάζει το αποτέλεσμα του παιχνιδιού με κανένα τρόπο.</para>
+  </note>
+
+ </sect2>
+
+ <sect2 id="tile-set">
+  <title>Σετ πλακιδίων</title>
+  <para>Αυτή η επιλογή σας επιτρέπει να διαλέγετε τον τύπο του ταμπλώ και των πλακιδίων που εμφανίζονται. Αν θέλετε να φτιάξετε το δικό σας σετ πλακιδίων χρησιμοποιήστε το κλασσικό σετ ως πρότυπο και αλλάξτε την εμφάνιση και τα χρώματα για τα διαφορετικά εφέ. Όταν θα έχετε φτιάξει ένα νέο σετ πλακιδίων που δουλεύει με το Ιάγνος στείλτε το στον Ian Peters <email>itp@gnu.org</email> και θα το περιλάβει στην επόμενη διανομή.</para>
+
+  <important>
+   <title>Σημαντικό:</title>
+   <para>Υπάρχουν δύο σετ πλακιδίων που φαίνονται ίδια, αλλά έχουν διαφορετικές κινούμενες εικόνες: το woodtrim και το classic.</para>
+  </important>
+
+  <figure id="animation-shot">
+   <title>Το μενού Προτιμήσεις με επιλεγμένη την καρτέλα Εμφάνιση.</title>
+   <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/ANIMATION.png" srccredit="Eric Baudais"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Στιγμιότυπο οθόνης με τις προτιμήσεις για τις κινούμενες εικόνες.</phrase> 
+    </textobject> 
+  </mediaobject>
+   </screenshot>
+  </figure>
+
+ </sect2>
+
+</sect1>
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Δικτυακά παιχνίδια</title>
+  <para>Ο Ιάγνος υποστηρίζει παιχνίδια με πολλούς παίκτες μέσω δικτύου, που παρέχονται από το <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink>. Συνδεόμενοι με ένα εξυπηρετητή Ιάγνος στο διαδίκτυο, μπορείτε να προκαλέσετε άλλους παίκτες σε ένα παιχνίδι με πολλαπλούς παίκτες. Για νέα, ανανεώσεις και μια λίστα με εξυπηρετητές, δείτε τον <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">ιστότοπο των παιχνιδιών του GNOME</ulink>. </para>
+  <para>Για να αρχίσετε ένα παιχνίδι Ιάγνος με πολλούς παίκτες επιλέξτε <menuchoice><guimenu>Παιχνίδι</guimenu><guimenuitem>Νέο παιχνίδι μέσω δικτύου</guimenuitem></menuchoice> από το μενού του Ιάγνος.</para> 
+
+<sect2 id="connecting">
+<title>Σύνδεση σε ένα εξυπηρετητή Ιάγνος.</title>
+<para>Ο διάλογος σύνδεσης του Ιάγνος εμφανίζεται αρχικά όταν ξεκινάει ένα καινούριο δικτυακό παιχνίδι. Αυτός ο διάλογος σας επιτρέπει να επιλέξετε έναν εξυπηρετητή για να συνδεθείτε, και το όνομα χρήστη που θα έχετε ενόσω θα είστε εκεί συνδεδεμένοι.</para>
+
+<para>Μπορείτε να συνδεθείτε σε ένα εξυπηρετητή είτε με απλό λογαριασμό επισκέπτη (guest) είτε με λογαριασμό εγγεγραμμένου χρήστη. Οι λογαριασμοί επισκέπτη σας επιτρέπουν να συνδέεστε ανώνυμα, ενώ ένας κανονικός λογαριασμός σας επιτρέπει να διατηρείτε το όνομα χρήστη το οποίο προστατεύεται από τον κωδικό πρόσβασης που θα δώσετε.</para>
+
+<para>Η επιλογή <guimenuitem>Σύνδεση επισκέπτη</guimenuitem> επιλέγεται όταν θέλετε έναν ανώνυμο λογαριασμό επισκέπτη. Αν θέλετε να δημιουργήσετε ένα καινούριο λογαριασμό εισόδου, επιλέξτε το <guimenuitem>Σύνδεση για πρώτη φορά</guimenuitem>, με το όνομα χρήστη, τον κωδικό πρόσβασης και το Email της επιλογής σας. Αν έχετε ήδη δημιουργήσει λογαριασμό, μπορείτε να συνδεθείτε επιλέγοντας την <guimenuitem>Κανονική σύνδεση</guimenuitem>, και να βάλετε το όνομα χρήστη και τον κωδικό πρόσβασης που ήδη επιλέξατε.</para>
+<para>Για να συνδεθείτε σε ένα εξυπηρετητή πατήστε στο κουμπί <guimenuitem>Σύνδεση</guimenuitem>.</para>
+<figure id="connect">
+<title>Διάλογος δικτυακής σύνδεσης του Ιάγνος.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Διάλογος δικτυακής σύνδεσης του Ιάγνος.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Είσοδος σε δωμάτιο παιχνιδιών</title>
+<para>Όταν θα έχετε επιτυχώς συνδεθεί σε έναν εξυπηρετητή, μπορείτε να επιλέξετε σε ποιό δωμάτιο θα εισέλθετε. Για να παίξετε ένα δικτυακό παιχνίδι Ιάγνος, επιλέξτε το δωμάτιο Iagno. Αν θέλετε να φιλοξενήσετε το δικό σας παιχνίδι τότε πατήστε στο Έναρξη. Αυτό δημιουργεί ένα νέο πίνακα στον οποίο άλλοι παίκτες μπορούν να συμμετάσχουν σε ένα παιχνίδι εναντίον σας. Αν υπάρχουν άλλα παιχνίδια που έχουν ήδη αρχίσει, τότε μπορείτε με διπλό κλικ σε υφιστάμενο παιχνίδι να συνδεθείτε σε αυτό. Η λίστα με τα ταμπλώ παιχνιδιού στα δεξιά δείχνει έναν αριθμό διαθέσιμων θέσεων, που σημαίνει τον αριθμό των παικτών που μπορούν να συνδεθούν σε ένα παιχνίδι.</para>
+<figure id="tables">
+<title>Ο διάλογος δικτύου του Ιάγνος σας επιτρέπει να εισέρχεστε σε ένα δωμάτιο για να βρίσκετε άλλους παίκτες.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Ο διάλογος δικτύου του Ιάγνος σας επιτρέπει να εισέρχεστε σε ένα δωμάτιο για να βρίσκετε άλλους παίκτες.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>Όταν δημιουργείτε ένα νέο ταμπλώ για παιχνίδι Ιάγνος, ένας διάλογος προτιμήσεων εμφανίζεται ο οποίος σας επιτρέπει να κάνετε ρυθμίσεις στο παιχνίδι, όπως τον ελάχιστο αριθμό παικτών του παιχνιδιού. Όταν ο συνολικός αριθμός θέσεων έχει γεμίσει, τότε δε μπορούν άλλοι παίκτες να συνδεθούν στο συγκεκριμένο ταμπλώ.</para>
+<para>Μπορείτε να συνομιλήσετε με άλλους παίκτες στο δικτυακό παιχνίδι. Ρωτήστε για οδηγίες ή βοήθεια για τα παιχνίδια, αλλά σας παρακαλούμε να είστε ευγενικοί προς τους άλλους.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Αναμονή για άλλους παίκτες να συδεθούν στον παιχνίδι.</title>
+<para>Όταν θα έχετε επιτυχώς συνδεθεί σε ένα παιχνίδι ταμπλώ, τότε πρέπει να περιμένετε μέχρι να συνδεθούν επαρκείς παίκτες. Το μενού <guimenuitem>Λίστα παικτών</guimenuitem> σας επιτρέπει να δείτε μια λίστα με τους παίκτες που έχουν συνδεθεί το παιχνίδι. Το παιχνίδι θα ξεκινήσει όταν ο συνολικός αριιθμός των παικτών έχει συμπληρωθεί.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Δικτυακό παιχνίδι Ιάγνος</title>
+<para>Τα παιχνίδια Ιάγνος το δίκτυο έχουν τους ίδιους κανόνες με τα κανονικά παιχνίδια, μόνο που τώρα παίζετε εναντίον άλλων ανθρώπων. Αυτό σημαίνει ότι ίσως είναι προτιμότερες άλλες στρατηγικές από αυτές που χρησιμοποιείτε όταν παίζετε εναντίον του υπολογιστή.</para>
+<para>Όταν ένας από τους παίκτες έχει κερδίσει το παιχνίδι τελειώνει και επιστρέφετε στην πρώτη οθόνη του δικτυακού παιχνιδιού. Τότε μπορείτε να παίξετε ένα ακόμα εθιστικό δικτυακό παιχνίδι Ιάγνος!</para>
+</sect2>
+
+</sect1>
+
+
+
+
+<sect1 id="bugs">
+ <title>Γνωστά σφάλματα και περιορισμοί</title>
+
+ <itemizedlist mark="opencircle">
+    <listitem>
+     <para>Είναι εύκολο να κερδίσετε τον υπολογιστή στο Ιάγνος.</para>
+    </listitem>
+ </itemizedlist>
+
+</sect1>
+
+<sect1 id="credits">
+ <title>Συγγραφείς</title>
+  <para>Ο <application>Ιάγνος</application> γράφτηκε από τον Ian Peters (<email>itp@gnu.org</email>). Αυτό το εγχειρίδιο γράφτηκε από τον Eric Baudais (<email>baudais@okstate.edu</email>). Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με αυτήν την εφαρμογή η την τεκμηρίωση, ακολουθήστε τις οδηγίες σε αυτό το <ulink url="ghelp:user-guide?feedback-bugs" type="help">έγγραφο</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Άδεια χρήσης</title>
+  <para>Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό. Μπορείτε να το αναδιανέμετε ή/και να το τροποποιείτε μέσω των όρων της <citetitle>Γενικής Άδειας Χρήσης GNU</citetitle> όπως αυτή δημοσιεύτηκε από το Ίδρυμα Ελεύθερου Λογισμικού, έκδοση 2, ή (προαιρετικά) οποιαδήποτε νεότερη έκδοση.</para>
+  <para>Αυτό το πρόγραμμα διανέμεται με την ελπίδα οτι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ ΚΑΜΜΙΑ ΑΠΟΛΥΤΩΣ ΕΓΓΥΗΣΗ - χωρίς ακόμη και την έμμεση εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε για περισσότερες λεπτομέρειες την Γενική Άδεια Δημόσιας Χρήσης GNU (<citetitle>GNU General Public License</citetitle>).</para>
+  <para>Αντίγραφο της <citetitle>Γενικής Άδειας Δημόσιας Χρήσης GNU</citetitle> υπάρχει ως παράρτημα στο <citetitle>Εγχειρίδιο χρήσης του GNOME</citetitle>. Μπορείτε επίσης να αποκτήσετε ένα αντίγραφό της από το Ίδρυμα Ελεύθερου Λογισμικού (Free Software Foundation) επισκεπτόμενοι την <ulink type="http" url="http://www.fsf.org">ιστοσελίδα τους</ulink> ή γράφοντας στη διεύθυνση <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state> <postcode>02111-1307</postcode> <country>USA</country></address>.</para>
+ </sect1>
+</article>

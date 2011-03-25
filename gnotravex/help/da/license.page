@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="license" xml:lang="da">
+  
+  <info>
+    <link type="seealso" xref="index"/>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-28" status="draft"/>
+    <desc>Juridisk information.</desc>
+  </info>
+
+  <title>Licens</title>
+  <p>Denne manual er distribueret under CreativeCommons Attribution-Share Alike 3.0 Unported license.</p>
+  <p>Du kan frit:</p>
+  <terms>
+    <item>
+      <title><em>Dele</em></title>
+      <p>Kopiere, distribuere og overføre denne manual.</p>
+    </item>
+    <item>
+      <title><em>Ændre sammensætning</em></title>
+      <p>Ændre i manualen.</p> 
+    </item>
+  </terms>
+  <p>Under de følgende betingelser:</p>
+  <terms>
+    <item>
+      <title><em>Attribution</em></title>
+      <p>Du skal attributere manualen, på den måde som er angivet af forfatteren eller licensindehaveren (men ikke på en måde som antyder at de tilslutter sig dig eller din brug af deres arbejde).</p>
+    </item>
+    <item>
+      <title><em>Share Alike</em></title>
+      <p>Hvis du ændrer, transformerer eller bygger videre på dette arbejde, må du kun distribuere resultatet under den samme, lignende eller en kompatibel licens.</p>
+    </item>
+  </terms>
+  <p>For den fulde licenstekst se <link href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">CreativeCommons hjemmeside</link>, eller læs <link href="http://creativecommons.org/licenses/by-sa/3.0/">the full Commons Deed</link>.</p>
+</page>

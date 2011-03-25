@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Tali</application>">
+<!ENTITY appname "Tali">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="de">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title><application>Tali</application>-Handbuch</title>
+    <abstract role="description">
+      <para>Tali ist wie Yahtzee für GNOME oder wie Poker mit Würfeln. Der Spieler muss mit seinen Würfen die bestmöglichen Kombinationen erzielen, wie einen Viererpasch, eine kleine Straße oder Full House. Der Spieler darf dreimal pro Runde würfeln und bei jedem Wurf bestimmte Würfel zurückbehalten.</para>
+    </abstract>
+    <copyright>
+      <year>2001</year>
+      <holder>Scott D. Heavner</holder>
+    </copyright><copyright><year>2008</year><holder>Mario Blättermann (mario.blaettermann@t-online.de)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOME-Dokumentationsprojekt</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Das vorliegende Dokument kann gemäß den Bedingungen der GNU Free Documentation License (GFDL), Version 1.1 oder jeder späteren, von der Free Software Foundation veröffentlichten Version ohne unveränderbare Abschnitte sowie ohne Texte auf dem vorderen und hinteren Buchdeckel kopiert, verteilt und/oder modifiziert werden. Eine Kopie der GFDL finden Sie unter diesem <ulink type="help" url="ghelp:fdl">Link</ulink> oder in der mit diesem Handbuch gelieferten Datei COPYING-DOCS.</para>
+         <para>Dieses Handbuch ist Teil einer Sammlung von GNOME-Handbüchern, die unter der GFDL veröffentlicht werden. Wenn Sie dieses Handbuch getrennt von der Sammlung weiterverbreiten möchten, können Sie das tun, indem Sie eine Kopie der Lizenz zum Handbuch hinzufügen, wie es in Abschnitt 6 der Lizenz beschrieben ist.</para>
+
+	<para>Viele der Namen, die von Unternehmen verwendet werden, um ihre Produkte und Dienstleistungen von anderen zu unterscheiden, sind eingetragene Warenzeichen. An den Stellen, an denen diese Namen in einer GNOME-Dokumentation erscheinen, werden die Namen in Großbuchstaben oder mit einem großen Anfangsbuchstaben geschrieben, wenn das GNOME-Dokumentationsprojekt auf diese Warenzeichen hingewiesen wird.</para>
+
+	<para>DAS DOKUMENT UND VERÄNDERTE FASSUNGEN DES DOKUMENTS WERDEN UNTER DEN BEDINGUNGEN DER GNU FREE DOCUMENTATION LICENSE ZUR VERFÜGUNG GESTELLT MIT DEM WEITERGEHENDEN VERSTÄNDNIS, DASS: <orderedlist>
+		<listitem>
+		  <para>DIESES DOKUMENT WIRD »WIE VORLIEGEND« GELIEFERT, OHNE GARANTIEN IRGENDEINER ART, SOWOHL AUSDRÜCKLICH GENANNTE ALS AUCH ANGEDEUTETE. DIES BEZIEHT SICH AUCH OHNE EINSCHRÄNKUNG AUF GARANTIEN, DASS DIESES DOKUMENT ODER VERÄNDERTE FASSUNGEN DIESES DOKUMENTS FREI VON HANDELSDEFEKTEN, FÜR EINEN BESTIMMTEN ZWECK GEEIGNET IST ODER DASS ES KEINE RECHTE DRITTER VERLETZT. DAS VOLLE RISIKO WAS QUALITÄT, GENAUIGKEIT UND LEISTUNG DES DOKUMENTS ODER VERÄNDERTE FASSUNGEN DES DOKUMENTS LIEGT BEI IHNEN. SOLLTE EIN DOKUMENT ODER EINE VERÄNDERTE FASSUNG DAVON FEHLER IRGENDEINER ART BEINHALTEN, TRAGEN SIE (NICHT DER URSPRUNGSAUTOR, DER AUTOR ODER EIN MITWIRKENDER) DIE KOSTEN FÜR NOTWENDIGE DIENSTLEISTUNGEN, REPARATUREN ODER FEHLERKORREKTUREN. DIESER HAFTUNGSAUSSCHLUSS IST EIN ESSENZIELLER TEIL DIESER LIZENZ. DIE VERWENDUNG EINES DOKUMENTS ODER EINER VERÄNDERTEN VERSION DES DOKUMENTS IST NICHT GESTATTET AUßER UNTER BEACHTUNG DIESES HAFTUNGSAUSSCHLUSSES UND</para>
+		</listitem>
+		<listitem>
+		  <para>UNTER KEINEN UMSTÄNDEN UND AUF BASIS KEINER RECHTSGRUNDLAGE, EGAL OB DURCH UNERLAUBTEN HANDLUNGEN (EINSCHLIEßLICH FAHRLÄSSIGKEIT), VERTRAG ODER ANDERWEITIG KANN DER AUTOR, URSPRUNGSAUTOR, EIN MITWIRKENDER ODER EIN VERTRIEBSPARTNER DIESES DOKUMENTS ODER EINER VERÄNDERTEN FASSUNG DES DOKUMENTS ODER EIN ZULIEFERER EINER DIESER PARTEIEN, HAFTBAR GEMACHT WERDEN FÜR DIREKTE, INDIREKTE, SPEZIELLE, VERSEHENTLICHE ODER FOLGESCHÄDEN JEGLICHER ART, EINSCHLIEßLICH UND OHNE EINSCHRÄNKUNGEN SCHÄDEN DURCH VERLUST VON KULANZ, ARBEITSAUSFALL, COMPUTERVERSAGEN ODER COMPUTERFEHLFUNKTIONEN ODER ALLE ANDEREN SCHÄDEN ODER VERLUSTE, DIE SICH AUS ODER IN VERBINDUNG MIT DER VERWENDUNG DES DOKUMENTS UND VERÄNDERTER FASSUNGEN DES DOKUMENTS ERGEBEN, AUCH WENN DIE OBEN GENANNTEN PARTEIEN ÜBER DIE MÖGLICHKEIT SOLCHER SCHÄDEN INFORMIERT WAREN.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+	
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Scott D</firstname> 
+	<surname>Heavner</surname> 
+	<affiliation> 
+	  <address> <email>sdh@po.cwru.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Tali-Handbuch V2.8</revnumber> 
+	<date>September 2004</date> 
+	<revdescription> 
+	  <para role="author">Scott D Heavner <email>sdh@po.cwru.edu</email></para>
+	  <para role="publisher">GNOME-Dokumentationsprojekt</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Dieses Handbuch beschreibt Version 2.12 von Tali.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Rückmeldungen</title> 
+      <para>Um Fehler zu melden oder einen Vorschlag zur Anwendung <application>Tali</application> oder zu diesem Handbuch zu machen, folgen Sie den Anweisungen auf der <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME-Seite für Rückmeldungen</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME Tali</primary> 
+  </indexterm>
+
+ <!-- ============= Document Body ============================= -->
+
+  <sect1 id="intro">
+    <title>Einführung</title>
+
+    <para><application>GNOME Tali</application> ist wie eine Art Poker mit Würfeln und wenig Geld. Sie würfeln mit fünf Würfeln dreimal, um die beste »Hand« zu erzielen. Die zwei Wiederholungswürfe dürfen Sie mit einer beliebigen Anzahl Ihrer Würfel ausführen.</para>
+    <para><application>GNOME Tali</application> ähnelt sehr dem Würfelspiel »Yahtzee«, dessen Name eine eingetragene Marke der Firma Hasbro ist. </para>
+
+    <para>Um <application>GNOME Tali</application> zu starten, wählen Sie <menuchoice><guisubmenu>Spiele</guisubmenu><guimenuitem>Tali</guimenuitem></menuchoice> aus dem Menü <guimenu>Anwendungen</guimenu> oder geben Sie <command>gtali</command> in einer Befehlszeile ein.</para>
+
+    <para><application>GNOME Tali</application> ist Teil des Pakets <filename>gnome-games</filename>, das Teil der GNOME-Desktopumgebung ist. Dieses Dokument beschreibt Version 2.8 von <application>GNOME Tali</application></para>
+  </sect1>
+
+  <sect1 id="playing">
+    <title>GNOME Tali spielen</title>
+
+    <figure id="shot1">
+      <title>GNOME Tali in Aktion</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="Trevor Curtis"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Bildschirmfoto des Hauptfensters von GNOME Tali.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Beim Start des Spiels sehen Sie das Ergebnis Ihres ersten Wurfs.</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Klicken Sie auf einen der Würfel, um ihn für einen Wiederholungswurf zu verwenden.</para>
+        </listitem>
+        <listitem>
+          <para>Sobald Sie alle Würfel ausgewählt haben, die Sie für einen Wiederholungswurf verwenden wollen, klicken Sie auf die Schaltfläche <guibutton>Würfeln!</guibutton>.</para>
+        </listitem>
+        <listitem>
+	  <para>Wenn Ihnen der Wert Ihrer Hand zusagt oder Sie bereits Ihre drei möglichen Würfe getan haben, klicken Sie auf eine Zeile, in der Sie Ihrer Meinung nach mit dieser Kombination die meisten Punkte erzielen können. Es ist sehr gut möglich, dass Sie keine Punkte erzielen, falls Sie auf die falsche Zeile klicken! Beispielsweise könnten Sie ein Yahtzee (einen Fünferpasch) würfeln und auf die Zeile »Große Straße« klicken, dann erhalten Sie folglich keine Punkte in der »Großen Straße«.</para>
+      </listitem>
+    </orderedlist>
+
+    <para>Sie können jede der Kombinationen nur einmal verwenden. Wenn Sie einen Wurf einmal in eine Zeile eingegeben haben, können Sie deren Wert später nicht mehr verändern, falls Sie eine bessere Hand erzielen.</para>
+
+    <para>Es gibt eine Ausnahme von dieser Regel: Wenn Sie einen Fünferpasch ein zweites Mal würfeln, können Sie ihn nochmals in die Fünferpasch-Zeile setzen, um weitere 50 Punkte zu erzielen. Sie können dies beim Erzielen eines Fünferpaschs immer wieder tun. Am Ende des Spiels erhalten Sie Extra-Würfe, um die übrigen Zeilen zu füllen. Doch Vorsicht: Wenn Sie einen Wurf, der eigentlich kein Fünferpasch war, in die Fünferpasch-Zeile eintragen und somit 0 Punkte dafür erhalten, dann können Sie dies im Nachhinein nicht mehr ändern. Diese 0 Punkte sind dann alles, was Sie erreichen können.</para>
+
+    <para>Außerdem erhalten Sie einen Bonus von 35 Punkten, wenn Sie in den oberen sechs Zeilen mehr als 63 Punkte erzielt haben.</para>
+
+    <sect2 id="keyboard">
+    <title>Benutzung der  Tastatur</title> 
+
+      <para>Als Alternative zur Benutzung der Maus, können Sie mit den Zifferntasten 1 bis 5 die Würfel aktivieren oder deaktivieren, so als ob Sie sie angeklickt hätten. Verwenden Sie die üblichen Steuerungen zum Würfeln oder zur Auswahl einer Zeile. Beispielsweise können Sie mit der Tab-Taste zwischen der Würfeln-Schaltfläche und der Punkteliste wechseln, oder mit den Pfeiltasten die einzelnen Zeilen erreichen und mit der Leertaste eine Zeile auswählen.</para>
+    
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="options">
+    <title>Spieloptionen</title>
+
+    <figure id="shot2">
+      <title>GNOME-Tali-Einstellungen</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences.png" format="PNG" srccredit="Trevor Curtis"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Dialogfeld der GNOME-Tali-Einstellungen.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+      <variablelist><title>Menschliche Spieler</title>
+	<varlistentry>
+	  <term><guimenuitem>Anzahl der Spieler</guimenuitem></term>
+	  <listitem>
+            <para>Wählen Sie die Anzahl der menschlichen Spieler, wie oben beschrieben sind höchstens sechs Spieler erlaubt.</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>  
+      
+    <variablelist><title>Computergegner</title>
+      <varlistentry>
+        <term><guimenuitem>Verzögerung zwischen Würfen</guimenuitem></term>
+	<listitem>
+	  <para>Lässt die Computergegner zwischen ihren Würfen pausieren, so dass Sie sehen können, was diese tun. Dies verzögert auch den Spielverlauf etwas.</para>
+        </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guimenuitem>Anzahl der Gegner</guimenuitem></term>
+	  <listitem>
+            <para>Wählen Sie die Anzahl der Computerspieler. Es sind bis zu sechs menschliche und Computerspieler erlaubt. Wenn Sie deren Anzahl erhöhen, wird die Anzahl der menschlichen Spieler zurückgesetzt, damit die Gesamtzahl von sechs nicht überschritten wird.</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>
+      
+    <variablelist><title>Spieltyp</title>
+      <varlistentry>
+        <term><guimenuitem>Spieltyp wählen</guimenuitem></term>
+	<listitem>
+	  <para>Spielen Sie entweder die reguläre Version (ähnlich wie Yahtzee) oder die Farben-Version (ähnlich wie Kismet). Wenn Sie den Typ des Spiels ändern, müssen Sie das Spiel neu starten, um ein Spiel des gewählten Typs spielen zu können.</para>
+        </listitem>
+	</varlistentry>
+      </variablelist>
+      
+      <variablelist>
+	<varlistentry>
+	    <term><guimenuitem>Spielernamen</guimenuitem></term>
+	    <listitem>
+	      <para>Um die Namen der Spieler zu ändern, geben sie einfach neue Namen in die Textfelder ein.</para>
+	    </listitem>
+	</varlistentry>
+      </variablelist>
+    </sect1>
+
+    <sect1 id="strategy">
+      <title>Spielstrategie</title>
+      <para>Die 63 Punkte, die Sie als Bonus in der oberen Hälfte erhalten können, ergeben sich aus drei gleichen Werten in jeder Zeile. Wenn Sie bei den Fünfen und Sechsen mehr als drei Würfel der jeweiligen Werte haben, können Sie sich bei den Einsen und Zweien einen schlechten Wurf erlauben, und erhalten trotzdem noch den Bonus. In der Farben-Version erhalten Sie einen Bonus von 55 Punkten, wenn der Gesamtwert der oberen Hälfte zwischen 71 und 77 Punkten beträgt, sowie einen Bonus von 75 Punkten, wenn der Gesamtwert 77 Punkte überschreitet.</para>
+      <para>Vergessen Sie nicht die mehrfachen Fünferpasche: Wenn Sie mit einem Wurf einen weiteren Fünferpasch erzielen, können Sie ihn ebenfalls in die Fünferpasch-Zeile eintragen, um mehr Punkte zu erzielen. Dies ist nur im regulären Spiel möglich.</para>
+    </sect1>	
+ <!-- ============= Bugs ================================== -->
+ <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of. 
+      
+      Better to leave this section out than to say something unhelpful. 
+-->
+
+ <sect1 id="bugs">
+  <title>Bekannte Fehler und Einschränkungen</title>
+  <para>Wenn Sie den Spieltyp ändern, werden die neuen Grafiken für die Würfel erst dann angezeigt, wenn Sie Tali neu starten. Es funktioniert jedoch korrekt mit den »falschen« Würfeln.</para>
+ </sect1>
+
+
+ <sect1 id="glossary">
+   <title>Verwendete Begriffe</title>
+   <note>
+     <para>Beachten Sie, dass die Reihenfolge der Würfel keine Bedeutung hat.</para>
+   </note>
+   <glossary>
+       <glossentry id="threeofakind"><glossterm>Dreierpasch</glossterm>
+         <glossdef><para>Drei der Würfel zeigen die gleiche Zahl an, z.B. 1, 2, 2, 2, 5. Die erzielte Punktzahl entspricht der Summe aller Würfel. </para></glossdef>
+       </glossentry>
+       <glossentry id="fourofakind"><glossterm>Viererpasch</glossterm>
+         <glossdef><para>Vier der Würfel zeigen die gleiche Zahl an, z.B. 2, 5, 5, 5, 5. Die erzielte Punktzahl entspricht der Summe aller Würfel. Im Farben-Spiel erzielen Sie 25 Punkte plus die Summe aller Würfel.</para></glossdef>
+       </glossentry>
+       <glossentry id="yahtzee"><glossterm>Fünferpasch</glossterm>
+         <glossdef><para>Fünf identische Würfel, z.B. 3, 3, 3, 3, 3. Im Farben-Spiel entspricht die erzielte Punktzahl der Summe aller Würfel plus 50. </para></glossdef>
+       </glossentry>
+       <glossentry id="fullhouse"><glossterm>Full House</glossterm>
+         <glossdef><para>Fünf Würfel in zwei Gruppen: Eine Gruppe mit drei identischen Würfeln und eine weitere Gruppe mit zwei identischen Würfeln, z.B. 1, 1, 1, 4, 4. Im Farben-Spiel erzielen Sie 15 Punkte plus die Summe aller Würfel.</para></glossdef>
+       </glossentry>
+       <glossentry id="fullhousesamecolor"><glossterm>Full House mit gleicher Farbe</glossterm>
+         <glossdef><para>Diese Kategorie wird nur im Farben-Spiel verwendet. Fünf Würfel, bestehend aus zwei Gruppen: Eine Dreiergruppe mit gleichen Zahlenwerten und eine Zweiergruppe, ebenfalls mit gleichen Werten. Die Zahlen müssen alle von derselben Farbe sein, z.B. 3, 3, 3, 4, 4. Zwei Würfel haben die gleiche Farbe, wenn Ihre Summe 7 ergibt: 1 und 6 sind schwarz, 2 und 5 sind rot, 3 und 4 sind grün. Sie erzielen damit 20 Punkte, zuzüglich der Summe aller Würfel.</para></glossdef>
+       </glossentry>
+       <glossentry id="twopairsamecolor"><glossterm>Doppelpasch mit gleicher Farbe</glossterm>
+         <glossdef><para>Diese Kategorie wird nur im Farben-Spiel verwendet. Fünf Würfel, bestehend aus zwei Gruppen: Eine Zweiergruppe mit gleichen Zahlenwerten und eine weitere Zweiergruppe, ebenfalls mit gleichen Werten. Die beiden Paare müssen alle von derselben Farbe sein, z.B. 3, 3, 3, 4. Zwei Würfel haben die gleiche Farbe, wenn Ihre Summe 7 ergibt: 1 und 6 sind schwarz, 2 und 5 sind rot, 3 und 4 sind grün. Der Wert des fünften Würfels kann beliebig sein. Sie erzielen damit Punkte entsprechend der Summe aller Würfel.</para></glossdef>
+       </glossentry>
+       <glossentry id="flush"><glossterm>Flush</glossterm>
+         <glossdef><para>Diese Kategorie wird nur im Farben-Spiel verwendet. Fünf Würfel, die alle von derselben Farbe sind. Zwei Würfel haben die gleiche Farbe, wenn Ihre Summe 7 ergibt: 1 und 6 sind schwarz, 2 und 5 sind rot, 3 und 4 sind grün. Der Wert des fünften Würfels kann beliebig sein. Sie erzielen damit 35 Punkte.</para></glossdef>
+       </glossentry>
+       <glossentry id="largestraight"><glossterm>Große Straße</glossterm>
+         <glossdef><para>Fünf Würfel mit aufeinanderfolgenden Zahlen, z.B. 2, 3, 4, 5. 6. Sie erhalten dafür 40 Punkte.</para></glossdef>
+       </glossentry>
+       <glossentry id="smallstraight"><glossterm>Kleine Straße</glossterm>
+         <glossdef><para>Vier Würfel mit aufeinanderfolgenden Zahlen. Der fünfte Würfel darf eine beliebige Zahl anzeigen, z.B. 2, 3, 4, 5. 5. Diese Kategorie wird nur im regulären Spiel verwendet. Sie erhalten dafür 30 Punkte.</para></glossdef>
+       </glossentry>
+   </glossary>
+ </sect1>
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Autoren</title>
+  <para><application>GNOME Tali</application> wurde von Scott Heavner (<email>sdh@po.cwru.edu</email>) und Orest Zborowski geschrieben. Dieses Handbuch schrieb Scott D Heavner (<email>sdh@po.cwru.edu</email>) unter Hinzufügung von Beiträgen von Callum McKenzie (<email>callum@physics.otago.ac.nz</email>). Um einen Fehler zu melden oder einen Vorschlag zu dieser Anwendung oder zu diesem Handbuch zu machen, folgen Sie den Anweisungen in diesem <ulink url="ghelp:user-guide?feedback-bugs" type="help">Dokument</ulink>.</para>
+
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Lizenz</title>
+  <para>Dieses Programm ist freie Software; Sie können es weiterverbreiten und/oder ändern unter den Bedingungen der <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> wie sie von der <ulink type="http" url="http://www.fsf.org">Free Software Foundation</ulink> veröffentlicht wurde; entweder in Version 2 der Lizenz oder (nach Ihrer Wahl) jeder neueren Version.</para>
+  <para>Dieses Programm wird in der Hoffnung verbreitet, dass es nützlich ist, aber OHNE JEGLICHE GARANTIE; auch ohne eine GEBRAUCHSTAUGLICHKEITSGARANTIE oder eine Garantie über die TAUGLICHKEIT FÜR EINEN BESTIMMTEN ZWECK. Lesen Sie die <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> für genauere Hinweise.</para>
+  <para>Eine Kopie der <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> ist im Anhang des <citetitle>GNOME Benutzerhandbuchs</citetitle> enthalten. Sie können außerdem eine Kopie der <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> von der Free Software Foundation erhalten, indem Sie auf <ulink type="http" url="http://www.fsf.org">ihre Website</ulink> gehen oder an die <address>Free Software Foundation, Inc.<street>51 Franklin Street, Fifth Floor</street><city>Boston</city>, <state>MA</state><postcode>02111-1301</postcode><country>USA</country></address> schreiben.</para>
+ </sect1>
+</article>

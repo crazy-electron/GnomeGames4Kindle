@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.21.90">
+<!ENTITY manrevision "3.0">
+<!ENTITY date "February 2008">
+<!ENTITY app "<application>Sudoku</application>">
+<!ENTITY appname "Sudoku">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 06, 2003
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="da">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title><application>Sudoku</application>-manual</title>       
+
+    <abstract role="description">
+      <para>Sudoku er et program til afvikling af det populære logiske sudoku-puslespil, hvori der skal udfyldes 9x9 felter med de korrekte tal.</para>
+    </abstract>
+
+    <copyright> 
+      <year>2008</year> 
+      <holder>Thomas M. Hinkle</holder> 
+    </copyright><copyright><year>2007</year><holder>Joe Hansen (joedalton2@yahoo.dk)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOME dokumentationsprojektet</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Tilladelse er givet til at kopiere, distribuere og/eller ændre dette dokument under betingelserne i GNU Free Documentation License (GFDL), Version 1.1 eller enhver senere version udgivet af Free Software Foundation; uden invariante afsnit, forsidetekster, samt bagsidetekster. Du kan se en kopi af GFDL her <ulink type="help" url="ghelp:fdl">link</ulink> eller i filen COPYING-DOCS som distribueres sammen med denne manual.</para>
+         <para>Denne manual er en del af den samling af GNOME-manualer som udgives under GFDL. Hvis du ønsker at distribuere denne manuel adskilt fra samlingen, kan du gøre dette ved at tilføje en kopi af licensen til manualen, som beskrevet i afsnit 6 af licensen.</para>
+
+	<para>En stor del af de navne som anvendes af firmaer til at identificere deres produkter og tjenester hævdes som værende varemærker. Hvor disse navne fremgår i enhver GNOME-dokumentation, og medlemmerne af GNOME dokumentationsprojeket er gjort opmærksom på disse varemærker, så er disse navne vist med store bogstaver eller stort begyndelsesbogstav.</para>
+
+	<para>DOKUMENTET OG ÆNDREDE VERSIONER AF DOKUMENTET STILLES TIL RÅDIGHED UNDER GNU FREE DOCOMENTATION LICENSE MED FØLGENDE BETINGELSER: <orderedlist>
+		<listitem>
+		  <para>DETTE DOKUMENT GØRES TILGÆNGELIGT SÅDAN SOM DET ER, UDEN NOGEN FORM FOR GARANTI, HVERKEN UDTALT ELLER ANTYDET, DERIBLANDT, UDEN BEGRÆNSNINGER, GARANTIER OM AT DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET ER FRIT FOR DEFEKTER, PASSENDE TIL ET BESTEMT FORMÅL ELLER IKKE-KRÆNKENDE. DU HÆFTER SELV FOR HELE RISIKOEN VEDRØRENDE KVALITET, KORREKTHED OG YDELSE FOR DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET. SKULLE ET DOKUMENT, ELLER EN ÆNDRET VERSION AF ET DOKUMENT VISE SIG AT VÆRE DEFEKT PÅ EN HVILKEN SOM HELST MÅDE, HÆFTER DU FOR BETALING FOR EVENTUEL NØDVENDIG SERVICE, REPARATION ELLER KORREKTION (OG IKKE HVERKEN DEN OPRINDELIGE FORFATTER, SKRIBENT ELLER NOGEN ANDEN BIDRAGYDER). DENNE ERKLÆRING OM GARANTIFORBEHOLD ER EN ESSENTIEL DEL AF DENNE LICENS. INGEN BRUG AF NOGET DOKUMENT ELLER ÆNDRET VERSION AF DOKUMENTET ER AUTORISERET HERUNDER BORTSET FRA DENNE FORBEHOLDSERKLÆRING; OG</para>
+		</listitem>
+		<listitem>
+		  <para>UNDER INGEN OMSTÆNDIGHEDER OG UNDER INGEN JURIDISK TEORI, UANSET OM DET ER EN BEVIDST SKADENDE HANDLING (INKLUSIVE UFORSVARLIGHED) ELLER PÅ HVILKEN SOM HELST ANDEN MÅDE, KAN FORFATTEREN, SKRIBENT, BIDRAGYDERE, DISTRIBUTØRER ELLER FORSYNER AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER GØRES ANSVARLIG OVERFOR NOGEN PERSON FOR NOGEN DIREKTE, INDIREKTE, SPECIEL, TILFÆLDIG ELLER FØLGENDE SKADE PÅFØRT NOGEN INKLUSIVE, UDEN BEGRÆNSNING, SKADE SOM FØLGE AF TAB AF RYGTE, ARBEJDSSTOP, COMPUTER-FEJL ELLER -SVIGT, ELLER ENHVER ANDEN FORM FOR SKADE ELLER TAB SOM ER OPSTÅET I FORBINDELSE MED BRUG AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER HERAF, SELV HVIS EN SÅDAN PART HAR VÆRET INFORMERET OM MULIGHEDEN FOR SÅDANNE SKADER.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+		<firstname>Thomas</firstname> 
+		<surname>Hinkle</surname> 
+		<affiliation> 
+	  		<orgname>GNOME dokumentationsprojektet</orgname> 
+	  		<!-- The email address of the author is optional and is commented out by default. 
+			<address> <email>doc-writer2@gnome.org</email> </address> 
+			-->
+		</affiliation> 
+      </author> 
+      
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->  
+    <revhistory>
+      <revision> 
+		<revnumber>Manual til GNOME Sudoku, version 3.0</revnumber> 
+		<date>February 2008</date> 
+		<revdescription> 
+	  		<para role="author">Thomas M. Hinkle</para>
+	  		<para role="publisher">GNOME dokumentationsprojektet</para>
+		</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Denne manual beskriver version 2.21.90 af Sudoku</releaseinfo> 
+    <legalnotice> 
+      <title>Tilbagemeldinger</title> 
+      <para>Hvis du ønsker at indrapportere en fejl eller komme med et forslag vedrørende <application>Sudoku</application> eller denne manual så følg vejledningen på siden <ulink url="ghelp:user-guide?feedback-bugs" type="help">tilbagemeldinger omkring GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>GNOME Sudoku</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+    <primary>sudoku</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="myapp-introduction"> 
+    <title>Introduktion</title> 
+    <para><application>Sudoku</application> er et program, som er beregnet til at spille det populære logiske Sudoku-puslespil.</para>
+    <para>Reglerne i Sudoku er meget simple. For at færdiggøre puslespillet skal du udfylde alle felter med et nummer mellem 1 og 9 således at alle rækker, kolonner og 3x3 bokse på spillepladen indeholder numrene 1 til 9. Sagt på en anden måde så skal hvert felt udfyldes, på en sådan måde at intet tal indgår mere end 1 gang i hver række, kolonne eller 3x3 boks.</para>
+
+    <para>Disse to forskellige måder, at se på puslespillet, er to af de principielle måder spillere tænker. På den ene side spørger du dig selv, “Hvordan kan jeg indsætte alle numrene i denne boks?” På den anden side spørger du sig selv, “Hvilke numre kan passe ind i dette felt uden at medføre en konflikt med andre numre i den samme række, kolonne eller 3x3 boks?”</para>
+
+    <para>På trods af sin enkelhed kan Sudoku-puslespil variere betydeligt i sværhedsgrad. <application>Sudoku</application> giver dig mulighed for at vælge sværhedsgrad på puslespillet. Til at starte med vil du få nemme puslespil, som så gradvist vil blive sværere, når du bliver dygtigere.</para>
+
+  </sect1>
+
+<!-- =========== Getting Started ============================== -->
+<!-- Use the Getting Started section to describe the steps required
+     to start the application and to describe the user interface components
+     of the application. If there is other information that it is important
+     for readers to know before they start using the application, you should
+     also include this information here. 
+     If the information about how to get started is very short, you can 
+     include it in the Introduction and omit this section. -->
+
+  <sect1 id="myapp-getting-started"> 
+    <title>Sådan kommer du i gang</title> 
+
+    <sect2 id="myapp-start">
+    <title>Start af <application>Sudoku</application></title>
+    <para>Du kan starte <application>Sudoku</application> på følgende måder:</para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>Menuen <guimenu>Programmer</guimenu></term>
+    		<listitem>
+    		<para>Vælg <menuchoice><guisubmenu>Spil </guisubmenu><guimenuitem>Sudoku</guimenuitem></menuchoice>.</para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Kommandolinje</term>
+    		<listitem>
+    		<para>Du kan starte <application>Sudoku</application> ved hjælp af kommandolinjen ved at skrive den følgende kommando og derefter taste <keycap>Retur</keycap>:</para>
+    		<para> 
+			<command>gnome-sudoku</command> 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+    </sect2>
+
+    <sect2 id="myapp-when-start">
+    <title>Når du starter <application>Sudoku</application></title>
+    <para>Når du starter <application>Sudoku</application> for første gang mødes du af et skærmbillede hvor du kan vælge puslespil efter sværhedsgrad. Hvis du har spillet før og har uafsluttede puslespil, så kan du også vælge disse spil fra dette skærmbillede.</para>
+    <para>I skærmbilledet med puslespil, vises sværhedsgraden også for de enkelte spil. Farven om spillets billede svarer til sværhedsgraden. For eksempel er et mørkt rødt puslespil sværere end et lyst rødt puslespil.</para>
+    <para>Dobbeltklik på det ønskede puslespil for at begynde et spil.</para>
+
+<figure id="new-game-fig"> 
+	<title>Start af Sudoku</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/starting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Start af Sudoku: Vælg et sværhedsniveau.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    
+    <para>Du kan ændre puslespil på ethvert tidspunkt ved at trykke på <guibutton>Ny</guibutton>. Dette vil tage dig til et skærmbillede hvor du kan vælge vælge det puslespile du ønsker.</para>
+    
+    </sect2>
+    
+    </sect1>
+    <sect1 id="myapp-basic-play">
+    <title>Grundlæggende spilide</title>
+    <para>Du begynder spillet ved at indsætte numrene 1-9 i felterne på en sådan måde at ingen række, kolonne eller 3x3 boks har det samme tal mere end en gang.</para>
+    <para>Du kan indtaste et tal i et felt enten med tastaturet eller musen.</para>
+    <variablelist>
+    	<varlistentry>
+	<term>Tastatur</term>
+	<listitem><para>Anvend piletasterne eller musen til at vælge det felt, du ønsker at udfylde. Herefter indtaster du det nummer, du ønsker at placere i feltet. Tasten <keycap>tilbage</keycap> vil fjerne tallet.</para></listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Mus</term>
+	<listitem>
+	  <para>Klik på et felt for at vælge det. Klik herefter i centrum af feltet for at få knapperne med numrene 1-9 frem. Klik på et nummer for at vælge det, eller klik på <guibutton>Ryd</guibutton> for at slette indholdet. Du kan også dobbeltklikke i centrum af et felt for at få nummerknapperne op.</para>
+	</listitem>
+		</varlistentry>
+	</variablelist>
+    <note>
+    <para>Hvis du indtaster et nummer som er i konflikt med andre numre på spillepladen, vil de numre der er i konflikt blive fremhævet med rødt.</para>
+    <figure id="error-highlight-fig"> 
+	<title>Fejlmarkering</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/error_highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Et ugyldigt træk vil blive markeret med rødt.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    </note>
+    </sect1>
+    <sect1 id="myapp-saving">
+    <title>Gemme og genoptage spil</title>
+    <para>Sudoku-spil gemmes automatisk med nogle minutters mellemrum, og når du ændrer spil eller lukker programmet.</para>
+        <figure id="open-game-fig"> 
+	<title>Genoptage gamle spil</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/resuming.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Genoptagelse af et gammelt spil fra skærmen med puslespilsudvælgelsen.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    <para>Når du starter <application>Sudoku</application> eller klikker på <guibutton>Nyt</guibutton>, vil dit gemte spil blive vist i skærmbilledet for puslespilsudvælgelse. Du vil se et miniaturebillede af det gemte puslespil, datoen du spillede det, og hvor lang tid du har spillet det. For at åbne puslespillet dobbeltklikker du bare på det.</para>
+    <para>Hvis du ønsker at stoppe et spil og starte et andet, så skal du bare trykke på <guibutton>Ny</guibutton> og så får du et nyt spil.</para>
+    </sect1>
+
+<!-- ================ Usage ================================ -->
+<!-- Use this section to describe how to use the application to perform the tasks for 
+  which the application is designed. -->
+  <sect1 id="myapp-hints"> 
+    <title>Funktioner</title> 
+    <!-- ================ Usage Subsection ================================ -->
+
+        <para>GNOME Sudoku har en række funktioner som kan hjælpe dig med at løse puslespillet.</para>
+
+      <variablelist>
+    	<varlistentry><term>Bemærkninger</term>
+	<listitem>
+		<para><firstterm>Noter</firstterm> eller <firstterm>Blyantmarkeringer</firstterm> gør det muligt at skrive noter i hvert enkelt felt. Mange spillere bruger noter til at holde styr på mulige værdier i et felt.</para>
+	</listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Fif og automatisk udfyldning</term>
+	<listitem>
+	<para>Du kan bruge <firstterm>fif</firstterm> og <firstterm>autoudfyldning</firstterm> til at lade GNOME Sudoku fortælle om mulige værdier i et felt eller automatisk udfylde feltet for dig.</para>
+	</listitem>
+	</varlistentry>
+
+		<varlistentry>
+	<term>Markering</term>
+	<listitem>
+	<para>Hvis du anvender markeringstilstand så vil den aktuelle række, kolonne eller boks bliver markeret i forskellige farver for at gøre overblikket over spillet bedre.</para>
+	</listitem>
+	</varlistentry>
+
+	<varlistentry>
+	<term>Spor</term>
+	<listitem>
+	  <para>Spor gør løsninger der findes ved at prøve sig frem nemmere at holde styr på. Når du <firstterm>sporer</firstterm> en række tal, så vises tallene i en speciel farve for at hjælpe dig med at afgrænse disse tal fra tal placeret tidligere i spillet.</para>
+	</listitem>
+	</varlistentry>
+        </variablelist>
+	
+	<sect2 id="myapp-notes"> 
+      <title>Skrive noter</title> 
+      <para>For at skrive noter i et felt, vælg da først feltet med tastaturet eller musen. Udfør derefter et af følgende:</para>
+      <itemizedlist>
+      <listitem><para>Klik i den øverste del af feltet (området markeres med en firkant når du flytter musen over et valgt felt).</para></listitem>
+      <listitem><para>Tast <keycap>N</keycap></para></listitem>
+      </itemizedlist>
+      <para>Dette vil få et felt frem, hvor du kan skrive dine noter. Tast <keycap>Retur</keycap> når du er færdig med noten.</para>
+      
+      <note><para>Du kan også skrive noter i bunden af et felt ved at klikke der eller ved at taste <keycap>M</keycap>. Dette område anvendes dog når du beder om et <firstterm>fif</firstterm>, så du bør ikke bruge dette felt til dine egne noter hvis du også ønsker at anvende fif.</para></note>
+      <note><para>You can clear the notes at the top of the square by typing <keycap>Alt-N</keycap> and at the bottom of the square by typing <keycap>Alt-M</keycap>.</para></note>
+      <note><para>You can add a number to the notes at the top of the square by typing <keycap>Ctrl-1</keycap> through <keycap>Ctrl-9</keycap> and remove a number from the notes by typing <keycap>Alt-1</keycap> through <keycap>Alt-9</keycap>.</para></note>
+</sect2>
+    <!-- ================ Usage Subsection ================================ -->
+	 <sect2 id="myapp-manipulate-view"> 
+      <title>Fif og automatisk udfyldning</title>
+
+		             <note>
+
+	      <para><firstterm>Fif</firstterm> og <firstterm>Udfyld</firstterm> virker på baggrund af de logiske muligheder ved det aktuelle spil. De fungerer <emphasis>ikke</emphasis> ved at kigge på løsningen. Hvis du har foretaget en fejl i et tidligere udfyldt felt, vil fif og udfyld måske udfylde eller foreslå forkerte værdier.</para>
+
+	    </note>
+      
+      
+      <sect3 id="myapp-hint">
+          <title>Fif</title>
+	              <para>GNOME Sudoku kan give dig et fif baseret på din nuværende spilsituation. Du kan anmode om et fif for det aktuelt valgte felt ved at taste <guibutton>fif</guibutton> og vælge <menuchoice><guisubmenu>Spil</guisubmenu><guimenuitem>Fif</guimenuitem></menuchoice>, eller trykke <keycap>Ctrl-H</keycap>. Dette vil placere en liste med mulige valg i bunden af feltet.</para>
+    <figure id="hint-fig"> 
+	<title>Fif</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/hints.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Når du klikker på Fif vises mulige værdier i bunden af feltet.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+		      
+	    <para>Hvis du ønsker at fjerne eller ændre fiffet, kan du redigere teksten ved at klikke i bunden af feltet.</para>
+	    <para>I meget svære puslespil kan du vælge at lade <application>Sudoku</application> vise dig fif for alle felter. Du kan slå denne funktion til ved hjælp af <menuchoice><guisubmenu>Værktøjer</guisubmenu><guimenuitem>Vis altid fif</guimenuitem></menuchoice>. Bemærk at denne funktion kan gøre nemme puslespil <emphasis>for</emphasis> nemme, så anvend den med omtanke.</para>
+<figure id="all-hints-fig"> 
+	<title><application>Sudoku</application> med Vis-altid-fif slået til</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/always_show_hint.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Et svært puslespil med Vis-altid-fif slået til.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+	    
+	    
+	    </sect3>
+	    <sect3 id="myapp-autofill">
+	    <title>Udfyld felt</title>
+
+	    <para>For automatisk at udfylde et felt hvor der kun er en korrekt værdi, kan du klikke på <guibutton>Udfyld</guibutton>, vælge <menuchoice><guisubmenu>Spil</guisubmenu><guimenuitem>Udfyld</guimenuitem></menuchoice>, eller taste <keycap>Kontrol-F</keycap>. Dette er for eksempel brugbart når du har udfyldt 8 eller 9 felter i en række eller hurtigt ønsker at udfylde det sidste tomme felt.</para>
+	    <para>Hvis der er mere en en gyldig værdi, sker der intet.</para>	    
+	    </sect3>
+	    <sect3 id="myapp-fill-all">
+	    <title>Udfyld alle felter</title>
+
+	    <para>Du kan automatisk udfylde alle felter hvor der logisk kun kan være en værdi. Det gøres ved at vælge <menuchoice><guisubmenu>Spil</guisubmenu><guimenuitem>Find alle felter</guimenuitem></menuchoice>, eller taste <keycap>Kontrol-A</keycap>.</para>
+	    
+	    <warning>
+
+	    	    <para>Denne funktion bør kun bruges, når du er gået i stå i et svært spil. Anvendelse af denne funktionalitet kan i et nemt spil løse hele puslespillet med et klik, hvilket vil resultere i et meget kedeligt spil!</para>
+		    </warning>
+	    	    </sect3>
+
+    </sect2> 
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-highlighting"> 
+      <title>Markering</title> 
+      <para>Du kan aktivere automatisk markering af den aktuelle række, kolonne eller boks i forskellige farver. Dette kan gøre det nemmere, at se hvilke værdier der ikke kan indgå i et aktuelt felt. For at slå markinger til/fra gør du følgende:</para> 
+      <itemizedlist>
+      <listitem><para>Klik <guibutton>Markør</guibutton></para></listitem>
+      <listitem><para><menuchoice><guisubmenu>Vis</guisubmenu><guimenuitem>Markering</guimenuitem></menuchoice></para></listitem>
+      </itemizedlist>
+
+<figure id="highlight-fig"> 
+	<title><application>Sudoku</application> med markering</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Markering gør det nemmere at overskue rækker, kolonner og bokse.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      </sect2>
+
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-trackers"> 
+      <title>Spor</title> 
+      <para>Du kan bruge spor til at holde styr på flere tal på en gang. Sporede tal bliver indtastet i en anden farve der gør dem visuelt tydelige. Du kan også slette alle sporede tal på en gang. Dette er specielt brugbart i svære spil, hvor du må forsøge dig frem.</para>
+      <note><para>Nogle sudoku spillere mener ikke, at man skal prøve sig frem under løsning af et puslespil. Disse spillere bør ikke anvende denne funktion.</para></note>
+
+            <para>Du kan slå sporfunktioner til eller fra på en af følgende måder:</para>
+
+	    <itemizedlist>
+
+	      <listitem>
+	       <para>
+		<menuchoice> 
+			  <guimenu>Spil</guimenu> 
+			  <guimenuitem>Spor tilføjelser</guimenuitem>
+		</menuchoice>
+	       </para>
+	     </listitem>
+             <listitem><para>Klik <guibutton>Spor tilføjelser</guibutton></para></listitem>
+           </itemizedlist>
+      <para>Dette vil vise en liste af spor til højre for det nuværende spil. Opret et nyt spor ved at trykke på <guibutton>Tilføj spor</guibutton>. Herefter vil ethvert nummer, du indtaster, blive en del af det valgte spor.</para>
+      <para>Du kan fjerne alle værdier, som er en del af et spor ved at vælge spor fra listen og klikke <guibutton>Nulstil spor</guibutton>. Du kan fjerne alle værdier, som <emphasis>ikke</emphasis> er en del af et spor ved at klikke på <guibutton>Nulstil andre</guibutton>.</para>
+    </sect2> 
+  </sect1>
+  <!-- ============= Customization ============================= -->
+  <!-- Use this section to describe how to customize the application. -->
+  <sect1 id="myapp-printing"> 
+    <title>Udskriv Sudoku</title> 
+    <para>GNOME Sudoku kan udskrive spil, du så kan udfylde på papir. Dette er nyttigt, hvis du skal forlade computeren, men ønsker at afslutte et spil du har påbegyndt, eller hvis du ønsker at udskrive en stak puslespil til senere brug.</para>
+
+    <para>For at udskrive puslespillet du er i gang med klik <guibutton>Udskriv</guibutton> eller vælg <menuchoice><guimenu>Fil</guimenu><guimenuitem>Udskriv</guimenuitem></menuchoice>. Dette vil inkludere numrene du allerede har udfyldt.</para>
+    
+    <para>For at udskrive nye puslespil vælges <menuchoice><guimenu>Fil</guimenu><guimenuitem>Udskriv flere sudokuer</guimenuitem></menuchoice>.</para>
+
+      <para>Du ser så et udskrivningsbillede som lader dig vælge, hvor mange spil du ønsker at udskrive, og hvor mange spil der skal være på hver side (jo flere spil du udskriver per side, desto mindre vil spillene være).</para>
+
+      <para>Du kan også vælge den sværhedsgrad du ønsker spillene skal være i. Spillene bliver udskrivet i sværhedsgrads-rækkefølge med de nemmeste først.</para>
+
+      <para>For at lave en 25 siders mini sudokubog, kan du vælge at udskrive 100 sudokuer, 4 per side, med spil rangerende fra nemme til svære.</para>
+
+<figure id="printing-fig"> 
+	<title>Udskrivning af en lille sudokubog fra <application>Sudoku</application></title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/Print_Sudokus.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Dette vil udskrive 25 sider med 4 sudokuer på hver side.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      <para>Normalt vil <application>Sudoku</application> ikke udskrive spil som du allerede har spillet. Hvis du udskriver spil til en ven, eller hvis du ikke har noget imod at gentage spil så kan du afkrydse <guibutton>Inkludér spil du allerede har spillet i listen over spil til udskrivning</guibutton>.</para>
+
+      <para>Du kan også specifikt vælge hvilke spil du vil udskrive ved at udvide <guibutton>Spilliste</guibutton> og vælge flere puslespil på listen.</para>
+    
+  </sect1>
+  
+  <sect1 id="mayapp-bugs">
+  <title>Kendte fejl og begrænsninger</title>
+  <sect2>
+  <title>Begrænset puslespilsstatistik</title>
+
+    <para>GNOME Sudoku rangerer puslespil baseret på det antal af felterne som hurtigt kan udfyldes. Puslespilstatistikboksen viser din rangering og yderligere tre informationer:</para>
+
+    <itemizedlist>
+    <listitem><para>Antallet af felter som kan udfyldes ved udelukkelse, begyndende fra det tomme spil (hvis for eksempel kun 2 kan være i dette felt, så det må være 2).</para></listitem>
+    <listitem><para>Antallet af felter som direkte kan udfyldes, begyndende med en ikke udfyldt opgave (hvis for eksempel kun et felt i denne række kan udfyldes med et 2-tal, så det må være et 2-tal).</para></listitem>
+    <listitem><para>Antallet af gange i løsningen af denne opgave at computeren måtte forsøge sig frem, eller “gætte”, for at løse opgaven.</para></listitem>
+    </itemizedlist>
+    <para>Mange brugere er blevet oprørte over at computeren forsøger sig frem, specielt da nogle Sudoku guruer mener at man aldrig bør gætte sig til en løsning. Der er en række andre algoritmer som kan anvendes for at hjælpe computeren med at løse en sudoku, såsom swordfish og X-wings mønstre.</para>
+
+    <para>På nuværende tidspunkt anvender <application>Sudoku</application> kun to algoritmer som beskrevet ovenfor og metoden med at forsøge sig frem. Når statistikboksen anfører at <application>Sudoku</application> måtte forsøge sig frem x gange, betyder det <emphasis>ikke</emphasis> at et menneske nødvendigvis skal forsøge sig frem for at løse opgaven.</para>
+  
+  </sect2>
+
+ </sect1>
+
+<!-- ============= About ================================== -->
+<!-- This section contains info about the program (not docs), such as
+      author's name(s), web page, license, feedback address. This
+      section is optional: primary place for this info is "About.." box of
+      the program. However, if you do wish to include this info in the
+      manual, this is the place to put it. Alternatively, you can put this information in the title page.-->
+  <sect1 id="myapp-about"> 
+    <title>Om <application>Sudoku</application></title> 
+    <para><application>Sudoku</application> blev skrevet af Tom Hinkle (<email>tmhinkle@gmail.com</email>). <application>Sudoku</application> er nu en del af GNOME Games.</para>
+    <para>Du kan finde information om hvordan man indrapporterer fejl, eller kommer med forslag til spillet eller denne manual, i responsafsnittet <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME User Guide</ulink>.</para>
+
+    <para>Dette program distribueres under betingelserne i licensen GNU General Public der udgives af Free Software Foundation; enten version 2 eller (ved dit valg) enhver senere version. En kopi af denne licens kan findes her <ulink url="ghelp:gpl" type="help">link</ulink>, eller i filen COPYING der er inkluderet med kildekoden til dette program.</para>
+
+  </sect1> 
+</article>

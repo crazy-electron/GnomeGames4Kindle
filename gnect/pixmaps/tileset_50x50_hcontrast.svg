@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+	"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="300" height="50">
+  <defs>
+    <rect id="square" x="0" y="0" width="50" height="50" fill="white" stroke-width="0" />
+    <g id="nought" fill="none" stroke="black" stroke-linecap="round">
+      <rect stroke-width="10" x="10" y="10" width="30" height="30" rx="10" ry="10"
+        transform="rotate(45 25 25)" />
+    </g>
+    <g id="cross" fill="white" stroke="black" stroke-linecap="round"
+      stroke-miterlimit="30" stroke-width="10">
+      <line x1="10" y1="10" x2="40" y2="40" />
+      <line x1="10" y1="40" x2="40" y2="10" />
+    </g>
+  </defs>
+  <use id="p1a" y="0" x="0" xlink:href="#nought" />
+  <use id="p2a" y="0" x="50" xlink:href="#cross" />
+  <use y="0" x="100" xlink:href="#square" />
+  <use y="0" x="150" xlink:href="#square" />
+  <use id="p1b" y="0" x="200" xlink:href="#nought" />
+  <use id="p2b" y="0" x="250" xlink:href="#cross" />
+  <metadata>
+    <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <Work rdf:about="">
+        <dc:title>High Contrast theme gnect game pieces</dc:title>
+        <dc:description>Game pieces for Gnect, Four in a Row a Connect 4 style Game for Gnome</dc:description>
+        <dc:publisher>
+          <Agent rdf:about="http://www.openclipart.org">
+            <dc:title>Alan Horkan</dc:title>
+          </Agent>
+        </dc:publisher>
+        <dc:creator>
+          <Agent rdf:about="">
+            <dc:title>Alan Horkan</dc:title>
+          </Agent>
+        </dc:creator>
+        <dc:rights>
+          <Agent rdf:about="">
+            <dc:title>Alan Horkan</dc:title>
+          </Agent>
+        </dc:rights>
+        <dc:date></dc:date>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <license rdf:resource="Public Domain">
+          <dc:date></dc:date>
+        </license>
+        <dc:language>en</dc:language>
+      </Work>
+      <License rdf:about="Public Domain">
+        <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+        <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+      </License>
+    </rdf:RDF>
+  </metadata>
+  <a xlink:href="http://www.openclipart.org">
+    <text x="0" y="75">http://openclipart.org</text>
+  </a>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="gameplay" xml:lang="zh_CN">
+      
+  <info>
+    <link type="guide" xref="index"/>
+    <desc><app>GNOME 四邻</app> 的介绍。</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+   <credit type="author">
+    <name>Milo Casagrande</name>
+    <email>milo@ubuntu.com</email>
+   </credit>
+   <license>
+     <p>Creative Commons Share Alike 3.0</p>
+   </license>
+  </info>
+
+  <title>游戏玩法</title>
+
+  <p><app>GNOME 四邻</app> 是一个简单的解谜游戏，目标是把右侧的方块全部移动到左侧，每个方块的四面都邻接着相同的数字。</p>
+  <p>游戏会计时，用来确定得分排行榜。您需要尽快把所有的方块都搞定。</p>
+  <figure>
+    <title>主游戏窗口</title>
+    <desc><app>四邻</app> 主窗口</desc>
+    <media type="image" src="figures/gnotravex-main-window.png" mime="image/png" style="center">
+      <p><app>四邻</app> 主窗口。</p>
+    </media>
+  </figure>
+
+</page>

@@ -1,0 +1,6354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY accordion SYSTEM "accordion.xml">
+<!ENTITY agnes SYSTEM "agnes.xml">
+<!ENTITY athena SYSTEM "athena.xml">
+<!ENTITY auld-lang-syne SYSTEM "auld_lang_syne.xml">
+<!ENTITY backbone SYSTEM "backbone.xml">
+<!ENTITY bakers-dozen SYSTEM "bakers_dozen.xml">
+<!ENTITY bakers-game SYSTEM "bakers_game.xml">
+<!ENTITY bear-river SYSTEM "bear_river.xml">
+<!ENTITY beleaguered-castle SYSTEM "beleaguered_castle.xml">
+<!ENTITY block-ten SYSTEM "block_ten.xml">
+<!ENTITY bristol SYSTEM "bristol.xml">
+<!ENTITY camelot SYSTEM "camelot.xml">
+<!ENTITY canfield SYSTEM "canfield.xml">
+<!ENTITY carpet SYSTEM "carpet.xml">
+<!ENTITY chessboard SYSTEM "chessboard.xml">
+<!ENTITY clock SYSTEM "clock.xml">
+<!ENTITY cover SYSTEM "cover.xml">
+<!ENTITY cruel SYSTEM "cruel.xml">
+<!ENTITY diamond-mine SYSTEM "diamond_mine.xml">
+<!ENTITY doublets SYSTEM "doublets.xml">
+<!ENTITY eagle-wing SYSTEM "eagle-wing.xml">
+<!ENTITY easthaven SYSTEM "easthaven.xml">
+<!ENTITY eight-off SYSTEM "eight_off.xml">
+<!ENTITY elevator SYSTEM "elevator.xml">
+<!ENTITY escalator SYSTEM "escalator.xml">
+<!ENTITY first-law SYSTEM "first_law.xml">
+<!ENTITY fortress SYSTEM "fortress.xml">
+<!ENTITY fortunes SYSTEM "fortunes.xml">
+<!ENTITY forty-thieves SYSTEM "forty_thieves.xml">
+<!ENTITY fourteen SYSTEM "fourteen.xml">
+<!ENTITY freecell SYSTEM "freecell.xml">
+<!ENTITY gaps SYSTEM "gaps.xml">
+<!ENTITY gay-gordons SYSTEM "gay_gordons.xml">
+<!ENTITY giant SYSTEM "giant.xml">
+<!ENTITY glenwood SYSTEM "glenwood.xml">
+<!ENTITY gold-mine SYSTEM "gold_mine.xml">
+<!ENTITY golf SYSTEM "golf.xml">
+<!ENTITY gypsy SYSTEM "gypsy.xml">
+<!ENTITY helsinki SYSTEM "helsinki.xml">
+<!ENTITY hopscotch SYSTEM "hopscotch.xml">
+<!ENTITY isabel SYSTEM "isabel.xml">
+<!ENTITY jumbo SYSTEM "jumbo.xml">
+<!ENTITY jamestown SYSTEM "jamestown.xml">
+<!ENTITY kansas SYSTEM "kansas.xml">
+<!ENTITY king-albert SYSTEM "king_albert.xml">
+<!ENTITY kings-audience SYSTEM "kings_audience.xml">
+<!ENTITY klondike SYSTEM "klondike.xml">
+<!ENTITY labyrinth SYSTEM "labyrinth.xml">
+<!ENTITY lady-jane SYSTEM "lady_jane.xml">
+<!ENTITY maze SYSTEM "maze.xml">
+<!ENTITY monte-carlo SYSTEM "monte_carlo.xml">
+<!ENTITY napoleons-tomb SYSTEM "napoleons_tomb.xml">
+<!ENTITY neighbor SYSTEM "neighbor.xml">
+<!ENTITY odessa SYSTEM "odessa.xml">
+<!ENTITY osmosis SYSTEM "osmosis.xml">
+<!ENTITY peek SYSTEM "peek.xml">
+<!ENTITY pileon SYSTEM "pileon.xml">
+<!ENTITY plait SYSTEM "plait.xml">
+<!ENTITY poker SYSTEM "poker.xml">
+<!ENTITY quatorze SYSTEM "quatorze.xml">
+<!ENTITY royal-east SYSTEM "royal_east.xml">
+<!ENTITY saratoga SYSTEM "saratoga.xml">
+<!ENTITY scorpion SYSTEM "scorpion.xml">
+<!ENTITY scuffle SYSTEM "scuffle.xml">
+<!ENTITY seahaven SYSTEM "seahaven.xml">
+<!ENTITY sir-tommy SYSTEM "sir_tommy.xml">
+<!ENTITY spider SYSTEM "spider.xml">
+<!ENTITY spider-three-decks SYSTEM "spider_three_decks.xml">
+<!ENTITY spiderette SYSTEM "spiderette.xml">
+<!ENTITY straight-up SYSTEM "straight_up.xml">
+<!ENTITY streets-and-alleys SYSTEM "streets_and_alleys.xml">
+<!ENTITY ten-across SYSTEM "ten_across.xml">
+<!ENTITY terrace SYSTEM "terrace.xml">
+<!ENTITY thieves SYSTEM "thieves.xml">
+<!ENTITY thirteen SYSTEM "thirteen.xml">
+<!ENTITY thumb-and-pouch SYSTEM "thumb_and_pouch.xml">
+<!ENTITY treize SYSTEM "treize.xml">
+<!ENTITY triple-peaks SYSTEM "triple_peaks.xml">
+<!ENTITY union-square SYSTEM "union_square.xml">
+<!ENTITY valentine SYSTEM "valentine.xml">
+<!ENTITY westhaven SYSTEM "westhaven.xml">
+<!ENTITY whitehead SYSTEM "whitehead.xml">
+<!ENTITY will-o-the-wisp SYSTEM "will_o_the_wisp.xml">
+<!ENTITY yield SYSTEM "yield.xml">
+<!ENTITY yukon SYSTEM "yukon.xml">
+<!ENTITY zebra SYSTEM "zebra.xml">
+<!ENTITY definitions SYSTEM "definitions.xml">
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.12">
+<!ENTITY date "July 2005">
+<!ENTITY app "<application>AisleRiot</application>">
+<!ENTITY appname "AisleRiot">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<book id="index" lang="zh_CN">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <bookinfo>
+    <title><application>纸牌王</application>游戏手册</title>
+
+    <abstract role="description">
+      <para>纸牌王是用 GNOME 脚本语言 Scheme 编写，超过80个纸牌游戏的集合。</para>
+    </abstract>
+
+    <copyright>
+      <year>2001</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright><copyright><year>2011</year><holder>TeliuTe (teliute@163.com)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is
+     not specified, the publisher/author is the same for all versions of the
+     document.  -->
+    <publisher>
+      <publishername>GNOME 文档项目</publishername>
+    </publisher>
+
+     <legalnotice id="legalnotice">
+	<para>对于本文档的复制、分发和/或修改必须遵循自由软件基金会 (Free Software Foundation) 发布的 GNU 自由文档许可证 (GFDL) 版本 1.1 或更高版本，该许可证没有固定的部分、没有封面和背页文本。您可以在此<ulink type="help" url="ghelp:fdl">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副本</para>
+         <para>本手册是在 GFDL 许可之下分发的 GNOME 手册集合的一部分。如果想要单独分发此手册，可以在手册中添加该许可证的一份副本然后分发，如该许可证的第 6 部分所述。</para>
+
+	<para>各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 GNOME 文档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而表明它们是商标。</para>
+
+	<para>本文档以及文档的修改版本都是在遵循 GNU 自由文档许可证的条款下提供，这表示具有以下含义：<orderedlist>
+		<listitem>
+		  <para>文档按“原样”提供，不提供任何明示或暗示的保证，包括但不限于：文档或文档的修改版本没有适销性方面的缺陷、适合特定目的的适用性，以及没有侵权行为。您将自行承担本文档以及文档修改版本的质量、准确性以及性能方面的风险。如果任何文档或文档修改版本存在缺陷，您(而不是最初的编写者、作者或撰写人)将承担所有必需的服务、维修或更正的费用。此免责声明是本许可证的重要组成部分。如果不接受此免责声明，那么您就没有权利使用任何文档或文档的修改版本；并且</para>
+		</listitem>
+		<listitem>
+		  <para>无论在任何情况以及在任何法律理论下，本文档或文档修改版本的作者、最初的编写者、任何撰写人或任何分发者，或者任意这些方的任何提供者都不对任何人由于使用本文档或文档修改版本引起或带来的任何直接的、间接的、特殊的、偶然的或继发的损失承担任何民事(包括疏忽)、合同或其它方面的责任，这些损失包括但不限于信誉损失、工作停止、计算机失败或故障，或任何以及所有其它损失或由此引发的或与之相关的损失，即使这些方已被告知存在出现此类损失的可能性时也是如此。</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and
+        other legal stuff such as "NO WARRANTY" statement. Please do not change
+	any of this. -->
+
+    <authorgroup>
+      <author role="maintainer">
+	<firstname>Rosanna</firstname>
+	<surname>Yuen</surname>
+	<affiliation>
+          <orgname>GNOME 文档项目</orgname>
+          <address> <email>zana@webwynk.net</email> </address>
+	</affiliation>
+      </author>
+      <othercredit role="additional material">
+        <firstname>Telsa</firstname>
+        <surname>Gwynne</surname>
+        <affiliation>
+          <address><email>hobbit@aloss.ukuu.org.uk</email></address>
+        </affiliation>
+      </othercredit>
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname>
+	<surname>Translator 1</surname>
+	<affiliation>
+	  <orgname>Latin Translation Team</orgname>
+	  <address> <email>translator@gnome.org</email> </address>
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+	<revnumber>纸牌王游戏手册2.12版</revnumber>
+	<date>2005年7月</date>
+	<revdescription>
+	  <para role="author">Rosanna Yuen <email>zana@webwynk.net</email></para>
+	  <para role="publisher">GNOME 文档项目</para>
+	</revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>本手册讲述的是纸牌王2.12版。</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice>
+      <title>反馈</title>
+      <para>要报告关于<application>接龙</application>程序或使用手册中的缺陷，或者提出建议，请参照 <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME 反馈页</ulink> 上的指导。</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </bookinfo>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<chapter id="intro">
+    <title>介绍</title>
+
+    <indexterm zone="index">
+      <primary>纸牌王</primary>
+    </indexterm>
+
+    <para><application>接龙</application>(也叫纸牌王)是一个牌类游戏集，很容易用鼠标来操作。游戏规则根据您的爱好用 GNOME 脚本语言(Scheme)制定好。</para>
+</chapter>
+
+<chapter id="general-information">
+<!--  <sect1info>
+    <copyright>
+      <year>2002</year>
+      <holder>Telsa Gwynne</holder>
+    </copyright>
+    <author>
+      <firstname>Telsa</firstname>
+      <surname>Gwynne</surname>
+    </author>
+    <address>
+      <email>hobbit@aloss.ukuu.org.uk</email>
+    </address>
+  </sect1info> -->
+
+
+
+ <title>玩<application>纸牌王</application>游戏</title>
+
+ <para>使用鼠标移动纸牌，点击一张牌，然后把它拖拽到其他地方，松开鼠标放下这张牌。</para>
+ <para>另外，您可以点一下拿起这张牌，再点一下放下它。要启用这种操作方法，点菜单 <menuchoice><guimenu>控制</guimenu><guimenuitem>单击移动</guimenuitem></menuchoice>。这比拖拽操作要更方便些，因为您不必一直按着鼠标。当然，要花些时间来熟悉这项操作。</para>
+ <para>如果一张牌可以移到收牌区，您也可以不用拖动，而是直接双击它，就可以直接移动过去。如果一沓牌都可以移到收牌区，您可以一次移动这沓牌过去。</para>
+ <para>双击一张牌可以收取这张牌，如果它可以收的话。这在最后收取大量牌、完成游戏时很有用。</para>
+ <para>游戏中有一个发牌区，发完后您可以点击空白区重新发牌。但要注意有些游戏有次数限制，多观察窗口底下的<guilabel>发牌数剩余</guilabel>信息。</para>
+ <para>一个有用的提示是，在一张已经翻开的牌面上点右键，可以从挡着它的牌中浮起来，这样您就可以看清它是什么花色。</para>
+ <para>有些游戏可以改变选项，例如克朗代克可以设置发一张牌还是发三张牌。在这些游戏中会多出一个独立的菜单名称，您只能在游戏开始时改变选项－在游戏中菜单将变为不可用。</para>
+ <para>要查看您的游戏成绩，可以点<guimenu>游戏</guimenu>菜单，然后选择<guimenuitem>统计</guimenuitem>，这个统计只能查看您实际玩过了的游戏。这儿的统计主要是您自己开心，有许多方法可以作弊，用它来当参照没什么意思。</para>
+</chapter>
+
+<chapter id="games">
+    <title>游戏</title>
+
+  <sect1 id="Accordion"><!--<sect1info>
+		<copyright>
+			<year>2008</year>
+			<holder>Ed Sirett</holder>
+		</copyright>
+		<author>
+			<firstname>Ed</firstname>
+			<surname>Sirett</surname>
+		</author>
+		<address><email>ed @makewrite.demon.co.uk</email></address>
+	</sect1info>-->
+
+	<title>手风琴</title>
+
+  <para>由 Ed Sirett 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>桌面有五十四个位置，上面五行每行放九张牌，最后一行放七张牌。每个位置放一张翻开的牌，所有的牌连成一行，牌面都可以看到。最右边的位置跟下一行最左边的位置连在一起。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把全部的牌收成一垛。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>牌一个接一个地移动，所有的牌都可以移到它左边相同花色，或者相隔二个空位的相同花色牌上。这张牌盖在原来那张上面，而出现的空缺会被右边的牌填充。双击一张牌可以使它移动到左边去，如果这张牌可以移动的话。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每移动一张牌得1分。</para>
+  <para>可能得到的最高分是：51</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>这个游戏有一定难度，需要在一行里找到两张或三张相同花色的牌，尽量不要分开相同花色的牌。最后您就可以把它们相互移动直到获胜。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Agnes"><!--<sect1info>
+  	<copyright>
+  	 <year>2001</year>
+  	 <holder>Rosanna Yuen</holder>
+  	</copyright>
+  	<author>
+  	 <firstname>Rosanna</firstname>
+  	 <surname>Yuen</surname>
+  	</author>
+  	<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>爱格妮思</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+  <sect2><title>牌局</title>
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的牌垛，放置桌面上发剩下的牌。发牌一次可以发七张，在每垛上放一张。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角的四个牌垛，按照花色和顺序收牌，如果需要可以从 K 到 A 。在第一个位置里放了一张基准牌，其他的位置也必须按照同样的大小开始收牌。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+    <entry>七垛牌，第一垛发一张牌面朝上的，再在后面所有垛上放一张扣着的牌；然后在第二垛放一张翻开的牌，后面所有垛放一张扣着的牌；重复直到最后一垛牌是七张。牌面可以按相同颜色递减排列，同一组牌可以一起移动，出现的空位只能由发牌区发的牌填充。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+  </sect2>
+
+  <sect2><title>目标</title>
+  <para>把所有的牌移到收牌区。</para>
+  </sect2>
+  <sect2><title>规则</title>
+  <para>桌上的牌按相同颜色递减排列，相同颜色按顺序排列的一组牌可以一起移动。</para>
+  <para>每次从发牌区发一张到桌面上的各个牌垛，越发越少不能重复发牌。</para>
+  <para>收牌区的牌堆按顺序摆放，从 K 到 A 依次排列，在收牌区的牌仍然可以参与到游戏中。双击桌面上的一张牌可以把它移到收牌区，如果这张牌可以收取的话。</para>
+</sect2>
+  <sect2><title>得分</title>
+  <para>每收取一张牌得1分。</para>
+  <para>可能得到的最高分是：52</para>
+</sect2>
+
+  <sect2><title>策略</title>
+  <para>尽量去按顺序组织牌，尽量去得分，因为这个游戏是很难赢的。</para>
+</sect2>
+</sect1>
+
+  <sect1 id="Athena">
+<!--<sect1info>
+    <copyright>
+      <year>2001</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname>
+    </author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>雅典娜</title>
+
+  <para>在 Jonathan Blandford 工作的基础上，由 Alan Horkan 编写。</para>
+  <!-- Also documented by Alan Horkan (2005)
+  based on documentation by Rosann Yuen -->
+  <sect2><title>牌局</title>
+
+  <informaltable>
+    <tgroup cols="2"><tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的牌垛，放置桌面上发剩下的牌。发牌每次翻一张到废牌区，可以重新发两次。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>从发牌区中发过来，最上面一张可以用在游戏中。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角有四个空位，按照从 A 到 K 的递增顺序收牌，最上面的牌还可以拿回到桌面上参与游戏。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry> 七垛牌、四行，第一行扣着第二行翻开的，第三行扣着第四行是翻开的。本质上雅典娜跟空档接龙相同，只是翻开的层数不同。桌面上的牌可以按花色交替摆放，摆放的牌可以移动。空位只能由 K 或 K 开始的一组来填充。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+  </sect2>
+  <sect2><title>目标</title>
+  <para>把所有的牌移到收牌区。</para>
+  </sect2>
+  <sect2><title>规则</title>
+  <para>桌面上的牌可以按不同花色交替排列，排列好的一组牌可以一起移动。空位置仅能由 K 或 K 开始的一组来填充。</para>
+  <para>牌从发牌区逐个翻到废牌区中，最上面的一张可以放到桌面上，当发牌区空了，可以把废牌区的牌按原来顺序收回来重新发。您有三次重复机会。</para>
+  <para>收牌区按从 A 到 K 的顺序收牌，在收牌区里的牌仍然可以参与游戏。双击桌面上的一张牌可以把它移到收牌区，如果这张牌可以收取的话。</para>
+
+<!-- TODO 
+  <sect2><title>Options</title>
+  <para>
+    Three card deals: If checked, the Stock will deal three each time.
+    Otherwise, the Stock will deal singly into the Waste.
+  </para>
+  <para>
+    King Only: If checked empty space may be filled with Kings or 
+    groups of cards starting with a King only.  
+  </para>
+-->
+  </sect2>
+  <sect2><title>得分</title>
+  <para>每收取一张牌得1分。</para>
+  <para>可能得到的最高分是：52</para>
+  </sect2>
+  <sect2><title>策略</title>
+  <para>当游戏看似要结束时，别轻易放弃! 可以尝试各种方法。有时把收牌区的牌重新放回桌面，可以解开卡住的牌。</para>
+  </sect2>
+</sect1>
+
+  <sect1 id="Auld_Lang_Syne">  <!--<sect1info>
+    <copyright>
+      <year>1999</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname></author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>友谊地久天长</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的牌垛。游戏开始时，除了 A 以外，其他牌都放在这里。点击发牌区会发出四张翻开的牌。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角有四个空位，每个空位在开始时都放有一个 A，收牌区只考虑点数不管花色。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>收牌区下面的四个空位，每次点一下发牌区，每个空位上放一张牌，最上面的牌可以移到收牌区，废牌区的牌只能移到收牌区。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌都移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>游戏开始时，先从发牌区发四张牌，如果允许，就把牌移到收牌区。重复操作直到发牌区没有牌，也没有牌可以移到收牌区。有个稍微简单些的类似游戏叫混战。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得1分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>您相信运气吗？虽然这个游戏比“钟表”小游戏更具有技巧，需要注意复杂的细节。是一个不需要费神的强大游戏。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Backbone"><!--<sect1info>
+    <copyright>
+      <year>2005</year>
+      <holder>Vincent Povirk</holder>
+    </copyright>
+    <author>
+      <firstname>Vincent</firstname>
+      <surname>Povirk</surname>
+    </author>
+    <address><email>madewokherd@gmail.com</email></address>
+  </sect1info>-->
+
+  <title>硬骨头</title>
+
+  <para>Vincent Povirk 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2"><tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>两副牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>在收牌区的左下边有一垛牌，是桌面发完牌剩下的放在这儿，每次可以翻出一张放到废牌区，只能重复发一次。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>每次从牌垛中发出一张，最上面的可以用到游戏中。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上边有八个空位，从 A 到 K 依次收牌。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>中间有两排是9张，最下面被一张压着。没被压着的牌可以放在其他牌上，但不能放在空位置里。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>在两边还各有四张翻开的牌，游戏开始后可以放在其他任何位置，按花色递减排序。也可以放在空位置上，每次只能移动一张牌。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌按花色递减排序，每次只能移动一张牌。除了保留区的牌，空的位置可以放其他任何牌。</para>
+  <para>发牌区里的牌逐个发往废牌区，最上面的可以用在游戏中，牌垛发空后，废牌可以按原顺序重回到发牌区中，您只能重发两次牌。</para>
+  <para>收牌区按从 A 到 K 的递增顺序收牌，收回来的牌不能再用在牌局中，双击一张牌可以直接移到收牌区，如果这张牌可以收取的话。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得1分。</para>
+  <para>可能得到的最高分：104</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>您可以使用桌面上的空位置放置多张牌，但要小心保留区的 K，因为只有一种方法能移动它：把它移到收牌区的 Q 上。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Bakers_Dozen"><!--<sect1info>
+	  <copyright>
+	   <year>2001</year>
+	   <holder>Rosanna Yuen</holder>
+	  </copyright>
+	  <author>
+	   <firstname>Rosanna</firstname>
+	   <surname>Yuen</surname>
+	  </author>
+	  <address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>贝克萝筐</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>顶上的四个空位，按花色从 A 到 K 收牌。收牌区每一垛中最上面的可以放回到桌面上参与游戏。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+    <entry>十三垛牌，每垛四张翻开的，每个 K 都放在了最底下。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>最上面的牌可以移动到其他位置，只要它的点数比另一个小一，花色没有特别要求，空位置不能填充。</para>
+  <para>收牌区按花色从 A 到 K 递增收牌，里面的牌仍然可以参与到游戏中，双击桌面里的一张牌可以把它移到收牌区，如果它可以移动的话。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得一分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>小心不要把小牌压底下了，试着不要让桌面上出现空位。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Bakers_Game"><!--<sect1info>
+	  <copyright>
+	   <year>2001</year>
+	   <holder>Rosanna Yuen</holder>
+	  </copyright>
+	  <author>
+	   <firstname>Rosanna</firstname>
+	   <surname>Yuen</surname>
+	  </author>
+	  <address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>贝克游戏</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角的四个空位，从 A 到 K 按花色收牌。</entry>
+	</row>
+	<row>
+	  <entry>保留区</entry>
+	  <entry>左上角的四个空位，每个可以放一张牌。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>收牌区和保留区下面的八垛牌，前面四垛有七张翻开的牌，后面四垛是六张翻开的牌。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌按花色递减排序，最上面的牌可以移动。要移动一组牌，那么这组牌的数目必须是小于或等于保留区空位的数目。桌面上的空位置可以放 K 或者是 K 开头的一组牌。</para>
+  <para>收牌区按花色从 A 到 K 递增收牌，虽然这儿的牌从技术上讲，还可以用在游戏中，但实际上这些牌已经毫无用处，游戏不再需要了。</para>
+  <para>桌面上的任何牌都可以放入保留区的空位中，这些牌还可以用在游戏中，也可以直接移动到收牌区。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得一分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>尽可能地把牌移到收牌区，留下来反而会碍手碍脚。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Bear_River"><!--<sect1info>
+	  <copyright>
+	   <year>2009</year>
+	   <holder>Joel Levin</holder>
+	  </copyright>
+	  <author>
+	   <firstname>Joel</firstname>
+	   <surname>Levin</surname>
+	  </author>
+	  <address><email>JoelNYC@gmail.com</email></address>
+	</sect1info>-->
+
+	<title>熊河</title>
+
+  	<para>由 Bruce 和 Joel Levin 编写</para>
+
+
+          <sect2><title>牌局</title>
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>上面的四个空位，在第一个空位中放了一张翻开的牌。</entry>
+	</row>
+
+	<row>
+	  <entry>桌面排列区</entry>
+    	  <entry>桌面上有18垛牌，排成三行六列，所有的牌都是翻开的，可以看到牌的花色和点数。左边五列是三张一组，最右边一列是两张一组。</entry>
+	</row>
+
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+          
+          
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+          
+          
+        <sect2><title>规则</title>
+
+  <para>在收牌区已经随机收取了一张牌，其他收牌都以这一张的点数为基准。其他三个空位也要从这个点数开始收牌，按照花色从小到大收牌。牌是循环的，Q 过了是 K，K 过了是 A，然后是2，已经收取的牌不能再放回去参与游戏。</para>
+  <para>桌面上的每一垛牌不能超过三张，最上面的牌可以移动，移到相同花色比它大一点或者小一点的牌上，K 和 A 可以相互移动。</para>
+  <para>桌面上产生的空位有两种类型：“标准”垛和“空”垛。左边五列(三张一组的)是都标准垛，移出的空位不能再放其他牌，最后一列(二张一组的)是空垛，移出的空位可以放其他任何牌。</para>
+  
+          </sect2>
+
+
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得一分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+          
+          
+        <sect2><title>策略</title>
+
+  <para>要尽早移出一个或多个空位。</para>
+  <para>收牌总是没坏处的，如果可以的话，尽量多收牌。</para>
+  <para>比收牌区基准牌小一点的牌很难移动，放置它们的时候要特别小心。</para>
+  <para>玩熊河游戏大约有三分之一的概率能羸。</para>
+  
+        </sect2>
+        
+        
+</sect1>
+
+  <sect1 id="Beleaguered_Castle">  <!--<sect1info>
+    <copyright>
+      <year>2001</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname>
+    </author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>被围的城堡</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>中间一列的四垛牌，四个 A 放在这里，洗牌前每个只有一张。从 A 到 K 收牌，最上面的一张可以重新放回到桌面参与游戏中。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>在收牌区的两边各有四个共八个牌垛，这样每垛牌有六张，所有牌都是翻开的。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌按递减顺序排列，不必按花色，每次只能移动一张牌，移出的空位可以放任何一张牌。</para>
+  <para>收牌区按花色递增收牌。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>除了原来的 A，每收一张牌得一分。</para>
+  <para>可能得到的最高分是：48</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>如果可能，尽量均衡收牌，试着多空出一些位置来。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Block_Ten"><!--<sect1info>
+	  <copyright>
+	   <year>2001</year>
+	   <holder>Rosanna Yuen</holder>
+	  </copyright>
+	  <author>
+	   <firstname>Rosanna</firstname>
+	   <surname>Yuen</surname>
+	  </author>
+	  <address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>拦截十</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的一垛牌，开始时所有牌都放在这里。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>九张牌按3×3排列，桌面上的牌只能看到最上面一张。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>移除所有牌。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>两张牌加起来等于十，就可以点击消除。J、Q、K 按成对移出，十不能移走，所有的空位自动由发牌区发牌填充。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每移出一对牌得两分。</para>
+  <para>可能得到的最高分是：48</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>这个是单纯的运气游戏，当然，一些复杂的策略可能会增加您的好运。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Bristol">  <!--<sect1info>
+    <copyright>
+      <year>2001</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname>
+    </author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>布里斯托尔</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角是发牌区，桌面上剩下的牌放这儿，不能重复发牌。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>发牌区右边的三个空位，每点击一下发牌区，每个里面可以放一张翻开的。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角的四个空位，按递增顺序收牌不考虑花色。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>桌面上有八垛翻开的牌，每垛三张。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌按递减顺序排列，不考虑花色，每次移动一张，空出的位置不能再放牌。</para>
+  <para>发牌区每次发出三张到废牌区，最上面的牌可以用在游戏中，空出的位置不能放其他牌，只能放发牌区来的牌。</para>
+  <para>收牌区从 A 到 K 递增收牌，不考虑花色。收进来的牌不能再用在游戏中。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得1分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>下面的牌看不到，尽可能把下面压着的牌翻出来，尽量把废牌区的牌移到桌面上，K 是最难移动的。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Camelot"><!--<sect1info>
+		<copyright>
+			<year>1998</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>rwsy@mit.edu</email></address>
+	</sect1info>-->
+
+	<title>卡米洛特</title>
+
+	<para>Rosanna Yuen 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>游戏开始的时候，所有的牌都放在发牌区里，每次发一张到废牌区，不能重复。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>放置发牌区过来的牌，只能放一张，必须立刻放到桌面上。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>四行四列，每个空位可以放一张牌。K 只能放在四个角上，Q只能放在第一行和最后一行中间的两个位置，J 只能放在 第一列和最后一列中间的两个位置。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>除了 J、Q 和 K 以外，移除其他所有的牌就羸了，如图所示——</para>
+	<screenshot>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="figures/camelot-goal.png" format="PNG"/>
+			</imageobject>
+			<textobject>
+				<phrase>羸了的桌面图。</phrase>
+			</textobject>
+		</mediaobject>
+	</screenshot>
+	<para>——发牌区和废牌区是空的，不考虑花色。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>这个游戏分两个阶段，二者可以相互切换直至羸或输。第一阶段是将桌面上的空位全部填满，然后到第二阶段，要注意的是，您不能直接跳到第二阶段，只有第一阶段填满后才能进入第二阶段。另外有一点是，可以跳到第一阶段，但记住这时必须要完成第一阶段才能进入第二阶段。唯一的例外是，当发牌区或废牌区为空的情况时。</para>
+	<para>第一阶段——点击发牌区，翻一张牌到废牌区，如果牌是一个：</para>
+	<itemizedlist>
+		<listitem>
+			<para>K：放在桌面上四个角的位置上。</para>
+		</listitem>
+		<listitem>
+			<para>Q：放在第一行或最下面一行的中间位置上。</para>
+		</listitem>
+		<listitem>
+			<para>J：放在第一列或最后面一列的中间位置上。</para>
+		</listitem>
+		<listitem>
+			<para>其他牌：可以放在任何一个空位上。</para>
+		</listitem>
+	</itemizedlist>
+	<para>第二阶段——点击10并移走它，其他两张加起来为10的，也可以用拖动的方法移走。</para>
+	<para>如果一张花牌没有位置可放就输了，或者所有的空位都填满，也没有牌可移也会输。</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>每收取一张牌得1分。</para>
+	<para>可能得到的最高分：40</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>中间的位置总是最安全的，在第一阶段，尽量在中间放牌，把边角空出来，如果看到两个可以成对的，那就可以放在边角上，在第二阶段可以移除它们。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Canfield"><!--<sect1info>
+		<copyright>
+			<year>1998</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>rwsy@mit.edu</email></address>
+	</sect1info>-->
+
+	<title>甘菲德</title>
+
+	<para>Rosanna Yuen 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>左上角的牌垛，桌面上发剩下的牌放在这儿，每次发三张翻开的牌，可以重复发牌。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>在发牌区的右边，放置发牌区过来的牌。最上面的牌可以用在游戏中。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>在发牌区的下边，有十三牌，最上面的牌是翻开的，可以移到收牌区或桌面上。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>在收牌区下面的四垛牌，每个上面有一张翻开的牌，按不同颜色交替递减排列，一组牌可以一起移动。</entry>
+	</row>
+	<row>
+		<entry>收牌区</entry>
+		<entry>右上角的四个空位，里面放了一张基准牌，按花色从基准牌开始递增收取。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>把所有的牌移到收牌区。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>桌面上的牌按花色交替排列，一次可以移动一组牌，移出的空位会被废牌区的牌自动填充，如果废牌区为空，可以放任意一张或一组牌。</para>
+	<para>发牌区每次向废牌区发三张牌，如果最后发牌不够三张，只发余下的几张，如果发牌区为空，则把废牌区的牌全部移回来，按原来的顺序。</para>
+	<para>收牌区按基准牌递增收取(在第一个位置上已经放了一张牌)，其他位置也以这张牌为基准收牌，A 放在 K 上，二放在 A 上，收牌区的牌还可以用在游戏中，双击一张牌可以把它移到收牌区，如果它是可以收取的话。</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>每收取一张牌得一分，这个游戏曾经用在赌场里，得到10分就可以羸。</para>
+	<para>可能得到的最高分是：52</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>拿到手上的才是最真实的，这个游戏很难羸。绝大多数人只是玩游戏，尝试获取更多点。为此，则需要尽可能把牌移到收牌区。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Carpet"><!--<sect1info>
+    <copyright>
+      <year>2001</year>
+      <holder>Vincent Povirk</holder>
+    </copyright>
+    <author>
+      <firstname>Vincent</firstname>
+      <surname>Povirk</surname>
+    </author>
+    <address><email>madewokherd@gmail.com</email></address>
+  </sect1info>-->
+
+  <title>地毯</title>
+
+  <para>Vincent Povirk 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2"><tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的牌垛，发牌后剩下的牌放在这里，每次往废牌区发一张牌，不能重复。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>从发牌区中发过来，最上面一张可以用在游戏中。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角的四个空位，按花色从 A 到 K 递增收牌。在发牌前 A 已经放入收牌区了。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>就是“地毯”，四行五列牌全部翻开，桌面上的牌可以参与到游戏中，但不能移动牌，出现的空位会自动从废牌区或发牌区移一张过来。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>游戏中桌面上的牌。</para>
+  <para>每次从发牌区发一张牌到废牌区，最上面的牌可以用在游戏中，不能重复发牌。</para>
+  <para>收牌区按从 A 到 K 的顺序收牌，在收牌区里的牌仍然可以参与游戏。双击桌面上的一张牌可以把它移到收牌区，如果这张牌可以收取的话。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得一分。</para>
+  <para>可能得到的最高分是：48</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>尽可能多地收牌。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Chessboard">  <!--<sect1info>
+    <copyright>
+      <year>2001</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname></author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>棋盘</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>四个空位在中间排成一列，从您选的基准牌开始按花色递增收牌，如果需要可以从 K 到 A 循环。收进来的牌不能再参与到游戏中。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>在收牌区的两边的五垛牌，牌面都是翻开的，最上边的两垛里各多一张牌。每垛里最上面的一张牌可以用在游戏中。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌都移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌可以按花色递增或递减排列，每垛牌中只有最上面的一张可以移动。空位可以放任何一张可用的牌。</para>
+  <para>收牌从您自己选择的基准牌开始，如果需要可以从 K 到 A 循环。收牌区的牌不能再回到游戏中。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得一分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>一定要选好基准牌，随意地选择会导致零分和输牌。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Clock"><!--<sect1info>
+		<copyright>
+			<year>1998</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>rwsy@mit.edu</email></address>
+	</sect1info>-->
+
+	<title>钟表</title>
+
+	<para>Rosanna Yuen 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>牌放成钟表的形状，十二垛牌每垛四张。</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>最后四张放在发牌区(表的中央)，最上面一张是翻开的。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>把钟面上所有的牌都按点数放在对应的位置上。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>把表中央的牌移到适当的位置，牌垛是钟表形的排列，因此牌按点数放在钟表上，A 放在一点，J 和 Q 放在十一点和十二点的位置。如果您从没见到过钟/表，可以参看下面的示意图：</para>
+	<screenshot>
+	 <mediaobject>
+	    <imageobject>
+			  <imagedata fileref="figures/clock-rules.png" format="PNG"/>
+	    </imageobject>
+	    <textobject>
+	      <phrase>表盘</phrase>
+	    </textobject>
+	  </mediaobject>
+	</screenshot>
+	<para>K 放在中央，当一张牌移到新位置(或者停在原位，K 会停在原位)，这个位置最下面的一张牌会放到中间去翻开，然后继续玩。要移动一张牌，可以拖拽过去，也可以在目的地位置上双击。</para>
+	<para>当中间四个 K 都翻出来，游戏就会结束，如果所有的牌都在正确位置上，就会羸。注意，即使这张牌没有翻开，只要在正确位置上就可以羸。</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>每张在正确位置上的牌得一分(K 不算分，因为钟表上没有 K 的位置)。</para>
+	<para>可能得到的最高分是：48</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>找一个自动完成游戏的方法，不过还没有决定是否要做，如果您输了，这不是您的错(相反，如果羸了，那么您真是好运气！)。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Cover"><!--<sect1info>
+	  <copyright>
+	   <year>2001</year>
+	   <holder>Rosanna Yuen</holder>
+	  </copyright>
+	  <author>
+	   <firstname>Rosanna</firstname>
+	   <surname>Yuen</surname>
+	  </author>
+	  <address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>封面</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的牌垛，发牌后剩余的放在这里。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+    <entry>四垛牌，游戏开始时每个位置放一张牌，出现空位会立即从发牌区移过来一张牌。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把发牌区所有牌都发出去。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上任意两张相同花色的牌就可以消去，空位立即会发牌填充，当桌面上出现四种不同花色无法消去时，游戏结束。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每消去一对牌得两分。</para>
+  <para>可能得到的最高分是：48</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>这是一个简单的游戏，不需多费脑筋，适合不想动脑又能快速反应的情况。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Cruel"><!--<sect1info>
+    <copyright>
+      <year>2005</year>
+      <holder>Zach Keene</holder>
+    </copyright>
+    <author>
+      <firstname>Zach</firstname>
+      <surname>Keene</surname>
+    </author>
+    <address><email>zjkeene@bellsouth.net</email></address>
+  </sect1info>-->
+
+  <title>残忍</title>
+
+  <para>Zach Keene 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2"><tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的空位，因为所有的牌总是放在桌面上，这儿一直是空的，可以重复发牌。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角的一行牌垛，游戏开始时，A 都已经放在这儿了，按花色从 A 到 K 收牌。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>一共十三个牌垛，一次翻四张，直到发牌区翻完。桌面上的牌按花色递减排列。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>收牌区的牌按花色递增排列，桌面上的牌按花色递减排列。如果没有可移动(或者您感觉是这样)，点击左上角空的发牌区，重新发牌。</para>
+  <para>重新发牌是从最后一垛开始，把牌按顺序放在一起，然后把牌翻过来，一次四张，放回到桌面。如果之前没有移动牌，将不能重新发牌。因此，如果重发后不能移动，游戏就输了。</para>
+  <para>注意：无论何时发生了极端情况，比如在一次重新发牌后，桌面只剩下最后一垛一张牌，并且唯一的可能的一次移动是从最终桌面前的一个。移动这一次然后重新发牌只是原来的结果，系统检测到这种情况后会结束游戏。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得一分。</para>
+  <para>可能得到的最高分是：48</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>如果桌面上有几个可以移动的牌，试着先移大牌。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Diamond_Mine">  <!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>钻石矿</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>最上面的牌垛，从任意一张方块开始收牌。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>十三垛牌，每垛牌中三张朝下、一张翻开。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的方块都移到收牌区，桌面上的其他牌按花色，A 在最下面依次排列。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>除了方块以外的其他牌可以递减排列，并且不用考虑花色。整个一组也可以移动，空位置除了方块以外，可以放其他任何单牌或一组牌。</para>
+  <para>方块除了收取外不能移动，收牌区按顺序收取，可以从任何一张开始收。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌，得分为该牌的点数，A 是一分，J 是十一分，Q 是十二分，K 是十三分。</para>
+  <para>桌面上的每个从 A 到 K 按花色排列的牌得三分。</para>
+  <para>可能得到的最高分是：100</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>收集方块是个艰苦的工作，注意各个方块的价值是不同的，不要忘了清理并且把相同的花色放在一起。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Doublets">  <!--<sect1info>
+    <copyright>
+      <year>1998</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname>
+    </author>
+    <address>
+      <email>rwsy@mit.edu</email>
+    </address>
+  </sect1info>-->
+
+  <title>双峰</title>
+  <para>Rosanna Yuen 编写</para>
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角牌垛，放置桌面上发剩下的牌，每次往废牌区发一张牌，可以重复两次。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>在发牌区的右边，放置发牌区过来的牌。最上面的牌可以用在游戏中。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>右边七垛牌排列成拱形(倒着的 U)，每垛牌第一张翻开 。在发牌中，如果发出一个 K，把它移到牌局的底部。往这垛上发其他牌，每个保留区只能放一张牌，当出现空位时，自动填充废牌区的牌，或者，如果废牌区也是空的，就从发牌区发一张。如果所有牌都发完，K 出现在保留区，这一垛牌将冻结，因为 K 不能移动。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>只有一垛，位于保留区最下边一行的中间。双击一张牌可以收取到这里，不考虑花色。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>如果一张牌的点数是当前收牌区里的两倍，就可以双击收取它。J 和 Q 是十一和十二。如果两倍以后超过了十三，就用它减去十三以后得到的余数。比如像这样的顺序：</para>
+  <para>A、2、4、8、3、6、Q、J、9、5、10、7 ...</para>
+  <para>每次从发牌区发一张牌到废牌区，当发牌区空了以后，把废牌区的牌按原来的顺序全部收回来。您有三次重复发牌的机会。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得一分。</para>
+  <para>可能得到的最高分是：48</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>不要 K，您不能做弑君者(K 是王 KAvoiding)，避开它们。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Eagle_Wing">  <!--<sect1info>
+    <copyright>
+      <year>2001</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname>
+    </author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>鹰翼</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的一垛牌，放置桌面上发剩下的牌，每次往废牌区发一张牌，可以重复两次。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>在发牌区的右边，放置发牌区过来的牌。最上面的牌可以用在游戏中。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角的四垛牌，游戏开始时已经放了一张牌，这个是基准牌，其他空位也必须从按这张牌的点数开始收牌，按花色的递增顺序收牌。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>中间(最低的)位置，发十三张牌扣在这儿，用来填充桌面上其他出现的空位。当保留区只有一张牌时，就会翻开可以移到收牌区或桌面其他位置。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>八个空位(左右各四个)，各放一张翻开的牌。桌面上的牌按花色递减排列，每次可以移动一张，或者把一组牌移到收牌区。桌面上的空位最多可以放三张牌。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌按花色递减排列，每次只能移动一张到其他位置。然而，为了简便，可以将一组牌一次移到收牌区，空出的位置自动从保留区填充牌，如果保留区也空了，就从废牌区或从其他牌垛填充牌。</para>
+  <para>保留区主要是往桌面的空位里发牌，但是如果里面只剩一张牌，它就变得可见，并且可以用在游戏中。</para>
+  <para>发牌区每次往废牌区发一张牌，当发牌区为空时，会把废牌区所有的牌按原来顺序都收回来，可以重复发牌三次。</para>
+  <para>收牌区按花色从基准牌(第一个位置里的牌)递增收牌，其他空位也要从这个点数开始收牌，A 放在 K 的上面，二放在 A 的上面，收牌区里的牌不能再用到游戏中。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得1分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>小的筹划可以走更远，移动之前先检查一下，记住每个空位只能放三张牌的规则。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Easthaven">  <!--<sect1info>
+    <copyright>
+      <year>2001</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname>
+    </author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>东港</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的一垛牌，放置桌面上发剩下的牌。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角的四个牌垛，按花色从 A 到 K 递增收牌。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>底下的七垛牌，每垛牌两张扣住，一张翻开。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>移除所有牌。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌按花色交替递减排列，按顺序花色排好的一组可以一起移动，空位可以放 K，或者是以 K 开头的一组牌。</para>
+  <para>如果可能的话，在发更多牌之前，所有空位必须填满。点击发牌区会向桌面每一垛牌放一张翻开的牌，放在原来三张的上面，不能重复发牌。</para>
+  <para>收牌区按花色从 A 到 K 依次递增收牌，收牌区的牌不能再参与游戏中。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得一分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>尽可能地把牌移到收牌区，因为下一轮发牌会压住它，当然由于收牌区的牌不能再用于游戏，您可以根据需要稍后收取，希望这是您今天遇到的最大难题。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Eight_Off"><!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>关闭八</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>左边的四个牌垛，按花色从 A 到 K 收牌。</entry>
+	</row>
+	<row>
+	  <entry>保留区</entry>
+	  <entry>上边八个牌垛，每个空位只能放一张牌，在游戏开始的时候，前面四个空位各放了一张牌。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>保留区下面的八垛牌，每垛放六张翻开的牌。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌按花色递减排序，最上面的牌可以移动。要移动一组牌，那么这组牌的数目必须是小于或等于保留区空位的数目。桌面上的空位置可以放 K 或者是 K 开头的一组牌。</para>
+  <para>收牌区按花色从 A 到 K 递增收牌，虽然这儿的牌从技术上讲，还可以用在游戏中，但实际上这些牌已经毫无用处，游戏不再需要了。</para>
+  <para>桌面上的任何牌都可以放入保留区的空位中，这些牌还可以用在游戏中，也可以直接移动到收牌区。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得一分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>尽可能地把牌移到收牌区，留下来反而会碍手碍脚。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Elevator"><!--<sect1info>
+		<copyright>
+			<year>1999</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>rwsy@mit.edu</email></address>
+	</sect1info>-->
+
+	<title>电梯</title>
+
+	<para>Rosanna Yuen 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>左上角的牌垛，桌面上发剩下的牌放在这儿，每次往废牌区发一张牌，不能重复。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>放置发牌区发过来的牌。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>七垛扣着的牌，最上面一行一张，然后每一行比上一行多一张排成金字塔形，最下边一行翻开。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>把所有牌移到废牌区。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>金字塔里所有没被压着的牌都可以参与游戏，只要点数比废牌区的牌大一点或小一点，都可以移到废牌区，A 在 K 上面，在二的下面。</para>
+	<para>收牌区每次往废牌区发一张牌，不能重复。</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>从金字塔往废牌区移一张牌得一分。</para>
+	<para>可能得到的最高分是：28</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>每个金字塔都要一个坚实的基础，首先对付小牌，注意着尽量多翻开一些牌。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Escalator"><!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>自动扶梯</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的牌垛，桌面上发牌剩下的放在这儿，每次往废牌区发一张牌，不能重复。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>放置发牌区发过来的牌。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>七行交错压着的牌，最上面一行一张，然后每一行比上一行多一张牌，排列成一个金字塔形。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有牌移到废牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>金字塔里所有没被压着的牌都可以参与游戏，只要点数比废牌区的牌大一点或小一点，都可以移到废牌区，A 在 K 上面，在二的下面。</para>
+  <para>收牌区每次往废牌区发一张牌，不能重复。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>从桌面上移除一张牌得一分。</para>
+  <para>可能得到的最高分是：28</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>提前做好计划，这样将来会很方便。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="First_Law">  <!--<sect1info>
+    <copyright>
+      <year>2001</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname>
+    </author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>第一个法律</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的牌垛，开始所有牌都放在这里，如果为空，就把桌面上的牌全部收回来。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>右边的四垛牌，发牌区每次往每垛上各发一张牌。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>移除所有牌。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>点击发牌区会往桌面上的四垛牌上各发一张，如果四张牌里有两张是相同的，可以把右边的移到左边这张上面。空位只能由发牌区发牌填充。</para>
+  <para>不管是多少点数，只要四张牌是相同的，就可以全部移除。</para>
+  <para>当发牌区空了以后，桌面上的牌重新收成一垛，右边的压着左边的放回发牌区。第一张发的牌总是第一次发，直到它被移除，重复发牌没有次数限制。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每移除四张相同的一组得一分。</para>
+  <para>可能得到的最高分是：13</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>请记住适可而止！这个游戏可能永远不会终止，除非您仔细地研究每一次移动。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Fortress">  <!--<sect1info>
+    <copyright>
+      <year>2001</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname></author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>要塞</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>中间的四个空位，按花色从 A 到 K 收牌，收牌区的牌不能再参与到游戏中。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>在收牌区的两边的五垛牌，牌面都是翻开的，最上边的两垛里各多一张牌。每垛里最上面的一张牌可以用在游戏中。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌都移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌可以按花色递增或递减排列，每垛牌中只有最上面的一张可以移动。空位可以放任何一张可用的牌。</para>
+  <para>收牌区按花色从 A 到 K 递增收牌，收牌区中的牌不能再参与到游戏中。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得一分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>作为安全措施，您可以在桌面上创建一些空位，这是赢得游戏的一把钥匙。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Fortunes">  <!--<sect1info>
+    <copyright>
+      <year>1998</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname>
+    </author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>财富</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的牌垛，点击后向桌面上的每个牌垛里发一张牌。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>右边四垛牌。可以将一组牌移到空位中。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>除了 A 以外，移除其他所有的牌。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>A 是最大的牌。当两张相同花色的牌可用时，小牌可以移动，当出现一个空位时，可以填充排列好的一组牌。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得1分。</para>
+  <para>可能得到的最高分是：48</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>当有排好的一组牌时，没有理由放着一个空位。但是，如果有了一个空位，尽量让它空得时间长一些，这样可以为后面的死牌留一手。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Forty_Thieves"><!--<sect1info>
+		<copyright>
+			<year>2008</year>
+			<holder>Ed Sirett</holder>
+		</copyright>
+		<author>
+			<firstname>Ed Sirett</firstname>
+			<surname>Sirett</surname>
+		</author>
+		<address><email>ed@makewrite.demon.co.uk</email></address>
+	</sect1info>-->
+
+	<title>四十大盗</title>
+
+  <para>由 Ed Sirett 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>两副牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的一垛牌，放置桌面上发剩下的牌，每次往废牌区发一张牌，最上面的牌可以用在游戏中。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角的八个空位，按花色从 A 到 K 收牌。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+    <entry>十垛牌，开始时每垛四张牌，按花色移动，每次移动一张，空位可以放任何牌。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌按花色递减排列，每次只能移动一张，空位可以放任何一张牌。作为一个小技巧，如果有足够的空位，一次可以移动多张牌。可以一次移动一组牌到收牌区。</para>
+  <para>发牌区每次发一张牌到废牌区，最上面的一张可以用在游戏中，不能重复。</para>
+  <para>收牌区按花色从 A 到 K 递增收牌，双击收牌区可以自动收牌，双击桌面或废牌区的一张牌可以把它移到收牌区，如果它是可以收取的话。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得5分，当收完一套花色(从 A 到 K)，可以额外得到60分。</para>
+  <para>可能得到的是：1000</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>尽可能地连续移动一垛牌，以便获得一个空位，然后保持二者平衡，以便解决在废牌区出现小点数的死牌。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Fourteen">  <!--<sect1info>
+    <copyright>
+      <year>1999</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname></author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>十四</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>所有牌平均分到十二垛，前面四垛每垛五张牌，其他的每垛四张牌，最上面的牌可以用在游戏中，空位不能被填充。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>移除所有牌。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>两张牌点数加起来为十四就可以消去，A 是1，J、Q、K 分别是 11、12、13。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得1分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>注意顺序，移动的时候要够保证下面的牌还可以成对，否则可能会被堵死。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Freecell"><!--<sect1info>
+		<copyright>
+			<year>1999</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>rwsy@mit.edu</email></address>
+	</sect1info>-->
+
+	<title>空当接龙</title>
+
+	<para>Changwoo Ryu 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>保留区</entry>
+		<entry>最上面一行左边的四个垛，每个空位只能放一张牌。</entry>
+	</row>
+	<row>
+		<entry>收牌区</entry>
+		<entry>右上角的四垛，按花色从 A 到 K 递增收牌，收牌区的牌不能再用于游戏中。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>八垛牌，牌面都是翻开的，前面四垛是七张牌，后面四垛是六张牌。桌面上的牌按花色交替排列，每次只能移动一张，但是如果保留区有足够空位，一次可以移动多张。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>把所有的牌移到收牌区。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>桌面上的牌按不同花色交替递减排列，如果保留区有足够空位，一次可以移动一组牌，桌面上的空位可以填充任何一张牌或一组牌。</para>
+	<para>收牌区按花色从 A 到 K 递增收牌，里面的牌不能再用于游戏，双击一张牌可以把它移到对应的位置，如果它是可以收取的话。</para>
+	<para>保留区的牌可以用在游戏中，也可以移动到收牌区。</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>每收取一张牌得1分。</para>
+	<para>可能得到的最高分是：52</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>空位很有用处，如果可能多留几个空位。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Gaps"><!--<sect1info>
+    <copyright>
+      <year>2005</year>
+      <holder>Zach Keene</holder>
+    </copyright>
+    <author>
+      <firstname>Zach</firstname>
+      <surname>Keene</surname>
+    </author>
+    <address><email>zjkeene@bellsouth.net</email></address>
+  </sect1info>-->
+
+  <title>缝隙</title>
+
+  <para>Zach Keene 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2"><tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>所有的牌都放在四行中，每行13张牌，A 被丢弃，剩下四个空位，可以重发两次牌。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌按花色从2到 K 排列。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>最左边一列的空位可以放任意一张2，最右边的空位可以放任意一张非 K 的牌，需要是跟它左边相同花色，但是大一点数的牌。K 后面的空位不能放牌，空位后面的空位也不能放牌。</para>
+  <para>如果一行牌是从2开头的连续牌，就不能再移动它们了。</para>
+  <para>如果没有可移动的牌(比如，所有的空位都在 K 的后面)，此时双击任意一张牌来重新发牌，所有没排序的牌都会拿走重新发牌，只能重发两次。</para>
+
+            </sect2>
+        <sect2><title>选项</title>
+
+    <para>重发时随机放置空位：选中此项，在重发时随机放置四个空位，如果没有选中，所有空位直接放在已排好序的右边。</para>
+
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>如果是2开头的一行，每张牌按顺序排列将得1分。</para>
+  <para>可能得到的最高分是：48</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>移动出空位时，尽量不要让空位出现在 K 的后面。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Gay_Gordons"><!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>快乐戈登</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>左上角的牌垛，两张翻开的牌，最上面的牌可以用于游戏，不能重新填充或者增加牌。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>十垛牌，每垛有五张翻开的牌，最上面的牌可以用在游戏中，空位不能填充。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>移除所有牌。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>所有加起来等于十一的两张牌可以消除，K 和 Q 算一对，J 和另外的 J 成一对。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每消去一对牌得两分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>如果对牌在底下压着，那么就试着先把上面这张移走。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Giant"><!--<sect1info>
+		<copyright>
+			<year>2009</year>
+			<holder>Ed Sirett</holder>
+		</copyright>
+		<author>
+			<firstname>Ed</firstname>
+			<surname>Sirett</surname>
+		</author>
+		<address><email>ed@makewrite.demon.co.uk</email></address>
+	</sect1info>-->
+
+	<title>巨人</title>
+
+  <para>由 Ed Sirett 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>两副牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角牌垛，放置桌面上发剩下的牌，每次往桌面的牌垛上发一行牌，不能重复。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角的牌垛，按花色从 A 到 K 递增收牌，收牌区最上面的牌还可以参与到游戏中。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>八垛牌，每垛上已经放了一张牌。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>在桌面牌垛的右边，开始为空，可以放任何一张牌。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌按不同花色交替递减排列，每次可以移一张或一组牌，桌面上的空位可以放任何牌，有一个选项可以强制必须移动到相同花色的牌上，稍后会讲到。</para>
+  <para>每次从发牌区向桌面上发一行牌，保留区可以为空或者放任何牌。</para>
+  <para>收牌区按花色从 A 到 K 递增收牌，最上面的牌还可以参与到游戏中，双击一张牌可以把它移到相应的位置，如果它是可以移动的话。在收牌区中双击，将自动收取桌面上可以收的牌。</para>
+          </sect2>
+        <sect2><title>选项</title>
+
+  <para>有两种玩法，不同之处在于，如何排列桌面上的牌。</para>
+  <variablelist>
+    <varlistentry><term>相同花色</term>
+      <listitem>
+      <para>移动牌必须放在相同花色的牌上，相同花色的牌构成一组。</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry><term>交替花色</term>
+      <listitem>
+         <para>移动牌必须放在不同花色的牌上，上面的牌花色必须跟下面的不同。</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得1分。</para>
+  <para>可能得到的最高分：104</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>避免让小牌压在下面，可以多利用保留区。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Glenwood"><!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>格伦伍德</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角牌垛，放置桌面上发剩下的牌，每次往废牌区发一张牌，可以重复一次。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>从发牌区中发过来，最上面一张可以用在游戏中。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角的四垛牌，第一个空位在游戏开始时，由玩家从保留区选择一张牌，这个是基准牌，其他空位也必须从按这张牌的点数开始收牌，按相同花色递增收牌，如果需要从 K 到 A 循环。</entry>
+	</row>
+	<row>
+	  <entry>保留区</entry>
+	  <entry>在左边的四垛牌，每垛有三张翻开的牌，最上面的牌可以用在游戏中，空位不能再放牌。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>收牌区下面的四垛牌，每垛放一张翻开的牌，按递减顺序交替花色排列。最上面的牌可以移到收牌区，各个牌垛之间可以相互移动。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>游戏第一步是选一张牌放到收牌区，一旦选定，其他空位也必须从这个点数开始收牌。</para>
+  <para>收牌区按花色递增收牌，如果需要可以从 K 到 A 循环，收牌区里的牌不能再参与到游戏中。</para>
+  <para>桌面上的牌按不同花色交替递减排列，各个牌垛之间可以相互移动，空位可以填充任何可用的牌或是保留区的牌，如果保留区为空，则从废牌区填充。</para>
+  <para>发牌区每次往废牌区发一张牌，只能重复一次。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得一分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>选择第一张基准牌时要仔细，尽可能早地把保留区的牌发完，有时把牌留在桌面上比移到收牌区更重要。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Gold_Mine"><!--<sect1info>
+    <copyright>
+      <year>2005</year>
+      <holder>Alan Horkan</holder>
+    </copyright>
+    <author>
+      <firstname>Alan</firstname>
+      <surname>Horkan</surname>
+    </author>
+  </sect1info>-->
+
+  <title>金矿</title>
+
+  <sect2><title>牌局</title>
+
+  <informaltable>
+    <tgroup cols="2"><tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的一垛牌，放置桌面上发剩下的牌，每次往废牌区发三张牌，不能重复。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>从发牌区中发过来，最上面一张可以用在游戏中。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角有四个空位，按照从 A 到 K 的递增顺序收牌，最上面的牌还可以拿回到桌面上参与游戏。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>七垛牌，开始都是空的。金矿是 <ulink type="help" url="ghelp:aisleriot#Klondike">克朗代克</ulink> 的一个变种，桌面上的牌按不同花色交替排列，可以移动排列好的一组牌，空位可以放置任何牌。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+  </sect2>
+
+  <sect2><title>目标</title>
+  <para>把所有的牌移到收牌区。</para>
+  </sect2>
+
+  <sect2><title>规则</title>
+  <para>桌面上的牌按不同花色交替递减排列，可以移动排列好的一组牌，空位可以放任何牌。</para>
+  <para>每次发牌区往废牌区发三张牌，废牌区最上面的牌可以用在游戏中，当发牌区为空时，游戏结束，只有一次正确的机会构筑金矿。</para>
+  <para>收牌区按从 A 到 K 的顺序收牌，在收牌区里的牌仍然可以参与游戏。双击桌面上的一张牌可以把它移到收牌区，如果这张牌可以收取的话。</para>
+  </sect2>
+
+  <sect2><title>得分</title>
+  <para>每收取一张牌得1分。</para>
+  <para>可能得到的最高分是：52</para>
+  </sect2>
+
+  <sect2><title>策略</title>
+  <para>填充收牌区空位要特别小心，用技巧比花时间更容易羸，如果您开始没弄好，可以重新开始再试一次。</para>
+  </sect2>
+</sect1>
+
+  <sect1 id="Golf"><!--<sect1info>
+    <copyright>
+      <year>2001</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname>
+    </author>
+    <address>
+      <email>zana@webwynk.net</email>
+    </address>
+  </sect1info>-->
+
+  <title>高尔夫</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>所有剩余的牌放在这儿，每次翻一张到废牌区，不能重复。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>从发牌区中发过来，最上面一张可以用在游戏中。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>七垛牌，每垛有五张翻开的牌。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有牌移到废牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>废牌区里的牌，可以按递增或递减顺序，放置桌面上的牌，只有2可以放在 A 的上面，K 上面不能放任何牌。</para>
+  <para>发牌区每次往废牌区发一张牌，不能重复。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每次从桌面往废牌区移去一张牌得一分。</para>
+  <para>可能得到的最高分是：35</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>记住 K 上面不能放任何牌，当许多牌可以移动而发牌区没有一张新牌时，试着构建一个牌序。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Gypsy"><!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>吉普赛</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>两副牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的一垛牌，放置桌面上发剩下的牌，每次发八张牌，在桌面的每个牌垛上各放一张。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角的八个空位，按花色从 A 到 K 收牌，最上面的牌可以参与到游戏中。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+    <entry>八垛牌，开始时每垛两张扣着一张是翻开，桌面上的牌按花色交替排列，排列好的牌可以一起移动，空位可以放任何牌或一组牌。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌按花色交替递减排列，排列好的牌可以一起移动，空位可以放任何牌或一组牌。</para>
+  <para>每次从发牌区发一张到桌面上的各个牌垛，越发越少不能重复发牌。</para>
+  <para>收牌区按花色从 A 到 K 递增收牌，里面的牌仍然可以参与到游戏中，双击桌面里的一张牌可以把它移到收牌区，如果它可以移动的话。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得5分，完成一个花色牌的收取后(从 A 到 K)，额外获得60分，桌面上每交替排列好一对牌得2分。</para>
+  <para>可能得到的是：1000</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>如果可能尽量多翻开桌面上的牌，记住您可以把收牌区的牌移回桌面参与游戏。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Helsinki">  <!--<sect1info>
+    <copyright>
+      <year>2001</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname></author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>赫尔辛基</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角牌垛，放置桌面上发剩下的牌，无论何时桌面上出现空位时，都会自动发牌。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>十垛牌，每垛牌上放一张翻开的牌。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>移除所有牌。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>若两张牌加起来为十三就可以消去，A 算一，J 是 十一，Q 是十二，K 自己就可以消去。</para>
+  <para>空位会自动从发牌区发牌。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得1分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>尽可能地前进。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Hopscotch"><!--<sect1info>
+		<copyright>
+			<year>1999</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>rwsy@mit.edu</email></address>
+	</sect1info>-->
+
+	<title>跳房子</title>
+
+	<para>Rosanna Yuen 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>左上角牌垛，开始时除了四个 A 以外，其他的牌都在这儿，每次往废牌区发一张牌。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>在发牌区的右边，每次只能放一张牌，牌必须立刻移动收牌区或放到保留区牌垛上。</entry>
+	</row>
+	<row>
+		<entry>收牌区</entry>
+		<entry>最上面的四垛牌，在发牌区的右边，提前已经放了一张 A 在里面，第二垛放的是2，第三垛放的是3，第四垛放的是4。第一垛从 A 开始收牌，第二垛从2开始收牌，第三垛从3开始收牌，第四垛从4开始收牌，当点数超过13后，再从 A 循环，收牌区里的牌不再参与游戏，不区分花色。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>收牌区下面的四垛牌，保留区的牌只能移到收牌区。从废牌区发过来的牌可以放在任何一垛上。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>把所有的牌都移到收牌区。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>收牌区收牌按1、2、3、4为基准，下一张再加上各自的基准点数依次递增，发牌区每次往废牌区发一张牌，但是，废牌区只能放一张牌，这张牌要立即移到收牌区，或者放入保留区，保留区的牌不能再相互移动。</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>每移动一张牌到收牌区得一分。</para>
+	<para>可能得到的最高分是：48</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>游戏中充分运用您的技巧，这儿运气靠得不多，不要压着一会要用的牌，可以考虑留上一列放 K(因为它们是每垛牌的最后一张)。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Isabel"><!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>依莎贝尔</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>十三垛牌，每垛牌中三张朝下、一张翻开。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>移除所有牌。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>消去所有相同点数的牌，移除后下面的牌翻过来，就可以移动了，空位不能填充。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每消去一对牌得两分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>开始每垛有四张牌，技巧在于记住每个位置还剩下多少张牌，这样您就可以均衡地移除它们。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Jamestown"><!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>詹姆斯顿</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的一垛牌，开始时所有牌都放在这里。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>九张牌按3×3排列，桌面上的牌只能看到最上面一张。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>移除所有牌。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>移除点数相同的两张牌，空位自动从发牌区发牌。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每移出一对牌得两分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>尽可能地多移除牌，这是唯一的挑战。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Jumbo"><!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>强伯</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>两副牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角牌垛，放置桌面上发剩下的牌，每次往废牌区发一张牌，重复一次。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>在发牌区的右边，每次从发牌区发一张，最上面的牌可以用在游戏中。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角的牌垛，按花色从 A 到 K 递增收牌，收牌区最上面的牌还可以参与到游戏中。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>九垛牌，先依次放九张扣着的牌，再依次放八张扣着的牌，再依次放七张扣着的牌，依此类推。直到第一垛有九张牌，把每垛的最后一张翻开。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌按不同花色交替递减排列，排列好的可以一起移动，空位可以放 K 或 K 开头的一组牌。</para>
+  <para>发牌区每次往废牌区发一张牌，废牌区最上面的牌可用于游戏中，发牌区空了以后，废牌区的牌按原来的顺序重新回到收牌区，可以重复一次。</para>
+  <para>收牌区按花色从 A 到 K 递增排列，里面的牌还可以参与游戏，双击一张牌可以移到收牌区，如果它是可以移动的。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得1分。</para>
+  <para>可能得到的最高分：104</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>
+
+  </para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Kansas"><!--<sect1info>
+		<copyright>
+			<year>1999</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>rwsy@mit.edu</email></address>
+	</sect1info>-->
+
+	<title>堪萨斯</title>
+
+	<para>Rosanna Yuen 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>左上角牌垛，放置桌面上发剩下的牌，每次往废牌区发一张牌，不能重复。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>从发牌区中发过来，最上面一张可以用在游戏中。</entry>
+	</row>
+	<row>
+		<entry>收牌区</entry>
+		<entry>右上角的四垛牌，开始第一个空位中已经放了一张牌，其他三个空位也从这张牌开始递增收牌。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>在发牌区下面，开始放十二张牌，最上面的牌可用于游戏，或者移到收牌区。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>右边下面的三垛牌，开始时各放一张牌，移动时不考虑花色递减排列，空位自动从保留区填充，保留区为空以后，可以从废牌区移过来一张。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>把所有牌移到收牌区。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>桌面上的牌按不同花色递减排列，排列好的一组可以一起移动，桌面上的空位自动从保留区填充，如果保留区为空，可以由废牌区最上面一张填充。</para>
+	<para>发牌区每次发一张牌到废牌区，最上面的牌可用于游戏，不能重复。</para>
+	<para>收牌区按花色从基准牌(第一个空位放的牌)开始递增收取，其他位置也要从这一张点数开始收牌，A 在 K 的上面，2在 A 的上面，收牌区里面的牌不能再参与到游戏中，双击一张牌可以把它移动到收牌区，如果它是可以移动的话。</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>每收取一张牌得1分。</para>
+	<para>可能得到的最高分是：52</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>您不能从废牌区翻牌，一旦一张牌压死在底下，就很难再翻开，尽量把废牌区的牌移到桌面上。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="King_Albert">  <!--<sect1info>
+    <copyright>
+      <year>2001</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname>
+    </author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>阿尔伯特王</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>上面的四垛牌，收牌区按花色从 A 到 K 收牌。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>右边七垛牌，开始每垛牌的最上面一张是翻开的，保留区不能相互移动，出现的空位也不能再填充。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>九垛牌，第一垛是九张，第二垛是八张，依此类推最后一垛是一张，每垛牌的最上面一张是翻开的。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌按不同花色交替递减排列，空位可以填充任一张牌或一组牌。</para>
+  <para>保留区的牌可以用在游戏中，或者移到收牌区，出现的空位不能再填充。</para>
+  <para>收牌区按花色从 A 到 K 收牌，里面的牌还可以用于游戏。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得1分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>记住任何牌都可以放在空位里，把牌翻开是最要紧的。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Kings_Audience"><!--<sect1info>
+    <copyright>
+      <year>2005</year>
+      <holder>Zach Keene</holder>
+    </copyright>
+    <author>
+      <firstname>Zach</firstname>
+      <surname>Keene</surname>
+    </author>
+    <address><email>zjkeene@bellsouth.net</email></address>
+  </sect1info>-->
+
+  <title>国王会议</title>
+
+  <para>Zach Keene 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2"><tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+        <row>
+          <entry>保留区(接待室)</entry>
+          <entry>外面一圈排成方形的十六张牌，保留区的牌可用于游戏中，可以从废牌区(或者如果为空，可从发牌区填充)。</entry>
+        </row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>中间一行左边的牌垛，每次往废牌区发一张，不能重复。</entry>
+	</row>
+        <row>
+          <entry>废牌区</entry>
+          <entry>发牌区右边的空位，最上面的牌可用于游戏中。</entry>
+        </row>
+        <row>
+          <entry>“王座”</entry>
+          <entry>“接见室”里面的四个空位(在十六张牌环绕的里面)。无论何时，有可用的相同花色的 K 和 Q，它们可以移到这里面。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>接见室下边的四个空位，无论何时，有可用的相同花色 J 和 A，它们可以移动到一个空位里，J 在上面。然后按花色递减顺序收牌。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的收到收牌区或者王座里。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>发牌区每次往废牌区发一张牌，无论何时，有可用的相同花色的 K 和 Q，它们可以移到王座里，把 K 移到 Q 上(反之亦然)，或者双击其他牌。无论何时，有可用的相同花色的 J 和 A，它们可以移到收牌区里，按相同的方式。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每移走接见室的一张牌得一分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>无，国王会议游戏基本上就是靠运气。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Klondike"><!--<sect1info>
+    <copyright>
+      <year>2001</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname>
+    </author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>克朗代克</title>
+
+  <para>由 Jonathan Blandford 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2"><tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的牌垛，放置桌面上发剩下的牌。发牌每次翻一张到废牌区，可以重新发两次。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>从发牌区中发过来，最上面一张可以用在游戏中。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角有四个空位，按照从 A 到 K 的递增顺序收牌，最上面的牌还可以拿回到桌面上参与游戏。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>七垛牌，第一垛发一张牌面朝上的，再在后面所有垛上放一张扣着的牌；然后在第二垛放一张翻开的牌，后面所有垛放一张扣着的牌；重复直到最后一垛牌是七张。桌面上的牌可以按不同花色交替递减排列，一组牌可以一起移动，出现的空位只能由 K 或 K 开头的一组牌填充。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌按不同花色交替递减排列，排列好的可以一起移动，空位可以放 K 或 K 开头的一组牌。</para>
+  <para>牌从发牌区逐个翻到废牌区中，最上面的一张可以放到桌面上，当发牌区空了，可以把废牌区的牌按原来顺序收回来重新发。您有三次重复机会。</para>
+  <para>收牌区按从 A 到 K 的顺序收牌，在收牌区里的牌仍然可以参与游戏。双击桌面上的一张牌可以把它移到收牌区，如果这张牌可以收取的话。</para>
+  <para>双击收牌区中的一张牌，所有可收取的牌都会移到收牌区，这在游戏最后清场的时候非常有用。</para>
+
+          </sect2>
+        <sect2><title>选项</title>
+
+  <para>有三种可能的玩法，不同之处在于发牌区如何发牌。</para>
+  <variablelist>
+    <varlistentry><term>发三张</term>
+      <listitem>
+        <para>一次从发牌区发三张牌，重复次数不限。</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry><term>发一张</term>
+      <listitem>
+        <para>一次从发牌区发一张牌，但是只能重复两次。</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry><term>不重发</term>
+      <listitem>
+        <para>一次从发牌区发一张牌，不能重复。如果您想玩比赛(和受挫折)，可以试试这种玩法。</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  
+  <para>您可能比较喜欢前面两种传统玩法——取决于您住哪儿和谁教的，不重发选项在一些老的规则中设置，但游戏很少使用那种玩法了。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得1分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>当游戏看似要结束时，别轻易放弃! 可以尝试各种方法。有时把收牌区的牌重新放回桌面，可以解开卡住的牌。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Labyrinth"><!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>迷宫</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的牌垛，桌面上发剩下的牌放在这儿。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>上边的四垛牌，A 已放在对应的收牌区位置上。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>在游戏开始时，桌面上每个空位已经放了一张牌。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌按花色和顺序移到收牌区，出现的空位自动从发牌区填充。</para>
+  <para>一旦桌面上的八张牌不能移动，点击发牌区向桌面各个牌垛发一张牌。空位不再自动填充。</para>
+  <para>桌面上每垛牌的最上面和最下面的牌可以移动到收牌区，桌面上的牌互相不能移动，不能重复。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得一分。</para>
+  <para>可能得到的最高分是：48</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>玩之前先好好睡一觉，这样您就能聪明并且警醒，尽量把牌移到收牌区，玩得开心！</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Lady_Jane"><!--<sect1info>
+		<copyright>
+			<year>1999</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>rwsy@mit.edu</email></address>
+	</sect1info>-->
+
+	<title>简女士</title>
+
+	<para>Rosanna Yuen 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>左上角的牌垛，桌面上发剩下的牌放在这儿，每次往保留区的每一垛上发一张牌，当发牌区只剩两张牌时，它们会翻开都可用于游戏中。</entry>
+	</row>
+	<row>
+		<entry>收牌区</entry>
+		<entry>右上角的四垛牌，桌面和保留区发牌后，第一个位置会放一张牌作为基准，按花色递增收牌。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>右边的七垛牌，最上面的牌可以移到桌面或收牌区，空位不能填充，除非是从发牌区发牌过来。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>在发牌区和收牌区下面的七垛牌，第一垛发一张牌面朝上的，再在后面所有垛上放一张扣着的牌，在第二垛放一张翻开的牌，后面所有垛放一张扣着的牌，重复直到最后一垛牌是七张。桌面上的牌按不同花色交替排列，一组牌可以一起移动，出现的空位只能由比基准牌小一点数或者以它开头的一组牌填充。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>把所有牌移到收牌区。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>桌面上的牌按不同花色交替排列，排列好的牌可以一起移动，桌面上出现的空位可以填充比基准牌低一点数或它开头的一组牌来填充。</para>
+	<para>发牌区发牌到保留区，每次往每一垛上发一张牌。</para>
+	<para>保留区或收牌区最上面的牌可以用于游戏中，保留区的牌相互之间不能移动。</para>
+	<para>收牌区按花色从基准牌递增收牌，其他空位也按照基准牌的点数开始收牌，A 放在 K 的上面，2放在 A 的上面，收牌区的牌还可以用在游戏中，双击一张牌可以把它移到收牌区，如果它是可以移动的。</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>每收取一张牌得1分。</para>
+	<para>可能得到的最高分是：52</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>更深入地看，开始比较困难，无论何时都要尽可能地把牌移出保留区。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Maze"><!--<sect1info>
+		<copyright>
+			<year>2000</year>
+			<holder>Telsa Gwynne</holder>
+		</copyright>
+		<author>
+			<firstname>Telsa</firstname>
+			<surname>Gwynne</surname>
+		</author>
+		<address><email>telsa@linuxchix.org</email></address>
+	</sect1info>-->
+
+	<title>迷魂阵</title>
+
+  <para>由 Matthew Wilcox 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>48张：标准牌，不要 K</entry>
+	</row>
+
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>五十四个空格排列成六行九列，按顺序发八张牌，第九个空着，再在十到十七位置上发牌，让第十八个空着，接着就正常发完牌，然后去掉所有的 K(这个游戏没有弄太复杂)，这样就有六个空位。牌左边的空位可以放相同花色且小一点数的牌，右边的空位可以放相同花色但大一点数的牌。A 放在 Q 的后面，或者放在左上角的空位中，Q 可以放在 A 的左边，或者右下角的位置。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把每个花色的牌按递增顺序排好，A 在左上角的位置，创建一系列牌序：相同花色的 A 到 Q，再另外一个 A 接着上一个 Q，再第三个 A 接上一个Q，第四个 A 接上一个 Q，从 A 到 Q 都是相同的花色。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>每次移动一张牌，牌左边的空位可以放相同花色且小一点数的牌，右边的空位可以放相同花色但大一点数的牌。A 放在 Q 的后面，或者放在左上角的空位中，Q 可以放在 A 的左边，或者右下角的位置。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每正确排好一张牌得一分。</para>
+  <para>可能得到的最高分是：48</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>多个连续的空位可以排上一长队牌，当心在移动一张牌时出现无尽循环的陷阱。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Monte_Carlo"><!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>蒙特卡罗</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的牌垛，桌面上发牌剩下的放在这儿，每次往废牌区发一张牌，不能重复。当桌面上出现空位时发牌。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>五行五列，每个位置放一张牌，开始每个空位放一张牌，点击发牌区时，空位右边的牌往左移，使得空位全部到最右边，然后发牌填充。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>移除所有牌。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>相同的两张牌横着、竖着、斜着相邻，就可以点击消去。</para>
+  <para>桌面上出现空位后，点发牌区会把空位后面的牌往前移，让空位全部到最后，然后往空位里发牌。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每消去一对牌得两分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>注意发牌时，桌面上的牌会收缩成什么样，有时让一对牌留着发牌，会创造出更多的对牌。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Napoleons_Tomb"><!--<sect1info>
+		<copyright>
+			<year>2007</year>
+			<holder>Kimmo Karlsson</holder>
+		</copyright>
+		<author>
+			<firstname>Kimmo</firstname>
+			<surname>Karlsson</surname>
+		</author>
+		<address><email>kimmo.karlsson@gmail.com</email></address>
+	</sect1info>-->
+
+	<title>拿破仑墓</title>
+
+  <para>由 Kimmo Karlsson 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>左上角的牌垛。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>挨着发牌区。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>三行三列，全部是翻开的。</entry>
+	</row>
+	<row>
+		<entry>收牌区</entry>
+		<entry>桌面中间的牌垛，按递减收牌，和四个角上的牌垛，按递增收牌，不考虑花色。</entry>
+	</row>
+	<row>
+		<entry>保留区</entry>
+		<entry>桌面上另外四个不是收牌区的牌垛，保留区每次只能放一张牌。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有小于6的牌移到中心，把大于7的牌收到四个角上。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>点击发牌区发牌，每次可以往桌面上放一张牌，移到收牌区的牌不能再移动，四个角从7到 K 收牌，中心是从6到 A 收牌，然后再从 A 到6，不考虑花色。</para>
+
+          </sect2>
+        <sect2><title>选项</title>
+
+  <para>发三张牌：如果选中一次发三张牌，您可以重复发三次牌。</para>
+  <para>自动：选中自动收牌，如果可以收取的话，牌会自动移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得1分。</para>
+
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>尽量留着保留区，让拿破仑进入坟墓并不容易，但可以试试。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Neighbor"><!--<sect1info>
+		<copyright>
+			<year>1998</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>rwsy@mit.edu</email></address>
+	</sect1info>-->
+
+	<title>邻国</title>
+
+	<para>Rosanna Yuen 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>左上角的牌垛，发牌方式下面会讲到。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>五行五列，每个位置放一张牌。开始时每个位置发一张牌，点击发牌区时，空位右边的牌往左移，使得空位全部到最右边，然后发牌填充。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>移除所有牌。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>点击 K 可以移除它们，其他牌必须两个横、竖斜相邻，并且加起来等于十三才能消去。</para>
+
+	        </sect2>
+        <sect2><title>选项</title>
+
+	<para>没有</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>每收取一张牌得1分。</para>
+	<para>可能得到的最高分是：52</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>先把桌面上面的牌移走，这样可以创造更多的移动机会。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Odessa"><!--<sect1info>
+		<copyright>
+			<year>1998</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>rwsy@mit.edu</email></address>
+	</sect1info>-->
+
+	<title>敖德萨</title>
+
+	<para>Rosanna Yuen 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>收牌区</entry>
+		<entry>左边的四垛牌，按花色从 A 到 K 递增收牌。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>七垛牌，各发三张扣着的牌，再各发三张翻开的牌，然后中间五垛再各发两张翻开的牌。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>把所有的牌移到收牌区。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>桌面上的牌按花色递减排列，一组牌可以一起移动，不考虑顺序。排好顺序的牌可以移到对应的收牌区位置，空位可以由 K 或 K 开头的一组牌填充。</para>
+	<para>收牌区按花色从 A 到 K 递增收牌，收牌区里的牌不能再用于游戏中。</para>
+
+	        </sect2>
+        <sect2><title>选项</title>
+
+	<para>没有</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>游戏开始后，按花色顺序排列得一分，在桌面内移动创建一个新的顺序得一分。收取一张牌得一分。</para>
+	<para>可能得到的最高分是：412</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>您坚持得愈久，收获也愈多，尽可能不要收牌，牌序越长得分也越多。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Osmosis"><!--<sect1info>
+		<copyright>
+			<year>1998</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>rwsy@mit.edu</email></address>
+	</sect1info>-->
+
+	<title>渗透</title>
+
+	<para>Rosanna Yuen 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>保留区</entry>
+		<entry>左边四垛牌，每垛放三张扣着的牌和一张翻开的牌，不能进行相互移动。</entry>
+	</row>
+	<row>
+		<entry>收牌区</entry>
+		<entry>右边的四垛牌，第一个空位里放了一张牌。</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>所有剩余的牌放在这儿，每次往废牌区发一张牌，可以重复两次。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>从发牌区中发过来，最上面一张可以用在游戏中。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>把所有的牌移到收牌区。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>所有与收牌区第一个牌花色相同的牌可以放在这里，不需要按顺序，其他空位也必须按第一个基准牌的点数开始收牌。开始后，后面的收牌区位置只能按照第一个位置的牌来收取，从保留区移动牌也遵守这个规则。</para>
+	<para>牌从发牌区逐个翻到废牌区中，最上面的一张可以放到桌面上，当发牌区空了，可以把废牌区的牌按原来顺序收回来重新发。您有三次重复机会。</para>
+
+	        </sect2>
+        <sect2><title>选项</title>
+
+	<para>发三张牌：每次从收牌区往废牌区发三张牌，不限制发牌次数。</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>每收取一张牌得一分。</para>
+	<para>可能得到的最高分是：52</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>这是个没有巧合的游戏，也叫“耐心游戏”，不能自动往第二个(或第三个)收牌区收牌，有时可以使用不同顺序来从保留区移出更多牌。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Peek"><!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>皮克</title>
+
+	<para>Rosanna Yuen 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>保留区</entry>
+		<entry>左边四垛展开的牌，每垛有四张翻开的牌，不能相互移动。</entry>
+	</row>
+	<row>
+		<entry>收牌区</entry>
+		<entry>右边的四垛牌，第一个空位里放了一张牌。</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>所有剩余的牌放在这儿，每次往废牌区发一张牌，可以重复两次。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>从发牌区中发过来，最上面一张可以用在游戏中。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>把所有的牌移到收牌区。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>所有与收牌区第一个牌花色相同的牌可以放在这里，不需要按顺序，其他空位也必须按第一个基准牌的点数开始收牌。开始后，后面的收牌区位置只能按照第一个位置的牌来收取，从保留区移动牌也遵守这个规则。</para>
+	<para>牌从发牌区逐个翻到废牌区中，最上面的一张可以放到桌面上，当发牌区空了，可以把废牌区的牌按原来顺序收回来重新发。您有三次重复机会。</para>
+
+	        </sect2>
+        <sect2><title>选项</title>
+
+ 	<para>发三张牌：每次从收牌区往废牌区发三张牌，不限制发牌次数。</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>每收取一张牌得一分。</para>
+	<para>可能得到的最高分是：52</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>保留区的牌可以看到，所以请选择一个恰当的排列顺序。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Pileon"><!--<sect1info>
+		<copyright>
+			<year>1998</year>
+			<holder>Nick Lamb</holder>
+		</copyright>
+		<author>
+			<firstname>Nick</firstname>
+			<surname>Lamb</surname>
+		</author>
+		<address><email>njl195@zepler.org.uk</email></address>
+	</sect1info>-->
+
+	<title>根冠</title>
+
+	<para>Nick Lamb 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>十五垛牌，排列成四行，每垛放四张翻开的牌，一共放十三垛，最后两垛为空，每垛可以放四张牌，或者是空位。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>每垛牌放四张相同的牌，最后两垛为空，但是不必在意空位是否是原位或者开头成空位了。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>相同的牌可以放一起，但是不能超过四张，一组相同的可以一起移动，但不会得分，空位可以放任意一张或一组牌。</para>
+	<para>一旦一垛牌四张相同，就不能再移动了，最上面的牌显示不再需要它们，也不再参与到游戏中，移动它们也没什么意义。</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>排列好一垛牌得4分，每张一分，没有其他得分的方法。</para>
+	<para>可能得到的最高分是：52</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>尽可能保留一个空位，不要让单牌压在了最底下，尤其是这张牌在别处不是最下面。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Plait"><!--<sect1info>
+		<copyright>
+			<year>1999</year>
+			<holder>W. Borgert</holder>
+		</copyright>
+		<author>
+			<firstname>W.</firstname>
+			<surname>Borgert</surname>
+		</author>
+		<address><email>debacle@debian.org</email></address>
+	</sect1info>-->
+
+	<title>辫子</title>
+
+	<para>W. Borgert 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>两副牌</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>从右边数第三列中间的牌垛，可以重发两次。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>从右边数第四列中间的牌垛，在发牌区的左边。</entry>
+	</row>
+	<row>
+		<entry>收牌区</entry>
+		<entry>右边的八个牌垛，开始时已放了一张基准牌，所有空位都是从这张牌开始收取。</entry>
+	</row>
+	<row>
+		<entry>辫子</entry>
+		<entry>桌面中间的一组牌，开始有20张牌，只有最上面的一张可以移动。</entry>
+	</row>
+	<row>
+		<entry>边牌</entry>
+		<entry>桌面上边和下边，在中间辫子左边和右边的四个位置，可以自动从辫子发牌过来。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>在辫子左右各四垛牌，在上下边牌的中间，每垛只能放一张牌。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>把所有的牌移到收牌区。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>八个收牌区都从一个相同的基准牌开始收牌，在开始的时候可以选择是递增还是递减排列，您可以从中间的“辫子”里收牌，也可以从两边的八垛牌，从四个边牌垛，或者从废牌区收牌。</para>
+	<para>如果没有移动的牌，发牌区也空了，这时游戏就会结束。</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>没有得分，只有羸和输。</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>尽量移走“辫子”里的牌，它们很难翻开，然后拿走桌面上排列区的牌，它们会提供一些空位，用来临时存储一些牌。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Poker"><!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>纸牌戏</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>左上角的牌垛。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>在发牌区旁边，废牌区只能放一张牌。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>五行五列，每个空位只能放一张牌。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>尽可能地创建“一手牌”来得分，牌局可以有十二手牌——五行、五列，以及两个对角线，超过75分就可以羸。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>点击发牌区每次发一张牌，这张牌移走后才能接着发下一张牌，一旦放下，这张牌就不能再移动了。</para>
+
+          </sect2>
+        <sect2><title>选项</title>
+
+  <para>乱序模式：选中此项，放下的牌还可以移动，这种模式下您要120分才能羸。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>一手牌的积分使用英国记点积分系统，如下所述</para>
+
+  <informaltable>
+    <tgroup cols="3">
+      <tbody>
+        <row>
+          <entry>手</entry>
+          <entry>描述</entry>
+          <entry>得分</entry>
+        </row>
+        <row>
+          <entry>同花顺</entry>
+          <entry>相同花色按顺序排列的一组牌</entry>
+          <entry>30</entry>
+        </row>
+        <row>
+          <entry>四张相同的</entry>
+          <entry>包含四张相同点数的牌</entry>
+          <entry>16</entry>
+        </row>
+        <row>
+          <entry>顺子</entry>
+          <entry>按顺序排列的一组牌</entry>
+          <entry>12</entry>
+        </row>
+        <row>
+          <entry>满堂红</entry>
+          <entry>三个里面有两个点数相同</entry>
+          <entry>10</entry>
+        </row>
+        <row>
+          <entry>三个相同点数</entry>
+          <entry>包含三个相同点数的牌</entry>
+          <entry>6</entry>
+        </row>
+        <row>
+          <entry>同花</entry>
+          <entry>五张牌都是相同花色</entry>
+          <entry>5</entry>
+        </row>
+        <row>
+          <entry>两对</entry>
+          <entry>包含两对相同的牌</entry>
+          <entry>3</entry>
+        </row>
+        <row>
+          <entry>一对</entry>
+          <entry>包含两张相同的牌</entry>
+          <entry>1</entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+  <para>可能得到的的最高分：276</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>记住您几乎可以看到一半的牌，对此做出相应的计划，不要想着能骗过电脑。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Quatorze"><!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>夸托尔泽</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的牌垛，桌面上发剩下的牌放在这儿，桌面上出现空位后，立即从发牌区移动一张过去。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>五行五列，每个位置放一张牌，游戏开始时每个空位已经放了一张牌。空位由发牌区填充，一旦发牌区为空，空位会被右边的牌依次移动过来填充，这样空位就被移到最后头了。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>移除所有牌。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>如果一行或一列中，两张牌加起来是十四(J 是11，Q 是12，K 是13)，就可以被消去。</para>
+  <para>空位自动由发牌区填充，一旦发牌区为空，空位会被右边的牌依次移动过来填充，这样空位就被移到最后头了。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每消去一对牌得两分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>游戏中经常会出现只能移动一次，请完成它。一旦发牌区为空，桌面上就会有更多地移动。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Royal_East"><!--<sect1info>
+    <copyright>
+      <year>1999</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname></author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>皇家东</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角牌垛，放置桌面上发剩下的牌，每次往废牌区发一张牌，不能重复。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>从发牌区中发过来，最上面一张可以用在游戏中。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>桌面三行三列牌的四个角，开始第一个位置已经放了一张牌，这是基准牌，按花色递增收牌，如果需要把 A 放到 K 的上面。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>桌面排列区上翻开的五个牌垛，排成三张牌的十字交叉形。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌都移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌按递减顺序排列，不考虑花色，K 放在 A 的上面，每次只能移一张，出现的空位可以放任何牌。</para>
+  <para>收牌区都从基准牌开始收牌，按花色递增收牌，如果需要可以把 A 放到 K 的上面。收牌区的牌不能再参与游戏。</para>
+  <para>发牌区每次往废牌区发一张牌，废牌区最上面的牌可以用于游戏中，不能重复。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得一分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>寻宝是一件奇妙的事情，但是您要知道它们在哪儿，记住每垛牌的点数可以帮助您找到它们。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Saratoga">
+<!--<sect1info>
+    <copyright>
+      <year>2001</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname>
+    </author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>萨拉托加</title>
+
+  <para>在 Jonathan Blandford 工作的基础上，由 Alan Horkan 编写。</para>
+  <!-- Also documented by Alan Horkan (2005)
+  based on documentation by Rosann Yuen -->
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2"><tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的牌垛，放置桌面上发剩下的牌。发牌每次翻一张到废牌区，可以重新发两次。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>从发牌区中发过来，最上面一张可以用在游戏中。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角有四个空位，按照从 A 到 K 的递增顺序收牌，最上面的牌还可以拿回到桌面上参与游戏。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>七垛牌，第一行全部放一张翻开的牌，第二行从第二垛开始都放一张翻开的牌，每次从下一垛开始放牌，直到最后一垛是七张牌，基本上萨拉托加跟空档接龙一样，只是所有的牌是翻开的，由于可以看到所有的牌，这样玩起来可以减少风险，玩起来更容易些。桌面上的牌按递减顺序交替花色排列，排列好的牌可以一起移动，空位只能放 K 或 K 开头的一组牌。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌可以按不同花色交替排列，排列好的一组牌可以一起移动。空位置仅能由 K 或 K 开始的一组来填充。</para>
+  <para>牌从发牌区逐个翻到废牌区中，最上面的一张可以放到桌面上，当发牌区空了，可以把废牌区的牌按原来顺序收回来重新发。您有三次重复机会。</para>
+  <para>收牌区按从 A 到 K 的顺序收牌，在收牌区里的牌仍然可以参与游戏。双击桌面上的一张牌可以把它移到收牌区，如果这张牌可以收取的话。</para>
+
+<!-- TODO 
+          </sect2>
+        <sect2><title>Options</title>
+
+  <para>
+    Three card deals: If checked, the Stock will deal three each time.
+    Otherwise, the Stock will deal singly into the Waste.
+  </para>
+  <para>
+    King Only: If checked empty space may be filled with Kings or 
+    groups of cards starting with a King only.  
+  </para>
+-->
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得1分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>当游戏看似要结束时，别轻易放弃! 可以尝试各种方法。有时把收牌区的牌重新放回桌面，可以解开卡住的牌。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Scorpion"><!--<sect1info>
+		<copyright>
+			<year>1999</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>rwsy@mit.edu</email></address>
+	</sect1info>-->
+
+	<title>黑心人</title>
+
+	<para>Rosanna Yuen 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>左上角的牌垛，发牌后剩下的三张放在这里。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>发牌区右边的七垛牌。前面四垛各发一张扣着的牌，后面三垛各放一张翻开的牌，再重复两次，也就是这样发三次，然后从第四行开始都发翻开的牌。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>创建四垛牌，每垛包含相同花色按顺序排列的13张牌，</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>桌面上的牌按花色递减排列，可以移一垛牌不考虑顺序，空位可以放 K 或 K 开头的一组牌。</para>
+	<para>另外一点，点击发牌区会发出最后三张牌，放在开头的三垛牌里。</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>按花色排好的牌，得分为：排序的牌张数 - 1。每排好一种花色的13张牌，可以得到额外4分奖励，翻开一张扣着的牌得3分。</para>
+	<para>可能得到的最高分是：100</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>解开一个结通常都比较困难，避免把自己弄成一团乱麻。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Scuffle"><!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>混战</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的牌垛，除了 A 以外，其他所有牌都放在这儿，点击发牌区每次往废牌区发一张牌。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角有四个空位，每个空位在开始时都放有一个 A，收牌区只考虑点数不管花色。</entry>
+	</row>
+	<row>
+	  <entry>保留区</entry>
+	  <entry>收牌区下面的四个空位，每次点一下发牌区，每个空位上放一张牌，最上面的牌可以移到收牌区，废牌区的牌只能移到收牌区。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>点击发牌区往保留区发四张翻开的牌，如果可能，可以把牌再移到收牌区，重复这个过程直到发牌区没有牌，并且也不再能往收牌区移动。</para>
+  <para>把所有牌发到保留区并且重新排列，再把牌收回发牌区重新发牌，可以重复两次。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得一分。</para>
+  <para>可能得到的最高分是：48</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>试着留心保留区压在下面的牌，当出现机会时，您可以由此决定移动哪一张牌。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Seahaven"><!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>海港</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>四垛牌——两个在左上角，两个在右上角，按花色从 A 到 K 收牌。</entry>
+	</row>
+	<row>
+	  <entry>保留区</entry>
+	  <entry>上边中间的四垛牌，每个空位只能放一张牌，开始时两个位置已经各放一张牌。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>在发牌区和收牌区下边的十垛牌，放置其他五十张牌，每垛五张。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌按花色递减排序，最上面的牌可以移动。要移动一组牌，那么这组牌的数目必须是小于或等于保留区空位的数目。桌面上的空位置可以放 K 或者是 K 开头的一组牌。</para>
+  <para>收牌区按花色从 A 到 K 递增收牌，虽然这儿的牌从技术上讲，还可以用在游戏中，但实际上这些牌已经毫无用处，游戏不再需要了。</para>
+  <para>桌面上的任何牌都可以放入保留区的空位中，这些牌还可以用在游戏中，也可以直接移动到收牌区。</para>
+  <para>为了方便，按顺序排列的牌可以一起移到对应的收牌区，不用一个一个地移动。这在游戏结束时非常方便。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得一分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>尽可能地把牌移到收牌区，留下来反而会碍手碍脚。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Sir_Tommy"><!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>汤米爵士</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的一垛牌，放置桌面上发剩下的牌，每次往废牌区发一张牌。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>发牌区右边的牌垛，只能存放一张牌，里面的牌必须立刻移到收牌区或者放到保留区。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>废牌区右边的四垛牌，按顺序从 A 到 K 收牌，不必考虑花色。</entry>
+	</row>
+	<row>
+	  <entry>保留区</entry>
+	  <entry>收牌区下面的四垛牌，保留区的牌只能移到收牌区。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>收牌区按顺序从 A 到 K 收牌，不考虑花色，里面的牌不能再参与游戏，每次发牌区向废牌区发一张牌，废牌区只能放一张牌，这张牌要立刻移到收牌区或者保留区，保留区的牌不能再重新排列。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每移动一张牌到收牌区得一分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>在保留区中尽量不要让大牌压着小牌。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Spider"><!--<sect1info>
+		<copyright>
+			<year>1998</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>rwsy@mit.edu</email></address>
+	</sect1info>-->
+
+	<title>蜘蛛纸牌</title>
+
+	<para>由 Jonathan Blandford 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>两副牌</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>左上角的一垛牌，放置桌面上发剩下的牌，点击向每个牌垛发一张牌。</entry>
+	</row>
+	<row>
+		<entry>收牌区</entry>
+		<entry>上面的八个牌垛，只能放从 K 到 A 递减顺序排好的一组牌。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>十垛牌，四垛(第1、4、7、10垛)放五张扣着的牌和一张翻开的牌，其他牌垛放四张扣着和一张翻开的牌。桌面上的牌递减排列不需考虑花色，排好的一组可以一起移动，空位可以填充任何牌或一组牌。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>收牌区八个空位分别是从 K 到 A 顺序的八组牌。</para>
+	<para>如果您想试试非常难的挑战，不把牌移到收牌区，而是在桌面上排出八组相同顺序的牌垛。它之所以难的原因在于没有多少可用的空位。实事上，这几乎是不可能的。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>递减排列不考虑花色，排列好的牌可以一起移动，空垛可以放任何牌或一组牌。</para>
+	<para>点击发牌区会往每一垛上发一张牌。但是，所有牌垛上都要有牌，如果有空垛，会显示一条错误信息。</para>
+	<para>从 K 到 A 递减排列的一组牌可以移到收牌区。一旦移过去，这些牌将不能在参与游戏。</para>
+
+	        </sect2>
+        <sect2><title>选项</title>
+
+  <para>有三种可能的牌面，每副牌有104张。</para>
+  <variablelist>
+    <varlistentry><term>单花色</term>
+      <listitem>
+        <para>这副牌只有黑桃，这是最简单的蜘蛛纸牌，也是学习基本技能的好方法。</para>
+      </listitem>
+    </varlistentry>    
+    <varlistentry><term>双花色</term>
+      <listitem>
+        <para>这副牌里有红心和黑桃，每个花色都有四张相同的牌，跟标准全花色相比不算太难。</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry><term>全花色</term>
+      <listitem>
+        <para>这是标准的两副牌，每种花色都有两套完整的牌，这是标准蜘蛛纸牌，也是最难的。</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  
+  <para>许多传统的蜘蛛纸牌不要收牌区，直接把排好的牌移走，这对游戏也没有什么影响。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+	<para>每个排好序的牌垛，得分是：牌的数量 - 1</para>
+	<para>可能得到的最高分是：96</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>如果开始您没有成功，也不必强求。只要有可能就排序，多翻开扣着的牌。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Spider_Three_Decks"><!--<sect1info>
+		<copyright>
+			<year>1998</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>rwsy@mit.edu</email></address>
+	</sect1info>-->
+
+	<title>蜘蛛纸牌(三副)</title>
+
+	<para>由 Jonathan Blandford 和 Daniel Werner 编写</para>
+
+	<sect2><title>牌局</title>
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>三副牌</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>左上角的一垛牌，放置桌面上发剩下的牌，点击向每个牌垛发一张牌。</entry>
+	</row>
+	<row>
+		<entry>收牌区</entry>
+		<entry>上面的十二垛。这不是“官方规则”的一部分。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>十二垛牌。前面六垛四张扣着，一张翻开，剩下的牌垛扣3张翻开一张。排列不考虑花色，按顺序排好的一组牌可以一起移动。空位可以放任何牌或一组牌。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+	</sect2>
+
+	<sect2><title>目标</title>
+	<para>收牌区放十二组(每种花色三张)从 K 到 A 递减排列好的牌。</para>
+	<para>如果您想试试非常难的挑战，不把牌移到收牌区，而是在桌面上排出十二组相同顺序的牌垛。它之所以难的原因在于没有多少可用的空位。实事上，这几乎是不可能的。</para>
+	</sect2>
+
+	<sect2><title>规则</title>
+	<para>递减排列不考虑花色，排列好的牌可以一起移动，空垛可以放任何牌或一组牌。</para>
+	<para>点击发牌区会往每一垛上发一张牌。跟其他蜘蛛纸牌不同，空垛也允许发牌。</para>
+	<para>按顺序排列好的十三张牌可以移到收牌区。一旦移过去，这些牌将不能在参与游戏。</para>
+	</sect2>
+
+	<sect2><title>得分</title>
+	<para>每个排好序的牌垛，得分是：牌的数量 - 1</para>
+	<para>可能得到的最高分是：144</para>
+	</sect2>
+
+	<sect2><title>策略</title>
+	<para>如果开始您没有成功，也不必强求。只要有可能就排序，多翻开扣着的牌。</para>
+	</sect2>
+</sect1>
+
+  <sect1 id="Spiderette"><!--<sect1info>
+    <copyright>
+      <year>2001</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname>
+    </author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>蜘蛛纸牌(一副)</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的牌垛，点击后向桌面上的每个牌垛里发一张牌。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角的四垛牌。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>下边七垛牌，先在七垛上发一张扣着的，然后在后六垛上发一张扣着的，再在后五垛上发一张，这样一直发到最后一垛是七张牌，把每一垛最上面一张翻开。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>创建四个每垛13张按花色递减顺序排列的牌垛。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌按递减顺序排列，不考虑花色，按顺序排好的一组可以一起移动，空位可以放任何牌或一组牌。</para>
+  <para>发牌时桌面上每一垛都要有牌，除了最后一次发牌之外，点击发牌区后给每一垛放一张牌。</para>
+  <para>按花色排列好的十三张牌可以移到收牌区，放进去后不能再参与到游戏中。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>按顺序排好一张得一分。</para>
+  <para>可能得到的最高分是：48</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>尽可能在桌面上保留一个空位，用于移动牌时的交换空间。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Straight_Up"><!--<sect1info>
+		<copyright>
+			<year>1999</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>rwsy@mit.edu</email></address>
+	</sect1info>-->
+
+	<title>直上</title>
+
+	<para>Rosanna Yuen 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>左上角的一垛牌，放置桌面上发剩下的牌，每次往废牌区发一张牌，可以重复两次。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>从发牌区中发过来，最上面一张可以用在游戏中。</entry>
+	</row>
+	<row>
+		<entry>收牌区</entry>
+		<entry>右上角的四垛牌，开始时每垛上已经放一张2在里面，按花色递增收牌到 A。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>发牌区下面的牌垛，开始放有13张牌，最上面的牌可以移到桌面和收牌区。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>右下边的四垛牌，开始时每垛发一张牌，按花色排列，空位自动从保留区牌，一旦保留区为空，还可以从废牌区发牌过来。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>把所有牌移到收牌区。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>桌面上的牌按花色递减排列，排列好的一组可以一起移动，桌面上的空位自动从保留区填充，如果保留区为空，也可以从废牌区发牌过来。</para>
+	<para>发牌区每次发一张牌到废牌区，最上面的可参与游戏，可以重复两次发牌。</para>
+	<para>收牌区按花色从2到 A 收牌，里面的牌不能再参与到游戏中，双击一张牌可以自动移动对应的收牌区，如果它是可以移动的话。</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>每移动一张牌到收牌区得一分。</para>
+	<para>可能得到的最高分是：48</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>不要让任何牌掉队！尽可能地往收牌区移动。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Streets_And_Alleys"><!--<sect1info>
+    <copyright>
+      <year>2001</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname>
+    </author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>大街小巷</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>中间一列的四垛牌，从 A 到 K 收牌。收牌区最上面的牌还可以回到桌面参与游戏。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>八垛牌(四个在收牌区左边，四个在右边)，所有牌翻开放在这儿，因为总共是八垛，所以左边四垛每垛七张，右边四垛每垛六张牌，所有牌都是可以看到的。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌按递减顺序排列，不必按花色，每次只能移动一张牌，移出的空位可以放任何一张牌。</para>
+  <para>收牌区按花色递增收牌。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得1分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>尽可能移动到收牌区，桌面上留上一个空位。</para>
+  </sect2>
+</sect1>
+
+
+
+  <sect1 id="Ten_Across"><!--<sect1info>
+		<copyright>
+			<year>1999</year>
+			<holder>James LewisMoss</holder>
+		</copyright>
+		<author>
+			<firstname>James</firstname>
+			<surname>LewisMoss</surname>
+		</author>
+		<address><email>rwsy@mit.edu</email></address>
+	</sect1info>-->
+
+	<title>跨越十</title>
+
+	<para>James LewisMoss 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>临时置牌点</entry>
+		<entry>放置不用的牌，开始时由游戏填充，有一种版本在它们空了以后，不允许您再放别的牌进去。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>底下的十垛牌，先从左到右发十张扣着的牌，然后把第一张和最后一张翻开，接着再从右到左(反转)发十张牌，把开头两张和最后两张翻开。继续这样发牌(转圈发每次多翻开一张)，直到发到50张牌，最后剩下两张放入上边的临时置牌点。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>桌面上排成四垛牌，每垛包含相同花色从 K 到 A 的牌。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>只有 K 可以放在桌面上的空位中。</para>
+	<para>移动的牌必须花色相同，并且比目的地的牌小一点数，移动一垛牌时最前头一张要跟目的地的牌相匹配。</para>
+
+	        </sect2>
+        <sect2><title>选项</title>
+
+	<para>允许使用临时置牌点</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>只有羸或输，没有得分。</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>这个游戏很难羸(跟开始牌的摆放很有关系)。不要忘记临时置牌点，尽快清空它们，在出现卡住时很有用。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Terrace"><!--<sect1info>
+		<copyright>
+			<year>2008</year>
+			<holder>David Rogers</holder>
+		</copyright>
+		<author>
+			<firstname>David</firstname>
+			<surname>Rogers</surname>
+		</author>
+		<address><email>ezekiel000@lavabit.com</email></address>
+	</sect1info>-->
+
+	<title>阳台</title>
+
+  <para>David Rogers 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>两副牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的牌垛，桌面和保留区发剩下的牌放在这儿，每次往废牌区发一张，不能重复。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>放置发牌区过来的牌，最上面的牌可用于游戏。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>包含十一张翻开的牌，所有的牌都可以看到，但只有最上面一张可用于游戏。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>中间的八个空位，按不同花色交替排列，排列顺序是从基准牌递增排列。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+    	  <entry>选择出基准牌后，立即补充到九张牌。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌按不同花色交替递减排列，不允许成组移动，出现的空位必须由废牌区最上面的牌，或者从发牌区发来的牌填充。最上面的牌可以移到收牌区或者其他牌垛。</para>
+  <para>收牌区按不同花色交替从基准牌开始递增排列，其他空位也必须从基准牌开始收牌，基准牌是开始时从桌面上移动过来的牌，收牌区的牌不能再用于游戏。</para>
+  <para>保留区最上面的牌参与游戏，只能移动到收牌区。</para>
+  <para>发牌区每次向废牌区发一张牌，次数不限，除非桌面上出现了空位，这时只能发一张牌，直到桌面上的空位被废牌区的牌填充后才能继续发牌，或者废牌区的牌移到收牌区。发牌区锁定时，桌面上的牌还可以移动，保留区的牌也可以移到收牌区，如果废牌区为空，发牌区会自动发牌。废牌区最上面的牌可参与游戏，发牌区不能重复发牌。</para>
+  <para>双击一张牌可以自动移到收牌区，如果它是可以移动的话。</para>
+
+          </sect2>
+        <sect2><title>选项</title>
+
+  <para>有七种玩法，它们只是保留区的数目、桌面牌垛或基准牌的选择上有所不同。</para>
+  <para>阳台</para>
+  <para>保留区11张牌，桌面排列区9垛，收牌区按不同花色交替从基准牌开始递增收牌，游戏开始之初，玩家从四张牌里选择一张基准牌，然后所有空位都放上牌，发牌区不能重复发牌。</para>
+  <para>一般的耐心</para>
+  <para>保留区13张牌，桌面排列区9垛，收牌区按花色从基准牌开始递增收牌，游戏开始之初，玩家从四张牌里选择一张基准牌，然后所有空位都放上牌，发牌区可以重复一次，但是如果重复发牌时，不能移走发出的牌，游戏就输了。</para>
+  <para>星辰</para>
+  <para>保留区11张牌，桌面排列区9垛，收牌区按不同花色交替从基准牌开始递增收牌，游戏开始之初，自动选择了一张基准牌，然后所有空位都放上牌，发牌区不能重复发牌。</para>
+  <para>贵妇人</para>
+  <para>保留区11张牌，桌面排列区9垛，收牌区按不同花色交替从基准牌开始递增收牌，游戏开始之初，自动选择一张基准牌，然后所有空位都放上牌，空位自动从废牌区或发牌区填充(如果废牌区为空)，发牌区不能重复发牌。</para>
+  <para>红发</para>
+  <para>保留区21张牌，桌面排列区8垛，收牌区按不同花色交替从基准牌开始递增收牌，游戏开始之初，自动选择一张基准牌，然后所有空位都放上牌，空位自动从废牌区或发牌区填充(如果废牌区为空)，发牌区不能重复发牌。</para>
+  <para>金发与黑发</para>
+  <para>保留区10张牌，桌面排列区8垛，收牌区按不同花色交替从基准牌开始递增收牌，游戏开始之初，自动选择一张基准牌，然后所有空位都放上牌，发牌区不能重复发牌。</para>
+  <para>木头</para>
+  <para>保留区10张牌，桌面排列区9垛，收牌区按不同花色交替从基准牌开始递增收牌，游戏开始之初，自动选择一张基准牌，然后所有空位都放上牌，发牌区不能重复发牌。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得1分。</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>游戏开始时，仔细观察保留区的牌，然后选择恰当的基准牌，避免基准牌压在保留区下边。</para>
+  <para>注意在发牌区保留一个序列，然后在收牌区留一个空位来放这个序列。</para>
+  <para>桌面上排序时，尽量让最后收取的牌开头。</para>
+  <para>记住桌面上的空位是由废牌区最上面的一张牌填充，这时候发牌区是被锁定的。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Thieves"><!--<sect1info>
+    <copyright>
+      <year>1999</year>
+      <holder>Robert Brady</holder>
+    </copyright>
+    <author>
+      <firstname>Robert</firstname>
+      <surname>Brady</surname>
+    </author>
+    <address>
+      <email>rwb197@ecs.soton.ac.uk</email>
+    </address>
+  </sect1info>-->
+
+  <title>小偷</title>
+
+  <para>Robert Brady 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>包含王的一副牌</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>七垛牌，每垛五张，翻开放。</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>所有剩余的牌放在这儿，每次翻一张到废牌区，不能重复。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>从发牌区中发过来，最上面一张可以用在游戏中。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有牌移到废牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>废牌区可以递增或递减放置桌面上的牌，不考虑花色，王算是额外的，可以当作任何牌，上面可以也放其他任何牌。</para>
+  <para>另外一点，牌可以从发牌区发往废牌区。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>下表列出了各种牌可以获得的积分，王不得分。</para>
+  <informaltable>
+    <tgroup cols="2">
+      <thead>
+        <row>
+          <entry>牌</entry>
+          <entry>得分</entry>
+        </row>
+      </thead>
+      <tbody>
+	<row>
+	  <entry>A</entry>
+	  <entry>8</entry>
+	</row>
+	<row>
+	  <entry>2，3</entry>
+	  <entry>6</entry>
+	</row>
+	<row>
+	  <entry>4，5</entry>
+	  <entry>4</entry>
+	</row>
+	<row>
+	  <entry>6，7，8</entry>
+	  <entry>2</entry>
+	</row>
+	<row>
+	  <entry>9，10</entry>
+	  <entry>4</entry>
+	</row>
+	<row>
+	  <entry>Q</entry>
+	  <entry>6</entry>
+	</row>
+	<row>
+	  <entry>K</entry>
+	  <entry>8</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>因为可以看到桌面上所有的牌，所以试着设计“奔跑”的牌序，尽可能移除牌，收牌区的牌是有限的。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Thirteen"><!--<sect1info>
+    <copyright>
+      <year>1999</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname></author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>十三</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角牌垛，放置桌面上发剩下的牌，每次往废牌区发一张牌，不能重复。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>放置发牌区的牌，最上面的牌可用于游戏。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>七垛扣着的牌，最上面一行一张，然后每一行比上一行多一张排成金字塔形，最下边一行翻开。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>移除所有牌。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>金字塔上所有没被压住的牌都可以参与游戏，K 可以单独移走，其他牌必须两两相加等于13才能移除，A 等于1，J 等于 11，Q 等于12。</para>
+  <para>发牌区每次发一张牌到废牌区。最上面的牌可用于游戏，可以和金字塔中的牌组合，也可以和它自己下面的牌组合。不能重复发牌。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得1分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>每个金字塔都要一个坚实的基础，首先对付小牌，注意着尽量多翻开一些牌。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Thumb_And_Pouch"><!--<sect1info>
+    <copyright>
+      <year>1999</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname>
+    </author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>拇指和钱袋</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的牌垛，放置桌面上发剩下的牌。发牌每次翻一张到废牌区，可以重新发两次。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>从发牌区中发过来，最上面一张可以用在游戏中。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角有四个空位，按照从 A 到 K 的递增顺序收牌，最上面的牌还可以拿回到桌面上参与游戏。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>七垛牌，第一垛的牌翻开，其他都放一张扣着的牌，再在第二垛放一张翻开的牌，其他牌垛放一张扣着的，重复这个操作直到最后一垛有七张牌。桌面上的牌除了不能放自己的花色外，可以按递减顺序排列。一组牌可以一起移动，空位可以放任何牌或牌序。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌除了不能放自己的花色外，可以按递减顺序排列。一组牌可以一起移动，空位可以放任何牌或牌序。</para>
+  <para>牌垛里的牌逐个发往废牌区，最上面的可以用在游戏中，牌垛发空后，废牌可以按原顺序重回到牌垛中，您可以发三次牌。</para>
+  <para>收牌区按从 A 到 K 的顺序收牌，在收牌区里的牌仍然可以参与游戏。双击桌面上的一张牌可以把它移到收牌区，如果这张牌可以收取的话。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得1分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>蛮干未必总是有效，但这种情况下可能会吧。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Treize"><!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>特睿兹</title>
+
+	<para>Rosanna Yuen 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>左上角牌垛，放置桌面上发剩下的牌，每次往废牌区发一张牌，不能重复。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>放置发牌区过来的牌，最上面和最下面的牌可用于游戏。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>放七行交叉翻开的牌，第一行是一张，然后每一行多一张，牌垛摆成金字塔形。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>移除所有牌。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>金字塔中没有被压着的牌都能参与到游戏中，K 可以单独移走，其他牌两两相加为13可以消去，A 等于1，J 等于 11，Q 等于12。</para>
+	<para>发牌区每次发一张牌到废牌区。最上面和最下面的牌可用于游戏，可以和金字塔中的牌组合，也可以和它自己的牌组合，废牌区最上面的牌可以和下一张组合。不能重复发牌。</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>每收取一张牌得1分。</para>
+	<para>可能得到的最高分是：52</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>这个游戏比十三要好羸一些，因为提前计划，通过策略避免被堵住。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Triple_Peaks"><!--<sect1info>
+		<copyright>
+			<year>2005</year>
+			<holder>Richard Hoelscher</holder>
+		</copyright>
+		<author>
+			<firstname>Richard</firstname>
+			<surname>Hoelscher</surname>
+		</author>
+		<address><email>rah@rahga.com</email></address>
+	</sect1info>-->
+
+	<title>三重峰</title>
+
+	<para>Richard Hoelscher 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>左上角牌垛，放置桌面上发剩下的牌，每次往废牌区发一张牌，不能重复。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>所有的移动都在废牌区，扣着的牌不属于当前得分的一部分。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>发18张扣着的牌，把它们排列成三个三角形，每个三角形三行，每行多一张牌，直到第三行是三张牌，再在底下发一行10张牌把三个三角形连起来，两端的牌都压着上面的两端的牌，中间的压着上面两张牌。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>把桌面上所有的牌移除。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>桌面上没被压着的牌可用于游戏，比废牌区最上面的牌大一点数和小一点数的牌，都可以移过去，不考虑花色，A 排在 K 的上面，排在2的下面。</para>
+	<para>桌面上没有被压着的牌可以参与游戏。</para>
+	<para>发牌区每次往废牌区发一张牌。</para>
+
+	        </sect2>
+        <sect2><title>选项</title>
+
+	<para>积分翻倍：连续的牌得分加倍，五张连续的得分是：1、2、4、16和32，最高可得55分，额外奖励25分，从发牌区往废牌区发牌不扣分。</para>
+	<para>本回合积分累积到下一回合：桌面上所有牌清空后，开始新的一轮，积分将会接着上一轮的。</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>每张牌的得分是上次发牌后增加的数量，牌序越长得分越高。</para>
+	<para>发牌区往废牌区发牌会扣5分，每消除一个山峰将会奖励15分，桌面上所有的山峰都清除还会额外奖励15分。</para>
+	<para>每轮可能得到的最高分是：466</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Union_Square"><!--<sect1info>
+		<copyright>
+			<year>1999</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>rwsy@mit.edu</email></address>
+	</sect1info>-->
+
+	<title>联合广场</title>
+
+	<para>Rosanna Yuen 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>两副牌</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>左上角牌垛，放置桌面上发剩下的牌，每次往废牌区发一张牌，不能重复。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>从发牌区中发过来，最上面一张可以用在游戏中。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>摆成四行四列翻开的十六垛牌，每垛最上面的牌可用于游戏。</entry>
+	</row>
+	<row>
+		<entry>收牌区</entry>
+		<entry>右边四垛牌，收牌区按花色从 A 到 K 收牌，然后再从 K 到 A。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>把所有的牌移到收牌区。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>桌面上的牌既可以按递增排列，也可以递减排列，但是，每垛牌只能按一种顺序，例如，如果一个牌垛上是梅花三压着梅花二，下一张只能放梅花四，空位可以放任何牌。</para>
+	<para>收牌区按花色从 A 到 K 收牌，然后接着放一张 K 再到 A，羸的时候每垛放26张牌。收牌区的牌不能再参与到游戏中。</para>
+	<para>发牌区每次发一张牌到废牌区，最上面的牌可用于游戏，不能重复。</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>每移动一张牌到收牌区得一分。</para>
+	<para>可能得到的最高分：104</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>一串珠子要从最后一个接着添加，因而您的牌垛也是这样，用好那些空位来添加牌。这个游戏只需一点点的坚持，就能得到非常大的欢乐。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Valentine"><!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>情人节</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>左上角的牌垛，发牌后剩余的放在这里。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>右上角的牌垛，只能放一张牌。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>四垛牌，游戏开始时每垛各放一张牌，重新发牌时，桌面上的牌全部收回，放到发牌区的最底下。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>让所有的牌都放在桌面上，每垛按花色从 A 到 K 排列，别为此发狂。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>如果桌面上两张牌花色相同并且是连续的，把小的放在大的上面，A 是最小的，K 是最大的，不能循环排列，点击发牌区会填充出现的空位。</para>
+  <para>当桌面上没有可移动的牌时，点击发牌区发牌到废牌区，如果这个牌可以放到桌面上，就移动过去，重复这个操作，直到桌面或废牌区没有可移动的牌。</para>
+  <para>注意一点，再次点击发牌区会把桌面上所有的牌收回到发牌区的底下。废牌区的牌放到桌面第一张，其他空位放发牌区发来的牌。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>这个游戏没有得分。</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>强大的时间杀手游戏，情人节实在没有什么策略，要有策略的话，就是去做别的、更重要的事情，比如说去睡觉吧。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Westhaven"><!--<sect1info>
+		<copyright>
+			<year>1999</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>rwsy@mit.edu</email></address></sect1info>-->
+
+	<title>西港</title>
+
+	<para>Rosanna Yuen 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>左上角牌垛，放置桌面上发剩下的牌，每次往废牌区发一张牌，不能重复。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>从发牌区中发过来，最上面一张可以用在游戏中。</entry>
+	</row>
+	<row>
+		<entry>收牌区</entry>
+		<entry>最上面一行的四垛牌，按花色从 A 到 K 递增收牌。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>十垛牌，每垛三张，最后一行的牌是翻开的。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>把所有的牌都移到收牌区。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>桌面上的牌按不同花色交替递减排列，每垛牌最上面的或翻开的一张可用于游戏，空垛可以填充任何一张牌或一组牌。</para>
+	<para>收牌区按花色从 A 到 K 递增收牌，里面的牌不能再参与到游戏中。</para>
+	<para>发牌区每次往废牌区发一张牌，废牌区最上面的牌可以用于游戏中，不能重复。</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>收牌区每收取一张牌得一分。</para>
+	<para>可能得到的最高分是：52</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>小心这是真的赌博游戏之一，真正的有危险，尽量地移动，您会有机会的。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Whitehead"><!--<sect1info>
+    <copyright>
+      <year>2001</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname>
+    </author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>白头</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的牌垛，桌面上发剩下的牌放在这儿，每次往废牌区发一张牌，不能重复。</entry>
+	</row>
+	<row>
+	  <entry>废牌区</entry>
+	  <entry>从发牌区中发过来，最上面一张可以用在游戏中。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角有四个空位，按照从 A 到 K 的递增顺序收牌，最上面的牌还可以拿回到桌面上参与游戏。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>七垛牌，所有的牌都是翻开的，第一垛一张牌，第二垛两张牌，最后一垛七张牌。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>把所有的牌移到收牌区。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌按相同颜色递减排列，排列好的一组可以一起移动，空位可以填充任意一张牌或一组牌。</para>
+  <para>每次从发牌区发一张牌到废牌区，最上面的牌可以用在游戏中，不能重复发牌。</para>
+  <para>收牌区按从 A 到 K 的顺序收牌，在收牌区里的牌仍然可以参与游戏。双击桌面上的一张牌可以把它移到收牌区，如果这张牌可以收取的话。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>每收取一张牌得1分。</para>
+  <para>可能得到的最高分是：52</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>这个游戏中，桌面上的空位可以获得奖励品的，尽量多保留一段时间，直到您需要它们，这是一个好的策略。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Will_O_The_Wisp"><!--<sect1info>
+    <copyright>
+      <year>2001</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+    <author>
+      <firstname>Rosanna</firstname>
+      <surname>Yuen</surname>
+    </author>
+    <address><email>zana@webwynk.net</email></address>
+  </sect1info>-->
+
+  <title>白日梦</title>
+
+  <para>Rosanna Yuen 编写</para>
+
+          <sect2><title>牌局</title>
+
+
+  <informaltable>
+    <tgroup cols="2">
+      <tbody>
+	<row>
+	  <entry>纸牌类型</entry>
+	  <entry>标准纸牌</entry>
+	</row>
+	<row>
+	  <entry>发牌区</entry>
+	  <entry>左上角的牌垛，点击时，向桌面上其他每一垛牌发一张牌，最后一次发牌只发前三垛。</entry>
+	</row>
+	<row>
+	  <entry>收牌区</entry>
+	  <entry>右上角的四垛牌。</entry>
+	</row>
+	<row>
+	  <entry>桌面排列区</entry>
+	  <entry>下边的七垛牌，每垛牌两张扣着的一张翻开。</entry>
+	</row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+          </sect2>
+        <sect2><title>目标</title>
+
+  <para>创建四个每垛13张按花色递减顺序排列的牌垛。</para>
+
+          </sect2>
+        <sect2><title>规则</title>
+
+  <para>桌面上的牌按递减顺序排列，不考虑花色，排列好的牌可以一起移动，空垛可以放任何牌或一组牌。</para>
+  <para>发牌时桌面上每一垛都要有牌，除了最后一次发牌之外，点击发牌区后给每一垛放一张牌。</para>
+  <para>按花色排列好的十三张牌可以移到收牌区，放进去后不能再参与到游戏中。</para>
+
+          </sect2>
+        <sect2><title>得分</title>
+
+  <para>按顺序排好一张得一分。</para>
+  <para>可能得到的最高分是：48</para>
+
+          </sect2>
+        <sect2><title>策略</title>
+
+  <para>尽可能在桌面上保留一个空位，用于移动牌时的交换空间。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Yield"><!--<sect1info>
+		<copyright>
+			<year>2001</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>zana@webwynk.net</email></address>
+	</sect1info>-->
+
+	<title>屈服</title>
+
+	<para>Rosanna Yuen 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>左上角牌垛，放置桌面上发剩下的牌，每次往废牌区发一张牌，不能重复。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>放置发牌区过来的牌，最上面和最下面的牌可用于游戏。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>所有牌都是翻开的，摆成七行相互交叠，第一行七张牌，然后每行减一张牌，摆成一个倒的金字塔形。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>移除所有牌。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>金字塔中没有被压着的牌都能参与到游戏中，K 可以单独移走，其他牌两两相加为13可以消去，A 等于1，J 等于 11，Q 等于12。</para>
+	<para>发牌区每次发一张牌到废牌区。最上面和最下面的牌可用于游戏，可以和金字塔中的牌组合，也可以和它自己的牌组合，废牌区最上面的牌可以和下一张组合。不能重复发牌。</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>每收取一张牌得1分。</para>
+	<para>可能得到的最高分是：52</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>把倒金字塔最底下的牌移走是很困难的。摆好后，有时先移除废牌区比移倒金字塔的牌更好，因为那儿有更多的牌。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Yukon"><!--<sect1info>
+		<copyright>
+			<year>1998</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>rwsy@mit.edu</email></address>
+	</sect1info>-->
+
+	<title>育空</title>
+
+	<para>Rosanna Yuen 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>标准纸牌</entry>
+	</row>
+	<row>
+		<entry>收牌区</entry>
+		<entry>左边的四垛牌，按花色从 A 到 K 递增收牌。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>七垛牌，首先第一垛发一张翻开的，其他垛放一张扣着的，再在第二垛放一张翻开的，其他垛放一张扣着的，重复这个操作直到最后一垛有七张牌。再把剩下的牌面朝上放在第二垛到第七垛上。要递减排成相反颜色的序列。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>把所有的牌移到收牌区。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>桌面上的牌按不同颜色递减排列，一叠牌可以一起移动不考虑排序，当扣着的牌没被压着时，可以翻开。空位可以填充 K 或以 K 开头的一组牌。</para>
+	<para>收牌区按花色从 A 到 K 递增收牌，收牌区里的牌不能再用于游戏中。</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>每收取一张牌得1分。</para>
+	<para>可能得到的最高分是：52</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>尽可能早地翻开扣着的牌，这样对取得胜利有很大的帮助。</para>
+        </sect2>
+</sect1>
+
+  <sect1 id="Zebra"><!--<sect1info>
+		<copyright>
+			<year>1999</year>
+			<holder>Rosanna Yuen</holder>
+		</copyright>
+		<author>
+			<firstname>Rosanna</firstname>
+			<surname>Yuen</surname>
+		</author>
+		<address><email>rwsy@mit.edu</email></address>
+	</sect1info>-->
+
+	<title>斑马</title>
+
+	<para>Rosanna Yuen 编写</para>
+
+	        <sect2><title>牌局</title>
+
+
+	<informaltable>
+		<tgroup cols="2">
+			<tbody>
+	<row>
+		<entry>纸牌类型</entry>
+		<entry>两副牌</entry>
+	</row>
+	<row>
+		<entry>发牌区</entry>
+		<entry>左上角牌垛，放置桌面上发剩下的牌，每次往废牌区发一张牌，可以重复一次。</entry>
+	</row>
+	<row>
+		<entry>废牌区</entry>
+		<entry>从发牌区中发过来，最上面一张可以用在游戏中。</entry>
+	</row>
+	<row>
+		<entry>收牌区</entry>
+		<entry>右上角的八垛牌，开始时收牌区里每垛里放了一个 A，收牌区按不同颜色递增收到 K，里面的牌不能再参与到游戏中。</entry>
+	</row>
+	<row>
+		<entry>桌面排列区</entry>
+		<entry>收牌区下面的八垛牌，开始时每垛放了一张牌，桌面上按不同颜色交替递减排列，每垛牌中只有最上面的牌可用，空位会立刻由废牌区填充，如果废牌区为空，则由发牌区填充。</entry>
+	</row>
+			</tbody>
+		</tgroup>
+	</informaltable>
+
+	        </sect2>
+        <sect2><title>目标</title>
+
+	<para>把所有牌移到收牌区。</para>
+
+	        </sect2>
+        <sect2><title>规则</title>
+
+	<para>桌面上按不同花色交替递减排列，每垛牌中只有最上面的牌可用，但是，为了简化操作，一整垛牌可以一次拖到收牌区，双击一垛牌可以把最上面一张移到收牌区，如果它是可以移动的话。</para>
+	<para>空位会立刻由废牌区填充，如果废牌区为空，则由发牌区填充。</para>
+	<para>发牌区每次往废牌区发一张牌，废牌区最上面的牌可用于游戏，可以重复发牌一次。</para>
+	<para>收牌区按不同颜色交替递增收牌，从 A 到 K。收牌区里的牌不能再用于游戏。</para>
+
+	        </sect2>
+        <sect2><title>得分</title>
+
+	<para>每收取一张牌得1分。</para>
+	<para>可能得到的最高分是：96</para>
+
+	        </sect2>
+        <sect2><title>策略</title>
+
+	<para>在现实世界中很少能有两次机会，因此，碰到了就抓住它，这个游戏中第二次发牌是羸的机会。请牢记关键牌所处的位置，后面您会很高兴的。</para>
+        </sect2>
+</sect1>
+
+</chapter>
+
+<chapter id="glossary">
+	<title>术语表</title>
+
+	<para>作者自注：这些定义只是起指导作用，请参阅游戏本身的规则，因为每个游戏都可以重新定义或修改规则，以使游戏更具趣味性。</para>
+
+	<variablelist>
+		<varlistentry id="basecard"><term>基准牌</term>
+			<listitem><para>收牌区的第一张牌，其他位置也必须从这一张的点数开始收牌。参看：收牌区</para></listitem>
+		</varlistentry>
+		<varlistentry id="buildbyaltcolor"><term>不同花色交替排列</term>
+			<listitem><para>只允许在一张牌上面放相反颜色的牌，比如：在黑桃上放方块可以，但是红桃上不能放方块。</para></listitem>
+		</varlistentry>
+		<varlistentry id="buildbysuitbutown"><term>只能放别的花色</term>
+			<listitem><para>只允许放跟自己不同花色的牌，比如：方块放在红桃上可以，但是红桃不能放在红桃上。</para></listitem>
+		</varlistentry>
+		<varlistentry id="buildbycolor"><term>按颜色排列</term>
+			<listitem><para>只允许按相同颜色排列，比如：方块放在红桃上可以，但是方块不能放在梅花上。</para></listitem>
+		</varlistentry>
+		<varlistentry id="buildregardlessofsuit"><term>不考虑花色</term>
+			<listitem><para>所有花色的都可以放。</para></listitem>
+		</varlistentry>
+		<varlistentry id="buildbysuit"><term>按花色排列</term>
+			<listitem><para>只允许按相同花色排列，比如：黑桃放在黑桃上可以，但是黑桃不能放在梅花上。</para></listitem>
+		</varlistentry>
+		<varlistentry id="builddown"><term>递减顺序</term>
+			<listitem><para>只允许小牌在上，通常是小一个点数，比如：10可以放在 J 的上面，但是10不能放在9的上面。</para></listitem>
+		</varlistentry>
+		<varlistentry id="builddownbystar"><term>按 * 递减顺序</term>
+			<listitem><para>按照低 * 的要求递减顺序排列，比如：如果 * 是2，那么10可以放在 Q 的上面 ，但是不能放在 J 的上面。</para></listitem>
+		</varlistentry>
+		<varlistentry id="buildup"><term>递增顺序</term>
+			<listitem><para>只允许大牌在上，通常是大一个点数，比如：Q 可以放在 J 的上面，但是 Q 不能放在 K 的上面。</para></listitem>
+		</varlistentry>
+		<varlistentry id="buildupbystar"><term>按 * 递增顺序</term>
+			<listitem><para>按照高 * 的要求递增顺序排列，比如：如果 * 是2，那么10可以放在8的上面 ，但是不能放在9的上面。</para></listitem>
+		</varlistentry>
+		<varlistentry id="buildupordown"><term>递增或递减</term>
+			<listitem><para>大一点和小一点的牌都可以放在上面，比如：J 在 Q 和10的上面都可以，但是10不能放在 Q 的上面。</para></listitem>
+		</varlistentry>
+		<varlistentry id="building"><term>排列</term>
+			<listitem><para>通过思考，把一张牌(或一组牌)移到另一张牌上，排列顺序可以是递增、递减，或者按 * 递增/减，按照花色/颜色要求，可以是按花色、按颜色、交替颜色、除了自己之外的花色，或者是不考虑花色。注意所有的游戏都遵守这两个规则，在里面各选一个。</para></listitem>
+		</varlistentry>
+		<varlistentry id="deck"><term>牌</term>
+			<listitem><para>使用的牌，绝大多数游戏使用标准纸牌，也有用两副牌的，带王的牌，或者是不常见的去掉一些的牌。</para></listitem>
+		</varlistentry>
+		<varlistentry id="doubledeck"><term>两副牌</term>
+			<listitem><para>牌面用两副标准牌，总共有104张。</para></listitem>
+		</varlistentry>
+		<varlistentry id="foudation"><term>收牌区</term>
+			<listitem><para>如果游戏有一个收牌区，通常是把所有牌移到收牌区就羸了。</para></listitem>
+		</varlistentry>
+		<varlistentry id="jokerdeck"><term>带王的牌</term>
+			<listitem><para>牌面包括标准牌和两个王，总共54张牌。</para></listitem>
+		</varlistentry>
+		<varlistentry id="pile"><term>牌垛</term>
+			<listitem><para>一个特别的放牌位置。</para></listitem>
+		</varlistentry>
+		<varlistentry id="rank"><term>等级</term>
+			<listitem><para>牌的点数，通常每个牌都有一个数，A 可以是最大或者最小，如果最大就是14，如果最小就是1，J、Q 和 K 通常是11、12和13。但是一些游戏以10为等级，这时候，A 就是11。</para></listitem>
+		</varlistentry>
+		<varlistentry id="reserve"><term>废牌区</term>
+			<listitem><para>保留区的牌通常可以放在游戏任何地方，通常它里面是不能排序的。</para></listitem>
+		</varlistentry>
+		<varlistentry id="slot"><term>空位</term>
+			<listitem><para>参看牌垛。</para></listitem>
+		</varlistentry>
+		<varlistentry id="standarddeck"><term>标准牌</term>
+			<listitem><para>52张牌的一副牌，有四种花色各十三张牌，每种花色包括 A、2一直到10、J、Q、K，花色一般是梅花、黑桃、红桃和方块，它们可以按两种颜色排序，通常是红和黑，红桃和方块是红色，梅花和黑桃是黑色。纸牌王允许使用不同的牌面，这样一来，新的颜色和花色可以加进来。</para></listitem>
+		</varlistentry>
+		<varlistentry id="stock"><term>发牌区</term>
+			<listitem><para>桌面排列区发牌以后，所剩余的牌，通常是扣着的。</para></listitem>
+		</varlistentry>
+		<varlistentry id="suit"><term>花色</term>
+			<listitem><para>标准牌中四种不同的类型，通常是梅花、黑桃、红桃和方块。</para></listitem>
+		</varlistentry>
+		<varlistentry id="tableau"><term>桌面排列区</term>
+			<listitem><para>游戏的区域，主要的移动操作，通常是可以排序。</para></listitem>
+		</varlistentry>
+		<varlistentry id="waste"><term>废牌区</term>
+			<listitem><para>牌翻开后放置位置，通常来自发牌区，最上面的牌可参与游戏。</para></listitem>
+		</varlistentry>
+	</variablelist>
+</chapter>
+
+
+</book>

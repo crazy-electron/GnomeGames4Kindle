@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="hint" xml:lang="es">
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Use las sugerencias para resolver la partida automáticamente.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-23" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+  </info>
+  <title>Sugerencias</title>
+
+  <note style="warning">
+    <p>No se incluirán sus puntuaciones entre las mejores si usa uno de los siguientes métodos para completar la partida.</p>
+  </note>
+
+  <section id="hint-hints">
+  
+    <title>Usar las sugerencias del sistema</title>
+    
+    <p>En cualquier momento de la partida, si no sabe cómo empezarla o dónde mover una pieza, es posible usar las sugerencias integradas del sistema.</p>
+    <p>El sistema moverá una pieza de la caja de la derecha a su posición correcta en la caja de la izquierda.</p>
+    <p>Para usar las sugerencias del sistema haga una de las siguientes:</p>
+    <list>
+      <item>
+        <p>Pulse <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Elija <guiseq><gui style="menu">Juego</gui><gui style="menuitem">Sugerencia</gui></guiseq>.</p>
+      </item>
+    </list>
+  </section>
+  <section id="hint-solve">
+    <title>Resolver la partida.</title>
+    <p>Si se queda atascado en la partida o quiere resolverla automáticamente elija <guiseq><gui style="menu">Juego</gui><gui style="menuitem">Resolver</gui></guiseq>.</p>
+  </section>
+</page>

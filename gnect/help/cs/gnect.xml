@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Four-in-a-Row</application>">
+<!ENTITY appname "Four-in-a-Row">
+<!ENTITY version "2.8">
+]>
+<!-- ===== DOCUMENT HEADER ===== -->
+<article id="index" lang="cs">
+<!-- please do not change the id -->
+<!-- translators, change lang to the appropriate code -->
+  <articleinfo>
+    <title>Příručka ke hře Čtyři-v-řadě</title>
+    <abstract role="description">
+      <para>Podstatou hry Čtyři-v-řadě je umístit čtyři kameny vedle sebe vodorovně nebo svisle nebo úhlopříčně, přičemž protihráč se vás snaží blokovat a přitom si vytvořit svoji vlastní čtveřici. Hru Čtyři-v-řadě můžete hrát proti dalšímu člověku nebo proti počítači.</para>
+    </abstract>
+
+    <copyright>
+      <year>2001-2002</year>
+      <holder>Timothy Musson</holder>
+    </copyright><copyright><year>2009.</year><holder>Marek Černocký (marek@manet.cz)</holder></copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+     <year>2000</year>
+     <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+    <publisher role="maintainer"> 
+      <publishername>Dokumentační projekt GNOME</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+	<para>Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU Free Documentation License, verze 1.1 nebo jakékoli další verze vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů předních desek a bez textů zadních desek. Kopie této licence je zahrnuta v oddílu jménem <ulink type="help" url="ghelp:fdl">GNU Free Documentation License</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou.</para>
+         <para>Tato příručka je součástí kolekce příruček GNOME, distribuovaných pod licencí GNU FDL. Pokud chcete tento dokument šířit odděleně od kolekce, musíte přiložit kopii licence dle popisu v sekci 6 dané licence.</para>
+
+	<para>Mnoho užívaných jmen určených k zviditelnění produktů nebo služeb jsou ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s velkým písmenem na začátku.</para>
+
+	<para>DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <orderedlist>
+		<listitem>
+		  <para>DOKUMENT JE POSKYTOVÁN V PODOBĚ „JAK JE“ BEZ ZÁRUKY V JAKÉKOLIV PODOBĚ, NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ VERZE, JE BEZCHYBNÝ NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL NEBO NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ DOKUMENTU, NEBO JEHO UPRAVENÉ VERZE, LEŽÍ NA VÁS. POKUD KVŮLI TOMUTO DOKUMENTU, NEBO JEHO UPRAVENÉ VERZI, NASTANE PROBLÉM, VY (NIKOLIV PŮVODNÍ AUTOR NEBO JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE JAKÉKOLIV NÁKLADY ZA NUTNÉ ÚPRAVY, OPRAVY ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE ZÁKLADNÍ SOUČÁST TÉTO LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ, PODLE TÉTO DOHODY, POVOLENO UŽÍVÁNÍ ANI ÚPRAVY TOHOTO DOKUMENTU; DÁLE</para>
+		</listitem>
+		<listitem>
+		  <para>ZA ŽÁDNÝCH OKOLNOSTÍ A ŽÁDNÝCH PRÁVNÍCH PŘEDPOKLADŮ, AŤ SE JEDNÁ O PŘEČIN (VČETNĚ NEDBALOSTNÍCH), SMLOUVU NEBO JINÉ, NENÍ AUTOR, PŮVODNÍ PISATEL, KTERÝKOLIV PŘISPĚVATEL NEBO KTERÝKOLIV DISTRIBUTOR TOHOTO DOKUMENTU NEBO UPRAVENÉ VERZE DOKUMENTU NEBO KTERÝKOLIV DODAVATEL NĚKTERÉ Z TĚCHTO STRAN ODPOVĚDNÝ NĚJAKÉ OSOBĚ ZA PŘÍMÉ, NEPŘÍMÉ, SPECIÁLNÍ, NAHODILÉ NEBO NÁSLEDNÉ ŠKODY JAKÉHOKOLIV CHARAKTERU, VČETNĚ, ALE NEJEN, ZA POŠKOZENÍ ZE ZTRÁTY DOBRÉHO JMÉNA, PŘERUŠENÍ PRÁCE, PORUCHY NEBO NESPRÁVNÉ FUNKCE POČÍTAČE NEBO JINÉHO A VŠECH DALŠÍCH ŠKOD NEBO ZTRÁT VYVSTÁVAJÍCÍCH Z NEBO VZTAHUJÍCÍCH SE K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+
+    <authorgroup>
+      <author>
+        <firstname>Timothy</firstname>
+        <surname>Musson</surname>
+        <affiliation>
+          <!-- <orgname></orgname> -->
+          <address><email>trmusson@ihug.co.nz</email></address>
+        </affiliation>
+      </author>
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+
+      <othercredit role="translator">
+        <firstname>Latin</firstname> 
+        <surname>Translator 1</surname> 
+        <affiliation> 
+          <orgname>Latin Translation Team</orgname> 
+          <address> <email>translator@gnome.org</email> </address> 
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+        <revnumber>Příručka V 2.8 ke hře Čtyři-v-řadě</revnumber>
+        <date>Září 2004</date>
+        <revdescription>
+          <para role="author">Timothy Musson <email>trmusson@ihug.co.nz</email></para>
+          <para role="publisher"/>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>Tato příručka popisuje Čtyři-v-řadě ve verzi 2.12</releaseinfo>
+
+    <legalnotice>
+      <title>Ohlasy</title>
+      <para>Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k aplikaci <application>Čtyři-v-řadě</application> nebo této příručce, postupujte dle instrukcí na stránce <ulink url="ghelp:user-guide?feedback-bugs" type="help">Stránka s ohlasy na GNOME</ulink>.</para>
+    </legalnotice>
+  </articleinfo>
+
+
+  <!-- ============= Document Body ============================= -->
+
+  <!-- ============= Introduction ============================== -->
+
+
+  <sect1 id="intro">
+
+    <title>Úvod</title>
+
+    <para><application>Čtyři-v-řadě</application> je hra four-in-a-row pro Projekt GNOME. Podstatou hry je sestavit řadu čtyř svých kuliček a přitom se snažit zabránit svému protihráči (člověku nebo počítači) sestavit řadu z jeho vlastních kuliček. Řada může být vodorovná, svislá i úhlopříčná.</para>
+
+    <para><application>Čtyři-v-řadě</application> spustíte tak, že zvolíte <guimenuitem>Čtyři-v-řadě</guimenuitem> v podnabídce <guisubmenu>Hry</guisubmenu> z <guimenu>hlavní nabídky</guimenu> nebo napíšete <command>gnect</command> v příkazovém řádku.</para>
+
+    <para><application>Čtyři-v-řadě</application> je součástí balíku <filename>GNOME-games</filename>, který patří k pracovnímu prostředí GNOME. Tento dokument popisuje verzi 2.8 aplikace <application>Čtyři-v-řadě</application>.</para>
+
+   <para>Čtyři-v-řadě rovněž podporuje <link linkend="network-games">hru pro více hráčů</link> se dvěma lidskými hráči přímo u počítače nebo přes síť.</para>
+
+
+  </sect1>
+
+
+  <!-- ============= Usage ===================================== -->
+
+
+  <sect1 id="usage">
+
+    <title>Základní použití</title>
+
+    <!-- ===== How to play ===== -->
+
+    <sect2 id="playing">
+
+      <title>Jak hrát Čtyři-v-řadě</title>
+
+      <para>Novou hru Čtyři-v-řadě začnete volbou <menuchoice><guimenu>Hra</guimenu><guimenuitem>Nová hra</guimenuitem></menuchoice>.</para>
+
+      <para><interface>Hrací deska</interface> sestává ze sedmi sloupců a šesti řádků. Nad nimi je speciální řádek ukazující, který hráč právě hraje a jeho kuličku. Tahem se rozumí upuštění kuličky v jednom ze sloupců. Kulička přistane v nejvrchnějším volném řádku zvoleného sloupce.</para>
+        
+      <para>Tah provedete tak, že kliknete na sloupec myší. Pokud hrajete z klávesnice, posouvejte kuličku v horním řádku pomocí levé a pravé šípky a šipkou dolů ji upusťte. Kulička dopadne do volného řádku na vrchu sloupce.</para>
+
+      <!-- Figure -->
+      <mediaobject id="mainwindow-fig">
+        <imageobject>
+          <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="trm"/>
+        </imageobject>
+        <textobject>
+          <phrase>Hlavní okno hry Čtyři-v-řadě</phrase>
+        </textobject>
+        <caption><para>Hlavní okno hry Čtyři-v-řadě</para></caption>
+      </mediaobject>
+
+      <para>Hru vyhraje ten z hráčů, který uspořádá čtyři své kuličky do vodorovné, svislé nebo úhlopříčné řady. Pokud se herní deska zaplní, aniž by někdo vyhrál, končí hra remízou.</para>
+
+    </sect2>
+    
+    <!-- ===== Commands ===== -->  
+    
+    <sect2 id="commands">
+      <title>Příkazy</title>
+      <anchor id="menubar"/><!-- id for removed section -->
+      
+      <para>Pokud chcete vrátit tah zpět, zvolte <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>Z</keycap></keycombo></shortcut><guimenuitem>Tah zpět</guimenuitem></menuchoice>. V případě, že hrajete proti svému kamarádovi, vrátí se zpět jeden tah. V případě, že hrajete proti počítači, vrátí se zpět poslední tah počítače a potom váš. Když to budete provádět opakovaně, dostanete se až na začátek hry.</para>
+      <para>Volbou <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>H</keycap></keycombo></shortcut><guimenuitem>Rada</guimenuitem></menuchoice> získáte od počítače doporučení pro příští tah. Ukáže se vám ve stavovém řádku.</para>
+      
+      <para>Pomocí <menuchoice><guimenuitem>Skóre</guimenuitem></menuchoice> se podíváte na záznam výher a remíz současného herního sezení. Pokud v předvolbách provedete změny v nastavení hráčů, tak se skóre vynulují.</para>      
+
+      
+    </sect2>  
+
+    <!-- ===== Preferences ===== -->
+
+    <sect2 id="prefsdialog">
+
+      <title>Předvolby</title>
+
+      <para>Pokud chcete změnit nastavení hry, klikněte na <guimenuitem>Předvolby</guimenuitem> v nabídce <guimenu>Nastavení</guimenu>. Tím se otevře dialogové okno <interface>Předvolby Čtyři-v-řadě</interface>.</para>
+
+      <para>Volby nastavení na kartě <guilabel>Hra</guilabel> jsou: <variablelist>
+
+          <varlistentry>
+            <term><guilabel>Hráč 1</guilabel> a <guilabel>Hráč 2</guilabel></term>
+            <listitem>
+              <para>Tyto dva sloupce říkají, kdo hru <application>Čtyři-v-řadě</application> hraje a v případě, že jde o počítač, jak tvrdě hraje. Pokud si chcete zahrát s kamarádem, tak zvolte Člověk pro Hráče 1 i Hráče 2.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Motiv</guilabel></term>
+            <listitem>
+              <para>Nabídkový seznam motivů obsahuje dostupné motivy, ze kterých si můžete vybrat svůj oblíbený.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Povolit animace</guilabel></term>
+            <listitem>
+              <para>Zde můžete přepínat, zda jsou ve hře zapnuté nebo vypnuté animace.</para>
+            </listitem>
+          </varlistentry>
+
+        </variablelist></para>
+      <para>Nakonec je zde karta <guilabel>Ovládání klávesnicí</guilabel> na změnu ovládacích kláves. Ovládání změníte tak, že dvojitě kliknete na příslušnou položku a po té zmáčknete novou klávesu.</para>
+
+    </sect2>
+  </sect1>
+
+
+  <!-- ===== Custom Themes ===================================== -->
+
+
+  <sect1 id="custom">
+
+    <title>Vytváření nových motivů</title>
+
+    <para>Tato kapitola je zde pro případ, že byste si chtěli vytvořit své vlastní téma pro hru <application>Čtyři-v-řadě</application>. Předpokladem je, že jste zběhlí v základní práci s textovým editorem, grafickým software a příkazovým řádkem.</para>
+
+    <sect2 id="images">
+
+      <title>Obrázky</title>
+
+      <para>Sada kamenů pro hru <application>Čtyři-v-řadě</application> sestává z šesti kamenů stejné velikosti uspořádaných vodorovně. Zleva doprava to jsou:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Kulička prvního hráče v podobě, ve které se objevuje na hrací desce</para>
+        </listitem>
+        <listitem>
+          <para>Kulička druhého hráče v podobě, ve které se objevuje na hrací desce</para>
+        </listitem>
+        <listitem>
+          <para>Pozadí hrací desky</para>
+        </listitem>
+        <listitem>
+          <para>Pozadí horního řádku</para>
+        </listitem>
+        <listitem>
+          <para>Kulička prvního hráče v podobě, ve které se objevuje v horním řádku</para>
+        </listitem>
+        <listitem>
+          <para>Kulička druhého hráče v podobě, ve které se objevuje v horním řádku</para>
+        </listitem>
+      </orderedlist>
+
+      <figure id="shot1">
+        <title>Příklad sady kamenů</title>
+        <screenshot>
+          <screeninfo>Tento obrázek ukazuje šest kamenů v sadě</screeninfo>
+          <graphic format="PNG" fileref="figures/tileset.png" srccredit="TRM"/>
+        </screenshot>
+      </figure>
+
+      <para>Kameny tři a čtyři se budou opakovat po ploše herní desky a horního řádku, mimo případ, kdy použijete ve svém tématu obrázek na pozadí celého okna.</para>
+
+      <tip>
+        <title>TIP</title>
+        <para>Doporučeným formátem pro sadu kamenů je PNG. První, druhý, pátý a šestý kámen mohou obsahovat průhlednost, pokud chcete, aby skrz ně bylo vidět pozadí. Třetí a čtvrtý kámen by měly být plné bez průhlednosti, ledaže použijete ve svém tématu obrázek na celé pozadí okna.</para>
+      </tip>
+
+      <tip>
+        <title>TIP</title>
+        <para>Kameny mohou být čtvercové nebo obdélníkové a to v libovolné velikosti. Většina sad kamenů dodávaných s hrou <application>Čtyři-v-řadě</application> používá kameny o rozměrech 50 pixelů krát 50 pixelů.</para>
+      </tip>
+
+      <para>Pokud chcete obrázek přes celé pozadí okna, dá to trochu práce navíc. Řekněme, že vaše kameny mají každý rozměry 50 krát 50 pixelů. Herní plocha má 7 krát 7 kamenů, včetně horního řádku, takže ideální obrázek pro pozadí vaší sady kamenů má rozměry 350 krát 350 pixelů.</para>
+
+      <tip>
+        <title>TIP</title>
+        <para>Pokud rozměry obrázku na pozadí neodpovídají sadě kamenů, <application>Čtyři-v-řadě</application> je automaticky přizpůsobí. To znamená, že si můžete vytvořit dvě verze motivu, „velké“ a „malé“, které budou používat tentýž obrázek pozadí pro velkou i malou verzi vaší sady kamenů.</para>
+      </tip>
+
+      <para>Takže nyní máte sadu kamenů a eventuálně k ní obrázek na pozadí. Dalším krokem je dostat je na správné místo.</para>
+
+    </sect2>
+
+
+    <sect2 id="directories">
+
+      <title>Jak to dát dohromady</title>
+
+      <para>Posledním krokem je vložení vašeho obrázku respektive obrázků na místo, kde je hra <application>Čtyři-v-řadě</application> dokáže najít. Mohli byste je dát do složky, ve které je hra Čtyři-v-řadě nainstalovaná (což záleží na vašem konkrétním systému), ale vaše domovská složka je pravděpodobně lepší nápad.</para>
+
+      <para>Vytvořte složky <filename class="directory">~/.gnect</filename> a <filename class="directory">~/.gnect/pixmaps</filename>. Přesné názvy jsou důležité, protože jinde hra <application>Čtyři-v-řadě</application> hledat nebude.</para>
+
+      <para>Nakopírujte svůj obrázek respektive obrázky do složky pixmaps.</para>
+
+      <para>Pokud spustíte hru <application>Čtyři-v-řadě</application> z příkazového řádku, poskytne vám vodítko v případě nějakého problému ve vašem novém tématu. Pokud je vše bez problémů, najdete nové téma v seznamu v dialogovém okně <interface>Předvolby</interface>.</para>
+
+      <para>Užijte si zábavu!</para>
+
+    </sect2>
+
+
+  </sect1>
+
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Síťové hry</title>
+  <para>Čtyři-v-řadě podporuje sítové hry pro více hráčů, které poskytuje <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink>. Díky připojení k serveru Čtyři-v-řadě na Internetu můžete vyzvat k souboji další hráče. Novinky, aktualizace a seznam serverů, ke kterým se můžete připojit, najdete na <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">webu gnome-games</ulink>.</para>
+  <para>Pokud chcete začít hru pro více hráčů, zvolte v nabídce <menuchoice><guimenu>Hra</guimenu><guimenuitem>Síťová hra</guimenuitem></menuchoice>.</para> 
+
+<sect2 id="connecting">
+<title>Připojení k síťovému serveru Čtyři-v-řadě</title>
+<para>Na úvod nové síťové hry se objeví připojovací dialog. V dialogovém okně si můžete vybrat server, ke kterému se chcete připojit, a uživatelské jméno, které chcete během připojení k serveru používat.</para>
+
+<para>K serveru se lze přihlásit buď přes účet host nebo přes normální registrovaný účet. Jako host se přihlásíte anonymně, zatímco normální uživatelsky účet vám umožní si rezervovat, dle svého výběru, své vlastní uživatelské jméno chráněné heslem.</para>
+
+<para>Volbu <guimenuitem>Přihlášení hosta</guimenuitem> si vyberte, pokud se chcete přihlásit přes anonymním účtem hosta. Pokud chcete vytvořit nový přihlašovací účet, tak zvolte možnost <guimenuitem>První přihlášení</guimenuitem> s uživatelským jménem, heslem a e-mailem dle svého výběru. Jestliže už máte svůj účet vytvořený, připojte se s volbou <guimenuitem>Normální přihlášení</guimenuitem> a zadaným svým správným uživatelským jménem a heslem.</para>
+<para>Připojení k serveru začnete kliknutím na tlačítko <guimenuitem>Připojit</guimenuitem>.</para>
+<figure id="connect">
+<title>Připojovací dialog k síti Čtyři-v-řadě.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Připojovací dialog k síti Čtyři-v-řadě.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Vstup do herní místnosti</title>
+<para>Jakmile jste úspěšně přihlášení k serveru, můžete si vybrat, do které herní místnosti chcete vstoupit. Jestliže chcete hrát hru Čtyři-v-řadě pro více hráčů, tak zvolte místnost Čtyři-v-řadě. Pokud chcete hostovat svoji vlastní hru, tak klikněte na tlačítko Spustit. Tím se vytvoří nový stůl, na kterém si ostatní hráči mohou zahrát hru proti vám. Pokud je k dispozici nějaká další již spuštěná hra, pak se můžete dvojitým kliknutím na tomto existujícím herním stole zapojit do hry.</para>
+<figure id="tables">
+<title>Toto dialogové okno sítě Čtyři-v-řadě vám umožňuje vstoupit do herní místnosti, kde najdete další hráče.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Toto dialogové okno sítě Čtyři-v-řadě vám umožňuje vstoupit do herní místnosti, kde najdete další hráče.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>Když vytvoříte nový stůl pro hry Čtyři-v-řadě, objeví se dialogové okno, ve kterém si můžete hru přizpůsobit, např. nastavit minimální počet hráčů pro hru. Jakmile se naplní celkový počet míst, nemůže se již žádný další hráč k hernímu stolu přidat.</para>
+<para>S ostatními hráči síťové hry si můžete povídat. Můžete požádat o radu nebo pomoc s hrou, ale vždy se k ostatním hráčům chovejte slušně.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Čekání, až se další hráči zapojí do hry</title>
+<para>Až se úspěšně přidáte k hernímu stolu, musíte čekat dokud se nepřidá dostatečný počet dalších hráčů. Nabídka <guimenuitem>Seznam hráčů</guimenuitem> vám umožní se podívat na seznam hráčů, kteří se ke hře přidali. Hra začne hned, jak je dosaženo celkového počtu hráčů ve hře.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Jak hrát Čtyři-v-řadě pro více hráčů</title>
+<para>Hry Čtyři-v-řadě pro více hráčů mají úplně stejná pravidla, jako normální hry Čtyři-v-řadě, akorát že nyní hrajete proti lidským hráčům. To znamená, že strategie protivníka by mohla být lepší, než při hraní proti umělé inteligenci.</para>
+<para>Až některý hráč zvítězí, tak hra končí a vy se můžete vrátit na úvodní obrazovku síťové hry. Po té se můžete pustit od další hry návykového Čtyři-v-řadě pro více hráčů.</para>
+</sect2>
+
+</sect1>
+
+
+
+  <!-- ===== Bugs ============================================== -->
+
+
+  <sect1 id="bugs">
+
+    <title>Známé chyby a omezení</title>
+
+    <para>Animace padajících kuliček občas nevypadá tak plynule, jak by měla.</para>
+
+  </sect1>
+
+
+  <!-- ===== Authors =========================================== -->
+
+
+  <sect1 id="authors">
+
+    <title>Autoři</title>
+
+    <para>Hru <application>Čtyři-v-řadě</application> napsal Timothy Musson (<email>trmusson@ihug.co.nz</email>) a David Neary (<email>bolsh@gimp.org</email>). A mnozí další věnovali svůj čas, aby od doby, kdy vznikla, různými způsoby pomohli s prací na hře <application>Čtyři-v-řadě</application>.</para>
+    <para>Giuliano Bertoletti napsal <ulink type="http" url="http://www.ce.unipr.it/~gbe/velena.html">Velena Engine</ulink>, což je hlavní počítačový hráč v hře <application>Čtyři-v-řadě</application>. Jsme mu vděční, že nám umožnil použít jeho práci, bez které by hra <application>Čtyři-v-řadě</application> nestála úplně za to.</para>
+    <para>Tuto příručku napsal Timothy Musson.</para>
+    <para>Pokud chcete nahlásit chybu nebo podat návrh týkající se této aplikace nebo tohoto návodu, tak se řiďte instrukcemi v tomto <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentu</ulink>.</para>
+
+
+<!-- For translations: uncomment this:
+
+  <para>
+    Latin translation was done by ME
+    (<email>MYNAME@MYADDRESS</email>). Please send all comments and
+    suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+-->
+
+  </sect1>
+
+
+  <!-- ============= License =================================== -->
+
+
+  <sect1 id="license">
+
+    <title>Licence</title>
+
+    <para>Tento program je svobodný software. Můžete jej dále šířit a/nebo upravovat za dodržení podmínek <ulink type="help" url="gnome-help:gpl"><citetitle>GNU General Public License</citetitle></ulink>, tak jak ji vydala Free Software Foundation ve verzi 2 nebo (dle vaší volby) novější.</para>
+
+    <para>Tento program je šířen s přesvědčením, že může být užitečný, ale BEZ JAKÝCHKOLIV ZÁRUK, bez předpokládané záruky na OBCHODOVATELNOST nebo VHODNOST PRO URČITÝ ÚČEL. Více podrobností najdete v <citetitle>GNU General Public License</citetitle>.</para>
+
+    <para>Kopie <citetitle>GNU General Public License</citetitle> je zahrnuta v dodatku <citetitle>Uživatelské přiručky GNOME</citetitle>. Kopii <citetitle>GNU General Public License</citetitle> můžete také získat od Free Software Foundation navštívením <ulink type="http" url="http://www.fsf.org">jejich webu</ulink> nebo zasláním žádosti na <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+
+  </sect1>
+
+</article>

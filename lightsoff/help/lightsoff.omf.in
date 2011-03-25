@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?>
+<omf>
+  <resource>
+    <subject category="GNOME|Games"/>
+    <type>manual</type>
+    <relation seriesid="6de12070-69ae-11de-8a39-0800200c9a66"/>
+    <rights type="GNU FDL" license.version="1.1" holder="Tim Horton"/>
+  </resource>
+</omf>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="usage" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#play" group="one"/>
+    <link type="seealso" xref="gameplay"/>
+    <desc>Comment jouer à <app>GNOME Tetravex</app>.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <credit type="author">
+      <name>Rob Bradford</name>
+      <email>robster@debian.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>    
+  </info>
+
+  <title>Jeu <app>GNOME Tetravex</app></title>
+
+  <section id="usage-basic">
+    <title>Utilisation de base</title>
+    <p>La fenêtre de jeu est divisée en deux boîtes : celle de droite contient les pièces qui doivent être rangées ; celle de gauche est là où les pièces doivent être ordonnées et déplacées. Chaque pièce est divisée en 4 petits triangles qui contiennent un nombre.</p>
+    <p>Le but du jeu est de placer les pièces pour que les nombres identiques soient positionnés les uns à côtés des autres.</p>
+    <p>Il n'est pas possible de placer des pièces avec des nombres différents les uns à côtés des autres.</p>
+    <p>Le jeu se termine quand vous avez placé toutes les pièces dans la bonne position.</p>
+    <note>
+      <p>Quand vous lancez <app>GNOME Tetravex</app>, le jeu commence immédiatement et le chronomètre est lancé.</p>
+    </note>
+
+  </section>
+  
+  <section id="usage-video">
+    <title>Démonstration vidéo</title>
+    <p>Cette courte vidéo montre le fonctionnement du jeu et les mouvements possibles.</p>
+    <p>
+      <media type="video" mime="application/ogg" src="figures/gnotravex-video.ogv">Démonstration simple du jeu</media>
+    </p>
+  </section>
+</page>

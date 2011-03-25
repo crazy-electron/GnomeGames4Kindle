@@ -1,0 +1,637 @@
+# Chinese (China) translation for gnome-games.
+# Copyright (C) 2010 gnome-games's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-games package.
+# TeliuTe <teliute@163.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games master\n"
+"POT-Creation-Date: 2010-12-23 17:58+0000\n"
+"PO-Revision-Date: 2010-12-30 22:18+0800\n"
+"Last-Translator: TeliuTe <teliute@163.com>\n"
+"Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gtali.xml:163(None)
+msgid "@@image: 'figures/mainwindow.png'; md5=adbcf6421391e5e51c091e13672d3b7e"
+msgstr ""
+"@@image: 'figures/mainwindow.png'; md5=adbcf6421391e5e51c091e13672d3b7e"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gtali.xml:240(None)
+msgid ""
+"@@image: 'figures/preferences.png'; md5=163633a4c9c3d3fe96e7b4a15f2e3eef"
+msgstr ""
+"@@image: 'figures/preferences.png'; md5=163633a4c9c3d3fe96e7b4a15f2e3eef"
+
+#: C/gtali.xml:27(title)
+msgid "<application>Tali</application> Manual"
+msgstr "<application>Tali 掷骰子</application>小游戏手册"
+
+#: C/gtali.xml:29(para)
+msgid ""
+"Tali is like Yahtzee for GNOME or like poker with dice. The player rolls "
+"dice to try to make the best possible combinations, like 4 of a kind, small "
+"straight, and full house. The player is allowed 3 rolls per turn and can "
+"hold certain dice with each roll."
+msgstr ""
+"GNOME 掷骰子游戏跟 Yahtzee 类似，或者像扑克骰子。玩家掷骰子掷出最好的组合，像"
+"四个相同、小顺子、满堂红等。玩家每轮可以有掷三次的机会，并且每轮要根据点数选"
+"择一项积分。"
+
+#: C/gtali.xml:37(year)
+msgid "2001"
+msgstr "2001"
+
+#: C/gtali.xml:38(holder)
+msgid "Scott D. Heavner"
+msgstr "Scott D. Heavner"
+
+#: C/gtali.xml:53(publishername) C/gtali.xml:93(para)
+msgid "GNOME Documentation Project"
+msgstr "GNOME 文档项目"
+
+#: C/gtali.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"对于本文档的复制、分发和/或修改必须遵循自由软件基金会 (Free Software "
+"Foundation) 发布的 GNU 自由文档许可证 (GFDL) 版本 1.1 或更高版本，该许可证没"
+"有固定的部分、没有封面和背页文本。您可以在此<ulink type=\"help\" url=\"ghelp:"
+"fdl\">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副"
+"本。"
+
+#: C/gtali.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"本手册是在 GFDL 许可之下分发的 GNOME 手册集合的一部分。如果想要单独分发此手"
+"册，可以在手册中添加该许可证的一份副本然后分发，如该许可证的第 6 部分所述。"
+
+#: C/gtali.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 GNOME 文"
+"档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而"
+"表明它们是商标。"
+
+#: C/gtali.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"文档按“原样”提供，不提供任何明示或暗示的保证，包括但不限于：文档或文档的修改"
+"版本没有适销性方面的缺陷、适合特定目的的适用性，以及没有侵权行为。您将自行承"
+"担本文档以及文档修改版本的质量、准确性以及性能方面的风险。如果任何文档或文档"
+"修改版本存在缺陷，您(而不是最初的编写者、作者或撰写人)将承担所有必需的服务、"
+"维修或更正的费用。此免责声明是本许可证的重要组成部分。如果不接受此免责声明，"
+"那么您就没有权利使用任何文档或文档的修改版本；并且"
+
+#: C/gtali.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"无论在任何情况以及在任何法律理论下，本文档或文档修改版本的作者、最初的编写"
+"者、任何撰写人或任何分发者，或者任意这些方的任何提供者都不对任何人由于使用本"
+"文档或文档修改版本引起或带来的任何直接的、间接的、特殊的、偶然的或继发的损失"
+"承担任何民事(包括疏忽)、合同或其它方面的责任，这些损失包括但不限于信誉损失、"
+"工作停止、计算机失败或故障，或任何以及所有其它损失或由此引发的或与之相关的损"
+"失，即使这些方已被告知存在出现此类损失的可能性时也是如此。"
+
+#: C/gtali.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"本文档以及文档的修改版本都是在遵循 GNU 自由文档许可证的条款下提供，这表示具有"
+"以下含义：<placeholder-1/>"
+
+#: C/gtali.xml:63(firstname)
+msgid "Scott D"
+msgstr "Scott D"
+
+#: C/gtali.xml:64(surname)
+msgid "Heavner"
+msgstr "Heavner"
+
+#: C/gtali.xml:66(email)
+msgid "sdh@po.cwru.edu"
+msgstr "sdh@po.cwru.edu"
+
+#: C/gtali.xml:87(revnumber)
+msgid "Tali Manual V2.8"
+msgstr "掷骰子小游戏手册2.28版"
+
+#: C/gtali.xml:88(date)
+msgid "September 2004"
+msgstr "2004年9月"
+
+#: C/gtali.xml:90(para)
+msgid "Scott D Heavner <email>sdh@po.cwru.edu</email>"
+msgstr "Scott D Heavner <email>sdh@po.cwru.edu</email>"
+
+#: C/gtali.xml:98(releaseinfo)
+msgid "This manual describes version 2.12 of Tali."
+msgstr "本手册讲述的是掷骰子小游戏2.12版。"
+
+#: C/gtali.xml:105(title)
+msgid "Feedback"
+msgstr "反馈"
+
+#: C/gtali.xml:106(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Tali</"
+"application> application or this manual, follow the directions in the <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
+"ulink>."
+msgstr ""
+"要报告关于<application>掷骰子</application>程序或使用手册中的缺陷，或者提出建"
+"议，请参照 <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME "
+"反馈页</ulink> 上的指导。"
+
+#: C/gtali.xml:117(primary)
+msgid "GNOME Tali"
+msgstr "GNOME 掷骰子"
+
+#: C/gtali.xml:123(title)
+msgid "Introduction"
+msgstr "介绍"
+
+#: C/gtali.xml:125(para)
+msgid ""
+"<application>GNOME Tali</application> is a sort of poker with dice and less "
+"money. You roll five dice three times and try to create the best "
+"<quote>hand</quote>. Your two rerolls may include any or all of your dice."
+msgstr ""
+"<application>GNOME 掷骰子</application> 是用骰子玩小钱的扑克类游戏。您有三次"
+"机会掷5个骰子，然后创造最佳<quote>一手</quote>。两次重掷可以是全部骰子，也可"
+"以是其中的几个。"
+
+#: C/gtali.xml:131(para)
+msgid ""
+"<application>GNOME Tali</application> is very similar to the dice game "
+"Yahtzee which is a trademark of Hasbro, Inc."
+msgstr ""
+"<application>GNOME 掷骰子</application> 跟 Yahtzee 骰子游戏非常相像，Yahtzee "
+"是 Hasbro 公司的注册商标。"
+
+#: C/gtali.xml:136(para)
+msgid ""
+"To run <application>GNOME Tali</application>, select "
+"<menuchoice><guisubmenu>Games</guisubmenu><guimenuitem>GNOME Tali</"
+"guimenuitem></menuchoice> from the <guimenu>Main Menu</guimenu>, or type "
+"<command>gtali</command> on the command line."
+msgstr ""
+"要运行<application>GNOME 掷骰子</application>小游戏，点菜单 "
+"<menuchoice><guisubmenu>游戏</guisubmenu><guimenuitem>GNOME Tali</"
+"guimenuitem></menuchoice>，或者在命令行输入 <command>gtali</command>。"
+
+#: C/gtali.xml:146(para)
+msgid ""
+"<application>GNOME Tali</application> is included in the <filename>gnome-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.8 of <application>GNOME Tali</application>."
+msgstr ""
+"<application>GNOME 掷骰子</application>小游戏包含在 <filename>gnome-games</"
+"filename> 软件包中，它是 GNOME 桌面环境的一部分。本文档讲述的是 "
+"<application>GNOME 掷骰子</application>小游戏2.8版。"
+
+#: C/gtali.xml:155(title)
+msgid "Playing GNOME Tali"
+msgstr "玩 GNOME 掷骰子小游戏"
+
+#: C/gtali.xml:158(title)
+msgid "GNOME Tali in action"
+msgstr "GNOME 掷骰子操作"
+
+#: C/gtali.xml:166(phrase)
+msgid "GNOME Tali main window screenshot."
+msgstr "GNOME 掷骰子主窗口图。"
+
+#: C/gtali.xml:172(para)
+msgid "When play starts, you see the results of your first throw of the dice."
+msgstr "游戏开始后，会直接显示五个骰子第一次掷出的结果。"
+
+#: C/gtali.xml:179(para)
+msgid "Click on the dice you wish to roll again."
+msgstr "点击选中您想重新再掷的骰子。"
+
+#: C/gtali.xml:183(para)
+msgid ""
+"When you have selected all the dice you wish to reroll, press the "
+"<guibutton>Roll!</guibutton> button."
+msgstr "如果您想掷全部骰子，点击 <guibutton>全部重掷!</guibutton> 按钮。"
+
+#: C/gtali.xml:188(para)
+msgid ""
+"When you have a hand you like or have run out of chances to throw the dice, "
+"click on a row corresponding to what you think is your best scoring "
+"combination. It is very possible to have a score of zero and if you click on "
+"the wrong row, you will be scored accordingly. (Say for example, you get "
+"yahtzee -- 5 of a kind -- and click on the large straight row, you will "
+"receive a zero in your large straight score)."
+msgstr ""
+"当您掷出一手自己喜欢的，或者是三次机会用完了，在积分表中选一项得分最高的。如"
+"果您点错了行，很有可能得零分，点完就没法撤消了。(举个例子，您掷出了5个相同"
+"的，但是错误地点到了大顺子行上，那么就会得零分，这时是按照大顺子来给分的)。"
+
+#: C/gtali.xml:198(para)
+msgid ""
+"You can only use each combination once, i.e. once you've entered something "
+"in a slot, you can't change the score later if you roll a better hand."
+msgstr ""
+"得分表上的每项只有一次选择机会，例如，您选了一项并得了分，下次这一项会得更多"
+"分时，已经不能再改了。"
+
+#: C/gtali.xml:203(para)
+msgid ""
+"There is one exception to this rule, if you roll a yahtzee a second time you "
+"can put it in the yahtzee row again for an extra fifty points. You can keep "
+"doing this each time you get another yahtzee. At the end of the game you "
+"will be given extra rolls to fill in the other rows. Be warned that if you "
+"score zero in your yahtzee row (i.e. you filled that row with something that "
+"wasn't a yahtzee) then you can't put a yahtzee in afterward, zero is all you "
+"will score."
+msgstr ""
+"这个规则只有一种例外情况，如果您再次掷出了五个相同，可以接着点选五个相同，由"
+"此可再得50点积分。当您再掷出五个相同还可以接着点选得分，直到您填充完其他行结"
+"束游戏。要注意如果这一行已经得了零分(您之前没有得分而点了此行)，那么就不能再"
+"往里面加分了，这一行最终只能得零分。"
+
+#: C/gtali.xml:213(para)
+msgid ""
+"There is also a bonus of 35 points if you score a total of 63 points or more "
+"in the top six rows."
+msgstr "如果您上边六行的得分超过63分，还会得到35点的奖励。"
+
+#: C/gtali.xml:218(title)
+msgid "Using the keyboard"
+msgstr "使用键盘"
+
+#: C/gtali.xml:220(para)
+msgid ""
+"As an alternative to using the mouse, the keys 1 through 5 toggle the dice "
+"just as if you had clicked them. The key 1 corresponds to the first die and "
+"so on. Use the usual controls to roll the dice and select a row. i.e. use "
+"tab to switch between the roll button and the score area, use the arrow keys "
+"to navigate up and down the rows and use space to select."
+msgstr ""
+"作为键盘的辅助，按键1到5是你想点击的五个骰子，按一下扣住再按一下翻开。使用常"
+"用的按键来掷骰子和选择行，例如，使用 Tab 键切换计分表和骰子，使用方向键来选择"
+"不同行，按空格键选中。"
+
+#: C/gtali.xml:232(title)
+msgid "Game Options"
+msgstr "游戏选项"
+
+#: C/gtali.xml:235(title)
+msgid "GNOME Tali preferences"
+msgstr "GNOME 掷骰子游戏首选项"
+
+#: C/gtali.xml:243(phrase)
+msgid "GNOME Tali preferences dialog box."
+msgstr "GNOME 掷骰子游戏首选项对话框"
+
+#: C/gtali.xml:248(title)
+msgid "Human Players"
+msgstr "人类玩家"
+
+#: C/gtali.xml:250(guimenuitem)
+msgid "Number of players"
+msgstr "玩家数量"
+
+#: C/gtali.xml:252(para)
+msgid ""
+"Selects the number of human players. As described above you are only allowed "
+"six total players."
+msgstr "选择人类玩家的数量。依据上面的描述，最多只允许有6个玩家。"
+
+#: C/gtali.xml:260(title)
+msgid "Computer Opponents"
+msgstr "电脑对手"
+
+#: C/gtali.xml:262(guimenuitem)
+msgid "Delay between rolls"
+msgstr "两次掷出的时间间隔"
+
+#: C/gtali.xml:264(para)
+msgid ""
+"Make the computer opponents pause between rolls of the dice so you can see "
+"what they are doing. Slows down game play some."
+msgstr "让电脑对手在掷出前暂停，这样你就可以看清它们的操作，这会让游戏慢一些。"
+
+#: C/gtali.xml:271(guimenuitem)
+msgid "Number of opponents"
+msgstr "对手数量"
+
+#: C/gtali.xml:273(para)
+msgid ""
+"Select the number of computer opponents. You are allowed a total of six "
+"human and computer players. If you attempt to increase this number near the "
+"limit, the number of human players will be decreased to maintain only six "
+"total players."
+msgstr ""
+"选择电脑对手的数量，您最多只能有6个玩家，包括人类和电脑，如果您想增大这个数"
+"目，那么人类玩家的数目就会减少。"
+
+#: C/gtali.xml:283(title)
+msgid "Game Type"
+msgstr "游戏类型"
+
+#: C/gtali.xml:285(guimenuitem)
+msgid "Version of the game to play"
+msgstr "游戏所玩的版本"
+
+#: C/gtali.xml:287(para)
+msgid ""
+"Play either the regular version (similar to Yahtzee) or the version with "
+"colors (similar to Kismet). When you change game type, you must restart the "
+"game to see use the new game type."
+msgstr ""
+"玩其他规则的版本(类似于 Yahtzee)或者带花色的版本(类似于 Kismet)。如果您更改了"
+"游戏类型，必需要退出重新进入游戏才能生效。"
+
+#: C/gtali.xml:297(guimenuitem)
+msgid "Player Names"
+msgstr "玩家姓名"
+
+#: C/gtali.xml:299(para)
+msgid "To change the names of the players just enter new names in the boxes."
+msgstr "要更改玩家的姓名，只需在文本框中输入新的名称。"
+
+#: C/gtali.xml:308(title)
+msgid "Game Strategy"
+msgstr "游戏攻略"
+
+#: C/gtali.xml:309(para)
+msgid ""
+"The 63 points needed for the bonus in the upper half corresponds to getting "
+"three of each die type in each row. If you score more than three dice in the "
+"fives and sixes rows then you can afford to place a bad roll in either the "
+"ones row or the twos row and still get the bonus. In the Colors version, you "
+"get a bonus of 55 if your upper half total is between 71 and 77, and a bonus "
+"of 75 if your upper half total is greater than 77."
+msgstr ""
+"在上半部分超过63分才能得到奖励，需要每一行都要获得类型三倍的得分。如果在五和"
+"六上能有超过三倍的得分，那么您可以让一或二的行上放置失败的掷出，仍然可以获得"
+"奖励。在花色版本种，如果您在上半部分的得分在71到77之间，会得到55分的奖励，如"
+"果超过77分可以得到75分的奖励。"
+
+#: C/gtali.xml:318(para)
+msgid ""
+"Don't forget about multiple yahtzees, if you roll a second yahtzee you can "
+"also put it in the yahtzee row for even more points. This only applies to "
+"the regular game."
+msgstr ""
+"不要忘了可以多次填写五个相同，如果您再次掷出五个相同，还可以选择它以获得更多"
+"积分，这只用于普通规则的游戏。"
+
+#: C/gtali.xml:332(title)
+msgid "Known Bugs and Limitations"
+msgstr "了解缺陷和限制"
+
+#: C/gtali.xml:333(para)
+msgid ""
+"When you switch game type, the game does not use the new dice images until "
+"you restart gtali. It should play correctly with the \"wrong\" dice."
+msgstr ""
+"当您切换游戏类型时，只有在下次启动时才能生效，它应该还可以用“错误”的骰子继续"
+"玩。"
+
+#: C/gtali.xml:341(title)
+msgid "Glossary"
+msgstr "术语表"
+
+#: C/gtali.xml:343(para)
+msgid "Remember that the order of the dice is not important."
+msgstr "记住，骰子的顺序并不重要。"
+
+#: C/gtali.xml:346(glossterm)
+msgid "3 of a Kind"
+msgstr "3个相同"
+
+#: C/gtali.xml:347(para)
+msgid ""
+"Three of the dice have the same number. The score is the total of all the "
+"dice. e.g. 1, 2, 2, 2, 5."
+msgstr "有三个骰子的点数相同，得分是所有骰子点数总和。例如，1，2，2，2，5。"
+
+#: C/gtali.xml:352(glossterm)
+msgid "4 of a Kind"
+msgstr "4个相同"
+
+#: C/gtali.xml:353(para)
+msgid ""
+"Four of the dice have the same number. The score is the total of all the "
+"dice. e.g. 2, 5, 5, 5, 5. In the Colors game, the score is 25 plus the total "
+"of all the dice."
+msgstr ""
+"有四个骰子的点数相同，得分是所有骰子点数总和。例如，2，5，5，5，5。在花色游戏"
+"中得分是25加上所有骰子点数之和。"
+
+#: C/gtali.xml:359(glossterm)
+msgid "5 of a Kind"
+msgstr "5个相同"
+
+#: C/gtali.xml:360(para)
+msgid ""
+"Five identical dice. e.g. 3, 3, 3, 3, 3. In the Colors game, the score is 50 "
+"plus the total of all the dice."
+msgstr ""
+"五个骰子的点数都相同。例如：5，5，5，5，5，5。在花色游戏中得分是50加上所有骰"
+"子点数之和。"
+
+#: C/gtali.xml:365(glossterm)
+msgid "Full House"
+msgstr "满堂红"
+
+#: C/gtali.xml:366(para)
+msgid ""
+"Five dice consisting of two groups: One group of three with the same numbers "
+"and another group of two with the same numbers. e.g. 1, 1, 1, 4, 4. In the "
+"Colors game, the score is 15 plus the total of all the dice."
+msgstr ""
+"五个骰子分成两组：一组是三个相同，另一组是两个相同。例如：1，1，4，4，4。在花"
+"色游戏中，得分是15加上所有骰子点数之和。"
+
+#: C/gtali.xml:373(glossterm)
+msgid "Full House Same Color"
+msgstr "同色满堂红"
+
+#: C/gtali.xml:374(para)
+msgid ""
+"This category is only used in the Colors game. Five dice consisting of two "
+"groups: One group of three with the same numbers and another group of two "
+"with the same numbers. The numbers must be all the same color. e.g. 3, 3, 3, "
+"4, 4. Two dice are the same color if their numbers total 7: 1 and 6 are "
+"black, 2 and 5 are red, and 3 and 4 are green. The score is 20 plus the "
+"total of all the dice."
+msgstr ""
+"这一项仅用于花色游戏，五个骰子分成两组：一组三个是相同点数，另一组两个是相同"
+"数字。数字必须都是相同的颜色。例如：3，3，3，4，4。两组骰子都是相同颜色，如果"
+"它们点数和是7的骰子：1和6是黑色，2和5是红色，3和4是绿色。得分是20加上点数之"
+"和。"
+
+#: C/gtali.xml:384(glossterm)
+msgid "Two Pair Same Color"
+msgstr "两对同色"
+
+#: C/gtali.xml:385(para)
+msgid ""
+"This category is only used in the Colors game. Five dice consisting of two "
+"groups: One group of two with the same numbers and another group of two with "
+"the same numbers. The pairs must be all the same color. e.g. 3, 3, 4, 4. Two "
+"dice are the same color if their numbers total 7: 1 and 6 are black, 2 and 5 "
+"are red, and 3 and 4 are green. The fifth die can be any value. The score is "
+"the total of all the dice."
+msgstr ""
+"这一项仅用于花色游戏，五个骰子分成两组：一组两个是相同点数，另一组两个是相同"
+"数字。成对的骰子必须都是相同的颜色。例如：3，3，4，4。两组骰子都是相同颜色，"
+"如果它们点数和是7的骰子：1和6是黑色，2和5是红色，3和4是绿色。第五个骰子可以是"
+"任意数。得分是所有骰子点数之和。"
+
+#: C/gtali.xml:395(glossterm)
+msgid "Flush"
+msgstr "同花"
+
+#: C/gtali.xml:396(para)
+msgid ""
+"This category is only used in the Colors game. Five dice that are all the "
+"same \"color\": Two dice are the same color if their numbers total 7: 1 and "
+"6 are black, 2 and 5 are red, and 3 and 4 are green. The fifth die can be "
+"any value. The score is 35 points."
+msgstr ""
+"这一项仅用于花色游戏，五个骰子都是相同“颜色”，两个骰子如果它们点数和是7的骰"
+"子：1和6是黑色，2和5是红色，3和4是绿色。第五个可以是任意数，得分是35。"
+
+#: C/gtali.xml:404(glossterm)
+msgid "Large Straight"
+msgstr "大顺子"
+
+#: C/gtali.xml:405(para)
+msgid ""
+"Five dice with consecutive numbers. e.g. 2, 3, 4, 5, 6. The score is 40 "
+"points."
+msgstr "五个骰子的点数依次排列。例如：2，3，4，5，6。得分是40分。"
+
+#: C/gtali.xml:410(glossterm)
+msgid "Small Straight"
+msgstr "小顺子"
+
+#: C/gtali.xml:411(para)
+msgid ""
+"Four dice with consecutive numbers. The fifth die can be any number. e.g. 2, "
+"3, 4, 5, 5. This category is only used in the regular game. The score is 30 "
+"points."
+msgstr ""
+"四个骰子的点数依次排列，第五个可以是任意数。例如：2，3，4，5，5。这一项仅用于"
+"普通规则游戏。得分是30分。"
+
+#: C/gtali.xml:425(title)
+msgid "Authors"
+msgstr "作者"
+
+#: C/gtali.xml:426(para)
+msgid ""
+"<application>GNOME Tali</application> was written by Scott Heavner "
+"(<email>sdh@po.cwru.edu</email>) and Orest Zborowski. This manual was "
+"written by Scott D Heavner (<email>sdh@po.cwru.edu</email>) with extra "
+"material added by Callum McKenzie (<email>callum@physics.otago.ac.nz</"
+"email>). To report a bug or make a suggestion regarding this application or "
+"this manual, follow the directions in this <ulink url=\"ghelp:user-guide?"
+"feedback-bugs\" type=\"help\">document</ulink>."
+msgstr ""
+"<application>GNOME 掷骰子</application>小游戏由 Scott Heavner (<email>sdh@po."
+"cwru.edu</email>)和 Orest Zborowski 编写，本手册由 Scott D Heavner "
+"(<email>sdh@po.cwru.edu</email>) 书写，额外的素材由 Callum McKenzie "
+"(<email>callum@physics.otago.ac.nz</email>)添加。要报告缺陷或者提出建议，请参"
+"照 <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">文档</ulink> "
+"上的指导。"
+
+#: C/gtali.xml:453(title)
+msgid "License"
+msgstr "许可协议"
+
+#: C/gtali.xml:454(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>GNU General Public License</citetitle></ulink> as published by "
+"the Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version."
+msgstr ""
+"本程序是自由软件，您可以在遵守自由软件基金会发布的 <ulink type=\"help\" url="
+"\"gnome-help:gpl\"><citetitle>GNU 通用许可证</citetitle></ulink> 第2版或更高"
+"(如您所愿)版本下，重新分发和/或修改它。"
+
+#: C/gtali.xml:462(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"本程序的发布意图是希望它有所用处，但请注意它没有任何担保，甚至不包括商业用"
+"途、以及特殊目的保证。更多相关细节，请参阅 <citetitle>GNU 通用公共许可证</"
+"citetitle>。"
+
+#: C/gtali.xml:468(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"在<citetitle>GNOME 用户指南</citetitle> 的附录中包含了一份 <citetitle>GNU 通"
+"用许可证</citetitle>的副本，您也可以通过访问自由软件基金会的<ulink type="
+"\"http\" url=\"http://www.fsf.org\">网站</ulink>上获得 <citetitle>GNU 通用许"
+"可证</citetitle>的副本，或者写信给 <address> Free Software Foundation, Inc. "
+"<street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</"
+"state><postcode>02111-1307</postcode><country>USA</country></address> 来索"
+"取。"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/gtali.xml:0(None)
+msgid "translator-credits"
+msgstr "TeliuTe <teliute@163.com>, 2010"

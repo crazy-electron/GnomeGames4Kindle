@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="usage" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#play" group="one"/>
+    <link type="seealso" xref="gameplay"/>
+    <desc>Πώς παίζεται το <app>GNOME Τετραβέξ</app>.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <credit type="author">
+      <name>Rob Bradford</name>
+      <email>robster@debian.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>    
+  </info>
+
+  <title>Παίξτε <app>GNOME Τετραβέξ</app></title>
+
+  <section id="usage-basic">
+    <title>Βασική χρήση</title>
+    <p>Το παράθυρο του παιχνιδιού χωρίζεται σε δύο κουτιά: το ένα στα δεξιά περιέχει τα κομμάτια που πρέπει να τακτοποιηθούν. Στο άλλο, στα αριστερά, θα μετακινήσετε και θα τακτοποιήσετε τα κομμάτια. Κάθε κομμάτι χωρίζεται σε τέσσερα μικρά τρίγωνα, το καθένα από τα οποία περιέχει έναν αριθμό.</p>
+    <p>Ο σκοπός του παιχνιδιού είναι να τοποθετήσετε τα κομμάτια έτσι ώστε μόνο δύο ίδιοι αριθμοί να εφάπτονται.</p>
+    <p>Δε μπορείτε να τοποθετήσετε τα κομμάτια έτσι ώστε να εφάπτονται διαφορετικοί αριθμοί.</p>
+    <p>Το παιχνίδι ολοκληρώνεται όταν έχετε τοποθετήσει όλα τα κομμάτια στη σωστή τους θέση.</p>
+    <note>
+      <p>Το παιχνίδι ξεκινά αμέσως μόλις εκκινήσετε <app>GNOME Τετραβέξ</app>, και ο χρόνος αρχίζει να μετρά.</p>
+    </note>
+
+  </section>
+  
+  <section id="usage-video">
+    <title>Βίντεο επίδειξης</title>
+    <p>Αυτό το σύντομο βίντεο σας δείχνει πώς λειτουργεί το παιχνίδι, και ποιες είναι οι πιθανές κινήσεις.</p>
+    <p>
+      <media type="video" mime="application/ogg" src="figures/gnotravex-video.ogv">Απλή επίδειξη ενός παιχνιδιού</media>
+    </p>
+  </section>
+</page>

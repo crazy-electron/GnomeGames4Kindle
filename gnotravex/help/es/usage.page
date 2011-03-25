@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="usage" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#play" group="one"/>
+    <link type="seealso" xref="gameplay"/>
+    <desc>Cómo jugar a <app>Tetravex</app>.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <credit type="author">
+      <name>Rob Bradford</name>
+      <email>robster@debian.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>    
+  </info>
+
+  <title>Jugar a <app>Tetravex</app></title>
+
+  <section id="usage-basic">
+    <title>Uso básico</title>
+    <p>La ventana del juego se divide en dos cajas: la de la parte derecha de la ventana contiene las piezas que necesita organizar; la de la parte izquierda de la ventana es donde las piezas de la caja de la derecha se organizarán y moverán. Cada pieza se divide en cuatro pequeños triángulos que contienen un número.</p>
+    <p>La finalidad del juego es posicionar las piezas de tal forma que sólo dos números idénticos están juntos.</p>
+    <p>No es posible posicionar las piezas de tal forma que números diferentes están juntos.</p>
+    <p>La partida finaliza cuando ha posicionado todas las piezas en sus posiciones correctas.</p>
+    <note>
+      <p>Al iniciar <app>Tetravex</app> la partida comenzará inmediatamente y el cronómetro comenzará a contar.</p>
+    </note>
+
+  </section>
+  
+  <section id="usage-video">
+    <title>Videodemostración</title>
+    <p>Este pequeño vídeo muestra cómo funciona el juego y cuáles son los movimientos posibles.</p>
+    <p>
+      <media type="video" mime="application/ogg" src="figures/gnotravex-video.ogv">Demostración simple de una partida</media>
+    </p>
+  </section>
+</page>

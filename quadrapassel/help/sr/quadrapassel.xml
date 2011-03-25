@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "June 2004">
+<!ENTITY app "<application>Quadrapassel</application>">
+<!ENTITY appname "Quadrapassel">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sr">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Упутство за <application>Четворку</application></title>
+
+    <abstract role="description">
+      <para>Четворка је Гномова верзија тетриса, класичне игре слагања четвороделних блокова. Док блокови падају, играч их мора тако усмерити да се уклапају у блокове који су већ на дну слажући пуну водоравну линију. Када се направи пуна водоравна линија, она нестаје и играч добија поене.</para>
+    </abstract>
+
+    <copyright>
+      <year>2004</year>
+      <holder>Angela Boyle</holder>
+    </copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Пројекат Гномове документације</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Дозвољено умножавање, ширење, вршење измена овог документа под условима Гну-ове Слободне Документационе Дозволе (ГСДД), верзије 1.1 или било које накнадне верзије без непромењивих одељака, текста на насловној и последњој страни, а коју је објавила Задужбина Слободног Софтвера. Примерак ГСДД-е можете пронаћи на овој <ulink type="help" url="ghelp:fdl">адреси</ulink> или у датотеци COPYING-DOCS која је приложена уз ово упутство.</para>
+         <para>Ово упутство је део скупа Гном докумената објављених под GFDL. Уколико желите да расподељујете ово упутство одвојено од скупа, то можете урадити додавањем примерка лиценце документу, како је описано у одељку 6 саме лиценце.</para>
+
+	<para>Многи називи које компаније користе у циљу препознатљивости својих производа и услуга представљају робне марке. Када (уколико) се такви називи појављују(спомињу) у било којем Гномовом документу, а чланови Гномовог документационог пројекта имају сазнања о томе, тада су називи исписани великим словима или са великим почетним словима.</para>
+
+	<para>ОВАЈ ДОКУМЕНТ И ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СУ ДОСТУПНЕ ПОД УСЛОВИМА ГНУ-ОВЕ СЛОБОДНЕ ДОКУМЕНТАЦИОНЕ ДОЗВОЛЕ УЗ ДОДАТНУ САГЛАСНОСТ ДА: <orderedlist>
+		<listitem>
+		  <para>ДОКУМЕНТ ЈЕ ДОСТУПАН СА СВИМ СВОЈИМ ДОБРИМ И ЛОШИМ СТРАНАМА БЕЗ БИЛО КАКВОГ ЈАМСТВА, БИЛО ОНО ИЗРЕЧЕНО ИЛИ НЕ, УКЉУЧУЈУЋИ БЕЗ ОГРАНИЧЕЊА, ЈАМСТВО ДА ЈЕ ОВАЈ ДОКУМЕНТ ИЛИ ЊЕГОВА ИЗМЕЊЕНА ВЕРЗИЈА БЕЗ НЕДОСТАТАКА, СПРЕМАН ЗА ТРЖИШТЕ, СВРСИСХОДАН И НЕ НАРУШАВА ЗАКОНСКЕ НОРМЕ. ЦЕЛОКУПАН РИЗИК КОЈИ СЕ ОДНОСИ НА КВАЛИТЕТ, ТАЧНОСТ И ДОМЕТ (УЧИНАК) ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СНОСИ КОРИСНИК. УКОЛИКО СЕ У БИЛО КОЈЕМ ДОКУМЕНТУ ИЛИ ЊЕГОВОЈ ИЗМЕЊЕНОЈ ВЕРЗИЈИ ПОЈАВИ НЕДОСТАТАК (ГРЕШКА) БИЛО КОЈЕ ВРСТЕ, КОРИСНИК (А НЕ АУТОР ИЗВОРНЕ ВЕРЗИЈЕ, БИЛО КОЈИ ДРУГИ АУТОР ИЛИ САРАДНИК) СНОСИ СВЕ ТРОШКОВЕ НЕОПХОДНОГ СЕРВИСИРАЊА, ПОПРАВКЕ ИЛИ ИСПРАВКЕ. ОВО ОГРАНИЧЕЊЕ ЈАМСТВА ПРЕДСТАВЉА САСТАВНИ ДЕО ОВЕ ДОЗВОЛЕ. УПОТРЕБА БИЛО КОЈЕГ ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ НИЈЕ ДОЗВОЉЕНА ОСИМ ПОД УСЛОВИМА ОВОГ ОГРАНИЧЕЊА ЈАМСТВА.</para>
+		</listitem>
+		<listitem>
+		  <para>НИ ПОД КАКВИМ ОКОЛНОСТИМА ИЛИ ЗАКОНУ, БИЛО ЗБОГ КРШЕЊА (ИЛИ НЕМАРА) УГОВОРА, ИЛИ НА БИЛО КОЈИ ДРУГИ НАЧИН, АУТОР (ПРВОБИТНЕ ВЕРЗИЈЕ), САРАДНИК ИЛИ ИСПОРУЧИВАЛАЦ ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ, НИТИ ДОБАВЉАЧ БИЛО КОЈЕ ОД НАВЕДЕНИХ СТРАНА НЕЋЕ СНОСИТИ МАТЕРИЈАЛНУ ОДГОВОРНОСТ ЗА НАСТАЛА ДИРЕКТНА, ИНДИРЕКТНА, ПОСЕБНА, СЛУЧАЈНА ИЛИ ТИМЕ НАСТАЛА ОШТЕЋЕЊА БИЛО КОЈЕ ВРСТЕ УКЉУЧУЈУЋИ, БЕЗ ОГРАНИЧЕЊА, ШТЕТУ НАНЕСЕНУ УГЛЕДУ ФИРМЕ, ПРЕСТАНКУ ПРОИЗВОДЊЕ, ОТКАЗИВАЊЕ РАДА РАЧУНАРА ИЛИ КВАРА КАО И ЗА СВЕ ОСТАЛЕ ШТЕТЕ ИЛИ ГУБИТКЕ НАСТАЛЕ УСЛЕД КОРИШЋЕЊА ДОКУМЕНТА И ЊЕГОВИХ ИЗМЕЊЕНИХ ВЕРЗИЈА ЧАК И АКО ЈЕ ОШТЕЋЕНА СТРАНА БИЛА ОБАВЕШТЕНА О МОГУЋНОСТИ НАСТАНКА ТЕ ШТЕТЕ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL),
+and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+	
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Angela</firstname> 
+	<surname>Boyle</surname> 
+	<affiliation> 
+	  <address> <email>anjela@u.washington.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Упутство за Четворку v2.8</revnumber> 
+	<date>Јун 2004.</date> 
+	<revdescription> 
+	  <para role="author">Angela Boyle <email>anjela@u.washington.edu</email></para>
+	  <para role="publisher">Пројекат Гномове документације</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Ово упуство је написано за Четворку 2.12.</releaseinfo>
+    <!-- The following feedback information only applies to applications
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove this
+    section altogether -->
+    <legalnotice> 
+      <title>Примедбе</title> 
+      <para>Да бисте пријавили грешку или дали предлог у вези програма <application>Четворка</application> или његовог упутства, пратите смернице на <ulink url="ghelp:user-guide?feedback-bugs" type="help">Гномовој страни за примедбе</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Четворка</primary> 
+  </indexterm>
+
+<!-- ==============================Document Body==================-->
+
+<sect1 id="s1-intro">
+ <title>Увод</title>
+
+<!--synopsis of game-->
+  <para><application>Четворка</application> је настала од <application>Тетриса</application>, класичне игре са падајућим блоковима. Циљ игре је да попуните водоравне линије блоковима, које тада нестају. Блокови имају седам различитих облика, а сви блокови су састављени од четири дела: један прав, два у облику латиничног слова L, један квадрат и један у облику латиничног слова S. Блокови падају из центра горњег дела екрана без одређеног редоследа. Блокове треба да окрећете и померате по екрану да бисте их спустили тако да направе пуну линију. Поена добијате када брже спуштате блокове и када попуњавате линије. Како вам број бодова расте, игра постаје све тежа и блокови падају све брже.</para>
+
+<!--running game-->
+   <para>Да бисте покренули <application>Четворку</application>, изаберите <menuchoice><guimenu>Програми</guimenu><guisubmenu>Игре</guisubmenu><guimenuitem>Четворка</guimenuitem></menuchoice>, или откуцајте <command>quadrapassel</command> у командној линији.</para>
+
+<!--part of gnome-games-->
+   <para><application>Четворка</application> је укључен у пакет <filename>gnome-games</filename>, који је део Гномовог радног окружења. Овај документ је написан за <application>Четворку</application> 2.8.</para>
+</sect1>
+
+<sect1 id="s1-playing">
+ <title>Играње <application>Четворке</application></title>
+  <para>Поене можете добити на два начина: попуњавајући редове и спуштајући блокове брже него што падају.</para>
+   <sect2 id="s2-block-moving">
+     <title>Померање блокова</title>
+      <para>Да бисте играли игру, потребна су вам само четири тастера са стрелицама.</para>
+       <itemizedlist>
+        <listitem>
+         <para>Тастери <keycap>Лево</keycap> и <keycap>Десно</keycap> померају блок лево и десно преко екрана.</para>
+        </listitem>
+        <listitem>
+         <para>Тастер <keycap>Горе</keycap> окреће блок. Подразумевани смер ротације је супротно од смера казаљке на сату. Смер ротације можете променити из менија <menuchoice><guimenu>Подешавања</guimenu><guimenuitem>Поставке</guimenuitem></menuchoice> искључивањем опције <guilabel>Окрећи супротно смеру казаљке на сату</guilabel>.</para>
+        </listitem>
+        <listitem>
+         <para>Тастер <keycap>Доле</keycap> и тастер за <keycap>Размак</keycap> померају блок брже наниже. Тастер <keycap>Доле</keycap> помера блок брже на доле, док <keycap>Размак</keycap> одмах спушта блок до дна.</para>
+        </listitem>
+       </itemizedlist> 
+   </sect2>
+   <sect2 id="s2-newgame">
+     <title>Покретање нове игре</title>
+      <para>Да покренете нову игру, изаберите <menuchoice><guimenu>Игра</guimenu><guimenuitem>Нова</guimenuitem></menuchoice> из менија. Игра ће започети падањем блокова из средине горњег дела прозора. Подразумеван почетак игре је када на дну нема унапред попуњених блокова, а са стране се приказује следећи блок. <guilabel>Резултат</guilabel> приказује број добијених поена. <guilabel>Линије</guilabel> приказује број до тада попуњених редова. <guilabel>Ниво</guilabel> приказује ниво тежине на коме се тренутно налазите.</para>
+    </sect2>
+    <sect2 id="s2-pausegame">
+     <title>Паузирање игре</title>
+      <para>Да бисте паузирали игру, изаберите <menuchoice><guimenu>Игра</guimenu><guimenuitem>Пауза</guimenuitem></menuchoice> из менија. Игру можете паузирати једино ако је у том тренутку играте. Време за које је игра паузирана је неограничено. Да опет покренете игру, идите на <menuchoice><guimenu>Игра</guimenu><guimenuitem>Пауза</guimenuitem></menuchoice>.</para>
+    </sect2>
+    <sect2 id="s2-endgame">
+     <title>Завршавање игре</title>
+      <para>Изаберите <menuchoice><guimenu>Игра</guimenu><guimenuitem>Заврши игру</guimenuitem></menuchoice> да бисте завршили тренутну игру без изласка из Четворке.</para>
+    </sect2>
+    <sect2 id="s2-quitgame">
+     <title>Излазак из <application>Четворке</application></title>
+      <para>Да потпуно изађете из <application>Четворке</application>, кликните <menuchoice><guimenu>Игра</guimenu><guimenuitem>Изађи</guimenuitem></menuchoice> ставку менија. Ако сте у том тренутку играли игру, она ће бити завршена без чувања резултата.</para>
+    </sect2>
+    <sect2 id="s2-scoring">
+     <title>Добијање поена</title>
+     <para>Поене добијате на два начина: бржим спуштањем блокова и брисањем попуњених редова. Када избришете ред, добијате више поена, али брже спуштање блокова чешће доноси поене. Када прелазите на веће нивое, блокови крећу брже да падају. Највећи ниво је 10., када имате само једну секунду да правилно наместите блок пре него што падне.</para>
+    </sect2> 
+    <sect2 id="s2-pastscores">
+     <title>Преглед претходних резултата</title>
+      <para>Можете погледати десет најбољих резулата играних на рачунару из менија <menuchoice><guimenu>Игра</guimenu><guimenuitem>Резултати</guimenuitem></menuchoice>. Имена корисника су приказана поред њихових резултата и датума када су те резултате остварили.</para>
+    </sect2> 
+</sect1>
+
+ 
+<sect1 id="s1-customizegame">
+ <title>Прилагођавање <application>Четворке</application></title>
+  <sect2 id="s2-customstartup">
+   <title>Прилагођавање почетка игре</title>
+    <para>Из менија <menuchoice><guimenu>Подешавања</guimenu><guimenuitem>Поставке</guimenuitem></menuchoice>, можете прилагодити мноштво могућности за почетак сваке игре Четворке: број и густину унапред попуњених редова. „Унапред попуњени редови“ се односе на то колико ће редова већ имати блокове када покренете нову игру.</para>
+    <sect3 id="s3-numberpfr">
+     <title>Број унапред попуњених редова</title>
+      <para>Можете изменити број редова који имају унапред постављене блокове на почетку сваке игре користећи вртеће дугме. Можете почети са највише 19 унапред попуњених редова на почетку игре. Подразумевани број унапред попуњених редова је нула.</para>
+     </sect3>
+     <sect3 id="s3-densitypfr">
+      <title>Густина унапред попуњених редова</title>
+       <para>Можете мењати густину блокова у унапред попуњеним редовима на почетку сваке игре. Густина може да иде до 10 блокова. Прво треба да одаберете колико желите унапред попуњених редова у <guilabel>Броју унапред попуњених редова</guilabel>. Подразумевана густина блокова је три.</para>
+     </sect3>
+     <sect3 id="s3-startlevel">
+      <title>Почетни ниво</title>
+       <para>Можете подесити ниво тежине на коме започињете игру. Највиши ниво на коме можете почети је 10. Ово је уједно и највиши ниво игрице. Подразумевани почетни ниво је први.</para>
+     </sect3>
+   </sect2>
+   <sect2 id="s3-customblocks">
+    <title>Прилагођавање игре</title>
+    <para>Из менија <menuchoice><guimenu>Подешавања</guimenu><guimenuitem>Поставке</guimenuitem></menuchoice>, можете прилагодити мноштво могућности везаних за блокове: преглед следећег блока, боје блокова, окретање блокова.</para>
+      <sect3 id="s3-sound">
+	<title>Укључивање звукова</title>
+	<para>Укључите или искључите звук коришћењем ове опције. Ако игру играте у простору који делите са другим људима, вероватно би требало да искључите звук.</para>
+      </sect3>
+     <sect3 id="s3-nextblock">
+      <title>Приказивање следећег блока</title>
+        <para>Штиклирајте ову опцију ако желите да видите који ће следећи блок пасти. Ова могућност вам помаже да испланирате постављање блокова.</para>
+     </sect3>
+     <sect3 id="s3-blockcolors">
+      <title>Коришћење насумичних боја блокова</title>
+       <para>Овим подешавањем се бира да ли желите да блокови истог облика имају исте боје или желите да сваки нови блок има насумично одабрану боју. Ако вам боја значи да вам помогне да препознате блок, насумичне боје ће вам отежати игру.</para>
+     </sect3>
+     <sect3 id="s3-difficult-block-mode">
+      <title>Choose Difficult Blocks</title>
+       <para>Одаберите ову опцију ако желите режим тако направљен да намерно нервира играча. Када је ова могућност укључена, никад вам неће доћи блок који вам треба и јако ретко можете да попуните ред. Приказ следећег блока не одговара стварном блоку који ће наићи следећи, већ оном који бисте ви највише желели да дође.</para>
+     </sect3>
+     <sect3 id="s3-block-rotation">
+      <title>Окретање супротно смеру казаљке на сату</title>
+       <para>Штиклирајте ову опцију ако желите да се блокови ротирају супротно од смера казаљке на сату.</para>
+     </sect3>
+     <sect3 id="s3-show-target">
+      <title>Приказивање где ће блок бити приземљен</title>
+        <para>Ако се користи ова могућност, сива слика блока ће бити приказана тамо где ће се блок спустити. Ова могућност је веома корисна почетницима, али ће вероватно сметати искуснијим играчима.</para>
+     </sect3>
+   </sect2>
+   <sect2 id="s2-customlook">
+    <title>Прилагођавање изгледа <application>Четворке</application></title>
+    <para>Из менија <menuchoice><guimenu>Подешавања</guimenu><guimenuitem>Поставке</guimenuitem></menuchoice>, можете прилагодити изглед <application>Четворке</application>: слике блокова.</para>
+     <sect3 id="s3-blockimage">
+      <title>Слике блокова</title>
+       <para>Можете изменити стил блокова, укључујући ту њихову слику и величину. Постоји мноштво готових стилова.</para>
+     </sect3>
+     <sect3 id="s3-background">
+       <title>Позадина</title> <para>Ако превучете вашу омиљену слику у прозор <application>Четворке</application>, она ће бити искоришћена као позадина. Ако желите једнобојну позадину, превуците боју из било ког прозорчета за избор боја или из <application>Наутилусовог</application> прозорчета <guimenuitem>Позадине и обележја</guimenuitem> (ставка „Врати“ из истог дијалога такође функционише).</para>
+     </sect3>
+    </sect2>
+   </sect1>
+
+<sect1 id="authors">
+  <title>Аутори</title>
+  <para><application>Четворку</application> је 1999. написао J. Marcin Gorycki и од тада га одржава Гномов тим за игре. Ово упутство је написала Angela Boyle. Да бисте пријавили грешке или дали предлог у вези овог програма или његовог упутства, пратите смернице из <ulink url="ghelp:user-guide?feedback-bugs" type="help">документа</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+</sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="s1-license">
+  <title>Лиценца</title>
+  <para>Овај програм је слободан софтвер; можете га расподељивати и/или га мењати под условима <citetitle>ГНУ Опште Јавне Лиценце (GNU GPL)</citetitle> како је објављује Задужбина за Слободни Софтвер (FSF); било верзије 2 те Лиценце, било (по вашем нахођењу) било које новије верзије.</para>
+  <para>Овај програм се расподељује у нади да ће бити од користи, али БЕЗ ИКАКВИХ ГАРАНЦИЈА; чак и без подразумеване гаранције КОРИСНОСТИ или ПРИЛАГОЂЕНОСТИ ОДРЕЂЕНОЈ НАМЕНИ.  Видите <citetitle>ГНУ Општу Јавну Лиценцу</citetitle> за више детаља.</para>
+  <para>Примерак <citetitle>ГНУ Опште Јавне Лиценце</citetitle> је укључен у додатку <citetitle>Гномовог корисничког водича</citetitle>. Такође можете набавити примерак <citetitle>ГНУ Опште Јавне Лиценце</citetitle> од Задужбине за Слободни Софтвер одлазећи на <ulink url="http://www.fsf.org" type="http">њихову веб адресу</ulink> или пишући на <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

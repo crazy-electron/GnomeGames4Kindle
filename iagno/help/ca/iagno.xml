@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.20">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "February 2008">
+<!ENTITY app "<application>Iagno</application>">
+<!ENTITY appname "Iagno">
+<!ENTITY version "2.9">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ca">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo>
+ <title>Manual del <application>Iagno</application></title>
+
+    <abstract role="description">
+      <para>El Iagno és el joc d'estratègia de dos jugadors Othello, que també es conegut com a Reversi i que s'assembla al Go. Les peces són fitxes que són negres per una banda i blanques per l'altre i l'objectiu és que el jugador giri les fitxes de l'adversari al seu color, mentre evita que l'adversari faci el mateix. Quan el tauler està ple de fitxes, el guanyador serà el jugador amb més fitxes del seu color en el tauler.</para>
+    </abstract>
+
+ <copyright>
+  <year>2000</year>
+  <holder>Eric Baudais</holder>
+ </copyright><copyright><year>2007, 2008</year><holder>Joan Duran (jodufi@gmail.com)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Projecte de documentació del GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Teniu permís per a copiar, distribuir i/o modificar aquest document, sota els termes de la Llicència de documentació lliure GNU (GFDL), versió 1.1 o qualsevol versió publicada posteriorment per la Free Software Foundation, sense seccions invariants, sense texts de portada i sense texts de contraportada. Podeu trobar una còpia de la GFDL en aquest <ulink type="help" url="ghelp:fdl">enllaç</ulink> o en el fitxer COPYING-DOCS distribuït amb aquest manual.</para>
+         <para>Aquest manual forma part d'una col·lecció de manuals del GNOME distribuïts sota la GFDL. Si voleu distribuir aquest manual independentment de la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal com es descriu a la secció 6 de la llicència.</para>
+
+	<para>Molts dels noms que les empreses utilitzen per a distingir els seus productes i serveis es consideren marques comercials. Quan aquests noms apareguin en qualsevol documentació del GNOME, si els membres del Projecte de documentació del GNOME han estat avisats pel que fa a les marques, els noms apareixeran en majúscules o amb les inicials en majúscules.</para>
+
+	<para>EL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT S'OFEREIXEN SOTA ELS TERMES DE LA LLICÈNCIA DE DOCUMENTACIÓ LLIURE DE GNU, TENINT EN COMPTE QUE: <orderedlist>
+		<listitem>
+		  <para>EL DOCUMENT S'OFEREIX «TAL COM ÉS», SENSE CAP TIPUS DE GARANTIA, NI EXPLÍCITA NI IMPLÍCITA; AIXÒ INCLOU, SENSE LIMITAR-S'HI, LES GARANTIES QUE EL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT NO TINGUI DEFECTES, SIGUI COMERCIALITZABLE, SIGUI ADEQUAT PER A UN ÚS CONCRET O NO INFRINGEIXI CAP LLEI. TOT EL RISC PEL QUE FA A LA QUALITAT, EXACTITUD I RENDIMENT DEL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT ÉS VOSTRE. EN CAS QUE EL DOCUMENT RESULTÉS DEFECTUÓS EN QUALSEVOL ASPECTE, VÓS (NO PAS L'ESCRIPTOR INICIAL, L'AUTOR O CAP ALTRE COL·LABORADOR) ASSUMIU TOT EL COST DE MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA; I </para>
+		</listitem>
+		<listitem>
+		  <para>EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGUI PER AGREUJAMENT (INCLOENT-HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR ORIGINAL, QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA VERSIÓ MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN RESPONSABLES DAVANT DE NINGÚ PER CAP DANY DIRECTE, INDIRECTE, ESPECIAL, ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITAR-S'HI, ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FEINA, FALLADA O MALFUNCIONAMENT DE L'ORDINADOR, O QUALSEVOL ALTRA PÈRDUA O DANY RELACIONAT AMB L'ÚS DEL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT, FINS I TOT SI S'HA INFORMAT AQUESTA PART DE LA POSSIBILITAT D'AQUESTS DANYS.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Eric</firstname> 
+	<surname>Baudais</surname> 
+	<affiliation> 
+	  <address> <email>baudais@okstate.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+<revhistory>
+  <revision> 
+    <revnumber>Manual del Iagno (versió 2.9)</revnumber> 
+    <date>Febrer de 2008</date> 
+    <revdescription> 
+      <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+      <para role="publisher">Projecte de documentació del GNOME</para>
+    </revdescription> 
+  </revision>
+  <revision> 
+    <revnumber>Manual del Iagno (versió 2.8)</revnumber> 
+    <date>Setembre de 2004</date> 
+    <revdescription> 
+      <para role="author">Eric Baudais <email>baudais@okstate.edu</email></para>
+      <para role="publisher">Projecte de documentació del GNOME</para>
+	</revdescription> 
+  </revision>
+  <revision>
+   <revnumber>0.1</revnumber>
+   <date>4 de febrer de 2000</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Primer esborrany completat.</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>0.2</revnumber>
+   <date>5 de febrer de 2000</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>Afegit un peu de pàgina a la secció perquè. Arreglades algunes faltes.</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>0.3</revnumber>
+   <date>7 de febrer de 2000</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>El document compleix l'estàndard de plantilles GDP. S'ha clarificat la secció de joc.</revremark>
+  </revision>
+
+  <revision>
+   <revnumber>1.0</revnumber>
+   <date>7 d'abril de 2000</date>
+   <authorinitials>EB</authorinitials>
+   <revremark>S'ha llicenciat el manual del Iagno sota la FDL. S'han actualitzat les captures de pantalla al tema estàndard GDP, MicroGUI.</revremark>
+  </revision>
+ </revhistory>
+
+    <releaseinfo>Aquest manual descriu la versió 2.20 del Iagno.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Comentaris</title> 
+      <para>Per a informar d'un error o fer algun suggeriment quant al <application>Iagno</application> o aquest manual, seguiu les indicacions a la <ulink url="ghelp:user-guide?feedback-bugs" type="help">pàgina de comentaris del GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Iagno</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="intro">
+ <title>Introducció</title>
+ <sect2 id="what">
+  <title>Què és el Iagno?</title>
+  
+  <para>El <application>Iagno</application> és una versió per ordinador del joc Reversi, més popularment conegut com a Othello. El <application>Iagno</application> és un joc d'estratègia per a dos jugadores semblant al Go. El tauler és de 8 per 8 fitxes que són negres per una cara i blanques per l'altra. L'objectiu del <application>Iagno</application> és girar el màxim de fitxes de l'adversari al vostre color sense que l'adversari giri les vostres. S'aconsegueix bloquejant les fitxes de l'adversari entre dues fitxes del vostre color.</para>
+
+  <para>El Iagno també admet la funció <link linkend="network-games">multijugador</link> amb dos jugadors humans en mode cadira-calenta o en xarxa.</para>
+
+  <para>Per a executar el <application>Iagno</application>, seleccioneu <guimenuitem>Iagno</guimenuitem> en el submenú <guimenu>Jocs</guimenu> del <guimenu>Menú principal</guimenu> o introduïu <command>iagno</command> en la línia d'ordres.</para>
+ </sect2>
+
+ <sect2 id="why">
+  <title>Per què l'Othello s'anomena Iagno?</title>
+  <para>Possiblement us pregunteu perquè aquest joc s'anomena <application>Iagno</application> enlloc d'Othello o fins i tot gnothello. La resposta és complicada i inclou coses com marques registrades, advocats i més coses. En lloc de deixar aquí la cosa, us explicarem una mentida llarga i complicada sobre l'origen del nom <application>Iagno</application>.</para>
+  <para>Una nit de tempesta, d'aquestes típiques a Anglaterra, un programador solitari estava assegut davant de la pantalla de l'ordinador. L'Ian havia acabat la seva obra mestra en jocs. Era un joc interactiu de l'Othello i va decidir anomenar-lo gnothello, ja que el joc estava escrit utilitzant el GNOME.</para>
+  <para>Més tard van aparèixer els seus amic i com fan tots els programadors els hi va ensenyar la seva obra mestra. Se li van riure a la cara i li van dir que era un joc pèssim i un intent patètic de ser un autèntic hacker. Després de fer-los fora, l'Ian va decidir canviar el nom del programa a Iago <footnote>
+   <para>En Iago és l'enemic d'Otel·lo en l'obra <citetitle>Otel·lo</citetitle> de William Shakespeare.</para>
+  </footnote> degut a la maldat que s'havia manifestat pel seu joc. Tot i això encara no sonava bé. En Ian va pensar que tots els programes del GNOME contenen una part del GNOME. Després de molt pensar va decidir el nom que s'ha mantingut, <application>Iagno </application>.</para>
+ </sect2>
+</sect1>
+
+<sect1 id="playing">
+ <title> Jugar al Iagno</title>
+ <para>El tauler comença amb quatre fitxes organitzades en un quadrat enmig del tauler. Les fitxes de cada cantonada tenen el mateix color, com es mostra a <xref linkend="start-shot"/>.</para>
+ 
+ <figure id="start-shot">
+  <title>Posició inicial</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/START.png" format="PNG" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Captura de pantalla de la posició inicial.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+ <para>Les negres mouen primer i situen una fitxa en el tauler de manera que atrapi una fitxa blanca entre dues fitxes negres. Quan les negres situen una fitxa al tauler, totes les fitxes blanques entre la fitxa negra acabada de posar i les altres fitxes negres, en horitzontal, vertical o diagonal, es giraran i es convertiran en negres, com es mostra a <xref linkend="first-shot"/>.</para>
+
+ <figure id="first-shot">
+  <title>Primer moviment</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/FIRST.png" format="PNG" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Captura de pantalla del primer moviment.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+ <para>Quan hi ha una fitxa atrapada entre dues fitxes, del mateix color en la mateixa fila, el jugador captura fitxes fins que es troben un altra fitxa del mateix color del jugador, com es mostra a <xref linkend="block-shot"/>. El jugador només pot agafar fitxes com a resultat directa de posar la fitxa al tauler. Un cop situada la fitxa al tauler, el jugador no la pot treure i situar-la a un altre lloc. Un jugador perd el seu torn si no pot moure. La partida finalitza quan cap dels jugadors pot moure. <figure id="block-shot">
+  <title>Les blanques no poden capturar la fitxa negra al centre de la columna mitja perquè hi ha fitxes blanques bloquejant el final d'aquesta columna. Si fos el torn de les negres, les negres podrien situar una fitxa a la part superior de la columna però només giraria la primera de les dues fitxes blanques.</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/BLOCK.png" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Captura de pantalla de la negra bloquejant.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure></para>
+
+</sect1>
+
+<sect1 id="settings">
+ <title>Paràmetres del joc</title>
+
+ <sect2 id="player">
+  <title>Color i dificultat del jugador</title>
+ 
+  <para>Quan inicieu el Iagno el jugador humà juga amb les negres i l'ordinador juga amb les blanques amb el primer nivell de dificultat. Si utilitzeu la pestanya <guimenuitem>Partida</guimenuitem> en el diàleg de <guisubmenu>Preferències</guisubmenu> podeu establir el tipus de jugador per a cada color. Evidentment el jugador humà sou vostè, el nivell 1 és el jugador ordinador més fàcil i el nivell tres el més difícil. Podeu establir els dos jugadors com a humà per a jugar contra un amic o establir els dos jugadors a ordinador per a veure l'ordinador jugar contra ell mateix.</para>
+ </sect2>
+
+ <sect2 id="quick-moves">
+  <title>Opció de moviments ràpids</title>
+
+  <para>Aquesta opció està en el menú <guimenu>Paràmetres</guimenu>. Aneu al submenú <guisubmenu>Preferències</guisubmenu> en la pestanya <guimenuitem>Partida</guimenuitem>, on inicialment està inhabilitada. En habilitar aquesta opció fareu que el jugador ordinador situï les seves fitxes més ràpidament.</para>
+
+  <note>
+   <title>Nota:</title>
+   <para>Habilitar aquesta opció no força al jugador ordinador a moure ni tampoc redueix el nivell de dificultat.</para>
+  </note>
+ </sect2>
+ 
+ <sect2 id="enable-sound">
+  <title>Habilita/Inhabilita el so</title>
+
+  <para>L'última opció de la pestanya <guimenuitem>Partida</guimenuitem> en el diàleg de <guilabel>Preferències</guilabel> us permet habilitar o inhabilitar tots els sons quan jugueu al <application>Iagno</application>.</para>
+
+  <figure id="player-shot">
+   <title>El menú de preferències amb la pestanya Partida realçada.</title>
+   <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/PLAYER.png" srccredit="Eric Baudais"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Captura de pantalla dels paràmetres de partida.</phrase> 
+    </textobject> 
+  </mediaobject>
+   </screenshot>
+  </figure>
+
+ </sect2>
+
+</sect1>
+
+<sect1 id="animations">
+ <title>Aparença</title>
+
+ <para>Totes les opcions d'animació estan al menú <menuchoice><guimenu>Paràmetres</guimenu><guisubmenu>Preferències</guisubmenu></menuchoice> amb la pestanya <guimenuitem>Aparença</guimenuitem> realçada.</para>
+
+ <sect2 id="animation-amount">
+  <title>Animació</title>
+
+  <para>Aquesta opció controla la quantitat d'animació quan és gira una fitxa, utilitzant els botons d'opció. Si seleccioneu l'opció <guibutton>Cap</guibutton> fareu que les fitxes canviïn de color instantàniament. Seleccionant l'opció <guibutton>Parcial</guibutton> fareu que les fitxes canviïn de color lentament. Seleccionant l'opció <guibutton>Complet</guibutton> fareu que les fitxes canviïn de color lentament i suaument.</para>
+
+ </sect2>
+
+ <sect2 id="stagger-flips">
+  <title>Gira les fitxes esglaonadament</title>
+  
+  <para>Aquesta opció fa que les fitxes capturades en una fila, columna o diagonal girin una després de l'altra, com un dòmino, enlloc de girar totes a la vegada. No té cap efecte en la partida, però és un efecte divertit.</para>
+
+ </sect2>
+
+ <sect2 id="grid">
+  <title>Mostra la quadrícula</title>
+
+  <para>Aquesta opció mostrarà una quadrícula sobre la superfície del joc. És útil visualitzar la quadrícula perquè mostra al jugador on té situada exactament cada peça.</para>
+
+  <tip>
+   <title>Consell:</title>
+   <para>Aquesta opció hauria d'estar habilitada per als jugadors principiants per a veure més clarament la partida.</para>
+  </tip>
+
+ </sect2>
+
+ <sect2 id="flip-final">
+  <title>Gira els resultats finals</title>
+
+  <para>Aquesta opció mou al final de la partida totes les fitxes negres a la part superior del tauler i totes les fitxes blanques a la part inferior del tauler. Aquesta opció us permet veure visualment el resultat de la partida.</para>
+
+  <note>
+   <title>Nota:</title>
+   <para>Aquesta opció no afecta de cap manera el resultat de la partida.</para>
+  </note>
+
+ </sect2>
+
+ <sect2 id="tile-set">
+  <title>Joc de fitxes</title>
+  <para>Aquesta opció us permet seleccionar el tipus de tauler i les fitxes que es visualitzaran. Si voleu crear el vostre joc de fitxes, utilitzeu el joc de fitxes clàssic com a plantilla i canvieu la textura i els colors per als diferents efectes. Quan creeu un joc de fitxes nou que funcioni amb el Iagno envieu-lo a en Ian Peters <email>itp@gnu.org</email> i ell l'inclourà en la distribució següent.</para>
+
+  <important>
+   <title>Important:</title>
+   <para>Hi ha dos jocs de fitxes que semblen iguals però tenen animacions diferents -- woodtrim i classic.</para>
+  </important>
+
+  <figure id="animation-shot">
+   <title>El menú de preferències amb la pestanya aparença realçada.</title>
+   <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata format="PNG" fileref="figures/ANIMATION.png" srccredit="Eric Baudais"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Captura de pantalla dels paràmetres d'animació.</phrase> 
+    </textobject> 
+  </mediaobject>
+   </screenshot>
+  </figure>
+
+ </sect2>
+
+</sect1>
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Jocs en xarxa</title>
+  <para>El Iagno admet partides en xarxa multijugador, proporcionat per <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink>. En connectar a un servidor de Iagno d'Internet, podeu desafiar altres jugadors en partides multijugador. Per a obtenir notícies, actualitzacions i una llista de servidors on connectar-vos, vegeu el <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">lloc web del gnome-games</ulink>.</para>
+  <para>Per a iniciar la partida multijugador del Iagno, seleccioneu <menuchoice><guimenu>Partida</guimenu><guimenuitem>Joc en xarxa</guimenuitem></menuchoice> en el menú del Iagno.</para> 
+
+<sect2 id="connecting">
+<title>Connectar a un servidor de xarxa Iagno</title>
+<para>El diàleg de connexió del Iagno es mostra quan s'inicia una partida en xarxa nova. Aquest diàleg us permet seleccionar un servidor on connectar-vos, i especificar el nom d'usuari que tindreu en connectar-vos-hi.</para>
+
+<para>És possible connectar-vos a un servidor amb un compte de convidat o un compte registrat normal. Els comptes de convidats us permeten entrar anònimament, mentre que si entreu amb un compte normal us permet reservar el nom d'usuari que està protegit per la contrasenya que seleccioneu.</para>
+
+<para>Hauríeu de seleccionar l'opció <guimenuitem>Entrada com a convidat</guimenuitem> si voleu un compte de convidat anònim. Si voleu crear un compte d'entrada nou, seleccioneu l'opció <guimenuitem>Entrada per primera vegada</guimenuitem>, amb el nom d'usuari, contrasenya i correu electrònic que vulgueu. Si ja heu creat un compte, us podeu connectar si seleccioneu l'opció <guimenuitem>Entrada normal</guimenuitem> i introduïu el nom d'usuari i la contrasenya que heu triat.</para>
+<para>Per a connectar-vos a un servidor, feu clic en el botó <guimenuitem>Connecta</guimenuitem>.</para>
+<figure id="connect">
+<title>El diàleg de connexió a la xarxa del Iagno.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>El diàleg de connexió a la xarxa del Iagno.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Entrada a una sala de joc</title>
+<para>Quan us hàgiu connectat a un servidor, podeu seleccionar a quina sala de joc voleu entrar. Per a jugar una partida multijugador del Iagno, seleccioneu la sala del Iagno. Si voleu ser l'amfitrió d'una partida, feu clic en el botó Llança. Creareu un tauler nou on els altres jugadors poden jugar contra vos. Si hi ha altres partides iniciades, podeu fer doble clic en un tauler de partida existent per a entrar-hi. La llista de taulers de partides a la dreta mostra el número de seients disponibles, que significa el número de jugadors que poden entrar al tauler de partida.</para>
+<figure id="tables">
+<title>Aquest diàleg de xarxa del Iagno us permet entrar a una sala de joc per a cercar altres jugadors.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Aquest diàleg de xarxa del Iagno us permet entrar a una sala de joc per a cercar altres jugadors.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>Quan creeu un tauler nou per a partides del Iagno, es mostrarà un diàleg de preferències que us permet personalitzar la partida, com ara establir el número mínim de jugadors per a la partida. Quan el número total de seients s'hagin ocupat, no es permetrà entrar a més jugadors en aquest tauler de partida.</para>
+<para>És possible fer un xat amb altres jugadors en els jocs en xarxa. Demaneu consell o ajuda mentre jugueu les partides, però sigueu educat amb els altres jugadors.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Espera que els altres jugadors entrin a la partida</title>
+<para>Quan hàgiu entrat a un tauler de joc, heu d'esperar fins que hagin entrat suficients jugadors al tauler. L'element de menú <guimenuitem>Llista de jugadors</guimenuitem> us permet veure una llista de jugadors que han entrat a la partida. La partida començarà de seguida que s'hagi aconseguit el número total de jugadors.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Jugar partides multijugador en el Iagno</title>
+<para>Les partides multijugador en el Iagno tenen més o menys les mateixes regles que una partida normal del Iagno, excepte que esteu jugant contra jugadors humans. Això significa que possiblement altres estratègies siguin millors que les utilitzades contra jugadors d'intel·ligència artificial.</para>
+<para>Quan un jugador hagi guanyat, la partida finalitza i podeu tornar a la pantalla inicial de joc en xarxa. Llavors podeu jugar una altra partida addictiva multijugador del Iagno.</para>
+</sect2>
+
+</sect1>
+
+
+
+
+<sect1 id="bugs">
+ <title>Errors i limitacions conegudes</title>
+
+ <itemizedlist mark="opencircle">
+    <listitem>
+     <para>És fàcil guanyar el jugador ordinador del Iango.</para>
+    </listitem>
+ </itemizedlist>
+
+</sect1>
+
+<sect1 id="credits">
+ <title>Autors</title>
+  <para>L'Ian Peters (<email>itp@gnu.org</email>) ha escrit el <application>Iagno</application>. L'Eric Baudais (<email>baudais@okstate.edu</email>) ha escrit aquest manual. Per a informar d'un error o fer algun suggeriment d'aquesta aplicació o aquest manual, seguiu les indicacions d'aquest <ulink url="ghelp:user-guide?feedback-bugs" type="help">document</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Llicència</title>
+  <para>Aquest programa és programari lliure; podeu redistribuir-lo i/o modificar-lo sota els termes de la <citetitle>Llicència pública general de GNU</citetitle> tal com publica la Free Software Foundation; tant en la versió 2 de la llicència, o (a la vostra opció) una versió posterior.</para>
+  <para>Aquest programa es distribueix amb l'esperança de que sigui útil, però SENSE CAP GARANTIA; fins i tot sense la garantia implícita de COMERCIALITZACIÓ o ADEQUACIÓ A UN ÚS CONCRET. Per a més detalls vegeu la <citetitle>Llicència pública general de GNU</citetitle>.</para>
+  <para>S'inclou una còpia de la <citetitle>Llicència pública general de GNU</citetitle> en l'apèndix de la <citetitle>Guia d'usuaris del GNOME</citetitle>. També podeu obtenir una copia de la <citetitle>Llicència pública general de GNU</citetitle> de la Free Software Foundation visitant el <ulink type="http" url="http://www.fsf.org">seu lloc web</ulink> o escrivint a <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

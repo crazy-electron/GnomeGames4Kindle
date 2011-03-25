@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "June 2004">
+<!ENTITY app "<application>Quadrapassel</application>">
+<!ENTITY appname "Quadrapassel">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="cs">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Příručka ke hře <application>Quadrapassel</application></title>
+
+    <abstract role="description">
+      <para>Quadrapassel je varianta GNOME hry Tetris, klasické hry skládání bloků sestávajících ze čtyř dílů. Jak bloky padají shora, hráč je musí natočit tak, aby zapadly do bloků dole. Cílem je vyplnit souvislou řadu, která potom zmizí a hráč obdrží body.</para>
+    </abstract>
+
+    <copyright>
+      <year>2004</year>
+      <holder>Angela Boyle</holder>
+    </copyright><copyright><year>2009, 2010.</year><holder>Marek Černocký (marek@manet.cz)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Dokumentační projekt GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU Free Documentation License, verze 1.1 nebo jakékoli další verze vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů předních desek a bez textů zadních desek. Kopie této licence je zahrnuta v oddílu jménem <ulink type="help" url="ghelp:fdl">GNU Free Documentation License</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou.</para>
+         <para>Tato příručka je součástí kolekce příruček GNOME, distribuovaných pod licencí GNU FDL. Pokud chcete tento dokument šířit odděleně od kolekce, musíte přiložit kopii licence dle popisu v sekci 6 dané licence.</para>
+
+	<para>Mnoho užívaných jmen určených k zviditelnění produktů nebo služeb jsou ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s velkým písmenem na začátku.</para>
+
+	<para>DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <orderedlist>
+		<listitem>
+		  <para>DOKUMENT JE POSKYTOVÁN V PODOBĚ „JAK JE“ BEZ ZÁRUKY V JAKÉKOLIV PODOBĚ, NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ VERZE, JE BEZCHYBNÝ NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL NEBO NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ DOKUMENTU, NEBO JEHO UPRAVENÉ VERZE, LEŽÍ NA VÁS. POKUD KVŮLI TOMUTO DOKUMENTU, NEBO JEHO UPRAVENÉ VERZI, NASTANE PROBLÉM, VY (NIKOLIV PŮVODNÍ AUTOR NEBO JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE JAKÉKOLIV NÁKLADY ZA NUTNÉ ÚPRAVY, OPRAVY ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE ZÁKLADNÍ SOUČÁST TÉTO LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ, PODLE TÉTO DOHODY, POVOLENO UŽÍVÁNÍ ANI ÚPRAVY TOHOTO DOKUMENTU; DÁLE</para>
+		</listitem>
+		<listitem>
+		  <para>ZA ŽÁDNÝCH OKOLNOSTÍ A ŽÁDNÝCH PRÁVNÍCH PŘEDPOKLADŮ, AŤ SE JEDNÁ O PŘEČIN (VČETNĚ NEDBALOSTNÍCH), SMLOUVU NEBO JINÉ, NENÍ AUTOR, PŮVODNÍ PISATEL, KTERÝKOLIV PŘISPĚVATEL NEBO KTERÝKOLIV DISTRIBUTOR TOHOTO DOKUMENTU NEBO UPRAVENÉ VERZE DOKUMENTU NEBO KTERÝKOLIV DODAVATEL NĚKTERÉ Z TĚCHTO STRAN ODPOVĚDNÝ NĚJAKÉ OSOBĚ ZA PŘÍMÉ, NEPŘÍMÉ, SPECIÁLNÍ, NAHODILÉ NEBO NÁSLEDNÉ ŠKODY JAKÉHOKOLIV CHARAKTERU, VČETNĚ, ALE NEJEN, ZA POŠKOZENÍ ZE ZTRÁTY DOBRÉHO JMÉNA, PŘERUŠENÍ PRÁCE, PORUCHY NEBO NESPRÁVNÉ FUNKCE POČÍTAČE NEBO JINÉHO A VŠECH DALŠÍCH ŠKOD NEBO ZTRÁT VYVSTÁVAJÍCÍCH Z NEBO VZTAHUJÍCÍCH SE K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL),
+and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+	
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Angela</firstname> 
+	<surname>Boyle</surname> 
+	<affiliation> 
+	  <address> <email>anjela@u.washington.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Příručka V2.8 ke hře Quadrapassel</revnumber> 
+	<date>Červen 2004</date> 
+	<revdescription> 
+	  <para role="author">Angela Boyle <email>anjela@u.washington.edu</email></para>
+	  <para role="publisher">Dokumentační projekt GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Tato příručka popisuje hru Quadrapassel ve verzi 2.12.</releaseinfo>
+    <!-- The following feedback information only applies to applications
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove this
+    section altogether -->
+    <legalnotice> 
+      <title>Ohlasy</title> 
+      <para> Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k aplikaci <application>Quadrapassel</application> nebo této příručce, postupujte dle instrukcí na stránce <ulink url="ghelp:gnome-feedback" type="help">Stránka s ohlasy na GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Quadrapassel</primary> 
+  </indexterm>
+
+<!-- ==============================Document Body==================-->
+
+<sect1 id="s1-intro">
+ <title>Úvod</title>
+
+<!--synopsis of game-->
+  <para><application>Quadrapassel</application> vychází z klasické hry s padajícími bloky nazývané <application>Tetris</application>. Cílem hry je vytvořit celistvou vodorovnou řadu bloků, která následně zmizí. Bloky se objevují v sedmi různých tvarech vytvořených vždy ze čtyř kostek: jeden přímý, dva do L, jeden čtvercový a dva do S. Bloky padají ze středu horní části hrací plochy v náhodném pořadí. Může bloky otáčet a posouvat, tak aby vyplnily řadu. Za zkompletování celé řady a rychlejší posun bloků se vám zvyšuje skóre. Jak vám skóre roste, dostáváte se do vyšších úrovní a bloky padají rychleji.</para>
+
+<!--running game-->
+   <para><application>Quadrapassel</application> spustíte volbou <menuchoice><guimenu>Aplikace</guimenu><guisubmenu>Hry</guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice> nebo zadáním <command>quadrapassel</command> v příkazovém řádku.</para>
+
+<!--part of gnome-games-->
+   <para><application>Quadrapassel</application> je součástí balíku <filename>gnome-games</filename>, který patří k pracovnímu prostředí GNOME. Tento dokument popisuje verzi 2.8 aplikace <application>Quadrapassel</application>.</para>
+</sect1>
+
+<sect1 id="s1-playing">
+ <title>Jak hrát <application>Quadrapassel</application></title>
+  <para>Skóre můžete zvyšovat dvěma způsoby: vyplněním řady a rychlejším posunem bloků</para>
+   <sect2 id="s2-block-moving">
+     <title>Posun bloků</title>
+      <para>K hraní hry vám postačí kurzorové klávesy se šipkami.</para>
+       <itemizedlist>
+        <listitem>
+         <para><keycap>Levá</keycap> a <keycap>pravá</keycap> posouvají bloky příslušným směrem po hrací ploše.</para>
+        </listitem>
+        <listitem>
+         <para><keycap>Nahoru</keycap> blok otáčí. Výchozí směr otáčení je proti směru hodinových ručiček. Můžete to i změnit v <menuchoice><guimenu>Nastavení</guimenu><guimenuitem>Volby</guimenuitem></menuchoice> a vypnutím <guilabel>Otáčet bloky proti směru hodinových ručiček</guilabel>.</para>
+        </listitem>
+        <listitem>
+         <para><keycap>Dolů</keycap> a <keycap>Mezerník</keycap> posune blok po ploše rychle dolů. <keycap>Dolů</keycap> provádí rychlejší posun bloku. <keycap>Mezerník</keycap> posune blok přímo úplně dolů.</para>
+        </listitem>
+       </itemizedlist> 
+   </sect2>
+   <sect2 id="s2-newgame">
+     <title>Započetí nové hry</title>
+      <para>Pokud chcete začít novou hru, tak zvolte <menuchoice><guimenu>Hra</guimenu><guimenuitem>Nová</guimenuitem></menuchoice>. Hra začne padáním bloků ze středu horní části hrací plochy. Standardně je po spuštění plocha bez bloků a v pravém horním rohu se zobrazuje nápověda, jaký blok bude padat jako příští. <guilabel>Skóre</guilabel> zobrazuje počet bodů, které jste nahráli. <guilabel>Řad</guilabel> zobrazuje počet řád, které jste kompletně sestavili. <guilabel>Úroveň</guilabel> zobrazuje úroveň složitosti, ve které se nacházíte.</para>
+    </sect2>
+    <sect2 id="s2-pausegame">
+     <title>Pozastavení hry</title>
+      <para>Pozastavit můžete hru pomocí <menuchoice><guimenu>Hra</guimenu><guimenuitem>Pozastavit</guimenuitem></menuchoice>. Hru můžete pozastavit jen během hraní. Neexistuje žádný limit, jak dlouho může být hra pozastavená. Pokračovat ve hře můžete opětovnou volbou <menuchoice><guimenu>Hra</guimenu><guimenuitem>Pozastavit</guimenuitem></menuchoice>.</para>
+    </sect2>
+    <sect2 id="s2-endgame">
+     <title>Ukončení hry</title>
+      <para>Volbou <menuchoice><guimenu>Hra</guimenu><guimenuitem>Ukončit hru</guimenuitem></menuchoice> ukončíte současnou hru aniž byste ukončili celý Quadrapassel.</para>
+    </sect2>
+    <sect2 id="s2-quitgame">
+     <title>Ukončení hry <application>Quadrapassel</application></title>
+      <para>Pokud chcete úplně ukončit <application>Quadrapassel</application>, tak jděte na <menuchoice><guimenu>Hra</guimenu><guimenuitem>Ukončit</guimenuitem></menuchoice>. Pokud aplikaci ukončíte během hraní, skončí se hra bez uložení vašeho skóre.</para>
+    </sect2>
+    <sect2 id="s2-scoring">
+     <title>Přidělování bodů</title>
+     <para>Body do skóre můžete obdržet dvěma způsoby: rychlejším posunem bloků a vymazáním kompletně vyplněné řady. Když vyplníte řadu, dostanete více bodů, ale rychlejším posunem bloků body přibývají rychleji. Jak se dostáváte do vyšších úrovní, bloky padají rychleji. Nejvyšší úroveň je 10, ve která máte jen něco přes sekundu na manipulaci s každým blokem.</para>
+    </sect2> 
+    <sect2 id="s2-pastscores">
+     <title>Prohlížení nahraného skóre</title>
+      <para>Přes <menuchoice><guimenu>Hra</guimenu><guimenuitem>Skóre</guimenuitem></menuchoice> se můžete podívat nejlepších deset skóre. Vedle skóre najdete jméno hráče a datum, kdy bylo nahráno.</para>
+    </sect2> 
+</sect1>
+
+ 
+<sect1 id="s1-customizegame">
+ <title>Přizpůsobení hry <application>Quadrapassel</application></title>
+  <sect2 id="s2-customstartup">
+   <title>Přizpůsobení počátečního stavu hry</title>
+    <para>Přes <menuchoice><guimenu>Nastavení</guimenu><guimenuitem>Předvolby</guimenuitem></menuchoice> si můžete přizpůsobit různé vlastnosti pro spuštění jednotlivých her Quadrapassel: počet a hustotu předvyplněných řad a počáteční úroveň. „Předvyplněné řady“ určují kolik řad bude již částečně vyplněno bloky hned po spuštění jednotlivé hry.</para>
+    <sect3 id="s3-numberpfr">
+     <title>Počet předvyplněných řad</title>
+      <para>Můžete změnit počet řad, které budou již při startu částečně obsazené bloky. Jednotlivé hry můžete začínat až s 19 předvyplněnými řadami. Výchozí počet předvyplněných řad je nula.</para>
+     </sect3>
+     <sect3 id="s3-densitypfr">
+      <title>Hustota kostek v předvyplněné řadě</title>
+       <para>Můžete změnit hustotu kostek v předvyplněných řadách při startu jednotlivých her. Můžete nastavit hustotu až 10 bloků. Nejdříve byste měli v <guilabel>Počet předvyplněných řad</guilabel> nastavit, kolik řad chcete předvyplnit. Výchozí hustota bloků je tři.</para>
+     </sect3>
+     <sect3 id="s3-startlevel">
+      <title>Počáteční úroveň</title>
+       <para>Můžete nastavit úroveň náročnosti při startu. Nejvyšší úroveň, na které můžete začít je 10, což je i nejvyšší úroveň, na které můžete hrát. Výchozí počáteční úroveň je jedna.</para>
+     </sect3>
+   </sect2>
+   <sect2 id="s3-customblocks">
+    <title>Přizpůsobení hraní hry</title>
+    <para>Přes <menuchoice><guimenu>Nastavení</guimenu><guimenuitem>Volby</guimenuitem></menuchoice> si můžete přizpůsobovat různé vlastnosti bloků: náhled následujícího bloku, barvu bloku a otáčení bloku.</para>
+      <sect3 id="s3-sound">
+	<title>Povolit zvuky</title>
+	<para>Tato volba slouží k zapnutí a vypnutí zvukových efektů. Pokud hrajete hru v místě, kde jsou další lide je vhodné zvuky vypnout.</para>
+      </sect3>
+     <sect3 id="s3-nextblock">
+      <title>Náhled dalšího bloku</title>
+        <para>Pokud chcete vidět, jaký blok bude padat jako další, vyberte tuto volbu. Díky této funkce můžete plánovat umístění dalšího bloku.</para>
+     </sect3>
+     <sect3 id="s3-blockcolors">
+      <title>Používat náhodné barvy bloků</title>
+       <para>Toto volbou měníte, zda mají barvy určovat typ bloku nebo být náhodné. Pokud se podle barev řídíte při určování typu bloku, náhodné barvy vám hru ztíží.</para>
+     </sect3>
+     <sect3 id="s3-difficult-block-mode">
+      <title>Zvolit obtížné bloky</title>
+       <para>Tuto volbu si vyberte, pokud chcete nastavit režim speciálně navržený k naštvání hráče. Pokud je zapnutý, nikdy vám nepůjde díl, který byste chtěli, a tak jen výjimečně dokončíte řadu. A ke všemu náhled následujícího dílu neodpovídá dílu, který doopravdy dostanete, ale tomu, který byste pravděpodobně chtěli dostat. </para>
+     </sect3>
+     <sect3 id="s3-block-rotation">
+      <title>Otáček bloky proti směru hodinových ručiček</title>
+       <para>Touto volbou se řídí, zda se má otáček proti směru nebo po směru hodinových ručiček</para>
+     </sect3>
+     <sect3 id="s3-show-target">
+      <title>Zobrazovat, kam blok dopadne</title>
+        <para>Pokud je tato volba zapnutá, šedý obrázek naznačí, kam blok přistane. Tato volba může hodně pomoct začátečníkům, ale experty obvykle rozptyluje.</para>
+     </sect3>
+   </sect2>
+   <sect2 id="s2-customlook">
+    <title>Přizpůsobení vzhledu <application>Quadrapassel</application></title>
+    <para>V <menuchoice><guimenu>Nastavení</guimenu><guimenuitem>Předvolby</guimenuitem></menuchoice> si můžete přizpůsobit vzhled <application>Quadrapassel</application>: styl bloků.</para>
+     <sect3 id="s3-blockimage">
+      <title>Styl bloků</title>
+       <para>Můžete změnit styl bloků včetně obrázku a velikosti. K dispozici jsou různé předdefinované styly.</para>
+     </sect3>
+     <sect3 id="s3-background">
+       <title>Pozadí</title> <para>Přetažením vašeho oblíbeného obrázku myší do okna <application>Quadrapassel</application> se tento obrázek použije jako pozadí. Pokud chcete použít na pozadí jednolitou barvu, přesuňte ji z dialogu pro výběr barev nebo z dialogu <guimenuitem>Pozadí a emblémy</guimenuitem> aplikace <application>nautlilus'</application> (lze přesunou i ostatní pozadí).</para>
+     </sect3>
+    </sect2>
+   </sect1>
+
+<sect1 id="authors">
+  <title>Autoři</title>
+  <para><application>Quadrapassel</application> napsal J. Marcin Gorycki v roce 1999 a od té doby jej udržuje Gnome Games Team. Tuto příručku napsala Angela Boyle. Pokud chcete nahlásit chybu nebo podat návrh týkající se této aplikace nebo tohoto návodu, tak se řiďte instrukcemi v tomto <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentu</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+</sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="s1-license">
+  <title>Licence</title>
+  <para>Tento program je svobodný software. Můžete jej dále šířit a/nebo upravovat za dodržení podmínek <ulink type="help" url="gnome-help:gpl"><citetitle>GNU General Public License</citetitle></ulink>, tak jak ji vydala Free Software Foundation ve verzi 2 nebo (dle vaší volby) novější.</para>
+  <para>Tento program je šířen s přesvědčením, že může být užitečný, ale BEZ JAKÝCHKOLIV ZÁRUK, bez předpokládané záruky na OBCHODOVATELNOST nebo VHODNOST PRO URČITÝ ÚČEL. Více podrobností najdete v <citetitle>GNU General Public License</citetitle>.</para>
+  <para>Kopie <citetitle>GNU General Public License</citetitle> je zahrnuta v dodatku <citetitle>Uživatelské příručky GNOME</citetitle>. Kopii <citetitle>GNU General Public License</citetitle> můžete také získat od Free Software Foundation navštívením <ulink type="http" url="http://www.fsf.org">jejich webu</ulink> nebo zasláním žádosti na <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="gameplay" xml:lang="da">
+      
+  <info>
+    <link type="guide" xref="index"/>
+    <desc>Introduktion til <app>GNOME Tetravex</app>.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+   <credit type="author">
+    <name>Milo Casagrande</name>
+    <email>milo@ubuntu.com</email>
+   </credit>
+   <license>
+     <p>Creative Commons Share Alike 3.0</p>
+   </license>
+  </info>
+
+  <title>Spillet</title>
+
+  <p><app>GNOME Tetravex</app> er et simpelt puslespil, hvis formål er at flytte de forskellige brikker fra en side af brættet til den anden, på en måde så de samme tal afbilledet på brikkerne støder op imod hinanden.</p>
+  <p>Spillet løses på tid og din tid bruges til resultatgivning. Du skal flytte alle brikkerne på den kortest mulige tid.</p>
+  <figure>
+    <title>Hovedvindue for spillet</title>
+    <desc>Hovedvindue for <app>Tetravex</app></desc>
+    <media type="image" src="figures/gnotravex-main-window.png" mime="image/png" style="center">
+      <p>Hovedvindue for <app>Tetravex</app>.</p>
+    </media>
+  </figure>
+
+</page>

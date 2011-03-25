@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.20">
+<!ENTITY manrevision "2.20">
+<!ENTITY date "May 2007">
+<!ENTITY app "<application>Nibbles</application>">
+<!ENTITY appname "Nibbles">
+<!ENTITY VERSION "2.20">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="el">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+ <articleinfo>
+  <title>Εγχειρίδιο του <application>Νίμπουλς</application></title>
+
+    <abstract role="description">
+      <para>Το Νίμπουλς είναι ένα παιχνίδι με σκουλήκι για το GNOME. Ο παίκτης ελέγχει ένα δισδιάστατο σκουλήκι καθώς προσπαθεί να βρει τροφή. Η απόκτηση τροφής δίνει βαθμούς, αλλά οποιαδήποτε σύγκρουση αφαιρεί βαθμούς. Αν χαθούν όλοι οι βαθμοί, ο παίκτης χάνει.</para>
+    </abstract>
+
+  <copyright>
+   <year>2000</year>
+   <holder>Kevin Breit</holder>
+  </copyright><copyright><year>2009</year><holder>Μάριος Ζηντίλης (m.zindilis@dmajor.org)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Έργο τεκμηρίωσης του GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Επιτρέπεται η αντιγραφή, αναδιανομή και/η τροποποίηση αυτού του εγγράφου υπό τους όρους της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), Έκδοση 1.1 ή νεότερη που εκδόθηκε από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Αμετάβλητα Τμήματα, χωρίς Κείμενο Εξωφύλλου, και χωρίς Κείμενο Οπισθοφύλλου. Μπορείτε να βρείτε ένα αντίγραφο της GFDL σε αυτό το <ulink type="help" url="ghelp:fdl">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανέμεται με αυτό το εγχειρίδιο.</para>
+         <para>Το εγχειρίδιο αυτό είναι τμήμα της συλλογής εγχειριδίων GNOME που διανέμεται υπό την άδεια GFDL. Αν επιθυμείτε να διανήμετε το παρόν εγχειρίδιο χωριστά από την συλλογή, μπορείτε να το κάνετε προσθέτοντας ένα αντίγραφο της άδειας στο εγχειρίδιο, όπως περιγράφεται στο τμήμα 6 της άδειας.</para>
+
+	<para>Πολλά από τα ονόματα που χρησιμοποιούνται από επιχειρήσεις για να διακρίνουν τα προϊόντα τους και τις υπηρεσίες ζητούνται σαν εμπορικά σήματα. Όπου εμφανίζονται αυτά τα ονόματα σε κάποια τεκμηρίωση του GNOME, και τα μέλη του GNOME Documentation Project γνωρίουν για αυτά τα εμπορικά σήματα, τότε τα ονόματα είναι με κεφαλαία γράμματα ή με αρχικά κεφαλαία γράμματα.</para>
+
+	<para>ΤΟ ΈΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ ΑΔΕΙΑΣ GNU FREE DOCUMENTATION ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: <orderedlist>
+		<listitem>
+		  <para>ΤΟ ΠΑΡΟΝ ΕΓΓΡΑΦΟ ΠΑΡΕΧΕΤΑΙ "ΩΣ ΕΧΕΙ", ΧΩΡΙΣ ΟΠΟΙΑΔΗΠΟΤΕ ΕΓΓΥΗΣΗ, ΕΚΠΕΦΡΑΣΜΕΝΗ Ή ΥΠΑΙΝΙΣΣΟΜΕΝΗ, ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΩΝ, ΧΩΡΙΣ ΠΕΡΙΟΡΙΣΜΟΥΣ, ΕΓΓΥΗΣΕΩΝ ΟΤΙ ΤΟ ΕΓΓΡΑΦΟ Ή Η ΤΡΟΠΟΠΟΙΗΜΕΝΗ ΕΚΔΟΣΗ ΤΟΥ ΕΙΝΑΙ ΑΠΑΛΑΓΜΕΝΟ ΑΤΕΛΕΙΩΝ, ΕΜΠΟΡΕΥΣΙΜΟ, ΚΑΤΑΛΛΗΛΟ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΗ ΧΡΗΣΗ Ή ΑΠΑΡΑΒΙΑΣΤΟ. Ο ΧΡΗΣΤΗΣ ΑΝΑΛΑΜΒΑΝΕΙ ΚΑΘΕ ΚΙΝΔΥΝΟ ΠΟΥ ΜΠΟΡΕΙ ΝΑ ΠΡΟΚΥΨΕΙ ΩΣ ΠΡΟΣ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ ΚΑΙ ΛΕΙΤΟΥΡΓΙΑ ΤΟΥ ΕΓΓΡΑΦΟΥ Ή ΤΩΝ ΤΡΟΠΟΠΟΙΗΜΕΝΩΝ ΕΚΔΟΣΕΩΝ ΤΟΥ. ΑΝ ΟΠΟΙΟΔΗΠΟΤΕ ΕΓΓΡΑΦΟ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΗ ΕΚΔΟΣΗ ΤΟΥ ΑΠΟΔΕΙΧΘΟΥΝ ΕΛΛΑΤΩΜΑΤΙΚΑ ΜΕ ΟΠΟΙΟΝΔΗΠΟΤΕ ΤΡΟΠΟ, Ο ΤΕΛΙΚΟΣ ΧΡΗΣΤΗΣ (ΚΑΙ ΟΧΙ Ο ΑΡΧΙΚΟΣ ΣΥΓΓΡΑΦΕΑΣ, ΣΥΝΤΑΚΤΗΣ Ή ΟΠΟΙΟΣΔΗΠΟΤΕ ΤΟ ΔΙΕΝΗΜΕ) ΑΝΑΛΑΜΒΑΝΕΙ ΤΟ ΚΟΣΤΟΣ ΟΠΟΙΑΣΔΗΠΟΤΕ ΕΠΙΣΚΕΥΗΣ Ή ΔΙΟΡΘΩΣΗΣ. ΑΥΤΗ Η ΠΑΡΑΙΤΗΣΗ ΑΠΟ ΕΓΓΥΗΤΙΚΕΣ ΕΥΘΥΝΕΣ ΣΥΝΙΣΤΑ ΟΥΣΙΑΣΤΙΚΟ ΜΕΡΟΣ ΤΗΣ ΑΔΕΙΑΣ. ΟΥΔΕΜΙΑ ΧΡΗΣΗ ΟΙΟΥΔΗΠΟΤΕ ΕΓΓΡΑΦΟΥ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΟΥ ΕΓΓΡΑΦΟΥ ΕΞΟΥΣΙΟΔΟΤΕΙΤΑΙ ΕΦΕΞΗΣ, ΠΑΡΑ ΥΠΟ ΤΟΝ ΟΡΟ ΤΗΣ ΩΣ ΑΝΩ ΠΑΡΑΙΤΗΣΗΣ ΚΑΙ</para>
+		</listitem>
+		<listitem>
+		  <para>ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΣΕ ΚΑΜΙΑ ΝΟΜΟΛΟΓΙΑ ΑΣΤΙΚΟΥ ΑΔΙΚΗΜΑΤΟΣ (ΠΕΡΙΛΑΜΒΑΝΟΜΕΝΗΣ ΕΚΕΙΝΟΥ ΤΗΣ ΑΜΕΛΕΙΑΣ), ΣΥΜΒΟΛΑΙΟΥ Ή ΑΛΛΟΥ, Ο ΣΥΝΤΑΚΤΗΣ, Ο ΑΡΧΙΚΟΣ ΣΥΓΓΡΑΦΕΑΣ, ΟΠΟΙΟΣΔΗΠΟΤΕ ΣΥΝΕΡΓΑΤΗΣ Ή ΟΠΟΙΟΣΔΗΠΟΤΕ ΔΙΑΝΟΜΕΑΣ ΤΟΥ ΕΓΓΡΑΦΟΥ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ ΤΟΥ ΕΓΓΡΑΦΟΥ, Ή ΟΠΟΙΣΔΗΠΟΤΕ ΠΡΟΜΗΘΕΥΤΗΣ ΟΠΟΙΟΥΔΗΠΟΤΕ ΕΚ ΤΩΝ ΑΝΩΤΕΡΩ ΠΡΟΣΩΠΩΝ ΕΙΝΑΙ ΥΠΕΥΘΥΝΟΣ ΕΝΑΝΤΙ ΟΙΟΥΔΗΠΟΤΕ ΠΡΟΣΩΠΟΥ ΓΙΑ ΟΠΟΙΑΔΗΠΟΤΕ ΑΜΕΣΗ, ΕΜΜΕΣΗ, ΙΔΙΑΙΤΗΕΡΗ, ΑΤΥΧΗ Ή ΣΥΝΕΠΑΓΟΜΕΝΗ ΒΛΑΒΗ ΟΙΟΥΔΗΠΟΤΕ ΧΑΡΑΚΤΗΡΑ ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΩΝ, ΧΩΡΙΣ ΠΕΡΙΟΡΙΣΜΟΥΣ, ΒΛΑΒΕΣ ΕΞΑΙΤΙΑΣ ΑΠΩΛΕΙΑΣ ΠΕΛΑΤΕΙΑΣ, ΣΤΑΣΗ ΕΡΓΑΣΙΑΣ, ΑΣΤΟΧΙΑ Ή ΚΑΚΗ ΛΕΙΤΟΥΡΓΙΑ ΥΠΟΛΟΓΙΣΤΗ, Ή ΟΠΟΙΑΔΗΠΟΤΕ ΚΑΙ ΚΑΘΕ ΑΛΛΗ ΒΛΑΒΗ Ή ΑΠΩΛΕΙΑ ΠΟΥ ΘΑ ΕΓΕΙΡΕΙ Ή ΣΧΕΤΙΖΕΤΑΙ ΜΕ ΤΗΝ ΧΡΗΣΗ ΤΟΥ ΕΓΓΡΑΦΟΥ ΚΑΙ ΟΠΟΙΑΣΔΗΠΟΤΕ ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ ΤΟΥ ΕΓΓΡΑΦΟΥ, ΑΚΟΜΗ ΚΑΙ ΑΝ ΚΑΠΟΙΟ ΑΠΟ ΑΥΤΑ ΤΑ ΠΡΟΣΩΠΑ ΕΙΝΑΙ ΕΝΗΜΕΡΟ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΠΡΟΚΛΗΣΗΣ ΤΕΤΟΙΩΝ ΒΛΑΒΩΝ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Kevin</firstname> 
+	<surname>Breit</surname> 
+	<affiliation> 
+	  <orgname>Έργο τεκμηρίωσης του GNOME</orgname> 
+	  <address> <email>battery841@mypad.com</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+    <revhistory>
+      <revision> 
+	<revnumber>Εγχειρίδιο του Νίμπουλς, έκδοση 2.20</revnumber> 
+	<date>Μάιος 2007</date> 
+	<revdescription> 
+	  <para role="author">Kevin Breit <email>battery841@mypad.com</email></para>
+	  <para role="publisher">Έργο τεκμηρίωσης του GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.20 του Νίμπουλς.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Aνάδραση</title> 
+      <para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με την εφαρμογή <application>Νίμπουλς</application> ή αυτή την τεκμηρίωση, ακολουθήστε τις οδηγίες στη <ulink url="ghelp:user-guide?feedback-bugs" type="help">Σελίδα ανάδρασης του GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+ </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Νίμπουλς</primary> 
+  </indexterm> 
+
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+ <sect1 id="intro">
+  <title>Εισαγωγή</title>
+
+  <para>Το <application>Νίμπουλς</application> είναι ένα παιχνίδι στο οποίο ο χρήστης ελέγχει ένα σκουλήκι. Το σκουλήκι περιφέρεται στο ταμπλώ, τρώγοντας διαμάντια ενώ αποφεύγει τους τοίχους που βρίσκονται γύρω του.</para>
+
+  <para>Για να τρέξετε το <application>Νίμπουλς</application>, επιλέξτε <menuchoice><guisubmenu>Παιχνίδια</guisubmenu><guimenuitem>Νίμπουλς</guimenuitem></menuchoice> από το μενού <guimenu>Εφαρμογές</guimenu>, η πληκτρολογήστε <command>gnibbles</command> στη γραμμή εντολών.</para>
+
+  <para>Το <application>Νίμπουλς</application> περιλαμβάνεται στο πακέτο <filename>gnome-games</filename>, το οποίο είναι μέρος της επιφάνειας εργασίας του GNOME. Αυτό το έγγραφο περιγράφει την έκδοση 2.20 του <application>Νίμπουλς</application>.</para>
+ </sect1>
+
+ <sect1 id="objective">
+ <title>Αντικειμενικός σκοπός του Νίμπουλς</title>
+  <para>Ο σκοπός του Νίμπουλς είναι απλός. Ελέγχετε το σκουλήκι και αν το σκουλήκι συγκρουστεί με τοίχο ή με τον εαυτό του, πεθαίνετε. Έχετε δέκα ζωές προτού τελειώσει το παιχνίδι. Κερδίζετε είτε ξεπερνώντας το δικό σας υψηλότερο σκορ (είτε κάποιου φίλου), είτε τελειώνοντας όλα τα επίπεδα. Μπορείτε επίσης να παίξετε εναντίον σκουληκιών με τεχνητή νοημοσύνη.</para>
+  <para>Το Νίμπουλς επίσης υποστηρίζει <link linkend="network-games">πολλούς παίκτες</link>, μέχρι έξι παίκτες μπορούν να ανταγωνίζονται είτε παίζοντας στον ίδιο υπολογιστή με σειρά, είτε μέσω δικτύου.</para>
+ </sect1>
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+ <sect1 id="usage">
+  <title>Χρήση του Νίμπουλς</title>
+  <para>Το <application>Νίμπουλς</application> παίζεται απλά. Τα μόνα πλήκτρα που χρειάζονται είναι τα βελάκια.</para>
+
+  <!-- ========= Basic Usage =========================== -->
+<sect2 id="mainwin">
+<title>Βασική χρήση</title>
+<para>Κατά την εκκίνηση του <application>Νίμπουλς</application> ανοίγει το <interface>κύριο παράθυρο</interface> το οποίο εμφανίζεται πιο κάτω. <figure id="intro-fig">
+<title>Παράθυρο καλωσορίσματος στο Νίμπουλς</title>
+<screenshot>
+ <mediaobject> 
+    <imageobject>
+<imagedata fileref="figures/intro.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Παράθυρο καλωσορίσματος στο Νίμπουλς</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure></para>
+<para>Για να ξεκινήσετε το παιχνίδι, επιλέξτε <menuchoice><guimenu>Παιχνίδι</guimenu><guimenuitem>Νέο</guimenuitem></menuchoice>.</para>
+<para>Όταν ξεκινά το παιχνίδι, το σκουλήκι θα βγει από την αριστερή πλευρά της οθόνης. Χρησιμοποιήστε το βελάκι προς τα πάνω για να κάνετε το σκουλήκι να πάει πάνω. Χρησιμοποιήστε το βελάκι δεξιά για να στρίψετε το σκουλήκι δεξιά, το βελάκι αριστερά για να στρίψετε το σκουλήκι αριστερά, και το βελάκι κάτω για να στρίψετε το σκουλήκι προς τα κάτω. <figure id="gameplay">
+<title>Παιχνίδι Νίμπουλς σε εξέλιξη</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/playing.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Παιχνίδι Νίμπουλς σε εξέλιξη.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure></para>
+</sect2>
+
+<!-- This section should also describe main elements of graphic user
+interface, such as menus and buttons, unless this description
+is too long - in that case, it should be moved to a separate
+section. For example -->
+
+
+<!-- ========= Menus =========================== -->
+<sect2 id="menubar">
+   <title>Μενού</title>
+   <para>Η μπάρα με τα μενού, η οποία βρίσκεται στην κορυφή του <interface>Βασικού παραθύρου</interface>, περιέχει τα ακόλουθα μενού:</para>
+
+   <variablelist>
+    <varlistentry>
+     <term><guimenu>Παιχνίδι</guimenu></term>
+     <listitem>
+      <para>Αυτό το μενού περιέχει: <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+N</keysym></shortcut><guimenuitem>Νέο</guimenuitem></menuchoice> Αυτό ξεκινά ένα νέο παιχνίδι <application>Νίμπουλς</application>.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+G</keysym></shortcut><guimenuitem>Δικτυακό παιχνίδι</guimenuitem></menuchoice> Αυτό ξεκινά ένα παιχνίδι με πολλούς παίκτες χρησιμοποιώντας το GGZ Gaming Zone.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Βαθμολογίες</guimenuitem></menuchoice> Αυτό εμφανίζει τις ψηλότερες βαθμολογίες.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Παύση</guimenuitem></menuchoice> Αυτό θα παύσει το παιχνίδι σας. Πατήστε την επιλογή <quote>Παύση</quote> στο μενού για να συνεχίσετε το παιχνίδι.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Τέλος παιχνιδιού</guimenuitem></menuchoice> Σταματήστε το τρέχον παιχνίδι και επιστρέψτε στην αρχική οθόνη.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl-Q</keysym></shortcut><guimenuitem>Έξοδος</guimenuitem></menuchoice> Αυτό κλείνει την εφαρμογή.</para>
+        </listitem>
+       </itemizedlist> </para>
+     </listitem>
+    </varlistentry>
+
+   <varlistentry>
+     <term><guimenu>Προβολή</guimenu></term>
+     <listitem>
+      <para>Αυτό το μενού περιέχει: <itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>Πλήρης οθόνη</guimenuitem></menuchoice> Αυτό ρυθμίζει αν το παιχνίδι σας θα εμφανίζεται σε πλήρη οθόνη.</para>
+        </listitem>
+       </itemizedlist> </para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Ρυθμίσεις</guimenu></term>
+     <listitem>
+      <para>Αυτό το μενού περιέχει: <itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>Προτιμήσεις</guimenuitem></menuchoice> Ανοίγει το παράθυρο ώστε να επιλέξετε τις <link linkend="prefs"> προτιμήσεις</link> σας.</para>
+        </listitem>
+       </itemizedlist> </para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Βοήθεια</guimenu></term>
+     <listitem>
+      <para>Αυτό το μενού περιέχει: <itemizedlist>
+        <listitem>
+          <para><menuchoice><shortcut><keysym>F1</keysym></shortcut><guimenuitem>Περιεχόμενα</guimenuitem></menuchoice> Εμφάνιση αυτού του εγχειριδίου.</para>
+         <para><guimenuitem>Περί</guimenuitem> Εμφάνιση παραθύρου <interface>Περί</interface> το οποίο παρέχει βασικές πληροφορίες σχετικά με το <application>Νίμπουλς</application>, όπως το όνομα του δημιουργού, και τον αριθμό έκδοσης του παιχνιδιού. </para>
+        </listitem>
+       </itemizedlist> </para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+  </sect2>
+  <sect2 id="diamonds">
+  <title>Διαμάντια</title>
+   <para>Το <application>Νίμπουλς</application> έχει διάφορα διαμάντια που τρώγονται. Έχουν διαφορετικά χρώματα και κάνουν διαφορετικές λειτουργίες. Μόνο το ανοικτό μώβ διαμάντι είναι σίγουρο ότι θα μείνει για αρκετό χρόνο μέχρι να το φάτε (για την ακρίβεια θα πρέπει να τα φάτε για να ολοκληρώσετε το επίπεδο). Τα υπόλοιπα διαμάντια είναι όλα βραβεία, αλλά μένουν στο ταμπλώ μόνο για λίγο χρόνο. Θα σας αφήσουμε να ανακαλύψετε τι είδους βραβείο δίνει το κάθε χρώμα, αλλά όλα επηρεάζουν είτε το σκορ, το μήκος του σκουληκιού, ή και τα δύο. Προσέχετε όταν πηγαίνετε προς αυτά τα διαμάντια - βραβεία, να μην αποκοπείτε από τα κανονικά διαμάντια που χρειάζεστε για να ολοκληρώσετε το επίπεδο.</para>
+  </sect2>   
+ </sect1>
+
+
+ <!-- ============= Customization ============================= -->
+ <sect1 id="prefs">
+  <title>Προσαρμογή</title>
+  <para>Για να αλλάξετε τις ρυθμίσεις της εφαρμογής, επιλέξτε <menuchoice><guimenu>Ρυθμίσεις</guimenu><guimenuitem>Προτιμήσεις</guimenuitem></menuchoice>. Αυτό ανοίγει το διάλογο <interface>Προτιμήσεις Νίμπουλς</interface>. Όλες οι προτιμήσεις αποθηκεύονται αυτόματα και εφαρμόζονται μόλις τις αλλάξετε.</para>
+
+  <figure id="game-prefs">
+    <title>Καρτέλα προτιμήσεων παιχνιδιού</title>
+    <screenshot>
+       <mediaobject> 
+    <imageobject>
+      <imagedata fileref="figures/game.png" format="PNG" srccredit="Kevin Breit"/>
+          </imageobject>
+    <textobject> 
+      <phrase>Καρτέλα προτιμήσεων παιχνιδιού.</phrase> 
+    </textobject> 
+  </mediaobject>
+    </screenshot>
+  </figure>
+
+  <para>Οι προτιμήσεις στην καρτέλα  <guilabel>Παιχνίδι</guilabel> είναι:</para>
+  <para><figure id="worm-prefs">
+    <title>Καρτέλα προτιμήσεων σκουληκιού</title>
+    <screenshot>
+       <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/worm_op.png" format="PNG" srccredit="Kevin Breit"/>
+         </imageobject>
+    <textobject> 
+      <phrase>Καρτέλα προτιμήσεων σκουληκιού.</phrase> 
+    </textobject> 
+  </mediaobject>
+    </screenshot>
+  </figure> Οι προτιμήσεις στις καρτέλες <guilabel>Σκουλήκι 1</guilabel> εώς <guilabel> Σκουλήκι 6</guilabel> σας επιτρέπουν να κάνετε ξεχωριστές ρυθμίσεις για κάθε διαφορετικό σκουλήκι. <variablelist>
+    <varlistentry>
+    <term>Έλεγχοι πληκτρολογίου</term>
+    <listitem>
+     <para>Αυτή η λίστα σας επιτρέπει να αλλάξετε τους έλεγχους πληκτρολογίου για το κάθε σκουλήκι. Για να αλλάξετε ένα πλήκτρο ελέγχου, κάντε διπλό κλικ στην κατάλληλη καταχώρηση στη λίστα και μετά πατήστε το πλήκτρο που θέλετε να χρησιμοποιείτε για εκείνο τον έλεγχο.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Χρήση σχετικής κίνησης</term>
+    <listitem>
+     <para>Αντί το αριστερό βελάκι να στέλνει το σκουλήκι προς τα αριστερά της οθόνης, το δεξί προς τα δεξιά και ούτω καθ' εξής, τα βελάκια αριστερά και δεξιά κάνουν το σκουλήκι να στρίβει αριστερά ή δεξιά. Για παράδειγμα, αν το σκουλήκι κινείται προς τα αριστερά και πατήσετε το βελάκι που ελέγχει την κίνηση προς τα αριστερά, τότε το σκουλήκι γυρνάει προς το κάτω μέρος της οθόνης.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Χρώμα σκουληκιού</term>
+    <listitem>
+     <para>Τροποποιήστε το χρώμα του σκουληκιού σας ώστε να το ξεχωρίζετε από εκείνο του αντιπάλου σας σε παιχνίδια με πολλούς παίκτες.</para>
+    </listitem>
+    </varlistentry>
+   </variablelist></para>
+
+ </sect1>
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Δικτυακά παιχνίδια</title>
+  <para>Το Νίμπουλς υποστηρίζει δικτυακά παιχνίδια με πολλούς παίκτες που παρέχονται από το <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink>. Με τη σύνδεση σε έναν εξυπηρετητή Νίμπουλς στο διαδίκτυο, μπορείτε να προκαλέσετε άλλους παίκτες σε παιχνίδια με πολλούς παίκτες. Για νέα, ενημερώσεις και μια λίστα με εξυπηρετητές που μπορείτε να συνδεθείτε, δείτε τον ιστότοπο  <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">gnome-games</ulink>.</para>
+  <para>Για να ξεκινήσετε ένα παιχνίδι Νίμπουλς με πολλούς παίκτες, επιλέξτε <menuchoice><guimenu>Παιχνίδι</guimenu><guimenuitem>Δικτυακό παιχνίδι</guimenuitem></menuchoice> από το μενού του Νίμπουλς.</para> 
+
+<sect2 id="connecting">
+<title>Σύνδεση σε έναν εξυπηρετητή Νίμπουλς</title>
+<para>Ο διάλογος σύνδεσης του Νίμπουλς εμφανίζεται αρχικά όταν ξεκινάει ένα καινούριο δικτυακό παιχνίδι. Αυτός ο διάλογος σας επιτρέπει να επιλέξετε έναν εξυπηρετητή για να συνδεθείτε, και το όνομα χρήστη που θα έχετε ενόσω θα είστε εκεί συνδεδεμένοι.</para>
+
+<para>Μπορείτε να συνδεθείτε σε ένα εξυπηρετητή είτε με απλό λογαριασμό επισκέπτη (guest) είτε με λογαριασμό εγγεγραμμένου χρήστη. Οι λογαριασμοί επισκέπτη σας επιτρέπουν να συνδέεστε ανώνυμα, ενώ ένας κανονικός λογαριασμός σας επιτρέπει να διατηρείτε το όνομα χρήστη το οποίο προστατεύεται από τον κωδικό πρόσβασης που θα δώσετε.</para>
+
+<para>Η επιλογή <guimenuitem>Σύνδεση επισκέπτη</guimenuitem> επιλέγεται όταν θέλετε έναν ανώνυμο λογαριασμό επισκέπτη. Αν θέλετε να δημιουργήσετε ένα καινούριο λογαριασμό εισόδου, επιλέξτε το <guimenuitem>Σύνδεση για πρώτη φορά</guimenuitem>, με το όνομα χρήστη, τον κωδικό πρόσβασης και το Email της επιλογής σας. Αν έχετε ήδη δημιουργήσει λογαριασμό, μπορείτε να συνδεθείτε επιλέγοντας την <guimenuitem>Κανονική σύνδεση</guimenuitem>, και να βάλετε το όνομα χρήστη και τον κωδικό πρόσβασης που ήδη επιλέξατε.</para>
+<para>Για να συνδεθείτε σε ένα εξυπηρετητή πατήστε στο κουμπί <guimenuitem>Σύνδεση</guimenuitem>.</para>
+<figure id="connect">
+<title>Διάλογος δικτυακής σύνδεσης του Νίμπουλς.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Διάλογος δικτυακής σύνδεσης του Νίμπουλς.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Είσοδος σε δωμάτιο παιχνιδιών</title>
+<para>Όταν συνδεθείτε επιτυχώς σε έναν εξυπηρετητή, μπορείτε να επιλέξετε σε ποιό δωμάτιο θα εισέλθετε. Για να παίξετε ένα δικτυακό παιχνίδι Νίμπουλς, επιλέξτε το δωμάτιο Gnibbles. Αν θέλετε να φιλοξενήσετε το δικό σας παιχνίδι τότε πατήστε στο Εκκίνηση. Αυτό δημιουργεί ένα νέο ταμπλώ στο οποίο άλλοι παίκτες μπορούν να συμμετάσχουν σε ένα παιχνίδι εναντίον σας. Αν υπάρχουν άλλα παιχνίδια που έχουν ήδη αρχίσει, τότε μπορείτε με διπλό κλικ σε υφιστάμενο παιχνίδι να συνδεθείτε σε αυτό. Η λίστα με τα ταμπλώ παιχνιδιού στα δεξιά δείχνει έναν αριθμό διαθέσιμων θέσεων, που σημαίνει τον αριθμό των παικτών που μπορούν να συνδεθούν σε ένα παιχνίδι.</para>
+<figure id="tables">
+<title>Ο διάλογος δικτύου του Νίμπουλς σας επιτρέπει να εισέρχεστε σε ένα δωμάτιο για να βρίσκετε άλλους παίκτες.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Ο διάλογος δικτύου του Νίμπουλς σας επιτρέπει να εισέρχεστε σε ένα δωμάτιο για να βρίσκετε άλλους παίκτες.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>Όταν δημιουργείτε ένα νέο ταμπλώ για παιχνίδι Νίμπουλς, ένας διάλογος προτιμήσεων εμφανίζεται ο οποίος σας επιτρέπει να κάνετε ρυθμίσεις στο παιχνίδι, όπως τον ελάχιστο αριθμό παικτών του παιχνιδιού. Όταν ο συνολικός αριθμός θέσεων έχει γεμίσει, τότε δε μπορούν άλλοι παίκτες να συνδεθούν στο συγκεκριμένο ταμπλώ.</para>
+<para>Μπορείτε να συνομιλήσετε με άλλους παίκτες στο δικτυακό παιχνίδι. Ρωτήστε για οδηγίες ή βοήθεια για τα παιχνίδια, αλλά σας παρακαλούμε να είστε ευγενικοί προς τους άλλους.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Αναμονή για άλλους παίκτες να συδεθούν στον παιχνίδι</title>
+<para>Όταν θα έχετε επιτυχώς συνδεθεί σε ένα ταμπλώ παιχνιδιού, τότε πρέπει να περιμένετε μέχρι να συνδεθούν επαρκείς παίκτες. Το μενού <guimenuitem>Λίστα παικτών</guimenuitem> σας επιτρέπει να δείτε μια λίστα με τους παίκτες που έχουν συνδεθεί το παιχνίδι. Το παιχνίδι θα ξεκινήσει όταν ο συνολικός αριθμός των παικτών έχει συμπληρωθεί.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Δικτυακό παιχνίδι Νίμπουλς</title>
+<para>Τα παιχνίδια Νίμπουλς στο δίκτυο έχουν τους ίδιους κανόνες με τα κανονικά παιχνίδια, μόνο που τώρα παίζετε εναντίον άλλων ανθρώπων. Αυτό σημαίνει ότι ίσως είναι προτιμότερες άλλες στρατηγικές από αυτές που χρησιμοποιείτε όταν παίζετε εναντίον του υπολογιστή.</para>
+<para>Όταν ένας από τους παίκτες έχει κερδίσει το παιχνίδι τελειώνει και επιστρέφετε στην πρώτη οθόνη του δικτυακού παιχνιδιού. Τότε μπορείτε να παίξετε ένα ακόμα εθιστικό δικτυακό παιχνίδι Νίμπουλς!</para>
+</sect2>
+
+</sect1>
+
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Δημιουργοί</title>
+  <para>Το <application>Νίμπουλς</application> γράφτηκε από τους Sean MacIsaac <email>sjm@acm.org</email> και Ian Peters <email>itp@gnu.org</email>. Αυτό το εγχειρίδιο γράφτηκε από τον Kevin Breit <email>battery841@mypad.com</email>. Το Νίμπουλς αναβαθμίστηκε με υποστήριξη δικτύο από τον Andreas Røsdal <email>andreasr@gnome.org</email>. Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με την εφαρμογή ή αυτό το εγχειρίδιο, ακολουθήστε τις οδηγίες σ' αυτό το <ulink url="ghelp:user-guide?feedback-bugs" type="help">έγγραφο</ulink>.</para> 
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Άδεια χρήσης</title>
+  <para>Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό: μπορείτε να το αναδιανείμετε ή/και να το τροποποιείτε υπό τους όρους της <ulink type="help" url="gnome-help:gpl"><citetitle>Γενικής Δημόσιας Άδειας GNU</citetitle></ulink> όπως εκδίδεται από το Ίδρυμα Ελεύθερου Λογισμικού, είτε στην έκδοση 2 της άδειας, είτε (κατά την άποψή σας) οποιαδήποτε μεταγενέστερη έκδοση.</para>
+  <para>Αυτό το πρόγραμμα διανέμεται με την ελπίδα οτι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ ΚΑΜΙΑ ΑΠΟΛΥΤΩΣ ΕΓΓΥΗΣΗ - χωρίς ακόμη και την έμμεση εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Για περισσότερες λεπτομέρειες δείτε τη <citetitle>Γενική Δημόσια Άδεια GNU</citetitle>.</para>
+  <para>Ένα αντίγραφο της <citetitle>Γενικής Δημόσιας Άδειας GNU</citetitle> περιλαμβάνεται ως παράρτημα στον <citetitle>Οδηγό χρήσης του GNOME</citetitle>. Μπορείτε επίσης να λάβετε ένα αντίγραφο της <citetitle>Γενικής Δημόσιας Άδειας GNU</citetitle> από το Ίδρυμα Ελεύθερου Λογισμικού αν επισκεφθείτε τον <ulink type="http" url="http://www.fsf.org">ιστότοπό τους</ulink>, ή γράφοντας στη διεύθυνση <address> Free Software Foundation, Inc. 59 Temple Place - Suite 330 Boston, MA 02111-1307 USA </address></para>
+ </sect1>
+</article>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="move" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#play" group="two"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Verschieben der Spielsteine auf dem Spielfeld.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  
+  <title>Bewegen der Spielsteine</title>
+  
+  <section id="move-piece">
+    <title>Bewegen eines Spielsteins</title>
+    <p>Um einen Spielstein zu bewegen, klicken Sie darauf und halten die Maustaste gedrückt. Dann ziehen Sie ihn aus seiner aktuellen Position an den gewünschten Ort im linken oder rechten Bereich des Spielfelds und lassen die Maustaste los.</p>
+    <p>Diese Züge sind nicht permanent und können rückgängig gemacht werden.</p>
+    <note>
+      <p>Die Steine im linken Spielfeldbereich können alle gleichzeitig in eine bestimmte Richtung verschoben werden. Weitere Informationen finden Sie in <link xref="shortcut"/>.</p>
+    </note>
+  </section>
+  <section id="move-avoid">
+    <title>»Klicken und gedrückt halten« vermeiden</title>
+    <p>Wenn Sie es nicht praktisch finden, zum Bewegen von Spielsteinen die Maustaste gedrückt zu halten, können Sie das Verhalten so einstellen, dass Sie jeweils nur einen Spielstein anklicken müssen, woraufhin ein weiterer Klick an der gewünschten Position den Stein dort ablegt.</p>
+    <p>Wählen Sie hierzu in der Menüleiste <gui style="menu">Bewegen</gui> und aktivieren Sie das Ankreuzfeld <gui style="checkbox">Legen per Klick</gui></p>
+  </section>
+</page>

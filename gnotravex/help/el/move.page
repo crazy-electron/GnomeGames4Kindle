@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="move" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#play" group="two"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Πώς να μετακινείτε τα κομμάτια στο ταμπλώ.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  
+  <title>Μετακινήστε τα κομμάτια</title>
+  
+  <section id="move-piece">
+    <title>Μετακινήστε ένα κομμάτι</title>
+    <p>Για να μετακινήσετε ένα κομμάτι, πρέπει να πατήσετε πάνω του και να το κρατήσετε πατημένο, και να το σύρετε από την τρέχουσα στην νέα του θέση, είτε στο δεξιό είτε στο αριστερό μέρος, και να αφήσετε το κουμπί του ποντικιού.</p>
+    <p>Αυτές οι κινήσεις δεν είναι μόνιμες και μπορούν να αναιρεθούν.</p>
+    <note>
+      <p>Τα κουτιά στο αριστερό μέρος μπορούν να μετακινηθούν όλα μαζί προς μια κατεύθυνση. Δείτε τις <link xref="shortcut"/> για περισσότερες λεπτομέρειες.</p>
+    </note>
+  </section>
+  <section id="move-avoid">
+    <title>Αποφύγετε το κρατημένο πάτημα</title>
+    <p>Αν δε σας βολεύει να κρατάτε το πάτημα για να μετακινείτε κομμάτια, μπορείτε να αλλάξετε αυτή τη συμπεριφορά ώστε να χρειάζεται μόνο να πατάτε για να πιάσετε ένα κομμάτι, και να ξαναπατάτε για να το αφήσετε στη νέα του θέση.</p>
+    <p>Για να το κάνετε αυτό, από την κύρια γραμμή μενού, επιλέξτε <gui style="menu">Μετακίνηση</gui> και ενεργοποιήστε το <gui style="checkbox">Κλικ για μετακίνηση</gui>.</p>
+  </section>
+</page>

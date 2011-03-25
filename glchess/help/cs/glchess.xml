@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.18">
+<!ENTITY date "December">
+<!ENTITY app "<application>Chess</application>">
+<!ENTITY appname "Chess">
+<!ENTITY version "2.22">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="cs">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo>
+ <title>Příručka k <application>Šachům</application></title>
+ 
+ <abstract role="description">
+       <para>glChess je program na hraní klasické deskové hry šachy, ve které dva hráči napodobují bitvu braním nepřátel a nakonec jejich krále. Lze ji hrát ve 2D nebo 3D režimu, na celé obrazovce nebo v okně.</para>
+ </abstract>
+ <copyright>
+  <year>2006-2008</year>
+  <holder>Andreas Røsdal</holder>
+ </copyright><copyright><year>2009.</year><holder>Marek Černocký (marek@manet.cz)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>Dokumentační projekt GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU Free Documentation License, verze 1.1 nebo jakékoli další verze vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů předních desek a bez textů zadních desek. Kopie této licence je zahrnuta v oddílu jménem <ulink type="help" url="ghelp:fdl">GNU Free Documentation License</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou.</para>
+         <para>Tato příručka je součástí kolekce příruček GNOME, distribuovaných pod licencí GNU FDL. Pokud chcete tento dokument šířit odděleně od kolekce, musíte přiložit kopii licence dle popisu v sekci 6 dané licence.</para>
+
+	<para>Mnoho užívaných jmen určených k zviditelnění produktů nebo služeb jsou ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s velkým písmenem na začátku.</para>
+
+	<para>DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <orderedlist>
+		<listitem>
+		  <para>DOKUMENT JE POSKYTOVÁN V PODOBĚ „JAK JE“ BEZ ZÁRUKY V JAKÉKOLIV PODOBĚ, NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ VERZE, JE BEZCHYBNÝ NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL NEBO NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ DOKUMENTU, NEBO JEHO UPRAVENÉ VERZE, LEŽÍ NA VÁS. POKUD KVŮLI TOMUTO DOKUMENTU, NEBO JEHO UPRAVENÉ VERZI, NASTANE PROBLÉM, VY (NIKOLIV PŮVODNÍ AUTOR NEBO JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE JAKÉKOLIV NÁKLADY ZA NUTNÉ ÚPRAVY, OPRAVY ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE ZÁKLADNÍ SOUČÁST TÉTO LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ, PODLE TÉTO DOHODY, POVOLENO UŽÍVÁNÍ ANI ÚPRAVY TOHOTO DOKUMENTU; DÁLE</para>
+		</listitem>
+		<listitem>
+		  <para>ZA ŽÁDNÝCH OKOLNOSTÍ A ŽÁDNÝCH PRÁVNÍCH PŘEDPOKLADŮ, AŤ SE JEDNÁ O PŘEČIN (VČETNĚ NEDBALOSTNÍCH), SMLOUVU NEBO JINÉ, NENÍ AUTOR, PŮVODNÍ PISATEL, KTERÝKOLIV PŘISPĚVATEL NEBO KTERÝKOLIV DISTRIBUTOR TOHOTO DOKUMENTU NEBO UPRAVENÉ VERZE DOKUMENTU NEBO KTERÝKOLIV DODAVATEL NĚKTERÉ Z TĚCHTO STRAN ODPOVĚDNÝ NĚJAKÉ OSOBĚ ZA PŘÍMÉ, NEPŘÍMÉ, SPECIÁLNÍ, NAHODILÉ NEBO NÁSLEDNÉ ŠKODY JAKÉHOKOLIV CHARAKTERU, VČETNĚ, ALE NEJEN, ZA POŠKOZENÍ ZE ZTRÁTY DOBRÉHO JMÉNA, PŘERUŠENÍ PRÁCE, PORUCHY NEBO NESPRÁVNÉ FUNKCE POČÍTAČE NEBO JINÉHO A VŠECH DALŠÍCH ŠKOD NEBO ZTRÁT VYVSTÁVAJÍCÍCH Z NEBO VZTAHUJÍCÍCH SE K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+	<firstname>Andreas</firstname> 
+	<surname>Røsdal</surname> 
+	<affiliation> 
+	  <address> <email>andrearo@pvv.ntnu.no</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+<revhistory>
+      <revision> 
+	<revnumber>Příručka V2.18 ke hře Šachy</revnumber> 
+	<date>Prosinec</date> 
+	<revdescription> 
+	  <para role="author">Andreas Røsdal <email>andrearo@pvv.ntnu.no</email></para>
+	  <para role="publisher">Dokumentační projekt GNOME</para>
+	</revdescription> 
+      </revision>
+  <revision>
+   <revnumber>1</revnumber>
+   <date>Prosinec 2006</date>
+   <authorinitials>AR</authorinitials>
+   <revremark>Dokončen první návrh.</revremark>
+  </revision>
+ </revhistory>
+
+    <releaseinfo>Tato příručka popisuje Šachy ve verzi 2.18.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Ohlasy</title> 
+      <para>Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k aplikaci <application>Šachy</application> nebo této příručce, postupujte dle instrukcí na stránce <ulink url="ghelp:user-guide?feedback-bugs" type="help">Stránka s ohlasy na GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>glChess</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="intro">
+ <title>Úvod</title>
+ <sect2 id="what">
+  <title>Přehled o šachu</title>
+  
+  <para>Šachy jsou strategická desková hra pro dva hráče. <application>glChess</application> je 2D/3D šachová hra, ve které spolu mohou navzájem soupeřit lidé a umělí počítačoví hráči. glChess používá pro počítačové hráče různé šachové servery třetích stran, které umí detekovat. Původně hru vyvinul Robert Ancell a v současnosti je součástí gnome-games.</para>
+
+  <para>Aplikace <application>glChess</application> je napsaná v jazyce Python a používá GTK+ a Cairo na vykreslování šachovnice. 3D podpora je dostupná volitelně pomocí OpenGL a knihoven Python OpenGL a GtkGLExt. Stejně jako ve většině moderních 3D programů je doporučená hardwarové akcelerace, ale dokáže běžet dobře i se softwarovou. Hra glChess je dodávaná dohromady spolu s GNU Chess jako výchozí šachovou UI. glChess lze hrát i v síťovém režimu proti dalším hráčům na Internetu.</para>
+  <para>Šachy se hrají na čtvercové šachovnici, která sestává z 64 polí se střídající se barvou. Každý z hráčů začíná hru se šestnácti figurami: jedním králem, jednou královnou, dvěma věžemi, dvěma jezdci, dvěma střelci a osmi pěšci. Jeden hráč ovládá bílé figury a druhý ovládá černé figury. Ten, který ovládá bílé, začíná prvním tahem. Hráči se v tazích střídají. Některé tahy mohou vést k „braní“ protivníkovy figury a jejímu vyřazení ze šachovnice. Cílem hry je dát protivníkovu králi mat. To nastane v případě, že je král přímo ohrožen (v šachu) a neexistuje žádný způsob, jak by následujícím tahem mohl ohrožení uniknout. Teoretikové vyvinuli rozsáhlé šachové strategie a taktiku začínající již otevřením hry.</para>
+<para>Současná forma hry se objevila v jižní Evropě v druhé polovině 15. století, kde se vyvinula z podobné, ale mnohem starší hry, pocházející z Asie. Šachy jsou jedna z nepopulárnějších deskových her na světe. Tradice soutěžních šachů začala v 16. století. První oficiální mistr světa v šachu, Wilhelm Steinitz, svůj titul vybojoval v roce 1886. Jeho dnešní následovník, Viswanathan Anand, je 15. mistrem v řadě. Každé dva roky se také koná šachová olympiáda. Od 20. století se o pořádání a dozor nad vrcholovými šachovými soutěžemi a mezinárodními tituly starají dvě mezinárodní organizace, World Chess Federation a International Correspondence Chess Federation.</para>
+<para>Jednou z met prvních počítačových vědců bylo vytvořit stroj, který by hrál šachy a současné šachy jsou hluboce ovlivněné ohromnými schopnostmi současných šachových programů. V roce 1997 došlo k souboji mezi Garry Kasparovem, mistrem světa, a šachovým programem Deep Blue od IBM, ve kterém počítač poprvé dokázal porazit nejlepšího lidského hráče.</para>
+
+  <para>Pokud chcete spustit hru <application>glChess</application>, zvolte <guimenuitem>Šachy</guimenuitem> z  podnabídky <guisubmenu>Hry</guisubmenu> v <guimenu>hlavní nabídce</guimenu> nebo zadejte <command>glchess</command> v příkazovém řádku.</para>
+ </sect2>
+
+</sect1>
+
+
+<sect1 id="playing-glchess">
+ <title>Hraní šachů</title>
+ <sect2 id="main-game-window">
+<title>Hlavní okno hry</title>
+
+     <para>Po spuštění hry glChess se zobrazí hlavní okno, které můžete vidět na obrázku níže. Hraje se přesouváním figur pomocí myši. Hráči se střídají v tazích figur své barvy z jednoho pole na jiné platné pole šachovnice. Hlavní okno hry je rozčleněné na tři části: V horní nabídce a panelu nástrojů lze najít většinu běžných funkcí. Uprostřed se nachází šachovnice, na které probíhá vlastní hra posouváním figur pomocí myši. A na konec v dolní části najdete panel s historií, který informuje o historii partie, zbývající čas na provedení tahu a tlačítka na procházení historie.</para>
+
+ <figure id="main-game-shot">
+  <title>Hlavní okno glChess</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Hlavní okno hry glChess.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+</sect2>
+
+<sect2>
+<title>Spuštění nové hry</title>
+<para>Novou hru spustíte zmáčknutím tlačítka <guibutton>Nový</guibutton> na panelu nástrojů. Objeví se dialogové okno, ve kterém si můžete novou hru podle svého nastavit. V části <interface>Vlastnosti hry</interface> se nastavuje název hry a časový limit na jeden tah každého hráče. V části <interface>Hráči</interface> je možné volit lidské hráče a UI. Pokud máte nainstalované některé ze šachových serverů jako hráče s UI, budou se tyto zobrazovat v seznamu dostupných hráčů. A nakonec se v části <interface>Obtížnost</interface> nastavuje náročnost hráčů s UI.</para>
+
+ <figure id="new-game-shot">
+  <title>Dialog spuštění nové hry</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/new_game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Dialogové okno s nastavením glChess pro novou hru.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+</sect2>
+
+
+
+
+<sect2 id="menubar">
+   <title>Nabídky</title>
+   <para>Panel nabídek, který se nachází v horní části <interface>hlavního okna</interface>, obsahuje následující nabídky:</para>
+
+   <variablelist>
+    <varlistentry>
+     <term><guimenu>Hra</guimenu></term>
+     <listitem>
+      <para>Tato nabídka obsahuje: <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+N</keysym></shortcut><guimenuitem>Nový</guimenuitem></menuchoice> Tímto začnete novou partii <application>Šachů</application>.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+O</keysym></shortcut><guimenuitem>Otevřít</guimenuitem></menuchoice> Načte dříve uloženou partii.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+S</keysym></shortcut><guimenuitem>Uložit</guimenuitem></menuchoice> Uloží současnou šachovou partii.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><guimenuitem>Uložit jako</guimenuitem></menuchoice> Uloží současnou partii šachů pod novým názvem.</para>
+        </listitem>
+
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+L</keysym></shortcut><guimenuitem>Síťová hra</guimenuitem></menuchoice> Tímto začnete síťovou hru pro více hráčů přes GGZ Gaming Zone.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Odstoupit</guimenuitem></menuchoice> Přiznání ztracené hry a uznání protivníkova vítězství.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Požádat o remízu</guimenuitem></menuchoice> Pokud je remíza přijata, končí hra bez vítězství kteréhokoliv z hráčů.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+Q</keysym></shortcut><guimenuitem>Ukončit</guimenuitem></menuchoice> Ukončí hru.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+
+    <varlistentry>
+     <term><guimenu>Zobrazit</guimenu></term>
+     <listitem>
+      <para>Tato nabídka obsahuje: <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>F11</keysym></shortcut><guimenuitem>Celá obrazovka</guimenuitem></menuchoice> Zobrazí okno s hrou v celoobrazovkovém režimu.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><guimenuitem>3D pohled</guimenuitem></menuchoice> Zapne režim 3D zobrazení používající OpenGL. Vyžaduje to nainstalované Python OpenGL a Python GTKGLExt a navíc správně nastavenou funkčnost 3D grafické karty. Pokud narazíte na problémy, kontaktujte prosím svého správce systému, případně můžete vždy zůstat u hraní v režimu 2D.</para>
+        </listitem>
+	 <listitem>
+         <para><menuchoice><guimenuitem>Zobrazit záznamy</guimenuitem></menuchoice> Zobrazí evidenci pro ladění glChess a aktivního šachového serveru.</para>
+        </listitem>
+     </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+   <varlistentry>
+     <term><guimenu>Nastavení</guimenu></term>
+     <listitem>
+      <para>Tato nabídka obsahuje: <itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>Předvolby</guimenuitem></menuchoice> Otevře dialogové okno, ve kterém můžete upravit <link linkend="prefs">předvolby</link>.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Nápověda</guimenu></term>
+     <listitem>
+      <para>Tato nabídka obsahuje: <itemizedlist>
+        <listitem>
+          <para><menuchoice><shortcut><keysym>F1</keysym></shortcut><guimenuitem>Obsah</guimenuitem></menuchoice> Zobrazí tuto příručku.</para>
+         <para><guimenuitem>O aplikaci</guimenuitem> Otevře dialogové okno <interface>O aplikaci </interface>, které obsahuje základní informace o <application>glChess</application>, jako je jméno autora a číslo verze aplikace.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+
+
+</sect2>
+
+
+</sect1>
+
+
+<sect1 id="chess-rules">
+ <title>Šachová pravidla</title>
+ <sect2 id="rules-of-chess">
+  <title>Pravidla šachů</title>
+<!--
+The reference for this chapter is http://en.wikipedia.org/wiki/Chess
+-->
+  <para>Šachy se hrají na čtvercové hrací desce, nazývané šachovnice, která má osm řádků (značených čísly 1 až 8) a osm sloupců (značených písmeny a až h) tvořících pole. Barvy šedesátičtyř polí se pravidelně střídají mezi světlou a tmavou a jsou označovaná jako „bílá pole“ a „černá pole“. Šachovnice je postavená tak, že každý z hráčů má bílé pole ve svém pravém dolním rohu a figury jsou rozložené jak ukazuje nákres, s královnou vždy na poli odpovídajícím její barvě.</para><para>Oba hráči začínají hru se šestnácti figurami, které zahrnují: jednoho krále, jednu královnu, dvě věže, dva střelce, dva jezdce a osm pěšců. Jeden hráč, označovaný jako bílý, ovládá bílé figury a druhý hráč, černý, ovládá černé figury. První tah má vždy bíly. Barva se volí přátelskou dohodou, náhodnou volbou nebo rozhodčím. Hráči v každém tahu posunou právě jednu svoji figuru (mimo rošády, při které posunou dvě figury naráz). Figury se mohou přesunout buď na prázdné pole nebo na pole obsazené protivníkovou figurou, kterou tím berou a vyřadí ze hry. S jedinou výjimkou (en passant = braní mimochodem), všechny figury berou protivníkovy figury, tím že se přesunou na pole, které je obsazené protivníkovou figurou.</para>
+ <sect3 id="rules-piece-king">
+  <title>Král</title>
+<para>O situaci, kdy je král pod přímým útokem jedné (nebo i dvou) protivníkových figur, se říká, že má hráč šach. V tom případě je povolený jedině tah, který útok na krále odstraní. Hráč nesmí provést žádný tah, kterým by vystavil svého krále útoku. Cílem hry je dát protivníkovi mat, což nastane, když má protivníkův král šach a neexistuje tah, kterým by mohl útoku uniknout.</para><para>Král se může pohybovat pouze o jedno pole v řádku, sloupci nebo diagonále. Výjimkou je speciální dvojitý tah nazývaný rošáda. Rošáda sestává z tahu králem dvě pole směrem k věži a tahu věží na pole těsně za novou pozic krále, kterého přeskočí. Rošáda je povolená pouze za následujících podmínek:</para>
+<itemizedlist spacing="compact">
+  <listitem>
+   <para>Hráč do té doby nesměl táhnout ani králem, ani věží, kterou chce použít.</para>
+  </listitem>
+  <listitem>
+   <para>Mezi králem a věží nesmí být žádné figury.</para>
+  </listitem>
+  <listitem>
+   <para>Král nesmí mít šach, ani nesmí projít přes pole ohrožené protivníkem. A stejně jako všech tahů králem, nesmí skončit na poli, na kterém by měl šach.</para>
+ </listitem>
+  <listitem>
+   <para>Král a věž musí být ve stejném řádku (aby se vyloučila rošáda s pěšcem povýšeným na věž).</para>
+  </listitem>
+</itemizedlist>
+</sect3>
+ <sect3 id="rules-piece-rook">
+  <title>Věž</title>
+<para>Věž se může pohybovat o libovolný počet polí v řadách a v sloupcích (a navíc se účastní spolu s králem speciálního tahu rošáda).</para>
+</sect3>
+ <sect3 id="rules-piece-bishop">
+  <title>Střelec</title>
+<para>Střelec se může pohybovat o libovolný počet polí kterýmkoliv směrem po diagonále. Všimněte si, že střelec nikdy nemění barvu pole, takže se hovoří o „bělopolném“ nebo „černopolném“ střelci.</para>
+</sect3>
+ <sect3 id="rules-piece-queen">
+  <title>Královna</title>
+<para>Královna se může pohybovat o libovolný počet polí diagonálně, v řádku i v sloupci.</para>
+</sect3>
+ <sect3 id="rules-piece-knight">
+  <title>Jezdec</title>
+<para>Jezdec může skákat i přes obsazená pole a pohybuje se dvě pole v řádku a jedno ve sloupci nebo naopak, což vytváří tvar písmene „L“. Jezdec uprostřed šachovnice má osm možných polí, na která může táhnout. Všimněte si, že pokaždé, kdy jezdec táhne, změní barvu pole.</para>
+</sect3>
+ <sect3 id="rules-piece-pawns">
+  <title>Pěšec</title>
+<para>Pěšec má nejsložitější pravidla tahů: Pěšec se může pohybovat vpřed o jedno pole, pokud není obsazené. Pokud zatím ještě netáhl, může se (ale nemusí) posunout o dvě pole, pokud jsou obě volná. Pěšec se nemůže vracet zpět. Pokud provede úvodní posun o dvě pole tak, že se ocitne před soupeřovým pěšcem ve stejném sloupci, může jej protivníkům pěšec sebrat „en passant“ (braní mimochodem) tak, jako by braný pěšec postoupil pouze o jedno pole a to bezprostředně po jeho tahu. Pěšec je jediná figura, která jinak bere než táhne. Brát může nepřátelské figury na místech sousedících s polem před ním (jinak řečeno na dvou polích diagonálně před ním), ale nemůže se na tyto pole přesunout, pokud jsou prázdná. Pokud pěšec překoná celou trasu až na osmé pole sloupce, povýší (je změněn) na královnu, věž, střelce nebo jezdce jeho barvy. V praxi je ale téměř vždy povýšen na královnu.</para>
+</sect3>
+
+<sect3 id="rules-movement-others">
+<title>Zbývající pravidla tahů</title>
+<para>S výjimkou koně nesmí figury přes sebe přeskakovat. Figura patřící jednomu hráči nesmí projít přes jinou jeho figuru ležící v cestě tahu, ani ji nemůže na jejím poli nahradit. Přes nepřátelskou figuru nemůže projít, ale můžete ji sebrat. Když ji sebere, útočící figura ji nahradí na jejím poli (s výjimkou en passant). Sebraná figura se ze hry odebere a po zbytek hry už se nemůže vrátit. Krále nelze sebrat, pouze mu dát šach. Pokud hráč nemůže ze šachu uniknout, je výsledkem mat a prohraná hra.</para><para>Šachový souboj nemusí skončit matem  — hráč může v bezvýchodné situaci hru vzdát. Hra může také skončit remízou. Remíza může nastat v několika situacích, zahrnujících remízu dohodou, patem, trojnásobným opakováním pozice, pravidlem padesátého tahu a nebo nemožností dát mat (obvykle proto, že ve hře již není dostatek figur).</para>
+</sect3>
+</sect2>
+
+
+<sect2 id="timed-games">
+<title>Hra limitovaná časem</title>
+<para>Hry lze hrát s časovým limitem, který lze nastavit pomocí maximální doby tahu při vytváření hry. V časově limitované hře má každý hráč na svůj tah určitý omezený čas, který se mu začne odpočítávat vždy, když je na tahu.</para>
+</sect2>
+
+<sect2 id="draw">
+<title>Remíza</title>
+<para>Hra, která nekončí vítězstvím žádného z hráčů. Většina remíz vznikne souhlasem s remízou podle pravidel. Jinou možností ukončení hry remízou je pat, trojnásobné opakování, pravidlo padesátého tahu a nedostatek figur. Situace je nazvaná remízou (nebo nerozhodnou hrou), kdy jeden z hráčů může případně platným tahem přivést hru do situace, ve které musí končit remízou, bez ohledu na tahy provedené druhým hráčem.</para>
+
+
+<sect3 id="stalemate">
+<title>Pat</title>
+<para>Pat je situace, ve které hráč nemá žádný platný tah, který by mohl provést a král přitom není v šachu. Výsledkem patu je okamžitá remíza.</para>
+</sect3>
+
+<sect3 id="threefold-repetition">
+<title>Trojnásobné opakování</title>
+<para>Hra je v remíze, když se na šachovnici nejméně potřetí objeví stejná situace, ve které je na tahu stejný hráč a oba hráči mají k dispozici stejné možnosti tahů (později zahrnuje i právo na en passand a rošádu).</para>
+</sect3>
+
+
+<sect3 id="fifty-move-rule">
+<title>Pravidlo padesátého tahu</title>
+<para>Situace na remízu, kdy v posledních padesáti tazích nebylo taženo pěšcem a nebyla brána žádná figura.</para>
+</sect3>
+
+<sect3 id="insuff-material">
+<title>Nedostatek figur</title>
+<para>Scénář vedoucí k ukončení hry, kdy všichni pěšci byly sebráni a jedné straně zůstal pouze král a druhé král nebo král a jeden jezdec nebo střelec. Situace je remízou, protože pro vedoucí stranu je nemožné dát protivníkovi mat. Situace, ve které je mat možný, jen pokud by slabší strana udělala hrubou chybu než nastane pravidlo padesátého tahu.</para>
+</sect3>
+
+
+</sect2>
+
+</sect1>
+
+
+
+
+<sect1 id="prefs">
+ <title>Nastavení hry</title>
+
+
+<sect2 id="game-prefs">
+  <title>Předvolby pro hru</title>
+  <para>Toto dialogové okno s předvolbami vám umožňuje měnit orientaci šachovnice, formát pohybů a typ povýšení.</para>
+
+ <figure id="preferences-game-shot">
+  <title>Dialog glChess s předvolbami hry</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences_game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Dialogové okno glChess s předvolbami pro hru.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+
+</sect2>
+
+
+
+<sect2 id="view-prefs">
+  <title>Předvolby pro zobrazení</title>
+  <para>Toto dialogové okno s předvolbami vám umožňuje měnit vzhled a prostředí glChess.</para>
+
+ <figure id="preferences-view-shot">
+  <title>Dialog glChess s předvolbami zobrazení</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences_view.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Dialogové okno glChess s předvolbami pro zobrazení.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+
+</sect2>
+
+</sect1>
+
+
+<sect1 id="engines">
+ <title>Šachové servery</title>
+
+     <para>glChess by měl být schopný používat Chess Engine Communication Protocol, případně šachové servery kompatibilní s Universal Chess Interface, včetně těchto šachových serverů:</para>
+
+<!-- Please keep AI list synchronized with glchess/data/ai.xml -->
+<itemizedlist spacing="compact">
+  <listitem>
+	<para>GNUChess</para>
+  </listitem>
+  <listitem>
+	<para>Sjeng</para>
+  </listitem>
+  <listitem>
+	<para>Amy</para>
+ </listitem>
+  <listitem>
+	<para>Crafty</para>
+  </listitem>
+  <listitem>
+	<para>Faile</para>
+  </listitem>
+  <listitem>
+	<para>Phalanx</para>
+  </listitem>
+  <listitem>
+	<para>Glaurung</para>
+  </listitem>
+  <listitem>
+	<para>HoiChess</para>
+  </listitem>
+  <listitem>
+	<para>Diablo</para>
+  </listitem>
+  <listitem>
+	<para>BBChess</para>
+  </listitem>
+  <listitem>
+	<para>Fruit</para>
+  </listitem>
+  <listitem>
+	<para>Amundsen</para>
+  </listitem>
+  <listitem>
+	<para>Shredder</para>
+  </listitem>
+  <listitem>
+	<para>Toga II</para>
+  </listitem>
+  <listitem>
+	<para>Boo's Chess Engine</para>
+  </listitem>
+
+
+</itemizedlist>
+
+</sect1>
+
+
+<sect1 id="bugs">
+ <title>Známé chyby a omezení</title>
+
+ <itemizedlist mark="opencircle">
+    <listitem>
+     <para>V glChess nejsou žádné zdokumentované chyby nebo omezení. Pokud hledáte, v jaké oblasti byste mohli pomoci zdokonalit hru glChess, podívejte se prosím do souboru TODO šířeného spolu s hrou.</para>
+    </listitem>
+ </itemizedlist>
+
+</sect1>
+
+<sect1 id="credits">
+ <title>Autoři</title>
+  <para>Hru <application>glChess</application> napsal Robert Ancell a v současné době je udržovaná v gnome-games. Tuto dokumentaci původně napsal Andreas Røsdal s použitím několika zdrojů GPL. Pokud chcete nahlásit chybu nebo podat návrh týkající se této aplikace nebo tohoto návodu, tak se řiďte instrukcemi v tomto <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentu</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licence</title>
+  <para>Tento program je svobodný software. Můžete jej dále šířit a/nebo upravovat za dodržení podmínek <ulink type="help" url="gnome-help:gpl"><citetitle>GNU General Public License</citetitle></ulink>, tak jak ji vydala Free Software Foundation ve verzi 2 nebo (dle vaší volby) novější.</para>
+  <para>Tento program je šířen s přesvědčením, že může být užitečný, ale BEZ JAKÝCHKOLIV ZÁRUK, bez předpokládané záruky na OBCHODOVATELNOST nebo VHODNOST PRO URČITÝ ÚČEL. Více podrobností najdete v <citetitle>GNU General Public License</citetitle>.</para>
+  <para>Kopie <citetitle>GNU General Public License</citetitle> je zahrnuta v dodatku <citetitle>Uživatelské přiručky GNOME</citetitle>. Kopii <citetitle>GNU General Public License</citetitle> můžete také získat od Free Software Foundation navštívením <ulink type="http" url="http://www.fsf.org">jejich webu</ulink> nebo zasláním žádosti na <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

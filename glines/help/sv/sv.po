@@ -1,0 +1,405 @@
+# translation of glines.DOC.po to Swedish
+# Daniel Nylander <po@danielnylander.se>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: glines.DOC\n"
+"POT-Creation-Date: 2008-01-03 18:49+0000\n"
+"PO-Revision-Date: 2009-02-19 23:46+0100\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/glines.xml:188(None)
+msgid "@@image: 'figures/glines-startgame.png'; md5=e6e58f72dc4802d89a45a7726f4c7fd7"
+msgstr "@@image: 'figures/glines-startgame.png'; md5=e6e58f72dc4802d89a45a7726f4c7fd7"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/glines.xml:207(None)
+msgid "@@image: 'figures/glines-gameover.png'; md5=949d09a01ee02944bf3f278ce1ebc2ba"
+msgstr "@@image: 'figures/glines-gameover.png'; md5=949d09a01ee02944bf3f278ce1ebc2ba"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/glines.xml:327(None)
+msgid "@@image: 'figures/preferences.png'; md5=745336aefd6ade740f6064bdf4121379"
+msgstr "@@image: 'figures/preferences.png'; md5=745336aefd6ade740f6064bdf4121379"
+
+#: C/glines.xml:32(title)
+msgid "<application>Five or More</application> Manual"
+msgstr "Handbok för <application>Fem eller mer</application>"
+
+#: C/glines.xml:34(para)
+msgid "To play Five or More one must align colored pieces as the board gets filled with randomly placed pieces. When five or more pieces of the same color get lined up, they disappear. The game ends when the board gets filled up all the way."
+msgstr "Målet med Fem eller mer är att rada upp färgade objekt under tiden brädet fylls upp med slumpmässigt placerade objekt. När fem eller fler objekt av samma färg blir uppradade så försvinner de. Spelet är över när brädet fyllts upp hela vägen."
+
+#: C/glines.xml:43(year)
+msgid "2000-2002"
+msgstr "2000-2002"
+
+#: C/glines.xml:44(holder)
+msgid "Emese Kovács"
+msgstr "Emese Kovács"
+
+#: C/glines.xml:59(publishername)
+#: C/glines.xml:72(orgname)
+#: C/glines.xml:98(para)
+msgid "GNOME Documentation Project"
+msgstr "Dokumentationsprojekt för GNOME"
+
+#: C/glines.xml:2(para)
+msgid "Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any later version published by the Free Software Foundation with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
+msgstr "Tillstånd att kopiera, distribuera och/eller modifiera detta dokument ges under villkoren i GNU Free Documentation License (GFDL), version 1.1 eller senare, utgivet av Free Software Foundation utan standardavsnitt och omslagstexter.  En kopia av GFDL finns att hämta på denna <ulink type=\"help\" url=\"ghelp:fdl\">länk</ulink> eller i filen COPYING-DOCS som medföljer denna handbok."
+
+#: C/glines.xml:12(para)
+msgid "This manual is part of a collection of GNOME manuals distributed under the GFDL. If you want to distribute this manual separately from the collection, you can do so by adding a copy of the license to the manual, as described in section 6 of the license."
+msgstr "Denna handbok utgör en av flera GNOME-handböcker som distribueras under villkoren i GFDL.  Om du vill distribuera denna handbok separat från övriga handböcker kan du göra detta genom att lägga till en kopia av licensavtalet i handboken enligt instruktionerna i avsnitt 6 i licensavtalet."
+
+#: C/glines.xml:19(para)
+msgid "Many of the names used by companies to distinguish their products and services are claimed as trademarks. Where those names appear in any GNOME documentation, and the members of the GNOME Documentation Project are made aware of those trademarks, then the names are in capital letters or initial capital letters."
+msgstr "Flera namn på produkter och tjänster är registrerade varumärken. I de fall dessa namn förekommer i GNOME-dokumentation - och medlemmarna i GNOME-dokumentationsprojektet är medvetna om dessa varumärken - är de skrivna med versaler eller med inledande versal."
+
+#: C/glines.xml:35(para)
+msgid "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr "DOKUMENTET TILLHANDAHÅLLS I \"BEFINTLIGT SKICK\" UTAN NÅGRA SOM HELST GARANTIER, VARE SIG UTTRYCKLIGA ELLER UNDERFÖRSTÅDDA, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, GARANTIER ATT DOKUMENTET ELLER EN MODIFIERAD VERSION AV DOKUMENTET INTE INNEHÅLLER NÅGRA FELAKTIGHETER, ÄR LÄMPLIGT FÖR ETT VISST ÄNDAMÅL ELLER INTE STRIDER MOT LAG. HELA RISKEN VAD GÄLLER KVALITET, EXAKTHET OCH UTFÖRANDE AV DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET LIGGER HELT OCH HÅLLET PÅ ANVÄNDAREN. OM ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT SKULLE VISA SIG INNEHÅLLA FELAKTIGHETER I NÅGOT HÄNSEENDE ÄR DET DU (INTE DEN URSPRUNGLIGA SKRIBENTEN, FÖRFATTAREN ELLER NÅGON ANNAN MEDARBETARE) SOM FÅR STÅ FÖR ALLA EVENTUELLA KOSTNADER FÖR SERVICE, REPARATIONER ELLER KORRIGERINGAR. DENNA GARANTIFRISKRIVNING UTGÖR EN VÄSENTLIG DEL AV DETTA LICENSAVTAL. DETTA INNEBÄR ATT ALL ANVÄNDNING AV ETT DOKUMENT ELLER EN MODIFIERAD VERSION AV ETT DOKUMENT BEVILJAS ENDAST UNDER DENNA ANSVARSFRISKRIVNING;"
+
+#: C/glines.xml:55(para)
+msgid "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES."
+msgstr "UNDER INGA OMSTÄNDIGHETER ELLER INOM RAMEN FÖR NÅGON LAGSTIFTNING, OAVSETT OM DET GÄLLER KRÄNKNING (INKLUSIVE VÅRDSLÖSHET), KONTRAKT ELLER DYLIKT, SKA FÖRFATTAREN, DEN URSPRUNGLIGA SKRIBENTEN ELLER ANNAN MEDARBETARE ELLER ÅTERFÖRSÄLJARE AV DOKUMENTET ELLER AV EN MODIFIERAD VERSION AV DOKUMENTET ELLER NÅGON LEVERANTÖR TILL NÅGON AV NÄMNDA PARTER STÄLLAS ANSVARIG GENTEMOT NÅGON FÖR NÅGRA DIREKTA, INDIREKTA, SÄRSKILDA ELLER OFÖRUTSEDDA SKADOR ELLER FÖLJDSKADOR AV NÅGOT SLAG, INKLUSIVE, MEN INTE BEGRÄNSAT TILL, SKADOR BETRÄFFANDE FÖRLORAD GOODWILL, HINDER I ARBETET, DATORHAVERI ELLER NÅGRA ANDRA TÄNKBARA SKADOR ELLER FÖRLUSTER SOM KAN UPPKOMMA PÅ GRUND AV ELLER RELATERAT TILL ANVÄNDNINGEN AV DOKUMENTET ELLER MODIFIERADE VERSIONER AV DOKUMENTET, ÄVEN OM PART SKA HA BLIVIT INFORMERAD OM MÖJLIGHETEN TILL SÅDANA SKADOR."
+
+#: C/glines.xml:28(para)
+msgid "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: <placeholder-1/>"
+msgstr "DOKUMENTET OCH MODIFIERADE VERSIONER AV DOKUMENTET TILLHANDAHÅLLS UNDER VILLKOREN I GNU FREE DOCUMENTATION LICENSE ENDAST UNDER FÖLJANDE FÖRUTSÄTTNINGAR: <placeholder-1/>"
+
+#: C/glines.xml:69(firstname)
+msgid "Emese"
+msgstr "Emese"
+
+#: C/glines.xml:70(surname)
+msgid "Kovács"
+msgstr "Kovács"
+
+#: C/glines.xml:73(email)
+msgid "emese@gnome.hu"
+msgstr "emese@gnome.hu"
+
+#: C/glines.xml:92(revnumber)
+msgid "Five or More Manual V2.8"
+msgstr "Handbok för Fem eller mer v2.8"
+
+#: C/glines.xml:93(date)
+msgid "September 2004"
+msgstr "September 2004"
+
+#: C/glines.xml:95(para)
+msgid "Emese Kovács <email>emese@gnome.hu</email>"
+msgstr "Emese Kovács <email>emese@gnome.hu</email>"
+
+#: C/glines.xml:103(releaseinfo)
+msgid "This manual describes version 2.12 of Five or More."
+msgstr "Den här handboken beskriver version 2.12 av Fem eller mer."
+
+#: C/glines.xml:110(title)
+msgid "Feedback"
+msgstr "Återkoppling"
+
+#: C/glines.xml:111(para)
+msgid "To report a bug or make a suggestion regarding the <application>Five or More</application> application or this manual, follow the directions in the <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</ulink>."
+msgstr "För att rapportera ett fel eller föreslå någonting angående programmet <application>Fem eller mer</application> eller den här handboken, följ anvisningarna på <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME:s återkopplingssida</ulink>."
+
+#: C/glines.xml:121(primary)
+msgid "Five or More"
+msgstr "Fem eller mer"
+
+#: C/glines.xml:128(title)
+msgid "Introduction"
+msgstr "Introduktion"
+
+#: C/glines.xml:130(para)
+msgid "<application>Five or More</application>, is the Gnome port of the once popular Windows game called <application>Color Lines</application> The game's objective is to align as often as possible five or more objects of the same color and shape causing them to disappear. Play as long as possible, and be #1 in the High Scores."
+msgstr "<application>Fem eller mer</application>, är Gnome-porteringen av det gamla populära Windows-spelet som kallades för <application>Color Lines</application> Spelets mål är att matcha fem eller fler objekt av samma färg och form så ofta som det går för att de ska försvinna från brädet. Spela så länge som möjligt och bli först på poänglistan."
+
+#: C/glines.xml:139(para)
+msgid "To run <application>Five or More</application>, select <guimenuitem>Five or More</guimenuitem> from the <guisubmenu>Games</guisubmenu> submenu of the <guimenu>Main Menu</guimenu>, or type <command>glines</command> on the command line."
+msgstr "För att köra <application>Fem eller mer</application>, välj <guimenuitem>Fem eller mer</guimenuitem> från undermenyn <guisubmenu>Spel</guisubmenu> i <guimenu>Huvudmenyn</guimenu>, eller skriv <command>glines</command> på kommandoraden."
+
+#: C/glines.xml:147(para)
+msgid "<application>Five or More</application> is included in the <filename>GNOME-games</filename> package, which is part of the GNOME desktop environment. This document describes version 2.8 of <application>Five or More</application>."
+msgstr "<application>Fem eller mer</application> finns inkluderat i paketet <filename>gnome-games</filename>, vilket är en del av skrivbordsmiljön GNOME. Det här dokumentet beskriver version 2.8 av <application>Fem eller mer</application>."
+
+#: C/glines.xml:161(title)
+msgid "Playing Five or More"
+msgstr "Spela Fem eller mer"
+
+#: C/glines.xml:162(para)
+msgid "Playing <application>Five or More</application> is easy. At startup, you find yourself with five objects randomly positioned on the board. Each turn, you are allowed to move one object. You can move it anywhere on the board as long as there is a clear path. Afterward, the computer drops more objects at random positions (the exact number depends on the size of the game). You can preview the next objects to be dropped in the upper right corner of the game's window. If you manage to align five objects of the same shape and color, they disappear and you are given an extra move before more objects drop."
+msgstr "Spela <application>Fem eller mer</application> är enkelt. Vid uppstart av spelet kommer du att se fem objekt slumpmässigt positionerade på brädet. För varje omgång tillåts du flytta ett objekt. Du kan flytta det vart du vill på brädet så länge det finns en väg dit som inte är blockerad. Efter det kommer datorn att släppa ner fler objekt på slumpmässigt valda platser (det exakta antalet beror på brädets storlek). Du kan förhandsvisa de nästkommande objekten som kommer att släppas ner i övre högra hörnet i spelfönstret. Om du klarar av att matcha fem objekt av samma form och färg kommer de att försvinna och du får en extra omgång innan fler objekt släpps ner."
+
+#: C/glines.xml:176(title)
+msgid "Basic usage"
+msgstr "Grundläggande användning"
+
+#: C/glines.xml:177(para)
+msgid "Starting <application>Five or More</application> presents you with the <interface>game board</interface> and a new game starts. What it looks like is shown in <xref linkend=\"mainwindow-fig\"/>."
+msgstr "När du startar <application>Fem eller mer</application> får du se <interface>spelbrädet</interface> och ett nytt spel börjar. Det ser ut som det visas i <xref linkend=\"mainwindow-fig\"/>."
+
+#: C/glines.xml:184(title)
+msgid "The main window when you start a game."
+msgstr "Huvudfönstret när du startar ett spel."
+
+#. ==== End of Figure ====
+#: C/glines.xml:195(para)
+msgid "As the game progresses, the board gets more and more crowded (unless you are really good...) and making objects disappear gets harder and harder. The game is over, when the board is full."
+msgstr "Allt efter som spelet pågår kommer brädet att få fler och fler objekt (såvida inte du är verkligen bra...) och att få objekten att försvinna blir svårare och svårare. Spelet är över när brädet är fullt."
+
+#: C/glines.xml:203(title)
+msgid "Game over!"
+msgstr "Spelet är slut!"
+
+#: C/glines.xml:220(title)
+msgid "Playing the Game"
+msgstr "Spela spelet"
+
+#: C/glines.xml:221(para)
+msgid "A game of <application>Five or More</application> begins with some random objects on the board."
+msgstr "En spelomgång i <application>Fem eller mer</application> börjar med några slumpmässiga objekt på brädet."
+
+#: C/glines.xml:225(para)
+msgid "To make a move, click on one of the objects. When an object is activated it starts rotating (or doing something else depending on the theme, but let us not anticipate…). You can then select its destination by clicking an empty square. If the path to the destination is clear the activated item travels there. If the destination square is occupied by another object nothing will be moved and the selection will be transferred to the new object. If the path is not clear (you cannot jump objects over obstacles!) the application prints a warning in the status bar (bottom of the window) and the original object remains active."
+msgstr "Klicka på ett av objekten för att göra ett drag. När ett objekt aktiveras börjar det att rotera (eller gör någonting annat beroende på temat, men låt oss inte förutse det…). Du kan sedan välja dess mål genom att klicka på en tom ruta. Om vägen till målet inte är blockerad kommer objektet att flyttas dit. Om målet är upptaget av ett annat objekt kommer ingenting att flyttas och markeringen flyttas till det nya objektet. Om vägen är blockerad (du kan inte hoppa över objekt!) kommer programmet att skriva ut en varning i statusraden (nederkant av fönstret) och det ursprungliga objektet kvarstår som aktivt."
+
+#: C/glines.xml:237(para)
+msgid "As objects disappear, you get points. The points you score depends on the number of objects you managed to align (see <xref linkend=\"glines-table1\"/>). Your score is shown in the upper right corner of the window."
+msgstr "Du får poäng när objekten försvinner. Poängen som du får beror på antalet objekt som du klarar av att matcha (se <xref linkend=\"glines-table1\"/>). Dina poäng visas i övre högra hörnet av fönstret."
+
+#: C/glines.xml:246(title)
+#: C/glines.xml:342(title)
+msgid "Scoring in Five or More"
+msgstr "Poäng i Fem eller mer"
+
+#: C/glines.xml:250(entry)
+msgid "Number of objects"
+msgstr "Antal objekt"
+
+#: C/glines.xml:251(entry)
+msgid "Score given"
+msgstr "Poäng"
+
+#: C/glines.xml:256(entry)
+#: C/glines.xml:358(entry)
+msgid "5"
+msgstr "5"
+
+#: C/glines.xml:257(entry)
+#: C/glines.xml:276(entry)
+msgid "10"
+msgstr "10"
+
+#: C/glines.xml:260(entry)
+msgid "6"
+msgstr "6"
+
+#: C/glines.xml:261(entry)
+#: C/glines.xml:284(entry)
+msgid "12"
+msgstr "12"
+
+#: C/glines.xml:264(entry)
+#: C/glines.xml:356(entry)
+#: C/glines.xml:357(entry)
+#: C/glines.xml:365(entry)
+#: C/glines.xml:372(entry)
+#: C/glines.xml:373(entry)
+msgid "7"
+msgstr "7"
+
+#: C/glines.xml:265(entry)
+msgid "18"
+msgstr "18"
+
+#: C/glines.xml:268(entry)
+msgid "8"
+msgstr "8"
+
+#: C/glines.xml:269(entry)
+msgid "28"
+msgstr "28"
+
+#: C/glines.xml:272(entry)
+#: C/glines.xml:363(entry)
+#: C/glines.xml:364(entry)
+msgid "9"
+msgstr "9"
+
+#: C/glines.xml:273(entry)
+msgid "42"
+msgstr "42"
+
+#: C/glines.xml:277(entry)
+msgid "82"
+msgstr "82"
+
+#: C/glines.xml:280(entry)
+msgid "11"
+msgstr "11"
+
+#: C/glines.xml:281(entry)
+msgid "108"
+msgstr "108"
+
+#: C/glines.xml:285(entry)
+msgid "138"
+msgstr "138"
+
+#: C/glines.xml:288(entry)
+msgid "13"
+msgstr "13"
+
+#: C/glines.xml:289(entry)
+msgid "172"
+msgstr "172"
+
+#: C/glines.xml:292(entry)
+msgid "14"
+msgstr "14"
+
+#: C/glines.xml:293(entry)
+msgid "210"
+msgstr "210"
+
+#: C/glines.xml:300(title)
+msgid "Using the Keyboard"
+msgstr "Användning av tangentbordet"
+
+#: C/glines.xml:301(para)
+msgid "Instead of using the mouse you can use the keyboard to play <application>Five or More</application>. To use the keyboard, hit an arrow key and a cursor will appear near the center of the board. The arrow keys will move the cursor. When the cursor is over the object you want to move, use the spacebar to select it. Then shift the cursor to the object's destination and hit the space bar again to move the object."
+msgstr "Istället för att använda musen kan du även använda tangentbordet för att spela <application>Fem eller mer</application>. För att använda tangentbordet, tryck på en piltangent och en markör kommer att visas nära mitten av brädet. Piltangenterna kommer att flytta markören. När markören är över objektet som du vill flytta, använda blankstegstangenten för att välja det. Flytta sedan markören till objektets mål och tryck på blanksteg igen för att flytta objektet."
+
+#: C/glines.xml:302(para)
+msgid "If you start using the mouse again, the cursor will disappear. The cursor will reappear if you use the arrow keys again."
+msgstr "Om du börjar använda musen igen kommer markören att försvinna. Markören kommer att visas igen om du använder piltangenterna igen."
+
+#: C/glines.xml:315(title)
+msgid "Customizing the Game"
+msgstr "Anpassning av spelet"
+
+#: C/glines.xml:316(para)
+msgid "You can configure <application>Five or More</application> by clicking on <guimenuitem>Preferences</guimenuitem> in the applications <guimenu>Settings</guimenu> menu. The following <interface>dialog</interface> will appear:"
+msgstr "Du kan konfigurera <application>Fem eller mer</application> genom att klicka på <guimenuitem>Inställningar</guimenuitem> i menyn <guimenu>Inställningar</guimenu>. Följande <interface>dialogruta</interface> kommer att visas:"
+
+#: C/glines.xml:324(title)
+msgid "Preferences"
+msgstr "Inställningar"
+
+#. ==== End of Figure ====
+#: C/glines.xml:333(para)
+msgid "You can select different object styles and background colors in the <guimenu>Themes</guimenu> section. If you find it difficult distinguishing the colours, try the shapes theme."
+msgstr "Du kan välja olika stilar för objekten och bakgrundsfärger i sektionen <guimenu>Teman</guimenu>. Om du tycker det är svårt att urskilja färgerna kan du prova temat \"shapes\"."
+
+#: C/glines.xml:338(para)
+msgid "The <guimenu>Board Size</guimenu> section lets you select the size of the board. Each size has a slightly different balance: larger sizes give you more space to move, but more objects arrive each turn. The parameters for each size are given in <xref linkend=\"table-sizes\"/>."
+msgstr "Sektionen <guimenu>Brädstorlek</guimenu> låter dig välja storleken för brädet. Varje storlek har en lite annorlunda balans: större storlekar ger dig mer utrymme att flytta runt på men fler objekt kommer varje omgång. Parametrarna för varje storlek anges i <xref linkend=\"table-sizes\"/>."
+
+#: C/glines.xml:346(entry)
+msgid "Size"
+msgstr "Storlek"
+
+#: C/glines.xml:347(entry)
+msgid "Width"
+msgstr "Bredd"
+
+#: C/glines.xml:348(entry)
+msgid "Height"
+msgstr "Höjd"
+
+#: C/glines.xml:349(entry)
+msgid "Number of Types"
+msgstr "Antal typer"
+
+#: C/glines.xml:350(entry)
+msgid "Objects per Turn"
+msgstr "Objekt per omgång"
+
+#: C/glines.xml:355(entry)
+msgid "Small"
+msgstr "Liten"
+
+#: C/glines.xml:359(entry)
+#: C/glines.xml:366(entry)
+msgid "3"
+msgstr "3"
+
+#: C/glines.xml:362(entry)
+msgid "Medium"
+msgstr "Mellan"
+
+#: C/glines.xml:369(entry)
+msgid "Large"
+msgstr "Stor"
+
+#: C/glines.xml:370(entry)
+msgid "20"
+msgstr "20"
+
+#: C/glines.xml:371(entry)
+msgid "15"
+msgstr "15"
+
+#: C/glines.xml:379(para)
+msgid "You can speed up the movement of the objects by checking the Use fast moves box in the <guimenu>General</guimenu> preferences section."
+msgstr "Du kan öka hastigheten för flyttning av objekt genom att kryssa i rutan Använd snabba drag i inställningssektionen  <guimenu>Allmänt</guimenu>."
+
+#: C/glines.xml:383(para)
+msgid "Any changes you make are instantly applied and remembered for the next time you run <application>Five or More</application>."
+msgstr "Alla ändringar som du gör verkställs omedelbart och blir ihågkomna tills nästa gång du kör <application>Fem eller mer</application>."
+
+#: C/glines.xml:389(title)
+msgid "How to create new themes"
+msgstr "Hur man skapar nya teman"
+
+#: C/glines.xml:390(para)
+msgid "Each theme consists of a single PNG image file. This image consists of an array of seven rows, corresponding to the different object colors/shapes, and four columns, each of which is a frame in the animation of the object. The actual size of the image is irrelevant, it will be rescaled, but the sub-images must form a four by seven grid to get the correct effect. When using SVG remember that the image size is the page size, if your grid does not fill the page try shrinking the page size. Use an existing theme as a guide."
+msgstr "Varje tema innehåller en PNG-bildfil. Den här bilden innehåller en kedja på sju rader som motsvarar de olika objektens färg/form samt fyra kolumner som var och en är en bildruta för animering av objektet. Den faktiska storleken på bilden är inte relevant, den kommer att skalas om, men underbilderna måste vara i ett rutnät (4x7) för att få den rätta effekten. När du använder SVG bör du tänka på att bildstorleken är sidstorleken, om ditt rutnät inte fyller hela sida bör du försöka att minska sidstorleken. Använd ett befintligt tema som guide."
+
+#: C/glines.xml:420(title)
+msgid "Authors"
+msgstr "Upphovsmän"
+
+#: C/glines.xml:421(para)
+msgid "<application>Five or More</application> was written by Róbert Szókovács (<email>szo@appaloosacorp.hu</email>) and Szabolcs Bán (<email>shooby@gnome.hu</email>). This manual was written by Emese Kovács (<email>emese@gnome.hu</email>). For information on how to make comments, suggestions and to report bugs please see the <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">feedback document</ulink>."
+msgstr "<application>Fem eller mer</application> skrevs av Róbert Szókovács (<email>szo@appaloosacorp.hu</email>) och Szabolcs Bán (<email>shooby@gnome.hu</email>). Den här handboken skrevs av Emese Kovács (<email>emese@gnome.hu</email>). För information om hur man skickar in kommentarer, förslag och felrapportera, se <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">återkopplingsdokumentet</ulink>."
+
+#: C/glines.xml:446(title)
+msgid "License"
+msgstr "Licens"
+
+#: C/glines.xml:447(para)
+msgid "This program is free software; you can redistribute it and/or modify it under the terms of the <citetitle>GNU General Public License</citetitle> as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
+msgstr "Detta program är fri programvara. Du kan distribuera det och/eller modifiera det under villkoren i <citetitle>GNU General Public License</citetitle> som publicerats av Free Software Foundation, antingen version 2 eller (om du så vill) någon senare version."
+
+#: C/glines.xml:454(para)
+msgid "This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public License</citetitle> for more details."
+msgstr "Detta program distribueras i hopp om att det ska vara användbart, men UTAN NÅGON SOM HELST GARANTI, även utan underförstådd garanti om SÄLJBARHET eller LÄMPLIGHET FÖR NÅGOT SPECIELLT ÄNDAMÅL. Se <citetitle>GNU General Public License</citetitle> för ytterligare information."
+
+#: C/glines.xml:460(para)
+msgid "A copy of the <citetitle>GNU General Public License</citetitle> is included as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also obtain a copy of the <citetitle>GNU General Public License</citetitle> from the Free Software Foundation by visiting <ulink url=\"http://www.fsf.org\" type=\"http\">their Web site</ulink> or by writing to <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address>"
+msgstr "En kopia av <citetitle>GNU General Public License</citetitle> finns inkluderad som en bilaga till <citetitle>Användarguide för GNOME</citetitle>. Du kan även få en kopia av <citetitle>GNU General Public License</citetitle> från Free Software Foundation genom att besöka <ulink url=\"http://www.fsf.org\" type=\"http\">deras webbplats</ulink> eller genom att skriva till <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/glines.xml:0(None)
+msgid "translator-credits"
+msgstr "Daniel Nylander <po@danielnylander.se>, 2007, 2008, 2009"
+
+#~ msgid ""
+#~ "Align balls of the same color to make them disappear and prevent the "
+#~ "board from filling up."
+#~ msgstr ""
+#~ "Matcha bollar av samma färg för att de ska försvinna samt förhindra att "
+#~ "brädet fylls upp."
+

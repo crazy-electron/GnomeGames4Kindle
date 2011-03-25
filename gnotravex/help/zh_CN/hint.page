@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="hint" xml:lang="zh_CN">
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="usage"/>
+    <desc>使用提示来自动解决游戏</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-23" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+  </info>
+  <title>提示</title>
+
+  <note style="warning">
+    <p>如果您使用下面的方法完成游戏，您的分数将不会包含在得分排行榜上面。</p>
+  </note>
+
+  <section id="hint-hints">
+  
+    <title>使用提示系统</title>
+    
+    <p>在您玩游戏的时候，如果您不知道该怎么办了，您可以使用内建的提示系统。</p>
+    <p>系统会从右侧的盒子里移动一个方块到左侧正确的位置。</p>
+    <p>使用提示系统的几个方法：</p>
+    <list>
+      <item>
+        <p>按 <keyseq><key>Ctrl</key><key>H</key></keyseq>。</p>
+      </item>
+      <item>
+        <p>点击菜单中的 <guiseq><gui style="menu">游戏</gui><gui style="menuitem">提示</gui></guiseq>。</p>
+      </item>
+    </list>
+  </section>
+  <section id="hint-solve">
+    <title>解决游戏</title>
+    <p>如果您已经被游戏搞晕了，想要自动解决游戏，选择菜单中的 <guiseq><gui style="menu">游戏</gui><gui style="menuitem">解开</gui></guiseq>。</p>
+  </section>
+</page>

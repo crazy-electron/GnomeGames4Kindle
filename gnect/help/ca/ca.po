@@ -1,0 +1,904 @@
+# Traducció de la documentació del gnect de l'equip de Softcatalà.
+# Copyright © 2007, 2008 Free Software Foundation, Inc.
+# Joan Duran <jodufi@gmail.com>, 2007, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnect\n"
+"POT-Creation-Date: 2008-06-29 20:47+0000\n"
+"PO-Revision-Date: 2008-07-27 23:27+0100\n"
+"Last-Translator: Joan Duran <jodufi@gmail.com>\n"
+"Language-Team: Catalan <tradgnome@softcatala.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnect.xml:174(None)
+msgid "@@image: 'figures/mainwindow.png'; md5=372e2515d12d07635a88bff671cc1a14"
+msgstr ""
+"@@image: 'figures/mainwindow.png'; md5=372e2515d12d07635a88bff671cc1a14"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnect.xml:54(None)
+msgid "@@image: 'figures/connect.png'; md5=9a03bf23f04eacfd6feb9de823d6e321"
+msgstr "@@image: 'figures/connect.png'; md5=9a03bf23f04eacfd6feb9de823d6e321"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnect.xml:77(None)
+msgid "@@image: 'figures/tables.png'; md5=96e520cee7fdbee56636794251a52b0d"
+msgstr "@@image: 'figures/tables.png'; md5=96e520cee7fdbee56636794251a52b0d"
+
+#: C/gnect.xml:22(title)
+msgid "Four-in-a-Row Manual"
+msgstr "Manual del Quatre en ratlla"
+
+#: C/gnect.xml:24(para)
+msgid ""
+"The object of Four-in-a-Row is to place four pieces in a vertical, "
+"horizontal, or diagonal row while the opponent tries to block and make his/"
+"her own row of four. Four-in-a-Row can be played against another human or "
+"the computer."
+msgstr ""
+"L'objectiu del Quatre en ratlla és col·locar quatre fitxes en fila vertical, "
+"horitzontal o diagonal mentre l'adversari intenta bloquejar-vos i fer la "
+"seva fila de quatre. El Quatre en ratlla es pot jugar contra una altra "
+"persona o contra l'ordinador."
+
+#: C/gnect.xml:33(year)
+msgid "2001-2002"
+msgstr "2001-2002"
+
+#: C/gnect.xml:34(holder)
+msgid "Timothy Musson"
+msgstr "Timothy Musson"
+
+#: C/gnect.xml:47(publishername)
+msgid "GNOME Documentation Project"
+msgstr "Projecte de documentació del GNOME"
+
+#: C/gnect.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Teniu permís per a copiar, distribuir i/o modificar aquest document, sota "
+"els termes de la Llicència de documentació lliure GNU (GFDL), versió 1.1 o "
+"qualsevol versió publicada posteriorment per la Free Software Foundation, "
+"sense seccions invariants, sense texts de portada i sense texts de "
+"contraportada. Podeu trobar una còpia de la GFDL en aquest <ulink type=\"help"
+"\" url=\"ghelp:fdl\">enllaç</ulink> o en el fitxer COPYING-DOCS distribuït "
+"amb aquest manual."
+
+#: C/gnect.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Aquest manual forma part d'una col·lecció de manuals del GNOME distribuïts "
+"sota la GFDL. Si voleu distribuir aquest manual independentment de la "
+"col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal "
+"com es descriu a la secció 6 de la llicència."
+
+#: C/gnect.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Molts dels noms que les empreses utilitzen per a distingir els seus "
+"productes i serveis es consideren marques comercials. Quan aquests noms "
+"apareguin en qualsevol documentació del GNOME, si els membres del Projecte "
+"de documentació del GNOME han estat avisats pel que fa a les marques, els "
+"noms apareixeran en majúscules o amb les inicials en majúscules."
+
+#: C/gnect.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"EL DOCUMENT S'OFEREIX «TAL COM ÉS», SENSE CAP TIPUS DE GARANTIA, NI EXPLÍCITA "
+"NI IMPLÍCITA; AIXÒ INCLOU, SENSE LIMITAR-S'HI, LES GARANTIES QUE EL DOCUMENT "
+"O LA VERSIÓ MODIFICADA DEL DOCUMENT NO TINGUI DEFECTES, SIGUI "
+"COMERCIALITZABLE, SIGUI ADEQUAT PER A UN ÚS CONCRET O NO INFRINGEIXI CAP "
+"LLEI. TOT EL RISC PEL QUE FA A LA QUALITAT, EXACTITUD I RENDIMENT DEL "
+"DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT ÉS VOSTRE. EN CAS QUE EL "
+"DOCUMENT RESULTÉS DEFECTUÓS EN QUALSEVOL ASPECTE, VÓS (NO PAS L'ESCRIPTOR "
+"INICIAL, L'AUTOR O CAP ALTRE COL·LABORADOR) ASSUMIU TOT EL COST DE "
+"MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX "
+"UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT "
+"O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA; "
+"I "
+
+#: C/gnect.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGUI PER AGREUJAMENT "
+"(INCLOENT-HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR "
+"ORIGINAL, QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA "
+"VERSIÓ MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN "
+"RESPONSABLES DAVANT DE NINGÚ PER CAP DANY DIRECTE, INDIRECTE, ESPECIAL, "
+"ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITAR-S'HI, "
+"ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FEINA, FALLADA O "
+"MALFUNCIONAMENT DE L'ORDINADOR, O QUALSEVOL ALTRA PÈRDUA O DANY RELACIONAT "
+"AMB L'ÚS DEL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT, FINS I TOT SI "
+"S'HA INFORMAT AQUESTA PART DE LA POSSIBILITAT D'AQUESTS DANYS."
+
+#: C/gnect.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"EL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT S'OFEREIXEN SOTA ELS "
+"TERMES DE LA LLICÈNCIA DE DOCUMENTACIÓ LLIURE DE GNU, TENINT EN COMPTE QUE: "
+"<placeholder-1/>"
+
+#: C/gnect.xml:54(firstname)
+msgid "Timothy"
+msgstr "Timothy"
+
+#: C/gnect.xml:55(surname)
+msgid "Musson"
+msgstr "Musson"
+
+#: C/gnect.xml:58(email)
+msgid "trmusson@ihug.co.nz"
+msgstr "trmusson@ihug.co.nz"
+
+#: C/gnect.xml:79(revnumber)
+msgid "Four-in-a-Row Manual V2.8"
+msgstr "Manual del Quatre en ratlla (versió 2.8)"
+
+#: C/gnect.xml:80(date)
+msgid "September 2004"
+msgstr "Setembre de 2004"
+
+#: C/gnect.xml:82(para)
+msgid "Timothy Musson <email>trmusson@ihug.co.nz</email>"
+msgstr "Timothy Musson <email>trmusson@ihug.co.nz</email>"
+
+#: C/gnect.xml:90(releaseinfo)
+msgid "This manual describes version 2.12 of Four-in-a-Row."
+msgstr "Aquest manual descriu la versió 2.12 del Quatre en ratlla."
+
+#: C/gnect.xml:94(title)
+msgid "Feedback"
+msgstr "Comentaris"
+
+#: C/gnect.xml:95(para)
+msgid ""
+"To report a bug or make a suggestion regarding the Four-in-a-Row application "
+"or this manual, follow the directions in the <ulink url=\"ghelp:gnome-"
+"feedback\" type=\"help\">GNOME Feedback Page</ulink>."
+msgstr ""
+"Per a informar d'un error o fer algun suggeriment sobre el Quatre en ratlla "
+"o aquest manual, seguiu les indicacions a la <ulink url=\"ghelp:gnome-"
+"feedback\" type=\"help\">pàgina de comentaris del GNOME</ulink>."
+
+#: C/gnect.xml:111(title)
+msgid "Introduction"
+msgstr "Introducció"
+
+#: C/gnect.xml:113(para)
+msgid ""
+"<application>Four-in-a-Row</application> is a four-in-a-row game for the "
+"GNOME Project. The object of the game is to build a line of four of your "
+"marbles while trying to stop your opponent (human or computer) building a "
+"line of his or her own. A line can be horizontal, vertical or diagonal."
+msgstr ""
+"El <application>Quatre en ratlla</application> és un joc de quatre en ratlla "
+"per al projecte GNOME. L'objectiu del joc és construir una línia amb "
+"quatre boles mentre intenteu impedir que l'adversari (humà o ordinador) "
+"construeixi la seva línia. La línia pot ser horitzontal, vertical o diagonal."
+
+#: C/gnect.xml:121(para)
+msgid ""
+"To run <application>Four-in-a-Row</application>, select <guimenuitem>Four-in-"
+"a-Row</guimenuitem> from the <guisubmenu>Games</guisubmenu> submenu of the "
+"<guimenu>Main Menu</guimenu>, or type <command>gnect</command> on the "
+"command line."
+msgstr ""
+"Per a executar el <application>Quatre en ratlla</application>, seleccioneu "
+"<guimenuitem>Quatre en ratlla</guimenuitem> en el submenú <guimenu>Jocs</"
+"guimenu> del <guimenu>Menú principal</guimenu> o introduïu <command>gnect</"
+"command> en la línia d'ordres."
+
+#: C/gnect.xml:129(para)
+msgid ""
+"<application>Four-in-a-Row</application> is included in the <filename>GNOME-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.8 of <application>Four-in-a-Row</"
+"application>."
+msgstr ""
+"El <application>Quatre en ratlla</application> està inclòs en el paquet "
+"<filename>gnome-games</filename>, el qual és part de l'entorn d'escriptori "
+"GNOME. Aquest document descriu la versió 2.8 del <application>Quatre en "
+"ratlla</application>."
+
+#: C/gnect.xml:135(para)
+msgid ""
+"Four-in-a-Row also features <link linkend=\"network-games\">multiplayer</"
+"link> support with two human players in hotseat or network mode."
+msgstr ""
+"El quatre en ratlla també admet partides <link linkend=\"network-games"
+"\">multijugador</link> amb dos jugadors humans en mode cadira-calenta o en "
+"xarxa."
+
+#: C/gnect.xml:149(title)
+msgid "Basic Usage"
+msgstr "Utilització bàsica"
+
+#: C/gnect.xml:155(title)
+msgid "Playing Four-in-a-Row"
+msgstr "Jugar al Quatre en ratlla"
+
+#: C/gnect.xml:157(para)
+msgid ""
+"To start a new game of Four-in-a-Row choose <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>New Game</guimenuitem></menuchoice>."
+msgstr ""
+"Per a iniciar una partida nova del Quatre en ratlla, seleccioneu "
+"<menuchoice><guimenu>Partida</guimenu><guimenuitem>Nova</guimenuitem></"
+"menuchoice>."
+
+#: C/gnect.xml:161(para)
+msgid ""
+"The <interface>game board</interface> consists of seven columns and six "
+"rows. Above it, a special row indicates the current player and the marble "
+"about to be played. Each move consists of dropping a marble in one of the "
+"columns. The marble lands on the topmost empty row of the chosen column."
+msgstr ""
+"El <interface>tauler de joc</interface> consisteix en set columnes i sis "
+"files. A sobre d'aquestes, una fila especial indica quin és el jugador "
+"actual i la bola que s'està jugant. Cada moviment consisteix en deixar caure "
+"una bola en una de les columnes. La bola aterra a la fila buida més alta de "
+"la columna seleccionada."
+
+#: C/gnect.xml:166(para)
+msgid ""
+"To make a move, click on a column with the mouse. To play with the keyboard, "
+"move the marble in the top row with the left and right arrow keys, and drop "
+"it in place with the down arrow key. Your marble will drop into the topmost "
+"empty row of that column."
+msgstr ""
+"Per a fer un moviment, feu clic en la columna amb el ratolí. Per a jugar amb "
+"el teclat, mogueu la bola de la fila superior amb les tecles de cursor "
+"esquerra i dreta, i deixeu-la en el seu lloc amb la tecla de cursor avall. "
+"La bola caurà a la fila buida més alta d'aquesta columna."
+
+#: C/gnect.xml:177(phrase) C/gnect.xml:179(para)
+msgid "Four-in-a-Row's Main Window"
+msgstr "Finestra principal del Quatre en ratlla"
+
+#: C/gnect.xml:182(para)
+msgid ""
+"The game is won when one of the two players manages to line up four of his "
+"or her marbles horizontally, vertically or diagonally. If the board fills up "
+"without a win, the game ends in a draw."
+msgstr ""
+"Es guanya la partida quan un dels dos jugadors aconsegueix alinear quatre de "
+"les seves boles horitzontalment, verticalment o diagonalment. Si el tauler "
+"s'omple sense un guanyador, la partida s'acaba amb empat."
+
+#: C/gnect.xml:193(title)
+msgid "Commands"
+msgstr "Ordres"
+
+#. id for removed section
+#: C/gnect.xml:196(para)
+msgid ""
+"To take back a move, choose <menuchoice><shortcut><keycombo><keysym>Ctrl</"
+"keysym><keycap>Z</keycap></keycombo></shortcut><guimenuitem>Undo move</"
+"guimenuitem></menuchoice>. If you're playing against a friend, this will "
+"undo one move. If you're playing against the computer, this will undo the "
+"computer's last move and then yours. Repeating this will return the board to "
+"its initial state."
+msgstr ""
+"Per a desfer un moviment, seleccioneu "
+"<menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>Z</keycap></"
+"keycombo></shortcut><guimenuitem>Desfés el moviment</guimenuitem></"
+"menuchoice>. Si esteu jugant contra un amic, això desfarà un moviment. Si "
+"esteu jugant contra l'ordinador, això desfarà l'últim moviment de "
+"l'ordinador i després el vostre. Repetir-ho farà que el tauler torni a "
+"l'estat inicial."
+
+#: C/gnect.xml:208(para)
+msgid ""
+"Choose <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>H</"
+"keycap></keycombo></shortcut><guimenuitem>Hint</guimenuitem></menuchoice> to "
+"get a suggestion from the computer for your next move. This is shown in the "
+"status bar."
+msgstr ""
+"Seleccioneu <menuchoice><shortcut><keycombo><keysym>Ctrl</keysym><keycap>H</"
+"keycap></keycombo></shortcut><guimenuitem>Pista</guimenuitem></menuchoice> "
+"per a obtenir una suggeriment de l'ordinador per al moviment següent. "
+"Aquesta es mostra a la barra d'estat."
+
+#: C/gnect.xml:216(para)
+msgid ""
+"Choose <menuchoice><guimenuitem>Scores</guimenuitem></menuchoice> to show a "
+"tally of wins and draws for the current playing session. The scores will be "
+"reset to zero if Player Selection is changed in Preferences."
+msgstr ""
+"Seleccioneu <menuchoice><guimenuitem>Puntuacions</guimenuitem></menuchoice> "
+"per a mostrar el número de victòries i empats de la sessió actual. La "
+"puntuació es posarà a zero si es modifica la secció de jugadors en les "
+"preferències."
+
+#: C/gnect.xml:231(title)
+msgid "Preferences"
+msgstr "Preferències"
+
+#: C/gnect.xml:233(para)
+msgid ""
+"To change the game's settings, select <guimenuitem>Preferences</guimenuitem> "
+"from the <guimenu>Settings</guimenu> menu. This opens the "
+"<interface>Preferences Dialog</interface>."
+msgstr ""
+"Per a canviar els paràmetres del joc, seleccioneu <guimenuitem>Preferències</"
+"guimenuitem> en el menú <guimenu>Paràmetres</guimenu>. Això obre el "
+"<interface>diàleg de preferències</interface>."
+
+#: C/gnect.xml:247(term)
+msgid "<guilabel>Player One</guilabel> and <guilabel>Player Two</guilabel>"
+msgstr "<guilabel>Jugador un</guilabel> i <guilabel>Jugador dos</guilabel>"
+
+#: C/gnect.xml:252(para)
+msgid ""
+"These two columns tell <application>Four-in-a-Row</application> who's "
+"playing and, if it is the computer, how hard they play. To play against a "
+"friend, select Human for both Player One and Player Two."
+msgstr ""
+"Aquestes dues columnes indiquen al <application>Quatre en ratlla</"
+"application> qui està jugant i, si és l'ordinador, en quin nivell jugarà. "
+"Per a jugar contra un amic, seleccioneu Humà per al Jugador un i per al "
+"Jugador dos."
+
+#: C/gnect.xml:262(guilabel)
+msgid "Theme"
+msgstr "Tema"
+
+#: C/gnect.xml:264(para)
+msgid ""
+"The theme menu lists available themes and lets you choose your favourite."
+msgstr ""
+"El menú de tema llista els temes disponibles i us permet seleccionar el "
+"preferit."
+
+#: C/gnect.xml:272(guilabel)
+msgid "Enable Animation"
+msgstr "Habilita les animacions"
+
+#: C/gnect.xml:274(para)
+msgid "Here you can toggle the game's animation on or off."
+msgstr ""
+"Aquí podeu commutar l'animació del joc entre habilitada i inhabilitada."
+
+#: C/gnect.xml:240(para)
+msgid ""
+"Configuration options in the <guilabel>Game</guilabel> tab are: <placeholder-"
+"1/>"
+msgstr ""
+"Les opcions de configuració en la pestanya <guilabel>Partida</guilabel> són: "
+"<placeholder-1/>"
+
+#: C/gnect.xml:282(para)
+msgid ""
+"Finally there is a <guilabel>Controls</guilabel> tab to change the keyboard "
+"controls. To change a control, double click the appropriate entry and then "
+"press the new key."
+msgstr ""
+"Finalment hi ha la pestanya de <guilabel>Controls</guilabel> per a canviar "
+"els controls del teclat. Per a canviar un control, feu doble clic en "
+"l'entrada apropiada i premeu la tecla nova."
+
+#: C/gnect.xml:297(title)
+msgid "Creating New Themes"
+msgstr "Crear temes nous"
+
+#: C/gnect.xml:299(para)
+msgid ""
+"This section's included in case you'd like to make your own themes for "
+"<application>Four-in-a-Row</application>. It assumes you're familiar with "
+"basic text editing, graphics software and the command line."
+msgstr ""
+"Aquesta secció s'inclou en el cas que voleu fer els vostres temes per al "
+"<application>Quatre en ratlla</application>. S'assumeix que esteu acostumat "
+"a l'edició bàsica de text, programari de gràfics i la línia d'ordres."
+
+#: C/gnect.xml:307(title)
+msgid "Images"
+msgstr "Imatges"
+
+#: C/gnect.xml:309(para)
+msgid ""
+"<application>Four-in-a-Row</application>'s tile sets contain six tiles of "
+"equal size, lined up horizontally. From left to right:"
+msgstr ""
+"Els jocs de fitxes del <application>Quatre en ratlla</application> contenen "
+"sis fitxes de la mateixa mida, alineades horitzontalment. D'esquerra a dreta:"
+
+#: C/gnect.xml:316(para)
+msgid "Player One's marble as it appears on the game board"
+msgstr "Bola del jugador un com apareix en el tauler de joc"
+
+#: C/gnect.xml:319(para)
+msgid "Player Two's marble as it appears on the game board"
+msgstr "Bola del jugador dos com apareix en el tauler de joc"
+
+#: C/gnect.xml:322(para)
+msgid "The game board's background"
+msgstr "Fons del tauler de joc"
+
+#: C/gnect.xml:325(para)
+msgid "The top row's background"
+msgstr "Fons de la fila superior"
+
+#: C/gnect.xml:328(para)
+msgid "Player One's marble as it appears on the top row"
+msgstr "Bola del jugador un com apareix en la fila superior"
+
+#: C/gnect.xml:331(para)
+msgid "Player Two's marble as it appears on the top row"
+msgstr "Bola del jugador dos com apareix en la fila superior"
+
+#: C/gnect.xml:336(title)
+msgid "An example tile set"
+msgstr "Exemple d'un joc de fitxes"
+
+#: C/gnect.xml:338(screeninfo)
+msgid "This image shows the six tiles in a tile set"
+msgstr "Aquesta imatge mostra les sis fitxes d'un joc de fitxes"
+
+#: C/gnect.xml:343(para)
+msgid ""
+"Tiles three and four will be repeated over the game board and top row unless "
+"a full window background image is specified in the theme file."
+msgstr ""
+"Les fitxes tres i quatre es repetiran per tot el tauler de joc i la fila "
+"superior a no ser que s'especifiqui una imatge de fons de pantalla completa "
+"en el fitxer de temes."
+
+#: C/gnect.xml:350(title) C/gnect.xml:361(title) C/gnect.xml:377(title)
+msgid "TIP"
+msgstr "Consell"
+
+#: C/gnect.xml:351(para)
+msgid ""
+"PNG format is recommended for tile sets. The first, second, fifth and sixth "
+"tiles should contain some transparency if you want the background to show "
+"through. The third and fourth tiles should be solid, with no transparency, "
+"even if you'll be using a full window background image with your theme."
+msgstr ""
+"Es recomana el format PNG per als jocs de fitxes. La primera, segona, "
+"cinquena i sisena fitxes haurien de contenir alguna transparència si voleu "
+"que el fons es vegi a través d'elles. La tercera i quarta fitxa haurien de "
+"ser sòlides, sense transparències, encara que utilitzeu una imatge de fons "
+"de pantalla completa amb el tema."
+
+#: C/gnect.xml:362(para)
+msgid ""
+"Tiles can be square or rectangular, and any size you like. Most of the tile "
+"sets that come with <application>Four-in-a-Row</application> use square "
+"tiles measuring 50 pixels by 50 pixels."
+msgstr ""
+"Les fitxes poden ser quadrades o rectangulars, i de qualsevol mida que "
+"vulgueu. La majoria de jocs de fitxes que venen amb el <application>Quatre "
+"en ratlla</application> utilitzen fitxes quadrades que mesuren 50 píxels per "
+"50 píxels."
+
+#: C/gnect.xml:369(para)
+msgid ""
+"For a full window background image, there's a bit more work to do. Let's say "
+"your tiles measure 50 by 50 pixels each. The game's display measures 7 by 7 "
+"tiles, including the top row, so the ideal background image for your tile "
+"set measures 350 by 350 pixels."
+msgstr ""
+"Per a utilitzar una imatge de fons de pantalla completa, hi ha més feina a "
+"fer. Diguem que les fitxes mesuren 50 per 50 píxels. Les dimensions del joc "
+"són 7 per 7 fitxes, incloent la fila superior, de manera que la imatge de "
+"fons per al joc de fitxes mesuraria 350 per 350 píxels."
+
+#: C/gnect.xml:378(para)
+msgid ""
+"<application>Four-in-a-Row</application> will automatically scale the "
+"background image if it doesn't match the tile set. This means you can make "
+"\"large\" and \"small\" versions of your theme, both using the same "
+"background image, just by having a large and a small version of your tile "
+"set."
+msgstr ""
+"El <application>Quatre en ratlla</application> escala automàticament la "
+"imatge de fons si no coincideix amb el joc de fitxes. Això significa que "
+"podeu fer versions «gran» i «petita» del tema, les dues utilitzant la mateixa "
+"imatge de fons, per tenir una versió gran i una petita del joc de fitxes."
+
+#: C/gnect.xml:386(para)
+msgid ""
+"So, you now have a tile set and perhaps a background image to go with it. "
+"The next step is to put them in the right place."
+msgstr ""
+"Per tant, ara teniu un joc de fitxes i potser una imatge de fons que va amb "
+"el joc. El pas següent és posar-ho en la ubicació correcta."
+
+#: C/gnect.xml:396(title)
+msgid "Putting It Together"
+msgstr "Ajuntar-ho tot"
+
+#: C/gnect.xml:398(para)
+msgid ""
+"The last step is to put your image(s) where <application>Four-in-a-Row</"
+"application> can find them. You could put them in Four-in-a-row's install "
+"directory (which will depend on your particular system), but your home "
+"directory's probably a better idea."
+msgstr ""
+"L'últim pas es posar les imatges on el <application>Quatre en ratlla</"
+"application> pugui trobar-ho. Podeu posar-ho en el directori d'instal·lació "
+"del Quatre en ratlla (que dependrà del sistema en particular), però "
+"segurament el directori d'inici sigui la millor idea."
+
+#: C/gnect.xml:405(para)
+msgid ""
+"Make a <filename class=\"directory\">~/.gnect</filename> directory, and a "
+"<filename class=\"directory\">~/.gnect/pixmaps</filename> directory. Those "
+"names are important, as <application>Four-in-a-Row</application> won't look "
+"anywhere else."
+msgstr ""
+"Creu un directori <filename class=\"directory\">~/.gnect</filename> i també "
+"<filename class=\"directory\">~/.gnect/pixmaps</filename>. Aquests noms són "
+"importants, ja que el <application>Quatre en ratlla</application> no mirarà "
+"enlloc més."
+
+#: C/gnect.xml:412(para)
+msgid "Copy your image(s) into the pixmaps directory."
+msgstr "Copieu les imatges en el directori pixmaps."
+
+#: C/gnect.xml:416(para)
+msgid ""
+"If you start <application>Four-in-a-Row</application> from the command line, "
+"it'll give you clues about any problems it has with your new theme. If it "
+"has none, you'll find your new theme listed the <interface>Preferences "
+"Dialog</interface>."
+msgstr ""
+"Si inicieu el <application>Quatre en ratlla</application> des de la línia "
+"d'ordres, us donarà indicis sobre qualsevol problema que tingui amb el tema "
+"nou. Si no n'hi ha, trobareu el tema nou llistat en el <interface>diàleg de "
+"preferències</interface>."
+
+#: C/gnect.xml:423(para)
+msgid "Have fun!"
+msgstr "A divertir-se!"
+
+#: C/gnect.xml:10(title)
+msgid "Network Games"
+msgstr "Jocs en xarxa"
+
+#: C/gnect.xml:11(para)
+msgid ""
+"Four-in-a-Row support networked multiplayer games which is provided by "
+"<ulink type=\"http\" url=\"http://www.ggzgamingzone.org\">GGZ Gaming Zone</"
+"ulink>. By connecting to a Four-in-a-Row server on the Internet, you can "
+"challenge other players in multiplayer games. For news, updates and a list "
+"of servers to connect to, see the <ulink type=\"http\" url=\"http://www."
+"gnome.org/projects/gnome-games/\">gnome-games website</ulink>."
+msgstr ""
+"El Quatre en ratlla admet partides en xarxa multijugador, proporcionat per "
+"el <ulink type=\"http\" url=\"http://www.ggzgamingzone.org\">GGZ Gaming "
+"Zone</ulink>. En connectar a un servidor de Quatre en ratlla d'Internet, "
+"podeu desafiar altres jugadors en partides multijugador. Per a obtenir "
+"notícies, actualitzacions i una llista de servidors on connectar-vos, vegeu "
+"el <ulink type=\"http\" url=\"http://www.gnome.org/projects/gnome-games/"
+"\">lloc web del gnome-games</ulink>."
+
+#: C/gnect.xml:18(para)
+msgid ""
+"To start the multiplayer game of Four-in-a-Row, select "
+"<menuchoice><guimenu>Game</guimenu><guimenuitem>Network Game</guimenuitem></"
+"menuchoice> on the Four-in-a-Row menu."
+msgstr ""
+"Per a iniciar la partida multijugador del Quatre en ratlla, seleccioneu "
+"<menuchoice><guimenu>Partida</guimenu><guimenuitem>Joc en xarxa</"
+"guimenuitem></menuchoice> en el menú del Quatre en ratlla."
+
+#: C/gnect.xml:24(title)
+msgid "Connecting to a Four-in-a-Row network server"
+msgstr "Connectar a un servidor de xarxa Quatre en ratlla"
+
+#: C/gnect.xml:25(para)
+msgid ""
+"The Four-in-a-Row connection dialog is shown initially when starting a new "
+"network game. This dialog allows you to select a server to connect to, and "
+"the username that you will have while connected to that server."
+msgstr ""
+"El diàleg de connexió del Quatre en ratlla es mostra quan s'inicia una "
+"partida en xarxa nova. Aquest diàleg us permet seleccionar un servidor on "
+"connectar-vos, i especificar el nom d'usuari que tindreu en connectar-vos-hi."
+
+#: C/gnect.xml:31(para)
+msgid ""
+"It is possible to connect to a server with either a guest account or a "
+"normal registered account. Guest accounts allows you to anonymously login, "
+"while a normal login account allows you to reserve your own username which "
+"is protected by the password that you choose."
+msgstr ""
+"És possible connectar-vos a un servidor amb un compte de convidat o un "
+"compte registrat normal. Els comptes de convidats us permeten entrar "
+"anònimament, mentre que si entreu amb un compte normal us permet reservar el "
+"nom d'usuari que està protegit per la contrasenya que seleccioneu."
+
+#: C/gnect.xml:38(para)
+msgid ""
+"The <guimenuitem>Guest Login</guimenuitem> option should be selected if you "
+"want an anonymous guest account. If you want to create a new login account, "
+"then select the <guimenuitem>First-time Login</guimenuitem> option, with the "
+"username, password and email of your choice. If you have already created "
+"your account, you can connect by selecting the <guimenuitem>Normal Login</"
+"guimenuitem> option, and enter the username and password that you have "
+"chosen."
+msgstr ""
+"Hauríeu de seleccionar l'opció <guimenuitem>Entrada com a convidat</"
+"guimenuitem> si voleu un compte de convidat anònim. Si voleu crear un compte "
+"d'entrada nou, seleccioneu l'opció <guimenuitem>Entrada per primera vegada</"
+"guimenuitem>, amb el nom d'usuari, contrasenya i correu electrònic que "
+"vulgueu. Si ja heu creat un compte, us podeu connectar si seleccioneu "
+"l'opció <guimenuitem>Entrada normal</guimenuitem> i introduïu el nom "
+"d'usuari i la contrasenya que heu triat."
+
+#: C/gnect.xml:46(para)
+msgid ""
+"To connect to a server, click on the <guimenuitem>Connect</guimenuitem> "
+"button."
+msgstr ""
+"Per a connectar-vos a un servidor, feu clic en el botó "
+"<guimenuitem>Connecta</guimenuitem>."
+
+#: C/gnect.xml:50(title) C/gnect.xml:57(phrase)
+msgid "The Four-in-a-Row network connection dialog."
+msgstr "El diàleg de connexió a la xarxa del Quatre en ratlla."
+
+#: C/gnect.xml:65(title)
+msgid "Joining a game room"
+msgstr "Entrada a una sala de joc"
+
+#: C/gnect.xml:66(para)
+msgid ""
+"Once you have successfully connected to a server, you can choose which game "
+"room to join. To play a multiplayer game of Four-in-a-Row, select the Four-"
+"in-a-Row room. If you want to host your own game, then click on the Launch "
+"button. This creates a new table where other players can participate in a "
+"game against you. If there are any other games already started, then you can "
+"double-click on an existing game table to join it. The list of game tables "
+"on the right shows you the number of available seats, which means the number "
+"of players that can join the game table."
+msgstr ""
+"Quan us hàgiu connectat a un servidor, podeu seleccionar a quina sala de joc "
+"voleu entrar. Per a jugar una partida multijugador del Quatre en ratlla, "
+"seleccioneu la sala del Quatre en ratlla. Si voleu ser l'amfitrió d'una "
+"partida, feu clic en el botó Llança. Creareu un tauler nou on els altres "
+"jugadors poden jugar contra vos. Si hi ha altres partides iniciades, podeu "
+"fer doble clic en un tauler de partida existent per a entrar-hi. La llista "
+"de taulers de partides a la dreta mostra el número de seients disponibles, "
+"que significa el número de jugadors que poden entrar al tauler de partida."
+
+#: C/gnect.xml:73(title) C/gnect.xml:80(phrase)
+msgid ""
+"This Four-in-a-Row network dialog allows you to join a game room to find "
+"other players."
+msgstr ""
+"Aquest diàleg de xarxa del Quatre en ratlla us permet entrar a una sala de "
+"joc per a cercar altres jugadors."
+
+#: C/gnect.xml:85(para)
+msgid ""
+"When creating a new table for Four-in-a-Row games, a preference dialog is "
+"displayed which allows you to customize the game, such as set the minimum "
+"number of players for the game. Once the total number of seats have been "
+"taken, then no more players are allowed to join that game table."
+msgstr ""
+"Quan creeu un tauler nou per a partides del Quatre en ratlla, es mostrarà un "
+"diàleg de preferències que us permet personalitzar la partida, com ara "
+"establir el número mínim de jugadors per a la partida. Quan el número total "
+"de seients s'hagin ocupat, no es permetrà entrar a més jugadors en aquest "
+"tauler de partida."
+
+#: C/gnect.xml:90(para)
+msgid ""
+"It is possible to chat with other players in network games. Ask for advice "
+"or help playing the games, but please be polite against other players."
+msgstr ""
+"És possible fer un xat amb altres jugadors en els jocs en xarxa. Demaneu "
+"consell o ajuda mentre jugueu les partides, però sigueu educat amb els "
+"altres jugadors."
+
+#: C/gnect.xml:97(title)
+msgid "Waiting for other players to join the game"
+msgstr "Espera que els altres jugadors entrin a la partida"
+
+#: C/gnect.xml:98(para)
+msgid ""
+"Once you have successfully joined a game table, then you have to wait until "
+"enough players have joined the table. The <guimenuitem>Players List</"
+"guimenuitem> menu item allows you to see a list of the players who have "
+"joined the game. The game will begin immediately when the total number of "
+"players in the the game have been reached."
+msgstr ""
+"Quan hàgiu entrat a un tauler de joc, heu d'esperar fins que hagin entrat "
+"suficients jugadors al tauler. L'element de menú <guimenuitem>Llista de "
+"jugadors</guimenuitem> us permet veure una llista de jugadors que han entrat "
+"a la partida. La partida començarà de seguida que s'hagi aconseguit el "
+"número total de jugadors."
+
+#: C/gnect.xml:107(title)
+msgid "Playing multiplayer Four-in-a-Row games"
+msgstr "Jugar partides multijugador en el Quatre en ratlla"
+
+#: C/gnect.xml:108(para)
+msgid ""
+"Multiplayer Four-in-a-Row games have pretty much the same rules as normal "
+"Four-in-a-Row games, except that you are now playing against human players. "
+"This means that other strategies might possibly be better than when playing "
+"against AI players."
+msgstr ""
+"Les partides multijugador en el Quatre en ratlla tenen més o menys les "
+"mateixes regles que una partida normal del Quatre en ratlla, excepte que "
+"esteu jugant contra jugadors humans. Això significa que possiblement altres "
+"estratègies siguin millors que les utilitzades contra jugadors "
+"d'intel·ligència artificial."
+
+#: C/gnect.xml:113(para)
+msgid ""
+"Once a player has won, the game ends and you can return to the initial "
+"network game screen. Then you can play yet another game of addictive Four-in-"
+"a-Row multiplayer!"
+msgstr ""
+"Quan un jugador hagi guanyat, la partida finalitza i podeu tornar a la "
+"pantalla inicial de joc en xarxa. Llavors podeu jugar una altra partida "
+"addictiva multijugador del Quatre en ratlla."
+
+#: C/gnect.xml:445(title)
+msgid "Known Bugs and Limitations"
+msgstr "Errors i limitacions conegudes"
+
+#: C/gnect.xml:447(para)
+msgid ""
+"Occasionally a marble-dropping animation doesn't look as smooth as it should."
+msgstr ""
+"A vegades l'animació de caiguda de les boles no sembla tant suau com hauria "
+"de ser."
+
+#: C/gnect.xml:460(title)
+msgid "Authors"
+msgstr "Autors"
+
+#: C/gnect.xml:462(para)
+msgid ""
+"<application>Four-in-a-Row</application> was written by Timothy Musson "
+"(<email>trmusson@ihug.co.nz</email>) and David Neary (<email>bolsh@gimp.org</"
+"email>). Various others have taken the time to help in many ways since work "
+"on <application>Four-in-a-Row</application> began."
+msgstr ""
+"En Timothy Musson (<email>trmusson@ihug.co.nz</email>) i en David Neary "
+"(<email>bolsh@gimp.org</email>) han escrit el <application>Quatre en ratlla</"
+"application>. Altres persones han invertit temps en ajudar de diferents "
+"maneres des de que va començar la feina del <application>Quatre en ratlla</"
+"application>."
+
+#: C/gnect.xml:467(para)
+msgid ""
+"The <ulink type=\"http\" url=\"http://www.ce.unipr.it/~gbe/velena.html"
+"\">Velena Engine</ulink>, <application>Four-in-a-Row</application>'s main "
+"computer player, was written by Giuliano Bertoletti. We're grateful to him "
+"for allowing us to include his work, without which <application>Four-in-a-"
+"Row</application> wouldn't be nearly as worthwhile."
+msgstr ""
+"En Giuliano Bertoletti ha escrit el <ulink type=\"http\" url=\"http://www.ce."
+"unipr.it/~gbe/velena.html\">motor Velena</ulink>, el jugador automàtic "
+"principal del <application>Quatre en ratlla</application>. Li estem molt "
+"agraïts per deixar-nos incloure el seu treball, sense el qual el "
+"<application>Quatre en ratlla</application> segurament no valdria la pena."
+
+#: C/gnect.xml:474(para)
+msgid "This manual was written by Timothy Musson."
+msgstr "En Timothy Musson ha escrit aquest manual."
+
+#: C/gnect.xml:477(para)
+msgid ""
+"To report a bug or make a suggestion regarding this application or this "
+"manual, follow the directions in this <ulink url=\"ghelp:user-guide?feedback-bugs\" "
+"type=\"help\">document</ulink>."
+msgstr ""
+"Per a informar d'un error o fer algun suggeriment quant a aquest aplicació o "
+"aquest manual, seguiu les indicacions a la <ulink url=\"ghelp:user-guide?feedback-bugs"
+"\" type=\"help\">pàgina de comentaris del GNOME</ulink>."
+
+#: C/gnect.xml:502(title)
+msgid "License"
+msgstr "Llicència"
+
+#: C/gnect.xml:504(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <citetitle>GNU General Public License</citetitle> as "
+"published by the Free Software Foundation; either version 2 of the License, "
+"or (at your option) any later version."
+msgstr ""
+"Aquest programa és programari lliure; podeu redistribuir-lo i/o modificar-lo "
+"sota els termes de la <citetitle>Llicència pública general de GNU</"
+"citetitle> tal com publica la Free Software Foundation; tant en la versió 2 "
+"de la llicència, o (a la vostra opció) una versió posterior."
+
+#: C/gnect.xml:512(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"Aquest programa es distribueix amb l'esperança de que sigui útil, però SENSE "
+"CAP GARANTIA; fins i tot sense la garantia implícita de COMERCIALITZACIÓ o "
+"ADEQUACIÓ A UN ÚS CONCRET. Per a més detalls vegeu la <citetitle>Llicència "
+"pública general de GNU</citetitle>."
+
+#: C/gnect.xml:519(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink url=\"http://www.fsf.org\" "
+"type=\"http\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"S'inclou una còpia de la <citetitle>Llicència pública general de GNU</"
+"citetitle> en l'apèndix de la <citetitle>Guia d'usuaris del GNOME</"
+"citetitle>. També podeu obtenir una copia de la <citetitle>Llicència pública "
+"general de GNU</citetitle> de la Free Software Foundation visitant el <ulink "
+"type=\"http\" url=\"http://www.fsf.org\">seu lloc web</ulink> o escrivint a "
+"<address> Free Software Foundation, Inc. <street>59 Temple Place</street> - "
+"Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/gnect.xml:0(None)
+msgid "translator-credits"
+msgstr "Joan Duran <jodufi@gmail.com>, 2007, 2008"
+
+#~ msgid ""
+#~ "Build a line of four of your marbles while trying to stop your opponent "
+#~ "from doing the same. Play against another person or the computer."
+#~ msgstr ""
+#~ "Construïu una línia amb quatre boles mentre intenteu impedir que "
+#~ "l'adversari faci el mateix. Jugueu contra una altra persona o contra "
+#~ "l'ordinador."

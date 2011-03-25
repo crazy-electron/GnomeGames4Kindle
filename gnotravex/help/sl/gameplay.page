@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="gameplay" xml:lang="sl">
+      
+  <info>
+    <link type="guide" xref="index"/>
+    <desc>Uvod v  <app>GNOME Tetravex</app>.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+   <credit type="author">
+    <name>Milo Casagrande</name>
+    <email>milo@ubuntu.com</email>
+   </credit>
+   <license>
+     <p>Creative Commons Share Alike 3.0</p>
+   </license>
+  </info>
+
+  <title>Igranje</title>
+
+  <p><app>GNOME Tetravex</app> je enostavna ugankarska igra, katere namen je premik različnih kosov iz ene strani plošče na drugo tako, da se enaka števila na kosih med sabo dotikajo.</p>
+  <p>Meri se čas igre, ki se uporabi za točkovanje igre. Vse kose morate premakniti v najkrajšem možnem času.</p>
+  <figure>
+    <title>Glavno okno igre</title>
+    <desc>Glavno okno <app>Tetravex</app></desc>
+    <media type="image" src="figures/gnotravex-main-window.png" mime="image/png" style="center">
+      <p>Glavno okno <app>Tetravex</app>.</p>
+    </media>
+  </figure>
+
+</page>

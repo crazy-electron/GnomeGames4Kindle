@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.18">
+<!ENTITY date "December">
+<!ENTITY app "<application>Chess</application>">
+<!ENTITY appname "Chess">
+<!ENTITY version "2.22">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="da">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo>
+ <title>Manual for <application>Skak</application></title>
+ 
+ <abstract role="description">
+       <para>glChess er det klassiske brætspil skak, hvor to spillere simulerer en kamp ved at slå modstanderens brikker væk fra brættet og ultimativt gør kongen skakmat. Det kan spilles i 2D- eller 3D-tilstand, fuldskærm eller i et vindue.</para>
+ </abstract>
+ <copyright>
+  <year>2006-2008</year>
+  <holder>Andreas Røsdal</holder>
+ </copyright><copyright><year>2009.</year><holder>Joe Hansen (joedalton2@yahoo.dk)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>GNOME-dokumentationprojekt</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Tilladelse er givet til at kopiere, distribuere og/eller ændre dette dokument under betingelserne i GNU Free Documentation License (GFDL), version 1.1 eller enhver senere version udgivet af Free Software Foundation; uden invariante afsnit, forsidetekster, samt bagsidetekster. Du kan se en kopi af GFDL her <ulink type="help" url="ghelp:fdl">link</ulink>, eller i filen COPYING-DOCS som distribueres sammen med denne manual.</para>
+         <para>Denne manual er en del af den samling af GNOME-manualer som udgives under GFDL. Hvis du ønsker at distribuere denne manuel adskilt fra samlingen, kan du gøre dette ved at tilføje en kopi af licensen til manualen, som beskrevet i afsnit 6 af licensen.</para>
+
+	<para>En stor del af de navne som anvendes af firmaer til at identificere deres produkter og tjenester hævdes som værende varemærker. Hvor disse navne fremgår i en hvilken som helst GNOME-dokumentation, og medlemmerne af GNOME-dokumentationsprojeket er gjort opmærksom på disse varemærker, så er disse navne vist med store bogstaver eller stort begyndelsesbogstav.</para>
+
+	<para>DOKUMENTET OG ÆNDREDE VERSIONER AF DOKUMENTET STILLES TIL RÅDIGHED UNDER GNU FREE DOCOMENTATION LICENSE MED FØLGENDE BETINGELSER: <orderedlist>
+		<listitem>
+		  <para>DETTE DOKUMENT GØRES TILGÆNGELIGT SÅDAN SOM DET ER, UDEN NOGEN FORM FOR GARANTI, HVERKEN UDTALT ELLER ANTYDET, DERIBLANDT, UDEN BEGRÆNSNINGER, GARANTIER OM AT DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET ER FRIT FOR DEFEKTER, PASSENDE TIL ET BESTEMT FORMÅL ELLER IKKE-KRÆNKENDE. DU HÆFTER SELV FOR HELE RISIKOEN VEDRØRENDE KVALITET, KORREKTHED OG YDELSE FOR DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET. SKULLE ET DOKUMENT, ELLER EN ÆNDRET VERSION AF ET DOKUMENT VISE SIG AT VÆRE DEFEKT PÅ EN HVILKEN SOM HELST MÅDE, HÆFTER DU FOR BETALING FOR EVENTUEL NØDVENDIG SERVICE, REPARATION ELLER KORREKTION (OG IKKE HVERKEN DEN OPRINDELIGE FORFATTER, SKRIBENT ELLER NOGEN ANDEN BIDRAGYDER). DENNE ERKLÆRING OM GARANTIFORBEHOLD ER EN ESSENTIEL DEL AF DENNE LICENS. INGEN BRUG AF NOGET DOKUMENT ELLER ÆNDRET VERSION AF DOKUMENTET ER AUTORISERET HERUNDER BORTSET FRA DENNE ANSVARSFRASKRIVELSE OG</para>
+		</listitem>
+		<listitem>
+		  <para>UNDER INGEN OMSTÆNDIGHEDER OG UNDER INGEN JURIDISK TEORI, UANSET OM DET ER EN BEVIDST SKADENDE HANDLING (INKLUSIVE UFORSVARLIGHED) ELLER PÅ HVILKEN SOM HELST ANDEN MÅDE, KAN FORFATTEREN, SKRIBENT, BIDRAGYDERE, DISTRIBUTØRER ELLER FORSYNER AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER GØRES ANSVARLIG OVERFOR NOGEN PERSON FOR NOGEN DIREKTE, INDIREKTE, SPECIEL, TILFÆLDIG ELLER FØLGENDE SKADE PÅFØRT NOGEN INKLUSIVE, UDEN BEGRÆNSNING, SKADE SOM FØLGE AF TAB AF RYGTE, ARBEJDSSTOP, COMPUTERFEJL ELLER -SVIGT, ELLER ENHVER ANDEN FORM FOR SKADE ELLER TAB SOM ER OPSTÅET I FORBINDELSE MED BRUG AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER HERAF, SELV HVIS EN SÅDAN PART HAR VÆRET INFORMERET OM MULIGHEDEN FOR SÅDANNE SKADER.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+	<firstname>Andreas</firstname> 
+	<surname>Røsdal</surname> 
+	<affiliation> 
+	  <address> <email>andrearo@pvv.ntnu.no</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+<revhistory>
+      <revision> 
+	<revnumber>Skakmanual version 2.18</revnumber> 
+	<date>December</date> 
+	<revdescription> 
+	  <para role="author">Andreas Røsdal <email>andrearo@pvv.ntnu.no</email></para>
+	  <para role="publisher">GNOME-dokumentationprojekt</para>
+	</revdescription> 
+      </revision>
+  <revision>
+   <revnumber>1</revnumber>
+   <date>December 2006</date>
+   <authorinitials>AR</authorinitials>
+   <revremark>Første udkast færdig.</revremark>
+  </revision>
+ </revhistory>
+
+    <releaseinfo>Denne manual beskriver version 2.18 af Skak.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Tilbagemeldinger</title> 
+      <para>Hvis du ønsker at indrapportere en fejl eller komme med et forslag vedrørende <application>Skak</application> eller denne manual så følg vejledningen på siden <ulink url="ghelp:user-guide?feedback-bugs" type="help">tilbagemeldinger omkring GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>glChess</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="intro">
+ <title>Introduktion</title>
+ <sect2 id="what">
+  <title>Overblik over spillet skak</title>
+  
+  <para>Skak er et strategibrætspil for 2 personer. <application>glChess</application> er et 2D/3D skakspil, hvor spil kan afvikles via en kombination af mennesker og computerspillere. glChess opfanger kendte tredjeparts skakmotorer for computerspillere. Spillet blev oprindelig udviklet af Robert Ancell, nu er spillet inkluderet i gnome-games.</para>
+
+  <para><application>glChess</application> er skrevet i Python og bruger GTK+ og Cairo til at tegne skakbrættet. 3D-understøttelse er valgfrit tilgængelig med brug af OpenGl, og brug af Python OpenGl- og GtkGLExt-programbiblioteker. Som med de fleste moderne 3D-programmer er hardwareacceleration anbefalet, men spillet bør køre okay via software. Med glChess følger, som standard, den kunstige intelligens GNU Chess. glChess kan spilles i netværkstilstand mod andre spillere over internettet.</para>
+  <para>Skak spilles på et kvadratisk skakbræt, bestående af 64 felter med forskellige farver. Hver spiller begynder spillet med 16 brikker: En konge, en dronning, to tårne, to knægte, to løbere, og otte bønder. En spiller kontrollerer de hvide brikker og den anden spiller kontrollerer de sorte brikker; den spiller som kontrollerer hvid starter først. Spillerne skiftes til at flytte brikker; visse træk medfører at en modstanders brik "slås ud af brættet", og den fjernes efterfølgende fra brættet. Formålet med spillet er at gøre modstanderens konge skakmat. Dette opstår, når kongen er under umiddelbart angreb (i skak), og kongen ikke kan sikres mod et angreb i næste runde. Teoretikere har udviklet omfattende skakstrategier og -taktikker siden spillet blev opfundet.</para>
+<para>Den nuværende udgave af spillet opstod i Sydeuropa i den anden halvdel af det 15. århundrede efter inspiration fra meget ældre spil med asiatisk oprindelse. Skak er et af verdens mest populære brætspil. Traditionen med turneringsskak begyndte i det 16. århundrede. Den første officielle verdensmester Wilhelm Steinitz, fik sin titel i 1886; hans tilsvarende moderne modpart, Vladimir Kramnik, er den 14. mester i rækken. Der afholdes også turneringer for hold hvert andet år, der kaldes for skakolympiader. Siden det 20. århundrede har to internationale organisationer, the World Chess Federation og the International Correspondence Chess Federation organiseret og kontrolleret skakkonkurrencer og internationale titler for eliten.</para>
+<para>Et af målene for de første computervidenskabsmænd var at skabe en skakspillende maskine, og dagens skak er dybt påvirket af de imponerende evner, de moderne skakprogrammer har. I 1997 beviste en kamp mellem Garry Kasparov, verdensmesteren, og IBM's Deep Blue-skakprogram, at computere kan slå selv den stærkeste skakspiller.</para>
+
+  <para>For at køre <application>glChess</application> vælges <menuchoice><guisubmenu>Spil</guisubmenu><guimenuitem>Skak</guimenuitem></menuchoice> fra <guimenu>Hovedmenuen</guimenu>, eller tast <command>glchess</command> fra kommandolinjen.</para>
+ </sect2>
+
+</sect1>
+
+
+<sect1 id="playing-glchess">
+ <title>Spillet glChess (skak)</title>
+ <sect2 id="main-game-window">
+<title>Spillets hovedvindue</title>
+
+     <para>Ved opstart af glChess (skak) viser spillets hovedvindue som vist nedenfor. Spillet afvikles ved at flytte skakbrikker med musen. Hver spiller skiftes til at rykke en brik, der har spillerens farve, fra en brætposition til en anden gyldig brætposition. Spillets hovedvindue er organiseret i tre hovedområder: I topmenuen og værktøjsbjælkeområdet kan de fleste spilhandlinger udføres. Skakbrættet befinder sig i midten af vinduet, hvor spillet afvikles ved at flytte brikker med musen. Endelig vises spillets historikpanel i bunden, hvor information om spillets historik, den resterende rundetid og knapper, der kan vise de forrige eller næste flytninger, er tilgængelige.</para>
+
+ <figure id="main-game-shot">
+  <title>Hovedvindue i glChess</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Hovedvindue i glChess.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+</sect2>
+
+<sect2>
+<title>Starte et nyt spil</title>
+<para>For at starte et nyt spil vælges knappen <guibutton>Nyt spil</guibutton> på værktøjsbjælken. Det nye spilvindue vises herefter, hvilket gør, at du kan sætte et nyt spil op, med de indstillinger du ønsker. I sektionen <interface>spilegenskaber</interface> angives spillets navn og tidsbegrænsning for hver spiller. I sektionen <interface>spillere</interface> er det muligt at angive antallet af spillere og computerspillere med kunstig intelligens. Hvis du har installeret en understøttet skakmotor som computerspiller, vil disse blive vist i listen over tilgængelige spillere. Endelig angives sværhedsgraden på computerspillerne i sektionen <interface>sværhedsgrad</interface>.</para>
+
+ <figure id="new-game-shot">
+  <title>Vinduet til nyt spil</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/new_game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Vinduet til nyt spil i glChess.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+</sect2>
+
+
+
+
+<sect2 id="menubar">
+   <title>Menuer</title>
+   <para>Menubjælken, placeret i toppen af <interface>Hovedvinduet</interface>, indeholder de følgende menuer:</para>
+
+   <variablelist>
+    <varlistentry>
+     <term><guimenu>Spil</guimenu></term>
+     <listitem>
+      <para>Denne menu indeholder: <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+N</keysym></shortcut><guimenuitem>Nyt</guimenuitem></menuchoice> Dette starter et nyt spil <application>Skak</application>.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+O</keysym></shortcut><guimenuitem>Åbn</guimenuitem></menuchoice> Indlæser et tidligere gemt spil.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+S</keysym></shortcut><guimenuitem>Gem</guimenuitem></menuchoice> Gemmer det aktuelle skakspil.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><guimenuitem>Gem som</guimenuitem></menuchoice> Gemmer det aktuelle skakspil med et nyt filnavn.</para>
+        </listitem>
+
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+L</keysym></shortcut><guimenuitem>Netværksspil</guimenuitem></menuchoice> Dette starter et netværksspil for flere spillere med brug af GGZ Gaming Zone.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Giv op</guimenuitem></menuchoice> Indvi i at spillet er tabt, så modstanderen vinder spillet.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Erklær remis</guimenuitem></menuchoice>. Hvis en remis accepteres, ender spillet uden sejr for nogen af spillerne.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+Q</keysym></shortcut><guimenuitem>Afslut</guimenuitem></menuchoice> Afslutter spillet.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+
+    <varlistentry>
+     <term><guimenu>Vis</guimenu></term>
+     <listitem>
+      <para>Denne menu indeholder: <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>F11</keysym></shortcut><guimenuitem>Fuldskærm</guimenuitem></menuchoice> Viser spilvinduet i fuldskærmtilstand.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><guimenuitem>3D-skakvisning</guimenuitem></menuchoice> Slår 3D-skakvisningstilstand med brug af OpenGL til. Dette kræver Python OpenGL og Python GTKGLExt installeret, samt et korrekt opsat 3D-grafikkort. Kontakt venligst din systemadministrator hvis du har problemer, uanset hvad vil du altid kunne spille skak i 2D-tilstand.</para>
+        </listitem>
+	 <listitem>
+         <para><menuchoice><guimenuitem>Vis log</guimenuitem></menuchoice> Vis log der kan hjælpe med fejlsøgning i glChess, og den aktive skakmotor der driver den kunstige intelligens.</para>
+        </listitem>
+     </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+   <varlistentry>
+     <term><guimenu>Opsætning</guimenu></term>
+     <listitem>
+      <para>Denne menu indeholder: <itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>Indstillinger</guimenuitem></menuchoice> Dette åbner vinduet, hvor du kan redigere <link linkend="prefs"> indstillingerne.</link></para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Hjælp</guimenu></term>
+     <listitem>
+      <para>Denne menu indeholder: <itemizedlist>
+        <listitem>
+          <para><menuchoice><shortcut><keysym>F1</keysym></shortcut><guimenuitem>Indhold</guimenuitem></menuchoice> Vis denne manual.</para>
+         <para><guimenuitem>Om</guimenuitem> Dette åbner vinduet <interface>Om</interface> som viser grundlæggende information om <application>glChess</application>, såsom forfatterens navn og spillets versionnummer.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+
+
+</sect2>
+
+
+</sect1>
+
+
+<sect1 id="chess-rules">
+ <title>Skakregler</title>
+ <sect2 id="rules-of-chess">
+  <title>Reglerne i skak</title>
+<!--
+The reference for this chapter is http://en.wikipedia.org/wiki/Chess
+-->
+  <para>Skak spilles på et kvadratisk bræt bestående af otte rækker (benævnt med numrene 1 til 8) og otte linjer (benævnt med numrene a til h)i alt 64 kvadrater. Farverne på de 64 kvadrater er skiftevis lyse og mørke, og referes til som "lyse felter" og "mørke felter".Skakbrættet er placeret så hver spiller har et hvidt felt i sit nedre højre hjørne, og brikkerne sættes op som vist i diagrammet, med hver dronning på et felt som svarer til dens farve.</para><para>Hver spiller begynder spillet med 16 brikker: Hver spillers brikker består af en konge, en dronning, to tårne, to løbere, to springere (heste) og otte bønder. 1 spiller, under referencen hvid, kontrollerer de hvide brikker og den anden spiller, sort, kontrollerer de sorte brikker; hvid er altid den første til at flytte en brik. Farverne vælges enten efter fælles overenskomst, ved lodtrækning eller af en turneringsleder. Spillerne skiftes til at flytte en brik (med undtagelse af rokade, hvor to brikker flyttes på samme tid). Brikker flyttes enten til en ubesat plads, eller en besat af en af modstanderens brikker, hvorved den fanges og fjernes fra spillet. Med en undtagelse (en passant), fanger man en modstanders brik ved at flytte til det felt, hvor modstanderens brik stod.</para>
+ <sect3 id="rules-piece-king">
+  <title>Konge</title>
+<para>Når en konge er under direkte angreb af en (eller muligvis to) af modstanderens brikker, siges spilleren at være i skak. Når man er skak, er kun træk, som fjerner kongen fra skak, tilladte. Spilleren må ikke foretage et træk som sætter sin egen konge i skak. Formålet med spillet er at gøre modstanderen skakmat; dette opstår når modstanderens konge er i skak, og der ingen træk kan foretages, som fjerner angrebet mod kongen.</para><para>Kongen kan kun bevæge sig et felt enten horisontalt, vertikalt eller diagonalt. En gang i spillet har kongen tilladelse til at foretage et speciel dobbelttræk, en rokade. Rokade består i at flytte kongen to træk mod et tårn, derefter flyttes tårnet til feltet som kongen har krydset. Rokade er kun tilladt hvis alle de følgende betingelser er overholdt:</para>
+<itemizedlist spacing="compact">
+  <listitem>
+   <para>Spilleren må ikke tidligere have flyttet enten kongen eller tårnet involveret i rokaden.</para>
+  </listitem>
+  <listitem>
+   <para>Der må ikke være nogen brikker mellem kongen og tårnet.</para>
+  </listitem>
+  <listitem>
+   <para>Kongen må ikke være i skak, og han må heller ikke passere igennem felter som er under angreb af fjendtlige brikker. Som alle andre træk er rokade ugyldigt, hvis det placerer kongen i skak.</para>
+ </listitem>
+  <listitem>
+   <para>Kongen og tårnet skal være på den samme række (hvilket udelukker rokade med en forfremmet bonde).</para>
+  </listitem>
+</itemizedlist>
+</sect3>
+ <sect3 id="rules-piece-rook">
+  <title>Tårn</title>
+<para>Tårnet kan bevæge sig over alle ledige felter vertikalt eller horisontalt (den er også en del af kongens specielle træk: Rokaden).</para>
+</sect3>
+ <sect3 id="rules-piece-bishop">
+  <title>Løber</title>
+<para>Løberen bevæger sig over alle ledige felter diagonalt. Bemærk at en løber aldrig skifter feltfarve, derfor taler spillere om "hvide" eller "sorte"løbere.</para>
+</sect3>
+ <sect3 id="rules-piece-queen">
+  <title>Dronning</title>
+<para>Dronningen kan bevæge sig over alle ledige felter diagonalt, horisontalt eller vertikalt.</para>
+</sect3>
+ <sect3 id="rules-piece-knight">
+  <title>Hest</title>
+<para>Springeren (Hesten) kan springe over besatte felter og flytte to felter horisontalt og et felt vertikalt eller omvendt, i form af et "L". Det kaldes også for "To felter frem og et til siden". En springer i midten af brættet har 8 felter, den kan flytte til. Bemærk at hver gang en springer flyttes skifter den feltfarve.</para>
+</sect3>
+ <sect3 id="rules-piece-pawns">
+  <title>Bønder</title>
+<para>Bønder har de mest komplekse regler for træk: En bonde kan bevæge sig fremad et felt, hvis dette felt er ubesat. Hvis bonden endnu ikke har bevæget sig i spillet, kan den vælge at bevæge sig to felter fremad, hvis begge felter foran den er ubesatte. En bonde kan ikke flytte bagud. Når et sådant træk over to felter foretages og det anbringer bonden horisontalt ved siden af en modstanders bonde, kan denne bonde fange den flyttende bonde ("en passant"), som om den kun flyttede et felt fremfor to, men kun i det følgende træk. Bønder er de eneste brikker, som slår fjendtlige brikker af brættet på en anderledes måde end de flyttes. De kan slå en fjendtlig brik på hver af de to felter ved siden af feltet umiddelbart foran dem (det vil sige, de to felt diagonalt foran dem), men de kan ikke flyttes til disse felter hvis de er ledige. Hvis en bonde når frem til 8. række forfremmes den (konverteres) til en dronning, tårn, løber eller springer (hest) af samme farve. I praksis forfremmes bonden næsten altid til en dronning.</para>
+</sect3>
+
+<sect3 id="rules-movement-others">
+<title>Tilbageværende bevægelsesregler</title>
+<para>Med undtagelsen af springeren (hesten), kan brikker ikke springe hen over hinanden. Ens egne brikker ("venligsindede brikker") kan ikke passeres,  hvis de er i vejen for bevægelsen, og en venligsindede brik kan aldrig erstatte en venligsindede brik. Fjendtlige brikker kan ikke passeres, men de kan "slås ud af brættet". Når en brik er slået ud (eller fanget), erstatter den angribende brik den fjendtlige brik på dennes felt (en passant er den eneste undtagelse). Den ramte brik fjernes så fra spillet og må ikke bruges igen i resten af spillet. Kongen kan ikke slås ud af brættet, skatmat medfører at spillet tabes.</para><para>Skakspil behøver ikke nødvendigvis at ende med skakmat — begge spillere kan give op, hvis situationen ser håbløs ud. Spil kan også ende med en remis (uafgjort). En remis kan opstå i flere situationer, inklusiv remis efter aftale, pat, trefold gentagelse af en position, reglen om 50-træk, eller en remis hvis en skakmat er umulig (normalt på grund af mangel på brikker, der kan opnå en skakmat).</para>
+</sect3>
+</sect2>
+
+
+<sect2 id="timed-games">
+<title>Spil på tid</title>
+<para>Spil kan afvikles med en tidsbegrænsning ved at angive en maksimal spiltid, når et et nyt spil oprettes. I spil på tid har hver spiller et givet tidsrum tilgængelig, hvor de skal have afviklet deres træk indenfor, og den tilbageværende tid, for hver spiller, går kun ned, når det er deres tur til at trække.</para>
+</sect2>
+
+<sect2 id="draw">
+<title>Remis (uafgjort)</title>
+<para>Et spil som ender uden sejr for nogen af spillerne. De fleste spil der ender med remis (uafgjort) sker efter indbyrdes aftale, baseret på reglerne. De øvrige måder et spil kan ende med remis, pat, trefold gentagelse af en position, reglen om 50 træk, eller en remis hvis en skakmat er umulig. En position siges at være remis, hvis en af spillerne kan, igennem lovlige træk, tvinge spillet i en position, hvor spillet vil ende med remis, uanset trækkene fortaget af den anden spiller.</para>
+
+
+<sect3 id="stalemate">
+<title>Pat</title>
+<para>Pat er en position hvor spilleren der har det næste træk ikke har nogen lovlige steder at placere sin konge og ikke er i skak. En pat medfører med det samme remis (uafgjort).</para>
+</sect3>
+
+<sect3 id="threefold-repetition">
+<title>Trefoldig gentagelse</title>
+<para>Spillet ender med remis, hvis den samme position opstår tre gange, hvor den samme spiller skal trække, og hvor hver spiller har det samme antal lovlige træk, de kan foretage hver gang (det sidste inkluderer retten til at lave en passant og retten til rokade).</para>
+</sect3>
+
+
+<sect3 id="fifty-move-rule">
+<title>Reglen om 50 træk</title>
+<para>Reglen om 50 træk angiver, at spillet er remis efter 50 træk fra hver side, hvor en bonde ikke har bevæget sig eller er blevet slået ud.</para>
+</sect3>
+
+<sect3 id="insuff-material">
+<title>Skakmat kan ikke opnås</title>
+<para>Et slutspilscenarie hvor alle bønder er slået ud, og en side kun har sin konge tilbage, mens den anden side kun har en konge eller en konge plus en springer eller en løber. Positionen er remis, da det er umuligt for den dominerende part at udløse skakmat, uanset hvordan der trækkes. Situationer hvor skakmat kun er muligt, hvis den svage side snorker er dækket af reglen om 50 træk.</para>
+</sect3>
+
+
+</sect2>
+
+</sect1>
+
+
+
+
+<sect1 id="prefs">
+ <title>Spilopsætning</title>
+
+
+<sect2 id="game-prefs">
+  <title>Spilindstillinger</title>
+  <para>Dette indstillingsvindue tillader dig at ændre brætorientering, flytteformat og forfremmelsestype.</para>
+
+ <figure id="preferences-game-shot">
+  <title>Vindue for spilindstillinger til glChess</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences_game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Vindue for spilindstillinger til glChes.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+
+</sect2>
+
+
+
+<sect2 id="view-prefs">
+  <title>Visningsindstillinger</title>
+  <para>Dette indstillingsvindue giver dig mulighed for at ændre udseendet og oplevelsen af glChess.</para>
+
+ <figure id="preferences-view-shot">
+  <title>Vis indstillingsvindue for glChess</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences_view.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Vis indstillingsvindue for glChess.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+
+</sect2>
+
+</sect1>
+
+
+<sect1 id="engines">
+ <title>Skakmotorer</title>
+
+     <para>glChess bør være i stand til at anvende enhver skakmotorkommunikationsprotokol eller kompatible Universal Chess Interface-skakmotorer, inklusiv disse skakmotorer:</para>
+
+<!-- Please keep AI list synchronized with glchess/data/ai.xml -->
+<itemizedlist spacing="compact">
+  <listitem>
+	<para>GNUChess</para>
+  </listitem>
+  <listitem>
+	<para>Sjeng</para>
+  </listitem>
+  <listitem>
+	<para>Amy</para>
+ </listitem>
+  <listitem>
+	<para>Crafty</para>
+  </listitem>
+  <listitem>
+	<para>Faile</para>
+  </listitem>
+  <listitem>
+	<para>Phalanx</para>
+  </listitem>
+  <listitem>
+	<para>Glaurung</para>
+  </listitem>
+  <listitem>
+	<para>HoiChess</para>
+  </listitem>
+  <listitem>
+	<para>Diablo</para>
+  </listitem>
+  <listitem>
+	<para>BBChess</para>
+  </listitem>
+  <listitem>
+	<para>Fruit</para>
+  </listitem>
+  <listitem>
+	<para>Amundsen</para>
+  </listitem>
+  <listitem>
+	<para>Shredder</para>
+  </listitem>
+  <listitem>
+	<para>Toga II</para>
+  </listitem>
+  <listitem>
+	<para>Boos skakmotor</para>
+  </listitem>
+
+
+</itemizedlist>
+
+</sect1>
+
+
+<sect1 id="bugs">
+ <title>Kendte fejl og begrænsninger</title>
+
+ <itemizedlist mark="opencircle">
+    <listitem>
+     <para>Der er ingen dokumenterede fejl eller begrænsninger i glChess. For at finde områder hvor du kan hjælpe med at forbedre glChess, så se venligst i TODO-filen (den er på engelsk) som distribueres med spillet.</para>
+    </listitem>
+ </itemizedlist>
+
+</sect1>
+
+<sect1 id="credits">
+ <title>Forfattere</title>
+  <para><application>glChess</application> er programmeret af Robert Ancell, og vedligeholdes nu i gnome-games. Denne manual blev oprindelig skrevet af Andreas Røsdal, med hjælp fra flere GPL-kilder. For at indrapportere en fejl, eller komme med et forslag vedrørende dette program eller denne manual, så følg vejledningen i dette <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokument</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Licens</title>
+  <para>Dette program er frit software: du kan distribuere den og/eller ændre den under betingelserne i <citetitle>GNU General Public License</citetitle> der udgives af Free Software Foundation; enten version 2 eller (ved dit valg) enhver senere version.</para>
+  <para>Dette program distribueres i håb om, at det vil vise sig nyttigt, men
+UDEN NOGEN FORM FOR GARANTI, uden selv de underforståede garantier
+omkring SALGBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Yderligere
+detaljer kan læses i <citetitle>GNU General Public License</citetitle>.</para>
+  <para>En kopi af <citetitle>GNU General Public License</citetitle> er inkluderet som et tillæg til <citetitle>GNOME-brugervejledningen</citetitle>. Du kan også få en kopi af <citetitle>GNU General Public License</citetitle> fra Free Software Foundtation ved at besøge <ulink url="http://www.fsf.org" type="http">deres internetside</ulink> eller skrive til <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

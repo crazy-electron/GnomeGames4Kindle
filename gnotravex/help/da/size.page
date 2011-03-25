@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="size" xml:lang="da">
+
+  <info>
+    <link type="guide" xref="index#play" group="three"/>
+    <desc>Ændr størrelsen på spillebrættet.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-18" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  <title>Spillebrættes størrelse</title>
+
+  <p>For at ændre størrelsen på spillebrættet vælges <gui>Størrelse</gui> fra hovedmenubjælken og her vælges dimensionerne på brættet. Dette øger eller formindsker kompleksiteten på spillet.</p>
+  <p>Du kan vælge fem forskellige dimensioner, fra 2×2 til 6×6. Standarden er 3×3.</p>
+  <note style="tip">
+    <p>Hvis brikkerne er for små, vil en ændring af vinduestørrelsen ændre størrelsen på brikkerne.</p>
+  </note>
+</page>

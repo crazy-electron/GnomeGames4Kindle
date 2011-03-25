@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Five or More</application>">
+<!ENTITY appname "Five or More">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- This doc is based on the GDP template from GNOME 1.2
+     Its syntax and DTD has been updated to validate with xmllint.
+     The content needs to be updated (it basically needs to be finished)
+     edited and indexed.
+   -->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="zh_CN"> 
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+ <articleinfo>
+  <title><application>连珠消球</application> 手册</title>
+  <abstract role="description">
+    <para>要玩连珠消球，您必须把各种颜色的物体排成直线，而盘面上的物体会随机增加。当五个或更多相同颜色的物体排成一条直线时就会消失。当整个盘面都被填满时游戏会结束。</para>
+  </abstract>
+
+  <copyright>
+   <year>2000-2002</year>
+   <holder>Emese Kovács</holder>
+  </copyright><copyright><year>2010</year><holder>方真(Fang Zhen) (fangzhenzyou@gmail.com)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>GNOME 文档项目</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>对于本文档的复制、分发和/或修改必须遵循自由软件基金会发布的 GNU 自由文档许可证(GFDL) 1.1 版或更高版本，该许可证没有固定的部分、没有封面和背页文本。您可以在此<ulink type="help" url="ghelp:fdl">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副本。</para>
+         <para>这个手册是在GFDL下发行的GNOME手册的的一部分。如果您想将这个手册分离开整个手册集合来重新发布，您可以这么做，但是要按照该许可证第六段所描述的，向这个手册添加这个许可证的副本。</para>
+
+	<para>各个公司使用的许多用于区分它们产品和服务的名称都声明为商标。在所有的 GNOME 文档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而表明它们是商标。</para>
+
+	<para>本文档以及文档的修改版本都是在遵循 GNU 自由文档许可证的条款下提供，这表示具有以下含义：<orderedlist>
+		<listitem>
+		  <para>文档按“原样”提供，不提供任何明示或暗示的保证，包括但不限于：文档或文档的修改版本没有适销性方面的缺陷、适合特定目的的适用性，以及没有侵权行为。您将自行承担本文档以及文档修改版本的质量、准确性以及性能方面的风险。如果任何文档或文档修改版本存在缺陷，您(而不是最初的编写者、作者或撰写人)将承担所有必需的服务、维修或更正的费用。此免责声明是本许可证的重要组成部分。如果不接受此免责声明，那么您就没有权利使用任何文档或文档的修改版本；并且</para>
+		</listitem>
+		<listitem>
+		  <para>无论在任何情况以及在任何法律理论下，本文档或文档修改版本的作者、最初的编写者、任何撰写人或任何分发者，或者任意这些方的任何提供者都不对任何人由于使用本文档或文档修改版本引起或带来的任何直接的、间接的、特殊的、偶然的或继发的损失承担任何民事(包括疏忽)、合同或其它方面的责任，这些损失包括但不限于信誉损失、工作停止、计算机失败或故障，或任何以及所有其它损失或由此引发的或与之相关的损失，即使这些方已被告知存在出现此类损失的可能性时也是如此。</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+	<firstname>Emese</firstname> 
+	<surname>Kovács</surname> 
+	<affiliation> 
+	  <orgname>GNOME 文档项目</orgname> 
+	  <address> <email>emese@gnome.hu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+    <revhistory>
+      <revision> 
+	<revnumber>连珠消球手册 V2.8</revnumber> 
+	<date>2004年9月</date> 
+	<revdescription> 
+	  <para role="author">Emese Kovács <email>emese@gnome.hu</email></para>
+	  <para role="publisher">GNOME 文档项目</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>这个手册描述了 2.12 版本的连珠消球游戏</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>反馈</title> 
+      <para>要报告关于<application>连珠消球</application>程序或其手册的错误或者提供建议，请参照 <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME 反馈页</ulink>的说明。</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>连珠消球</primary> 
+  </indexterm> 
+
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+ <sect1 id="intro">
+  <title>介绍</title>
+
+  <para><application>连珠消球</application>是一款移植到 Gnome 的曾经很流行的叫做<application>彩色连珠</application>的 Windows 游戏。该游戏的目标是尽可能多的把五个或更多相同颜色或形状的物体排成直线以使它们消失。尽可能多的消去物体，您就可能成为高分榜第一名。</para>
+
+  <para>要运行<application>连珠消球</application>，从<guimenu>主菜单</guimenu>的<guisubmenu>游戏</guisubmenu>子菜单中选择<guimenuitem>连珠消球</guimenuitem>，或者在命令行键入<command>glines</command>命令。</para>
+
+  <para><application>连珠消球</application>包含在<filename>GNOME-games</filename>软件包中，它是 GNOME 桌面环境的一部分。这个文档描述了<application>连珠消球</application>的 2.8 版本。</para>
+
+ </sect1>
+
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="usage">
+    <title>进行游戏</title>
+    <para>玩<application>连珠消球</application>很容易。开始时，您会发现盘面上有五个随机放置的物体。每轮您可以移动一个物体。您可以把它移动到盘面上任何一个可达的位置。然后，电脑会随机放置更多的物体(准确的数字与游戏规模有关)。您可以在游戏窗口的左上角看到下一步要出现的物体。如果您成功的把五个相同形状或颜色的物体排成直线，它们就会消失，您会在更多物体出现之前再获得一次移动机会。</para>
+
+
+  <!-- ========= Basic Usage =========================== -->
+  <sect2 id="mainwin">
+   <title>基本用法</title>
+   <para>启动<application>连珠消球</application>后会显示一个<interface>游戏盘面</interface>，然后一个新游戏就开始了。参看<xref linkend="mainwindow-fig"/>.</para>
+
+    <!-- ==== Figure ==== -->
+	<figure id="mainwindow-fig">
+	  <title>游戏的主窗口</title>
+	  <screenshot>
+	      <mediaobject>
+	      <imageobject>
+	      <imagedata fileref="figures/glines-startgame.png" format="PNG" srccredit="emese"/>
+	      </imageobject>
+	      </mediaobject>
+	  </screenshot>
+	</figure>
+     <!-- ==== End of Figure ==== -->
+
+   <para>当游戏进行时，盘面会变的越来越拥挤(除非您特别棒)，使物体消失会变得越来越困难。当盘面填满后，游戏就结束了。</para>
+   
+   <!-- ==== Figure ==== -->
+   <figure id="gameover-fig">
+	  <title>游戏结束！</title>
+	  <screenshot>
+    <mediaobject>
+     <imageobject>
+      <imagedata fileref="figures/glines-gameover.png" format="PNG" srccredit="emese kovacs"/>
+     </imageobject>
+    </mediaobject>
+ </screenshot>
+</figure>  
+   <!-- ==== End of Figure ==== -->
+   
+  </sect2>
+
+
+  <!-- ========= Rulez =========================== -->
+
+    <sect2 id="rules"> 
+      <title>游戏中</title>
+      <para>游戏<application>连珠消球</application>开始时盘面上随机摆放若干个物体。</para>
+      <para>点击某个物体使它移动。当某个物体激活后，它就开始旋转(或其他动作，这取决于主题。但是让我们不要有所预期…)。然后您可以通过点击某个空的方格选择它的终点。如果终点可以到达，这个激活的物体就会移到那儿。如果目标方格被另一个物体占用，选定的物体不会移动，而目标方格的物体将会被选中。如果没有路径(物体不能从障碍物上跳过去)，程序会在状态栏(窗口底部)打印一条警告，原物体会保持激活状态。</para>
+      <para>当物体消失的时候，您将获得分数。您获得的分数取决于您成功排成直线的物体个数(参看<xref linkend="glines-table1"/>)。您的得分会显示在窗口的右上角。</para>
+      
+    <!-- ====  Table 1.  ==== -->
+    <table id="glines-table1">
+     <title>游戏得分</title>
+      <tgroup cols="2" align="center">
+       <thead>
+        <row>
+         <entry>物体数量</entry>
+         <entry>得分</entry>
+        </row>
+       </thead>
+       <tbody>
+       <row>
+        <entry>5</entry>
+        <entry>10</entry>
+       </row>
+       <row>
+        <entry>6</entry>
+        <entry>12</entry>
+       </row>
+       <row>
+        <entry>7</entry>
+        <entry>18</entry>
+       </row>
+       <row>
+        <entry>8</entry>
+        <entry>28</entry>
+       </row>
+       <row>
+        <entry>9</entry>
+        <entry>42</entry>
+       </row>
+       <row>
+        <entry>10</entry>
+        <entry>82</entry>
+       </row>
+       <row>
+        <entry>11</entry>
+        <entry>108</entry>
+       </row>
+       <row>
+        <entry>12</entry>
+        <entry>138</entry>
+       </row>
+      <row>
+        <entry>13</entry>
+        <entry>172</entry>
+      </row>
+      <row>
+        <entry>14</entry>
+        <entry>210</entry>
+       </row>
+      </tbody>
+     </tgroup> 
+    </table>
+
+  <sect3>
+  <title>使用键盘</title>
+  <para>您可以用键盘代替鼠标来玩<application>连珠消球</application>。要使用键盘，单击箭头键，然后光标就会出现在盘面中心。这些箭头键可以移动光标。当光标处于您想要您想要移动的物体位置时，使用空格键选中它。然后移动光标到物体的终点，单击空格键来移动它。</para><para>如果您又开始用鼠标，光标会消失。当您使用箭头键是光标会再出现。</para>
+  </sect3>
+
+
+   <!-- ==== End of Table ==== -->
+
+
+    </sect2>
+
+
+  </sect1>
+  <sect1 id="settings">
+  <title>自定义游戏</title>
+  <para>您可以通过点击<guimenu>设置</guimenu>菜单下<guimenuitem>首选项</guimenuitem>来配置<application>连珠消球</application>。下面的<interface>对话框</interface>会出现。</para>
+ <!-- ==== Figure ==== -->
+   <figure>
+     <title>首选项</title>   
+    <mediaobject id="preferences-dialogbox">
+     <imageobject>
+      <imagedata fileref="figures/preferences.png" format="PNG" srccredit="emese"/>
+     </imageobject>
+    </mediaobject>
+  </figure>    
+    <!-- ==== End of Figure ==== -->
+
+  <para>您可以在<guimenu>主题</guimenu>模块选择不同的物体样式和背景颜色。如果您觉得分辨不同的颜色很困难，试试形状主题</para>
+  <para>您可以在<guimenu>盘面大小</guimenu>部分选择盘面大小。每种大小都保持了一种微妙的平衡：盘面大的会有更多空间移动，但是每轮的物体个数更多。每种尺寸的参数在<xref linkend="table-sizes"/>中给出。</para>
+    <table id="table-sizes">
+     <title>游戏得分</title>
+      <tgroup cols="5" align="center">
+       <thead>
+        <row>
+         <entry align="left">大小</entry>
+         <entry>宽</entry>
+         <entry>高</entry>
+	 <entry>物体种类数</entry>
+         <entry>每轮物体数</entry>
+        </row>
+       </thead>
+       <tbody>
+       <row>
+        <entry align="left">小</entry>
+        <entry>7</entry>
+        <entry>7</entry>
+        <entry>5</entry>
+        <entry>3</entry>
+       </row>
+       <row>
+        <entry align="left">中</entry>
+        <entry>9</entry>
+        <entry>9</entry>
+        <entry>7</entry>
+        <entry>3</entry>
+       </row>
+       <row>
+        <entry align="left">大</entry>
+        <entry>20</entry>
+        <entry>15</entry>
+        <entry>7</entry>
+        <entry>7</entry>
+       </row>
+      </tbody>
+     </tgroup> 
+    </table>
+
+  <para>您可以通过在首选项的<guimenu>常规</guimenu>部分选中使用快速移动复选框加快物体移动速度。</para>
+  <para>您做的所有改变会立即应用，而且会在您下次玩<application>连珠消球</application>时保持。</para>
+  </sect1>
+  <sect1 id="themes">
+    <title>如何创建新主题</title> 
+    <para>Each theme consists of a single PNG image file. This image
+    consists of an array of seven rows, corresponding to the different
+    object colors/shapes, and four columns, each of which is a frame in the
+    animation of the object. The actual size of the image is irrelevant,
+    it will be rescaled, but the sub-images must form a four by seven
+    grid to get the correct effect. When using SVG remember that the
+    image size is the page size, if your grid does not fill the page
+    try shrinking the page size. Use an existing theme as a
+    guide.</para>
+  </sect1>
+
+ <!-- ============= Bugs ================================== -->
+ <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of 
+
+      Better to omit this section than give false impression of perfection
+      Add back in if there is something worth saying
+
+ <sect1 id="bugs">
+  <title>Known Bugs and Limitations</title>
+  <para>
+   This application has no known bugs.
+  </para>
+ </sect1>
+-->
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>作者</title>
+  <para><application>连珠消球</application> 由 Róbert Szókovács (<email>szo@appaloosacorp.hu</email>) 和 Szabolcs Bán (<email>shooby@gnome.hu</email>)编写。该手册由 Emese Kovács (<email>emese@gnome.hu</email>)编写。关于如何发表评论，建议和报告错误的信息请参看<ulink url="ghelp:user-guide?feedback-bugs" type="help">反馈文档</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>许可</title>
+  <para>该程序是自由软件，您可以在由自由软件基金会发布的<citetitle>GNU 通用公共许可证协议</citetitle>下分发和修改。可以是许可证第二版或(由您选择)的更新版本。</para>
+  <para>
+   This program is distributed in the hope that it will be useful, but
+   WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   <citetitle>GNU General Public License</citetitle> for more details.
+  </para>
+  <para><citetitle>GNU 通用公共许可证</citetitle>的一个副本包含在<citetitle>GNOME 用户手册</citetitle>的附录中。您还可以通过访问<ulink url="http://www.fsf.org" type="http">他们的网站</ulink>或者写信从自由软件基金会获得<citetitle>GNU 通用公共许可证</citetitle>的一个副本。 写信地址是<address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address>。</para>
+ </sect1>
+</article>

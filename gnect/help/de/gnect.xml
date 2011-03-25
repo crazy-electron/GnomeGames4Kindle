@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Four-in-a-Row</application>">
+<!ENTITY appname "Four-in-a-Row">
+<!ENTITY version "2.8">
+]>
+<!-- ===== DOCUMENT HEADER ===== -->
+<article id="index" lang="de">
+<!-- please do not change the id -->
+<!-- translators, change lang to the appropriate code -->
+  <articleinfo>
+    <title>»Vier gewinnt«-Handbuch</title>
+    <abstract role="description">
+      <para>Das Ziel von Vier-gewinnt ist das Anordnen von vier Murmeln in vertikaler, horizontaler oder diagonaler Richtung, während der Gegner versucht, dieses zu verhindern und seine eigenen Viererreihen aufzubauen. Vier-gewinnt kann gegen einen menschlichen Gegner oder den Computer gespielt werden.</para>
+    </abstract>
+
+    <copyright>
+      <year>2001-2002</year>
+      <holder>Timothy Musson</holder>
+    </copyright><copyright><year>2008</year><holder>Mario Blättermann (mario.blaettermann@t-online.de)</holder></copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+     <year>2000</year>
+     <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+    <publisher role="maintainer"> 
+      <publishername>GNOME-Dokumentationsprojekt</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+	<para>Das vorliegende Dokument kann gemäß den Bedingungen der GNU Free Documentation License (GFDL), Version 1.1 oder jeder späteren, von der Free Software Foundation veröffentlichten Version ohne unveränderbare Abschnitte sowie ohne Texte auf dem vorderen und hinteren Buchdeckel kopiert, verteilt und/oder modifiziert werden. Eine Kopie der GFDL finden Sie unter diesem <ulink type="help" url="ghelp:fdl">Link</ulink> oder in der mit diesem Handbuch gelieferten Datei COPYING-DOCS.</para>
+         <para>Dieses Handbuch ist Teil einer Sammlung von GNOME-Handbüchern, die unter der GFDL veröffentlicht werden. Wenn Sie dieses Handbuch getrennt von der Sammlung weiterverbreiten möchten, können Sie das tun, indem Sie eine Kopie der Lizenz zum Handbuch hinzufügen, wie es in Abschnitt 6 der Lizenz beschrieben ist.</para>
+
+	<para>Viele der Namen, die von Unternehmen verwendet werden, um ihre Produkte und Dienstleistungen von anderen zu unterscheiden, sind eingetragene Warenzeichen. An den Stellen, an denen diese Namen in einer GNOME-Dokumentation erscheinen, werden die Namen in Großbuchstaben oder mit einem großen Anfangsbuchstaben geschrieben, wenn das GNOME-Dokumentationsprojekt auf diese Warenzeichen hingewiesen wird.</para>
+
+	<para>DAS DOKUMENT UND VERÄNDERTE FASSUNGEN DES DOKUMENTS WERDEN UNTER DEN BEDINGUNGEN DER GNU FREE DOCUMENTATION LICENSE ZUR VERFÜGUNG GESTELLT MIT DEM WEITERGEHENDEN VERSTÄNDNIS, DASS: <orderedlist>
+		<listitem>
+		  <para>DIESES DOKUMENT WIRD »WIE VORLIEGEND« GELIEFERT, OHNE GARANTIEN IRGENDEINER ART, SOWOHL AUSDRÜCKLICH GENANNTE ALS AUCH ANGEDEUTETE. DIES BEZIEHT SICH AUCH OHNE EINSCHRÄNKUNG AUF GARANTIEN, DASS DIESES DOKUMENT ODER VERÄNDERTE FASSUNGEN DIESES DOKUMENTS FREI VON HANDELSDEFEKTEN, FÜR EINEN BESTIMMTEN ZWECK GEEIGNET IST ODER DASS ES KEINE RECHTE DRITTER VERLETZT. DAS VOLLE RISIKO WAS QUALITÄT, GENAUIGKEIT UND LEISTUNG DES DOKUMENTS ODER VERÄNDERTE FASSUNGEN DES DOKUMENTS LIEGT BEI IHNEN. SOLLTE EIN DOKUMENT ODER EINE VERÄNDERTE FASSUNG DAVON FEHLER IRGENDEINER ART BEINHALTEN, TRAGEN SIE (NICHT DER URSPRUNGSAUTOR, DER AUTOR ODER EIN MITWIRKENDER) DIE KOSTEN FÜR NOTWENDIGE DIENSTLEISTUNGEN, REPARATUREN ODER FEHLERKORREKTUREN. DIESER HAFTUNGSAUSSCHLUSS IST EIN ESSENZIELLER TEIL DIESER LIZENZ. DIE VERWENDUNG EINES DOKUMENTS ODER EINER VERÄNDERTEN VERSION DES DOKUMENTS IST NICHT GESTATTET AUßER UNTER BEACHTUNG DIESES HAFTUNGSAUSSCHLUSSES UND</para>
+		</listitem>
+		<listitem>
+		  <para>UNTER KEINEN UMSTÄNDEN UND AUF BASIS KEINER RECHTSGRUNDLAGE, EGAL OB DURCH UNERLAUBTEN HANDLUNGEN (EINSCHLIEßLICH FAHRLÄSSIGKEIT), VERTRAG ODER ANDERWEITIG KANN DER AUTOR, URSPRUNGSAUTOR, EIN MITWIRKENDER ODER EIN VERTRIEBSPARTNER DIESES DOKUMENTS ODER EINER VERÄNDERTEN FASSUNG DES DOKUMENTS ODER EIN ZULIEFERER EINER DIESER PARTEIEN, HAFTBAR GEMACHT WERDEN FÜR DIREKTE, INDIREKTE, SPEZIELLE, VERSEHENTLICHE ODER FOLGESCHÄDEN JEGLICHER ART, EINSCHLIEßLICH UND OHNE EINSCHRÄNKUNGEN SCHÄDEN DURCH VERLUST VON KULANZ, ARBEITSAUSFALL, COMPUTERVERSAGEN ODER COMPUTERFEHLFUNKTIONEN ODER ALLE ANDEREN SCHÄDEN ODER VERLUSTE, DIE SICH AUS ODER IN VERBINDUNG MIT DER VERWENDUNG DES DOKUMENTS UND VERÄNDERTER FASSUNGEN DES DOKUMENTS ERGEBEN, AUCH WENN DIE OBEN GENANNTEN PARTEIEN ÜBER DIE MÖGLICHKEIT SOLCHER SCHÄDEN INFORMIERT WAREN.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+
+    <authorgroup>
+      <author>
+        <firstname>Timothy</firstname>
+        <surname>Musson</surname>
+        <affiliation>
+          <!-- <orgname></orgname> -->
+          <address><email>trmusson@ihug.co.nz</email></address>
+        </affiliation>
+      </author>
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+
+      <othercredit role="translator">
+        <firstname>Latin</firstname> 
+        <surname>Translator 1</surname> 
+        <affiliation> 
+          <orgname>Latin Translation Team</orgname> 
+          <address> <email>translator@gnome.org</email> </address> 
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+        <revnumber>Vier-gewinnt-Handbuch V2.8</revnumber>
+        <date>September 2004</date>
+        <revdescription>
+          <para role="author">Timothy Musson <email>trmusson@ihug.co.nz</email></para>
+          <para role="publisher"/>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>Dieses Handbuch beschreibt Version 2.12 von »Vier gewinnt«.</releaseinfo>
+
+    <legalnotice>
+      <title>Rückmeldungen</title>
+      <para>Um Fehler zu melden oder einen Vorschlag zur Anwendung <application>Vier gewinnt</application> oder zu diesem Handbuch zu machen, folgen Sie den Anweisungen auf der <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME-Seite für Rückmeldungen</ulink>.</para>
+    </legalnotice>
+  </articleinfo>
+
+
+  <!-- ============= Document Body ============================= -->
+
+  <!-- ============= Introduction ============================== -->
+
+
+  <sect1 id="intro">
+
+    <title>Einführung</title>
+
+    <para><application>Vier gewinnt</application> ist ein Vier-gewinnt-Spiel für das GNOME-Projekt. Ziel des Spiels ist es, eine Linie aus vier Objekten zu bilden, während Ihr (menschlicher oder Computer-) Gegner seinerseits eine solche Linie zu bilden versucht. Eine Linie kann waagerecht, senkrecht oder diagonal angeordnet sein.</para>
+
+    <para>Um <application>Vier gewinnt</application> zu starten, wählen Sie <guimenuitem>Vier gewinnt</guimenuitem> im Untermenü <guisubmenu>Spiele</guisubmenu> des <guimenu>Hauptmenüs</guimenu>, oder geben Sie <command>gnect</command> in einer Befehlszeile ein.</para>
+
+    <para><application>Vier gewinnt</application> ist Teil des Pakets <filename>gnome-games</filename>, das seinerseits Teil der GNOME-Desktopumgebung ist. Dieses Dokument beschreibt Version 2.8 von <application>Vier gewinnt</application>.</para>
+
+   <para>Vier-gewinnt unterstützt auch den <link linkend="network-games">Mehrspieler-Modus</link> mit zwei menschlichen Spielern im Hotseat- oder Netzwerk-Modus.</para>
+
+
+  </sect1>
+
+
+  <!-- ============= Usage ===================================== -->
+
+
+  <sect1 id="usage">
+
+    <title>Grundlagen der Bedienung</title>
+
+    <!-- ===== How to play ===== -->
+
+    <sect2 id="playing">
+
+      <title>»Vier gewinnt« spielen</title>
+
+      <para>Um ein neues Spiel von Vier-gewinnt zu starten, wählen Sie <menuchoice><guimenu>Spiel</guimenu><guimenuitem>Neu</guimenuitem></menuchoice>.</para>
+
+      <para>Das <interface>Spielfeld</interface> besteht aus sieben Spalten und sechs Zeilen. Oberhalb dessen zeigt eine weitere Zeile den aktiven Spieler und die nächste Murmel. Jeder Zug besteht aus dem Abwerfen einer Murmel in eine der Spalten. Die Murmel landet dabei in der untersten leeren Zeile der gewählten Spalte.</para>
+        
+      <para>Um einen Zug auszuführen, klicken Sie mit der Maus auf eine der Spalten. Wenn Sie die Tastatur benutzen möchten, verschieben Sie die Murmel in der obersten Zeile mit den Pfeiltasten nach rechts und links, dann legen Sie sie mit der Pfeiltaste nach unten in der gewünschten Spalte ab. Ihre Murmel landet dabei in der untersten leeren Zeile der gewählten Spalte.</para>
+
+      <!-- Figure -->
+      <mediaobject id="mainwindow-fig">
+        <imageobject>
+          <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="trm"/>
+        </imageobject>
+        <textobject>
+          <phrase>Das Hauptfenster von »Vier gewinnt«.</phrase>
+        </textobject>
+        <caption><para>Das Hauptfenster von »Vier gewinnt«.</para></caption>
+      </mediaobject>
+
+      <para>Das Spiel ist gewonnen, wenn es einem der Spieler gelang, vier seiner oder ihrer Murmeln waagerecht, senkrecht oder diagonal anzuordnen. Wenn das Spielfeld gefüllt wurde, ohne dass jemand gewann, endet das Spiel unentschieden.</para>
+
+    </sect2>
+    
+    <!-- ===== Commands ===== -->  
+    
+    <sect2 id="commands">
+      <title>Befehle</title>
+      <anchor id="menubar"/><!-- id for removed section -->
+      
+      <para>Um einen Zug zurückzunehmen, wählen Sie <menuchoice><shortcut><keycombo><keysym>Strg</keysym><keycap>Z</keycap></keycombo></shortcut><guimenuitem>Zug rückgängig</guimenuitem></menuchoice>. Wenn Sie gegen einen menschlichen Gegner spielen, wird ein Zug zurückgenommen. Spielen Sie gegen den Computer, dann wird zuerst der letzte Zug des Computers zurückgenommen und dann Ihr Zug. Das kann wiederholt werden, bis das Spielfeld wieder im ursprünglichen Zustand ist.</para>
+      <para>Wählen Sie <menuchoice><shortcut><keycombo><keysym>Strg</keysym><keycap>H</keycap></keycombo></shortcut><guimenuitem>Hinweis</guimenuitem></menuchoice>, um eine Empfehlung des Computers für den nächsten Zug zu bekommen. Dies wird in der Statusleiste angezeigt.</para>
+      
+      <para>Wählen Sie <menuchoice><guimenuitem>Ergebnisse</guimenuitem></menuchoice>, um den Stand der gewonnenen und unentschiedenen Spiele für die aktuelle Sitzung anzuzeigen. Die Ergebnisse werden auf Null zurückgesetzt, sobald die Auswahl der Spieler in den Einstellungen geändert wird.</para>      
+
+      
+    </sect2>  
+
+    <!-- ===== Preferences ===== -->
+
+    <sect2 id="prefsdialog">
+
+      <title>Einstellungen</title>
+
+      <para>Um die Einstellungen des Spiels zu ändern, wählen Sie <guimenuitem>Einstellungen</guimenuitem> aus dem Menü <guimenu>Einstellungen</guimenu>. Dies öffnet den <interface>Einstellungsdialog</interface>.</para>
+
+      <para>Die Einstellungsoptionen im Reiter <guilabel>Spiel</guilabel> sind: <variablelist>
+
+          <varlistentry>
+            <term><guilabel>Spieler 1</guilabel> und <guilabel>Spieler 2</guilabel></term>
+            <listitem>
+              <para>Diese zwei Spalten bestimmen, wer gegeneinander spielt, und falls es sich um einen Computer handelt, dessen Spielstärke. Um gegen einen menschlichen Gegner zu spielen, wählen Sie »Mensch« sowohl für Spieler 1 als auch für Spieler 2.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Thema</guilabel></term>
+            <listitem>
+              <para>Das Aufklappmenü »Thema« listet alle verfügbaren Themen auf, aus welchen Sie dann Ihren Favoriten wählen können.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term><guilabel>Animationen aktivieren</guilabel></term>
+            <listitem>
+              <para>Hier können Sie die Animation des Spiels ein- und ausschalten.</para>
+            </listitem>
+          </varlistentry>
+
+        </variablelist></para>
+      <para>Weiterhin gibt es einen Reiter <guilabel>Steuerung</guilabel> zum Ändern der Tasten für die Tastatursteuerung. Um eine der Zuordnungen zu ändern, doppelklicken Sie auf den gewünschten Eintrag und drücken dann die neue Taste.</para>
+
+    </sect2>
+  </sect1>
+
+
+  <!-- ===== Custom Themes ===================================== -->
+
+
+  <sect1 id="custom">
+
+    <title>Neue Themen erzeugen</title>
+
+    <para>Dieser Abschnitt wurde eingefügt für den Fall, dass Sie Ihre eigenen Themen für <application>Vier gewinnt</application> erstellen wollen. Es werden allerdings Grundkenntnisse im Bearbeiten von Texten, im Umgang mit Grafikbearbeitungssoftware und der Befehlszeile vorausgesetzt</para>
+
+    <sect2 id="images">
+
+      <title>Bilder</title>
+
+      <para>Die Murmelsätze für <application>Vier gewinnt</application> enthalten sechs Murmeln gleicher Größe in waagerechter Anordnung. Von links nach rechts:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Die Murmel von Spieler 1, wie sie auf dem Spielfeld erscheint</para>
+        </listitem>
+        <listitem>
+          <para>Die Murmel von Spieler 2, wie sie auf dem Spielfeld erscheint</para>
+        </listitem>
+        <listitem>
+          <para>Der Hintergrund des Spielfelds</para>
+        </listitem>
+        <listitem>
+          <para>Hintergrund der obersten Zeile</para>
+        </listitem>
+        <listitem>
+          <para>Die Murmel von Spieler 1, wie sie in der obersten Zeile erscheint</para>
+        </listitem>
+        <listitem>
+          <para>Die Murmel von Spieler 2, wie sie in der obersten Zeile erscheint</para>
+        </listitem>
+      </orderedlist>
+
+      <figure id="shot1">
+        <title>Ein Beispiel-Murmelsatz</title>
+        <screenshot>
+          <screeninfo>Dieses Bild zeigt sechs Murmeln in einem Murmelsatz</screeninfo>
+          <graphic format="PNG" fileref="figures/tileset.png" srccredit="TRM"/>
+        </screenshot>
+      </figure>
+
+      <para>Die dritte und vierte Kachel werden dabei über das ganze Spielfeld aneinandergereiht, sofern kein vollständiges Hintergrundbild in der Themendatei angegeben ist.</para>
+
+      <tip>
+        <title>Tipp</title>
+        <para>Für die Murmelsätze wird das PNG-Format empfohlen. Die erste, zweite, fünfte und sechste Murmel sollten teilweise transparent sein, wenn Sie den Hintergrund durchscheinen lassen möchten. Die dritte und die vierte Murmel sollten nicht transparent sein, für den Fall, dass Sie ein Hintergrund-Vollbild mit Ihrem Thema mitliefern.</para>
+      </tip>
+
+      <tip>
+        <title>Tipp</title>
+        <para>Die Murmeln können auch quadratisch oder rechteckig sein, und in jeder von Ihnen gewünschten Größe. Die meisten der in <application>Vier gewinnt</application> enthaltenen Murmelsätze verwenden quadratische Formen in einer Größe von 50 mal 50 Pixeln.</para>
+      </tip>
+
+      <para>Ein vollständiges Hintergrundbild erfordert etwas mehr Aufwand. Nehmen wir an, Ihre Kacheln sollen eine Größe von 50 mal 50 Pixeln haben. Der Anzeigebereich des Spiels ist 7 mal 7 Kacheln groß, einschließlich der obersten Zeile. Daher sollte das Hintergrundbild idealerweise 350 mal 350 Pixel groß sein.</para>
+
+      <tip>
+        <title>Tipp</title>
+        <para><application>Vier gewinnt</application> passt die Größe des Hintergrundbildes automatisch an, falls es nicht zum Murmelsatz passt. Das bedeutet, dass Sie »kleine« und »große« Versionen Ihres Themas erstellen können, die beide das gleiche Hintergrundbild verwenden, wobei Sie lediglich eine kleine und eine große Version Ihres Murmelsatzes benötigen.</para>
+      </tip>
+
+      <para>So, nun haben Sie einen Murmelsatz und vielleicht ein dazu passendes Hintergrundbild erstellt. Im nächsten Schritt geht es darum, alles an der richtigen Stelle zu platzieren.</para>
+
+    </sect2>
+
+
+    <sect2 id="directories">
+
+      <title>Zusammenfügen</title>
+
+      <para>Im letzten Schritt legen Sie Ihr(e) Bild(er) dort ab, wo <application>Vier gewinnt</application> sie auch finden kann. Sie können sie im Installationsordner von <application>Vier gewinnt</application> speichern, dessen Ort systemabhängigi ist. Vielleicht wäre ihr persönlicher Ordner aber eine bessere Idee.</para>
+
+      <para>Legen Sie einen Ordner namens <filename class="directory">~/.gnect</filename> an, sowie darin einen Unterordner <filename class="directory">~/.gnect/pixmaps</filename> . Diese Bezeichnungen sind zwingend vorgeschrieben, denn <application>Vier gewinnt</application> schaut nur genau dort nach.</para>
+
+      <para>Kopieren Sie Ihr(e) Bild(er) in den Pixmap-Ordner.</para>
+
+      <para>Falls Sie <application>Vier gewinnt</application> aus einer Befehlszeile starten, erhalten Sie Anhaltspunkte zu irgendwelchen Problemen, die im Zusammenhang mit Ihrem neuen Thema auftreten. Falls es keine Probleme gibt, wird Ihr neues Thema von nun an im <interface>Einstellunsdialog</interface> aufgelistet.</para>
+
+      <para>Viel Spaß!</para>
+
+    </sect2>
+
+
+  </sect1>
+
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Netzwerkspiele</title>
+  <para>Vier-gewinnt unterstützt den Netzwerk-Mehrspielermodus für Spiele, die von <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink> bereitgestellt werden. Wenn Sie sich im Internet mit einem Vier-gewinnt-Server verbinden, können Sie im Mehrspieler-Modus andere Spieler herausfordern. Über Neuigkeiten, Aktualisierungen und eine Liste der Server, mit denen Sie sich verbinden können, informiert Sie die <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">Website der GNOME-Spiele</ulink>.</para>
+  <para>Um Vier-gewinnt im Mehrspieler-Modus zu starten, wählen Sie <menuchoice><guimenu>Spiel</guimenu><guimenuitem>Netzwerkspiel</guimenuitem></menuchoice> im Vier-gewinnt-Menü.</para> 
+
+<sect2 id="connecting">
+<title>Verbinden mit einem Vier-gewinnt-Netzwerkserver</title>
+<para>Der Verbindungsdialog von Vier-gewinnt wird beim Start eines Netzwerkspiels angezeigt. Dieser Dialog ermöglicht Ihnen, einen Server für die Verbindung und einen Benutzernamen für die Zeit der Verbindung zum Server auszuwählen.</para>
+
+<para>Es ist möglich, sich entweder über einen Gastzugang oder einen normal registrierten Zugang mit einem Server zu verbinden. Gastzugänge ermöglichen die anonyme Anmeldung, während ein normaler Zugang die Anmeldung mit Ihrem registrierten Benutzernamen erlaubt, der durch das von Ihnen gewählte Passwort geschützt ist.</para>
+
+<para>Die Option <guimenuitem>Gast-Anmeldung</guimenuitem> sollte ausgewählt werden, wenn Sie einen anonymen Gastzugang wünschen. Wenn Sie einen neuen Anmeldezugang anlegen wollen, wählen Sie die Option <guimenuitem>Erstanmeldung</guimenuitem>, mit Benutzername, Passwort und E-Mail-Adresse Ihrer Wahl. Falls Sie bereits einen Zugang angelegt haben, können Sie sich mit der Option <guimenuitem>Normale Anmeldung</guimenuitem> unter Angabe des Benutzernamens und des gewählten Passworts verbinden.</para>
+<para>Um zum Server zu verbinden, klicken Sie auf die Schaltfläche <guimenuitem>Verbinden</guimenuitem>.</para>
+<figure id="connect">
+<title>Der Vier-gewinnt-Netzwerkdialog</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Der Vier-gewinnt-Netzwerkdialog</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Betreten des Spielraumes</title>
+<para>Sobald Sie sich erfolgreich mit einem Server verbunden haben, können Sie wählen, welchen Raum Sie betreten wollen. Um Vier-gewinnt im Mehrspieler-Modus zu spielen, wählen sie einen Vier-gewinnt-Raum. Wenn Sie ein eigenes Spiel bereitstellen wollen, klicken Sie auf den Knopf »Starten«. Dies erstellt einen neuen Spieltisch, an dem andere Spieler Platz nehmen können, um gegen Sie zu spielen. Falls einige andere Spiele bereits gestartet wurden, doppelklicken Sie auf eines der vorhandenen Spiele, um daran teilzunehmen. Die Liste der Spieltische rechts zeigt Ihnen die Anzahl der verfügbaren Plätze, das heißt die Anzahl der Spieler, die noch an diesem Spieltisch teilnehmen können.</para>
+<figure id="tables">
+<title>Der Netzwerkdialog von Vier-gewinnt erlaubt Ihnen, einem Spiele-Raum beizutreten, um andere Spieler zu finden.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Der Netzwerkdialog von Vier-gewinnt erlaubt Ihnen, einem Spiele-Raum beizutreten, um andere Spieler zu finden.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>Wenn Sie einen neuen Spieltisch für Vier-gewinnt-Spiele erstellen, wird ein Einstellungsdialog angezeigt, der Ihnen die Anpassung des Spiels ermöglicht, wie beispielsweise die Mindestanzahl von Spielern für dieses Spiel. Wenn diese Anzahl an Spielern Platz genommen hat, ist es keinen weiteren Spielern erlaubt, an diesem Tisch Platz zu nehmen.</para>
+<para>Es ist möglich, mit anderen Spielern in Netzwerkspielen Sofortnachrichten auszutauschen. Bitten Sie um Ratschläge oder Hilfe für die Spiele, aber seien Sie bitte höflich gegenüber anderen Spielern.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Warten, bis andere Spieler den Raum betreten</title>
+<para>Sobald Sie erfolgreich an einem Spieltisch Platz genommen haben, warten Sie bitte, bis genug Spieler ebenfalls Platz genommen haben. Der Menüeintrag <guimenuitem>Spielerliste</guimenuitem> ermöglicht Ihnen zu sehen, welche Spieler am Spiel teilnehmen wollen. Das Spiel beginnt sofort, wenn die Gesamtzahl der Spieler erreicht ist.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Vier-gewinnt im Mehrspielermodus</title>
+<para>Vier-gewinnt-Spiele im Mehrspielermodus folgen so ziemlich den gleichen Regeln wie gewöhnliche Vier-gewinnt-Spiele, mit dem Unterschied, dass Sie nun gegen menschliche Gegner spielen. Das bedeutet, dass Sie möglicherweise andere Strategien anwenden müssen als bei Computergegnern.</para>
+<para>Wenn einer der Spieler gewonnen hat, endet das Spiel und Sie können zum ursprünglichen Netzwerkspiel-Bildschirm zurückkehren. Dann können Sie ein weiteres süchtig machendes Spiel im Vier-gewinnt-Mehrspieler-Modus beginnen!</para>
+</sect2>
+
+</sect1>
+
+
+
+  <!-- ===== Bugs ============================================== -->
+
+
+  <sect1 id="bugs">
+
+    <title>Bekannte Fehler und Einschränkungen</title>
+
+    <para>Gelegentlich könnte eine Animation beim Abwerfen von Murmeln nicht so geschmeidig aussehen, wie sie sollte.</para>
+
+  </sect1>
+
+
+  <!-- ===== Authors =========================================== -->
+
+
+  <sect1 id="authors">
+
+    <title>Autoren</title>
+
+    <para><application>Vier gewinnt</application> wurde von Timothy Musson (<email>trmusson@ihug.co.nz</email>) und David Neary (<email>bolsh@gimp.org</email>) geschrieben. Viele andere wendeten Zeit auf, um auf vielfältige Weise zu helfen, seit die Arbeit an <application>Vier gewinnt</application> begann.</para>
+    <para>Die <ulink type="http" url="http://www.ce.unipr.it/~gbe/velena.html">Velena-Engine</ulink>, der in <application>Vier gewinnt</application> verborgene Computerspieler, wurde von Bertoletti entwickelt. Wir sind ihm sehr dankbar dafür, dass wir seine Arbeit in unsere Anwendung einbauen durften, ohne die <application>Vier gewinnt</application> kaum lohnenswert wäre.</para>
+    <para>Dieses Handbuch wurde von Timothy Musson geschrieben.</para>
+    <para>Um Fehler zu melden oder einen Vorschlag zur Anwendung <application>Vier gewinnt</application> oder zu diesem Handbuch zu machen, folgen Sie den Anweisungen in diesem <ulink url="ghelp:user-guide?feedback-bugs" type="help">Dokument</ulink>.</para>
+
+
+<!-- For translations: uncomment this:
+
+  <para>
+    Latin translation was done by ME
+    (<email>MYNAME@MYADDRESS</email>). Please send all comments and
+    suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+-->
+
+  </sect1>
+
+
+  <!-- ============= License =================================== -->
+
+
+  <sect1 id="license">
+
+    <title>Lizenz</title>
+
+    <para>Dieses Programm ist freie Software; Sie können es weiterverbreiten und/oder ändern unter den Bedingungen der <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> wie sie von der <ulink type="http" url="http://www.fsf.org">Free Software Foundation</ulink> veröffentlicht wurde; entweder in Version 2 der Lizenz oder (nach Ihrer Wahl) jeder neueren Version.</para>
+
+    <para>Dieses Programm wird in der Hoffnung verbreitet, dass es nützlich ist, aber OHNE JEGLICHE GARANTIE; auch ohne eine GEBRAUCHSTAUGLICHKEITSGARANTIE oder eine Garantie über die TAUGLICHKEIT FÜR EINEN BESTIMMTEN ZWECK. Lesen Sie die <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> für genauere Hinweise.</para>
+
+    <para>Eine Kopie der <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> ist im Anhang des <citetitle>GNOME Benutzerhandbuchs</citetitle> enthalten. Sie können außerdem eine Kopie der <citetitle><ulink type="help" url="gnome-help:gpl">GNU General Public License</ulink></citetitle> von der Free Software Foundation erhalten, indem Sie auf <ulink type="http" url="http://www.fsf.org">ihre Internetseite</ulink> gehen oder an die <address>Free Software Foundation, Inc.<street>51 Franklin Street, Fifth Floor</street><city>Boston</city>, <state>MA</state><postcode>02111-1301</postcode><country>USA</country></address> schreiben.</para>
+
+  </sect1>
+
+</article>

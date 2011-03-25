@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY NETWORKGAMES SYSTEM "network-games.xml">
+<!ENTITY appversion "2.20">
+<!ENTITY manrevision "2.20">
+<!ENTITY date "May 2007">
+<!ENTITY app "<application>Nibbles</application>">
+<!ENTITY appname "Nibbles">
+<!ENTITY VERSION "2.20">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ca">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+ <articleinfo>
+  <title>Manual del <application>Nibbles</application></title>
+
+    <abstract role="description">
+      <para>El Nibbles és un joc de cucs per al GNOME. El jugador controla un cuc en 2D mentre intenta aconseguir menjar. Aconseguir menjar dóna punts, però xocar contra qualsevol cosa en provoca la pèrdua. Quan s'han perdut tots els punts, el jugador perd.</para>
+    </abstract>
+
+  <copyright>
+   <year>2000</year>
+   <holder>Kevin Breit</holder>
+  </copyright><copyright><year>2008</year><holder>Joan Duran (jodufi@gmail.com)</holder></copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Projecte de documentació del GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Teniu permís per a copiar, distribuir i/o modificar aquest document, sota els termes de la Llicència de documentació lliure GNU (GFDL), versió 1.1 o qualsevol versió publicada posteriorment per la Free Software Foundation, sense seccions invariants, sense texts de portada i sense texts de contraportada. Podeu trobar una còpia de la GFDL en aquest <ulink type="help" url="ghelp:fdl">enllaç</ulink> o en el fitxer COPYING-DOCS distribuït amb aquest manual.</para>
+         <para>Aquest manual forma part d'una col·lecció de manuals del GNOME distribuïts sota la GFDL. Si voleu distribuir aquest manual independentment de la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal com es descriu a la secció 6 de la llicència.</para>
+
+	<para>Molts dels noms que les empreses utilitzen per a distingir els seus productes i serveis es consideren marques comercials. Quan aquests noms apareguin en qualsevol documentació del GNOME, si els membres del Projecte de documentació del GNOME han estat avisats pel que fa a les marques, els noms apareixeran en majúscules o amb les inicials en majúscules.</para>
+
+	<para>EL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT S'OFEREIXEN SOTA ELS TERMES DE LA LLICÈNCIA DE DOCUMENTACIÓ LLIURE DE GNU, TENINT EN COMPTE QUE: <orderedlist>
+		<listitem>
+		  <para>EL DOCUMENT S'OFEREIX «TAL COM ÉS», SENSE CAP TIPUS DE GARANTIA, NI EXPLÍCITA NI IMPLÍCITA; AIXÒ INCLOU, SENSE LIMITAR-S'HI, LES GARANTIES QUE EL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT NO TINGUI DEFECTES, SIGUI COMERCIALITZABLE, SIGUI ADEQUAT PER A UN ÚS CONCRET O NO INFRINGEIXI CAP LLEI. TOT EL RISC PEL QUE FA A LA QUALITAT, EXACTITUD I RENDIMENT DEL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT ÉS VOSTRE. EN CAS QUE EL DOCUMENT RESULTÉS DEFECTUÓS EN QUALSEVOL ASPECTE, VÓS (NO PAS L'ESCRIPTOR INICIAL, L'AUTOR O CAP ALTRE COL·LABORADOR) ASSUMIU TOT EL COST DE MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA; I </para>
+		</listitem>
+		<listitem>
+		  <para>EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGUI PER AGREUJAMENT (INCLOENT-HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR ORIGINAL, QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA VERSIÓ MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN RESPONSABLES DAVANT DE NINGÚ PER CAP DANY DIRECTE, INDIRECTE, ESPECIAL, ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITAR-S'HI, ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FEINA, FALLADA O MALFUNCIONAMENT DE L'ORDINADOR, O QUALSEVOL ALTRA PÈRDUA O DANY RELACIONAT AMB L'ÚS DEL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT, FINS I TOT SI S'HA INFORMAT AQUESTA PART DE LA POSSIBILITAT D'AQUESTS DANYS.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Kevin</firstname> 
+	<surname>Breit</surname> 
+	<affiliation> 
+	  <orgname>Projecte de documentació del GNOME</orgname> 
+	  <address> <email>battery841@mypad.com</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+    <revhistory>
+      <revision> 
+	<revnumber>Manual del Nibbles (versió 2.20)</revnumber> 
+	<date>Maig de 2007</date> 
+	<revdescription> 
+	  <para role="author">Kevin Breit <email>battery841@mypad.com</email></para>
+	  <para role="publisher">Projecte de documentació del GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Aquest manual descriu la versió 2.20 del Nibbles.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Comentaris</title> 
+      <para>Per a informar d'un error o fer algun suggeriment quant al <application>Nibbles</application> o aquest manual, seguiu les indicacions a la <ulink url="ghelp:user-guide?feedback-bugs" type="help">pàgina de comentaris del GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+ </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Nibbles</primary> 
+  </indexterm> 
+
+ <!-- ============= Document Body ============================= -->
+
+ <!-- ============= Introduction ============================== -->
+ <sect1 id="intro">
+  <title>Introducció</title>
+
+  <para>El <application>Nibbles</application> és un joc on l'usuari controla un cuc. Aquest es mou al voltant del tauler menjant diamants mentre evita les parets que hi ha al voltant.</para>
+
+  <para>Per a executar el <application>Nibbles</application>, seleccioneu <menuchoice><guisubmenu>Jocs</guisubmenu><guimenuitem>Nibbles</guimenuitem></menuchoice> en el menú <guimenu>Aplicacions</guimenu> o introduïu <command>gnibbles</command> en la línia d'ordres.</para>
+
+  <para>El <application>Nibbles</application> està inclòs en el paquet <filename>gnome-games</filename>, el qual és part de l'entorn d'escriptori GNOME. Aquest document descriu la versió 2.20 del <application>Nibbles</application>.</para>
+ </sect1>
+
+ <sect1 id="objective">
+ <title>Objectiu del Nibbles</title>
+  <para>L'objectiu del Nibbles és bastant senzill. Heu de controlar el cuc i si aquest xoca contra una paret o contra ell mateix, mor. Teniu deu vides abans que s'acabi la partida. Guanyareu quan supereu la vostra puntuació màxima (o d'un amic) o en completar tots els nivells. També és possible jugar contra cucs amb intel·ligència artificial.</para>
+  <para>El Nibbles també admet partides <link linkend="network-games">multijugador</link> amb fins a sis jugadors humans en mode cadira-calenta o en xarxa.</para>
+ </sect1>
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+ <sect1 id="usage">
+  <title>Utilitzar el Nibbles</title>
+  <para>El <application>Nibbles</application> és un joc fàcil de jugar. Les úniques tecles que necessiteu són les tecles de cursor.</para>
+
+  <!-- ========= Basic Usage =========================== -->
+<sect2 id="mainwin">
+<title>Utilització bàsica</title>
+<para>En iniciar el <application>Nibbles</application> s'obrirà la <interface>finestra principal</interface> com es mostra a sota. <figure id="intro-fig">
+<title>Finestra d'introducció del Nibbles</title>
+<screenshot>
+ <mediaobject> 
+    <imageobject>
+<imagedata fileref="figures/intro.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Finestra d'introducció del Nibbles.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure></para>
+<para>Per a iniciar una partida, seleccioneu <menuchoice><guimenu>Partida</guimenu><guimenuitem>Nova</guimenuitem></menuchoice>.</para>
+<para>Quan s'inicia la partida, el cuc sortirà en la banda esquerra de la pantalla. Podeu utilitzar la fletxa amunt per a fer que el cuc vagi cap amunt. Utilitzeu la fletxa dreta per a girar el cuc a la dreta, la fletxa esquerra per a girar el cuc a l'esquerra i la fletxa avall per a girar el cuc avall. <figure id="gameplay">
+<title>El Nibbles en una partida</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/playing.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>El Nibbles en una partida.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure></para>
+</sect2>
+
+<!-- This section should also describe main elements of graphic user
+interface, such as menus and buttons, unless this description
+is too long - in that case, it should be moved to a separate
+section. For example -->
+
+
+<!-- ========= Menus =========================== -->
+<sect2 id="menubar">
+   <title>Menús</title>
+   <para>La barra de menú, situada a la part superior de la <interface>finestra principal</interface>, conté els menús següents:</para>
+
+   <variablelist>
+    <varlistentry>
+     <term><guimenu>Partida</guimenu></term>
+     <listitem>
+      <para>Aquest menú conté: <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+N</keysym></shortcut><guimenuitem>Nova</guimenuitem></menuchoice> Inicia una partida nova del <application>Nibbles</application>.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl+G</keysym></shortcut><guimenuitem>Joc en xarxa</guimenuitem></menuchoice> Inicia una partida multijugador en xarxa utilitzant el GGZ Gaming Zone.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Puntuacions</guimenuitem></menuchoice> Mostra les puntuacions màximes.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Fes una pausa</guimenuitem></menuchoice> Farà una pausa a la partida. Feu clic en la opció del menú <quote>Fes una pausa</quote> per a reprendre la partida.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Acaba el joc</guimenuitem></menuchoice> Acaba la partida actual i torna a la pantalla del títol.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ctrl-Q</keysym></shortcut><guimenuitem>Surt</guimenuitem></menuchoice> Surt de l'aplicació.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+   <varlistentry>
+     <term><guimenu>Visualitza</guimenu></term>
+     <listitem>
+      <para>Aquest menú conté: <itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>Pantalla completa</guimenuitem></menuchoice> Commuta la finestra de partida a pantalla completa.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Paràmetres</guimenu></term>
+     <listitem>
+      <para>Aquest menú conté: <itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>Preferències</guimenuitem></menuchoice> Obre la finestra per a editar les <link linkend="prefs">preferències</link>.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Ajuda</guimenu></term>
+     <listitem>
+      <para>Aquest menú conté: <itemizedlist>
+        <listitem>
+          <para><menuchoice><shortcut><keysym>F1</keysym></shortcut><guimenuitem>Continguts</guimenuitem></menuchoice> Mostra aquest manual.</para>
+         <para><guimenuitem>Quant a</guimenuitem> Obre el diàleg <interface>Quant a</interface> que mostra informació bàsica quant al <application>Nibbles</application>, com el nom dels autors i el número de versió de l'aplicació.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+  </sect2>
+  <sect2 id="diamonds">
+  <title>Diamants</title>
+   <para>El <application>Nibbles</application> té molts tipus de diamants diferents diamants per a menjar. Cada un té un color diferent i fa funcions diferents. Només es garanteix la disponibilitat del diamant púrpura per a menjar-lo (de fet, us l'heu de menjar per a finalitzar el nivell). Els altres diamants són bonificacions, però només apareixen per un període de temps curt. Us deixem descobrir les bonificacions que proporcionen cada color, però tots afecten a la puntuació, la llargada del cuc o ambdós. Vigileu quan aneu a a buscar els diamants amb bonificació, no us oblideu dels diamants ordinaris que necessiteu per a finalitzar el nivell.</para>
+  </sect2>   
+ </sect1>
+
+
+ <!-- ============= Customization ============================= -->
+ <sect1 id="prefs">
+  <title>Personalització</title>
+  <para>Per a canviar els paràmetres de l'aplicació, seleccioneu <menuchoice><guimenu>Paràmetres</guimenu><guimenuitem>Preferències</guimenuitem></menuchoice>. Això obre el diàleg de <interface>Preferències</interface>. Totes les preferències s'apliquen i es desen automàticament quan es canvien.</para>
+
+  <figure id="game-prefs">
+    <title>Pestanya de preferències de la partida</title>
+    <screenshot>
+       <mediaobject> 
+    <imageobject>
+      <imagedata fileref="figures/game.png" format="PNG" srccredit="Kevin Breit"/>
+          </imageobject>
+    <textobject> 
+      <phrase>Pestanya de preferències de la partida.</phrase> 
+    </textobject> 
+  </mediaobject>
+    </screenshot>
+  </figure>
+
+  <para>Les propietats en la pestanya <guilabel>Partida</guilabel> són: <variablelist>
+    <varlistentry>
+    <term>Velocitat</term>
+    <listitem>
+     <para>Controla la velocitat del cuc.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Juga els nivells en ordre aleatori</term>
+    <listitem>
+     <para>Seleccionant-ho fa que l'avanç de nivell sigui en ordre aleatori.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Habilita les bonificacions falses</term>
+    <listitem>
+     <para>Quan s'habilita, permet que hi hagi dos diamants blaus a la pantalla al mateix temps. Un dels diamants us fa encongir enlloc de créixer quan us el mengeu.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Habilita el so</term>
+     <listitem>
+      <para>Controla la utilització del so en el joc.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Nivell inicial</term>
+     <listitem>
+      <para>En quin nivell es comença. Utilitzeu aquesta opció si voleu saltar immediatament a un nivell de competició predeterminat.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Número de jugadors humans</term>
+     <listitem>
+      <para>Hi ha espai fins a sis jugadors humans.</para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+    <term>Número de jugadors IA</term>
+     <listitem>
+      <para>Hi ha espai fins a sis jugadors IA. Tingueu en compte que el número total de jugadors humans i IA ha de ser inferior o igual a sis.</para>
+     </listitem>
+    </varlistentry>
+   </variablelist></para>
+  <para><figure id="worm-prefs">
+    <title>Pestanya de preferències de cuc</title>
+    <screenshot>
+       <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/worm_op.png" format="PNG" srccredit="Kevin Breit"/>
+         </imageobject>
+    <textobject> 
+      <phrase>Pestanya de preferències de cuc.</phrase> 
+    </textobject> 
+  </mediaobject>
+    </screenshot>
+  </figure> Les propietats de les pestanyes <guilabel>Cuc 1</guilabel> fins a <guilabel>Cuc 6</guilabel> us permeten establir les preferències individuals per als diferents cucs. <variablelist>
+    <varlistentry>
+    <term>Controls del teclat</term>
+    <listitem>
+     <para>Aquesta llista us permet canviar els controls del teclat per a un cuc en concret. Per a canviar un control, feu doble clic en l'entrada apropiada i premeu la tecla que voleu utilitzar per a aquest.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Utilitza un moviment relatiu</term>
+    <listitem>
+     <para>Més que deixar que la fletxa esquerra enviï al cuc a la part esquerra de la pantalla, la dreta a la part dreta i seguint així, les tecles esquerra i dreta fan que el cuc giri a l'esquerra o a la dreta. Per exemple, si el cuc es mou cap a l'esquerra i premeu la fletxa esquerra farà que giri el cap cap a la part inferior de la pantalla.</para>
+    </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Color del cuc</term>
+    <listitem>
+     <para>Personalitzeu el color del cuc per a poder-lo diferenciar dels adversaris en el mode multijugador.</para>
+    </listitem>
+    </varlistentry>
+   </variablelist></para>
+
+ </sect1>
+
+<!-- ============= Network games  ===============================================
+ This doc is common to gnome-games. The file is pulled in from gnibbles directory
+ as a SVN symlink, and included here. Therefore translators only have to translate 
+ the network stuff once, instead of one time for each game. 
+ ================================ -->
+
+  <!-- ============= Network Games Documentation ============================= 
+   This documentation is written so that is can be reused for all the 
+   gnome-games which have network multiplayer support. Therefore no direct
+   references to a specific game should be made. Further, this file is currently
+   included in the various games as a SVN symlink. The figures can also
+   be included as SVN symlinks to avoid duplication of the same images.
+  -->
+
+ <sect1 id="network-games">
+  <title>Jocs en xarxa</title>
+  <para>El Nibbles admet partides en xarxa multijugador, proporcionat per <ulink type="http" url="http://www.ggzgamingzone.org">GGZ Gaming Zone</ulink>. En connectar a un servidor de Nibbles d'Internet, podeu desafiar altres jugadors en partides multijugador. Per a obtenir notícies, actualitzacions i una llista de servidors on connectar-vos, vegeu el <ulink type="http" url="http://www.gnome.org/projects/gnome-games/">lloc web del gnome-games</ulink>.</para>
+  <para>Per a iniciar la partida multijugador del Nibbles, seleccioneu <menuchoice><guimenu>Partida</guimenu><guimenuitem>Joc en xarxa</guimenuitem></menuchoice> en el menú del Nibbles.</para> 
+
+<sect2 id="connecting">
+<title>Connectar el Nibbles a un servidor de la xarxa</title>
+<para>El diàleg de connexió del Nibbles es mostra quan s'inicia una partida en xarxa nova. Aquest diàleg us permet seleccionar un servidor on connectar-vos, i especificar el nom d'usuari que tindreu en connectar-vos-hi.</para>
+
+<para>És possible connectar-vos a un servidor amb un compte de convidat o un compte registrat normal. Els comptes de convidats us permeten entrar anònimament, mentre que si entreu amb un compte normal us permet reservar el nom d'usuari que està protegit per la contrasenya que seleccioneu.</para>
+
+<para>Hauríeu de seleccionar l'opció <guimenuitem>Entrada com a convidat</guimenuitem> si voleu un compte de convidat anònim. Si voleu crear un compte d'entrada nou, seleccioneu l'opció <guimenuitem>Entrada per primera vegada</guimenuitem>, amb el nom d'usuari, contrasenya i correu electrònic que vulgueu. Si ja heu creat un compte, us podeu connectar si seleccioneu l'opció <guimenuitem>Entrada normal</guimenuitem> i introduïu el nom d'usuari i la contrasenya que heu triat.</para>
+<para>Per a connectar-vos a un servidor, feu clic en el botó <guimenuitem>Connecta</guimenuitem>.</para>
+<figure id="connect">
+<title>El diàleg de connexió a la xarxa del Nibbles.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/connect.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>El diàleg de connexió a la xarxa del Nibbles.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+</sect2>
+
+<sect2 id="joining">
+<title>Entrada a una sala de joc</title>
+<para>Quan us hàgiu connectat a un servidor, podeu seleccionar a quina sala de joc voleu entrar. Per a jugar una partida multijugador del Nibbles, seleccioneu la sala del Nibbles. Si voleu ser l'amfitrió d'una partida, feu clic en el botó Llança. Creareu un tauler nou on els altres jugadors poden jugar contra vos. Si hi ha altres partides iniciades, podeu fer doble clic en un tauler de partida existent per a entrar-hi. La llista de taulers de partides a la dreta mostra el número de seients disponibles, que significa el número de jugadors que poden entrar al tauler de partida.</para>
+<figure id="tables">
+<title>Aquest diàleg de xarxa del Nibbles us permet entrar a una sala de joc per a cercar altres jugadors.</title>
+<screenshot>
+  <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/tables.png" format="PNG" srccredit="Andreas Røsdal"/>
+    </imageobject>
+    <textobject> 
+      <phrase>Aquest diàleg de xarxa del Nibbles us permet entrar a una sala de joc per a cercar altres jugadors.</phrase> 
+    </textobject> 
+  </mediaobject>
+</screenshot>
+</figure>
+<para>Quan creeu un tauler nou per a partides del Nibbles, es mostrarà un diàleg de preferències que us permet personalitzar la partida, com ara establir el número mínim de jugadors per a la partida. Quan el número total de seients s'hagin ocupat, no es permetrà entrar a més jugadors en aquest tauler de partida.</para>
+<para>És possible fer un xat amb altres jugadors en els jocs en xarxa. Demaneu consell o ajuda mentre jugueu les partides, però sigueu educat amb els altres jugadors.</para>
+</sect2>
+
+<sect2 id="pregame">
+<title>Espera que els altres jugadors entrin a la partida</title>
+<para>Quan hàgiu entrat a un tauler de joc, heu d'esperar fins que hagin entrat suficients jugadors al tauler. L'element de menú <guimenuitem>Llista de jugadors</guimenuitem> us permet veure una llista de jugadors que han entrat a la partida. La partida començarà de seguida que s'hagi aconseguit el número total de jugadors.</para>
+</sect2>
+
+<sect2 id="playing-multiplayer">
+<title>Jugar partides multijugador en el Nibbles</title>
+<para>Les partides multijugador en el Nibbles tenen més o menys les mateixes regles que una partida normal del Nibbles, excepte que esteu jugant contra jugadors humans. Això significa que possiblement altres estratègies siguin millors que les utilitzades contra jugadors d'intel·ligència artificial.</para>
+<para>Quan un jugador hagi guanyat, la partida finalitza i podeu tornar a la pantalla inicial de joc en xarxa. Llavors podeu jugar una altra partida addictiva multijugador del Nibbles.</para>
+</sect2>
+
+</sect1>
+
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Autors</title>
+  <para>En Sean MacIsaac (email&gt;sjm@acm.org</para> 
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Llicència</title>
+  <para>Aquest programa és programari lliure; podeu redistribuir-lo i/o modificar-lo sota els termes de la <ulink type="help" url="gnome-help:gpl"><citetitle>Llicència pública general de GNU</citetitle></ulink> tal com publica la Free Software Foundation; tant en la versió 2 de la llicència, o (a la vostra opció) una versió posterior.</para>
+  <para>Aquest programa es distribueix amb l'esperança de que sigui útil, però SENSE CAP GARANTIA; fins i tot sense la garantia implícita de COMERCIALITZACIÓ o ADEQUACIÓ A UN ÚS CONCRET. Per a més detalls vegeu la <citetitle>Llicència pública general de GNU</citetitle>.</para>
+  <para>S'inclou una còpia de la <citetitle>Llicència pública general de GNU</citetitle> en l'apèndix de la <citetitle>Guia d'usuaris del GNOME</citetitle>. També podeu obtenir una copia de la <citetitle>Llicència pública general de GNU</citetitle> de la Free Software Foundation visitant el <ulink type="http" url="http://www.fsf.org">seu lloc web</ulink> o escrivint a <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

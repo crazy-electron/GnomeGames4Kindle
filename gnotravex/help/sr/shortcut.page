@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="shortcut" xml:lang="sr">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Користите тастатуру да бисте играли игру.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-21" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Пречице на тастатури</title>
+
+  <section id="shortcuts-game">
+    <title>Пречице у игри</title>
+    <p>Следећа табела групише најкорисније пречице за играње <app>Гномове слагалице</app>.</p>
+    <table frame="all" rules="rows cols">
+      <tr>
+        <td><p>Пречица</p></td><td><p>Опис</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>N</key></keyseq></p>
+        </td>
+        <td>
+          <p>Покреће нову игру</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><key>Pause</key></p>
+        </td>
+        <td>
+          <p>Паузира или наставља већ паузирану игру.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            <keyseq><key>Ctrl</key><key>Горе</key></keyseq>
+          </p>
+        </td>
+        <td>
+          <p>Помера све делове у левој кутији за једно место горе.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Доле</key></keyseq></p>
+        </td>
+        <td>
+          <p>Помера све делове у левој кутији за једно место доле.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Лево</key></keyseq></p>
+        </td>
+        <td>
+          <p>Помера све делове у левој кутији за једно место лево</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Десно</key></keyseq></p>
+        </td>
+        <td>
+          <p>Помера све делове у левој кутији за једно место десно.</p>
+        </td>
+      </tr>
+    </table>
+  </section>
+</page>

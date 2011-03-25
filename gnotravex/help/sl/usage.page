@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="usage" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#play" group="one"/>
+    <link type="seealso" xref="gameplay"/>
+    <desc>Kako igrati <app>GNOME Tetravex</app>.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <credit type="author">
+      <name>Rob Bradford</name>
+      <email>robster@debian.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>    
+  </info>
+
+  <title>Igrajte <app>GNOME Tetravex</app></title>
+
+  <section id="usage-basic">
+    <title>Osnovna uporaba</title>
+    <p>Okno igre je razdeljeno na dve polji: eno na desni strani okna vsebuje kose, ki jih je treba urediti; polje na levi strani je prazno. V levem poljuje treba urediti in premikati vse kose z desnega polja. vsak kos je razdeljen v štiri  majhne trikotnike, ki vsebujejo število.</p>
+    <p>Cilj te igre je postaviti te kose tako, da sta drugo poleg drugega le dve enaki števili.</p>
+    <p>Kosov ni mogoče postaviti tako, da sta različni števili drugo poleg drugega.</p>
+    <p>Igra je dokončana, ko boste postavili vse kose na njihova prava mesta.</p>
+    <note>
+      <p>Ko zaženete <app>GNOME Tetravex</app>, se bo igra nemudoma začela in čas bo začel teči.</p>
+    </note>
+
+  </section>
+  
+  <section id="usage-video">
+    <title>Prikaz videa</title>
+    <p>Ta kratek video prikazuje kako igra deluje in kakšni so mogoči premiki.</p>
+    <p>
+      <media type="video" mime="application/ogg" src="figures/gnotravex-video.ogv">Enostaven prikaz igre</media>
+    </p>
+  </section>
+</page>

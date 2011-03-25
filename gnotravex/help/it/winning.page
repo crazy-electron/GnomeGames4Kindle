@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="winning" xml:lang="it">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="hint"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Semplici suggerimenti su come poter vincere al gioco.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-26" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  
+  <title>Vincere a <app>GNOME Tetravex</app></title>
+  
+  <note>
+    <p>I suggerimenti che seguono non garantiscono di vincere una partita, sono da considerarsi dei semplici aiuti.</p>
+  </note>
+  
+  <section id="winning-single">
+    <title>Cercare un numero unico</title>
+    <p>Quando viene avviata una nuova partita, cercare di trovare un numero unico, un numero privo di altri numeri simili che possano essere posizionati vicino.</p>
+    <p>Se si riesce a trovare un numero simile, quel pezzo è un valido candidato per essere il pezzo di partenza poiché è noto dove dovrà essere posizionato.</p>
+    <p>Notare che più grande è la dimensione della tavola di gioco, più difficile è trovare un tale numero.</p>
+  </section>
+  <!-- This is just an idea... need to think about it... -->
+  <section id="winning-share">
+    <title>Avete un suggerimento da condividere?</title>
+    <p>Se avete un suggerimento riguardo <app>GNOME Tetravex</app> o un qualsiasi altro gioco di GNOME, scrivete all'indirizzo gnome-doc-list@gnome.org. I suggerimenti verranno inseriti in questa pagina!</p>
+  </section>
+</page>

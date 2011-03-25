@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="license" xml:lang="el">
+  
+  <info>
+    <link type="seealso" xref="index"/>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-28" status="draft"/>
+    <desc>Νομικές πληροφορίες</desc>
+  </info>
+
+  <title>Άδεια χρήσης</title>
+  <p>Αυτό το έργο διανέμεται υπό την άδεια CreativeCommons Attribution-Share Alike 3.0 Unported.</p>
+  <p>Μπορείτε ελεύθερα:</p>
+  <terms>
+    <item>
+      <title><em>Να μοιραστείτε</em></title>
+      <p>Να αντιγράψετε, να διανείμετε και να μεταδόσετε το έργο.</p>
+    </item>
+    <item>
+      <title><em>Να τροποιήσετε</em></title>
+      <p>Να προσαρμόσετε το έργο.</p> 
+    </item>
+  </terms>
+  <p>Υπό τους εξής όρους:</p>
+  <terms>
+    <item>
+      <title><em>Απόδοση</em></title>
+      <p>Πρέπει να αναφέρετε την πηγή του έργου με τον τρόπο που καθορίζεται από το δημιουργό του ή αυτόν που παρέχει την άδεια (αλλά όχι με τρόπο που να εννοεί ότι εγκρίνουν εσάς ή τη δική σας χρήση του έργου).</p>
+    </item>
+    <item>
+      <title><em>Παρόμοια διανομή</em></title>
+      <p>Αν μετατρέψετε, μετασχηματίσετε ή επεκτείνετε αυτό το έργο, μπορείτε να αναδιανείμετε το αποτέλεσμα υπό την ίδια, παρόμοια ή συμβατή άδεια χρήσης.</p>
+    </item>
+  </terms>
+  <p>Για το πλήρες κείμενο της άδειας, δείτε τον <link href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">ιστότοπο CreativeCommons</link>, ή διαβάστε όλη την <link href="http://creativecommons.org/licenses/by-sa/3.0/">Πράξη Commons</link>.</p>
+</page>

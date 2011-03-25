@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "June 2004">
+<!ENTITY app "<application>Quadrapassel</application>">
+<!ENTITY appname "Quadrapassel">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="fi">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title><application>Quadrapassel</application> - Käyttöopas</title>
+
+    <abstract role="description">
+      <para>Quadrapassel on GNOMEn versio Tetriksestä, klassisesta 4-osaisten palikoiden pudottelupelistä. Pelaajan täytyy pyöritellä putoavat palikat toistensa väliin siten, että niistä syntyy aukoton vaakasuora rivi. Rivi katoaa ja pelaaja saa pisteitä.</para>
+    </abstract>
+
+    <copyright>
+      <year>2004</year>
+      <holder>Angela Boyle</holder>
+    </copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOMEn dokumentointiprojekti</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Tätä asiakirjaa saa kopioida, jakaa edelleen ja/tai muokata Free Software Foundationin julkaiseman GNU Free Documentation License -lisenssin (GFDL) version 1.1 tai valinnaisesti myöhemmän version mukaisesti, ilman vaatimuksia muuttamattomista osioista ja etu- tai takakansiteksteistä. Kopion GFDL:stä voi nähdä napsauttamalla <ulink type="help" url="ghelp:fdl">tätä linkkiä</ulink>, tai lukemalla ohjeen mukana toimitetun COPYING-DOCS-nimisen tiedoston.</para>
+         <para>Tämä käyttöopas on osa GNOMEn GFDL-lisenssin alla julkaisemaa käyttöopaskokoelmaa. Jos haluat jakaa tätä käyttöohjetta erillään kokoelmasta, voit tehdä niin lisäämällä kopion lisenssistä käyttöoppaaseen, kuten lisenssin luvussa 6 kerrotaan.</para>
+
+	<para>Monet yritysten käyttämät tuotteiden ja palveluiden nimet ovat omistettuja tavaramerkkejä. Kun näitä nimiä näkyy GNOMEn dokumentaatiossa ja GNOME Documentation Project:in jäsenet ovat korostaneet näitä tavaramerkkejä, nimet on kirjoitettu isolla alkukirjaimella tai kokonaan isoilla kirjaimilla.</para>
+
+	<para>ASIAKIRJA SEKÄ MUOKATUT VERSIOT ASIAKIRJASTA TARJOTAAN GNU FREE DOCUMENTATION LICENSEN EHDOIN SEKÄ YMMÄRTÄEN ETTÄ: <orderedlist>
+		<listitem>
+		  <para>ASIAKIRJA TARJOTAAN SELLAISENAAN, ILMAN MINKÄÄNLAISTA KIRJATTUA TAI KONKLUDENTTISTA RAJATONTA TAKUUTA ASIAKIRJAN TAI SEN MUOKATUN VERSION VIRHEETTÖMYYDESTÄ, SOPIVUUDESTA KAUPALLISEEN KÄYTTÖÖN TAI TIETTYYN KÄYTTÖTARKOITUKSEEN TAI LOUKKAAMATTOMUUDESTA. TÄYSI VASTUU ASIAKIRJAN TAI SEN MUOKATUN VERSION LAADUSTA, TARKKUUDESTA JA TOIMIVUUDESTA ON KÄYTTÄJÄLLÄ. JOS ASIAKIRJA TAI SEN MUOKATTU VERSIO OSOITTAUTUU JOLLAKIN TAVALLA VIRHEELLISEKSI, KÄYTTÄJÄ (EI ALKUPERÄINEN KIRJOITTAJA TAI MUU TEKIJÄ) VASTAA PALVELUJEN, KORJAUSTEN TAI OIKAISUJEN KUSTANNUKSISTA. TÄMÄ VASTUUVAPAUSLAUSEKE ON EROTTAMATON OSA LISENSSIÄ. ASIAKIRJAN TAI SEN MUOKATTUJEN VERSIOIDEN KÄYTTÖ ON SALLITTUA VAIN TÄMÄN VASTUUVAPAUSLAUSEKKEEN NOJALLA; SEKÄ</para>
+		</listitem>
+		<listitem>
+		  <para>MISSÄÄN OLOSUHTEISSA TAI MINKÄÄN OIKEUSLAITOKSEN ALAISUUDESSA, NIIN OIKEUSLOUKKAUKSISSA (MUKAAN LUKIEN HUOLIMATTOMUUS), SOPIMUS TAI MUUTOIN, ASIAKIRJAN TAI SEN MUOKATUN VERSION TEKIJÄ, ALKUPERÄINEN KIRJOITTAJA, KUKAAN AVUSTAJISTA, KUKAAN LEVITTÄJÄ TAIKKA KUKAAN TARJOAJA EI OLE VASTUUSSA KENELLEKÄÄN SUORASTA, EPÄSUORASTA, ERITYISESTÄ, TAPATURMAISESTA TAI VÄLILLISESTÄ VAHINGOSTA SISÄLTÄEN RAJOITUKSETTA VAHINGOT LIIKEARVON MENETYKSESTÄ, TYÖN KESKEYTYMISESTÄ, TIETOKONEVIRHEESTÄ TAI -HÄIRIÖSTÄ TAIKKA MISTÄÄN MUUSTA VAHINGOSTA TAI MENETYKSESTÄ, JOKA ILMENEE TAI LIITTYY ASIAKIRJAN TAI SEN MUOKATUN VERSION KÄYTTÖÖN EDES SILLOIN KUN OSAPUOLTA ON OLLUT TIETOINEN TÄLLAISEN VAHINGON MAHDOLLISUUDESTA.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL),
+and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+	
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Angela</firstname> 
+	<surname>Boyle</surname> 
+	<affiliation> 
+	  <address> <email>anjela@u.washington.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Quadrapassel - Käyttöohje V2.8</revnumber> 
+	<date>Kesäkuu 2004</date> 
+	<revdescription> 
+	  <para role="author">Angela Boyle <email>anjela@u.washington.edu</email></para>
+	  <para role="publisher">GNOMEn dokumentointiprojekti</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Tämä käyttöohje käsittelee Quadrapassel-pelin versiota 2.12</releaseinfo>
+    <!-- The following feedback information only applies to applications
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove this
+    section altogether -->
+    <legalnotice> 
+      <title>Palaute</title> 
+      <para>Voit raportoida vikoja ja tehdä ehdotuksia <application>Quadrapassel</application>-sovellukseen ja tähän käyttöohjeeseen liittyen <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOMEn palautesivulla</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Quadrapassel</primary> 
+  </indexterm>
+
+<!-- ==============================Document Body==================-->
+
+<sect1 id="s1-intro">
+ <title>Johdanto</title>
+
+<!--synopsis of game-->
+  <para><application>Quadrapassel</application> on muunnelma klassisesta palikoidenpudottelupelistä, <application>Tetriksestä</application>. Pelissä pyritään hävittämään palikoita tekemällä niistä aukottomia vaakarivejä. Palikoita on seitsemää eri muotoa, jotka kaikki koostuvat neljän palikan sarjoista: yksi suora, kaksi L:n muotoista, yksi neliö ja kaksi S:n muotoista. Palikat putoilevat keskeltä ylhäältä satunnaisessa järjestyksessä. Tarkoituksena on kääntää ja liikuttaa putoavia palikoita näytöllä ja tehdä niistä täysiä rivejä. Saat pisteitä palikoiden nopeasta pudottamisesta ja täyttyneistä riveistä. Kun pisteesi lisääntyvät, vaikeustaso kasvaa ja palikat putoilevat nopeammin.</para>
+
+<!--running game-->
+   <para>Voit käynnistää <application>Quadrapasselin</application> valitsemalla <menuchoice><guimenu>Sovellukset</guimenu><guisubmenu>Pelit</guisubmenu><guimenuitem>Quadrapassel</guimenuitem></menuchoice> tai kirjoita komentoriville <command>quadrapassel</command>.</para>
+
+<!--part of gnome-games-->
+   <para><application>Quadrapassel</application> on osa <filename>gnome-games</filename>-pakettia, joka on osa GNOME-työpöytäympäristöä. Tämä asiakirja käsittelee <application>Quadrapassel</application> versiota 2.8.</para>
+</sect1>
+
+<sect1 id="s1-playing">
+ <title><application>Quadrapasselin</application> pelaaminen</title>
+  <para>Saat pisteitä kahdella tavalla: täysistä riveistä ja nopeasti pudotetuista palikoista.</para>
+   <sect2 id="s2-block-moving">
+     <title>Palikoiden liikuttaminen</title>
+      <para>Pelin pelaamiseen tarvitset vain nuolinäppäimiä.</para>
+       <itemizedlist>
+        <listitem>
+         <para><keycap>Vasen</keycap> ja <keycap>Oikea</keycap> liikuttavat palikkaa vasemmalle ja oikealle.</para>
+        </listitem>
+        <listitem>
+         <para><keycap>Ylös</keycap> kääntää palikkaa. Oletuskääntymissuunta on vastapäivään. Voit vaihtaa kääntymissuuntaa kohdassa <menuchoice><guimenu>Asetukset</guimenu><guimenuitem>Asetukset</guimenuitem></menuchoice> ja poistamalla valinnan kohdasta <guilabel>Pyöritä palikoita vastapäivään</guilabel>.</para>
+        </listitem>
+        <listitem>
+         <para><keycap>Alas</keycap> ja <keycap>Välilyönti</keycap> liikuttavat palikkaa nopeammin alaspäin. <keycap>Alas</keycap> liikuttaa palikkaa nopeammin kun taas <keycap>välilyönti</keycap> tiputtaa palikan suoraan alas.</para>
+        </listitem>
+       </itemizedlist> 
+   </sect2>
+   <sect2 id="s2-newgame">
+     <title>Uuden pelin aloittaminen</title>
+      <para>Voit aloittaa pelin etenemällä valikoissa <menuchoice><guimenu>Peli</guimenu><guimenuitem>Uusi</guimenuitem></menuchoice>. Palikat alkavat pudota ikkunan yläosan keskiöstä. Oletuksena pelin alussa pelikentällä ei ole palikoita ja seuraavana putoava palikka näkyy ikkunan oikeassa ylänurkassa. <guilabel>Pisteet</guilabel>-kohdassa näkyy keräämäsi pistemäärä, <guilabel>Rivejä</guilabel>-kohdassa täyttyneiden rivien määrä ja <guilabel>Taso</guilabel>-kohdassa nykyisen vaikeustasosi.</para>
+    </sect2>
+    <sect2 id="s2-pausegame">
+     <title>Pelin keskeyttäminen</title>
+      <para>Voit keskeyttää pelin etenemällä valikoissa <menuchoice><guimenu>Peli</guimenu><guimenuitem>Keskeytä</guimenuitem></menuchoice>. Voit keskeyttää pelin vain pelatessasi. Pelin keskeytyksen pituudella ei ole aikarajaa. Jatkaaksesi peliä palaa takaisin <menuchoice><guimenu>Peli</guimenu><guimenuitem>Keskeytä</guimenuitem></menuchoice>.</para>
+    </sect2>
+    <sect2 id="s2-endgame">
+     <title>Pelin lopettaminen</title>
+      <para>Lopettaaksesi pelin sulkematta Quadrapasselin, etene valikoissa <menuchoice><guimenu>Peli</guimenu><guimenuitem>Lopeta peli</guimenuitem></menuchoice>.</para>
+    </sect2>
+    <sect2 id="s2-quitgame">
+     <title><application>Quadrapasselin</application> lopettaminen</title>
+      <para>Sulkeaksesi <application>Quadrapasselin</application> kokonaan, etene valikoissa <menuchoice><guimenu>Peli</guimenu><guimenuitem>Lopeta</guimenuitem></menuchoice>. Jos poistut kesken pelin, peli päättyy ja pisteitäsi ei tallenneta.</para>
+    </sect2>
+    <sect2 id="s2-scoring">
+     <title>Pisteytys</title>
+     <para>Saat pisteitä kahdella tavalla: pudottamalla palikoita nopeasti ja hävittämällä rivejä niitä täyttämällä. Kun hävität rivejä, saat enemmän pisteitä, mutta pudottamalla palikoita nopeasti, saat nopeasti lisää pisteitä. Kun tasosi kasvaa, palikat putoavat nopeammin. Korkein taso on 10, jossa sinulla on vähän yli sekunti aikaa käsitellä yksittäistä palikkaa.</para>
+    </sect2> 
+    <sect2 id="s2-pastscores">
+     <title>Pistehistorian katselu</title>
+      <para>Voit katsoa kymmentä parasta tietokoneellasi pelattua pistemäärää <menuchoice><guimenu>Peli</guimenu><guimenuitem>Pisteet</guimenuitem></menuchoice>. Pelaajien nimet ja päivämäärät näkyvät pistemäärien vieressä.</para>
+    </sect2> 
+</sect1>
+
+ 
+<sect1 id="s1-customizegame">
+ <title><application>Quadrapasselin</application> räätälöinti</title>
+  <sect2 id="s2-customstartup">
+   <title>Pelin käynnistyksen räätälöinti</title>
+    <para>Voit räätälöidä käynnistysasetuksia etenemällä valikoissa<menuchoice><guimenu>Asetukset</guimenu><guimenuitem>Asetukset</guimenuitem></menuchoice>. Voit räätälöidä monia jokaisen Quadrapassel-pelin käynnistykseen liittyviä toimintoja, kuten esitäytettyjen rivien tiheyden ja määrän. "Esitäytettyjen rivien määrä" määrittää, kuinka monessa rivissä on palikoita jokaisen pelin alussa</para>
+    <sect3 id="s3-numberpfr">
+     <title>Esitäytettyjen rivien määrä</title>
+      <para>Voit valita monessako rivissä on palikoita pelin alussa käyttämällä lukurullaa. Voit aloittaa pelin jopa 19 esitäytetyn rivin kanssa. Oletuksena esitäytettyjä rivejä ei ole.</para>
+     </sect3>
+     <sect3 id="s3-densitypfr">
+      <title>Esitäytetyn rivin vahvuus</title>
+       <para>Voit valita, kuinka tiheitä esitäytetyt rivit ovat pelin alussa käyttämällä lukurullaa. Voit valita tiheydeksi jopa 10 palikkaa. Esitäytettyjen rivien määrän tulisi olla valittuna ennen tiheyden valintaa. Oletustiheys on 3 palikkaa.</para>
+     </sect3>
+     <sect3 id="s3-startlevel">
+      <title>Aloitustaso</title>
+       <para>Voit asettaa tason, jolta peli alkaa. Korkein mahdollinen aloitustaso on 10, joka on myös pelin korkein taso. Oletuksena aloitustaso on 1.</para>
+     </sect3>
+   </sect2>
+   <sect2 id="s3-customblocks">
+    <title>Pelin räätälöinti</title>
+    <para>Asetuksista (<menuchoice><guimenu>Asetukset</guimenu><guimenuitem>Asetukset</guimenuitem></menuchoice>) voit räätälöidä useita palikoiden ominaisuuksia: seuraavan palikan esikatselua, palikoiden värejä ja kiertoa.</para>
+      <sect3 id="s3-sound">
+	<title>Äänet päälle</title>
+	<para>Voit kytkeä äänitehosteet päälle ja pois tällä valinnalla. Jos pelaat peliä alueella, jossa on muita ihmisiä, sinun olisi hyvä kytkeä äänet pois.</para>
+      </sect3>
+     <sect3 id="s3-nextblock">
+      <title>Seuraavan palikan esikatselu</title>
+        <para>Valitse tämä asetus, jos haluat nähdä seuraavana putoavan palikan. Tämän toiminto auttaa sinua suunnittelemaan palikoiden asettelua.</para>
+     </sect3>
+     <sect3 id="s3-blockcolors">
+      <title>Käytä satunnaisia palikan värejä</title>
+       <para>Valitse, jos haluat eri palikoiden olevan värikoodattuja tai satunnaisen värisiä. Jos käytät värejä palikoiden tunnistamiseen, satunnaiset värit vaikeuttavat peliä.</para>
+     </sect3>
+     <sect3 id="s3-difficult-block-mode">
+      <title>Choose Difficult Blocks</title>
+       <para>Valitse tämä asetus, jos haluat valita pelitilan, joka on suunniteltu ärsyttämään pelaajaa. Tämä asetuksen ollessa voimassa, et koskaan saa haluamaasi palikkaa, ja saat todella harvoin rivin täyteen. Seuraavan palikan esikatselu ei näytä seuraavaa palikkaa, vaan sen jonka ehkä toivoisit saavasi.</para>
+     </sect3>
+     <sect3 id="s3-block-rotation">
+      <title>Pyöritä palikoita vastapäivään</title>
+       <para>Valitse tämä asetus, jos haluat palikoiden pyörivän myötä- tai vastapäivään</para>
+     </sect3>
+     <sect3 id="s3-show-target">
+      <title>Näytä mihin palikka laskeutuu</title>
+        <para>Jos toiminto on päällä, harmaa palikan kuva näyttää, minne palikka putoaa. Toiminto on hyödyllinen aloitteleville pelaajille, mutta kokeneemmat pelaajat tuntevat sen häiritsevänä.</para>
+     </sect3>
+   </sect2>
+   <sect2 id="s2-customlook">
+    <title><application>Quadrapasselin</application> ulkoasun räätälöinti</title>
+    <para>Asetuksissa (<menuchoice><guimenu>Asetukset</guimenu><guimenuitem>Asetukset</guimenuitem></menuchoice>) voit räätälöidä <application>Quadrapasselin</application> ulkoasua: palikoiden tyyliä.</para>
+     <sect3 id="s3-blockimage">
+      <title>Palikoiden tyyli</title>
+       <para>Voit vaihtaa palikoiden tyyliä, kuten kuvaa ja kokoa. Pelin mukana tulee useita valmiita tyylejä.</para>
+     </sect3>
+     <sect3 id="s3-background">
+       <title>Taustakuva</title> <para>Jos vedät lempikuvasi <application>Quadrapasselin</application> ikkunaan, kuvaa käytetään taustakuvana. Jos haluat tasaisen värin taustaksi, vedä väri joko värinvalitsimesta tai <application>nautilus</application>-sovelluksen <guimenuitem>Taustat ja tunnusmerkit</guimenuitem>-valintaikkunaa (valintaikkunan palautin toimii myös)</para>
+     </sect3>
+    </sect2>
+   </sect1>
+
+<sect1 id="authors">
+  <title>Tekijät</title>
+  <para><application>Quadrapasselin</application> on kirjoittanut J. Marcin Gorycki vuonna 1999 ja sitä on siitä asti ylläpitänyt Gnome Games Team. Käyttöohjeen on kirjoittanut Angela Boyle. Voit raportoida ohjelmavirheen tai ehdotuksen sovellukseen tai käyttöohjeeseen liittyen <ulink url="ghelp:user-guide?feedback-bugs" type="help">näiden ohjeiden</ulink> mukaisesti.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+</sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="s1-license">
+  <title>Käyttöoikeus</title>
+  <para>Tämä ohjelma on vapaa ohjelmisto. Voit jaella ja/tai muokata sitä Free Software Foundationin<ulink type="help" url="gnome-help:gpl"><citetitle>GNU General Public Licensen</citetitle></ulink> version 2 tai (valintasi mukaan) uudemman ehtojen mukaisesti.</para>
+  <para>Ohjelma on jaettu toivoen sen olevan hyödyllinen, mutta ILMAN MITÄÄN TAKUUTA, edes epäsuoraa takuuta MYYNTIKELPOISEKSI ja SOPIVAKSI ERITYISEEN KÄYTTÖTARKOITUKSEEN. Katso lisätietoa <citetitle>GNU General Public License</citetitle>.</para>
+  <para><citetitle>GNU General Public License</citetitle> on liitetty liitteenä <citetitle>GNOME Users Guide</citetitle>-käyttöohjekokoelmaan. Voit myös hankkia kopion <citetitle>GNU General Public Licensesta</citetitle> Free Software Foundationilta käymällä <ulink type="http" url="http://www.fsf.org">heidän Web-sivustollaan</ulink> tai kirjoittamalla osoitteeseen <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address>.</para>
+ </sect1>
+</article>

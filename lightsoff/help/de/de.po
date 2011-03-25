@@ -1,0 +1,420 @@
+# German translation for the lightsoff manual.
+# Copyright (C) 2009 Tim Horton
+# This file is distributed under the same license as the lightsoff package.
+# Mario Blättermann <mariobl@gnome.org>, 2009, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lightsoff\n"
+"POT-Creation-Date: 2010-01-28 08:38+0000\n"
+"PO-Revision-Date: 2010-02-08 16:58+0100\n"
+"Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
+"Language-Team: German <gnome-de@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+
+#: C/lightsoff.xml:27(title)
+msgid "<application>Lights Off</application> Manual"
+msgstr "<application>Lichter aus</application>-Handbuch"
+
+#: C/lightsoff.xml:30(para)
+msgid ""
+"Lights Off is a puzzle game, where the objective is to turn off all of the "
+"tiles on the board. Each click toggles the state of the clicked tile and its "
+"non-diagonal neighbors."
+msgstr ""
+"»Lichter aus« ist ein Puzzlespiel, dessen Ziel es ist, alle Spielsteine vom "
+"Spielfeld zu entfernen. Jeder Klick schaltet den Status des angeklickten "
+"Spielsteins und dessen nichtdiagonalen Nachbarn um."
+
+#: C/lightsoff.xml:38(year)
+#| msgid "2009"
+msgid "2010"
+msgstr "2010"
+
+#: C/lightsoff.xml:39(holder)
+msgid "Tim Horton"
+msgstr "Tim Horton"
+
+#: C/lightsoff.xml:54(publishername) C/lightsoff.xml:95(para)
+msgid "GNOME Documentation Project"
+msgstr "GNOME-Dokumentationsprojekt"
+
+#: C/lightsoff.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or in "
+"the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Das vorliegende Dokument kann gemäß den Bedingungen der GNU Free "
+"Documentation License (GFDL), Version 1.1 oder jeder späteren, von der Free "
+"Software Foundation veröffentlichten Version ohne unveränderbare Abschnitte "
+"sowie ohne Texte auf dem vorderen und hinteren Buchdeckel kopiert, verteilt "
+"und/oder modifiziert werden. Eine Kopie der GFDL finden Sie unter diesem "
+"<ulink type=\"help\" url=\"ghelp:fdl\">Link</ulink> oder in der mit diesem "
+"Handbuch gelieferten Datei COPYING-DOCS."
+
+#: C/lightsoff.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Dieses Handbuch ist Teil einer Sammlung von GNOME-Handbüchern, die unter der "
+"GFDL veröffentlicht werden. Wenn Sie dieses Handbuch getrennt von der "
+"Sammlung weiterverbreiten möchten, können Sie das tun, indem Sie eine Kopie "
+"der Lizenz zum Handbuch hinzufügen, wie es in Abschnitt 6 der Lizenz "
+"beschrieben ist."
+
+#: C/lightsoff.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Bei vielen der von Firmen zur Unterscheidung ihrer Produkte und "
+"Dienstleistungen verwendeten Namen handelt es sich um Marken. An den Stellen, "
+"an denen derartige Namen in einer GNOME-Dokumentation vorkommen und wenn die "
+"Mitglieder des GNOME Documentation Project über diese Marken informiert "
+"wurden, sind die Namen in Grossbuchstaben oder mit großen Anfangsbuchstaben "
+"geschrieben."
+
+#: C/lightsoff.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE RISK "
+"AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR MODIFIED "
+"VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR MODIFIED VERSION "
+"PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY "
+"CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY SERVICING, REPAIR OR "
+"CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS "
+"LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS "
+"AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"DAS DOKUMENT WIRD »WIE VORLIEGEND« GELIEFERT, OHNE JEGLICHE GEWÄHRLEISTUNG, "
+"WEDER AUSDRÜCKLICH NOCH STILLSCHWEIGEND, EINSCHLIESSLICH, ABER NICHT "
+"BESCHRÄNKT AUF, GEWÄHRLEISTUNGEN, DASS DAS DOKUMENT ODER EINE MODIFIZIERTE "
+"VERSION DES DOKUMENTS FREI VON HANDELSÜBLICHEN FEHLERN UND FÜR EINEN "
+"BESTIMMTEN ZWECK GEEIGNET IST UND KEINE RECHTE DRITTER VERLETZT. JEGLICHES "
+"RISIKO IN BEZUG AUF DIE QUALITÄT, GENAUIGKEIT UND LEISTUNG DES DOKUMENTS ODER "
+"EINER MODIFIZIERTEN VERSION DES DOKUMENTS TRAGEN SIE. SOLLTE SICH EIN "
+"DOKUMENT ODER EINE MODIFIZIERTE VERSION DAVON IN IRGENDEINER WEISE ALS "
+"FEHLERHAFT ERWEISEN, TRAGEN SIE (NICHT DER URSPRÜNGLICHE VERFASSER, AUTOR "
+"ODER EIN MITWIRKENDER) DIE KOSTEN FÜR JEGLICHE ERFORDERLICHE SERVICE-, "
+"REPARATUR- UND KORREKTURMASSNAHMEN: DIESE BESCHRÄNKUNG DER GEWÄHRLEISTUNG IST "
+"WESENTLICHER BESTANDTEIL DIESER LIZENZ. JEDE VERWENDUNG EINES DOKUMENTS ODER "
+"EINER MODIFIZIERTEN VERSION DES DOKUMENTS UNTERLIEGT DIESER BESCHRÄNKUNG; UND"
+
+#: C/lightsoff.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON FOR "
+"ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY "
+"CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK "
+"STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR "
+"LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"UNTER KEINEN UMSTÄNDEN UND GEMÄSS KEINER RECHTSLEHRE, WEDER AUFGRUND VON "
+"UNERLAUBTEN HANDLUNGEN (EINSCHLIESSLICH FAHRLÄSSIGKEIT), VERTRÄGEN ODER "
+"SONSTIGEM, KANN DER AUTOR, DER URSPRÜNGLICHE VERFASSER, EIN MITWIRKENDER ODER "
+"EIN VERTEILER DES DOKUMENTS ODER EINER MODIFIZIERTEN VERSION DES DOKUMENTS "
+"ODER EIN LIEFERANT EINER DIESER PARTEIEN VON EINER PERSON FÜR DIREKTE, "
+"INDIREKTE, BESONDERE, ZUFÄLLIGE ODER ALS FOLGE AUFGETRETENE SCHÄDEN "
+"IRGENDEINER ART, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF, SCHÄDEN DURCH "
+"GESCHÄFTSWERTVERLUSTE, ARBEITSAUSFÄLLE, COMPUTERAUSFÄLLE ODER -"
+"FUNKTIONSSTÖRUNGEN ODER JEGLICHE ANDERE SCHÄDEN ODER VERLUSTE, DIE DURCH ODER "
+"IM ZUSAMMENHANG MIT DER VERWENDUNG DES DOKUMENTS ODER EINER MODIFIZIERTEN "
+"VERSION DES DOKUMENTS ENTSTANDEN SIND, SELBST WENN DIESE PARTEI ÜBER MÖGLICHE "
+"SCHÄDEN INFORMIERT WORDEN SEIN SOLLTE, HAFTBAR GEMACHT WERDEN."
+
+#: C/lightsoff.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"DAS DOKUMENT UND MODIFIZIERTE VERSIONEN DES DOKUMENTS WERDEN GEMÄSS DER "
+"BEDINGUNGEN DER GNU FREE DOCUMENTATION LICENSE MIT DER FOLGENDEN VEREINBARUNG "
+"BEREITGESTELLT: <placeholder-1/>"
+
+#: C/lightsoff.xml:65(firstname)
+msgid "Tim"
+msgstr "Tim"
+
+#: C/lightsoff.xml:66(surname)
+msgid "Horton"
+msgstr "Horton"
+
+#: C/lightsoff.xml:68(email)
+msgid "hortont@gnome.org"
+msgstr "hortont@gnome.org"
+
+#: C/lightsoff.xml:89(revnumber)
+msgid "Lights Off Manual V1.0"
+msgstr "Lichter aus-Handbuch V1.0"
+
+#: C/lightsoff.xml:90(date)
+#| msgid "July 2009"
+msgid "January 2010"
+msgstr "Januar 2010"
+
+#: C/lightsoff.xml:92(para)
+msgid "Tim Horton <email>hortont@gnome.org</email>"
+msgstr "Tim Horton <email>hortont@gnome.org</email>"
+
+#: C/lightsoff.xml:100(releaseinfo)
+msgid "This manual describes version 2.28 of Lights Off."
+msgstr "Dieses Handbuch beschreibt Version 2.28 von »Lichter aus«."
+
+#: C/lightsoff.xml:107(title)
+msgid "Feedback"
+msgstr "Rückmeldungen"
+
+#: C/lightsoff.xml:108(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Lights Off</"
+"application> application or this manual, follow the directions in the <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
+"ulink>."
+msgstr ""
+"Um einen Fehler zu melden oder einen Vorschlag zu dieser Anwendung oder zu "
+"diesem Handbuch zu machen, folgen Sie den Anweisungen auf der <ulink url="
+"\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME-Seite für "
+"Rückmeldungen</ulink>."
+
+#: C/lightsoff.xml:120(primary)
+msgid "Lights Off"
+msgstr "Lichter aus"
+
+#: C/lightsoff.xml:126(title)
+msgid "Introduction"
+msgstr "Einführung"
+
+#. synopsis of game
+#: C/lightsoff.xml:129(para)
+msgid ""
+"<application>Lights Off</application> is a puzzle game, where the objective "
+"is to turn off all of the tiles on the board. Each click toggles the state of "
+"the clicked tile and its non-diagonal neighbors."
+msgstr ""
+"<application>Lichter aus</application> ist ein Puzzlespiel, dessen Ziel es "
+"ist, alle Spielsteine vom Spielfeld zu entfernen. Jeder Klick schaltet den "
+"Status des angeklickten Spielsteins und dessen nichtdiagonalen Nachbarn um."
+
+#. running game
+#: C/lightsoff.xml:132(para)
+msgid ""
+"To run <application>Lights Off</application>, select "
+"<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
+"guisubmenu><guimenuitem>Lights Off</guimenuitem></menuchoice>, or type "
+"<command>lightsoff</command> in the command line."
+msgstr ""
+"Um <application>Lichter aus</application> zu spielen, wählen Sie "
+"<menuchoice><guimenu>Anwendungen</guimenu><guisubmenu>Spiele</"
+"guisubmenu><guimenuitem>Lichter aus</guimenuitem></menuchoice> oder geben den "
+"Befehl <command>lightsoff</command> in einer Befehlszeile ein."
+
+#. part of gnome-games
+#: C/lightsoff.xml:135(para)
+msgid ""
+"<application>Lights Off</application> is included in the <filename>gnome-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 1.0 of <application>Lights Off</application>."
+msgstr ""
+"<application>Lichter aus</application> ist im Paket <filename>gnome-games</"
+"filename> enthalten, welches wiederum Teil der GNOME Arbeitsumgebung ist. "
+"Dieses Dokument beschreibt Version 1.0 von <application>Lichter aus</"
+"application>."
+
+#: C/lightsoff.xml:139(title)
+msgid "Playing <application>Lights Off</application>"
+msgstr "Playing <application>Lichter aus</application> spielen"
+
+#: C/lightsoff.xml:140(para)
+msgid ""
+"You progress through the levels either by turning off all of the tiles in a "
+"particular level, or using the arrow-shaped buttons near the bottom of the "
+"game. These buttons allow you to skip levels, or return to previous levels, "
+"without restriction."
+msgstr ""
+"Sie gelangen in die jeweils nächsthöhere Spielstufe, indem Sie alle Steine in "
+"der jeweiligen Spielstufe entfernen. Alternativ können Sie die pfeilförmigen "
+"Knöpfe am unteren Rand des Spielfelds benutzen, um ohne Einschränkung "
+"Spielstufen zu überspringen oder zu vorherigen Spielstufen zurückzukehren."
+
+#: C/lightsoff.xml:142(title)
+msgid "Manipulating the Board"
+msgstr "Anpassen des Spielfelds"
+
+#: C/lightsoff.xml:143(para)
+msgid ""
+"There is only one action available in <application>Lights Off</application>: "
+"clicking a tile on the board. You can either click on the tile with the "
+"mouse, or use the arrow keys to choose it. The first time you press an arrow "
+"key during a game of <application>Lights Off</application>, a cursor will "
+"appear, which you can move with the keyboard; pressing enter will click the "
+"light below the cursor."
+msgstr ""
+"Für <application>Lichter aus</application> gibt es nur eine mögliche Aktion: "
+"das Anklicken eines Spielsteins auf dem Spielfeld. Einen Klick können Sie "
+"entweder mit der Maus ausführen oder die Pfeiltasten verwenden, um einen "
+"Stein auszuwählen. Wenn Sie in <application>Lichter aus</application> "
+"erstmalig eine Pfeiltaste drücken, wird ein Cursor angezeigt, den Sie nun "
+"über das Speilfeld bewegen können. Durch Drücken der Eingabetaste entfernen "
+"Sie den darunterliegenden Stein, das heißt, Sie »schalten ihm das Licht aus«."
+
+#: C/lightsoff.xml:144(para)
+msgid ""
+"When a tile is clicked, both it and all of its non-diagonal neighbors will "
+"toggle their state. The objective is to turn all of the tiles on the board "
+"off."
+msgstr ""
+"Wenn ein Stein angeklickt wird, dann wird für diesen Stein sowie für seine "
+"nicht diagonal angrenzenden Nachbarn der Status umgeschaltet. Ziel ist es, "
+"sämtliche Steine auf dem Spielfeld »auszuschalten«."
+
+#: C/lightsoff.xml:147(title)
+msgid "Starting a New Game"
+msgstr "Ein neues Spiel starten"
+
+#: C/lightsoff.xml:148(para)
+msgid ""
+"To begin a new game, go to <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The progression of "
+"levels will be the same between games and between computers, so "
+"<menuchoice><guimenuitem>New Game</guimenuitem></menuchoice> should only be "
+"chosen if you actually want to return to the beginning of the game."
+msgstr ""
+"Um ein neues Spiel zu beginnen, wählen Sie <menuchoice><guimenu>Spiel</"
+"guimenu><guimenuitem>Neues Spiel</guimenuitem></menuchoice>. Die Spielstufen "
+"werden für den Spieler wie für den Rechner gleichermaßen erhöht, so dass Sie "
+"<menuchoice><guimenuitem>Neues Spiel</guimenuitem></menuchoice> nur dann "
+"wählen sollten, wenn Sie direkt zum Beginn des Spiels zurückkehren wollen."
+
+#: C/lightsoff.xml:154(title)
+msgid "Customizing <application>Lights Off</application>"
+msgstr "<application>Lichter aus</application> anpassen"
+
+#: C/lightsoff.xml:156(title)
+msgid "Customizing the Look of <application>Lights Off</application>"
+msgstr ""
+"Anpassen des Erscheinungsbilds von <application>Lichter aus</application>"
+
+#: C/lightsoff.xml:157(para)
+#| msgid ""
+#| "Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</"
+#| "guimenuitem></menuchoice>, you can customize the look of "
+#| "<application>Lights Off</application>: images for the blocks."
+msgid ""
+"Under <menuchoice><guimenu>Game</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice>, you can customize the look of the tiles in "
+"<application>Lights Off</application>. There are a variety of styles "
+"included, some of which make use of the color of your theme. This can be "
+"disabled with the <guilabel>Use colors from GNOME Theme</guilabel> option in "
+"the Preferences window."
+msgstr ""
+"Unter <menuchoice><guimenu>Einstellungen</guimenu><guimenuitem>Einstellungen</"
+"guimenuitem></menuchoice> können Sie das Aussehen der Bilder für die Blöcke "
+"in <application>Lichter aus</application> anpassen. Es ist bereits eine Reihe "
+"von Stilen enthalten, wobei einige davon die Farben des Themas Ihrer "
+"Arbeitsumgebung mit nutzen. Sie können dies mit der Option <guilabel>Farben "
+"vom System-Thema verwenden</guilabel> im Einstellungsfenster deaktivieren."
+
+#: C/lightsoff.xml:162(title)
+msgid "Authors"
+msgstr "Autoren"
+
+#: C/lightsoff.xml:163(para)
+#| msgid ""
+#| "<application>Lights Off</application> was written by Tim Horton in 2009 "
+#| "and maintained by Gnome Games Team since then. This manual was written "
+#| "by ?. To report a bug or make a suggestion regarding this application or "
+#| "this manual, follow the directions in this <ulink url=\"ghelp:user-guide?"
+#| "feedback-bugs\" type=\"help\">document</ulink>."
+msgid ""
+"<application>Lights Off</application> was written by Tim Horton in 2009 and "
+"maintained by the Gnome Games Team since then. This manual was written by Tim "
+"Horton. To report a bug or make a suggestion regarding this application or "
+"this manual, follow the directions in this <ulink url=\"ghelp:user-guide?"
+"feedback-bugs\" type=\"help\">document</ulink>."
+msgstr ""
+"<application>Lichter aus</application> wurde im Jahre 2009 von Tim Horton "
+"geschrieben und wird seitdem vom GNOME-Games-Entwicklerteam verwaltet. Dieses "
+"Handbuch wurde von Tim Horton geschrieben. Um einen Fehler zu melden oder "
+"einen Vorschlag zu dieser Anwendung oder zu diesem Handbuch zu machen, folgen "
+"Sie den Anweisungen in diesem <ulink url=\"ghelp:user-guide?feedback-bugs\" "
+"type=\"help\">Dokument</ulink>."
+
+#: C/lightsoff.xml:187(title)
+msgid "License"
+msgstr "Lizenz"
+
+#: C/lightsoff.xml:188(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it under "
+"the terms of the <citetitle><ulink type=\"help\" url=\"gnome-help:gpl\">GNU "
+"General Public License</ulink></citetitle> as published by the Free Software "
+"Foundation; either version 2 of the License, or (at your option) any later "
+"version."
+msgstr ""
+"Dieses Programm ist freie Software; Sie können es weiterverbreiten und/oder "
+"ändern unter den Bedingungen der <citetitle><ulink type=\"help\" url=\"gnome-"
+"help:gpl\">GNU General Public License</ulink></citetitle> wie sie von der "
+"<ulink type=\"http\" url=\"http://www.fsf.org\">Free Software Foundation</"
+"ulink> veröffentlicht wurde; entweder in Version 2 der Lizenz oder (nach "
+"Ihrer Wahl) jeder neueren Version."
+
+#: C/lightsoff.xml:190(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+"FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public License</"
+"citetitle> for more details."
+msgstr ""
+"Dieses Programm wird in der Hoffnung verbreitet, dass es nützlich ist, aber "
+"OHNE JEGLICHE GARANTIE; auch ohne eine GEBRAUCHSTAUGLICHKEITSGARANTIE oder "
+"eine Garantie über die TAUGLICHKEIT FÜR EINEN BESTIMMTEN ZWECK. Lesen Sie die "
+"<citetitle><ulink type=\"help\" url=\"gnome-help:gpl\">GNU General Public "
+"License</ulink></citetitle> für genauere Hinweise."
+
+#: C/lightsoff.xml:192(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free Software "
+"Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</"
+"city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</"
+"country></address>"
+msgstr ""
+"Eine Kopie der <citetitle><ulink type=\"help\" url=\"gnome-help:gpl\">GNU "
+"General Public License</ulink></citetitle> ist im Anhang des <citetitle>GNOME "
+"Benutzerhandbuchs</citetitle> enthalten. Sie können außerdem eine Kopie der "
+"<citetitle><ulink type=\"help\" url=\"gnome-help:gpl\">GNU General Public "
+"License</ulink></citetitle> von der Free Software Foundation erhalten, indem "
+"Sie auf <ulink type=\"http\" url=\"http://www.fsf.org\">ihre Internetseite</"
+"ulink> gehen oder an die <address>Free Software Foundation, Inc.<street>51 "
+"Franklin Street, Fifth Floor</street><city>Boston</city>, <state>MA</"
+"state><postcode>02111-1301</postcode><country>USA</country></address> "
+"schreiben."
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/lightsoff.xml:0(None)
+msgid "translator-credits"
+msgstr "Mario Blättermann <mariobl@gnome.org>, 2009, 2010"

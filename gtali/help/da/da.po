@@ -1,0 +1,708 @@
+# Danish translation for gnome-games.
+# Copyright (C) 2010 Joe Hansen.
+# This file is distributed under the same license as the gnome-games package.
+# Joe Hansen (joedalton2@yahoo.dk), 2009, 2010.
+#
+# Tali -> Yatzy
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games gnome-2-28\n"
+"POT-Creation-Date: 2010-10-29 00:33+0200\n"
+"PO-Revision-Date: 2010-10-21 04:40+0000\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../C/legal.xml:2(para) ../C/gtali.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Tilladelse er givet til at kopiere, distribuere og/eller ændre dette "
+"dokument under betingelserne i GNU Free Documentation License (GFDL), "
+"version 1.1 eller enhver senere version udgivet af Free Software Foundation; "
+"uden invariante afsnit, forsidetekster, samt bagsidetekster. Du kan se en "
+"kopi af GFDL her <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> eller i "
+"filen COPYING-DOCS som distribueres sammen med denne manual."
+
+#: ../C/legal.xml:12(para) ../C/gtali.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Denne manual er en del af den samling af GNOME-manualer som udgives under "
+"GFDL. Hvis du ønsker at distribuere denne manuel adskilt fra samlingen, kan "
+"du gøre dette ved at tilføje en kopi af licensen til manualen, som beskrevet "
+"i afsnit 6 af licensen."
+
+#: ../C/legal.xml:19(para) ../C/gtali.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"En stor del af de navne som anvendes af firmaer til at identificere deres "
+"produkter og tjenester hævdes som værende varemærker. Hvor disse navne "
+"fremgår i en hvilken som helst GNOME-dokumentation, og medlemmerne af GNOME-"
+"dokumentationsprojeket er gjort opmærksom på disse varemærker, så er disse "
+"navne vist med store bogstaver eller stort begyndelsesbogstav."
+
+#: ../C/legal.xml:35(para) ../C/gtali.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"DETTE DOKUMENT GØRES TILGÆNGELIGT SÅDAN SOM DET ER, UDEN NOGEN FORM FOR "
+"GARANTI, HVERKEN UDTALT ELLER ANTYDET, DERIBLANDT, UDEN BEGRÆNSNINGER, "
+"GARANTIER OM AT DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET ER FRIT FOR "
+"DEFEKTER, PASSENDE TIL ET BESTEMT FORMÅL ELLER IKKE-KRÆNKENDE. DU HÆFTER "
+"SELV FOR HELE RISIKOEN VEDRØRENDE KVALITET, KORREKTHED OG YDELSE FOR "
+"DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET. SKULLE ET DOKUMENT, ELLER "
+"EN ÆNDRET VERSION AF ET DOKUMENT VISE SIG AT VÆRE DEFEKT PÅ EN HVILKEN SOM "
+"HELST MÅDE, HÆFTER DU FOR BETALING FOR EVENTUEL NØDVENDIG SERVICE, "
+"REPARATION ELLER KORREKTION (OG IKKE HVERKEN DEN OPRINDELIGE FORFATTER, "
+"SKRIBENT ELLER NOGEN ANDEN BIDRAGYDER). DENNE ERKLÆRING OM GARANTIFORBEHOLD "
+"ER EN ESSENTIEL DEL AF DENNE LICENS. INGEN BRUG AF NOGET DOKUMENT ELLER "
+"ÆNDRET VERSION AF DOKUMENTET ER AUTORISERET HERUNDER BORTSET FRA DENNE "
+"ANSVARSFRASKRIVELSE OG"
+
+#: ../C/legal.xml:55(para) ../C/gtali.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"UNDER INGEN OMSTÆNDIGHEDER OG UNDER INGEN JURIDISK TEORI, UANSET OM DET ER "
+"EN BEVIDST SKADENDE HANDLING (INKLUSIVE UFORSVARLIGHED) ELLER PÅ HVILKEN SOM "
+"HELST ANDEN MÅDE, KAN FORFATTEREN, SKRIBENT, BIDRAGYDERE, DISTRIBUTØRER "
+"ELLER FORSYNER AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER GØRES "
+"ANSVARLIG OVERFOR NOGEN PERSON FOR NOGEN DIREKTE, INDIREKTE, SPECIEL, "
+"TILFÆLDIG ELLER FØLGENDE SKADE PÅFØRT NOGEN INKLUSIVE, UDEN BEGRÆNSNING, "
+"SKADE SOM FØLGE AF TAB AF RYGTE, ARBEJDSSTOP, COMPUTERFEJL ELLER -SVIGT, "
+"ELLER ENHVER ANDEN FORM FOR SKADE ELLER TAB SOM ER OPSTÅET I FORBINDELSE MED "
+"BRUG AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER HERAF, SELV HVIS EN "
+"SÅDAN PART HAR VÆRET INFORMERET OM MULIGHEDEN FOR SÅDANNE SKADER."
+
+#: ../C/legal.xml:28(para) ../C/gtali.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"DOKUMENTET OG ÆNDREDE VERSIONER AF DOKUMENTET STILLES TIL RÅDIGHED UNDER GNU "
+"FREE DOCOMENTATION LICENSE MED FØLGENDE BETINGELSER: <placeholder-1/>"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: ../C/gtali.xml:163(None)
+msgid "@@image: 'figures/mainwindow.png'; md5=adbcf6421391e5e51c091e13672d3b7e"
+msgstr ""
+"@@image: 'figures/mainwindow.png'; md5=adbcf6421391e5e51c091e13672d3b7e"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: ../C/gtali.xml:240(None)
+msgid ""
+"@@image: 'figures/preferences.png'; md5=163633a4c9c3d3fe96e7b4a15f2e3eef"
+msgstr ""
+"@@image: 'figures/preferences.png'; md5=163633a4c9c3d3fe96e7b4a15f2e3eef"
+
+#: ../C/gtali.xml:27(title)
+msgid "<application>Tali</application> Manual"
+msgstr "Manual for <application>Yatzy</application>"
+
+#: ../C/gtali.xml:29(para)
+msgid ""
+"Tali is like Yahtzee for GNOME or like poker with dice. The player rolls "
+"dice to try to make the best possible combinations, like 4 of a kind, small "
+"straight, and full house. The player is allowed 3 rolls per turn and can "
+"hold certain dice with each roll."
+msgstr ""
+"Yatzy er som Yahtzee til GNOME eller som poker med terninger. Spilleren "
+"ruller terninger i et forsøg på at skabe de bedst mulige kombinationer, som "
+"4 ens, lille og fuldt hus. Spilleren har ret til 3 kast per runde og kan "
+"fastholde visse terninger ved hvert kast."
+
+#: ../C/gtali.xml:37(year)
+msgid "2001"
+msgstr "2001"
+
+#: ../C/gtali.xml:38(holder)
+msgid "Scott D. Heavner"
+msgstr "Scott D. Heavner"
+
+#: ../C/gtali.xml:53(publishername) ../C/gtali.xml:93(para)
+msgid "GNOME Documentation Project"
+msgstr "GNOME-dokumentationsprojekt"
+
+#: ../C/gtali.xml:63(firstname)
+msgid "Scott D"
+msgstr "Scott D"
+
+#: ../C/gtali.xml:64(surname)
+msgid "Heavner"
+msgstr "Heavner"
+
+#: ../C/gtali.xml:66(email)
+msgid "sdh@po.cwru.edu"
+msgstr "sdh@po.cwru.edu"
+
+#: ../C/gtali.xml:87(revnumber)
+msgid "Tali Manual V2.8"
+msgstr "Yatzymanual version 2.8"
+
+#: ../C/gtali.xml:88(date)
+msgid "September 2004"
+msgstr "September 2004"
+
+#: ../C/gtali.xml:90(para)
+msgid "Scott D Heavner <email>sdh@po.cwru.edu</email>"
+msgstr "Scott D Heavner <email>sdh@po.cwru.edu</email>"
+
+#: ../C/gtali.xml:98(releaseinfo)
+msgid "This manual describes version 2.12 of Tali."
+msgstr "Denne manual beskriver version 2.12 af Yatzy."
+
+#: ../C/gtali.xml:105(title)
+msgid "Feedback"
+msgstr "Tilbagemeldinger"
+
+#: ../C/gtali.xml:106(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Tali</"
+"application> application or this manual, follow the directions in the <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
+"ulink>."
+msgstr ""
+"Hvis du ønsker at indrapportere en fejl eller komme med et forslag "
+"vedrørende <application>Yatzy</application> eller denne manual så følg "
+"vejledningen på siden <ulink url=\"ghelp:user-guide?feedback-bugs\" type="
+"\"help\">tilbagemeldinger omkring GNOME</ulink>."
+
+#: ../C/gtali.xml:117(primary)
+msgid "GNOME Tali"
+msgstr "GNOME Yatzy"
+
+#: ../C/gtali.xml:123(title)
+msgid "Introduction"
+msgstr "Indledning"
+
+#: ../C/gtali.xml:125(para)
+msgid ""
+"<application>GNOME Tali</application> is a sort of poker with dice and less "
+"money. You roll five dice three times and try to create the best "
+"<quote>hand</quote>. Your two rerolls may include any or all of your dice."
+msgstr ""
+"<application>GNOME Yatzy</application> er en slags poker med terninger og "
+"færre penge. Du kaster fem terninger tre gange og forsøger at skabe den "
+"bedste <quote>hånd</quote>. Dit 2. og 3. kast kan inkludere alle eller "
+"udvalgte terninger."
+
+#: ../C/gtali.xml:131(para)
+msgid ""
+"<application>GNOME Tali</application> is very similar to the dice game "
+"Yahtzee which is a trademark of Hasbro, Inc."
+msgstr ""
+"<application>GNOME Yatzy</application> er meget lig terningspillet Yahtzee "
+"som er et varemærke ejet af Hasbro, Inc."
+
+#: ../C/gtali.xml:136(para)
+msgid ""
+"To run <application>GNOME Tali</application>, select "
+"<menuchoice><guisubmenu>Games</guisubmenu><guimenuitem>GNOME Tali</"
+"guimenuitem></menuchoice> from the <guimenu>Main Menu</guimenu>, or type "
+"<command>gtali</command> on the command line."
+msgstr ""
+"For at køre <application>GNOME Yatzy</application> vælges "
+"<menuchoice><guisubmenu>Spil</guisubmenu><guimenuitem>Yatzy</guimenuitem></"
+"menuchoice> fra <guimenu>Hovedmenuen</guimenu>, eller tast <command>gtali</"
+"command> fra kommandolinjen."
+
+#: ../C/gtali.xml:146(para)
+msgid ""
+"<application>GNOME Tali</application> is included in the <filename>gnome-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.8 of <application>GNOME Tali</application>."
+msgstr ""
+"<application>GNOME Yatzy</application> er inkluderet i pakken "
+"<filename>gnome-games</filename>, som er en del af skrivebordsmiljøet GNOME. "
+"Dette dokument beskriver version 2.8 af <application>GNOME Yatzy</"
+"application>."
+
+#: ../C/gtali.xml:155(title)
+msgid "Playing GNOME Tali"
+msgstr "Sådan spiller du GNOME Yatzy"
+
+#: ../C/gtali.xml:158(title)
+msgid "GNOME Tali in action"
+msgstr "GNOME Yatzy i aktion"
+
+#: ../C/gtali.xml:166(phrase)
+msgid "GNOME Tali main window screenshot."
+msgstr "GNOME Yatzy - skærmbillede af hovedvinduet."
+
+#: ../C/gtali.xml:172(para)
+msgid "When play starts, you see the results of your first throw of the dice."
+msgstr ""
+"Når spillet starter, ser du resultatet af dit første kast med terningerne."
+
+#: ../C/gtali.xml:179(para)
+msgid "Click on the dice you wish to roll again."
+msgstr "Klik på de terninger, du ønsker at kaste igen."
+
+#: ../C/gtali.xml:183(para)
+msgid ""
+"When you have selected all the dice you wish to reroll, press the "
+"<guibutton>Roll!</guibutton> button."
+msgstr ""
+"Når du har valgt alle terningerne, du ønsker at kaste igen, så tryk på "
+"knappen <guibutton>Kast!</guibutton>."
+
+#: ../C/gtali.xml:188(para)
+msgid ""
+"When you have a hand you like or have run out of chances to throw the dice, "
+"click on a row corresponding to what you think is your best scoring "
+"combination. It is very possible to have a score of zero and if you click on "
+"the wrong row, you will be scored accordingly. (Say for example, you get "
+"yahtzee -- 5 of a kind -- and click on the large straight row, you will "
+"receive a zero in your large straight score)."
+msgstr ""
+"Når du har en hånd du er glad for, eller er løbet tør for muligheden for at "
+"kaste igen, så klik på en række som svarer til, hvad du forventer er den "
+"bedste kombination. Det er muligt at have et resultat på nul og hvis du "
+"klikker på den forkerte række, så vil du få point der svarer dertil. (Lad os "
+"for eksempel sige at du får yatzy - 5 ens - og klikker på Stor, så vil du få "
+"nul point for rækken stor)."
+
+#: ../C/gtali.xml:198(para)
+msgid ""
+"You can only use each combination once, i.e. once you've entered something "
+"in a slot, you can't change the score later if you roll a better hand."
+msgstr ""
+"Du kan kun bruge hver kombination en gang, det vil sige, at når du først har "
+"indtastet noget på en plads, så kan du ikke ændre den pointgivning senere, "
+"hvis du kaster en bedre hånd."
+
+#: ../C/gtali.xml:203(para)
+msgid ""
+"There is one exception to this rule, if you roll a yahtzee a second time you "
+"can put it in the yahtzee row again for an extra fifty points. You can keep "
+"doing this each time you get another yahtzee. At the end of the game you "
+"will be given extra rolls to fill in the other rows. Be warned that if you "
+"score zero in your yahtzee row (i.e. you filled that row with something that "
+"wasn't a yahtzee) then you can't put a yahtzee in afterward, zero is all you "
+"will score."
+msgstr ""
+"Der er en undtagelse til denne regel, hvis du kaster en yatzy endnu en gang, "
+"så kan du placere den i rækken yatzy en ekstra gang og opnå 50 ekstra point. "
+"Du kan fortsætte med at gøre dette, hver gang du kaster en yatzy. Til slut i "
+"spillet vil du få ekstra kast til at fylde de resterende rækker ud. Vær "
+"opmærksom på, at hvis du får nul point i din yatzyrække (det vil sige, at du "
+"fyldte noget i den række, som ikke var en yahtzee) så kan du ikke "
+"efterfølgende placere en yatzy der, du vil kun få nul point for denne række."
+
+#: ../C/gtali.xml:213(para)
+msgid ""
+"There is also a bonus of 35 points if you score a total of 63 points or more "
+"in the top six rows."
+msgstr ""
+"Der er også en bonus på 35 point hvis du opnår 63 point eller mere for de "
+"øverste seks rækker."
+
+#: ../C/gtali.xml:218(title)
+msgid "Using the keyboard"
+msgstr "Brug af tastaturet"
+
+#: ../C/gtali.xml:220(para)
+msgid ""
+"As an alternative to using the mouse, the keys 1 through 5 toggle the dice "
+"just as if you had clicked them. The key 1 corresponds to the first die and "
+"so on. Use the usual controls to roll the dice and select a row. i.e. use "
+"tab to switch between the roll button and the score area, use the arrow keys "
+"to navigate up and down the rows and use space to select."
+msgstr ""
+"Som et alternativ til at bruge musen, så skifter tast 1 til 5 mellem "
+"terningerne, på samme måde som hvis du havde klikket på dem. Tasten 1 svarer "
+"til den første terning og så fremdeles. Brug de sædvanlige styretaster til "
+"at kaste terningen og vælg en række. Det vil sige brug tab til at skifte "
+"mellem kastknappen og pointområdet, brug piletasterne til at navigere op og "
+"ned mellem rækkerne og brug mellemrum for at vælge."
+
+#: ../C/gtali.xml:232(title)
+msgid "Game Options"
+msgstr "Spilindstillinger"
+
+#: ../C/gtali.xml:235(title)
+msgid "GNOME Tali preferences"
+msgstr "GNOME Yatzy-indstillinger"
+
+#: ../C/gtali.xml:243(phrase)
+msgid "GNOME Tali preferences dialog box."
+msgstr "GNOME Yatzy-indstillingsvinduesboks."
+
+#: ../C/gtali.xml:248(title)
+msgid "Human Players"
+msgstr "Fysiske spillere"
+
+#: ../C/gtali.xml:250(guimenuitem)
+msgid "Number of players"
+msgstr "Antal spillere"
+
+#: ../C/gtali.xml:252(para)
+msgid ""
+"Selects the number of human players. As described above you are only allowed "
+"six total players."
+msgstr ""
+"Vælg antallet af fysiske spillere. Som beskrevet ovenfor kan der kun være 6 "
+"spillere i alt."
+
+#: ../C/gtali.xml:260(title)
+msgid "Computer Opponents"
+msgstr "Computermodstandere"
+
+#: ../C/gtali.xml:262(guimenuitem)
+msgid "Delay between rolls"
+msgstr "Forsinkelse mellem kast"
+
+#: ../C/gtali.xml:264(para)
+msgid ""
+"Make the computer opponents pause between rolls of the dice so you can see "
+"what they are doing. Slows down game play some."
+msgstr ""
+"Gør at computermodstanderne holder pause mellem hvert kast af terningerne, "
+"så du kan se, hvad de foretager sig. Gør spillet lidt langsommere."
+
+#: ../C/gtali.xml:271(guimenuitem)
+msgid "Number of opponents"
+msgstr "Antal modstandere"
+
+#: ../C/gtali.xml:273(para)
+msgid ""
+"Select the number of computer opponents. You are allowed a total of six "
+"human and computer players. If you attempt to increase this number near the "
+"limit, the number of human players will be decreased to maintain only six "
+"total players."
+msgstr ""
+"Vælg antallet af computermodstandere. Du kan have et samlet antal på seks "
+"enten fysiske eller computerspillere. Hvis du forsøger at øge antallet nær "
+"grænsen, vil antallet af fysiske spillere blive mindsket for at bevare det "
+"samlede antal på kun seks spillere."
+
+#: ../C/gtali.xml:283(title)
+msgid "Game Type"
+msgstr "Spiltype"
+
+#: ../C/gtali.xml:285(guimenuitem)
+msgid "Version of the game to play"
+msgstr "Versioner af spillet"
+
+# engelsk fejl
+#: ../C/gtali.xml:287(para)
+msgid ""
+"Play either the regular version (similar to Yahtzee) or the version with "
+"colors (similar to Kismet). When you change game type, you must restart the "
+"game to see use the new game type."
+msgstr ""
+"Spil enten den klassiske version (der ligner Yahtzee) eller versionen med "
+"farver (der ligner Kismet). Når du ændrer spiltypen, skal du genstarte "
+"spillet for at bruge den nye spiltype."
+
+#: ../C/gtali.xml:297(guimenuitem)
+msgid "Player Names"
+msgstr "Spillernavne"
+
+#: ../C/gtali.xml:299(para)
+msgid "To change the names of the players just enter new names in the boxes."
+msgstr "For at ændre navnene på spillerne taster du bare nye navne i boksene."
+
+#: ../C/gtali.xml:308(title)
+msgid "Game Strategy"
+msgstr "Spilstrategi"
+
+#: ../C/gtali.xml:309(para)
+msgid ""
+"The 63 points needed for the bonus in the upper half corresponds to getting "
+"three of each die type in each row. If you score more than three dice in the "
+"fives and sixes rows then you can afford to place a bad roll in either the "
+"ones row or the twos row and still get the bonus. In the Colors version, you "
+"get a bonus of 55 if your upper half total is between 71 and 77, and a bonus "
+"of 75 if your upper half total is greater than 77."
+msgstr ""
+"De 63 point der skal opnås for at få bonus i den øverste halvdel svarer til "
+"at få tre af hver terningtype i hver række. Hvis du opnår mere end tre "
+"terninger i fem- og seksrækkerne så kan du tåle at placere et dårligt kast i "
+"enten rækken 1'ere eller 2'ere og stadig få bonus. I farveversionen får du "
+"bonus på 55 hvis din øverste halvdel er mellem 71 og 77, og en bonus på 75 "
+"hvis den øverste halvdel er større end 77."
+
+#: ../C/gtali.xml:318(para)
+msgid ""
+"Don't forget about multiple yahtzees, if you roll a second yahtzee you can "
+"also put it in the yahtzee row for even more points. This only applies to "
+"the regular game."
+msgstr ""
+"Glem ikke flerdobbelte yatzyer, hvis du slå mere end en yatzy, kan du også "
+"placere dem i yatzyrækken for endnu flere point. Dette gælder kun i det "
+"klassiske spil."
+
+#: ../C/gtali.xml:332(title)
+msgid "Known Bugs and Limitations"
+msgstr "Kendte fejl og begrænsninger"
+
+#: ../C/gtali.xml:333(para)
+msgid ""
+"When you switch game type, the game does not use the new dice images until "
+"you restart gtali. It should play correctly with the \"wrong\" dice."
+msgstr ""
+"Når du skifter spiltype, kender spillet ikke de nye terningebilleder før har "
+"genstartet Yatzy. Det bør fungere korrekt med de \"forkerte\" terninger."
+
+#: ../C/gtali.xml:341(title)
+msgid "Glossary"
+msgstr "Ordliste"
+
+#: ../C/gtali.xml:343(para)
+msgid "Remember that the order of the dice is not important."
+msgstr "Husk at rækkefølgen på terningerne ikke er vigtig."
+
+#: ../C/gtali.xml:346(glossterm)
+msgid "3 of a Kind"
+msgstr "3 ens"
+
+#: ../C/gtali.xml:347(para)
+msgid ""
+"Three of the dice have the same number. The score is the total of all the "
+"dice. e.g. 1, 2, 2, 2, 5."
+msgstr ""
+"Tre af terningerne har det samme nummer. Pointene er summen af alle "
+"terningerne. For eksempel 1, 2, 2, 2, 5."
+
+#: ../C/gtali.xml:352(glossterm)
+msgid "4 of a Kind"
+msgstr "4 ens"
+
+#: ../C/gtali.xml:353(para)
+msgid ""
+"Four of the dice have the same number. The score is the total of all the "
+"dice. e.g. 2, 5, 5, 5, 5. In the Colors game, the score is 25 plus the total "
+"of all the dice."
+msgstr ""
+"Fire af terningerne har det samme nummer. Pointene er summen af alle "
+"terningerne. For eksempel 2, 5, 5, 5, 5. I farvespillet er pointsummen 25 "
+"plus summen af alle terningerne."
+
+#: ../C/gtali.xml:359(glossterm)
+msgid "5 of a Kind"
+msgstr "5 ens"
+
+#: ../C/gtali.xml:360(para)
+msgid ""
+"Five identical dice. e.g. 3, 3, 3, 3, 3. In the Colors game, the score is 50 "
+"plus the total of all the dice."
+msgstr ""
+"Fem identiske terninger. For eksempel 3, 3, 3, 3, 3. I farvespillet er "
+"pointsummen 50 plus summen af alle terningerne."
+
+#: ../C/gtali.xml:365(glossterm)
+msgid "Full House"
+msgstr "Fuldt hus"
+
+#: ../C/gtali.xml:366(para)
+msgid ""
+"Five dice consisting of two groups: One group of three with the same numbers "
+"and another group of two with the same numbers. e.g. 1, 1, 1, 4, 4. In the "
+"Colors game, the score is 15 plus the total of all the dice."
+msgstr ""
+"Fem terninger bestående af to grupper: En gruppe på tre med det samme nummer "
+"og en anden gruppe på to med det samme nummer. For eksempel 1, 1, 1, 4, 4. I "
+"farvespillet, er pointsummen 15 plus summen af alle terningerne."
+
+#: ../C/gtali.xml:373(glossterm)
+msgid "Full House Same Color"
+msgstr "Fuldt hus - samme farve"
+
+#: ../C/gtali.xml:374(para)
+msgid ""
+"This category is only used in the Colors game. Five dice consisting of two "
+"groups: One group of three with the same numbers and another group of two "
+"with the same numbers. The numbers must be all the same color. e.g. 3, 3, 3, "
+"4, 4. Two dice are the same color if their numbers total 7: 1 and 6 are "
+"black, 2 and 5 are red, and 3 and 4 are green. The score is 20 plus the "
+"total of all the dice."
+msgstr ""
+"Denne kategori bruges kun i farvespillet. Fem terninger bestående af to "
+"grupper: En gruppe på tre med de samme tal og en anden gruppe på to med de "
+"samme tal. Tallene skal alle være af samme farve. For eksempel 3, 3, 3, 4, "
+"4. To terninger er den samme farve hvis deres sum er 7: 1 og 6 er sort, 2 og "
+"5 er rød, og 3 og 4 er grøn. Pointsummen er 20 plus summen af alle "
+"terningerne."
+
+#: ../C/gtali.xml:384(glossterm)
+msgid "Two Pair Same Color"
+msgstr "To par - samme farve"
+
+#: ../C/gtali.xml:385(para)
+msgid ""
+"This category is only used in the Colors game. Five dice consisting of two "
+"groups: One group of two with the same numbers and another group of two with "
+"the same numbers. The pairs must be all the same color. e.g. 3, 3, 4, 4. Two "
+"dice are the same color if their numbers total 7: 1 and 6 are black, 2 and 5 "
+"are red, and 3 and 4 are green. The fifth die can be any value. The score is "
+"the total of all the dice."
+msgstr ""
+"Denne kategori bruges kun i farvespillet. Fem terninger bestående af to "
+"grupper: En gruppe på to med de samme tal og en anden gruppe på to med de "
+"samme tal. Parrene skal være af samme farve. For eksempel 3, 3, 4, 4. To "
+"terninger er den samme farve hvis deres sum er 7: 1 og 6 er sort, 2 og 5 er "
+"rød, og 3 og 4 er grøn. Den femte terning kan være enhver værdi. Pointsummen "
+"er summen af alle terninger."
+
+#: ../C/gtali.xml:395(glossterm)
+msgid "Flush"
+msgstr "Flush"
+
+#: ../C/gtali.xml:396(para)
+msgid ""
+"This category is only used in the Colors game. Five dice that are all the "
+"same \"color\": Two dice are the same color if their numbers total 7: 1 and "
+"6 are black, 2 and 5 are red, and 3 and 4 are green. The fifth die can be "
+"any value. The score is 35 points."
+msgstr ""
+"Denne kategori er kun brugt i farvespillet. Fem terninger som alle er af "
+"samme \"farve\": To terninger er den samme farve hvis deres sum er 7: 1 og 6 "
+"er sort, 2 og 5 er rød, og 3 og 4 er grøn. Den femte terning kan være enhver "
+"værdi. Pointsummen er 35 point."
+
+#: ../C/gtali.xml:404(glossterm)
+msgid "Large Straight"
+msgstr "Stor"
+
+#: ../C/gtali.xml:405(para)
+msgid ""
+"Five dice with consecutive numbers. e.g. 2, 3, 4, 5, 6. The score is 40 "
+"points."
+msgstr ""
+"Fem terninger med fortløbende tal. For eksempel 2, 3, 4, 5, 6. Pointsummen "
+"er 40 point."
+
+#: ../C/gtali.xml:410(glossterm)
+msgid "Small Straight"
+msgstr "Lille"
+
+#: ../C/gtali.xml:411(para)
+msgid ""
+"Four dice with consecutive numbers. The fifth die can be any number. e.g. 2, "
+"3, 4, 5, 5. This category is only used in the regular game. The score is 30 "
+"points."
+msgstr ""
+"Fire terninger med fortløbende tal. Den femte terning kan være ethvert tal. "
+"For eksempel 2, 3, 4, 5, 5. Denne kategori bruges kun i det regulære spil. "
+"Pointsummen er 30 point."
+
+#: ../C/gtali.xml:425(title)
+msgid "Authors"
+msgstr "Forfattere"
+
+#: ../C/gtali.xml:426(para)
+msgid ""
+"<application>GNOME Tali</application> was written by Scott Heavner "
+"(<email>sdh@po.cwru.edu</email>) and Orest Zborowski. This manual was "
+"written by Scott D Heavner (<email>sdh@po.cwru.edu</email>) with extra "
+"material added by Callum McKenzie (<email>callum@physics.otago.ac.nz</"
+"email>). To report a bug or make a suggestion regarding this application or "
+"this manual, follow the directions in this <ulink url=\"ghelp:user-guide?"
+"feedback-bugs\" type=\"help\">document</ulink>."
+msgstr ""
+"<application>GNOME Yatzy</application> blev skrevet af Scott Heavner "
+"(<email>sdh@po.cwru.edu</email>) og Orest Zborowski. Denne manual blev "
+"skrevet af Scott D Heavner (<email>sdh@po.cwru.edu</email>) med ekstra "
+"materiale tilføjet af Callum McKenzie (<email>callum@physics.otago.ac.nz</"
+"email>). For at indrapportere en fejl, eller komme med et forslag vedrørende "
+"dette program eller denne manual, så følg vejledningen i dette <ulink url="
+"\"ghelp:user-guide?feedback-bugs\" type=\"help\">dokument</ulink>."
+
+#: ../C/gtali.xml:453(title)
+msgid "License"
+msgstr "Licens"
+
+#: ../C/gtali.xml:454(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>GNU General Public License</citetitle></ulink> as published by "
+"the Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version."
+msgstr ""
+"Dette program er frit software: du kan distribuere den og/eller ændre den "
+"under betingelserne i <citetitle>GNU General Public License</citetitle> der "
+"udgives af Free Software Foundation; enten version 2 eller (ved dit valg) "
+"enhver senere version."
+
+#: ../C/gtali.xml:462(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"Dette program distribueres i håb om, at det vil vise sig nyttigt, men\n"
+"UDEN NOGEN FORM FOR GARANTI, uden selv de underforståede garantier\n"
+"omkring SALGBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Yderligere\n"
+"detaljer kan læses i <citetitle>GNU General Public License</citetitle>."
+
+#: ../C/gtali.xml:468(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"En kopi af <citetitle>GNU General Public License</citetitle> er inkluderet "
+"som et tillæg til <citetitle>GNOME-brugervejledningen</citetitle>. Du kan "
+"også få en kopi af <citetitle>GNU General Public License</citetitle> fra "
+"Free Software Foundtation ved at besøge <ulink url=\"http://www.fsf.org\" "
+"type=\"http\">deres internetside</ulink> eller skrive til <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: ../C/gtali.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+"Joe Hansen <joedalton2@yahoo.dk>, 2009.\n"
+"\n"
+"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
+"Mere info: http://www.dansk-gruppen.dk"

@@ -1,0 +1,29 @@
+<gconfschemafile>
+  <schemalist>
+
+    <schema>
+      <key>/schemas/apps/gnotravex/grid_size</key>
+      <applyto>/apps/gnotravex/grid_size</applyto>
+      <owner>gnotravex</owner>
+      <type>int</type>
+      <default>3</default>
+      <locale name="C">
+        <short>The size of the playing grid</short>
+        <long>The value of this key is used to decide the size of the playing grid. The valid values are 2 to 8, anything else gets set to 3.</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnotravex/click_to_move</key>
+      <applyto>/apps/gnotravex/click_to_move</applyto>
+      <owner>gnotravex</owner>
+      <type>bool</type>
+      <default>FALSE</default>
+      <locale name="C">
+        <short>Select the style of control</short>
+        <long>Select whether to drag the tiles or to click on the source then the destination.</long>
+      </locale>
+    </schema>
+
+  </schemalist>
+</gconfschemafile>

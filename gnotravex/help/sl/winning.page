@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="winning" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="hint"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Enostavi namigi kako je mogoče zmagati igro.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-26" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  
+  <title>Zmagajte <app>GNOME Tetravex</app></title>
+  
+  <note>
+    <p>Naslednji namigi vam ne bodo zagotovili zmage. Namenjeni so kot enostavna pomoč.</p>
+  </note>
+  
+  <section id="winning-single">
+    <title>Najdite posamezno številko</title>
+    <p>Ko začnete novo igro poiščite posamezno število ali število, ki nima števil, ki bi jih bilo mogoče postaviti poleg njega. </p>
+    <p>V primeru, da imate takšno število, je ta kos veljaven začetni kos, saj veste, kam ga morate postaviti.</p>
+    <p>Večja kot je igralna plošča, težje je najti takšno število.</p>
+  </section>
+  <!-- This is just an idea... need to think about it... -->
+  <section id="winning-share">
+    <title>Imate namig, ki ga želite deliti z drugimi?</title>
+    <p>Če imate namig o <app>GNOME Tetravex</app> ali drugih igrah GNOME, ki o ga želite deliti z drugimi, nam pišite na gnome-doc-list@gnome.org. Dodali jih bomo sem!</p>
+  </section>
+</page>

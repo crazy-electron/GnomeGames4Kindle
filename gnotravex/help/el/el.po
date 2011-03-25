@@ -1,0 +1,971 @@
+# Greek translation of GNOME Gnotravex.
+# Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+#
+# Chris Mpountalis <mpounta@gmail.com>, 2007.
+# Marios Zindilis <m.zindilis@dmajor.org>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnotravex 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-23 23:27+0000\n"
+"PO-Revision-Date: 2010-03-26 19:47+0200\n"
+"Last-Translator: Marios Zindilis <m.zindilis@dmajor.org>\n"
+"Language-Team: Greek <team@gnome.gr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.0\n"
+"X-Poedit-Language: Greek\n"
+"X-Poedit-Country: GREECE\n"
+
+#: C/winning.page:9(desc)
+msgid "Simple tips on how to possibly win a game."
+msgstr "Απλές συμβουλές για να κερδίσετε στο παιχνίδι."
+
+#: C/winning.page:12(name) C/usage.page:11(name) C/size.page:10(name)
+#: C/shortcut.page:11(name) C/multiplayer.page:10(name) C/move.page:11(name)
+#: C/index.page:17(name) C/hint.page:10(name) C/gameplay.page:10(name)
+msgid "Milo Casagrande"
+msgstr "Milo Casagrande"
+
+#: C/winning.page:13(email) C/usage.page:12(email) C/size.page:11(email)
+#: C/shortcut.page:12(email) C/multiplayer.page:11(email)
+#: C/move.page:12(email) C/index.page:18(email) C/hint.page:11(email)
+#: C/gameplay.page:11(email)
+msgid "milo@ubuntu.com"
+msgstr "milo@ubuntu.com"
+
+#: C/winning.page:16(p) C/usage.page:19(p) C/size.page:14(p)
+#: C/shortcut.page:15(p) C/multiplayer.page:14(p) C/move.page:15(p)
+#: C/index.page:21(p) C/gameplay.page:14(p)
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons Share Alike 3.0"
+
+#: C/winning.page:20(title)
+#| msgid "Playing GNOME Tetravex"
+msgid "Win <app>GNOME Tetravex</app>"
+msgstr "Κερδίστε στο <app>GNOME Τετραβέξ</app>"
+
+#: C/winning.page:23(p)
+msgid ""
+"The following tips will not assure you to win a game, they are intended as a "
+"simple aid."
+msgstr ""
+"Δε θα κερδίσετε στα σίγουρα ακολουθώντας τις παρακάτω συμβουλές, αλλά "
+"οπωσδήποτε θα σας βοηθήσουν."
+
+#: C/winning.page:30(title)
+msgid "Look for a single number"
+msgstr "Ψάξτε για ένα μοναδικό αριθμό"
+
+#: C/winning.page:31(p)
+msgid ""
+"When you start a new game, look for a single number, or a number that has no "
+"similar numbers that can be placed next to it."
+msgstr ""
+"Όταν αρχίζετε ένα νέο παιχνίδι, ψάξτε για ένα μοναδικό αριθμό, ή έναν αριθμό "
+"που δεν έχει όμοιό του που να μπορεί να τοποθετηθεί δίπλα του."
+
+#: C/winning.page:35(p)
+msgid ""
+"If you have one such number, that piece is a valid starting piece, since you "
+"know where it has to be placed."
+msgstr ""
+"Αν έχετε έναν τέτοιο αριθμό, τότε βολεύει να ξεκινήσετε με εκείνο το "
+"κομμάτι, αφού θα ξέρετε πού να το τοποθετήσετε."
+
+#: C/winning.page:39(p)
+msgid ""
+"Note that the bigger the size of the board, the harder is to find such a "
+"number."
+msgstr ""
+"Σημειώστε ότι όσο μεγαλύτερο είναι το ταμπλώ τόσο πιο δύσκολο είναι να "
+"βρείτε έναν τέτοιο αριθμό."
+
+#: C/winning.page:46(title)
+msgid "Have a tip to share?"
+msgstr "Έχετε μια συμβουλή να μοιραστείτε;"
+
+#: C/winning.page:47(p)
+msgid ""
+"If you have a tip to share about <app>GNOME Tetravex</app>, or any other "
+"GNOME games, write us at gnome-doc-list@gnome.org. We will add them here!"
+msgstr ""
+"Αν έχετε να μοιραστείτε μια συμβουλή για το <app>GNOME Τετραβέξ</app> ή για "
+"οποιοδήποτε άλλο παιχνίδι του GNOME, γράψτε μας στο gnome-doc-list@gnome.org."
+" Θα την προσθέσουμε εδώ!"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/usage.page:61(None)
+#| msgid ""
+#| "@@image: 'figures/gnotravex_game.png'; "
+#| "md5=4d0a4512ee72329134fa0f5a1a3205e9"
+msgid ""
+"@@image: 'figures/gnotravex-video.ogv'; md5=14cface4ec2b0c84aa5a925242694de0"
+msgstr ""
+"@@image: 'figures/gnotravex-video.ogv'; md5=14cface4ec2b0c84aa5a925242694de0"
+
+#: C/usage.page:8(desc)
+#| msgid "Playing GNOME Tetravex"
+msgid "How to play <app>GNOME Tetravex</app>."
+msgstr "Πώς παίζεται το <app>GNOME Τετραβέξ</app>."
+
+#: C/usage.page:15(name) C/index.page:13(name)
+msgid "Rob Bradford"
+msgstr "Rob Bradford"
+
+#: C/usage.page:16(email) C/index.page:14(email)
+msgid "robster@debian.org"
+msgstr "robster@debian.org"
+
+#: C/usage.page:23(title)
+#| msgid "Playing GNOME Tetravex"
+msgid "Play <app>GNOME Tetravex</app>"
+msgstr "Παίξτε <app>GNOME Τετραβέξ</app>"
+
+#: C/usage.page:26(title)
+msgid "Basic usage"
+msgstr "Βασική χρήση"
+
+#: C/usage.page:27(p)
+msgid ""
+"The game window is divided into two boxes: the one on the right side of the "
+"window contains the pieces that needs to be arranged; the one on the left "
+"side of the window is where the pieces from the right box will be arranged "
+"and moved. Each piece is divided into four little triangles containing a "
+"number."
+msgstr ""
+"Το παράθυρο του παιχνιδιού χωρίζεται σε δύο κουτιά: το ένα στα δεξιά "
+"περιέχει τα κομμάτια που πρέπει να τακτοποιηθούν. Στο άλλο, στα αριστερά, θα "
+"μετακινήσετε και θα τακτοποιήσετε τα κομμάτια. Κάθε κομμάτι χωρίζεται σε "
+"τέσσερα μικρά τρίγωνα, το καθένα από τα οποία περιέχει έναν αριθμό."
+
+#: C/usage.page:34(p)
+msgid ""
+"The scope of the game is to position the pieces so that only two identical "
+"numbers are next to each other."
+msgstr ""
+"Ο σκοπός του παιχνιδιού είναι να τοποθετήσετε τα κομμάτια έτσι ώστε μόνο δύο "
+"ίδιοι αριθμοί να εφάπτονται."
+
+#: C/usage.page:38(p)
+msgid ""
+"It is not possible to position the pieces so that different number are next "
+"to each other."
+msgstr ""
+"Δε μπορείτε να τοποθετήσετε τα κομμάτια έτσι ώστε να εφάπτονται διαφορετικοί "
+"αριθμοί."
+
+#: C/usage.page:42(p)
+msgid ""
+"The game is completed when you have positioned all the pieces in their right "
+"positions."
+msgstr ""
+"Το παιχνίδι ολοκληρώνεται όταν έχετε τοποθετήσει όλα τα κομμάτια στη σωστή "
+"τους θέση."
+
+#: C/usage.page:47(p)
+msgid ""
+"When you start <app>GNOME Tetravex</app>, the game will start immediately, "
+"and the time will start counting."
+msgstr ""
+"Το παιχνίδι ξεκινά αμέσως μόλις εκκινήσετε <app>GNOME Τετραβέξ</app>, και ο "
+"χρόνος αρχίζει να μετρά."
+
+#: C/usage.page:56(title)
+msgid "Video demonstration"
+msgstr "Βίντεο επίδειξης"
+
+#: C/usage.page:57(p)
+msgid ""
+"This short video shows how the game works, and what are the possible "
+"movements."
+msgstr ""
+"Αυτό το σύντομο βίντεο σας δείχνει πώς λειτουργεί το παιχνίδι, και ποιες "
+"είναι οι πιθανές κινήσεις."
+
+#: C/usage.page:61(media)
+msgid "Simple demonstration of a game"
+msgstr "Απλή επίδειξη ενός παιχνιδιού"
+
+#: C/size.page:7(desc)
+msgid "Change the size of the game board."
+msgstr "Αλλάξτε το μέγεθος του ταμπλώ."
+
+#: C/size.page:17(title)
+msgid "Game board size"
+msgstr "Μέγεθος του ταμπλώ"
+
+#: C/size.page:19(p)
+msgid ""
+"To change the size of the game board, in order to increase or decrease the "
+"complexity of the game, choose <gui>Size</gui> from the main menu bar, and "
+"then select the dimension of the board."
+msgstr ""
+"Για να αλλάξετε το μέγεθος του ταμπλώ ώστε να αυξήσετε ή να μειώσετε την "
+"πολυπλοκότητα του παιχνιδιού, επιλέξτε <gui>Μέγεθος</gui> από την κύρια "
+"γραμμή μενού, και μετά επιλέξτε το μέγεθος του ταμπλώ."
+
+#: C/size.page:24(p)
+msgid ""
+"You can select from five different dimension, from 2×2 to 6×6. The default "
+"one is 3×3."
+msgstr ""
+"Μπορείτε να επιλέξετε μεταξύ πέντε διαφορετικών διαστάσεων, από 2x2 έως 6x6. "
+"Η προεπιλογή είναι 3x3."
+
+#: C/size.page:28(p)
+#| msgid ""
+#| "If the tiles are too small, resizing the window will change the size of "
+#| "the tiles."
+msgid ""
+"If the pieces are too small, resizing the window will change their size."
+msgstr ""
+"Αν τα κομμάτια είναι πολύ μικρά, η αλλαγή μεγέθους στο παράθυρο θα αλλάξει "
+"και το μέγεθός τους."
+
+#: C/shortcut.page:8(desc)
+msgid "Use the keyboard to play the game."
+msgstr "Χρήση του πληκτρολογίου για το παιχνίδι."
+
+#: C/shortcut.page:19(title)
+msgid "Keyboard shortcuts"
+msgstr "Συντομεύσεις πληκτρολογίου"
+
+#: C/shortcut.page:22(title)
+msgid "Game shortcuts"
+msgstr "Συντομεύσεις παιχνιδιού"
+
+#: C/shortcut.page:23(p)
+msgid ""
+"The following table groups the most useful shortcuts for playing <app>GNOME "
+"Tetravex</app>."
+msgstr ""
+"Ο ακόλουθος πίνακας συνοψίζει τις πιο χρήσιμες συντομεύσεις για το παίξιμο "
+"του <app>GNOME Τετραβέξ</app>."
+
+#: C/shortcut.page:28(p)
+msgid "Shortcut"
+msgstr "Συντόμευση"
+
+#: C/shortcut.page:28(p)
+msgid "Description"
+msgstr "Περιγραφή"
+
+#: C/shortcut.page:32(key) C/shortcut.page:49(key) C/shortcut.page:58(key)
+#: C/shortcut.page:66(key) C/shortcut.page:74(key)
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: C/shortcut.page:32(key)
+msgid "N"
+msgstr "N"
+
+#: C/shortcut.page:35(p)
+msgid "Start a new game."
+msgstr "Ξεκίνημα νέου παιχνιδιού."
+
+#: C/shortcut.page:40(key)
+msgid "Pause"
+msgstr "Pause"
+
+#: C/shortcut.page:43(p)
+msgid "Pause or resume the game."
+msgstr "Παύση ή συνέχιση παιχνιδιού."
+
+#: C/shortcut.page:49(key)
+msgid "Up"
+msgstr "Πάνω"
+
+#: C/shortcut.page:53(p)
+msgid "Move all the pieces in the left box up by one."
+msgstr ""
+"Μετακίνηση όλων των κομματιών στο αριστερό μέρος κατά ένα κουτί προς τα πάνω."
+
+#: C/shortcut.page:58(key)
+msgid "Down"
+msgstr "Κάτω"
+
+#: C/shortcut.page:61(p)
+msgid "Move all the pieces in the left box down by one."
+msgstr ""
+"Μετακίνηση όλων των κομματιών στο αριστερό κουτί κατά ένα κουτί προς τα κάτω."
+
+#: C/shortcut.page:66(key)
+msgid "Left"
+msgstr "Αριστερά"
+
+#: C/shortcut.page:69(p)
+msgid "Move all the pieces in the left box left by one."
+msgstr ""
+"Μετακίνηση όλων των κομματιών στο αριστερό μέρος κατά ένα κουτάκι προς τα "
+"αριστερά."
+
+#: C/shortcut.page:74(key)
+msgid "Right"
+msgstr "Δεξιά"
+
+#: C/shortcut.page:77(p)
+msgid "Move all the pieces in the left box right by one."
+msgstr ""
+"Μετακίνηση όλων των κομματιών στο αριστερό μέρος κατά ένα κουτί προς τα "
+"δεξιά."
+
+#: C/multiplayer.page:7(desc)
+msgid "How to play with other people."
+msgstr "Πώς να παίξετε με άλλους ανθρώπους."
+
+#: C/multiplayer.page:18(title)
+msgid "Play with other people"
+msgstr "Παίξτε με άλλους ανθρώπους"
+
+#: C/multiplayer.page:20(p)
+msgid ""
+"With <app>GNOME Tetravex</app> it is not possible to play with or against "
+"other people over the Internet or a local network."
+msgstr ""
+"Με το <app>GNOME Τετραβέξ</app> μπορείτε να παίξετε μαζί ή εναντίον άλλων "
+"ανθρώπων μέσω διαδικτύου ή μέσω τοπικού δικτύου."
+
+#: C/move.page:8(desc)
+msgid "How to move the pieces on the game board."
+msgstr "Πώς να μετακινείτε τα κομμάτια στο ταμπλώ."
+
+#: C/move.page:19(title)
+msgid "Move the pieces"
+msgstr "Μετακινήστε τα κομμάτια"
+
+#: C/move.page:22(title)
+msgid "Move a piece"
+msgstr "Μετακινήστε ένα κομμάτι"
+
+#: C/move.page:23(p)
+msgid ""
+"To move a piece, you need to click-and-hold on it, drag it from its current "
+"position to its new position, either on the right box or on the left box, "
+"and release the mouse button."
+msgstr ""
+"Για να μετακινήσετε ένα κομμάτι, πρέπει να πατήσετε πάνω του και να το "
+"κρατήσετε πατημένο, και να το σύρετε από την τρέχουσα στην νέα του θέση, "
+"είτε στο δεξιό είτε στο αριστερό μέρος, και να αφήσετε το κουμπί του "
+"ποντικιού."
+
+#: C/move.page:28(p)
+msgid "These moves are not permanent and can be reversed."
+msgstr "Αυτές οι κινήσεις δεν είναι μόνιμες και μπορούν να αναιρεθούν."
+
+#: C/move.page:32(p)
+msgid ""
+"The pieces in the left box can be moved all at once in one direction. See "
+"<link xref=\"shortcut\"/> for more information."
+msgstr ""
+"Τα κουτιά στο αριστερό μέρος μπορούν να μετακινηθούν όλα μαζί προς μια "
+"κατεύθυνση. Δείτε τις <link xref=\"shortcut\"/> για περισσότερες "
+"λεπτομέρειες."
+
+#: C/move.page:39(title)
+msgid "Avoid the click-and-hold"
+msgstr "Αποφύγετε το κρατημένο πάτημα"
+
+#: C/move.page:40(p)
+msgid ""
+"If you do not feel comfortable with the click-and-hold action to move the "
+"pieces, it is possible to change that behavior so that you only have to "
+"click on a piece to move it, and click again to release it in its new "
+"position."
+msgstr ""
+"Αν δε σας βολεύει να κρατάτε το πάτημα για να μετακινείτε κομμάτια, μπορείτε "
+"να αλλάξετε αυτή τη συμπεριφορά ώστε να χρειάζεται μόνο να πατάτε για να "
+"πιάσετε ένα κομμάτι, και να ξαναπατάτε για να το αφήσετε στη νέα του θέση."
+
+#: C/move.page:45(p)
+msgid ""
+"To do that, from the main menu bar, choose <gui style=\"menu\">Move</gui>, "
+"and select <gui style=\"checkbox\">Click to Move</gui>."
+msgstr ""
+"Για να το κάνετε αυτό, από την κύρια γραμμή μενού, επιλέξτε <gui "
+"style=\"menu\">Μετακίνηση</gui> και ενεργοποιήστε το <gui style=\"checkbox\">"
+"Κλικ για μετακίνηση</gui>."
+
+#: C/license.page:8(desc)
+msgid "Legal information."
+msgstr "Νομικές πληροφορίες"
+
+#: C/license.page:11(title)
+msgid "License"
+msgstr "Άδεια χρήσης"
+
+#: C/license.page:12(p)
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
+msgstr ""
+"Αυτό το έργο διανέμεται υπό την άδεια CreativeCommons Attribution-Share "
+"Alike 3.0 Unported."
+
+#: C/license.page:20(p)
+msgid "You are free:"
+msgstr "Μπορείτε ελεύθερα:"
+
+#: C/license.page:25(em)
+msgid "To share"
+msgstr "Να μοιραστείτε"
+
+#: C/license.page:26(p)
+msgid "To copy, distribute and transmit the work."
+msgstr "Να αντιγράψετε, να διανείμετε και να μεταδόσετε το έργο."
+
+#: C/license.page:29(em)
+msgid "To remix"
+msgstr "Να τροποιήσετε"
+
+#: C/license.page:30(p)
+msgid "To adapt the work."
+msgstr "Να προσαρμόσετε το έργο."
+
+#: C/license.page:33(p)
+msgid "Under the following conditions:"
+msgstr "Υπό τους εξής όρους:"
+
+#: C/license.page:38(em)
+#| msgid "Introduction"
+msgid "Attribution"
+msgstr "Απόδοση"
+
+#: C/license.page:39(p)
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+"Πρέπει να αναφέρετε την πηγή του έργου με τον τρόπο που καθορίζεται από το "
+"δημιουργό του ή αυτόν που παρέχει την άδεια (αλλά όχι με τρόπο που να εννοεί "
+"ότι εγκρίνουν εσάς ή τη δική σας χρήση του έργου)."
+
+#: C/license.page:46(em)
+msgid "Share Alike"
+msgstr "Παρόμοια διανομή"
+
+#: C/license.page:47(p)
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Αν μετατρέψετε, μετασχηματίσετε ή επεκτείνετε αυτό το έργο, μπορείτε να "
+"αναδιανείμετε το αποτέλεσμα υπό την ίδια, παρόμοια ή συμβατή άδεια χρήσης."
+
+#: C/license.page:53(p)
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"Για το πλήρες κείμενο της άδειας, δείτε τον <link "
+"href=\"http://creativecommons.org/licenses/by-sa/3.0/legalcode\">ιστότοπο "
+"CreativeCommons</link>, ή διαβάστε όλη την <link "
+"href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Πράξη Commons</link>."
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/index.page:26(None)
+#| msgid ""
+#| "@@image: 'figures/gnotravex_game.png'; "
+#| "md5=4d0a4512ee72329134fa0f5a1a3205e9"
+msgid ""
+"@@image: 'figures/gnotravex-logo.png'; md5=daf379ccd659b42a71cd0f2661f651e4"
+msgstr ""
+"@@image: 'figures/gnotravex-logo.png'; md5=daf379ccd659b42a71cd0f2661f651e4"
+
+#: C/index.page:8(title) C/index.page:9(title)
+msgid "GNOME Tetravex"
+msgstr "GNOME Tetravex"
+
+#: C/index.page:10(desc)
+#| msgid "GNOME Tetravex"
+msgid "GNOME Tetravex help."
+msgstr "Βοήθεια του GNOME Τετραβέξ"
+
+#: C/index.page:25(title)
+msgid ""
+"<media type=\"image\" mime=\"image/png\" src=\"figures/gnotravex-logo.png"
+"\">GNOME Tetravex logo</media> GNOME Tetravex"
+msgstr ""
+"<media type=\"image\" mime=\"image/png\" src=\"figures/gnotravex-logo.png\">"
+"Λογότυπο του GNOME Τετραβέξ</media> GNOME Τετραβέξ"
+
+#: C/index.page:31(title)
+msgid "Basic Gameplay &amp; Usage"
+msgstr "Βασικό παιχνίδι και χρήση"
+
+#: C/index.page:35(title)
+msgid "Multiplayer Game"
+msgstr "Παιχνίδι πολλών παικτών"
+
+#: C/index.page:39(title)
+msgid "Tips &amp; Tricks"
+msgstr "Συμβουλές και κόλπα"
+
+#: C/hint.page:7(desc)
+msgid "Use hints or solve the game automatically."
+msgstr "Χρησιμοποιήστε τις υποδείξεις, ή λύστε το παιχνίδι αυτόματα."
+
+#: C/hint.page:14(title)
+msgid "Hints"
+msgstr "Υποδείξεις"
+
+#: C/hint.page:17(p)
+msgid ""
+"If you use one of the following methods to complete the game, your scores "
+"will not be included among the high scores."
+msgstr ""
+"Αν χρησιμοποιήσετε μία από τις ακόλουθες μεθόδους για να ολοκληρώσετε το "
+"παιχνίδι, τα σκορ σας δε θα συμπεριληφθούν στα υψηλότερα σκορ."
+
+#: C/hint.page:25(title)
+msgid "Use the hints system"
+msgstr "Χρήση του συστήματος υποδείξεων"
+
+#: C/hint.page:27(p)
+msgid ""
+"At any time in the game, if you do not know how to start it, or where to "
+"move a piece, it is possible to use the built-in hints system."
+msgstr ""
+"Σε οποιαδήποτε στιγμή στο παιχνίδι, αν δε ξέρετε από πού να ξεκινήσετε ή πού "
+"να μετακινήσετε ένα κομμάτι, μπορείτε να χρησιμοποιήσετε το ενσωματωμένο "
+"σύστημα υποδείξεων."
+
+#: C/hint.page:31(p)
+msgid ""
+"The system will move one piece from the right box to its correct position "
+"into the left box."
+msgstr ""
+"Το σύστημα θα μετακινήσει ένα κομμάτι από το δεξιό μέρος στη σωστή του θέση "
+"στο αριστερό μέρος."
+
+#: C/hint.page:35(p)
+msgid "To use the hints system, perform one of the following:"
+msgstr ""
+"Για να χρησιμοποιήσετε αυτό το σύστημα υποδείξεων, κάντε ένα από τα ακόλουθα:"
+
+#: C/hint.page:40(p)
+msgid "Press <keyseq><key>Ctrl</key><key>H</key></keyseq>."
+msgstr "Πιέστε <keyseq><key>Ctrl</key><key>H</key></keyseq>."
+
+#: C/hint.page:45(p)
+msgid ""
+"Choose <guiseq><gui style=\"menu\">Game</gui><gui style=\"menuitem\">Hint</"
+"gui></guiseq>."
+msgstr ""
+"Επιλέξτε <guiseq><gui style=\"menu\">Παιχνίδι</gui><gui style=\"menuitem\">"
+"Υπόδειξη</gui></guiseq>."
+
+#: C/hint.page:52(title)
+#| msgid "Playing the game"
+msgid "Solve the game"
+msgstr "Λύστε το παιγνίδι"
+
+#: C/hint.page:53(p)
+msgid ""
+"If you get stuck in the game, or you want to solve it automatically, choose "
+"<guiseq><gui style=\"menu\">Game</gui><gui style=\"menuitem\">Solve</gui></"
+"guiseq>."
+msgstr ""
+"Αν κολλήσετε στο παιχνίδι, ή αν θέλετε να το επιλύσετε αυτόματα, επιλέξτε <"
+"guiseq><gui style=\"menu\">Παιχνίδι</gui><gui style=\"menuitem\">Επίλυση<"
+"/gui></guiseq>."
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gameplay.page:32(None)
+#| msgid ""
+#| "@@image: 'figures/gnotravex_mainwindow.png'; "
+#| "md5=e49d762a2dd5d6ba466e0c7cef7703ce"
+msgid ""
+"@@image: 'figures/gnotravex-main-window.png'; "
+"md5=dd9c9be1bb7b724d6be5e76ffa6ee4d8"
+msgstr ""
+"@@image: 'figures/gnotravex-main-window.png'; "
+"md5=dd9c9be1bb7b724d6be5e76ffa6ee4d8"
+
+#: C/gameplay.page:7(desc)
+msgid "Introduction to <app>GNOME Tetravex</app>."
+msgstr "Εισαγωγή στο <app>GNOME Τετραβέξ</app>."
+
+#: C/gameplay.page:18(title)
+msgid "Gameplay"
+msgstr "Παίξιμο"
+
+#: C/gameplay.page:20(p)
+msgid ""
+"<app>GNOME Tetravex</app> is a simple puzzle game which scope is to move the "
+"various pieces from one side of the board to the other side, so that the "
+"same numbers depicted on the pieces are touching each other."
+msgstr ""
+"Το <app>GNOME Τετραβέξ</app> είναι ένα απλό παιχνίδι γρίφου, σκοπός του "
+"οποίου είναι να μετακινήσετε τα κομμάτια από ένα μέρος του ταμπλώ στο άλλο, "
+"ώστε οι ίδιοι αριθμοί που εικονίζονται στα κομμάτια να εφάπτονται."
+
+#: C/gameplay.page:25(p)
+msgid ""
+"The game is timed, and these times are used as the score for the game. You "
+"have to move all the pieces in the least time possible."
+msgstr ""
+"Το παιχνίδι χρονομετρείται, και ο χρόνος σας είναι το σκορ σας στο παιχνίδι. "
+"Πρέπει να μετακινήσετε όλα τα κομμάτια στο συντομότερο δυνατό χρόνο."
+
+#: C/gameplay.page:30(title)
+msgid "Main game window"
+msgstr "Κύριο παράθυρο του παιχνιδιού"
+
+#: C/gameplay.page:31(desc)
+#| msgid "GNOME Tetravex Main Window"
+msgid "<app>Tetravex</app> main window"
+msgstr "Κύριο παράθυρο του GNOME Τετραβέξ"
+
+#: C/gameplay.page:33(p)
+#| msgid "GNOME Tetravex Main Window."
+msgid "<app>Tetravex</app> main window."
+msgstr "Κύριο παράθυρο του <app>Τετραβέξ</app>."
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/index.page:0(None)
+msgid "translator-credits"
+msgstr ""
+"Ελληνική μεταφραστική ομάδα GNOME\n"
+" Χρήστος Μπούνταλης <mpounta@gmail.com>, 2007-2008\n"
+" Μάριος Ζηντίλης <m.zindilis@dmajor.org>, 2010"
+"\n"
+"Για περισσότερα δείτε http://www.gnome.gr/"
+
+#~ msgid "<application>Tetravex</application> Manual"
+#~ msgstr "Τεκμηρίωση <application>Tetravex</application>"
+
+#~ msgid ""
+#~ "Tetravex is a simple puzzle game in which pieces have numbers on each "
+#~ "side. The pieces must be positioned so that the same numbers touch each "
+#~ "other, during which you are being timed. The times are then stored in a "
+#~ "system-wide scoreboard."
+#~ msgstr ""
+#~ "Το Tetravex είναι ένα απλό παιγνίδι γρίφος, όπου τα κομμάτια έχουν "
+#~ "αριθμούς σε κάθε πλευρά τους. Πρέπει να τοποθετήσετε τα κομμάτια αυτά με "
+#~ "τέτοιο τρόπο έτσι ώστε οι όμοιοι αριθμοί να εφάπτονται μεταξύ τους, ενώ "
+#~ "κατά την διαρκεια αυτής της διαδικασίας χρονομετρήστε. Οι χρόνοι σας "
+#~ "έπειτα αποθηκεύονται σε έναν γενικό πίνακα βαθμολογίας."
+
+#~ msgid "2001"
+#~ msgstr "2001"
+
+#~ msgid "GNOME Documentation Project"
+#~ msgstr "Έργο Τεκμηρίωσης GNOME"
+
+#~ msgid ""
+#~ "Permission is granted to copy, distribute and/or modify this document "
+#~ "under the terms of the GNU Free Documentation License (GFDL), Version 1.1 "
+#~ "or any later version published by the Free Software Foundation with no "
+#~ "Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You "
+#~ "can find a copy of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl"
+#~ "\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
+#~ msgstr ""
+#~ "Δίνεται άδεια για αντιγραφή, διανομή και/ή τροποποίηση του εγγράφου υπό "
+#~ "τους όρους της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), Έκδοση 1.1 ή "
+#~ "μεταγενέστερη εκδιδόμενη από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Σταθερά "
+#~ "Εδάφια, χωρίς Εξώφυλλα Κειμένου, και χωρίς Οπισθόφυλλα Κειμένου. Μπορείτε "
+#~ "να βρείτε ένα αντίγραφο της GFDL σε αυτόν τον <ulink type=\"help\" url="
+#~ "\"ghelp:fdl\">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανεμήθηκε "
+#~ "με αυτόν τον οδηγό."
+
+#~ msgid ""
+#~ "This manual is part of a collection of GNOME manuals distributed under "
+#~ "the GFDL. If you want to distribute this manual separately from the "
+#~ "collection, you can do so by adding a copy of the license to the manual, "
+#~ "as described in section 6 of the license."
+#~ msgstr ""
+#~ "Αυτός ο οδηγός είναι μέρος μίας συλλογής οδηγούς του GNOME διανεμημένα "
+#~ "υπό την άδεια GFDL. Εάν θέλετε να διανείμετε αυτόν τον οδηγό ξεχωριστά "
+#~ "από τη συλλογή, μπορείτε να το κάνετε προσθέτοντας ένα αντίγραφο της "
+#~ "άδειας στον οδηγό, όπως περιγράφτηκε στο εδάφιο 6 της άδειας."
+
+#~ msgid ""
+#~ "Many of the names used by companies to distinguish their products and "
+#~ "services are claimed as trademarks. Where those names appear in any GNOME "
+#~ "documentation, and the members of the GNOME Documentation Project are "
+#~ "made aware of those trademarks, then the names are in capital letters or "
+#~ "initial capital letters."
+#~ msgstr ""
+#~ "Πολλά από τα ονόματα που χρησιμοποιούνται από τις εταιρείες για να "
+#~ "διαχωρίσουν τα προϊόντα και τις υπηρεσίες αξιώνονται ως εμπορικά σήματα. "
+#~ "Όπου εμφανίζονται τέτοια ονόματα στην τεκμηρίωση του GNOME, και τα μέλη "
+#~ "του Έργου Τεκμηρίωσης του GNOME είναι ενήμερα για αυτά τα εμπορικά "
+#~ "σήματα, τότε τα ονόματα είναι με κεφαλαία γράμματα ή με αρχικά κεφαλαίων "
+#~ "γραμμάτων."
+
+#~ msgid ""
+#~ "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+#~ "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES "
+#~ "THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+#~ "MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+#~ "RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+#~ "MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+#~ "MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+#~ "WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+#~ "SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES "
+#~ "AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS "
+#~ "DISCLAIMER; AND"
+#~ msgstr ""
+#~ "Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ ΠΑΡΕΧΕΤΑΙ \"ΩΣ ΕΧΕΙ\", ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ ΟΤΙ ΜΠΟΡΕΙ "
+#~ "ΝΑ ΕΞΥΠΗΡΕΤΗΣΕΙ ΚΑΠΟΙΟ ΣΚΟΠΟ Η ΟΤΙ ΕΙΝΑΙ ΧΩΡΙΣ ΣΦΑΛΜΑ. ΟΛΟΚΛΗΡΗ Η ΕΥΘΥΝΗ "
+#~ "ΓΙΑ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ ΚΑΙ ΛΕΙΤΟΥΡΓΙΚΟΤΗΤΑ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή "
+#~ "ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΝΗΚΕΙ ΣΕ ΕΣΑΣ. ΕΑΝ Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ Ή ΠΑΡΑΛΛΑΓΗ ΑΥΤΗΣ "
+#~ "ΕΙΝΑΙ ΛΑΘΟΣ ΚΑΤΑ ΚΑΠΟΙΟ ΤΡΟΠΟ ΕΣΕΙΣ ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΗΝ ΕΥΘΥΝΗ ΤΗΣ "
+#~ "ΔΙΟΡΘΩΣΗΣ. Η ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ ΠΟΥ ΣΥΝΟΔΕΥΕΙ ΑΥΤΗ ΤΗΝ ΤΕΚΜΗΡΙΩΣΗ ΕΙΝΑΙ "
+#~ "ΑΝΑΠΟΣΠΑΣΤΟ ΚΟΜΜΑΤΙ ΑΥΤΗΣ. ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ "
+#~ "ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ."
+
+#~ msgid ""
+#~ "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT "
+#~ "(INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL "
+#~ "WRITER, ANY CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE "
+#~ "LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR "
+#~ "CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, "
+#~ "DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR "
+#~ "MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR "
+#~ "RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, "
+#~ "EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH "
+#~ "DAMAGES."
+#~ msgstr ""
+#~ "ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΝΟΜΙΚΗ ΣΥΝΘΗΚΗ, ΕΙΤΕ ΜΕΣΩ ΣΥΜΒΟΛΑΙΩΝ Ή "
+#~ "ΑΛΛΙΩΣ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ Ο ΣΥΓΓΡΑΦΕΑΣ, Ο ΔΙΑΝΟΜΕΑΣ, Η ΑΛΛΟΣ ΣΥΝΥΠΕΥΘΥΝΟΣ "
+#~ "ΓΙΑ ΤΗΝ ΣΥΓΓΡΑΦΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ, ΓΙΑ ΕΜΜΕΣΕΣ Η ΑΜΕΣΕΣ, ΤΥΧΑΙΕΣ Ή ΜΗ "
+#~ "ΖΗΜΙΕΣ ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή "
+#~ "ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ "
+#~ "ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ."
+
+#~ msgid ""
+#~ "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE "
+#~ "TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER "
+#~ "UNDERSTANDING THAT: <placeholder-1/>"
+#~ msgstr ""
+#~ "ΤΟ ΈΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ "
+#~ "ΤΗΣ ΑΔΕΙΑΣ GNU FREE DOCUMENTATION ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: "
+#~ "<placeholder-1/>"
+
+#~ msgid "Rob"
+#~ msgstr "Rob"
+
+#~ msgid "Bradford"
+#~ msgstr "Bradford"
+
+#~ msgid "Tetravex Manual V2.10"
+#~ msgstr "Τεκμηρίωση Tetravex V2.10"
+
+#~ msgid "June 2005"
+#~ msgstr "Ιούνιος 2005"
+
+#~ msgid "Rob Bradford <email>rob@funky-penguin.co.uk</email>"
+#~ msgstr "Rob Bradford <email>rob@funky-penguin.co.uk</email>"
+
+#~ msgid "This manual describes version 2.12 of Tetravex."
+#~ msgstr "Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.12 του Tetravex."
+
+#~ msgid "Feedback"
+#~ msgstr "Ανάδραση"
+
+#~ msgid ""
+#~ "To report a bug or make a suggestion regarding the <application>Tetravex</"
+#~ "application> application or this manual, follow the directions in the "
+#~ "<ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME "
+#~ "Feedback Page</ulink>."
+#~ msgstr ""
+#~ "Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με το "
+#~ "<application>GNOME Tetravex</application>  ή αυτή την τεκμηρίωση, "
+#~ "ακολουθήστε τις οδηγίες που περιγράφονται στη σελίδα <ulink url=\"ghelp:"
+#~ "user-guide?feedback-bugs\" type=\"help\">ανάδρασης GNOME </ulink>."
+
+#~ msgid ""
+#~ "<application>GNOME Tetravex</application> is a simple puzzle where pieces "
+#~ "must be positioned so that the same numbers are touching each other. Your "
+#~ "game is timed, these times are stored in a system-wide scoreboard."
+#~ msgstr ""
+#~ "Το <application>GNOME Tetravex</application> είναι ένα απλό παιγνίδι "
+#~ "γρίφος, όπου τα κομμάτια πρέπει να τοποθετηθούν με τέτοιο τρόπο έτσι ώστε "
+#~ "οι όμοιοι αριθμοί να εφάπτονται μεταξύ τους."
+
+#~ msgid ""
+#~ "To run <application>GNOME Tetravex</application>, select "
+#~ "<menuchoice><guisubmenu>Games</guisubmenu><guimenuitem>Gnotravex</"
+#~ "guimenuitem></menuchoice> from the <guimenu>Main Menu</guimenu>, or type "
+#~ "<command>gnotravex</command> on the command line."
+#~ msgstr ""
+#~ "Για να τρέξετε το <application>GNOME Tetravex</application>, επιλέξτε "
+#~ "<menuchoice><guisubmenu>Παιχνίδια</guisubmenu><guimenuitem>Gnotravex</"
+#~ "guimenuitem></menuchoice> από το <guimenu>Κυρίως Μενού</guimenu>, ή "
+#~ "πληκτρολογείστε <command>gnotravex</command> στην γραμμή εντολών."
+
+#~ msgid ""
+#~ "<application>GNOME Tetravex</application> is included in the "
+#~ "<filename>gnome-games</filename> package, which is part of the GNOME "
+#~ "desktop environment. This document describes version 2.10 of "
+#~ "<application>GNOME Tetravex</application>."
+#~ msgstr ""
+#~ "To <application>GNOME Tetravex</application> συμπεριλαμβάνεται στο πακέτο "
+#~ "<filename>gnome-games</filename>, το οποίο είναι κομμάτι του γραφικού "
+#~ "περιβάλλοντος επιφάνειας εργασίας GNOME. Αυτό το κείμενο περιγράφει την "
+#~ "έκδοση 2.10 του <application>GNOME Tetravex</application>."
+
+#~ msgid ""
+#~ "<application>GNOME Tetravex</application> is a simple puzzle game, this "
+#~ "section covers how to play the game."
+#~ msgstr ""
+#~ "Το <application>GNOME Tetravex</application> είναι ένα απλό παιγνίδι "
+#~ "γρίφος, αυτό το εδάφιο καλύπτει το πως να παίξετε το παιγνίδι."
+
+#~ msgid ""
+#~ "Starting <application>GNOME Tetravex</application> opens the "
+#~ "<interface>Main window</interface>, shown in <xref linkend=\"mainwindow-"
+#~ "fig\"/>. The window is divided into two boxes. The right hand side "
+#~ "contains a box containing the pieces you have yet to place and the left "
+#~ "hand box is where you arrange the pieces."
+#~ msgstr ""
+#~ "Ξεκινώντας το <application>GNOME Tetravex</application> ανοίγει το "
+#~ "<interface>Κυρίως παράθυρο</interface>, όπως μπορείτε να δείτε παρακάτω "
+#~ "<xref linkend=\"mainwindow-fig\"/>. Αυτό το παράθυρο χωρίζεται σε δύο "
+#~ "κουτιά. Δεξιά είναι το κουτί που περιέχει τα κομμάτια που πρέπει να "
+#~ "τοποθετήσετε και αριστερά είναι το κουτί όπου τοποθετείτε τα κομμάτια."
+
+#~ msgid ""
+#~ "You can start playing the game immediately. You may restart the game by "
+#~ "selecting <menuchoice><guisubmenu>File</guisubmenu><guimenuitem>New game</"
+#~ "guimenuitem></menuchoice><xref linkend=\"playing-fig\"/>"
+#~ msgstr ""
+#~ "Μπορείτε να ξεκινήσετε αμέσως να παίζετε. Μπορείτε να επανεκινήσετε  το "
+#~ "παιγνίδι επιλέγοντας <menuchoice><guisubmenu>Αρχείο</"
+#~ "guisubmenu><guimenuitem>Νέο παιγνίδι</guimenuitem></menuchoice><xref "
+#~ "linkend=\"playing-fig\"/> "
+
+#~ msgid "A GNOME Tetravex Game"
+#~ msgstr "Παιγνίδι Gnome Tetravex"
+
+#~ msgid "A GNOME Tetravex Game."
+#~ msgstr "Παιγνίδι Gnome Tetravex."
+
+#~ msgid ""
+#~ "The tiles are divided into four, you must position them so that only two "
+#~ "numbers that are the same are next to each other. The game wil not let "
+#~ "you position the tiles so that different numbers are next to each other. "
+#~ "You position the pieces by dragging them from their current position "
+#~ "either in the right hand box or the main box to their new position. These "
+#~ "moves are not permanent and can be readily reversed. You may also move "
+#~ "all the pieces in the left hand box at once by using the commands: "
+#~ "<menuchoice><guisubmenu>Move</guisubmenu><guimenuitem>Left/Right/Up/Down</"
+#~ "guimenuitem></menuchoice>"
+#~ msgstr ""
+#~ "Τα πλακίδια χωρίζονται στα τέσσερα, πρέπει να τα τοποθετήσετε έτσι ώστε "
+#~ "μόνο δύο ίδιοι αριθμοί να εφάπτονται. Το παιγνίδι δεν θα σας αφήσει να "
+#~ "τοποθετήσετε τα πλακίδια έχοντας διαφορετικά νούμερα το ένα πλάι στο "
+#~ "άλλο. Πρέπει να τοποθετήσετε τα κομμάτια σύροντας τα από την τρέχουσα "
+#~ "θέση τους είτε στο δεξιό κουτί είτε στο κυρίως κουτί, στη νέα θέση τους. "
+#~ "Αυτές οι κινήσεις δεν είναι μόνιμες και εύκολα  μπορούν να αλλάξουν. "
+#~ "Μπορείτε επίσης να μετακινήσετε όλα τα κομμάτια στο αριστερό κουτί με την "
+#~ "μία χρησιμοποιώντας τις εντολές <menuchoice><guisubmenu>Μετακινήση</"
+#~ "guisubmenu><guimenuitem>Αριστερά/Δεξιά/Πάνω/Κάτω</guimenuitem></"
+#~ "menuchoice> "
+
+#~ msgid "Winning the game"
+#~ msgstr "Νίκη του παιχνιδιού"
+
+#~ msgid ""
+#~ "The game is completed when you have positioned all the squares in the "
+#~ "right positions. When you have completed the game you are shown your "
+#~ "ranking in the high scores table, if you get a high enough score. If you "
+#~ "have used either Hint or Solve your score will not be included in the "
+#~ "high scores table."
+#~ msgstr ""
+#~ "Το παιγνίδι ολοκληρώνεται όταν έχετε τοποθετήσει όλα τα τετράγωνα στις "
+#~ "σωστές θέσεις. Όταν ολοκληρώσετε το παιγνίδι μπορείτε να δείτε την "
+#~ "κατάταξη σας στον πίνακα βαθμολογίας, εάν κάνετε μια αρκετά ψηλή "
+#~ "βαθμολογία. Εάν χρησιμοποιήσατε το Υπόδειξη ή Λύση οι βαθμοί σας δεν θα "
+#~ "συμπεριληφθούν στον πίνακα βαθμολογίας."
+
+#~ msgid "Customization"
+#~ msgstr "Προσαρμογή"
+
+#~ msgid ""
+#~ "Under the <guimenuitem>Settings</guimenuitem> menu you can change the "
+#~ "size of the grid from two by two up to six by six. The default is three "
+#~ "by three."
+#~ msgstr ""
+#~ "Κάτω από το μενού <guimenuitem>Ρυθμίσεις</guimenuitem> μπορείτε να "
+#~ "αλλάξετε το μέγεθος του πλέγματος από δύο επί δύο έως έξι επί έξι. Η "
+#~ "προεπιλεγμένη επιλογή είναι τρία επί τρία. "
+
+#~ msgid "Authors"
+#~ msgstr "Συγγραφείς"
+
+#~ msgid ""
+#~ "<application>GNOME Tetravex</application> was written by Lars Rydlinge "
+#~ "(<email>lars.rydlinge@hig.se</email>). This manual was written by Rob "
+#~ "Bradford (<email>rob@funky-penguin.co.uk</email>). To report a bug or "
+#~ "make a suggestion regarding this application or this manual, follow the "
+#~ "directions in this <ulink url=\"ghelp:user-guide?feedback-bugs\" type="
+#~ "\"help\">document</ulink>."
+#~ msgstr ""
+#~ "To <application>GNOME Tetravex</application> δημιουργήθηκε από τον Lars "
+#~ "Rydlinge (<email>lars.rydlinge@hig.se</email>). Αυτή η τεκμηρίωση "
+#~ "γράφτηκε από τον Rob Bradford (<email>rob@funky-penguin.co.uk</email>). "
+#~ "Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με αυτή την "
+#~ "εφαρμογή ή αυτή την τεκμηρίωση, ακολουθήστε τις οδηγίες που περιγράφονται "
+#~ "σε αυτό το <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
+#~ "\">έγγραφο</ulink>."
+
+#~ msgid ""
+#~ "This program is free software; you can redistribute it and/or modify it "
+#~ "under the terms of the <citetitle>GNU General Public License</citetitle> "
+#~ "as published by the Free Software Foundation; either version 2 of the "
+#~ "License, or (at your option) any later version."
+#~ msgstr ""
+#~ "Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό. Επιτρέπεται η αναδιανομή ή/"
+#~ "και τροποποίησή του υπό τους όρους της Γενικής Άδειας Δημόσιας Χρήσης GNU "
+#~ "(<citetitle>GNU General Public License</citetitle>) όπως αυτή "
+#~ "δημοσιεύεται από το Ίδρυμα Ελεύθερου Λογισμικού (Free Software "
+#~ "Foundation) - είτε της έκδοσης 2 της άδειας, είτε (κατ' επιλογήν) "
+#~ "οποιασδήποτε μεταγενέστερης έκδοσης."
+
+#~ msgid ""
+#~ "This program is distributed in the hope that it will be useful, but "
+#~ "WITHOUT ANY WARRANTY; without even the implied warranty of "
+#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the "
+#~ "<citetitle>GNU General Public License</citetitle> for more details."
+#~ msgstr ""
+#~ "Αυτό το πρόγραμμα διανέμεται με την ελπίδα οτι θα είναι χρήσιμο, αλλά "
+#~ "ΧΩΡΙΣ ΚΑΜΜΙΑ ΑΠΟΛΥΤΩΣ ΕΓΓΥΗΣΗ - χωρίς ακόμη και την έμμεση εγγύηση "
+#~ "ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε για "
+#~ "περισσότερες λεπτομέρειες την Γενική Άδεια Δημόσιας Χρήσης GNU "
+#~ "(<citetitle>GNU General Public License</citetitle>)."
+
+#~ msgid ""
+#~ "A copy of the <citetitle>GNU General Public License</citetitle> is "
+#~ "included as an appendix to the <citetitle>GNOME Users Guide</citetitle>. "
+#~ "You may also obtain a copy of the <citetitle>GNU General Public License</"
+#~ "citetitle> from the Free Software Foundation by visiting <ulink url="
+#~ "\"http://www.fsf.org\" type=\"http\">their Web site</ulink> or by writing "
+#~ "to <address> Free Software Foundation, Inc. <street>59 Temple Place</"
+#~ "street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-"
+#~ "1307</postcode><country>USA</country></address>"
+#~ msgstr ""
+#~ "Ένα αντίγραφο της Γενικής Δημόσιας Άδειας Χρήσης (<citetitle>GNU General "
+#~ "Public License</citetitle>) συμπεριλαμβάνεται ως παράρτημα στον  "
+#~ "<citetitle>Οδηγό Χρηστών GNOME </citetitle>. Μπορείτε επίσης να "
+#~ "αποκτήσετε ένα αντίγραφο της Γενικής Δημόσιας Άδειας Χρήσης "
+#~ "(<citetitle>GNU General Public License</citetitle>) από το Free Software "
+#~ "Foundation επισκεπτόμενοι <ulink url=\"http://www.fsf.org\" type=\"http"
+#~ "\"> την ιστοσελίδα τους</ulink> ή γράφωντας τους στο<address> Free "
+#~ "Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+#~ "<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+#~ "postcode><country>USA</country></address>"

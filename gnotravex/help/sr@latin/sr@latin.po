@@ -1,0 +1,929 @@
+# Serbian translation of gnome-games
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2009.
+#
+# This file is distributed under the same license as the gnome-games package.
+#
+# Translated on 2009-10-18 by Branko Kokanović <branko.kokanovic@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-22 20:25+0000\n"
+"PO-Revision-Date: 2010-02-21 11:41+0100\n"
+"Last-Translator: Branko Kokanović <branko.kokanovic@gmail.com>\n"
+"Language-Team: Serbian <gnom@prevod.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n%"
+"10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: C/winning.page:9(desc)
+msgid "Simple tips on how to possibly win a game."
+msgstr "Prosti saveti kako da potencijalno pobedite u igri."
+
+#: C/winning.page:12(name) C/usage.page:11(name) C/size.page:10(name)
+#: C/shortcut.page:11(name) C/multiplayer.page:10(name) C/move.page:11(name)
+#: C/index.page:17(name) C/hint.page:10(name) C/gameplay.page:10(name)
+msgid "Milo Casagrande"
+msgstr "Milo Casagrande"
+
+#: C/winning.page:13(email) C/usage.page:12(email) C/size.page:11(email)
+#: C/shortcut.page:12(email) C/multiplayer.page:11(email)
+#: C/move.page:12(email) C/index.page:18(email) C/hint.page:11(email)
+#: C/gameplay.page:11(email)
+msgid "milo@ubuntu.com"
+msgstr "milo@ubuntu.com"
+
+#: C/winning.page:16(p) C/usage.page:19(p) C/size.page:14(p)
+#: C/shortcut.page:15(p) C/multiplayer.page:14(p) C/move.page:15(p)
+#: C/index.page:21(p) C/gameplay.page:14(p)
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons Share Alike 3.0"
+
+#: C/winning.page:20(title)
+msgid "Win <app>GNOME Tetravex</app>"
+msgstr "Pobediti <app>Gnomovu slagalicu</app>"
+
+#: C/winning.page:23(p)
+msgid ""
+"The following tips will not assure you to win a game, they are intended as a "
+"simple aid."
+msgstr ""
+"Sledeći saveti vam neće osigurati pobedu u igri, oni su ovde samo kao mala "
+"pomoć."
+
+#: C/winning.page:30(title)
+msgid "Look for a single number"
+msgstr "Potražite usamljen broj"
+
+#: C/winning.page:31(p)
+msgid ""
+"When you start a new game, look for a single number, or a number that has no "
+"similar numbers that can be placed next to it."
+msgstr ""
+"Kada nova igra započne, potražite usamljen broj ili broj pored koga ne može "
+"da se stavi deo sa istim brojem."
+
+#: C/winning.page:35(p)
+msgid ""
+"If you have one such number, that piece is a valid starting piece, since you "
+"know where it has to be placed."
+msgstr ""
+"Ako imate takav broj, taj deo je ispravan početni deo, pošto znate gde da ga "
+"stavite."
+
+#: C/winning.page:39(p)
+msgid ""
+"Note that the bigger the size of the board, the harder is to find such a "
+"number."
+msgstr "Primetite da što je tabla za igru veća teže je naći takav broj."
+
+#: C/winning.page:46(title)
+msgid "Have a tip to share?"
+msgstr "Imate savet da podelite?"
+
+#: C/winning.page:47(p)
+msgid ""
+"If you have a tip to share about <app>GNOME Tetravex</app>, or any other "
+"GNOME games, write us at gnome-doc-list@gnome.org. We will add them here!"
+msgstr ""
+"Ako imate neki savet da podelite sa svima u vezi <app>Gnomove slagalice</"
+"app>, ili bilo koje druge Gnom igre, pišite nam na gnome-doc-list@gnome.org. "
+"Dodaćemo ih ovde!"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/usage.page:61(None)
+msgid ""
+"@@image: 'figures/gnotravex-video.ogv'; md5=14cface4ec2b0c84aa5a925242694de0"
+msgstr ""
+"@@image: 'figures/gnotravex-video.ogv'; md5=14cface4ec2b0c84aa5a925242694de0"
+
+#: C/usage.page:8(desc)
+msgid "How to play <app>GNOME Tetravex</app>."
+msgstr "Kako da igrate <app>Gnomovu slagalicu</app>."
+
+#: C/usage.page:15(name) C/index.page:13(name)
+msgid "Rob Bradford"
+msgstr "Rob Bradford"
+
+#: C/usage.page:16(email) C/index.page:14(email)
+msgid "robster@debian.org"
+msgstr "robster@debian.org"
+
+#: C/usage.page:23(title)
+msgid "Play <app>GNOME Tetravex</app>"
+msgstr "Igranje <app>Gnomove slagalice</app>"
+
+#: C/usage.page:26(title)
+msgid "Basic usage"
+msgstr "Osnovna upotreba"
+
+#: C/usage.page:27(p)
+msgid ""
+"The game window is divided into two boxes: the one on the right side of the "
+"window contains the pieces that needs to be arranged; the one on the left "
+"side of the window is where the pieces from the right box will be arranged "
+"and moved. Each piece is divided into four little triangles containing a "
+"number."
+msgstr ""
+"Prozor za igru je podeljen na dve kutije: kutija na desnoj strani sadrži sve "
+"delove koje treba složiti; kutija na levoj strani je mesto gde delovi iz "
+"desne kutije treba da budu pomereni i složeni. Svaki deo je podeljen na "
+"četiri mala trougla koji sadrže po jedan broj."
+
+#: C/usage.page:34(p)
+msgid ""
+"The scope of the game is to position the pieces so that only two identical "
+"numbers are next to each other."
+msgstr ""
+"Uslov u igri je da se delovi poređaju tako da su samo isti brojevi jedan do "
+"drugog."
+
+#: C/usage.page:38(p)
+msgid ""
+"It is not possible to position the pieces so that different number are next "
+"to each other."
+msgstr ""
+"Nemoguće je postaviti delove tako da dva različita broja budu jedan do "
+"drugog."
+
+#: C/usage.page:42(p)
+msgid ""
+"The game is completed when you have positioned all the pieces in their right "
+"positions."
+msgstr "Igra je završena kada postavite sve delove na njihove pozicije."
+
+#: C/usage.page:47(p)
+msgid ""
+"When you start <app>GNOME Tetravex</app>, the game will start immediately, "
+"and the time will start counting."
+msgstr ""
+"Čim pokrenete <app>Gnomovu slagalicu</app> započinje nova igra i vreme kreće "
+"da teče."
+
+#: C/usage.page:56(title)
+msgid "Video demonstration"
+msgstr "Video demonstracija"
+
+#: C/usage.page:57(p)
+#, fuzzy
+#| msgid ""
+#| "This small video shows how the game works, and what are the possible "
+#| "movements."
+msgid ""
+"This short video shows how the game works, and what are the possible "
+"movements."
+msgstr ""
+"Ovaj mali video prikazuje kako se slagalica igra i koji su mogući potezi."
+
+#: C/usage.page:61(media)
+msgid "Simple demonstration of a game"
+msgstr "Mala demonstracija igre"
+
+#: C/size.page:7(desc)
+msgid "Change the size of the game board."
+msgstr "Promena veličine table za igru."
+
+#: C/size.page:17(title)
+msgid "Game board size"
+msgstr "Veličina table"
+
+#: C/size.page:19(p)
+msgid ""
+"To change the size of the game board, in order to increase or decrease the "
+"complexity of the game, choose <gui>Size</gui> from the main menu bar, and "
+"then select the dimension of the board."
+msgstr ""
+"Da biste promenili veličinu table i tako smanjili ili povećali težinu igre, "
+"odaberite <gui>Veličina</gui>  iz glavnog menija i onda odaberite željene "
+"dimenzije table."
+
+#: C/size.page:24(p)
+msgid ""
+"You can select from five different dimension, from 2×2 to 6×6. The default "
+"one is 3×3."
+msgstr ""
+"Možete birati između pet različitih dimenzija, od 2×2 do 6×6. Podrazumevana "
+"je 3×3."
+
+#: C/size.page:28(p)
+msgid ""
+"If the pieces are too small, resizing the window will change their size."
+msgstr ""
+"Ako su delovi premali, povećanje veličine prozora će promeniti i veličinu "
+"delova."
+
+#: C/shortcut.page:8(desc)
+msgid "Use the keyboard to play the game."
+msgstr "Koristite tastaturu da biste igrali igru."
+
+#: C/shortcut.page:19(title)
+msgid "Keyboard shortcuts"
+msgstr "Prečice na tastaturi"
+
+#: C/shortcut.page:22(title)
+msgid "Game shortcuts"
+msgstr "Prečice u igri"
+
+#: C/shortcut.page:23(p)
+msgid ""
+"The following table groups the most useful shortcuts for playing <app>GNOME "
+"Tetravex</app>."
+msgstr ""
+"Sledeća tabela grupiše najkorisnije prečice za igranje <app>Gnomove "
+"slagalice</app>."
+
+#: C/shortcut.page:28(p)
+msgid "Shortcut"
+msgstr "Prečica"
+
+#: C/shortcut.page:28(p)
+msgid "Description"
+msgstr "Opis"
+
+#: C/shortcut.page:32(key) C/shortcut.page:49(key) C/shortcut.page:58(key)
+#: C/shortcut.page:66(key) C/shortcut.page:74(key)
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: C/shortcut.page:32(key)
+msgid "N"
+msgstr "N"
+
+#: C/shortcut.page:35(p)
+msgid "Start a new game."
+msgstr "Pokreće novu igru"
+
+#: C/shortcut.page:40(key)
+msgid "Pause"
+msgstr "Pause"
+
+#: C/shortcut.page:43(p)
+msgid "Pause or resume the game."
+msgstr "Pauzira ili nastavlja već pauziranu igru."
+
+#: C/shortcut.page:49(key)
+msgid "Up"
+msgstr "Gore"
+
+#: C/shortcut.page:53(p)
+msgid "Move all the pieces in the left box up by one."
+msgstr "Pomera sve delove u levoj kutiji za jedno mesto gore."
+
+#: C/shortcut.page:58(key)
+msgid "Down"
+msgstr "Dole"
+
+#: C/shortcut.page:61(p)
+msgid "Move all the pieces in the left box down by one."
+msgstr "Pomera sve delove u levoj kutiji za jedno mesto dole."
+
+#: C/shortcut.page:66(key)
+msgid "Left"
+msgstr "Levo"
+
+#: C/shortcut.page:69(p)
+msgid "Move all the pieces in the left box left by one."
+msgstr "Pomera sve delove u levoj kutiji za jedno mesto levo"
+
+#: C/shortcut.page:74(key)
+msgid "Right"
+msgstr "Desno"
+
+#: C/shortcut.page:77(p)
+msgid "Move all the pieces in the left box right by one."
+msgstr "Pomera sve delove u levoj kutiji za jedno mesto desno."
+
+#: C/multiplayer.page:7(desc)
+msgid "How to play with other people."
+msgstr "Kako igrati protiv drugih ljudi."
+
+#: C/multiplayer.page:18(title)
+msgid "Play with other people"
+msgstr "Igranje sa drugim ljudima"
+
+#: C/multiplayer.page:20(p)
+msgid ""
+"With <app>GNOME Tetravex</app> it is not possible to play with or against "
+"other people over the Internet or a local network."
+msgstr ""
+"U <app>Gnomovoj slagalici</app> nije moguće igrati sa ili protiv drugih ljudi "
+"preko interneta ili lokalne mreže."
+
+#: C/move.page:8(desc)
+msgid "How to move the pieces on the game board."
+msgstr "Kako da pomerate delove na tabli za igru."
+
+#: C/move.page:19(title)
+msgid "Move the pieces"
+msgstr "Pomeranje delova"
+
+#: C/move.page:22(title)
+msgid "Move a piece"
+msgstr "Pomeriti deo"
+
+#: C/move.page:23(p)
+msgid ""
+"To move a piece, you need to click-and-hold on it, drag it from its current "
+"position to its new position, either on the right box or on the left box, "
+"and release the mouse button."
+msgstr ""
+"Da biste pomerili deo, morate prvo da ga kliknete i držite ga tako, a onda "
+"ga prevlačite sa trenutnog mesta na novo mesto, bilo na desnu ili levu "
+"kutiju, a onda otpustite dugme miša."
+
+#: C/move.page:28(p)
+msgid "These moves are not permanent and can be reversed."
+msgstr "Ova pomeranja nisu konačna i deo se uvek može vratiti nazad."
+
+#: C/move.page:32(p)
+msgid ""
+"The pieces in the left box can be moved all at once in one direction. See "
+"<link xref=\"shortcut\"/> for more information."
+msgstr ""
+"Svi delovi u levoj kutiji se mogu zajedno pomeriti u nekom pravcu. "
+"Pogledajte <link xref=\"shortcut\"/> za detalje."
+
+#: C/move.page:39(title)
+msgid "Avoid the click-and-hold"
+msgstr "Izbegnite dugo držanje dugmeta miša"
+
+#: C/move.page:40(p)
+msgid ""
+"If you do not feel comfortable with the click-and-hold action to move the "
+"pieces, it is possible to change that behavior so that you only have to "
+"click on a piece to move it, and click again to release it in its new "
+"position."
+msgstr ""
+"Ako vam nije prijatno da kliknete i držite pritisnuto dugme miša da biste "
+"pomerali delove, moguće je promeniti to ponašanje tako da je dovoljno samo da "
+"jednom kliknete na deo i da počnete da ga pomerate, a da ponovo kliknete da "
+"biste ga spustili na novo mesto."
+
+#: C/move.page:45(p)
+msgid ""
+"To do that, from the main menu bar, choose <gui style=\"menu\">Move</gui>, "
+"and select <gui style=\"checkbox\">Click to Move</gui>."
+msgstr ""
+"Da biste uradili ovo, iz trake glavnog menija otvorite <gui style=\"menu"
+"\">Pomeri</gui> i odaberite <gui style=\"checkbox\">Kliknite za potez</gui>."
+
+#: C/license.page:8(desc)
+msgid "Legal information."
+msgstr "Pravne informacije."
+
+#: C/license.page:11(title)
+msgid "License"
+msgstr "Licenca"
+
+#: C/license.page:12(p)
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
+msgstr ""
+"Ovaj rad se distribuira pod Autorstvo-Deliti pod istim uslovima 3.0 licencom."
+
+#: C/license.page:20(p)
+msgid "You are free:"
+msgstr "Dozvoljeno je:"
+
+#: C/license.page:25(em)
+msgid "To share"
+msgstr "Deliti"
+
+#: C/license.page:26(p)
+msgid "To copy, distribute and transmit the work."
+msgstr "Umnožavati, distribuirati i javno saopštavati delo."
+
+#: C/license.page:29(em)
+msgid "To remix"
+msgstr "Remiksovati"
+
+#: C/license.page:30(p)
+msgid "To adapt the work."
+msgstr "Preraditi delo."
+
+#: C/license.page:33(p)
+msgid "Under the following conditions:"
+msgstr "Pod sledećim uslovima:"
+
+#: C/license.page:38(em)
+msgid "Attribution"
+msgstr "Autorstvo"
+
+#: C/license.page:39(p)
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+"Morate da navedete ime izvornog autora na način koji je određen od strane "
+"izvornog autora ili davaoca licence (ali ne tako što ćete sugerisati da vas "
+"podržava ili odobrava vaše korišćenje dela)."
+
+#: C/license.page:46(em)
+msgid "Share Alike"
+msgstr "Deliti pod istim uslovima"
+
+#: C/license.page:47(p)
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Ako menjate, preoblikujete ili upotrebite delo u svom delu, preradu morate da "
+"distribuirate pod istom ili sličnom licencom."
+
+#: C/license.page:53(p)
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"Za ceo tekst licence, pogledajte <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/legalcode\">CreativeCommons veb sajt</link> ili "
+"pročitajte ceo <link href=\"http://creativecommons.org/licenses/by-sa/3.0/"
+"\">Commons ugovor</link>."
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/index.page:26(None)
+msgid ""
+"@@image: 'figures/gnotravex-logo.png'; md5=daf379ccd659b42a71cd0f2661f651e4"
+msgstr ""
+"@@image: 'figures/gnotravex-logo.png'; md5=daf379ccd659b42a71cd0f2661f651e4"
+
+#: C/index.page:8(title) C/index.page:9(title)
+msgid "GNOME Tetravex"
+msgstr "Gnomova slagalica"
+
+#: C/index.page:10(desc)
+msgid "GNOME Tetravex help."
+msgstr "Pomoć za Gnomovu slagalicu."
+
+#: C/index.page:25(title)
+msgid ""
+"<media type=\"image\" mime=\"image/png\" src=\"figures/gnotravex-logo.png"
+"\">GNOME Tetravex logo</media> GNOME Tetravex"
+msgstr ""
+"<media type=\"image\" mime=\"image/png\" src=\"figures/gnotravex-logo.png"
+"\">Logo Gnomove slagalice</media> Gnomova slagalica"
+
+#: C/index.page:31(title)
+msgid "Basic Gameplay &amp; Usage"
+msgstr "Osnove igre i upotreba"
+
+#: C/index.page:35(title)
+msgid "Multiplayer Game"
+msgstr "Igra za više igrača"
+
+#: C/index.page:39(title)
+msgid "Tips &amp; Tricks"
+msgstr "Saveti i trikovi"
+
+#: C/hint.page:7(desc)
+msgid "Use hints or solve the game automatically."
+msgstr "Koristite savete ili rešite igru automatski."
+
+#: C/hint.page:14(title)
+msgid "Hints"
+msgstr "Saveti"
+
+#: C/hint.page:17(p)
+msgid ""
+"If you use one of the following methods to complete the game, your scores "
+"will not be included among the high scores."
+msgstr ""
+"Ako koristite bilo šta od metoda navedenih ispod, vaš rezultat neće biti "
+"uključen među najbolje rezultate."
+
+#: C/hint.page:25(title)
+msgid "Use the hints system"
+msgstr "Korišćenje sistema saveta"
+
+#: C/hint.page:27(p)
+msgid ""
+"At any time in the game, if you do not know how to start it, or where to "
+"move a piece, it is possible to use the built-in hints system."
+msgstr ""
+"U bilo kom trenutku dok igrate, ako ne znate kako da krenete ili gde da "
+"pomerite deo, moguće je iskoristiti ugrađeni sistem saveta."
+
+#: C/hint.page:31(p)
+msgid ""
+"The system will move one piece from the right box to its correct position "
+"into the left box."
+msgstr ""
+"Sistem će premestiti jedan deo iz desne kutije na pravilno mesto u levoj "
+"kutiji."
+
+#: C/hint.page:35(p)
+msgid "To use the hints system, perform one of the following:"
+msgstr "Da biste koristili sistem saveta, uradite jednu od sledećih stvari:"
+
+#: C/hint.page:40(p)
+msgid "Press <keyseq><key>Ctrl</key><key>H</key></keyseq>."
+msgstr "Pritisnite <keyseq><key>Ctrl</key><key>H</key></keyseq>."
+
+#: C/hint.page:45(p)
+msgid ""
+"Choose <guiseq><gui style=\"menu\">Game</gui><gui style=\"menuitem\">Hint</"
+"gui></guiseq>."
+msgstr ""
+"Odaberite <guiseq><gui style=\"menu\">Igra</gui><gui style=\"menuitem"
+"\">Savet</gui></guiseq>."
+
+#: C/hint.page:52(title)
+msgid "Solve the game"
+msgstr "Rešavanje igre"
+
+#: C/hint.page:53(p)
+msgid ""
+"If you get stuck in the game, or you want to solve it automatically, choose "
+"<guiseq><gui style=\"menu\">Game</gui><gui style=\"menuitem\">Solve</gui></"
+"guiseq>."
+msgstr ""
+"Ako se zaglavite sa igrom, ili želite da se igra automatski reši, odaberite "
+"<guiseq><gui style=\"menu\">Igra</gui><gui style=\"menuitem\">Reši</gui></"
+"guiseq>."
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gameplay.page:32(None)
+msgid ""
+"@@image: 'figures/gnotravex-main-window.png'; "
+"md5=dd9c9be1bb7b724d6be5e76ffa6ee4d8"
+msgstr ""
+"@@image: 'figures/gnotravex-main-window.png'; "
+"md5=dd9c9be1bb7b724d6be5e76ffa6ee4d8"
+
+#: C/gameplay.page:7(desc)
+msgid "Introduction to <app>GNOME Tetravex</app>."
+msgstr "Uvod u <app>Gnomovu slagalicu</app>."
+
+#: C/gameplay.page:18(title)
+msgid "Gameplay"
+msgstr "Igranje"
+
+#: C/gameplay.page:20(p)
+msgid ""
+"<app>GNOME Tetravex</app> is a simple puzzle game which scope is to move the "
+"various pieces from one side of the board to the other side, so that the "
+"same numbers depicted on the pieces are touching each other."
+msgstr ""
+"<app>Gnomova slagalica</app> je jednostavna slagalica u kojoj je cilj "
+"premestiti razne delove sa brojevima sa desne strane na levu stranu table, "
+"ali tako da se samo isti brojevi na delovima međusobno dodiruju."
+
+#: C/gameplay.page:25(p)
+msgid ""
+"The game is timed, and these times are used as the score for the game. You "
+"have to move all the pieces in the least time possible."
+msgstr ""
+"U igri se meri vreme, i ovo vreme se koristi kao rezultat igre. Morate "
+"pomeriti sve delove u što kraćem vremenu."
+
+#: C/gameplay.page:30(title)
+msgid "Main game window"
+msgstr "Glavni prozor igre"
+
+#: C/gameplay.page:31(desc)
+msgid "<app>Tetravex</app> main window"
+msgstr "Glavni prozor <app>Gnomove slagalice</app>"
+
+#: C/gameplay.page:33(p)
+msgid "<app>Tetravex</app> main window."
+msgstr "Glavni prozor <app>Gnomove slagalice</app>."
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/index.page:0(None)
+msgid "translator-credits"
+msgstr ""
+"Branko Kokanović <branko.kokanovic@gmail.com>\n"
+"\n"
+"Prevod.org — prevod na srpski jezik"
+
+#~ msgid "<application>Tetravex</application> Manual"
+#~ msgstr "Uputstvo za <application>Slagalicu</application>"
+
+#~ msgid ""
+#~ "Tetravex is a simple puzzle game in which pieces have numbers on each "
+#~ "side. The pieces must be positioned so that the same numbers touch each "
+#~ "other, during which you are being timed. The times are then stored in a "
+#~ "system-wide scoreboard."
+#~ msgstr ""
+#~ "Slagalica je jednostavna igra u kojoj svaki delić ima broj sa strane. "
+#~ "Delovi se moraju postaviti tako da se brojevi sa istih strana slažu. "
+#~ "Tokom igre se meri vreme partije, koje se zatim čuva u tabeli sa "
+#~ "rezultatima."
+
+#~ msgid "2001"
+#~ msgstr "2001"
+
+#~ msgid "GNOME Documentation Project"
+#~ msgstr "Projekat Gnomove dokumentacije"
+
+#~ msgid ""
+#~ "Permission is granted to copy, distribute and/or modify this document "
+#~ "under the terms of the GNU Free Documentation License (GFDL), Version 1.1 "
+#~ "or any later version published by the Free Software Foundation with no "
+#~ "Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You "
+#~ "can find a copy of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl"
+#~ "\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
+#~ msgstr ""
+#~ "Dozvoljeno umnožavanje, širenje, vršenje izmena ovog dokumenta pod uslovima "
+#~ "Gnu-ove Slobodne Dokumentacione Dozvole (GSDD), verzije 1.1 ili bilo koje "
+#~ "naknadne verzije bez nepromenjivih odeljaka, teksta na naslovnoj i "
+#~ "poslednjoj strani, a koju je objavila Zadužbina Slobodnog Softvera. "
+#~ "Primerak GSDD-e možete pronaći na ovoj <ulink type=\"help\" url=\"ghelp:"
+#~ "fdl\">adresi</ulink> ili u datoteci COPYING-DOCS koja je priložena uz ovo "
+#~ "uputstvo."
+
+#~ msgid ""
+#~ "This manual is part of a collection of GNOME manuals distributed under "
+#~ "the GFDL. If you want to distribute this manual separately from the "
+#~ "collection, you can do so by adding a copy of the license to the manual, "
+#~ "as described in section 6 of the license."
+#~ msgstr ""
+#~ "Ovo uputstvo je deo skupa Gnom dokumenata objavljenih pod GFDL. Ukoliko "
+#~ "želite da raspodeljujete ovo uputstvo odvojeno od skupa, to možete uraditi "
+#~ "dodavanjem primerka licence dokumentu, kako je opisano u odeljku 6 same "
+#~ "licence."
+
+#~ msgid ""
+#~ "Many of the names used by companies to distinguish their products and "
+#~ "services are claimed as trademarks. Where those names appear in any GNOME "
+#~ "documentation, and the members of the GNOME Documentation Project are "
+#~ "made aware of those trademarks, then the names are in capital letters or "
+#~ "initial capital letters."
+#~ msgstr ""
+#~ "Mnogi nazivi koje kompanije koriste u cilju prepoznatljivosti svojih "
+#~ "proizvoda i usluga predstavljaju robne marke. Kada (ukoliko) se takvi "
+#~ "nazivi pojavljuju(spominju) u bilo kojem Gnomovom dokumentu, a članovi "
+#~ "Gnomovog dokumentacionog projekta imaju saznanja o tome, tada su nazivi "
+#~ "ispisani velikim slovima ili sa velikim početnim slovima."
+
+#~ msgid ""
+#~ "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+#~ "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES "
+#~ "THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+#~ "MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+#~ "RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+#~ "MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+#~ "MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+#~ "WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+#~ "SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES "
+#~ "AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS "
+#~ "DISCLAIMER; AND"
+#~ msgstr ""
+#~ "DOKUMENT JE DOSTUPAN SA SVIM SVOJIM DOBRIM I LOŠIM STRANAMA BEZ BILO "
+#~ "KAKVOG JAMSTVA, BILO ONO IZREČENO ILI NE, UKLJUČUJUĆI BEZ OGRANIČENJA, "
+#~ "JAMSTVO DA JE OVAJ DOKUMENT ILI NJEGOVA IZMENJENA VERZIJA BEZ NEDOSTATAKA, "
+#~ "SPREMAN ZA TRŽIŠTE, SVRSISHODAN I NE NARUŠAVA ZAKONSKE NORME. CELOKUPAN "
+#~ "RIZIK KOJI SE ODNOSI NA KVALITET, TAČNOST I DOMET (UČINAK) DOKUMENTA ILI "
+#~ "NJEGOVE IZMENJENE VERZIJE SNOSI KORISNIK. UKOLIKO SE U BILO KOJEM DOKUMENTU "
+#~ "ILI NJEGOVOJ IZMENJENOJ VERZIJI POJAVI NEDOSTATAK (GREŠKA) BILO KOJE VRSTE, "
+#~ "KORISNIK (A NE AUTOR IZVORNE VERZIJE, BILO KOJI DRUGI AUTOR ILI SARADNIK) "
+#~ "SNOSI SVE TROŠKOVE NEOPHODNOG SERVISIRANJA, POPRAVKE ILI ISPRAVKE. OVO "
+#~ "OGRANIČENJE JAMSTVA PREDSTAVLJA SASTAVNI DEO OVE DOZVOLE. UPOTREBA BILO "
+#~ "KOJEG DOKUMENTA ILI NJEGOVE IZMENJENE VERZIJE NIJE DOZVOLJENA OSIM POD "
+#~ "USLOVIMA OVOG OGRANIČENJA JAMSTVA."
+
+#~ msgid ""
+#~ "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT "
+#~ "(INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL "
+#~ "WRITER, ANY CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE "
+#~ "LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR "
+#~ "CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, "
+#~ "DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR "
+#~ "MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR "
+#~ "RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, "
+#~ "EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH "
+#~ "DAMAGES."
+#~ msgstr ""
+#~ "NI POD KAKVIM OKOLNOSTIMA ILI ZAKONU, BILO ZBOG KRŠENJA (ILI NEMARA) "
+#~ "UGOVORA, ILI NA BILO KOJI DRUGI NAČIN, AUTOR (PRVOBITNE VERZIJE), "
+#~ "SARADNIK ILI ISPORUČIVALAC DOKUMENTA ILI NJEGOVE IZMENJENE VERZIJE, NITI "
+#~ "DOBAVLJAČ BILO KOJE OD NAVEDENIH STRANA NEĆE SNOSITI MATERIJALNU "
+#~ "ODGOVORNOST ZA NASTALA DIREKTNA, INDIREKTNA, POSEBNA, SLUČAJNA ILI TIME "
+#~ "NASTALA OŠTEĆENJA BILO KOJE VRSTE UKLJUČUJUĆI, BEZ OGRANIČENJA, ŠTETU "
+#~ "NANESENU UGLEDU FIRME, PRESTANKU PROIZVODNJE, OTKAZIVANJE RADA RAČUNARA ILI "
+#~ "KVARA KAO I ZA SVE OSTALE ŠTETE ILI GUBITKE NASTALE USLED KORIŠĆENJA "
+#~ "DOKUMENTA I NJEGOVIH IZMENJENIH VERZIJA ČAK I AKO JE OŠTEĆENA STRANA BILA "
+#~ "OBAVEŠTENA O MOGUĆNOSTI NASTANKA TE ŠTETE."
+
+#~ msgid ""
+#~ "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE "
+#~ "TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER "
+#~ "UNDERSTANDING THAT: <placeholder-1/>"
+#~ msgstr ""
+#~ "OVAJ DOKUMENT I NJEGOVE IZMENJENE VERZIJE SU DOSTUPNE POD USLOVIMA GNU-OVE "
+#~ "SLOBODNE DOKUMENTACIONE DOZVOLE UZ DODATNU SAGLASNOST DA: <placeholder-1/>"
+
+#~ msgid "Rob"
+#~ msgstr "Rob"
+
+#~ msgid "Bradford"
+#~ msgstr "Bradford"
+
+#~ msgid "Tetravex Manual V2.10"
+#~ msgstr "Uputstvo za slagalicu V2.10"
+
+#~ msgid "June 2005"
+#~ msgstr "Jun 2005."
+
+#~ msgid "Rob Bradford <email>rob@funky-penguin.co.uk</email>"
+#~ msgstr "Rob Bradford <email>rob@funky-penguin.co.uk</email>"
+
+#~ msgid "This manual describes version 2.12 of Tetravex."
+#~ msgstr "Ovo upustvo je napisano za slagalicu 2.12."
+
+#~ msgid "Feedback"
+#~ msgstr "Primedbe"
+
+#~ msgid ""
+#~ "To report a bug or make a suggestion regarding the <application>Tetravex</"
+#~ "application> application or this manual, follow the directions in the "
+#~ "<ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME "
+#~ "Feedback Page</ulink>."
+#~ msgstr ""
+#~ "Da biste prijavili grešku ili dali predlog u vezi programa "
+#~ "<application>Slagalice</application> ili ovog uputstva, pratite smernice "
+#~ "na <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">Gnomovoj "
+#~ "strani za primedbe</ulink>."
+
+#~ msgid ""
+#~ "<application>GNOME Tetravex</application> is a simple puzzle where pieces "
+#~ "must be positioned so that the same numbers are touching each other. Your "
+#~ "game is timed, these times are stored in a system-wide scoreboard."
+#~ msgstr ""
+#~ "<application>Gnomova slagalica</application> je jednostavna igra u kojoj "
+#~ "svaki delić slagalice treba postaviti tako da se brojevi sa istih strana "
+#~ "slažu. Vreme igre se meri, a vremena se zatim čuvaju u tabeli rezultata."
+
+#~ msgid ""
+#~ "To run <application>GNOME Tetravex</application>, select "
+#~ "<menuchoice><guisubmenu>Games</guisubmenu><guimenuitem>Tetravex</"
+#~ "guimenuitem></menuchoice> from the <guimenu>Main Menu</guimenu>, or type "
+#~ "<command>gnotravex</command> on the command line."
+#~ msgstr ""
+#~ "Da biste pokrenuli <application>Gnomovu slagalicu</application>, "
+#~ "odaberite <menuchoice><guisubmenu>Igre</"
+#~ "guisubmenu><guimenuitem>Slagalica</guimenuitem></menuchoice> iz "
+#~ "<guimenu>Glavnog menija</guimenu>, ili otkucajte <command>gnotravex</"
+#~ "command> u komandnoj liniji."
+
+#~ msgid ""
+#~ "<application>GNOME Tetravex</application> is included in the "
+#~ "<filename>gnome-games</filename> package, which is part of the GNOME "
+#~ "desktop environment. This document describes version 2.10 of "
+#~ "<application>GNOME Tetravex</application>."
+#~ msgstr ""
+#~ "<application>Gnomova slagalica</application> je uključena u "
+#~ "<filename>gnome-games</filename> paket, koji je deo Gnomovog radnog "
+#~ "okruženja. Ovaj dokument je napisan za izdanje 2.10 <application>Gnomove "
+#~ "slagalice</application>."
+
+#~ msgid ""
+#~ "<application>GNOME Tetravex</application> is a simple puzzle game, this "
+#~ "section covers how to play the game."
+#~ msgstr ""
+#~ "<application>Gnomova slagalica</application> je jednostavna igra, ovaj "
+#~ "odeljak pokriva kako se slagalica igra."
+
+#~ msgid ""
+#~ "Starting <application>GNOME Tetravex</application> opens the "
+#~ "<interface>Main window</interface>, shown in <xref linkend=\"mainwindow-"
+#~ "fig\"/>. The window is divided into two boxes. The right hand side "
+#~ "contains a box containing the pieces you have yet to place and the left "
+#~ "hand box is where you arrange the pieces."
+#~ msgstr ""
+#~ "Pokretanjem <application>Gnomove slagalice</application> se otvara "
+#~ "<interface>Glavni prozor</interface>, koji prikazuje <xref linkend="
+#~ "\"mainwindow-fig\"/>. Prozor je podeljen na dve kutije. U kutiji sa desne "
+#~ "strane su delovi koje tek treba postaviti, a kutija sa leve strane je "
+#~ "mesto gde vi treba da postavite ove delove."
+
+#~ msgid ""
+#~ "You can start playing the game immediately. You may restart the game by "
+#~ "selecting <menuchoice><guisubmenu>File</guisubmenu><guimenuitem>New game</"
+#~ "guimenuitem></menuchoice><xref linkend=\"playing-fig\"/>"
+#~ msgstr ""
+#~ "Igru možete početi da igrate odmah. Igru možete ponovo započeti "
+#~ "odabiranjem <menuchoice><guisubmenu>Igra</guisubmenu><guimenuitem>Nova</"
+#~ "guimenuitem></menuchoice><xref linkend=\"playing-fig\"/>"
+
+#~ msgid "A GNOME Tetravex Game"
+#~ msgstr "Gnomova igra slagalice"
+
+#~ msgid "A GNOME Tetravex Game."
+#~ msgstr "Gnomova igra slagalice."
+
+#~ msgid ""
+#~ "The tiles are divided into four, you must position them so that only two "
+#~ "numbers that are the same are next to each other. The game wil not let "
+#~ "you position the tiles so that different numbers are next to each other. "
+#~ "You position the pieces by dragging them from their current position "
+#~ "either in the right hand box or the main box to their new position. These "
+#~ "moves are not permanent and can be readily reversed. You may also move "
+#~ "all the pieces in the left hand box at once by using the commands: "
+#~ "<menuchoice><guisubmenu>Move</guisubmenu><guimenuitem>Left/Right/Up/Down</"
+#~ "guimenuitem></menuchoice>"
+#~ msgstr ""
+#~ "Delovi su podeljeni na četiri trougla sa brojevima, a vi ih morate "
+#~ "postaviti tako da su dva broja iz susednih delova isti. Igra vam neće "
+#~ "dati da postavite deo tako da su različiti brojevi jedan do drugog. "
+#~ "Delove postavljate tako što ih prevlačite sa trenutnog mesta, iz kutije sa "
+#~ "desne strane ili iz glavne kutije. Ovi potezi nisu trajni i uvek ih "
+#~ "možete vratiti. Takođe možete pomeriti sve delove iz kutije sa leve "
+#~ "strane koristeći naredbe: <menuchoice><guisubmenu>Pomeri</"
+#~ "guisubmenu><guimenuitem>Levo/Desno/Gore/Dole</guimenuitem></menuchoice>"
+
+#~ msgid "Winning the game"
+#~ msgstr "Završetak igre"
+
+#~ msgid ""
+#~ "The game is completed when you have positioned all the squares in the "
+#~ "right positions. When you have completed the game you are shown your "
+#~ "ranking in the high scores table, if you get a high enough score. If you "
+#~ "have used either Hint or Solve your score will not be included in the "
+#~ "high scores table."
+#~ msgstr ""
+#~ "Igra je završena kada postavite sve kvadrate na prava mesta. Kada ste "
+#~ "završili igru, ukoliko imate dobar rezultat, on će biti prikazan u tabeli "
+#~ "rezultata. Ako ste koristili opcije „Savet“ ili „Reši“, rezultat neće "
+#~ "biti uključen u tabelu najboljih rezultata."
+
+#~ msgid "Customization"
+#~ msgstr "Prilagođavanje"
+
+#~ msgid ""
+#~ "Under the <guimenuitem>Size</guimenuitem> menu you can change the size of "
+#~ "the grid from two by two up to six by six. The default is three by three."
+#~ msgstr ""
+#~ "U meniju <guimenuitem>Veličina</guimenuitem> možete da promenite veličinu "
+#~ "mreže od „dva sa dva“ do „šest sa šest“. Podrazumevano je „tri sa tri“."
+
+#~ msgid "Authors"
+#~ msgstr "Autori"
+
+#~ msgid ""
+#~ "<application>GNOME Tetravex</application> was written by Lars Rydlinge "
+#~ "(<email>lars.rydlinge@hig.se</email>). This manual was written by Rob "
+#~ "Bradford (<email>rob@funky-penguin.co.uk</email>). To report a bug or "
+#~ "make a suggestion regarding this application or this manual, follow the "
+#~ "directions in this <ulink url=\"ghelp:user-guide?feedback-bugs\" type="
+#~ "\"help\">document</ulink>."
+#~ msgstr ""
+#~ "<application>Gnomovu slagalicu</application> je napisao Lars Rydlinge "
+#~ "(<email>lars.rydlinge@hig.se</email>). Ovo uputstvo je napisao Rob "
+#~ "Bradford (<email>rob@funky-penguin.co.uk</email>). Da biste prijavili "
+#~ "greške ili dali predlog u vezi ovog programa ili njegovog uputstva, "
+#~ "pratite smernice iz <ulink url=\"ghelp:user-guide?feedback-bugs\" type="
+#~ "\"help\">dokumenta</ulink>."
+
+#~ msgid ""
+#~ "This program is free software; you can redistribute it and/or modify it "
+#~ "under the terms of the <citetitle>GNU General Public License</citetitle> "
+#~ "as published by the Free Software Foundation; either version 2 of the "
+#~ "License, or (at your option) any later version."
+#~ msgstr ""
+#~ "Ovaj program je slobodan softver; možete ga raspodeljivati i/ili ga menjati "
+#~ "pod uslovima <citetitle>GNU Opšte Javne Licence (GNU GPL)</citetitle> "
+#~ "kako je objavljuje Zadužbina za Slobodni Softver (FSF); bilo verzije 2 te "
+#~ "Licence, bilo (po vašem nahođenju) bilo koje novije verzije."
+
+#~ msgid ""
+#~ "This program is distributed in the hope that it will be useful, but "
+#~ "WITHOUT ANY WARRANTY; without even the implied warranty of "
+#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the "
+#~ "<citetitle>GNU General Public License</citetitle> for more details."
+#~ msgstr ""
+#~ "Ovaj program se raspodeljuje u nadi da će biti od koristi, ali BEZ IKAKVIH "
+#~ "GARANCIJA; čak i bez podrazumevane garancije KORISNOSTI ili "
+#~ "PRILAGOĐENOSTI ODREĐENOJ NAMENI.  Vidite <citetitle>GNU Opštu Javnu "
+#~ "Licencu</citetitle> za više detalja."
+
+#~ msgid ""
+#~ "A copy of the <citetitle>GNU General Public License</citetitle> is "
+#~ "included as an appendix to the <citetitle>GNOME Users Guide</citetitle>. "
+#~ "You may also obtain a copy of the <citetitle>GNU General Public License</"
+#~ "citetitle> from the Free Software Foundation by visiting <ulink url="
+#~ "\"http://www.fsf.org\" type=\"http\">their Web site</ulink> or by writing "
+#~ "to <address> Free Software Foundation, Inc. <street>59 Temple Place</"
+#~ "street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-"
+#~ "1307</postcode><country>USA</country></address>"
+#~ msgstr ""
+#~ "Primerak <citetitle>GNU Opšte Javne Licence</citetitle> je uključen u "
+#~ "dodatku <citetitle>Gnomovog korisničkog vodiča</citetitle>. Takođe možete "
+#~ "nabaviti primerak <citetitle>GNU Opšte Javne Licence</citetitle> od "
+#~ "Zadužbine za Slobodni Softver odlazeći na <ulink url=\"http://www.fsf.org"
+#~ "\" type=\"http\">njihovu veb adresu</ulink> ili pišući na <address> Free "
+#~ "Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+#~ "<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+#~ "postcode><country>USA</country></address>"

@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.18">
+<!ENTITY date "December">
+<!ENTITY app "<application>Chess</application>">
+<!ENTITY appname "Chess">
+<!ENTITY version "2.22">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="eu">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+<articleinfo>
+ <title><application>Chess</application>-en eskuliburua</title>
+ 
+ <abstract role="description">
+       <para>glChess mahaiko xake joko klasikoa jokatzeko jokoa da, non bi jokalarik bataila bat simulatzen duten aurkariaren piezak harrapatuz eta erregeari amaiera emanez. 2D edo 3D moduan joka daiteke, pantaila osoan edo leiho batean.</para>
+ </abstract>
+ <copyright>
+  <year>2006-2008</year>
+  <holder>Andreas Røsdal</holder>
+ </copyright><copyright><year>2008.</year><holder>Hizkuntza Politikarako Sailburuordetza (hizpol@ej.gv.es)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>GNOMEren dokumentazio-proiektua</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Baimena ematen da dokumentu hau kopiatu, banatu eta/edo aldatzeko, Free Software Foundation-ek argitaratutako GNU Dokumentazio Librearen Lizentziaren 1.1. bertsioan edo berriago batean ezarritako baldintzetan, atal aldaezinik gabe, aurreko azaleko testurik gabe eta atzeko azaleko testurik gabe. GFDL lizentziaren kopia <ulink type="help" url="ghelp:fdl">esteka honetan</ulink> edo eskuliburu honekin batera ematen den COPYING-DOCS fitxategian aurkituko duzu.</para>
+         <para>Eskuliburu hau GFDL lizentziarekin banatzen diren GNOME eskuliburuen bildumakoa da. Eskuliburu hau bildumatik bereizita banatu nahi baduzu, banatu dezakezu, baina eskuliburuari lizentziaren kopia bat gehitu beharko diozu lizentzian bertan 6. atalean azaltzen den bezala.</para>
+
+	<para>Enpresek beren produktuak eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu gisa hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, eta GNOMEren Dokumentazio Proiektuko kideak marka komertzialak direla konturatzen direnean, izen horiek maiuskulaz idatzita agertuko dira, osorik edo hasierako letra bakarrik.</para>
+
+	<para>DOKUMENTUA ETA DOKUMENTUAREN BERTSIO ALDATUAK GNU DOKUMENTAZIO LIBREAREN LIZENTZIAREN BALDINTZEN ARABERA EMATEN DIRA, ETA ONDOREN ZEHAZTEN DIRENAK ONARTZERA BEHARTZEN DUTE: <orderedlist>
+		<listitem>
+		  <para>DOKUMENTUA "DAGOEN-DAGOENEAN" EMATEN DA, INOLAKO BERMERIK GABE, EZ ESPRESUKI ADIERAZITAKORIK ETA EZ INPLIZITURIK ERE; BESTEAK BESTE EZ DA BERMATZEN DOKUMENTUA EDO BERTSIO ALDATUA AKATSIK GABEA DENIK, MERKATURATZEKO EDO XEDE JAKIN BATERAKO EGOKIA DENIK EDO ARAURIK HAUSTEN EZ DUENIK, HORI GUZTIA MUGARIK GABE. DOKUMENTUAREN EDO DOKUMENTUAREN BERTSIO ALDATUAREN KALITATEARI, ZEHAZTASUNARI ETA PERFORMANTZIARI BURUZKO ERANTZUKIZUN OSOA ZUREA DA. DOKUMENTUREN BATEK EDO BERTSIO ALDATUREN BATEK EDOZEIN MOTATAKO AKATSIK IZANEZ GERO, ZUK (EZ HASIERAKO IDAZLEAK, EZ EGILEAK ETA EZ INONGO KOLABORATZAILEK) ZEURE GAIN HARTU BEHARKO DUZU BERRIKUSTEKO, KONPONTZEKO EDO ZUZENTZEKO BEHAR DIREN ZERBITZU GUZTIEN KOSTUA. BERME-UKATZE HAU LIZENTZIA HONEN FUNTSEZKO ZATIA DA. EZ DA BAIMENIK EMATEN EZEIN DOKUMENTU EDO BERTSIO ALDATU ERABILTZEKO, BALDIN ETA EZ BADA BERME-UKATZE HAU ONARTZEN.</para>
+		</listitem>
+		<listitem>
+		  <para>EZIN IZANGO DA INONGO ZIRKUNSTANTZIARIK EDO LEGE-TEORIARIK OINARRI HARTU --EZ ERANTZUKIZUN ZIBILARI BURUZKORIK (ZABARKERIA BARNE HARTUTA), EZ KONTRATUARI BURUZKORIK, EZ BESTERIK-- DOKUMENTU HONEN EDO BERTSIO ALDATU BATEN EGILEA, HASIERAKO IDAZLEA, EDOZEIN KOLABORATZAILE EDO BANATZAILE, EDO ALDERDI HORIEN EDOZEIN HORNITZAILE BESTE PERTSONA BATEN AURREAN ERANTZULE EGITEKO, PERTSONA HORREK EDOZEIN MOTATAKO KALTEA JASAN DUELAKO (ZUZENEKOA, ZEHARKAKOA, BEREZIA, INTZIDENTALA EDO ONDORIOZKOA), HALA NOLA (ETA MUGARIK GABE) BEZEROAK GALTZEA, LANA ETEN BEHARRA, ORDENAGAILUAK EZ IBILTZEA EDO GAIZKI IBILTZEA, EDO DOKUMENTUA NAHIZ HAREN BERTSIO ALDATUAK ERABILTZETIK ONDORIOZTATZEN DIREN EDO ERABILERA HORREKIN ZERIKUSIA DUTEN KALTEAK EDO GALERAK, ALDERDIARI KALTE HORIEK GERTA ZITEZKEELA ADITZERA EMAN BAZAIO ERE.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author> 
+	<firstname>Andreas</firstname> 
+	<surname>Røsdal</surname> 
+	<affiliation> 
+	  <address> <email>andrearo@pvv.ntnu.no</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+    
+<revhistory>
+      <revision> 
+	<revnumber>Chess-en eskuliburua 2.18 bertsioa</revnumber> 
+	<date>abendua</date> 
+	<revdescription> 
+	  <para role="author">Andreas Røsdal <email>andrearo@pvv.ntnu.no</email></para>
+	  <para role="publisher">GNOMEren dokumentazio-proiektua</para>
+	</revdescription> 
+      </revision>
+  <revision>
+   <revnumber>1</revnumber>
+   <date>2006ko abendua</date>
+   <authorinitials>AR</authorinitials>
+   <revremark>Lehen zirriborroa osatuta</revremark>
+  </revision>
+ </revhistory>
+
+    <releaseinfo>Eskuliburu honek Chess-en 2,18 bertsioa azaltzen du.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Ohar-bidaltzea</title> 
+      <para><application>Chess</application>i buruzko akatsen berri emateko edo oharrak bidaltzeko, <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOMEra oharrak bidaltzeko orria</ulink>n aurkituko dituzu argibideak.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+</articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>glChess</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="intro">
+ <title>Sarrera</title>
+ <sect2 id="what">
+  <title>Xakearen azalpen orokorra</title>
+  
+  <para>Xakea bi pertsonarentzako estrategia-jokoa da eta taula baten gainean jokatzen da. <application>glChess</application> aplikazioa 2Dko/3Dko xake-jokoa da, eta partidak pertsonen eta ordenagailu-jokalarien artean jokatu daitezke. glChess-ek beste batzuek egindako xake-motorrak antzematen ditu ordenagailu-jokalarientzat. Jokoa Robert Ancell-ek garatu zuen hasieran, eta orain gnome-games paketearen barruan sartzen da.</para>
+
+  <para><application>glChess</application> aplikazioa Phyton-en idatzi zen eta GTK+ eta Cairo erabiltzen ditu xakeko taula errendatzeko. 3Dko euskarria erabilgarri dago OpenGl, Python OpenGl eta GtkGLExt liburutegiak erabiliz gero. 3Dko oraingo programa gehienekin bezala, hardware-azelerazioa gomendatzen da; baina softwarean ere egoki funtzionatu behar luke. GlChess aplikazioa GNU Chess eta chess Al aplikazioekin batera dator.</para>
+  <para>Xakea lauki-itxurako taula batean jokatzen da, koloreak txandakatuta dauzkaten 64 koadroko taula batean. Jokalari bakoitzak hamasei piezarekin hasten du jokoa: erregea, erregina, bi dorre, bi zaldun, bi alfil eta zortzi peoi. Jokalari batek pieza zuriak erabiltzen ditu eta besteak pieza beltzak; zuriak erabiltzen dituen jokalaria izango da mugitzen lehena. Jokalariak txandaka mugituko dituzte piezak; mugimendu batzuen bidez aurkariaren pieza bat "harrapa" daiteke, eta, orduan, pieza hori taulatik ateratzen da. Jokoaren helburua aurkariaren erregeari xake-mate egitea da. Horretarako, erregeak berehalako erasopean egon behar du (xake) eta hurrengo mugimenduan ez du izango erasoa saihesteko aukerarik. Teorialariek xake-estrategia eta –taktika zabalak garatu dituzte jokoaren hastapenetatik.</para>
+<para>Gaur egungo joko-modalitatea Europako hegoaldean sortu zen 15. mendearen bigarren erdian, asiar jatorriko joko zaharretatik eboluzionatu ondoren. Xakea munduko taula-joko ezagunenetako bat da. Xakearen lehiakortasunaren tradizioa 16. mendean hasi zen. Munduko lehen xake-txapeldun ofiziala Wilhelm Steinitz izan zen, eta 1886. urtean lortu zuen titulu hori. Haren egungo oinordekoa Vladimir Kramnik da, bide horretan 14. txapelduna. Bi urtetik behin mundu mailako probak egiten dira, Xake-Olinpiadak. 20. mendeaz geroztik, nazioarteko bi erakundek (Munduko Xake Federazioak eta Posta bidezko Xakearen Nazioarteko Federazioak) xake-txapelketa nagusiak eta nazioarteko tituluak antolatu eta gainbegiratu dituzte.</para>
+<para>Hasierako informatikarien helburua zen xakean jokatzeko makina bat sortzea, eta gaur egungo xakean ere eragin handia dute oraingo xake-programen gaitasun ikaragarriek. 1997. urtean Garry Kasparov (orduko munduko txapelduna) eta IBMren Deep Blue xake-programaren artean jokatu zen partida batek frogatu zuen ordenagailuak gai direla giza jokalari trebeenei ere irabazteko.</para>
+
+  <para><application>glChess</application> abiarazteko, hautatu <guimenu>Menu nagusia</guimenu>n <guisubmenu>Jokoak</guisubmenu> azpimenuko <guimenuitem>Xakea</guimenuitem> edo idatzi <command>glchess</command> komando-lerroan.</para>
+ </sect2>
+
+</sect1>
+
+
+<sect1 id="playing-glchess">
+ <title>glChess-era jolastea</title>
+ <sect2 id="main-game-window">
+<title>Jokoaren leiho nagusia</title>
+
+     <para>Abiatzean glChess-ek jokoaren leiho nagusia bistaratzen du (azpian ikus daitekeen bezala). Sagua erabiliz mugitzen dira xakeko piezak. Jokalariak txandakatu egiten dira bakoitzari dagokion koloreko pieza bat mugitzeko, taulako posizio batetik taulako baliozko beste posizio batera. Jokoaren leiho naguziak hiru area nagusi ditu: Goian menu-barra eta tresna-barraren area, jokoaren ekintza arruntenak egin daitezkeenak. Leihoaren erdian xake-taula dago, non jokoa jokatzen den sagua erabiliz piezak mugituz. Azkenik, jokoaren historiaren panela dago behean, non jokoaren historiari buruzko informazioa agertzen den, mugimendua egiteko gelditzen denbora eta erabilgarri dauden aurreko edo ondorengo mugimenduak erakusten duten botoiak.</para>
+
+ <figure id="main-game-shot">
+  <title>Leiho nagusia glChess-en</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>Leiho nagusia glChess-en.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+</sect2>
+
+<sect2>
+<title>Joko berria hastea</title>
+<para>Joko berri bat hasteko sakatu tresna-barrako <guibutton>Joko berria</guibutton> botoia. Orduan erakutsiko da joko berriaren elkarrizketa-koadroa, eta hor jokoaren ezarpenak ezar ditzakezu. <interface>Jokoaren propietateak</interface> atalean jokoaren izena eta jokalari bakoitzak izango duen denbora-muga ezartzen da. <interface>Jokalariak</interface> atalean giza eta AA jokalariak konfigura daitezke. Xake-motorrak AA jokalari gisa instalatuta badituzu, hauek jokalari erabilgarrien zerrendan agertuko dira. Azkenik, AA jokalarien zailtasun-maila ezar daiteke <interface>zailtasuna</interface> atalean.</para>
+
+ <figure id="new-game-shot">
+  <title>'Hasi joko berria' elkarrizketa-koadroa</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/new_game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>glChess-en 'Hasi joko berria' elkarrizketa-koadroa</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+</sect2>
+
+
+
+
+<sect2 id="menubar">
+   <title>Menuak</title>
+   <para>Menu-barra <interface>Leiho nagusiaren</interface>, goian kokatzen da, eta honako menuak ditu:</para>
+
+   <variablelist>
+    <varlistentry>
+     <term><guimenu>Jokoa</guimenu></term>
+     <listitem>
+      <para>Menu honek hau dauka: <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ktrl+N</keysym></shortcut><guimenuitem>Berria</guimenuitem></menuchoice> <application>Chess</application> aplikazioaren joko berria abiarazten du.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><shortcut><keysym>Ktrl+O</keysym></shortcut><guimenuitem>Ireki</guimenuitem></menuchoice> Aurrez gordetako joko bat kargatzen du.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><shortcut><keysym>Ktrl+S</keysym></shortcut><guimenuitem>Gorde</guimenuitem></menuchoice> Chess-en uneko jokoa gordetzen du.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><guimenuitem>Gorde honela</guimenuitem></menuchoice> Chess-en uneko jokoa beste fitxategi-izen batekin gordetzen du.</para>
+        </listitem>
+
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ktrl+L</keysym></shortcut><guimenuitem>Sareko jokoa</guimenuitem></menuchoice> Sareko hainbat jokalarien arteko jokoa abiarazten du GGZ jokogunea erabiliz.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Amore eman</guimenuitem></menuchoice> Jokoa galdu dela onartzeko, eta beraz aurkariak irabazten du jokoa.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><guimenuitem>Eskatu berdinketa</guimenuitem></menuchoice> Berdinketaren eskaera onartzen bada, inork ez du jokoa irabaziko.</para>
+        </listitem>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>Ktrl+Q</keysym></shortcut><guimenuitem>Irten</guimenuitem></menuchoice> Jokoa amaitzen du.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+
+    <varlistentry>
+     <term><guimenu>Ikusi</guimenu></term>
+     <listitem>
+      <para>Menu honek hau dauka: <itemizedlist>
+        <listitem>
+         <para><menuchoice><shortcut><keysym>F11</keysym></shortcut><guimenuitem>Pantaila osoa</guimenuitem></menuchoice> Jokoaren leihoa pantaila osoko moduan erakusten du.</para>
+        </listitem>
+	<listitem>
+         <para><menuchoice><guimenuitem>3D xake-ikuspegia</guimenuitem></menuchoice>k OpenGL erabiliz xakearen 3D ikuspegiaren modua gaitzen du. Honek Python OpenGL eta Python GTKGLExt instalatuta izatea eskatzen du, baita txartel-grafikoa 3D modurako ongi konfiguratuta edukitzea. Arazorik izanez gero, jar zaitez sistemako administratzailearekin harremanetan, dena den xakea 2D moduan jokatu ahal izango duzu.</para>
+        </listitem>
+	 <listitem>
+         <para><menuchoice><guimenuitem>Erakutsi egunkariak</guimenuitem></menuchoice> Egunkariak erakusten ditu glChess eta xakearen AA motor aktiboak arazteko.</para>
+        </listitem>
+     </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+
+   <varlistentry>
+     <term><guimenu>Ezarpenak</guimenu></term>
+     <listitem>
+      <para>Menu honek hau dauka: <itemizedlist>
+        <listitem>
+         <para><menuchoice><guimenuitem>Hobespenak</guimenuitem></menuchoice> Honek <link linkend="prefs">hobespenak</link> editatzeko leihoa irekitzen du.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>   
+
+    <varlistentry>
+     <term><guimenu>Laguntza</guimenu></term>
+     <listitem>
+      <para>Menu honek hau dauka: <itemizedlist>
+        <listitem>
+          <para><menuchoice><shortcut><keysym>F1</keysym></shortcut><guimenuitem>Edukia</guimenuitem></menuchoice> Eskuliburu hau bistaratzen du.</para>
+         <para><guimenuitem>Honi buruz</guimenuitem> Honek <interface>Honi buruz</interface> elkarrizketa-koadroa irekitzen du, non <application>glChess</application> buruzko oinarrizko informazioa agertzen den, adibidez, egileen izenak, jokoaren bertsio-zenbakia eta horrelakoak.</para>
+        </listitem>
+       </itemizedlist></para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+
+
+</sect2>
+
+
+</sect1>
+
+
+<sect1 id="chess-rules">
+ <title>Xakearen arauak</title>
+ <sect2 id="rules-of-chess">
+  <title>Xakearen arauak</title>
+<!--
+The reference for this chapter is http://en.wikipedia.org/wiki/Chess
+-->
+  <para>Xakea taula lauki batean jokatzen da: laukidun zortzi errenkada ditu (1etik 8ra zenbakituak) eta zortzi zutabe (a-tik h-rako letradunak). Hirurogeita lau laukien kolorea zuria eta beltza da, txandaka, eta "lauki zuriak" eta "lauki beltzak" deitzen zaie. Xake-taula kokatzen den moduagatik, jokalari bakoitzak lauki zuri bat du eskuineko eskuaren aldeko izkinan, eta piezak diagraman azaltzen den bezala kokatzen dira, erregina bakoitza bere koloreko laukiaren gainean.</para><para>Jokalari bakoitzak hamasei piezarekin hasten du jokoa: erregea, erregina, bi dorre, bi zaldun, bi alfil eta zortzi peoi. Jokalari batek (Zuria deituko diogu) pieza zuriak erabiliko ditu eta beste jokalariak (Beltza) beltzak; Zuria izango da mugitzen lehena. Koloreak lagunarteko adostasunez, zorizko jolas baten bidez edo jokoaren epailearen bitartez, erabaki daitezke. Jokalariak txandakatu egiten dira, aldi bakoitzean batek mugitzen baitu pieza (errokean izan ezik, hemen bi pieza mugitzen dira aldi berean). Piezak okupatu gabeko lauki batera edo aurkariak okupatutako lauki batera mugitzen dira, eta, azkeneko kasu horretan, aurkariaren pieza harrapatu eta jokotik kanporatzen da. Aurkariaren pieza bat harrapatzeko hura dagoen laukira mugitu behar da norberaren pieza, baina bada salbuespen bat (igarotzean harrapatzea).</para>
+ <sect3 id="rules-piece-king">
+  <title>Erregea</title>
+<para>Erregea aurkariaren pieza baten (edo agian biren) erasopean dagoenean, jokalaria xakean dagoela esaten dugu. Xakean dagoenean, erregea erasotik aldentzen duten mugimenduak bakarrik onartzen dira. Jokalariak ezin du erregea xakean utziko duen mugimendurik egin. Jokoaren helburua da aurkariari xake mate egitea; horretarako, aurkaria xakean utzi behar da, eta, gainera, erregea erasotik aldenduko duen mugimendurik ezin egiteko moduan.</para><para>Erregea ondoko lauki batera mugitu daiteke, horizontalki, bertikalki edo diagonalki. Behin jokoa hasi denean, errege bakoitzak mugimendu bikoitza egiteko aukera du, errokea egiteko. Errokea: erregea bi lauki mugitzen da dorrerantz, eta erregeak gurutzatu duen laukira mugitzen da dorrea. Errokea egiteko baldintza hauek bete behar dira:</para>
+<itemizedlist spacing="compact">
+  <listitem>
+   <para>Jokalariak lehenago ez mugitu izatea, ez erregea, ez errokea egiteko mugituko duen dorrea.</para>
+  </listitem>
+  <listitem>
+   <para>Ezin dira pieza gehiago egon erregearen eta dorrearen artean.</para>
+  </listitem>
+  <listitem>
+   <para>Erregeak ezin du xakean egon eta ezin du aurkarien erasopean dauden laukietatik igaro. Beste edozein mugimendu bezala, errokea egitea ilegala da erregea xakean jartzen badu.</para>
+ </listitem>
+  <listitem>
+   <para>Erregeak eta dorreak lerro berean egon behar dute (peoi koroatu batekin errokea egitea saihesteko).</para>
+  </listitem>
+</itemizedlist>
+</sect3>
+ <sect3 id="rules-piece-rook">
+  <title>Dorrea</title>
+<para>Dorrea bertikalki edo horizontalki mugi daiteke, hutsik dauden laukien gainetik (eta erregearekin errokea egin dezake).</para>
+</sect3>
+ <sect3 id="rules-piece-bishop">
+  <title>Alfila</title>
+<para>Alfila diagonalki mugitzen da, hutsik dauden laukien gainetik. Alfilak ez dira inoiz kolore bateko lauki batetik beste koloreko lauki batera pasatzen; hortaz, jokalariek "lauki zuritako" edo "lauki beltzetako" alfilez hitz egiten dute.</para>
+</sect3>
+ <sect3 id="rules-piece-queen">
+  <title>Erregina</title>
+<para>Erregina diagonalki, horizontalki eta bertikalki mugitzen da, hutsik dauden laukien gainetik.</para>
+</sect3>
+ <sect3 id="rules-piece-knight">
+  <title>Zalduna</title>
+<para>Zaldunak okupatuta dauden laukien gainetik salto egin dezake, eta mugimendu hau du: bi lauki horizontal eta bat bertikal (edo alderantziz) "L" forma eginez. Taularen erdian dagoen zaldun bat zortzi laukitara mugi daiteke. Zaldunak, mugitzen den bakoitzean, lauki-kolorea aldatzen du.</para>
+</sect3>
+ <sect3 id="rules-piece-pawns">
+  <title>Peoiak</title>
+<para>Peoiek mugimendu-arau konplexuenak dituzte: peoia aurrera mugi daiteke, hurrengo laukira, lauki hori ez badago okupatuta. Oraindik mugitu ez bada, peoiak bi lauki aurrera egiteko aukera du, aurrean dituen bi laukiak ez badaude okupatuta. Peoi batek ezin du atzerantz mugitu. Lehenengo mugimenduan peoiak bi lauki aurrera egiten badu eta aurkariaren peoi baten ondoan gelditzen bada, aurkariaren peoiak peoi hori harrapa dezake aurrerantz lauki bakarra mugitu izan balitz bezala ("igarotzean harrapatzea" ), baina jarraian datorren mugimenduan soilik. Peoiak dira mugitzeko eta aurkaria harrapatzeko mugimendu ezberdinak dituzten bakarrak. Beren aurreko laukiaren albo banatan dituzten laukietako aurkariak harrapa ditzakete (beren aurrean diagonalean dauden bi laukiak), baina ezin dute lauki horietara mugitu hutsik egonez gero. Peoi bat zortzigarren ilararaino aurreratzen bada, kolore bereko erregina, dorre, alfil edo zaldun bihurtuko da (koroatzea). Praktikan, peoia erregina bihurtzen da gehienetan.</para>
+</sect3>
+
+<sect3 id="rules-movement-others">
+<title>Falta diren mugimendu-arauak</title>
+<para>Zaldunak izan ezik, beste piezek ezin dute batzuek besteen gainetik salto egin. Norberaren piezak ("pieza lagunak") ezin dira elkarren gainetik pasatu mugimenduaren lerroan baldin badaude, eta pieza lagun batek ezin izango du inoiz beste pieza lagun bat ordezkatu. Aurkariaren piezak ezin dira gainetik pasatu, baina "harrapatu" egin daitezke. Pieza bat harrapatzen denean, erasoa egin duen piezak aurkariaren pieza ordezkatzen du laukian (igarotzean harrapatzea da salbuespen bakarra). Harrapatua izan den pieza jokotik kanpo geratzen da eta litekeena da gainerako joko guztian ez jokatzea. Erregea ezin da harrapatu, xakean jarri soilik egin daiteke. Jokalari batek ezin badu erregea xake-egoeratik atera, xake matea gertatzen da, eta jokoa galtzen du.</para><para>Xake-jokoak ez du zertan xake mate egoeran amaitu. Edozein jokalarik amore eman dezake egoera etsigarria baldin bada. Jokoa berdinketan ere buka daiteke. Berdinketa hainbat egoeratan gerta daiteke: berdinketa adostea, erregea itota gelditzea, hiru aldiz egoera bera errepikatzea, berrogeita hamar mugimenduen araua betetzea edo xake matea egiteko aukerarik ez izatea (normalean ez dagoelako xake matea egiteko bezainbeste pieza).</para>
+</sect3>
+</sect2>
+
+
+<sect2 id="timed-games">
+<title>Denboraz mugatutako jokoak</title>
+<para>Jokoa denbora-muga batekin joka daiteke mugimenduari denbora ezarriz joko berria sortzean. Denbora mugatua duen jokoan jokalari bakoitzak denbora kopuru bat du erabilgarri zein mugimendu egin behar duen erabakitzeko, eta jokalari bakoitzari geratzen zaion denbora bere txanda denean soilik gutxiagotzen da.</para>
+</sect2>
+
+<sect2 id="draw">
+<title>Berdinketa</title>
+<para>Inork ez duenean irabazten jokoa amaitzen denean. Berdinketan amaitzen diren joko gehienak arau batzuetan oinarrituta daude. Berdinketan amaitu daitekeen joko batek dituen beste moduak hauek dira: itota, errepikamen hirukoitza, berrogeita hamar mugimenduko araua eta nahikoa piezarik ez egotea. Posizio bat berdintuta (edo berdinketa posizioa) dagoela esaten da jokalari bakoitzak, nahiz eta zuzen jokatu, jokoa berdinketa bateko posizioa izatera bultzatzen duenean, berdin izanik beste jokalariak egiten dituen mugimenduak.</para>
+
+
+<sect3 id="stalemate">
+<title>Itota</title>
+<para>Jokalari batek bere txandan ezin duenean mugimendu legalik egin eta bere erregea ez dagoenean xakean gertatzen dea Itota egoera. Itota egoera gertatzen denean berehalako berdinketa gertatzen da.</para>
+</sect3>
+
+<sect3 id="threefold-repetition">
+<title>Errepikapen hirukoitza</title>
+<para>Taulako egoera hiru aldiz gertatzen denean jokalari berdinak mugitzeko txanda duenean, eta jokalari bakoitzak mugimendu legalen multzo berdina duenean txanda bakoitzean (azkenak igarotzean harrapatzeko eta errokea egiteko eskubidea du), jokoaren berdinketa gertatzen da.</para>
+</sect3>
+
+
+<sect3 id="fifty-move-rule">
+<title>Berrogeita hamar mugimenduen araua</title>
+<para>Berrogeita hamar mugimenduen arauak zera dio: jokoan berdinketa gertatzen dela berrogeita hamar mugimendu ondoren ez bada piezarik harrapatu edo ez badapeoirik mugitu.</para>
+</sect3>
+
+<sect3 id="insuff-material">
+<title>Ez dago nahikoa pieza</title>
+<para>Peoi guztiak harrapatuak izan direnean, eta jokalari batek bere erregea soilik duenean beste jokalariak ere errege bat soilik (edo erregea eta zalduna edo alfila) duenean jokoaren amaiera gertatzen da. Posizioa berdinketan amaitzen da, ezinezkoa baita jokalari menperatzaileak xake-matea egitea. Xake-matea lortzeko posibilitateak errege bakarra duen jokalariak hanka sartzeak datza berrogeita hamar mugimenduko arauan babestuak badaude.</para>
+</sect3>
+
+
+</sect2>
+
+</sect1>
+
+
+
+
+<sect1 id="prefs">
+ <title>Jokoaren ezarpenak</title>
+
+
+<sect2 id="game-prefs">
+  <title>Jokoaren hobespenak</title>
+  <para>Hobespenaren elkarrizketa-koadro honetan taularen orientazioa, mugimenduaren formatua eta promozio mota alda ditzakezu.</para>
+
+ <figure id="preferences-game-shot">
+  <title>glChess jokoaren hobespenen elkarrizketa-koadroa</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences_game.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>glChess jokoaren hobespenen elkarrizketa-koadroa.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+
+</sect2>
+
+
+
+<sect2 id="view-prefs">
+  <title>Ikusi hobespenak</title>
+  <para>Hobespen honen elkarrizketa-koadroan glChess-en itxura eta izaera alda ditzakezu.</para>
+
+ <figure id="preferences-view-shot">
+  <title>glChess-en 'Ikusi' hobespenak</title>
+  <screenshot>
+    <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences_view.png" format="PNG" srccredit="Andreas"/>
+   </imageobject>
+    <textobject> 
+      <phrase>glChess-en 'Ikusi' hobespenak.</phrase> 
+    </textobject> 
+  </mediaobject>
+  </screenshot>
+ </figure>
+
+
+</sect2>
+
+</sect1>
+
+
+<sect1 id="engines">
+ <title>Xake-motorrak</title>
+
+     <para>glChess aplikazioa gai izan beharko litzateke xake-motorren edozein komunikazio-protokolo edo edozein xake-interfaze unibertsal erabiltzeko, xake-motorrak barne.</para>
+
+<!-- Please keep AI list synchronized with glchess/data/ai.xml -->
+<itemizedlist spacing="compact">
+  <listitem>
+	<para>GNUChess</para>
+  </listitem>
+  <listitem>
+	<para>Sjeng</para>
+  </listitem>
+  <listitem>
+	<para>Amy</para>
+ </listitem>
+  <listitem>
+	<para>Crafty</para>
+  </listitem>
+  <listitem>
+	<para>Faile</para>
+  </listitem>
+  <listitem>
+	<para>Phalanx</para>
+  </listitem>
+  <listitem>
+	<para>Glaurung</para>
+  </listitem>
+  <listitem>
+	<para>HoiChess</para>
+  </listitem>
+  <listitem>
+	<para>Diablo</para>
+  </listitem>
+  <listitem>
+	<para>BBChess</para>
+  </listitem>
+  <listitem>
+	<para>Fruit</para>
+  </listitem>
+  <listitem>
+	<para>Amundsen</para>
+  </listitem>
+  <listitem>
+	<para>Shredder</para>
+  </listitem>
+  <listitem>
+	<para>Toga II</para>
+  </listitem>
+  <listitem>
+	<para>Boo-ren xake-motorrak</para>
+  </listitem>
+
+
+</itemizedlist>
+
+</sect1>
+
+
+<sect1 id="bugs">
+ <title>Ezagutzen diren programa-erroreak eta mugak</title>
+
+ <itemizedlist mark="opencircle">
+    <listitem>
+     <para>Ez dago akatsik edo murriztapenik dokumentatuta glChess-en. glChess hobetzeko laguntzea nahi baduzu, irakurri jokoarekin banatzen den TODO fitxategia.</para>
+    </listitem>
+ </itemizedlist>
+
+</sect1>
+
+<sect1 id="credits">
+ <title>Egileak</title>
+  <para><application>glChess</application> Robert Ancell-ek idatzi zuen, eta orain gnome-games paketean dago. Dokumentazioa Andreas Røsdal-ek idatzi zuen,hainbagt GPL iturburuko sarrerekin. Aplikazio honi buruzko akatsen berri emateko edo oharrak bidaltzeko, <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumentua</ulink>n aurkituko dituzu argibideak.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Lizentzia</title>
+  <para>Programa hau software librea da; birbana eta/edo alda dezakezu Free Software Foundation-ek argitaratutako <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako baldintzak betez gero.</para>
+  <para>Programa hau erabilgarria izango delakoan banatzen da, baina INOLAKO BERMERIK GABE; era berean, ez da bermatzen beraren EGOKITASUNA MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO. Argibide gehiago nahi izanez gero, ikus <citetitle>GNU Lizentzia Publiko Orokorra</citetitle>.</para>
+  <para><citetitle>GNU Lizentzia Publiko Orokorra</citetitle>ren kopia <citetitle>GNOMEren erabiltzaile</citetitle>aren gidaren eranskinean daukazu. <citetitle>GNU Dokumentazio Librearen Lizentzia</citetitle>ren kopia bat lor dezakezu Free Software Foundation-en bidez. Bisitatu <ulink type="http" url="http://www.fsf.org">haien webgunea</ulink>, edo idatzi hona: <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - 330. Suitea <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>AEB</country></address></para>
+ </sect1>
+</article>

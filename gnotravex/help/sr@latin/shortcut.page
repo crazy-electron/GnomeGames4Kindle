@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="shortcut" xml:lang="sr@latin">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Koristite tastaturu da biste igrali igru.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-21" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Prečice na tastaturi</title>
+
+  <section id="shortcuts-game">
+    <title>Prečice u igri</title>
+    <p>Sledeća tabela grupiše najkorisnije prečice za igranje <app>Gnomove slagalice</app>.</p>
+    <table frame="all" rules="rows cols">
+      <tr>
+        <td><p>Prečica</p></td><td><p>Opis</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>N</key></keyseq></p>
+        </td>
+        <td>
+          <p>Pokreće novu igru</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><key>Pause</key></p>
+        </td>
+        <td>
+          <p>Pauzira ili nastavlja već pauziranu igru.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            <keyseq><key>Ctrl</key><key>Gore</key></keyseq>
+          </p>
+        </td>
+        <td>
+          <p>Pomera sve delove u levoj kutiji za jedno mesto gore.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Dole</key></keyseq></p>
+        </td>
+        <td>
+          <p>Pomera sve delove u levoj kutiji za jedno mesto dole.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Levo</key></keyseq></p>
+        </td>
+        <td>
+          <p>Pomera sve delove u levoj kutiji za jedno mesto levo</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Desno</key></keyseq></p>
+        </td>
+        <td>
+          <p>Pomera sve delove u levoj kutiji za jedno mesto desno.</p>
+        </td>
+      </tr>
+    </table>
+  </section>
+</page>

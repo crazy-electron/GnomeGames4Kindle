@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.26">
+<!ENTITY manrevision "2.26">
+<!ENTITY date "June 2009">
+<!ENTITY app "<application>Mahjongg</application>">
+<!ENTITY appname "Mahjongg">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="el">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+  
+    <title>Εγχειρίδιο του <application>Ματζόγκ</application></title>
+    <abstract role="description">
+      <para>To Ματζόγκ είναι μια εκδοχή για έναν παίκτη του κλασικού ανατολικού παιχνιδιού με τα πλακίδια. Ο παίκτης πρέπει να αδειάσει το ταμπλό, βρίσκοντας ποια πλακίδια ταιριάζουν μεταξύ τους και βγάζοντάς τα από το παιχνίδι.</para>
+    </abstract>
+    <copyright>
+      <year>1998</year>
+      <holder>Ίδρυμα Ελεύθερου Λογισμικού</holder>
+    </copyright>
+    <copyright>
+      <year>2000</year>
+      <holder>Eric Baudais (Συγγραφέας τεκμηρίωσης)</holder>
+    </copyright>  
+	    <copyright>
+      <year>2009</year>
+      <holder>Paul Cutler (Συγγραφέας τεκμηρίωσης)</holder>
+    </copyright><copyright><year>δείτε http://www.gnome.gr/</year><holder>Για περισσότερα</holder></copyright> 
+    
+    <!-- translators: uncomment this:
+    
+  <copyright>
+  <year>2000</year>
+  <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+    -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Έργο Τεκμηρίωσης GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Χορηγείται άδεια αντιγραφής, διανομής και/ή τροποποίησης του παρόντος εγγράφου υπό τους όρους της έκδοσης 1.1 της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), ή οποιασδήποτε μεταγενέστερης έκδοσής αυτής από το Ίδρυμα Ελεύθερου Λογισμικού (FSF), χωρίς αμετάβλητες ενότητες, κείμενα εμπροσθοφύλλου και κείμενα οπισθοφύλλου. Αντίγραφο της άδειας GFDL είναι διαθέσιμο στον ακόλουθο <ulink type="help" url="ghelp:fdl">σύνδεσμο</ulink>, ή στο αρχείο COPYING-DOCS που διανέμεται μαζί με το παρόν εγχειρίδιο.</para>
+         <para>Αυτό το εγχειρίδιο αποτελεί μέρος της συλλογής εγχειριδίων του GNOME που διανέμονται υπό τους όρους της GFDL. Αν επιθυμείτε να διανείμετε το παρόν εγχειρίδιο ξεχωριστά από τη συλλογή, οφείλετε να προσθέσετε στο εγχειρίδιο αντίγραφο της άδειας χρήσης, όπως προβλέπεται στην ενότητα 6 της άδειας.</para>
+
+	<para>Πολλές από τις ονομασίες που χρησιμοποιούνται από εταιρείες για την διαφοροποίηση των προϊόντων και υπηρεσιών τους έχουν καταχωρισθεί ως εμπορικά σήματα. Σε όποιο σημείο της τεκμηρίωσης GNOME τυχόν εμφανίζονται αυτές οι ονομασίες, και εφόσον τα μέλη του Έργου τεκμηρίωσης GNOME έχουν λάβει γνώση αυτών των εμπορικών σημάτων, οι ονομασίες ή τα αρχικά αυτών θα γράφονται με κεφαλαίους χαρακτήρες.</para>
+
+	<para>ΤΟ ΠΑΡΟΝ ΕΓΓΡΑΦΟ ΚΑΙ ΟΙ ΤΡΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ ΕΛΕΥΘΕΡΗΣ ΑΔΕΙΑΣ ΤΕΚΜΗΡΙΩΣΗΣ GNU (GFDL) ΚΑΙ ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: <orderedlist>
+		<listitem>
+		  <para>ΤΟ ΠΑΡΟΝ ΕΓΓΡΑΦΟ ΠΑΡΕΧΕΤΑΙ "ΩΣ ΕΧΕΙ", ΧΩΡΙΣ ΟΠΟΙΑΔΗΠΟΤΕ ΑΛΛΗ ΕΓΓΥΗΣΗ, ΕΙΤΕ ΡΗΤΗ ΕΙΤΕ ΣΙΩΠΗΡΗ, ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΗΣ, ΧΩΡΙΣ ΠΕΡΙΟΡΙΣΜΟ, ΤΗΣ ΕΓΓΥΗΣΗΣ ΟΤΙ ΤΟ ΕΓΓΡΑΦΟ, Ή Η ΤΡΟΠΟΠΟΙΗΜΕΝΗ ΕΚΔΟΣΗ ΑΥΤΟΥ, ΕΙΝΑΙ ΕΜΠΟΡΕΥΣΙΜΟ, ΚΑΤΑΛΛΗΛΟ ΓΙΑ ΕΙΔΙΚΟ ΣΚΟΠΟ ΚΑΙ ΔΕΝ ΠΡΟΣΒΑΛΛΕΙ ΔΙΚΑΙΩΜΑΤΑ ΤΡΙΤΩΝ. Ο ΧΡΗΣΤΗΣ ΑΝΑΛΑΜΒΑΝΕΙ ΕΞ ΟΛΟΚΛΗΡΟΥ ΤΗΝ ΕΘΥΝΗ ΩΣ ΠΡΟΣ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΤΗΝ ΑΚΡΙΒΕΙΑ ΚΑΙ ΤΗΝ ΧΡΗΣΗ ΤΟΥ ΕΓΓΡΑΦΟΥ Ή ΤΗΣ ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ ΑΥΤΟΥ. ΣΕ ΠΕΡΙΠΤΩΣΗ ΠΟΥ ΟΠΟΙΟΔΗΠΟΤΕ ΕΓΓΡΑΦΟ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΗ ΕΚΔΟΣΗ ΑΥΤΟΥ ΑΠΟΔΕΙΧΘΟΥΝ ΕΛΑΤΤΩΜΑΤΙΚΑ ΚΑΘ' ΟΙΟΝΔΗΠΟΤΕ ΤΡΟΠΟ, Ο ΧΡΗΣΤΗΣ (ΚΑΙ ΟΧΙ Ο ΑΡΧΙΚΟΣ ΣΥΓΓΡΑΦΕΑΣ, ΔΗΜΙΟΥΡΓΟΣ Ή ΟΠΟΙΟΣΔΗΠΟΤΕ ΣΥΝΤΕΛΕΣΤΗΣ) ΑΝΑΛΑΜΒΑΝΕΙ ΤΟ ΚΟΣΤΟΣ ΟΠΟΙΑΣΔΗΠΟΤΕ ΑΝΑΓΚΑΙΑΣ ΣΥΝΤΗΡΗΣΗΣ, ΕΠΙΣΚΕΥΗΣ Ή ΔΙΟΡΘΩΣΗΣ. Η ΠΑΡΟΥΣΑ ΑΠΟΠΟΙΗΣΗ ΕΓΓΥΗΣΗΣ ΑΠΟΤΕΛΕΙ ΑΝΑΠΟΣΠΑΣΤΟ ΜΕΡΟΣ ΤΗΣ ΑΔΕΙΑΣ. ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΟΥΔΕΜΙΑ ΧΡΗΣΗ ΤΟΥ ΕΓΓΡΑΦΟΥ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΩΝ ΕΚΔΟΣΕΩΝ ΑΥΤΟΥ ΣΥΜΦΩΝΑ ΜΕ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ ΠΑΡΟΥΣΑΣ, ΠΑΡΑ ΜΟΝΟ ΕΑΝ ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΟΠΟΙΗΣΗ ΕΓΓΥΗΣΗΣ, ΚΑΙ</para>
+		</listitem>
+		<listitem>
+		  <para>Ο ΔΗΜΙΟΥΡΓΟΣ, Ο ΑΡΧΙΚΟΣ ΣΥΓΓΡΑΦΕΑΣ, ΟΙ ΣΥΝΤΕΛΕΣΤΕΣ Ή ΟΙ ΔΙΑΝΟΜΕΙΣ ΤΟΥ ΕΓΓΡΑΦΟΥ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ ΑΥΤΟΥ, ΚΑΘΩΣ ΚΑΙ ΟΙ ΠΡΟΜΗΘΕΥΤΕΣ ΟΠΟΙΩΝΔΗΠΟΤΕ ΕΚ ΤΩΝ ΠΡΟΑΝΑΦΕΡΟΜΕΝΩΝ ΜΕΡΩΝ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ ΕΝΑΝΤΙ ΟΙΟΥΔΗΠΟΤΕ, ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΕΡΜΗΝΕΙΑ ΝΟΜΟΥ, ΕΙΤΕ ΕΞ ΑΔΙΚΟΠΡΑΞΙΑΣ (ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΗΣ ΤΗΣ ΑΜΕΛΕΙΑΣ) ΕΙΤΕ ΣΤΟ ΠΛΑΙΣΙΟ ΣΥΜΒΑΤΙΚΗΣ Ή ΑΛΛΗΣ ΥΠΟΧΡΕΩΣΗΣ, ΓΙΑ ΤΥΧΟΝ ΑΜΕΣΕΣ, ΕΜΜΕΣΕΣ, ΕΙΔΙΚΕΣ, ΤΥΧΑΙΕΣ Ή ΣΥΝΕΠΑΚΟΛΟΥΘΕΣ ΖΗΜΙΕΣ ΟΠΟΙΑΣΔΗΠΟΤΕ ΜΟΡΦΗΣ, ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΩΝ, ΧΩΡΙΣ ΠΕΡΙΟΡΙΣΜΟ, ΖΗΜΙΩΝ ΛΟΓΩ ΑΠΩΛΕΙΑΣ ΦΗΜΗΣ ΚΑΙ ΠΕΛΑΤΕΙΑΣ, ΔΙΑΚΟΠΗΣ ΕΡΓΑΣΙΩΝ, ΔΥΣΛΕΙΤΟΥΡΓΙΑΣ Ή ΒΛΑΒΗΣ ΗΛΕΚΤΡΟΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ, Ή ΚΑΘΕ ΑΛΛΗΣ ΖΗΜΙΑΣ Ή ΑΠΩΛΕΙΑΣ ΠΟΥ ΟΦΕΙΛΕΤΑΙ Ή ΣΧΕΤΙΖΕΤΑΙ ΜΕ ΤΗΝ ΧΡΗΣΗ ΤΟΥ ΕΓΓΡΑΦΟΥ ΚΑΙ ΤΩΝ ΤΡΟΠΟΠΟΙΗΜΕΝΩΝ ΕΚΔΟΣΕΩΝ ΑΥΤΟΥ, ΑΚΟΜΑ ΚΑΙ ΑΝ ΤΑ ΩΣ ΑΝΩ ΜΕΡΗ ΕΙΧΑΝ ΛΑΒΕΙ ΓΝΩΣΗ ΤΗΣ ΠΙΘΑΝΟΤΗΤΑΣ ΠΡΟΚΛΗΣΗΣ ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer">
+	<firstname>Eric</firstname> 
+	<surname>Baudais</surname> 
+	<affiliation> 
+	  <address> <email>baudais@okstate.edu</email> </address> 
+	</affiliation> 
+      </author> 
+	        <author role="maintainer">
+	<firstname>Artur</firstname> 
+	<surname>Szymanski</surname> 
+	<affiliation> 
+	</affiliation> 
+      </author>
+	        <author role="maintainer">
+	<firstname>Paul</firstname> 
+	<surname>Cutler</surname> 
+	<affiliation> 
+		<orgname>Έργο Τεκμηρίωσης GNOME</orgname>
+	  <address> <email>pcutler@gnome.org</email> </address> 
+	</affiliation> 
+      </author> 
+
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="candidate"/>
+	
+	    <revhistory>
+      <!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+
+      <revision>
+        <revnumber>Εγχειρίδιο Mahjongg V2.26</revnumber>
+        <date>2009-06-16</date>
+        <revdescription>
+          <para role="author">Paul Cutler</para>
+          <para role="publisher">Έργο Τεκμηρίωσης GNOME</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>Εγχειρίδιο Mahjongg V2.26</revnumber>
+        <date>2009-06-16</date>
+        <revdescription>
+          <para role="author">Artur Szymanski</para>
+        </revdescription>
+      </revision>	  
+      <revision> 
+	<revnumber>Εγχειρίδιο Mahjongg V2.10·</revnumber> 
+	<date>Ιούνιος 2005</date> 
+	<revdescription> 
+	  <para role="author">Eric Baudais <email>baudais@okstate.edu</email></para>
+	  <para role="publisher">Έργο Τεκμηρίωσης GNOME</para>
+	</revdescription> 
+	</revision>
+	</revhistory>
+
+    <releaseinfo>Αυτό το εγχειρίδιο καλύπτει την έκδοση 2.26 του Mahjongg.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Ανάδραση</title> 
+      <para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με το <application>Mahjongg</application> ή το εγχειρίδιό του, ακολουθήστε τις οδηγίες στη <ulink url="ghelp:user-guide?feedback-bugs" type="help">σελίδα ανάδρασης GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME Mahjongg</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="intro">
+    <title>Εισαγωγή</title>
+
+    <para>Το <application>Ματζόγκ </application> είναι μία εκδοχή για έναν παίκτη του κλασικού ανατολικού παιχνιδιού με τα πλακίδια. Διαθέτει όλες τις αναμενόμενες λειτουργίες ενός παιχνιδιού με πλακίδια ή χαρτιά. Μπορείτε να αλλάξετε, μεταξύ άλλων, την εμφάνιση των πλακιδίων, το παρασκήνιο και το επίπεδο δυσκολίας από το διάλογο <link linkend="prefs">Προτιμήσεις</link>. Άλλα χαρακτηριστικά, όπως το <link linkend="pause">κουμπί <guibutton>Παύση</guibutton></link>, κάνουν το παιχνίδι ακόμη πιο ανταγωνιστικό όταν προσπαθείτε να βελτιώσετε το χρόνο σας.</para>
+
+    <sect2 id="history">
+      <title>Σύντομη ιστορία του Ματζόγκ</title>
+
+      <!-- FIXME: Explain more about solitaire version.-->
+      <para>Τα πλακίδια του Ματζόγκ χρησιμοποιούνται για τη δημιουργία πολλών παραλλαγών του αρχικού παιχνιδιού. Αυτή η εκδοχή του Ματζόγκ είναι για έναν παίκτη. Κάθε πλακίδιο αντιστοιχεί και σε μία ξεχωριστή <ulink type="http" url="http://www.xs4all.nl/~korntner/mahjong/fortune/index.html">σημασία</ulink>.</para>
+
+      <para>Η προέλευση του Ματζόγκ δεν είναι απολύτως εξακριβωμένη, αν και υπάρχουν πολλές σχετικές θεωρίες. Σύμφωνα με μια θεωρία, ο Νώε έπαιζε Ματζόγκ στην Κιβωτό, γιατί η Ανατολή υπερισχύει στο παιχνίδι (ίσως η βροχή στον κατακλυσμό να ήρθε από την Ανατολή). Μια άλλη εκδοχή υποστηρίζει ότι το παιχνίδι το εφηύρε ο Κινέζος φιλόσοφος Κομφούκιος. Τα τρία <quote>Θεμελιώδη</quote> πλακίδια έχουν το ίδιο όνομα με τις τρεις Θεμελιώδεις αρετές του. Πρόκειται για το Κόκκινο Chung (κέντρο), το Πράσινο Fa (ευημερία) και το Λευκό Po (λευκό), που αντιστοιχούν στην Καλοσύνη, την Ειλικρίνεια και την Υϊκή Ευσέβεια. Άλλη μία θεωρία αναφέρει ότι το Ματζόγκ προήλθε από άλλα κινέζικα παιχνίδια. Το <quote>Ya Pei</quote> παίζεται με 32 κάρτες από ξύλο ή ελεφαντόδοντο που έχουν το ίδιο ορθογώνιο σχήμα με τα σημερινά πλακίδια του Ματζόγκ. Το <quote>Ma Tiae</quote> παίζεται με 40 χάρτινες κάρτες, με παρόμοια εμφάνιση, που αντιστοιχούν στα λουλούδια, καθώς και σε τέσσερις διαφορετικές φυλές με αριθμούς από το 1 ως το 9. Έχει υποστηριχθεί ότι δύο αδέλφια εφηύραν το παιχνίδι γύρω στο 1850 μ.Χ., συνδυάζοντας αυτά τα δύο προγενέστερα παιχνίδια.</para>
+
+      <para>Στις αρχές του εικοστού αιώνα, το Ματζόγκ έκανε την πρώτη του εμφάνιση στις αγγλικές λέσχες της Σαγκάης. Ο κ. Babcock ξεκίνησε τις εισαγωγές πλακιδίων Ματζόγκ στο δυτικό κόσμο. Κράτησε μόνο τους βασικούς κανόνες του παιχνιδιού και πρόσθεσε Αραβικά αριθμητικά στα πλακίδια. Η μόδα του Ματζόγκ έφτασε στο αποκορύφωμά της το 1923, όταν μεγάλες εταιρείες παιχνιδιών, όπως οι Parker Bros., Milton Bradley, United States Playing Card, εισήγαγαν χιλιάδες σετ πλακιδίων.</para>
+
+      <para>Άρχισαν να εμφανίζονται πολλοί διαφορετικοί κανόνες και το 1924 ιδρύθηκε η Επιτροπή Τυποποίησης των Επίσημων Αμερικανικών Κανόνων του Ματζόγκ, με σκοπό να γράψει ένα εγχειρίδιο κανόνων. Ακόμη και σήμερα όμως, πολλές λέσχες χρησιμοποιούν διαφορετικούς κανόνες και μερικές φορές μάλιστα προσθέτουν και δικά τους πλακίδια, με λουλούδια ή μπαλαντέρ. Οι δε παίκτες της ηλεκτρονικής εκδοχής ενθουσιάζονται με την ομορφιά και τις λεπτομέρειες των χειροποίητων πλακιδίων του '20 και του '30 και ψάχνουν να τα αγοράσουν σε παζάρια και παλαιοπωλεία. Ενώ πολλοί νέοι παίκτες ανακαλύπτουν το παιχνίδι από την εκδοχή για ένα παίκτη, αλλά στη συνέχεια συνειδητοποιούν το ενδιαφέρον και τις προκλήσεις του παραδοσιακού παιχνιδιού. <footnote>
+	  <para>Τμήματα αυτού του κειμένου έχουν προσαρμοστεί από τις ιστοσελίδες του <ulink type="http" url="http://www.mahjongmuseum.com/">Mah Jong Museum</ulink>.</para>
+	</footnote></para>
+    </sect2>
+  </sect1>
+  
+   <!-- ============= Playing Mahjongg ============================= -->
+
+  <sect1 id="usage">
+    <title>Παίζοντας Ματζόγκ</title>
+
+    <para>Ξεκινάτε με πέντε επίπεδα πλακιδίων, τοποθετημένα έτσι ώστε κάποια να καλύπτονται από τα πλακίδια που βρίσκονται από πάνω τους. Όσο πιο δύσκολο επίπεδο επιλέξετε στο <link linkend="prefs">διάλογο <interface>Προτιμήσεις</interface></link>, τόσο πιο πολλά πλακίδια θα είναι καλυμμένα κατά την έναρξη του παιχνιδιού. Ο στόχος του<application> Ματζόγκ</application> είναι η απομάκρυνση όλων των πλακιδίων. Για να απομακρύνετε πλακίδια θα πρέπει να βρείτε τα ταίρια τους. Συνήθως, το ταίρι ενός πλακιδίου έχει είτε τον ίδιο αριθμό κύκλων ή γραμμών, είτε παρόμοιο σχέδιο.</para>
+
+    <para>Για παράδειγμα, το επιλεγμένο πλακίδιο στην <link linkend="mahjongg-fig">παρακάτω εικόνα</link> έχει έξι κύκλους. Το ταίρι του θα έχει και αυτό έξι κύκλους. Άρα, το ταίρι του μπορεί να είναι το τελευταίο πλακίδιο στην τρίτη γραμμή από το τέλος. Ή το πλακίδιο στο κέντρο αριστερά της τέταρτης γραμμής από το τέλος. Αν τώρα θέλετε να ταιριάξετε το πλακίδιο στην κορυφή της πυραμίδας, πρέπει να εντοπίσετε ένα πλακίδιο με τα ίδια πράσινα μπαμπού. Το βρήκατε; Υπάρχουν τρία πλήρως ορατά πλακίδια που αντιστοιχούν στο πλακίδιο της κορυφής. Δύο βρίσκονται στη δεξιά πλευρά (το ένα στη μέση και το άλλο χαμηλότερα). Το τρίτο είναι στην πρώτη γραμμή, αλλά προς το παρόν δεν μπορείτε να το απομακρύνετε, γιατί δεν είναι σε κάποια από τις εξωτερικές πλευρές. Στη συνέχεια θα μάθετε ακριβώς ποια πλακίδια μπορούν να απομακρύνονται και ποια όχι. Τώρα, προσπαθήστε να βρείτε μόνοι σας άλλο ένα ζευγάρι πλακιδίων.</para>
+
+    <figure id="mahjongg-fig">
+      <title>Κύριο παράθυρο του Ματζόγκ</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/mahjongg.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Κύριο παράθυρο.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Το <application>Ματζόγκ</application> παίζεται ως εξής: Κάνετε κλικ πάνω σε δύο πλακίδια που ταιριάζουν μεταξύ τους για να τα απομακρύνετε. Συνεχίζετε μέχρι να απομακρυνθούν όλα τα πλακίδια, ή να τελειώσουν τα διαθέσιμα ζευγάρια.</para>
+
+    <para>Μπορείτε να επιλέξετε μόνο τα πλακίδια που βρίσκονται στην αριστερή ή τη δεξιά άκρη κάθε επιπέδου. Αυτό συμβαίνει γιατί τα πλακίδια που δεν βρίσκονται στην αριστερή ή τη δεξιά άκρη μιας πλευράς δεν μπορούν να απομακρυνθούν. Αν ένα πλακίδιο βρίσκεται στο αριστερό ή δεξί άκρο ενός από τα ψηλότερα επίπεδα, τότε πάλι μπορείτε να το απομακρύνετε, αν βρείτε το ταίρι του.</para>
+
+    <para>Αν δεν απομένουν άλλα διαθέσιμα ζευγάρια, θα εμφανιστεί ένας διάλογος που θα σας πληροφορεί ότι δεν υπάρχουν άλλες κινήσεις και θα σας δίνει τη δυνατότητα να ανακατέψετε τα πλακίδια (θα προστεθούν 60 δευτερόλεπτα στο χρόνο σας), ή να αναιρέσετε την προηγούμενή σας κίνηση (αν και μπορεί να χρειαστεί να αναιρέσετε πολλές κινήσεις μέχρι να βρείτε πού είχατε κάνει λάθος).</para>
+
+    <figure id="info-fig1">
+      <title>Διάλογος πληροφοριών</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/no-move.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Διάλογος πληροφοριών.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+    
+    <sect2 id="toolbar">
+      <title>Εργαλειοθήκη</title>
+
+      <para>Η <interface>εργαλειοθήκη</interface> βρίσκεται ακριβώς από κάτω από τη <interface>γραμμή μενού</interface> και περιέχει τα ακόλουθα πλήκτρα:</para>
+      
+      <variablelist>
+	<varlistentry>
+	  <term><guibutton>Νέο</guibutton></term>
+	  <listitem>
+	    <para>Ξεκινά νέο παιχνίδι με τις ίδιες ρυθμίσεις.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Επανεκκίνηση</guibutton></term>
+	  <listitem>
+	    <para>Ξαναρχίζει το ίδιο παιχνίδι από την αρχή, χωρίς ανακάτεμα των πλακιδίων.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry id="pause">
+	  <term><guibutton>Παύση</guibutton></term>
+	  <listitem>
+	    <para>Παύει το παιχνίδι. Όσο διαρκεί η παύση, το ρολόι στην κάτω δεξιά γωνία στο <interface>κύριο παράθυρο</interface> σταματά να τρέχει, ενώ δεν είναι πλέον ορατές οι όψεις των πλακιδίων.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Αναίρεση κίνησης</guibutton></term>
+	  <listitem>
+	    <para>Επαναφέρει τα δύο τελευταία πλακίδια που είχαν απομακρυνθεί. Αν επαναλάβετε αρκετές φορές, θα επιστρέψετε στην αρχή του παιχνιδιού.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Επανάληψη κίνησης</guibutton></term>
+	  <listitem>
+	    <para>Με αυτή την επιλογή επαναλαμβάνεται η προηγούμενή σας κίνηση, δηλαδή αυτή που είχε αναιρεθεί με το πάτημα στο κουμπί <guibutton>Αναίρεση κίνησης</guibutton>.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guibutton>Συμβουλή</guibutton></term>
+	  <listitem>
+	    <para>Υποδεικνύει ένα ζευγάρι πλακιδίων που μπορούν να απομακρυνθούν. Κάθε φορά που πατάτε αυτό το κουμπι, προστίθενται 30 δευτερόλεπτα στο χρόνο σας.</para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+      <para>Η γραμμή κατάστασης στο κάτω μέρος του παραθύρου παρέχει πληροφορίες για την εξέλιξη του παιχνιδιού:</para>
+      <variablelist>
+	<varlistentry>
+	  <term><guilabel>Πλακίδια που απομένουν:</guilabel></term>
+	  <listitem>
+	    <para>Εμφανίζει τον αριθμό των πλακιδίων που απομένει να ζευγαρωθούν.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guilabel>Κινήσεις που απομένουν:</guilabel></term>
+	  <listitem>
+	    <para>Εμφανίζει τον αριθμό των διαθέσιμων ζευγαριών.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guilabel>Χρόνος:</guilabel></term>
+	  <listitem>
+	    <para>Αυτό δείχνει τον χρόνο που πέρασε από την αρχή του παιχνιδιού.</para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+      
+      <figure id="toolbar-fig">
+	<title>Εργαλειοθήκη του Ματζόγκ</title>
+	<screenshot>
+	   <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/toolbar.png" format="PNG" srccredit="Eric Baudais"/>
+	  </imageobject>
+    <textobject> 
+      <phrase>Εργαλειοθήκη.</phrase> 
+    </textobject> 
+  </mediaobject>
+	</screenshot>
+      </figure>
+      
+    </sect2>
+    
+    <sect2 id="menubar">
+      <title>Μενού</title>
+      <para>Η γραμμή μενού, που βρίσκεται στην κορυφή του <interface>Κύριου παραθύρου</interface>, περιέχει τα ακόλουθα μενού:</para>
+
+      <variablelist>
+	<varlistentry>
+	  <term><guimenu>Παιχνίδι</guimenu></term>
+	  <listitem>
+	    <para>Αυτό το μενού περιέχει: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>Ctrl+Ν</keycap></shortcut><guimenuitem> Νέο</guimenuitem></menuchoice> — Ξεκινάει νέο παιχνίδι.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Επανεκκίνηση</guimenuitem></menuchoice> — Ξεκινάει το ίδιο παιχνίδι από την αρχή.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Παύση</guimenuitem></menuchoice> — Παύει το παιχνίδι. Σταματάει το ρολόι και κρύβει τα πλακίδια.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>Ctrl-Z</keycap></shortcut><guimenuitem>Αναίρεση κίνησης</guimenuitem></menuchoice> — Επαναφέρει τα δύο τελευταία πλακίδια που είχαν απομακρυνθεί. Αν επαναλάβετε αρκετές φορές, θα επιστρέψετε στην αρχή του παιχνιδιού.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>Ctrl-R</keycap></shortcut><guimenuitem>Επανάληψη κίνησης</guimenuitem></menuchoice> — Επαναλαμβάνει την προηγούμενη κίνηση, δηλαδή αυτή που είχε αναιρεθεί με το πάτημα στο <guibutton> Αναίρεση κίνησης</guibutton>. Όταν φτάσετε στο σημείο από όπου είχατε ξεκινήσει να αναιρείτε, το μήνυμα <quote>Αδυναμία επανάληψης!</quote> εμφανίζεται στην κάτω αριστερή γωνία του <interface>κύριου παραθύρου</interface>.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Συμβουλή</guimenuitem></menuchoice> — Υποδεικνύει ένα ζευγάρι πλακιδίων που μπορούν να απομακρυνθούν.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Βαθμολογίες</guimenuitem></menuchoice> — Εμφανίζει πλαίσιο διαλόγου με τις δέκα καλύτερες βαθμολογίες. Αναφέρεται το όνομα του παίκτη, καθώς και ο χρόνος του.</para>
+		</listitem>
+		<listitem>
+		  <para id="quit"><menuchoice><shortcut><keycap>Ctrl-Q</keycap></shortcut><guimenuitem>Έξοδος</guimenuitem></menuchoice> — Επιτρέπει την έξοδο από το παιχνίδι.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term><guimenu>Ρυθμίσεις</guimenu></term>
+	  <listitem>
+	    <para>Αυτό το μενού περιέχει: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>F11</keycap></shortcut><guimenuitem>Πλήρης οθόνη</guimenuitem></menuchoice> — Σας επιτρέπει να παίξετε το παιχνίδι σε όλη την επιφάνεια της οθόνης του υπολογιστή. Για να τερματίσετε τη λειτουργία πλήρης οθόνης, πατήστε ξανά <keycap>F11</keycap> ή κάντε κλικ στο κουμπί <guibutton>Έξοδος από πλήρη οθόνη</guibutton> της <interface>εργαλειοθήκης</interface>.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Εργαλειοθήκη</guimenuitem></menuchoice> — Καθορίζει το αν θα εμφανίζεται η <link linkend="toolbar"><interface>εργαλειοθήκη</interface></link>. Αν είναι επιλεγμένο, η <interface> εργαλειοθήκη</interface> εμφανίζεται στη θέση που την είχατε τοποθετήσει την τελευταία φορά. Αν δεν είναι επιλεγμένο, η<interface> εργαλειοθήκη</interface> δεν εμφανίζεται.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem> Προτιμήσεις</guimenuitem></menuchoice> — Εμφανίζει το διάλογο με τις <link linkend="prefs">προτιμήσεις</link>.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guimenu>Βοήθεια</guimenu></term>
+	  <listitem>
+	    <para>Αυτό το μενού περιέχει: <itemizedlist mark="opencircle">
+		<listitem>
+		  <para><menuchoice><shortcut><keycap>F1</keycap></shortcut><guimenuitem> Περιεχόμενα</guimenuitem></menuchoice> — Εμφανίζει αυτό το εγχειρίδιο.</para>
+		</listitem>
+		<listitem>
+		  <para><menuchoice><guimenuitem>Περί</guimenuitem></menuchoice> — Παρέχει βασικές πληροφορίες για το <application>Ματζόγκ</application>, όπως τα ονόματα των δημιουργών και τον αριθμό έκδοσης της εφαρμογής.</para>
+		</listitem>
+	      </itemizedlist></para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+
+    </sect2>
+  </sect1>
+  
+   <!-- ============= Customization ============================= -->
+
+  <sect1 id="prefs">
+    <title>Προσαρμογή</title>
+    <para>Για να αλλάξετε τις ρυθμίσεις της εφαρμογής, επιλέξτε<guimenuitem> Προτιμήσεις</guimenuitem> από το μενού<guimenu> Ρυθμίσεις</guimenu>. Θα ανοίξει ο <link linkend="preferences-fig">διάλογος <interface>Προτιμήσεις</interface></link>.</para>
+    
+    <figure id="preferences-fig">
+<!-- FIXME: This dialog is the old one. -->
+<!-- ALAN: looks correct like version 2.10 to me -->
+      <title>Διάλογος προτιμήσεων</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences.png" format="PNG" srccredit="Eric Baudais"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Διάλογος προτιμήσεων.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Όλες οι επιλογές εφαρμόζονται και αποθηκεύονται αμέσως.</para>
+    
+    <para>Οι ιδιότητες που εμφανίζονται στο διάλογο <interface>Προτιμήσεις</interface> είναι:</para>
+      
+      <itemizedlist mark="opencircle">
+	<listitem>
+	  <para><guilabel>Σετ πλακιδίων</guilabel> — Από αυτή τη λίστα επιλέγετε την επιθυμητή εμφάνιση των πλακιδίων.</para>
+	</listitem>
+	<listitem>
+	  <para><guilabel>Επιλογή χάρτη</guilabel> — Αλλάξτε τη δυσκολία του παιχνιδιού μεταβάλλοντας τη διάταξη των πλακιδίων. Οι πιο απλωμένες (εύκολες) εκδοχές σας επιτρέπουν να βλέπετε περισσότερα πλακίδια, ενώ οι πιο πυκνές (δύσκολες) δε σας επιτρέπουν να βλέπετε πολλά.</para>
+	</listitem>
+	<listitem>
+	  <para><guilabel>Χρώμα παρασκηνίου</guilabel> — Αλλάξτε το χρώμα του παρασκηνίου, χρησιμοποιώντας <interface> επιλογέα χρωμάτων</interface>.</para>
+	</listitem>
+      </itemizedlist>
+
+    <para>Για να αλλάξετε το μέγεθος των πλακιδίων, απλά αλλάζετε το μέγεθος του παραθύρου. Τα πλακίδια αυξάνουν σε μέγεθος για να γεμίσουν το νέο παράθυρο.</para>
+
+  </sect1>
+  
+<!-- ALAN: Better to leave this section out than to say something unhelpful 
+and risk annoying the user.  
+ <sect1 id="bugs">
+  <title>Known Bugs and Limitations</title>
+  <para>
+   This application has no known bugs.
+  </para>
+ </sect1>
+-->
+
+ <!-- ============= Authors ============================= -->
+
+ <sect1 id="authors">
+  <title>Δημιουργοί</title>
+  <para>Το <application>Ματζόγκ</application> γράφτηκε από τους Francisco Bustamante (<email>pancho@nuclecu.unam.mx</email>), Michael Meeks (<email>mmeeks@gnu.org</email>), Max Watson, Heinz Hempe, και Philippe Chavin. Τα πλακίδια του <application>Ματζόγκ</application> σχεδιάστηκαν από τους Jonathan Buzzard και Max Watson. Αυτό το εγχειρίδιο γράφτηκε από τον Eric Baudais (<email>baudais@okstate.edu</email>). Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με την εφαρμογή αυτή ή το εγχειρίδιό της, ακολουθήστε τις οδηγίες σε αυτό το <ulink url="ghelp:user-guide?feedback-bugs" type="help">έγγραφο</ulink>.</para>
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Άδεια χρήσης</title>
+  <para>Tο πρόγραμμα και τα γραφικά των πλακιδίων είναι ελεύθερο λογισμικό· επιτρέπεται η αναδιανομή ή/και τροποποίησή τους υπό τους όρους της <citetitle>Γενικής Άδειας Δημόσιας Χρήσης GNU (GPL)</citetitle>, όπως αυτή έχει δημοσιευτεί από το Ίδρυμα Ελεύθερου Λογισμικού (FSF) — είτε της έκδοσης 2 της Άδειας, είτε (κατ' επιλογήν σας) οποιασδήποτε μεταγενέστερης έκδοσης.</para>
+  <para>Το πρόγραμμα αυτό διανέμεται με την ελπίδα ότι θα αποδειχθεί χρήσιμο, παρόλα αυτά ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ — χωρίς ούτε και την σιωπηρή εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΕΙΔΙΚΟ ΣΚΟΠΟ. Για περισσότερες λεπτομέρειες ανατρέξτε στη <citetitle>Γενική Άδεια Δημόσιας Χρήσης GNU (GPL)</citetitle>.</para>
+  <para>Αντίγραφο της <citetitle>Γενικής Άδειας Δημόσιας Χρήσης GNU (GPL)</citetitle> περιλαμβάνεται ως παράρτημα στον <citetitle>Οδηγό χρήστη GNOME</citetitle>. Επίσης, αντίγραφο της <citetitle>Γενικής Άδειας Δημόσιας Χρήσης GNU (GPL)</citetitle> μπορείτε να παραλάβετε από το Ίδρυμα Ελεύθερου Λογισμικού (FSF), είτε επισκεπτόμενοι τον <ulink type="http" url="http://www.fsf.org">ιστοχώρο</ulink> του, είτε γράφοντας στη διεύθυνση <address> Free Software Foundation, Inc. <street>51 Franklin Street, Fifth Floor</street> <city>Boston</city>, <state>MA</state><postcode>02110-1301</postcode><country>USA</country></address>.</para>
+ </sect1>
+</article>

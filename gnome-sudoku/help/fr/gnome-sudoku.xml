@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.21.90">
+<!ENTITY manrevision "3.0">
+<!ENTITY date "February 2008">
+<!ENTITY app "<application>Sudoku</application>">
+<!ENTITY appname "Sudoku">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 06, 2003
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="fr">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Manuel de <application>Sudoku</application></title>       
+
+    <abstract role="description">
+      <para>L'application Sudoku permet de jouer au jeu de logique bien connu Sudoku, dans lequel vous devez remplir une grille de 9 cases sur 9 avec les bons chiffres.</para>
+    </abstract>
+
+    <copyright> 
+      <year>2008</year> 
+      <holder>Thomas M. Hinkle</holder> 
+    </copyright><copyright><year>2007-2010</year><holder>Bruno Brouard (annoa.b@gmail.com)</holder></copyright><copyright><year>2007-2008</year><holder>Claude Paroz (claude@2xlibre.net)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Projet de documentation GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Permission vous est donnée de copier, distribuer et/ou modifier ce document selon les termes de la Licence GNU Free Documentation License, Version 1.1 ou ultérieure publiée par la Free Software Foundation sans section inaltérable, sans texte de première page de couverture ni texte de dernière page de couverture. Vous trouverez un exemplaire de cette licence en suivant ce <ulink type="help" url="ghelp:fdl">lien</ulink> ou dans le fichier COPYING-DOCS fourni avec le présent manuel.</para>
+         <para>Ce manuel fait partie de la collection de manuels GNOME distribués selon les termes de la licence de documentation libre GNU. Si vous souhaitez distribuer ce manuel indépendamment de la collection, vous devez joindre un exemplaire de la licence au document, comme indiqué dans la section 6 de celle-ci.</para>
+
+	<para>La plupart des noms utilisés par les entreprises pour distinguer leurs produits et services sont des marques déposées. Lorsque ces noms apparaissent dans la documentation GNOME et que les membres du projet de Documentation GNOME sont informés de l'existence de ces marques déposées, soit ces noms entiers, soit leur première lettre est en majuscule.</para>
+
+	<para>LE PRÉSENT DOCUMENT ET SES VERSIONS MODIFIÉES SONT FOURNIS SELON LES TERMES DE LA LICENCE DE DOCUMENTATION LIBRE GNU SACHANT QUE : <orderedlist>
+		<listitem>
+		  <para>LE PRÉSENT DOCUMENT EST FOURNI « TEL QUEL », SANS AUCUNE GARANTIE, EXPRESSE OU IMPLICITE, Y COMPRIS, ET SANS LIMITATION, LES GARANTIES DE BONNE QUALITÉ MARCHANDE OU D'APTITUDE À UN EMPLOI PARTICULIER OU AUTORISÉ DU DOCUMENT OU DE SA VERSION MODIFIÉE. L'UTILISATEUR ASSUME TOUT RISQUE RELATIF À LA QUALITÉ, À LA PERTINENCE ET À LA PERFORMANCE DU DOCUMENT OU DE SA VERSION DE MISE À JOUR. SI LE DOCUMENT OU SA VERSION MODIFIÉE S'AVÉRAIT DÉFECTUEUSE, L'UTILISATEUR (ET NON LE RÉDACTEUR INITIAL, L'AUTEUR, NI TOUT AUTRE PARTICIPANT) ENDOSSERA LES COÛTS DE TOUTE INTERVENTION, RÉPARATION OU CORRECTION NÉCESSAIRE. CETTE DÉNÉGATION DE RESPONSABILITÉ CONSTITUE UNE PARTIE ESSENTIELLE DE CETTE LICENCE. AUCUNE UTILISATION DE CE DOCUMENT OU DE SA VERSION MODIFIÉE N'EST AUTORISÉE AUX TERMES DU PRÉSENT ACCORD, EXCEPTÉ SOUS CETTE DÉNÉGATION DE RESPONSABILITÉ ; ET</para>
+		</listitem>
+		<listitem>
+		  <para>EN AUCUNE CIRCONSTANCE ET SOUS AUCUNE INTERPRÉTATION DE LA LOI, QU'IL S'AGISSE DE RESPONSABILITÉ CIVILE (Y COMPRIS LA NÉGLIGENCE), CONTRACTUELLE OU AUTRE, L'AUTEUR, LE RÉDACTEUR INITIAL, TOUT PARTICIPANT ET TOUT DISTRIBUTEUR DE CE DOCUMENT OU DE SA VERSION DE MISE À JOUR AINSI QUE TOUT FOURNISSEUR DE QUELQUE PARTIE QUE CE SOIT NE POURRONT ÊTRE TENUS RESPONSABLES À L'ÉGARD DE QUICONQUE POUR TOUT DOMMAGE DIRECT, INDIRECT, PARTICULIER OU ACCIDENTEL DE TOUT TYPE Y COMPRIS, SANS LIMITATION, LES DOMMAGES LIÉS À LA PERTE DE CLIENTÈLE, AUX ARRÊTS DE TRAVAIL, AUX DÉFAILLANCES ET AUX DYSFONCTIONNEMENTS INFORMATIQUES OU TOUT AUTRE DOMMAGE OU PERTE LIÉE À L'UTILISATION DU PRÉSENT DOCUMENT ET DE SES VERSIONS DE MISE À JOUR, ET CE MÊME SI CES PARTIES ONT ÉTÉ INFORMÉES DE LA POSSIBILITÉ DE TELS DOMMAGES.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+		<firstname>Thomas</firstname> 
+		<surname>Hinkle</surname> 
+		<affiliation> 
+	  		<orgname>Projet de documentation GNOME</orgname> 
+	  		<!-- The email address of the author is optional and is commented out by default. 
+			<address> <email>doc-writer2@gnome.org</email> </address> 
+			-->
+		</affiliation> 
+      </author> 
+      
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->  
+    <revhistory>
+      <revision> 
+		<revnumber>Manuel de GNOME Sudoku v3.0</revnumber> 
+		<date>Février 2008</date> 
+		<revdescription> 
+	  		<para role="author">Thomas M. Hinkle</para>
+	  		<para role="publisher">Projet de documentation GNOME</para>
+		</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Ce manuel documente la version 2.21.90 de Sudoku</releaseinfo> 
+    <legalnotice> 
+      <title>Votre avis</title> 
+      <para>Pour rapporter une anomalie ou émettre une suggestion concernant <application>Sudoku</application> ou ce manuel, procédez comme indiqué sur la <ulink url="ghelp:user-guide?feedback-bugs" type="help">page de réactions sur GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>GNOME Sudoku</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+    <primary>sudoku</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="myapp-introduction"> 
+    <title>Introduction</title> 
+    <para><application>Sudoku</application> permet de jouer au jeu de logique bien connu Sudoku (aussi connu sous le nom de Number Place) et de générer des grilles.</para>
+    <para>Les règles de Sudoku sont assez simples. Pour compléter la grille, vous devez remplir chaque case avec un nombre compris entre 1 et 9 de telle sorte que chaque ligne, colonne et boîte 3x3 du tableau contienne tous les nombres de 1 à 9. Dit d'une autre façon, vous devez remplir chaque case de manière qu'aucun nombre n'apparaisse deux fois dans la même ligne, colonne ou boîte 3x3.</para>
+
+    <para>Ces deux différentes façons d'appréhender la grille sont deux des principales méthodes de réflexion des joueurs. D'un côté, vous vous demandez « Comment puis-je mettre tous les nombres dans cette boîte ? », de l'autre « Quels nombres puis-je mettre dans cette case sans avoir de conflit avec les autres nombres dans la même ligne, colonne ou boîte 3x3 ? ».</para>
+
+    <para>En dépit de la simplicité du jeu, les grilles de Sudoku possèdent des niveaux de difficulté très variables. <application>Sudoku</application> permet de choisir le niveau de difficulté auquel vous voulez jouer. Par défaut, le jeu commence par des grilles faciles, puis il augmente graduellement la difficulté au fur et à mesure de votre progression.</para>
+
+  </sect1>
+
+<!-- =========== Getting Started ============================== -->
+<!-- Use the Getting Started section to describe the steps required
+     to start the application and to describe the user interface components
+     of the application. If there is other information that it is important
+     for readers to know before they start using the application, you should
+     also include this information here. 
+     If the information about how to get started is very short, you can 
+     include it in the Introduction and omit this section. -->
+
+  <sect1 id="myapp-getting-started"> 
+    <title>Premiers pas</title> 
+
+    <sect2 id="myapp-start">
+    <title>Démarrage de <application>Sudoku</application></title>
+    <para>Vous pouvez démarrer <application>Sudoku</application> des deux manières suivantes :</para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>Menu <guimenu>Applications</guimenu></term>
+    		<listitem>
+    		<para>Choisissez <menuchoice><guisubmenu>Jeux </guisubmenu><guimenuitem>Sudoku</guimenuitem></menuchoice>.</para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Ligne de commande</term>
+    		<listitem>
+    		<para>Pour lancer <application>Sudoku</application> dans un terminal, saisissez la commande suivante, puis pressez la touche <keycap>Entrée</keycap> :</para>
+    		<para> 
+			<command>gnome-sudoku</command> 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+    </sect2>
+
+    <sect2 id="myapp-when-start">
+    <title>Quand <application>Sudoku</application> démarre</title>
+    <para>Quand vous démarrez <application>Sudoku</application> pour la première fois, l'écran de sélection de grilles s'affiche. Il permet de choisir le niveau de difficulté de la grille que vous voulez faire. Si vous avez déjà joué auparavant et que certaines grilles ne sont pas terminées, vous pouvez également choisir ces grilles sur cet écran.</para>
+    <para>Dans l'écran de sélection de grilles, la difficulté de la grille est affichée. La couleur qui entoure l'image correspond au niveau de difficulté. Une grille rouge foncé est plus difficile qu'une grille rouge clair, par exemple.</para>
+    <para>Double-cliquez sur la grille de votre choix pour commencer à jouer.</para>
+
+<figure id="new-game-fig"> 
+	<title>Démarrage de Sudoku</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/starting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Démarrage de Sudoku : choix du niveau de difficulté.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    
+    <para>Vous pouvez changer de grille n'importe quand en cliquant sur <guibutton>Nouveau</guibutton>. Cela fait apparaître la fenêtre de sélection de grilles qui permet de choisir la grille que vous désirez.</para>
+    
+    </sect2>
+    
+    </sect1>
+    <sect1 id="myapp-basic-play">
+    <title>Jeu de base</title>
+    <para>Pour jouer, remplissez les cases par des chiffres de 1 à 9 de telle façon qu'aucune ligne, colonne ou boîte 3x3 ne possède chaque nombre plus d'une fois.</para>
+    <para>Vous pouvez insérer un nombre dans une case avec le clavier ou la souris.</para>
+    <variablelist>
+    	<varlistentry>
+	<term>Clavier</term>
+	<listitem><para>Utilisez les touches de direction ou la souris pour sélectionner la case que vous voulez compléter, puis saisissez le nombre que vous voulez mettre dans cette case. En tapant <keycap>Retour arrière</keycap>, cela efface le nombre.</para></listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Souris</term>
+	<listitem>
+	  <para>Cliquez sur une case pour la sélectionner, puis au centre de cette case pour faire apparaître des boutons numérotés de 1 à 9. Cliquez sur un nombre pour le sélectionner ou sur <guibutton>Effacer</guibutton> pour effacer le contenu de la case. Vous pouvez également double-cliquer au centre de la case pour faire apparaître les boutons numérotés.</para>
+	</listitem>
+		</varlistentry>
+	</variablelist>
+    <note>
+    <para>Si vous saisissez un nombre en conflit avec les autres nombres de la grille, les nombres en conflit seront affichés en rouge.</para>
+    <figure id="error-highlight-fig"> 
+	<title>Mise en évidence des erreurs</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/error_highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Un coup non valable sera mis en évidence en rouge.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    </note>
+    </sect1>
+    <sect1 id="myapp-saving">
+    <title>Enregistrement et reprise des jeux</title>
+    <para>Les sudokus sont sauvegardés automatiquement toutes les quelques minutes et à chaque fois que vous changez de grille ou fermez le jeu.</para>
+        <figure id="open-game-fig"> 
+	<title>Reprise d'anciennes parties</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/resuming.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Reprise d'une ancienne grille à partir de l'écran de sélection de grilles.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    <para>À chaque fois que vous démarrez <application>Sudoku</application> ou cliquez sur <guibutton>Nouveau</guibutton>, vos parties sauvegardées apparaissent dans l'écran de sélection de grilles. Chaque grille sauvegardée apparaît sous la forme d'une image en miniature, avec la dernière date à laquelle vous y avez joué ainsi que la durée de la partie. Pour ouvrir une grille, il suffit de double-cliquer dessus.</para>
+    <para>Si vous voulez arrêter de faire une grille et en commencer une autre, sélectionnez <guibutton>Nouveau</guibutton> et commencez votre nouveau jeu.</para>
+    </sect1>
+
+<!-- ================ Usage ================================ -->
+<!-- Use this section to describe how to use the application to perform the tasks for 
+  which the application is designed. -->
+  <sect1 id="myapp-hints"> 
+    <title>Outils</title> 
+    <!-- ================ Usage Subsection ================================ -->
+
+        <para>GNOME Sudoku met à votre disposition quelques outils qui peuvent vous aider à remplir les grilles.</para>
+
+      <variablelist>
+    	<varlistentry><term>Notes</term>
+	<listitem>
+		<para>Les <firstterm>notes</firstterm> (ou <firstterm>Coups de crayon</firstterm>) vous permettent de prendre des notes dans chaque case. Beaucoup de joueurs utilisent les notes pour inscrire les valeurs possibles pour les cases.</para>
+	</listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Astuces et remplissage automatique</term>
+	<listitem>
+	<para>Vous pouvez utiliser des <firstterm>astuces</firstterm> et le <firstterm>remplissage automatique</firstterm> afin que GNOME Sudoku vous donne toutes les valeurs possibles pour une case ou bien remplisse automatiquement une case à votre place.</para>
+	</listitem>
+	</varlistentry>
+
+		<varlistentry>
+	<term>Surlignage</term>
+	<listitem>
+	<para>Dans le mode surligneur, les ligne, colonne et boîte actuelles sont mises en valeur par une couleur différente pour vous aider à lire la grille plus facilement.</para>
+	</listitem>
+	</varlistentry>
+
+	<varlistentry>
+	<term>Suivi des coups</term>
+	<listitem>
+	  <para>Le suivi des coups vous aide à garder des traces de vos recherches de solution par essais-erreurs. Quand vous <firstterm>marquez</firstterm> une série de coups, les nombres que vous entrez sont d'une couleur différente pour vous aider à les distinguer des coups précédemment joués.</para>
+	</listitem>
+	</varlistentry>
+        </variablelist>
+	
+	<sect2 id="myapp-notes"> 
+      <title>Prise de notes</title> 
+      <para>Pour prendre des notes (aussi connues sous le nom de « coups de crayon ») dans une case, sélectionnez d'abord la case avec le clavier ou la souris, puis faites l'une des choses suivantes :</para>
+      <itemizedlist>
+      <listitem><para>Cliquez dans la partie supérieure de la case (la zone est mise en évidence par un cadre quand vous déplacez la souris au-dessus d'une case sélectionnée).</para></listitem>
+      <listitem><para>Tapez <keycap>N</keycap></para></listitem>
+      </itemizedlist>
+      <para>Cela fait apparaître un champ dans lequel vous pouvez saisir vos notes. Appuyez sur la touche <keycap>Entrée</keycap> quand vous avez fini de saisir la note.</para>
+      
+      <note><para>Vous pouvez également prendre des notes dans la zone en bas des cases en cliquant sur la région inférieure de la case ou en tapant <keycap>M</keycap>. Cependant, cette zone est utilisée lorsque vous demandez une <firstterm>astuce</firstterm>, vous ne devriez donc pas l'utiliser pour vos propres notes si vous avez l'intention d'utiliser les astuces.</para></note>
+      <note><para>Vous pouvez effacer les notes dans la zone en haut des cases en saisissant <keycap>Alt-N</keycap> et dans celle en bas des cases en saisissant <keycap>Alt-M</keycap>.</para></note>
+      <note><para>Vous pouvez ajouter un numéro aux notes dans la zone en haut des cases en saisissant <keycap>Ctrl-1</keycap> à <keycap>Ctrl-9</keycap> et le supprimer des notes en saisissant <keycap>Alt-1</keycap> à <keycap>Alt-9</keycap>.</para></note>
+</sect2>
+    <!-- ================ Usage Subsection ================================ -->
+	 <sect2 id="myapp-manipulate-view"> 
+      <title>Astuces et remplissage automatique</title>
+
+		             <note>
+
+	      <para>Les outils <firstterm>Astuce</firstterm> et <firstterm>Remplir</firstterm> vous donnent les possibilités logiques de la case en se basant sur la grille présente. Ils <emphasis>n</emphasis>'utilisent <emphasis>pas</emphasis> la solution de la grille. Si vous avez fait une erreur auparavant, ces outils peuvent mettre ou vous proposer des valeurs incorrectes.</para>
+
+	    </note>
+      
+      
+      <sect3 id="myapp-hint">
+          <title>Astuces</title>
+	              <para>GNOME Sudoku peut vous donner des astuces basées sur la grille actuelle. Vous pouvez demander une astuce pour la case actuellement sélectionnée en cliquant sur <guibutton>Astuce</guibutton>, en choisissant <menuchoice><guisubmenu>Outils</guisubmenu><guimenuitem>Astuce</guimenuitem></menuchoice> ou en tapant <keycap>Ctrl-H</keycap>. Une liste des valeurs possibles s'affiche en bas de la case.</para>
+    <figure id="hint-fig"> 
+	<title>Astuces</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/hints.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Quand vous cliquez sur Astuce, les valeurs possibles apparaissent dans le bas de la case.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+		      
+	    <para>Si vous voulez effacer ou modifier l'astuce, vous pouvez éditer le texte en cliquant en bas de la case.</para>
+	    <para>Pour les grilles très difficiles, vous pouvez demander à <application>Sudoku</application> de vous montrer les valeurs possibles pour toutes les cases. Pour activer ce mode, cochez <menuchoice><guisubmenu>Outils</guisubmenu><guimenuitem>Toujours donner un indice</guimenuitem></menuchoice>. Notez que cela peut rendre les grilles faciles <emphasis>trop</emphasis> faciles, n'utilisez donc ce mode qu'occasionnellement.</para>
+<figure id="all-hints-fig"> 
+	<title><application>Sudoku</application> dans le mode Toujours donner un indice</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/always_show_hint.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Une grille difficile avec le mode « Toujours donner un indice » activé.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+	    
+	    
+	    </sect3>
+	    <sect3 id="myapp-autofill">
+	    <title>Remplir une case</title>
+
+	    <para>Pour remplir automatiquement une case pour laquelle il n'y a qu'une seule valeur possible, vous pouvez cliquer sur <guibutton>Remplir</guibutton>, choisir <menuchoice><guisubmenu>Outils</guisubmenu><guimenuitem>Remplir</guimenuitem></menuchoice> ou taper <keycap>Ctrl-F</keycap>. Ceci est utile lorsque, par exemple, vous avez rempli 8 des 9 cases d'une ligne et que vous voulez rapidement compléter la dernière case vide.</para>
+	    <para>S'il y a plus d'une valeur possible pour la case, rien ne se passe.</para>	    
+	    </sect3>
+	    <sect3 id="myapp-fill-all">
+	    <title>Remplir toutes les cases</title>
+
+	    <para>Vous pouvez remplir automatiquement toutes les cases pour lesquelles il y a une seule valeur possible à cet instant. Pour cela, choisissez <menuchoice><guisubmenu>Outils</guisubmenu><guimenuitem>Remplir toutes les cases</guimenuitem></menuchoice> ou tapez <keycap>Ctrl-A</keycap>.</para>
+	    
+	    <warning>
+
+	    	    <para>Cet outil ne devrait être utilisé que pour vous aider lorsque vous êtes vraiment bloqué sur une grille difficile. Utiliser cet outil sur une grille facile peut résoudre la grille entièrement d'un seul clic, rendant le jeu très ennuyeux !</para>
+		    </warning>
+	    	    </sect3>
+
+    </sect2> 
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-highlighting"> 
+      <title>Surlignage</title> 
+      <para>Vous pouvez activer le surligneur pour surligner automatiquement la ligne, la colonne et la boîte actuelles d'une couleur différente. Cela peut permettre de voir plus facilement quelles valeurs ne peuvent pas aller dans la case actuelle. Pour activer le surligneur, vous pouvez :</para> 
+      <itemizedlist>
+      <listitem><para>Cliquez sur <guibutton>Surligneur</guibutton></para></listitem>
+      <listitem><para><menuchoice><guisubmenu>Affichage</guisubmenu><guimenuitem>Surligneur</guimenuitem></menuchoice></para></listitem>
+      </itemizedlist>
+
+<figure id="highlight-fig"> 
+	<title><application>Sudoku</application> avec le surlignage</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Le surligneur permet de scruter plus facilement les lignes, les colonnes et les boîtes.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      </sect2>
+
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-trackers"> 
+      <title>Suivi des coups</title> 
+      <para>Vous pouvez utiliser le suivi des coups pour conserver les traces de plusieurs coups à la fois. Chaque marqueur possède une couleur différente pour pouvoir les différencier visuellement. Vous pouvez également supprimer un marqueur d'un seul coup. Ceci est particulièrement utile pour résoudre par essais-erreurs les grilles difficiles.</para>
+      <note><para>Certains joueurs de sudoku pensent que vous ne devriez jamais utiliser la méthode des essais-erreurs pour résoudre une grille. Ces joueurs ne devraient pas utiliser cet outil.</para></note>
+
+            <para>Vous pouvez activer l'interface de suivi des coups par l'une des procédures suivantes :</para>
+
+	    <itemizedlist>
+
+	      <listitem>
+	       <para>
+		<menuchoice> 
+			  <guimenu>Outils</guimenu> 
+			  <guimenuitem>Activer le suivi des coups</guimenuitem>
+		</menuchoice>
+	       </para>
+	     </listitem>
+             <listitem><para>Cliquez sur <guibutton>Activer le suivi des coups</guibutton></para></listitem>
+           </itemizedlist>
+      <para>Cela fait apparaître une liste de marqueurs à droite de la grille actuelle. Créez un nouveau marqueur en cliquant sur <guibutton>Ajouter un marqueur</guibutton>. À partir de ce moment, chaque nombre écrit fera partie du marqueur sélectionné.</para>
+      <para>Vous pouvez supprimer toutes les valeurs qui font partie d'un marqueur en le sélectionnant dans la liste et en cliquant sur <guibutton>Supprimer le marqueur</guibutton>. Vous pouvez supprimer toutes les valeurs qui <emphasis>ne</emphasis> font <emphasis>pas</emphasis> partie d'un marqueur en cliquant sur <guibutton>Effacer les autres</guibutton>.</para>
+    </sect2> 
+  </sect1>
+  <!-- ============= Customization ============================= -->
+  <!-- Use this section to describe how to customize the application. -->
+  <sect1 id="myapp-printing"> 
+    <title>Impression de Sudoku</title> 
+    <para>GNOME Sudoku permet d'imprimer des grilles pour jouer sur papier. C'est utile si vous devez laisser votre ordinateur et que vous voulez terminer la grille commencée ou si vous voulez imprimer un lot de grilles à faire plus tard.</para>
+
+    <para>Pour imprimer la grille que vous êtes en train de remplir, cliquez sur <guibutton>Imprimer</guibutton> ou choisissez <menuchoice><guimenu>Jeu</guimenu><guimenuitem>Imprimer</guimenuitem></menuchoice>. La grille contiendra les nombres que vous avez déjà placés.</para>
+    
+    <para>Pour imprimer des grilles vierges, choisissez <menuchoice><guimenu>Jeu</guimenu><guimenuitem>Imprimer plusieurs sudokus</guimenuitem></menuchoice>.</para>
+
+      <para>Une boîte de dialogue d'impression vous permet alors de choisir le nombre de grilles à imprimer et le nombre de grilles par page (plus il y a de grilles par page, plus les grilles sont petites).</para>
+
+      <para>Vous pouvez aussi choisir un niveau de difficulté minimal et maximal pour les grilles. Les grilles sont imprimées dans l'ordre de difficulté croissante.</para>
+
+      <para>Pour vous créer un petit livre de sudokus de 25 pages, vous pouvez choisir d'imprimer 100 sudokus, 4 sudokus par page avec des grilles de niveau allant de facile à difficile.</para>
+
+<figure id="printing-fig"> 
+	<title>Impression d'un petit livre de sudokus à l'aide de <application>Sudoku</application></title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/Print_Sudokus.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Cela imprime 25 pages avec 4 sudokus sur chaque page.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      <para>Par défaut, <application>Sudoku</application> n'imprime pas des grilles que vous avez déjà jouées. Si vous imprimez des grilles pour un ami ou si ça ne vous gêne pas de refaire les mêmes grilles, vous pouvez cochez la case <guibutton>Inclure les parties déjà jouées dans la liste des grilles à imprimer</guibutton>.</para>
+
+      <para>Vous pouvez également sélectionner à la main les grilles que vous voulez imprimer en agrandissant la <guibutton>Liste des parties</guibutton> et en choisissant plusieurs grilles dans la liste.</para>
+    
+  </sect1>
+  
+  <sect1 id="mayapp-bugs">
+  <title>Limitations et anomalies connues</title>
+  <sect2>
+  <title>Statistique limitée des grilles</title>
+
+    <para>GNOME Sudoku classe les grilles sur la base du nombre de cases qui peuvent être rapidement remplies. La boîte de dialogue des statistiques de la grille vous donne le niveau de difficulté calculé global ainsi que les trois informations suivantes :</para>
+
+    <itemizedlist>
+    <listitem><para>Le nombre de cases pouvant être immédiatement remplies par élimination, en partant de la grille vierge (c.-à-d. seul un 2 peut aller dans cette case, donc c'est un 2).</para></listitem>
+    <listitem><para>Le nombre de cases pouvant être immédiatement remplies par déduction, en partant de la grille vierge (c.-à-d. seule une case dans cette ligne peut être un 2, donc c'est un 2).</para></listitem>
+    <listitem><para>Le nombre de fois où l'ordinateur a dû progresser par essais-erreurs ou par supposition pour résoudre la grille.</para></listitem>
+    </itemizedlist>
+    <para>Beaucoup de joueurs sont gênés de savoir que le solveur du jeu procède par essais-erreurs, plus particulièrement depuis que quelques gurus du Sudoku disent qu'il ne faut jamais deviner pour résoudre une grille. Il existe quelques autres algorithmes qui peuvent être implémentés pour aider l'ordinateur à résoudre un sudoku, tels que les méthodes « Swordfish » et « X-wing».</para>
+
+    <para>Actuellement, <application>Sudoku</application> utilise seulement les deux algorithmes décrits ci-dessus et les essais-erreurs. Quand la boîte de dialogue des statistiques affiche que <application>Sudoku</application> a eu besoin de faire X essais-erreurs, cela <emphasis>ne</emphasis> signifie <emphasis>pas</emphasis> qu'un être humain devra absolument utiliser des essais-erreurs pour résoudre la grille.</para>
+  
+  </sect2>
+
+ </sect1>
+
+<!-- ============= About ================================== -->
+<!-- This section contains info about the program (not docs), such as
+      author's name(s), web page, license, feedback address. This
+      section is optional: primary place for this info is "About.." box of
+      the program. However, if you do wish to include this info in the
+      manual, this is the place to put it. Alternatively, you can put this information in the title page.-->
+  <sect1 id="myapp-about"> 
+    <title>À propos de <application>Sudoku</application></title> 
+    <para><application>Sudoku</application> a été écrit par Tom Hinkle (<email>tmhinkle@gmail.com</email>). <application>Sudoku</application> fait maintenant partie des jeux GNOME.</para>
+    <para>Pour rapporter une anomalie ou émettre une suggestion concernant ce programme ou ce manuel, consultez la section Rapport d'anomalies du <ulink url="ghelp:user-guide?feedback-bugs" type="help">Guide d'utilisation du bureau GNOME</ulink>.</para>
+
+    <para>Ce programme est distribué selon les termes de la GNU General Public License, tels que publiés par la Free Software Foundation ; soit la version 2 de cette licence ou (à votre choix) toute version ultérieure. Une copie de cette licence peut être trouvée grâce à ce <ulink url="ghelp:gpl" type="help">lien</ulink> ou dans le fichier COPYING inclus avec le code source de ce programme.</para>
+
+  </sect1> 
+</article>

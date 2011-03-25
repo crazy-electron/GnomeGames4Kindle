@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="license" xml:lang="de">
+  
+  <info>
+    <link type="seealso" xref="index"/>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-28" status="draft"/>
+    <desc>Rechtliche Hinweise.</desc>
+  </info>
+
+  <title>Lizenz</title>
+  <p>Dieses Werk wird unter einer »CreativeCommons Attribution-Share Alike 3.0 Unported license« verbreitet.</p>
+  <p>Es ist Ihnen gestattet:</p>
+  <terms>
+    <item>
+      <title><em>Freizugeben</em></title>
+      <p>Das Werk bzw. den Inhalt zu vervielfältigen, zu verbreiten und öffentlich zugänglich zu machen.</p>
+    </item>
+    <item>
+      <title><em>Änderungen vorzunehmen</em></title>
+      <p>Abwandlungen und Bearbeitungen des Werkes bzw. Inhaltes anzufertigen.</p> 
+    </item>
+  </terms>
+  <p>Unter den folgenden Bedingungen:</p>
+  <terms>
+    <item>
+      <title><em>Weitergabe</em></title>
+      <p>Sie dürfen das Werk nur unter gleichen Bedingungen weitergeben, wie Sie vom Autor oder Lizenzgeber festgelegt wurden (aber nicht so, dass es wie Ihr Werk aussieht).</p>
+    </item>
+    <item>
+      <title><em>Share Alike</em></title>
+      <p>Wenn Sie das lizenzierte Werk bzw. den lizenzierten Inhalt bearbeiten, abwandeln oder in anderer Weise erkennbar als Grundlage für eigenes Schaffen verwenden, dürfen Sie die daraufhin neu entstandenen Werke bzw. Inhalte nur unter Verwendung von Lizenzbedingungen weitergeben, die mit denen dieses Lizenzvertrages identisch, vergleichbar oder kompatibel sind.</p>
+    </item>
+  </terms>
+  <p>Den vollständigen Text der Lizenz finden sie auf der <link href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">CreativeCommons-Webseite</link>. Oder Sie können den vollständigen <link href="http://creativecommons.org/licenses/by-sa/3.0/">Commons Deed</link> lesen.</p>
+</page>

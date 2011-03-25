@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="size" xml:lang="en_GB">
+
+  <info>
+    <link type="guide" xref="index#play" group="three"/>
+    <desc>Change the size of the game board.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-18" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  <title>Game board size</title>
+
+  <p>
+    To change the size of the game board, in order to increase or decrease the
+    complexity of the game, choose <gui>Size</gui> from the main menu bar, and then
+    select the dimension of the board.
+  </p>
+  <p>
+    You can select from five different dimension, from 2×2 to 6×6. The default one is 3×3.
+  </p>
+  <note style="tip">
+    <p>
+      If the pieces are too small, resizing the window will change their size.
+    </p>
+  </note>
+</page>

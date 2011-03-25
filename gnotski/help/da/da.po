@@ -1,0 +1,563 @@
+# Danish translation for gnome-games.
+# Copyright (C) 2010 gnome-games's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-games package.
+# Joe Hansen (joedalton2@yahoo.dk), 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games master\n"
+"POT-Creation-Date: 2010-05-10 13:18+0200\n"
+"PO-Revision-Date: 2010-05-08 04:40+0000\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../C/legal.xml:2(para) ../C/gnotski.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Der gives tilladelse til at kopiere, distribuere og/eller ændre dette "
+"dokument under betingelserne i GNU Free Documentation License (GFDL), "
+"version 1.1 eller enhver senere version udgivet af Free Software Foundation; "
+"uden invariante afsnit, forsidetekster, samt bagsidetekster. Du kan se en "
+"kopi af GFDL her <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink>, eller "
+"i filen COPYING-DOCS som distribueres sammen med denne manual."
+
+#: ../C/legal.xml:12(para) ../C/gnotski.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Denne manual er en del af den samling af GNOME-manualer som udgives under "
+"GFDL. Hvis du ønsker at distribuere denne manuel adskilt fra samlingen, kan "
+"du gøre dette ved at tilføje en kopi af licensen til manualen, som beskrevet "
+"i afsnit 6 af licensen."
+
+#: ../C/legal.xml:19(para) ../C/gnotski.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"En stor del af de navne som anvendes af firmaer til at identificere deres "
+"produkter og tjenester hævdes som værende varemærker. Hvor disse navne "
+"fremgår i en hvilken som helst GNOME-dokumentation, og medlemmerne af GNOME-"
+"dokumentationsprojeket er gjort opmærksom på disse varemærker, så er disse "
+"navne vist med store bogstaver eller stort begyndelsesbogstav."
+
+#: ../C/legal.xml:35(para) ../C/gnotski.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"DETTE DOKUMENT GØRES TILGÆNGELIGT SÅDAN SOM DET ER, UDEN NOGEN FORM FOR "
+"GARANTI, HVERKEN UDTALT ELLER ANTYDET, DERIBLANDT, UDEN BEGRÆNSNINGER, "
+"GARANTIER OM AT DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET ER FRIT FOR "
+"DEFEKTER, PASSENDE TIL ET BESTEMT FORMÅL ELLER IKKE-KRÆNKENDE. DU HÆFTER "
+"SELV FOR HELE RISIKOEN VEDRØRENDE KVALITET, KORREKTHED OG YDELSE FOR "
+"DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET. SKULLE ET DOKUMENT, ELLER "
+"EN ÆNDRET VERSION AF ET DOKUMENT VISE SIG AT VÆRE DEFEKT PÅ EN HVILKEN SOM "
+"HELST MÅDE, HÆFTER DU FOR BETALING FOR EVENTUEL NØDVENDIG SERVICE, "
+"REPARATION ELLER KORREKTION (OG IKKE HVERKEN DEN OPRINDELIGE FORFATTER, "
+"SKRIBENT ELLER NOGEN ANDEN BIDRAGYDER). DENNE ERKLÆRING OM GARANTIFORBEHOLD "
+"ER EN ESSENTIEL DEL AF DENNE LICENS. INGEN BRUG AF NOGET DOKUMENT ELLER "
+"ÆNDRET VERSION AF DOKUMENTET ER AUTORISERET HERUNDER BORTSET FRA DENNE "
+"ANSVARSFRASKRIVELSE OG"
+
+#: ../C/legal.xml:55(para) ../C/gnotski.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"UNDER INGEN OMSTÆNDIGHEDER OG UNDER INGEN JURIDISK TEORI, UANSET OM DET ER "
+"EN BEVIDST SKADENDE HANDLING (INKLUSIVE UFORSVARLIGHED) ELLER PÅ HVILKEN SOM "
+"HELST ANDEN MÅDE, KAN FORFATTEREN, SKRIBENT, BIDRAGYDERE, DISTRIBUTØRER "
+"ELLER FORSYNER AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER GØRES "
+"ANSVARLIG OVERFOR NOGEN PERSON FOR NOGEN DIREKTE, INDIREKTE, SPECIEL, "
+"TILFÆLDIG ELLER FØLGENDE SKADE PÅFØRT NOGEN INKLUSIVE, UDEN BEGRÆNSNING, "
+"SKADE SOM FØLGE AF TAB AF RYGTE, ARBEJDSSTOP, COMPUTERFEJL ELLER -SVIGT, "
+"ELLER ENHVER ANDEN FORM FOR SKADE ELLER TAB SOM ER OPSTÅET I FORBINDELSE MED "
+"BRUG AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER HERAF, SELV HVIS EN "
+"SÅDAN PART HAR VÆRET INFORMERET OM MULIGHEDEN FOR SÅDANNE SKADER."
+
+#: ../C/legal.xml:28(para) ../C/gnotski.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"DOKUMENTET OG ÆNDREDE VERSIONER AF DOKUMENTET STILLES TIL RÅDIGHED UNDER GNU "
+"FREE DOCOMENTATION LICENSE MED FØLGENDE BETINGELSER: <placeholder-1/>"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: ../C/gnotski.xml:204(None)
+msgid ""
+"@@image: 'figures/gnotski_win.png'; md5=5ed32942a09f8becfc784d804f70ea3e"
+msgstr ""
+"@@image: 'figures/gnotski_win.png'; md5=5ed32942a09f8becfc784d804f70ea3e"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: ../C/gnotski.xml:261(None)
+msgid ""
+"@@image: 'figures/gnotski_start_window.png'; "
+"md5=23e584de3f58e5baf5c9ca5098a7961e"
+msgstr ""
+"@@image: 'figures/gnotski_start_window.png'; "
+"md5=23e584de3f58e5baf5c9ca5098a7961e"
+
+#: ../C/gnotski.xml:28(title)
+msgid "<application>Klotski</application> Manual"
+msgstr "Manual til <application>Klotski</application>"
+
+#: ../C/gnotski.xml:31(para)
+msgid ""
+"Klotski is a puzzle game of which the objective is to get the patterned "
+"block to the marker, which is done by moving the blocks in its way."
+msgstr ""
+"Klotski er et puslespil, hvis formål er at få de mønstrede blokke til "
+"markøren, hvilket gøres ved at flytte blokkene der er i vejen."
+
+#: ../C/gnotski.xml:39(year)
+msgid "2002"
+msgstr "2002"
+
+#: ../C/gnotski.xml:40(holder)
+msgid "Andrew Sobala"
+msgstr "Andrew Sobala"
+
+#: ../C/gnotski.xml:54(publishername) ../C/gnotski.xml:67(orgname)
+#: ../C/gnotski.xml:142(para)
+msgid "GNOME Documentation Project"
+msgstr "GNOME-dokumentationsprojekt"
+
+#: ../C/gnotski.xml:64(firstname)
+msgid "Andrew"
+msgstr "Andrew"
+
+#: ../C/gnotski.xml:65(surname)
+msgid "Sobala"
+msgstr "Sobala"
+
+#: ../C/gnotski.xml:68(email)
+msgid "andrew@sobala.net"
+msgstr "andrew@sobala.net"
+
+#: ../C/gnotski.xml:73(firstname)
+msgid "Lars"
+msgstr "Lars"
+
+#: ../C/gnotski.xml:74(surname)
+msgid "Rydlinge"
+msgstr "Rydlinge"
+
+#: ../C/gnotski.xml:76(orgname) ../C/gnotski.xml:85(orgname)
+msgid "GNOME Project"
+msgstr "GNOME-projektet"
+
+#: ../C/gnotski.xml:77(email)
+msgid "Lars.Rydlinge@HIG.SE"
+msgstr "Lars.Rydlinge@HIG.SE"
+
+#: ../C/gnotski.xml:82(firstname)
+msgid "Ross"
+msgstr "Ross"
+
+#: ../C/gnotski.xml:83(surname)
+msgid "Burton"
+msgstr "Burton"
+
+#: ../C/gnotski.xml:86(email)
+msgid "ross@burtonini.com"
+msgstr "ross@burtonini.com"
+
+#: ../C/gnotski.xml:136(revnumber)
+msgid "V2.0"
+msgstr "Version 2.0"
+
+#: ../C/gnotski.xml:137(date)
+msgid "13 August 2002"
+msgstr "13. august 2002"
+
+#: ../C/gnotski.xml:139(para)
+msgid "Andrew Sobala <email>andrew@sobala.net</email>"
+msgstr "Andrew Sobala <email>andrew@sobala.net</email>"
+
+#: ../C/gnotski.xml:148(releaseinfo)
+msgid "This manual describes version 2.12 of GNOME Klotski."
+msgstr "Denne manual beskriver version 2.12 af GNOME Klotski."
+
+#: ../C/gnotski.xml:151(title)
+msgid "Feedback"
+msgstr "Tilbagemeldinger"
+
+#: ../C/gnotski.xml:152(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Klotski</"
+"application> application or this manual, follow the directions in the <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
+"ulink>."
+msgstr ""
+"Hvis du ønsker at indrapportere en fejl eller komme med et forslag "
+"vedrørende <application>Klotksi</application> eller denne manual så følg "
+"vejledningen på siden <ulink url=\"ghelp:user-guide?feedback-bugs\" type="
+"\"help\">tilbagemeldinger omkring GNOME</ulink>."
+
+#: ../C/gnotski.xml:161(primary)
+msgid "GNOME Klotski"
+msgstr "GNOME Klotski"
+
+#: ../C/gnotski.xml:167(title)
+msgid "Introduction"
+msgstr "Introduktion"
+
+#: ../C/gnotski.xml:168(para)
+msgid ""
+"The <application>Klotski</application> application is a clone of the Klotski "
+"game. The objective is to move the patterned block to the area bordered by "
+"green markers."
+msgstr ""
+"Programmet <application>Klotski</application> er en klon af spillet Klotski. "
+"Målet er at flytte den mønstrede blok til området afgrænset af grønne "
+"markører."
+
+#: ../C/gnotski.xml:171(para)
+msgid ""
+"<application>Klotski</application> was written by Lars Rydlinge (<email>Lars."
+"Rydlinge@HIG.SE</email>)."
+msgstr ""
+"<application>Klotski</application> blev skrevet af Lars Rydlinge "
+"(<email>Lars.Rydlinge@HIG.SE</email>)."
+
+#: ../C/gnotski.xml:174(para)
+msgid ""
+"<application>Klotski</application> is included in the gnome-games package, "
+"which is part of the GNOME desktop environment. This document describes "
+"version 2.12 of <application>Klotski</application>."
+msgstr ""
+"<application>Klotski</application> er inkluderet i pakken gnome-games, som "
+"er en del af skrivebordsmiljøet GNOME. Dette dokument beskriver version 2.12 "
+"af <application>Klotski</application>."
+
+#: ../C/gnotski.xml:177(para)
+msgid ""
+"This program is distributed under the terms of the GNU General Public "
+"license as published by the Free Software Foundation; either version 2 of "
+"the License, or (at your option) any later version. A copy of this license "
+"can be found at this <ulink url=\"ghelp:gpl\" type=\"help\">link</ulink>, or "
+"in the file COPYING included with the source code of this program."
+msgstr ""
+"Dette program distribueres under betingelserne i GNU General Public License "
+"som udgivet af the Free Software Foundation; enten version 2 af denne licens "
+"eller (efter eget valg) enhver senere version. En kopi af denne licens kan "
+"ses på <ulink url=\"ghelp:gpl\" type=\"help\">link</ulink>, eller i filen "
+"COPYING inkluderet med kildekoden for dette program."
+
+#: ../C/gnotski.xml:184(para)
+msgid ""
+"To report a bug or make a suggestion regarding this application or this "
+"manual, follow the directions in this <ulink url=\"ghelp:user-guide?feedback-"
+"bugs\" type=\"help\">document</ulink>."
+msgstr ""
+"Hvis du ønsker at indrapportere en fejl eller komme med et forslag "
+"vedrørende dette program eller denne manual så følg vejledningen på siden "
+"<ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">tilbagemeldinger "
+"omkring GNOME</ulink>."
+
+#: ../C/gnotski.xml:193(title)
+msgid "Objective"
+msgstr "Mål"
+
+#: ../C/gnotski.xml:200(title)
+msgid "The winning move"
+msgstr "Det vindende træk"
+
+#: ../C/gnotski.xml:207(phrase)
+msgid ""
+"The patterned block should be moved to the space bordered by the green "
+"markers."
+msgstr ""
+"Den mønstrede blok skal flyttes til området omgrænset af grønne markører."
+
+#: ../C/gnotski.xml:194(para)
+msgid ""
+"The objective of <application>Klotski</application> is to move the patterned "
+"block to the green markers in as few moves as possible. You do this by "
+"moving the blocks one at a time with the mouse until you can get the "
+"patterned block to the markers. <placeholder-1/>"
+msgstr ""
+"Målet med <application>Klotski</application> er at flytte den mønstrede blok "
+"til de grønne markører i så få træk som muligt. Du gør dette ved at flytte "
+"blokkene en ad gangen med musen, indtil du kan få den mønstrede blok hen til "
+"markørerne. <placeholder-1/>"
+
+#: ../C/gnotski.xml:219(title)
+msgid "Playing <application>Klotski</application>"
+msgstr "Sådan spilles <application>Klotski</application>"
+
+#: ../C/gnotski.xml:242(title)
+msgid "To Start <application>Klotski</application>"
+msgstr "Start af <application>Klotski</application>"
+
+#: ../C/gnotski.xml:243(para)
+msgid ""
+"You can start <application>Klotski</application> from the Applications menu "
+"by choosing <menuchoice><guisubmenu>Games</guisubmenu><guimenuitem>Gnotski</"
+"guimenuitem></menuchoice>."
+msgstr ""
+"Du kan starte <application>Klotski</application> fra programmenuen ved at "
+"vælge <menuchoice><guisubmenu>Spil</guisubmenu><guimenuitem>Klotski</"
+"guimenuitem></menuchoice>."
+
+#: ../C/gnotski.xml:252(title)
+msgid "The main window"
+msgstr "Hovedvinduet"
+
+#: ../C/gnotski.xml:253(para)
+msgid ""
+"When you start <application><application>Klotski</application></"
+"application>, the following window is displayed."
+msgstr ""
+"Når du starter <application><application>Klotski</application></"
+"application>, vises følgende vindue."
+
+#: ../C/gnotski.xml:257(title)
+msgid "<application>Klotski</application> Start Up Window"
+msgstr "Opstartsvindue for <application>Klotski</application>"
+
+#: ../C/gnotski.xml:0(application)
+msgid "Klotski"
+msgstr "Klotski"
+
+#: ../C/gnotski.xml:264(phrase)
+msgid ""
+"Shows <placeholder-1/> main window. Contains titlebar, menubar, game area "
+"and statusbar. Menubar contains Game and Help menus."
+msgstr ""
+"Viser hovedvinduet for <placeholder-1/>. Indeholder titelbjælke, menubjælke "
+"spilområde og statusbjælke. Menubjælken indeholder spil- og hjælpemenuerne."
+
+#: ../C/gnotski.xml:275(term)
+msgid "Menubar"
+msgstr "Menubjælke"
+
+#: ../C/gnotski.xml:279(term)
+msgid "Game menu"
+msgstr "Spilmenu"
+
+#: ../C/gnotski.xml:281(para)
+msgid ""
+"The game menu allows you to start new games, view the highest scores and "
+"quit the program."
+msgstr ""
+"Spilmenuen gør, at du kan starte nye spil, se tidligere resultater og "
+"afslutte spillet."
+
+#: ../C/gnotski.xml:286(term)
+msgid "Help menu"
+msgstr "Hjælpemenu"
+
+#: ../C/gnotski.xml:288(para)
+msgid ""
+"The help menu allows you to view the documentation for <application>Klotski</"
+"application>"
+msgstr ""
+"Denne hjælpemenu gør, at du kan se dokumentationen til <application>Klotski</"
+"application>"
+
+#: ../C/gnotski.xml:295(term)
+msgid "Game area"
+msgstr "Spilområde"
+
+#: ../C/gnotski.xml:297(para)
+msgid ""
+"The game area shows the blocks in the current game. You can drag the blocks "
+"around with the mouse as described in <xref linkend=\"gnotski-moving\"/>."
+msgstr ""
+"Spilområdet viser blokkene i det aktuelle spil. Du kan trække blokkene "
+"omkring med musen som beskrevet i <xref linkend=\"gnotski-moving\"/>."
+
+#: ../C/gnotski.xml:303(term)
+msgid "Statusbar"
+msgstr "Statusbjælke"
+
+#: ../C/gnotski.xml:305(para)
+msgid "The statusbar shows how many moves you have taken so far."
+msgstr "Statusbjælken viser hvor mange træk, du har foretaget indtil nu."
+
+#. ==== End of Figure ====
+#: ../C/gnotski.xml:272(para)
+msgid ""
+"The <application>Klotski</application> window contains the following "
+"elements: <placeholder-1/>"
+msgstr ""
+"Vinduet <application>Klotski</application> indeholder følgende elementer: "
+"<placeholder-1/>"
+
+# start på et
+#: ../C/gnotski.xml:314(title)
+msgid "Starting a new game"
+msgstr "Begynd på et nyt spil"
+
+# engelsk fejl, mellemrum. NB: Den 4 underkategori er ikke i mit spil.
+# og ingen resultater på en søgning på Minoru i Gnomegames.
+#: ../C/gnotski.xml:315(para)
+msgid ""
+"Use the <guimenu>Game menu</guimenu> to start a new game. The items "
+"<guimenuitem>Next Puzzle</guimenuitem>and <guimenuitem>Previous Puzzle</"
+"guimenuitem> allows you to navigate the puzzles sequentially. Each puzzle "
+"belongs to one of the four categories found in the submenus named "
+"<guisubmenu>HuaRong Trail</guisubmenu>, <guisubmenu>Challenge Pack</"
+"guisubmenu>, <guisubmenu>Skill Pack</guisubmenu>, and <guisubmenu>Minoru "
+"Climb</guisubmenu>. In these submenus, each puzzle name refers to a game "
+"scenario."
+msgstr ""
+"Brug menuen <guimenu>Spil</guimenu> for at starte et nyt spil. Punkterne "
+"<guimenuitem>Næste opgave</guimenuitem> og <guimenuitem>Forrige opgave</"
+"guimenuitem> gør, at du kan navigere puslespillene sekventielt. Hvert "
+"puslespil tilhører en af fire kategorier der kan ses i undermenuen med "
+"navnene <guisubmenu>HuaRong-sporet</guisubmenu>, "
+"<guisubmenu>Udfordringspakken</guisubmenu>, "
+"<guisubmenu>Kvalifikationspakken</guisubmenu> og <guisubmenu>Minoru Climb</"
+"guisubmenu>. I disse undermenuer, referer hvert spil til et spilscenarie."
+
+# start et
+#: ../C/gnotski.xml:323(title)
+msgid "Starting a game"
+msgstr "Begynd et spil"
+
+# må være nyt? Afklar eventuelt med Ask.
+# Hov, den indgår vist ikke i den nyeste.  Det kan være de har glemt at
+# markere den til oversættelse.  Det bliver måske fikset i 2-30.1
+#: ../C/gnotski.xml:324(para)
+msgid ""
+"To start the hardest game provided, choose <menuchoice><guimenu>Game</"
+"guimenu><guisubmenu>Minoru Climb</guisubmenu><guimenuitem>Climb 24 Pro</"
+"guimenuitem></menuchoice>"
+msgstr ""
+"For at spille det sværeste spil vælges <menuchoice><guimenu>Spil</"
+"guimenu><guisubmenu>Minoru Climb</guisubmenu><guimenuitem>Climb 24 Pro</"
+"guimenuitem></menuchoice>"
+
+#: ../C/gnotski.xml:335(title)
+msgid "Moving blocks"
+msgstr "Flytte blokke"
+
+#: ../C/gnotski.xml:336(para)
+msgid ""
+"To move a block, click on it, hold down the mouse button and drag it to its "
+"new location. You cannot move the green blocks or the block that borders the "
+"game. You cannot move a block to a space already occupied by another block, "
+"with the exception that you may move the patterned block through the green "
+"blocks to win."
+msgstr ""
+"For at flytte en blok: Klik på den, hold museknappen nede og træk blokken "
+"til sin nye placering. Du kan ikke flytte de grønne blokke eller blokken som "
+"omgrænser spillet. Du kan ikke flytte en blok til en plads, der allerede er "
+"optaget af en anden blok med den undtagelse, at du må flytte den mønstrede "
+"blok igennem de grønne blokke for at vinde."
+
+#: ../C/gnotski.xml:356(title)
+msgid "Authors"
+msgstr "Forfattere"
+
+#: ../C/gnotski.xml:357(para)
+msgid ""
+"<application>Klotski</application> was written by Lars Rydlinge (<email>lars."
+"rydlinge@hig.se</email>). This manual was written by Andrew Sobala. To "
+"report a bug or make a suggestion regarding this application or this manual, "
+"follow the directions in this <ulink url=\"ghelp:user-guide?feedback-bugs\" "
+"type=\"help\">document</ulink>."
+msgstr ""
+"<application>Klotski</application> blev skrevet af Lars Rydlinge "
+"(<email>lars.rydlinge@hig.se</email>). Denne manual blev skrevet af Andrew "
+"Sobala. For at indrapportere en fejl, eller komme med et forslag vedrørende "
+"dette program eller denne manual, så følg vejledningen i dette <ulink url="
+"\"ghelp:user-guide?feedback-bugs\" type=\"help\">dokument</ulink>."
+
+#: ../C/gnotski.xml:377(title)
+msgid "License"
+msgstr "Licens"
+
+#: ../C/gnotski.xml:378(para)
+msgid ""
+"This program and tile artwork is free software; you can redistribute it and/"
+"or modify it under the terms of the <citetitle>GNU General Public License</"
+"citetitle> as published by the Free Software Foundation; either version 2 of "
+"the License, or (at your option) any later version."
+msgstr ""
+"Dette program og dets grafik er frit software: du kan distribuere den og/"
+"eller ændre den under betingelserne i <citetitle>GNU General Public License</"
+"citetitle> der udgives af Free Software Foundation; enten version 2 eller "
+"(ved dit valg) enhver senere version."
+
+#: ../C/gnotski.xml:385(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"Dette program distribueres i håb om, at det vil vise sig nyttigt, men\n"
+"UDEN NOGEN FORM FOR GARANTI, uden selv de underforståede garantier\n"
+"omkring SALGBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Yderligere\n"
+"detaljer kan læses i <citetitle>GNU General Public License</citetitle>."
+
+#: ../C/gnotski.xml:391(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"En kopi af <citetitle>GNU General Public License</citetitle> er inkluderet "
+"som et tillæg til <citetitle>GNOME-brugervejledningen</citetitle>. Du kan "
+"også få en kopi af <citetitle>GNU General Public License</citetitle> fra "
+"Free Software Foundtation ved at besøge <ulink url=\"http://www.fsf.org\" "
+"type=\"http\">deres internetside</ulink> eller skrive til <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: ../C/gnotski.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+"Joe Hansen <joedalton2@yahoo.dk>, 2009.\n"
+"\n"
+"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
+"Mere info: http://www.dansk-gruppen.dk"

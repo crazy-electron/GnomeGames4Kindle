@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "<application>Tali</application>">
+<!ENTITY appname "Tali">
+<!ENTITY version "2.8">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sr">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Упутство за <application>Јамб</application></title>
+    <abstract role="description">
+      <para>Ово је класична игра „Јамб“ за Гном, налик на покер са коцкицама. Играчи бацају коцкице да би добили што боље комбинације, као што су покер, мала кента или фул. Играчима су дозвољена 3 бацања по кругу, као и задржавање жељених коцкица после сваког бацања.</para>
+    </abstract>
+    <copyright>
+      <year>2001</year>
+      <holder>Scott D. Heavner</holder>
+    </copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Пројекат Гномове документације</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Дозвољено умножавање, ширење, вршење измена овог документа под условима Гну-ове Слободне Документационе Дозволе (ГСДД), верзије 1.1 или било које накнадне верзије без непромењивих одељака, текста на насловној и последњој страни, а коју је објавила Задужбина Слободног Софтвера. Примерак ГСДД-е можете пронаћи на овој <ulink type="help" url="ghelp:fdl">адреси</ulink> или у датотеци COPYING-DOCS која је приложена уз ово упутство.</para>
+         <para>Ово упутство је део скупа Гномових докумената објављених под GFDL. Уколико желите да расподељујете ово упутство одвојено од скупа, то можете урадити додавањем примерка лиценце документу, како је описано у одељку 6 саме лиценце.</para>
+
+	<para>Многи називи које компаније користе у циљу препознатљивости својих производа и услуга представљају робне марке. Када (уколико) се такви називи појављују(спомињу) у било којем Гномовом документу, а чланови Гномовог документационог пројекта имају сазнања о томе, тада су називи исписани великим словима или са великим почетним словима.</para>
+
+	<para>ОВАЈ ДОКУМЕНТ И ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СУ ДОСТУПНЕ ПОД УСЛОВИМА ГНУ-ОВЕ СЛОБОДНЕ ДОКУМЕНТАЦИОНЕ ДОЗВОЛЕ УЗ ДОДАТНУ САГЛАСНОСТ ДА: <orderedlist>
+		<listitem>
+		  <para>ДОКУМЕНТ ЈЕ ДОСТУПАН СА СВИМ СВОЈИМ ДОБРИМ И ЛОШИМ СТРАНАМА БЕЗ БИЛО КАКВОГ ЈАМСТВА, БИЛО ОНО ИЗРЕЧЕНО ИЛИ НЕ, УКЉУЧУЈУЋИ БЕЗ ОГРАНИЧЕЊА, ЈАМСТВО ДА ЈЕ ОВАЈ ДОКУМЕНТ ИЛИ ЊЕГОВА ИЗМЕЊЕНА ВЕРЗИЈА БЕЗ НЕДОСТАТАКА, СПРЕМАН ЗА ТРЖИШТЕ, СВРСИСХОДАН И НЕ НАРУШАВА ЗАКОНСКЕ НОРМЕ. ЦЕЛОКУПАН РИЗИК КОЈИ СЕ ОДНОСИ НА КВАЛИТЕТ, ТАЧНОСТ И ДОМЕТ (УЧИНАК) ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СНОСИ КОРИСНИК. УКОЛИКО СЕ У БИЛО КОЈЕМ ДОКУМЕНТУ ИЛИ ЊЕГОВОЈ ИЗМЕЊЕНОЈ ВЕРЗИЈИ ПОЈАВИ НЕДОСТАТАК (ГРЕШКА) БИЛО КОЈЕ ВРСТЕ, КОРИСНИК (А НЕ АУТОР ИЗВОРНЕ ВЕРЗИЈЕ, БИЛО КОЈИ ДРУГИ АУТОР ИЛИ САРАДНИК) СНОСИ СВЕ ТРОШКОВЕ НЕОПХОДНОГ СЕРВИСИРАЊА, ПОПРАВКЕ ИЛИ ИСПРАВКЕ. ОВО ОГРАНИЧЕЊЕ ЈАМСТВА ПРЕДСТАВЉА САСТАВНИ ДЕО ОВЕ ДОЗВОЛЕ. УПОТРЕБА БИЛО КОЈЕГ ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ НИЈЕ ДОЗВОЉЕНА ОСИМ ПОД УСЛОВИМА ОВОГ ОГРАНИЧЕЊА ЈАМСТВА.</para>
+		</listitem>
+		<listitem>
+		  <para>НИ ПОД КАКВИМ ОКОЛНОСТИМА ИЛИ ЗАКОНУ, БИЛО ЗБОГ КРШЕЊА (ИЛИ НЕМАРА) УГОВОРА, ИЛИ НА БИЛО КОЈИ ДРУГИ НАЧИН, АУТОР (ПРВОБИТНЕ ВЕРЗИЈЕ), САРАДНИК ИЛИ ИСПОРУЧИВАЛАЦ ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ, НИТИ ДОБАВЉАЧ БИЛО КОЈЕ ОД НАВЕДЕНИХ СТРАНА НЕЋЕ СНОСИТИ МАТЕРИЈАЛНУ ОДГОВОРНОСТ ЗА НАСТАЛА ДИРЕКТНА, ИНДИРЕКТНА, ПОСЕБНА, СЛУЧАЈНА ИЛИ ТИМЕ НАСТАЛА ОШТЕЋЕЊА БИЛО КОЈЕ ВРСТЕ УКЉУЧУЈУЋИ, БЕЗ ОГРАНИЧЕЊА, ШТЕТУ НАНЕСЕНУ УГЛЕДУ ФИРМЕ, ПРЕСТАНКУ ПРОИЗВОДЊЕ, ОТКАЗИВАЊЕ РАДА РАЧУНАРА ИЛИ КВАРА КАО И ЗА СВЕ ОСТАЛЕ ШТЕТЕ ИЛИ ГУБИТКЕ НАСТАЛЕ УСЛЕД КОРИШЋЕЊА ДОКУМЕНТА И ЊЕГОВИХ ИЗМЕЊЕНИХ ВЕРЗИЈА ЧАК И АКО ЈЕ ОШТЕЋЕНА СТРАНА БИЛА ОБАВЕШТЕНА О МОГУЋНОСТИ НАСТАНКА ТЕ ШТЕТЕ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+	
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Scott D</firstname> 
+	<surname>Heavner</surname> 
+	<affiliation> 
+	  <address> <email>sdh@po.cwru.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Упутство за Јамб v2.8</revnumber> 
+	<date>Септембар 2004.</date> 
+	<revdescription> 
+	  <para role="author">Scott D Heavner <email>sdh@po.cwru.edu</email></para>
+	  <para role="publisher">Пројекат Гномове документације</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Ово упуство је написано за Јамб 2.12.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Примедбе</title> 
+      <para>Да бисте пријавили грешку или дали предлог у вези програма <application>Јамб</application> или његовог упутства, пратите смернице на <ulink url="ghelp:user-guide?feedback-bugs" type="help">Гномовој страни за примедбе</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Јамб</primary> 
+  </indexterm>
+
+ <!-- ============= Document Body ============================= -->
+
+  <sect1 id="intro">
+    <title>Увод</title>
+
+    <para><application>Јамб</application> је нешто као покер, само што овде има коцкица, а нема новца. Бацате пет коцкица по три пута и покушавате да извучете најбољу <quote>руку</quote>. Два додатна бацања могу да буду или само са неким или са свим коцкицама.</para>
+    <para><application>Јамб</application> је јако сличан класичној игри „Yahtzee“ који је робна марка компаније Hasbro, Inc.</para>
+
+    <para>Да бисте покренули <application>Јамб</application>, одаберите <menuchoice><guisubmenu>Игре</guisubmenu><guimenuitem>Јамб</guimenuitem></menuchoice> из <guimenu>Главног менија</guimenu>, или откуцајте <command>gtali</command> у командној линији.</para>
+
+    <para><application>Јамб</application> је укључен у <filename>gnome-games</filename> пакет, који је део Гномовог радног окружења. Овај документ је написан за <application>Јамб</application> 2.8.</para>
+  </sect1>
+
+  <sect1 id="playing">
+    <title>Играње Јамба</title>
+
+    <figure id="shot1">
+      <title>Јамб у акцији</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/mainwindow.png" format="PNG" srccredit="Trevor Curtis"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Снимак екрана главног прозора Јамба.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+
+    <para>Када игра крене, показаће вам се резултат првог бацања ваших коцкица.</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Кликните на коцкице које желите поново да бацате.</para>
+        </listitem>
+        <listitem>
+          <para>Када сте одабрали све коцкице које желите поново да бацате, кликните дугме <guibutton>Бацај!</guibutton>.</para>
+        </listitem>
+        <listitem>
+	  <para>Када добијете руку која вам се свиђа или останете без даљих бацања, кликните ред који одговара ономе што мислите да је најбоља комбинација коју имате. Могуће је имати и резултат нула, а ако кликнете на погрешан ред, добићете онолико поена колико тај ред доноси за коцкице које имате. (на пример, ако добијете јамб (5 истих коцкица) и кликнете на велику кенту, добићете нула поена за велику кенту).</para>
+      </listitem>
+    </orderedlist>
+
+    <para>Сваку комбинацију можете искористити само једном, тј. једном када одиграте неки ред и не можете поправити резултат касније ако добијете бољу руку.</para>
+
+    <para>Има само један изузетак од овог правила. Ако добијете јамб по други пут, можете га поново ставити у ред за јамб за додатних педесет поена. Ово можете да радите док год добијате јамб. На крају игре ћете имати додатна бацања да попуните преостале редове. Запамтите само да, ако упишете нулу у ред за јамб (тј. попуните тај ред са нечим што није био јамб), онда не можете ставити јамб ако га касније добијете, нула је све што можете да имате на крају у том реду.</para>
+
+    <para>Такође имате и бонус од 35 поена ако у првих шест редова имате збир од 63 или више поена.</para>
+
+    <sect2 id="keyboard">
+    <title>Коришћење тастатуре</title> 
+
+      <para>Као алтернатива коришћењу миша, тастери 1 до 5 укључују и искључују коцкице за поновна бацања, исто као када бисте кликнули на њих. Тастер 1 је за прву коцкицу и тако даље. Користите остале стандардне контроле за бацање коцкица и означавање редова, тј. користите табулатор за мењање између дугмета за бацање и простора са поенима, користите тастере са стрелицама за кретање горе и доле кроз редове и тастер „Space“ за означавање реда.</para>
+    
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="options">
+    <title>Опције игре</title>
+
+    <figure id="shot2">
+      <title>Поставке за јамб</title>
+      <screenshot>
+	 <mediaobject> 
+    <imageobject>
+  <imagedata fileref="figures/preferences.png" format="PNG" srccredit="Trevor Curtis"/>
+	</imageobject>
+    <textobject> 
+      <phrase>Прозорче за поставке Јамба.</phrase> 
+    </textobject> 
+  </mediaobject>
+      </screenshot>
+    </figure>
+      <variablelist><title>Људски играчи</title>
+	<varlistentry>
+	  <term><guimenuitem>Број играча</guimenuitem></term>
+	  <listitem>
+            <para>Овде бирате број људских играча. Као што је описано изнад, можете имати највише шест играча.</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>  
+      
+    <variablelist><title>Рачунарски противници</title>
+      <varlistentry>
+        <term><guimenuitem>Прави паузу између бацања</guimenuitem></term>
+	<listitem>
+	  <para>Рачунарски противници праве паузу између бацања, да бисте могли да видите шта тачно раде. Овим се игра донекле успорава.</para>
+        </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><guimenuitem>Број противника</guimenuitem></term>
+	  <listitem>
+            <para>Овде одабирате број рачунарских противника. Можете имати највише шест људских и рачунарских играча заједно. Ако покушате да повећате број рачунарских противника преко ове границе, број људских играча ће се смањити да се одржи број од највише шест играча.</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>
+      
+    <variablelist><title>Тип игре</title>
+      <varlistentry>
+        <term><guimenuitem>Тип игре за играње</guimenuitem></term>
+	<listitem>
+	  <para>Играјте или обичан тип игре (сличан класичном јамбу) или тип игре са бојама (слично игри „Kismet“). Када промените тип игре, морате поново покренути игру да видите нови тип игре.</para>
+        </listitem>
+	</varlistentry>
+      </variablelist>
+      
+      <variablelist>
+	<varlistentry>
+	    <term><guimenuitem>Имена играча</guimenuitem></term>
+	    <listitem>
+	      <para>Да бисте променили имена играча, само унесите нова имена у кућице.</para>
+	    </listitem>
+	</varlistentry>
+      </variablelist>
+    </sect1>
+
+    <sect1 id="strategy">
+      <title>Стратегија игре</title>
+      <para>63 поена потребних за бонус у горњој половини је исто као добијање по три исте коцкице у сваком реду. Ако ставите више од три исте коцкице код петица и шестица, онда можете да дозволите себи да лоше бацање у реду са јединицима, или са двојкама и да ипак добијете бонус. У типу игре са бојама, добијате бонус од 55 поена ако у горњој половини имате између 71 и 77 поена, и бонус од 75 поена ако имате преко 77 поена.</para>
+      <para>Не заборавите вишеструке јамбове. Ако баците други јамб, опет га можете унети у ред за јамб за још више поена. Ово важи само за обични тип игре.</para>
+    </sect1>	
+ <!-- ============= Bugs ================================== -->
+ <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of. 
+      
+      Better to leave this section out than to say something unhelpful. 
+-->
+
+ <sect1 id="bugs">
+  <title>Познате грешке и ограничења</title>
+  <para>Када промените тип игре, сличице нових коцкица неће бити приказиване док се игра поново не покрене. Требало би да можете да играте и са „погрешним“ коцкицама.</para>
+ </sect1>
+
+
+ <sect1 id="glossary">
+   <title>Речник појмова</title>
+   <note>
+     <para>Запамтите да је редослед коцкица битан.</para>
+   </note>
+   <glossary>
+       <glossentry id="threeofakind"><glossterm>Три исте</glossterm>
+         <glossdef><para>Три коцкице имају исти број. Резултат је збир свих коцкица, нпр. 1, 2, 2, 2, 5.</para></glossdef>
+       </glossentry>
+       <glossentry id="fourofakind"><glossterm>Покер</glossterm>
+         <glossdef><para>Четири коцкице имају исти број. Резултат је збир свих коцкица, нпр. 2, 5, 5, 5, 5. У типу игре са бојама, резултат је 25 плус збир свих коцкица.</para></glossdef>
+       </glossentry>
+       <glossentry id="yahtzee"><glossterm>Јамб</glossterm>
+         <glossdef><para>Пет истих коцкица, нпр. 3, 3, 3, 3, 3. У типу игре са бојама, резултат је 50 плус збир свих коцкица.</para></glossdef>
+       </glossentry>
+       <glossentry id="fullhouse"><glossterm>Фул</glossterm>
+         <glossdef><para>Пет коцкица подељених у две групе: једна група од три коцкице са истим бројевима и друга група од две коцкице са истим бројевима, нпр. 1, 1, 1, 4, 4. У типу игре са бојама, резултат је 15 плус збир свих коцкица.</para></glossdef>
+       </glossentry>
+       <glossentry id="fullhousesamecolor"><glossterm>Фул исте боје</glossterm>
+         <glossdef><para>Ова категорија се користи само у типу игре са бојама. Пет коцкица подељених у две групе: једна група од три коцкице са истим бројевима и друга група од две коцкице са истим бројевима. Бројеви морају да имају исту боју,  нпр. 3, 3, 3, 4, 4. Две коцкице имају исту боју ако им је збир 7: 1 и 6 су црне, 2 и 5 су црвене, а 3 и 4 су зелене. Резултат је 20 плус збир свих коцкица.</para></glossdef>
+       </glossentry>
+       <glossentry id="twopairsamecolor"><glossterm>Два пара исте боје</glossterm>
+         <glossdef><para>Ова категорија се користи само у типу игре са бојама. Пет коцкица подељених у две групе: једна група од две коцкице са истим бројевима и још једна група од две коцкице са истим бројевима. Бројеви морају да имају исту боју,  нпр. 3, 3, 4, 4. Две коцкице имају исту боју ако им је збир 7: 1 и 6 су црне, 2 и 5 су црвене, а 3 и 4 су зелене. Пета коцкица може бити било шта, Резултат је збир свих коцкица.</para></glossdef>
+       </glossentry>
+       <glossentry id="flush"><glossterm>Све исте боје</glossterm>
+         <glossdef><para>Ова категорија се користи само у типу игре са бојама. Пет коцкица које су све исте боје. Две коцкице имају исту боју ако им је збир 7: 1 и 6 су црне, 2 и 5 су црвене, а 3 и 4 су зелене. Пета коцкица може бити било шта, Резултат је 35 поена.</para></glossdef>
+       </glossentry>
+       <glossentry id="largestraight"><glossterm>Велика кента</glossterm>
+         <glossdef><para>Пет коцкица са узастопним бројевима, нпр. 2, 3, 4, 5, 6. Резултат је 40 поена.</para></glossdef>
+       </glossentry>
+       <glossentry id="smallstraight"><glossterm>Мала кента</glossterm>
+         <glossdef><para>Четири коцкице са узастопним бројевима. Пета коцкица може бити било шта, нпр. 2, 3, 4, 5, 5. Ова категорија се користи само у обичном типу игре. Резултат је 30 поена.</para></glossdef>
+       </glossentry>
+   </glossary>
+ </sect1>
+
+
+<!-- ============= Authors ================================ -->
+
+ <sect1 id="authors">
+  <title>Аутори</title>
+  <para><application>Јамб</application> су написали Scott Heavner (<email>sdh@po.cwru.edu</email>) и Orest Zborowski. Ово упутство је написао Scott D Heavner (<email>sdh@po.cwru.edu</email>) а додатни материјал је приложио Callum McKenzie (<email>callum@physics.otago.ac.nz</email>). Да бисте пријавили грешке или дали предлог у вези овог програма или његовог упутства, пратите смернице из <ulink url="ghelp:user-guide?feedback-bugs" type="help">документа</ulink>.</para>
+
+
+  <!-- For translations: uncomment this:
+
+  <para>
+   Latin translation was done by ME
+   (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+   suggestions regarding this translation to SOMEWHERE.
+  </para>
+
+  -->
+
+ </sect1>
+
+ <!-- ============= Application License ============================= -->
+
+ <sect1 id="license">
+  <title>Лиценца</title>
+  <para>Овај програм је слободан софтвер; можете га расподељивати и/или га мењати под условима <citetitle>ГНУ Опште Јавне Лиценце (GNU GPL)</citetitle> како је објављује Задужбина за Слободни Софтвер (FSF); било верзије 2 те Лиценце, било (по вашем нахођењу) било које новије верзије.</para>
+  <para>Овај програм се расподељује у нади да ће бити од користи, али БЕЗ ИКАКВИХ ГАРАНЦИЈА; чак и без подразумеване гаранције КОРИСНОСТИ или ПРИЛАГОЂЕНОСТИ ОДРЕЂЕНОЈ НАМЕНИ.  Видите <citetitle>ГНУ Општу Јавну Лиценцу</citetitle> за више детаља.</para>
+  <para>Примерак <citetitle>ГНУ Опште Јавне Лиценце</citetitle> је укључен у додатку <citetitle>Гномовог корисничког водича</citetitle>. Такође можете набавити примерак <citetitle>ГНУ Опште Јавне Лиценце</citetitle> од Задужбине за Слободни Софтвер одлазећи на <ulink url="http://www.fsf.org" type="http">њихову веб адресу</ulink> или пишући на <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+ </sect1>
+</article>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "August 2007">
+<!ENTITY app "<application>Robots</application>">
+<!ENTITY appname "Robots">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sr@latin"> 
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Uputstvo za <application>Robote</application></title>
+
+    <abstract role="description">
+      <para>Roboti su grafička verzija tekstualne igre sa robotima koja se može naći na dosta UNIX sistema. Igrač mora da nadmudri robote koji ga jure tako što ih natera da se sudaraju međusobno.</para>
+    </abstract>
+
+      <copyright>
+        <year>2001</year>
+        <holder>Patanjali Somayaji, Mark Rae</holder>
+      </copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+      <year>2000</year>
+      <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Projekat Gnomove dokumentacije</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Dozvoljeno umnožavanje, širenje, vršenje izmena ovog dokumenta pod uslovima Gnu-ove Slobodne Dokumentacione Dozvole (GSDD), verzije 1.1 ili bilo koje naknadne verzije bez nepromenjivih odeljaka, teksta na naslovnoj i poslednjoj strani, a koju je objavila Zadužbina Slobodnog Softvera. Primerak GSDD-e možete pronaći na ovoj <ulink type="help" url="ghelp:fdl">adresi</ulink> ili u datoteci COPYING-DOCS koja je priložena uz ovo uputstvo.</para>
+         <para>Ovo uputstvo je deo skupa Gnomovih dokumenata objavljenih pod GFDL. Ukoliko želite da raspodeljujete ovo uputstvo odvojeno od skupa, to možete uraditi dodavanjem primerka licence dokumentu, kako je opisano u odeljku 6 same licence.</para>
+
+	<para>Mnogi nazivi koje kompanije koriste u cilju prepoznatljivosti svojih proizvoda i usluga predstavljaju robne marke. Kada (ukoliko) se takvi nazivi pojavljuju(spominju) u bilo kojem Gnomovom dokumentu, a članovi Gnomovog dokumentacionog projekta imaju saznanja o tome, tada su nazivi ispisani velikim slovima ili sa velikim početnim slovima.</para>
+
+	<para>OVAJ DOKUMENT I NJEGOVE IZMENJENE VERZIJE SU DOSTUPNE POD USLOVIMA GNU-OVE SLOBODNE DOKUMENTACIONE DOZVOLE UZ DODATNU SAGLASNOST DA: <orderedlist>
+		<listitem>
+		  <para>DOKUMENT JE DOSTUPAN SA SVIM SVOJIM DOBRIM I LOŠIM STRANAMA BEZ BILO KAKVOG JAMSTVA, BILO ONO IZREČENO ILI NE, UKLJUČUJUĆI BEZ OGRANIČENJA, JAMSTVO DA JE OVAJ DOKUMENT ILI NJEGOVA IZMENJENA VERZIJA BEZ NEDOSTATAKA, SPREMAN ZA TRŽIŠTE, SVRSISHODAN I NE NARUŠAVA ZAKONSKE NORME. CELOKUPAN RIZIK KOJI SE ODNOSI NA KVALITET, TAČNOST I DOMET (UČINAK) DOKUMENTA ILI NJEGOVE IZMENJENE VERZIJE SNOSI KORISNIK. UKOLIKO SE U BILO KOJEM DOKUMENTU ILI NJEGOVOJ IZMENJENOJ VERZIJI POJAVI NEDOSTATAK (GREŠKA) BILO KOJE VRSTE, KORISNIK (A NE AUTOR IZVORNE VERZIJE, BILO KOJI DRUGI AUTOR ILI SARADNIK) SNOSI SVE TROŠKOVE NEOPHODNOG SERVISIRANJA, POPRAVKE ILI ISPRAVKE. OVO OGRANIČENJE JAMSTVA PREDSTAVLJA SASTAVNI DEO OVE DOZVOLE. UPOTREBA BILO KOJEG DOKUMENTA ILI NJEGOVE IZMENJENE VERZIJE NIJE DOZVOLJENA OSIM POD USLOVIMA OVOG OGRANIČENJA JAMSTVA.</para>
+		</listitem>
+		<listitem>
+		  <para>NI POD KAKVIM OKOLNOSTIMA ILI ZAKONU, BILO ZBOG KRŠENJA (ILI NEMARA) UGOVORA, ILI NA BILO KOJI DRUGI NAČIN, AUTOR (PRVOBITNE VERZIJE), SARADNIK ILI ISPORUČIVALAC DOKUMENTA ILI NJEGOVE IZMENJENE VERZIJE, NITI DOBAVLJAČ BILO KOJE OD NAVEDENIH STRANA NEĆE SNOSITI MATERIJALNU ODGOVORNOST ZA NASTALA DIREKTNA, INDIREKTNA, POSEBNA, SLUČAJNA ILI TIME NASTALA OŠTEĆENJA BILO KOJE VRSTE UKLJUČUJUĆI, BEZ OGRANIČENJA, ŠTETU NANESENU UGLEDU FIRME, PRESTANKU PROIZVODNJE, OTKAZIVANJE RADA RAČUNARA ILI KVARA KAO I ZA SVE OSTALE ŠTETE ILI GUBITKE NASTALE USLED KORIŠĆENJA DOKUMENTA I NJEGOVIH IZMENJENIH VERZIJA ČAK I AKO JE OŠTEĆENA STRANA BILA OBAVEŠTENA O MOGUĆNOSTI NASTANKA TE ŠTETE.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Patanjali</firstname> 
+	<surname>Somayaji</surname> 
+	<affiliation> 
+	  <address> <email>patanjali@mindless.com</email> </address> 
+	</affiliation> 
+      </author> 
+      <author> 
+	<firstname>Mark</firstname> 
+	<surname>Rae</surname> 
+	<affiliation> 
+	  <address> <email>m.rae@inpharmatica.co.uk</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Uputstvo za Robote v2.8</revnumber> 
+	<date>Septembar 2004.</date> 
+	<revdescription> 
+	  <para role="author">Patanjali Somayaji <email>patanjali@mindless.com</email></para>
+	  <para role="author">Mark Rae <email>m.rae@inpharmatica.co.uk</email></para>
+	  <para role="publisher">Projekat Gnomove dokumentacije</para>
+	</revdescription> 
+      </revision> 
+      <revision> 
+	<revnumber>Uputstvo za Robote v2.9</revnumber> 
+	<date>Avgust 2007.</date> 
+	<revdescription> 
+	  <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+	  <para role="publisher">Projekat Gnomove dokumentacije</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Ovo upustvo je napisano za Robote 2.18.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Primedbe</title> 
+      <para>Da biste prijavili grešku ili dali predlog u vezi programa <application>Roboti</application> ili njegovog uputstva, pratite smernice na <ulink url="ghelp:user-guide?feedback-bugs" type="help">Gnomovoj strani za primedbe</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>Roboti</primary> 
+  </indexterm>
+
+   <!-- ============= Document Body ============================= -->
+
+   <!-- ============= Introduction ============================== -->
+   <sect1 id="intro">
+     <title>Uvod</title>
+
+     <para><application>Roboti</application> su igra u kojoj pokušavate da izbegnete bandu harajućih robota, koji, bez ikakvog očiglednog razloga, žele da vas ubiju. Igra je zasnovana na tekstualnoj igri sa robotima koja se može naći na mnogo UNIX sistema.</para>
+     <para>Ovo novo izdanje donosi dve vrste robota, otpad koji može da se gura, višestruke konfiguracije igre, korisnički definisan raspored tastature i zvuk, kao i sve one stvari koje su već bile prisutne u originalnoj Gnomovoj igri sa robotima.</para>
+
+     <para>Da biste pokrenuli <application>Robote</application>, odaberite <menuchoice><guisubmenu>Igre</guisubmenu><guimenuitem>Roboti</guimenuitem></menuchoice> iz <guimenu>Glavnog menija</guimenu>, ili otkucajte <command>gnobots2</command> u komandnoj liniji.</para>
+
+     <para><application>Roboti</application> su uključeni u <filename>gnome-games</filename> paket, koji je deo Gnomovog radnog okruženja. Ovaj dokument je napisan za <application>Gnomove robote</application> 2.18.</para>
+   </sect1>
+ 
+   <sect1 id="objective">
+     <title>Cilj Robota</title>
+     <para>Cilj igre Roboti je veoma jednostavan. Okruženi ste određenim brojem robota i ostalim neprijateljski nastrojenim protivnicima. Kako se vi pomerite, tako se i oni pomeraju ka vama. Njihov cilj je da vas ubiju. Vaš cilj je da ubijete sve robote na tabli koristeći njihove slabosti.</para>
+   
+     <para>Roboti su uništeni kada se međusobno sudare, ili kada se sudare sa ostacima nekih prethodnih sudara. Vi umirete ako je robot pored vas.</para>
+
+     <para>U nekim konfiguracijama igre (možete izabrati pet različitih skupova pravila), možete gurati otpad da napravite barikade koje vas štite. Takođe, ako ste dovoljno hrabri, možete i da spljeskate robote gurajući otpad na njih za dodatni bonus.</para>
+     <para>Takođe se možete spasiti teleportujući se na slučajno mesto. Nažalost, teleportujući se na slučajno mesto znači i da možete da završite odmah pored robota, koji vas može ubiti kada on napravi svoj potez. Srećom, postoje i bezbedni teleporti koji vas sklanjaju od neposredne opasnosti, ali njih ima ograničen broj. Možete zaraditi još besplatnih teleporta kako napredujete (kako ih dobijate zavisi od odabranog tipa igre), ali obično dobijate jedan za svakog uništenog robota ako „čekate“, sve do maksimuma od 10. Ako ne želite da trošite vaše sačuvane bezbedne teleporte, možete da se teleportujete slučajno, ako mislite da je to dovoljno bezbedno.</para>
+   
+     <para>Ako kliknete dugme <guibutton>Čekaj</guibutton> (pogledajte ispod), više nećete moći da se krećete dok svi roboti (koji nastavljaju da se kreću ka vama) ne budu uništeni, ili vi poginete. Ovo je rizično, ali sa ovim možete zaraditi dodatne bezbedne teleporte.</para>
+   
+     <para>Ako uspete da dostignete tačku kada je više od pola ekrana popunjeno robotima, broj robota će se resetovati na početnu vrednost, omogućujući vam da nastavite.</para>
+  </sect1>
+
+
+  <!-- ================ Usage ================================ -->
+  <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="usage">
+    <title>Korišćenje Robota</title>
+    <para><application>Roboti</application> su izuzetno jednostavni za igru. Možete koristiti miša ili tastaturu. Ovaj odeljak opisuje osnovnu upotrebu <application>Robota</application>.</para>
+
+    <!-- ========= Basic Usage =========================== -->
+    <sect2 id="mainwin">
+      <title>Osnovna upotreba</title>
+      <para>Pokretanjem <application>Robota</application> se otvara <interface>Glavni prozor</interface> (<xref linkend="mainwindow-fig"/>). <figure id="mainwindow-fig">
+	  <title>Glavni prozor Robota</title>
+	  <screenshot>
+	  <mediaobject> 
+ 	   <imageobject>
+ 	 <imagedata fileref="figures/gnobots2-main.png" format="PNG" srccredit="Patanjali"/>
+ 	   </imageobject>
+ 	   <textobject> 
+ 	     <phrase>Glavni prozor Robota.</phrase> 
+ 	   </textobject> 
+ 	 </mediaobject>
+	  </screenshot>
+	</figure></para> 
+
+      <para>Da pokrenete novu igru, odaberite <guimenuitem>Nova</guimenuitem> iz menija <guimenu>Igra</guimenu> ili kliknite dugme <guibutton>Nova</guibutton> na traci alata.</para>
+
+      <para>Da biste se pomerili, ili kliknite u pravcu u kome želite da se pomerite (kursor će vam pokazati gde ćete se pomeriti) ili pritisnite odgovarajući taster na tastaturi (podrazumevana je numerička tastatura). Klikom na čovečuljka ostajete na mestu. Da biste se teleportovali (bezbedno ili nebezbedno), ili da čekate, koristite dugmad na traci alata ili koristite stavke u meniju <guimenu>Pomeri</guimenu>.</para>
+    </sect2>
+  </sect1>
+    
+
+  
+  <!-- ========= Menus =========================== --> 
+  
+   <sect1 id="menubar">
+    <title>Meniji</title>
+    <para>Traka menija, koja se nalazi na vrhu <interface>table za igru</interface>, sadrži sledeće menije:</para>
+
+
+    <variablelist>
+      <varlistentry>
+        <term><guimenu>Igra</guimenu></term>
+        <listitem>
+        <para>Ovaj meni sadrži tri stavke: <itemizedlist>	
+            <listitem>
+	    <para><menuchoice><shortcut><keysym>Ctrl-N</keysym></shortcut><guimenuitem>Nova</guimenuitem></menuchoice> — pokreće novu igru Robota.</para>
+            </listitem>     
+       
+	    <listitem>
+	    <para><menuchoice><guimenuitem>Rezultati</guimenuitem></menuchoice> — prikazuje najbolje rezultate.</para>
+            </listitem>
+
+       	    <listitem>
+            <para>
+              <menuchoice>
+              <shortcut><keysym>Ctrl-Q</keysym></shortcut>
+              <guimenuitem>Izađi</guimenuitem>
+              </menuchoice>
+            </para>
+            </listitem>
+          </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>Pomeranje</guimenu></term>
+        <listitem>
+        <para>Ovaj meni sadrži: <itemizedlist>
+          <listitem>
+            <para><guimenuitem>Teleportuj</guimenuitem> — teleportuje vas na bezbedno mesto.</para>
+          </listitem>
+          <listitem>
+          <para><guimenuitem>Slučajno</guimenuitem> — teleportuje vas na slučajno mesto.</para>
+          </listitem>
+          <listitem>
+          <para><guimenuitem>Čekaj</guimenuitem> — postavlja vas u režim čekanja.</para>
+          </listitem>
+        </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>Podešavanja</guimenu></term>
+	<listitem>
+	<para>Meni <guimenu>Podešavanja</guimenu> sadrži samo jednu stavku: <itemizedlist>
+	    <listitem>
+	    <para><guimenuitem>Postavke</guimenuitem> koje prikazuju prozorče sa postavkama.</para>
+	    </listitem>
+	  </itemizedlist></para>
+	</listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>Pomoć</guimenu></term>
+        <listitem>
+        <para>Ovaj meni sadrži: <itemizedlist>
+          <listitem>
+            <para><guimenuitem>Sadržaj</guimenuitem> — prikazuje ovo uputstvo.</para>
+          </listitem>
+          <listitem>
+          <para><guimenuitem>O programu</guimenuitem> — prikazuje osnovne podatke o <application>Robotima</application>, kao što su imena autora i izdanje programa.</para>
+          </listitem>
+        </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect1>
+ 
+ <!-- =========Using the Keyboard============== -->
+ 
+  
+  <sect1 id="keyboard">
+    <title>Korišćenje tastature</title>
+    <para>Možete koristiti tastaturu da biste kontrolisali čovečuljka. Za igru su podrazumevano podešeni tasteri sa numeričke tastature. I pored toga, možete prilagoditi mapiranja tastera na jezičku <guimenuitem>Tastatura</guimenuitem> u prozorčetu sa <guimenuitem>Postavkama</guimenuitem>. Da biste odabrali drugi taster, kliknite dvaput na liniju sa naredbom koju želite da promenite i potom pritisnite taster koji želite da koristite.</para>
+
+      <sect2 id="default-keys">     
+      <title>Podrazumevana mapiranja tastera</title>
+      <para>Podrazumevano koristite numeričku tastaturu na desnoj strani tastature (ne tastere sa strelicama). <note>
+        <title>Isključite NumLock taster</title>
+          <para>Morate isključiti NumLock taster da bi vam ovo radilo.</para>
+        </note><orderedlist>
+          <listitem><para>Gore levo: <keycap>Home</keycap></para></listitem> 
+          <listitem><para>Gore: <keycap>Up</keycap></para></listitem>
+          <listitem><para>Gore desno: <keycap>Page Up</keycap></para></listitem>
+          <listitem><para>Levo: <keycap>Left</keycap></para></listitem>
+          <listitem><para>Stajanje mirno: <keycap>Begin</keycap></para></listitem>
+          <listitem><para>Desno: <keycap>Right</keycap></para></listitem>
+          <listitem><para>Dole levo: <keycap>End</keycap></para></listitem>
+          <listitem><para>Dole: <keycap>Down</keycap></para></listitem>
+          <listitem><para>Dole desno: <keycap>Page Down</keycap></para></listitem>
+          <listitem><para>Teleport: <keycap>+</keycap></para></listitem>
+          <listitem><para>Slučajni teleport: <keycap>*</keycap></para></listitem>
+          <listitem><para>Čekaj: <keycap>Enter</keycap></para></listitem>
+        </orderedlist></para>	  
+    </sect2>
+
+      
+  </sect1>
+   
+  <!-- ============= Customization ============================= -->
+  
+  <sect1 id="customization">
+    <title>Prilagođavanje Robota</title>
+    <para>Možete izmeniti ponašanje i izgled igre iz <guimenuitem>Postavki</guimenuitem> u meniju <guimenu>Podešavanja</guimenu>. Ovim se otvara prozorče sa tri jezička: <itemizedlist>
+        <listitem>
+        <para><guimenuitem>Igra</guimenuitem> — Ova strana vam omogućava da odaberete tip igre koji želite da igrate. Padajuća lista na vrhu vam omogućava da odaberete od brojnih predefinisanih igara. Ne možete promeniti ove stvari dok ste u igri, pa će tad biti onemogućene. Postoji još nekoliko opcija na dnu dijaloga: <orderedlist>
+          <listitem><para>Opcija bezbednih poteza vam pomaže da ne poginete zbog greške. Ako pokušate da načinite potez koji vodi u smrt, a dostupan je bezbedan potez, nećete moći da se pokrenete. Ali, upozoreni ste: ako ne postoji bezbedan potez osim teleportovanja, pomerićete se.</para></listitem>
+          <listitem><para>Takođe postoje i <quote>super bezbedni potezi</quote>. Ako označite ovo, igra će pištati kada nema bezbednih poteza i jedini izlaz vam je teleportacija.</para></listitem>
+          <listitem><para>Ako uključite zvukove, igra će puštati zvukove za različite događaje.</para></listitem>
+          <listitem><para>Uključivanjem <quote>Prskanja</quote> birate da li želite da se pusti zvuk i da se pojavi malo <quote>Splat!</quote> na ekranu.</para></listitem>
+        </orderedlist></para>
+	</listitem>
+        <listitem>
+        <para><guimenuitem>Izgled</guimenuitem> — Ova strana vam omogućava da odaberete grafiku korišćenu u igri iz padajuće liste. Sa ovog jezička takođe možete odabrati i boju pozadine.</para>
+        </listitem>
+
+        <listitem>
+        
+        <para><guimenuitem>Tastatura</guimenuitem> — Ovaj ekran vam omogućava da definišete vaše kontrole na tastaturi. Da izaberete drugi taster, kliknite dvaput na naredbu, a zatim pritisnite taster koji želite da koristite.</para>
+        </listitem>
+      </itemizedlist></para>
+
+    <para>Sve izmene koje načinite se odmah primenjuju i automatski su sačuvane.</para>
+
+    <para>Možete dizajnirati i svoju grafiku za igricu, ako želite. Grafičke datoteke se mogu naći u <filename class="directory"> $PREFIX/share/gnome-games/gnobots2/pixmaps </filename> gde je $PREFIX mesto gde je Gnom instaliran. Ovo je uglavnom <filename class="directory">/usr</filename> ili <filename class="directory">/usr/local</filename>.</para>
+    <para>Svaki karakter ima 16x16 piksela i ima ih 14 poređanih vodoravno u PNG datoteci čija je veličina 224x16 piksela. Možete pogledati u postojeće datoteke da biste videli redosled u kome ih treba poređati da naprave pravilnu sekvencu animacije.</para>
+    <para>Sve grafičke datoteke koje se stave u fasciklu se automatski prepoznaju, tako da ne morate da menjate nikakve datoteke sa podešavanjima. Takođe možete napraviti vaša podešavanja igre praveći dodatne <filename> .cfg </filename> datoteke koje se nalaze u fascikli <filename class="directory"> $PREFIX/share/gnome-games/gnobots2/games </filename>.</para>
+  </sect1> 
+ 
+  <!-- ============= Various Sections ============================= -->
+ 
+ 
+  <!-- ============= Bugs ================================== -->
+  <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of. -->
+<!--  <sect1 id="bugs">
+    <title>Known Bugs and Limitations</title>
+    <para>
+      This application has no known bugs.
+    </para>
+  </sect1>
+-->
+
+<!-- ============= Authors ================================ -->
+
+  <sect1 id="authors">
+    <title>Autori</title>
+    <para><application>Robote</application> je napisao Mark Rae (<email>m.rae@inpharmatica.co.uk</email>). Ovo uputstvo je napisao Patanjali Somayaji (<email>patanjali@mindless.com</email>) koristeći originalnu HTML dokumentaciju koju je napisao Mark Rae. Da biste prijavili greške ili dali predlog u vezi ovog programa ili njegovog uputstva, pratite smernice iz <ulink url="ghelp:user-guide?feedback-bugs" type="help">dokumenta</ulink>.</para>
+
+    <!-- For translations: uncomment this:
+
+    <para>
+      Latin translation was done by ME
+      (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+      suggestions regarding this translation to SOMEWHERE.
+    </para>
+
+    -->
+
+  </sect1>
+
+
+  <!-- ============= Application License ============================= -->
+
+  <sect1 id="license">
+    <title>Licenca</title>
+    <para>Ovaj program je slobodan softver; možete ga raspodeljivati i/ili ga menjati pod uslovima <citetitle>GNU Opšte Javne Licence (GNU GPL)</citetitle> kako je objavljuje Zadužbina za Slobodni Softver (FSF); bilo verzije 2 te Licence, bilo (po vašem nahođenju) bilo koje novije verzije.</para>
+    <para>Ovaj program se raspodeljuje u nadi da će biti od koristi, ali BEZ IKAKVIH GARANCIJA; čak i bez podrazumevane garancije KORISNOSTI ili PRILAGOĐENOSTI ODREĐENOJ NAMENI.  Vidite <citetitle>GNU Opštu Javnu Licencu</citetitle> za više detalja.</para>
+    <para>Primerak <citetitle>GNU Opšte Javne Licence</citetitle> je uključen u dodatku <citetitle>Gnomovog korisničkog vodiča</citetitle>. Takođe možete nabaviti primerak <citetitle>GNU Opšte Javne Licence</citetitle> od Zadužbine za Slobodni Softver odlazeći na <ulink url="http://www.fsf.org" type="http">njihovu veb adresu</ulink> ili pišući na <address> Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</state><postcode>02111-1307</postcode><country>USA</country></address></para>
+  </sect1>
+
+</article>

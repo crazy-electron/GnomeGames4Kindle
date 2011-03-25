@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.21.90">
+<!ENTITY manrevision "3.0">
+<!ENTITY date "February 2008">
+<!ENTITY app "<application>Sudoku</application>">
+<!ENTITY appname "Sudoku">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 06, 2003
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="pt_BR">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Manual do <application>Sudoku</application></title>       
+
+    <abstract role="description">
+      <para>O Sudoku é uma aplicação para jogar o popular jogo lógico de quebra-cabeças sudoku, no qual deve ser preenchido um quadrado 9 por 9 com os dígitos corretos.</para>
+    </abstract>
+
+    <copyright> 
+      <year>2008</year> 
+      <holder>Thomas M. Hinkle</holder> 
+    </copyright><copyright><year>2007.</year><holder>Vladimir Melo (vladimirmelo@foresightlinux.org)</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Projeto de Documentação do GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Permissão concedida para copiar, distribuir e/ou modificar este documento dentro dos termos da GNU Free Documentation License (GFDL), Versão 1.1 ou qualquer versão superior publicada pela Free Software Foundation sem nenhuma Seção Imutável, Textos de Capa e Contra-Capa. Você pode achar uma cópia do GFDL neste <ulink type="help" url="ghelp:fdl">link</ulink> ou no arquivo COPYING-DOCS distribuido com este manual.</para>
+         <para>Este manual é parte de uma coleção de manuais do GNOME distribuída sob a GFDL. Se você quiser distribuir este manual separadamente da coleção, você pode fazê-lo adicionando uma cópia da licença ao manual, como descrito na seção 6 da licença.</para>
+
+	<para>Muitos dos nomes usados por empresas para distingüir seus produtos e serviços são marcas registradas. Onde esses nomes aparecerem em qualquer documentação do GNOME e os membros do Projeto de Documentação do GNOME estiverem cientes daquelas marcas registradas, os nomes aparecerão em letras maíusculas ou com iniciais em maíusculas.</para>
+
+	<para>O DOCUMENTO E VERSÕES MODIFICADAS DO DOCUMENTO SÃO FORNECIDAS PELOS TERMOS DA GNU FREE DOCUMENTATION LICENSE COM O CONHECIMENTO ADICIONAL DE QUE: <orderedlist>
+		<listitem>
+		  <para>DOCUMENTO É FORNECIDO "NO ESTADO", SEM GARANTIA DE QUALQUER TIPO, TANTO EXPRESSA QUANTO IMPLÍCITA, INCLUINDO, SEM LIMITAÇÕES, GARANTIAS DE QUE O DOCUMENTO OU VERSÃO MODIFICADA DO MESMO É COMERCIALIZADO LIVRE DE DEFEITOS, PRÓPRIO PARA UM PROPÓSITO ESPECÍFICO OU QUE NÃO HÁ INFRAÇÕES. TODO RISCO DE QUALIDADE, PRECISÃO E PERFORMANCE DO DOCUMENTO OU VERSÃO MODIFICADA É COM VOCÊ. SE ALGUM DOCUMENTO OU VERSÃO MODIFICADA É PROVADO DEFEITUOSO EM QUALQUER ASPECTO, VOCÊ (NÃO O ESCRITOR INICIAL, AUTOR OU QUALQUER COLABORADOR) ASSUME O CUSTO DE QUALQUER SERVIÇO NECESSÁRIO, REPARO OU CORREÇÃO. ESTE AVISO DE GARANTIA CONSTITUI UMA PARTE ESSENCIAL DA LICENÇA. NENHUM USO DE QUALQUER DOCUMENTO OU VERSÃO MODIFICADA DO DOCUMENTO É AUTORIZADO EXCETO SOB ESTA CONDIÇÃO; E</para>
+		</listitem>
+		<listitem>
+		  <para>SOB NENHUMA CIRCUNSTÂNCIA E SOB NENHUMA TEORIA LEGAL, TANTO EM DANOS (INCLUINDO POR NEGLICÊNCIA), CONTRATO OU OUTROS, DEVEM O AUTOR, ESCRITOR INICIAL OU COLABORADOR OU QUALQUER DISTRIBUIDOR DO DOCUMENTO, VERSÃO MODIFICADA OU QUALQUER FORNECEDOR DE QUALQUER DESSES GRUPOS, SER CONSIDERADOS RESPONSÁVEIS A QUALQUER PESSOA POR QUALQUER DANO DIRETO, INDIRETO, ESPECIAL, INCIDENTAL OU CONSEQÜENCIAL DE QUALQUER INDIVÍDUO, INCLUINDO, SEM LIMITAÇÕES, DANOS POR PERDA DE BOA VONTADE, PARADA DE TRABALHO, FALHA DE COMPUTADOR, MAL-FUNCIONAMENTO OU QUALQUER E TODOS OS OUTROS DANOS OU PERDAS RESULTANTES OU RELACIONADAS AO USO DO DOCUMENTO E VERSÕES MODIFICADAS, MESMO QUE ESSE GRUPO TENHA SIDO INFORMADO DA POSSIBILIDADE DE TAIS DANOS.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+		<firstname>Thomas</firstname> 
+		<surname>Hinkle</surname> 
+		<affiliation> 
+	  		<orgname>Projeto de Documentação do GNOME</orgname> 
+	  		<!-- The email address of the author is optional and is commented out by default. 
+			<address> <email>doc-writer2@gnome.org</email> </address> 
+			-->
+		</affiliation> 
+      </author> 
+      
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+     
+      <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  		<orgname>Latin Translation Team</orgname> 
+	  		<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->  
+    <revhistory>
+      <revision> 
+		<revnumber>Manual do GNOME Sudoku V3.0</revnumber> 
+		<date>Fevereiro de 2008</date> 
+		<revdescription> 
+	  		<para role="author">Thomas M. Hinkle</para>
+	  		<para role="publisher">Projeto de Documentação do GNOME</para>
+		</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Este manual descreve a versão 2.21.90 do Sudoku</releaseinfo> 
+    <legalnotice> 
+      <title>Feedback</title> 
+      <para>Para relatar um erro ou dar uma sugestão a respeito da aplicação <application>Sudoku</application> ou deste manual, siga as orientações na <ulink url="ghelp:user-guide?feedback-bugs" type="help">Página de Feedback do GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index"> 
+    <primary>GNOME Sudoku</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+    <primary>sudoku</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="myapp-introduction"> 
+    <title>Introdução</title> 
+    <para>O <application>Sudoku</application> é uma aplicação para gerar e jogar o popular quebra-cabeça lógico Sudoku (também conhecido como Number Place).</para>
+    <para>As regras do Sudoku são bem simples. Para completar o quebra-cabeça, você deve preencher cada quadrado com um número entre 1 e 9 de tal forma que cada linha, coluna e caixa 3✕3 no tabuleiro contenham os números de 1 a 9. Em outras palavras, você deve preencher cada quadrado de tal forma que nenhum número apareça duas vezes na mesma linha, coluna ou caixa 3✕3.</para>
+
+    <para>Essas duas diferentes maneiras de olhar para o quebra-cabeça são dois dos princípios de como os jogadores pensam enquanto jogam. De um lado, você se pergunta, “Como posso combinar todos os números nesta caixa?” Por outro lado, você se pergunta, “Quais números podem ser combinados neste quadrado sem causar conflito com outros números na mesma linha, coluna ou caixa 3✕3?”</para>
+
+    <para>Apesar da simplicidade do jogo, os quebra-cabeças do Sudoku podem variar amplamente em sua dificuldade. O <application>Sudoku</application> permite que você selecione a dificuldade do quebra-cabeça que quer jogar. Por padrão, ele começará com quebra-cabeças fáceis e gradualmente aumentará a dificuldade à medida que você melhorar.</para>
+
+  </sect1>
+
+<!-- =========== Getting Started ============================== -->
+<!-- Use the Getting Started section to describe the steps required
+     to start the application and to describe the user interface components
+     of the application. If there is other information that it is important
+     for readers to know before they start using the application, you should
+     also include this information here. 
+     If the information about how to get started is very short, you can 
+     include it in the Introduction and omit this section. -->
+
+  <sect1 id="myapp-getting-started"> 
+    <title>Iniciando</title> 
+
+    <sect2 id="myapp-start">
+    <title>Para Iniciar o <application>Sudoku</application></title>
+    <para>Você pode iniciar o <application>Sudoku</application> das seguintes formas:</para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>Menu <guimenu>Aplicações</guimenu></term>
+    		<listitem>
+    		<para>Escolha <menuchoice><guisubmenu>Jogos </guisubmenu><guimenuitem>Sudoku</guimenuitem></menuchoice>.</para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Linha de comando</term>
+    		<listitem>
+    		<para>Para iniciar o <application>Sudoku</application> a partir da linha de comando, digite o seguinte comando, e pressione <keycap>Enter</keycap>:</para>
+    		<para> 
+			<command>gnome-sudoku</command> 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+    </sect2>
+
+    <sect2 id="myapp-when-start">
+    <title>Quando Você Iniciar o <application>Sudoku</application></title>
+    <para>Quando você iniciar o <application>Sudoku</application> pela primeira vez, você vai ver a tela de seletor de quebra-cabeças, na qual pode escolher o nível de dificuldade do quebra-cabeça que quer jogar. Se você já jogou antes e tem alguns quebra-cabeças incompletos, você também pode selecionar esses quebra-cabeças através dessa tela.</para>
+    <para>No seletor de quebra-cabeças, a dificuldade do quebra-cabeça é exibida. A cor ao redor da imagem do quebra-cabeça corresponde à dificuldade. Um quebra-cabeça vermelho escuro é mais difícil que um vermelho claro, por exemplo.</para>
+    <para>Clique duas vezes no quebra-cabeça de sua escolha para iniciar o jogo.</para>
+
+<figure id="new-game-fig"> 
+	<title>Iniciando o Sudoku</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/starting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Iniciando o Sudoku: escolha um nível de dificuldade.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    
+    <para>Você pode alterar quebra-cabeças a qualquer hora pressionando <guibutton>Novo</guibutton>. Isso levará você à tela de seleção de quebra-cabeças, onde poderá selecionar qualquer quebra-cabeça que queira.</para>
+    
+    </sect2>
+    
+    </sect1>
+    <sect1 id="myapp-basic-play">
+    <title>Modos básicos de jogar</title>
+    <para>Para jogar, inicie preenchendo números de 1-9 nos quadrados tal que nenhuma linha, coluna ou caixa 3✕3 tenha o mesmo número mais de uma vez.</para>
+    <para>Você pode preencher um número em um quadrado com o teclado ou com o mouse.</para>
+    <variablelist>
+    	<varlistentry>
+	<term>Teclado</term>
+	<listitem><para>Use as setas ou o mouse para selecionar o quadrado que gostaria de preencher. Então digite o número que quer colocar no quadrado. Pressionando <keycap>Backspace</keycap>, o número será removido.</para></listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Mouse</term>
+	<listitem>
+	  <para>Clique em um quadrado para selecioná-lo, então clique no centro do quadrado para abrir botões com os números de 1-9. Clique em um número para selecioná-lo, ou clique em <guibutton>limpar</guibutton> para limpar o quadrado. Você também pode dar um clique duplo no centro do quadrado para abrir os botões de número.</para>
+	</listitem>
+		</varlistentry>
+	</variablelist>
+    <note>
+    <para>Se você digitar um número que está em conflito com outros números na grade, eles serão destacados em vermelho.</para>
+    <figure id="error-highlight-fig"> 
+	<title>Erro ao destacar</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/error_highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Um movimento ilegal será destacado em vermelho.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    </note>
+    </sect1>
+    <sect1 id="myapp-saving">
+    <title>Salvando e Continuando Jogos</title>
+    <para>Os Sudokus são salvos automaticamente a cada poucos minutos e sempre que você altera os jogos ou fecha a aplicação.</para>
+        <figure id="open-game-fig"> 
+	<title>Continuando jogos antigos</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/resuming.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Continuando um jogo antigo a partir da tela de seletor de quebra-cabeças.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+    <para>Sempre que iniciar o <application>Sudoku</application> ou clicar em <guibutton>Novo</guibutton>, seus jogos salvos serão listados na tela de seleção de quebra-cabeças. Você vai ver uma miniatura do quebra-cabeça salvo, a data da última vez que o jogou, e por quanto tempo o jogou. Para abrir o quebra-cabeça, apenas dê um duplo clique nele.</para>
+    <para>Se você quiser parar de jogar um jogo e começar outro, apenas selecione <guibutton>Novo</guibutton> e comece um jogo novo.</para>
+    </sect1>
+
+<!-- ================ Usage ================================ -->
+<!-- Use this section to describe how to use the application to perform the tasks for 
+  which the application is designed. -->
+  <sect1 id="myapp-hints"> 
+    <title>Recursos</title> 
+    <!-- ================ Usage Subsection ================================ -->
+
+        <para>O GNOME Sudoku oferece uma série de recursos que o ajuda a jogar quebra-cabeças.</para>
+
+      <variablelist>
+    	<varlistentry><term>Notas</term>
+	<listitem>
+		<para><firstterm>Notas</firstterm> ou <firstterm>Marcas de lápis</firstterm> permite que você tome nota em cada quadrado. Vários jogadores usam as notas para marcar os valores possíveis para os quadrados.</para>
+	</listitem>
+	</varlistentry>
+	<varlistentry>
+	<term>Dicas e Autopreenchimento</term>
+	<listitem>
+	<para>Você pode usar <firstterm>dicas</firstterm> e <firstterm>autopreenchimento</firstterm> para que o GNOME Sudoku lhe mostre os valores possíveis para um quadrado ou para que preencha automaticamente um quadrado para você.</para>
+	</listitem>
+	</varlistentry>
+
+		<varlistentry>
+	<term>Destacando</term>
+	<listitem>
+	<para>No modo de destaque, a linha, coluna e caixa atuais são destacadas em cores diferentes para tornar o rastreio do tabuleiro mais fácil.</para>
+	</listitem>
+	</varlistentry>
+
+	<varlistentry>
+	<term>Marcadores</term>
+	<listitem>
+	  <para>Marcadores tornam as soluções por tentativa e erro mais fáceis de serem acompanhadas. Quando você <firstterm>marcar</firstterm> um conjunto de movimentos, os números serão escritos em uma cor especial para ajudá-lo a distinguir esses movimentos de movimentos feitos anteriormente no jogo.</para>
+	</listitem>
+	</varlistentry>
+        </variablelist>
+	
+	<sect2 id="myapp-notes"> 
+      <title>Tomando Notas</title> 
+      <para>Para escrever notas (também conhecidas como “marcas de lápis”) em um quadrado, primeiro selecione o quadrado com o teclado ou o mouse. Então, escolha uma das seguintes opções:</para>
+      <itemizedlist>
+      <listitem><para>Clique na região superior do quadrado (a região é destacada com um quadrado quando você move o mouse sobre um quadrado selecionado).</para></listitem>
+      <listitem><para>Digite <keycap>N</keycap></para></listitem>
+      </itemizedlist>
+      <para>Isso abrirá um campo no qual você pode digitar suas notas. Pressione <keycap>Enter</keycap> quando você terminar de editar sua nota.</para>
+      
+      <note><para>Você pode também tomar notas na base do quadrado ao clicar ali ou digitar <keycap>M</keycap>. Entretanto, essa área é usada quando você pede uma <firstterm>dica</firstterm>, então você não deve usar essa área para suas próprias notas se você também pretende usar as dicas.</para></note>
+      <note><para>You can clear the notes at the top of the square by typing <keycap>Alt-N</keycap> and at the bottom of the square by typing <keycap>Alt-M</keycap>.</para></note>
+      <note><para>You can add a number to the notes at the top of the square by typing <keycap>Ctrl-1</keycap> through <keycap>Ctrl-9</keycap> and remove a number from the notes by typing <keycap>Alt-1</keycap> through <keycap>Alt-9</keycap>.</para></note>
+</sect2>
+    <!-- ================ Usage Subsection ================================ -->
+	 <sect2 id="myapp-manipulate-view"> 
+      <title>Dicas e Autopreenchimento</title>
+
+		             <note>
+
+	      <para>Os recursos de <firstterm>Dica</firstterm> e <firstterm>Preencher</firstterm> trabalham com base nas possibilidades lógicas do tabuleiro atual. Eles <emphasis>não</emphasis> trabalham procurando a solução. Se você cometeu um erro em um movimento anterior, eles podem preencher ou sugerir valores incorretos.</para>
+
+	    </note>
+      
+      
+      <sect3 id="myapp-hint">
+          <title>Dicas</title>
+	              <para>O GNOME Sudoku pode lhe dar dicas baseado no seu tabuleiro atual. Você pode pedir uma dica para o quadrado selecionado ao clicar em <guibutton>dica</guibutton>, selecionando <menuchoice><guisubmenu>Ferramentas</guisubmenu><guimenuitem>Dica</guimenuitem></menuchoice>, ou digitando <keycap>Control-H</keycap>. Isso colocará uma lista de valores possíveis na base do quadrado.</para>
+    <figure id="hint-fig"> 
+	<title>Dicas</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/hints.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Quando você clicar em Dica, valores possíveis são mostrados na base de um quadrado.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+		      
+	    <para>Se você quiser remover ou alterar a dica, pode editar o texto ao clicar na base do quadrado.</para>
+	    <para>Para quebra-cabeças muito difíceis, você pode escolher que o <application>Sudoku</application> lhe mostre os possíveis valores para todos os quadrados. Para ligar esse modo, alterne para <menuchoice><guisubmenu>Ferramentas</guisubmenu><guimenuitem>Sempre mostrar dica</guimenuitem></menuchoice>. Note que isso pode tornar quebra-cabeças fáceis <emphasis>muito</emphasis> fáceis, então você deve usar esse modo moderadamente.</para>
+<figure id="all-hints-fig"> 
+	<title><application>Sudoku</application> em Modo Sempre-Mostrar-Dica</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/always_show_hint.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Um quebra-cabeça difícil com o Modo Sempre-Mostrar-Dica habilitado.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+	    
+	    
+	    </sect3>
+	    <sect3 id="myapp-autofill">
+	    <title>Preencher quadrado</title>
+
+	    <para>Para preencher automaticamente um quadrado para o qual existe apenas um valor possível, você pode clicar em <guibutton>Preencher</guibutton>, selecionar <menuchoice><guisubmenu>Ferramentas</guisubmenu><guimenuitem>Preencher</guimenuitem></menuchoice>, ou pressionar <keycap>Control-F</keycap>. Isso é útil, por exemplo, quando você tiver preenchido 8 ou 9 quadrados em uma linha e quiser preencher rapidamente o último quadrado vazio.</para>
+	    <para>Se existir mais de um valor válido para a entrada, nada acontecerá.</para>	    
+	    </sect3>
+	    <sect3 id="myapp-fill-all">
+	    <title>Preencher Todos os Quadrados</title>
+
+	    <para>Você pode automaticamente preencher todos os quadrados para os quais existe logicamente apenas um valor no momento. Para tanto, selecione <menuchoice><guisubmenu>Ferramentas</guisubmenu><guimenuitem>Preencher todos os quadrados</guimenuitem></menuchoice>, ou pressione <keycap>Control-A</keycap>.</para>
+	    
+	    <warning>
+
+	    	    <para>Esse recurso deve apenas ser usado para ajudá-lo quando você estiver preso em um jogo difícil. O uso desse recurso em um jogo fácil pode resolver o quebra-cabeça inteiro em um clique, resultando em um jogo muito sem graça!</para>
+		    </warning>
+	    	    </sect3>
+
+    </sect2> 
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-highlighting"> 
+      <title>Destacando</title> 
+      <para>Você pode ligar o destaque para destacar automaticamente a linha, coluna ou caixa atual em cores diferentes. Isso pode tornar fácil ver quais valores não podem ir no quadrado atual. Para alternar para destaque, você pode:</para> 
+      <itemizedlist>
+      <listitem><para>Clique em <guibutton>Destacador</guibutton></para></listitem>
+      <listitem><para><menuchoice><guisubmenu>Ver</guisubmenu><guimenuitem>Destacador</guimenuitem></menuchoice></para></listitem>
+      </itemizedlist>
+
+<figure id="highlight-fig"> 
+	<title><application>Sudoku</application> com destaque</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/highlighting.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Destacar torna fácil rastrear linhas, colunas e caixas.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      </sect2>
+
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="myapp-trackers"> 
+      <title>Marcadores</title> 
+      <para>Você pode usar marcadores para acompanhar vários movimentos de uma só vez. Os movimentos marcados serão registrados em uma cor diferente para torná-los visualmente distintos. Você também pode excluir todos os movimentos marcados de uma vez. Isso é particularmente útil para resolver quebra-cabeças difíceis por tentativa e erro.</para>
+      <note><para>Alguns jogadores de sudoku acreditam que nunca se deve usar a tentativa e erro para resolver um quebra-cabeça. Esses jogadores não devem usar esse recurso.</para></note>
+
+            <para>Você pode alternar para a interface de marcadores fazendo o seguinte:</para>
+
+	    <itemizedlist>
+
+	      <listitem>
+	       <para>
+		<menuchoice> 
+			  <guimenu>Ferramentas</guimenu> 
+			  <guimenuitem>Acompanhar adições</guimenuitem>
+		</menuchoice>
+	       </para>
+	     </listitem>
+             <listitem><para>Clique em <guibutton>Acompanhar adições</guibutton></para></listitem>
+           </itemizedlist>
+      <para>Isso abrirá uma lista de marcadores à direita do jogo atual. Crie um novo marcador clicando em <guibutton>Adicionar Marcador</guibutton>. Desse ponto em diante, qualquer número que você digitar será parte do marcador selecionado.</para>
+      <para>Você pode limpar todos os valores que são parte de um marcador selecionando o marcador da lista e clicando em <guibutton>Limpar Marcador</guibutton>. Você pode limpar todos os valores que <emphasis>não</emphasis> fazem parte de um marcador clicando em <guibutton>Limpar os Outros</guibutton>.</para>
+    </sect2> 
+  </sect1>
+  <!-- ============= Customization ============================= -->
+  <!-- Use this section to describe how to customize the application. -->
+  <sect1 id="myapp-printing"> 
+    <title>Imprimindo Sudoku</title> 
+    <para>O GNOME Sudoku pode imprimir jogos para você jogar no papel. Isso é útil se você tiver que deixar o computador mas quer finalizar o jogo que iniciou, ou se quiser imprimir uma série de quebra-cabeças para fazer depois.</para>
+
+    <para>Para imprimir o quebra-cabeça que você ainda estiver jogando, clique em <guibutton>Imprimir</guibutton> ou selecione <menuchoice><guimenu>Jogo</guimenu><guimenuitem>Imprimir</guimenuitem></menuchoice>. Isso incluirá os números que você já preencheu.</para>
+    
+    <para>Para imprimir quebra-cabeças em branco, selecione <menuchoice><guimenu>Jogo</guimenu><guimenuitem>Imprimir múltiplos sudokus</guimenuitem></menuchoice>.</para>
+
+      <para>Você vai ver então um diálogo de impressão que lhe permite escolher quantos jogos você gostaria de imprimir e quantos jogos você quer imprimir em cada página (quanto mais jogos imprimir por página, menores serão os jogos).</para>
+
+      <para>Você pode também selecionar o intervalo de dificuldade no qual deseja que os jogos estejam. Os jogos serão impressos na ordem de dificuldade do mais fácil para o mais difícil.</para>
+
+      <para>Para criar um mini-livro de sudoku de 25 páginas para si mesmo, você pode selecionar a impressão de 100 sudokus, com 4 sudokus por página, com jogos variando de fácil a difícil.</para>
+
+<figure id="printing-fig"> 
+	<title>Imprimindo um minilivro de Sudoku a partir do <application>Sudoku</application></title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/Print_Sudokus.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Isso imprimirá 25 páginas com 4 sudokus em cada uma.</phrase> 
+	    </textobject>
+	  </mediaobject> 
+	</screenshot>
+      </figure>
+      
+      <para>Por padrão, o <application>Sudoku</application> não imprimirá jogos que você já tenha jogado. Se você estiver imprimindo jogos para um amigo, ou se não se importar com jogos repetidos, você pode marcar <guibutton>Incluir jogos já jogados na lista de jogos a serem impressos</guibutton>.</para>
+
+      <para>Você também pode selecionar à mão os jogos que gostaria de imprimir expandindo a <guibutton>Lista de Jogos</guibutton> e selecionando vários quebra-cabeças da lista.</para>
+    
+  </sect1>
+  
+  <sect1 id="mayapp-bugs">
+  <title>Erros Conhecidos e Limitações</title>
+  <sect2>
+  <title>Estatísticas Limitadas de Quebra-Cabeça</title>
+
+    <para>O GNOME Sudoku classifica quebra-cabeças com base no número de quadrados que podem ser rapidamente preenchidos. A caixa de estatísticas do quebra-cabeça lhe mostra a classificação geral e três tipos de informação:</para>
+
+    <itemizedlist>
+    <listitem><para>O número de quadrados preenchíveis por eliminação, iniciando pela grade em branco (ex.: apenas um 2 é possível nesta caixa, então deve ser um 2).</para></listitem>
+    <listitem><para>O número de quadrados preenchíveis instantaneamente, iniciando pela grade em branco (ex.: apenas um quadrado nesta linha pode ser um 2, então deve ser um 2).</para></listitem>
+    <listitem><para>O número de vezes em que o computador teve que usar tentativa e erro, ou “adivinhação” para resolver o quebra-cabeça.</para></listitem>
+    </itemizedlist>
+    <para>Vários usuários ficam decepcionados ao saber que o solucionador do computador usa tentativa e erro, especialmente desde que alguns gurus do Sudoku dizem que você nunca deve adivinhar para resolver o quebra-cabeça. Existem vários outros algoritmos que podem ser implementados para ajudar o computador a resolver o sudoku, tais como os padrões swordfish e x-wings.</para>
+
+    <para>Até o momento, o <application>Sudoku</application> usa apenas os dois algoritmos descritos acima, assim como tentativa e erro. Quando a caixa de estatísticas diz que o <application>Sudoku</application> precisou usar tentativa e erro X vezes, isso <emphasis>não</emphasis> significa que um humano teria que usar tentativa e erro para resolver o quebra-cabeça.</para>
+  
+  </sect2>
+
+ </sect1>
+
+<!-- ============= About ================================== -->
+<!-- This section contains info about the program (not docs), such as
+      author's name(s), web page, license, feedback address. This
+      section is optional: primary place for this info is "About.." box of
+      the program. However, if you do wish to include this info in the
+      manual, this is the place to put it. Alternatively, you can put this information in the title page.-->
+  <sect1 id="myapp-about"> 
+    <title>Sobre o <application>Sudoku</application></title> 
+    <para>O <application>Sudoku</application> foi escrito por Tom Hinkle (<email>tmhinkle@gmail.com</email>). <application>Sudoku</application> é agora parte dos jogos do GNOME.</para>
+    <para>Para relatar um erro ou dar uma sugestão a respeito desta aplicação ou deste manual, veja a seção Feedback do <ulink url="ghelp:user-guide?feedback-bugs" type="help">Guia do Usuário do GNOME</ulink>.</para>
+
+    <para>Este programa é distribuído sob os termos da Licença Pública Geral GNU como publicado pela Free Software Foundation; tanto na versão 2 da Licença, como (a sua escolha) em qualquer versão superior. Uma cópia dessa licença pode ser encontrada neste link <ulink url="ghelp:gpl" type="help">link</ulink>, ou no arquivo COPYING incluído no código fonte deste programa.</para>
+
+  </sect1> 
+</article>

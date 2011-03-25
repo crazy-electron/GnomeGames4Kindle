@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="usage" xml:lang="oc">
+
+  <info>
+    <link type="guide" xref="index#play" group="one"/>
+    <link type="seealso" xref="gameplay"/>
+    <desc>How to play <app>GNOME Tetravex</app>.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-17" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <credit type="author">
+      <name>Rob Bradford</name>
+      <email>robster@debian.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>    
+  </info>
+
+  <title>Play <app>GNOME Tetravex</app></title>
+
+  <section id="usage-basic">
+    <title>Basic usage</title>
+    <p>
+      The game window is divided into two boxes: the one on the right side of 
+      the window contains the pieces that needs to be arranged; the one on the 
+      left side of the window is where the pieces from the right box will be 
+      arranged and moved. Each piece is divided into four little triangles 
+      containing a number.
+    </p>
+    <p>
+      The scope of the game is to position the pieces so that only two identical 
+      numbers are next to each other.
+    </p>
+    <p>
+      It is not possible to position the pieces so that different number are next
+      to each other.
+    </p>
+    <p>
+      The game is completed when you have positioned all the pieces in their right
+      positions.
+    </p>
+    <note>
+      <p>
+        When you start <app>GNOME Tetravex</app>, the game will start immediately,
+        and the time will start counting.
+      </p>
+    </note>
+
+  </section>
+  
+  <section id="usage-video">
+    <title>Video demonstration</title>
+    <p>
+      This short video shows how the game works, and what are the possible movements.
+    </p>
+    <p>
+      <media type="video" mime="application/ogg" src="figures/gnotravex-video.ogv">
+      Simple demonstration of a game
+      </media>
+    </p>
+  </section>
+</page>

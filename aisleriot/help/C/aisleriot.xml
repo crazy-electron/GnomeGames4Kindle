@@ -1,0 +1,385 @@
+<?xml version="1.0"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+    "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY accordion SYSTEM "accordion.xml">
+<!ENTITY agnes SYSTEM "agnes.xml">
+<!ENTITY athena SYSTEM "athena.xml">
+<!ENTITY auld-lang-syne SYSTEM "auld_lang_syne.xml">
+<!ENTITY backbone SYSTEM "backbone.xml">
+<!ENTITY bakers-dozen SYSTEM "bakers_dozen.xml">
+<!ENTITY bakers-game SYSTEM "bakers_game.xml">
+<!ENTITY bear-river SYSTEM "bear_river.xml">
+<!ENTITY beleaguered-castle SYSTEM "beleaguered_castle.xml">
+<!ENTITY block-ten SYSTEM "block_ten.xml">
+<!ENTITY bristol SYSTEM "bristol.xml">
+<!ENTITY camelot SYSTEM "camelot.xml">
+<!ENTITY canfield SYSTEM "canfield.xml">
+<!ENTITY carpet SYSTEM "carpet.xml">
+<!ENTITY chessboard SYSTEM "chessboard.xml">
+<!ENTITY clock SYSTEM "clock.xml">
+<!ENTITY cover SYSTEM "cover.xml">
+<!ENTITY cruel SYSTEM "cruel.xml">
+<!ENTITY diamond-mine SYSTEM "diamond_mine.xml">
+<!ENTITY doublets SYSTEM "doublets.xml">
+<!ENTITY eagle-wing SYSTEM "eagle-wing.xml">
+<!ENTITY easthaven SYSTEM "easthaven.xml">
+<!ENTITY eight-off SYSTEM "eight_off.xml">
+<!ENTITY elevator SYSTEM "elevator.xml">
+<!ENTITY escalator SYSTEM "escalator.xml">
+<!ENTITY first-law SYSTEM "first_law.xml">
+<!ENTITY fortress SYSTEM "fortress.xml">
+<!ENTITY fortunes SYSTEM "fortunes.xml">
+<!ENTITY forty-thieves SYSTEM "forty_thieves.xml">
+<!ENTITY fourteen SYSTEM "fourteen.xml">
+<!ENTITY freecell SYSTEM "freecell.xml">
+<!ENTITY gaps SYSTEM "gaps.xml">
+<!ENTITY gay-gordons SYSTEM "gay_gordons.xml">
+<!ENTITY giant SYSTEM "giant.xml">
+<!ENTITY glenwood SYSTEM "glenwood.xml">
+<!ENTITY gold-mine SYSTEM "gold_mine.xml">
+<!ENTITY golf SYSTEM "golf.xml">
+<!ENTITY gypsy SYSTEM "gypsy.xml">
+<!ENTITY helsinki SYSTEM "helsinki.xml">
+<!ENTITY hopscotch SYSTEM "hopscotch.xml">
+<!ENTITY isabel SYSTEM "isabel.xml">
+<!ENTITY jumbo SYSTEM "jumbo.xml">
+<!ENTITY jamestown SYSTEM "jamestown.xml">
+<!ENTITY kansas SYSTEM "kansas.xml">
+<!ENTITY king-albert SYSTEM "king_albert.xml">
+<!ENTITY kings-audience SYSTEM "kings_audience.xml">
+<!ENTITY klondike SYSTEM "klondike.xml">
+<!ENTITY labyrinth SYSTEM "labyrinth.xml">
+<!ENTITY lady-jane SYSTEM "lady_jane.xml">
+<!ENTITY maze SYSTEM "maze.xml">
+<!ENTITY monte-carlo SYSTEM "monte_carlo.xml">
+<!ENTITY napoleons-tomb SYSTEM "napoleons_tomb.xml">
+<!ENTITY neighbor SYSTEM "neighbor.xml">
+<!ENTITY odessa SYSTEM "odessa.xml">
+<!ENTITY osmosis SYSTEM "osmosis.xml">
+<!ENTITY peek SYSTEM "peek.xml">
+<!ENTITY pileon SYSTEM "pileon.xml">
+<!ENTITY plait SYSTEM "plait.xml">
+<!ENTITY poker SYSTEM "poker.xml">
+<!ENTITY quatorze SYSTEM "quatorze.xml">
+<!ENTITY royal-east SYSTEM "royal_east.xml">
+<!ENTITY saratoga SYSTEM "saratoga.xml">
+<!ENTITY scorpion SYSTEM "scorpion.xml">
+<!ENTITY scuffle SYSTEM "scuffle.xml">
+<!ENTITY seahaven SYSTEM "seahaven.xml">
+<!ENTITY sir-tommy SYSTEM "sir_tommy.xml">
+<!ENTITY spider SYSTEM "spider.xml">
+<!ENTITY spider-three-decks SYSTEM "spider_three_decks.xml">
+<!ENTITY spiderette SYSTEM "spiderette.xml">
+<!ENTITY straight-up SYSTEM "straight_up.xml">
+<!ENTITY streets-and-alleys SYSTEM "streets_and_alleys.xml">
+<!ENTITY ten-across SYSTEM "ten_across.xml">
+<!ENTITY terrace SYSTEM "terrace.xml">
+<!ENTITY thieves SYSTEM "thieves.xml">
+<!ENTITY thirteen SYSTEM "thirteen.xml">
+<!ENTITY thumb-and-pouch SYSTEM "thumb_and_pouch.xml">
+<!ENTITY treize SYSTEM "treize.xml">
+<!ENTITY triple-peaks SYSTEM "triple_peaks.xml">
+<!ENTITY union-square SYSTEM "union_square.xml">
+<!ENTITY valentine SYSTEM "valentine.xml">
+<!ENTITY westhaven SYSTEM "westhaven.xml">
+<!ENTITY whitehead SYSTEM "whitehead.xml">
+<!ENTITY will-o-the-wisp SYSTEM "will_o_the_wisp.xml">
+<!ENTITY yield SYSTEM "yield.xml">
+<!ENTITY yukon SYSTEM "yukon.xml">
+<!ENTITY zebra SYSTEM "zebra.xml">
+<!ENTITY definitions SYSTEM "definitions.xml">
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.12">
+<!ENTITY date "July 2005">
+<!ENTITY app "<application>AisleRiot</application>">
+<!ENTITY appname "AisleRiot">
+]>
+
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+
+<!-- =============Document Header ============================= -->
+<book id="index" lang="en">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <bookinfo>
+    <title>&app; Manual</title>
+
+    <abstract role="description">
+      <para>
+	AisleRiot is a collection of over 80 card games programmed 
+	in GNOME's scripting language, Scheme.	
+      </para>
+    </abstract>
+
+    <copyright>
+      <year>2001</year>
+      <holder>Rosanna Yuen</holder>
+    </copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is
+     not specified, the publisher/author is the same for all versions of the
+     document.  -->
+    <publisher>
+      <publishername> GNOME Documentation Project </publishername>
+    </publisher>
+
+   &legal;
+   <!-- This file  contains link to license for the documentation (GNU FDL), and
+        other legal stuff such as "NO WARRANTY" statement. Please do not change
+	any of this. -->
+
+    <authorgroup>
+      <author role="maintainer">
+	<firstname>Rosanna</firstname>
+	<surname>Yuen</surname>
+	<affiliation>
+          <orgname>GNOME Documentation Project</orgname>
+          <address> <email>zana@webwynk.net</email> </address>
+	</affiliation>
+      </author>
+      <othercredit role="additional material">
+        <firstname>Telsa</firstname>
+        <surname>Gwynne</surname>
+        <affiliation>
+          <address><email>hobbit@aloss.ukuu.org.uk</email></address>
+        </affiliation>
+      </othercredit>
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname>
+	<surname>Translator 1</surname>
+	<affiliation>
+	  <orgname>Latin Translation Team</orgname>
+	  <address> <email>translator@gnome.org</email> </address>
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision>
+	<revnumber>&appname; Manual V&manrevision;</revnumber>
+	<date>&date;</date>
+	<revdescription>
+	  <para role="author">Rosanna Yuen
+	    <email>zana@webwynk.net</email>
+	  </para>
+	  <para role="publisher">GNOME Documentation Project</para>
+	</revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>This manual describes version &appversion; of &appname;.
+    </releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice>
+      <title>Feedback</title>
+      <para>To report a bug or make a suggestion regarding the &app; application or
+	this manual, follow the directions in the
+	<ulink url="ghelp:user-guide?feedback-bugs"
+	  type="help">GNOME Feedback Page</ulink>.
+      </para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </bookinfo>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<chapter id="intro">
+    <title>Introduction</title>
+
+    <indexterm zone="index">
+      <primary>AisleRiot</primary>
+    </indexterm>
+
+    <para>
+&app; (also known as Solitaire or sol) is a collection of card games
+which are easy to play with the aid of a mouse. The rules for the games have
+been coded for your pleasure in the GNOME scripting language (Scheme).
+</para>
+</chapter>
+
+<chapter id="general-information">
+<!--  <sect1info>
+    <copyright>
+      <year>2002</year>
+      <holder>Telsa Gwynne</holder>
+    </copyright>
+    <author>
+      <firstname>Telsa</firstname>
+      <surname>Gwynne</surname>
+    </author>
+    <address>
+      <email>hobbit@aloss.ukuu.org.uk</email>
+    </address>
+  </sect1info> -->
+
+
+
+ <title>Playing &app;</title>
+
+ <para>
+  Use the mouse to move cards. Click a card and drag it somewhere.
+  Release the mouse button to deposit the card.
+ </para>
+ <para>
+  Alternatively, you can move a card by clicking once to pick it up and clicking again to place it. To enable this way of moving cards, choose <menuchoice><guimenu>Control</guimenu><guimenuitem>Click to move</guimenuitem></menuchoice>. This can be faster than dragging and
+  will be easier on your hand since you don't have to hold the mouse
+  down. However, it may take a while to get used to.
+ </para>
+ <para>
+  If a card can be moved to the foundation(s), you do not need to
+  drag it. You can double-click on it and it will move. If a sequence
+  of cards can be moved to the foundations, you can generally move
+  the sequence as one move.
+ </para>
+ <para>
+  Double clicking a card will send it to a foundation, if that is
+  possible. This is useful for cleaning up large numbers of cards at
+  the end of a successful game.
+ </para>
+ <para>
+  In games which have a stock pile you can redeal it by clicking on
+  the empty space where it was. Be warned that some games only let you
+  do this a limited number of time. Watch for the <guilabel>Redeals Left</guilabel> message
+  at the bottom of the window.
+ </para>
+ <para>
+  A useful tip to know is that right-clicking on a face-up card
+  which is partially obscured by a card laid over it will raise
+  it so that you can see what it is.
+ </para>
+ <para>
+  Some games have options to change the way the game is played. For
+  example Klondike can be played with either single card deals or
+  three-card deals. In these games there is a separate menu with the
+  game's name. You can only change the rules of the game at the
+  beginning of the game - the menu will be inactive during the game.
+ </para>
+ <para>
+  Statistics on how well you have done at a particular game are
+  available by selecting <guimenuitem>Statistics</guimenuitem> from
+  the <guimenu>Game</guimenu> menu. Only games where you actually
+  start moving cards are counted. The statistics are here for your own
+  enjoyment, there are numerous ways to cheat and it is unwise to
+  make comparisons.
+ </para>
+</chapter>
+
+<chapter id="games">
+    <title>The Games</title>
+
+  &accordion;
+  &agnes;
+  &athena;
+  &auld-lang-syne;
+  &backbone;
+  &bakers-dozen;
+  &bakers-game;
+  &bear-river;
+  &beleaguered-castle;
+  &block-ten;
+  &bristol;
+  &camelot;
+  &canfield;
+  &carpet;
+  &chessboard;
+  &clock;
+  &cover;
+  &cruel;
+  &diamond-mine;
+  &doublets;
+  &eagle-wing;
+  &easthaven;
+  &eight-off;
+  &elevator;
+  &escalator;
+  &first-law;
+  &fortress;
+  &fortunes;
+  &forty-thieves;
+  &fourteen;
+  &freecell;
+  &gaps;
+  &gay-gordons;
+  &giant;
+  &glenwood;
+  &gold-mine;
+  &golf;
+  &gypsy;
+  &helsinki;
+  &hopscotch;
+  &isabel;
+  &jamestown;
+  &jumbo;
+  &kansas;
+  &king-albert;
+  &kings-audience;
+  &klondike;
+  &labyrinth;
+  &lady-jane;
+  &maze;
+  &monte-carlo;
+  &napoleons-tomb;
+  &neighbor;
+  &odessa;
+  &osmosis;
+  &peek;
+  &pileon;
+  &plait;
+  &poker;
+  &quatorze;
+  &royal-east;
+  &saratoga;
+  &scorpion;
+  &scuffle;
+  &seahaven;
+  &sir-tommy;
+  &spider;
+  &spider-three-decks;
+  &spiderette;
+  &straight-up;
+  &streets-and-alleys;
+  &ten-across;
+  &terrace;
+  &thieves;
+  &thirteen;
+  &thumb-and-pouch;
+  &treize;
+  &triple-peaks;
+  &union-square;
+  &valentine;
+  &westhaven;
+  &whitehead;
+  &will-o-the-wisp;
+  &yield;
+  &yukon;
+  &zebra;
+</chapter>
+
+&definitions;
+
+</book>
+

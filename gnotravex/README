@@ -1,0 +1,16 @@
+Gnotravex
+=========
+
+Gnotravex is a small game for GNOME. The idea is originally 
+from a game called "Tetravex".
+
+  The goal of the game is to place all squares so that the numbers
+on their sides match. It is impossible to place a square beside 
+another square without the numbers matching. When all squares are 
+placed, the game is won, and over. 
+  It's possible to choose different sizes on the board from 2x2 to
+6x6. 
+
+Comments:
+---------
+Send comments to Lars Rydlinge <Lars.Rydlinge@HiG.SE>.

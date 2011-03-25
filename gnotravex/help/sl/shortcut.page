@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="shortcut" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <link type="seealso" xref="usage"/>
+    <desc>Uporabite tipkovnico za igranje igre.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-21" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Tipkovne bližnjice</title>
+
+  <section id="shortcuts-game">
+    <title>Bližnjice igre</title>
+    <p>Naslednja preglednica združuje najbolj uporabne bližnjice za igranje igre <app>GNOME Tetravex</app>.</p>
+    <table frame="all" rules="rows cols">
+      <tr>
+        <td><p>Bližnjica</p></td><td><p>Opis</p></td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>N</key></keyseq></p>
+        </td>
+        <td>
+          <p>Začni novo igro.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><key>Premor</key></p>
+        </td>
+        <td>
+          <p>Premor ali nadaljevanje igre.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            <keyseq><key>Ctrl</key><key>Navzgor</key></keyseq>
+          </p>
+        </td>
+        <td>
+          <p>Premakne vse kose v levem polju za eno polje navzgor.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Navdzol</key></keyseq></p>
+        </td>
+        <td>
+          <p>Premakne vse kose v levem polju za eno polje navzdol.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Levo</key></keyseq></p>
+        </td>
+        <td>
+          <p>Premakne vse kose v levem polju za eno polje levo.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><keyseq><key>Ctrl</key><key>Desno</key></keyseq></p>
+        </td>
+        <td>
+          <p>Premakne vse kose v levem polju za eno polje desno.</p>
+        </td>
+      </tr>
+    </table>
+  </section>
+</page>

@@ -1,0 +1,752 @@
+# Chinese (China) translation for gnome-games.
+# Copyright (C) 2010 gnome-games's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-games package.
+# TeliuTe <teliute@163.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games master\n"
+"POT-Creation-Date: 2010-12-29 01:05+0000\n"
+"PO-Revision-Date: 2010-12-30 20:02+0800\n"
+"Last-Translator: TeliuTe <teliute@163.com>\n"
+"Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnobots2.xml:255(None)
+msgid ""
+"@@image: 'figures/gnobots2-main.png'; md5=aade859d773abd55a6f903b51d92e4b9"
+msgstr ""
+"@@image: 'figures/gnobots2-main.png'; md5=aade859d773abd55a6f903b51d92e4b9"
+
+#: C/gnobots2.xml:26(title)
+msgid "<application>Robots</application> Manual"
+msgstr "<application>机器人</application>小游戏手册"
+
+#: C/gnobots2.xml:29(para)
+msgid ""
+"Robots is a graphical version of the original text based robots game, which "
+"can be found on a number of UNIX systems. The player must outwit the robots "
+"chasing him/her by getting them to run into each other."
+msgstr ""
+"机器人原来是文本小游戏，这个它的图形界面版本，您可以在许多 UNIX 系统上找到"
+"它。玩家必须开动脑筋，让那些小机器人自己相互碰撞而毁灭。"
+
+#: C/gnobots2.xml:38(year)
+msgid "2001"
+msgstr "2001"
+
+#: C/gnobots2.xml:39(holder)
+msgid "Patanjali Somayaji, Mark Rae"
+msgstr "Patanjali Somayaji, Mark Rae"
+
+#: C/gnobots2.xml:55(publishername) C/gnobots2.xml:105(para)
+#: C/gnobots2.xml:115(para)
+msgid "GNOME Documentation Project"
+msgstr "GNOME 文档项目"
+
+#: C/gnobots2.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"对于本文档的复制、分发和/或修改必须遵循自由软件基金会 (Free Software "
+"Foundation) 发布的 GNU 自由文档许可证 (GFDL) 版本 1.1 或更高版本，该许可证没"
+"有固定的部分、没有封面和背页文本。您可以在此<ulink type=\"help\" url=\"ghelp:"
+"fdl\">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副"
+"本。"
+
+#: C/gnobots2.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"本手册是在 GFDL 许可之下分发的 GNOME 手册集合的一部分。如果想要单独分发此手"
+"册，可以在手册中添加该许可证的一份副本然后分发，如该许可证的第 6 部分所述。"
+
+#: C/gnobots2.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 GNOME 文"
+"档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而"
+"表明它们是商标。"
+
+#: C/gnobots2.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"文档按“原样”提供，不提供任何明示或暗示的保证，包括但不限于：文档或文档的修改"
+"版本没有适销性方面的缺陷、适合特定目的的适用性，以及没有侵权行为。您将自行承"
+"担本文档以及文档修改版本的质量、准确性以及性能方面的风险。如果任何文档或文档"
+"修改版本存在缺陷，您(而不是最初的编写者、作者或撰写人)将承担所有必需的服务、"
+"维修或更正的费用。此免责声明是本许可证的重要组成部分。如果不接受此免责声明，"
+"那么您就没有权利使用任何文档或文档的修改版本；并且"
+
+#: C/gnobots2.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"无论在任何情况以及在任何法律理论下，本文档或文档修改版本的作者、最初的编写"
+"者、任何撰写人或任何分发者，或者任意这些方的任何提供者都不对任何人由于使用本"
+"文档或文档修改版本引起或带来的任何直接的、间接的、特殊的、偶然的或继发的损失"
+"承担任何民事(包括疏忽)、合同或其它方面的责任，这些损失包括但不限于信誉损失、"
+"工作停止、计算机失败或故障，或任何以及所有其它损失或由此引发的或与之相关的损"
+"失，即使这些方已被告知存在出现此类损失的可能性时也是如此。"
+
+#: C/gnobots2.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"本文档以及文档的修改版本都是在遵循 GNU 自由文档许可证的条款下提供，这表示具有"
+"以下含义：<placeholder-1/>"
+
+#: C/gnobots2.xml:65(firstname)
+msgid "Patanjali"
+msgstr "Patanjali"
+
+#: C/gnobots2.xml:66(surname)
+msgid "Somayaji"
+msgstr "Somayaji"
+
+#: C/gnobots2.xml:68(email)
+msgid "patanjali@mindless.com"
+msgstr "patanjali@mindless.com"
+
+#: C/gnobots2.xml:72(firstname)
+msgid "Mark"
+msgstr "Mark"
+
+#: C/gnobots2.xml:73(surname)
+msgid "Rae"
+msgstr "Rae"
+
+#: C/gnobots2.xml:75(email)
+msgid "m.rae@inpharmatica.co.uk"
+msgstr "m.rae@inpharmatica.co.uk"
+
+#: C/gnobots2.xml:96(revnumber)
+msgid "Robots Manual V2.8"
+msgstr "Robots Manual V2.8"
+
+#: C/gnobots2.xml:97(date)
+msgid "September 2004"
+msgstr "2004年9月"
+
+#: C/gnobots2.xml:99(para)
+msgid "Patanjali Somayaji <email>patanjali@mindless.com</email>"
+msgstr "Patanjali Somayaji <email>patanjali@mindless.com</email>"
+
+#: C/gnobots2.xml:102(para)
+msgid "Mark Rae <email>m.rae@inpharmatica.co.uk</email>"
+msgstr "Mark Rae <email>m.rae@inpharmatica.co.uk</email>"
+
+#: C/gnobots2.xml:109(revnumber)
+msgid "Robots Manual V2.9"
+msgstr "机器人小游戏手册2.9版"
+
+#: C/gnobots2.xml:110(date)
+msgid "August 2007"
+msgstr "2007年8月"
+
+#: C/gnobots2.xml:112(para)
+msgid "Claude Paroz <email>claude@2xlibre.net</email>"
+msgstr "Claude Paroz <email>claude@2xlibre.net</email>"
+
+#: C/gnobots2.xml:120(releaseinfo)
+msgid "This manual describes version 2.18 of Robots."
+msgstr "本手册讲述的是机器人小游戏手册2.18版。"
+
+#: C/gnobots2.xml:127(title)
+msgid "Feedback"
+msgstr "反馈"
+
+#: C/gnobots2.xml:128(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Robots</"
+"application> application or this manual, follow the directions in the <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
+"ulink>."
+msgstr ""
+"要报告关于<application>机器人</application>程序或使用手册中的缺陷，或者提出建"
+"议，请参照 <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME "
+"反馈页</ulink> 上的指导。"
+
+#: C/gnobots2.xml:139(primary)
+msgid "GNOME Robots"
+msgstr "GNOME 机器人"
+
+#: C/gnobots2.xml:146(title)
+msgid "Introduction"
+msgstr "介绍"
+
+#: C/gnobots2.xml:148(para)
+msgid ""
+"<application>GNOME Robots</application> is a game where you try and avoid a "
+"band of marauding robots which are, for no adequately explained reason, "
+"trying to kill you. It is based on the text-based robots game which can be "
+"found on a number of UNIX systems."
+msgstr ""
+"<application>GNOME 机器人</application>小游戏中，您要设法躲开一群四处劫掠，并"
+"试图杀死您的机器人。它是基于文本游戏的机器人，它可以在许多 UNIX 系统上找到。"
+
+#: C/gnobots2.xml:155(para)
+msgid ""
+"This new version includes two types of robots, movable junkheaps, multiple "
+"game configurations, user definable keyboard layouts, and sound, as well as "
+"all of the features which were present in the original GNOME Robots game."
+msgstr ""
+"新版本包括：两种类型的机器人、移动的废墟、多种游戏配置、自定义键盘快捷键、以"
+"及声音等，跟原来的 GNOME 机器人游戏一样好。"
+
+#: C/gnobots2.xml:162(para)
+msgid ""
+"To run <application>GNOME Robots</application>, select "
+"<menuchoice><guisubmenu>Games</guisubmenu><guimenuitem>Robots</guimenuitem></"
+"menuchoice> from the <guimenu>Main Menu</guimenu>, or type "
+"<command>gnobots2</command> on the command line."
+msgstr ""
+"要运行 <application>GNOME 机器人</application>，点 <guimenu>主菜单</"
+"guimenu>，然后选择 <menuchoice><guisubmenu>游戏</guisubmenu><guimenuitem>机器"
+"人</guimenuitem></menuchoice>，或者在命令行输入 <command>gnobots2</command>"
+
+#: C/gnobots2.xml:172(para)
+msgid ""
+"<application>GNOME Robots</application> is included in the <filename>gnome-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.18 of <application>GNOME Robots</"
+"application>."
+msgstr ""
+"<application>GNOME 机器人</application> 小游戏包含在 <filename>gnome-games</"
+"filename> 软件包内，它是 GNOME 桌面环境的一部分。本手册讲述的是"
+"<application>GNOME 机器人</application>小游戏2.18版。"
+
+#: C/gnobots2.xml:181(title)
+msgid "GNOME Robots Objective"
+msgstr "<application>GNOME 机器人</application>游戏任务"
+
+#: C/gnobots2.xml:182(para)
+msgid ""
+"The objective of GNOME Robots is quite simple. You are surrounded by a "
+"number of robots or other hostile adversaries. As you move about they will "
+"move directly towards you for every move that you make. Their goal is to "
+"kill you. Your goal is to kill all the robots on the board by taking "
+"advantage of their vulnerabilities."
+msgstr ""
+"<application>GNOME 机器人</application> 小游戏的任务非常简单，您的周围有许多"
+"机器人或者其他敌人，在您移动时，它们会直接朝您追过来，都想杀死您。您需要开动"
+"脑筋诱使它们相撞而杀死全部机器人。"
+
+#: C/gnobots2.xml:190(para)
+msgid ""
+"Robots are destroyed when they collide with each other, or when they collide "
+"with the debris of some previous collision. You die if a robot ends up right "
+"next to you."
+msgstr ""
+"机器人相撞时会变成废墟，或者撞到废墟上也会销毁。如果一个机器人抓住您就会杀死"
+"您。"
+
+#: C/gnobots2.xml:196(para)
+msgid ""
+"In some of the game configurations (you can choose from five different sets "
+"of rules), you can push the junkheaps around to form barricades to protect "
+"you. Also, if you are daring enough, you can Splat! the robots by pushing "
+"junkheaps on top of them for an additional bonus."
+msgstr ""
+"在一些游戏配置(您可以从五个不同的配置中选择)，您可以把废墟排在周围来保护自"
+"己。如果您足够大胆，您可以推动废墟撞毁机器人获得额外的奖励。"
+
+#: C/gnobots2.xml:201(para)
+msgid ""
+"You can also save yourself by teleporting yourself to a random location. "
+"Unfortunately, randomly teleporting means that you might end up being right "
+"next to a robot, so they can kill you when they make their move. Luckily, "
+"there are also safe teleports which will place you out of immediate danger, "
+"but there are only a limited supply of them. You can earn more free "
+"teleports as you go along (how you gain them depends on the chosen game), "
+"but typically you get one for each robot that is destroyed while you are "
+"'waiting', up to a maximum of 10. If you don't want to waste your saved-up "
+"safe teleports, you can choose to teleport randomly if you think it's safe "
+"enough."
+msgstr ""
+"您还可以随机传送自己到一个安全的地方。不幸的是，随机传送有可能正好把您传到机"
+"器人那里，从而被它们杀死。幸运的是，还有安全传送，可以把您传到安全的地方，但"
+"是安全传送有次数限制。您可以通过闯关赢得更多免费的传送点(如何获得取决于您选择"
+"的游戏)，通常是您用“等待”方式消灭了所有机器人，最多可以赢得10个。如果您不想浪"
+"费安全传送点，可以选择随机传送，如果您认为这样也是足够安全的。"
+
+#: C/gnobots2.xml:215(para)
+msgid ""
+"If you press the <guibutton>Wait</guibutton> button (see below) you will no "
+"longer be able to move until either all of the robots (which still move "
+"towards you) are gone, or you are killed. Doing this is risky, but may earn "
+"you extra safe teleports."
+msgstr ""
+"如果您点击 <guibutton>等待</guibutton> 按钮(看下面的讲解)，您将不能再移动直到"
+"所有机器人(仍然朝您移动的)都走完，或者您被杀死。冒这个险您可以羸得额外的安全"
+"传送点。"
+
+#: C/gnobots2.xml:222(para)
+msgid ""
+"If you manage to reach the point where more than half of the screen is "
+"occupied by robots, the number of robots will be reset to the starting "
+"amount, allowing you to continue."
+msgstr ""
+"如果您能设法穿越机器人控制的半个屏幕，到达对边的点，机器人的数量将会重置为开"
+"始的数量，让您接着玩下去。"
+
+#: C/gnobots2.xml:233(title)
+msgid "Using GNOME Robots"
+msgstr "使用 GNOME 机器人"
+
+#: C/gnobots2.xml:234(para)
+msgid ""
+"<application>GNOME Robots</application> is extremely simple to play. You can "
+"use either the mouse or the keyboard. This section describes basic usage of "
+"<application>GNOME Robots</application>."
+msgstr ""
+"<application>GNOME 机器人</application> 非常容易操作。您可以使用鼠标也可以使"
+"用键盘操作。本节讲述 <application>GNOME 机器人</application> 的基本操作方法。"
+
+#: C/gnobots2.xml:243(title)
+msgid "Basic usage"
+msgstr "基本操作"
+
+#: C/gnobots2.xml:251(title)
+msgid "GNOME Robots Main Window"
+msgstr "GNOME 机器人小游戏主窗口"
+
+#: C/gnobots2.xml:258(phrase)
+msgid "GNOME Robots Main Window."
+msgstr "GNOME 机器人小游戏的主窗口。"
+
+#: C/gnobots2.xml:244(para)
+msgid ""
+"Starting <application>GNOME Robots</application> opens the <interface>Main "
+"window</interface>, shown in <xref linkend=\"mainwindow-fig\"/>. "
+"<placeholder-1/>"
+msgstr ""
+"启动 <application>GNOME 机器人</application>，打开<interface>主窗口</"
+"interface>，显示 <xref linkend=\"mainwindow-fig\"/>。 <placeholder-1/>"
+
+#: C/gnobots2.xml:266(para)
+msgid ""
+"To start a new game, choose <guimenuitem>New</guimenuitem> in the "
+"<guimenu>Game</guimenu> menu or click on the <guibutton>New</guibutton> "
+"button on the toolbar."
+msgstr ""
+"要开始一个新游戏，点 <guimenu>游戏</guimenu> 菜单，选择 <guimenuitem>新建</"
+"guimenuitem>，或者点工具栏上的<guimenuitem>新建</guimenuitem> 按钮。"
+
+#: C/gnobots2.xml:272(para)
+msgid ""
+"To move, either click in the direction you want to move (the cursor will "
+"show you which way you will go) or press the appropriate key on the keyboard "
+"(keypad by default). Clicking on the little man will keep you still. To "
+"teleport (safely or unsafely), and to wait, use the buttons on the toolbar "
+"or use the items in the <guimenu>Move</guimenu> menu."
+msgstr ""
+"要移动位置，可以在移动的方向上点击鼠标(光标会显示您移动的方向)，或者按适当的"
+"按键(默认是小键盘)。在小人上点击保持原地。要进行传送(安全或非安全的)和等待，"
+"点击工具栏上的按钮，或者点击 <guimenu>移动</guimenu> 菜单里的对应项。"
+
+#: C/gnobots2.xml:288(title)
+msgid "Menus"
+msgstr "菜单"
+
+#: C/gnobots2.xml:289(para)
+msgid ""
+"The menu bar, located at the top of the <interface>game board</interface>, "
+"contains the following menus:"
+msgstr "菜单栏位于<interface>游戏面板</interface>的顶部，包含下面菜单项："
+
+#: C/gnobots2.xml:297(guimenu)
+msgid "Game"
+msgstr "游戏"
+
+#: C/gnobots2.xml:303(para)
+msgid ""
+"<menuchoice><shortcut><keysym>Ctrl-N</keysym></shortcut><guimenuitem>New</"
+"guimenuitem></menuchoice> — starts a new game of GNOME Robots."
+msgstr ""
+"<menuchoice><shortcut><keysym>Ctrl-N</keysym></shortcut><guimenuitem>新建</"
+"guimenuitem></menuchoice> — 开始一个新的 GNOME 机器人游戏。"
+
+#: C/gnobots2.xml:313(para)
+msgid ""
+"<menuchoice><guimenuitem>Scores</guimenuitem></menuchoice> — shows the "
+"higher scores."
+msgstr ""
+"<menuchoice><guimenuitem>得分</guimenuitem></menuchoice> — 显示得分排行榜。"
+
+#: C/gnobots2.xml:323(keysym)
+msgid "Ctrl-Q"
+msgstr "Ctrl-Q"
+
+#: C/gnobots2.xml:324(guimenuitem)
+msgid "Quit"
+msgstr "退出"
+
+#: C/gnobots2.xml:299(para)
+msgid "This menu contains three items: <placeholder-1/>"
+msgstr "这个菜单包含下列项：<placeholder-1/>"
+
+#: C/gnobots2.xml:334(guimenu)
+msgid "Move"
+msgstr "移动"
+
+#: C/gnobots2.xml:340(para)
+msgid "<guimenuitem>Teleport</guimenuitem>— teleports you in a safe location."
+msgstr "<guimenuitem>传送</guimenuitem>— 将您传送到一个安全的位置。"
+
+#: C/gnobots2.xml:346(para)
+msgid "<guimenuitem>Random</guimenuitem>— teleports you in a random location."
+msgstr "<guimenuitem>随机</guimenuitem>— 将您传送到一个随机的位置上。"
+
+#: C/gnobots2.xml:352(para)
+msgid "<guimenuitem>Wait</guimenuitem>— places you in wait mode."
+msgstr "<guimenuitem>等待</guimenuitem>— 将您设置为等候模式。"
+
+#: C/gnobots2.xml:336(para) C/gnobots2.xml:382(para)
+msgid "This menu contains: <placeholder-1/>"
+msgstr "这个菜单包括：<placeholder-1/>"
+
+#: C/gnobots2.xml:363(guimenu)
+msgid "Settings"
+msgstr "设置"
+
+#: C/gnobots2.xml:369(para)
+msgid ""
+"<guimenuitem>Preferences</guimenuitem> which brings up the preferences "
+"dialog box."
+msgstr "<guimenuitem>首选项</guimenuitem> 进入选项设置对话框。"
+
+#: C/gnobots2.xml:365(para)
+msgid ""
+"The <guimenu>Settings</guimenu> menu contains only one item: <placeholder-1/>"
+msgstr "<guimenu>设置</guimenu> 菜单只有一项：<placeholder-1/>"
+
+#: C/gnobots2.xml:380(guimenu)
+msgid "Help"
+msgstr "帮助"
+
+#: C/gnobots2.xml:386(para)
+msgid "<guimenuitem>Contents</guimenuitem>— shows this manual."
+msgstr "<guimenuitem>目录</guimenuitem>— 显示本手册。"
+
+#: C/gnobots2.xml:392(para)
+msgid ""
+"<guimenuitem>About</guimenuitem>— shows basic information about "
+"<application>GNOME Robots</application>, such as the author's name and the "
+"application version number."
+msgstr ""
+"<guimenuitem>关于</guimenuitem>— 显示 <application>GNOME 机器人</"
+"application> 的基本信息，如作者和程序版本。"
+
+#: C/gnobots2.xml:411(title)
+msgid "Using the keyboard"
+msgstr "使用键盘"
+
+#: C/gnobots2.xml:412(para)
+msgid ""
+"You can use the keyboard to control the little man. By default, the keys "
+"from the keypad are configured for the game. However you can customize the "
+"key mappings in the <guimenuitem>Keyboard</guimenuitem> tab in the "
+"<guimenuitem>Preferences</guimenuitem> dialog. To select a different key for "
+"a command, double-click on the line for that command and then press the key "
+"you want to use."
+msgstr ""
+"您可以用键盘来控制小人，默认是用小键盘来操作，当然您可以在 <guimenuitem>首选"
+"项</guimenuitem> 对话框的 <guimenuitem>键盘</guimenuitem> 标签中自定义。要设"
+"定其他按键，只需在相应的行上双击，然后输入要设定的按键。"
+
+#: C/gnobots2.xml:422(title)
+msgid "Default Key Mappings"
+msgstr "默认的键盘操作键"
+
+#: C/gnobots2.xml:429(title)
+msgid "Switch off the NumLock Key"
+msgstr "切换数字灯开关"
+
+#: C/gnobots2.xml:430(para)
+msgid "You may need to switch off the NumLock to make these work."
+msgstr "您需要先关闭数字灯，然后才能继续下面的操作。"
+
+#: C/gnobots2.xml:435(para)
+msgid "Up Left: <keycap>Home</keycap>"
+msgstr "向左上角移动： <keycap>Home</keycap>键(7)"
+
+#: C/gnobots2.xml:438(para)
+msgid "Up: <keycap>Up</keycap>"
+msgstr "向上移动：<keycap>上方向键</keycap>(8)"
+
+#: C/gnobots2.xml:441(para)
+msgid "Up Right: <keycap>Page Up</keycap>"
+msgstr "右上角：<keycap>Page Up</keycap>键(9)"
+
+#: C/gnobots2.xml:444(para)
+msgid "Left: <keycap>Left</keycap>"
+msgstr "向左移动：<keycap>左方向键</keycap>(4)"
+
+#: C/gnobots2.xml:447(para)
+msgid "Stand Still: <keycap>Begin</keycap>"
+msgstr "保持原地：<keycap>基准键</keycap>(5)"
+
+#: C/gnobots2.xml:450(para)
+msgid "Right: <keycap>Right</keycap>"
+msgstr "向右移动：<keycap>右方向键</keycap>(6)"
+
+#: C/gnobots2.xml:453(para)
+msgid "Down Left: <keycap>End</keycap>"
+msgstr "向左下角移动：<keycap>End</keycap>键(1)"
+
+#: C/gnobots2.xml:456(para)
+msgid "Down: <keycap>Down</keycap>"
+msgstr "向下移动：<keycap>下方向键</keycap>(2)"
+
+#: C/gnobots2.xml:459(para)
+msgid "Down Right: <keycap>Page Down</keycap>"
+msgstr "右下角：<keycap>Page Down</keycap>键(3)"
+
+#: C/gnobots2.xml:462(para)
+msgid "Teleport: <keycap>+</keycap>"
+msgstr "安全传送：<keycap>+</keycap>"
+
+#: C/gnobots2.xml:465(para)
+msgid "Randomly Teleport: <keycap>*</keycap>"
+msgstr "随机传送：<keycap>*</keycap>"
+
+#: C/gnobots2.xml:468(para)
+msgid "Wait: <keycap>Enter</keycap>"
+msgstr "等待：<keycap>Enter</keycap>"
+
+#: C/gnobots2.xml:425(para)
+msgid ""
+"By default, you use the numeric keypad on the right-hand side of the "
+"keyboard (not the separate arrow keys). <placeholder-1/><placeholder-2/>"
+msgstr ""
+"默认情况下，使用右边的数字小键盘操作(而不是四个方向键)。<placeholder-1/"
+"><placeholder-2/>"
+
+#: C/gnobots2.xml:482(title)
+msgid "Customizing GNOME Robots"
+msgstr "自定义 GNOME 机器人小游戏"
+
+#: C/gnobots2.xml:501(para)
+msgid ""
+"The safe moves option will help you to avoid being killed due to a mistake. "
+"If you try to make a move that would lead to your death when there is a safe "
+"move available, you will not be allowed to proceed. But be warned: if there "
+"was no safe move available, other than teleporting, the move will be allowed "
+"to proceed."
+msgstr ""
+"选中安全移动选项可以帮助您避免失误被杀死。如果您试图完成的一次移动，会使您被"
+"机器人杀死，而这时有安全的移动位置，那就不允许您移动到错误位置上。但是要注"
+"意：如果这时没有安全的可移动位置，将会允许您移动过去，而不是切换到传送操作。"
+
+#: C/gnobots2.xml:509(para)
+msgid ""
+"There is also a <quote>super safe mode</quote>. If you select this, you get "
+"beeped when there is no safe move and your only option is to teleport out."
+msgstr ""
+"还有一种 <quote>超级安全模式</quote>，如果您选中此项，在没有安全的可移动位置"
+"时，会发出警报。这时您只能选择把自己传送出去。"
+
+#: C/gnobots2.xml:516(para)
+msgid ""
+"If you select the sound checkbox the game will play sounds for various "
+"events throughout the game."
+msgstr "如果您打勾选中音乐选项，游戏当中会在不同事件时，发出不同的声音。"
+
+#: C/gnobots2.xml:522(para)
+msgid ""
+"The <quote>Splats</quote> checkbox selects whether you want the sound played "
+"and a small <quote>Splat!</quote> to appear on the screen."
+msgstr ""
+"选中 <quote>飞溅</quote> 复选框，当播放声音时，同时在屏幕上显示一个 <quote>飞"
+"溅</quote> 动画效果。"
+
+#: C/gnobots2.xml:491(para)
+msgid ""
+"<guimenuitem>Game</guimenuitem> — This page allows you to choose the type of "
+"game you want to play. The drop-down box at the top of the page allows you "
+"to choose from a number of predefined games. You can't change these options "
+"in the middle of a game, so they will be disabled then. There are also "
+"several options at the bottom of the dialog: <placeholder-1/>"
+msgstr ""
+"<guimenuitem>游戏类型</guimenuitem> — 在这里，您可以选择游戏的类型，点击下拉"
+"列表选择其中的游戏类型，在游戏进行当中您不能更改类型，这时显示为禁用。在对话"
+"框的底下还有几个选项：<placeholder-1/>"
+
+#: C/gnobots2.xml:533(para)
+msgid ""
+"<guimenuitem>Appearance</guimenuitem> — This page allows you to select the "
+"graphics used throughout the game from the list in the dropdown-box. You can "
+"also select the background colour from this tab."
+msgstr ""
+"<guimenuitem>外观</guimenuitem> — 在下拉列表中，您可以选择游戏图像主题，还可"
+"以选择背景色。"
+
+#: C/gnobots2.xml:543(para)
+msgid ""
+"<guimenuitem>Keyboard</guimenuitem> — This screen allows you to define your "
+"own keyboard controls. To select a different key for a command, double-click "
+"on the button for that command and then press the key you want to use."
+msgstr ""
+"<guimenuitem>键盘</guimenuitem> — 在这里，您可以自定义键盘操作按键。要设定一"
+"个操作按键，双击这个键，然后按一下您想设定的按键。"
+
+#: C/gnobots2.xml:483(para)
+msgid ""
+"You can modify the behaviour and appearance of the game by selecting "
+"<guimenuitem> Preferences</guimenuitem> under the <guimenu>Settings</"
+"guimenu> menu. This brings up a dialog with three tabs: <placeholder-1/>"
+msgstr ""
+"您可以在 <guimenu>设置</guimenu> 菜单中的  <guimenuitem> 首选项</"
+"guimenuitem> 对话框中，设定游戏的外观和操作，对话框包含三个标签："
+"<placeholder-1/>"
+
+#: C/gnobots2.xml:554(para)
+msgid ""
+"Any changes you make take effect immediately and are automatically saved."
+msgstr "所有更改将会立即生效并自动保存。"
+
+#: C/gnobots2.xml:558(para)
+msgid ""
+"You can design your own graphics for the game if you want. The graphics "
+"files are found in <filename class=\"directory\"> $PREFIX/share/gnome-games/"
+"gnobots2/pixmaps </filename>, where $PREFIX is the prefix into which GNOME "
+"was installed. This is usually either <filename class=\"directory\">/usr</"
+"filename> or <filename class=\"directory\">/usr/local</filename>."
+msgstr ""
+"您可以设计自己想要的图像背景，图片文件可以在 <filename class=\"directory\"> "
+"$PREFIX/share/gnome-games/gnobots2/pixmaps </filename> 文件夹中找到，这里的 "
+"$PREFIX 是 GNOME 安装的前缀(prefix)，通常是 <filename class=\"directory\">/"
+"usr</filename> 或 <filename class=\"directory\">/usr/local</filename>。"
+
+#: C/gnobots2.xml:569(para)
+msgid ""
+"Each character is 16x16 pixels and there are 14 of them arranged in a PNG "
+"file which is 224x16 pixels in size. You can look at the existing files to "
+"see the order in which they must be arranged to produce the correct animated "
+"sequences."
+msgstr ""
+"每个角色是 16×16 像素，有14个 PNG 文件是224×16像素的，您可以查看一下已有的文"
+"件，找到它们的顺序，它们必须是正确的动画顺序。"
+
+#: C/gnobots2.xml:575(para)
+msgid ""
+"Any graphics files which are placed in the directory are auto-detected, so "
+"you don't need to alter any configuration files. You can also define your "
+"own game configurations by creating extra <filename> .cfg </filename> files "
+"which are stored in the <filename class=\"directory\"> $PREFIX/share/gnome-"
+"games/gnobots2/games </filename> directory."
+msgstr ""
+"图像文件都放在自动检测的文件夹中，因此您不需要修改任何配置文件。您也可以通过"
+"创建额外的 <filename> .cfg </filename> 文件，定义自己的游戏配置选项，这个文件"
+"存放在 <filename class=\"directory\"> $PREFIX/share/gnome-games/gnobots2/"
+"games </filename> 文件夹中。"
+
+#: C/gnobots2.xml:607(title)
+msgid "Authors"
+msgstr "作者"
+
+#: C/gnobots2.xml:608(para)
+msgid ""
+"<application>GNOME Robots</application> was written by Mark Rae (<email>m."
+"rae@inpharmatica.co.uk</email>). This manual was written by Patanjali "
+"Somayaji (<email>patanjali@mindless.com</email>), from the original HTML "
+"documentation by Mark Rae. To report a bug or make a suggestion regarding "
+"this application or this manual, follow the directions in this <ulink url="
+"\"ghelp:user-guide?feedback-bugs\" type=\"help\">document</ulink>."
+msgstr ""
+"<application>GNOME 机器人</application>小游戏由 Mark Rae (<email>m."
+"rae@inpharmatica.co.uk</email>) 编写。本文档由 Patanjali Somayaji "
+"(<email>patanjali@mindless.com</email>) 从原始的 HTML 文档(Mark Rae 编写)改编"
+"而来。要报告本程序或本手册的缺陷或者提出建议，请参照 <ulink url=\"ghelp:user-"
+"guide?feedback-bugs\" type=\"help\">文档</ulink> 上的指导。"
+
+#: C/gnobots2.xml:635(title)
+msgid "License"
+msgstr "许可协议"
+
+#: C/gnobots2.xml:636(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
+"\"><citetitle>GNU General Public License</citetitle></ulink> as published by "
+"the Free Software Foundation; either version 2 of the License, or (at your "
+"option) any later version."
+msgstr ""
+"本程序是自由软件，您可以在遵守自由软件基金会发布的 <ulink type=\"help\" url="
+"\"gnome-help:gpl\"><citetitle>GNU 通用许可证</citetitle></ulink> 第2版或更高"
+"(如您所愿)版本下，重新分发和/或修改它。"
+
+#: C/gnobots2.xml:644(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"本程序的发布意图是希望它有所用处，但请注意它没有任何担保，甚至不包括商业用"
+"途、以及特殊目的保证。更多相关细节，请参阅 <citetitle>GNU 通用公共许可证</"
+"citetitle>。"
+
+#: C/gnobots2.xml:650(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>51 Franklin Street, Fifth Floor</"
+"street><city>Boston</city>, <state>MA</state><postcode>02110-1301</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"在<citetitle>GNOME 用户指南</citetitle> 的附录中包含了一份 <citetitle>GNU 通"
+"用许可证</citetitle>的副本，您也可以通过访问自由软件基金会的<ulink type="
+"\"http\" url=\"http://www.fsf.org\">网站</ulink>上获得 <citetitle>GNU 通用许"
+"可证</citetitle>的副本，或者写信给 <address> Free Software Foundation, Inc. "
+"<street>59 Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</"
+"state><postcode>02111-1307</postcode><country>USA</country></address> 来索"
+"取。"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/gnobots2.xml:0(None)
+msgid "translator-credits"
+msgstr "TeliuTe <teliute@163.com>, 2010"

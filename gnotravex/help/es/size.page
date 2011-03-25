@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="size" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#play" group="three"/>
+    <desc>Cambiar el tamaño del tablero de juego.</desc>
+    <revision pkgversion="2.30" version="0.1" date="2009-12-18" status="draft"/>
+    <credit type="author">
+      <name>Milo Casagrande</name>
+      <email>milo@ubuntu.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+  <title>Tamaño del tablero de juego</title>
+
+  <p>Para cambiar el tamaño del tablero de juego, para poder aumentar o reducir la complejidad de la partida, elija <gui>Tamaño</gui> de la barra de menú principal y después seleccione el tamaño del tablero.</p>
+  <p>Puede seleccionar cinco dimensiones diferentes, desde 2x2 hasta 6x6. El tamaño predeterminado es 3x3.</p>
+  <note style="tip">
+    <p>Si las piezas son muy pequeñas, al redimensionar la ventana se cambiará el tamaña de las piezas.</p>
+  </note>
+</page>

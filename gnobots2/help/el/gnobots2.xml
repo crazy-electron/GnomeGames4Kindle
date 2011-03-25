@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "August 2007">
+<!ENTITY app "<application>Robots</application>">
+<!ENTITY appname "Robots">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="el"> 
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Εγχειρίδιο του <application>Ρομπότ</application></title>
+
+    <abstract role="description">
+      <para>Το Ρομπότ είναι μια εκδοχή με γραφικά του αυθεντικού παιχνιδιού ρομπότ που βασιζόταν σε χαρακτήρες, και το οποιό μπορεί να βρεθεί σε αρκετά συστήματα UNIX. Ο παίκτης πρέπει να ξεγελάσει τα ρομπότ που τον/την κυνηγούν κάνοντάς τα να πέσουν το ένα πάνω στο άλλο.</para>
+    </abstract>
+
+      <copyright>
+        <year>2001</year>
+        <holder>Patanjali Somayaji, Mark Rae</holder>
+      </copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+      <year>2000</year>
+      <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>Έργο τεκμηρίωσης του GNOME</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Επιτρέπεται η αντιγραφή, αναδιανομή και/η τροποποίηση αυτού του εγγράφου υπό τους όρους της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), Έκδοση 1.1 ή νεότερη που εκδόθηκε από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Αμετάβλητα Τμήματα, χωρίς Κείμενο Εξωφύλλου, και χωρίς Κείμενο Οπισθοφύλλου. Μπορείτε να βρείτε ένα αντίγραφο της GFDL σε αυτό το <ulink type="help" url="ghelp:fdl">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανέμεται με αυτό το εγχειρίδιο.</para>
+         <para>Το εγχειρίδιο αυτό είναι τμήμα της συλλογής εγχειριδίων GNOME που διανέμεται υπό την άδεια GFDL. Αν επιθυμείτε να διανήμετε το παρόν εγχειρίδιο χωριστά από την συλλογή, μπορείτε να το κάνετε προσθέτοντας ένα αντίγραφο της άδειας στο εγχειρίδιο, όπως περιγράφεται στο τμήμα 6 της άδειας.</para>
+
+	<para>Πολλά από τα ονόματα που χρησιμοποιούνται από επιχειρήσεις για να διακρίνουν τα προϊόντα τους και τις υπηρεσίες ζητούνται σαν εμπορικά σήματα. Όπου εμφανίζονται αυτά τα ονόματα σε κάποια τεκμηρίωση του GNOME, και τα μέλη του GNOME Documentation Project γνωρίζουν για αυτά τα εμπορικά σήματα, τότε τα ονόματα είναι με κεφαλαία γράμματα ή με αρχικά κεφαλαία γράμματα.</para>
+
+	<para>τΟ ΕΓΓΡΑΦΟ ΚΑΙ ΟΙ ΤΡΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ ΕΛΕΥΘΕΡΗΣ ΑΔΕΙΑΣ ΤΕΚΜΗΡΙΩΣΗΣ GNU ΜΕ ΤΙΣ ΕΠΙΠΛΕΟΝ ΓΝΩΣΤΟΠΟΙΗΣΕΙΣ: <orderedlist>
+		<listitem>
+		  <para>Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ ΠΑΡΕΧΕΤΑΙ "ΩΣ ΕΧΕΙ", ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ ΚΑΝΕΝΟΣ ΕΙΔΟΥΣ, ΕΚΦΡΑΣΜΕΝΗ 'Η ΝΟΟΥΜΕΝΗ, ΠΕΡΙΛΑΜΒΑΝΟΜΕΝΩΝ, ΧΩΡΙΣ ΠΕΡΙΟΡΙΣΜΟ, ΕΓΓΥΗΣΕΩΝ ΟΤΙ ΤΟ ΕΓΓΡΑΦΟ 'Η ΠΑΡΑΛΛΑΓΕΣ ΤΟΥ ΕΓΓΡΑΦΟΥ ΕΙΝΑΙ ΕΛΕΥΘΕΡΑ ΚΑΘΕ ΕΛΑΤΤΩΜΑΤΟΣ, ΕΜΠΟΡΕΥΣΙΜΑ, ΚΑΤΑΛΛΗΛΑ ΓΙΑ ΕΝΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ, Η ΜΗ-ΠΑΡΑΒΑΙΝΟΝΤΑ. Η ΕΥΘΥΝΗ ΓΙΑ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ, ΚΑΙ ΑΠΟΔΟΣΗ ΤΟΥ ΕΓΓΡΑΦΟΥ ΕΙΝΑΙ ΑΠΟΚΛΕΙΣΤΙΚΑ ΔΙΚΗ ΣΑΣ. ΑΝ ΟΠΟΙΟΔΗΠΟΤΕ ΕΓΓΡΑΦΟ Η ΠΑΡΑΛΛΑΓΗ ΤΟΥΑΠΟΔΕΙΚΤΟΥΝ ΕΛΑΤΤΩΜΑΤΙΚΑ ΜΕ ΟΠΟΙΟΔΗΠΟΤΕ ΤΡΟΠΟ, ΕΣΕΙΣ (ΚΑΙ ΟΧΙ Ο ΑΡΧΙΚΟΣ ΣΥΓΓΡΑΦΕΑΣ 'Η ΟΠΟΙΟΣΔΗΠΟΤΕ ΣΥΜΒΑΛΛΟΝΤΑΣ) ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΟ ΚΟΣΤΟΣ ΟΠΟΙΑΣΔΗΠΟΤΕ ΑΝΑΓΚΑΙΑΣ ΥΠΗΡΕΣΙΑΣ, ΕΠΙΣΚΕΥΗΣ 'Η ΔΙΟΡΘΩΣΗΣ. Η ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ ΠΟΥ ΣΥΝΟΔΕΥΕΙ ΑΥΤΗ ΤΗΝ ΤΕΚΜΗΡΙΩΣΗ ΕΙΝΑΙ ΑΝΑΠΟΣΠΑΣΤΟ ΚΟΜΜΑΤΙ ΑΥΤΗΣ. ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ. ΚΑΙ</para>
+		</listitem>
+		<listitem>
+		  <para>ΚΑΙ ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΣΕ ΚΑΜΙΑ ΝΟΜΟΛΟΓΙΑ ΑΣΤΙΚΟΥ ΑΔΙΚΗΜΑΤΟΣ (ΠΕΡΙΛΑΜΒΑΝΟΜΕΝΗΣ ΕΚΕΙΝΟΥ ΤΗΣ ΑΜΕΛΕΙΑΣ), ΣΥΜΒΟΛΑΙΟΥ Ή ΑΛΛΟΥ, Ο ΣΥΝΤΑΚΤΗΣ, Ο ΑΡΧΙΚΟΣ ΣΥΓΓΡΑΦΕΑΣ, ΟΠΟΙΟΣΔΗΠΟΤΕ ΣΥΝΕΡΓΑΤΗΣ Ή ΟΠΟΙΟΣΔΗΠΟΤΕ ΔΙΑΝΟΜΕΑΣ ΤΟΥ ΕΓΓΡΑΦΟΥ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ ΤΟΥ ΕΓΓΡΑΦΟΥ, Ή ΟΠΟΙΣΔΗΠΟΤΕ ΠΡΟΜΗΘΕΥΤΗΣ ΟΠΟΙΟΥΔΗΠΟΤΕ ΕΚ ΤΩΝ ΑΝΩΤΕΡΩ ΠΡΟΣΩΠΩΝ ΕΙΝΑΙ ΥΠΕΥΘΥΝΟΣ ΕΝΑΝΤΙ ΟΙΟΥΔΗΠΟΤΕ ΠΡΟΣΩΠΟΥ ΓΙΑ ΟΠΟΙΑΔΗΠΟΤΕ ΑΜΕΣΗ, ΕΜΜΕΣΗ, ΙΔΙΑΙΤΗΕΡΗ, ΑΤΥΧΗ Ή ΣΥΝΕΠΑΓΟΜΕΝΗ ΒΛΑΒΗ ΟΙΟΥΔΗΠΟΤΕ ΧΑΡΑΚΤΗΡΑ ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΩΝ, ΧΩΡΙΣ ΠΕΡΙΟΡΙΣΜΟΥΣ, ΒΛΑΒΕΣ ΕΞΑΙΤΙΑΣ ΑΠΩΛΕΙΑΣ ΠΕΛΑΤΕΙΑΣ, ΣΤΑΣΗ ΕΡΓΑΣΙΑΣ, ΑΣΤΟΧΙΑ Ή ΚΑΚΗ ΛΕΙΤΟΥΡΓΙΑ ΥΠΟΛΟΓΙΣΤΗ, Ή ΟΠΟΙΑΔΗΠΟΤΕ ΚΑΙ ΚΑΘΕ ΑΛΛΗ ΒΛΑΒΗ Ή ΑΠΩΛΕΙΑ ΠΟΥ ΘΑ ΕΓΕΙΡΕΙ Ή ΣΧΕΤΙΖΕΤΑΙ ΜΕ ΤΗΝ ΧΡΗΣΗ ΤΟΥ ΕΓΓΡΑΦΟΥ ΚΑΙ ΟΠΟΙΑΣΔΗΠΟΤΕ ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ ΤΟΥ ΕΓΓΡΑΦΟΥ, ΑΚΟΜΗ ΚΑΙ ΑΝ ΚΑΠΟΙΟ ΑΠΟ ΑΥΤΑ ΤΑ ΠΡΟΣΩΠΑ ΕΙΝΑΙ ΕΝΗΜΕΡΟ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΠΡΟΚΛΗΣΗΣ ΤΕΤΟΙΩΝ ΒΛΑΒΩΝ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Patanjali</firstname> 
+	<surname>Somayaji</surname> 
+	<affiliation> 
+	  <address> <email>patanjali@mindless.com</email> </address> 
+	</affiliation> 
+      </author> 
+      <author> 
+	<firstname>Mark</firstname> 
+	<surname>Rae</surname> 
+	<affiliation> 
+	  <address> <email>m.rae@inpharmatica.co.uk</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Εγχειρίδιο του Ρομπότ, Έκδοση 2.8</revnumber> 
+	<date>Σεπτέμβριος 2004 </date> 
+	<revdescription> 
+	  <para role="author">Patanjali Somayaji <email>patanjali@mindless.com</email></para>
+	  <para role="author">Mark Rae <email>m.rae@inpharmatica.co.uk</email>COPYING-DOCS</para>
+	  <para role="publisher">Έργο τεκμηρίωσης του GNOME</para>
+	</revdescription> 
+      </revision> 
+      <revision> 
+	<revnumber>Εγχειρίδιο του Ρομπότ, Έκδοση 2.9</revnumber> 
+	<date>Αύγουστος 2007</date> 
+	<revdescription> 
+	  <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+	  <para role="publisher">Έργο τεκμηρίωσης του GNOME</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.18 του Ρομπότ.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Ανάδραση</title> 
+      <para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με την εφαρμογή <application>Ρομπότ</application> ή αυτό το έγγραφο, ακολουθήστε τις  οδηγίες στη <ulink url="ghelp:user-guide?feedback-bugs" type="help">σελίδα ανάδρασης του GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME Ρομπότ</primary> 
+  </indexterm>
+
+   <!-- ============= Document Body ============================= -->
+
+   <!-- ============= Introduction ============================== -->
+   <sect1 id="intro">
+     <title>Εισαγωγή</title>
+
+     <para>Το <application>Ρομπότ</application> είναι ένα παιχνίδι στο οποίο προσπαθείτε να αποφύγετε μια συμμορία επιτιθέμενων ρομπότ τα οποία, για κάποια ανεξιχνίαστη αιτία, προσπαθούν να σας σκοτώσουν. Βασίζεται στο παιχνίδι ρομπότ με χαρακτήρες κειμένου που μπορεί να βρεθεί σε αρκετά UNIX συστήματα.</para>
+     <para>Αυτή η καινούρια έκδοση περιλαμβάνει δυο νέους τύπους ρομπότ, κινούμενους σκουπιδοντενεκέδες, πολλαπλές ρυθμίσεις του παιχνιδιού, παραμετροποιήσιμες διατάξεις πληκτρολογίου, και ήχο, όπως επίσης και όλα τα χαρακτηριστικά που υπήρχαν στο αυθεντικό παιχνίδι Ρομπότ.</para>
+
+     <para>Για να εκτελέσετε το <application>Ρομπότ</application> επιλέξτε  <menuchoice><guisubmenu>Παιχνίδια</guisubmenu><guimenuitem>Ρομπότ</guimenuitem></menuchoice> από το <guimenu>Κυρίως μενού</guimenu>, ή πληκτρολογήστε <command>gnobots2</command> στη γραμμή εντολής.</para>
+
+     <para>Το <application>GNOME Ρομπότ</application> περιλαμβάνεται στο πακέτο <filename>gnome-games</filename>, το οποίο είναι μέρος του περιβάλλοντος εργασίας GNOME. Αυτό το έγγραφο περιγράφει την έκδοση 2.18 του <application>GNOME Ρομπότ</application>.</para>
+   </sect1>
+ 
+   <sect1 id="objective">
+     <title>Αντικειμενικός σκοπός του Ρομπότ</title>
+     <para>Ο αντικειμενικός σκοπός του Ρομπότ είναι απλός. Είστε περικυκλωμένοι από μερικά ρομπότ και άλλους εχθρικούς παράγοντες. Καθώς κινείστε θα κινούνται κι αυτά κατ' ευθείαν προς εσάς σε κάθε κίνηση που κάνετε. Ο στόχος τους είναι να σας σκοτώσουν. Ο δικός σας στόχος είναι να σκοτώσετε όλα τα ρομπότ στο ταμπλώ εκμεταλλευόμενοι τις αδυναμίες τους.</para>
+   
+     <para>Τα ρομπότ καταστρέφονται όλα αλληλοσυγκρούονται, ή όταν συγκρούονται στα συντρίμια μιας προηγούμενης σύγκρουσης. Εσείς πεθαίνετε όταν ένα ρομπότ βρεθεί ακριβώς δίπλα σας.</para>
+
+     <para>Σε μερικές ρυθμίσεις του παιχνιδιού (μπορείτε να διαλέξετε ανάμεσα σε πέντε σετ κανόνων), μπορείτε να σπρώξετε τους σκουπιδοντενεκέδες και να δημιουργήσετε οδοφράγματα που θα σας προστατεύουν. Επίσης, αν είστε αρκετά τολμηρός, μπορείτε να χρησιμοποιήσετε το Λιώσιμο! σπρώχνοντας τους σκουπιδοντενεκέδες πάνω στα ρομπότ για μερικούς επιπλέον βαθμούς.</para>
+     <para>Μπορείτε επίσης να σωθείτε αν τηλεμεταφερθείτε σε μια τυχαία τοποθεσία. Δυστυχώς, η τυχαία τηλεμεταφορά σημαίνει ότι μπορεί να καταλήξετε ακριβώς δίπλα σε ένα ρομπότ, οπότε και μπορούν να σας σκοτώσουν όταν κάνουν την κίνησή τους. Ευτυχώς, υπάρχουν και ασφαλείς τηλεμεταφορές που θα σας τοποθετήσουν μακριά από άμεσο κίνδυνο, αλλά ο αριθμός τους είναι περιορισμένος. Μπορείτε να κερδίσετε περισσότερες τηλεμεταφορές καθώς προχωράτε (ο τρόπος που τις κερδίζετε εξαρτάται από τον τύπο παιχνιδιού), αλλά τυπικά θα κερδίζετε μία για κάθε ρομπότ που καταστρέφεται ενώ "αναμένετε", με μέγιστες τις δέκα. Αν δε θέλετε να σπαταλήσετε τις αποθηκευμένες ασφαλείς τηλεμεταφορές, μπορείτε να επιλέξετε να τηλεμεταφερθείτε τυχαία αν νομίζετε ότι είναι αρκετά ασφαλές.</para>
+   
+     <para>Αν πατήσετε την <guibutton>Αναμονή</guibutton> (δείτε πιο κάτω) δε θα μπορείτε να κινηθείτε, είτε μέχρι όλα τα ρομπότ (που συνεχίζουν να κινούνται προς εσάς) έχουν σκοτωθεί, ή μέχρι εσείς να σκοτωθείτε. Η Αναμονή είναι επικύνδυνη, αλλά μπορεί να κερδίσετε μερικές επιπλέον ασφαλείς τηλεμεταφορές.</para>
+   
+     <para>Αν καταφέρετε να φτάσετε στο σημείο στο οποίο περισσότερη από τη μισή οθόνη καταλαμβάνεται από ρομπότ, τότε ο αριθμός των ρομπότ θα επανέλθει στον αρχικό, επιτρέποντάς σας να συνεχίσετε.</para>
+  </sect1>
+
+
+  <!-- ================ Usage ================================ -->
+  <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="usage">
+    <title>Χρησιμοποιώντας το Ρομπότ</title>
+    <para>Το <application>GNOME Ρομπότ</application> είναι πολύ απλό. Μπορείτε να χρησιμοποιήσετε είτε το ποντίκι είτε το πληκτρολόγιο. Αυτό το τμήμα περιγράφει τη βασική χρήση του <application>GNOME Ρομπότ</application>.</para>
+
+    <!-- ========= Basic Usage =========================== -->
+    <sect2 id="mainwin">
+      <title>Βασική χρήση</title>
+      <para>Η εκκίνηση του <application>Ρομπότ</application> ανοίγει το <interface>Κύριο παράθυρο</interface>, το οποίο φαίνεται στην <xref linkend="mainwindow-fig"/>. <figure id="mainwindow-fig">
+	  <title>Το κύριο παράθυρο του Ρομπότ</title>
+	  <screenshot>
+	  <mediaobject> 
+ 	   <imageobject>
+ 	 <imagedata fileref="figures/gnobots2-main.png" format="PNG" srccredit="Patanjali"/>
+ 	   </imageobject>
+ 	   <textobject> 
+ 	     <phrase>Το κύριο παράθυρο του Ρομπότ.</phrase> 
+ 	   </textobject> 
+ 	 </mediaobject>
+	  </screenshot>
+	</figure></para> 
+
+      <para>Για να αρχίσετε ένα νέο παιχνίδι, επιλέξτε το <guimenuitem>Νέο</guimenuitem> στο μενού <guimenu>Παιχνίδι</guimenu> ή πατήστε στο κουμπί <guibutton>Νέο</guibutton> στη μπάρα εργαλείων.</para>
+
+      <para>Για να κινηθείτε, είτε πατήστε στη διεύθυνση που θέλετε να κινειθείτε (το βελάκι θα σας δείξει προς ποιά κατεύθυνση θα πάτε) είτε πατήστε το αντίστοιχο κουμπί στο πληκτρολόγιο (εξ ορισμού το αριθμητικό). Πατώντας στο ανθρωπάκι θα μείνετε ακίνητοι. Για να τηλεμεταφερθείτε (με ασφάλεια ή χωρίς), και για να αναμένετε, χρησιμοποιήστε τα κουμπιά στη μπάρα εργαλείων ή τα αντικείμενα στο μενού <guimenu>Μετακίνηση</guimenu>.</para>
+    </sect2>
+  </sect1>
+    
+
+  
+  <!-- ========= Menus =========================== --> 
+  
+   <sect1 id="menubar">
+    <title>Μενού</title>
+    <para>Η μπάρα μενού, που βρίσκεται στο πάνω μέρος του <interface>ταμπλώ</interface>, περιέχει τα ακόλουθα μενού:</para>
+
+
+    <variablelist>
+      <varlistentry>
+        <term><guimenu>Παιχνίδι</guimenu></term>
+        <listitem>
+        <para>Το μενού περιέχει τρία αντικείμενα: <itemizedlist>	
+            <listitem>
+	    <para><menuchoice><shortcut><keysym>Ctrl-N</keysym></shortcut><guimenuitem>Νέο</guimenuitem></menuchoice> — ξεκινάει ένα νέο παιχνίδι Ρομπότ.</para>
+            </listitem>     
+       
+	    <listitem>
+	    <para><menuchoice><guimenuitem>Βαθμολογίες</guimenuitem></menuchoice> — δείχνει τις ψηλότερες βαθμολογίες.</para>
+            </listitem>
+
+       	    <listitem>
+            <para>
+              <menuchoice>
+              <shortcut><keysym>Ctrl-Q</keysym></shortcut>
+              <guimenuitem>Έξοδος</guimenuitem>
+              </menuchoice>
+            </para>
+            </listitem>
+          </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>Μετακίνηση</guimenu></term>
+        <listitem>
+        <para>Αυτό το μενού περιέχει: <itemizedlist>
+          <listitem>
+            <para><guimenuitem>Τηλεμεταφορά</guimenuitem>— σας τηλεμεταφέρει σε μια ασφαλή τοποθεσία.</para>
+          </listitem>
+          <listitem>
+          <para><guimenuitem>Τυχαία</guimenuitem>— σας τηλεμεταφέρει σε μια τυχαία τοποθεσία.</para>
+          </listitem>
+          <listitem>
+          <para><guimenuitem>Αναμονή</guimenuitem>— σας βάζει σε κατάσταση αναμονής.</para>
+          </listitem>
+        </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>Ρυθμίσεις</guimenu></term>
+	<listitem>
+	<para>Το μενού <guimenu>Ρυθμίσεις</guimenu> περιέχει μόνο ένα αντικείμενο: <itemizedlist>
+	    <listitem>
+	    <para><guimenuitem>Προτιμήσεις</guimenuitem>το οποίο ανοίγει το διάλογο προτιμήσεων.</para>
+	    </listitem>
+	  </itemizedlist></para>
+	</listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>Βοήθεια</guimenu></term>
+        <listitem>
+        <para>Αυτό το μενού περιέχει: <itemizedlist>
+          <listitem>
+            <para><guimenuitem>Περιεχόμενα</guimenuitem>— εμφανίζει αυτό το εγχειρίδιο.</para>
+          </listitem>
+          <listitem>
+          <para><guimenuitem>Περί</guimenuitem>— δείχνει βασικές πληροφορίες για το <application>GNOME Ρομπότ</application>, όπως το όνομα του δημιουργού και τον αριθμό έκδοσης της εφαρμογής.</para>
+          </listitem>
+        </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect1>
+ 
+ <!-- =========Using the Keyboard============== -->
+ 
+  
+  <sect1 id="keyboard">
+    <title>Χρήση του πληκτρολογίου</title>
+    <para>Μπορείτε να χρησιμοποιείτε το πληκτρολόγιο για να ελέγχετε το ανθρωπάκι. Εξ ορισμού, τα πλήκτρα από το αριθμητικό πληκτρολόγιο είναι ρυθμισμένα για το παιχνίδι. Ωστόσο, μπορείτε να τροποποιήσετε τις αναθέσεις πλήκτρων στην καρτέλα <guimenuitem>Πληκτρολόγιο</guimenuitem> στο διάλογο <guimenuitem>Προτιμήσεις</guimenuitem>. Για να επιλέξετε ένα διαφορετικό πλήκτρο για μια εντολή, κάντε διπλό κλικ στη γραμμή για εκείνη την εντολή και πατήστε το πλήκτρο που θέλετε να χρησιμοποιείτε.</para>
+
+      <sect2 id="default-keys">     
+      <title>Προεπιλεγμένες αναθέσεις πλήκτρων</title>
+      <para>Εξ ορισμού, χρησιμοποιείτε τον αριθμητικό πληκτρολόγιο στα δεξιά του πληκτρολογίου (όχι τα ξεχωριστά βελάκια). <note>
+        <title>Κλείστε το πλήκτρο NumLock</title>
+          <para>Μπορεί να χρειαστεί να κλείσετε το πλήκτρο NumLock για να δουλέψουν αυτά.</para>
+        </note><orderedlist>
+          <listitem><para>Πάνω αριστερά: <keycap>Home</keycap></para></listitem> 
+          <listitem><para>Πάνω: <keycap>Πάνω</keycap></para></listitem>
+          <listitem><para>Πάνω δεξιά: <keycap>Page Up</keycap></para></listitem>
+          <listitem><para>Αριστερά: <keycap>Αριστερά</keycap></para></listitem>
+          <listitem><para>Μείνε ακίνητος: <keycap>Begin</keycap></para></listitem>
+          <listitem><para>Δεξιά: <keycap>Δεξιά</keycap></para></listitem>
+          <listitem><para>Κάτω αριστερά: <keycap>End</keycap></para></listitem>
+          <listitem><para>Κάτω: <keycap>Κάτω</keycap></para></listitem>
+          <listitem><para>Κάτω δεξιά: <keycap>Page Down</keycap></para></listitem>
+          <listitem><para>Τηλεμεταφορά: <keycap>+</keycap></para></listitem>
+          <listitem><para>Τυχαία τηλεμεταφορά: <keycap>*</keycap></para></listitem>
+          <listitem><para>Αναμονή: <keycap>Enter</keycap></para></listitem>
+        </orderedlist></para>	  
+    </sect2>
+
+      
+  </sect1>
+   
+  <!-- ============= Customization ============================= -->
+  
+  <sect1 id="customization">
+    <title>Εξατομίκευση του GNOME Ρομπότ</title>
+    <para>Μπορείτε να τροποποιήσετε τη συμπεριφορά και την εμφάνιση του παιχνιδιού επιλέγοντας <guimenuitem>Προτιμήσεις</guimenuitem> από το μενού <guimenu>Ρυθμίσεις</guimenu>. Αυτό θα ανοίξει ένα διάλογο με τρεις καρτέλες: <itemizedlist>
+        <listitem>
+        <para><guimenuitem>Παιχνίδι</guimenuitem> — σ' αυτή τη σελίδα μπορείτε να διαλέξετε τον τύπο του παιχνιδιού που θέλετε να παίξετε. Η αναδιπλούμενη λίστα στο πάνω μέρος της σελίδας σας επιτρέπει να διαλέξετε ανάμεσα σε ένα αριθμό από προσδιορισμένα παιχνίδια. Δε μπορείτε να αλλάξετε αυτή την επιλογή στη μέση ενός παιχνιδιού, οπότε και θα είναι απενεργοποιημένη. Υπάρχουν επίσης μερικές επιλογές στο κάτω μέρος του διαλόγου: <orderedlist>
+          <listitem><para>Η επιλογή Χρήση ασφαλών κινήσεων θα σας βοηθήσει να αποφύγετε το θάνατο κατά λάθος. Αν προσπαθήσετε να κάνετε μια κίνηση που θα οδηγήσει στο θάνατό σας ενώ υπάρχει άλλη ασφαλής κίνηση διαθέσιμη, δε θα μπορείτε να προχωρήσετε. Αλλά προσέξτε: αν δεν υπάρχει κάποια ασφαλής κίνηση διαθέσιμη, εκτός από την τηλεμεταφορά, τότε η λανθασμένη σας κίνηση θα εκτελεστεί.</para></listitem>
+          <listitem><para>Υπάρχει επίσης μια λειτουργία <quote>υπερασφαλών κινήσεων</quote>. Αν την επιλέξετε, θα ακούγεται ένα μπιπ όταν δεν υπάρχει καμμιά ασφαλής κίνηση και η μόνη σας επιλογή είναι η τηλεμεταφορά.</para></listitem>
+          <listitem><para>Αν επιλέξετε την Ενεργοποίηση ήχων τότε θα ακούγονται διάφοροι ήχοι για διάφορα γεγονότα κατά τη διάρκεια του παιχνιδιού.</para></listitem>
+          <listitem><para>Η επιλογή σπλατ ελέγχει κατά πόσο θα ακούγεται ένας ήχος και θα εμφανίζεται ένα <quote>Splat!</quote> στην οθόνη.</para></listitem>
+        </orderedlist></para>
+	</listitem>
+        <listitem>
+        <para><guimenuitem>Εμφάνιση</guimenuitem> — Αυτή η σελίδα σας επιτρέπει να επιλέξετε τα γραφικά που θα χρησιμοποιούνται στο παιχνίδι από την αναδιπλούμενη λίστα. Μπορείτε επίσης να επιλέξετε το χρώμα του παρασκηνίου από αυτή την καρτέλα.</para>
+        </listitem>
+
+        <listitem>
+        
+        <para><guimenuitem>Πληκτρολόγιο</guimenuitem> — Αυτή η οθόνη σας επιτρέπει να ορίσετε τον έλεγχο από το πληκτρολόγιο. Για να επιλέξετε ένα διαφορετικό πλήκτρο για μια εντολή, κάντε διπλό κλικ πλήκτρο για εκείνη την εντολή και μετά πατήστε το κουμπί που θέλετε να χρησιμοποιήσετε.</para>
+        </listitem>
+      </itemizedlist></para>
+
+    <para>Ό,τι αλλαγές κάνετε θα εφαρμοστούν αμέσως και θα αποθηκευτούν αυτόματα.</para>
+
+    <para>Μπορείτε να σχεδιάσετε τα δικά σας γραφικά για το παιχνίδι αν θέλετε. Τα αρχεία γραφικών βρίσκονται στο <filename class="directory"> $PREFIX/share/gnome-games/gnobots2/pixmaps </filename>, όπου $PREFIX είναι το prefix στο οποίο εγκαταστάθηκε το GNOME. Αυτό είναι συνήθως είτε το <filename class="directory">/usr</filename> είτε το <filename class="directory">/usr/local</filename>.</para>
+    <para>Κάθε χαρακτήρας είναι 16Χ16 εικονοστοιχεία και υπάρχουν 14 χαρακτήρες παραταγμένοι σε ένα PNG αρχείο μεγέθους 224Χ16 εικονοστοιχεία. Μπορείτε να δείτε τα υφιστάμενα αρχεία για να δείτε τη σειρά με την οποία πρέπει να είναι παραταγμένοι για να παράγξετε τις σωστές κινήσεις.</para>
+    <para>Τα αρχεία γραφικών που θα τοποθετηθούν στον κατάλογο θα ανιχνευθούν αυτόματα, οπότε δε χρειάζεται να τροποποιήσετε αρχεία ρυθμίσεων. Μπορείτε επίσης να ορίσετε δικά σας αρχείο ρυθμίσεων του παιχνιδιού δημιουργώντας επιπλέον <filename> .cfg </filename> αρχεία τα οποίο είναι αποθηκευμένα στο κατάλογο <filename class="directory"> $PREFIX/share/gnome-games/gnobots2/games </filename>.</para>
+  </sect1> 
+ 
+  <!-- ============= Various Sections ============================= -->
+ 
+ 
+  <!-- ============= Bugs ================================== -->
+  <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of. -->
+<!--  <sect1 id="bugs">
+    <title>Known Bugs and Limitations</title>
+    <para>
+      This application has no known bugs.
+    </para>
+  </sect1>
+-->
+
+<!-- ============= Authors ================================ -->
+
+  <sect1 id="authors">
+    <title>Δημιουργοί</title>
+    <para>Το <application>Ρομπότ</application> γράφτηκε από τον Mark Rae (<email>m.rae@inpharmatica.co.uk</email>). Αυτό το εγχειρίδιο γράφτηκε από τον Patanjali Somayaji (<email>patanjali@mindless.com</email>), από την αυθεντική τεκμηρίωση σε HTML από τον Mark Rae. Για να αναφέρετε ένα σφάλμα ή να κάνετε μια εισήγηση σχετικά με αυτό το εγχειρίδιο. ακολουθήστε τις οδηγίες σ' αυτό το <ulink url="ghelp:user-guide?feedback-bugs" type="help">έγγραφο</ulink>.</para>
+
+    <!-- For translations: uncomment this:
+
+    <para>
+      Latin translation was done by ME
+      (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+      suggestions regarding this translation to SOMEWHERE.
+    </para>
+
+    -->
+
+  </sect1>
+
+
+  <!-- ============= Application License ============================= -->
+
+  <sect1 id="license">
+    <title>Άδεια</title>
+    <para>Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό: μπορείτε να το αναδιανείμετε ή/και να το τροποποιείτε υπό τους όρους της <ulink type="help" url="gnome-help:gpl"><citetitle>Γενικής Δημόσιας Άδειας GNU</citetitle></ulink> όπως εκδίδεται από το Ίδρυμα Ελεύθερου Λογισμικού, είτε στην έκδοση 2 της άδειας, είτε (κατά την άποψή σας) οποιαδήποτε μεταγενέστερη έκδοση.</para>
+    <para>Αυτό το πρόγραμμα διανέμεται με την ελπίδα οτι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ ΚΑΜΙΑ ΑΠΟΛΥΤΩΣ ΕΓΓΥΗΣΗ - χωρίς ακόμη και την έμμεση εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Για περισσότερες λεπτομέρειες δείτε τη <citetitle>GNU General Public License</citetitle>.</para>
+    <para>Ένα αντίγραφο της <citetitle>GNU General Public License</citetitle> συμπεριλαμβάνεται ως παράρτημα στον  <citetitle>Οδηγό Χρηστών GNOME </citetitle>. Μπορείτε επίσης να αποκτήσετε ένα αντίγραφο της <citetitle>GNU General Public License</citetitle> από το Ίδρυμα Ελεύθερου Λογισμικού επισκεπτόμενοι <ulink url="http://www.fsf.org" type="http"> την ιστοσελίδα τους</ulink> ή γράφωντας τους στη διεύθυνση <address> Free Software Foundation, Inc. <street>51 Franklin Street, Fifth Floor</street> <city>Boston</city>, <state>MA</state><postcode>02110-1301</postcode><country>USA</country></address></para>
+  </sect1>
+
+</article>

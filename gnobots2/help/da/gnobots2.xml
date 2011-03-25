@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "August 2007">
+<!ENTITY app "<application>Robots</application>">
+<!ENTITY appname "Robots">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="da"> 
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Manual til <application>Robotter</application></title>
+
+    <abstract role="description">
+      <para>Robotter er en grafisk udgave af det oprindelige tekstbaserede robotspil, som kan ses på en række UNIX-systemer. Spilleren skal snyde robotterne der jager ham/hende ved at få dem til at løbe ind i hinanden.</para>
+    </abstract>
+
+      <copyright>
+        <year>2001</year>
+        <holder>Patanjali Somayaji, Mark Rae</holder>
+      </copyright><copyright><year>2010.</year><holder>Joe Hansen (joedalton2@yahoo.dk)</holder></copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+      <year>2000</year>
+      <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername>GNOME-dokumentationsprojekt</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Der gives tilladelse til at kopiere, distribuere og/eller ændre dette dokument under betingelserne i GNU Free Documentation License (GFDL), version 1.1 eller enhver nyere version, udgivet af Free Software Foundation uden invariante afsnit, uden forsidetekster, og uden bagsidetekster. Du kan finde en kopi af GFDL'en her: <ulink type="help" url="ghelp:fdl">link</ulink>, eller i filen COPYING-DOCS der distribueres med denne manual.</para>
+         <para>Denne manual er en del af GNOME-manualsamlingen distribueret under GFDL. Hvis du vil distribuere denne manual separat fra denne samling, kan du gøre det ved at tilføje en kopi af licensen til manualen, som beskrevet i sektion 6 af licensen.</para>
+
+	<para>Mange af navnene brugt af firmaer til at skelne deres produkter og tjenester er registrerede varemærker. Der hvor disse navne optræder i GNOME-dokumentationen, og medlemmerne af GNOME-dokumentationsprojektet er blevet gjort opmærksomme på disse varemærker, er navnene skrevet med store bogstaver eller store forbogstaver.</para>
+
+	<para>DETTE DOKUMENT OG MODIFICEREDE VERSIONER GØRES TILGÆNGELIGT UNDER BETINGELSERNE I GNU FREE DOCUMENTATION LICENSE UNDER DEN FORUDSÆTNING AT: <orderedlist>
+		<listitem>
+		  <para>DETTE DOKUMENT GØRES TILGÆNGELIGT SÅDAN SOM DET ER, UDEN NOGEN FORM FOR GARANTI, HVERKEN UDTALT ELLER ANTYDET, DERIBLANDT, UDEN BEGRÆNSNINGER, GARANTIER OM AT DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET ER FRIT FOR DEFEKTER, PASSENDE TIL ET BESTEMT FORMÅL ELLER IKKE-KRÆNKENDE. DU HÆFTER SELV FOR HELE RISIKOEN VEDRØRENDE KVALITET, KORREKTHED OG YDELSE FOR DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET. SKULLE ET DOKUMENT, ELLER EN ÆNDRET VERSION AF ET DOKUMENT VISE SIG AT VÆRE DEFEKT PÅ EN HVILKEN SOM HELST MÅDE, HÆFTER DU FOR BETALING FOR EVENTUEL NØDVENDIG SERVICE, REPARATION ELLER KORREKTION (OG IKKE HVERKEN DEN OPRINDELIGE FORFATTER, SKRIBENT ELLER NOGEN ANDEN BIDRAGYDER). DENNE ERKLÆRING OM GARANTIFORBEHOLD ER EN ESSENTIEL DEL AF DENNE LICENS. INGEN BRUG AF NOGET DOKUMENT ELLER ÆNDRET VERSION AF DOKUMENTET ER AUTORISERET HERUNDER BORTSET FRA DENNE ANSVARSFRASKRIVELSE; OG</para>
+		</listitem>
+		<listitem>
+		  <para>UNDER INGEN OMSTÆNDIGHEDER OG UNDER INGEN JURIDISK TEORI, UANSET OM DET ER EN BEVIDST SKADENDE HANDLING (INKLUSIVE UFORSVARLIGHED) ELLER PÅ HVILKEN SOM HELST ANDEN MÅDE, KAN FORFATTEREN, SKRIBENT, BIDRAGYDERE, DISTRIBUTØRER ELLER LEVERANDØR AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER GØRES ANSVARLIG OVERFOR NOGEN PERSON FOR NOGEN DIREKTE, INDIREKTE, SPECIEL, TILFÆLDIG ELLER FØLGENDE SKADE PÅFØRT NOGEN INKLUSIVE, UDEN BEGRÆNSNING, SKADE SOM FØLGE AF TAB AF RYGTE, ARBEJDSSTOP, COMPUTERFEJL ELLER -SVIGT, ELLER ENHVER ANDEN FORM FOR SKADE ELLER TAB SOM ER OPSTÅET I FORBINDELSE MED BRUG AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER HERAF, SELV HVIS EN SÅDAN PART HAR VÆRET INFORMERET OM MULIGHEDEN FOR SÅDANNE SKADER.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+
+    <authorgroup> 
+      <author role="maintainer"> 
+	<firstname>Patanjali</firstname> 
+	<surname>Somayaji</surname> 
+	<affiliation> 
+	  <address> <email>patanjali@mindless.com</email> </address> 
+	</affiliation> 
+      </author> 
+      <author> 
+	<firstname>Mark</firstname> 
+	<surname>Rae</surname> 
+	<affiliation> 
+	  <address> <email>m.rae@inpharmatica.co.uk</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review"/>
+
+    <revhistory>
+      <revision> 
+	<revnumber>Manual til Robotter version 2.8</revnumber> 
+	<date>September 2004</date> 
+	<revdescription> 
+	  <para role="author">Patanjali Somayaji <email>patanjali@mindless.com</email></para>
+	  <para role="author">Mark Rae <email>m.rae@inpharmatica.co.uk</email></para>
+	  <para role="publisher">GNOME-dokumentationsprojekt</para>
+	</revdescription> 
+      </revision> 
+      <revision> 
+	<revnumber>Manual til Robotter version 2.9</revnumber> 
+	<date>August 2007</date> 
+	<revdescription> 
+	  <para role="author">Claude Paroz <email>claude@2xlibre.net</email></para>
+	  <para role="publisher">GNOME-dokumentationsprojekt</para>
+	</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Denne manual beskriver version 2.18 af Robotter.</releaseinfo>
+    <!-- The following feedback information only applies to appliactions
+    listed in bugzilla.gnome.org and bugzilla.ximian.com. For other
+    applications, please provide your own feedback info or remove thsi
+    section altogether -->
+    <legalnotice> 
+      <title>Tilbagemeldinger</title> 
+      <para>Hvis du ønsker at indrapportere en fejl eller komme med et forslag vedrørende programmet <application>Robotter</application> eller denne manual så følg vejledningen på siden <ulink url="ghelp:gnome-feedback" type="help">tilbagemeldinger omkring GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+
+  </articleinfo>
+
+  <indexterm zone="index"> 
+    <primary>GNOME Robotter</primary> 
+  </indexterm>
+
+   <!-- ============= Document Body ============================= -->
+
+   <!-- ============= Introduction ============================== -->
+   <sect1 id="intro">
+     <title>Indledning</title>
+
+     <para><application>GNOME Robotter</application> er et spil, hvor du forsøger at undgå en gruppe hærgende robotter som uden nogen forklaring forsøger at dræbe dig. Spillet er baseret på det tekstbaserede robotspil som kan ses på et antal UNIX-systemer.</para>
+     <para>Denne nye version inkluderer to typer robotter, flytbare affaldsdynger, flere spilkonfigurationer, brugerdefinerede tastaturlayout, og lyd, samt alle de egenskaber som var til stede i det oprindelige robotspil til GNOME.</para>
+
+     <para>For at køre <application>GNOME Robotter</application> vælges <menuchoice><guisubmenu>Spil</guisubmenu><guimenuitem>Robotter</guimenuitem></menuchoice> fra <guimenu>Hovedmenuen</guimenu>, eller tast <command>gnobots2</command> på kommandolinjen.</para>
+
+     <para><application>GNOME Robotter</application> er inkluderet i pakken <filename>gnome-games</filename>, som er en del af skrivebordsmiljøet GNOME. Dette dokument beskriver version 2.18 af <application>GNOME Robotter</application>.</para>
+   </sect1>
+ 
+   <sect1 id="objective">
+     <title>Målet i GNOME Robotter</title>
+     <para>Målet i GNOME Robotter er meget enkelt. Du er omringet af et antal robotter eller andre fjendtlige modstandere. Efterhånden som du bevæger dig omkring vil de flytte sig direkte imod dig. Deres mål er at dræbe dig. Dit mål er at dræbe alle robotterne på brættet ved at udnytte deres svagheder.</para>
+   
+     <para>Robotterne knuses når de støder sammen, eller når de kolliderer med rester fra en tidligere kollision. Du dør hvis en robot når frem til dig.</para>
+
+     <para>I nogle af spilkonfigurationerne (du kan vælge mellem fem forskellige regelsæt), kan du skubbe affaldsdynger omkring og danne beskyttelsesbarrikader. Hvis du er modig nok kan du også splatte! robotterne ved at skubbe affaldsdynger over dem for en ekstra bonus.</para>
+     <para>Du kan også redde dig selv ved at teleportere til et tilfældigt område. Desværre betyder en tilfældig teleportering at du kan ende lige ved siden af en robot, så den kan dræbe dig når det er robotternes runde. Heldigvis er der også sikre teleporteringer som vil sende dig uden for øjeblikkelig fare, men der er kun et begrænset antal af dem. Du kan optjene flere frie teleporteringer efterhånden (hvordan du opnår dem afhænger af det valgte spil), men typisk får du en for hver robot som knuses mens du venter (når du har trykket på knappen vent), op til et maksimum på 10. Hvis du ikke vil ødsle dine optjente sikre teleporteringer, kan du, hvis du tror det er sikkert, vælge en tilfældig teleportering.</para>
+   
+     <para>Hvis du trykker på knappen <guibutton>Vent</guibutton> (se nedenfor), vil du ikke længere kunne bevæge dig indtil enten alle robotterne (som stadig bevæger sig imod dig) er væk, eller du bliver dræbt. Dette er risikabelt, men kan give dig ekstra sikre teleporteringer.</para>
+   
+     <para>Hvis du når til punktet hvor mere end halvdelen af skærmen er besat af robotter, vil antallet af robotter blive nulstillet til begyndelsesantallet, hvilket gør at du kan fortsætte.</para>
+  </sect1>
+
+
+  <!-- ================ Usage ================================ -->
+  <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="usage">
+    <title>Brug af GNOME Robotter</title>
+    <para><application>GNOME Robotter</application> er ekstremt nemt at spille. Du kanbruge enten musen eller tastaturet. Dette afsnit beskriver den grundlæggende brug af <application>GNOME Robotter</application>.</para>
+
+    <!-- ========= Basic Usage =========================== -->
+    <sect2 id="mainwin">
+      <title>Grundlæggende brug</title>
+      <para>Opstart af <application>GNOME Robotter</application> åbner <interface>Hovedvinduet</interface> vist i <xref linkend="mainwindow-fig"/>. <figure id="mainwindow-fig">
+	  <title>Hovedvinduet i GNOME Robotter</title>
+	  <screenshot>
+	  <mediaobject> 
+ 	   <imageobject>
+ 	 <imagedata fileref="figures/gnobots2-main.png" format="PNG" srccredit="Patanjali"/>
+ 	   </imageobject>
+ 	   <textobject> 
+ 	     <phrase>Hovedvinduet i GNOME Robotter.</phrase> 
+ 	   </textobject> 
+ 	 </mediaobject>
+	  </screenshot>
+	</figure></para> 
+
+      <para>For at begynde på et nyt spil vælges <guimenuitem>Nyt</guimenuitem> i menuen <guimenu>Spil</guimenu>, eller der klikkes på knappen <guibutton>Nyt</guibutton> på værktøjslinjen.</para>
+
+      <para>For at bevæge sig klikkes i den ønskede retning (markøren vil vise dig i hvilken retning du bevæger dig) eller tryk på den passende tast på tastaturet (det numeriske tastatur er standard). Et klik på den lille mand vil lade dig blive stående. For at teleportere (sikkert eller tilfældigt), og for at vente, bruges knapperne på værktøjslinjen eller også bruges elementerne i menuen <guimenu>Flyt</guimenu>.</para>
+    </sect2>
+  </sect1>
+    
+
+  
+  <!-- ========= Menus =========================== --> 
+  
+   <sect1 id="menubar">
+    <title>Menuer</title>
+    <para>Menubjælken placeret øverst på <interface>spillebrættet</interface> indeholder følgende menuer:</para>
+
+
+    <variablelist>
+      <varlistentry>
+        <term><guimenu>Spil</guimenu></term>
+        <listitem>
+        <para>Denne menu indeholder tre elementer: <itemizedlist>	
+            <listitem>
+	    <para><menuchoice><shortcut><keysym>Ctrl-N</keysym></shortcut><guimenuitem>Nyt</guimenuitem></menuchoice> — starter et nyt spil GNOME Robotter.</para>
+            </listitem>     
+       
+	    <listitem>
+	    <para><menuchoice><guimenuitem>Resultater</guimenuitem></menuchoice> — viser de højeste resultater.</para>
+            </listitem>
+
+       	    <listitem>
+            <para>
+              <menuchoice>
+              <shortcut><keysym>Ctrl-Q</keysym></shortcut>
+              <guimenuitem>Afslut</guimenuitem>
+              </menuchoice>
+            </para>
+            </listitem>
+          </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>Flyt</guimenu></term>
+        <listitem>
+        <para>Denne menu indeholder: <itemizedlist>
+          <listitem>
+            <para><guimenuitem>Teleportering</guimenuitem>— teleporterer dig til et sikkert sted.</para>
+          </listitem>
+          <listitem>
+          <para><guimenuitem>Tilfældig</guimenuitem>— teleporterer dig til et tilfældigt sted.</para>
+          </listitem>
+          <listitem>
+          <para><guimenuitem>Vent</guimenuitem>— sætter dig i ventetilstand.</para>
+          </listitem>
+        </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>Opsætning</guimenu></term>
+	<listitem>
+	<para>Menuen <guimenu>Opsætning</guimenu> indeholder kun et punkt: <itemizedlist>
+	    <listitem>
+	    <para><guimenuitem>Indstillinger</guimenuitem> som viser dialogboksen for indstillingerne.</para>
+	    </listitem>
+	  </itemizedlist></para>
+	</listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><guimenu>Hjælp</guimenu></term>
+        <listitem>
+        <para>Denne menu indeholder: <itemizedlist>
+          <listitem>
+            <para><guimenuitem>Indhold</guimenuitem>— viser denne manual.</para>
+          </listitem>
+          <listitem>
+          <para><guimenuitem>Om</guimenuitem>— viser grundlæggende information om <application>GNOME Robotter</application>, såsom forfatterens navn og programmets versionsnummer.</para>
+          </listitem>
+        </itemizedlist></para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect1>
+ 
+ <!-- =========Using the Keyboard============== -->
+ 
+  
+  <sect1 id="keyboard">
+    <title>Brug af tastaturet</title>
+    <para>Du kan bruge tastaturet til at styre den lille mand. Som standard er tasterne fra det numeriske tastatur konfigureret til spillet. Du kan dog tilpasse tasteforbindelserne i fanebladet <guimenuitem>Tastatur</guimenuitem> i dialogen <guimenuitem>Indstillinger</guimenuitem>. For at vælge en anden tast til en kommando dobbeltklik på linjen for den kommando og tryk så på tasten du ønsker at bruge.</para>
+
+      <sect2 id="default-keys">     
+      <title>Standardgenveje for tastaturet</title>
+      <para>Som standard bruger du det numeriske tastatur på højre side af tastaturet (ikke de separate piletaster). <note>
+        <title>Sluk for NumLock-tasten</title>
+          <para>Du skal måske fjerne NumLock for at disse her virker.</para>
+        </note><orderedlist>
+          <listitem><para>Op venstre: <keycap>Hjem (Home)</keycap></para></listitem> 
+          <listitem><para>Op: <keycap>Op</keycap></para></listitem>
+          <listitem><para>Op højre: <keycap>Side op (Page Up)</keycap></para></listitem>
+          <listitem><para>Venstre <keycap>Venstre</keycap></para></listitem>
+          <listitem><para>Stå stille: <keycap>Begynd (Begin)</keycap></para></listitem>
+          <listitem><para>Right: <keycap>Højre</keycap></para></listitem>
+          <listitem><para>Ned venstre: <keycap>Slut (End)</keycap></para></listitem>
+          <listitem><para>Ned: <keycap>Ned</keycap></para></listitem>
+          <listitem><para>Ned højre: <keycap>Side ned (Page Down)</keycap></para></listitem>
+          <listitem><para>Teleportering: <keycap>+</keycap></para></listitem>
+          <listitem><para>Tilfældig teleportering: <keycap>*</keycap></para></listitem>
+          <listitem><para>Vent: <keycap>Retur</keycap></para></listitem>
+        </orderedlist></para>	  
+    </sect2>
+
+      
+  </sect1>
+   
+  <!-- ============= Customization ============================= -->
+  
+  <sect1 id="customization">
+    <title>Tilpasning af GNOME Robotter</title>
+    <para>Du kan ændre opførelsen og fremtoningen af spillet ved at vælge <guimenuitem> Indstillinger</guimenuitem> i menuen <guimenu>Opsætning</guimenu>. Dette viser en dialog med tre faneblade: <itemizedlist>
+        <listitem>
+        <para><guimenuitem>Spil</guimenuitem> — Denne side gør, at du kan vælge typen af spil, du ønsker at spille. Rullegardinet i toppen af siden lader dig vælge mellem et antal foruddefinerede spil. Du kan ikke ændre disse indstillinger midt i spilllet, så de vil på det tidspunkt være slået fra. Der er også flere indstillinger i bunden af vinduet: <orderedlist>
+          <listitem><para>Tilstanden sikkert spil vil hjælpe dig med at undgå at blive dræbt på grund af en fejl. Hvis du forsøger at udføre et træk som vil føre dig i døden samtidig med, at der er et sikkert træk tilgængeligt, vil du ikke få lov til at fortsætte. Men husk: Hvis der ikke var et sikkert træk udover teleportering, vil trækket blive udført.</para></listitem>
+          <listitem><para>Der er også en <quote>supersikker tilstand</quote>. Hvis du vælger denne, kommer der en lyd, når der ikke er et sikkert træk til stede, og din eneste mulighed er at foretage en teleportering.</para></listitem>
+          <listitem><para>Hvis du afkrydser lydboksen vil der være forskellige lydeffekter igennem spillet.</para></listitem>
+          <listitem><para>Tjekboksen <quote>splatter</quote> vælger hvorvidt du ønsker lyd afspillet og at et lille <quote>splat!</quote> kommer frem på skærmen.</para></listitem>
+        </orderedlist></para>
+	</listitem>
+        <listitem>
+        <para><guimenuitem>Udseende</guimenuitem> — Denne side gør at du kan vælge grafikken brugt i spillet fra listen i rullegardinet. Du kan også vælge baggrundsfarven fra dette faneblad.</para>
+        </listitem>
+
+        <listitem>
+        
+        <para><guimenuitem>Tastatur</guimenuitem> — Denne skærm gør, at du kan definere dine egne styretaster. For at vælge en anden tast til en kommando dobbeltklikkes på knappen for kommandoen, og så trykkes der på den tast du ønsker at bruge.</para>
+        </listitem>
+      </itemizedlist></para>
+
+    <para>Enhver ændring du foretager træder øjeblikkelig i kraft og gemmes automatisk.</para>
+
+    <para>Du kan designe din egen grafik til spillet, hvis du ønsker det. Grafikfilerne kan ses i <filename class="directory"> $PREFIX/share/gnome-games/gnobots2/pixmaps </filename>, hvor $PREFIX er præfikset som GNOME blev installeret i. Dette er normalt enten <filename class="directory">/usr</filename> eller <filename class="directory">/usr/local</filename>.</para>
+    <para>Hvert tegn er 16x16 billedpunkter, og der er 14 af dem arrangeret i en PNG-fil, som er 224x16 billedpunkter i størrelse. Du kan kigge på de eksisterende filer, for at se hvilken rækkefølge de skal arrangeres i, for at give den korrekt animerede sekvens.</para>
+    <para>Alle grafikfiler som placeres i mappen opdateres automatisk, så der er ikke behov for at ændre nogen konfigurationsfiler. Du kan også definere dine egne spilkonfigurationer ved at oprette filer med endelsen <filename> .cfg </filename> som gemmes i mappen <filename class="directory"> $PREFIX/share/gnome-games/gnobots2/games </filename>.</para>
+  </sect1> 
+ 
+  <!-- ============= Various Sections ============================= -->
+ 
+ 
+  <!-- ============= Bugs ================================== -->
+  <!-- This section should describe known bugs and limitations of
+      the program if there are any - please be frank and list all
+      problems you know of. -->
+<!--  <sect1 id="bugs">
+    <title>Known Bugs and Limitations</title>
+    <para>
+      This application has no known bugs.
+    </para>
+  </sect1>
+-->
+
+<!-- ============= Authors ================================ -->
+
+  <sect1 id="authors">
+    <title>Forfattere</title>
+    <para><application>GNOME Robotter</application> blev skrevet af Mark Rae (<email>m.rae@inpharmatica.co.uk</email>). Denne manual blev skrevet af Patanjali Somayaji (<email>patanjali@mindless.com</email>), ud fra den oprindelige HTML-dokumentation af Mark Rae. Hvis du ønsker at indrapportere en fejl eller komme med et forslag vedrørende dette program eller denne manual så følg vejledningen på siden <ulink url="ghelp:gnome-feedback" type="help">tilbagemeldinger omkring GNOME</ulink>.</para>
+
+    <!-- For translations: uncomment this:
+
+    <para>
+      Latin translation was done by ME
+      (<email>MYNAME@MYADDRESS</email>). Please send all  comments  and
+      suggestions regarding this translation to SOMEWHERE.
+    </para>
+
+    -->
+
+  </sect1>
+
+
+  <!-- ============= Application License ============================= -->
+
+  <sect1 id="license">
+    <title>Licens</title>
+    <para>Dette program er fri software. Du kan redistribuere og/eller modificere det under de betingelserne som er angivet i <ulink type="help" url="gnome-help:gpl"><citetitle>GNU General Public License</citetitle></ulink> , som er udgivet af Free Software Foundation. Enten version 2 af licensen eller (efter eget valg) enhver senere version.</para>
+    <para>Dette program distribueres i håb om, at det vil vise sig nyttigt, men UDEN NOGEN FORM FOR GARANTI, uden selv de underforståede garantier omkring SALGBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Yderligere detaljer kan læses i <citetitle>GNU General Public License</citetitle>.</para>
+    <para>En kopi af <citetitle>GNU General Public License</citetitle> er inkluderet som et bilag til <citetitle>Brugervejledningen til GNOME</citetitle>. Du kan også indhente en kopi af <citetitle>GNU General Public License</citetitle> fra Free Software Foundation ved at besøge <ulink type="http" url="http://www.fsf.org">deres hjemmeside</ulink> eller ved at skrive til <address> Free Software Foundation, Inc. <street>51 Franklin Street, Fifth Floor</street><city>Boston</city>, <state>MA</state><postcode>02110-1301</postcode><country>USA</country></address></para>
+  </sect1>
+
+</article>

@@ -1,0 +1,357 @@
+# Chinese (China) translation for gnome-games.
+# Copyright (C) 2010 gnome-games's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-games package.
+# TeliuTe <teliute@163.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games master\n"
+"POT-Creation-Date: 2010-12-15 21:06+0000\n"
+"PO-Revision-Date: 2010-12-30 19:57+0800\n"
+"Last-Translator: TeliuTe <teliute@163.com>\n"
+"Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: C/lightsoff.xml:27(title)
+msgid "<application>Lights Off</application> Manual"
+msgstr "<application>关灯</application> 小游戏手册"
+
+#: C/lightsoff.xml:30(para)
+msgid ""
+"Lights Off is a puzzle game, where the objective is to turn off all of the "
+"tiles on the board. Each click toggles the state of the clicked tile and its "
+"non-diagonal neighbors."
+msgstr ""
+"关灯是一个智力小游戏，目标是关闭面板上的所有灯。每点击一下，将会切换它自己和"
+"相邻灯的开关，斜线上的灯状态不变。"
+
+#: C/lightsoff.xml:38(year)
+msgid "2010"
+msgstr "2010"
+
+#: C/lightsoff.xml:39(holder)
+msgid "Tim Horton"
+msgstr "Tim Horton"
+
+#: C/lightsoff.xml:54(publishername) C/lightsoff.xml:95(para)
+msgid "GNOME Documentation Project"
+msgstr "GNOME 文档项目"
+
+#: C/lightsoff.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"对于本文档的复制、分发和/或修改必须遵循自由软件基金会 (Free Software "
+"Foundation) 发布的 GNU 自由文档许可证 (GFDL) 版本 1.1 或更高版本，该许可证没"
+"有固定的部分、没有封面和背页文本。您可以在此<ulink type=\"help\" url=\"ghelp:"
+"fdl\">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副"
+"本。"
+
+#: C/lightsoff.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"本手册是在 GFDL 许可之下分发的 GNOME 手册集合的一部分。如果想要单独分发此手"
+"册，可以在手册中添加该许可证的一份副本然后分发，如该许可证的第 6 部分所述。"
+
+#: C/lightsoff.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 GNOME 文"
+"档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而"
+"表明它们是商标。"
+
+#: C/lightsoff.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"文档按“原样”提供，不提供任何明示或暗示的保证，包括但不限于：文档或文档的修改"
+"版本没有适销性方面的缺陷、适合特定目的的适用性，以及没有侵权行为。您将自行承"
+"担本文档以及文档修改版本的质量、准确性以及性能方面的风险。如果任何文档或文档"
+"修改版本存在缺陷，您(而不是最初的编写者、作者或撰写人)将承担所有必需的服务、"
+"维修或更正的费用。此免责声明是本许可证的重要组成部分。如果不接受此免责声明，"
+"那么您就没有权利使用任何文档或文档的修改版本；并且"
+
+#: C/lightsoff.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"无论在任何情况以及在任何法律理论下，本文档或文档修改版本的作者、最初的编写"
+"者、任何撰写人或任何分发者，或者任意这些方的任何提供者都不对任何人由于使用本"
+"文档或文档修改版本引起或带来的任何直接的、间接的、特殊的、偶然的或继发的损失"
+"承担任何民事(包括疏忽)、合同或其它方面的责任，这些损失包括但不限于信誉损失、"
+"工作停止、计算机失败或故障，或任何以及所有其它损失或由此引发的或与之相关的损"
+"失，即使这些方已被告知存在出现此类损失的可能性时也是如此。"
+
+#: C/lightsoff.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"本文档以及文档的修改版本都是在遵循 GNU 自由文档许可证的条款下提供，这表示具有"
+"以下含义：<placeholder-1/>"
+
+#: C/lightsoff.xml:65(firstname)
+msgid "Tim"
+msgstr "Tim"
+
+#: C/lightsoff.xml:66(surname)
+msgid "Horton"
+msgstr "Horton"
+
+#: C/lightsoff.xml:68(email)
+msgid "hortont@gnome.org"
+msgstr "hortont@gnome.org"
+
+#: C/lightsoff.xml:89(revnumber)
+msgid "Lights Off Manual V1.0"
+msgstr "关灯小游戏手册 V1.0"
+
+#: C/lightsoff.xml:90(date)
+msgid "January 2010"
+msgstr "2010年1月"
+
+#: C/lightsoff.xml:92(para)
+msgid "Tim Horton <email>hortont@gnome.org</email>"
+msgstr "Tim Horton <email>hortont@gnome.org</email>"
+
+#: C/lightsoff.xml:100(releaseinfo)
+msgid "This manual describes version 2.28 of Lights Off."
+msgstr "本手册讲述的是 2.28 版中的关灯小游戏"
+
+#: C/lightsoff.xml:107(title)
+msgid "Feedback"
+msgstr "反馈"
+
+#: C/lightsoff.xml:108(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Lights Off</"
+"application> application or this manual, follow the directions in the <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
+"ulink>."
+msgstr ""
+"要报告关于<application>关灯</application>程序或使用手册中的缺陷，或者提出建"
+"议，请参照 <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME "
+"反馈页</ulink> 上的指导。"
+
+#: C/lightsoff.xml:120(primary)
+msgid "Lights Off"
+msgstr "关灯小游戏"
+
+#: C/lightsoff.xml:126(title)
+msgid "Introduction"
+msgstr "介绍"
+
+#. synopsis of game
+#: C/lightsoff.xml:129(para)
+msgid ""
+"<application>Lights Off</application> is a puzzle game, where the objective "
+"is to turn off all of the tiles on the board. Each click toggles the state "
+"of the clicked tile and its non-diagonal neighbors."
+msgstr ""
+"<application>关灯</application>是一个解谜小游戏，目标是关闭面板上的所有灯。每"
+"点击一下，将会切换它自己和相邻灯的开关，斜线上的灯状态不变。"
+
+#. running game
+#: C/lightsoff.xml:132(para)
+msgid ""
+"To run <application>Lights Off</application>, select "
+"<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
+"guisubmenu><guimenuitem>Lights Off</guimenuitem></menuchoice>, or type "
+"<command>lightsoff</command> in the command line."
+msgstr ""
+"要运行 <application>关灯</application> 小游戏，点菜单 <menuchoice><guimenu>应"
+"用程序</guimenu><guisubmenu>游戏</guisubmenu><guimenuitem>关灯</"
+"guimenuitem></menuchoice>，或者在命令中输入 <command>lightsoff</command>"
+
+#. part of gnome-games
+#: C/lightsoff.xml:135(para)
+msgid ""
+"<application>Lights Off</application> is included in the <filename>gnome-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 1.0 of <application>Lights Off</application>."
+msgstr ""
+"<application>关灯</application>小游戏包含在 <filename>gnome-games</filename> "
+"软件包中，它是 GNOME 桌面环境的一部分。本手册讲述的是 <application>关灯</"
+"application> 小游戏1.0版。"
+
+#: C/lightsoff.xml:139(title)
+msgid "Playing <application>Lights Off</application>"
+msgstr "开始 <application>关灯</application> 小游戏"
+
+#: C/lightsoff.xml:140(para)
+msgid ""
+"You progress through the levels either by turning off all of the tiles in a "
+"particular level, or using the arrow-shaped buttons near the bottom of the "
+"game. These buttons allow you to skip levels, or return to previous levels, "
+"without restriction."
+msgstr ""
+"在一个关卡中关闭所有灯就可以升级到下一关，也可以点游戏底部的箭头按钮，这些按"
+"钮允许您选下一关，或者返回到上一关，没有什么限制。"
+
+#: C/lightsoff.xml:142(title)
+msgid "Manipulating the Board"
+msgstr "面板上的操作"
+
+#: C/lightsoff.xml:143(para)
+msgid ""
+"There is only one action available in <application>Lights Off</application>: "
+"clicking a tile on the board. You can either click on the tile with the "
+"mouse, or use the arrow keys to choose it. The first time you press an arrow "
+"key during a game of <application>Lights Off</application>, a cursor will "
+"appear, which you can move with the keyboard; pressing enter will click the "
+"light below the cursor."
+msgstr ""
+"在<application>关灯</application>小游戏中，只有一个操作：点击面板上的灯，既可"
+"以用鼠标点击，也可以用方向键选择。第一次按方向键时，会出现一个光标，然后就可"
+"以移动它，按回车键将会点击光标所在的灯。"
+
+#: C/lightsoff.xml:144(para)
+msgid ""
+"When a tile is clicked, both it and all of its non-diagonal neighbors will "
+"toggle their state. The objective is to turn all of the tiles on the board "
+"off."
+msgstr ""
+"点击一个灯后，它和它相邻的(非斜线)灯都会切换开关状态，游戏目标是关闭所有的"
+"灯。"
+
+#: C/lightsoff.xml:147(title)
+msgid "Starting a New Game"
+msgstr "开始新游戏"
+
+#: C/lightsoff.xml:148(para)
+msgid ""
+"To begin a new game, go to <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The progression of "
+"levels will be the same between games and between computers, so "
+"<menuchoice><guimenuitem>New Game</guimenuitem></menuchoice> should only be "
+"chosen if you actually want to return to the beginning of the game."
+msgstr ""
+"要开始新游戏，点菜单 <menuchoice><guimenu>游戏</guimenu><guimenuitem>新游戏</"
+"guimenuitem></menuchoice>。游戏关卡将会恢复电脑和玩家原来的级别 ，因此，除非"
+"您确实想回到初始的状态，才需要点 <menuchoice><guimenuitem>新游戏</"
+"guimenuitem></menuchoice> 菜单。"
+
+#: C/lightsoff.xml:154(title)
+msgid "Customizing <application>Lights Off</application>"
+msgstr "定制<application>关灯</application>小游戏"
+
+#: C/lightsoff.xml:156(title)
+msgid "Customizing the Look of <application>Lights Off</application>"
+msgstr "定制<application>关灯</application>小游戏的外观"
+
+#: C/lightsoff.xml:157(para)
+msgid ""
+"Under <menuchoice><guimenu>Game</guimenu><guimenuitem>Preferences</"
+"guimenuitem></menuchoice>, you can customize the look of the tiles in "
+"<application>Lights Off</application>. There are a variety of styles "
+"included, some of which make use of the color of your theme. This can be "
+"disabled with the <guilabel>Use colors from GNOME Theme</guilabel> option in "
+"the Preferences window."
+msgstr ""
+"点菜单 <menuchoice><guimenu>游戏</guimenu><guimenuitem>首选项</guimenuitem></"
+"menuchoice>，您可以定制<application>关灯</application>小游戏灯的外观，有多种"
+"不同的风格，一些会使用您主题的颜色，这可以在首选项窗口的 <guilabel>使用 "
+"GNOME 主题颜色</guilabel> 选项中禁用。"
+
+#: C/lightsoff.xml:162(title)
+msgid "Authors"
+msgstr "作者"
+
+#: C/lightsoff.xml:163(para)
+msgid ""
+"<application>Lights Off</application> was written by Tim Horton in 2009 and "
+"maintained by the Gnome Games Team since then. This manual was written by "
+"Tim Horton. To report a bug or make a suggestion regarding this application "
+"or this manual, follow the directions in this <ulink url=\"ghelp:user-guide?"
+"feedback-bugs\" type=\"help\">document</ulink>."
+msgstr ""
+"<application>关灯</application>小游戏由 Tim Horton 于2009年编写，然后由 "
+"GNOME 游戏小组维护，本手册由 Tim Horton 书写。要报告本程序或本手册的缺陷或者"
+"提出建议，请参照 <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">"
+"文档</ulink> 上的指导。"
+
+#: C/lightsoff.xml:187(title)
+msgid "License"
+msgstr "许可协议"
+
+#: C/lightsoff.xml:188(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <citetitle><ulink type=\"help\" url=\"gnome-help:gpl"
+"\">GNU General Public License</ulink></citetitle> as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"本程序是自由软件，您可以在遵守自由软件基金会发布的 <citetitle><ulink type="
+"\"help\" url=\"gnome-help:gpl\">GNU 通用公共许可证</ulink></citetitle> 第2版"
+"或更高(如您所愿)版本下，重新分发和/或修改它。"
+
+#: C/lightsoff.xml:190(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+"本程序的发布意图是希望它有所用处，但请注意它没有任何担保，甚至不包括商业用"
+"途、以及特殊目的保证。更多相关细节，请参阅 <citetitle>GNU 通用公共许可证</"
+"citetitle>。"
+
+#: C/lightsoff.xml:192(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
+"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+"在<citetitle>GNOME 用户指南</citetitle> 的附录中包含了一份<citetitle>GNU 通用"
+"公共许可证</citetitle>的副本，您也可以通过访问自由软件基金会的<ulink type=\"http"
+"\" url=\"http://www.fsf.org\">网站</ulink>上获得，或者写信给 <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address> 来索取。"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/lightsoff.xml:0(None)
+msgid "translator-credits"
+msgstr "TeliuTe <teliute@163.com>, 2010"

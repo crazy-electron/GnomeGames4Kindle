@@ -1,0 +1,613 @@
+# Baris Cicek <baris@teamforce.name.tr>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: glines\n"
+"POT-Creation-Date: 2008-09-13 04:16+0000\n"
+"PO-Revision-Date: 2008-09-14 04:09+0300\n"
+"Last-Translator: Baris Cicek <baris@teamforce.name.tr>\n"
+"Language-Team: Turkish <gnome-turk@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/glines.xml:188(None)
+msgid ""
+"@@image: 'figures/glines-startgame.png'; md5=e6e58f72dc4802d89a45a7726f4c7fd7"
+msgstr ""
+"@@image: 'figures/glines-startgame.png'; md5=e6e58f72dc4802d89a45a7726f4c7fd7"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/glines.xml:207(None)
+msgid ""
+"@@image: 'figures/glines-gameover.png'; md5=949d09a01ee02944bf3f278ce1ebc2ba"
+msgstr ""
+"@@image: 'figures/glines-gameover.png'; md5=949d09a01ee02944bf3f278ce1ebc2ba"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/glines.xml:327(None)
+msgid ""
+"@@image: 'figures/preferences.png'; md5=745336aefd6ade740f6064bdf4121379"
+msgstr ""
+"@@image: 'figures/preferences.png'; md5=745336aefd6ade740f6064bdf4121379"
+
+#: C/glines.xml:32(title)
+msgid "<application>Five or More</application> Manual"
+msgstr "<application>Beş ya da Fazlası</application> Kılavuzu"
+
+#: C/glines.xml:34(para)
+msgid ""
+"To play Five or More one must align colored pieces as the board gets filled "
+"with randomly placed pieces. When five or more pieces of the same color get "
+"lined up, they disappear. The game ends when the board gets filled up all "
+"the way."
+msgstr ""
+"Beş ya da Fazlası oynamak için tahta rastgele parçalarla dolacak şekilde "
+"renkli parçaları hizalamanız gerekir. Beş ya da daha fazla aynı renkli parça "
+"çizgi olarak sıralandığında kaybolur. Oyun tahta her tarafıyla dolduğu zaman "
+"biter."
+
+#: C/glines.xml:43(year)
+msgid "2000-2002"
+msgstr "2000-2002"
+
+#: C/glines.xml:44(holder)
+msgid "Emese Kovács"
+msgstr "Emese Kovács"
+
+#: C/glines.xml:59(publishername) C/glines.xml:72(orgname)
+#: C/glines.xml:98(para)
+msgid "GNOME Documentation Project"
+msgstr "GNOME Belgelendirme Projesi"
+
+#: C/glines.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+
+#: C/glines.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+
+#: C/glines.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+
+#: C/glines.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+
+#: C/glines.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+
+#: C/glines.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+
+#: C/glines.xml:69(firstname)
+msgid "Emese"
+msgstr "Emese"
+
+#: C/glines.xml:70(surname)
+msgid "Kovács"
+msgstr "Kovács"
+
+#: C/glines.xml:73(email)
+msgid "emese@gnome.hu"
+msgstr "emese@gnome.hu"
+
+#: C/glines.xml:92(revnumber)
+msgid "Five or More Manual V2.8"
+msgstr "Beş ya da Fazlası Kılavuzu V2.8"
+
+#: C/glines.xml:93(date)
+msgid "September 2004"
+msgstr "Eylül 2004"
+
+#: C/glines.xml:95(para)
+msgid "Emese Kovács <email>emese@gnome.hu</email>"
+msgstr "Emese Kovács <email>emese@gnome.hu</email>"
+
+#: C/glines.xml:103(releaseinfo)
+msgid "This manual describes version 2.12 of Five or More."
+msgstr "Bu kılavuz Beş ya da Fazlası'nın 2.12 sürümünü tanımlar."
+
+#: C/glines.xml:110(title)
+msgid "Feedback"
+msgstr "Geri besleme"
+
+#: C/glines.xml:111(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Five or "
+"More</application> application or this manual, follow the directions in the "
+"<ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
+"ulink>."
+msgstr ""
+"<application>Beş ya da Fazlası</application> uygulaması ya da bu kılavuz "
+"hakında bir hata bildiriminde bulunmak veya  tavsiyede bulunmak için <ulink "
+"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Geribesleme Sayfası</ulink> "
+"içindeki direktifleri takip edin."
+
+#: C/glines.xml:121(primary)
+msgid "Five or More"
+msgstr "Beş ya da Fazlası"
+
+#: C/glines.xml:128(title)
+msgid "Introduction"
+msgstr "Giriş"
+
+#: C/glines.xml:130(para)
+msgid ""
+"<application>Five or More</application>, is the Gnome port of the once "
+"popular Windows game called <application>Color Lines</application> The "
+"game's objective is to align as often as possible five or more objects of "
+"the same color and shape causing them to disappear. Play as long as "
+"possible, and be #1 in the High Scores."
+msgstr ""
+"<application>Beş ya da Fazlası</application> bir zamanların popüler Windows "
+"oyunu <application>Renk Satırları</application> GNOME uyarlamasıdır. Oyunun "
+"amacı beş ya da daha fazla aynı renk ve şekildeki nesneyi hizaya getirik "
+"kaybolmalarını sağlamaktır. Mümkün olduğu kadar uzun oynayın ve en yüksek "
+"puanlarda birinci olun."
+
+#: C/glines.xml:139(para)
+msgid ""
+"To run <application>Five or More</application>, select <guimenuitem>Five or "
+"More</guimenuitem> from the <guisubmenu>Games</guisubmenu> submenu of the "
+"<guimenu>Main Menu</guimenu>, or type <command>glines</command> on the "
+"command line."
+msgstr ""
+"<application>Beş ya da Fazlası</application> çalıştırmak için, </"
+"guisubmenu>Ana Menü</guimenu> alt menüsü olan <guisubmenu>Oyunlar</"
+"guisubmenu>'dan <guimenuitem>Beş ya da Fazlası</guimenuitem>'nı seçin, ya da "
+"komut satırında <command>glines</command> yazın."
+
+#: C/glines.xml:147(para)
+msgid ""
+"<application>Five or More</application> is included in the <filename>GNOME-"
+"games</filename> package, which is part of the GNOME desktop environment. "
+"This document describes version 2.8 of <application>Five or More</"
+"application>."
+msgstr ""
+"<application>Beş ya da Fazlası</application> GNOME masaüstü ortamının bir "
+"parçası olan <filename>GNOME-games</filename> paketinin içine dahildir. Bu "
+"belge <application>Beş ya da Fazlası</application> sürüm 2.8'i tanımlar."
+
+#: C/glines.xml:161(title)
+msgid "Playing Five or More"
+msgstr "Beş ya da Fazlası'nı Oynamak"
+
+#: C/glines.xml:162(para)
+msgid ""
+"Playing <application>Five or More</application> is easy. At startup, you "
+"find yourself with five objects randomly positioned on the board. Each turn, "
+"you are allowed to move one object. You can move it anywhere on the board as "
+"long as there is a clear path. Afterward, the computer drops more objects at "
+"random positions (the exact number depends on the size of the game). You can "
+"preview the next objects to be dropped in the upper right corner of the "
+"game's window. If you manage to align five objects of the same shape and "
+"color, they disappear and you are given an extra move before more objects "
+"drop."
+msgstr ""
+"<application>Beş ya da Fazlası</application>'nı oynamak kolaydır. "
+"Başlangıçta tahtada beş rastgele konumlanmış nesne ile karşılaşırsınız. Her "
+"turda, sadece bir nesneyi oynatmaya izniniz vardır. Boş bir yol olduğu "
+"müddetce nesneyi herhangi bir yere taşıyabilirsiniz. Sonra bilgisayar "
+"rasgele pozisyonlara (tam sayısı oyununun boyutuna bağlıdır) daha fazla "
+"nesne bırakmaya başlar. Oyunun penceresinden sonraki düşecek nesnelerin "
+"önizlemesini görebilirsiniz. Eğer aynı şekil ve renkteki beş nesneyi "
+"hizalamayı başarırsanız nesneler kaybolur daha fazla nesne düşmeden önce "
+"size ek hareket verilir."
+
+#: C/glines.xml:176(title)
+msgid "Basic usage"
+msgstr "Temel kullanım"
+
+#: C/glines.xml:177(para)
+msgid ""
+"Starting <application>Five or More</application> presents you with the "
+"<interface>game board</interface> and a new game starts. What it looks like "
+"is shown in <xref linkend=\"mainwindow-fig\"/>."
+msgstr ""
+"<application>Beş ya da Fazlası</application>'nı başlatmak size "
+"<interface>oyun tahtası</interface>nı getirir ve yeni oyun başlar. Nasıl "
+"göründüğü buradaki gibidir <xref linkend=\"mainwindow-fig\"/>."
+
+#: C/glines.xml:184(title)
+msgid "The main window when you start a game."
+msgstr "Bir oyun başladığında ana pencere."
+
+#. ==== End of Figure ====
+#: C/glines.xml:195(para)
+msgid ""
+"As the game progresses, the board gets more and more crowded (unless you are "
+"really good...) and making objects disappear gets harder and harder. The "
+"game is over, when the board is full."
+msgstr ""
+"Oyun ilerlediğinde tahta daha ve daha kalabalık olur (eğer gerçekten çok iyi "
+"değilseniz...) ve nesneleri kaybetmek git gide daha zor olur. Tahta "
+"dolduğunda oyun biter."
+
+#: C/glines.xml:203(title)
+msgid "Game over!"
+msgstr "Oyun bitti!"
+
+#: C/glines.xml:220(title)
+msgid "Playing the Game"
+msgstr "Oyunu Oynamak"
+
+#: C/glines.xml:221(para)
+msgid ""
+"A game of <application>Five or More</application> begins with some random "
+"objects on the board."
+msgstr ""
+"<application>Beş ya da Fazlası</application> oyunu tahta üzerinde rastgele "
+"nesnelerle başlar."
+
+#: C/glines.xml:225(para)
+msgid ""
+"To make a move, click on one of the objects. When an object is activated it "
+"starts rotating (or doing something else depending on the theme, but let us "
+"not anticipate…). You can then select its destination by clicking an "
+"empty square. If the path to the destination is clear the activated item "
+"travels there. If the destination square is occupied by another object "
+"nothing will be moved and the selection will be transferred to the new "
+"object. If the path is not clear (you cannot jump objects over obstacles!) "
+"the application prints a warning in the status bar (bottom of the window) "
+"and the original object remains active."
+msgstr ""
+"Hareket etmek için nesnelerin üzerine tıklayın. Bir nesne etkinleştiğinden "
+"dönmeye başlar (ya da temaya bağlı olarak başla şeyler, ama şimdilik "
+"varsaymayalım…). Hedefi boş bir kareye tıklayarak belirtebilirsiniz. "
+"Eğer hedefe giden yol temiz ise etkinleşen öğe oraya hareket eder. Eğer "
+"seçilen hedefte başla bir nesne varsa içbir şey olmaz ve seçim yeni nesneye "
+"geçer. Eğer yol temiz değilse (engeller üzerinden nesneleri "
+"hoplatamazsınız!) uygulama durum çubuğunda (pencerenin altı) bir uyarı "
+"yazdırır ve asıl nesne aktif kalır."
+
+#: C/glines.xml:237(para)
+msgid ""
+"As objects disappear, you get points. The points you score depends on the "
+"number of objects you managed to align (see <xref linkend=\"glines-table1\"/"
+">). Your score is shown in the upper right corner of the window."
+msgstr ""
+"Nesneler kayboldukca puan kazanırsınız. Aldığınız puanlar düzenlemeye "
+"çalıştığınız nesnelerin sayısına bağlıdır (bakın <xref linkend=\"glines-"
+"table1\"/>). Puanının pencerenin üst sağ tarafında gösterilir."
+
+#: C/glines.xml:246(title) C/glines.xml:342(title)
+msgid "Scoring in Five or More"
+msgstr "Beş ya da Fazlası'nda Puan Almak"
+
+#: C/glines.xml:250(entry)
+msgid "Number of objects"
+msgstr "Nesnelerin sayısı"
+
+#: C/glines.xml:251(entry)
+msgid "Score given"
+msgstr "Verilen puan"
+
+#: C/glines.xml:256(entry) C/glines.xml:358(entry)
+msgid "5"
+msgstr "5"
+
+#: C/glines.xml:257(entry) C/glines.xml:276(entry)
+msgid "10"
+msgstr "10"
+
+#: C/glines.xml:260(entry)
+msgid "6"
+msgstr "6"
+
+#: C/glines.xml:261(entry) C/glines.xml:284(entry)
+msgid "12"
+msgstr "12"
+
+#: C/glines.xml:264(entry) C/glines.xml:356(entry) C/glines.xml:357(entry)
+#: C/glines.xml:365(entry) C/glines.xml:372(entry) C/glines.xml:373(entry)
+msgid "7"
+msgstr "7"
+
+#: C/glines.xml:265(entry)
+msgid "18"
+msgstr "18"
+
+#: C/glines.xml:268(entry)
+msgid "8"
+msgstr "8"
+
+#: C/glines.xml:269(entry)
+msgid "28"
+msgstr "28"
+
+#: C/glines.xml:272(entry) C/glines.xml:363(entry) C/glines.xml:364(entry)
+msgid "9"
+msgstr "9"
+
+#: C/glines.xml:273(entry)
+msgid "42"
+msgstr "42"
+
+#: C/glines.xml:277(entry)
+msgid "82"
+msgstr "82"
+
+#: C/glines.xml:280(entry)
+msgid "11"
+msgstr "11"
+
+#: C/glines.xml:281(entry)
+msgid "108"
+msgstr "108"
+
+#: C/glines.xml:285(entry)
+msgid "138"
+msgstr "138"
+
+#: C/glines.xml:288(entry)
+msgid "13"
+msgstr "13"
+
+#: C/glines.xml:289(entry)
+msgid "172"
+msgstr "172"
+
+#: C/glines.xml:292(entry)
+msgid "14"
+msgstr "14"
+
+#: C/glines.xml:293(entry)
+msgid "210"
+msgstr "210"
+
+#: C/glines.xml:300(title)
+msgid "Using the Keyboard"
+msgstr "Klavye Kullanarak"
+
+#: C/glines.xml:301(para)
+msgid ""
+"Instead of using the mouse you can use the keyboard to play "
+"<application>Five or More</application>. To use the keyboard, hit an arrow "
+"key and a cursor will appear near the center of the board. The arrow keys "
+"will move the cursor. When the cursor is over the object you want to move, "
+"use the spacebar to select it. Then shift the cursor to the object's "
+"destination and hit the space bar again to move the object."
+msgstr ""
+"<application>Beş ya da Fazlası</application> oynamak için fare kullanmak "
+"yerine klavye de kullanabilirsiniz. Klavye kullanmak için bir ok tuşuna "
+"basın ve imlecin tahtanın ortasında belirdiğini görün. Ok tuşları imleci "
+"oynatırlar. İmleç seçmek istediğiniz nesnenin üzerindeyse seçmek için boşluk "
+"tuşuna basn. Daha sorna imleci nesnenin hedefine kaydırın ve nesneyi taşımak "
+"için boşluk tuşuna basın."
+
+#: C/glines.xml:302(para)
+msgid ""
+"If you start using the mouse again, the cursor will disappear. The cursor "
+"will reappear if you use the arrow keys again."
+msgstr ""
+"Eğer fare kullanmaya başlarsanız imleç kaybolacaktır. Eğer ok tuşlarını "
+"tekrar kullanırsanız imleç tekrar görünür."
+
+#: C/glines.xml:315(title)
+msgid "Customizing the Game"
+msgstr "Oyunu Özelleştirmek"
+
+#: C/glines.xml:316(para)
+msgid ""
+"You can configure <application>Five or More</application> by clicking on "
+"<guimenuitem>Preferences</guimenuitem> in the applications "
+"<guimenu>Settings</guimenu> menu. The following <interface>dialog</"
+"interface> will appear:"
+msgstr ""
+"<application>Beş ya da Fazlası</application>'nı uygulamanın "
+"<guimenu>Ayarlar</guimenu> menüsündeki <guimenuitem>Tercihler</"
+"guimenuitem>'i seçerek yapılandırabilirsiniz. Aşağıdaki <interface>pencere</"
+"interface> belirecektir:"
+
+#: C/glines.xml:324(title)
+msgid "Preferences"
+msgstr "Tercihler"
+
+#. ==== End of Figure ====
+#: C/glines.xml:333(para)
+msgid ""
+"You can select different object styles and background colors in the "
+"<guimenu>Themes</guimenu> section. If you find it difficult distinguishing "
+"the colours, try the shapes theme."
+msgstr ""
+"<guimenu>Temalar</guimenu> bölümünde değişik nesne biçemleri ve arkaplan "
+"renklerini seçebilirsiniz. Eğer renkleri ayırmak zor geliyorsa, şekiller "
+"temasını deneyin."
+
+#: C/glines.xml:338(para)
+msgid ""
+"The <guimenu>Board Size</guimenu> section lets you select the size of the "
+"board. Each size has a slightly different balance: larger sizes give you "
+"more space to move, but more objects arrive each turn. The parameters for "
+"each size are given in <xref linkend=\"table-sizes\"/>."
+msgstr ""
+"<guimenu>Tahta Boyutu</guimenu> bölümü tahtanın boyutunu seçmenize olanak "
+"sağlar. Her boyut farklı bir dengeye sahiptir: büyük boyular daha fazla "
+"hareket alanı sağlar, ancak daha fazla nesne tur başına belirir. Her boyut "
+"için parametreler <xref linkend=\"table-sizes\"/> içerisinde belirtilmiştir."
+
+#: C/glines.xml:346(entry)
+msgid "Size"
+msgstr "Boyut"
+
+#: C/glines.xml:347(entry)
+msgid "Width"
+msgstr "Genişlik"
+
+#: C/glines.xml:348(entry)
+msgid "Height"
+msgstr "Yükseklik"
+
+#: C/glines.xml:349(entry)
+msgid "Number of Types"
+msgstr "Tür Sayısı"
+
+#: C/glines.xml:350(entry)
+msgid "Objects per Turn"
+msgstr "Tur Başına Nesne"
+
+#: C/glines.xml:355(entry)
+msgid "Small"
+msgstr "Küçük"
+
+#: C/glines.xml:359(entry) C/glines.xml:366(entry)
+msgid "3"
+msgstr "3"
+
+#: C/glines.xml:362(entry)
+msgid "Medium"
+msgstr "Orta"
+
+#: C/glines.xml:369(entry)
+msgid "Large"
+msgstr "Büyük"
+
+#: C/glines.xml:370(entry)
+msgid "20"
+msgstr "20"
+
+#: C/glines.xml:371(entry)
+msgid "15"
+msgstr "15"
+
+#: C/glines.xml:379(para)
+msgid ""
+"You can speed up the movement of the objects by checking the Use fast moves "
+"box in the <guimenu>General</guimenu> preferences section."
+msgstr ""
+"Nesnelerin hareketlerini <guimenu>Genel</guimenu> tercihler bölümündeki "
+"Hızlık hareketleri kullan kutusunu seçerek hızlandırabilirsiniz."
+
+#: C/glines.xml:383(para)
+msgid ""
+"Any changes you make are instantly applied and remembered for the next time "
+"you run <application>Five or More</application>."
+msgstr ""
+"Yaptığınız her değişiklik anında uygulanır ve <application>Beş ya da "
+"Fazlası</application>'nı bir sonraki açışınızda hatırlanır."
+
+#: C/glines.xml:389(title)
+msgid "How to create new themes"
+msgstr "Yeni temalar oluşturma"
+
+#: C/glines.xml:390(para)
+msgid ""
+"Each theme consists of a single PNG image file. This image consists of an "
+"array of seven rows, corresponding to the different object colors/shapes, "
+"and four columns, each of which is a frame in the animation of the object. "
+"The actual size of the image is irrelevant, it will be rescaled, but the sub-"
+"images must form a four by seven grid to get the correct effect. When using "
+"SVG remember that the image size is the page size, if your grid does not "
+"fill the page try shrinking the page size. Use an existing theme as a guide."
+msgstr ""
+"Her tema tek bir PNG resim dosyasından oluşur. Bu resim farklı nesne renk/"
+"şekil içeren yedi satır ve nesnenin canlandırmasını belirten çerçeveleri "
+"oluşturan dört sütundan oluşur. Resmin tam boyutu gereksizdir, yeniden "
+"boyutlandırılacaktır, ancak alt resimler tam etki vermek için bir dörde yedi "
+"ızgara oluşturmalıdır. SVG kullanırken eğer resim boyutunun sayfa boyutu "
+"olduğunu unutmayın. Eğer ızgara sayfayı doldurmuyorsa sayfa boyutunu "
+"küçültmeyi deneyin. Mevcut bir temayı kılavuz olarak kullanabilirsiniz."
+
+#: C/glines.xml:420(title)
+msgid "Authors"
+msgstr "Yazanlar"
+
+#: C/glines.xml:421(para)
+msgid ""
+"<application>Five or More</application> was written by Róbert Szókovács "
+"(<email>szo@appaloosacorp.hu</email>) and Szabolcs Bán (<email>shooby@gnome."
+"hu</email>). This manual was written by Emese Kovács (<email>emese@gnome.hu</"
+"email>). For information on how to make comments, suggestions and to report "
+"bugs please see the <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
+"\">feedback document</ulink>."
+msgstr ""
+"<application>Beş ya da Fazlası</application> Róbert Szókovács "
+"(<email>szo@appaloosacorp.hu</email>) ve Szabolcs Bán (<email>shooby@gnome."
+"hu</email>) tarafından yazılmıştır. Bu kılavuz Emese Kovács "
+"(<email>emese@gnome.hu</email>) tarafından yazılmıştır. Yorum yapmak, "
+"tavsiyelerde bulunmak ve hata bildirmek için lütfen <ulink url=\"ghelp:gnome-"
+"feedback\" type=\"help\">geri besleme belgesi</ulink>ne bakın."
+
+#: C/glines.xml:446(title)
+msgid "License"
+msgstr "Lisans"
+
+#: C/glines.xml:447(para)
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the <citetitle>GNU General Public License</citetitle> as "
+"published by the Free Software Foundation; either version 2 of the License, "
+"or (at your option) any later version."
+msgstr ""
+
+#: C/glines.xml:454(para)
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
+"License</citetitle> for more details."
+msgstr ""
+
+#: C/glines.xml:460(para)
+msgid ""
+"A copy of the <citetitle>GNU General Public License</citetitle> is included "
+"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
+"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
+"the Free Software Foundation by visiting <ulink url=\"http://www.fsf.org\" "
+"type=\"http\">their Web site</ulink> or by writing to <address> Free "
+"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
+"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
+"postcode><country>USA</country></address>"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/glines.xml:0(None)
+msgid "translator-credits"
+msgstr "Barış Çiçek <baris@teamforce.name.tr>"

@@ -1,0 +1,13 @@
+[Desktop Entry]
+_Name=Swell Foop
+_Comment=Clear the screen by removing groups of colored and shaped tiles
+Icon=gnome-swell-foop
+Exec=swell-foop
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Game;LogicGame;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-games
+X-GNOME-Bugzilla-Component=BugBuddyBugs
+X-GNOME-Bugzilla-Version=@VERSION@
+StartupNotify=true
