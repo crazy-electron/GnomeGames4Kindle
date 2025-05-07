@@ -423,7 +423,7 @@ public class PGN
     public PGN.from_file (File file) throws Error
     {
         uint8[] contents;
-        size_t n_read;
+        string n_read;
         file.load_contents (null, out contents, out n_read);
         this.from_string ((string) contents);
     }
