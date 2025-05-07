@@ -1004,6 +1004,7 @@ public class Application
 
         preferences_dialog.transient_for = window;
         preferences_dialog.modal = true;
+        preferences_dialog.title = "L:A_D:application_ID:glchessDialog";
 
         settings.bind ("show-numbering", preferences_builder.get_object ("show_numbering_check"),
                        "active", SettingsBindFlags.DEFAULT);
