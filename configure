@@ -3686,7 +3686,7 @@ for game in $gamelist; do
     *) ;;
   esac
   case $game in
-    glchess) need_opengl=yes ;;
+    glchess) need_opengl=no ;;
     *) ;;
   esac
   case $game in

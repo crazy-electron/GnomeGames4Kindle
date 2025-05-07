@@ -163,10 +163,7 @@ public class Application
                 view_container.remove (view);
                 view.destroy ();
             }
-            if (settings.get_boolean ("show-3d"))
-                view = new ChessView3D ();
-            else
-                view = new ChessView2D ();
+            view = new ChessView2D ();
             view.set_size_request (300, 300);
             view.scene = scene;
             view_container.add (view);
@@ -212,19 +209,20 @@ public class Application
 
     private void start_game ()
     {
-        if (in_history)
-        {
-            window.title = /* Title of the main window */
-                           _("Chess");
-        }
-        else
-        {
-            var path = game_file.get_path ();
-            window.title = /* Title of the window when explicitly loaded a file. The first argument is the
-                            * base name of the file (e.g. test.pgn), the second argument is the directory
-                            * (e.g. /home/fred) */
-                           _("%1$s (%2$s) - Chess").printf (Path.get_basename (path), Path.get_dirname (path));
-        }
+        //  if (in_history)
+        //  {
+        //      window.title = /* Title of the main window */
+        //                     _("Chess");
+        //  }
+        //  else
+        //  {
+        //      var path = game_file.get_path ();
+        //      window.title = /* Title of the window when explicitly loaded a file. The first argument is the
+        //                      * base name of the file (e.g. test.pgn), the second argument is the directory
+        //                      * (e.g. /home/fred) */
+        //                     _("%1$s (%2$s) - Chess").printf (Path.get_basename (path), Path.get_dirname (path));
+        //  }
+        window.title = "L:A_N:application_ID:glchess_PC:N_O:URL";
 
         var model = (Gtk.ListStore) history_combo.model;
         model.clear ();
@@ -818,6 +816,7 @@ public class Application
             dialog.add_button (Gtk.Stock.CANCEL, Gtk.ResponseType.CANCEL);
             dialog.add_button ("_Abandon game", Gtk.ResponseType.NO);
             dialog.add_button ("_Save game for later", Gtk.ResponseType.YES);
+            dialog.set_title ("L:A_D:application_ID:glchessDialog");
             var result = dialog.run ();
             dialog.destroy ();
             if (result == Gtk.ResponseType.CANCEL)
@@ -901,6 +900,10 @@ public class Application
 
     private void draw_time (Gtk.Widget widget, Cairo.Context c, string text, double[] fg, double[] bg)
     {
+
+        Gtk.Allocation allocation;
+        widget.get_allocation(out allocation);
+
         double alpha = 1.0;
 
         if (widget.get_state () == Gtk.StateType.INSENSITIVE)
@@ -910,11 +913,11 @@ public class Application
 
         c.set_source_rgba (fg[0], fg[1], fg[2], alpha);
         c.select_font_face ("fixed", Cairo.FontSlant.NORMAL, Cairo.FontWeight.BOLD);
-        c.set_font_size (0.6 * widget.get_allocated_height ());
+        c.set_font_size (0.6 * allocation.height);
         Cairo.TextExtents extents;
         c.text_extents (text, out extents);
-        c.move_to ((widget.get_allocated_width () - extents.width) / 2 - extents.x_bearing,
-                   (widget.get_allocated_height () - extents.height) / 2 - extents.y_bearing);
+        c.move_to ((allocation.width - extents.width) / 2 - extents.x_bearing,
+                   (allocation.height - extents.height) / 2 - extents.y_bearing);
         c.show_text (text);
 
         widget.set_size_request ((int) extents.width + 6, -1);
@@ -998,7 +1001,10 @@ public class Application
             warning ("Could not load preferences UI: %s", e.message);
         }
         preferences_dialog = (Gtk.Dialog) preferences_builder.get_object ("preferences");
-        
+
+        preferences_dialog.transient_for = window;
+        preferences_dialog.modal = true;
+
         settings.bind ("show-numbering", preferences_builder.get_object ("show_numbering_check"),
                        "active", SettingsBindFlags.DEFAULT);
         settings.bind ("show-move-hints", preferences_builder.get_object ("show_move_hints_check"),
@@ -1332,6 +1338,7 @@ public class Application
 
         about_dialog = new Gtk.AboutDialog ();
         about_dialog.transient_for = window;
+        about_dialog.modal = true;
         about_dialog.name = "glchess";
         about_dialog.version = Config.VERSION;
         about_dialog.copyright = "Copyright 2010 Robert Ancell <robert.ancell@gmail.com>";
@@ -1358,6 +1365,7 @@ public class Application
         about_dialog.logo_icon_name = "glchess";
         about_dialog.response.connect (about_response_cb);
         about_dialog.show ();
+        about_dialog.set_title ("L:A_D:application_ID:glchessDialog");
     }
     
     private void about_response_cb (int response_id)

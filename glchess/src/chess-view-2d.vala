@@ -19,7 +19,10 @@ private class ChessView2D : ChessView
 
     public override bool configure_event (Gdk.EventConfigure event)
     {
-        int short_edge = int.min (get_allocated_width (), get_allocated_height ());
+        Gtk.Allocation allocation;
+        get_allocation(out allocation);
+
+        int short_edge = int.min (allocation.width, allocation.height);
             
         square_size = (int) Math.floor ((short_edge - 2 * border) / 9.0);
         var extra = square_size * 0.1;
@@ -83,11 +86,15 @@ private class ChessView2D : ChessView
         loaded_theme_name = scene.theme_name;
     }
 
-    public override bool draw (Cairo.Context c)
+    public override bool expose_event (Gdk.EventExpose event)
     {
+        Cairo.Context c = Gdk.cairo_create(this.window);
         load_theme ();
 
-        c.translate (get_allocated_width () / 2, get_allocated_height () / 2);
+        Gtk.Allocation allocation;
+        get_allocation(out allocation);
+
+        c.translate (allocation.width / 2, allocation.height / 2);
         //c.scale (s, s);
         c.rotate (Math.PI * scene.board_angle / 180.0);
 
@@ -228,8 +235,11 @@ private class ChessView2D : ChessView
         if (scene.game == null || event.button != 1)
             return false;
 
-        int file = (int) Math.floor((event.x - 0.5 * get_allocated_width () + square_size * 4) / square_size);
-        int rank = 7 - (int) Math.floor((event.y - 0.5 * get_allocated_height () + square_size * 4) / square_size);
+        Gtk.Allocation allocation;
+        get_allocation(out allocation);
+
+        int file = (int) Math.floor((event.x - 0.5 * allocation.width + square_size * 4) / square_size);
+        int rank = 7 - (int) Math.floor((event.y - 0.5 * allocation.height + square_size * 4) / square_size);
 
         // FIXME: Use proper Cairo rotation matrix
         if (scene.board_angle == 180.0)

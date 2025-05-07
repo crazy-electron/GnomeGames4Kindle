@@ -155,7 +155,8 @@ public class PGNGame
         data.append (result);
         data.append ("\n");
 
-        file.replace_contents (data.str, data.len, null, false, FileCreateFlags.NONE, null);
+        // file.replace_contents (data.str, data.len, null, false, FileCreateFlags.NONE, null);
+        file.replace_contents((uint8[]) data.str.data, null, false, FileCreateFlags.NONE, null);
     }
 }
 
@@ -421,9 +422,9 @@ public class PGN
 
     public PGN.from_file (File file) throws Error
     {
-        string contents;
+        uint8[] contents;
         size_t n_read;
         file.load_contents (null, out contents, out n_read);
-        this.from_string (contents);
+        this.from_string ((string) contents);
     }
 }

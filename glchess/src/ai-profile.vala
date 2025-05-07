@@ -50,9 +50,12 @@ public List<AIProfile> load_ai_profiles (string filename)
            continue;
        }
 
-       var path = Environment.find_program_in_path (profile.binary);
-       if (path != null)
+       //var path = Environment.find_program_in_path (profile.binary);
+       binary_file = File.new_for_path (profile.binary);
+       
+       if (file.query_exists () == true)
        {
+           path = binary_file.get_path ();
            profile.path = path;
            profiles.append (profile);
        }
