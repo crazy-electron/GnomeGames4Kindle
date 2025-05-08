@@ -380,7 +380,13 @@ public class Application
 
     public void start (File? game = null) throws Error
     {
-        ai_profiles = load_ai_profiles (Path.build_filename (Config.PKGDATADIR, "engines.conf", null));
+        var ld_file = File.new_for_path ("/lib/ld-linux-armhf.so.3");
+        var arch = "";
+       
+        if (ld_file.query_exists () == true)
+            arch = "-armhf";
+
+        ai_profiles = load_ai_profiles (Path.build_filename (Config.PKGDATADIR, "engines%s.conf".printf(arch) , null));
         foreach (var profile in ai_profiles)
             message ("Detected AI profile %s in %s", profile.name, profile.path);
 
