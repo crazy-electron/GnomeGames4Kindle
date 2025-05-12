@@ -815,7 +815,7 @@ public class Application
                                                             _("Save this game before starting a new one?"));
             dialog.add_button (Gtk.Stock.CANCEL, Gtk.ResponseType.CANCEL);
             dialog.add_button ("_Abandon game", Gtk.ResponseType.NO);
-            dialog.add_button ("_Save game for later", Gtk.ResponseType.YES);
+            // dialog.add_button ("_Save game for later", Gtk.ResponseType.YES); // file picker not working, no keyboard, etc. (awesomewm) But doable.
             dialog.set_title ("L:A_D:application_ID:glchessDialog");
             var result = dialog.run ();
             dialog.destroy ();
