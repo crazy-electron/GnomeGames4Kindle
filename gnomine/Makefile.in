@@ -417,7 +417,7 @@ gnomine_LDADD = $(top_builddir)/libgames-support/libgames-support.la \
 	$(GTK_LIBS) $(am__append_3) $(am__append_5) $(am__append_7)
 schema_in_files = gnomine.schemas.in
 @HAVE_GNOME_TRUE@schemadir = $(GCONF_SCHEMA_FILE_DIR)
-@HAVE_GNOME_TRUE@schema_DATA = $(schema_in_files:.schemas.in=.schemas)
+schema_DATA = $(schema_in_files:.schemas.in=.schemas)
 man_MANS = gnomine.6
 pixmapdir = $(datadir)/gnome-games/gnomine/pixmaps
 pixmap_DATA = face-cool.svg face-sad.svg face-smile.svg face-win.svg 	\

@@ -43,6 +43,7 @@
 #include <libgames-support/games-stock.h>
 #include <libgames-support/games-pause-action.h>
 #include <libgames-support/games-fullscreen-action.h>
+#include <libgames-support/games-preimage.h>
 
 #ifdef WITH_SMCLIENT
 #include <libgames-support/eggsmclient.h>
@@ -95,6 +96,9 @@ GtkAction *hint_action;
 GtkAction *fullscreen_action;
 GtkAction *pause_action;
 
+GtkWidget *leftButton;
+GtkWidget *rightButton;
+GtkWidget *button_actions_table;
 /*GstElement *sound_player;*/
 
 static const GamesScoresCategory scorecats[] = {
@@ -132,8 +136,18 @@ image_widget_setup (char *name)
   dname = games_runtime_get_directory (GAMES_RUNTIME_GAME_PIXMAP_DIRECTORY);
   filename = g_build_filename (dname, name, NULL);
 
-  if (filename != NULL)
-    gtk_image_set_from_file (GTK_IMAGE (image), filename);
+  if (filename != NULL) { 
+    GError *error = NULL;
+    GamesPreimage *preimage = games_preimage_new_from_file (filename, error);
+
+    if (error != NULL) {
+      printf("Error loading image %s: %s\n", filename, error->message);
+      return NULL;
+    }
+    
+    GdkPixbuf *pixbuf = games_preimage_render (preimage, 128, 128);
+    gtk_image_set_from_pixbuf(GTK_IMAGE(image), pixbuf);
+  }
 
   g_free (filename);
 
@@ -211,7 +225,7 @@ show_scores (gint pos, gboolean endofgame)
     if (scoresdialog != NULL) {
       gtk_window_present (GTK_WINDOW (scoresdialog));
     } else {
-      scoresdialog = games_scores_dialog_new (GTK_WINDOW (window), highscores, _("Mines Scores"));
+      scoresdialog = games_scores_dialog_new (GTK_WINDOW (window), highscores, "L:A_D:application_ID:gnominesMinesScores");
       games_scores_dialog_set_category_description (GAMES_SCORES_DIALOG
 						    (scoresdialog),
 						    _("Size:"));
@@ -252,6 +266,21 @@ static void
 scores_callback (void)
 {
   show_scores (0, FALSE);
+}
+
+static void set_action (GtkWidget * widget, gpointer data);
+
+static void
+set_action (GtkWidget * widget, gpointer data)
+{
+  int action = GPOINTER_TO_INT (data);
+  g_signal_handlers_block_by_func (G_OBJECT(leftButton), G_CALLBACK(set_action), GINT_TO_POINTER (1));
+  g_signal_handlers_block_by_func (G_OBJECT(rightButton), G_CALLBACK(set_action), GINT_TO_POINTER (3));              
+  gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON(leftButton), action == 1);
+  gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON(rightButton), action == 3);
+  g_signal_handlers_unblock_by_func (G_OBJECT(leftButton), G_CALLBACK(set_action), GINT_TO_POINTER (1));
+  g_signal_handlers_unblock_by_func (G_OBJECT(rightButton), G_CALLBACK(set_action), GINT_TO_POINTER (3));
+  gtk_minefield_set_action (GTK_MINEFIELD (mfield), action);
 }
 
 static void
@@ -295,6 +324,9 @@ new_game (void)
   gtk_action_set_sensitive (pause_action, TRUE);
   gtk_widget_hide (resume_container);
   gtk_widget_show (mfield_container);
+  set_action(NULL, GINT_TO_POINTER (1));
+  gtk_widget_set_sensitive(leftButton, TRUE);
+  gtk_widget_set_sensitive(rightButton, TRUE);
 }
 
 /* Add a penalty for a successful hint. */
@@ -381,6 +413,10 @@ lose_game (GtkWidget * widget, gpointer data)
 {
   show_face (pm_sad);
 
+  gtk_widget_set_sensitive(leftButton, FALSE);
+  gtk_widget_set_sensitive(rightButton, FALSE);
+  set_action(NULL, GINT_TO_POINTER (0));
+
   gtk_widget_grab_focus (mbutton);
 
   games_clock_stop (GAMES_CLOCK (clk));
@@ -397,6 +433,10 @@ win_game (GtkWidget * widget, gpointer data)
   gtk_widget_grab_focus (mbutton);
 
   show_face (pm_win);
+
+  gtk_widget_set_sensitive(leftButton, FALSE);
+  gtk_widget_set_sensitive(rightButton, FALSE);
+  set_action(NULL, GINT_TO_POINTER (0));
 
   seconds = games_clock_get_seconds (GAMES_CLOCK (clk));
   pos = games_scores_add_time_score (highscores, (gfloat) (seconds / 60) + (gfloat) (seconds % 60) / 100);
@@ -465,6 +505,8 @@ about_callback (void)
   gtk_show_about_dialog (GTK_WINDOW (window),
 			 "name", APP_NAME_LONG,
 			 "version", VERSION,
+       "modal", TRUE,
+       "title", "L:A_D:application_ID:gnominesAbout",
 			 "comments",
 			 _("The popular logic puzzle minesweeper. "
 			   "Clear mines from a board using hints from "
@@ -472,12 +514,13 @@ about_callback (void)
 			   "Mines is a part of GNOME Games."),
 			 "copyright",
 			 "Copyright \xc2\xa9 1997-2008 Free Software Foundation, Inc.",
-			 "license", license, "authors", authors, "artists",
-			 artists, "documenters", documenters,
+       // this buttons open windows the user wont't be able to close
+			 /* "license", license, "authors", authors, "artists",
+			 artists, "documenters", documenters, */
 			 "translator-credits", _("translator-credits"),
-			 "logo-icon-name", "gnomine", "website",
+			 "logo-icon-name", "gnomine", /* "website",
 			 "http://www.gnome.org/projects/gnome-games/",
-			 "website-label", _("GNOME Games web site"),
+			 "website-label", _("GNOME Games web site"), */
 			 "wrap-license", TRUE, NULL);
   g_free (license);
 }
@@ -729,7 +772,7 @@ create_preferences (void)
 
   gtk_table_attach_defaults (GTK_TABLE (table), frame, 0, 2, 2, 3);
 
-  pref_dialog = gtk_dialog_new_with_buttons (_("Mines Preferences"),
+  pref_dialog = gtk_dialog_new_with_buttons ("L:A_D:application_ID:gnominePreferences",
 					     GTK_WINDOW (window),
 					     0,
 					     GTK_STOCK_CLOSE,
@@ -1000,8 +1043,7 @@ main (int argc, char *argv[])
   verify_ranges ();
 
   window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
-  gtk_window_set_title (GTK_WINDOW (window), _(APP_NAME_LONG));
-    
+  gtk_window_set_title (GTK_WINDOW (window), "L:A_N:application_ID:gnomine_PC:N_O:URL");     
   games_conf_add_window (GTK_WINDOW (window), NULL);
 
   games_stock_init ();
@@ -1093,6 +1135,25 @@ main (int argc, char *argv[])
 		    G_CALLBACK (hint_used), NULL);
 
   gtk_box_pack_start (GTK_BOX (box), gtk_hseparator_new (), FALSE, FALSE, 0);
+
+  /* Create a GtkTable with SHOW and FLAG action buttons */
+  button_actions_table = gtk_table_new(1, 2, TRUE);
+
+  leftButton = gtk_toggle_button_new_with_label(_("Show"));
+  g_signal_connect(G_OBJECT(leftButton), "toggled", G_CALLBACK(set_action), GINT_TO_POINTER (1));
+  gtk_widget_set_size_request(leftButton, -1, 150);
+  gtk_table_attach(GTK_TABLE(button_actions_table), leftButton, 0, 1, 0, 1,
+                   GTK_EXPAND | GTK_FILL, GTK_EXPAND | GTK_FILL, 5, 5);
+
+  rightButton = gtk_toggle_button_new_with_label(_("Flag"));
+  g_signal_connect(G_OBJECT(rightButton), "toggled", G_CALLBACK(set_action), GINT_TO_POINTER (3));
+  gtk_widget_set_size_request(rightButton, -1, 150);
+  gtk_table_attach(GTK_TABLE(button_actions_table), rightButton, 1, 2, 0, 1,
+                   GTK_EXPAND | GTK_FILL, GTK_EXPAND | GTK_FILL, 5, 5);
+                  
+  gtk_box_pack_start(GTK_BOX(box), button_actions_table, FALSE, FALSE, 0);
+
+  gtk_box_pack_start(GTK_BOX(box), gtk_hseparator_new(), FALSE, FALSE, 0);
 
   status_box = gtk_hbox_new (TRUE, 0);
   gtk_box_pack_start (GTK_BOX (box), status_box, FALSE, FALSE, 8);

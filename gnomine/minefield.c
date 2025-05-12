@@ -104,7 +104,7 @@ static gint gtk_minefield_button_release (GtkWidget * widget,
 					  GdkEventButton * event);
 static void gtk_minefield_check_field (GtkMineField * mfield, gint x, gint y);
 static void gtk_minefield_class_init (GtkMineFieldClass * class);
-static gboolean gtk_minefield_draw (GtkWidget * widget, cairo_t * cr);
+static gboolean gtk_minefield_draw (GtkWidget * widget, GdkEventExpose * event);
 static void gtk_minefield_init (GtkMineField * mfield);
 static void gtk_minefield_lose (GtkMineField * mfield);
 static gint gtk_minefield_motion_notify (GtkWidget * widget,
@@ -130,6 +130,12 @@ static gboolean gtk_minefield_solve_square (GtkMineField * mfield, guint x,
 					    guint y, guint c);
 /* end prototypes */
 
+void
+gtk_minefield_set_action (GtkMineField * mfield, gboolean action)
+{
+  // hijack the click event->button with our on screen buttons
+  mfield->button = action;
+}
 
 /* The abstraction of the coordinate system. Note that this is inline
    code that does no checking, use it sparsely. If in doubt, use
@@ -403,6 +409,16 @@ gtk_minefield_size_allocate (GtkWidget * widget, GtkAllocation * allocation)
 }
 
 static void
+gtk_minefield_size_request(GtkWidget *widget, GtkRequisition *requisition)
+{
+  GtkMineField *mf = GTK_MINEFIELD (widget);
+  
+  /* Set both width and height in one call */
+  requisition->width = mf->xsize * MINESIZE_MIN;
+  requisition->height = mf->ysize * MINESIZE_MIN;
+}
+
+static void
 gtk_minefield_get_preferred_width (GtkWidget *widget, gint *minimum, gint *natural)
 {
   GtkMineField *mf = GTK_MINEFIELD (widget);
@@ -423,11 +439,7 @@ gtk_minefield_get_preferred_height (GtkWidget *widget, gint *minimum, gint *natu
 static void
 gtk_mine_queue_draw (GtkMineField * mfield, guint x, guint y)
 {
-  guint minesizepixels = mfield->minesizepixels;
-
-  gtk_widget_queue_draw_area (GTK_WIDGET (mfield),
-                              x * minesizepixels, y * minesizepixels,
-                              minesizepixels, minesizepixels);
+  gtk_widget_queue_draw (GTK_WIDGET (mfield)); // here partial redraws doesn't work well on the e-ink refresh driver
 }
 
 static void
@@ -455,9 +467,10 @@ gtk_mine_draw (GtkMineField * mfield, cairo_t *cr, guint x, guint y)
     double dots[] = {2, 2};
 
     gtk_paint_box (style,
-		   cr,
+       gtk_widget_get_window(widget),
 		   clicked ? GTK_STATE_ACTIVE : GTK_STATE_NORMAL,
 		   GTK_SHADOW_IN,
+       NULL,
 		   widget,
 		   "button", x * minesizepixels, y * minesizepixels, minesizepixels, minesizepixels);
     if (y == 0) {		/* top row only */
@@ -481,9 +494,10 @@ gtk_mine_draw (GtkMineField * mfield, cairo_t *cr, guint x, guint y)
     cairo_restore (cr);
   } else {			/* draw shadow around possible mine location */
     gtk_paint_box (style,
-		   cr,
+       gtk_widget_get_window(widget),
 		   clicked ? GTK_STATE_ACTIVE : GTK_STATE_SELECTED,
 		   clicked ? GTK_SHADOW_IN : GTK_SHADOW_OUT,
+       NULL,
 		   widget,
 		   "button", x * minesizepixels, y * minesizepixels, minesizepixels, minesizepixels);
   }
@@ -574,8 +588,9 @@ gtk_mine_draw (GtkMineField * mfield, cairo_t *cr, guint x, guint y)
 }
 
 static gboolean
-gtk_minefield_draw (GtkWidget * widget, cairo_t * cr)
+gtk_minefield_draw (GtkWidget * widget, GdkEventExpose * event)
 {
+  cairo_t * cr = gdk_cairo_create ((GdkDrawable*) gtk_widget_get_window(widget) );
   g_return_val_if_fail (widget != NULL, FALSE);
   g_return_val_if_fail (GTK_IS_MINEFIELD (widget), FALSE);
 
@@ -1056,7 +1071,7 @@ gtk_minefield_button_press (GtkWidget * widget, GdkEventButton * event)
     return FALSE;
 
   /* Left or right mouse button has been clicked. */
-  if (event->button <= 3 && !mfield->buttondown[1]) {
+  if (mfield->button <= 3 && !mfield->buttondown[1]) {
     /* Translate mouse coordinates to minefield coordinates
      * and do some sanity checking. */
     x = event->x / minesizepixels;
@@ -1073,7 +1088,7 @@ gtk_minefield_button_press (GtkWidget * widget, GdkEventButton * event)
       mfield->celldown = c;
       mfield->mines[c].down = 1;
     }
-    mfield->buttondown[event->button - 1]++;
+    mfield->buttondown[mfield->button - 1]++;
 
     /* Redraw the cell, which is now being pressed. */
     gtk_mine_queue_draw (mfield, x, y);
@@ -1089,7 +1104,7 @@ gtk_minefield_button_press (GtkWidget * widget, GdkEventButton * event)
      * since this makes it even easier for two-button mice,
      * but we didn't think of it soon enough not to have to worry 
      * about all the extra legacy crap. */
-    switch (event->button) {
+    switch (mfield->button) {
     case 1: /* Left click. */
       mfield->action = SHOW_ACTION;
       if ((event->state & GDK_SHIFT_MASK) || (mfield->buttondown[2]) || (mfield->mines[c].shown))
@@ -1141,7 +1156,7 @@ gtk_minefield_button_release (GtkWidget * widget, GdkEventButton * event)
     return FALSE;
 
   /* If mouse button released and gtk_minefield_button_press caught it too. */
-  if (event->button <= 3 && mfield->buttondown[event->button - 1]) {
+  if (mfield->button <= 3 && mfield->buttondown[mfield->button - 1]) {
     switch (mfield->action) {
     case SHOW_ACTION:
       gtk_minefield_show (mfield, mfield->celldownx, mfield->celldowny);
@@ -1162,7 +1177,7 @@ gtk_minefield_button_release (GtkWidget * widget, GdkEventButton * event)
     }
     mfield->mines[mfield->celldown].down = 0;
     mfield->action = NO_ACTION;
-    mfield->buttondown[event->button - 1] = 0;
+    mfield->buttondown[mfield->button - 1] = 0;
     gtk_mine_queue_draw (mfield, mfield->celldownx, mfield->celldowny);
   }
   return FALSE;
@@ -1180,9 +1195,8 @@ gtk_minefield_class_init (GtkMineFieldClass * class)
   widget_class->realize = gtk_minefield_realize;
   widget_class->unrealize = gtk_minefield_unrealize;
   widget_class->size_allocate = gtk_minefield_size_allocate;
-  widget_class->get_preferred_width = gtk_minefield_get_preferred_width;
-  widget_class->get_preferred_height = gtk_minefield_get_preferred_height;
-  widget_class->draw = gtk_minefield_draw;
+  widget_class->size_request = gtk_minefield_size_request;
+  widget_class->expose_event = gtk_minefield_draw;
   widget_class->button_press_event = gtk_minefield_button_press;
   widget_class->button_release_event = gtk_minefield_button_release;
   widget_class->motion_notify_event = gtk_minefield_motion_notify;

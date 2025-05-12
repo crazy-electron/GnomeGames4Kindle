@@ -67,6 +67,7 @@ extern "C" {
     guint celldownx;
     guint celldowny;
     gint buttondown[3];
+    gint button;
     gint lose;
     gint win;
     gint multi_mode;
@@ -117,6 +118,7 @@ extern "C" {
   void gtk_minefield_set_use_autoflag (GtkMineField * mfield,
 				       gboolean use_autoflag);
   gint gtk_minefield_hint (GtkMineField * mfield);
+  void gtk_minefield_set_action (GtkMineField * mfield, gboolean action);
 
 #ifdef __cplusplus
 }

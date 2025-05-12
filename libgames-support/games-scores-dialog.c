@@ -33,6 +33,7 @@ struct GamesScoresDialogPrivate {
   GtkWidget *message;
   GtkWidget *hdiv;
   GtkWidget *combo;
+  GtkListStore *store;
   GtkWidget *label;
   GtkWidget *catbar;
   GtkListStore *list;
@@ -101,7 +102,12 @@ static void games_scores_dialog_add_category (GamesScoresDialog *self,
 			 GINT_TO_POINTER (self->priv->catcounter),
 			 k);
   self->priv->catcounter++;
-  gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (self->priv->combo), name);
+
+  GtkTreeIter iter;
+  GtkTreeModel *model = gtk_combo_box_get_model(GTK_COMBO_BOX(self->priv->combo));
+  gtk_list_store_append(GTK_LIST_STORE(model), &iter);
+  gtk_list_store_set(GTK_LIST_STORE(model), &iter, 0, name, -1);
+  //gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (self->priv->combo), name);
 }
 
 /* This is a helper function for loading the initial list of categories
@@ -533,7 +539,10 @@ static void games_scores_dialog_init (GamesScoresDialog *self)
   gtk_box_pack_start (GTK_BOX (self->priv->catbar), self->priv->label,
 			FALSE, FALSE, 0);	
  
-  self->priv->combo = gtk_combo_box_text_new ();
+  GtkListStore *store = gtk_list_store_new(1, G_TYPE_STRING); 
+  self->priv->combo = gtk_combo_box_new_with_model(GTK_TREE_MODEL( store ));
+  g_object_unref(store);
+  
   gtk_combo_box_set_focus_on_click (GTK_COMBO_BOX (self->priv->combo), FALSE);
   gtk_box_pack_start (GTK_BOX (self->priv->catbar), 
 			self->priv->combo, TRUE, TRUE, 0);
