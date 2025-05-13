@@ -217,7 +217,7 @@ show_scores (gint pos, gboolean endofgame)
 			      GTK_RESPONSE_ACCEPT, NULL);
       gtk_dialog_set_default_response (GTK_DIALOG (sorrydialog),
 				       GTK_RESPONSE_ACCEPT);
-      gtk_window_set_title (GTK_WINDOW (sorrydialog), "");
+      gtk_window_set_title (GTK_WINDOW (sorrydialog), "L:A_D:application_ID:gnominesMinesScores");
     }
     dialog = sorrydialog;
   } else {
@@ -359,6 +359,7 @@ hint_callback (void)
                                                GTK_DIALOG_MODAL,
                                                GTK_MESSAGE_INFO, GTK_BUTTONS_OK,
                                                message, NULL);
+  gtk_window_set_title (GTK_WINDOW (dialog), "L:A_D:application_ID:gnomineDialog");
   gtk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
 
   disable_hiding = TRUE;

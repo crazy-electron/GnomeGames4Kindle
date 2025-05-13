@@ -190,7 +190,7 @@ GtkWidget * games_scores_dialog_new (GtkWindow *parent_window, GamesScores *scor
   games_scores_dialog_set_style (dialog, games_scores_get_style (scores));
   dialog->priv->preservehilight = FALSE;
 
-  gtk_window_set_title (GTK_WINDOW (dialog), title);
+  gtk_window_set_title (GTK_WINDOW (dialog), "L:A_D:application_ID:gamesScoresDialog");
   gtk_window_set_transient_for (GTK_WINDOW (dialog), GTK_WINDOW (parent_window));
 
   _games_scores_category_foreach (scores, 
