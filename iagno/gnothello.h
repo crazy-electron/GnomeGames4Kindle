@@ -61,7 +61,7 @@ void set_selection (GtkWidget * widget, void *data);
 void free_str (GtkWidget * widget, void *data);
 void load_tiles_callback (GtkWidget * widget, void *data);
 void cancel (GtkWidget * widget, void *data);
-gboolean draw_event (GtkWidget * widget, cairo_t * cr);
+gboolean expose_event (GtkWidget * widget, GdkEventExpose * event, gpointer data);
 gint configure_event (GtkWidget * widget, GdkEventConfigure * event);
 gint button_press_event (GtkWidget * widget, GdkEventButton * event);
 void gui_draw_pixmap (gint which, gint x, gint y);

@@ -396,7 +396,7 @@ show_properties_dialog (void)
 
   reset_properties ();
 
-  propbox = gtk_dialog_new_with_buttons (_("Iagno Preferences"),
+  propbox = gtk_dialog_new_with_buttons ("L:A_D:application_ID:iagnoPreferencesDialog",
 					 GTK_WINDOW (window),
 					 0,
 					 GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE,

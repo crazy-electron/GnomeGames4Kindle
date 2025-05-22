@@ -35,6 +35,7 @@
 #include <libgames-support/games-help.h>
 #include <libgames-support/games-runtime.h>
 #include <libgames-support/games-stock.h>
+#include <libgames-support/games-preimage.h>
 
 #ifdef WITH_SMCLIENT
 #include <libgames-support/eggsmclient.h>
@@ -68,6 +69,9 @@ GtkAction *leave_network_action;
 GtkAction *player_list_action;
 GtkAction *undo_action;
 
+GdkPixmap *buffer_surface_pixmap = NULL;
+GdkPixmap *tiles_surface_pixmap  = NULL;
+GdkPixmap *background_surface_pixmap = NULL;
 cairo_surface_t *buffer_surface     = NULL;
 cairo_surface_t *tiles_surface      = NULL;
 cairo_surface_t *background_surface = NULL;
@@ -261,16 +265,21 @@ about_cb (GtkAction * action, gpointer data)
   gtk_show_about_dialog (GTK_WINDOW (window),
 			 "name", _(APP_NAME_LONG),
 			 "version", VERSION,
+       "modal", TRUE,
+       "title", "L:A_D:application_ID:iagnoAbout",       
 			 "copyright",
 			 "Copyright \xc2\xa9 1998-2008 Ian Peters",
+       /* this buttons open windows the user wont't be able to close */
+       /*
                          "license", license,
                          "comments", _("A disk flipping game derived from Reversi.\n\nIagno is a part of GNOME Games."),
 			 "authors", authors,
                          "documenters", documenters,
+       */
 			 "translator-credits", _("translator-credits"),
 			 "logo-icon-name", "gnome-iagno",
 			 "website-label", _("GNOME Games web site"),
-                         "website", "http://www.gnome.org/projects/gnome-games/",
+                        /* "website", "http://www.gnome.org/projects/gnome-games/", */
 			 "wrap-license", TRUE,
                          NULL);
   g_free (license);
@@ -283,10 +292,14 @@ properties_cb (GtkWidget * widget, gpointer data)
 }
 
 gboolean
-draw_event (GtkWidget * widget, cairo_t *cr)
-{
+expose_event (GtkWidget * widget, GdkEventExpose *event, gpointer data) {
+  // Create a Cairo context from the widget's window
+  cairo_t *cr = gdk_cairo_create(widget->window);
+  // Draw the cached buffer surface
   cairo_set_source_surface (cr, buffer_surface, 0, 0);
   cairo_paint (cr);
+  // Cleanup
+  cairo_destroy(cr);
   return (FALSE);
 }
 
@@ -301,7 +314,11 @@ configure_event (GtkWidget * widget, GdkEventConfigure * event)
     old_width = event->width;
     old_height = event->height;
   }
-
+  // Calculate new tile size based on the window size
+  tile_width = tile_height = (event->width - GRIDWIDTH * 8) / 8;
+  // Update board dimensions
+  board_width = board_height = tile_width * 8 + GRIDWIDTH * 8;
+  load_pixmaps ();
   gui_draw_board ();
   return FALSE;
 }
@@ -455,7 +472,19 @@ load_pixmaps (void)
     exit (1);
   }
 
-  image = gdk_pixbuf_new_from_file (fname, &error);
+  GamesPreimage *preimage = games_preimage_new_from_file (fname, &error);
+  if (error != NULL) {
+    g_print ("Error loading image %s: %s\n", fname, error->message);
+    exit (1);
+  }
+  image = games_preimage_render (preimage, tile_width * 8, tile_height * 4);
+
+  // GdkPixbuf - Working Pixbuf
+  // image = gdk_pixbuf_scale_simple (gdk_pixbuf_new_from_file (fname, &error),
+  //                                 tile_width * 8,
+  //                                 tile_height * 4,
+  //                                 GDK_INTERP_BILINEAR);
+
   if (error) {
     g_warning (G_STRLOC ": gdk-pixbuf error %s\n", error->message);
     g_error_free (error);
@@ -478,18 +507,27 @@ load_pixmaps (void)
     cairo_surface_destroy (buffer_surface);
   gtk_widget_realize (drawing_area);
 
-  buffer_surface = gdk_window_create_similar_surface (gtk_widget_get_window (drawing_area),
-                                                      CAIRO_CONTENT_COLOR_ALPHA,
-                                                      board_width, board_height);
+  buffer_surface_pixmap = gdk_pixmap_new (gtk_widget_get_window (drawing_area),
+                                          board_width, board_height,
+                                          -1);
+  cairo_t *cr_buffer_surface = gdk_cairo_create(buffer_surface_pixmap); // cairo_t
+  buffer_surface = cairo_surface_reference(cairo_get_target(cr_buffer_surface)); // cairo_surface_t
+  cairo_destroy(cr_buffer_surface); // Surface remains valid due to reference
+
   gtk_widget_set_size_request (GTK_WIDGET (drawing_area),
 			       board_width, board_height);
 
   if (tiles_surface)
     cairo_surface_destroy (tiles_surface);
-  tiles_surface = gdk_window_create_similar_surface (gtk_widget_get_window (drawing_area),
-                                                     CAIRO_CONTENT_COLOR_ALPHA,
-                                                     gdk_pixbuf_get_width (image),
-                                                     gdk_pixbuf_get_height (image));
+
+  tiles_surface_pixmap = gdk_pixmap_new (gtk_widget_get_window (drawing_area),
+                                        gdk_pixbuf_get_width (image),
+                                        gdk_pixbuf_get_height (image),
+                                        -1);
+  cairo_t *cr_tiles_surface = gdk_cairo_create (tiles_surface_pixmap); // cairo_t
+  tiles_surface = cairo_surface_reference(cairo_get_target (cr_tiles_surface)); // cairo_surface_t
+  cairo_destroy (cr_tiles_surface); // Surface remains valid due to reference
+  
   cr = cairo_create (tiles_surface);
   gdk_cairo_set_source_pixbuf (cr, image, 0, 0);
   cairo_paint (cr);
@@ -497,9 +535,14 @@ load_pixmaps (void)
 
   if (background_surface)
     cairo_surface_destroy (background_surface);
-  background_surface = gdk_window_create_similar_surface (gtk_widget_get_window (drawing_area),
-                                                     CAIRO_CONTENT_COLOR_ALPHA,
-                                                     1, 1);
+
+  background_surface_pixmap = gdk_pixmap_new(gtk_widget_get_window (drawing_area),
+                                             1, 1,
+                                             -1);
+  cairo_t *cr_background_surface = gdk_cairo_create (background_surface_pixmap); // cairo_t
+  background_surface = cairo_surface_reference (cairo_get_target (cr_background_surface)); // cairo_surface_t
+  cairo_destroy (cr_background_surface); // Surface remains valid due to reference
+
   cr = cairo_create (background_surface);
   gdk_cairo_set_source_pixbuf (cr, image, 0, 0);
   cairo_paint (cr);
@@ -931,7 +974,7 @@ create_window (void)
   GtkWidget *vbox;
 
   window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
-  gtk_window_set_title (GTK_WINDOW (window), _(APP_NAME_LONG));
+  gtk_window_set_title (GTK_WINDOW (window), "L:A_N:application_ID:iagno_PC:N_O:URL");
 
   games_conf_add_window (GTK_WINDOW (window), NULL);
 
@@ -954,10 +997,10 @@ create_window (void)
 
   gtk_notebook_append_page (GTK_NOTEBOOK (notebook), drawing_area, NULL);
   gtk_notebook_set_current_page (GTK_NOTEBOOK (notebook), MAIN_PAGE);
-  gtk_box_pack_start (GTK_BOX (vbox), notebook, FALSE, FALSE, 0);
+  gtk_box_pack_start (GTK_BOX (vbox), notebook, TRUE, FALSE, 0);
 
-  g_signal_connect (G_OBJECT (drawing_area), "draw",
-		    G_CALLBACK (draw_event), NULL);
+  g_signal_connect (G_OBJECT (drawing_area), "expose-event",
+		    G_CALLBACK (expose_event), NULL);
   g_signal_connect (G_OBJECT (window), "configure_event",
 		    G_CALLBACK (configure_event), NULL);
   g_signal_connect (G_OBJECT (drawing_area), "button_press_event",
@@ -1002,7 +1045,7 @@ create_window (void)
 
   gtk_box_pack_start (GTK_BOX (statusbar), table, FALSE, TRUE, 0);
 
-  gtk_window_set_resizable (GTK_WINDOW (window), FALSE);
+  gtk_window_set_resizable (GTK_WINDOW (window), TRUE);
 
   statusbar_id = gtk_statusbar_get_context_id (GTK_STATUSBAR(statusbar),
                                                "iagno");

@@ -434,6 +434,7 @@ help_about_cb (GtkAction *action,
   licence = games_get_license (priv->freecell_mode ? _("FreeCell Solitaire") : ("AisleRiot"));
 
   gtk_show_about_dialog (GTK_WINDOW (window),
+                         "modal", TRUE,
 #if GTK_CHECK_VERSION (2, 11, 0)
                          "program-name",
 #else
@@ -442,8 +443,7 @@ help_about_cb (GtkAction *action,
                             priv->freecell_mode ? _("FreeCell Solitaire")
                                                 : _("AisleRiot"),
                          "version", VERSION,
-                         "title", priv->freecell_mode ? _("About FreeCell Solitaire")
-                                                      : _("About AisleRiot"),
+                         "title", "L:A_D:application_ID:aisleriotAbout",
 #ifndef HAVE_HILDON
                          /* The long text makes the dialogue too large under maemo */
                          "comments",
@@ -456,15 +456,19 @@ help_about_cb (GtkAction *action,
 #endif
                          "copyright", "Copyright © 1998-2006 Jonathan Blandford\n"
                                       "Copyright © 2007, 2008, 2009, 2010 Christian Persch",
+                         /* // this buttons open windows the user wont't be able to close
                          "license", licence,
                          "authors", authors,
                          "artists", artists,
                          "documenters", documenters,
                          "translator-credits", _("translator-credits"),
+                         */
                          "logo-icon-name", priv->freecell_mode ? "gnome-freecell"
                                                                : "gnome-aisleriot",
+                         /*
                          "website", "http://www.gnome.org/projects/gnome-games/",
                          "website-label", _("GNOME Games web site"),
+                         */
 #if GTK_CHECK_VERSION (2, 8, 0)
                          "wrap-license", TRUE,
 #endif
@@ -1050,7 +1054,7 @@ show_hint_cb (GtkAction *action,
                                                GTK_MESSAGE_INFO,
                                                GTK_BUTTONS_OK,
                                                "<b>%s</b>", message);
-  gtk_window_set_title (GTK_WINDOW (dialog), "");
+  gtk_window_set_title (GTK_WINDOW (dialog), "L:A_D:application_ID:aisleriotHint");
   gtk_window_set_modal (GTK_WINDOW (dialog), TRUE);
 
   gtk_widget_show (dialog);
@@ -1710,7 +1714,7 @@ game_type_changed_cb (AisleriotGame *game,
 
   /* In freecell mode, we've already set the title to something different */
   if (!priv->freecell_mode) {
-    gtk_window_set_title (GTK_WINDOW (window), game_name);
+    gtk_window_set_title (GTK_WINDOW (window), "L:A_N:application_ID:aisleriot_PC:N_O:URL");
   }
 
   g_free (game_name);
@@ -1981,9 +1985,9 @@ aisleriot_window_set_freecell_mode (AisleriotWindow *window,
     action = gtk_action_group_get_action (priv->action_group, "RecentMenu");
     gtk_action_set_visible (action, FALSE);
 
-    gtk_window_set_title (GTK_WINDOW (window), _("Freecell Solitaire"));
+    gtk_window_set_title (GTK_WINDOW (window), "L:A_N:application_ID:aisleriot_PC:N_O:URL");
   } else {
-    gtk_window_set_title (GTK_WINDOW (window), _("AisleRiot"));
+    gtk_window_set_title (GTK_WINDOW (window), "L:A_N:application_ID:aisleriot_PC:N_O:URL");
   }
 }
 

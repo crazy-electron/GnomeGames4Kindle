@@ -3702,7 +3702,7 @@ for game in $gamelist; do
     *) ;;
   esac
   case $game in
-    aisleriot|gnect|gnibbles|gnobots2|quadrapassel|iagno) want_sound=yes ;;
+    aisleriot|gnect|gnibbles|gnobots2|quadrapassel|iagno) want_sound=no ;;
     *) ;;
   esac
   case $game in
@@ -20593,7 +20593,9 @@ fi
   fi
 
   GUILE_CFLAGS=`$GUILE_CONFIG compile`
-  GUILE_LIBS=`$GUILE_CONFIG link`
+  GUILE_LIBS=" -pthread -L/sysroot/usr/lib -l:libguile.a -lltdl -lgmp -lcrypt -lm"
+  # " -l:libguile.a -l:libltdl.a -l:libgmp.a -lcrypt -lm"
+  #`$GUILE_CONFIG link`
 
 
 

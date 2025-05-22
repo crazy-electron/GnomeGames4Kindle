@@ -235,7 +235,7 @@ ar_game_chooser_constructor (GType type,
   }
 
   /* Now construct the window contents */
-  gtk_window_set_title (window, _("Select Game"));
+  gtk_window_set_title (window, "L:A_D:application_ID:aisleriotSelectGameDialog");
   gtk_window_set_modal (window, TRUE);
 
 #ifndef HAVE_MAEMO_5

@@ -433,8 +433,8 @@ Gamesdir = $(datadir)/applications
 Games_in_files = iagno.desktop.in.in
 Games_DATA = $(Games_in_files:.desktop.in.in=.desktop)
 schema_in_files = iagno.schemas.in
-@HAVE_GNOME_TRUE@schemadir = $(GCONF_SCHEMA_FILE_DIR)
-@HAVE_GNOME_TRUE@schema_DATA = $(schema_in_files:.schemas.in=.schemas)
+# @HAVE_GNOME_TRUE@schemadir = $(GCONF_SCHEMA_FILE_DIR)
+schema_DATA = $(schema_in_files:.schemas.in=.schemas)
 man_MANS = iagno.6
 EXTRA_DIST = \
 	AUTHORS \

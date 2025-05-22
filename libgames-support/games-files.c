@@ -307,7 +307,10 @@ games_file_list_create_widget (GamesFileList * filelist,
   GList *iter = filelist->priv->list;
   gboolean found = FALSE;
 
-  widget = GTK_COMBO_BOX (gtk_combo_box_text_new ());
+  GtkListStore *store = gtk_list_store_new(1, G_TYPE_STRING);
+  widget = gtk_combo_box_new_with_model(GTK_TREE_MODEL(store));
+  g_object_unref(store); // Combo box takes ownership
+  //widget = GTK_COMBO_BOX (gtk_combo_box_text_new ());
 
   itemno = 0;
   while (iter) {
@@ -333,7 +336,12 @@ games_file_list_create_widget (GamesFileList * filelist,
       }
     }
 
-    gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (widget), visible);
+    GtkTreeIter tree_iter;
+    GtkTreeModel *model = gtk_combo_box_get_model(GTK_COMBO_BOX(widget));
+    gtk_list_store_append(GTK_LIST_STORE(model), &tree_iter);
+    gtk_list_store_set(GTK_LIST_STORE(model), &tree_iter, 0, visible, -1);
+
+    // gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (widget), visible);
     if (selection && (!strcmp (string, selection))) {
       gtk_combo_box_set_active (widget, itemno);
       found = TRUE;
