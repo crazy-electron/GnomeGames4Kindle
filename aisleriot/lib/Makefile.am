@@ -88,7 +88,7 @@ endif
 
 if HAVE_RSVG
 
-pkglib_PROGRAMS = ar-cards-renderer
+libexec_PROGRAMS = ar-cards-renderer
 
 ar_cards_renderer_SOURCES = \
 	render-cards.c

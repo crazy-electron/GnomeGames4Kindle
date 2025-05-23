@@ -108,7 +108,7 @@ AC_SUBST([gamelist])
 
 # Feature matrix
 
-need_cxx=no
+need_cxx=yes
 need_vala=no
 need_rsvg=no
 need_sqlite=no
@@ -145,7 +145,7 @@ for game in $gamelist; do
     *) ;;
   esac
   case $game in
-    glchess) need_opengl=yes ;;
+    glchess) need_opengl=no ;;
     *) ;;
   esac
   case $game in
@@ -161,7 +161,7 @@ for game in $gamelist; do
     *) ;;
   esac
   case $game in
-    aisleriot|gnect|gnibbles|gnobots2|quadrapassel|iagno) want_sound=yes ;;
+    aisleriot|gnect|gnibbles|gnobots2|quadrapassel|iagno) want_sound=no ;;
     *) ;;
   esac
   case $game in
@@ -965,7 +965,7 @@ if test "$need_guile" = "yes"; then
   fi
 
   GUILE_CFLAGS=`$GUILE_CONFIG compile`
-  GUILE_LIBS=`$GUILE_CONFIG link`
+  GUILE_LIBS=`$GUILE_CONFIG link | sed -e 's/-lguile/-l:libguile.a/'`
   AC_SUBST([GUILE_CFLAGS])
   AC_SUBST([GUILE_LIBS])
 
