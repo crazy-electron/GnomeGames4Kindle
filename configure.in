@@ -683,8 +683,10 @@ if test "$need_rsvg" = "yes"; then
   # Errors out if rsvg is not found
   PKG_CHECK_MODULES([RSVG],[
     librsvg-2.0 >= $RSVG_REQUIRED
+    libxml-2.0
     cairo >= $CAIRO_REQUIRED])
 
+  RSVG_LIBS=$(echo "$RSVG_LIBS  " | sed 's/-lrsvg-2/-l:librsvg-2.a/g')
   AC_SUBST([RSVG_CFLAGS])
   AC_SUBST([RSVG_LIBS])
 
@@ -965,7 +967,7 @@ if test "$need_guile" = "yes"; then
   fi
 
   GUILE_CFLAGS=`$GUILE_CONFIG compile`
-  GUILE_LIBS=`$GUILE_CONFIG link | sed -e 's/-lguile/-l:libguile.a/'`
+  GUILE_LIBS=`$GUILE_CONFIG link | sed -e 's/-lguile/-l:libguile.a/' | sed -e 's/-lltdl/-l:libltdl.a/' | sed -e 's/-lltdl//g'`
   AC_SUBST([GUILE_CFLAGS])
   AC_SUBST([GUILE_LIBS])
 
